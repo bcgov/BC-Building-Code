@@ -1,0 +1,773 @@
+{
+  "$defs": {
+    "Appendix": {
+      "properties": {
+        "content": {
+          "title": "Content",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        },
+        "figureTable": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FigureTable"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "content",
+        "title"
+      ],
+      "title": "Appendix",
+      "type": "object"
+    },
+    "Article": {
+      "properties": {
+        "numberReference": {
+          "title": "Numberreference",
+          "type": "string"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        },
+        "effectiveDates": {
+          "$ref": "#/$defs/EffectiveDates"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "sentences": {
+          "items": {
+            "$ref": "#/$defs/Sentence"
+          },
+          "title": "Sentences",
+          "type": "array"
+        },
+        "figureTable": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FigureTable"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "numberReference",
+        "page",
+        "effectiveDates",
+        "title",
+        "sentences"
+      ],
+      "title": "Article",
+      "type": "object"
+    },
+    "Clause": {
+      "properties": {
+        "numberReference": {
+          "title": "Numberreference",
+          "type": "string"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        },
+        "effectiveDates": {
+          "$ref": "#/$defs/EffectiveDates"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "subClauses": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/SubClause"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Subclauses"
+        }
+      },
+      "required": [
+        "numberReference",
+        "page",
+        "effectiveDates",
+        "description"
+      ],
+      "title": "Clause",
+      "type": "object"
+    },
+    "EffectiveDates": {
+      "properties": {
+        "startDate": {
+          "title": "Startdate",
+          "type": "string"
+        },
+        "endDate": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Enddate"
+        }
+      },
+      "required": [
+        "startDate"
+      ],
+      "title": "EffectiveDates",
+      "type": "object"
+    },
+    "Figure": {
+      "properties": {
+        "numberReference": {
+          "title": "Numberreference",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "figureReference": {
+          "title": "Figurereference",
+          "type": "string"
+        },
+        "figureTablePosition": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Figuretableposition"
+        },
+        "figureNotes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Figurenotes"
+        },
+        "partOf": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Partof"
+        },
+        "figureLabel": {
+          "title": "Figurelabel",
+          "type": "string"
+        },
+        "figureBytes": {
+          "title": "Figurebytes",
+          "type": "string"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        }
+      },
+      "required": [
+        "numberReference",
+        "title",
+        "figureReference",
+        "figureLabel",
+        "figureBytes"
+      ],
+      "title": "Figure",
+      "type": "object"
+    },
+    "FigureTable": {
+      "properties": {
+        "figure": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Figure"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Figure"
+        },
+        "table": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Table"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Table"
+        },
+        "formula": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Formula"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Formula"
+        }
+      },
+      "title": "FigureTable",
+      "type": "object"
+    },
+    "Formula": {
+      "properties": {
+        "numberReference": {
+          "title": "Numberreference",
+          "type": "string"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        },
+        "formulaTablePosition": {
+          "anyOf": [
+            {
+              "additionalProperties": {
+                "anyOf": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ]
+              },
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Formulatableposition"
+        },
+        "formulaLabel": {
+          "title": "Formulalabel",
+          "type": "string"
+        },
+        "formulaBytes": {
+          "title": "Formulabytes",
+          "type": "string"
+        },
+        "formulaLatex": {
+          "title": "Formulalatex",
+          "type": "string"
+        },
+        "surroundingText": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Surroundingtext"
+        }
+      },
+      "required": [
+        "numberReference",
+        "formulaLabel",
+        "formulaBytes",
+        "formulaLatex"
+      ],
+      "title": "Formula",
+      "type": "object"
+    },
+    "Notes": {
+      "properties": {
+        "numberReference": {
+          "title": "Numberreference",
+          "type": "string"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        },
+        "idx": {
+          "title": "Idx",
+          "type": "integer"
+        },
+        "effectiveDates": {
+          "$ref": "#/$defs/EffectiveDates"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "description": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Description"
+        },
+        "figureTable": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FigureTable"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "numberReference",
+        "page",
+        "idx",
+        "effectiveDates",
+        "title"
+      ],
+      "title": "Notes",
+      "type": "object"
+    },
+    "Part": {
+      "properties": {
+        "numberReference": {
+          "title": "Numberreference",
+          "type": "string"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        },
+        "effectiveDates": {
+          "$ref": "#/$defs/EffectiveDates"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "sections": {
+          "items": {
+            "$ref": "#/$defs/Section"
+          },
+          "title": "Sections",
+          "type": "array"
+        },
+        "notes": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Notes"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Notes"
+        }
+      },
+      "required": [
+        "numberReference",
+        "page",
+        "effectiveDates",
+        "title",
+        "sections"
+      ],
+      "title": "Part",
+      "type": "object"
+    },
+    "Preface": {
+      "properties": {
+        "content": {
+          "title": "Content",
+          "type": "string"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "content",
+        "page"
+      ],
+      "title": "Preface",
+      "type": "object"
+    },
+    "Section": {
+      "properties": {
+        "numberReference": {
+          "title": "Numberreference",
+          "type": "string"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        },
+        "effectiveDates": {
+          "$ref": "#/$defs/EffectiveDates"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "subsections": {
+          "items": {
+            "$ref": "#/$defs/SubSection"
+          },
+          "title": "Subsections",
+          "type": "array"
+        }
+      },
+      "required": [
+        "numberReference",
+        "page",
+        "effectiveDates",
+        "title",
+        "subsections"
+      ],
+      "title": "Section",
+      "type": "object"
+    },
+    "Sentence": {
+      "properties": {
+        "numberReference": {
+          "title": "Numberreference",
+          "type": "string"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        },
+        "idx": {
+          "title": "Idx",
+          "type": "integer"
+        },
+        "effectiveDates": {
+          "$ref": "#/$defs/EffectiveDates"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "figureTable": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/FigureTable"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "clauses": {
+          "anyOf": [
+            {
+              "items": {
+                "$ref": "#/$defs/Clause"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Clauses"
+        }
+      },
+      "required": [
+        "numberReference",
+        "page",
+        "idx",
+        "effectiveDates",
+        "description"
+      ],
+      "title": "Sentence",
+      "type": "object"
+    },
+    "SubClause": {
+      "properties": {
+        "numberReference": {
+          "title": "Numberreference",
+          "type": "string"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        },
+        "effectiveDates": {
+          "$ref": "#/$defs/EffectiveDates"
+        },
+        "text": {
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "numberReference",
+        "page",
+        "effectiveDates",
+        "text"
+      ],
+      "title": "SubClause",
+      "type": "object"
+    },
+    "SubSection": {
+      "properties": {
+        "numberReference": {
+          "title": "Numberreference",
+          "type": "string"
+        },
+        "page": {
+          "title": "Page",
+          "type": "integer"
+        },
+        "effectiveDates": {
+          "$ref": "#/$defs/EffectiveDates"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "articles": {
+          "items": {
+            "$ref": "#/$defs/Article"
+          },
+          "title": "Articles",
+          "type": "array"
+        }
+      },
+      "required": [
+        "numberReference",
+        "page",
+        "effectiveDates",
+        "title",
+        "articles"
+      ],
+      "title": "SubSection",
+      "type": "object"
+    },
+    "Table": {
+      "properties": {
+        "numberReference": {
+          "title": "Numberreference",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        },
+        "tableNotes": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Tablenotes"
+        },
+        "partOf": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Partof"
+        },
+        "fields": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Fields",
+          "type": "array"
+        },
+        "data": {
+          "items": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "title": "Data",
+          "type": "array"
+        }
+      },
+      "required": [
+        "numberReference",
+        "title",
+        "fields",
+        "data"
+      ],
+      "title": "Table",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "preface": {
+      "$ref": "#/$defs/Preface"
+    },
+    "divisionA": {
+      "items": {
+        "$ref": "#/$defs/Part"
+      },
+      "title": "Divisiona",
+      "type": "array"
+    },
+    "divisionB": {
+      "items": {
+        "$ref": "#/$defs/Part"
+      },
+      "title": "Divisionb",
+      "type": "array"
+    },
+    "divisionC": {
+      "items": {
+        "$ref": "#/$defs/Part"
+      },
+      "title": "Divisionc",
+      "type": "array"
+    },
+    "appendixC": {
+      "$ref": "#/$defs/Appendix"
+    },
+    "appendixD": {
+      "$ref": "#/$defs/Appendix"
+    }
+  },
+  "required": [
+    "preface",
+    "divisionA",
+    "divisionB",
+    "divisionC",
+    "appendixC",
+    "appendixD"
+  ],
+  "title": "BuildingCode",
+  "type": "object"
+}
