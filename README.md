@@ -1,6 +1,6 @@
 # BC Building Code
 
-The BC Building Code 2024 (BCBC) is the authoritative provincial regulation that governs new construction, building alterations, repairs, and demolitions, ensuring the highest standards of safety, health, accessibility, fire, and structural protection of buildings, as well as energy and water efficiency. The BCBC 2024 applies across British Columbia, except for some federal lands and the City of Vancouver.
+The BC Building Code 2024 (BCBC) is the authoritative provincial regulation that governs new construction, building alterations, repairs, and demolitions, ensuring the minimum standards of safety, health, accessibility, fire, and structural protection of buildings, as well as energy and water efficiency. The BCBC 2024 applies across British Columbia, except for some federal lands and the City of Vancouver.
 
 ## JSON Version of the BC Building Code
 
@@ -8,17 +8,14 @@ This repository provides a JSON version of the BC Building Code 2024 and include
 
 This version of the BC Building Code is provided to licensee subscribers to enable access, use and downloading of the digitized BCBC 2024 content.
 
-[B.C. Reg. 119/2024](https://www.bclaws.gov.bc.ca/civix/document/id/lc/bcgaz2/v67n10_119-2024) formally established the [BC Building Code 2024](https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards/bc-codes/2024-bc-codes) as the enforceable provincial standard. However, each subsequent update contributes to the creation of the official code version. For the most current amendments, visit the Government of British Columbia's [website](https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards/bc-codes/errata-and-revisions).
+<a href="https://www.bclaws.gov.bc.ca/civix/document/id/lc/bcgaz2/v67n10_119-2024"><u>B.C. Reg. 119/2024</u></a>
+ formally established the <a href="https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards/bc-codes/2024-bc-codes"><u>BC Building Code 2024</u></a>
+ as the enforceable provincial standard. However, each subsequent update contributes to the creation of the official code version. For the most current amendments, visit the Government of British Columbia’s <a href="https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards/bc-codes/errata-and-revisions"><u>website</u></a>.
 
-**Important:** In the event of a discrepancy, the official version shall take precedence over the JSON version.
+Under no circumstances will the Government of British Columbia be liable to any person or business entity for any direct, indirect, special, incidental, consequential, or other damages based on any use of this version of the BC Building Code, including, without limitation, any lost profits, business interruption, or loss of programs or information, even if the Government of British Columbia has been specifically advised of the possibility of such damages. 
+For information about the timing of the established effective dates, and in-stream protection for specific projects, please visit the Government of British Columbia  <a href="(https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards/bc-codes/2024-bc-codes"><u>website</u></a>.
 
-### Disclaimer
-
-Under no circumstances will the Government of British Columbia be liable to any person or business entity for any direct, indirect, special, incidental, consequential, or other damages based on any use of this version of the BC Building Code, including, without limitation, any lost profits, business interruption, or loss of programs or information, even if the Government of British Columbia has been specifically advised of the possibility of such damages.
-
-For information about the timing of the established effective dates, and in-stream protection for specific projects, please visit the Government of British Columbia [website](https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards/bc-codes/2024-bc-codes).
-
-## BC Building Code Acknowledgements and Copyright
+## BC Building Code acknowledgements and copyright
 
 **Copyright 2024 Province of British Columbia**
 
@@ -28,34 +25,32 @@ All rights reserved. This Publication contains material that is copyrighted by b
 
 No part of this publication may be reproduced without written permission from the Province of British Columbia and Codes Canada, National Research Council.
 
-## Request Permission to Reproduce
 
-### B.C. Portions
+
+## Request permission to reproduce
+
+### B.C. portions
 
 For more information, or to request permission to reproduce B.C. portions, please contact the Intellectual Property Program for B.C.
 
-**Mailing Address:**
-```
-Intellectual Property Program
-PO Box 9412 Stn Prov Govt
-Victoria, BC V8W 9V1
-```
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mailing Address:</div>  
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intellectual Property Program</div>  
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PO Box 9412 Stn Prov Govt</div>  
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Victoria, BC V8W 9V1</div>  
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Website: <a href="https://www.cio.gov.bc.ca"><u>www.cio.gov.bc.ca</u></a></div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: Email: <a href="mailto:ipp@mail.qp.gov.bc.ca"><u>ipp@mail.qp.gov.bc.ca</u></a>
+</div>
+<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone: <u>250-356-1339</u></div>
 
-**Contact Information:**
-- Website: [www.cio.gov.bc.ca](http://www.cio.gov.bc.ca/)
-- Email: ipp@mail.qp.gov.bc.ca
-- Phone: [250-356-1339](tel:+1-250-356-1339)
 
-### National Portions
+### National portions
 
 For more information, or to request permission to reproduce national portions, please contact the National Research Council of Canada.
 
-**Mailing Address:**
-```
-Codes Canada
-National Research Council of Canada
-1200 Montreal Road
-Ottawa, ON K1A 0R6
-```
+- Mailing Address:
 
-**Email:** Codes@nrc-cnrc.gc.ca
+    <div>Codes Canada</div>
+    <div>National Research Council of Canada</div>
+    <div>1200 Montreal Road</div>
+    <div>Ottawa, ON K1A 0R6</div>
+    <div>Email: <u>Codes@nrc-cnrc.gc.ca</u></div>
