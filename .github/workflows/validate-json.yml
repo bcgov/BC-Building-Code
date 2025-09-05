@@ -1,0 +1,78 @@
+name: Validate Building Code JSON
+
+on:
+  pull_request:
+    branches: [ develop ]
+    paths:
+      - 'BuildingCode.json'
+      - 'schema.json'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install jsonschema
+        
+    - name: Validate JSON against schema
+      id: validation
+      run: |
+        python .github/scripts/validate_json.py
+        
+    - name: Comment PR with validation results
+      if: failure()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          let errorMessage = '';
+          
+          try {
+            errorMessage = fs.readFileSync('validation_errors.txt', 'utf8');
+          } catch (error) {
+            errorMessage = 'Validation failed but error details could not be read.';
+          }
+          
+          const body = `## ❌ JSON Schema Validation Failed
+          
+          The BuildingCode.json file does not conform to the schema. Please fix the following errors before merging:
+          
+          \`\`\`
+          ${errorMessage}
+          \`\`\`
+          
+          **This PR cannot be merged until all validation errors are resolved.**`;
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: body
+          });
+          
+    - name: Comment PR with success message
+      if: success()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const body = `## ✅ JSON Schema Validation Passed
+          
+          The BuildingCode.json file successfully validates against the schema. This PR is ready for review.`;
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: body
+          });
