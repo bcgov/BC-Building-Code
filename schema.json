@@ -133,26 +133,31 @@
       "properties": {
         "startDate": {
           "title": "Startdate",
-          "type": "string"
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$",
+          "description": "Start date in YYYY-MM-DD format"
         },
         "endDate": {
           "anyOf": [
             {
-              "type": "string"
+              "type": "string",
+              "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
             },
             {
               "type": "null"
             }
           ],
           "default": null,
-          "title": "Enddate"
+          "title": "Enddate",
+          "description": "End date in YYYY-MM-DD format or null if still effective"
         }
       },
       "required": [
         "startDate"
       ],
       "title": "EffectiveDates",
-      "type": "object"
+      "type": "object",
+      "additionalProperties": false
     },
     "Figure": {
       "properties": {
