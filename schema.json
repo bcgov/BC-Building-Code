@@ -327,6 +327,7 @@
               "items": {
                 "$ref": "#/$defs/Figure"
               },
+              "maxItems": 100,
               "type": "array"
             },
             {
@@ -334,6 +335,7 @@
             }
           ],
           "default": null,
+          "description": "Array of figures",
           "title": "Figure"
         },
         "table": {
@@ -342,6 +344,7 @@
               "items": {
                 "$ref": "#/$defs/Table"
               },
+              "maxItems": 200,
               "type": "array"
             },
             {
@@ -349,6 +352,7 @@
             }
           ],
           "default": null,
+          "description": "Array of tables",
           "title": "Table"
         },
         "formula": {
@@ -357,6 +361,7 @@
               "items": {
                 "$ref": "#/$defs/Formula"
               },
+              "maxItems": 100,
               "type": "array"
             },
             {
@@ -364,9 +369,38 @@
             }
           ],
           "default": null,
+          "description": "Array of formulas",
+          "additionalProperties": false,
+          
           "title": "Formula"
         }
       },
+      "not": {
+        "allOf": [
+          {
+            "properties": {
+              "figure": {
+                "type": "null"
+              }
+            }
+          },
+          {
+            "properties": {
+              "table": {
+                "type": "null"
+              }
+            }
+          },
+          {
+            "properties": {
+              "formula": {
+                "type": "null"
+              }
+            }
+          }
+        ]
+      },
+      "additionalProperties": false,
       "title": "FigureTable",
       "type": "object"
     },
