@@ -56,25 +56,36 @@
       "properties": {
         "numberReference": {
           "title": "Numberreference",
-          "type": "string"
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+$",
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 20,
+          "description": "Article number reference (e.g., 1.1.1.1)"
         },
         "page": {
           "title": "Page",
-          "type": "integer"
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000,
+          "description": "Page number where article appears"
         },
         "effectiveDates": {
           "$ref": "#/$defs/EffectiveDates"
         },
         "title": {
           "title": "Title",
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500,
+          "description": "Article title"
         },
         "sentences": {
           "items": {
             "$ref": "#/$defs/Sentence"
           },
           "title": "Sentences",
-          "type": "array"
+          "type": "array",
+          "description": "Array of sentences within the article"
         },
         "figureTable": {
           "anyOf": [
@@ -85,7 +96,8 @@
               "type": "null"
             }
           ],
-          "default": null
+          "default": null,
+          "description": "Associated figures, tables, or formulas"
         }
       },
       "required": [
@@ -95,6 +107,7 @@
         "title",
         "sentences"
       ],
+      "additionalProperties": false,
       "title": "Article",
       "type": "object"
     },
