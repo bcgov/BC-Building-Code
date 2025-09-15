@@ -115,18 +115,28 @@
       "properties": {
         "numberReference": {
           "title": "Numberreference",
-          "type": "string"
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+\\.\\([0-9]+\\)\\([a-z]+\\)$",
+          "type": "string",
+          "minLength": 12,
+          "maxLength": 30,
+          "description": "Clause number reference (e.g., 1.1.1.1.(1)(a))"
         },
         "page": {
           "title": "Page",
-          "type": "integer"
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000,
+          "description": "Page number where clause appears"
         },
         "effectiveDates": {
           "$ref": "#/$defs/EffectiveDates"
         },
         "description": {
           "title": "Description",
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 10000,
+          "description": "Clause description text"
         },
         "subClauses": {
           "anyOf": [
@@ -134,13 +144,15 @@
               "items": {
                 "$ref": "#/$defs/SubClause"
               },
-              "type": "array"
+              "type": "array",
+              "maxItems": 50
             },
             {
               "type": "null"
             }
           ],
           "default": null,
+          "description": "Array of sub-clauses",
           "title": "Subclauses"
         }
       },
@@ -150,6 +162,7 @@
         "effectiveDates",
         "description"
       ],
+      "additionalProperties": false,
       "title": "Clause",
       "type": "object"
     },
