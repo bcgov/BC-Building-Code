@@ -200,83 +200,111 @@
       "properties": {
         "numberReference": {
           "title": "Numberreference",
-          "type": "string"
+          "pattern": "^[A-Za-z0-9\\.\\-\\s\\(\\)]+$",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 50,
+          "description": "Figure number reference"
         },
         "title": {
           "title": "Title",
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500,
+          "description": "Figure title"
         },
         "figureReference": {
           "title": "Figurereference",
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100,
+          "description": "Figure reference identifier"
         },
         "figureTablePosition": {
           "anyOf": [
             {
-              "additionalProperties": {
-                "anyOf": [
-                  {
-                    "type": "integer"
-                  },
-                  {
-                    "type": "string"
-                  }
-                ]
+              "type": "object",
+              "patternProperties": {
+                "^[a-zA-Z0-9_]+$": {
+                  "anyOf": [
+                    {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    {
+                      "type": "string",
+                      "maxLength": 100
+                    }
+                  ]
+                }
               },
-              "type": "object"
+              "additionalProperties": false
             },
             {
               "type": "null"
             }
           ],
-          "default": null,
-          "title": "Figuretableposition"
+          "description": "Position information for the figure"
         },
         "figureNotes": {
           "anyOf": [
             {
+              "type": "array",
               "items": {
-                "type": "string"
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
               },
-              "type": "array"
+              "maxItems": 20
             },
             {
               "type": "null"
             }
           ],
-          "default": null,
-          "title": "Figurenotes"
+          "description": "Notes associated with the figure"
         },
         "partOf": {
           "anyOf": [
             {
-              "type": "string"
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 100
             },
             {
               "type": "null"
             }
           ],
           "default": null,
+          "description": "What this figure is part of",
           "title": "Partof"
         },
         "figureLabel": {
           "title": "Figurelabel",
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "description": "Figure label text"
         },
         "figureBytes": {
           "title": "Figurebytes",
-          "type": "string"
+          "type": "string",
+          "pattern": "^data:[^;]+;base64,[A-Za-z0-9+/]*={0,2}$",
+          "minLength": 1,
+          "description": "Base64 encoded figure data"
         },
         "page": {
           "anyOf": [
             {
-              "type": "integer"
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10000
             },
             {
               "type": "null"
             }
           ],
           "default": null,
+          "description": "Page number where figure appears",
           "title": "Page"
         }
       },
@@ -287,6 +315,7 @@
         "figureLabel",
         "figureBytes"
       ],
+      "additionalProperties": false,
       "title": "Figure",
       "type": "object"
     },
