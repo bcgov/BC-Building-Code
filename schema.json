@@ -200,7 +200,7 @@
       "properties": {
         "numberReference": {
           "title": "Numberreference",
-          "pattern": "^[A-Za-z0-9\\.\\-\\s\\(\\)]+$",
+          "pattern": "^[A-Za-z0-9.\\-\\s(),]+$",
           "type": "string",
           "minLength": 1,
           "maxLength": 50,
@@ -371,7 +371,6 @@
           "default": null,
           "description": "Array of formulas",
           "additionalProperties": false,
-          
           "title": "Formula"
         }
       },
@@ -409,7 +408,7 @@
         "numberReference": {
           "title": "Numberreference",
           "type": "string",
-          "pattern": "^[A-Za-z0-9\\.\\-\\s\\(\\)]+$",
+          "pattern": "^[A-Za-z0-9.\\-\\s(),]+$",
           "minLength": 1,
           "maxLength": 50,
           "description": "Formula number reference"
@@ -503,33 +502,46 @@
       "properties": {
         "numberReference": {
           "title": "Numberreference",
+          "pattern": "^[A-Za-z0-9.\\-\\s(),]+$",
           "type": "string"
         },
         "page": {
           "title": "Page",
-          "type": "integer"
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000,
+          "description": "Page number where notes appear"
         },
         "idx": {
           "title": "Idx",
-          "type": "integer"
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000,
+          "description": "Notes index"
         },
         "effectiveDates": {
           "$ref": "#/$defs/EffectiveDates"
         },
         "title": {
           "title": "Title",
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500,
+          "description": "Notes title"
         },
         "description": {
           "anyOf": [
             {
-              "type": "string"
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 50000
             },
             {
               "type": "null"
             }
           ],
           "default": null,
+          "description": "Notes description text",
           "title": "Description"
         },
         "figureTable": {
@@ -541,6 +553,7 @@
               "type": "null"
             }
           ],
+          "description": "Associated figures, tables, or formulas",
           "default": null
         }
       },
@@ -551,6 +564,7 @@
         "effectiveDates",
         "title"
       ],
+      "additionalProperties": false,
       "title": "Notes",
       "type": "object"
     },
