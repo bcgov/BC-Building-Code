@@ -662,25 +662,38 @@
       "properties": {
         "numberReference": {
           "title": "Numberreference",
-          "type": "string"
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+$",
+          "minLength": 3,
+          "maxLength": 10,
+          "description": "Section number reference (e.g., 1.1)"
         },
         "page": {
           "title": "Page",
-          "type": "integer"
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000,
+          "description": "Page number where section appears"
         },
         "effectiveDates": {
           "$ref": "#/$defs/EffectiveDates"
         },
         "title": {
           "title": "Title",
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500,
+          "description": "Section title"
         },
         "subsections": {
           "items": {
             "$ref": "#/$defs/SubSection"
           },
           "title": "Subsections",
-          "type": "array"
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 100,
+          "description": "Array of subsections within the section"
         }
       },
       "required": [
@@ -691,6 +704,7 @@
         "subsections"
       ],
       "title": "Section",
+      "additionalProperties": false,
       "type": "object"
     },
     "Sentence": {
