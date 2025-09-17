@@ -637,17 +637,24 @@
       "properties": {
         "content": {
           "title": "Content",
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000000,
+          "description": "Preface content text"
         },
         "page": {
           "title": "Page",
-          "type": "integer"
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000,
+          "description": "Page number where preface appears"
         }
       },
       "required": [
         "content",
         "page"
       ],
+      "additionalProperties": false,
       "title": "Preface",
       "type": "object"
     },
