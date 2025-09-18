@@ -711,22 +711,35 @@
       "properties": {
         "numberReference": {
           "title": "Numberreference",
-          "type": "string"
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+\\.\\([0-9]+\\)$",
+          "minLength": 1,
+          "maxLength": 500,
+          "description": "Sentence number reference"
         },
         "page": {
           "title": "Page",
-          "type": "integer"
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000,
+          "description": "Page number where sentence appears"
         },
         "idx": {
           "title": "Idx",
-          "type": "integer"
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5000,
+          "description": "Sentence index"
         },
         "effectiveDates": {
           "$ref": "#/$defs/EffectiveDates"
         },
         "description": {
           "title": "Description",
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 50000,
+          "description": "Sentence description text"
         },
         "figureTable": {
           "anyOf": [
@@ -737,6 +750,7 @@
               "type": "null"
             }
           ],
+          "description": "Associated figures, tables, or formulas",
           "default": null
         },
         "clauses": {
@@ -745,13 +759,15 @@
               "items": {
                 "$ref": "#/$defs/Clause"
               },
-              "type": "array"
+              "type": "array",
+              "maxItems": 100
             },
             {
               "type": "null"
             }
           ],
           "default": null,
+          "description": "Array of clauses within the sentence",
           "title": "Clauses"
         }
       },
@@ -762,6 +778,7 @@
         "effectiveDates",
         "description"
       ],
+      "additionalProperties": false,
       "title": "Sentence",
       "type": "object"
     },
