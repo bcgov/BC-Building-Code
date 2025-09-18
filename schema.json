@@ -873,21 +873,31 @@
       "properties": {
         "numberReference": {
           "title": "Numberreference",
-          "type": "string"
+          "type": "string",
+          "pattern": "^[A-Za-z0-9.\\-\\s(),]+$",
+          "minLength": 1,
+          "maxLength": 50,
+          "description": "Table number reference"
         },
         "title": {
           "title": "Title",
-          "type": "string"
+          "type": "string",
+          "minLength": 0,
+          "maxLength": 500,
+          "description": "Table title"
         },
         "page": {
           "anyOf": [
             {
-              "type": "integer"
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10000
             },
             {
               "type": "null"
             }
           ],
+          "description": "Page number where table appears",
           "default": null,
           "title": "Page"
         },
@@ -895,45 +905,63 @@
           "anyOf": [
             {
               "items": {
-                "type": "string"
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 1000
               },
-              "type": "array"
+              "type": "array",
+              "maxItems": 20
             },
             {
               "type": "null"
             }
           ],
           "default": null,
+          "description": "Notes associated with the table",
           "title": "Tablenotes"
         },
         "partOf": {
           "anyOf": [
             {
-              "type": "string"
+              "type": "string",
+              "minLength": 0,
+              "maxLength": 200
             },
             {
               "type": "null"
             }
           ],
           "default": null,
+          "description": "What this table is part of",
           "title": "Partof"
         },
         "fields": {
           "items": {
-            "type": "string"
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 2000
           },
+          "minItems": 1,
+          "maxItems": 50,
           "title": "Fields",
-          "type": "array"
+          "type": "array",
+          "description": "Table column headers"
         },
         "data": {
           "items": {
             "items": {
-              "type": "string"
+              "type": "string",
+              "maxLength": 2000
             },
-            "type": "array"
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 50
           },
           "title": "Data",
-          "type": "array"
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 1000,
+          "description": "Table data rows"
         }
       },
       "required": [
@@ -942,6 +970,7 @@
         "fields",
         "data"
       ],
+      "additionalProperties": false,
       "title": "Table",
       "type": "object"
     }
@@ -986,6 +1015,7 @@
     "appendixC",
     "appendixD"
   ],
+  "additionalProperties": false,
   "title": "BuildingCode",
   "type": "object"
 }
