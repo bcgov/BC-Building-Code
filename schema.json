@@ -824,24 +824,37 @@
       "properties": {
         "numberReference": {
           "title": "Numberreference",
-          "type": "string"
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+          "minLength": 5,
+          "maxLength": 15,
+          "description": "Subsection number reference (e.g., 1.1.1)"
         },
         "page": {
           "title": "Page",
-          "type": "integer"
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000,
+          "description": "Page number where subsection appears"
         },
         "effectiveDates": {
           "$ref": "#/$defs/EffectiveDates"
         },
         "title": {
           "title": "Title",
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500,
+          "description": "Subsection title"
         },
         "articles": {
           "items": {
             "$ref": "#/$defs/Article"
           },
+          "minItems": 0,
+          "maxItems": 200,
           "title": "Articles",
+          "description": "Array of articles within the subsection",
           "type": "array"
         }
       },
@@ -852,6 +865,7 @@
         "title",
         "articles"
       ],
+      "additionalProperties": false,
       "title": "SubSection",
       "type": "object"
     },
