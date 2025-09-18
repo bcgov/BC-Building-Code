@@ -786,18 +786,28 @@
       "properties": {
         "numberReference": {
           "title": "Numberreference",
-          "type": "string"
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+\\.\\([0-9]+\\)\\([a-z]+\\)\\([ivxlc]+\\)$",
+          "minLength": 15,
+          "maxLength": 40,
+          "description": "Sub-clause number reference (e.g., 1.1.1.1.(1)(a)(i))"
         },
         "page": {
           "title": "Page",
-          "type": "integer"
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10000,
+          "description": "Page number where sub-clause appears"
         },
         "effectiveDates": {
           "$ref": "#/$defs/EffectiveDates"
         },
         "text": {
           "title": "Text",
-          "type": "string"
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 50000,
+          "description": "Sub-clause text content"
         }
       },
       "required": [
@@ -806,6 +816,7 @@
         "effectiveDates",
         "text"
       ],
+      "additionalProperties": false,
       "title": "SubClause",
       "type": "object"
     },
