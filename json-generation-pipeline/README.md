@@ -121,16 +121,6 @@ json-generation-pipeline/
 
 **Total pipeline: ~35 seconds**
 
-## Legacy Folders (Root Directory)
-
-These folders are maintained for reference but are superseded by json-generation-pipeline:
-
-- **NBC2020XML/** - Original NBC 2020 Arbortext project from National Research Council
-- **Word-BCBC-mark-ups/** - BC Building Code Word documents with amendments (green text)
-- **proposed/** - Old XSLT transformations and schemas (use json-generation-pipeline/transformation-xslt instead)
-- **xmlToJson/** - Old Saxon library location (use json-generation-pipeline/tools instead)
-- **bc-graphics/** - BC-specific graphics (EPS format) referenced in amendments
-
 ## Amendment Creation
 
 See the comprehensive guides in `.kiro/steering/`:

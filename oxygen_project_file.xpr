@@ -6,6 +6,55 @@
             <serialized xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
+                        <String>scenario.associations</String>
+                        <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>json-generation-pipeline/oxygen-scenarios/scenario.scenarios</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>1. NBC to Canonical XML</String>
+                                        <String>2. Combine BC Amendments</String>
+                                        <String>3. Merge Amendments to NBC</String>
+                                        <String>5. Generate JSON (Minimal)</String>
+                                        <String>6. Validate Amendments</String>
+                                        <String>7. Combine BC Revisions</String>
+                                        <String>8. Apply Revisions to BC Building Code</String>
+                                        <String>9. Validate Revisions</String>
+                                        <String>4. Generate JSON (Full)</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioStorageLocations">
+                                    <list>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                        <Byte>2</Byte>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                        </scenarioAssociation-array>
+                    </entry>
+                    <entry>
                         <String>scenarios</String>
                         <scenario-array>
                             <scenario>

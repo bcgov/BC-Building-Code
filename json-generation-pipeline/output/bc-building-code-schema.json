@@ -301,6 +301,13 @@
         "text": {
           "type": "string"
         },
+        "equations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/equation"
+          },
+          "description": "Mathematical equations contained in this sentence"
+        },
         "intent_reference": {
           "type": "string"
         },
@@ -400,6 +407,41 @@
         },
         "text": {
           "type": "string"
+        }
+      }
+    },
+    "equation": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Equation identifier (xml:id or image reference as fallback)"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["display", "inline"],
+          "description": "Equation display type: 'display' for block-level equations, 'inline' for inline equations"
+        },
+        "latex": {
+          "type": "string",
+          "description": "LaTeX representation of the equation for mathematical rendering (e.g., 'C_{s}\\\\frac{60\\\\text{°}-a}{53\\\\text{°}}')"
+        },
+        "plainText": {
+          "type": "string",
+          "description": "Plain text representation of the equation for accessibility (e.g., 'C_s(60°-a)/(53°)')"
+        },
+        "mathml": {
+          "type": "string",
+          "description": "Full MathML XML serialization for precise mathematical semantics"
+        },
+        "image": {
+          "type": "string",
+          "description": "Image reference identifier (e.g., 'eg02764a')"
+        },
+        "imageSrc": {
+          "type": "string",
+          "description": "Path to equation image file for fallback rendering (e.g., 'graphics/eg02764a.eps')"
         }
       }
     },
