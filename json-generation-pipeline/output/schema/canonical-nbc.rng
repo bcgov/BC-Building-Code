@@ -1,0 +1,2743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+
+  <!-- ================================================================== -->
+  <!-- CANONICAL NBC SCHEMA - Normalized structure for overlay management -->
+  <!-- ================================================================== -->
+
+  <!-- Root element with stable versioning -->
+  <start>
+    <element name="nbc">
+      <attribute name="version">
+        <data type="string">
+          <param name="pattern">20[0-9]{2}</param>
+        </data>
+      </attribute>
+      <attribute name="edition">
+        <data type="string">
+          <param name="pattern">[0-9]+</param>
+        </data>
+      </attribute>
+      <attribute name="xml:id">
+        <data type="ID"/>
+      </attribute>
+      <attribute name="canonical-version">
+        <value>1.0</value>
+      </attribute>
+
+      <!-- Metadata and content structure -->
+      <element name="metadata">
+        <optional>
+          <ref name="catalog-info"/>
+        </optional>
+        <oneOrMore>
+          <ref name="publication-info"/>
+        </oneOrMore>
+      </element>
+
+      <element name="front-matter">
+        <attribute name="xml:id">
+          <data type="ID"/>
+        </attribute>
+        <ref name="front-matter-content"/>
+      </element>
+
+      <oneOrMore>
+        <element name="division">
+          <ref name="division-content"/>
+        </element>
+      </oneOrMore>
+
+      <optional>
+        <element name="back-matter">
+          <attribute name="xml:id"><data type="ID"/></attribute>
+          <ref name="back-matter-content"/>
+        </element>
+      </optional>
+    </element>
+  </start>
+
+  <!-- ================================================================== -->
+  <!-- HIERARCHICAL ID PATTERN DEFINITIONS                               -->
+  <!-- ================================================================== -->
+
+  <!-- Division IDs: nbc.div{A|B|BV2|C} -->
+  <define name="division-id">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)</param>
+    </data>
+  </define>
+
+  <!-- Part IDs: nbc.div{A|B|BV2|C}.part{N} -->
+  <define name="part-id">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+</param>
+    </data>
+  </define>
+
+  <!-- Section IDs: nbc.div{A|B|BV2|C}.part{N}.sect{N} -->
+  <define name="section-id">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+</param>
+    </data>
+  </define>
+
+  <!-- Subsection IDs: nbc.div{A|B|BV2|C}.part{N}.sect{N}.subsect{N} -->
+  <define name="subsection-id">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+</param>
+    </data>
+  </define>
+
+  <!-- Article IDs: nbc.div{A|B|BV2|C}.part{N}.sect{N}.subsect{N}.art{N} -->
+  <define name="article-id">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+</param>
+    </data>
+  </define>
+
+  <!-- Article IDs within revision history (allows duplicates) -->
+  <define name="article-id-revision">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+</param>
+    </data>
+  </define>
+
+  <!-- Sentence IDs: nbc.div{A|B|BV2|C}.part{N}.sect{N}.subsect{N}.art{N}.sent{N} -->
+  <define name="sentence-id">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+</param>
+    </data>
+  </define>
+
+  <!-- Sentence IDs within revision history (allows duplicates) -->
+  <define name="sentence-id-revision">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+</param>
+    </data>
+  </define>
+
+  <!-- Clause IDs: sentence.clause{N} -->
+  <define name="clause-id">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+</param>
+    </data>
+  </define>
+
+  <!-- Clause IDs within revision history (allows duplicates) -->
+  <define name="clause-id-revision">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+</param>
+    </data>
+  </define>
+
+  <!-- Subclause IDs: clause.subclause{N} -->
+  <define name="subclause-id">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+\.subclause[0-9]+</param>
+    </data>
+  </define>
+
+  <!-- Subclause IDs within revision history (allows duplicates) -->
+  <define name="subclause-id-revision">
+    <data type="string">
+      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+\.subclause[0-9]+</param>
+    </data>
+  </define>
+
+  <!-- ================================================================== -->
+  <!-- STRUCTURAL CONTENT DEFINITIONS                                    -->
+  <!-- ================================================================== -->
+
+  <define name="catalog-info">
+    <element name="catalog-info">
+      <element name="nrc-number"><text/></element>
+      <element name="isbn"><text/></element>
+      <element name="isbn-pdf"><text/></element>
+      <element name="library-number"><text/></element>
+      <element name="library-number-pdf"><text/></element>
+    </element>
+  </define>
+
+  <define name="publication-info">
+    <element name="publication-info">
+      <optional>
+        <attribute name="volume">
+          <choice>
+            <value>1</value>
+            <value>2</value>
+          </choice>
+        </attribute>
+      </optional>
+      <element name="title"><text/></element>
+      <element name="subtitle"><text/></element>
+      <element name="authority"><text/></element>
+      <optional>
+        <element name="publication-date"><text/></element>
+      </optional>
+      <optional>
+        <element name="print-date"><text/></element>
+      </optional>
+    </element>
+  </define>
+
+  <define name="division-content">
+    <attribute name="xml:id">
+      <ref name="division-id"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <attribute name="letter">
+      <choice>
+        <value>A</value>
+        <value>B</value>
+        <value>C</value>
+      </choice>
+    </attribute>
+    <optional>
+      <attribute name="volume">
+        <choice>
+          <value>1</value>
+          <value>2</value>
+        </choice>
+      </attribute>
+    </optional>
+    <element name="title"><ref name="rich-text"/></element>
+    <element name="number"><text/></element>
+    <oneOrMore>
+      <element name="part">
+        <ref name="part-content"/>
+      </element>
+    </oneOrMore>
+    <zeroOrMore>
+      <element name="appendix">
+        <ref name="appendix-content"/>
+      </element>
+    </zeroOrMore>
+  </define>
+
+  <define name="part-content">
+    <attribute name="xml:id">
+      <ref name="part-id"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <attribute name="number">
+      <data type="positiveInteger"/>
+    </attribute>
+    <element name="title">
+      <optional>
+        <attribute name="revised">
+          <value>yes</value>
+        </attribute>
+      </optional>
+      <choice>
+        <ref name="rich-text"/>
+        <ref name="title-revision-history"/>
+      </choice>
+    </element>
+    <zeroOrMore>
+      <element name="see-also">
+        <attribute name="xml:id"><text/></attribute>
+        <optional>
+          <attribute name="revised">
+            <value>yes</value>
+          </attribute>
+        </optional>
+        <ref name="rich-text"/>
+      </element>
+    </zeroOrMore>
+    <optional>
+      <element name="toc"><empty/></element>
+    </optional>
+    <oneOrMore>
+      <element name="section">
+        <ref name="section-content"/>
+      </element>
+    </oneOrMore>
+    <!-- Allow spectables (special tables like Fire/Sound Resistance, Span Tables) -->
+    <zeroOrMore>
+      <element name="spectables">
+        <ref name="spectables-content"/>
+      </element>
+    </zeroOrMore>
+    <!-- Allow part-appendix directly under part (for BC Part 10 structure) -->
+    <optional>
+      <element name="part-appendix">
+        <ref name="part-appendix-content"/>
+      </element>
+    </optional>
+    <zeroOrMore>
+      <element name="appendix">
+        <ref name="appendix-content"/>
+      </element>
+    </zeroOrMore>
+  </define>
+
+  <define name="section-content">
+    <attribute name="xml:id">
+      <ref name="section-id"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <attribute name="number">
+      <data type="positiveInteger"/>
+    </attribute>
+    <element name="title">
+      <optional>
+        <attribute name="revised">
+          <value>yes</value>
+        </attribute>
+      </optional>
+      <choice>
+        <ref name="rich-text"/>
+        <ref name="title-revision-history"/>
+      </choice>
+    </element>
+    <oneOrMore>
+      <element name="subsection">
+        <ref name="subsection-content"/>
+      </element>
+    </oneOrMore>
+    <optional>
+      <element name="part-appendix">
+        <ref name="part-appendix-content"/>
+      </element>
+    </optional>
+  </define>
+
+  <!-- Spectables content (special tables like Fire/Sound Resistance, Span Tables) -->
+  <define name="spectables-content">
+    <attribute name="xml:id">
+      <data type="ID"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="table-prefix"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="toc-entry">
+        <choice>
+          <value>yes</value>
+          <value>no</value>
+        </choice>
+      </attribute>
+    </optional>
+    <element name="title"><ref name="rich-text"/></element>
+    <oneOrMore>
+      <element name="table">
+        <ref name="table-content"/>
+      </element>
+    </oneOrMore>
+  </define>
+
+  <define name="subsection-content">
+    <attribute name="xml:id">
+      <ref name="subsection-id"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <attribute name="number">
+      <data type="positiveInteger"/>
+    </attribute>
+    <choice>
+      <!-- Standard subsection content -->
+      <group>
+        <element name="title">
+          <optional>
+            <attribute name="revised">
+              <value>yes</value>
+            </attribute>
+          </optional>
+          <choice>
+            <ref name="rich-text"/>
+            <ref name="title-revision-history"/>
+          </choice>
+        </element>
+        <zeroOrMore>
+          <element name="see-also">
+            <attribute name="xml:id"><text/></attribute>
+            <optional>
+              <attribute name="revised">
+                <value>yes</value>
+              </attribute>
+            </optional>
+            <ref name="rich-text"/>
+          </element>
+        </zeroOrMore>
+        <oneOrMore>
+          <element name="article">
+            <ref name="article-content"/>
+          </element>
+        </oneOrMore>
+      </group>
+      <!-- Subsection with revision history (title outside) -->
+      <group>
+        <element name="title">
+          <optional>
+            <attribute name="revised">
+              <value>yes</value>
+            </attribute>
+          </optional>
+          <choice>
+            <ref name="rich-text"/>
+            <ref name="title-revision-history"/>
+          </choice>
+        </element>
+        <ref name="revision-history"/>
+      </group>
+      <!-- Subsection with revision history (title inside revision content) -->
+      <ref name="revision-history"/>
+    </choice>
+  </define>
+
+  <define name="article-content">
+    <attribute name="xml:id">
+      <ref name="article-id"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <attribute name="number">
+      <data type="positiveInteger"/>
+    </attribute>
+    <choice>
+      <!-- Standard article content -->
+      <group>
+        <element name="title">
+          <optional>
+            <attribute name="revised">
+              <value>yes</value>
+            </attribute>
+          </optional>
+          <choice>
+            <ref name="rich-text"/>
+            <ref name="title-revision-history"/>
+          </choice>
+        </element>
+        <zeroOrMore>
+          <element name="see-also">
+            <attribute name="xml:id"><text/></attribute>
+            <optional>
+              <attribute name="revised">
+                <value>yes</value>
+              </attribute>
+            </optional>
+            <ref name="rich-text"/>
+          </element>
+        </zeroOrMore>
+        <oneOrMore>
+          <choice>
+            <element name="sentence">
+              <ref name="sentence-content"/>
+            </element>
+            <element name="table">
+              <ref name="table-content"/>
+            </element>
+            <element name="figure">
+              <ref name="figure-content"/>
+            </element>
+          </choice>
+        </oneOrMore>
+      </group>
+      <!-- Article with revision history (title outside) -->
+      <group>
+        <element name="title">
+          <optional>
+            <attribute name="revised">
+              <value>yes</value>
+            </attribute>
+          </optional>
+          <choice>
+            <ref name="rich-text"/>
+            <ref name="title-revision-history"/>
+          </choice>
+        </element>
+        <ref name="article-revision-history"/>
+      </group>
+      <!-- Article with revision history (title inside revision content) -->
+      <ref name="article-revision-history"/>
+    </choice>
+  </define>
+
+  <define name="sentence-content">
+    <attribute name="xml:id">
+      <ref name="sentence-id"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <attribute name="number">
+      <data type="positiveInteger"/>
+    </attribute>
+    <choice>
+      <!-- Standard sentence content -->
+      <group>
+        <optional>
+          <element name="intent-ref">
+            <attribute name="target"><text/></attribute>
+            <optional>
+              <attribute name="vendor-target"><text/></attribute>
+            </optional>
+          </element>
+        </optional>
+        <element name="text"><ref name="rich-text"/></element>
+        <zeroOrMore>
+          <choice>
+            <element name="clause">
+              <ref name="clause-content"/>
+            </element>
+            <element name="see-also">
+              <attribute name="xml:id"><text/></attribute>
+              <optional>
+                <attribute name="revised">
+                  <value>yes</value>
+                </attribute>
+              </optional>
+              <ref name="rich-text"/>
+            </element>
+          </choice>
+        </zeroOrMore>
+        <optional>
+          <element name="objectives">
+            <optional>
+              <attribute name="xml:id"><data type="ID"/></attribute>
+            </optional>
+            <ref name="objective-list"/>
+          </element>
+        </optional>
+        <optional>
+          <element name="functional-statements">
+            <optional>
+              <attribute name="xml:id"><data type="ID"/></attribute>
+            </optional>
+            <ref name="functional-statement-list"/>
+          </element>
+        </optional>
+      </group>
+      <!-- Sentence with revision history -->
+      <element name="revision-history">
+        <element name="original">
+          <attribute name="effective-date">
+            <data type="date"/>
+          </attribute>
+          <optional>
+            <element name="intent-ref">
+              <attribute name="target"><text/></attribute>
+              <optional>
+                <attribute name="vendor-target"><text/></attribute>
+              </optional>
+            </element>
+          </optional>
+          <optional>
+            <element name="text"><ref name="rich-text"/></element>
+            <zeroOrMore>
+              <choice>
+                <element name="clause">
+                  <ref name="clause-content-revision"/>
+                </element>
+                <element name="see-also">
+                  <attribute name="xml:id"><text/></attribute>
+                  <optional>
+                    <attribute name="revised">
+                      <value>yes</value>
+                    </attribute>
+                  </optional>
+                  <ref name="rich-text"/>
+                </element>
+              </choice>
+            </zeroOrMore>
+          </optional>
+        </element>
+        <oneOrMore>
+          <element name="revision">
+            <attribute name="seq">
+              <data type="positiveInteger"/>
+            </attribute>
+            <attribute name="type">
+              <choice>
+                <value>errata</value>
+                <value>policy</value>
+                <value>accessibility</value>
+                <value>correction</value>
+                <value>amendment</value>
+              </choice>
+            </attribute>
+            <attribute name="effective-date">
+              <data type="date"/>
+            </attribute>
+            <attribute name="id"><text/></attribute>
+            <attribute name="status">
+              <choice>
+                <value>current</value>
+                <value>superseded</value>
+              </choice>
+            </attribute>
+            <element name="content">
+              <optional>
+                <element name="intent-ref">
+                  <attribute name="target"><text/></attribute>
+                  <optional>
+                    <attribute name="vendor-target"><text/></attribute>
+                  </optional>
+                </element>
+              </optional>
+              <element name="text"><ref name="rich-text"/></element>
+              <zeroOrMore>
+                <choice>
+                  <element name="clause">
+                    <ref name="clause-content-revision"/>
+                  </element>
+                  <element name="see-also">
+                    <attribute name="xml:id"><text/></attribute>
+                    <optional>
+                      <attribute name="revised">
+                        <value>yes</value>
+                      </attribute>
+                    </optional>
+                    <ref name="rich-text"/>
+                  </element>
+                </choice>
+              </zeroOrMore>
+            </element>
+            <element name="change-summary"><text/></element>
+            <element name="note"><text/></element>
+          </element>
+        </oneOrMore>
+      </element>
+    </choice>
+  </define>
+
+  <define name="clause-content">
+    <attribute name="xml:id">
+      <ref name="clause-id"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <attribute name="letter">
+      <data type="string">
+        <param name="pattern">[a-z]</param>
+      </data>
+    </attribute>
+    <choice>
+      <!-- Normal clause content -->
+      <group>
+        <element name="text"><ref name="rich-text"/></element>
+        <zeroOrMore>
+          <element name="see-also">
+            <attribute name="xml:id"><text/></attribute>
+            <optional>
+              <attribute name="revised">
+                <value>yes</value>
+              </attribute>
+            </optional>
+            <ref name="rich-text"/>
+          </element>
+        </zeroOrMore>
+        <zeroOrMore>
+          <element name="subclause">
+            <ref name="subclause-content"/>
+          </element>
+        </zeroOrMore>
+      </group>
+      <!-- Clause with revision history -->
+      <element name="revision-history">
+        <element name="original">
+          <attribute name="effective-date">
+            <data type="date"/>
+          </attribute>
+          <optional>
+            <element name="text"><ref name="rich-text"/></element>
+            <zeroOrMore>
+              <choice>
+                <element name="see-also">
+                  <attribute name="xml:id"><text/></attribute>
+                  <optional>
+                    <attribute name="revised">
+                      <value>yes</value>
+                    </attribute>
+                  </optional>
+                  <ref name="rich-text"/>
+                </element>
+                <element name="subclause">
+                  <ref name="subclause-content-revision"/>
+                </element>
+              </choice>
+            </zeroOrMore>
+          </optional>
+        </element>
+        <oneOrMore>
+          <element name="revision">
+            <attribute name="seq">
+              <data type="positiveInteger"/>
+            </attribute>
+            <attribute name="type">
+              <choice>
+                <value>errata</value>
+                <value>policy</value>
+                <value>accessibility</value>
+                <value>correction</value>
+                <value>amendment</value>
+              </choice>
+            </attribute>
+            <attribute name="effective-date">
+              <data type="date"/>
+            </attribute>
+            <attribute name="id"><text/></attribute>
+            <attribute name="status">
+              <choice>
+                <value>current</value>
+                <value>superseded</value>
+              </choice>
+            </attribute>
+            <element name="content">
+              <element name="text"><ref name="rich-text"/></element>
+              <zeroOrMore>
+                <choice>
+                  <element name="see-also">
+                    <attribute name="xml:id"><text/></attribute>
+                    <optional>
+                      <attribute name="revised">
+                        <value>yes</value>
+                      </attribute>
+                    </optional>
+                    <ref name="rich-text"/>
+                  </element>
+                  <element name="subclause">
+                    <ref name="subclause-content-revision"/>
+                  </element>
+                </choice>
+              </zeroOrMore>
+            </element>
+            <optional>
+              <element name="change-summary"><text/></element>
+            </optional>
+            <optional>
+              <element name="note"><text/></element>
+            </optional>
+          </element>
+        </oneOrMore>
+      </element>
+    </choice>
+  </define>
+
+  <define name="subclause-content">
+    <attribute name="xml:id">
+      <ref name="subclause-id"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <attribute name="number">
+      <data type="positiveInteger"/>
+    </attribute>
+    <choice>
+      <!-- Normal subclause content -->
+      <element name="text"><ref name="rich-text"/></element>
+      <!-- Subclause with revision history -->
+      <element name="revision-history">
+        <element name="original">
+          <attribute name="effective-date">
+            <data type="date"/>
+          </attribute>
+          <optional>
+            <element name="text"><ref name="rich-text"/></element>
+          </optional>
+        </element>
+        <oneOrMore>
+          <element name="revision">
+            <attribute name="seq">
+              <data type="positiveInteger"/>
+            </attribute>
+            <attribute name="type">
+              <choice>
+                <value>errata</value>
+                <value>policy</value>
+                <value>accessibility</value>
+                <value>correction</value>
+                <value>amendment</value>
+              </choice>
+            </attribute>
+            <attribute name="effective-date">
+              <data type="date"/>
+            </attribute>
+            <attribute name="id"><text/></attribute>
+            <attribute name="status">
+              <choice>
+                <value>current</value>
+                <value>superseded</value>
+              </choice>
+            </attribute>
+            <element name="content">
+              <element name="text"><ref name="rich-text"/></element>
+            </element>
+            <optional>
+              <element name="change-summary"><text/></element>
+            </optional>
+            <optional>
+              <element name="note"><text/></element>
+            </optional>
+          </element>
+        </oneOrMore>
+      </element>
+    </choice>
+  </define>
+
+  <!-- Revision-safe clause content (allows duplicate IDs within revision history) -->
+  <define name="clause-content-revision">
+    <attribute name="xml:id">
+      <ref name="clause-id-revision"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <attribute name="letter">
+      <data type="string">
+        <param name="pattern">[a-z]</param>
+      </data>
+    </attribute>
+    <element name="text"><ref name="rich-text"/></element>
+    <zeroOrMore>
+      <element name="subclause">
+        <ref name="subclause-content-revision"/>
+      </element>
+    </zeroOrMore>
+  </define>
+
+  <!-- Revision-safe subclause content (allows duplicate IDs within revision history) -->
+  <define name="subclause-content-revision">
+    <attribute name="xml:id">
+      <ref name="subclause-id-revision"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <attribute name="number">
+      <data type="positiveInteger"/>
+    </attribute>
+    <element name="text"><ref name="rich-text"/></element>
+  </define>
+
+  <!-- ================================================================== -->
+  <!-- CONTENT MODEL DEFINITIONS                                         -->
+  <!-- ================================================================== -->
+
+  <define name="rich-text">
+    <mixed>
+      <zeroOrMore>
+        <choice>
+          <!-- Formatting elements -->
+          <element name="emphasis">
+            <attribute name="style">
+              <choice>
+                <value>bold</value>
+                <value>italic</value>
+                <value>bolditalic</value>
+                <value>underscore</value>
+              </choice>
+            </attribute>
+            <ref name="rich-text"/>
+          </element>
+
+          <element name="super">
+            <mixed>
+              <zeroOrMore>
+                <element name="sub"><text/></element>
+              </zeroOrMore>
+            </mixed>
+          </element>
+          <element name="sub">
+            <mixed>
+              <zeroOrMore>
+                <element name="super"><text/></element>
+              </zeroOrMore>
+            </mixed>
+          </element>
+
+          <!-- Cross-references -->
+          <element name="ref">
+            <attribute name="type">
+              <choice>
+                <value>internal</value>
+                <value>external</value>
+                <value>standard</value>
+                <value>term</value>
+                <value>functional-statement</value>
+                <value>sub-objective</value>
+                <value>objective</value>
+                <value>table-note</value>
+                <value>bc-code</value>
+              </choice>
+            </attribute>
+            <attribute name="target"><text/></attribute>
+            <optional>
+              <attribute name="display-type">
+                <choice>
+                  <value>long</value>
+                  <value>medium</value>
+                  <value>short</value>
+                  <value>number</value>
+                  <value>shortNum</value>
+                  <value>shortSbcl</value>
+                  <value>title</value>
+                </choice>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="pretext"><text/></attribute>
+            </optional>
+            <optional>
+              <attribute name="vendor-target"><text/></attribute>
+            </optional>
+            <optional>
+              <attribute name="standardId"><text/></attribute>
+            </optional>
+            <text/>
+          </element>
+
+          <!-- Measurements -->
+          <element name="measurement">
+            <attribute name="units">
+              <choice>
+                <value>metric</value>
+                <value>imperial</value>
+              </choice>
+            </attribute>
+            <ref name="rich-text"/>
+          </element>
+
+          <!-- Mathematical equations -->
+          <element name="equation">
+            <attribute name="type">
+              <choice>
+                <value>inline</value>
+                <value>display</value>
+              </choice>
+            </attribute>
+            <optional>
+              <attribute name="xml:id"><data type="ID"/></attribute>
+            </optional>
+            <!-- Allow empty equations (placeholder references) or content -->
+            <optional>
+              <choice>
+                <element name="mathml">
+                  <!-- MathML content -->
+                  <ref name="mathml-content"/>
+                </element>
+                <element name="latex"><text/></element>
+                <element name="text"><ref name="rich-text"/></element>
+              </choice>
+            </optional>
+          </element>
+
+          <!-- Lists -->
+          <element name="list">
+            <ref name="list-content"/>
+          </element>
+
+          <!-- Change tracking -->
+          <element name="change">
+            <attribute name="type">
+              <choice>
+                <value>insert</value>
+                <value>delete</value>
+                <value>modify</value>
+              </choice>
+            </attribute>
+            <optional>
+              <attribute name="pcf-number"><text/></attribute>
+            </optional>
+            <optional>
+              <attribute name="pr-year"><data type="gYear"/></attribute>
+            </optional>
+            <ref name="rich-text"/>
+          </element>
+
+          <!-- Revision history for date-based versioning (snapshot approach) -->
+          <element name="revision-history">
+            <!-- Original content (baseline before any amendments) -->
+            <element name="original">
+              <attribute name="effective-date">
+                <data type="date"/>
+              </attribute>
+              <ref name="rich-text"/>
+            </element>
+            <!-- Revision snapshots with complete content at each point -->
+            <oneOrMore>
+              <element name="revision">
+                <attribute name="seq">
+                  <data type="positiveInteger"/>
+                </attribute>
+                <attribute name="type">
+                  <choice>
+                    <value>errata</value>
+                    <value>policy</value>
+                    <value>accessibility</value>
+                    <value>correction</value>
+                    <value>amendment</value>
+                  </choice>
+                </attribute>
+                <attribute name="effective-date">
+                  <data type="date"/>
+                </attribute>
+                <attribute name="id">
+                  <text/>
+                </attribute>
+                <attribute name="status">
+                  <choice>
+                    <value>current</value>
+                    <value>superseded</value>
+                  </choice>
+                </attribute>
+                <!-- Complete content snapshot as of this revision -->
+                <element name="content">
+                  <ref name="rich-text"/>
+                </element>
+                <!-- Summary of what changed -->
+                <optional>
+                  <element name="change-summary">
+                    <text/>
+                  </element>
+                </optional>
+                <optional>
+                  <element name="note">
+                    <text/>
+                  </element>
+                </optional>
+              </element>
+            </oneOrMore>
+          </element>
+        </choice>
+      </zeroOrMore>
+    </mixed>
+  </define>
+
+  <!-- ================================================================== -->
+  <!-- SPECIALIZED CONTENT DEFINITIONS                                   -->
+  <!-- ================================================================== -->
+
+  <define name="table-content">
+    <attribute name="xml:id">
+      <data type="ID"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <choice>
+      <!-- Traditional table structure -->
+      <group>
+        <element name="title">
+          <ref name="rich-text"/>
+          <zeroOrMore>
+            <element name="note">
+              <attribute name="xml:id"><data type="ID"/></attribute>
+              <optional><attribute name="vendor-id"><text/></attribute></optional>
+              <ref name="rich-text"/>
+            </element>
+          </zeroOrMore>
+        </element>
+        <!-- Allow ref elements with mixed text after title and before tgroup -->
+        <optional>
+          <mixed>
+            <zeroOrMore>
+              <element name="ref">
+                <attribute name="type">
+                  <choice>
+                    <value>internal</value>
+                    <value>external</value>
+                    <value>standard</value>
+                    <value>term</value>
+                    <value>functional-statement</value>
+                    <value>sub-objective</value>
+                    <value>objective</value>
+                      <value>bc-code</value>
+                    </choice>
+                </attribute>
+                <attribute name="target"><text/></attribute>
+                <optional>
+                  <attribute name="display-type">
+                    <choice>
+                      <value>long</value>
+                      <value>medium</value>
+                      <value>short</value>
+                      <value>number</value>
+                      <value>shortNum</value>
+                      <value>shortSbcl</value>
+                      <value>title</value>
+                    </choice>
+                  </attribute>
+                </optional>
+                <optional>
+                  <attribute name="pretext"><text/></attribute>
+                </optional>
+                <optional>
+                  <attribute name="vendor-target"><text/></attribute>
+                </optional>
+                <optional>
+                  <attribute name="standardId"><text/></attribute>
+                </optional>
+                <text/>
+              </element>
+            </zeroOrMore>
+          </mixed>
+        </optional>
+        <element name="tgroup">
+          <attribute name="cols"><data type="positiveInteger"/></attribute>
+          <zeroOrMore>
+            <element name="colspec">
+              <attribute name="colname"><text/></attribute>
+              <attribute name="colwidth"><text/></attribute>
+            </element>
+          </zeroOrMore>
+          <optional>
+            <element name="thead">
+              <oneOrMore>
+                <element name="row">
+                  <ref name="table-row-content"/>
+                </element>
+              </oneOrMore>
+            </element>
+          </optional>
+          <element name="tbody">
+            <oneOrMore>
+              <element name="row">
+                <ref name="table-row-content"/>
+              </element>
+            </oneOrMore>
+          </element>
+         </element>
+         <!-- Table notes (footnotes) -->
+         <optional>
+           <element name="table-notes">
+             <oneOrMore>
+               <element name="note">
+                 <attribute name="xml:id"><data type="ID"/></attribute>
+                 <optional><attribute name="vendor-id"><text/></attribute></optional>
+                 <ref name="rich-text"/>
+               </element>
+             </oneOrMore>
+           </element>
+         </optional>
+      </group>
+
+      <!-- Revision history structure for tables -->
+      <element name="revision-history">
+        <!-- Original content (baseline before any amendments) -->
+        <element name="original">
+          <attribute name="effective-date">
+            <data type="date"/>
+          </attribute>
+          <element name="title">
+            <ref name="rich-text"/>
+            <zeroOrMore>
+              <element name="note">
+                <attribute name="xml:id"><data type="ID"/></attribute>
+                <optional><attribute name="vendor-id"><text/></attribute></optional>
+                <ref name="rich-text"/>
+              </element>
+            </zeroOrMore>
+          </element>
+          <!-- Allow ref elements with mixed text after title and before tgroup -->
+          <optional>
+            <mixed>
+              <zeroOrMore>
+                <element name="ref">
+                  <attribute name="type">
+                    <choice>
+                      <value>internal</value>
+                      <value>external</value>
+                      <value>standard</value>
+                      <value>term</value>
+                      <value>functional-statement</value>
+                      <value>sub-objective</value>
+                      <value>objective</value>
+                      <value>bc-code</value>
+                    </choice>
+                  </attribute>
+                  <attribute name="target"><text/></attribute>
+                  <optional>
+                    <attribute name="display-type">
+                      <choice>
+                        <value>long</value>
+                        <value>medium</value>
+                        <value>short</value>
+                        <value>number</value>
+                        <value>shortNum</value>
+                        <value>shortSbcl</value>
+                        <value>title</value>
+                      </choice>
+                    </attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="pretext"><text/></attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="vendor-target"><text/></attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="standardId"><text/></attribute>
+                  </optional>
+                  <text/>
+                </element>
+              </zeroOrMore>
+            </mixed>
+          </optional>
+          <element name="tgroup">
+            <attribute name="cols"><data type="positiveInteger"/></attribute>
+            <zeroOrMore>
+              <element name="colspec">
+                <attribute name="colname"><text/></attribute>
+                <attribute name="colwidth"><text/></attribute>
+              </element>
+            </zeroOrMore>
+            <optional>
+              <element name="thead">
+                <oneOrMore>
+                  <element name="row">
+                    <ref name="table-row-content"/>
+                  </element>
+                </oneOrMore>
+              </element>
+            </optional>
+            <element name="tbody">
+              <oneOrMore>
+                <element name="row">
+                  <ref name="table-row-content"/>
+                </element>
+              </oneOrMore>
+            </element>
+          </element>
+        </element>
+
+        <!-- Revision snapshots with complete content at each point -->
+        <oneOrMore>
+          <element name="revision">
+            <attribute name="seq">
+              <data type="positiveInteger"/>
+            </attribute>
+            <attribute name="type">
+              <choice>
+                <value>errata</value>
+                <value>policy</value>
+                <value>accessibility</value>
+                <value>correction</value>
+                <value>amendment</value>
+              </choice>
+            </attribute>
+            <attribute name="effective-date">
+              <data type="date"/>
+            </attribute>
+            <attribute name="id">
+              <text/>
+            </attribute>
+            <attribute name="status">
+              <choice>
+                <value>current</value>
+                <value>superseded</value>
+              </choice>
+            </attribute>
+            <!-- Complete content snapshot as of this revision -->
+            <element name="content">
+              <element name="title">
+                <ref name="rich-text"/>
+                <zeroOrMore>
+                  <element name="note">
+                    <attribute name="xml:id"><data type="ID"/></attribute>
+                    <optional><attribute name="vendor-id"><text/></attribute></optional>
+                    <ref name="rich-text"/>
+                  </element>
+                </zeroOrMore>
+              </element>
+              <!-- Allow ref elements with mixed text after title and before tgroup -->
+              <optional>
+                <mixed>
+                  <zeroOrMore>
+                    <element name="ref">
+                      <attribute name="type">
+                        <choice>
+                          <value>internal</value>
+                          <value>external</value>
+                          <value>standard</value>
+                          <value>term</value>
+                          <value>functional-statement</value>
+                          <value>sub-objective</value>
+                          <value>objective</value>
+                      <value>bc-code</value>
+                    </choice>
+                      </attribute>
+                      <attribute name="target"><text/></attribute>
+                      <optional>
+                        <attribute name="display-type">
+                          <choice>
+                            <value>long</value>
+                            <value>medium</value>
+                            <value>short</value>
+                            <value>number</value>
+                            <value>shortNum</value>
+                            <value>shortSbcl</value>
+                            <value>title</value>
+                          </choice>
+                        </attribute>
+                      </optional>
+                      <optional>
+                        <attribute name="pretext"><text/></attribute>
+                      </optional>
+                      <optional>
+                        <attribute name="vendor-target"><text/></attribute>
+                      </optional>
+                      <optional>
+                        <attribute name="standardId"><text/></attribute>
+                      </optional>
+                      <text/>
+                    </element>
+                  </zeroOrMore>
+                </mixed>
+              </optional>
+              <element name="tgroup">
+                <attribute name="cols"><data type="positiveInteger"/></attribute>
+                <zeroOrMore>
+                  <element name="colspec">
+                    <attribute name="colname"><text/></attribute>
+                    <attribute name="colwidth"><text/></attribute>
+                  </element>
+                </zeroOrMore>
+                <optional>
+                  <element name="thead">
+                    <oneOrMore>
+                      <element name="row">
+                        <ref name="table-row-content"/>
+                      </element>
+                    </oneOrMore>
+                  </element>
+                </optional>
+                <element name="tbody">
+                  <oneOrMore>
+                    <element name="row">
+                      <ref name="table-row-content"/>
+                    </element>
+                  </oneOrMore>
+                </element>
+              </element>
+            </element>
+            <!-- Summary of what changed -->
+            <optional>
+              <element name="change-summary">
+                <text/>
+              </element>
+            </optional>
+            <optional>
+              <element name="note">
+                <text/>
+              </element>
+            </optional>
+          </element>
+        </oneOrMore>
+      </element>
+    </choice>
+  </define>
+
+  <define name="table-row-content">
+    <optional>
+      <attribute name="xml:id"><data type="ID"/></attribute>
+    </optional>
+    <optional>
+      <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <choice>
+      <!-- Normal row content: one or more entry elements -->
+      <oneOrMore>
+        <element name="entry">
+        <optional>
+          <attribute name="revised">
+            <value>yes</value>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="align">
+            <choice>
+              <value>left</value>
+              <value>center</value>
+              <value>right</value>
+              <value>char</value>
+              <value>justify</value>
+            </choice>
+          </attribute>
+        </optional>
+        <optional>
+          <attribute name="rowspan"><data type="positiveInteger"/></attribute>
+        </optional>
+        <optional>
+          <attribute name="colspan"><data type="positiveInteger"/></attribute>
+        </optional>
+        <!-- CALS table spanning attributes -->
+        <optional>
+          <attribute name="namest"><text/></attribute>
+        </optional>
+        <optional>
+          <attribute name="nameend"><text/></attribute>
+        </optional>
+        <ref name="entry-content"/>
+      </element>
+    </oneOrMore>
+      <!-- Revision history for row-level amendments (new rows) -->
+      <element name="revision-history">
+        <ref name="row-revision-history-content"/>
+      </element>
+    </choice>
+  </define>
+
+  <!-- Revision history content for table rows -->
+  <define name="row-revision-history-content">
+    <element name="original">
+      <attribute name="effective-date">
+        <data type="date"/>
+      </attribute>
+      <optional>
+        <oneOrMore>
+          <element name="entry">
+            <optional>
+              <attribute name="align">
+                <choice>
+                  <value>left</value>
+                  <value>center</value>
+                  <value>right</value>
+                </choice>
+              </attribute>
+            </optional>
+            <ref name="entry-content"/>
+          </element>
+        </oneOrMore>
+      </optional>
+    </element>
+    <oneOrMore>
+      <element name="revision">
+        <attribute name="seq">
+          <data type="positiveInteger"/>
+        </attribute>
+        <attribute name="type">
+          <choice>
+            <value>amendment</value>
+            <value>errata</value>
+            <value>policy</value>
+            <value>accessibility</value>
+            <value>correction</value>
+          </choice>
+        </attribute>
+        <attribute name="effective-date">
+          <data type="date"/>
+        </attribute>
+        <attribute name="id"><text/></attribute>
+        <attribute name="status">
+          <choice>
+            <value>current</value>
+            <value>superseded</value>
+          </choice>
+        </attribute>
+        <element name="content">
+          <oneOrMore>
+            <element name="entry">
+              <optional>
+                <attribute name="align">
+                  <choice>
+                    <value>left</value>
+                    <value>center</value>
+                    <value>right</value>
+                  </choice>
+                </attribute>
+              </optional>
+              <ref name="entry-content"/>
+            </element>
+          </oneOrMore>
+        </element>
+        <element name="change-summary"><text/></element>
+        <element name="note"><text/></element>
+      </element>
+    </oneOrMore>
+  </define>
+
+  <!-- Entry content: mixed text with inline elements and notes -->
+  <define name="entry-content">
+    <mixed>
+      <zeroOrMore>
+        <choice>
+          <!-- Inline formatting from rich-text -->
+          <element name="emphasis">
+            <attribute name="style">
+              <choice>
+                <value>bold</value>
+                <value>italic</value>
+                <value>bolditalic</value>
+                <value>underscore</value>
+              </choice>
+            </attribute>
+            <ref name="rich-text"/>
+          </element>
+          <element name="super">
+            <mixed>
+              <zeroOrMore>
+                <element name="sub"><text/></element>
+              </zeroOrMore>
+            </mixed>
+          </element>
+          <element name="sub">
+            <mixed>
+              <zeroOrMore>
+                <element name="super"><text/></element>
+              </zeroOrMore>
+            </mixed>
+          </element>
+
+          <!-- Cross-references -->
+          <element name="ref">
+            <attribute name="type">
+              <choice>
+                <value>internal</value>
+                <value>external</value>
+                <value>standard</value>
+                <value>term</value>
+                <value>functional-statement</value>
+                <value>sub-objective</value>
+                <value>objective</value>
+                <value>table-note</value>
+                <value>bc-code</value>
+              </choice>
+            </attribute>
+            <attribute name="target"><text/></attribute>
+            <optional>
+              <attribute name="display-type">
+                <choice>
+                  <value>long</value>
+                  <value>medium</value>
+                  <value>short</value>
+                  <value>number</value>
+                  <value>shortNum</value>
+                  <value>shortSbcl</value>
+                  <value>title</value>
+                </choice>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="pretext"><text/></attribute>
+            </optional>
+            <optional>
+              <attribute name="vendor-target"><text/></attribute>
+            </optional>
+            <optional>
+              <attribute name="standardId"><text/></attribute>
+            </optional>
+            <text/>
+          </element>
+
+          <!-- Measurements -->
+          <element name="measurement">
+            <attribute name="units">
+              <choice>
+                <value>metric</value>
+                <value>imperial</value>
+              </choice>
+            </attribute>
+            <ref name="rich-text"/>
+          </element>
+
+          <!-- Mathematical equations -->
+          <element name="equation">
+            <attribute name="type">
+              <choice>
+                <value>inline</value>
+                <value>display</value>
+              </choice>
+            </attribute>
+            <optional>
+              <attribute name="xml:id"><data type="ID"/></attribute>
+            </optional>
+            <!-- Allow empty equations (placeholder references) or content -->
+            <optional>
+              <choice>
+                <element name="mathml">
+                  <!-- MathML content -->
+                  <ref name="mathml-content"/>
+                </element>
+                <element name="latex"><text/></element>
+                <element name="text"><ref name="rich-text"/></element>
+              </choice>
+            </optional>
+          </element>
+
+          <!-- Lists -->
+          <element name="list">
+            <ref name="list-content"/>
+          </element>
+
+          <!-- Figures -->
+          <element name="figure">
+            <ref name="figure-content"/>
+          </element>
+
+          <!-- Notes inside table entries (footnotes) -->
+          <element name="note">
+            <attribute name="xml:id"><data type="ID"/></attribute>
+            <optional><attribute name="vendor-id"><text/></attribute></optional>
+            <ref name="rich-text"/>
+          </element>
+
+          <!-- Paragraph wrapper sometimes used in entries -->
+          <element name="para">
+            <ref name="rich-text"/>
+          </element>
+
+          <!-- Standard elements in table entries -->
+          <element name="standard">
+            <attribute name="agency"><text/></attribute>
+            <attribute name="number"><text/></attribute>
+            <optional>
+              <attribute name="bc-adoption"><text/></attribute>
+            </optional>
+            <text/>
+          </element>
+
+          <!-- Revision history for date-based versioning -->
+          <element name="revision-history">
+            <element name="original">
+              <attribute name="effective-date">
+                <data type="date"/>
+              </attribute>
+              <ref name="rich-text"/>
+            </element>
+            <oneOrMore>
+              <element name="revision">
+                <attribute name="seq">
+                  <data type="positiveInteger"/>
+                </attribute>
+                <attribute name="type">
+                  <choice>
+                    <value>errata</value>
+                    <value>policy</value>
+                    <value>accessibility</value>
+                    <value>correction</value>
+                    <value>amendment</value>
+                  </choice>
+                </attribute>
+                <attribute name="effective-date">
+                  <data type="date"/>
+                </attribute>
+                <attribute name="id">
+                  <text/>
+                </attribute>
+                <attribute name="status">
+                  <choice>
+                    <value>current</value>
+                    <value>superseded</value>
+                  </choice>
+                </attribute>
+                <element name="content">
+                  <ref name="rich-text"/>
+                </element>
+                <optional>
+                  <element name="change-summary">
+                    <text/>
+                  </element>
+                </optional>
+                <optional>
+                  <element name="note">
+                    <text/>
+                  </element>
+                </optional>
+              </element>
+            </oneOrMore>
+          </element>
+        </choice>
+      </zeroOrMore>
+    </mixed>
+  </define>
+
+  <define name="figure-content">
+    <attribute name="xml:id">
+      <data type="ID"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <element name="title"><ref name="rich-text"/></element>
+    <element name="graphic">
+      <attribute name="src"><data type="anyURI"/></attribute>
+      <attribute name="alt"><text/></attribute>
+      <optional>
+        <attribute name="width"><text/></attribute>
+      </optional>
+      <optional>
+        <attribute name="height"><text/></attribute>
+      </optional>
+    </element>
+    <zeroOrMore>
+      <element name="note">
+        <attribute name="xml:id"><data type="ID"/></attribute>
+        <optional><attribute name="vendor-id"><text/></attribute></optional>
+        <ref name="rich-text"/>
+      </element>
+    </zeroOrMore>
+  </define>
+
+  <define name="list-content">
+    <attribute name="type">
+      <choice>
+        <value>bulleted</value>
+        <value>numbered</value>
+        <value>alphabetic</value>
+        <value>definition</value>
+        <value>variable</value>
+        <value>symbol</value>
+        <value>organization</value>
+      </choice>
+    </attribute>
+    <oneOrMore>
+      <element name="item">
+        <optional>
+          <attribute name="xml:id"><data type="ID"/></attribute>
+        </optional>
+        <optional>
+          <attribute name="revised">
+            <value>yes</value>
+          </attribute>
+        </optional>
+        <choice>
+          <!-- Regular list item -->
+          <group>
+            <choice>
+              <ref name="rich-text"/>
+
+              <!-- Definition list item -->
+              <group>
+                <element name="term">
+                  <ref name="rich-text"/>
+                </element>
+                <element name="definition">
+                  <choice>
+                    <ref name="rich-text"/>
+                    <ref name="definition-revision-history"/>
+                  </choice>
+                </element>
+              </group>
+
+              <!-- Variable list item -->
+              <group>
+                <element name="variable">
+                  <ref name="rich-text"/>
+                </element>
+                <element name="description">
+                  <ref name="rich-text"/>
+                </element>
+              </group>
+
+              <!-- Organization list item -->
+              <group>
+                <element name="organization">
+                  <text/>
+                </element>
+                <element name="address">
+                  <ref name="rich-text"/>
+                </element>
+              </group>
+            </choice>
+          </group>
+
+          <!-- List item with revision history -->
+          <element name="revision-history">
+            <element name="original">
+              <attribute name="effective-date">
+                <data type="date"/>
+              </attribute>
+              <optional>
+                <ref name="item-content-revision"/>
+              </optional>
+            </element>
+            <oneOrMore>
+              <element name="revision">
+                <attribute name="seq">
+                  <data type="positiveInteger"/>
+                </attribute>
+                <attribute name="type">
+                  <choice>
+                    <value>errata</value>
+                    <value>policy</value>
+                    <value>accessibility</value>
+                    <value>correction</value>
+                    <value>amendment</value>
+                  </choice>
+                </attribute>
+                <attribute name="effective-date">
+                  <data type="date"/>
+                </attribute>
+                <attribute name="id"><text/></attribute>
+                <attribute name="status">
+                  <choice>
+                    <value>current</value>
+                    <value>superseded</value>
+                  </choice>
+                </attribute>
+                <element name="content">
+                  <optional>
+                    <ref name="item-content-revision"/>
+                  </optional>
+                </element>
+                <optional>
+                  <element name="change-summary"><text/></element>
+                </optional>
+                <optional>
+                  <element name="note"><text/></element>
+                </optional>
+              </element>
+            </oneOrMore>
+          </element>
+        </choice>
+      </element>
+    </oneOrMore>
+  </define>
+
+  <!-- Revision history for definition list items -->
+  <define name="definition-revision-history">
+    <element name="revision-history">
+      <element name="original">
+        <attribute name="effective-date">
+          <data type="date"/>
+        </attribute>
+        <optional>
+          <ref name="rich-text"/>
+        </optional>
+      </element>
+      <oneOrMore>
+        <element name="revision">
+          <attribute name="seq">
+            <data type="positiveInteger"/>
+          </attribute>
+          <attribute name="type">
+            <choice>
+              <value>errata</value>
+              <value>policy</value>
+              <value>accessibility</value>
+              <value>correction</value>
+              <value>amendment</value>
+            </choice>
+          </attribute>
+          <attribute name="effective-date">
+            <data type="date"/>
+          </attribute>
+          <attribute name="id">
+            <text/>
+          </attribute>
+          <attribute name="status">
+            <choice>
+              <value>current</value>
+              <value>superseded</value>
+            </choice>
+          </attribute>
+          <element name="content">
+            <ref name="rich-text"/>
+          </element>
+          <optional>
+            <element name="change-summary">
+              <text/>
+            </element>
+          </optional>
+          <optional>
+            <element name="note">
+              <text/>
+            </element>
+          </optional>
+        </element>
+      </oneOrMore>
+    </element>
+  </define>
+
+  <define name="objective-list">
+    <oneOrMore>
+      <element name="objective">
+        <attribute name="xml:id"><data type="ID"/></attribute>
+        <attribute name="key">
+          <data type="string">
+            <param name="pattern">[A-Z0-9]+(\.[0-9]+)*</param>
+          </data>
+        </attribute>
+        <element name="title"><text/></element>
+        <element name="definition"><ref name="rich-text"/></element>
+        <zeroOrMore>
+          <element name="sub-objective">
+            <attribute name="xml:id"><data type="ID"/></attribute>
+            <attribute name="key">
+              <data type="string">
+                <param name="pattern">[A-Z0-9]+(\.[0-9]+)*</param>
+              </data>
+            </attribute>
+            <element name="title"><text/></element>
+            <element name="definition"><ref name="rich-text"/></element>
+            <!-- Allow sub-sub-objectives -->
+            <zeroOrMore>
+              <element name="sub-sub-objective">
+                <attribute name="xml:id"><data type="ID"/></attribute>
+                <attribute name="key">
+                  <data type="string">
+                    <param name="pattern">[A-Z0-9]+(\.[0-9]+)*</param>
+                  </data>
+                </attribute>
+                <element name="title"><text/></element>
+                <!-- Definition is optional for sub-sub-objectives -->
+                <optional>
+                  <element name="definition"><ref name="rich-text"/></element>
+                </optional>
+              </element>
+            </zeroOrMore>
+          </element>
+        </zeroOrMore>
+      </element>
+    </oneOrMore>
+  </define>
+
+  <define name="functional-statement-list">
+    <oneOrMore>
+      <element name="functional-statement">
+        <attribute name="xml:id"><data type="ID"/></attribute>
+        <attribute name="key">
+          <data type="string">
+            <param name="pattern">F[0-9]+[a-z]?</param>
+          </data>
+        </attribute>
+        <element name="definition"><ref name="rich-text"/></element>
+      </element>
+    </oneOrMore>
+  </define>
+
+  <!-- Placeholder for MathML content -->
+  <define name="mathml-content">
+    <element>
+      <anyName>
+        <except>
+          <nsName ns=""/>
+        </except>
+      </anyName>
+      <zeroOrMore>
+        <attribute>
+          <anyName/>
+        </attribute>
+      </zeroOrMore>
+      <mixed>
+        <zeroOrMore>
+          <ref name="mathml-content"/>
+        </zeroOrMore>
+      </mixed>
+    </element>
+  </define>
+
+  <!-- Front matter and back matter content -->
+  <define name="front-matter-content">
+    <zeroOrMore>
+      <choice>
+        <element name="preface">
+          <attribute name="xml:id"><data type="ID"/></attribute>
+          <ref name="document-content"/>
+        </element>
+        <element name="introduction">
+          <attribute name="xml:id"><data type="ID"/></attribute>
+          <ref name="document-content"/>
+        </element>
+        <element name="committees">
+          <attribute name="xml:id"><data type="ID"/></attribute>
+          <ref name="document-content"/>
+        </element>
+      </choice>
+    </zeroOrMore>
+  </define>
+
+  <define name="back-matter-content">
+    <zeroOrMore>
+      <choice>
+        <element name="appendix">
+          <ref name="appendix-content"/>
+        </element>
+        <element name="index">
+          <attribute name="xml:id"><data type="ID"/></attribute>
+          <ref name="document-content"/>
+        </element>
+        <element name="conversions">
+          <ref name="table-content"/>
+        </element>
+      </choice>
+    </zeroOrMore>
+  </define>
+
+  <define name="appendix-content">
+    <attribute name="xml:id"><data type="ID"/></attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="letter">
+        <data type="string">
+          <param name="pattern">[A-Z]</param>
+        </data>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="number"><text/></attribute>
+    </optional>
+    <element name="title"><ref name="rich-text"/></element>
+    <optional>
+      <element name="introduction">
+        <ref name="rich-text"/>
+      </element>
+    </optional>
+    <!-- Allow appendix sections (for Division B Appendix D structure) -->
+    <zeroOrMore>
+      <element name="appendix-section">
+        <ref name="appendix-section-content"/>
+      </element>
+    </zeroOrMore>
+    <!-- Allow traditional document content as fallback -->
+    <ref name="document-content"/>
+  </define>
+
+  <!-- ================================================================== -->
+  <!-- APPENDIX SECTION CONTENT (for Division B Appendix D structure)     -->
+  <!-- ================================================================== -->
+
+  <define name="appendix-section-content">
+    <attribute name="xml:id"><data type="ID"/></attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <element name="title"><ref name="rich-text"/></element>
+    <zeroOrMore>
+      <element name="paragraph">
+        <optional>
+          <attribute name="xml:id"><data type="ID"/></attribute>
+        </optional>
+        <ref name="rich-text"/>
+      </element>
+    </zeroOrMore>
+    <zeroOrMore>
+      <element name="appendix-subsection">
+        <ref name="appendix-subsection-content"/>
+      </element>
+    </zeroOrMore>
+  </define>
+
+  <define name="appendix-subsection-content">
+    <attribute name="xml:id"><data type="ID"/></attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <element name="title"><ref name="rich-text"/></element>
+    <zeroOrMore>
+      <element name="appendix-article">
+        <ref name="appendix-article-content"/>
+      </element>
+    </zeroOrMore>
+  </define>
+
+  <define name="appendix-article-content">
+    <attribute name="xml:id"><data type="ID"/></attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <element name="title"><ref name="rich-text"/></element>
+    <zeroOrMore>
+      <element name="see-also">
+        <attribute name="xml:id"><text/></attribute>
+        <ref name="rich-text"/>
+      </element>
+    </zeroOrMore>
+    <zeroOrMore>
+      <choice>
+        <element name="paragraph">
+          <optional>
+            <attribute name="xml:id"><data type="ID"/></attribute>
+          </optional>
+          <optional>
+            <attribute name="vendor-id"><text/></attribute>
+          </optional>
+          <ref name="rich-text"/>
+        </element>
+        <element name="table">
+          <ref name="table-content"/>
+        </element>
+        <element name="figure">
+          <ref name="figure-content"/>
+        </element>
+        <element name="list">
+          <ref name="list-content"/>
+        </element>
+      </choice>
+    </zeroOrMore>
+  </define>
+
+  <define name="part-appendix-content">
+    <attribute name="xml:id"><data type="ID"/></attribute>
+    <optional>
+      <element name="introduction">
+        <ref name="rich-text"/>
+      </element>
+    </optional>
+    <zeroOrMore>
+      <element name="application-note">
+        <attribute name="xml:id"><data type="ID"/></attribute>
+        <optional>
+          <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <optional>
+          <attribute name="refs"><text/></attribute>
+        </optional>
+        <optional>
+          <attribute name="revised">
+            <value>yes</value>
+          </attribute>
+        </optional>
+        <choice>
+          <!-- Traditional structure with explicit title -->
+          <group>
+            <element name="number"><text/></element>
+            <element name="title"><ref name="rich-text"/></element>
+            <!-- Allow paragraphs, note-divisions, tables, and figures in any order -->
+            <zeroOrMore>
+              <choice>
+                <element name="paragraph">
+                  <optional>
+                    <attribute name="xml:id"><data type="ID"/></attribute>
+                  </optional>
+                  <ref name="rich-text"/>
+                </element>
+                <element name="note-division">
+                  <attribute name="xml:id"><data type="ID"/></attribute>
+                  <optional>
+                    <attribute name="vendor-id"><text/></attribute>
+                  </optional>
+                  <element name="title"><ref name="rich-text"/></element>
+                  <!-- Allow paragraphs, tables, and figures in any order within note-division -->
+                  <zeroOrMore>
+                    <choice>
+                      <element name="paragraph">
+                        <optional>
+                          <attribute name="xml:id"><data type="ID"/></attribute>
+                        </optional>
+                        <ref name="rich-text"/>
+                      </element>
+                      <element name="table">
+                        <ref name="table-content"/>
+                      </element>
+                      <element name="figure">
+                        <ref name="figure-content"/>
+                      </element>
+                    </choice>
+                  </zeroOrMore>
+                </element>
+                <element name="table">
+                  <ref name="table-content"/>
+                </element>
+                <element name="figure">
+                  <ref name="figure-content"/>
+                </element>
+              </choice>
+            </zeroOrMore>
+          </group>
+
+          <!-- Revision history structure for application notes -->
+          <element name="revision-history">
+            <element name="original">
+              <attribute name="effective-date">
+                <data type="date"/>
+              </attribute>
+              <optional>
+                <ref name="application-note-revision-content"/>
+              </optional>
+            </element>
+            <oneOrMore>
+              <element name="revision">
+                <attribute name="seq">
+                  <data type="positiveInteger"/>
+                </attribute>
+                <attribute name="type">
+                  <choice>
+                    <value>errata</value>
+                    <value>policy</value>
+                    <value>accessibility</value>
+                    <value>correction</value>
+                    <value>amendment</value>
+                  </choice>
+                </attribute>
+                <attribute name="effective-date">
+                  <data type="date"/>
+                </attribute>
+                <attribute name="id">
+                  <text/>
+                </attribute>
+                <attribute name="status">
+                  <choice>
+                    <value>current</value>
+                    <value>superseded</value>
+                  </choice>
+                </attribute>
+                <element name="content">
+                  <ref name="application-note-revision-content"/>
+                </element>
+                <optional>
+                  <element name="change-summary">
+                    <text/>
+                  </element>
+                </optional>
+                <optional>
+                  <element name="note">
+                    <text/>
+                  </element>
+                </optional>
+              </element>
+            </oneOrMore>
+          </element>
+        </choice>
+      </element>
+    </zeroOrMore>
+  </define>
+
+  <!-- Application note revision content for revision history -->
+  <define name="application-note-revision-content">
+    <element name="number"><text/></element>
+    <element name="title"><ref name="rich-text"/></element>
+    <zeroOrMore>
+      <choice>
+        <element name="paragraph">
+          <optional>
+            <attribute name="xml:id"><data type="ID"/></attribute>
+          </optional>
+          <ref name="rich-text"/>
+        </element>
+        <element name="table">
+          <ref name="table-content"/>
+        </element>
+        <element name="figure">
+          <ref name="figure-content"/>
+        </element>
+      </choice>
+    </zeroOrMore>
+  </define>
+
+  <!-- Article revision history for complete article replacements -->
+  <define name="article-revision-history">
+    <element name="revision-history">
+      <!-- Original content (baseline before any amendments) -->
+      <element name="original">
+        <attribute name="effective-date">
+          <data type="date"/>
+        </attribute>
+        <!-- Allow empty original content for new insertions or require article content -->
+        <optional>
+          <ref name="article-revision-content"/>
+        </optional>
+      </element>
+      <!-- Revision snapshots with complete content at each point -->
+      <oneOrMore>
+        <element name="revision">
+          <attribute name="seq">
+            <data type="positiveInteger"/>
+          </attribute>
+          <attribute name="type">
+            <choice>
+              <value>errata</value>
+              <value>policy</value>
+              <value>accessibility</value>
+              <value>correction</value>
+              <value>amendment</value>
+            </choice>
+          </attribute>
+          <attribute name="effective-date">
+            <data type="date"/>
+          </attribute>
+          <attribute name="id">
+            <text/>
+          </attribute>
+          <attribute name="status">
+            <choice>
+              <value>current</value>
+              <value>superseded</value>
+            </choice>
+          </attribute>
+          <!-- Complete content snapshot as of this revision -->
+          <element name="content">
+            <ref name="article-revision-content"/>
+          </element>
+          <!-- Summary of what changed -->
+          <optional>
+            <element name="change-summary">
+              <text/>
+            </element>
+          </optional>
+          <optional>
+            <element name="note">
+              <text/>
+            </element>
+          </optional>
+        </element>
+      </oneOrMore>
+    </element>
+  </define>
+
+  <!-- Content that can appear in article revision history -->
+  <define name="article-revision-content">
+    <!-- Optional title for article-level replacements (title inside revision content) -->
+    <optional>
+      <element name="title"><ref name="rich-text"/></element>
+    </optional>
+    <oneOrMore>
+      <choice>
+        <element name="sentence">
+          <ref name="sentence-content-revision"/>
+        </element>
+        <element name="table">
+          <ref name="table-content"/>
+        </element>
+        <element name="figure">
+          <ref name="figure-content"/>
+        </element>
+        <!-- Allow standalone note elements in article revision content -->
+        <element name="note">
+          <attribute name="xml:id"><data type="ID"/></attribute>
+          <optional><attribute name="vendor-id"><text/></attribute></optional>
+          <ref name="rich-text"/>
+        </element>
+      </choice>
+    </oneOrMore>
+  </define>
+
+  <!-- Subsection revision history pattern -->
+  <define name="revision-history">
+    <element name="revision-history">
+      <!-- Original content (baseline before any amendments) -->
+      <element name="original">
+        <attribute name="effective-date">
+          <data type="date"/>
+        </attribute>
+        <!-- Allow empty original content for new insertions -->
+        <optional>
+          <ref name="subsection-revision-content"/>
+        </optional>
+      </element>
+      <!-- Revision snapshots with complete content at each point -->
+      <oneOrMore>
+        <element name="revision">
+          <attribute name="seq">
+            <data type="positiveInteger"/>
+          </attribute>
+          <attribute name="type">
+            <choice>
+              <value>errata</value>
+              <value>policy</value>
+              <value>accessibility</value>
+              <value>correction</value>
+              <value>amendment</value>
+            </choice>
+          </attribute>
+          <attribute name="effective-date">
+            <data type="date"/>
+          </attribute>
+          <attribute name="id">
+            <text/>
+          </attribute>
+          <attribute name="status">
+            <choice>
+              <value>current</value>
+              <value>superseded</value>
+            </choice>
+          </attribute>
+          <!-- Complete content snapshot as of this revision -->
+          <element name="content">
+            <ref name="subsection-revision-content"/>
+          </element>
+          <!-- Summary of what changed -->
+          <optional>
+            <element name="change-summary">
+              <text/>
+            </element>
+          </optional>
+          <optional>
+            <element name="note">
+              <text/>
+            </element>
+          </optional>
+        </element>
+      </oneOrMore>
+    </element>
+  </define>
+
+  <!-- Content that can appear in subsection revision history -->
+  <define name="subsection-revision-content">
+    <!-- Title for subsection -->
+    <element name="title"><ref name="rich-text"/></element>
+    <!-- Optional note at subsection level -->
+    <optional>
+      <element name="note">
+        <ref name="rich-text"/>
+      </element>
+    </optional>
+    <!-- Articles within the subsection (optional for title-only revisions) -->
+    <zeroOrMore>
+      <element name="article">
+        <ref name="article-content-in-revision"/>
+      </element>
+    </zeroOrMore>
+  </define>
+
+  <!-- Article content pattern for use within subsection revision history -->
+  <define name="article-content-in-revision">
+    <attribute name="xml:id">
+      <ref name="article-id-revision"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <attribute name="number">
+      <data type="positiveInteger"/>
+    </attribute>
+    <choice>
+      <!-- Standard article content -->
+      <group>
+        <element name="title"><ref name="rich-text"/></element>
+        <zeroOrMore>
+          <element name="see-also">
+            <attribute name="xml:id"><text/></attribute>
+            <optional>
+              <attribute name="revised">
+                <value>yes</value>
+              </attribute>
+            </optional>
+            <ref name="rich-text"/>
+          </element>
+        </zeroOrMore>
+        <oneOrMore>
+          <choice>
+            <element name="sentence">
+              <ref name="sentence-content-revision"/>
+            </element>
+            <element name="table">
+              <ref name="table-content"/>
+            </element>
+            <element name="figure">
+              <ref name="figure-content"/>
+            </element>
+            <!-- Allow standalone note elements in article content -->
+            <element name="note">
+              <ref name="rich-text"/>
+            </element>
+          </choice>
+        </oneOrMore>
+      </group>
+      <!-- Article with revision history -->
+      <ref name="article-revision-history"/>
+    </choice>
+  </define>
+
+  <!-- Revision-safe sentence content (allows duplicate IDs within revision history) -->
+  <define name="sentence-content-revision">
+    <attribute name="xml:id">
+      <ref name="sentence-id-revision"/>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <attribute name="number">
+      <data type="positiveInteger"/>
+    </attribute>
+    <choice>
+      <!-- Standard sentence content -->
+      <group>
+        <optional>
+          <element name="intent-ref">
+            <attribute name="target"><text/></attribute>
+            <optional>
+              <attribute name="vendor-target"><text/></attribute>
+            </optional>
+          </element>
+        </optional>
+        <element name="text"><ref name="rich-text"/></element>
+        <zeroOrMore>
+          <choice>
+            <element name="clause">
+              <ref name="clause-content-revision"/>
+            </element>
+            <element name="see-also">
+              <attribute name="xml:id"><text/></attribute>
+              <optional>
+                <attribute name="revised">
+                  <value>yes</value>
+                </attribute>
+              </optional>
+              <ref name="rich-text"/>
+            </element>
+          </choice>
+        </zeroOrMore>
+        <optional>
+          <element name="objectives">
+            <ref name="objective-list"/>
+          </element>
+        </optional>
+        <optional>
+          <element name="functional-statements">
+            <ref name="functional-statement-list"/>
+          </element>
+        </optional>
+      </group>
+      <!-- Sentence with revision history (nested revision history not allowed) -->
+      <element name="revision-history">
+        <element name="original">
+          <attribute name="effective-date">
+            <data type="date"/>
+          </attribute>
+          <optional>
+            <element name="intent-ref">
+              <attribute name="target"><text/></attribute>
+              <optional>
+                <attribute name="vendor-target"><text/></attribute>
+              </optional>
+            </element>
+          </optional>
+          <optional>
+            <element name="text"><ref name="rich-text"/></element>
+            <zeroOrMore>
+              <choice>
+                <element name="clause">
+                  <ref name="clause-content-revision"/>
+                </element>
+                <element name="see-also">
+                  <attribute name="xml:id"><text/></attribute>
+                  <optional>
+                    <attribute name="revised">
+                      <value>yes</value>
+                    </attribute>
+                  </optional>
+                  <ref name="rich-text"/>
+                </element>
+              </choice>
+            </zeroOrMore>
+          </optional>
+        </element>
+        <oneOrMore>
+          <element name="revision">
+            <attribute name="seq">
+              <data type="positiveInteger"/>
+            </attribute>
+            <attribute name="type">
+              <choice>
+                <value>errata</value>
+                <value>policy</value>
+                <value>accessibility</value>
+                <value>correction</value>
+                <value>amendment</value>
+              </choice>
+            </attribute>
+            <attribute name="effective-date">
+              <data type="date"/>
+            </attribute>
+            <attribute name="id"><text/></attribute>
+            <attribute name="status">
+              <choice>
+                <value>current</value>
+                <value>superseded</value>
+              </choice>
+            </attribute>
+            <element name="content">
+              <optional>
+                <element name="intent-ref">
+                  <attribute name="target"><text/></attribute>
+                  <optional>
+                    <attribute name="vendor-target"><text/></attribute>
+                  </optional>
+                </element>
+              </optional>
+              <element name="text"><ref name="rich-text"/></element>
+              <zeroOrMore>
+                <choice>
+                  <element name="clause">
+                    <ref name="clause-content-revision"/>
+                  </element>
+                  <element name="see-also">
+                    <attribute name="xml:id"><text/></attribute>
+                    <optional>
+                      <attribute name="revised">
+                        <value>yes</value>
+                      </attribute>
+                    </optional>
+                    <ref name="rich-text"/>
+                  </element>
+                </choice>
+              </zeroOrMore>
+            </element>
+            <element name="change-summary"><text/></element>
+            <element name="note"><text/></element>
+          </element>
+        </oneOrMore>
+      </element>
+    </choice>
+  </define>
+
+  <!-- Revision history for title elements -->
+  <define name="title-revision-history">
+    <element name="revision-history">
+      <element name="original">
+        <attribute name="effective-date">
+          <data type="date"/>
+        </attribute>
+        <optional>
+          <ref name="rich-text"/>
+        </optional>
+      </element>
+      <oneOrMore>
+        <element name="revision">
+          <attribute name="seq">
+            <data type="positiveInteger"/>
+          </attribute>
+          <attribute name="type">
+            <choice>
+              <value>errata</value>
+              <value>policy</value>
+              <value>accessibility</value>
+              <value>correction</value>
+              <value>amendment</value>
+            </choice>
+          </attribute>
+          <attribute name="effective-date">
+            <data type="date"/>
+          </attribute>
+          <attribute name="id">
+            <text/>
+          </attribute>
+          <attribute name="status">
+            <choice>
+              <value>current</value>
+              <value>superseded</value>
+            </choice>
+          </attribute>
+          <element name="content">
+            <ref name="rich-text"/>
+          </element>
+          <optional>
+            <element name="change-summary">
+              <text/>
+            </element>
+          </optional>
+          <optional>
+            <element name="note">
+              <text/>
+            </element>
+          </optional>
+        </element>
+      </oneOrMore>
+    </element>
+  </define>
+
+  <define name="document-content">
+    <zeroOrMore>
+      <choice>
+        <element name="title">
+          <attribute name="xml:id"><data type="ID"/></attribute>
+          <ref name="rich-text"/>
+        </element>
+        <element name="paragraph">
+          <optional>
+            <attribute name="xml:id"><data type="ID"/></attribute>
+          </optional>
+          <ref name="rich-text"/>
+        </element>
+        <element name="table">
+          <ref name="table-content"/>
+        </element>
+        <element name="figure">
+          <ref name="figure-content"/>
+        </element>
+        <element name="list">
+          <ref name="list-content"/>
+        </element>
+      </choice>
+    </zeroOrMore>
+  </define>
+
+  <define name="item-content-revision">
+    <choice>
+      <ref name="rich-text"/>
+      <group>
+        <element name="term">
+          <ref name="rich-text"/>
+        </element>
+        <element name="definition">
+          <ref name="rich-text"/>
+        </element>
+      </group>
+      <group>
+        <element name="variable">
+          <ref name="rich-text"/>
+        </element>
+        <element name="description">
+          <ref name="rich-text"/>
+        </element>
+      </group>
+      <group>
+        <element name="organization">
+          <text/>
+        </element>
+        <element name="address">
+          <ref name="rich-text"/>
+        </element>
+      </group>
+    </choice>
+  </define>
+
+</grammar>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="fn">
+    <xsl:output method="text" encoding="UTF-8"/>
+    <xsl:param name="max-parts" select="2"/>
+    <xsl:param name="max-sections" select="3"/>
+    <xsl:param name="max-subsections" select="3"/>
+    <xsl:param name="max-articles" select="3"/>
+    <xsl:param name="max-sentences" select="4"/>
+    <xsl:param name="max-clauses" select="3"/>
+    <xsl:param name="max-appnotes" select="5"/>
+
+    <xsl:template match="/nbc">
+        <xsl:variable name="json-structure">
+            <fn:map>
+                <fn:string key="document_type">bc_building_code_minimal_sample</fn:string>
+                <fn:string key="description">Minimal representative sample of all node types for LLM study</fn:string>
+                <fn:string key="version"><xsl:value-of select="@version"/></fn:string>
+                <fn:string key="canonical_version"><xsl:value-of select="@canonical-version"/></fn:string>
+                <fn:map key="metadata">
+                    <fn:string key="title"><xsl:value-of select="metadata/publication-info[1]/title"/></fn:string>
+                    <fn:string key="subtitle"><xsl:value-of select="metadata/publication-info[1]/subtitle"/></fn:string>
+                    <fn:string key="authority"><xsl:value-of select="metadata/publication-info[1]/authority"/></fn:string>
+                </fn:map>
+                <fn:array key="divisions">
+                    <xsl:apply-templates select="division" mode="json"/>
+                </fn:array>
+                <fn:map key="cross_references_sample">
+                    <xsl:call-template name="build-refs"/>
+                </fn:map>
+                <fn:array key="bc_amendments_sample">
+                    <xsl:call-template name="build-amendments"/>
+                </fn:array>
+                <fn:map key="glossary_sample">
+                    <xsl:call-template name="build-glossary"/>
+                </fn:map>
+                <fn:map key="statistics">
+                    <fn:number key="total_divisions"><xsl:value-of select="count(division)"/></fn:number>
+                    <fn:number key="total_parts"><xsl:value-of select="count(.//part)"/></fn:number>
+                    <fn:number key="total_sections"><xsl:value-of select="count(.//section)"/></fn:number>
+                    <fn:number key="total_articles"><xsl:value-of select="count(.//article)"/></fn:number>
+                    <fn:number key="total_sentences"><xsl:value-of select="count(.//sentence)"/></fn:number>
+                    <fn:number key="total_tables"><xsl:value-of select="count(.//table)"/></fn:number>
+                    <fn:number key="total_figures"><xsl:value-of select="count(.//figure)"/></fn:number>
+                    <fn:number key="total_application_notes"><xsl:value-of select="count(.//application-note)"/></fn:number>
+                    <fn:number key="total_revisions"><xsl:value-of select="count(.//revision-history)"/></fn:number>
+                </fn:map>
+                <fn:map key="schema_doc">
+                    <xsl:call-template name="doc-schema"/>
+                </fn:map>
+            </fn:map>
+        </xsl:variable>
+        <xsl:value-of select="fn:xml-to-json($json-structure, map{'indent': true()})"/>
+    </xsl:template>
+
+    <xsl:template match="division" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">division</fn:string>
+            <fn:string key="letter"><xsl:value-of select="@letter"/></fn:string>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text"/></fn:string>
+            <fn:array key="parts">
+                <xsl:apply-templates select="part[position() &lt;= $max-parts]" mode="json"/>
+            </fn:array>
+            <fn:number key="total_parts"><xsl:value-of select="count(part)"/></fn:number>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="part" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">part</fn:string>
+            <xsl:if test="@number"><fn:number key="number"><xsl:value-of select="@number"/></fn:number></xsl:if>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text"/></fn:string>
+            <fn:array key="sections">
+                <xsl:apply-templates select="section[position() &lt;= $max-sections]" mode="json"/>
+            </fn:array>
+            <xsl:if test="spectables">
+                <fn:array key="spectables">
+                    <xsl:apply-templates select="spectables[1]" mode="json"/>
+                </fn:array>
+            </xsl:if>
+            <xsl:if test="part-appendix">
+                <fn:map key="appendix">
+                    <xsl:apply-templates select="part-appendix" mode="json"/>
+                </fn:map>
+            </xsl:if>
+            <fn:number key="total_sections"><xsl:value-of select="count(section)"/></fn:number>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="section" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">section</fn:string>
+            <xsl:if test="@number"><fn:number key="number"><xsl:value-of select="@number"/></fn:number></xsl:if>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text"/></fn:string>
+            <fn:array key="subsections">
+                <xsl:apply-templates select="subsection[position() &lt;= $max-subsections]" mode="json"/>
+            </fn:array>
+            <fn:number key="total_subsections"><xsl:value-of select="count(subsection)"/></fn:number>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="subsection" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">subsection</fn:string>
+            <xsl:if test="@number"><fn:number key="number"><xsl:value-of select="@number"/></fn:number></xsl:if>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text"/></fn:string>
+            <fn:array key="articles">
+                <xsl:apply-templates select="article[position() &lt;= $max-articles]" mode="json"/>
+            </fn:array>
+            <fn:number key="total_articles"><xsl:value-of select="count(article)"/></fn:number>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="article" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">article</fn:string>
+            <xsl:if test="@number"><fn:number key="number"><xsl:value-of select="@number"/></fn:number></xsl:if>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text"/></fn:string>
+            <fn:array key="content">
+                <xsl:apply-templates select="(sentence|table|figure)[position() &lt;= $max-sentences]" mode="json"/>
+            </fn:array>
+            <xsl:if test="@revised='yes' and revision-history">
+                <fn:array key="revisions">
+                    <xsl:call-template name="build-revisions"/>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="sentence" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">sentence</fn:string>
+            <xsl:if test="@number"><fn:number key="number"><xsl:value-of select="@number"/></fn:number></xsl:if>
+            <fn:string key="text"><xsl:apply-templates select="text" mode="rich"/></fn:string>
+            
+            <!-- Extract equations from text element -->
+            <xsl:if test="text//equation">
+                <fn:array key="equations">
+                    <xsl:apply-templates select="text//equation" mode="equation-json"/>
+                </fn:array>
+            </xsl:if>
+            
+            <xsl:if test="clause">
+                <fn:array key="clauses">
+                    <xsl:apply-templates select="clause[position() &lt;= $max-clauses]" mode="json"/>
+                </fn:array>
+            </xsl:if>
+            <xsl:if test="objectives">
+                <fn:array key="objectives">
+                    <xsl:apply-templates select="objectives/objective[position() &lt;= 2]" mode="json"/>
+                </fn:array>
+            </xsl:if>
+            <xsl:if test="functional-statements">
+                <fn:array key="functional_statements">
+                    <xsl:apply-templates select="functional-statements/functional-statement[position() &lt;= 2]" mode="json"/>
+                </fn:array>
+            </xsl:if>
+            <xsl:if test="@revised='yes' and revision-history">
+                <fn:array key="revisions">
+                    <xsl:call-template name="build-revisions"/>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="clause" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">clause</fn:string>
+            <fn:string key="letter"><xsl:value-of select="@letter"/></fn:string>
+            <fn:string key="text"><xsl:apply-templates select="text" mode="rich"/></fn:string>
+            <xsl:if test="subclause">
+                <fn:array key="subclauses">
+                    <xsl:apply-templates select="subclause[position() &lt;= 2]" mode="json"/>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="subclause" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">subclause</fn:string>
+            <xsl:if test="@number"><fn:number key="number"><xsl:value-of select="@number"/></fn:number></xsl:if>
+            <fn:string key="text"><xsl:apply-templates select="text" mode="rich"/></fn:string>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="table" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">table</fn:string>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="rich"/></fn:string>
+            <fn:map key="structure">
+                <xsl:if test="tgroup/@cols"><fn:number key="columns"><xsl:value-of select="tgroup/@cols"/></fn:number></xsl:if>
+                <xsl:if test="tgroup/thead">
+                    <fn:array key="header_rows">
+                        <xsl:apply-templates select="tgroup/thead/row[position() &lt;= 2]" mode="json"/>
+                    </fn:array>
+                </xsl:if>
+                <fn:array key="body_rows">
+                    <xsl:apply-templates select="tgroup/tbody/row[position() &lt;= 5]" mode="json"/>
+                </fn:array>
+                <fn:number key="total_rows"><xsl:value-of select="count(tgroup/tbody/row)"/></fn:number>
+            </fn:map>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="row" mode="json">
+        <fn:array>
+            <xsl:apply-templates select="entry[position() &lt;= 6]" mode="json"/>
+        </fn:array>
+    </xsl:template>
+
+    <xsl:template match="entry" mode="json">
+        <fn:map>
+            <fn:string key="content"><xsl:apply-templates select="." mode="rich"/></fn:string>
+            <xsl:if test="@rowspan"><fn:number key="rowspan"><xsl:value-of select="@rowspan"/></fn:number></xsl:if>
+            <xsl:if test="@colspan"><fn:number key="colspan"><xsl:value-of select="@colspan"/></fn:number></xsl:if>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="figure" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">figure</fn:string>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="rich"/></fn:string>
+            <fn:map key="graphic">
+                <fn:string key="src"><xsl:value-of select="graphic/@src"/></fn:string>
+                <fn:string key="alt"><xsl:value-of select="graphic/@alt"/></fn:string>
+            </fn:map>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="spectables" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">spectables</fn:string>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text"/></fn:string>
+            <fn:array key="tables">
+                <xsl:apply-templates select="table[position() &lt;= 2]" mode="json"/>
+            </fn:array>
+            <fn:number key="total_tables"><xsl:value-of select="count(table)"/></fn:number>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="part-appendix" mode="json">
+        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+        <fn:string key="type">part_appendix</fn:string>
+        <fn:array key="application_notes">
+            <xsl:apply-templates select="application-note[position() &lt;= $max-appnotes]" mode="json"/>
+        </fn:array>
+        <fn:number key="total_notes"><xsl:value-of select="count(application-note)"/></fn:number>
+    </xsl:template>
+
+    <xsl:template match="application-note" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">application_note</fn:string>
+            <fn:string key="number"><xsl:value-of select="number"/></fn:string>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text"/></fn:string>
+            <xsl:if test="paragraph">
+                <fn:array key="paragraphs">
+                    <xsl:for-each select="paragraph[position() &lt;= 2]">
+                        <fn:map>
+                            <xsl:if test="@xml:id"><fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string></xsl:if>
+                            <fn:string key="content"><xsl:apply-templates select="." mode="rich"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
+            <xsl:if test="note-division">
+                <fn:array key="divisions">
+                    <xsl:apply-templates select="note-division[position() &lt;= 2]" mode="json"/>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="note-division" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">note_division</fn:string>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text"/></fn:string>
+            <xsl:if test="paragraph">
+                <fn:array key="paragraphs">
+                    <xsl:for-each select="paragraph[position() &lt;= 2]">
+                        <fn:map>
+                            <fn:string key="content"><xsl:apply-templates select="." mode="rich"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="objective" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="key"><xsl:value-of select="@key"/></fn:string>
+            <fn:string key="title"><xsl:value-of select="title"/></fn:string>
+            <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich"/></fn:string>
+        </fn:map>
+    </xsl:template>
+
+    <xsl:template match="functional-statement" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="key"><xsl:value-of select="@key"/></fn:string>
+            <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich"/></fn:string>
+        </fn:map>
+    </xsl:template>
+
+    <!-- TEXT MODES -->
+    <xsl:template match="*" mode="text"><xsl:apply-templates select="text()|*" mode="text"/></xsl:template>
+    <xsl:template match="text()" mode="text"><xsl:value-of select="."/></xsl:template>
+    <xsl:template match="emphasis|super|sub|ref|measurement" mode="text"><xsl:apply-templates select="text()" mode="text"/></xsl:template>
+
+    <xsl:template match="*" mode="rich"><xsl:apply-templates select="text()|*" mode="rich"/></xsl:template>
+    <xsl:template match="text()" mode="rich"><xsl:value-of select="."/></xsl:template>
+    <xsl:template match="ref" mode="rich">[REF:<xsl:value-of select="@type"/>:<xsl:value-of select="@target"/>]<xsl:value-of select="."/></xsl:template>
+    <xsl:template match="measurement" mode="rich"><xsl:value-of select="."/> (<xsl:value-of select="@units"/>)</xsl:template>
+    <xsl:template match="equation" mode="rich">[EQ:<xsl:value-of select="@type"/>:<xsl:value-of select="@xml:id"/>]</xsl:template>
+    <xsl:template match="super" mode="rich">^{<xsl:value-of select="."/>}</xsl:template>
+    <xsl:template match="sub" mode="rich">_{<xsl:value-of select="."/>}</xsl:template>
+    <xsl:template match="revision-history" mode="rich">
+        <xsl:variable name="cur" select="revision[@status='current'][last()]"/>
+        <xsl:choose>
+            <xsl:when test="$cur/content"><xsl:apply-templates select="$cur/content/node()" mode="rich"/></xsl:when>
+            <xsl:otherwise><xsl:apply-templates select="original/node()" mode="rich"/></xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <!-- EQUATION PROCESSING -->
+    <xsl:template match="equation" mode="equation-json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="if (@xml:id) then @xml:id else if (@image) then @image else ''"/></fn:string>
+            <fn:string key="type"><xsl:value-of select="@type"/></fn:string>
+            <fn:string key="latex"><xsl:apply-templates select="*[local-name()='math']" mode="latex"/></fn:string>
+            <fn:string key="plainText"><xsl:apply-templates select="*[local-name()='math']" mode="plain"/></fn:string>
+            <xsl:if test="@image"><fn:string key="image"><xsl:value-of select="@image"/></fn:string></xsl:if>
+            <xsl:if test="@image-src"><fn:string key="imageSrc"><xsl:value-of select="@image-src"/></fn:string></xsl:if>
+        </fn:map>
+    </xsl:template>
+    
+    <!-- MathML to LaTeX (simplified) - handle both namespaced and non-namespaced -->
+    <xsl:template match="*[namespace-uri()='http://www.w3.org/1998/Math/MathML'] | math | *[local-name()='math']" mode="latex">
+        <xsl:apply-templates select="*" mode="latex"/>
+    </xsl:template>
+    <xsl:template match="*:mn | mn | *[local-name()='mn'] | *:mi | mi | *[local-name()='mi']" mode="latex"><xsl:value-of select="."/></xsl:template>
+    <xsl:template match="*:mo | mo | *[local-name()='mo']" mode="latex"><xsl:value-of select="."/></xsl:template>
+    <xsl:template match="*:mfrac | mfrac | *[local-name()='mfrac']" mode="latex">\frac{<xsl:apply-templates select="*[1]" mode="latex"/>}{<xsl:apply-templates select="*[2]" mode="latex"/>}</xsl:template>
+    <xsl:template match="*:msqrt | msqrt | *[local-name()='msqrt']" mode="latex">\sqrt{<xsl:apply-templates select="*" mode="latex"/>}</xsl:template>
+    <xsl:template match="*:msup | msup | *[local-name()='msup']" mode="latex"><xsl:apply-templates select="*[1]" mode="latex"/>^{<xsl:apply-templates select="*[2]" mode="latex"/>}</xsl:template>
+    <xsl:template match="*:msub | msub | *[local-name()='msub']" mode="latex"><xsl:apply-templates select="*[1]" mode="latex"/>_{<xsl:apply-templates select="*[2]" mode="latex"/>}</xsl:template>
+    <xsl:template match="*:mrow | mrow | *[local-name()='mrow']" mode="latex"><xsl:apply-templates select="*" mode="latex"/></xsl:template>
+    
+    <!-- MathML to plain text (simplified) - handle both namespaced and non-namespaced -->
+    <xsl:template match="*[namespace-uri()='http://www.w3.org/1998/Math/MathML'] | math | *[local-name()='math']" mode="plain">
+        <xsl:apply-templates select="*" mode="plain"/>
+    </xsl:template>
+    <xsl:template match="*:mn | mn | *[local-name()='mn'] | *:mi | mi | *[local-name()='mi'] | *:mo | mo | *[local-name()='mo']" mode="plain"><xsl:value-of select="."/></xsl:template>
+    <xsl:template match="*:mfrac | mfrac | *[local-name()='mfrac']" mode="plain">(<xsl:apply-templates select="*[1]" mode="plain"/>)/(<xsl:apply-templates select="*[2]" mode="plain"/>)</xsl:template>
+    <xsl:template match="*:msqrt | msqrt | *[local-name()='msqrt']" mode="plain">√(<xsl:apply-templates select="*" mode="plain"/>)</xsl:template>
+    <xsl:template match="*:msup | msup | *[local-name()='msup']" mode="plain"><xsl:apply-templates select="*[1]" mode="plain"/>^<xsl:apply-templates select="*[2]" mode="plain"/></xsl:template>
+    <xsl:template match="*:msub | msub | *[local-name()='msub']" mode="plain"><xsl:apply-templates select="*[1]" mode="plain"/>_<xsl:apply-templates select="*[2]" mode="plain"/></xsl:template>
+    <xsl:template match="*:mrow | mrow | *[local-name()='mrow']" mode="plain"><xsl:apply-templates select="*" mode="plain"/></xsl:template>
+
+    <!-- NAMED TEMPLATES -->
+    <xsl:template name="build-refs">
+        <fn:array key="internal">
+            <xsl:for-each select="(.//ref[@type='internal'])[position() &lt;= 5]">
+                <fn:map>
+                    <fn:string key="source"><xsl:value-of select="ancestor::*[@xml:id][1]/@xml:id"/></fn:string>
+                    <fn:string key="target"><xsl:value-of select="@target"/></fn:string>
+                </fn:map>
+            </xsl:for-each>
+        </fn:array>
+        <fn:array key="terms">
+            <xsl:for-each select="(.//ref[@type='term'])[position() &lt;= 5]">
+                <fn:map>
+                    <fn:string key="term"><xsl:value-of select="@target"/></fn:string>
+                    <fn:string key="text"><xsl:value-of select="."/></fn:string>
+                </fn:map>
+            </xsl:for-each>
+        </fn:array>
+        <fn:array key="standards">
+            <xsl:for-each select="(.//ref[@type='standard'])[position() &lt;= 5]">
+                <fn:map>
+                    <fn:string key="standard"><xsl:value-of select="@target"/></fn:string>
+                    <fn:string key="text"><xsl:value-of select="."/></fn:string>
+                </fn:map>
+            </xsl:for-each>
+        </fn:array>
+    </xsl:template>
+
+    <xsl:template name="build-amendments">
+        <xsl:for-each select="(.//revision-history)[position() &lt;= 5]">
+            <fn:map>
+                <fn:string key="location"><xsl:value-of select="ancestor::*[@xml:id][1]/@xml:id"/></fn:string>
+                <fn:string key="original_date"><xsl:value-of select="original/@effective-date"/></fn:string>
+                <xsl:if test="revision">
+                    <fn:array key="revisions">
+                        <xsl:for-each select="revision[position() &lt;= 2]">
+                            <fn:map>
+                                <fn:string key="type"><xsl:value-of select="@type"/></fn:string>
+                                <fn:string key="id"><xsl:value-of select="@id"/></fn:string>
+                                <fn:string key="date"><xsl:value-of select="@effective-date"/></fn:string>
+                                <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                                <xsl:if test="change-summary"><fn:string key="summary"><xsl:value-of select="change-summary"/></fn:string></xsl:if>
+                            </fn:map>
+                        </xsl:for-each>
+                    </fn:array>
+                </xsl:if>
+            </fn:map>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template name="build-glossary">
+        <xsl:for-each select="(.//list[@type='definition']/item[@xml:id])[position() &lt;= 10]">
+            <fn:map key="{@xml:id}">
+                <fn:string key="term"><xsl:apply-templates select="term" mode="text"/></fn:string>
+                <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich"/></fn:string>
+            </fn:map>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template name="build-revisions">
+        <fn:map>
+            <fn:string key="type">original</fn:string>
+            <fn:string key="date"><xsl:value-of select="revision-history/original/@effective-date"/></fn:string>
+        </fn:map>
+        <xsl:for-each select="revision-history/revision[position() &lt;= 2]">
+            <fn:map>
+                <fn:string key="type">revision</fn:string>
+                <fn:string key="revision_type"><xsl:value-of select="@type"/></fn:string>
+                <fn:string key="id"><xsl:value-of select="@id"/></fn:string>
+                <fn:string key="date"><xsl:value-of select="@effective-date"/></fn:string>
+                <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                <xsl:if test="change-summary"><fn:string key="summary"><xsl:value-of select="change-summary"/></fn:string></xsl:if>
+            </fn:map>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template name="doc-schema">
+        <fn:map key="hierarchy">
+            <fn:string key="description">BC Building Code follows strict hierarchy: division > part > section > subsection > article > sentence > clause > subclause</fn:string>
+            <fn:array key="levels">
+                <fn:map><fn:number key="level">1</fn:number><fn:string key="name">division</fn:string><fn:string key="example">nbc.divA, nbc.divB</fn:string></fn:map>
+                <fn:map><fn:number key="level">2</fn:number><fn:string key="name">part</fn:string><fn:string key="example">nbc.divB.part3</fn:string></fn:map>
+                <fn:map><fn:number key="level">3</fn:number><fn:string key="name">section</fn:string><fn:string key="example">nbc.divB.part3.sect8</fn:string></fn:map>
+                <fn:map><fn:number key="level">4</fn:number><fn:string key="name">subsection</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2</fn:string></fn:map>
+                <fn:map><fn:number key="level">5</fn:number><fn:string key="name">article</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6</fn:string></fn:map>
+                <fn:map><fn:number key="level">6</fn:number><fn:string key="name">sentence</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6.sent1</fn:string></fn:map>
+                <fn:map><fn:number key="level">7</fn:number><fn:string key="name">clause</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6.sent1.clause1</fn:string></fn:map>
+                <fn:map><fn:number key="level">8</fn:number><fn:string key="name">subclause</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6.sent1.clause1.subclause1</fn:string></fn:map>
+            </fn:array>
+        </fn:map>
+        <fn:map key="content_types">
+            <fn:array key="structural"><fn:string>division</fn:string><fn:string>part</fn:string><fn:string>section</fn:string><fn:string>subsection</fn:string><fn:string>article</fn:string><fn:string>sentence</fn:string><fn:string>clause</fn:string><fn:string>subclause</fn:string></fn:array>
+            <fn:array key="content"><fn:string>table</fn:string><fn:string>figure</fn:string><fn:string>spectables</fn:string><fn:string>application_note</fn:string><fn:string>note_division</fn:string></fn:array>
+            <fn:array key="semantic"><fn:string>objective</fn:string><fn:string>functional_statement</fn:string><fn:string>definition</fn:string></fn:array>
+            <fn:array key="references"><fn:string>internal</fn:string><fn:string>term</fn:string><fn:string>standard</fn:string><fn:string>external</fn:string></fn:array>
+        </fn:map>
+        <fn:map key="bc_specific">
+            <fn:string key="description">BC-specific content uses bc. prefix instead of nbc.</fn:string>
+            <fn:string key="example">bc.divB.part10.sect1.subsect1.art1</fn:string>
+            <fn:array key="amendment_types"><fn:string>replace</fn:string><fn:string>insert</fn:string><fn:string>modify</fn:string><fn:string>remove</fn:string></fn:array>
+        </fn:map>
+        <fn:map key="revision_history">
+            <fn:string key="description">Tracks changes over time with effective dates</fn:string>
+            <fn:array key="types"><fn:string>amendment</fn:string><fn:string>errata</fn:string><fn:string>policy</fn:string><fn:string>accessibility</fn:string><fn:string>correction</fn:string></fn:array>
+            <fn:array key="status"><fn:string>current</fn:string><fn:string>superseded</fn:string></fn:array>
+        </fn:map>
+    </xsl:template>
+</xsl:stylesheet>

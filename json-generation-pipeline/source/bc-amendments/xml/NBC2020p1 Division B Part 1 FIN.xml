@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bc-overlay id="bc-amendments-2023" 
+            version="1.0" 
+            nbc-target-version="2020"
+            effective-date="2023-12-15">
+    
+    <!-- ================================================================== -->
+    <!-- BC BUILDING CODE AMENDMENTS TO NBC 2020                            -->
+    <!-- Converted from your sample diff format to structured overlay       -->
+    <!-- ================================================================== -->
+    
+    <metadata>
+        <title>BC Building Code Amendments to NBC 2020</title>
+        <description>British Columbia-specific amendments to transform the National Building Code (NBC) 2020 into the BC Building Code</description>
+        <authority>Province of British Columbia</authority>
+        <author>BC Building Code Team</author>
+        <source-document>NBC2020p1 Division B Part 1.FIN.docx</source-document>
+    </metadata>
+    
+    <amendments>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 1: Update section references in Division B objectives    -->
+        <!-- Original: 3.9→3.10, 5.11→5.10, 9.36→9.38, added 10.4              -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-001" sequence="1" 
+                   description="Update section references in Division B objectives">
+            <target type="canonical-id" id="nbc.divB.part1.sect1.subsect2.art1.sent1"/>
+            <replace preserve-references="true">
+                <new-content>
+                    <sentence xml:id="nbc.divB.part1.sect1.subsect2.art1.sent1" number="1">
+                        <text>For the purpose of compliance with this Code as required in 
+                            <ref type="internal" target="nbc.divA.part1.sect1.subsect1.art2.sent1.clause2" 
+                                 display-type="short"/>, the objectives and functional statements
+                            attributed to the acceptable solutions in Division B shall be the
+                            objectives and functional statements identified in 
+                            <ref type="internal" target="nbc.divB.part2.sect5" pretext="Sections"/>
+                            <ref type="internal" target="nbc.divB.part3.sect9" pretext=","/>
+                            <ref type="internal" target="nbc.divB.part4.sect5" pretext=","/>
+                            <ref type="internal" target="nbc.divB.part5.sect10" pretext=","/>
+                            <ref type="internal" target="nbc.divB.part6.sect10" pretext=","/>
+                            <ref type="internal" target="nbc.divB.part7.sect2" pretext=","/>
+                            <ref type="internal" target="nbc.divB.part8.sect3" pretext=","/>
+                            <ref type="internal" target="nbc.divB.part9.sect38" pretext=","/>
+                            <ref type="internal" target="nbc.divB.part10.sect4" pretext=" and" display-type="short"/>
+                            (See <ref type="internal" target="nbc.divB.part1.sect3.appnote1" display-type="short"/>.)
+                        </text>
+                    </sentence>
+                </new-content>
+            </replace>
+        </amendment>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 2: Add reference to BC seismic requirements              -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-002" sequence="2"
+                   description="Add reference to Sentence 9.7.4.3.(2) for climatic and seismic values">
+            <target type="canonical-id" id="nbc.divB.part1.sect1.subsect3.art1.sent1"/>
+            <replace>
+                <new-content>
+                    <sentence xml:id="nbc.divB.part1.sect1.subsect3.art1.sent1" number="1">
+                        <text>
+                            <bc-change type="bc-insert" amendment-id="bc-002">Except as provided
+                                in <ref type="internal" target="nbc.divB.part1.sect1.subsect3.art1.sent3" pretext="Sentences" display-type="short"/>
+                                <ref type="internal" target="nbc.divB.part1.sect1.subsect3.art1.sent2" pretext=" and" display-type="short"/> 
+                                and as required by <ref type="internal" target="nbc.divB.part9.sect7.subsect4.art3.sent2" pretext="Sentence" display-type="short"/>, the</bc-change> 
+                            climatic and seismic values required for the design of 
+                            <ref type="term" target="bldng">buildings</ref> under this Code shall be in conformance with the
+                            values established by the <ref type="term" target="thrt-hvn">authority having jurisdiction</ref>.
+                        </text>
+                    </sentence>
+                </new-content>
+            </replace>
+        </amendment>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 3: Add new sentence for outside summer design temperatures -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-003" sequence="3"
+                   description="Add new sentence 5 for outside summer design temperatures">
+            <target type="position" 
+                    parent-id="nbc.divB.part1.sect1.subsect3.art1"
+                    position="after"
+                    reference-id="nbc.divB.part1.sect1.subsect3.art1.sent4"/>
+            <insert>
+                <new-content>
+                    <sentence xml:id="bc.divB.part1.sect1.subsect3.art1.sent5" number="5">
+                        <text>The outside summer design temperatures determined from 
+                            <ref type="internal" target="nbc.example.ex000108"/> shall be those listed for the July 2.5% dry values.
+                        </text>
+                    </sentence>
+                </new-content>
+            </insert>
+        </amendment>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 4: Change fire safety plan reference to BC Fire Code     -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-004" sequence="4"
+                   description="Change fire safety plan reference to BC Fire Code">
+            <target type="canonical-id" id="nbc.divB.part1.sect1.subsect4.art1.sent1"/>
+            <replace>
+                <new-content>
+                    <sentence xml:id="nbc.divB.part1.sect1.subsect4.art1.sent1" number="1">
+                        <text>Where a fire safety plan is required, it shall conform to Section 2.8. of Division B of the 
+                            <bc-ref type="bc-fire-code" target="bcfc-2023" section="2.8">British Columbia Fire Code</bc-ref>.
+                        </text>
+                    </sentence>
+                </new-content>
+            </replace>
+        </amendment>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 5: Change acceptable solutions reference Parts 2-9 to 3-10 -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-005" sequence="5"
+                   description="Change acceptable solutions reference Parts 2-9 to 3-10">
+            <target type="canonical-id" id="nbc.divB.part1.sect2.subsect1.art1.sent3"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>Parts 2 to 9</find>
+                        <replace>Parts 3 to 10</replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 6: Change table title to reference BC Building Code      -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-006" sequence="6"
+                   description="Change table title to reference BC Building Code">
+            <target type="canonical-id" id="nbc.divB.part1.sect3.subsect1.art2.table1"/>
+            <modify>
+                <element-change xpath-within-target=".">
+                    <replace-child element-name="title">
+                        <title>Documents Referenced in Book I (General) of the British Columbia Building Code
+                            <note xml:id="et001030-2">While every effort was made to ensure the accuracy of the information in this Table, the NRC is not responsible for the accuracy, timeliness or reliability of the content presented therein. For all purposes of interpreting and applying the referenced standards, Code users should refer to the most recent official versions of the referenced editions.</note>
+                            <note xml:id="et001030-5">See <ref type="internal" target="et000279" display-type="long" pretext="Table"/> of Appendix D for the list of standards referenced therein.</note>
+                        </title>
+                    </replace-child>
+                </element-change>
+            </modify>
+        </amendment>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 7: Add BC Fire Code 2023 to referenced documents table   -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-007" sequence="7"
+                   description="Add BC Fire Code 2023 to referenced documents table">
+            <target type="position" 
+                    parent-id="nbc.divB.part1.sect3.subsect1.art2.table1.row474"
+                    position="after"/>
+            <insert>
+                <new-content>
+                    <row xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-1">
+                        <entry>BC</entry>
+                        <entry>2023</entry>
+                        <entry>British Columbia Fire Code</entry>
+                        <entry>
+                            <ref type="internal" target="nbc.divB.part1.sect1.subsect4.art1.sent1" display-type="number"/>
+                        </entry>
+                    </row>
+                </new-content>
+            </insert>
+        </amendment>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 8: Add BC Building Code Book II (Plumbing) reference     -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-008" sequence="8"
+                   description="Add BC Building Code Book II (Plumbing Systems) reference">
+            <target type="position" 
+                    parent-id="nbc.divB.part1.sect3.subsect1.art2.table1.row474"
+                    position="after"/>
+            <insert>
+                <new-content>
+                    <row xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-2">
+                        <entry>BC</entry>
+                        <entry>2023</entry>
+                        <entry>Book II (Plumbing Systems) of the British Columbia Building Code</entry>
+                        <entry>
+                            <ref type="internal" target="nbc.divB.part1.sect1.subsect2.art1.sent4" display-type="number"/>
+                        </entry>
+                    </row>
+                </new-content>
+            </insert>
+        </amendment>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 9: Add BC provincial acts to referenced documents        -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-009" sequence="9"
+                   description="Add BC provincial acts to referenced documents">
+            <target type="position" 
+                    parent-id="nbc.divB.part1.sect3.subsect1.art2.table1.row474"
+                    position="after"/>
+            <insert>
+                <new-content>
+                    <row xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-3">
+                        <entry>BC</entry>
+                        <entry>S.B.C. 2015</entry>
+                        <entry>Building Act</entry>
+                        <entry>
+                            <ref type="internal" target="nbc.divB.part2.sect2.subsect1.art1.sent4" display-type="number"/>
+                        </entry>
+                    </row>
+                    
+                    <row xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-4">
+                        <entry>BC</entry>
+                        <entry>S.B.C. 2003 c.39</entry>
+                        <entry>Safety Standards Act</entry>
+                        <entry>
+                            <ref type="internal" target="nbc.divB.part3.sect2.subsect6.art7.sent2" display-type="number"/>
+                        </entry>
+                    </row>
+                </new-content>
+            </insert>
+        </amendment>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 10: Add City of Vancouver to organization list           -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-010" sequence="10"
+                   description="Add City of Vancouver to organization list">
+            <target type="position" 
+                    parent-id="nbc.divB.part1.sect3.subsect2.art1.sent1"
+                    position="after"
+                    reference-id="org.d1e20786"/>
+            <insert>
+                <new-content>
+                    <item xml:id="org.d1e20796A">
+                        <organization>CoV</organization>
+                        <address>City of Vancouver (<ref type="external" target="https://www.vancouver.ca">www.vancouver.ca</ref>)</address>
+                    </item>
+                </new-content>
+            </insert>
+        </amendment>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 11: Add energy modeling standards                        -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-011" sequence="11"
+                   description="Add City of Vancouver Energy Modeling Guidelines">
+            <target type="position" 
+                    parent-id="nbc.divB.part1.sect3.subsect1.art2.table1.row474"
+                    position="after"/>
+            <insert>
+                <new-content>
+                    <row xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-5">
+                        <entry>CoV</entry>
+                        <entry>Version 2.0</entry>
+                        <entry>City of Vancouver Energy Modeling Guidelines</entry>
+                        <entry>
+                            <ref type="internal" target="nbc.divB.part10.sect22.subsect3.art4.sent1" display-type="number"/>
+                        </entry>
+                    </row>
+                </new-content>
+            </insert>
+        </amendment>
+        
+    </amendments>
+</bc-overlay>
