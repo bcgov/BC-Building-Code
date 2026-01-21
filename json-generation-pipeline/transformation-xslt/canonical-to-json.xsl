@@ -170,6 +170,12 @@
                     <fn:null key="number"/>
                 </xsl:otherwise>
             </xsl:choose>
+            
+            <!-- Deleted flag -->
+            <xsl:if test="@deleted = 'yes'">
+                <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             
             <fn:array key="subsections">
@@ -190,6 +196,12 @@
                     <fn:null key="number"/>
                 </xsl:otherwise>
             </xsl:choose>
+            
+            <!-- Deleted flag -->
+            <xsl:if test="@deleted = 'yes'">
+                <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             
             <xsl:if test="see-also">
@@ -214,6 +226,12 @@
                     <fn:null key="number"/>
                 </xsl:otherwise>
             </xsl:choose>
+            
+            <!-- Deleted flag -->
+            <xsl:if test="@deleted = 'yes'">
+                <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             
             <xsl:if test="see-also">
@@ -249,6 +267,11 @@
                     <fn:null key="number"/>
                 </xsl:otherwise>
             </xsl:choose>
+            
+            <!-- Deleted flag -->
+            <xsl:if test="@deleted = 'yes'">
+                <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
             
             <!-- Main text content with rich formatting preserved -->
             <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
@@ -318,6 +341,12 @@
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="type">clause</fn:string>
             <fn:string key="letter"><xsl:value-of select="@letter"/></fn:string>
+            
+            <!-- Deleted flag -->
+            <xsl:if test="@deleted = 'yes'">
+                <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
+            
             <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
             
             <xsl:if test="see-also">
@@ -351,6 +380,12 @@
                     <fn:null key="number"/>
                 </xsl:otherwise>
             </xsl:choose>
+            
+            <!-- Deleted flag -->
+            <xsl:if test="@deleted = 'yes'">
+                <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
+            
             <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
         </fn:map>
     </xsl:template>
@@ -363,6 +398,12 @@
         <fn:map>
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="type">table</fn:string>
+            
+            <!-- Deleted flag -->
+            <xsl:if test="@deleted = 'yes'">
+                <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
             
             <fn:map key="structure">
@@ -442,6 +483,12 @@
         <fn:map>
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="type">figure</fn:string>
+            
+            <!-- Deleted flag -->
+            <xsl:if test="@deleted = 'yes'">
+                <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
             
             <fn:map key="graphic">
@@ -515,6 +562,11 @@
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             <xsl:if test="@refs">
                 <fn:string key="refs"><xsl:value-of select="@refs"/></fn:string>
+            </xsl:if>
+            
+            <!-- Deleted flag -->
+            <xsl:if test="@deleted = 'yes'">
+                <fn:boolean key="deleted">true</fn:boolean>
             </xsl:if>
             
             <!-- Paragraphs -->
@@ -1142,6 +1194,14 @@
                 </xsl:choose>
                 <fn:string key="effective_date"><xsl:value-of select="@effective-date"/></fn:string>
                 <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                
+                <!-- Deleted flag for revision (check if content is empty indicating deletion) -->
+                <xsl:choose>
+                    <xsl:when test="not(content/node()) or normalize-space(content) = ''">
+                        <fn:boolean key="deleted">true</fn:boolean>
+                    </xsl:when>
+                </xsl:choose>
+                
                 <fn:string key="text"><xsl:apply-templates select="content" mode="rich-text-json"/></fn:string>
                 <xsl:if test="content/see-also">
                     <fn:array key="see_also">
@@ -1194,6 +1254,14 @@
                 </xsl:choose>
                 <fn:string key="effective_date"><xsl:value-of select="@effective-date"/></fn:string>
                 <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                
+                <!-- Deleted flag for revision (check if content is empty indicating deletion) -->
+                <xsl:choose>
+                    <xsl:when test="not(content/node()) or (not(content/sentence) and not(content/table) and not(content/figure) and normalize-space(content) = '')">
+                        <fn:boolean key="deleted">true</fn:boolean>
+                    </xsl:when>
+                </xsl:choose>
+                
                 <fn:string key="title"><xsl:apply-templates select="content/title" mode="text-only"/></fn:string>
                 <xsl:if test="content/see-also">
                     <fn:string key="see_also"><xsl:apply-templates select="content/see-also" mode="rich-text-json"/></fn:string>
@@ -1267,6 +1335,14 @@
                 </xsl:choose>
                 <fn:string key="effective_date"><xsl:value-of select="@effective-date"/></fn:string>
                 <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                
+                <!-- Deleted flag for revision (check if content is empty indicating deletion) -->
+                <xsl:choose>
+                    <xsl:when test="not(content/node()) or (not(content/tgroup) and normalize-space(content) = '')">
+                        <fn:boolean key="deleted">true</fn:boolean>
+                    </xsl:when>
+                </xsl:choose>
+                
                 <fn:string key="title"><xsl:apply-templates select="content/title" mode="rich-text-json"/></fn:string>
                 <fn:map key="structure">
                     <xsl:choose>
@@ -1343,6 +1419,14 @@
                 </xsl:choose>
                 <fn:string key="effective_date"><xsl:value-of select="@effective-date"/></fn:string>
                 <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                
+                <!-- Deleted flag for revision (check if content is empty indicating deletion) -->
+                <xsl:choose>
+                    <xsl:when test="not(content/node()) or normalize-space(content) = ''">
+                        <fn:boolean key="deleted">true</fn:boolean>
+                    </xsl:when>
+                </xsl:choose>
+                
                 <fn:string key="content"><xsl:apply-templates select="content" mode="rich-text-json"/></fn:string>
                 <xsl:if test="content/@align">
                     <fn:string key="align"><xsl:value-of select="content/@align"/></fn:string>
@@ -1401,6 +1485,14 @@
                 </xsl:choose>
                 <fn:string key="effective_date"><xsl:value-of select="@effective-date"/></fn:string>
                 <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                
+                <!-- Deleted flag for revision (check if content is empty indicating deletion) -->
+                <xsl:choose>
+                    <xsl:when test="not(content/node()) or (not(content/number) and not(content/title) and not(content/paragraph) and normalize-space(content) = '')">
+                        <fn:boolean key="deleted">true</fn:boolean>
+                    </xsl:when>
+                </xsl:choose>
+                
                 <fn:string key="number"><xsl:value-of select="content/number"/></fn:string>
                 <fn:string key="title"><xsl:apply-templates select="content/title" mode="text-only"/></fn:string>
                 <xsl:if test="content/paragraph">

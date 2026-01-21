@@ -183,6 +183,10 @@
         "number": {
           "type": ["number", "null"]
         },
+        "deleted": {
+          "type": "boolean",
+          "description": "Indicates if this section has been deleted (true when deleted='yes' attribute is present)"
+        },
         "title": {
           "type": "string"
         },
@@ -208,6 +212,10 @@
         },
         "number": {
           "type": ["number", "null"]
+        },
+        "deleted": {
+          "type": "boolean",
+          "description": "Indicates if this subsection has been deleted (true when deleted='yes' attribute is present)"
         },
         "title": {
           "type": "string"
@@ -237,6 +245,10 @@
         },
         "number": {
           "type": ["number", "null"]
+        },
+        "deleted": {
+          "type": "boolean",
+          "description": "Indicates if this article has been deleted (true when deleted='yes' attribute is present)"
         },
         "title": {
           "type": "string"
@@ -297,6 +309,10 @@
         },
         "number": {
           "type": ["number", "null"]
+        },
+        "deleted": {
+          "type": "boolean",
+          "description": "Indicates if this sentence has been deleted (true when deleted='yes' attribute is present)"
         },
         "text": {
           "type": "string"
@@ -369,6 +385,10 @@
           "type": "string",
           "pattern": "^[a-z]$"
         },
+        "deleted": {
+          "type": "boolean",
+          "description": "Indicates if this clause has been deleted (true when deleted='yes' attribute is present)"
+        },
         "text": {
           "type": "string"
         },
@@ -404,6 +424,10 @@
         },
         "number": {
           "type": ["number", "null"]
+        },
+        "deleted": {
+          "type": "boolean",
+          "description": "Indicates if this subclause has been deleted (true when deleted='yes' attribute is present)"
         },
         "text": {
           "type": "string"
@@ -455,6 +479,10 @@
         "type": {
           "type": "string",
           "const": "table"
+        },
+        "deleted": {
+          "type": "boolean",
+          "description": "Indicates if this table has been deleted (true when deleted='yes' attribute is present)"
         },
         "title": {
           "type": "string"
@@ -541,6 +569,10 @@
         "type": {
           "type": "string",
           "const": "figure"
+        },
+        "deleted": {
+          "type": "boolean",
+          "description": "Indicates if this figure has been deleted (true when deleted='yes' attribute is present)"
         },
         "title": {
           "type": "string"
@@ -638,6 +670,10 @@
         },
         "number": {
           "type": "string"
+        },
+        "deleted": {
+          "type": "boolean",
+          "description": "Indicates if this application note has been deleted (true when deleted='yes' attribute is present)"
         },
         "title": {
           "type": "string"
@@ -802,6 +838,10 @@
         "status": {
           "type": "string",
           "enum": ["current", "superseded"]
+        },
+        "deleted": {
+          "type": "boolean",
+          "description": "Indicates if this revision represents a deletion (true when revision content is empty)"
         },
         "change_summary": {
           "type": "string"

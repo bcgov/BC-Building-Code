@@ -25,6 +25,7 @@ java -jar json-generation-pipeline/tools/saxon.jar -xsl:json-generation-pipeline
 
 - **[FOLDER-STRUCTURE.md](FOLDER-STRUCTURE.md)** - Complete folder structure with descriptions
 - **[docs/commands.txt](docs/commands.txt)** - All transformation commands with detailed explanations
+- **[docs/deletion-tracking.md](docs/deletion-tracking.md)** - How element deletions are tracked in XML and JSON
 - **[.kiro/steering/](../.kiro/steering/)** - Amendment creation guides and patterns
 
 ## Pipeline Overview
@@ -56,6 +57,15 @@ Generates AI-optimized JSON from the final BC Building Code.
 **Input:** `output/bc-building-code-final.xml`  
 **Output:** `output/bc-building-code.json` (full) or `output/bc-building-code-minimal.json` (minimal)  
 **XSLT:** `transformation-xslt/canonical-to-json.xsl` or `transformation-xslt/canonical-to-json-minimal.xsl`
+
+**JSON Features:**
+- Hierarchical structure with canonical IDs
+- Rich text formatting preserved (references, measurements, equations)
+- Revision history with date-based versioning
+- Deletion tracking via `deleted` property (true when element has `deleted="yes"` attribute)
+- Cross-reference index (optional, via `include-cross-references=true`)
+- BC amendment annotations (optional, via `include-bc-annotations=true`)
+- Mathematical equations in LaTeX, MathML, and plain text formats
 
 ## Folder Structure
 
@@ -127,6 +137,65 @@ See the comprehensive guides in `.kiro/steering/`:
 - **BC Builiding Code - Amendment Creation Guide.md** - How to create overlay amendments
 - **How to make Revision Amendments like Errata, Policy Change, Code revisions etc.md** - How to create revision amendments
 - **Global Text Replacements Feature.md** - Bulk find-replace operations
+
+### Deletion Tracking
+
+Elements can be marked as deleted using the `deleted="yes"` attribute in the XML. This is reflected in the JSON output:
+
+**XML Example:**
+```xml
+<sentence xml:id="bc.divBV2.part9.sect23.subsect13.art4.sent2" 
+          number="2" 
+          revised="yes" 
+          deleted="yes">
+  <revision-history>
+    <original effective-date="2020-12-01">
+      <text>Original sentence content...</text>
+    </original>
+    <revision seq="1" type="amendment" effective-date="2025-06-16" 
+             id="bc-mo-2024-06-153" status="current">
+      <content></content>
+      <change-summary>Sentence deleted</change-summary>
+      <note>Ministerial Order BA 2024 06</note>
+    </revision>
+  </revision-history>
+</sentence>
+```
+
+**JSON Output:**
+```json
+{
+  "id": "bc.divBV2.part9.sect23.subsect13.art4.sent2",
+  "type": "sentence",
+  "number": 2,
+  "deleted": true,
+  "text": "",
+  "revisions": [
+    {
+      "type": "original",
+      "effective_date": "2020-12-01",
+      "text": "Original sentence content..."
+    },
+    {
+      "type": "revision",
+      "revision_type": "amendment",
+      "revision_id": "bc-mo-2024-06-153",
+      "sequence": 1,
+      "effective_date": "2025-06-16",
+      "status": "current",
+      "deleted": true,
+      "text": "",
+      "change_summary": "Sentence deleted",
+      "note": "Ministerial Order BA 2024 06"
+    }
+  ]
+}
+```
+
+The `deleted` property appears:
+- On the main element when `deleted="yes"` attribute is present
+- On revision entries when the revision content is empty (indicating deletion)
+- Applies to all element types: sentences, articles, sections, subsections, clauses, subclauses, tables, figures, and application notes
 
 ## Validation
 
