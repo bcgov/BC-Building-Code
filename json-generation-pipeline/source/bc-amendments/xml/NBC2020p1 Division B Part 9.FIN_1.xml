@@ -2837,9 +2837,7 @@ a <ref type="term" target="prt-wll">party wall</ref></find>
                         <clause xml:id="bc.divBV2.part9.sect11.subsect1.art1.sent2.clause3" letter="c">
                             <text>a separating assembly and adjoining constructions, which together provide an <ref type="term" target="astc">ASTC</ref> rating of not less than 40.</text>
                         </clause>
-                        <see-also xml:id="bc.divBV2.part9.sect11.subsect1.art1.sent2.see-also1">
-                            <text>(See also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent2" display-type="short"/> and Note A-9.11.1.1.(2).)</text>
-                        </see-also>
+                        <see-also xml:id="bc.divBV2.part9.sect11.subsect1.art1.sent2.see-also1">(See also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent2" display-type="short"/> and Note A-9.11.1.1.(2).)</see-also>
                     </sentence>
                 </new-content>
             </replace>
@@ -3061,9 +3059,7 @@ S<sub>max</sub>, for Site Class C is not greater than 0.27 (see also <ref type="
                     reference-id="nbc.divBV2.part9.sect20.subsect1.art2.sent1"/>
             <insert>
                 <new-content>
-                    <see-also xml:id="bc.divBV2.part9.sect20.subsect1.art2.see-also1">
-                        <text>(See also <ref type="internal" target="nbc.divBV2.part9.sect4.subsect2.art5" display-type="long"/>.)</text>
-                    </see-also>
+                    <see-also xml:id="bc.divBV2.part9.sect20.subsect1.art2.see-also1">(See also <ref type="internal" target="nbc.divBV2.part9.sect4.subsect2.art5" display-type="long"/>.)</see-also>
                 </new-content>
             </insert>
         </amendment>

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="bcbc-amendments.css"?>
+<?xml-model href="schema/bc-overlay.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-01-19T22:02:54.0351372-08:00"
+            generated="2026-01-22T11:49:37.5659057-08:00"
             source-count="12">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -13137,11 +13139,9 @@ a <ref type="term" target="prt-wll">party wall</ref>
                   <clause xml:id="bc.divBV2.part9.sect11.subsect1.art1.sent2.clause3" letter="c">
                      <text>a separating assembly and adjoining constructions, which together provide an <ref type="term" target="astc">ASTC</ref> rating of not less than 40.</text>
                   </clause>
-                  <see-also xml:id="bc.divBV2.part9.sect11.subsect1.art1.sent2.see-also1">
-                     <text>(See also <ref type="internal"
-                             target="nbc.divBV2.part9.sect10.subsect3.art1.sent2"
-                             display-type="short"/> and Note A-9.11.1.1.(2).)</text>
-                  </see-also>
+                  <see-also xml:id="bc.divBV2.part9.sect11.subsect1.art1.sent2.see-also1">(See also <ref type="internal"
+                          target="nbc.divBV2.part9.sect10.subsect3.art1.sent2"
+                          display-type="short"/> and Note A-9.11.1.1.(2).)</see-also>
                </sentence>
             </new-content>
          </replace>
@@ -13373,11 +13373,9 @@ S<sub>max</sub>, for Site Class C is not greater than 0.27 (see also <ref type="
                  reference-id="nbc.divBV2.part9.sect20.subsect1.art2.sent1"/>
          <insert>
             <new-content>
-               <see-also xml:id="bc.divBV2.part9.sect20.subsect1.art2.see-also1">
-                  <text>(See also <ref type="internal"
-                          target="nbc.divBV2.part9.sect4.subsect2.art5"
-                          display-type="long"/>.)</text>
-               </see-also>
+               <see-also xml:id="bc.divBV2.part9.sect20.subsect1.art2.see-also1">(See also <ref type="internal"
+                       target="nbc.divBV2.part9.sect4.subsect2.art5"
+                       display-type="long"/>.)</see-also>
             </new-content>
          </insert>
       </amendment>
@@ -23647,18 +23645,20 @@ to <ref type="internal"
             <new-content>
                <table xml:id="bc.divBV2.part9.sect36.subsect2.art8.table3">
                   <title>Effective Thermal Resistance of Assemblies Below-Grade or in Contact with the Ground for Buildings Containing Only Dwelling Units</title>
-                  <ref type="internal"
-                       target="nbc.divBV2.part9.sect36.subsect1.art3.sent6"
-                       display-type="long"
-                       pretext="Forming Part of Sentences"/>
-                  <ref type="internal"
-                       target="nbc.divBV2.part9.sect36.subsect2.art8.sent1"
-                       display-type="short"
-                       pretext=" and"/>
-                  <ref type="internal"
-                       target="nbc.divBV2.part9.sect36.subsect2.art8.sent9"
-                       display-type="short"
-                       pretext=" to"/>
+                  <subtitle>
+                     <ref type="internal"
+                          target="nbc.divBV2.part9.sect36.subsect1.art3.sent6"
+                          display-type="long"
+                          pretext="Forming Part of Sentences"/>
+                     <ref type="internal"
+                          target="nbc.divBV2.part9.sect36.subsect2.art8.sent1"
+                          display-type="short"
+                          pretext=" and"/>
+                     <ref type="internal"
+                          target="nbc.divBV2.part9.sect36.subsect2.art8.sent9"
+                          display-type="short"
+                          pretext=" to"/>
+                  </subtitle>
                   <tgroup cols="7">
                      <colspec colname="col1" colwidth="60.00*"/>
                      <colspec colname="col2" colwidth="46.00*"/>
@@ -23798,7 +23798,6 @@ to <ref type="internal"
                <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent2"
                          number="2"
                          vendor-id="es008892">
-                  <intent-ref target="ei008892.xml" vendor-target="ei008892.xml"/>
                   <text>Where an entire floor assembly falls into two of the categories listed in <ref type="internal"
                           target="nbc.divBV2.part9.sect36.subsect2.art8.table1"
                           display-type="long"
@@ -23829,7 +23828,6 @@ to <ref type="internal"
                <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent3"
                          number="3"
                          vendor-id="es006904">
-                  <intent-ref target="ei006904.xml" vendor-target="ei006904.xml"/>
                   <text>Where the top of a section of <ref type="term" target="fndtn">foundation</ref> wall is on average less than <measurement units="metric">600 mm</measurement> above the adjoining ground level, the above-ground portion of that section of wall shall be insulated to the effective thermal resistance required in <ref type="internal"
                           target="nbc.divBV2.part9.sect36.subsect2.art8.table1"
                           display-type="long"
@@ -23858,7 +23856,6 @@ to <ref type="internal"
                <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent5"
                          number="5"
                          vendor-id="es006906">
-                  <intent-ref target="ei006906.xml" vendor-target="ei006906.xml"/>
                   <text>Except as provided in <ref type="internal"
                           target="nbc.divBV2.part9.sect36.subsect2.art8.sent6"
                           display-type="short"/>, floors-on-ground with embedded heating ducts, cables or pipes shall be insulated to the effective thermal resistance required in <ref type="internal"
@@ -23889,7 +23886,6 @@ to <ref type="internal"
                <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent6"
                          number="6"
                          vendor-id="es006907">
-                  <intent-ref target="ei006907.xml" vendor-target="ei006907.xml"/>
                   <text>Where only a portion of a floor-on-ground has embedded heating ducts, cables or pipes, that heated portion shall be insulated to the effective thermal resistance required in <ref type="internal"
                           target="nbc.divBV2.part9.sect36.subsect2.art8.table1"
                           display-type="long"
@@ -23918,7 +23914,6 @@ to <ref type="internal"
                <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent7"
                          number="7"
                          vendor-id="es006908">
-                  <intent-ref target="ei006908.xml" vendor-target="ei006908.xml"/>
                   <text>In addition to the requirements stated in <ref type="internal"
                           target="nbc.divBV2.part9.sect36.subsect2.art8.sent5"
                           display-type="short"
@@ -23964,7 +23959,6 @@ to <ref type="internal"
                <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent8"
                          number="8"
                          vendor-id="es008893">
-                  <intent-ref target="ei008893.xml" vendor-target="ei008893.xml"/>
                   <text>Floors on permafrost shall be insulated to the effective thermal resistance required in <ref type="internal"
                           target="nbc.divBV2.part9.sect36.subsect2.art8.table1"
                           display-type="long"
@@ -23993,7 +23987,6 @@ to <ref type="internal"
                <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent9"
                          number="9"
                          vendor-id="es008792">
-                  <intent-ref target="ei008792.xml" vendor-target="ei008792.xml"/>
                   <text>Slabs-on-grade with an integral perimeter footing shall </text>
                   <clause xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent9.clause1"
                           letter="a"
@@ -24086,7 +24079,6 @@ to <ref type="internal"
                <sentence xml:id="nbc.divBV2.part9.sect36.subsect5.art2.sent1"
                          number="1"
                          vendor-id="es006987">
-                  <intent-ref target="ei006987.xml" vendor-target="ei006987.xml"/>
                   <text>For the purpose of this Subsection, the term "reference house" shall mean a hypothetical replica of the proposed house design using the same energy sources for the same functions and having the same environmental requirements, <ref type="term" target="ccpnc">occupancy</ref>, climatic data and operating schedules, but made to comply with all applicable prescriptive requirements of <ref type="internal"
                           target="nbc.divBV2.part9.sect36.subsect2"
                           display-type="long"

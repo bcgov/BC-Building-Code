@@ -956,6 +956,13 @@
             <optional>
               <attribute name="xml:id"><data type="ID"/></attribute>
             </optional>
+            <!-- Image reference attributes for rendering -->
+            <optional>
+              <attribute name="image"><text/></attribute>
+            </optional>
+            <optional>
+              <attribute name="image-src"><text/></attribute>
+            </optional>
             <!-- Allow empty equations (placeholder references) or content -->
             <optional>
               <choice>
@@ -963,6 +970,8 @@
                   <!-- MathML content -->
                   <ref name="mathml-content"/>
                 </element>
+                <!-- Direct MathML math element (with namespace) -->
+                <ref name="mathml-content"/>
                 <element name="latex"><text/></element>
                 <element name="text"><ref name="rich-text"/></element>
               </choice>
@@ -1596,6 +1605,13 @@
             <optional>
               <attribute name="xml:id"><data type="ID"/></attribute>
             </optional>
+            <!-- Image reference attributes for rendering -->
+            <optional>
+              <attribute name="image"><text/></attribute>
+            </optional>
+            <optional>
+              <attribute name="image-src"><text/></attribute>
+            </optional>
             <!-- Allow empty equations (placeholder references) or content -->
             <optional>
               <choice>
@@ -1603,6 +1619,8 @@
                   <!-- MathML content -->
                   <ref name="mathml-content"/>
                 </element>
+                <!-- Direct MathML math element (with namespace) -->
+                <ref name="mathml-content"/>
                 <element name="latex"><text/></element>
                 <element name="text"><ref name="rich-text"/></element>
               </choice>
@@ -1951,17 +1969,18 @@
     </oneOrMore>
   </define>
 
-  <!-- Placeholder for MathML content -->
+  <!-- Placeholder for MathML content - allows any elements in any namespace -->
   <define name="mathml-content">
     <element>
-      <anyName>
-        <except>
-          <nsName ns=""/>
-        </except>
-      </anyName>
+      <anyName/>
       <zeroOrMore>
         <attribute>
-          <anyName/>
+          <anyName>
+            <except>
+              <name>xml:id</name>
+              <name>id</name>
+            </except>
+          </anyName>
         </attribute>
       </zeroOrMore>
       <mixed>

@@ -6053,10 +6053,6 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                                 status="current"
                             >
                 <content>
-                  <intent-ref
-                                        target="ei006989.xml"
-                                        vendor-target="ei006989.xml"
-                                    />
                   <text
                                     >For the purpose of this Section, the term "annual energy consumption" shall mean the annual sum of service water heating and space-conditioning energy consumption of the proposed house design, calculated in accordance with <ref
                                             type="internal"
@@ -6115,10 +6111,6 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                                 status="current"
                             >
                 <content>
-                  <intent-ref
-                                        target="ei006988.xml"
-                                        vendor-target="ei006988.xml"
-                                    />
                   <text
                                     >For the purpose of this Section, the term "house energy target" shall mean the annual energy consumption of the reference house, calculated in accordance with <ref
                                             type="internal"

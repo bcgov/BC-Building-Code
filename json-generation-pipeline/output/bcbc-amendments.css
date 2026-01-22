@@ -1,0 +1,707 @@
+/* 
+ * BCBC Amendment Authoring Framework CSS
+ * 
+ * Provides visual styling for amendment documents in Oxygen XML Editor Author mode.
+ * Uses BC Government brand colors where appropriate.
+ */
+
+/* ==========================================================================
+   BC OVERLAY DOCUMENT ROOT
+   ========================================================================== */
+bc-overlay {
+  display: block;
+  font-family: "BC Sans", "Noto Sans", Arial, sans-serif;
+  font-size: 12pt;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+bc-overlay::before {
+  content: "BC Building Code Overlay Amendments";
+  display: block;
+  font-size: 18pt;
+  font-weight: bold;
+  color: #036;
+  border-bottom: 3px solid #FCBA19;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   METADATA SECTION
+   ========================================================================== */
+bc-overlay > metadata {
+  display: block;
+  background-color: #F2F2F2;
+  border: 1px solid #CCC;
+  border-left: 4px solid #036;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+metadata > title {
+  display: block;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #036;
+  margin-bottom: 8px;
+}
+
+metadata > description,
+metadata > authority,
+metadata > author,
+metadata > source-document {
+  display: block;
+  margin: 4px 0;
+}
+
+metadata > description::before { content: "Description: "; font-weight: bold; }
+metadata > authority::before { content: "Authority: "; font-weight: bold; }
+metadata > author::before { content: "Author: "; font-weight: bold; }
+metadata > source-document::before { content: "Source: "; font-weight: bold; }
+
+/* Combined amendments metadata */
+source-files {
+  display: block;
+  background-color: #E8F4FC;
+  border: 1px solid #B3D9F2;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+source-files::before {
+  content: "📂 Source Files";
+  display: block;
+  font-weight: bold;
+  font-size: 10pt;
+  color: #036;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #999;
+}
+
+source-file {
+  display: block;
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 9pt;
+  color: #333;
+  padding: 3px 0 3px 15px;
+  position: relative;
+}
+
+source-file::before {
+  content: "• ";
+  position: absolute;
+  left: 0;
+  color: #036;
+}
+
+original-metadata {
+  display: block;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 3px;
+  border-left: 3px solid #FCBA19;
+}
+
+original-metadata::before {
+  content: "Source #" attr(source-index) " Metadata";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #856404;
+  margin-bottom: 5px;
+}
+
+original-metadata > title {
+  display: block;
+  font-size: 11pt;
+  font-weight: bold;
+  color: #333;
+  margin: 3px 0;
+}
+
+original-metadata > description,
+original-metadata > authority,
+original-metadata > author,
+original-metadata > source-document {
+  display: block;
+  font-size: 9pt;
+  margin: 2px 0;
+  color: #666;
+}
+
+original-metadata > description::before { content: "Description: "; font-weight: bold; color: #333; }
+original-metadata > authority::before { content: "Authority: "; font-weight: bold; color: #333; }
+original-metadata > author::before { content: "Author: "; font-weight: bold; color: #333; }
+original-metadata > source-document::before { content: "Source: "; font-weight: bold; color: #333; }
+
+/* ==========================================================================
+   TEXT REPLACEMENTS (Pre-processing)
+   ========================================================================== */
+text-replacements {
+  display: block;
+  background-color: #FFF8E1;
+  border: 1px solid #FFE082;
+  border-left: 4px solid #FFA000;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 3px;
+}
+
+text-replacements::before {
+  content: "🔄 GLOBAL TEXT REPLACEMENTS (Pre-processing)";
+  display: block;
+  font-weight: bold;
+  font-size: 11pt;
+  color: #E65100;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #FFB74D;
+}
+
+text-replacements::after {
+  content: "⚠ These replacements are applied to the entire source document before amendments are processed.";
+  display: block;
+  font-size: 9pt;
+  font-style: italic;
+  color: #856404;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dotted #FFB74D;
+}
+
+replace[source-file-index] {
+  display: block;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 3px;
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 9pt;
+}
+
+replace[source-file-index]::before {
+  content: "Source #" attr(source-file-index) " | ";
+  font-weight: bold;
+  color: #E65100;
+  font-family: "BC Sans", "Noto Sans", Arial, sans-serif;
+}
+
+replace[source-file-index]::after {
+  content: "FROM: \"" attr(from) "\" → TO: \"" attr(to) "\"";
+  color: #333;
+}
+
+replace[source-file-index][regex="true"]::after {
+  content: "FROM: \"" attr(from) "\" → TO: \"" attr(to) "\" (REGEX)";
+  color: #D84315;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   AMENDMENTS CONTAINER
+   ========================================================================== */
+amendments {
+  display: block;
+  counter-reset: amendment-counter;
+}
+
+amendments::before {
+  content: "Amendments (" attr(count) ")";
+  display: block;
+  font-size: 14pt;
+  font-weight: bold;
+  color: #036;
+  border-bottom: 2px solid #036;
+  padding-bottom: 5px;
+  margin: 20px 0 15px 0;
+}
+
+/* ==========================================================================
+   INDIVIDUAL AMENDMENT
+   ========================================================================== */
+amendment {
+  display: block;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  margin: 15px 0;
+  padding: 0;
+  counter-increment: amendment-counter;
+  background-color: #FFF;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+amendment::before {
+  content: "Amendment #" counter(amendment-counter) " [" attr(id) "] - Seq: " attr(sequence);
+  display: block;
+  background-color: #036;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 4px 4px 0 0;
+}
+
+amendment[description]::after {
+  content: attr(description);
+  display: block;
+  background-color: #E8F4FC;
+  padding: 8px 15px;
+  font-style: italic;
+  color: #333;
+  border-bottom: 1px solid #CCC;
+}
+
+/* ==========================================================================
+   TARGET ELEMENT
+   ========================================================================== */
+target {
+  display: block;
+  background-color: #FFF8E1;
+  border-left: 4px solid #FCBA19;
+  padding: 10px 15px;
+  margin: 0;
+}
+
+target::before {
+  content: "▶ TARGET";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #856404;
+  margin-bottom: 5px;
+}
+
+target[type="canonical-id"]::after {
+  content: "Type: Canonical ID | Target: " attr(id);
+  display: block;
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 10pt;
+  color: #666;
+  background-color: #FFF;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+target[type="position"]::after {
+  content: "Type: Position | Parent: " attr(parent-id) " | Position: " attr(position) " | Reference: " attr(reference-id);
+  display: block;
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 10pt;
+  color: #666;
+  background-color: #FFF;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+target[type="child-element"]::after {
+  content: "Type: Child Element | Parent: " attr(parent-id) " | Element: " attr(element-name) " | Position: " attr(position);
+  display: block;
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 10pt;
+  color: #666;
+  background-color: #FFF;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+target[type="table-row-insert"]::after {
+  content: "Type: Table Row Insert | Table: " attr(table-id) " | Match: " attr(match-row-containing);
+  display: block;
+  font-family: "Consolas", "Monaco", monospace;
+  font-size: 10pt;
+  color: #666;
+  background-color: #FFF;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+/* ==========================================================================
+   OPERATION TYPES
+   ========================================================================== */
+
+/* REPLACE Operation */
+replace {
+  display: block;
+  background-color: #E3F2FD;
+  border-left: 4px solid #2196F3;
+  padding: 10px 15px;
+}
+
+replace::before {
+  content: "⟳ REPLACE" " (preserve-references: " attr(preserve-references) ")";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #1565C0;
+  margin-bottom: 5px;
+}
+
+/* INSERT Operation */
+insert {
+  display: block;
+  background-color: #E8F5E9;
+  border-left: 4px solid #4CAF50;
+  padding: 10px 15px;
+}
+
+insert::before {
+  content: "➕ INSERT";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #2E7D32;
+  margin-bottom: 5px;
+}
+
+/* MODIFY Operation */
+modify {
+  display: block;
+  background-color: #FFF3E0;
+  border-left: 4px solid #FF9800;
+  padding: 10px 15px;
+}
+
+modify::before {
+  content: "✏ MODIFY";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #E65100;
+  margin-bottom: 5px;
+}
+
+/* DELETE Operation */
+delete {
+  display: block;
+  background-color: #FFEBEE;
+  border-left: 4px solid #F44336;
+  padding: 10px 15px;
+  min-height: 30px;
+}
+
+delete::before {
+  content: "✖ DELETE (removes element entirely)";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #C62828;
+}
+
+/* ==========================================================================
+   NEW CONTENT
+   ========================================================================== */
+new-content {
+  display: block;
+  background-color: #FAFAFA;
+  border: 1px dashed #999;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+
+new-content::before {
+  content: "📄 NEW CONTENT";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #666;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #CCC;
+}
+
+/* ==========================================================================
+   MODIFY SUB-OPERATIONS
+   ========================================================================== */
+text-change {
+  display: block;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+
+text-change::before {
+  content: "TEXT-CHANGE (xpath: " attr(xpath-within-target) ")";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+find-replace {
+  display: block;
+  padding: 5px 0;
+}
+
+find {
+  display: block;
+  background-color: #FFCDD2;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 2px 0;
+}
+
+find::before {
+  content: "FIND: ";
+  font-weight: bold;
+  color: #B71C1C;
+}
+
+replace {
+  /* Override for find-replace context */
+}
+
+find-replace > replace {
+  display: block;
+  background-color: #C8E6C9;
+  border-left: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin: 2px 0;
+}
+
+find-replace > replace::before {
+  content: "REPLACE: ";
+  font-weight: bold;
+  font-size: inherit;
+  color: #1B5E20;
+  margin-bottom: 0;
+}
+
+element-replace {
+  display: block;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+
+element-replace::before {
+  content: "ELEMENT-REPLACE (element: " attr(element) ", position: " attr(position) ")";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+element-change {
+  display: block;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+
+element-change::before {
+  content: "ELEMENT-CHANGE (xpath: " attr(xpath-within-target) ")";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+remove-element {
+  display: block;
+  background-color: #FFCDD2;
+  padding: 8px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+remove-element::before {
+  content: "⊘ REMOVE ELEMENT";
+  font-weight: bold;
+  color: #B71C1C;
+}
+
+/* ==========================================================================
+   NBC/BC BUILDING CODE ELEMENTS (for viewing source documents)
+   ========================================================================== */
+division, part, section, subsection, article, sentence, clause {
+  display: block;
+  margin: 5px 0 5px 20px;
+  padding: 5px 10px;
+  border-left: 2px solid #DDD;
+}
+
+division::before { content: "DIVISION " attr(number) ": "; font-weight: bold; color: #036; }
+part::before { content: "PART " attr(number) ": "; font-weight: bold; color: #036; }
+section::before { content: "Section " attr(number) ": "; font-weight: bold; color: #333; }
+subsection::before { content: "Subsection " attr(number) ": "; font-weight: bold; color: #333; }
+article::before { content: "Article " attr(number) ": "; font-weight: bold; color: #333; }
+sentence::before { content: "(" attr(number) ") "; font-weight: bold; color: #666; }
+clause::before { content: attr(letter) ") "; font-weight: bold; color: #666; }
+
+/* Highlight elements with xml:id for targeting */
+*[xml|id] {
+  position: relative;
+}
+
+*[xml|id]::after {
+  content: " [" attr(xml|id) "]";
+  font-size: 8pt;
+  color: #999;
+  font-family: monospace;
+}
+
+/* ==========================================================================
+   REVISION HISTORY (for Phase 2 amendments)
+   ========================================================================== */
+revision-history {
+  display: block;
+  background-color: #F5F5F5;
+  border: 1px solid #DDD;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+revision-history::before {
+  content: "📋 REVISION HISTORY";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #666;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #CCC;
+}
+
+original {
+  display: block;
+  background-color: #ECEFF1;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+
+original::before {
+  content: "ORIGINAL (effective: " attr(effective-date) ")";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #546E7A;
+  margin-bottom: 5px;
+}
+
+revision {
+  display: block;
+  background-color: #E8EAF6;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 3px;
+}
+
+revision::before {
+  content: "REVISION #" attr(seq) " [" attr(type) "] - " attr(status) " (effective: " attr(effective-date) ")";
+  display: block;
+  font-weight: bold;
+  font-size: 9pt;
+  color: #3949AB;
+  margin-bottom: 5px;
+}
+
+revision > content::before { content: "Content: "; font-weight: bold; }
+revision > change-summary::before { content: "Change: "; font-weight: bold; }
+revision > note::before { content: "Note: "; font-weight: bold; }
+
+/* ==========================================================================
+   FORM CONTROLS FOR INTERACTIVE EDITING
+   ========================================================================== */
+/* Amendment ID input */
+amendment:before {
+  -oxy-append-content: 
+    " " 
+    oxy_button(
+      action, oxy_action(
+        name, 'Edit ID',
+        icon, url('${framework}/icons/edit-16.png')
+      ),
+      actionContext, element
+    );
+}
+
+/* Sequence number editor */
+amendment[sequence]::before {
+  -oxy-append-content: 
+    " Seq: "
+    oxy_textfield(
+      edit, '@sequence',
+      columns, 4,
+      fontInherit, true
+    );
+}
+
+/* ==========================================================================
+   AMENDMENT LIST (for amendment-list.xml)
+   ========================================================================== */
+amendment-list, revision-list {
+  display: block;
+  padding: 20px;
+}
+
+amendment-list::before {
+  content: "BC Building Code Amendment List";
+  display: block;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #036;
+  border-bottom: 3px solid #FCBA19;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+revision-list::before {
+  content: "BC Building Code Revision List";
+  display: block;
+  font-size: 16pt;
+  font-weight: bold;
+  color: #036;
+  border-bottom: 3px solid #FCBA19;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+include {
+  display: block;
+  background-color: #F5F5F5;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 3px;
+  border-left: 3px solid #036;
+}
+
+include::before {
+  content: "📁 Include: " attr(href);
+  font-family: monospace;
+  color: #036;
+}
+
+/* ==========================================================================
+   TOOLTIPS AND HELP
+   ========================================================================== */
+target:hover::before,
+replace:hover::before,
+insert:hover::before,
+modify:hover::before,
+delete:hover::before {
+  background-color: #FCBA19;
+  color: #000;
+}

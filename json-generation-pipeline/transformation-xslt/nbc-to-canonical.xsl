@@ -28,7 +28,7 @@
     <xsl:text>&#10;</xsl:text>
     <xsl:processing-instruction
             name="xml-model"
-        >href="proposed/canonical-nbc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:processing-instruction>
+        >href="schema/canonical-nbc.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:processing-instruction>
     <xsl:text>&#10;</xsl:text>
   </xsl:template>
 
@@ -741,7 +741,8 @@
                 /></xsl:if>
 
       <!-- Intent reference if present; support both @xlink:href and @refid -->
-      <xsl:if test="ref.intent">
+      <!-- Skip intent-ref if it points to an external .xml file (invalid reference) -->
+      <xsl:if test="ref.intent and not(contains((ref.intent/@refid, ref.intent/@xlink:href)[1], '.xml'))">
         <intent-ref target="{(ref.intent/@refid, ref.intent/@xlink:href)[1]}" />
       </xsl:if>
 
@@ -962,7 +963,7 @@
   <xsl:template match="ref.note" mode="entry-content">
     <xsl:param name="table-id" as="xs:string" select="''" />
     <xsl:param name="note-offset" as="xs:integer" select="0" />
-    <ref type="short" target="{@refid}" />
+    <ref type="table-note" target="{@refid}" />
   </xsl:template>
 
   <!-- Elements that may contain notes - process children in entry-content mode -->

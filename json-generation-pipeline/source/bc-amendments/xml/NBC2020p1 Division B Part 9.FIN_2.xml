@@ -703,18 +703,20 @@
                 <new-content>
                     <table xml:id="bc.divBV2.part9.sect36.subsect2.art8.table3">
                         <title>Effective Thermal Resistance of Assemblies Below-Grade or in Contact with the Ground for Buildings Containing Only Dwelling Units</title>
-                        <ref type="internal"
-                             target="nbc.divBV2.part9.sect36.subsect1.art3.sent6"
-                             display-type="long"
-                             pretext="Forming Part of Sentences"/>
-                        <ref type="internal"
-                             target="nbc.divBV2.part9.sect36.subsect2.art8.sent1"
-                             display-type="short"
-                             pretext=" and"/>
-                        <ref type="internal"
-                             target="nbc.divBV2.part9.sect36.subsect2.art8.sent9"
-                             display-type="short"
-                             pretext=" to"/>
+                        <subtitle>
+                            <ref type="internal"
+                                 target="nbc.divBV2.part9.sect36.subsect1.art3.sent6"
+                                 display-type="long"
+                                 pretext="Forming Part of Sentences"/>
+                            <ref type="internal"
+                                 target="nbc.divBV2.part9.sect36.subsect2.art8.sent1"
+                                 display-type="short"
+                                 pretext=" and"/>
+                            <ref type="internal"
+                                 target="nbc.divBV2.part9.sect36.subsect2.art8.sent9"
+                                 display-type="short"
+                                 pretext=" to"/>
+                        </subtitle>
                         <tgroup cols="7">
                             <colspec colname="col1" colwidth="60.00*"/>
                             <colspec colname="col2" colwidth="46.00*"/>
@@ -839,7 +841,6 @@
             <replace preserve-references="false">
                 <new-content>
                     <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent2" number="2" vendor-id="es008892">
-                        <intent-ref target="ei008892.xml" vendor-target="ei008892.xml"/>
                         <text>Where an entire floor assembly falls into two of the categories listed in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table1" display-type="long" pretext="Tables"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table2" display-type="long" pretext=","/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table3" display-type="long" pretext=" and"/>, the more stringent value shall apply. (See <ref type="internal" target="nbc.divBV2.part9.appnote239" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
@@ -856,7 +857,6 @@
             <replace preserve-references="false">
                 <new-content>
                     <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent3" number="3" vendor-id="es006904">
-                        <intent-ref target="ei006904.xml" vendor-target="ei006904.xml"/>
                         <text>Where the top of a section of <ref type="term" target="fndtn">foundation</ref> wall is on average less than <measurement units="metric">600 mm</measurement> above the adjoining ground level, the above-ground portion of that section of wall shall be insulated to the effective thermal resistance required in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table1" display-type="long" pretext="Table"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table2" display-type="long" pretext=","/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table3" display-type="long" pretext=" or"/>.</text>
                     </sentence>
                 </new-content>
@@ -873,7 +873,6 @@
             <replace preserve-references="false">
                 <new-content>
                     <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent5" number="5" vendor-id="es006906">
-                        <intent-ref target="ei006906.xml" vendor-target="ei006906.xml"/>
                         <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.sent6" display-type="short"/>, floors-on-ground with embedded heating ducts, cables or pipes shall be insulated to the effective thermal resistance required in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table1" display-type="long" pretext="Table"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table2" display-type="long" pretext=","/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table3" display-type="long" pretext=" or"/> under their full bottom surface including the edges.</text>
                     </sentence>
                 </new-content>
@@ -890,7 +889,6 @@
             <replace preserve-references="false">
                 <new-content>
                     <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent6" number="6" vendor-id="es006907">
-                        <intent-ref target="ei006907.xml" vendor-target="ei006907.xml"/>
                         <text>Where only a portion of a floor-on-ground has embedded heating ducts, cables or pipes, that heated portion shall be insulated to the effective thermal resistance required in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table1" display-type="long" pretext="Table"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table2" display-type="long" pretext=","/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table3" display-type="long" pretext=" or"/> under its full bottom surface to <measurement units="metric">1.2 m</measurement> beyond its perimeter including exterior edges if applicable.</text>
                     </sentence>
                 </new-content>
@@ -907,7 +905,6 @@
             <replace preserve-references="true">
                 <new-content>
                     <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent7" number="7" vendor-id="es006908">
-                        <intent-ref target="ei006908.xml" vendor-target="ei006908.xml"/>
                         <text>In addition to the requirements stated in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.sent5" display-type="short" pretext="Sentences"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.sent6" display-type="short" pretext=" and"/>, heated floors-on-ground shall be insulated to the effective thermal resistance required in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table1" display-type="long" pretext="Table"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table2" display-type="long" pretext=","/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table3" display-type="long" pretext=" or"/> vertically</text>
                         <clause xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent7.clause1" letter="a" vendor-id="es006908a">
                             <text>around their perimeter, or</text>
@@ -930,7 +927,6 @@
             <replace preserve-references="false">
                 <new-content>
                     <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent8" number="8" vendor-id="es008893">
-                        <intent-ref target="ei008893.xml" vendor-target="ei008893.xml"/>
                         <text>Floors on permafrost shall be insulated to the effective thermal resistance required in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table1" display-type="long" pretext="Table"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table2" display-type="long" pretext=","/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table3" display-type="long" pretext=" or"/> under the entire slab and around all edges, and under the integral perimeter footing.</text>
                     </sentence>
                 </new-content>
@@ -947,7 +943,6 @@
             <replace preserve-references="true">
                 <new-content>
                     <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent9" number="9" vendor-id="es008792">
-                        <intent-ref target="ei008792.xml" vendor-target="ei008792.xml"/>
                         <text>Slabs-on-grade with an integral perimeter footing shall </text>
                         <clause xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent9.clause1" letter="a" vendor-id="es008792a">
                             <text>be insulated to the effective thermal resistance required in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table1" display-type="long" pretext="Table"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table2" display-type="long" pretext=","/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table3" display-type="long" pretext=" or"/> under the entire slab and around all edges, but not under the integral perimeter footing, and</text>
@@ -1018,7 +1013,6 @@
             <replace preserve-references="false">
                 <new-content>
                     <sentence xml:id="nbc.divBV2.part9.sect36.subsect5.art2.sent1" number="1" vendor-id="es006987">
-                        <intent-ref target="ei006987.xml" vendor-target="ei006987.xml"/>
                         <text>For the purpose of this Subsection, the term "reference house" shall mean a hypothetical replica of the proposed house design using the same energy sources for the same functions and having the same environmental requirements, <ref type="term" target="ccpnc">occupancy</ref>, climatic data and operating schedules, but made to comply with all applicable prescriptive requirements of <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2" display-type="long" pretext="Subsections"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect4" display-type="long" pretext=" to"/>, not including <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art6.table3" display-type="long" pretext="Tables"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table4" display-type="long" pretext=","/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table3" display-type="long" pretext=" and"/></text>
                     </sentence>
                 </new-content>

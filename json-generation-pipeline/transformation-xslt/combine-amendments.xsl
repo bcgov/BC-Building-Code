@@ -23,6 +23,14 @@
     
     <xsl:output method="xml" indent="yes" encoding="UTF-8"/>
     
+    <!-- Template to add processing instructions -->
+    <xsl:template name="add-processing-instructions">
+        <xsl:processing-instruction name="xml-stylesheet">type="text/css" href="bcbc-amendments.css"</xsl:processing-instruction>
+        <xsl:text>&#10;</xsl:text>
+        <xsl:processing-instruction name="xml-model">href="schema/bc-overlay.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:processing-instruction>
+        <xsl:text>&#10;</xsl:text>
+    </xsl:template>
+    
     <!-- Load all amendment documents from the input file list -->
     <xsl:variable name="amendment-docs" as="document-node()*">
         <xsl:for-each select="/amendment-files/file">
@@ -42,6 +50,9 @@
     
     <xsl:template match="/amendment-files">
         <xsl:message>Combining <xsl:value-of select="count($amendment-docs)"/> amendment file(s)...</xsl:message>
+        
+        <!-- Add processing instructions -->
+        <xsl:call-template name="add-processing-instructions"/>
         
         <bc-overlay version="1.0" 
                     target-nbc-version="2020"

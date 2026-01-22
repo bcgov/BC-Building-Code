@@ -827,7 +827,6 @@
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-009" status="current">
                 <content>
-                  <intent-ref target="ei007174.xml" vendor-target="ei007174.xml"/>
                   <text>Except as provided in <ref type="internal"
                           target="nbc.divB.part3.sect1.subsect6.art4.sent3"
                           display-type="long"
@@ -872,7 +871,6 @@ be exposed by cutting through the material in any direction.</text>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-010" status="current">
                 <content>
-                  <intent-ref target="ei007175.xml" vendor-target="ei007175.xml"/>
                   <text>Except as provided in <ref type="internal"
                           target="nbc.divB.part3.sect1.subsect6.art14.sent4"
                           display-type="short"
@@ -1147,7 +1145,6 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-018" status="current">
                 <content>
-                  <intent-ref target="ei002058.xml" vendor-target="ei002058.xml"/>
                   <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art11.sent2" display-type="short"/>, an exterior balcony shall be constructed in accordance with the type of construction required by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="long" pretext="to"/>, as applicable to the <ref type="term" target="ccpnc">occupancy</ref> classification of the <ref type="term" target="bldng">building</ref>.</text>
                 </content>
                 <change-summary>Changed reference from 3.2.2.92 to 3.2.2.93</change-summary>
@@ -1174,7 +1171,6 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-019" status="current">
                 <content>
-                  <intent-ref target="ei007188.xml" vendor-target="ei007188.xml"/>
                   <text>The floor assembly of an exterior balcony in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> conforming to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art48" display-type="long"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art57" display-type="long"/> or <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="long"/> shall </text>
                   <clause xml:id="bc.divB.part3.sect2.subsect2.art11.sent2.clause1" letter="a">
                     <text>be of <ref type="term" target="cmbtbl-c">noncombustible construction</ref>, or</text>
@@ -1207,7 +1203,6 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-020" status="current">
                 <content>
-                  <intent-ref target="ei002059.xml" vendor-target="ei002059.xml"/>
                   <text>An elevated exterior passageway used as part of a <ref type="term" target="mn-f-gr">means of egress</ref> shall conform to the requirements of <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="long" pretext="to"/> for <ref type="term" target="mzznn">mezzanines</ref>.</text>
                 </content>
                 <change-summary>Changed reference from 3.2.2.92 to 3.2.2.93</change-summary>
@@ -1234,7 +1229,6 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-021" status="current">
                 <content>
-                  <intent-ref target="ei002060.xml" vendor-target="ei002060.xml"/>
                   <text>A portion of a roof that supports an <ref type="term" target="ccpnc">occupancy</ref> shall be constructed in conformance with the <ref type="term" target="fr-prtn">fire separation</ref> requirements of <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="long" pretext="to"/> for floor assemblies, and not the <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> for roof assemblies.</text>
                 </content>
                 <change-summary>Changed reference from 3.2.2.92 to 3.2.2.93</change-summary>
@@ -1287,7 +1281,6 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-023" status="current">
                 <content>
-                  <intent-ref target="ei002063.xml" vendor-target="ei002063.xml"/>
                   <text>A rooftop enclosure for a stairway shall be constructed in accordance with the type of construction required by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="long" pretext="to"/></text>
                 </content>
                 <change-summary>Changed reference from 3.2.2.92 to 3.2.2.93</change-summary>
@@ -1314,7 +1307,6 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-024" status="current">
                 <content>
-                  <intent-ref target="ei002068.xml" vendor-target="ei002068.xml"/>
                   <text>Unless otherwise permitted by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="long" pretext="to"/>, a roof assembly in a <ref type="term" target="bldng">building</ref> up to 2 <ref type="term" target="tr">storeys</ref> in <ref type="term" target="bldng-hg">building height</ref> is permitted to be of <ref type="term" target="hv-tmbr-">heavy timber construction</ref> regardless of <ref type="term" target="bldng-r">building area</ref> or type of construction required, provided the <ref type="term" target="bldng">building</ref> is <ref type="term" target="prnklrd">sprinklered</ref> throughout.</text>
                 </content>
                 <change-summary>Changed reference from 3.2.2.92 to 3.2.2.93</change-summary>

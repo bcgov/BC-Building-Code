@@ -103,6 +103,24 @@
                 </optional>
             </element>
             
+            <!-- Text replacements (optional, applied before amendments) -->
+            <optional>
+                <element name="text-replacements">
+                    <oneOrMore>
+                        <element name="replace">
+                            <optional>
+                                <attribute name="source-file-index"><data type="positiveInteger"/></attribute>
+                            </optional>
+                            <attribute name="from"><text/></attribute>
+                            <attribute name="to"><text/></attribute>
+                            <optional>
+                                <attribute name="regex"><data type="boolean"/></attribute>
+                            </optional>
+                        </element>
+                    </oneOrMore>
+                </element>
+            </optional>
+            
             <!-- Amendment operations -->
             <element name="amendments">
                 <oneOrMore>
@@ -129,7 +147,7 @@
         </optional>
         <optional>
             <attribute name="original-sequence">
-                <data type="positiveInteger"/>
+                <data type="decimal"/>
             </attribute>
         </optional>
         <optional>
@@ -299,6 +317,19 @@
                             <ref name="bc-content"/>
                         </element>
                         <element name="add-child">
+                            <optional>
+                                <attribute name="position">
+                                    <choice>
+                                        <value>before</value>
+                                        <value>after</value>
+                                        <value>first-child</value>
+                                        <value>last-child</value>
+                                    </choice>
+                                </attribute>
+                            </optional>
+                            <optional>
+                                <attribute name="reference-element"><text/></attribute>
+                            </optional>
                             <ref name="bc-content"/>
                         </element>
                         <element name="remove-element"><empty/></element>
@@ -2405,10 +2436,25 @@
                         <optional>
                             <attribute name="xml:id"><data type="ID"/></attribute>
                         </optional>
-                        <choice>
-                            <element name="latex"><text/></element>
-                            <element name="text"><text/></element>
-                        </choice>
+                        <!-- Image reference attributes for rendering -->
+                        <optional>
+                            <attribute name="image"><text/></attribute>
+                        </optional>
+                        <optional>
+                            <attribute name="image-src"><text/></attribute>
+                        </optional>
+                        <optional>
+                            <choice>
+                                <element name="mathml">
+                                    <!-- MathML content -->
+                                    <ref name="mathml-content"/>
+                                </element>
+                                <!-- Direct MathML math element (with namespace) -->
+                                <ref name="mathml-content"/>
+                                <element name="latex"><text/></element>
+                                <element name="text"><text/></element>
+                            </choice>
+                        </optional>
                     </element>
                     
                     <!-- Lists -->
@@ -2478,6 +2524,32 @@
                 </choice>
             </zeroOrMore>
         </mixed>
+    </define>
+    
+    <!-- ================================================================== -->
+    <!-- MATHML CONTENT DEFINITION                                          -->
+    <!-- ================================================================== -->
+
+    <!-- Placeholder for MathML content - allows any elements in any namespace -->
+    <define name="mathml-content">
+        <element>
+            <anyName/>
+            <zeroOrMore>
+                <attribute>
+                    <anyName>
+                        <except>
+                            <name>xml:id</name>
+                            <name>id</name>
+                        </except>
+                    </anyName>
+                </attribute>
+            </zeroOrMore>
+            <mixed>
+                <zeroOrMore>
+                    <ref name="mathml-content"/>
+                </zeroOrMore>
+            </mixed>
+        </element>
     </define>
     
 </grammar>
