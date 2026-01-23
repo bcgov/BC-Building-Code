@@ -2205,7 +2205,7 @@
                 <new-content>
                     <figure xml:id="bc.divB.part3.sect9.appnote157.figure1" vendor-id="en001563f1">
                         <title>"E001 Emergency exit (left hand)" symbol from ISO 7010</title>
-                        <graphic src="graphics/GG00175A.eps" alt="E001 Emergency exit (left hand) symbol from ISO 7010"/>
+                        <graphic src="graphics/gg/001/gg00175a.eps" alt="E001 Emergency exit (left hand) symbol from ISO 7010"/>
                     </figure>
                 </new-content>
             </replace>
@@ -2223,7 +2223,7 @@
                 <new-content>
                     <figure xml:id="bc.divB.part3.sect9.appnote157.figure2" vendor-id="en001563f2">
                         <title>"E005 Direction, arrow (90º increments), safe condition" symbol from ISO 7010</title>
-                        <graphic src="graphics/GG00174A.eps" alt="90-degree directional arrow (E005) from ISO 7010"/>
+                        <graphic src="graphics/gg/001/gg00174a.eps" alt="90-degree directional arrow (E005) from ISO 7010"/>
                     </figure>
                 </new-content>
             </replace>
@@ -2374,7 +2374,7 @@
                         <paragraph>In a doorway with multiple swinging leaves, the active leaf must be capable of providing the required clear width in the open position. The clear width is then measured from the face of the active leaf, in the open position of <measurement units="metric">90°</measurement> to the doorway, to the outside edge of the adjacent leaf when the adjacent leaf is in the closed position.</paragraph>
                         <figure xml:id="bc.divB.part3.sect9.appnote207.figure1">
                             <title>Clear doorway width</title>
-                            <graphic src="bcgraphics/Figure A-3.8.3.6.(2).eps" alt="Clear doorway width"/>
+                            <graphic src="bc-graphics/Figure A-3.8.3.6.(2).eps" alt="Clear doorway width"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -2460,7 +2460,7 @@
                             <ref type="internal" target="nbc.divB.part3.sect9.appnote214.figure1" display-type="long"/> presents schematic examples of the minimum clear floor space required at doors in an accessible path of travel. Power door operators serving doorways with a reduced width of the clear floor space should be operational at all times when the space is intended to be occupied.</paragraph>
                         <figure xml:id="bc.divB.part3.sect9.appnote214.figure1">
                             <title>Minimum clear floor space required at doors in an accessible path of travel</title>
-                            <graphic src="graphics/EG02804A.eps" alt="Minimum clear floor space required at doors in an accessible path of travel"/>
+                            <graphic src="graphics/eg/028/eg02804a.eps" alt="Minimum clear floor space required at doors in an accessible path of travel"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -2484,11 +2484,11 @@
                         <paragraph>When characters are used on signs to indicate accessible features, Arabic numerals and sans-serif letters with a stroke width to height ratio from 1 in 6 to 1 in 10 and a character width to height ratio from 3 in 5 to 1 in 1 should be used. Characters identifying doors and openings that lead from public areas and through which the public is permitted to pass should consist of Arabic numerals or sans-serif letters or both, be not less than <measurement units="metric">25 mm</measurement> high and raised between <measurement units="metric">0.7 mm</measurement> and <measurement units="metric">3 mm</measurement> with a stroke to height ratio for ease of reading by touch. This identification should be located at the side of the doors or openings, centred <measurement units="metric">1 500 mm</measurement> above the finished floor and within <measurement units="metric">150 mm</measurement> of the jamb.</paragraph>
                         <figure xml:id="bc.divB.part3.sect9.appnote218.figure1">
                             <title>Signs indicating accessible facilities</title>
-                            <graphic src="graphics/GG00049B.eps" alt="Signs indicating accessible facilities"/>
+                            <graphic src="graphics/gg/000/gg00049b.eps" alt="Signs indicating accessible facilities"/>
                         </figure>
                         <figure xml:id="bc.divB.part3.sect9.appnote218.figure2">
                             <title>Signs for assistive listening facilities</title>
-                            <graphic src="graphics/GG00050A.eps" alt="Signs for assistive listening facilities"/>
+                            <graphic src="graphics/gg/000/gg00050a.eps" alt="Signs for assistive listening facilities"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -2511,11 +2511,11 @@
                         <paragraph>The door pull should consist of a D-shaped handle mounted horizontally. The centre lines are the lines drawn through the long axis and the short axis of the handle. The midpoint of the handle must be located horizontally at <measurement units="metric">200 to 300 mm</measurement> from the hinged side of the door and vertically at <measurement units="metric">900 to 1 100 mm</measurement> above the finished floor surface.</paragraph>
                         <figure xml:id="bc.divB.part3.sect9.appnote222.figure1">
                             <title>Door pull location</title>
-                            <graphic src="graphics/Figure A-3.8.3.12.(1)(d)(vi)-A.eps" alt="Door pull location"/>
+                            <graphic src="bc-graphics/Figure A-3.8.3.12.(1)(d)(vi)-A.eps" alt="Door pull location"/>
                         </figure>
                         <figure xml:id="bc.divB.part3.sect9.appnote222.figure2">
                             <title>Door pull details</title>
-                            <graphic src="graphics/EG01216A.eps" alt="Door pull details"/>
+                            <graphic src="graphics/eg/012/eg01216a.eps" alt="Door pull details"/>
                         </figure>
                     </application-note>
                 </new-content>

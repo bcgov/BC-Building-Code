@@ -4780,33 +4780,34 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
             <insert>
                 <new-content>
                     <table xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1">
+                        <title>Table 9.23.13.7.-A</title>
                         <title>Unadjusted Minimum Total Braced Wall Panel Lengths for Wind</title>
+                        <title>Forming Part of Sentence 9.23.13.7.(3)</title>
                         <tgroup cols="12">
-                            <colspec colname="col1" colwidth="8.00*"/>
-                            <colspec colname="col2" colwidth="20.00*"/>
-                            <colspec colname="col3" colwidth="8.00*"/>
-                            <colspec colname="col4" colwidth="8.00*"/>
-                            <colspec colname="col5" colwidth="8.00*"/>
-                            <colspec colname="col6" colwidth="8.00*"/>
-                            <colspec colname="col7" colwidth="8.00*"/>
-                            <colspec colname="col8" colwidth="8.00*"/>
-                            <colspec colname="col9" colwidth="8.00*"/>
-                            <colspec colname="col10" colwidth="8.00*"/>
-                            <colspec colname="col11" colwidth="8.00*"/>
-                            <colspec colname="col12" colwidth="8.00*"/>
+                            <colspec colname="col1" colwidth="8*"/>
+                            <colspec colname="col2" colwidth="12*"/>
+                            <colspec colname="col3" colwidth="8*"/>
+                            <colspec colname="col4" colwidth="8*"/>
+                            <colspec colname="col5" colwidth="8*"/>
+                            <colspec colname="col6" colwidth="8*"/>
+                            <colspec colname="col7" colwidth="8*"/>
+                            <colspec colname="col8" colwidth="8*"/>
+                            <colspec colname="col9" colwidth="8*"/>
+                            <colspec colname="col10" colwidth="8*"/>
+                            <colspec colname="col11" colwidth="8*"/>
+                            <colspec colname="col12" colwidth="8*"/>
                             <thead>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.rowh1">
-                                    <entry align="center">HWP</entry>
-                                    <entry align="center"><ref type="term" target="tr">Storey</ref> (Building Diagrams)</entry>
-                                    <entry align="center">Unadjusted Minimum Total <ref type="term" target="br-wl-pnl">Braced Wall Panel</ref> Length for Wind, L<sub>uw</sub>, m</entry>
+                                <row>
+                                    <entry colspan="12" align="center">Unadjusted Minimum Total <emphasis role="italic">Braced Wall Panel</emphasis> Length for Wind, L<subscript>uw</subscript>, m <super>(1)</super></entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.rowh2">
-                                    <entry align="center">Diagonal-Lumber-Sheathed Framing Type (with gypsum board on opposite side)</entry>
-                                    <entry align="center">Gypsum-Sheathed Framing Type (with gypsum board on only one side)</entry>
-                                    <entry align="center">Wood-sheathed Framing Type (with gypsum board on opposite side)</entry>
+                                <row>
+                                    <entry rowspan="2" align="center">HWP</entry>
+                                    <entry rowspan="2" align="center"><emphasis role="italic">Storey</emphasis></entry>
+                                    <entry rowspan="2" align="center">Diagonal- Lumber-Sheathed Framing Type (with gypsum board on opposite side) <super>(2)</super></entry>
+                                    <entry colspan="4" align="center">Gypsum-Sheathed Framing Type (with gypsum board on only one side) <super>(2)</super> <super>(3)</super></entry>
+                                    <entry colspan="5" align="center">Wood-sheathed Framing Type ( with gypsum board on opposite side) <super>(2)</super></entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.rowh3">
-                                    <entry align="center">DWB</entry>
+                                <row>
                                     <entry align="center">GWB-A</entry>
                                     <entry align="center">GWB-B</entry>
                                     <entry align="center">GWB-C</entry>
@@ -4819,9 +4820,14 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                 </row>
                             </thead>
                             <tbody>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row1">
-                                    <entry align="center">HWP ≤ 0.3</entry>
-                                    <entry align="center">[Building diagram: 1 storey]</entry>
+                                <!-- HWP ≤ 0.3 group -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row4">
+                                    <entry rowspan="3">HWP ≤ 0.3</entry>
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure23">
+                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">0.65</entry>
                                     <entry align="center">3.29</entry>
                                     <entry align="center">1.91</entry>
@@ -4833,8 +4839,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">0.48</entry>
                                     <entry align="center">0.43</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row2">
-                                    <entry align="center">[Building diagram: 2 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row5">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure24">
+                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">1.33</entry>
                                     <entry align="center">6.75</entry>
                                     <entry align="center">3.92</entry>
@@ -4846,8 +4856,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">0.98</entry>
                                     <entry align="center">0.88</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row3">
-                                    <entry align="center">[Building diagram: 3 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row6">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure25">
+                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">2.02</entry>
                                     <entry align="center">10.21</entry>
                                     <entry align="center">5.93</entry>
@@ -4859,9 +4873,15 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">1.49</entry>
                                     <entry align="center">1.34</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row4">
-                                    <entry align="center">0.3 &lt; HWP ≤ 0.4</entry>
-                                    <entry align="center">[Building diagram: 1 storey]</entry>
+                                
+                                <!-- 0.3 < HWP ≤ 0.4 group -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row7">
+                                    <entry rowspan="3">0.3 &lt; HWP ≤ 0.4</entry>
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure26">
+                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">0.86</entry>
                                     <entry align="center">4.38</entry>
                                     <entry align="center">2.54</entry>
@@ -4873,8 +4893,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">0.64</entry>
                                     <entry align="center">0.57</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row5">
-                                    <entry align="center">[Building diagram: 2 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row8">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure27">
+                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">1.78</entry>
                                     <entry align="center">9.00</entry>
                                     <entry align="center">5.23</entry>
@@ -4886,8 +4910,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">1.31</entry>
                                     <entry align="center">1.18</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row6">
-                                    <entry align="center">[Building diagram: 3 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row9">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure28">
+                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">2.69</entry>
                                     <entry align="center">13.61</entry>
                                     <entry align="center">7.91</entry>
@@ -4899,9 +4927,15 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">1.98</entry>
                                     <entry align="center">1.79</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row7">
-                                    <entry align="center">0.4 &lt; HWP ≤ 0.5</entry>
-                                    <entry align="center">[Building diagram: 1 storey]</entry>
+                                
+                                <!-- 0.4 < HWP ≤ 0.5 group -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row10">
+                                    <entry rowspan="3">0.4 &lt; HWP ≤ 0.5</entry>
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure29">
+                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">1.08</entry>
                                     <entry align="center">5.84</entry>
                                     <entry align="center">3.18</entry>
@@ -4913,8 +4947,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">0.79</entry>
                                     <entry align="center">0.72</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row8">
-                                    <entry align="center">[Building diagram: 2 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row11">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure30">
+                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">2.22</entry>
                                     <entry align="center">11.25</entry>
                                     <entry align="center">6.54</entry>
@@ -4926,8 +4964,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">1.63</entry>
                                     <entry align="center">1.47</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row9">
-                                    <entry align="center">[Building diagram: 3 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row12">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure31">
+                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">3.37</entry>
                                     <entry align="center">17.01</entry>
                                     <entry align="center">9.88</entry>
@@ -4939,9 +4981,15 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">2.48</entry>
                                     <entry align="center">2.23</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row10">
-                                    <entry align="center">0.5 &lt; HWP ≤ 0.6</entry>
-                                    <entry align="center">[Building diagram: 1 storey]</entry>
+                                
+                                <!-- 0.5 < HWP ≤ 0.6 group -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row13">
+                                    <entry rowspan="3">0.5 &lt; HWP ≤ 0.6</entry>
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure32">
+                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">1.29</entry>
                                     <entry align="center">6.57</entry>
                                     <entry align="center">3.82</entry>
@@ -4953,8 +5001,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">0.95</entry>
                                     <entry align="center">0.86</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row11">
-                                    <entry align="center">[Building diagram: 2 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row14">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure33">
+                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">2.67</entry>
                                     <entry align="center">13.50</entry>
                                     <entry align="center">7.84</entry>
@@ -4966,8 +5018,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">1.96</entry>
                                     <entry align="center">1.77</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row12">
-                                    <entry align="center">[Building diagram: 3 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row15">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure34">
+                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">4.04</entry>
                                     <entry align="center">20.42</entry>
                                     <entry align="center">11.86</entry>
@@ -4979,9 +5035,15 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">2.97</entry>
                                     <entry align="center">2.68</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row13">
-                                    <entry align="center">0.6 &lt; HWP ≤ 0.9</entry>
-                                    <entry align="center">[Building diagram: 1 storey]</entry>
+                                
+                                <!-- 0.6 < HWP ≤ 0.9 group -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row16">
+                                    <entry rowspan="3">0.6 &lt; HWP ≤ 0.9</entry>
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure35">
+                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">1.94</entry>
                                     <entry align="center">9.86</entry>
                                     <entry align="center">5.73</entry>
@@ -4993,8 +5055,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">1.43</entry>
                                     <entry align="center">1.29</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row14">
-                                    <entry align="center">[Building diagram: 2 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row17">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure36">
+                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">4.00</entry>
                                     <entry align="center">20.25</entry>
                                     <entry align="center">11.76</entry>
@@ -5006,8 +5072,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">2.94</entry>
                                     <entry align="center">2.65</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row15">
-                                    <entry align="center">[Building diagram: 3 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row18">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure37">
+                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">6.06</entry>
                                     <entry align="center">30.62</entry>
                                     <entry align="center">17.79</entry>
@@ -5019,9 +5089,15 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">4.46</entry>
                                     <entry align="center">4.02</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row16">
-                                    <entry align="center">0.9 &lt; HWP ≤ 1.2</entry>
-                                    <entry align="center">[Building diagram: 1 storey]</entry>
+                                
+                                <!-- 0.9 < HWP ≤ 1.2 group -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row19">
+                                    <entry rowspan="3">0.9 &lt; HWP ≤ 1.2</entry>
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure38">
+                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">2.59</entry>
                                     <entry align="center">13.14</entry>
                                     <entry align="center">7.63</entry>
@@ -5033,8 +5109,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">1.91</entry>
                                     <entry align="center">1.72</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row17">
-                                    <entry align="center">[Building diagram: 2 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row20">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure39">
+                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">5.33</entry>
                                     <entry align="center">27.00</entry>
                                     <entry align="center">15.68</entry>
@@ -5046,8 +5126,12 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                     <entry align="center">3.92</entry>
                                     <entry align="center">3.54</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row18">
-                                    <entry align="center">[Building diagram: 3 storey]</entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.row21">
+                                    <entry>
+                                        <figure xml:id="bc.divBV2.part9.figure40">
+                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                        </figure>
+                                    </entry>
                                     <entry align="center">8.08</entry>
                                     <entry align="center">40.83</entry>
                                     <entry align="center">23.72</entry>
@@ -5062,17 +5146,11 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                             </tbody>
                         </tgroup>
                         <table-notes>
-                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.note1">
-                                <text>Unadjusted minimum total <ref type="term" target="br-wl-pnl">braced wall panel</ref> lengths are for the applicable conditions corresponding to an adjustment factor of 1 in the equation for L<sub>w</sub>.</text>
-                            </note>
-                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.note2">
-                                <text>See <ref type="internal" target="nbc.divBV2.part9.sect23.subsect3.art5.sent3" display-type="short"/> for a description of framing types and fastening requirements.</text>
-                            </note>
-                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.note3">
-                                <text>See <ref type="internal" target="bc.divBV2.part9.sect23.subsect13.art7.sent6" display-type="short"/> for <ref type="term" target="br-wl-pnl">braced wall panels</ref> with gypsum board installed on both sides.</text>
-                            </note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.note1">Notes to Table 9.23.13.7.-A:</note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.note2"><super>(1)</super> Unadjusted minimum total braced wall panel lengths are for the applicable conditions corresponding to an adjustment factor of 1 in the equation for L<subscript>w</subscript>.</note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.note3"><super>(2)</super> See Sentence 9.23.3.5.(3) for a description of framing types and fastening requirements.</note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table1.note4"><super>(3)</super> See Sentence (6) for braced wall panels with gypsum board installed on both sides.</note>
                         </table-notes>
-                        
                     </table>
                 </new-content>
             </insert>
@@ -8156,7 +8234,7 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                 </thead>
                                 <tbody>
                                      <row>
-                                         <entry><figure xml:id="bc.divBV2.part9.figure23"><title>Single storey building configuration</title><graphic src="bc-graphics/TBD.png" alt="Single storey building configuration"/></figure></entry>
+                                         <entry><figure xml:id="bc.divBV2.part9.figure23"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Single storey building configuration"/></figure></entry>
                                          <entry>1.89</entry>
                                          <entry>9.47 (4.74)</entry>
                                          <entry>5.50 (2.75)</entry>
@@ -8169,8 +8247,8 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                          <entry>1.26</entry>
                                      </row>
                                      <row>
-                                         <entry><figure xml:id="bc.divBV2.part9.figure28"><title>Three storey building configuration</title><graphic src="bc-graphics/TBD.png" alt="Three storey building configuration"/></figure></entry>
-                                         <entry>5.88</entry>
+                                         <entry><figure xml:id="bc.divBV2.part9.figure28"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/></figure></entry>
+                                         <entry>3.89</entry>
                                          <entry>19.45 (9.73)</entry>
                                         <entry>11.30 (5.65)</entry>
                                         <entry>8.38 (4.19)</entry>
@@ -8182,7 +8260,7 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                         <entry>2.59</entry>
                                     </row>
                                      <row>
-                                         <entry><figure xml:id="bc.divBV2.part9.figure24"><title>Three storey building configuration</title><graphic src="bc-graphics/TBD.png" alt="Three storey building configuration"/></figure></entry>
+                                         <entry><figure xml:id="bc.divBV2.part9.figure24"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a.eps" alt="Three storey building configuration"/></figure></entry>
                                          <entry>5.88</entry>
                                          <entry>NP (14.71)</entry>
                                          <entry>17.09 (8.55)</entry>
@@ -8248,7 +8326,7 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                  </thead>
                                  <tbody>
                                      <row>
-                                         <entry><figure xml:id="bc.divBV2.part9.figure25"><title>Single storey building configuration</title><graphic src="bc-graphics/TBD.png" alt="Single storey building configuration"/></figure></entry>
+                                         <entry><figure xml:id="bc.divBV2.part9.figure25"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Single storey building configuration"/></figure></entry>
                                          <entry>2.27</entry>
                                          <entry>11.36 (5.68)</entry>
                                         <entry>6.60 (3.30)</entry>
@@ -8261,7 +8339,7 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                         <entry>1.51</entry>
                                     </row>
                                      <row>
-                                         <entry><figure xml:id="bc.divBV2.part9.figure16"><title>Two storey building configuration</title><graphic src="bc-graphics/TBD.png" alt="Two storey building configuration"/></figure></entry>
+                                         <entry><figure xml:id="bc.divBV2.part9.figure16"><title>Two storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Two storey building configuration"/></figure></entry>
                                         <entry>4.66</entry>
                                         <entry>NP (11.68)</entry>
                                         <entry>13.56 (6.78)</entry>
@@ -8273,7 +8351,7 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                          <entry>3.11</entry>
                                      </row>
                                      <row>
-                                         <entry><figure xml:id="bc.divBV2.part9.figure26"><title>Three storey building configuration</title><graphic src="bc-graphics/TBD.png" alt="Three storey building configuration"/></figure></entry>
+                                         <entry><figure xml:id="bc.divBV2.part9.figure26"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a.eps" alt="Three storey building configuration"/></figure></entry>
                                          <entry>7.05</entry>
                                          <entry>NP (17.96)</entry>
                                         <entry>20.86 (10.43)</entry>
@@ -8348,7 +8426,7 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                  </thead>
                                  <tbody>
                                      <row>
-                                         <entry><figure xml:id="bc.divBV2.part9.figure27"><title>Single storey building configuration</title><graphic src="bc-graphics/TBD.png" alt="Single storey building configuration"/></figure></entry>
+                                         <entry><figure xml:id="bc.divBV2.part9.figure27"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Single storey building configuration"/></figure></entry>
                                          <entry>1.89</entry>
                                          <entry>9.47 (4.74)</entry>
                                          <entry>5.50 (2.75)</entry>
@@ -8361,8 +8439,8 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                         <entry>1.26</entry>
                                     </row>
                                     <row>
-<entry><figure xml:id="bc.divBV2.part9.figure8"><title>Two storey building with masonry veneer configuration</title><graphic src="bc-graphics/TBD.png" alt="Two storey building with masonry veneer configuration"/></figure></entry>
-<entry>3.89</entry>
+<entry><figure xml:id="bc.divBV2.part9.figure8"><title>Two storey building with masonry veneer configuration</title><graphic src="bc-graphics/gg00555a.eps" alt="Two storey building with masonry veneer configuration"/></figure></entry>
+<entry>3.89</entry>                     <entry>3.89</entry>
                                         <entry>19.45 (9.73)</entry>
                                         <entry>11.30 (5.65)</entry>
                                         <entry>8.38 (4.19)</entry>
@@ -8374,7 +8452,7 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                          <entry>2.59</entry>
                                      </row>
                                      <row>
-                                         <entry><figure xml:id="bc.divBV2.part9.figure31"><title>Three storey building configuration</title><graphic src="bc-graphics/TBD.png" alt="Three storey building configuration"/></figure></entry>
+                                         <entry><figure xml:id="bc.divBV2.part9.figure31"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a.eps" alt="Three storey building configuration"/></figure></entry>
                                          <entry>5.88</entry>
                                          <entry>NP (15.01)</entry>
                                         <entry>17.44 (8.72)</entry>
@@ -8440,7 +8518,7 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                  </thead>
                                  <tbody>
                                      <row>
-                                         <entry><figure xml:id="bc.divBV2.part9.figure29"><title>Single storey building configuration</title><graphic src="bc-graphics/TBD.png" alt="Single storey building configuration"/></figure></entry>
+                                         <entry><figure xml:id="bc.divBV2.part9.figure29"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Single storey building configuration"/></figure></entry>
                                          <entry>2.27</entry>
                                          <entry>13.12 (6.56)</entry>
                                         <entry>7.63 (3.81)</entry>
@@ -8453,7 +8531,7 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                         <entry>1.51</entry>
                                     </row>
                                      <row>
-                                         <entry><figure xml:id="bc.divBV2.part9.figure21"><title>Two storey building with masonry veneer configuration</title><graphic src="bc-graphics/TBD.png" alt="Two storey building with masonry veneer configuration"/></figure></entry>
+                                         <entry><figure xml:id="bc.divBV2.part9.figure21"><title>Two storey building with masonry veneer configuration</title><graphic src="bc-graphics/gg00555a.eps" alt="Two storey building with masonry veneer configuration"/></figure></entry>
                                         <entry>4.66</entry>
                                         <entry>NP (15.14)</entry>
                                         <entry>17.59 (8.79)</entry>
@@ -8466,7 +8544,7 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
                                          <entry>3.11</entry>
                                      </row>
                                      <row>
-                                         <entry><figure xml:id="bc.divBV2.part9.figure30"><title>Three storey building configuration</title><graphic src="bc-graphics/TBD.png" alt="Three storey building configuration"/></figure></entry>
+                                         <entry><figure xml:id="bc.divBV2.part9.figure30"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a.eps" alt="Three storey building configuration"/></figure></entry>
                                          <entry>7.05</entry>
                                          <entry>NP (NP)</entry>
                                         <entry>NP (13.66)</entry>

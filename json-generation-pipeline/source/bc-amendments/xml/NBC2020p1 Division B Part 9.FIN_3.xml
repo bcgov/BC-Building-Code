@@ -390,7 +390,7 @@
                         </figure>
                         <figure xml:id="bc.divBV2.part9.appnote29.figure2">
                             <title>Step dimensions and their measurement</title>
-                            <graphic src="graphics/EG00689C.eps" alt="Step dimensions and their measurement"/>
+                            <graphic src="graphics/eg/006/eg00689c.eps" alt="Step dimensions and their measurement"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -896,7 +896,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                         <title>Anchorage of Building Frames</title>
                         <figure xml:id="bc.divBV2.part9.appnote123a.figure1">
                             <title>Anchorage of Building Frames</title>
-                            <graphic src="bc-graphics/Figure A-9.23.6.1_(3).eps" alt="Diagram showing anchorage of building frames"/>
+                            <graphic src="bc-graphics/Figure A-9.23.6.1.(3).eps" alt="Diagram showing anchorage of building frames"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1096,15 +1096,15 @@ are being considered for inclusion in future editions of the NBC.</find>
                         <paragraph xml:id="bc.divBV2.part9.appnote130.para1"><ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4" display-type="long"/> specifies the required characteristics of braced wall bands and their position in the building. <ref type="internal" target="bc.divBV2.part9.appnote130.figure1" display-type="long" pretext="Figures"/><ref type="internal" target="bc.divBV2.part9.appnote130.figure2" display-type="long" pretext=","/><ref type="internal" target="bc.divBV2.part9.appnote130.figure3" display-type="long" pretext="and"/> illustrate these requirements.</paragraph>
                         <figure xml:id="bc.divBV2.part9.appnote130.figure1">
                             <title>Braced wall bands in an example building section [<ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent1.clause1" display-type="long" pretext="Clauses"/><ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent1.clause2" display-type="short" pretext=","/>, (c) <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent1.clause4" display-type="short" pretext="and"/>]</title>
-                            <graphic src="graphics/EG00682A.eps" alt="Braced wall bands in an example building section [Clauses 9.23.13.4.(1)(a), (b), (c) and (d)]"/>
+                            <graphic src="graphics/eg/006/eg00682a.eps" alt="Braced wall bands in an example building section [Clauses 9.23.13.4.(1)(a), (b), (c) and (d)]"/>
                         </figure>
                         <figure xml:id="bc.divBV2.part9.appnote130.figure2">
                             <title>Lapping bands and building perimeter within braced wall bands [<ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent1.clause1" display-type="long" pretext="Clauses"/><ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent1.clause3" display-type="short" pretext="and"/>]</title>
-                            <graphic src="graphics/EG00683A.eps" alt="Lapping bands and building perimeter within braced wall bands [Clauses 9.23.13.4.(1)(a) and (c)]"/>
+                            <graphic src="graphics/eg/006/eg00683a.eps" alt="Lapping bands and building perimeter within braced wall bands [Clauses 9.23.13.4.(1)(a) and (c)]"/>
                         </figure>
                         <figure xml:id="bc.divBV2.part9.appnote130.figure3">
                             <title>Braced wall bands at changes in floor level in split-level buildings [<ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent3" display-type="long"/>]</title>
-                            <graphic src="graphics/EG00171C.eps" alt="Braced wall bands at changes in floor level in split-level buildings [Sentence 9.23.13.4.(3)]"/>
+                            <graphic src="graphics/eg/001/eg00171c.eps" alt="Braced wall bands at changes in floor level in split-level buildings [Sentence 9.23.13.4.(3)]"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1139,11 +1139,11 @@ are being considered for inclusion in future editions of the NBC.</find>
                         </note-division>
                         <figure xml:id="bc.divBV2.part9.appnote131.figure1">
                             <title>Spacing of parallel braced wall bands and spacing of braced wall panels</title>
-                            <graphic src="graphics/EG00684A.eps" alt="Spacing of parallel braced wall bands and spacing of braced wall panels"/>
+                            <graphic src="graphics/eg/006/eg00684a.eps" alt="Spacing of parallel braced wall bands and spacing of braced wall panels"/>
                         </figure>
                         <figure xml:id="bc.divBV2.part9.appnote131.figure2">
                             <title>Identification and spacing of adjacent non-parallel braced wall bands</title>
-                            <graphic src="graphics/EG00685A.eps" alt="Identification and spacing of adjacent non-parallel braced wall bands"/>
+                            <graphic src="graphics/eg/006/eg00685a.eps" alt="Identification and spacing of adjacent non-parallel braced wall bands"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1212,7 +1212,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                         <paragraph xml:id="bc.divBV2.part9.appnote134.para1">Braced wall panels constructed with gypsum board alone provide less resistance to lateral loads than panels constructed with OSB, waferboard, plywood or diagonal lumber board; <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art6.sent3" display-type="short">Sentence 9.23.13.6.(3)</ref> limits the use of gypsum board to interior walls. <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art6.sent6" display-type="short">Sentence (6)</ref> further limits its use to provide the required lateral resistance by requiring that walls in basements and crawl spaces be constructed with braced wall panels made of wood-based sheathing at braced wall band intervals of not more than <measurement units="metric">15 m</measurement> apart. See <ref type="internal" target="bc.divBV2.part9.appnote134.figure1" display-type="long">Figure A-9.23.13.6.(3)</ref>.</paragraph>
                         <figure xml:id="bc.divBV2.part9.appnote134.figure1">
                             <title>Braced wall panels constructed of wood-based material</title>
-                            <graphic src="graphics/EG00686A.eps" alt="Braced wall panels constructed of wood-based material"/>
+                            <graphic src="graphics/eg/006/eg00686a.eps" alt="Braced wall panels constructed of wood-based material"/>
                         </figure>
                     </application-note>
                 </new-content>
