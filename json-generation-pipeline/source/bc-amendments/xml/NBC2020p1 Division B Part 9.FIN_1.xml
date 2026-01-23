@@ -7589,530 +7589,1528 @@ Class C is greater than 0.23 but not greater than 0.37</replace>
             <insert>
                 <new-content>
                     <table xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4">
+                        <title>Table 9.23.13.7.-D</title>
                         <title>Adjustment Factors for the Determination of Minimum Total Braced Wall Panel Lengths for Seismic Forces</title>
-                        <tgroup cols="6">
-                            <colspec colname="col1" colwidth="15*"/>
-                            <colspec colname="col2" colwidth="35*"/>
-                            <colspec colname="col3" colwidth="25*"/>
-                            <colspec colname="col4" colwidth="15*"/>
-                            <colspec colname="col5" colwidth="8*"/>
-                            <colspec colname="col6" colwidth="8*"/>
+                        <title>Forming Part of <ref type="internal" target="bc.divBV2.part9.sect23.subsect13.art7.sent4">Sentence 9.23.13.7.(4)</ref></title>
+                        
+                        <tgroup cols="5">
+                            <colspec colname="col1" colwidth="15.00*"/>
+                            <colspec colname="col2" colwidth="35.00*"/>
+                            <colspec colname="col3" colwidth="20.00*"/>
+                            <colspec colname="col4" colwidth="15.00*"/>
+                            <colspec colname="col5" colwidth="15.00*"/>
+                            
                             <thead>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.rowh1">
-                                    <entry>Symbol</entry>
-                                    <entry>Description</entry>
-                                    <entry><ref type="term" target="tr">Storey</ref></entry>
-                                    <entry>Condition</entry>
-                                    <entry>Adjustment Factor</entry>
-                                    <entry>Two <ref type="term" target="bldng">Building</ref> Faces (value)</entry>
+                                    <entry align="center">Symbol</entry>
+                                    <entry align="center">Description</entry>
+                                    <entry align="center"><emphasis role="italic">Storey</emphasis></entry>
+                                    <entry align="center">Condition</entry>
+                                    <entry align="center">Adjustment Factor</entry>
                                 </row>
                             </thead>
+                            
                             <tbody>
-                                <!-- K_weight factors -->
+                                <!-- ============================================================ -->
+                                <!-- K_weight Section - Normal-weight construction                -->
+                                <!-- ============================================================ -->
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row1">
-                                    <entry>K<sub>weight</sub><super>(1)(2)</super></entry>
+                                    <entry rowspan="38">K<sub>weight</sub><super>(1) (2)</super></entry>
                                     <entry>Normal-weight construction</entry>
-                                    <entry>Any <ref type="term" target="tr">storey</ref></entry>
+                                    <entry>Any <emphasis role="italic">storey</emphasis></entry>
                                     <entry>Any L<sub>wl</sub></entry>
                                     <entry>1.0</entry>
-                                    <entry></entry>
                                 </row>
                                 
                                 <!-- Heavy construction - Storey supporting roof only -->
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row2">
-                                    <entry>Heavy construction: apply factor corresponding to L<sub>wl</sub> separately to each <ref type="term" target="tr">storey</ref>
-                                    
-                                    <!-- Building diagram reference: image24.png - graph of a house -->
-                                    [Building diagram: Single storey house with roof - image24.png]</entry>
-                                    <entry><ref type="term" target="tr">Storey</ref> supporting roof only
-                                    
-                                    <!-- Building diagram reference: image25.png - white rectangular object -->
-                                    [Building diagram: Single storey configuration - image25.png]</entry>
-                                    <entry>L<sub>wl</sub> ≤ <measurement units="metric">3.1 m</measurement></entry>
+                                    <entry rowspan="37">Heavy construction: apply factor corresponding to Lwl separately to each <emphasis role="italic">storey</emphasis>
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure25">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row1.eps" alt="Building depth diagram showing 3.1 to 18.3 m"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure26">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building - storey supporting roof only"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof only
+                                    </entry>
+                                    <entry><emphasis role="italic">Building</emphasis> depth
+                                        
+                                        Lwl ≤ 3.1 m</entry>
                                     <entry>1.72</entry>
-                                    <entry></entry>
                                 </row>
-                                
-                                <!-- Row 3: L_wl ≤ 3.1 m -->
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row3">
-                                    <entry>L<sub>wl</sub> ≤ <measurement units="metric">3.1 m</measurement></entry>
-                                    <entry>1.72</entry>
-                                    <entry></entry>
-                                </row>
-                                
-                                <!-- Rows 4-8: Other L_wl values for roof only -->
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row4">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">6.1 m</measurement></entry>
+                                    <entry>Lwl = 6.1 m</entry>
                                     <entry>1.54</entry>
-                                    <entry></entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row4">
+                                    <entry>Lwl = 9.1 m</entry>
+                                    <entry>1.46</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row5">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">9.1 m</measurement></entry>
-                                    <entry>1.46</entry>
-                                    <entry></entry>
+                                    <entry>Lwl = 12.2 m</entry>
+                                    <entry>1.42</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row6">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">12.2 m</measurement></entry>
-                                    <entry>1.42</entry>
-                                    <entry></entry>
+                                    <entry>Lwl = 15.2 m</entry>
+                                    <entry>1.39</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row7">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">15.2 m</measurement></entry>
-                                    <entry>1.39</entry>
-                                    <entry></entry>
-                                </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row8">
-                                    <entry>L<sub>wl</sub> ≥ <measurement units="metric">18.3 m</measurement></entry>
+                                    <entry>Lwl ≥ 18.3 m</entry>
                                     <entry>1.38</entry>
-                                    <entry></entry>
                                 </row>
                                 
-                                <!-- Storey supporting roof and 1 floor -->
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row9">
-                                    <entry><ref type="term" target="tr">Storey</ref> supporting roof and 1 floor
-                                    
-                                    <!-- Building diagram reference: image26.png - diagram of two shapes -->
-                                    [Building diagram: Two storey configuration - image26.png]</entry>
-                                    <entry>L<sub>wl</sub> ≤ <measurement units="metric">3.1 m</measurement></entry>
+                                <!-- Heavy construction - Storey supporting roof and 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row8">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure27">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building - storey supporting roof and 1 floor"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof and 1 floor
+                                    </entry>
+                                    <entry>Lwl ≤ 3.1 m</entry>
                                     <entry>1.92</entry>
-                                    <entry></entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row9">
+                                    <entry>Lwl = 6.1 m</entry>
+                                    <entry>1.71</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row10">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">6.1 m</measurement></entry>
-                                    <entry>1.71</entry>
-                                    <entry></entry>
+                                    <entry>Lwl = 9.1 m</entry>
+                                    <entry>1.62</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row11">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">9.1 m</measurement></entry>
-                                    <entry>1.62</entry>
-                                    <entry></entry>
+                                    <entry>Lwl = 12.2 m</entry>
+                                    <entry>1.57</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row12">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">12.2 m</measurement></entry>
-                                    <entry>1.57</entry>
-                                    <entry></entry>
+                                    <entry>Lwl = 15.2 m</entry>
+                                    <entry>1.54</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row13">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">15.2 m</measurement></entry>
-                                    <entry>1.54</entry>
-                                    <entry></entry>
-                                </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row14">
-                                    <entry>L<sub>wl</sub> ≥ <measurement units="metric">18.3 m</measurement></entry>
+                                    <entry>Lwl ≥ 18.3 m</entry>
                                     <entry>1.51</entry>
-                                    <entry></entry>
                                 </row>
                                 
-                                <!-- Storey supporting roof and 2 floors -->
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row15">
-                                    <entry><ref type="term" target="tr">Storey</ref> supporting roof and 2 floors
-                                    
-                                    <!-- Building diagram reference: image27.png - white rectangular object with green border -->
-                                    [Building diagram: Three storey configuration - image27.png]</entry>
-                                    <entry>L<sub>wl</sub> ≤ <measurement units="metric">3.1 m</measurement></entry>
+                                <!-- Heavy construction - Storey supporting roof and 2 floors -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row14">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure28">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - storey supporting roof and 2 floors"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof and 2 floors
+                                    </entry>
+                                    <entry>Lwl ≤ 3.1 m</entry>
                                     <entry>1.97</entry>
-                                    <entry></entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row15">
+                                    <entry>Lwl = 6.1 m</entry>
+                                    <entry>1.76</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row16">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">6.1 m</measurement></entry>
-                                    <entry>1.76</entry>
-                                    <entry></entry>
+                                    <entry>Lwl = 9.1 m</entry>
+                                    <entry>1.67</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row17">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">9.1 m</measurement></entry>
-                                    <entry>1.67</entry>
-                                    <entry></entry>
+                                    <entry>Lwl = 12.2 m</entry>
+                                    <entry>1.61</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row18">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">12.2 m</measurement></entry>
-                                    <entry>1.61</entry>
-                                    <entry></entry>
+                                    <entry>Lwl = 15.2 m</entry>
+                                    <entry>1.58</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row19">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">15.2 m</measurement></entry>
-                                    <entry>1.58</entry>
-                                    <entry></entry>
-                                </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row20">
-                                    <entry>L<sub>wl</sub> ≥ <measurement units="metric">18.3 m</measurement></entry>
+                                    <entry>Lwl ≥ 18.3 m</entry>
                                     <entry>1.56</entry>
-                                    <entry></entry>
                                 </row>
                                 
-                                <!-- Masonry veneer half storey -->
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row21">
-                                    <entry>Masonry veneer half <ref type="term" target="tr">storey</ref> above <ref type="term" target="fndtn">foundation</ref>: apply factor corresponding to one <ref type="term" target="bldng">building</ref> face (or two <ref type="term" target="bldng">building</ref> faces)</entry>
-                                    <entry><ref type="term" target="tr">Storey</ref> supporting roof and up to 2 floors</entry>
+                                <!-- Masonry veneer half storey above foundation -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row20">
+                                    <entry>Masonry veneer half <emphasis role="italic">storey</emphasis> above <emphasis role="italic">foundation</emphasis>: apply factor corresponding to one <emphasis role="italic">building</emphasis> face (or two <emphasis role="italic">building</emphasis> faces)</entry>
+                                    <entry><emphasis role="italic">Storey</emphasis> supporting roof and up to 2 floors</entry>
                                     <entry>Any L<sub>wl</sub></entry>
                                     <entry>1.00</entry>
-                                    <entry>1.00</entry>
+                                    <entry>Two <emphasis role="italic">Building</emphasis> Faces (value)</entry>
                                 </row>
                                 
-                                <!-- Masonry veneer cladding perpendicular - fully clad -->
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row22">
-                                    <entry>Masonry veneer cladding perpendicular to <ref type="term" target="br-wl-bnd">braced wall band</ref>, fully clad<super>(3)</super>: apply factor corresponding to L<sub>wl</sub> for one <ref type="term" target="bldng">building</ref> face (or two <ref type="term" target="bldng">building</ref> faces)
-                                    
-                                    <!-- Building diagram reference: image28.png - diagram of building depth -->
-                                    [Building diagram: Building depth configuration - image28.png]</entry>
-                                    <entry><ref type="term" target="tr">Storey</ref> supporting roof only
-                                    
-                                    <!-- Building diagram reference: image29.png - graph of a house -->
-                                    [Building diagram: Single storey house - image29.png]</entry>
-                                    <entry>L<sub>wl</sub> ≤ <measurement units="metric">3.1 m</measurement></entry>
+                                <!-- Masonry veneer cladding perpendicular - fully clad - Storey supporting roof only -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row21">
+                                    <entry rowspan="18">Masonry veneer cladding perpendicular to <emphasis role="italic">braced wall band</emphasis>, fully clad: <super>(3)</super> apply factor corresponding to Lwl for one <emphasis role="italic">building</emphasis> face (or two <emphasis role="italic">building</emphasis> faces)
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure29">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row2.eps" alt="Building depth diagram for masonry veneer fully clad"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure30">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building - masonry veneer fully clad"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof only
+                                    </entry>
+                                    <entry>L<sub>wl</sub> ≤ 3.1 m</entry>
                                     <entry>1.54</entry>
                                     <entry>2.13</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row23">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">6.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row22">
+                                    <entry>Lwl=6.1m</entry>
                                     <entry>1.30</entry>
                                     <entry>1.64</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row24">
-                                    <entry>L<sub>wl</sub> = <measurement units="metric">9.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row23">
+                                    <entry>Lwl=9.1m</entry>
                                     <entry>1.21</entry>
                                     <entry>1.45</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row25">
-                                    <entry><measurement units="metric">12.2 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row24">
+                                    <entry>12.2m</entry>
                                     <entry>1.15</entry>
                                     <entry>1.34</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row26">
-                                    <entry><measurement units="metric">15.2 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row25">
+                                    <entry>15.2m</entry>
                                     <entry>1.12</entry>
                                     <entry>1.28</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row27">
-                                    <entry>≥ <measurement units="metric">18.3 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row26">
+                                    <entry>≥18.3m</entry>
                                     <entry>1.10</entry>
                                     <entry>1.23</entry>
                                 </row>
                                 
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row28">
-                                    <entry><ref type="term" target="tr">Storey</ref> supporting roof and 1 floor
-                                    
-                                    <!-- Building diagram reference: image30.png - diagram of a house -->
-                                    [Building diagram: Two storey house - image30.png]</entry>
-                                    <entry>≤ <measurement units="metric">3.1 m</measurement></entry>
+                                <!-- Masonry veneer cladding perpendicular - fully clad - Storey supporting roof and 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row27">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure31">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building - masonry veneer fully clad"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof and 1 floor
+                                    </entry>
+                                    <entry>≤3.1m</entry>
                                     <entry>1.69</entry>
                                     <entry>2.43</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row29">
-                                    <entry><measurement units="metric">6.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row28">
+                                    <entry>6.1m</entry>
                                     <entry>1.40</entry>
                                     <entry>1.85</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row30">
-                                    <entry><measurement units="metric">9.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row29">
+                                    <entry>9.1m</entry>
                                     <entry>1.28</entry>
                                     <entry>1.60</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row31">
-                                    <entry><measurement units="metric">12.2 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row30">
+                                    <entry>12.2m</entry>
                                     <entry>1.21</entry>
                                     <entry>1.46</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row32">
-                                    <entry><measurement units="metric">15.2 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row31">
+                                    <entry>15.2m</entry>
                                     <entry>1.17</entry>
                                     <entry>1.38</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row33">
-                                    <entry>≥ <measurement units="metric">18.3 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row32">
+                                    <entry>≥18.3m</entry>
                                     <entry>1.14</entry>
                                     <entry>1.31</entry>
                                 </row>
                                 
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row34">
-                                    <entry><ref type="term" target="tr">Storey</ref> supporting roof and 2 floors
-                                    
-                                    <!-- Building diagram reference: image31.png - white and pink rectangular object -->
-                                    [Building diagram: Three storey house - image31.png]</entry>
-                                    <entry>≤ <measurement units="metric">3.1 m</measurement></entry>
+                                <!-- Masonry veneer cladding perpendicular - fully clad - Storey supporting roof and 2 floors -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row33">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure32">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - masonry veneer fully clad"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof and 2 floors
+                                    </entry>
+                                    <entry>≤3.1m</entry>
                                     <entry>1.73</entry>
                                     <entry>2.51</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row35">
-                                    <entry><measurement units="metric">6.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row34">
+                                    <entry>6.1m</entry>
                                     <entry>1.43</entry>
                                     <entry>1.91</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row36">
-                                    <entry><measurement units="metric">9.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row35">
+                                    <entry>9.1m</entry>
                                     <entry>1.30</entry>
                                     <entry>1.65</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row37">
-                                    <entry><measurement units="metric">12.2 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row36">
+                                    <entry>12.2m</entry>
                                     <entry>1.22</entry>
                                     <entry>1.50</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row38">
-                                    <entry><measurement units="metric">15.2 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row37">
+                                    <entry>15.2m</entry>
                                     <entry>1.18</entry>
                                     <entry>1.41</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row39">
-                                    <entry>≥ <measurement units="metric">18.3 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row38">
+                                    <entry>≥18.3m</entry>
                                     <entry>1.15</entry>
                                     <entry>1.33</entry>
                                 </row>
                                 
-                                <!-- Masonry veneer cladding perpendicular - partially clad -->
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row40">
-                                    <entry>Masonry veneer cladding perpendicular to <ref type="term" target="br-wl-bnd">braced wall band</ref>, partially clad<super>(3)</super>: apply factor corresponding to L<sub>wl</sub> for one <ref type="term" target="bldng">building</ref> face (or two <ref type="term" target="bldng">building</ref> faces)
-                                    
-                                    <!-- Building diagram reference: image32.png - diagram of building depth -->
-                                    [Building diagram: Building depth configuration - image32.png]</entry>
-                                    <entry><ref type="term" target="tr">Storey</ref> supporting roof only
-                                    
-                                    <!-- Building diagram reference: image29.png - graph of a house (reused) -->
-                                    [Building diagram: Single storey house - image29.png]</entry>
-                                    <entry>≤ <measurement units="metric">3.1 m</measurement></entry>
+                                <!-- Masonry veneer cladding perpendicular - partially clad - Storey supporting roof only -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row39">
+                                    <entry rowspan="18">Masonry veneer cladding perpendicular to <emphasis role="italic">braced wall band</emphasis>, partially clad: <super>(3)</super> apply factor corresponding to Lwl for one <emphasis role="italic">building</emphasis> face (or two <emphasis role="italic">building</emphasis> faces)
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure33">
+                                            <graphic src="bc-graphics/gg00556a.eps" alt="Building depth diagram for masonry veneer partially clad"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure34">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building - masonry veneer partially clad"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof only
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
                                     <entry>1.23</entry>
                                     <entry>1.52</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row41">
-                                    <entry><measurement units="metric">6.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row40">
+                                    <entry>6.1m</entry>
                                     <entry>1.13</entry>
                                     <entry>1.29</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row42">
-                                    <entry><measurement units="metric">9.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row41">
+                                    <entry>9.1m</entry>
                                     <entry>1.08</entry>
                                     <entry>1.20</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row43">
-                                    <entry><measurement units="metric">12.2 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row42">
+                                    <entry>12.2m</entry>
                                     <entry>1.06</entry>
                                     <entry>1.15</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row44">
-                                    <entry><measurement units="metric">15.2 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row43">
+                                    <entry>15.2m</entry>
                                     <entry>1.04</entry>
                                     <entry>1.12</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row45">
-                                    <entry>≥ <measurement units="metric">18.3 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row44">
+                                    <entry>≥18.3m</entry>
                                     <entry>1.03</entry>
                                     <entry>1.09</entry>
                                 </row>
                                 
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row46">
-                                    <entry><ref type="term" target="tr">Storey</ref> supporting roof and 1 floor
-                                    
-                                    <!-- Building diagram reference: image30.png - diagram of a house (reused) -->
-                                    [Building diagram: Two storey house - image30.png]</entry>
-                                    <entry>≤ <measurement units="metric">3.1 m</measurement></entry>
+                                <!-- Masonry veneer cladding perpendicular - partially clad - Storey supporting roof and 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row45">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure35">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building - masonry veneer partially clad"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof and 1 floor
+                                    </entry>
+                                    <entry>≤3.1m</entry>
                                     <entry>1.30</entry>
                                     <entry>1.66</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row47">
-                                    <entry><measurement units="metric">6.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row46">
+                                    <entry>6.1m</entry>
                                     <entry>1.17</entry>
                                     <entry>1.39</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row48">
-                                    <entry><measurement units="metric">9.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row47">
+                                    <entry>9.1m</entry>
                                     <entry>1.11</entry>
                                     <entry>1.27</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row49">
-                                    <entry><measurement units="metric">12.2 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row48">
+                                    <entry>12.2m</entry>
                                     <entry>1.08</entry>
                                     <entry>1.20</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row50">
-                                    <entry><measurement units="metric">15.2 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row49">
+                                    <entry>15.2m</entry>
                                     <entry>1.06</entry>
                                     <entry>1.16</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row51">
-                                    <entry>≥ <measurement units="metric">18.3 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row50">
+                                    <entry>≥18.3m</entry>
                                     <entry>1.05</entry>
                                     <entry>1.13</entry>
                                 </row>
                                 
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row52">
-                                    <entry><ref type="term" target="tr">Storey</ref> supporting roof and 2 floors
-                                    
-                                    <!-- Building diagram reference: image31.png - white and pink rectangular object (reused) -->
-                                    [Building diagram: Three storey house - image31.png]</entry>
-                                    <entry>≤ <measurement units="metric">3.1 m</measurement></entry>
+                                <!-- Masonry veneer cladding perpendicular - partially clad - Storey supporting roof and 2 floors -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row51">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure36">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - masonry veneer partially clad"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof and 2 floors
+                                    </entry>
+                                    <entry>≤3.1m</entry>
                                     <entry>1.31</entry>
                                     <entry>1.70</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row53">
-                                    <entry><measurement units="metric">6.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row52">
+                                    <entry>6.1m</entry>
                                     <entry>1.18</entry>
                                     <entry>1.42</entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row54">
-                                    <entry><measurement units="metric">9.1 m</measurement></entry>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row53">
+                                    <entry>9.1m</entry>
                                     <entry>1.12</entry>
                                     <entry>1.29</entry>
                                 </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row54">
+                                    <entry>12.2m</entry>
+                                    <entry>1.08</entry>
+                                    <entry>1.21</entry>
+                                </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row55">
-                                    <entry><measurement units="metric">12.2 m</measurement></entry>
-                                    <entry>1.09</entry>
-                                    <entry>1.22</entry>
-                                </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row56">
-                                    <entry><measurement units="metric">15.2 m</measurement></entry>
+                                    <entry>15.2m</entry>
                                     <entry>1.07</entry>
-                                    <entry>1.18</entry>
-                                </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row57">
-                                    <entry>≥ <measurement units="metric">18.3 m</measurement></entry>
-                                    <entry>1.05</entry>
                                     <entry>1.17</entry>
                                 </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row56">
+                                    <entry>≥18.3m</entry>
+                                    <entry>1.05</entry>
+                                    <entry>1.14</entry>
+                                </row>
                                 
-                                <!-- K_snow factors -->
+                                
+                                <!-- Masonry veneer cladding perpendicular - 2-storey height, partially clad - Storey supporting roof and 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row57">
+                                    <entry rowspan="12">Masonry veneer cladding perpendicular to the <emphasis role="italic">braced wall band</emphasis>, 2- <emphasis role="italic">storey</emphasis> height, partially clad: <super>(3)</super> apply factor corresponding to Lwl for one <emphasis role="italic">building</emphasis> face( or two <emphasis role="italic">building</emphasis> faces))
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure37">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row4.eps" alt="Building depth diagram for 2-storey masonry veneer"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure38">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange.eps" alt="Two storey building - 2-storey masonry veneer"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof and 1 floor
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.23</entry>
+                                    <entry>1.48</entry>
+                                </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row58">
-                                    <entry>K<sub>snow</sub><super>(4)</super></entry>
-                                    <entry>Roof snow load: apply factor in accordance with the specified roof snow load
-                                    
-                                    <!-- Building diagram reference: image61.png - graph of a house -->
-                                    [Building diagram: House with snow load - image61.png]</entry>
-                                    <entry>Any <ref type="term" target="tr">storey</ref></entry>
-                                    <entry>≤ 2 kPa</entry>
-                                    <entry>1.00</entry>
-                                    <entry></entry>
+                                    <entry>6.1 m</entry>
+                                    <entry>1.13</entry>
+                                    <entry>1.28</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row59">
-                                    <entry>3 kPa</entry>
-                                    <entry>1.08</entry>
-                                    <entry></entry>
+                                    <entry>9.1 m</entry>
+                                    <entry>1.09</entry>
+                                    <entry>1.20</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row60">
-                                    <entry>4 kPa</entry>
+                                    <entry>12.2 m</entry>
+                                    <entry>1.07</entry>
                                     <entry>1.15</entry>
-                                    <entry></entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row61">
-                                    <entry>5 kPa</entry>
-                                    <entry>1.20</entry>
-                                    <entry></entry>
+                                    <entry>15.2 m</entry>
+                                    <entry>1.06</entry>
+                                    <entry>1.13</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row62">
-                                    <entry>6 kPa</entry>
-                                    <entry>1.24</entry>
-                                    <entry></entry>
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.05</entry>
+                                    <entry>1.10</entry>
                                 </row>
                                 
-                                <!-- K_Sspacing factors -->
+                                <!-- Masonry veneer cladding perpendicular - 2-storey height, partially clad - Storey supporting roof and 2 floors -->
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row63">
-                                    <entry>K<sub>Sspacing</sub><super>(5)(6)</super></entry>
-                                    <entry><ref type="term" target="br-wl-bnd">Braced wall band</ref> spacing: apply factor to all <ref type="term" target="br-wl-pnl">braced wall panels</ref> per <ref type="term" target="bldng">building</ref> plan direction</entry>
-                                    <entry>Any <ref type="term" target="tr">storey</ref></entry>
-                                    <entry><measurement units="metric">3.8 m</measurement></entry>
-                                    <entry>0.60</entry>
-                                    <entry></entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure39">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_2floor_orange.eps" alt="One storey building - 2-storey masonry veneer"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 2 floors
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.15</entry>
+                                    <entry>1.30</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row64">
-                                    <entry><measurement units="metric">7.6 m</measurement></entry>
-                                    <entry>1.00</entry>
-                                    <entry></entry>
+                                    <entry>6.1 m</entry>
+                                    <entry>1.09</entry>
+                                    <entry>1.18</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row65">
-                                    <entry><measurement units="metric">10.6 m</measurement></entry>
-                                    <entry>1.40</entry>
-                                    <entry></entry>
+                                    <entry>9.1 m</entry>
+                                    <entry>1.06</entry>
+                                    <entry>1.13</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row66">
-                                    <entry><measurement units="metric">12.2 m</measurement></entry>
-                                    <entry>1.60</entry>
-                                    <entry></entry>
+                                    <entry>12.2 m</entry>
+                                    <entry>1.04</entry>
+                                    <entry>1.10</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row67">
-                                    <entry><measurement units="metric">15 m</measurement><super>(7)</super></entry>
-                                    <entry>1.90</entry>
-                                    <entry></entry>
+                                    <entry>15.2 m</entry>
+                                    <entry>1.04</entry>
+                                    <entry>1.08</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row68">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.03</entry>
+                                    <entry>1.07</entry>
                                 </row>
                                 
-                                <!-- K_Snumber factors -->
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row68">
-                                    <entry>K<sub>Snumber</sub></entry>
-                                    <entry>Number of parallel <ref type="term" target="br-wl-bnd">braced wall bands</ref>: apply factor to all <ref type="term" target="br-wl-pnl">braced wall panels</ref> per <ref type="term" target="bldng">building</ref> plan direction</entry>
-                                    <entry>Any <ref type="term" target="tr">storey</ref></entry>
-                                    <entry>2</entry>
-                                    <entry>1.00</entry>
-                                    <entry></entry>
-                                </row>
+                                <!-- Masonry veneer cladding perpendicular - 1-storey height, partially clad - Storey supporting roof and 1 floor -->
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row69">
-                                    <entry>3</entry>
-                                    <entry>1.28</entry>
-                                    <entry></entry>
+                                    <entry rowspan="12">Masonry veneer cladding perpendicular to the <emphasis role="italic">braced wall band</emphasis>, 1- <emphasis role="italic">storey</emphasis> height, partially clad: <super>(3)</super> apply factor corresponding to Lwl for one <emphasis role="italic">building</emphasis> face (or two <emphasis role="italic">building</emphasis> faces))
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure40">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row5.eps" alt="Building depth diagram for 1-storey masonry veneer"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure41">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="Two storey building - 1-storey masonry veneer"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof and 1 floor
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.10</entry>
+                                    <entry>1.22</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row70">
-                                    <entry>4</entry>
-                                    <entry>1.50</entry>
-                                    <entry></entry>
+                                    <entry>6.1 m</entry>
+                                    <entry>1.06</entry>
+                                    <entry>1.13</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row71">
-                                    <entry>5</entry>
-                                    <entry>1.67</entry>
-                                    <entry></entry>
+                                    <entry>9.1 m</entry>
+                                    <entry>1.04</entry>
+                                    <entry>1.09</entry>
                                 </row>
-                                
-                                <!-- K_gyp factors -->
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row72">
-                                    <entry>K<sub>gyp</sub></entry>
-                                    <entry>Interior gypsum board: apply factor to all <ref type="term" target="br-wl-pnl">braced wall panels</ref></entry>
-                                    <entry>Any <ref type="term" target="tr">storey</ref></entry>
-                                    <entry>Installed</entry>
-                                    <entry>1.00</entry>
-                                    <entry></entry>
+                                    <entry>12.2 m</entry>
+                                    <entry>1.03</entry>
+                                    <entry>1.07</entry>
                                 </row>
                                 <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row73">
-                                    <entry>Omitted, wood-sheathed</entry>
-                                    <entry>1.20</entry>
-                                    <entry></entry>
+                                    <entry>15.2 m</entry>
+                                    <entry>1.02</entry>
+                                    <entry>1.05</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row74">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.02</entry>
+                                    <entry>1.04</entry>
                                 </row>
                                 
-                                <!-- K_sheath factors -->
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row74">
-                                    <entry>K<sub>sheath</sub></entry>
-                                    <entry>Intermittent <ref type="term" target="br-wl-pnl">braced wall panels</ref>: apply factor in accordance with continuity of sheathing within <ref type="term" target="br-wl-bnd">braced wall band</ref></entry>
-                                    <entry>Any <ref type="term" target="tr">storey</ref></entry>
-                                    <entry>Continuously sheathed, wood-sheathed</entry>
+                                <!-- Masonry veneer cladding perpendicular - 1-storey height, partially clad - Supporting roof + 2 floors -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row75">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure42">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="One storey building - 1-storey masonry veneer"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 2 floors
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.19</entry>
+                                    <entry>1.42</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row76">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.11</entry>
+                                    <entry>1.25</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row77">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.07</entry>
+                                    <entry>1.17</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row78">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.05</entry>
+                                    <entry>1.13</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row79">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.04</entry>
+                                    <entry>1.10</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row80">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.03</entry>
+                                    <entry>1.08</entry>
+                                </row>
+                                
+                                <!-- Masonry veneer cladding perpendicular - 2-storey height, fully clad - Supporting roof + 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row81">
+                                    <entry rowspan="12">Masonry veneer cladding perpendicular to the <emphasis role="italic">braced wall band</emphasis>, 2- <emphasis role="italic">storey</emphasis> height, fully clad:
+                                        Apply factor corresponding to <emphasis role="italic">building</emphasis> depth Lwl in the direction of the <emphasis role="italic">braced wall band</emphasis> for one or two <emphasis role="italic">building</emphasis> face(s)
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure43">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row6.eps" alt="Building depth diagram for 2-storey fully clad"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure44">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="Two storey building - 2-storey fully clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 1 floor
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.23</entry>
+                                    <entry>1.48</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row82">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.13</entry>
+                                    <entry>1.28</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row83">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.09</entry>
+                                    <entry>1.20</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row84">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.07</entry>
+                                    <entry>1.15</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row85">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.06</entry>
+                                    <entry>1.13</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row86">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.05</entry>
+                                    <entry>1.10</entry>
+                                </row>
+                                
+                                <!-- Masonry veneer cladding perpendicular - 2-storey height, fully clad - Supporting roof + 2 floors -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row87">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure45">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="One storey building - 2-storey fully clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 2 floors
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.15</entry>
+                                    <entry>1.30</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row88">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.09</entry>
+                                    <entry>1.18</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row89">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.06</entry>
+                                    <entry>1.13</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row90">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.04</entry>
+                                    <entry>1.10</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row91">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.04</entry>
+                                    <entry>1.08</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row92">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.03</entry>
+                                    <entry>1.07</entry>
+                                </row>
+                                
+                                <!-- Masonry veneer cladding perpendicular - 1-storey height, fully clad - Supporting roof + 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row93">
+                                    <entry rowspan="12">Masonry veneer cladding perpendicular to the <emphasis role="italic">braced wall band</emphasis>, 1- <emphasis role="italic">storey</emphasis> height, fully clad:
+                                        Apply factor corresponding to <emphasis role="italic">building</emphasis> depth Lwl in the direction of the <emphasis role="italic">braced wall band</emphasis> for one or two <emphasis role="italic">building</emphasis> face(s)
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure46">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row7.eps" alt="Building depth diagram for 1-storey fully clad"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure47">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="Two storey building - 1-storey fully clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 1 floor
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.23</entry>
+                                    <entry>1.48</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row94">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.13</entry>
+                                    <entry>1.28</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row95">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.09</entry>
+                                    <entry>1.20</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row96">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.07</entry>
+                                    <entry>1.15</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row97">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.06</entry>
+                                    <entry>1.13</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row98">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.05</entry>
+                                    <entry>1.10</entry>
+                                </row>
+                                
+                                <!-- Masonry veneer cladding perpendicular - 1-storey height, fully clad - Supporting roof + 2 floors -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row99">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure48">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_2floor_orange" alt="One storey building - 1-storey fully clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 2 floors
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.44</entry>
+                                    <entry>1.91</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row100">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.26</entry>
+                                    <entry>1.55</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row101">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.18</entry>
+                                    <entry>1.39</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row102">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.13</entry>
+                                    <entry>1.30</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row103">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.11</entry>
+                                    <entry>1.24</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row104">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.09</entry>
+                                    <entry>1.20</entry>
+                                </row>
+                                
+                                <!-- Stone veneer section -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row105">
+                                    <entry rowspan="2">Stone veneer<super>(2)</super></entry>
+                                    <entry></entry>
+                                    <entry></entry>
+                                    <entry><emphasis role="italic">Building</emphasis> depth</entry>
+                                    <entry>One face</entry>
+                                    <entry>Both faces</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row106">
+                                    <entry>Stone veneer half <emphasis role="italic">storey</emphasis> above <emphasis role="italic">foundation</emphasis></entry>
+                                    <entry>Supporting up to a roof + 2 floors</entry>
+                                    <entry>1.00</entry>
                                     <entry>1.00</entry>
                                     <entry></entry>
                                 </row>
-                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row75">
+                                
+                                
+                                <!-- Stone veneer cladding perpendicular - fully clad - Supporting roof only -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row107">
+                                    <entry rowspan="18">Stone veneer cladding perpendicular to <emphasis role="italic">braced wall band</emphasis>, fully clad <super>(4)</super> :
+                                        Apply factor corresponding to <emphasis role="italic">building</emphasis> depth in the direction of the <emphasis role="italic">braced wall band</emphasis> for one or two <emphasis role="italic">building</emphasis> face(s)
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure49">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row8.eps" alt="Building depth diagram for stone veneer fully clad"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure50">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building - stone veneer fully clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof only
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.95</entry>
+                                    <entry>2.95</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row108">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.54</entry>
+                                    <entry>2.13</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row109">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.38</entry>
+                                    <entry>1.79</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row110">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.28</entry>
+                                    <entry>1.60</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row111">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.23</entry>
+                                    <entry>1.49</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row112">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.19</entry>
+                                    <entry>1.40</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - fully clad - Supporting roof + 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row113">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure51">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building - stone veneer fully clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 1 floor
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>2.21</entry>
+                                    <entry>3.48</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row114">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.72</entry>
+                                    <entry>2.50</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row115">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.51</entry>
+                                    <entry>2.06</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row116">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.38</entry>
+                                    <entry>1.82</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row117">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.31</entry>
+                                    <entry>1.66</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row118">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.26</entry>
+                                    <entry>1.55</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - fully clad - Supporting roof + 2 floors -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row119">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure52">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - stone veneer fully clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 2 floors
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>2.28</entry>
+                                    <entry>3.63</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row120">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.77</entry>
+                                    <entry>2.60</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row121">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.55</entry>
+                                    <entry>2.14</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row122">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.41</entry>
+                                    <entry>1.88</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row123">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.33</entry>
+                                    <entry>1.72</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row124">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.28</entry>
+                                    <entry>1.60</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - partially clad - Supporting roof only -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row125">
+                                    <entry rowspan="18">Stone veneer cladding perpendicular to <emphasis role="italic">braced wall band</emphasis>, partially clad<super>(4)</super>:
+                                        Apply factor corresponding to <emphasis role="italic">building</emphasis> depth in the direction of the braced wall bad for one or two <emphasis role="italic">building</emphasis> face(s)
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure53">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row9.eps" alt="Building depth diagram for stone veneer partially clad"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure54">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building - stone veneer partially clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof only
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.44</entry>
+                                    <entry>2.95</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row126">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.25</entry>
+                                    <entry>1.54</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row127">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.17</entry>
+                                    <entry>1.37</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row128">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.13</entry>
+                                    <entry>1.28</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row129">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.10</entry>
+                                    <entry>1.23</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row130">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.08</entry>
+                                    <entry>1.18</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - partially clad - Supporting roof + 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row131">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure55">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building - stone veneer partially clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 1 floor
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.56</entry>
+                                    <entry>2.19</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row132">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.33</entry>
+                                    <entry>1.71</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row133">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.22</entry>
+                                    <entry>1.50</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row134">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.17</entry>
+                                    <entry>1.38</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row135">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.13</entry>
+                                    <entry>1.31</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row136">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.11</entry>
+                                    <entry>1.25</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - partially clad - Supporting roof + 2 floors -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row137">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure56">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - stone veneer partially clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 2 floors
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.59</entry>
+                                    <entry>2.26</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row138">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.35</entry>
+                                    <entry>1.76</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row139">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.24</entry>
+                                    <entry>1.53</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row140">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.18</entry>
+                                    <entry>1.41</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row141">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.14</entry>
+                                    <entry>1.33</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row142">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.12</entry>
+                                    <entry>1.27</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - 1-storey height with openings - Supporting roof + 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row143">
+                                    <entry rowspan="12">Stone veneer cladding perpendicular to the <emphasis role="italic">braced wall band</emphasis>, 1 <emphasis role="italic">storey</emphasis> height, with openings:
+                                        Apply factor corresonding to depth Lwl in the direction of the <emphasis role="italic">braced wall band</emphasis> for one or two <emphasis role="italic">building</emphasis> face(s).
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure57">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row10.eps" alt="Building depth diagram for 1-storey stone veneer with openings"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure58">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="Two storey building - 1-storey stone veneer with openings"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 1 floor
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.19</entry>
+                                    <entry>1.40</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row144">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.11</entry>
+                                    <entry>1.24</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row145">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.07</entry>
+                                    <entry>1.17</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row146">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.06</entry>
+                                    <entry>1.13</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row147">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.04</entry>
+                                    <entry>1.10</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row148">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.04</entry>
+                                    <entry>1.08</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - 1-storey height with openings - Supporting roof + 2 floors -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row149">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure59">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - 1-storey stone veneer with openings"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 2 floors
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.36</entry>
+                                    <entry>1.76</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row150">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.21</entry>
+                                    <entry>1.45</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row151">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.14</entry>
+                                    <entry>1.32</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row152">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.11</entry>
+                                    <entry>1.24</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row153">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.09</entry>
+                                    <entry>1.20</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row154">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.07</entry>
+                                    <entry>1.16</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - 2-storey height with openings - Supporting roof + 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row155">
+                                    <entry rowspan="12">Stone veneer cladding perpendicular to the <emphasis role="italic">braced wall band</emphasis>, 2 <emphasis role="italic">storey</emphasis> height, with openings: Apply factor corresonding to depth Lwl in the direction of the <emphasis role="italic">braced wall band</emphasis> for one or two <emphasis role="italic">building</emphasis> face(s).
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure60">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row11.eps" alt="Building depth diagram for 2-storey stone veneer with openings"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure61">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange.eps" alt="Two storey building - 2-storey stone veneer with openings"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 1 floor
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.19</entry>
+                                    <entry>1.40</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row156">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.11</entry>
+                                    <entry>1.24</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row157">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.07</entry>
+                                    <entry>1.17</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row158">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.06</entry>
+                                    <entry>1.13</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row159">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.04</entry>
+                                    <entry>1.10</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row160">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.04</entry>
+                                    <entry>1.08</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - 2-storey height with openings - Supporting roof + 2 floors -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row161">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure62">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_2floor_orange.eps" alt="One storey building - 2-storey stone veneer with openings"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 2 floors
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.36</entry>
+                                    <entry>1.76</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row162">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.21</entry>
+                                    <entry>1.45</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row163">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.14</entry>
+                                    <entry>1.32</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row164">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.11</entry>
+                                    <entry>1.24</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row165">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.09</entry>
+                                    <entry>1.20</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row166">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.07</entry>
+                                    <entry>1.16</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - 1-storey height fully clad - Supporting roof + 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row167">
+                                    <entry rowspan="12">Stone veneer cladding perpendicular to the <emphasis role="italic">braced wall band</emphasis>, 1 <emphasis role="italic">storey</emphasis> height, fully clad: Apply factor corresonding to depth Lwl in the direction of the <emphasis role="italic">braced wall band</emphasis> for one or two <emphasis role="italic">building</emphasis> face(s).
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure63">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row12.eps" alt="Building depth diagram for 1-storey stone veneer fully clad"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure64">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="Two storey building - 1-storey stone veneer fully clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 1 floor
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.40</entry>
+                                    <entry>1.83</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row168">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.24</entry>
+                                    <entry>1.50</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row169">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.17</entry>
+                                    <entry>1.35</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row170">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.13</entry>
+                                    <entry>1.27</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row171">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.10</entry>
+                                    <entry>1.22</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row172">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.09</entry>
+                                    <entry>1.18</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - 1-storey height fully clad - Supporting roof + 2 floor2 -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row173">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure65">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_2floor_orange.eps" alt="One storey building - 1-storey stone veneer fully clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 2 floor2
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.26</entry>
+                                    <entry>1.53</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row174">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.15</entry>
+                                    <entry>1.32</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row175">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.11</entry>
+                                    <entry>1.23</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row176">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.08</entry>
+                                    <entry>1.18</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row177">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.07</entry>
+                                    <entry>1.14</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row178">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.06</entry>
+                                    <entry>1.12</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - 2-storey height fully clad - Supporting roof + 1 floor -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row179">
+                                    <entry rowspan="12">Stone veneer cladding perpendicular to the <emphasis role="italic">braced wall band</emphasis>, 2 <emphasis role="italic">storey</emphasis> height, fully clad: Apply factor corresonding to depth Lwl in the direction of the <emphasis role="italic">braced wall band</emphasis> for one or two <emphasis role="italic">building</emphasis> face(s).
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure66">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row13.eps" alt="Building depth diagram for 2-storey stone veneer fully clad"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure67">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange.eps" alt="Two storey building - 2-storey stone veneer fully clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 1 floor
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.40</entry>
+                                    <entry>1.83</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row180">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.24</entry>
+                                    <entry>1.50</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row181">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.17</entry>
+                                    <entry>1.35</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row182">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.13</entry>
+                                    <entry>1.27</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row183">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.10</entry>
+                                    <entry>1.22</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row184">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.09</entry>
+                                    <entry>1.18</entry>
+                                </row>
+                                
+                                <!-- Stone veneer cladding perpendicular - 2-storey height fully clad - Supporting roof + 2 floors -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row185">
+                                    <entry rowspan="6">
+                                        <figure xml:id="bc.divBV2.part9.figure68">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_2floor_orange.eps" alt="One storey building - 2-storey stone veneer fully clad"/>
+                                        </figure>
+                                        
+                                        Supporting roof + 2 floors
+                                    </entry>
+                                    <entry>≤ 3.1 m</entry>
+                                    <entry>1.77</entry>
+                                    <entry>2.58</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row186">
+                                    <entry>6.1 m</entry>
+                                    <entry>1.46</entry>
+                                    <entry>1.96</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row187">
+                                    <entry>9.1 m</entry>
+                                    <entry>1.33</entry>
+                                    <entry>1.68</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row188">
+                                    <entry>12.2 m</entry>
+                                    <entry>1.25</entry>
+                                    <entry>1.53</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row189">
+                                    <entry>15.2 m</entry>
+                                    <entry>1.20</entry>
+                                    <entry>1.43</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row190">
+                                    <entry>≥ 18.3 m</entry>
+                                    <entry>1.17</entry>
+                                    <entry>1.36</entry>
+                                </row>
+                                
+                                <!-- ============================================================ -->
+                                <!-- K_snow Section                                               -->
+                                <!-- ============================================================ -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row191">
+                                    <entry rowspan="10">K<sub>snow</sub> <super>(4)</super></entry>
+                                    <entry rowspan="10">Stone veneer cladding perpendicular to the <emphasis role="italic">braced wall band</emphasis>, 2 <emphasis role="italic">storey</emphasis> height, fully clad: Apply factor corresonding to depth Lwl in the direction of the <emphasis role="italic">braced wall band</emphasis> for one or two <emphasis role="italic">building</emphasis> face(s).
+                                        
+                                        <figure xml:id="bc.divBV2.part9.figure69">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row14.eps" alt="Building depth diagram for K_snow"/>
+                                        </figure>
+                                    </entry>
+                                    <entry rowspan="5">
+                                        <figure xml:id="bc.divBV2.part9.figure70">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building for K_snow"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof only
+                                    </entry>
+                                    <entry>≤ 2kPa</entry>
+                                    <entry>1.00</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row192">
+                                    <entry>3 kPa</entry>
+                                    <entry>1.20</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row193">
+                                    <entry>4 kPa</entry>
+                                    <entry>1.40</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row194">
+                                    <entry>5 kPa</entry>
+                                    <entry>1.60</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row195">
+                                    <entry>6 kPa</entry>
+                                    <entry>1.80</entry>
+                                </row>
+                                
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row196">
+                                    <entry rowspan="5">
+                                        <figure xml:id="bc.divBV2.part9.figure71">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building for K_snow"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof and 1 floor
+                                    </entry>
+                                    <entry>≤ 2kPa</entry>
+                                    <entry>1.00</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row197">
+                                    <entry>3 kPa</entry>
+                                    <entry>1.10</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row198">
+                                    <entry>4 kPa</entry>
+                                    <entry>1.20</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row199">
+                                    <entry>5 kPa</entry>
+                                    <entry>1.30</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row200">
+                                    <entry>6 kPa</entry>
+                                    <entry>1.40</entry>
+                                </row>
+                                
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row201">
+                                    <entry rowspan="5">
+                                        <figure xml:id="bc.divBV2.part9.figure72">
+                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building for K_snow"/>
+                                        </figure>
+                                        
+                                        <emphasis role="italic">Storey</emphasis> supporting roof and 2 floors
+                                    </entry>
+                                    <entry>≤ 2kPa</entry>
+                                    <entry>1.00</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row202">
+                                    <entry>3 kPa</entry>
+                                    <entry>1.06</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row203">
+                                    <entry>4 kPa</entry>
+                                    <entry>1.10</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row204">
+                                    <entry>5 kPa</entry>
+                                    <entry>1.20</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row205">
+                                    <entry>6 kPa</entry>
+                                    <entry>1.24</entry>
+                                </row>
+                                
+                                <!-- ============================================================ -->
+                                <!-- K_spacing Section                                            -->
+                                <!-- ============================================================ -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row206">
+                                    <entry rowspan="4">K<sub>spacing</sub> <super>(5) (6)</super></entry>
+                                    <entry rowspan="4"><emphasis role="italic">Braced wall band</emphasis> spacing: apply factor to all <emphasis role="italic">braced wall panels</emphasis> per <emphasis role="italic">building</emphasis> plan direction</entry>
+                                    <entry rowspan="4">Any <emphasis role="italic">storey</emphasis></entry>
+                                    <entry>3.8 m</entry>
+                                    <entry>0.60</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row207">
+                                    <entry>7.6 m</entry>
+                                    <entry>1.00</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row208">
+                                    <entry>10.6 m</entry>
+                                    <entry>1.35</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row209">
+                                    <entry>15 m <super>(7)</super></entry>
+                                    <entry>1.90</entry>
+                                </row>
+                                
+                                <!-- ============================================================ -->
+                                <!-- K_snumber Section                                            -->
+                                <!-- ============================================================ -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row210">
+                                    <entry rowspan="4">K<sub>snumber</sub></entry>
+                                    <entry rowspan="4">Number of parallel <emphasis role="italic">braced wall bands</emphasis>: apply factor to all <emphasis role="italic">braced wall panels</emphasis> per <emphasis role="italic">building</emphasis> plan direction</entry>
+                                    <entry rowspan="4">Any <emphasis role="italic">storey</emphasis></entry>
+                                    <entry>2</entry>
+                                    <entry>1.00</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row211">
+                                    <entry>3</entry>
+                                    <entry>1.33</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row212">
+                                    <entry>4</entry>
+                                    <entry>1.50</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row213">
+                                    <entry>≥ 5</entry>
+                                    <entry>1.60</entry>
+                                </row>
+                                
+                                <!-- ============================================================ -->
+                                <!-- K_gyp Section                                                -->
+                                <!-- ============================================================ -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row214">
+                                    <entry rowspan="3">K<sub>gyp</sub></entry>
+                                    <entry rowspan="3">Interior gypsum board: apply factor in accordance with whether gypsum board is installed or ommitted on interior side of <emphasis role="italic">braced wall panels</emphasis></entry>
+                                    <entry rowspan="3">Any <emphasis role="italic">storey</emphasis></entry>
+                                    <entry>Installed</entry>
+                                    <entry>1.00</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row215">
+                                    <entry>Omitted, blocked wall</entry>
+                                    <entry>1.20</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row216">
+                                    <entry>Omitted, unblocked wall</entry>
+                                    <entry>1.40</entry>
+                                </row>
+                                
+                                <!-- ============================================================ -->
+                                <!-- K_sheath Section                                             -->
+                                <!-- ============================================================ -->
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row217">
+                                    <entry rowspan="2">K<sub>sheath</sub></entry>
+                                    <entry rowspan="2">Intermittent <emphasis role="italic">braced wall panels</emphasis>: apply factor in accordance with continuity of sheathing within <emphasis role="italic">braced wall band</emphasis></entry>
+                                    <entry rowspan="2">Any <emphasis role="italic">storey</emphasis></entry>
+                                    <entry>Continuously wood-sheathed</entry>
+                                    <entry>1.00</entry>
+                                </row>
+                                <row xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.row218">
                                     <entry>Intermittently sheathed</entry>
                                     <entry>1.15</entry>
-                                    <entry></entry>
                                 </row>
                             </tbody>
                         </tgroup>
+                        
                         <table-notes>
-                            <!-- Table Notes -->
-                            <note>
-                                <text><super>(1)</super> See <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art2.sent3" display-type="long"/>.</text>
-                            </note>
-                            <note>
-                                <text><super>(2)</super> For K<sub>weight</sub>, linear interpolation between L<sub>wl</sub> values and between fully clad and partially clad veneer conditions is permitted.</text>
-                            </note>
-                            <note>
-                                <text><super>(3)</super> "Fully clad" means that there are no openings, and "partially clad" means 50% or less coverage of an elevation.</text>
-                            </note>
-                            <note>
-                                <text><super>(4)</super> For K<sub>snow</sub>, linear interpolation between roof snow loads is permitted.</text>
-                            </note>
-                            <note>
-                                <text><super>(5)</super> For K<sub>Sspacing</sub>, linear interpolation between <ref type="term" target="br-wl-bnd">braced wall band</ref> spacings is permitted.</text>
-                            </note>
-                            <note>
-                                <text><super>(6)</super> An average <ref type="term" target="br-wl-bnd">braced wall band</ref> spacing is permitted to be used for the determination of K<sub>Sspacing</sub>. See Sentence (5).</text>
-                            </note>
-                            <note>
-                                <text><super>(7)</super> A <ref type="term" target="br-wl-bnd">braced wall band</ref> spacing of <measurement units="metric">15 m</measurement> is only permitted in <ref type="term" target="bsmnt">basements</ref> and crawl spaces.</text>
-                            </note>
-                            <note>
-                                <text>Linear interpolation is permitted between roof snow loads for K<sub>snow</sub> and between <ref type="term" target="br-wl-bnd">braced wall band</ref> spacings for K<sub>Sspacing</sub>, and between <ref type="term" target="bldng">building</ref> depths and between fully clad and partially clad veneer conditions for K<sub>weight</sub>.</text>
-                            </note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.note1">Notes to Table 9.23.13.7.-D:</note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.note2"><super>(1)</super> See Sentence 9.23.13.2.(3).</note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.note3"><super>(2)</super> For K<sub>weight</sub>, linear interpolation between Lwl values and between fully clad and partially clad veneer conditions is permitted.</note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.note4"><super>(3)</super> "Fully clad" means that there are no openings, and "partially clad" means 50% or less coverage of an elevation.</note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.note5"><super>(4)</super> For K<sub>snow</sub>, linear interpolation between roof snow loads is permitted.</note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.note6"><super>(5)</super> For K<sub>spacing</sub>, linear interpolation between <emphasis role="italic">braced wall band</emphasis> spacings is permitted.</note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.note7"><super>(6)</super> An average <emphasis role="italic">braced wall band</emphasis> spacing is permitted to be used for the determination of KSspacing. See Sentence 9.23.13.2.(3).</note>
+                            <note xml:id="bc.divBV2.part9.sect23.subsect13.art7.table4.note8"><super>(7)</super> A <emphasis role="italic">braced wall band</emphasis> spacing of 15 m is only permitted in <emphasis role="italic">basements</emphasis> and crawl spaces.</note>
                         </table-notes>
                     </table>
                 </new-content>
