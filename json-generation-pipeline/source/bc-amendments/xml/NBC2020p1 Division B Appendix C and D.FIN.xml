@@ -185,27 +185,9 @@
                         were mapped and compared to the <ref type="standard" target="bcbc2018" standardId="bcbc2018"/> values for the locations in <ref type="internal"
                                                                                                                                                         target="nbc.divB.appendixC.table2"
                                                                                                                                                         display-type="long"/>. This updating procedure resulted in small changes
-                        to the 1-in-50 reference wind velocity pressures for <measurement units="metric">60 locations</measurement>. </paragraph>
+                        to the 1-in-50 reference wind velocity pressures for <measurement units="metric">some locations</measurement>. </paragraph>
                 </new-content>
             </replace>
-        </amendment>
-        
-        <!-- ================================================================== -->
-        <!-- Amendment 009: Change specific location count to generic          -->
-        <!-- Appendix C Wind section - 1-in-50 wind velocity changes paragraph -->
-        <!-- ================================================================== -->
-        
-        <amendment id="bc-009" sequence="9"
-                   description="Replace 60 locations with some locations in 1-in-50 wind velocity paragraph">
-            <target type="canonical-id" id="nbc.divB.appendixC.div18.para11"/>
-            <modify>
-                <!-- Replace the entire measurement element -->
-                <element-change xpath-within-target=".">
-                    <replace-child element-name="measurement">
-                        <measurement units="metric">some locations</measurement>
-                    </replace-child>
-                </element-change>
-            </modify>
         </amendment>
         
         <!-- ================================================================== -->

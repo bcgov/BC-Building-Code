@@ -139,14 +139,14 @@
                    description="Change table title to reference BC Building Code">
             <target type="canonical-id" id="nbc.divB.part1.sect3.subsect1.art2.table1"/>
             <modify>
-                <element-change xpath-within-target=".">
-                    <replace-child element-name="title">
+                <element-replace element="title">
+                    <new-content>
                         <title>Documents Referenced in Book I (General) of the British Columbia Building Code
                             <note xml:id="et001030-2">While every effort was made to ensure the accuracy of the information in this Table, the NRC is not responsible for the accuracy, timeliness or reliability of the content presented therein. For all purposes of interpreting and applying the referenced standards, Code users should refer to the most recent official versions of the referenced editions.</note>
                             <note xml:id="et001030-5">See <ref type="internal" target="et000279" display-type="long" pretext="Table"/> of Appendix D for the list of standards referenced therein.</note>
                         </title>
-                    </replace-child>
-                </element-change>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
         
