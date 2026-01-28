@@ -1105,22 +1105,10 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
         </amendment>
 
         <!-- ================================================================== -->
-        <!-- Amendment 47: Add note reference to Article 3.3.1.7.(1)          -->
-        <!-- Add "(See Note A-3.3.1.7.(1).)" at end of sentence                -->
+        <!-- Amendment 47: REMOVED - bc-053 already adds the note reference   -->
+        <!-- The note "(See Note A-3.3.1.7.(1).)" was included in bc-053's     -->
+        <!-- element-replace of the <text> element, making this redundant.    -->
         <!-- ================================================================== -->
-
-        <amendment id="bc-058" sequence="50"
-                   description="Add note reference to end of Article 3.3.1.7.(1)">
-            <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art7.sent1"/>
-            <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>shall be provided with accessible</find>
-                        <replace>shall be provided with accessible (See Note A-3.3.1.7.(1).)</replace>
-                    </find-replace>
-                </text-change>
-            </modify>
-        </amendment>
 
         <!-- ================================================================== -->
         <!-- Amendment 48: Replace Article 3.3.1.7.(4)                         -->
@@ -1418,14 +1406,31 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
         <amendment id="bc-071" sequence="63"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.6.3.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art3.sent1"/>
-            <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
-            </modify>
+            <replace preserve-references="true">
+                <new-content>
+                    <sentence xml:id="nbc.divB.part3.sect3.subsect6.art3.sent1" number="1" vendor-id="es016129">
+                        <text>Where required by the British Columbia Fire Code, cylinders of <ref type="term" target="dngr-gd">dangerous goods</ref> classified as flammable gases stored indoors shall be located in a room</text>
+                        <clause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent1.clause1" letter="a" vendor-id="es016129a">
+                            <text>that is separated from the remainder of the <ref type="term" target="bldng">building</ref> by a gas-tight <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> of at least <measurement units="metric">2 h</measurement>,</text>
+                        </clause>
+                        <clause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent1.clause2" letter="b" vendor-id="es016129b">
+                            <text>that is located on an exterior wall of the <ref type="term" target="bldng">building</ref>,</text>
+                        </clause>
+                        <clause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent1.clause3" letter="c" vendor-id="es016129c">
+                            <text>that can be entered from the exterior, and</text>
+                        </clause>
+                        <clause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent1.clause4" letter="d" vendor-id="es016129d">
+                            <text>whose <ref type="term" target="clr">closures</ref> leading to the interior of the <ref type="term" target="bldng">building</ref> are</text>
+                            <subclause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent1.clause4.subclause1" number="1" vendor-id="es016129d1">
+                                <text>equipped with self-closing devices that keep the <ref type="term" target="clr">closures</ref> closed when not in use, and</text>
+                            </subclause>
+                            <subclause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent1.clause4.subclause2" number="2" vendor-id="es016129d2">
+                                <text>constructed so as to prevent the migration of gases from the room into other parts of the <ref type="term" target="bldng">building</ref>.</text>
+                            </subclause>
+                        </clause>
+                    </sentence>
+                </new-content>
+            </replace>
         </amendment>
 
         <!-- ================================================================== -->
@@ -1436,14 +1441,31 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
         <amendment id="bc-072" sequence="64"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.6.3.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art3.sent2"/>
-            <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
-            </modify>
+            <replace preserve-references="true">
+                <new-content>
+                    <sentence xml:id="nbc.divB.part3.sect3.subsect6.art3.sent2" number="2" vendor-id="es016130">
+                        <text>Where required by the British Columbia Fire Code, cylinders of anhydrous ammonia or <ref type="term" target="dngr-gd">dangerous goods</ref> classified as toxic or oxidizing gases stored indoors shall be located in a room</text>
+                        <clause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent2.clause1" letter="a" vendor-id="es016130a">
+                            <text>that is separated from the remainder of the <ref type="term" target="bldng">building</ref> by a gas-tight <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> of at least <measurement units="metric">1 h</measurement>,</text>
+                        </clause>
+                        <clause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent2.clause2" letter="b" vendor-id="es016130b">
+                            <text>that is located on an exterior wall of the <ref type="term" target="bldng">building</ref>,</text>
+                        </clause>
+                        <clause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent2.clause3" letter="c" vendor-id="es016130c">
+                            <text>that can be entered from the exterior, and</text>
+                        </clause>
+                        <clause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent2.clause4" letter="d" vendor-id="es016130d">
+                            <text>whose <ref type="term" target="clr">closures</ref> leading to the interior of the <ref type="term" target="bldng">building</ref> are</text>
+                            <subclause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent2.clause4.subclause1" number="1" vendor-id="es016130d1">
+                                <text>equipped with self-closing devices that keep the <ref type="term" target="clr">closures</ref> closed when not in use, and</text>
+                            </subclause>
+                            <subclause xml:id="nbc.divB.part3.sect3.subsect6.art3.sent2.clause4.subclause2" number="2" vendor-id="es016130d2">
+                                <text>constructed so as to prevent the migration of gases from the room into other parts of the <ref type="term" target="bldng">building</ref>.</text>
+                            </subclause>
+                        </clause>
+                    </sentence>
+                </new-content>
+            </replace>
         </amendment>
 
         <!-- ================================================================== -->
@@ -1454,14 +1476,13 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
         <amendment id="bc-073" sequence="65"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.6.4.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art4.sent1"/>
-            <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
-            </modify>
+            <replace preserve-references="true">
+                <new-content>
+                    <sentence xml:id="nbc.divB.part3.sect3.subsect6.art4.sent1" number="1" vendor-id="es016322">
+                        <text><ref type="term" target="fr-prtn">Fire separations</ref> for rooms where <ref type="term" target="flmmbl-l">flammable liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref> are stored are required to be constructed with a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> in conformance with Subsection 4.2.9. of Division B of the British Columbia Fire Code.</text>
+                    </sentence>
+                </new-content>
+            </replace>
         </amendment>
 
         <!-- ================================================================== -->
@@ -1472,14 +1493,13 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
         <amendment id="bc-074" sequence="66"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.6.4.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art4.sent2"/>
-            <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
-            </modify>
+            <replace preserve-references="true">
+                <new-content>
+                    <sentence xml:id="nbc.divB.part3.sect3.subsect6.art4.sent2" number="2" vendor-id="es016323">
+                        <text>Where Class IA or IB liquids specified in Subsection 4.1.2. of Division B of the British Columbia Fire Code are dispensed within a storage room, the room shall be designed to prevent critical structural and mechanical damage from an internal explosion in conformance with good engineering practice such as that described in <ref type="standard" target="nfpa68" standardId="nfpa68"/>. (See <ref type="internal" target="nbc.divB.part3.sect9.appnote147" display-type="short"/>.)</text>
+                    </sentence>
+                </new-content>
+            </replace>
         </amendment>
 
         <!-- ================================================================== -->
@@ -1490,14 +1510,13 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
         <amendment id="bc-075" sequence="67"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.6.6.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art6.sent1"/>
-            <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
-            </modify>
+            <replace preserve-references="true">
+                <new-content>
+                    <sentence xml:id="nbc.divB.part3.sect3.subsect6.art6.sent1" number="1" vendor-id="es016324">
+                        <text>Where Article 3.2.9.1. of Division B of the British Columbia Fire Code applies due to the quantity and nature of the stored product, and as stipulated in <ref type="internal" target="nbc.divB.part3.sect3.subsect6.art6.sent2" display-type="short" pretext="Sentences"/><ref type="internal" target="nbc.divB.part3.sect3.subsect6.art6.sent6" display-type="short" pretext="to"/>, <ref type="term" target="bldng">buildings</ref> used for the storage of ammonium nitrate shall be classified as <ref type="term" target="mdm-hzrd">medium-hazard industrial occupancies</ref> (Group F, Division 2).</text>
+                    </sentence>
+                </new-content>
+            </replace>
         </amendment>
 
         <!-- ================================================================== -->
@@ -1774,16 +1793,13 @@ each 25 females.</find>
         <amendment id="bc-094" sequence="82"
                    description="Update bathtub clear floor space requirements in Article 3.7.2.8.(1)(a)">
             <target type="canonical-id" id="nbc.divB.part3.sect7.subsect2.art8.sent1.clause1"/>
-            <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>have a clear floor space at least <measurement units="metric">750 mm</measurement> wide along
-its length, except that a water closet or a lavatory is permitted
-to encroach this space,</find>
-                        <replace>have a clear floor space at least <measurement units="metric">750 mm</measurement> wide along its length, except that a water closet and a lavatory are permitted to project into this space provided they do not restrict access to the bathtub,</replace>
-                    </find-replace>
-                </text-change>
-            </modify>
+            <replace preserve-references="true">
+                <new-content>
+                    <clause xml:id="bc.divB.part3.sect7.subsect2.art8.sent1.clause1" letter="a" vendor-id="es007773a">
+                        <text>have a clear floor space at least <measurement units="metric">750 mm</measurement> wide along its length, except that a water closet and a lavatory are permitted to project into this space provided they do not restrict access to the bathtub,</text>
+                    </clause>
+                </new-content>
+            </replace>
         </amendment>
 
         <!-- ================================================================== -->
@@ -1794,14 +1810,13 @@ to encroach this space,</find>
         <amendment id="bc-090" sequence="83"
                    description="Change National Fire Code to British Columbia Fire Code in Article 3.7.3.1.(1)(b)">
             <target type="canonical-id" id="nbc.divB.part3.sect7.subsect3.art1.sent1.clause2"/>
-            <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
-            </modify>
+            <replace preserve-references="true">
+                <new-content>
+                    <clause xml:id="bc.divB.part3.sect7.subsect3.art1.sent1.clause2" letter="b" vendor-id="es007774b">
+                        <text>Part 3 of Division B of the British Columbia Fire Code.</text>
+                    </clause>
+                </new-content>
+            </replace>
         </amendment>
 
         <!-- ================================================================== -->
@@ -1953,12 +1968,11 @@ to encroach this space,</find>
                    description="Change article title in Article 3.8.2.3">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art3"/>
             <modify>
-                <text-change xpath-within-target="title/text()">
-                    <find-replace>
-                        <find>Areas Requiring a Barrier-Free Path of Travel</find>
-                        <replace>Areas Requiring Access</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element-name="title">
+                    <new-content>
+                        <title>Areas Requiring Access</title>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
