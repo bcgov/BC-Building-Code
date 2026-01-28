@@ -26,12 +26,17 @@
                    description="Replace ASME A17.1 reference with Safety Standards Act in Table 4.1.5.11">
             <target type="canonical-id" id="nbc.divB.part4.sect1.subsect5.art11.table1"/>
             <modify>
-                <text-change xpath-within-target=".//row[entry[contains(text(),'Operation of elevators')]]/entry[2]">
-                    <find-replace>
-                        <find>See <ref type="standard" target="asmea17.1" standardId="asmea17.1"/></find>
-                        <replace>See the Safety Standards Act and pursuant regulations.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="row" position="4">
+                    <new-content>
+                        <row xml:id="nbc.divB.part4.sect1.subsect5.art11.table1.row4">
+                              <entry align="left">Operation of elevators</entry>
+                              <entry align="center">
+                                 <note xml:id="nbc.divB.part4.sect1.subsect5.art11.table1.note1"
+                                       vendor-id="et000160-1">See the Safety Standards Act and pursuant regulations.</note>
+                              </entry>
+                        </row>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -43,12 +48,19 @@
                    description="Replace ASME A17.1 reference with Safety Standards Act in Table 4.1.8.18">
             <target type="canonical-id" id="nbc.divB.part4.sect1.subsect8.art18.table1"/>
             <modify>
-                <text-change xpath-within-target=".//row[entry[contains(text(),'Elevators and escalators')]]">
-                    <find-replace>
-                        <find>See also <ref type="standard" target="asmea17.1" standardId="asmea17.1"/></find>
-                        <replace>See also the Safety Standards Act and pursuant regulations.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="row" position="30">
+                    <new-content>
+                        <row xml:id="nbc.divB.part4.sect1.subsect8.art18.table1.row30">
+                              <entry>22</entry>
+                              <entry>Elevators and escalators<note xml:id="nbc.divB.part4.sect1.subsect8.art18.table1.note3"
+                                       vendor-id="et001041-3">See also the Safety Standards Act and pursuant regulations.</note>
+                              </entry>
+                              <entry/>
+                              <entry/>
+                              <entry/>
+                        </row>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 

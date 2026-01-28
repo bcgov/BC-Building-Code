@@ -714,12 +714,26 @@ occupancy</ref> shall have a clear width not less than <measurement units="metri
                    description="Add clause 4.5.1 reference and Modified International Symbol of Access in Article 3.8.3.9">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect3.art9.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Clauses 4.5.2, 4.5.3 and 4.5.4</find>
-                        <replace>Clauses 4.5.1, 4.5.2, 4.5.3 and 4.5.4</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Visual information signs required by <ref type="internal"
+                             target="nbc.divB.part3.sect4.subsect5"
+                             display-type="long"
+                             pretext="Subsections"/>
+                        <ref type="internal"
+                             target="nbc.divB.part3.sect4.subsect6"
+                             display-type="short"
+                             pretext=" and"/>
+                        <ref type="internal"
+                             target="nbc.divB.part3.sect8.subsect2.art10"
+                             display-type="long"
+                             pretext=" and Article"/> shall comply with <ref type="external" target="csab651">Clauses
+4.5.1, 4.5.2, 4.5.3 and 4.5.4 of </ref>
+                        <ref type="standard" target="csab651" standardId="csab651"/> (See <ref type="internal"
+                             target="nbc.divB.part3.sect9.appnote217"
+                             display-type="short"/>.) </text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -731,12 +745,18 @@ occupancy</ref> shall have a clear width not less than <measurement units="metri
                    description="Add Modified International Symbol of Access option in Article 3.8.3.9.(3)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect3.art9.sent3"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>International Symbol of Access or the International Symbol of Access for Hearing Loss</find>
-                        <replace>International Symbol of Access, Modified International Symbol of Access, or the International Symbol of Access for Hearing Loss</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Signs required by <ref type="internal"
+                             target="nbc.divB.part3.sect8.subsect2.art10"
+                             display-type="long"/> shall incorporate
+the International Symbol of Access, Modified International Symbol of Access, or the International Symbol of
+Access for Hearing Loss and appropriate graphical or textual information
+that clearly indicates the type of facilities available. (See <ref type="internal"
+                             target="nbc.divB.part3.sect9.appnote218"
+                             display-type="short"/>.) </text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -956,12 +976,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Increase water closet seat height upper limit from 460mm to 480mm in Article 3.8.3.14.(1)(a)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect3.art14.sent1.clause1"/>
             <modify>
-                <text-change xpath-within-target=".//measurement[@units='metric' and text()='460 mm']">
-                    <find-replace>
-                        <find>460 mm</find>
-                        <replace>480 mm</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>be equipped with a seat located <measurement units="metric">430 mm</measurement> to <measurement units="metric">480 mm</measurement> above the floor,</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1133,12 +1152,13 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Change clause 3.8.3.17.(2)(g) ending from period to comma and">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect3.art17.sent2.clause7"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find><ref type="internal" target="nbc.divB.part3.sect8.subsect3.art12.sent1.clause8" display-type="long"/>.</find>
-                        <replace><ref type="internal" target="nbc.divB.part3.sect8.subsect3.art12.sent1.clause8" display-type="long"/>, and</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>have a coat hook conforming to <ref type="internal"
+                                target="nbc.divB.part3.sect8.subsect3.art12.sent1.clause8"
+                                display-type="long"/>, and</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1730,12 +1750,12 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Change National Fire Code to British Columbia Fire Code in Note A-3.1.2.3.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote4"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph/text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote4.para1">The
+use of an arena is regulated in the British Columbia Fire Code. </paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1789,12 +1809,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Change NBC to British Columbia Building Code in Note A-3.1.8.1.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote28"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph/text()">
-                    <find-replace>
-                        <find>in the NBC that</find>
-                        <replace>in the British Columbia Building Code that</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote28.para1"> Although there is no explicit performance statement in the British Columbia Building Code that means of egress should be free of smoke, it is the intent that during the period when occupants are using a means of egress to evacuate from a floor area, the smoke contamination should not reach levels that would inhibit movement to the exit. This is particularly critical for persons with disabilities, who may not move at the same rate as other persons and who could be more susceptible to the effects of smoke contamination. <ref type="standard" target="nfpa80" standardId="nfpa80"/> requires that a fire door protecting a means of egress be designed to minimize the possibility of smoke passing through the opening.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1806,12 +1825,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Change NBC to British Columbia Building Code in Note A-3.1.8.1.(2) paragraph 4">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote28"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[4]/text()">
-                    <find-replace>
-                        <find>and the NBC, except</find>
-                        <replace>and the British Columbia Building Code, except</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="4">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote28.para4">Similar concern has to be considered for other closure devices that are permitted to remain open on fusible links, and their location should be restricted in accordance with <ref type="standard" target="nfpa80" standardId="nfpa80"/> and the British Columbia Building Code, except where their installation in another location will not allow the products of combustion to spread into means of egress.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1823,12 +1841,33 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Change 'encapsulated mass timber construction' to 'combustible construction' in Note A-3.2.2.48.(4) paragraph 2">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote54"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[2]/text()">
-                    <find-replace>
-                        <find>the upper storeys are of encapsulated mass timber construction.</find>
-                        <replace>the upper storeys are of combustible construction.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="2">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote54.para2">Alternatively, the requirements of <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect2.art4"
+                          display-type="long"
+                          pretext="Articles"/>
+                     <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect2.art8"
+                          display-type="medium"
+                          pretext=" to"/> for superimposed major occupancies can be applied, resulting in buildings of mixed construction conforming to the building height and area limits for encapsulated mass timber construction and in which the lower storeys are of noncombustible construction and the upper storeys are of combustible construction. For example, a Group A, Division 2 or Group B, Division 3 major occupancy could be located on the first <measurement units="metric">4 storeys</measurement> of a 12&#x2011;storey Group C building constructed in accordance with <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect2.art48"
+                          display-type="long"/>, as long as these first <measurement units="metric">4 storeys</measurement> were constructed of noncombustible construction in accordance with <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect2.art23"
+                          display-type="long"/>
+                     <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect2.art42"
+                          display-type="medium"
+                          pretext=" or"/>, as applicable. (See also <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect2.art6"
+                          display-type="long"
+                          pretext="Articles"/>
+                     <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect2.art7"
+                          display-type="medium"
+                          pretext=" and"/>)</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1840,12 +1879,23 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Change 'may be' to 'are permitted to be' in Note A-3.2.2.51.(5) paragraph 1">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote55"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[1]/text()">
-                    <find-replace>
-                        <find>may be entirely constructed</find>
-                        <replace>are permitted to be entirely constructed</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote55.para1">Buildings conforming to the building height and area limits and the other fire protection requirements of <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect2.art51"
+                          display-type="long"/>
+                     <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect2.art60"
+                          display-type="medium"
+                          pretext=" or"/> are permitted to be entirely constructed of combustible construction and incorporate the occupancies specifically permitted by <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect2.art51.sent5"
+                          display-type="long"/>
+                     <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect2.art60.sent4"
+                          display-type="medium"
+                          pretext=" or"/>: e.g., Group A, Division 2 and Group E major occupancies on the first and second storeys, and a parking garage on the first to third storeys. </paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1857,12 +1907,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Change National Fire Code to British Columbia Fire Code in Note A-3.2.4.6.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote67"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph/text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote67.para1">This requirement is intended to prevent easy access to silencing switches. The satisfactory operation of a fire alarm system to alert the occupants of a building to an emergency is predicated on the assumption that the alarm signal will be silenced only after responsible staff have verified that no emergency exists. Details on the emergency procedures to be used in case of fire are contained in the British Columbia Fire Code.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1874,12 +1923,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Add sentence about egress facilities for convenience in Note A-3.2.4.16.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote74"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph/text()">
-                    <find-replace>
-                        <find>as a principal entrance or as a single exit facility.</find>
-                        <replace>as a principal entrance or as a single exit facility. Egress facilities that are provided for convenience and that do not include all the features of required exits need not be provided with a manual pull station.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote74.para1">Only one manual station need be provided near a group of doors serving as a principal entrance or as a single exit facility. Egress facilities that are provided for convenience and that do not include all the features of required exits need not be provided with a manual pull station.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1931,12 +1979,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace NBC with British Columbia Building Code in Application Note A-3.2.5.12.(6)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote96"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[2]/text()">
-                    <find-replace>
-                        <find>the NBC requires</find>
-                        <replace>the British Columbia Building Code requires</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="2">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote96.para2">According to <ref type="standard" target="nfpa13" standardId="nfpa13"/> and <ref type="standard" target="nfpa13r" standardId="nfpa13r"/>, some small rooms and closets within a dwelling unit in a sprinklered building, including those that may be in the storey immediately below the roof assembly, do not require sprinklers. However, the British Columbia Building Code requires sprinkler protection within all rooms and closets immediately below the roof so as to control any fire that might start in that space and thereby limit the probability of the fire spreading into the roof assembly.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1949,12 +1996,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace NBC with British Columbia Building Code in Application Note A-3.2.5.12.(6) third paragraph">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote96"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[3]/text()">
-                    <find-replace>
-                        <find>the NBC concurs</find>
-                        <replace>the British Columbia Building Code concurs</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="3">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote96.para3">Moreover, <ref type="standard" target="nfpa13d" standardId="nfpa13d"/> also allows the omission of sprinklers in such rooms and closets under certain circumstances, provided the building is sprinklered in conformance with this standard. In this case, the British Columbia Building Code concurs with the provisions of the <ref type="standard" target="nfpa13d" standardId="nfpa13d"/> standard.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1994,12 +2040,19 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace National Fire Code with British Columbia Fire Code in Application Note A-3.2.6">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote101"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[1]/text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote101.para1">Experience with high buildings has shown that the time required for complete evacuation can exceed that which is considered necessary for the safe egress of all occupants. Studies of the "chimney effect" and observations of smoke movement in actual fires have shown that fire compartmentation to contain a fire on any one storey will not usually prevent the movement of smoke through elevator, stair and other vertical shafts to the upper floors of a high building. Occupants of a high building in which an automatic sprinkler system is not installed, and particularly those on upper storeys, could be faced with severe smoke conditions from fires occurring in storeys below them before their own evacuation is possible. The requirements of <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect6"
+                          display-type="long"/> are intended to maintain safe conditions for occupants of a high building who may have to remain in the building during a fire, and to assist the firefighters by providing efficient access to the fire floor. The Notes for <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect6"
+                          display-type="long"/> are intended to assist a designer in complying with the requirements of <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect6"
+                          display-type="long"/> The knowledge requirements are well within the capabilities of a competent designer. The designer should appreciate, however, that successful application requires a clear understanding of the principles that govern smoke movement. <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect6"
+                          display-type="long"/> contains only those items that relate to the design and construction of a building; operation of the facilities and recommended actions to be taken by the building owner, occupant and fire department are covered by the British Columbia Fire Code.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2012,12 +2065,13 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace NFC with British Columbia Fire Code in Application Note A-3.2.6 paragraph 4">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote101"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[4]/text()">
-                    <find-replace>
-                        <find>Emergency Planning Section of the NFC</find>
-                        <replace>Emergency Planning Section of the British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="4">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote101.para4">It is assumed that in the event of fire, occupants of the floor on which the fire occurs will leave by exit stairs immediately following the sounding of a fire alarm, and that occupants of the floor immediately above the floor on which the fire occurs will be advised to leave by the first fire department officer on the scene or other person assigned this responsibility. Occupants of all other floors may remain on their floors unless otherwise directed. It is also assumed that the owner of the building has complied with the Emergency Planning Section of the British Columbia Fire Code by preparing a comprehensive fire safety plan to safeguard the building occupants and that the building supervisory staff are familiar with the requirements of <ref type="internal"
+                          target="nbc.divB.part3.sect2.subsect6"
+                          display-type="long"/> and with their responsibilities under the fire safety plan.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2030,12 +2084,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace NBC with British Columbia Building Code in Application Note A-3.2.6 paragraph 5">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote101"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[5]/text()">
-                    <find-replace>
-                        <find>The NBC requires</find>
-                        <replace>The British Columbia Building Code requires</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="5">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote101.para5">The British Columbia Building Code requires that a check be made of the smoke control and mechanical venting systems. Testing will indicate deficiencies caused by inexact estimates of the leakage characteristics or of air supply requirements and, in all but the most extreme cases, will provide an opportunity for appropriate adjustments before the system is put into service.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2047,12 +2100,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace barrier-free with accessible in Application Note A-3.2.6.2.(3)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote103"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[3]/text()">
-                    <find-replace>
-                        <find>barrier-free path of travel</find>
-                        <replace>accessible path of travel</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="3">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote103.para3">The maximum pressure differential created by a mechanical system should not prevent doors to the stair shafts from being opened. A specific maximum value cannot be given, as this value will depend on the door opening force and size of the door. These values should be calculated for each specific case. Although a maximum value of <measurement units="metric">130 N</measurement> is suggested by research as the force that can be opened by the majority of people in most occupancies, this value is above the maximum value of <measurement units="metric">90 N</measurement> generally specified in this Code. The use of values below <measurement units="metric">130 N</measurement> can create a practical problem in achieving effective smoke control as it is difficult to design for the acceptable minimum and maximum pressure differential range. Special consideration may need to be given for doors located in an accessible path of travel.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2087,12 +2139,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace National Fire Code with British Columbia Fire Code in Application Note A-3.3.1.7.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote127"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[1]/text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote127.para1">These measures are intended to provide temporary refuge for persons with disabilities. It is acknowledged, however, that the measures cannot provide absolute safety for all occupants in the fire area. It may, therefore, be necessary to develop special arrangements in the fire safety plan to evacuate persons with disabilities from these areas. Details for a suitable plan are contained in the British Columbia Fire Code.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2104,12 +2155,16 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace 'people who use wheelchairs' with 'persons using wheelchairs' in Application Note A-3.3.1.7.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote127"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[3]/text()">
-                    <find-replace>
-                        <find>people who use wheelchairs</find>
-                        <replace>persons using wheelchairs</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="3">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote127.para3">If an estimate is to be made of the number of persons with disabilities in a floor area who can be accommodated in each zone in <ref type="internal"
+                          target="nbc.divB.part3.sect3.subsect1.art7.sent1.clause2"
+                          display-type="long"
+                          pretext="Clause"/>, this estimate may be based on <ref type="internal"
+                          target="nbc.divB.part3.sect8.subsect2.art3.table1"
+                          display-type="long"/>, which is used to determine the minimum number of spaces to be provided for persons using wheelchairs in fixed seating areas. If more precise information is available, it should be used for sizing the zones.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2137,12 +2192,15 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace NBC with British Columbia Building Code in Application Note A-3.3.2.1.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote135"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[1]/text()">
-                    <find-replace>
-                        <find>from both the NBC and the NFPA</find>
-                        <replace>from both the British Columbia Building Code and the NFPA</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote135.para1">The intention of <ref type="internal"
+                          target="nbc.divB.part3.sect3.subsect2.art1.sent2"
+                          display-type="short"/> is to allow Code users the option of using <ref type="standard" target="nfpa101" standardId="nfpa101"/> to address the following issues: means of egress; egress routes within assembly occupancies; aisles and access serving seating not at tables; guards and railings; life safety evaluation; and smoke-protected assembly seating.  However, opting to use <ref type="standard" target="nfpa101" standardId="nfpa101"/> under this application entails adherence to all the provisions listed in <ref type="internal"
+                          target="nbc.divB.part3.sect3.subsect2.art1.sent2"
+                          display-type="short"/>: it is not intended that Code users randomly select and apply a mix of provisions from both the British Columbia Building Code and the NFPA.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2177,12 +2235,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace National Fire Code with British Columbia Fire Code in Application Note A-3.3.3.1.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote138"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[1]/text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote138.para1">Fire safety for patients in bedroom areas in hospitals and nursing homes with treatment is predicated on the ability of staff to carry out at all times essential life safety functions in accordance with the fire safety plan. Details for a plan are contained in the British Columbia Fire Code.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2195,12 +2252,13 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace National Fire Code with British Columbia Fire Code in Application Note A-3.3.6.1.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote144"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[2]/text()">
-                    <find-replace>
-                        <find>National Fire Code</find>
-                        <replace>British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="2">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote144.para2">This Subsection does not deal with products or materials that are directly supplied to appliances, equipment or apparatus through piping, hose, ducts, etc. For example, the gas cylinders that are mounted on propane barbecues are not covered by <ref type="internal"
+                          target="nbc.divB.part3.sect3.subsect6"
+                          display-type="long"/>; they are considered to be "in use" as opposed to "in storage" and are not intended to be regulated by the storage requirements stated in the British Columbia Fire Code.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2340,12 +2398,14 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace NBC with 'this Code' in Application Note A-3.8.2.6.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote191"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[1]/text()">
-                    <find-replace>
-                        <find>other Sections of the NBC</find>
-                        <replace>other Sections of this Code</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote191.para1">
+                     <ref type="internal"
+                          target="nbc.divB.part3.sect8.subsect2.art6.sent1"
+                          display-type="long"/> is not intended to reduce the functionality of security devices that limit access to secure areas and are addressed by other Sections of this Code.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2423,12 +2483,14 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Add guidance for D-shaped handles on sliding doors in Appendix Note A-3.8.3.6.(4)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote209"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph/text()[last()]">
-                    <find-replace>
-                        <find>Lever handles with an end return towards the door are less prone to catch the clothing of someone passing through the doorway.</find>
-                        <replace>Lever handles with an end return towards the door are less prone to catch the clothing of someone passing through the doorway. Large D-shaped handles should be used on sliding doors.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote209.para1">Lever
+handles are usable by most people and will meet the intent of this
+requirement. Lever handles with an end return towards the door are
+less prone to catch the clothing of someone passing through the doorway. Large D-shaped handles should be used on sliding doors.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2541,12 +2603,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace NBC reference with this Code in Appendix Note A-3.8.3.12.(1)(f)(ii)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote223"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph/text()[1]">
-                    <find-replace>
-                        <find>the NBC</find>
-                        <replace>this Code</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote223.para1">It is the designer's prerogative to exceed the minimum requirements found in this Code and specify the installation of additional grab bars in other locations. These additional grab bars may be of different configurations and can be installed in other orientations. </paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2558,12 +2619,21 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Add guidance for wall-mounted fixtures in Appendix Note A-3.8.3.13">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote224"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph/text()[2]">
-                    <find-replace>
-                        <find>maneuverability of a wheelchair. Although outward swinging doors are preferable for accessibility, inward swinging doors are also permitted.</find>
-                        <replace>maneuverability of a wheelchair. Wall-mounted fixtures may project into the required floor space, provided that such projections do not restrict the maneuvering space required for persons using wheelchairs. Although outward swinging doors are preferable for accessibility, inward swinging doors are also permitted.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote224.para1">Unobstructed areas in front of the lavatory, in front of the water closet and on one side of the water closet are necessary for maneuverability of a wheelchair. Wall-mounted fixtures may project into the required floor space, provided that such projections do not restrict the maneuvering space required for persons using wheelchairs. Although outward swinging doors are preferable for accessibility, inward swinging doors are also permitted. <ref type="internal"
+                          target="nbc.divB.part3.sect9.appnote224.figure1"
+                          display-type="long"
+                          pretext="Figures"/>
+                     <ref type="internal"
+                          target="nbc.divB.part3.sect9.appnote224.figure2"
+                          display-type="long"
+                          pretext="and"/> show design options that meet the intent of <ref type="internal"
+                          target="nbc.divB.part3.sect8.subsect3.art13"
+                          display-type="long"/>
+                        </paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2575,12 +2645,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Replace barrier-free with accessible terminology in Appendix Note A-3.8.3.16.(1)(g)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote228"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph/text()[1]">
-                    <find-replace>
-                        <find>barrier-free lavatories</find>
-                        <replace>accessible lavatories</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote228.para1">The location of accessories, such as soap dispensers and faucets, serving accessible lavatories should be established while taking into consideration that their controls must be usable by and within the direct reach of a person in a seated position directly in front of the accessible lavatory. </paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2592,12 +2661,11 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                    description="Update to person-first language in Appendix Note A-3.8.3.21.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect9.appnote234"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph/text()[last()]">
-                    <find-replace>
-                        <find>wheelchair user</find>
-                        <replace>person using a wheelchair</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="1">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part3.sect9.appnote234.para1">Built-in shelves or counters for public telephones must be designed to accommodate persons using text telephones (TT). These devices may also be referred to as teletypewriters (TTY) or telecommunication devices for the deaf (TDD). These devices require a level surface at least <measurement units="metric">305 mm</measurement> deep by <measurement units="metric">250 mm</measurement> wide with no obstruction above that space within <measurement units="metric">250 mm</measurement>. If a wall-hung telephone or other obstruction extends to less than <measurement units="metric">250 mm</measurement> from the shelf or counter, an equivalent clear space must be provided on either side of each telephone. At least one telephone should be equipped with a volume control on a receiver that generates a magnetic field compatible with the T-switch of a hearing aid. The lower portion of the shelf or counter is intended for persons using a wheelchair; therefore all parts of the operating mechanism of the telephone above this portion should be within reach of a person using a wheelchair.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
