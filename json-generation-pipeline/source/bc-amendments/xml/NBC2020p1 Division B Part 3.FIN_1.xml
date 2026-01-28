@@ -2082,12 +2082,17 @@ each 25 females.</find>
                    description="Replace barrier-free with accessible terminology in Article 3.8.2.3.(6)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art3.sent6"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>shall adjoin a barrier-free path of travel</find>
-                        <replace>shall adjoin an accessible path of travel</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>At least 5% of the adaptable seats required by <ref type="internal"
+                             target="nbc.divB.part3.sect8.subsect2.art3.sent5"
+                             display-type="short"/> but no more than 20 adaptable seats
+shall adjoin an <ref type="term" target="brrr-fr">accessible</ref> path of travel.
+(See <ref type="internal"
+                             target="nbc.divB.part3.sect9.appnote187"
+                             display-type="short"/>.)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 

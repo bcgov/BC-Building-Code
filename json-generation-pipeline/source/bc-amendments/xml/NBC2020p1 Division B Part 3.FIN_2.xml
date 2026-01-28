@@ -154,12 +154,16 @@
                    description="Add courtrooms requirement to Article 3.8.2.9.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art9.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>with an area of more than <measurement units="metric">100 m<super>2</super></measurement> shall be equipped</find>
-                        <replace>with an area of more than <measurement units="metric">100 m<super>2</super></measurement>, including courtrooms of any size, shall be equipped</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>In a <ref type="term" target="bldng">building</ref> of <ref type="term" target="mbl-ccpn">assembly occupancy</ref>, all classrooms, auditoria, meeting rooms
+and <ref type="term" target="thtr">theatres</ref> with an area of more than <measurement units="metric">100 m<super>2</super></measurement>, including courtrooms of any size, shall be equipped with an assistive
+listening system complying with <ref type="internal"
+                             target="nbc.divB.part3.sect8.subsect3"
+                             display-type="long"/>
+                        </text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -488,12 +492,20 @@
                         <replace>accessible</replace>
                     </find-replace>
                 </text-change>
-                <text-change xpath-within-target="sentence[@number='5']/text()">
-                    <find-replace>
-                        <find>not at <ref type="term" target="grade">grade</ref> or adjacent</find>
-                        <replace>not at ground level or adjacent</replace>
-                    </find-replace>
-                </text-change>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-116b" sequence="105"
+                   description="Replace grade with ground level in Article 3.8.3.5.(5)">
+            <target type="canonical-id" id="nbc.divB.part3.sect8.subsect3.art5.sent5"/>
+            <modify>
+                <element-replace element="text">
+                    <new-content>
+                        <text>
+                        <ref type="term" target="rmp">Ramps</ref> and landings not at ground level or adjacent to a wall shall have edge protection
+consisting of </text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -544,12 +556,17 @@
                    description="Update measurement reference from 'when the doors are open' to 'when measured in accordance with Sentence (2)' in Article 3.8.3.6.(3)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect3.art6.sent3"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>when the doors are open</find>
-                        <replace>when measured in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art6.sent2" display-type="short"/></replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Doorways in a path of travel to at least one bathroom within
+a <ref type="term" target="t">suite</ref> of <ref type="term" target="rdntl-cc">residential
+occupancy</ref> shall have a clear width not less than <measurement units="metric">850 mm</measurement> when measured in accordance with <ref type="internal"
+                             target="nbc.divB.part3.sect8.subsect3.art6.sent2"
+                             display-type="short"/>. (See <ref type="internal"
+                             target="nbc.divB.part3.sect9.appnote208"
+                             display-type="short"/>.)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -578,12 +595,11 @@
                    description="Add minimum distance requirement for power door operator controls in Article 3.8.3.6.(6)(a)(iii)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect3.art6.sent6.clause1.subclause3"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>and no more than <measurement units="metric">1 500 mm</measurement> from that door swing</find>
-                        <replace>and not less than <measurement units="metric">600 mm</measurement> and no more than <measurement units="metric">1 500 mm</measurement> from that door swing</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>are located clear of the door swing and not less than <measurement units="metric">600 mm</measurement> and no more than <measurement units="metric">1 500 mm</measurement> from that door swing,</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -811,18 +827,13 @@
                    description="Update door pull height from 800-1000mm to 900-1100mm in Article 3.8.3.12.(1)(d)(vii)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect3.art12.sent1.clause4.subclause7"/>
             <modify>
-                <text-change xpath-within-target=".//measurement[@units='metric' and text()='800 mm']">
-                    <find-replace>
-                        <find>800 mm</find>
-                        <replace>900 mm</replace>
-                    </find-replace>
-                </text-change>
-                <text-change xpath-within-target=".//measurement[@units='metric' and text()='1 000 mm']">
-                    <find-replace>
-                        <find>1 000 mm</find>
-                        <replace>1 100 mm</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>is provided with a horizontal, D-shaped, visually contrasting
+door pull not less than <measurement units="metric">140 mm</measurement> long located on the outside
+such that its midpoint is <measurement units="metric">120 mm</measurement> to <measurement units="metric">220 mm</measurement> from the latch side and <measurement units="metric">900 mm</measurement> to <measurement units="metric">1 100 mm</measurement> above the floor, </text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
