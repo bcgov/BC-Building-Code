@@ -35,9 +35,9 @@
                         <replace>British Columbia</replace>
                     </find-replace>
                 </text-change>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>National Building Code</find>
+                <text-change xpath-within-target=".//text()">
+                    <find-replace regex="true">
+                        <find>National\s+Building\s+Code</find>
                         <replace>British Columbia Building Code</replace>
                     </find-replace>
                 </text-change>
