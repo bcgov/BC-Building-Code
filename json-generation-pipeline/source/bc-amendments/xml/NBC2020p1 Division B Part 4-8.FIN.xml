@@ -72,12 +72,15 @@
                    description="Add CSA A344.2 reference for steel pallet storage racks in Article 4.1.8.18.(13)">
             <target type="canonical-id" id="nbc.divB.part4.sect1.subsect8.art18.sent13"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Free-standing steel pallet storage racks are permitted to be designed to resist</find>
-                        <replace>Free-standing steel pallet storage racks are permitted to be designed according to CSA A344.2, "Standard for the design and construction of steel storage racks," and to resist</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Free-standing steel pallet storage racks are permitted to be designed according to CSA A344.2, "Standard for design and construction of steel storage racks," and to resist earthquake effects using rational analysis, provided design achieves the minimum performance level required by <ref type="internal"
+                                 target="nbc.divB.part4.sect1.subsect8"
+                                 display-type="long"/> (See <ref type="internal"
+                                 target="nbc.divB.part4.sect5.appnote107"
+                                 display-type="short"/>.)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -123,12 +126,12 @@
                    description="Replace NPC reference with BC Book II reference in Article 5.6.2.2.(2)">
             <target type="canonical-id" id="nbc.divB.part5.sect6.subsect2.art2.sent2"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>provision shall be made for drainage conforming with the relevant provincial or territorial regulations or municipal bylaws or, in the absence of such regulations or bylaws, with <ref type="external" target="NPC10">Article 2.4.10.4. of Division B of the </ref><ref type="standard" target="nrcc-npc" standardId="nrcc-npc"/></find>
-                        <replace>provision shall be made for drainage conforming with Article 2.4.10.4. of Division B of Book II (Plumbing Systems) of this Code</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Where precipitation can accumulate on sloped or horizontal assemblies,
+provision shall be made for drainage conforming with Article 2.4.10.4. of Division B of Book II (Plumbing Systems) of this Code.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
