@@ -2065,23 +2065,46 @@ Heat Stove</entry>
         <!-- Amendment 412: Modify Application Note A-9.33.1.1.(2)               -->
         <!-- Combustion Air and Tight Houses - expand standard references        -->
         <!-- ================================================================== -->
-        <amendment id="bc-412" sequence="412"
-                   description="Modify Application Note A-9.33.1.1.(2) Combustion Air and Tight Houses - expand standard references">
-            <target type="canonical-id" id="nbc.divBV2.part9.appnote203"/>
+        <amendment id="bc-412a" sequence="412"
+                   description="Modify Application Note A-9.33.1.1.(2) paragraph 2 - expand CSA B365 reference">
+            <target type="canonical-id" id="nbc.divBV2.part9.appnote203.para2"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[@xml:id='nbc.divBV2.part9.appnote203.para2']">
-                    <find-replace>
-                        <find>In the case of solid-fuel-burning stoves, ranges
-and space heaters, <ref type="standard" target="csab365" standardId="csab365"/> suggests</find>
-                        <replace>In the case of solid-fuel-burning stoves, ranges and space heaters, <ref type="standard" target="csab365" standardId="csab365">CSA B365</ref>, "<ref type="standard" target="csab365" standardId="csab365">Installation Code for Solid-Fuel-Burning Appliances and Equipment</ref>," suggests</replace>
-                    </find-replace>
-                </text-change>
-                <text-change xpath-within-target=".//paragraph[@xml:id='nbc.divBV2.part9.appnote203.para3']">
-                    <find-replace>
-                        <find>Further information can be found in <ref type="standard" target="cbd222" standardId="cbd222"/> which is available from NRC.</find>
-                        <replace>Further information can be found in <ref type="standard" target="cbd222" standardId="cbd222">CBD 222</ref>, "<ref type="standard" target="cbd222" standardId="cbd222">Airtight houses and carbon monoxide poisoning</ref>," which is available from NRC.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph">
+                    <new-content>
+                        <paragraph xml:id="nbc.divBV2.part9.appnote203.para2">Newer houses are generally more tightly constructed than older
+ones because of improved construction practices, including tighter
+windows, weather stripping and caulking. This fact increases the probability
+that infiltration may not be able to supply enough air to compensate
+for simultaneous operation of exhaust fans, fireplaces, clothes dryers,
+furnaces and space heaters. It is necessary, therefore, to introduce
+outdoor air to the space containing the fuel-burning appliance. Information
+regarding combustion air requirements for various types of appliances
+can be found in the installation standards referenced in <ref type="internal"
+                       target="nbc.divB.part6.sect2.subsect1.art5.sent1"
+                       display-type="long"
+                       pretext="Sentences"/>
+                  <ref type="internal"
+                       target="nbc.divBV2.part9.sect33.subsect5.art2.sent1"
+                       display-type="long"
+                       pretext=" and"/>. In the case of solid-fuel-burning stoves, ranges
+and space heaters, <ref type="standard" target="csab365" standardId="csab365">CSA B365</ref>, "<ref type="standard" target="csab365" standardId="csab365">Installation Code for Solid-Fuel-Burning Appliances and Equipment</ref>," suggests that the minimum size of openings be determined
+by trial and error to accommodate the flue characteristics, the firing
+rate, the building characteristics, etc., and that, as a guide, the
+combustion air opening should be 0.5 times the flue collar area.</paragraph>
+                    </new-content>
+                </element-replace>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-412b" sequence="412"
+                   description="Modify Application Note A-9.33.1.1.(2) paragraph 3 - expand CBD 222 reference">
+            <target type="canonical-id" id="nbc.divBV2.part9.appnote203.para3"/>
+            <modify>
+                <element-replace element="paragraph">
+                    <new-content>
+                        <paragraph xml:id="nbc.divBV2.part9.appnote203.para3">Further information can be found in <ref type="standard" target="cbd222" standardId="cbd222">CBD 222</ref>, "<ref type="standard" target="cbd222" standardId="cbd222">Airtight houses and carbon monoxide poisoning</ref>," which is available from NRC.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -2108,14 +2131,24 @@ and space heaters, <ref type="standard" target="csab365" standardId="csab365"/> 
 
         <amendment id="bc-414" sequence="414"
            description="Modify Application Note A-9.33.5.3. Design, Construction and Installation Standard - expand CSA B365 reference">
-            <target type="canonical-id" id="nbc.divBV2.part9.appnote205"/>
+            <target type="canonical-id" id="nbc.divBV2.part9.appnote205.para1"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[@xml:id='nbc.divBV2.part9.appnote205.para1']">
-                    <find-replace>
-                        <find><ref type="standard" target="csab365" standardId="csab365"/> is essentially</find>
-                        <replace><ref type="standard" target="csab365" standardId="csab365">CSA B365</ref>, "<ref type="standard" target="csab365" standardId="csab365">Installation Code for Solid-Fuel-Burning Appliances and Equipment</ref>," is essentially</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph">
+                    <new-content>
+                        <paragraph xml:id="nbc.divBV2.part9.appnote205.para1">
+                  <ref type="standard" target="csab365" standardId="csab365">CSA B365</ref>, "<ref type="standard" target="csab365" standardId="csab365">Installation Code for Solid-Fuel-Burning Appliances and Equipment</ref>," is essentially an installation
+standard, and covers such issues as accessibility, air for combustion
+and ventilation, chimney and venting, mounting and floor protection,
+wall and ceiling clearances, installation of ducts, pipes, thimbles
+and manifolds, and control and safety devices. But the standard also
+includes a requirement that solid-fuel-burning appliances and equipment
+satisfy the requirements of one of a series of standards, depending
+on the appliance or equipment, therefore also making it a design and
+construction standard. It is required that cooktops and ovens as well
+as stoves, central furnaces and other space heaters be designed and
+built in conformity with the relevant referenced standard.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 

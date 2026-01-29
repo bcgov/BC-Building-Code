@@ -966,12 +966,21 @@
             description="Change standard from CAN/ULC-S742 to ASTM E2357 and remove Type A4 designation in Article 9.37.2.9.(1)(c)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art9.sent1.clause3"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find><measurement units="metric">0.20 L/(s×m<super>2</super>)</measurement> (Type A4) when tested in accordance with <ref type="standard" target="ulcs742" standardId="ulcs742"/> at a pressure differential of <measurement units="metric">75 Pa</measurement>, or</find>
-                        <replace><measurement units="metric">0.20 L/(s×m<super>2</super>)</measurement> when tested in accordance with <ref type="standard" target="astme2357"/> where</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>a continuous <ref type="term" target="r-brrr">air barrier system</ref> in
+accordance with <ref type="internal"
+                                target="nbc.divBV2.part9.sect36.subsect2.art9.sent2"
+                                display-type="short"
+                                pretext="Sentences"/>
+                           <ref type="internal"
+                                target="nbc.divBV2.part9.sect36.subsect2.art9.sent6"
+                                display-type="short"
+                                pretext="to"/> and <ref type="internal"
+                                target="nbc.divBV2.part9.sect25.subsect3"
+                                display-type="long"/> and a <ref type="term" target="bldng">building</ref> assembly having an air leakage rate not greater than <measurement units="metric">0.20 L/(s·m<super>2</super>)</measurement> when tested in accordance with <ref type="standard" target="astme2357" standardId="astme2357"/> where</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
         
@@ -994,12 +1003,12 @@
             description="Change plumbing code reference from NPC to Book II in Article 9.36.4.3.(2)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect4.art3.sent2"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>shall be installed in accordance with the <ref type="standard" target="nrcc-npc" standardId="nrcc-npc"/>.</find>
-                        <replace>shall be installed in accordance with the Book II (Plumbing Systems) of this Code.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Service water heating systems that use solar thermal technology
+shall be installed in accordance with the Book II (Plumbing Systems) of this Code.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
         
