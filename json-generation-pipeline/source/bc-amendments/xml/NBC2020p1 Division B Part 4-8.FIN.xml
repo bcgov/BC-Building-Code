@@ -125,14 +125,14 @@
         <amendment id="bc-006" sequence="6"
                    description="Replace NPC reference with BC Book II reference in Article 5.6.2.2.(2)">
             <target type="canonical-id" id="nbc.divB.part5.sect6.subsect2.art2.sent2"/>
-            <modify>
-                <element-replace element="text">
-                    <new-content>
+            <replace preserve-references="false">
+                <new-content>
+                    <sentence xml:id="nbc.divB.part5.sect6.subsect2.art2.sent2" number="2" vendor-id="es001645">
                         <text>Where precipitation can accumulate on sloped or horizontal assemblies,
 provision shall be made for drainage conforming with Article 2.4.10.4. of Division B of Book II (Plumbing Systems) of this Code.</text>
-                    </new-content>
-                </element-replace>
-            </modify>
+                    </sentence>
+                </new-content>
+            </replace>
         </amendment>
 
         <!-- ================================================================== -->
@@ -159,12 +159,12 @@ provision shall be made for drainage conforming with Article 2.4.10.4. of Divisi
                    description="Add exception and components text to sentence in Article 5.9.2.2.(1)">
             <target type="canonical-id" id="nbc.divB.part5.sect10.subsect2.art2.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Windows, doors and skylights shall conform to the requirements in</find>
-                        <replace>Except as permitted in <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2.sent5" display-type="short" pretext="Sentences"/> and <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art3.sent1" display-type="long"/>, windows, doors, skylights, including their components, shall conform to the requirements in</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Except as permitted in <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2.sent5" display-type="short" pretext="Sentences"/> and <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art3.sent1" display-type="long"/>, windows, doors, skylights, including their components, shall conform to the requirements
+in</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -176,12 +176,11 @@ provision shall be made for drainage conforming with Article 2.4.10.4. of Divisi
                    description="Add exception text to clause (b) in Article 5.9.2.2.(1)">
             <target type="canonical-id" id="nbc.divB.part5.sect10.subsect2.art2.sent1.clause2"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find><ref type="standard" target="csaa440S1" standardId="csaa440S1"/></find>
-                        <replace>except as permitted in <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2.sent4" display-type="short"/>, <ref type="standard" target="csaa440S1" standardId="csaa440S1"/></replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>except as permitted in <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2.sent4" display-type="short"/>, <ref type="standard" target="csaa440S1" standardId="csaa440S1"/></text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -290,12 +289,18 @@ provision shall be made for drainage conforming with Article 2.4.10.4. of Divisi
                    description="Replace NBC with British Columbia Building Code in Note A-5.1.4.2">
             <target type="canonical-id" id="nbc.divB.part5.appnote8"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[last()]">
-                    <find-replace>
-                        <find>contains requirements for actions beyond the scope of the NBC,</find>
-                        <replace>contains requirements for actions beyond the scope of the British Columbia Building Code,</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="6">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part5.appnote8.para6">It is also noted that <ref type="standard" target="csas478" standardId="csas478"/> contains requirements
+for actions beyond the scope of the British Columbia Building Code, which may not be the responsibility
+of the designer, builder or authority having jurisdiction. These include
+requirements relating to quality assurance, inspection, maintenance,
+minimum design service lives and potential impacts of climate change,
+which are not addressed in the Code. The reference herein to <ref type="standard" target="csas478" standardId="csas478"/> is not intended to
+imply that the designer, builder or authority having jurisdiction
+adopt, apply or enforce any of these requirements.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -308,12 +313,16 @@ provision shall be made for drainage conforming with Article 2.4.10.4. of Divisi
                    description="Replace NBC with code in Note A-5.2.2.2.(4)">
             <target type="canonical-id" id="nbc.divB.part5.appnote13"/>
             <modify>
-                <text-change xpath-within-target=".//paragraph[last()]">
-                    <find-replace>
-                        <find>in accordance with the NBC.</find>
-                        <replace>in accordance with the code.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="paragraph" position="4">
+                    <new-content>
+                        <paragraph xml:id="nbc.divB.part5.appnote13.para4">The wind uplift resistance obtained from the test method in <ref type="standard" target="csaa123.21" standardId="csaa123.21"/> is limited to configurations
+with specific fastener or adhesive patterns. To extrapolate the test
+data to non-tested configurations, refer to <ref type="standard" target="spriwd1" standardId="spriwd1"/> for a rational calculation procedure. However,
+in using this extrapolation procedure, wind loads should be calculated
+in accordance with the code. NRC's guide for wind design referenced
+above provides further guidance and examples of wind load calculations.</paragraph>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -511,18 +520,14 @@ provision shall be made for drainage conforming with Article 2.4.10.4. of Divisi
                    description="Replace National Plumbing Code reference with BC code reference in Article 6.3.2.15.(8)">
             <target type="canonical-id" id="nbc.divB.part6.sect3.subsect2.art15.sent8"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Article 2.6.2.1. of Division B of the </find>
-                        <replace>Article 2.6.2.1. of Division B of Book II, (Plumbing Systems), of this code</replace>
-                    </find-replace>
-                </text-change>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find><ref type="standard" target="nrcc-npc" standardId="nrcc-npc"/>. (See </find>
-                        <replace>. (See </replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Make-up water connections shall be equipped with backflow prevention
+devices that conform to Article 2.6.2.1. of Division B of Book II, (Plumbing Systems), of this code. (See <ref type="internal"
+                   target="nbc.divB.part6.sect10.appnote17"
+                   display-type="short"/>.)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -557,18 +562,14 @@ provision shall be made for drainage conforming with Article 2.4.10.4. of Divisi
                    description="Replace National Plumbing Code reference with BC code reference in Article 6.3.2.16.(6)">
             <target type="canonical-id" id="nbc.divB.part6.sect3.subsect2.art16.sent6"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Article 2.6.2.1. of Division B of the </find>
-                        <replace>Article 2.6.2.1. of Division B of Book II, (Plumbing Systems), of this code</replace>
-                    </find-replace>
-                </text-change>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find><ref type="standard" target="nrcc-npc" standardId="nrcc-npc"/>. (See </find>
-                        <replace>. (See </replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Make-up water connections shall be equipped with backflow prevention
+devices that conform to Article 2.6.2.1. of Division B of Book II, (Plumbing Systems), of this code. (See <ref type="internal"
+                   target="nbc.divB.part6.sect10.appnote19"
+                   display-type="short"/>.)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -580,18 +581,12 @@ provision shall be made for drainage conforming with Article 2.4.10.4. of Divisi
                    description="Replace National Fire Code reference with BC Fire Code in Article 6.3.4.2.(3)">
             <target type="canonical-id" id="nbc.divB.part6.sect3.subsect4.art2.sent3"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Article 5.5.4.1. of Division B of the </find>
-                        <replace>Article 5.5.4.1. of Division B of the British Columbia Fire Code</replace>
-                    </find-replace>
-                </text-change>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find><ref type="standard" target="nrcc-nfc" standardId="nrcc-nfc"/>.</find>
-                        <replace>.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>A ventilation system required by this Subsection shall be maintained
+in conformance with Article 5.5.4.1. of Division B of the British Columbia Fire Code.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -662,12 +657,22 @@ provision shall be made for drainage conforming with Article 2.4.10.4. of Divisi
                    description="Replace National Fire Code reference with BC Fire Code in Article 6.9.1.2.(1)">
             <target type="canonical-id" id="nbc.divB.part6.sect9.subsect1.art2.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>the <ref type="standard" target="nrcc-nfc" standardId="nrcc-nfc"/>. (See </find>
-                        <replace>the British Columbia Fire Code. (See </replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Except as provided in <ref type="internal"
+                   target="nbc.divB.part6.sect3.subsect4"
+                   display-type="long"
+                   pretext="Subsection"/>, systems serving spaces that contain hazardous
+gases, dusts or liquids shall be designed, constructed and installed
+to conform to the requirements of the applicable provincial or territorial
+regulations or municipal bylaws or, in the absence of such regulations
+or bylaws, to good engineering practice such as that described in
+the publications of the National Fire Protection Association and in
+the British Columbia Fire Code. (See <ref type="internal"
+                   target="nbc.divB.part6.sect10.appnote22"
+                   display-type="short"/>.)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 

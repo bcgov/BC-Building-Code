@@ -329,14 +329,11 @@
                    description="Change reference from Sentence (2) to Sentence (3) in Article 9.6.1.3.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect6.subsect1.art3.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Except as provided in <ref type="internal"
-                             target="nbc.divBV2.part9.sect6.subsect1.art3.sent2"
-                             display-type="short"/>, glass</find>
-                        <replace>Except as provided in Sentence (3), glass</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Except as provided in Sentence (3), glass shall be designed in conformance with </text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
         
@@ -424,13 +421,11 @@
                    description="Add exclusion for vehicular access doors in Article 9.7.1.1.(3)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect1.art1.sent3"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>For the purpose of this Section, the term "doors" includes glazing
-in doors and sidelights for doors.</find>
-                        <replace>For the purpose of this Section, the term "doors" includes glazing in doors and sidelights for doors but does not include vehicular access doors.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>For the purpose of this Section, the term "doors" includes glazing in doors and sidelights for doors but does not include vehicular access doors.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
         
@@ -590,12 +585,11 @@ incorporate a thermal break.</find>
                    description="Change 'fire-resistance rating' to 'fire-protection rating' in Article 9.7.3.3.(2)(c)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect3.art3.sent2.clause3"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>windows and doors that are required to have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref>.</find>
-                        <replace>are required to have a fire-protection rating.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>are required to have a <ref type="term" target="fr-prtn-rtng">fire-protection rating</ref>.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
         
@@ -776,15 +770,14 @@ incorporate a thermal break.</find>
         <!-- ================================================================== -->
         <amendment id="bc-038" sequence="38"
                    description="Add note reference to Article 9.7.5.2.(4)">
-            <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect5.art2.sent4"/>
+            <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect5.art2.sent4.clause2"/>
             <modify>
-                <text-change xpath-within-target="text()[last()]">
-                    <find-replace>
-                        <find>a bolt throw not less than <measurement units="metric">25 mm</measurement> long, protected
-with a solid or hardened free-turning ring or beveled cylinder housing.</find>
-                        <replace>a bolt throw not less than <measurement units="metric">25 mm</measurement> long, protected with a solid or hardened free-turning ring or beveled cylinder housing. (See Article 9.9.6.7.)</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>a bolt throw not less than <measurement units="metric">25mm</measurement> long, protected
+with a solid or hardened free-turning ring or beveled cylinder housing. (See Article 9.9.6.7.)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
         
@@ -794,15 +787,14 @@ with a solid or hardened free-turning ring or beveled cylinder housing.</find>
         <!-- ================================================================== -->
         <amendment id="bc-039" sequence="39"
                    description="Add note reference to Article 9.7.5.2.(6)">
-            <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect5.art2.sent6"/>
+            <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect5.art2.sent6.clause2"/>
             <modify>
-                <text-change xpath-within-target="text()[last()]">
-                    <find-replace>
-                        <find>to metal doors and metal frames with machine screws not smaller
-than No. 10 and not less than <measurement units="metric">10 mm</measurement> long.</find>
-                        <replace>to metal doors and metal frames with machine screws not smaller than No. 10 and not less than <measurement units="metric">10 mm</measurement> long. (See Note A-9.7.5.2.(6).)</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>to metal doors and metal frames with machine screws not smaller
+than No. 10 and not less than <measurement units="metric">10 mm</measurement> long. (See Note A-9.7.5.2.(6).)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
         
@@ -812,15 +804,14 @@ than No. 10 and not less than <measurement units="metric">10 mm</measurement> lo
         <!-- ================================================================== -->
         <amendment id="bc-040" sequence="40"
                    description="Add note reference to Article 9.7.5.2.(7)">
-            <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect5.art2.sent7"/>
+            <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect5.art2.sent7.clause2"/>
             <modify>
-                <text-change xpath-within-target="text()[last()]">
-                    <find-replace>
-                        <find>to metal frames with machine screws not smaller than No. 8 and
-not less than <measurement units="metric">10 mm</measurement> long.</find>
-                        <replace>to metal frames with machine screws not smaller than No. 8 and not less than <measurement units="metric">10 mm</measurement> long. (See Note A-9.7.5.2.(6))</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>to metal frames with machine screws not smaller than No. 8 and
+not less than <measurement units="metric">10 mm</measurement> long. (See Note A-9.7.5.2.(6))</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
         
@@ -896,16 +887,12 @@ not less than <measurement units="metric">10 mm</measurement> long.</find>
                 description="Remove Article 9.8.4.7 reference from Article 9.8.2.1.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect2.art1.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Except as provided in <ref type="internal"
-                                    target="nbc.divBV2.part9.sect8.subsect2.art1.sent2"
-                                    display-type="short"/> and <ref type="internal"
-                                    target="nbc.divBV2.part9.sect8.subsect4.art7"
-                                    display-type="long"/>, required</find>
-                        <replace>Except as provided in Sentence (2), required</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Except as provided in Sentence (2), required <ref type="term" target="xt">exit</ref> stairs and public stairs serving <ref type="term" target="bldng">buildings</ref> of <ref type="term" target="rdntl-cc">residential occupancy</ref> shall have
+a width of not less than <measurement units="metric">900 mm</measurement>.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -917,14 +904,12 @@ not less than <measurement units="metric">10 mm</measurement> long.</find>
                 description="Remove Article 9.8.4.7 reference from Article 9.8.2.1.(3)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect2.art1.sent3"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Except as provided in <ref type="internal"
-                                    target="nbc.divBV2.part9.sect8.subsect4.art7"
-                                    display-type="long"/>, required</find>
-                        <replace>Required</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Required <ref type="term" target="xt">exit</ref> stairs and public stairs serving <ref type="term" target="bldng">buildings</ref> of other than <ref type="term" target="rdntl-cc">residential occupancy</ref> shall have a width of not less than
+the greater of</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -936,14 +921,13 @@ not less than <measurement units="metric">10 mm</measurement> long.</find>
                 description="Remove Article 9.8.4.7 reference from Article 9.8.2.1.(4)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect2.art1.sent4"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Except as provided in <ref type="internal"
-                                    target="nbc.divBV2.part9.sect8.subsect4.art7"
-                                    display-type="long"/>, at least</find>
-                        <replace>At least</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>At least
+one stair between each floor level within a <ref type="term" target="dwllng-n">dwelling unit</ref>, and exterior stairs serving a single <ref type="term" target="dwllng-n">dwelling unit</ref> except required <ref type="term" target="xt">exit</ref> stairs, shall have a width of not less than <measurement units="metric">860
+mm</measurement>.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -956,14 +940,15 @@ not less than <measurement units="metric">10 mm</measurement> long.</find>
                    description="Add Note A-9.5.3.1 reference to Article 9.8.2.2.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect2.art2.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()[last()]">
-                    <find-replace>
-                        <find>(See <ref type="internal"
-                             target="nbc.divB.part3.sect10.appnote155"
-                             display-type="long"/>)</find>
-                        <replace>(See <ref type="internal" target="nbc.divB.part3.sect10.appnote155" display-type="long"/> and Note A-9.5.3.1.)</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>The clear height over stairs shall be measured vertically, over
+the clear width of the stair, from a straight line tangent to the
+tread and landing nosings to the lowest point above. (See <ref type="internal"
+                             target="nbc.divB.part3.sect9.appnote155"
+                             display-type="long"/> and Note A-9.5.3.1.)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -975,22 +960,11 @@ not less than <measurement units="metric">10 mm</measurement> long.</find>
                    description="Remove Sentence (4) and Article 9.8.4.7 references from Article 9.8.2.2.(2)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect2.art2.sent2"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Except as provided in <ref type="internal"
-                             target="nbc.divBV2.part9.sect8.subsect2.art2.sent3"
-                             display-type="short"
-                             pretext="Sentences"/>
-                        <ref type="internal"
-                             target="nbc.divBV2.part9.sect8.subsect2.art2.sent4"
-                             display-type="short"
-                             pretext="and"/> and <ref type="internal"
-                             target="nbc.divBV2.part9.sect8.subsect4.art7"
-                             display-type="long"/>, the clear height over
-stairs shall not be less than <measurement units="metric">2 050 mm</measurement>.</find>
-                        <replace>Except as provided in Sentences (3), the clear height over stairs shall not be less than <measurement units="metric">2 050 mm</measurement>.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Except as provided in Sentences (3), the clear height over stairs shall not be less than <measurement units="metric">2 050 mm</measurement>.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1002,17 +976,11 @@ stairs shall not be less than <measurement units="metric">2 050 mm</measurement>
                    description="Remove Article 9.8.4.7 reference from Article 9.8.2.2.(3)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect2.art2.sent3"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Except as provided in <ref type="internal"
-                             target="nbc.divBV2.part9.sect8.subsect4.art7"
-                             display-type="long"/>, the clear
-height over stairs serving a single <ref type="term" target="dwllng-n">dwelling
-unit</ref> or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces shall not be less than <measurement units="metric">1 950
-mm</measurement>.</find>
-                        <replace>The clear height over stairs serving a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces shall not be less than <measurement units="metric">1 950 mm</measurement>.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>The clear height over stairs serving a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces shall not be less than <measurement units="metric">1 950 mm</measurement>.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1096,20 +1064,17 @@ mm</measurement>.</find>
                    description="Remove Article 9.8.4.7 reference from Article 9.8.4.1.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect4.art1.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Except as provided in <ref type="internal"
-                             target="nbc.divBV2.part9.sect8.subsect4.art7"
-                             display-type="long"/> and except
-for stairs serving areas only used as <ref type="term" target="rvc-rm">service
+                <element-replace element="text">
+                    <new-content>
+                        <text>Except for stairs serving areas only used as <ref type="term" target="rvc-rm">service
 rooms</ref> or <ref type="term" target="rvc-pc">service spaces</ref>, the rise,
 which is measured as the vertical nosing-to-nosing distance, shall
 comply with <ref type="internal"
                              target="nbc.divBV2.part9.sect8.subsect4.art1.table1"
-                             display-type="long"/></find>
-                        <replace>Except for stairs serving areas only used as <ref type="term" target="rvc-rm">service rooms</ref> or <ref type="term" target="rvc-pc">service spaces</ref>, the rise, which is measured as the vertical nosing-to-nosing distance, shall comply with <ref type="internal" target="nbc.divBV2.part9.sect8.subsect4.art1.table1" display-type="long"/></replace>
-                    </find-replace>
-                </text-change>
+                             display-type="long"/>
+                     </text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1122,7 +1087,7 @@ comply with <ref type="internal"
                    description="Add 'houses described in Clause' to Table 9.8.4.1 note (1) item 3">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect4.art1.table1"/>
             <modify>
-                <text-change xpath-within-target=".//tbody/row[1]/entry[1]//item[3]">
+                <text-change xpath-within-target=".//text()">
                     <find-replace>
                         <find>garages that serve a) or b).</find>
                         <replace>garages that serve houses described in Clause a) or b).</replace>
@@ -1139,7 +1104,7 @@ comply with <ref type="internal"
                    description="Add 'houses described in Clause' to Table 9.8.4.2 note (1) item 3">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect4.art2.table1"/>
             <modify>
-                <text-change xpath-within-target=".//tbody/row[1]/entry[1]//item[3]">
+                <text-change xpath-within-target=".//text()">
                     <find-replace>
                         <find>garages that serve a) or b).</find>
                         <replace>garages that serve houses described in Clause a) or b).</replace>
@@ -1157,21 +1122,11 @@ comply with <ref type="internal"
                    description="Change Sentence (2) to (3) and remove Article 9.8.4.7 reference in Article 9.8.4.3.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect4.art3.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Except as provided in <ref type="internal"
-                             target="nbc.divBV2.part9.sect8.subsect4.art3.sent2"
-                             display-type="short"/> and <ref type="internal"
-                             target="nbc.divBV2.part9.sect8.subsect4.art6"
-                             display-type="long"
-                             pretext="Articles"/>
-                        <ref type="internal"
-                             target="nbc.divBV2.part9.sect8.subsect4.art7"
-                             display-type="long"
-                             pretext="and"/>, <ref type="term" target="tpr-thr">tapered treads</ref> shall have a <ref type="term" target="run">run</ref> that</find>
-                        <replace>Except as provided in Sentence (3) and Article 9.8.4.6., <ref type="term" target="tpr-thr">tapered treads</ref> shall have a <ref type="term" target="run">run</ref> that</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Except as provided in Sentence (3) and Article 9.8.4.6., <ref type="term" target="tpr-thr">tapered treads</ref> shall have a <ref type="term" target="run">run</ref> that </text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1183,14 +1138,15 @@ comply with <ref type="internal"
                    description="Change reference from Sentence 9.8.7.1.(6) to 9.8.7.1.(5) in Article 9.8.4.4.(4)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect4.art4.sent4"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>when measured at a point <measurement units="metric">300 mm</measurement> from the centre line of the handrail as described in <ref type="internal"
-                             target="nbc.divBV2.part9.sect8.subsect7.art1.sent6"
-                             display-type="long"/>.</find>
-                        <replace>when measured at a point <measurement units="metric">300 mm</measurement> from the centre line of the handrail as described in Sentence 9.8.7.1.(5).</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>
+                        <ref type="term" target="tpr-thr">Tapered treads</ref> in a <ref type="term" target="flght">flight</ref> shall have a uniform <ref type="term" target="run">run</ref> in accordance with the construction tolerances stipulated
+in <ref type="internal"
+                             target="nbc.divBV2.part9.sect8.subsect4.art4.sent3"
+                             display-type="short"/> when measured at a point <measurement units="metric">300 mm</measurement> from the centre line of the handrail as described in Sentence 9.8.7.1.(5).</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1274,12 +1230,11 @@ shall turn through an angle of</find>
                    description="Change 'barrier-free' to 'accessible' in Article 9.8.5.1.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect5.art1.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>This Subsection applies to pedestrian <ref type="term" target="rmp">ramps</ref>, except <ref type="term" target="rmp">ramps</ref> in a <ref type="term" target="brrr-fr">barrier-free</ref> path of travel.</find>
-                        <replace>This Subsection applies to pedestrian <ref type="term" target="rmp">ramps</ref>, except <ref type="term" target="rmp">ramps</ref> in an accessible path of travel.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>This Subsection applies to pedestrian <ref type="term" target="rmp">ramps</ref>, except <ref type="term" target="rmp">ramps</ref> in an accessible path of travel.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1291,14 +1246,15 @@ shall turn through an angle of</find>
                    description="Change 'barrier-free' to 'accessible' in Article 9.8.5.1.(2)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect5.art1.sent2"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find><ref type="term" target="rmp">Ramps</ref> in a <ref type="term" target="brrr-fr"> barrier-free</ref> path of travel shall conform to the requirements in <ref type="internal"
+                <element-replace element="text">
+                    <new-content>
+                        <text>
+                        <ref type="term" target="rmp">Ramps</ref> in an accessible path of travel shall conform to the requirements in <ref type="internal"
                              target="nbc.divB.part3.sect8.subsect3.art5"
-                             display-type="long"/></find>
-                        <replace><ref type="term" target="rmp">Ramps</ref> in an accessible path of travel shall conform to the requirements in <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art5" display-type="long"/></replace>
-                    </find-replace>
-                </text-change>
+                             display-type="long"/>
+                     </text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1311,12 +1267,11 @@ shall turn through an angle of</find>
                    description="Change 'barrier-free' to 'accessible' in Article 9.8.6.1.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect6.art1.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>This Subsection applies to landings, except landings for <ref type="term" target="rmp">ramps</ref> in a <ref type="term" target="brrr-fr">barrier-free</ref> path of travel.</find>
-                        <replace>This Subsection applies to landings, except landings for <ref type="term" target="rmp">ramps</ref> in an accessible path of travel.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>This Subsection applies to landings, except landings for <ref type="term" target="rmp">ramps</ref> in an accessible path of travel.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1328,15 +1283,15 @@ shall turn through an angle of</find>
                    description="Change 'barrier-free' to 'accessible' in Article 9.8.6.1.(2)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect6.art1.sent2"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Landings for <ref type="term" target="rmp">ramps</ref> in a <ref type="term" target="brrr-fr">barrier-free</ref> path of travel shall conform to
+                <element-replace element="text">
+                    <new-content>
+                        <text>Landings for <ref type="term" target="rmp">ramps</ref> in an accessible path of travel shall conform to
 the requirements in <ref type="internal"
                              target="nbc.divB.part3.sect8.subsect3.art5"
-                             display-type="long"/></find>
-                        <replace>Landings for <ref type="term" target="rmp">ramps</ref> in an accessible path of travel shall conform to the requirements in <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art5" display-type="long"/></replace>
-                    </find-replace>
-                </text-change>
+                             display-type="long"/>
+                     </text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1349,12 +1304,11 @@ the requirements in <ref type="internal"
                    description="Add 'including their common spaces' to Article 9.8.6.2.(3)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect6.art2.sent3"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>A landing may be omitted at the top of an exterior <ref type="term" target="flght">flight</ref> serving a secondary entrance to a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref>, provided</find>
-                        <replace>A landing may be omitted at the top of an exterior <ref type="term" target="flght">flight</ref> serving a secondary entrance to a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, provided</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>A landing may be omitted at the top of an exterior <ref type="term" target="flght">flight</ref> serving a secondary entrance to a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, provided</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1366,12 +1320,12 @@ the requirements in <ref type="internal"
                    description="Add 'or a house with a secondary suite including their common spaces' to Article 9.8.6.2.(4)(a)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect6.art2.sent4.clause1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find><measurement units="metric">900 mm</measurement> for stairs or <ref type="term" target="rmp">ramps</ref> serving a single <ref type="term" target="dwllng-n">dwelling unit</ref>, and</find>
-                        <replace><measurement units="metric">900 mm</measurement> for stairs or <ref type="term" target="rmp">ramps</ref> serving a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a secondary suite including their common spaces, and</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>
+                           <measurement units="metric">900 mm</measurement> for stairs or <ref type="term" target="rmp">ramps</ref> serving a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a secondary suite including their common spaces, and</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1383,12 +1337,12 @@ the requirements in <ref type="internal"
                    description="Change 'not serving a single dwelling unit' to 'not described in Clause (a)' in Article 9.8.6.2.(4)(b)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect6.art2.sent4.clause2"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find><measurement units="metric">1 100 mm</measurement> for stairs or <ref type="term" target="rmp">ramps</ref> not serving a single <ref type="term" target="dwllng-n">dwelling unit</ref>.</find>
-                        <replace><measurement units="metric">1 100 mm</measurement> for stairs or <ref type="term" target="rmp">ramps</ref> not described in Clause (a).</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>
+                           <measurement units="metric">1 100 mm</measurement> for stairs or <ref type="term" target="rmp">ramps</ref> not described in Clause (a).</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1442,12 +1396,14 @@ the requirements in <ref type="internal"
                    description="Add secondary suite reference in Article 9.8.8.1.(7)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect8.subsect8.art1.sent7"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>In <ref type="term" target="dwllng-n">dwelling units</ref>, glazing installed</find>
-                        <replace>In <ref type="term" target="dwllng-n">dwelling units</ref> and houses with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, glazing installed</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>In <ref type="term" target="dwllng-n">dwelling units</ref> and houses with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, glazing installed
+over <ref type="term" target="tr">stairs</ref>, <ref type="term" target="rmp">ramps</ref> and landings that extends to less than <measurement units="metric">900 mm</measurement> above
+the surface of the treads, <ref type="term" target="rmp">ramp</ref> or landing
+shall be</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1460,14 +1416,12 @@ the requirements in <ref type="internal"
                    description="Add exception references to Sentences 9.9.3.3.(2) and 9.9.3.4.(3) in Article 9.9.3.1.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect9.subsect3.art1.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>This Subsection applies to every <ref type="term" target="mn-f-gr">means
-of egress</ref> except</find>
-                        <replace>Except as required by Sentences 9.9.3.3.(2) and 9.9.3.4.(3), this Subsection applies to every <ref type="term" target="mn-f-gr">means
-of egress</ref> except</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Except as required by Sentences 9.9.3.3.(2) and 9.9.3.4.(3), this Subsection applies to every <ref type="term" target="mn-f-gr">means
+of egress</ref> except</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1572,12 +1526,13 @@ of egress</ref> except</replace>
                    description="Remove exception for secondary suites in Article 9.9.5.9.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect9.subsect5.art9.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>Except in houses with a <ref type="term" target="bc-scnd-t">secondary suite</ref>, ancillary rooms</find>
-                        <replace>Ancillary rooms</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Ancillary rooms such as storage rooms, washrooms, toilet rooms,
+laundry rooms and <ref type="term" target="rvc-rm">service rooms</ref> shall
+not open directly into an <ref type="term" target="xt">exit</ref>.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1610,14 +1565,12 @@ of egress</ref> except</replace>
                    description="Increase minimum doorway width from 800 mm to 850 mm in Article 9.9.6.3.(2)(a)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect9.subsect6.art3.sent2.clause1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>not less than <measurement units="metric">800 mm</measurement> wide where there is only one
-door leaf,</find>
-                        <replace>not less than <measurement units="metric">850 mm</measurement> wide where there is only one
-door leaf,</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>not less than <measurement units="metric">850 mm</measurement> wide where there is only one
+door leaf,</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1630,14 +1583,15 @@ door leaf,</replace>
                    description="Increase minimum doorway width from 800 mm to 850 mm in Article 9.9.6.3.(2)(b)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect9.subsect6.art3.sent2.clause2"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>not less than <measurement units="metric">800 mm</measurement> wide where multiple-leaf doors
-are installed</find>
-                        <replace>not less than <measurement units="metric">850 mm</measurement> wide where multiple-leaf doors
-are installed</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>not less than <measurement units="metric">850 mm</measurement> wide where multiple-leaf doors
+are installed with only one active leaf having a latching mechanism
+described in <ref type="internal"
+                                target="nbc.divBV2.part9.sect9.subsect6.art7"
+                                display-type="long"/>, and</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1650,14 +1604,12 @@ are installed</replace>
                    description="Increase minimum active leaf width from 810 mm to 850 mm in Article 9.9.6.3.(3)(a)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect9.subsect6.art3.sent3.clause1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>no active leaf shall be less than <measurement units="metric">810 mm</measurement> wide where
-only one leaf is active,</find>
-                        <replace>no active leaf shall be less than <measurement units="metric">850 mm</measurement> wide where
-only one leaf is active,</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>no active leaf shall be less than <measurement units="metric">850 mm</measurement> wide where
+only one leaf is active, and</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1670,22 +1622,16 @@ only one leaf is active,</replace>
                    description="Add 'including their common spaces' after secondary suite in Article 9.9.6.3.(4)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect9.subsect6.art3.sent4"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> need
+                <element-replace element="text">
+                    <new-content>
+                        <text>Doorways serving a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces need
 not comply with <ref type="internal"
                              target="nbc.divBV2.part9.sect9.subsect6.art3.sent2"
                              display-type="short"/>. (See also <ref type="internal"
                              target="nbc.divBV2.part9.sect5.subsect5.art1"
-                             display-type="long"/>)</find>
-                        <replace>or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, need
-not comply with <ref type="internal"
-                             target="nbc.divBV2.part9.sect9.subsect6.art3.sent2"
-                             display-type="short"/>. (See also <ref type="internal"
-                             target="nbc.divBV2.part9.sect5.subsect5.art1"
-                             display-type="long"/>)</replace>
-                    </find-replace>
-                </text-change>
+                             display-type="long"/>)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1698,14 +1644,13 @@ not comply with <ref type="internal"
                    description="Add 'including their common spaces' after secondary suite in Article 9.9.6.5.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect9.subsect6.art5.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref>, <ref type="term" target="xt">exit</ref> doors that are required to swing shall
-swing in the direction of <ref type="term" target="xt">exit</ref> travel.</find>
-                        <replace>or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, <ref type="term" target="xt">exit</ref> doors that are required to swing shall
-swing in the direction of <ref type="term" target="xt">exit</ref> travel.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Except for doors serving a single <ref type="term" target="dwllng-n">dwelling
+unit</ref> or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, <ref type="term" target="xt">exit</ref> doors that are required to swing shall
+swing in the direction of <ref type="term" target="xt">exit</ref> travel.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1718,12 +1663,14 @@ swing in the direction of <ref type="term" target="xt">exit</ref> travel.</repla
                    description="Add 'including their common spaces' after secondary suite in Article 9.9.6.6.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect9.subsect6.art6.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref>, shall be not less than <measurement units="metric">300 mm</measurement>.</find>
-                        <replace>or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, shall be not less than <measurement units="metric">300 mm</measurement>.</replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Except as provided in <ref type="internal"
+                             target="nbc.divBV2.part9.sect9.subsect6.art6.sent2"
+                             display-type="short"/>, the distance between a stair riser and the leading edge of a door
+during its swing, except for doors serving a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, shall be not less than <measurement units="metric">300 mm</measurement>.</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1736,12 +1683,19 @@ swing in the direction of <ref type="term" target="xt">exit</ref> travel.</repla
                    description="Add 'including their common spaces' after secondary suite in Article 9.9.6.7.(2)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect9.subsect6.art7.sent2"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref>, and doors to accessory <ref type="term" target="bldng">buildings</ref></find>
-                        <replace>or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, and doors to accessory <ref type="term" target="bldng">buildings</ref></replace>
-                    </find-replace>
-                </text-change>
+                <element-replace element="text">
+                    <new-content>
+                        <text>Except for doors serving a single <ref type="term" target="dwllng-n">dwelling
+unit</ref> or a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, and doors to accessory <ref type="term" target="bldng">buildings</ref> and
+to garages serving a single <ref type="term" target="dwllng-n">dwelling unit</ref>, door release hardware on doors in a <ref type="term" target="mn-f-gr">means
+of egress</ref> shall be operable with one hand and the door shall
+be openable with not more than one releasing operation. (See also <ref type="internal"
+                             target="nbc.divB.part3.sect8.subsect3.art6.sent4"
+                             display-type="long"/> and <ref type="internal"
+                             target="nbc.divB.part3.sect9.appnote131"
+                             display-type="long"/>.)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
@@ -1754,24 +1708,18 @@ swing in the direction of <ref type="term" target="xt">exit</ref> travel.</repla
                    description="Add 'including their common spaces' after secondary suite and change 'barrier-free' to 'accessible' in Article 9.9.6.8.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect9.subsect6.art8.sent1"/>
             <modify>
-                <text-change xpath-within-target="text()">
-                    <find-replace>
-                        <find>or a house with
-a <ref type="term" target="bc-scnd-t">secondary suite</ref>, shall be designed and
-installed so that when the latch is released the door will open in
-the direction of <ref type="term" target="xt">exit</ref> travel under a force
-of not more than 90 N applied to the door release hardware. (See <ref type="internal"
-                             target="nbc.divB.part3.sect8.subsect3.art6.sent8"
-                             display-type="long"/> for door opening forces in a <ref type="term" target="brrr-fr">barrier-free</ref> path of travel.)</find>
-                        <replace>or a house with
+                <element-replace element="text">
+                    <new-content>
+                        <text>Every <ref type="term" target="xt">exit</ref> door, except doors serving
+a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with
 a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, shall be designed and
 installed so that when the latch is released the door will open in
 the direction of <ref type="term" target="xt">exit</ref> travel under a force
 of not more than 90 N applied to the door release hardware. (See <ref type="internal"
                              target="nbc.divB.part3.sect8.subsect3.art6.sent8"
-                             display-type="long"/> for door opening forces in an accessible path of travel.)</replace>
-                    </find-replace>
-                </text-change>
+                             display-type="long"/> for door opening forces in an accessible path of travel.)</text>
+                    </new-content>
+                </element-replace>
             </modify>
         </amendment>
 
