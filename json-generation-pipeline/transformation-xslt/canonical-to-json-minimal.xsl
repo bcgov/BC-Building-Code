@@ -21,6 +21,12 @@
                     <fn:string key="subtitle"><xsl:value-of select="metadata/publication-info[1]/subtitle"/></fn:string>
                     <fn:string key="authority"><xsl:value-of select="metadata/publication-info[1]/authority"/></fn:string>
                 </fn:map>
+                <!-- Front matter (preface, introduction, committees) - sample only -->
+                <xsl:if test="front-matter">
+                    <fn:map key="front_matter">
+                        <xsl:apply-templates select="front-matter" mode="json"/>
+                    </fn:map>
+                </xsl:if>
                 <fn:array key="divisions">
                     <xsl:apply-templates select="division" mode="json"/>
                 </fn:array>
@@ -334,6 +340,69 @@
             <xsl:when test="$cur/content"><xsl:apply-templates select="$cur/content/node()" mode="rich"/></xsl:when>
             <xsl:otherwise><xsl:apply-templates select="original/node()" mode="rich"/></xsl:otherwise>
         </xsl:choose>
+    </xsl:template>
+    
+    <!-- FRONT MATTER PROCESSING -->
+    <xsl:template match="front-matter" mode="json">
+        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+        <xsl:if test="preface">
+            <fn:map key="preface">
+                <fn:string key="id"><xsl:value-of select="preface/@xml:id"/></fn:string>
+                <fn:string key="type">preface</fn:string>
+                <fn:array key="content">
+                    <xsl:apply-templates select="preface/paragraph[position() &lt;= 4] | preface/title[position() &lt;= 3]" mode="front-matter"/>
+                </fn:array>
+                <fn:number key="total_paragraphs"><xsl:value-of select="count(preface/paragraph)"/></fn:number>
+                <fn:number key="total_headings"><xsl:value-of select="count(preface/title)"/></fn:number>
+            </fn:map>
+        </xsl:if>
+        <xsl:if test="introduction">
+            <fn:map key="introduction">
+                <fn:string key="id"><xsl:value-of select="introduction/@xml:id"/></fn:string>
+                <fn:string key="type">introduction</fn:string>
+                <xsl:if test="introduction/title[1]">
+                    <fn:string key="title"><xsl:apply-templates select="introduction/title[1]" mode="text"/></fn:string>
+                </xsl:if>
+                <fn:array key="content">
+                    <xsl:apply-templates select="introduction/paragraph[position() &lt;= 3] | introduction/title[position() &gt; 1 and position() &lt;= 3]" mode="front-matter"/>
+                </fn:array>
+                <fn:number key="total_paragraphs"><xsl:value-of select="count(introduction/paragraph)"/></fn:number>
+            </fn:map>
+        </xsl:if>
+        <xsl:if test="committees">
+            <fn:map key="committees">
+                <fn:string key="id"><xsl:value-of select="committees/@xml:id"/></fn:string>
+                <fn:string key="type">committees</fn:string>
+                <xsl:if test="committees/title[1]">
+                    <fn:string key="title"><xsl:apply-templates select="committees/title[1]" mode="text"/></fn:string>
+                </xsl:if>
+                <fn:array key="tables">
+                    <xsl:apply-templates select="committees/table[position() &lt;= 2]" mode="json"/>
+                </fn:array>
+                <fn:number key="total_tables"><xsl:value-of select="count(committees/table)"/></fn:number>
+            </fn:map>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="paragraph" mode="front-matter">
+        <fn:map>
+            <fn:string key="type">paragraph</fn:string>
+            <xsl:if test="@xml:id"><fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string></xsl:if>
+            <fn:string key="content"><xsl:apply-templates select="." mode="rich"/></fn:string>
+        </fn:map>
+    </xsl:template>
+    
+    <xsl:template match="title" mode="front-matter">
+        <fn:map>
+            <fn:string key="type">heading</fn:string>
+            <xsl:if test="@xml:id"><fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string></xsl:if>
+            <fn:string key="content"><xsl:apply-templates select="." mode="text"/></fn:string>
+            <xsl:choose>
+                <xsl:when test="contains(@xml:id, '.sub')"><fn:number key="level">3</fn:number></xsl:when>
+                <xsl:when test="contains(@xml:id, '.div')"><fn:number key="level">2</fn:number></xsl:when>
+                <xsl:otherwise><fn:number key="level">1</fn:number></xsl:otherwise>
+            </xsl:choose>
+        </fn:map>
     </xsl:template>
     
     <!-- EQUATION PROCESSING -->

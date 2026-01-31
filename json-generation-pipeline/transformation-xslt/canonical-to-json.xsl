@@ -38,6 +38,13 @@
                     </fn:map>
                 </xsl:if>
                 
+                <!-- Front matter (preface, introduction, committees) -->
+                <xsl:if test="front-matter">
+                    <fn:map key="front_matter">
+                        <xsl:apply-templates select="front-matter" mode="json"/>
+                    </fn:map>
+                </xsl:if>
+                
                 <!-- Document structure -->
                 <fn:array key="divisions">
                     <xsl:apply-templates select="division" mode="json"/>
@@ -100,6 +107,183 @@
                 </xsl:for-each>
             </fn:array>
         </xsl:if>
+    </xsl:template>
+    
+    <!-- ================================================================== -->
+    <!-- FRONT MATTER PROCESSING                                            -->
+    <!-- ================================================================== -->
+    
+    <xsl:template match="front-matter" mode="json">
+        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+        
+        <!-- Preface -->
+        <xsl:if test="preface">
+            <fn:map key="preface">
+                <xsl:apply-templates select="preface" mode="json"/>
+            </fn:map>
+        </xsl:if>
+        
+        <!-- Introduction -->
+        <xsl:if test="introduction">
+            <fn:map key="introduction">
+                <xsl:apply-templates select="introduction" mode="json"/>
+            </fn:map>
+        </xsl:if>
+        
+        <!-- Committees -->
+        <xsl:if test="committees">
+            <fn:map key="committees">
+                <xsl:apply-templates select="committees" mode="json"/>
+            </fn:map>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- Preface processing -->
+    <xsl:template match="preface" mode="json">
+        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+        <fn:string key="type">preface</fn:string>
+        
+        <!-- Process all content in order -->
+        <fn:array key="content">
+            <xsl:apply-templates select="paragraph | title | table | figure | list" mode="front-matter-content"/>
+        </fn:array>
+    </xsl:template>
+    
+    <!-- Introduction processing -->
+    <xsl:template match="introduction" mode="json">
+        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+        <fn:string key="type">introduction</fn:string>
+        <xsl:if test="title">
+            <fn:string key="title"><xsl:apply-templates select="title[1]" mode="text-only"/></fn:string>
+        </xsl:if>
+        
+        <!-- Process all content in order -->
+        <fn:array key="content">
+            <xsl:apply-templates select="paragraph | title[position() > 1] | table | figure | list" mode="front-matter-content"/>
+        </fn:array>
+    </xsl:template>
+    
+    <!-- Committees processing -->
+    <xsl:template match="committees" mode="json">
+        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+        <fn:string key="type">committees</fn:string>
+        <xsl:if test="title">
+            <fn:string key="title"><xsl:apply-templates select="title[1]" mode="text-only"/></fn:string>
+        </xsl:if>
+        
+        <!-- Tables (committee member lists) -->
+        <xsl:if test="table">
+            <fn:array key="tables">
+                <xsl:apply-templates select="table" mode="json"/>
+            </fn:array>
+        </xsl:if>
+        
+        <!-- Paragraphs (notes about committee members) -->
+        <xsl:if test="paragraph">
+            <fn:array key="notes">
+                <xsl:for-each select="paragraph">
+                    <fn:map>
+                        <xsl:if test="@xml:id">
+                            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                        </xsl:if>
+                        <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                    </fn:map>
+                </xsl:for-each>
+            </fn:array>
+        </xsl:if>
+    </xsl:template>
+    
+    <!-- Front matter content items -->
+    <xsl:template match="paragraph" mode="front-matter-content">
+        <fn:map>
+            <fn:string key="type">paragraph</fn:string>
+            <xsl:if test="@xml:id">
+                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            </xsl:if>
+            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+        </fn:map>
+    </xsl:template>
+    
+    <xsl:template match="title" mode="front-matter-content">
+        <fn:map>
+            <fn:string key="type">heading</fn:string>
+            <xsl:if test="@xml:id">
+                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            </xsl:if>
+            <fn:string key="content"><xsl:apply-templates select="." mode="text-only"/></fn:string>
+            <!-- Determine heading level based on ID structure -->
+            <xsl:choose>
+                <xsl:when test="contains(@xml:id, '.sub')">
+                    <fn:number key="level">3</fn:number>
+                </xsl:when>
+                <xsl:when test="contains(@xml:id, '.div')">
+                    <fn:number key="level">2</fn:number>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fn:number key="level">1</fn:number>
+                </xsl:otherwise>
+            </xsl:choose>
+        </fn:map>
+    </xsl:template>
+    
+    <xsl:template match="table" mode="front-matter-content">
+        <fn:map>
+            <fn:string key="type">table</fn:string>
+            <xsl:if test="@xml:id">
+                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            </xsl:if>
+            <xsl:if test="title">
+                <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
+            </xsl:if>
+            <fn:map key="structure">
+                <xsl:choose>
+                    <xsl:when test="tgroup/@cols and tgroup/@cols != ''">
+                        <fn:number key="columns"><xsl:value-of select="tgroup/@cols"/></fn:number>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <fn:null key="columns"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                
+                <xsl:if test="tgroup/thead">
+                    <fn:array key="header_rows">
+                        <xsl:apply-templates select="tgroup/thead/row" mode="json"/>
+                    </fn:array>
+                </xsl:if>
+                
+                <fn:array key="body_rows">
+                    <xsl:apply-templates select="tgroup/tbody/row" mode="json"/>
+                </fn:array>
+            </fn:map>
+        </fn:map>
+    </xsl:template>
+    
+    <xsl:template match="figure" mode="front-matter-content">
+        <fn:map>
+            <fn:string key="type">figure</fn:string>
+            <xsl:if test="@xml:id">
+                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            </xsl:if>
+            <xsl:if test="title">
+                <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
+            </xsl:if>
+            <fn:map key="graphic">
+                <fn:string key="src"><xsl:value-of select="graphic/@src"/></fn:string>
+                <fn:string key="alt_text"><xsl:value-of select="graphic/@alt"/></fn:string>
+            </fn:map>
+        </fn:map>
+    </xsl:template>
+    
+    <xsl:template match="list" mode="front-matter-content">
+        <fn:map>
+            <fn:string key="type">list</fn:string>
+            <fn:string key="list_type"><xsl:value-of select="@type"/></fn:string>
+            <fn:array key="items">
+                <xsl:for-each select="item">
+                    <fn:string><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                </xsl:for-each>
+            </fn:array>
+        </fn:map>
     </xsl:template>
     
     <!-- ================================================================== -->
