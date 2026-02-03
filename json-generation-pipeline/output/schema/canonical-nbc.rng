@@ -66,84 +66,84 @@
   <!-- Division IDs: nbc.div{A|B|BV2|C} -->
   <define name="division-id">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)</param>
     </data>
   </define>
 
   <!-- Part IDs: nbc.div{A|B|BV2|C}.part{N} -->
   <define name="part-id">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)\.part[0-9]+</param>
     </data>
   </define>
 
   <!-- Section IDs: nbc.div{A|B|BV2|C}.part{N}.sect{N} -->
   <define name="section-id">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+</param>
     </data>
   </define>
 
   <!-- Subsection IDs: nbc.div{A|B|BV2|C}.part{N}.sect{N}.subsect{N} -->
   <define name="subsection-id">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+</param>
     </data>
   </define>
 
   <!-- Article IDs: nbc.div{A|B|BV2|C}.part{N}.sect{N}.subsect{N}.art{N} -->
   <define name="article-id">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+</param>
     </data>
   </define>
 
   <!-- Article IDs within revision history (allows duplicates) -->
   <define name="article-id-revision">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+</param>
     </data>
   </define>
 
   <!-- Sentence IDs: nbc.div{A|B|BV2|C}.part{N}.sect{N}.subsect{N}.art{N}.sent{N} -->
   <define name="sentence-id">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+</param>
     </data>
   </define>
 
   <!-- Sentence IDs within revision history (allows duplicates) -->
   <define name="sentence-id-revision">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+</param>
     </data>
   </define>
 
   <!-- Clause IDs: sentence.clause{N} -->
   <define name="clause-id">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+</param>
     </data>
   </define>
 
   <!-- Clause IDs within revision history (allows duplicates) -->
   <define name="clause-id-revision">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+</param>
     </data>
   </define>
 
   <!-- Subclause IDs: clause.subclause{N} -->
   <define name="subclause-id">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+\.subclause[0-9]+</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+\.subclause[0-9]+</param>
     </data>
   </define>
 
   <!-- Subclause IDs within revision history (allows duplicates) -->
   <define name="subclause-id-revision">
     <data type="string">
-      <param name="pattern">(nbc|bc)\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+\.subclause[0-9]+</param>
+      <param name="pattern">nbc\.div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.subsect[0-9]+\.art[0-9]+\.sent[0-9]+\.clause[0-9]+\.subclause[0-9]+</param>
     </data>
   </define>
 
@@ -190,6 +190,14 @@
     <optional>
       <attribute name="vendor-id"><text/></attribute>
     </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
+    </optional>
     <attribute name="letter">
       <choice>
         <value>A</value>
@@ -225,6 +233,14 @@
     </attribute>
     <optional>
       <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
     </optional>
     <attribute name="number">
       <data type="positiveInteger"/>
@@ -285,6 +301,14 @@
     <optional>
       <attribute name="vendor-id"><text/></attribute>
     </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
+    </optional>
     <attribute name="number">
       <data type="positiveInteger"/>
     </attribute>
@@ -330,6 +354,14 @@
         </choice>
       </attribute>
     </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
+    </optional>
     <element name="title"><ref name="rich-text"/></element>
     <oneOrMore>
       <element name="table">
@@ -344,6 +376,14 @@
     </attribute>
     <optional>
       <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
     </optional>
     <optional>
       <attribute name="revised">
@@ -410,6 +450,14 @@
     </attribute>
     <optional>
       <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
     </optional>
     <optional>
       <attribute name="revised">
@@ -484,6 +532,14 @@
     </attribute>
     <optional>
       <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
     </optional>
     <optional>
       <attribute name="revised">
@@ -639,6 +695,14 @@
       <attribute name="vendor-id"><text/></attribute>
     </optional>
     <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
+    </optional>
+    <optional>
       <attribute name="revised">
         <value>yes</value>
       </attribute>
@@ -756,6 +820,14 @@
     </attribute>
     <optional>
       <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
     </optional>
     <optional>
       <attribute name="revised">
@@ -1074,6 +1146,14 @@
     <optional>
       <attribute name="revised">
         <value>yes</value>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
       </attribute>
     </optional>
     <choice>
@@ -1721,6 +1801,14 @@
     <optional>
       <attribute name="vendor-id"><text/></attribute>
     </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
+    </optional>
     <element name="title"><ref name="rich-text"/></element>
     <element name="graphic">
       <attribute name="src"><data type="anyURI"/></attribute>
@@ -2154,6 +2242,14 @@
             <value>yes</value>
           </attribute>
         </optional>
+        <optional>
+          <attribute name="source">
+            <choice>
+              <value>nbc</value>
+              <value>bc</value>
+            </choice>
+          </attribute>
+        </optional>
         <choice>
           <!-- Traditional structure with explicit title -->
           <group>
@@ -2172,6 +2268,14 @@
                   <attribute name="xml:id"><data type="ID"/></attribute>
                   <optional>
                     <attribute name="vendor-id"><text/></attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="source">
+                      <choice>
+                        <value>nbc</value>
+                        <value>bc</value>
+                      </choice>
+                    </attribute>
                   </optional>
                   <element name="title"><ref name="rich-text"/></element>
                   <!-- Allow paragraphs, tables, and figures in any order within note-division -->

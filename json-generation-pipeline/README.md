@@ -144,8 +144,9 @@ Elements can be marked as deleted using the `deleted="yes"` attribute in the XML
 
 **XML Example:**
 ```xml
-<sentence xml:id="bc.divBV2.part9.sect23.subsect13.art4.sent2" 
+<sentence xml:id="nbc.divBV2.part9.sect23.subsect13.art4.sent2" 
           number="2" 
+          source="bc"
           revised="yes" 
           deleted="yes">
   <revision-history>
@@ -165,9 +166,10 @@ Elements can be marked as deleted using the `deleted="yes"` attribute in the XML
 **JSON Output:**
 ```json
 {
-  "id": "bc.divBV2.part9.sect23.subsect13.art4.sent2",
+  "id": "nbc.divBV2.part9.sect23.subsect13.art4.sent2",
   "type": "sentence",
   "number": 2,
+  "source": "bc",
   "deleted": true,
   "text": "",
   "revisions": [

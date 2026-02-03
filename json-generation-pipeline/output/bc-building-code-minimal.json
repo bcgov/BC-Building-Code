@@ -185,7 +185,7 @@
          { "id" : "nbc.divA.part1.sect1.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Application of this Code",
+          "title" : "Application of this CodeApplication of this CodeAlternate Compliance Methods for Heritage Buildings\n                            Forming Part of \n                        \n                     Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite\n                            Forming Part of \n                        \n                     Application to Existing Buildings",
           "articles" : 
           [ 
            { "id" : "nbc.divA.part1.sect1.subsect1.art1",
@@ -261,7 +261,7 @@
          { "id" : "bc.divA.part1.sect1.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Internal References to this Code",
+          "title" : "Internal References to this CodeBook I (General) and Book II (Plumbing Systems) of the CodeInternal References to the Code",
           "articles" : 
           [ 
            { "id" : "bc.divA.part1.sect1.subsect2.art1",
@@ -290,10 +290,31 @@
          { "id" : "nbc.divA.part1.sect1.subsect3",
           "type" : "subsection",
           "number" : 3,
-          "title" : "",
+          "title" : "NotesAppendices, Notes and References to Appendices and Notes have No Legal Effect",
           "articles" : 
-          [  ],
-          "total_articles" : 0 } ],
+          [ 
+           { "id" : "bc.divA.part1.sect1.subsect3.art1",
+            "type" : "article",
+            "number" : 1,
+            "title" : "Appendices, Notes and References to Appendices and Notes have No Legal Effect",
+            "content" : 
+            [ 
+             { "id" : "bc.divA.part1.sect1.subsect3.art1.sent1",
+              "type" : "sentence",
+              "number" : 1,
+              "text" : "Except for Notes A-Table 9.23.3.5.-B and A-9.23.13., including Table A-9.23.13. in Division B, Notes to Parts of this Code have no legal effect." } ] } ],
+          "total_articles" : 1,
+          "revisions" : 
+          [ 
+           { "type" : "original",
+            "date" : "2020-12-01" },
+           
+           { "type" : "revision",
+            "revision_type" : "amendment",
+            "id" : "bc-mo-2024-06-007",
+            "date" : "2025-06-16",
+            "status" : "current",
+            "summary" : "Amended title by striking out “Appendices,” and “and Annotations”" } ] } ],
         "total_subsections" : 3 },
        
        { "id" : "nbc.divA.part1.sect2",
@@ -305,7 +326,7 @@
          { "id" : "nbc.divA.part1.sect2.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Compliance with this Code",
+          "title" : "Compliance with this CodeCompliance with this CodeResponsibility of Owner",
           "articles" : 
           [ 
            { "id" : "nbc.divA.part1.sect2.subsect1.art1",
@@ -376,7 +397,7 @@
          { "id" : "nbc.divA.part1.sect2.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Materials, Appliances, Systems and Equipment",
+          "title" : "Materials, Appliances, Systems and EquipmentCharacteristics of Materials, Appliances, Systems and EquipmentStorage on the Building SiteUsed Materials, Appliances and Equipment",
           "articles" : 
           [ 
            { "id" : "nbc.divA.part1.sect2.subsect2.art1",
@@ -416,7 +437,7 @@
          { "id" : "bc.divA.part1.sect2.subsect3",
           "type" : "subsection",
           "number" : 3,
-          "title" : "Installation of Plumbing Systems",
+          "title" : "Installation of Plumbing SystemsPersonnel Performing Plumbing Work",
           "articles" : 
           [ 
            { "id" : "bc.divA.part1.sect2.subsect3.art1",
@@ -457,7 +478,7 @@
          { "id" : "nbc.divA.part1.sect3.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "General",
+          "title" : "GeneralScope of Division AScope of Division BScope of Division CInternal Cross-references",
           "articles" : 
           [ 
            { "id" : "nbc.divA.part1.sect3.subsect1.art1",
@@ -497,7 +518,7 @@
          { "id" : "nbc.divA.part1.sect3.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Application of Division A",
+          "title" : "Application of Division AApplication of Parts 1, 2 and 3",
           "articles" : 
           [ 
            { "id" : "nbc.divA.part1.sect3.subsect2.art1",
@@ -515,7 +536,7 @@
          { "id" : "nbc.divA.part1.sect3.subsect3",
           "type" : "subsection",
           "number" : 3,
-          "title" : "Application of Division B",
+          "title" : "Application of Division BApplication of Parts 1, 7, 8 and 10Application of Parts 3, 4, 5 and 6Application of Part 9Application of Part 9Building Size DeterminationApplication of Part 2Classification of Buildings Containing Agricultural Occupancies",
           "articles" : 
           [ 
            { "id" : "bc.divA.part1.sect3.subsect3.art1",
@@ -706,7 +727,7 @@
          { "id" : "nbc.divA.part2.sect1.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Application",
+          "title" : "ApplicationApplicationApplication of Objectives",
           "articles" : 
           [ 
            { "id" : "nbc.divA.part2.sect1.subsect1.art1",
@@ -779,7 +800,7 @@
          { "id" : "nbc.divA.part2.sect2.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Objectives",
+          "title" : "ObjectivesObjectivesSafetyFire SafetyStructural SafetySafety in UseResistance to Unwanted EntrySafety at Construction and Demolition SitesHealthIndoor ConditionsSanitationNoise ProtectionVibration and Deflection LimitationHazardous Substances ContainmentAccessibilityAccessible Path of TravelAccessible FacilitiesFire and Structural Protection of BuildingsFire Protection of the BuildingStructural Sufficiency of the BuildingProtection of Adjacent Buildings from FireProtection of Adjacent Buildings from Structural DamageEnvironmentEnergy Efficiency and Water Useinefficient energy performance of buildings or building componentsGreenhouse Gasesexcessive emissions as a result of the design and construction of the building, including the building's systems, and the energy consumed in the operation of those systems",
           "articles" : 
           [ 
            { "id" : "nbc.divA.part2.sect2.subsect1.art1",
@@ -863,7 +884,7 @@
          { "id" : "nbc.divB.part1.sect1.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Application",
+          "title" : "ApplicationApplication",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part1.sect1.subsect1.art1",
@@ -881,7 +902,7 @@
          { "id" : "nbc.divB.part1.sect1.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Objectives and Functional Statements",
+          "title" : "Objectives and Functional StatementsAttributions to Acceptable Solutions",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part1.sect1.subsect2.art1",
@@ -899,7 +920,7 @@
          { "id" : "nbc.divB.part1.sect1.subsect3",
           "type" : "subsection",
           "number" : 3,
-          "title" : "Climatic and Seismic Data",
+          "title" : "Climatic and Seismic DataClimatic and Seismic ValuesDepth of Frost Penetration",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part1.sect1.subsect3.art1",
@@ -950,7 +971,7 @@
          { "id" : "nbc.divB.part1.sect2.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Definitions of Words and Phrases",
+          "title" : "Definitions of Words and PhrasesNon-defined TermsDefined Terms",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part1.sect2.subsect1.art1",
@@ -989,7 +1010,7 @@
          { "id" : "nbc.divB.part1.sect2.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Symbols and Other Abbreviations",
+          "title" : "Symbols and Other AbbreviationsSymbols and Other Abbreviations",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part1.sect2.subsect2.art1",
@@ -1014,7 +1035,7 @@
          { "id" : "nbc.divB.part1.sect3.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Referenced Documents",
+          "title" : "Referenced DocumentsEffective DateApplicable EditionsDocuments Referenced in Book I (General) of the British Columbia Building Code\n                            While every effort was made to ensure the accuracy of the information in this Table, the NRC is not responsible for the accuracy, timeliness or reliability of the content presented therein. For all purposes of interpreting and applying the referenced standards, Code users should refer to the most recent official versions of the referenced editions.\n                        See  of Appendix D for the list of standards referenced therein.\n                     ",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part1.sect3.subsect1.art1",
@@ -1106,7 +1127,7 @@
          { "id" : "nbc.divB.part1.sect3.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Organizations",
+          "title" : "OrganizationsAbbreviations of Proper Names",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part1.sect3.subsect2.art1",
@@ -1182,7 +1203,7 @@
          { "id" : "nbc.divB.part2.sect1.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Scope",
+          "title" : "ScopeScope",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part2.sect1.subsect1.art1",
@@ -1200,7 +1221,7 @@
          { "id" : "nbc.divB.part2.sect1.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Application",
+          "title" : "ApplicationApplication",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part2.sect1.subsect2.art1",
@@ -1223,7 +1244,7 @@
          { "id" : "nbc.divB.part2.sect1.subsect3",
           "type" : "subsection",
           "number" : 3,
-          "title" : "Definitions",
+          "title" : "DefinitionsDefined Terms",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part2.sect1.subsect3.art1",
@@ -1248,7 +1269,7 @@
          { "id" : "nbc.divB.part2.sect2.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "General",
+          "title" : "GeneralClassificationProhibition of Occupancy Combinations Exceptions for Major OccupanciesSeparation of OccupanciesMajor Occupancy Fire Separations\n                            contains requirements for other fire separations that are in addition to the\nrequirements for the separation of major occupancies.\n                     Fire Separations and ClosuresPenetrations in Fire Separations and Fire-Rated AssembliesFirewallsFire BlocksAdditional Fire SeparationsDetermination of Fire-Resistance RatingsDetermination of Flame-Spread RatingsFlame-Spread RatingFoamed PlasticsFabrics and FilmsElectrical Wiring and EquipmentWires and CablesOccupant Load",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part2.sect2.subsect1.art1",
@@ -1298,7 +1319,7 @@
          { "id" : "nbc.divB.part2.sect2.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Building Size and Construction Relative to Major Occupancy",
+          "title" : "Building Size and Construction Relative to Major OccupancyFarm Buildings with Multiple Agricultural Major OccupanciesExceptions in Determining Building HeightGroup G, Division 1, up to 3 Storeys, Limited Area, SprinkleredGroup G, Division 1, One StoreyGroup G, Division 2, Any Height, Any Area, SprinkleredGroup G, Division 2, up to 3 Storeys, Any AreaGroup G, Division 3, One Storey, Any AreaGroup G, Division 4, Any Height, Any Area",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part2.sect2.subsect2.art1",
@@ -1370,7 +1391,7 @@
          { "id" : "nbc.divB.part2.sect2.subsect3",
           "type" : "subsection",
           "number" : 3,
-          "title" : "Fire Alarm and Detection Systems",
+          "title" : "Fire Alarm and Detection SystemsDetermination of Requirement for a Fire Alarm SystemTypes of Fire Alarm SystemsDesign of Fire Alarm SystemsFire Alarm SignalsSilencing of Alarm SignalsElectrical SupervisionFire Detectors",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part2.sect2.subsect3.art1",
@@ -1466,7 +1487,7 @@
          { "id" : "nbc.divB.part2.sect3.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Structural Design Requirements",
+          "title" : "Structural Design RequirementsGeneral",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part2.sect3.subsect1.art1",
@@ -1499,7 +1520,7 @@
          { "id" : "nbc.divB.part2.sect3.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Loads Due to Use and Occupancy",
+          "title" : "Loads Due to Use and OccupancyLoads Supported on a Floor or Suspended from a CeilingMinimum Specified Live Loads on a Floor or CeilingPoultry ManureStored ProductsFarm Machinery and VehiclesLiquid Manure Storage Tanks",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part2.sect3.subsect2.art1",
@@ -1598,7 +1619,7 @@
          { "id" : "nbc.divB.part2.sect3.subsect3",
           "type" : "subsection",
           "number" : 3,
-          "title" : "Loads Due to Snow",
+          "title" : "Loads Due to SnowUnobstructed Slippery RoofsRoof Areas of Greenhouses",
           "articles" : 
           [ 
            { "id" : "nbc.divB.part2.sect3.subsect3.art1",
@@ -1728,7 +1749,7 @@
          { "id" : "nbc.divC.part1.sect1.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Application",
+          "title" : "ApplicationApplication",
           "articles" : 
           [ 
            { "id" : "nbc.divC.part1.sect1.subsect1.art1",
@@ -1753,7 +1774,7 @@
          { "id" : "nbc.divC.part1.sect2.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Definitions of Words and Phrases",
+          "title" : "Definitions of Words and PhrasesNon-defined TermsDefined Terms",
           "articles" : 
           [ 
            { "id" : "nbc.divC.part1.sect2.subsect1.art1",
@@ -1797,7 +1818,7 @@
          { "id" : "nbc.divC.part1.sect2.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Symbols and Other Abbreviations",
+          "title" : "Symbols and Other AbbreviationsSymbols and Other Abbreviations",
           "articles" : 
           [ 
            { "id" : "nbc.divC.part1.sect2.subsect2.art1",
@@ -1829,7 +1850,7 @@
          { "id" : "nbc.divC.part2.sect1.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Application",
+          "title" : "ApplicationApplication",
           "articles" : 
           [ 
            { "id" : "nbc.divC.part2.sect1.subsect1.art1",
@@ -1854,7 +1875,7 @@
          { "id" : "nbc.divC.part2.sect2.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Administration",
+          "title" : "AdministrationConformance with Administrative RequirementsStructural Design",
           "articles" : 
           [ 
            { "id" : "nbc.divC.part2.sect2.subsect1.art1",
@@ -1883,7 +1904,7 @@
          { "id" : "nbc.divC.part2.sect2.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Information Required for Proposed Work",
+          "title" : "Information Required for Proposed WorkGeneral Information RequiredSite Plans",
           "articles" : 
           [ 
            { "id" : "nbc.divC.part2.sect2.subsect2.art1",
@@ -1943,7 +1964,7 @@
          { "id" : "nbc.divC.part2.sect2.subsect3",
           "type" : "subsection",
           "number" : 3,
-          "title" : "Fire Protection Components",
+          "title" : "Fire Protection ComponentsInformation Required for Fire Protection ComponentsPlans of Sprinkler Systems",
           "articles" : 
           [ 
            { "id" : "nbc.divC.part2.sect2.subsect3.art1",
@@ -1995,7 +2016,7 @@
          { "id" : "nbc.divC.part2.sect3.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Documentation of Alternative Solutions",
+          "title" : "Documentation of Alternative SolutionsDocumentation",
           "articles" : 
           [ 
            { "id" : "nbc.divC.part2.sect3.subsect1.art1",
@@ -2125,7 +2146,7 @@
          { "id" : "nbc.divBV2.part9.sect1.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Application",
+          "title" : "ApplicationApplication",
           "articles" : 
           [ 
            { "id" : "nbc.divBV2.part9.sect1.subsect1.art1",
@@ -2174,7 +2195,7 @@
          { "id" : "nbc.divBV2.part9.sect2.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "General",
+          "title" : "GeneralDefined Words",
           "articles" : 
           [ 
            { "id" : "nbc.divBV2.part9.sect2.subsect1.art1",
@@ -2199,7 +2220,7 @@
          { "id" : "nbc.divBV2.part9.sect3.subsect1",
           "type" : "subsection",
           "number" : 1,
-          "title" : "Concrete",
+          "title" : "ConcreteGeneralCementConcrete in Contact with Sulphate SoilAggregatesWaterCompressive StrengthConcrete MixesSite-Batched Concrete MixesAdmixturesCold Weather Requirements",
           "articles" : 
           [ 
            { "id" : "nbc.divBV2.part9.sect3.subsect1.art1",
@@ -2276,7 +2297,7 @@
          { "id" : "nbc.divBV2.part9.sect3.subsect2",
           "type" : "subsection",
           "number" : 2,
-          "title" : "Lumber and Wood Products",
+          "title" : "Lumber and Wood ProductsGrade MarkingMinimum Lumber Grades for Specific End UsesLumber GradesMachine Stress Rated LumberOSB, Waferboard and Plywood MarkingMoisture ContentLumber DimensionsPanel Thickness TolerancesUndersized LumberTermite and Decay Protection",
           "articles" : 
           [ 
            { "id" : "nbc.divBV2.part9.sect3.subsect2.art1",
@@ -2390,7 +2411,7 @@
          { "id" : "nbc.divBV2.part9.sect3.subsect3",
           "type" : "subsection",
           "number" : 3,
-          "title" : "Metal",
+          "title" : "MetalSheet Metal ThicknessGalvanized Sheet Steel",
           "articles" : 
           [ 
            { "id" : "nbc.divBV2.part9.sect3.subsect3.art1",
