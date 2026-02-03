@@ -112,11 +112,34 @@
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="type">subsection</fn:string>
             <xsl:if test="@number"><fn:number key="number"><xsl:value-of select="@number"/></fn:number></xsl:if>
-            <fn:string key="title"><xsl:apply-templates select="title" mode="text"/></fn:string>
-            <fn:array key="articles">
-                <xsl:apply-templates select="article[position() &lt;= $max-articles]" mode="json"/>
-            </fn:array>
-            <fn:number key="total_articles"><xsl:value-of select="count(article)"/></fn:number>
+            
+            <!-- Extract title and articles from revision-history if present, otherwise from direct children -->
+            <xsl:choose>
+                <xsl:when test="@revised='yes' and revision-history">
+                    <xsl:variable name="cur" select="revision-history/revision[@status='current'][last()]"/>
+                    <xsl:variable name="content-node" select="if ($cur/content) then $cur/content else revision-history/original"/>
+                    
+                    <fn:string key="title"><xsl:apply-templates select="$content-node/title" mode="text"/></fn:string>
+                    <fn:array key="articles">
+                        <xsl:apply-templates select="$content-node/article[position() &lt;= $max-articles]" mode="json"/>
+                    </fn:array>
+                    <fn:number key="total_articles"><xsl:value-of select="count($content-node/article)"/></fn:number>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fn:string key="title"><xsl:apply-templates select="title" mode="text"/></fn:string>
+                    <fn:array key="articles">
+                        <xsl:apply-templates select="article[position() &lt;= $max-articles]" mode="json"/>
+                    </fn:array>
+                    <fn:number key="total_articles"><xsl:value-of select="count(article)"/></fn:number>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            <!-- Revision history if present -->
+            <xsl:if test="@revised='yes' and revision-history">
+                <fn:array key="revisions">
+                    <xsl:call-template name="build-revisions"/>
+                </fn:array>
+            </xsl:if>
         </fn:map>
     </xsl:template>
 

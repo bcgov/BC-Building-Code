@@ -386,15 +386,41 @@
                 <fn:boolean key="deleted">true</fn:boolean>
             </xsl:if>
             
-            <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
+            <!-- Extract title and articles from revision-history if present, otherwise from direct children -->
+            <xsl:choose>
+                <xsl:when test="@revised='yes' and revision-history">
+                    <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                    <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                    
+                    <fn:string key="title"><xsl:apply-templates select="$content-node/title" mode="text-only"/></fn:string>
+                    
+                    <xsl:if test="$content-node/see-also">
+                        <fn:string key="see_also"><xsl:apply-templates select="$content-node/see-also" mode="rich-text-json"/></fn:string>
+                    </xsl:if>
+                    
+                    <fn:array key="articles">
+                        <xsl:apply-templates select="$content-node/article" mode="json"/>
+                    </fn:array>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
+                    
+                    <xsl:if test="see-also">
+                        <fn:string key="see_also"><xsl:apply-templates select="see-also" mode="rich-text-json"/></fn:string>
+                    </xsl:if>
+                    
+                    <fn:array key="articles">
+                        <xsl:apply-templates select="article" mode="json"/>
+                    </fn:array>
+                </xsl:otherwise>
+            </xsl:choose>
             
-            <xsl:if test="see-also">
-                <fn:string key="see_also"><xsl:apply-templates select="see-also" mode="rich-text-json"/></fn:string>
+            <!-- Revision history if present -->
+            <xsl:if test="@revised = 'yes' and revision-history">
+                <fn:array key="revisions">
+                    <xsl:call-template name="build-subsection-revisions"/>
+                </fn:array>
             </xsl:if>
-            
-            <fn:array key="articles">
-                <xsl:apply-templates select="article" mode="json"/>
-            </fn:array>
         </fn:map>
     </xsl:template>
     
@@ -1691,6 +1717,62 @@
                         </xsl:for-each>
                     </fn:array>
                 </xsl:if>
+                <xsl:if test="change-summary">
+                    <fn:string key="change_summary"><xsl:value-of select="change-summary"/></fn:string>
+                </xsl:if>
+                <xsl:if test="note">
+                    <fn:string key="note"><xsl:value-of select="note"/></fn:string>
+                </xsl:if>
+            </fn:map>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!-- Build subsection revisions with consistent structure -->
+    <xsl:template name="build-subsection-revisions">
+        <!-- Original baseline -->
+        <fn:map>
+            <fn:string key="type">original</fn:string>
+            <fn:string key="effective_date"><xsl:value-of select="revision-history/original/@effective-date"/></fn:string>
+            <fn:string key="title"><xsl:apply-templates select="revision-history/original/title" mode="text-only"/></fn:string>
+            <xsl:if test="revision-history/original/see-also">
+                <fn:string key="see_also"><xsl:apply-templates select="revision-history/original/see-also" mode="rich-text-json"/></fn:string>
+            </xsl:if>
+            <fn:array key="articles">
+                <xsl:apply-templates select="revision-history/original/article" mode="json"/>
+            </fn:array>
+        </fn:map>
+        
+        <!-- Each revision -->
+        <xsl:for-each select="revision-history/revision">
+            <fn:map>
+                <fn:string key="type">revision</fn:string>
+                <fn:string key="revision_type"><xsl:value-of select="@type"/></fn:string>
+                <fn:string key="revision_id"><xsl:value-of select="@id"/></fn:string>
+                <xsl:choose>
+                    <xsl:when test="@seq and @seq != ''">
+                        <fn:number key="sequence"><xsl:value-of select="@seq"/></fn:number>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <fn:null key="sequence"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <fn:string key="effective_date"><xsl:value-of select="@effective-date"/></fn:string>
+                <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                
+                <!-- Deleted flag for revision (check if content is empty indicating deletion) -->
+                <xsl:choose>
+                    <xsl:when test="not(content/node()) or (not(content/title) and not(content/article) and normalize-space(content) = '')">
+                        <fn:boolean key="deleted">true</fn:boolean>
+                    </xsl:when>
+                </xsl:choose>
+                
+                <fn:string key="title"><xsl:apply-templates select="content/title" mode="text-only"/></fn:string>
+                <xsl:if test="content/see-also">
+                    <fn:string key="see_also"><xsl:apply-templates select="content/see-also" mode="rich-text-json"/></fn:string>
+                </xsl:if>
+                <fn:array key="articles">
+                    <xsl:apply-templates select="content/article" mode="json"/>
+                </fn:array>
                 <xsl:if test="change-summary">
                     <fn:string key="change_summary"><xsl:value-of select="change-summary"/></fn:string>
                 </xsl:if>
