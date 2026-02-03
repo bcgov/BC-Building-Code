@@ -331,6 +331,9 @@
 
         <xsl:variable name="element-id" select="string($element/@xml:id)"/>
 
+        <!-- Check if any modification comes from BC (has source="bc" on new-content) -->
+        <xsl:variable name="has-bc-modification" select="exists($modifications//new-content[@source='bc'])" as="xs:boolean"/>
+
         <!-- Apply modifications in sequence order -->
         <xsl:variable name="modified-element">
             <xsl:for-each select="$modifications">
@@ -349,7 +352,12 @@
                 <!-- Copy the modified element but process children for amendments -->
                 <xsl:for-each select="$modified-element/*">
                     <xsl:copy>
-                        <xsl:copy-of select="@*"/>
+                        <!-- Copy existing attributes -->
+                        <xsl:copy-of select="@*[not(name() = 'source')]"/>
+                        <!-- Add source="bc" if modification comes from BC -->
+                        <xsl:if test="$has-bc-modification">
+                            <xsl:attribute name="source">bc</xsl:attribute>
+                        </xsl:if>
                         <!-- Process children through process-children to handle child amendments -->
                         <xsl:call-template name="process-children">
                             <xsl:with-param name="parent-id" select="$element-id"/>

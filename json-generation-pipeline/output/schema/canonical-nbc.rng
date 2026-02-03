@@ -2009,6 +2009,14 @@
             <param name="pattern">[A-Z0-9]+(\.[0-9]+)*</param>
           </data>
         </attribute>
+        <optional>
+          <attribute name="source">
+            <choice>
+              <value>nbc</value>
+              <value>bc</value>
+            </choice>
+          </attribute>
+        </optional>
         <element name="title"><text/></element>
         <element name="definition"><ref name="rich-text"/></element>
         <zeroOrMore>
@@ -2019,6 +2027,14 @@
                 <param name="pattern">[A-Z0-9]+(\.[0-9]+)*</param>
               </data>
             </attribute>
+            <optional>
+              <attribute name="source">
+                <choice>
+                  <value>nbc</value>
+                  <value>bc</value>
+                </choice>
+              </attribute>
+            </optional>
             <element name="title"><text/></element>
             <element name="definition"><ref name="rich-text"/></element>
             <!-- Allow sub-sub-objectives -->
@@ -2030,6 +2046,14 @@
                     <param name="pattern">[A-Z0-9]+(\.[0-9]+)*</param>
                   </data>
                 </attribute>
+                <optional>
+                  <attribute name="source">
+                    <choice>
+                      <value>nbc</value>
+                      <value>bc</value>
+                    </choice>
+                  </attribute>
+                </optional>
                 <element name="title"><text/></element>
                 <!-- Definition is optional for sub-sub-objectives -->
                 <optional>
@@ -2052,6 +2076,14 @@
             <param name="pattern">F[0-9]+[a-z]?</param>
           </data>
         </attribute>
+        <optional>
+          <attribute name="source">
+            <choice>
+              <value>nbc</value>
+              <value>bc</value>
+            </choice>
+          </attribute>
+        </optional>
         <element name="definition"><ref name="rich-text"/></element>
       </element>
     </oneOrMore>

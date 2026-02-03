@@ -925,6 +925,9 @@
         <fn:map>
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="key"><xsl:value-of select="@key"/></fn:string>
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="fn:string(@source)"/></fn:string>
+            </xsl:if>
             <fn:string key="title"><xsl:value-of select="title"/></fn:string>
             <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
             
@@ -940,6 +943,9 @@
         <fn:map>
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="key"><xsl:value-of select="@key"/></fn:string>
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="fn:string(@source)"/></fn:string>
+            </xsl:if>
             <fn:string key="title"><xsl:value-of select="title"/></fn:string>
             <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
         </fn:map>
@@ -949,6 +955,9 @@
         <fn:map>
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="key"><xsl:value-of select="@key"/></fn:string>
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="fn:string(@source)"/></fn:string>
+            </xsl:if>
             <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
         </fn:map>
     </xsl:template>

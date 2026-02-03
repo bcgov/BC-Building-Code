@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-02T23:01:36.7049228-08:00"
+            generated="2026-02-02T23:32:24.4385862-08:00"
             source-count="12">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -23166,7 +23166,7 @@ secured to the structure to prevent overturning. (See <ref type="internal"
                  original-sequence="243"
                  original-id="bc-243"
                  description="Remove sentence about linear interpolation from Article 9.32.3.4">
-         <target type="canonical-id" id="bc.divBV2.part9.sect32.subsect3.art4.sent4"/>
+         <target type="canonical-id" id="nbc.divBV2.part9.sect32.subsect3.art4.sent4"/>
          <delete/>
       </amendment>
       <amendment sequence="547"
@@ -24291,7 +24291,7 @@ conform to the Safety Standards Act and pursuant regulations
                  original-sequence="277"
                  original-id="bc-277"
                  description="Add clause (c) with Table 9.37.2.6.-C requirements and note reference in Article 9.37.2.6.(1)">
-         <target type="canonical-id" id="bc.divBV2.part9.sect36.subsect2.art6.sent1"/>
+         <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art6.sent1"/>
          <replace preserve-references="true">
             <new-content source="bc">
                <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art6.sent1" number="1">
