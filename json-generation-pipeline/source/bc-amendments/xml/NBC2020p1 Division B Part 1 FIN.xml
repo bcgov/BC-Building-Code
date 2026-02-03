@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <bc-overlay id="bc-amendments-2023" 
             version="1.0" 
             nbc-target-version="2020"
@@ -28,7 +28,7 @@
                    description="Update section references in Division B objectives">
             <target type="canonical-id" id="nbc.divB.part1.sect1.subsect2.art1.sent1"/>
             <replace preserve-references="true">
-                <new-content>
+                <new-content source="bc">
                     <sentence xml:id="nbc.divB.part1.sect1.subsect2.art1.sent1" number="1">
                         <text>For the purpose of compliance with this Code as required in 
                             <ref type="internal" target="nbc.divA.part1.sect1.subsect1.art2.sent1.clause2" 
@@ -59,7 +59,7 @@
                    description="Add reference to Sentence 9.7.4.3.(2) for climatic and seismic values">
             <target type="canonical-id" id="nbc.divB.part1.sect1.subsect3.art1.sent1"/>
             <replace>
-                <new-content>
+                <new-content source="bc">
                     <sentence xml:id="nbc.divB.part1.sect1.subsect3.art1.sent1" number="1">
                         <text>
                             <bc-change type="bc-insert" amendment-id="bc-002">Except as provided
@@ -86,8 +86,8 @@
                     position="after"
                     reference-id="nbc.divB.part1.sect1.subsect3.art1.sent4"/>
             <insert>
-                <new-content>
-                    <sentence xml:id="bc.divB.part1.sect1.subsect3.art1.sent5" number="5">
+                <new-content source="bc">
+                    <sentence xml:id="nbc.divB.part1.sect1.subsect3.art1.sent5" number="5">
                         <text>The outside summer design temperatures determined from 
                             <ref type="internal" target="nbc.example.ex000108"/> shall be those listed for the July 2.5% dry values.
                         </text>
@@ -104,7 +104,7 @@
                    description="Change fire safety plan reference to BC Fire Code">
             <target type="canonical-id" id="nbc.divB.part1.sect1.subsect4.art1.sent1"/>
             <replace>
-                <new-content>
+                <new-content source="bc">
                     <sentence xml:id="nbc.divB.part1.sect1.subsect4.art1.sent1" number="1">
                         <text>Where a fire safety plan is required, it shall conform to Section 2.8. of Division B of the 
                             <bc-ref type="bc-fire-code" target="bcfc-2023" section="2.8">British Columbia Fire Code</bc-ref>.
@@ -140,7 +140,7 @@
             <target type="canonical-id" id="nbc.divB.part1.sect3.subsect1.art2.table1"/>
             <modify>
                 <element-replace element="title">
-                    <new-content>
+                    <new-content source="bc">
                         <title>Documents Referenced in Book I (General) of the British Columbia Building Code
                             <note xml:id="et001030-2">While every effort was made to ensure the accuracy of the information in this Table, the NRC is not responsible for the accuracy, timeliness or reliability of the content presented therein. For all purposes of interpreting and applying the referenced standards, Code users should refer to the most recent official versions of the referenced editions.</note>
                             <note xml:id="et001030-5">See <ref type="internal" target="et000279" display-type="long" pretext="Table"/> of Appendix D for the list of standards referenced therein.</note>
@@ -160,7 +160,7 @@
                     parent-id="nbc.divB.part1.sect3.subsect1.art2.table1.row474"
                     position="after"/>
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <row xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-1">
                         <entry>BC</entry>
                         <entry>2023</entry>
@@ -183,7 +183,7 @@
                     parent-id="nbc.divB.part1.sect3.subsect1.art2.table1.row474"
                     position="after"/>
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <row xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-2">
                         <entry>BC</entry>
                         <entry>2023</entry>
@@ -206,7 +206,7 @@
                     parent-id="nbc.divB.part1.sect3.subsect1.art2.table1.row474"
                     position="after"/>
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <row xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-3">
                         <entry>BC</entry>
                         <entry>S.B.C. 2015</entry>
@@ -239,7 +239,7 @@
                     position="after"
                     reference-id="org.d1e20786"/>
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="org.d1e20796A">
                         <organization>CoV</organization>
                         <address>City of Vancouver (<ref type="external" target="https://www.vancouver.ca">www.vancouver.ca</ref>)</address>
@@ -258,7 +258,7 @@
                     parent-id="nbc.divB.part1.sect3.subsect1.art2.table1.row474"
                     position="after"/>
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <row xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-5">
                         <entry>CoV</entry>
                         <entry>Version 2.0</entry>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
      Ministerial Order BA 2024 05 - Adaptable Dwelling Units
 
@@ -31,10 +31,10 @@
     <!-- ================================================================== -->
     <amendment id="bc-mo-2024-05-001" sequence="3000"
                description="Repeal and substitute Sentence 3.8.5.1.(1) by adding reference to Sentence (3) for adaptable dwelling units">
-      <target type="canonical-id" id="bc.divB.part3.sect8.subsect5.art1.sent1"/>
+      <target type="canonical-id" id="nbc.divB.part3.sect8.subsect5.art1.sent1"/>
       <replace preserve-references="false">
-        <new-content>
-          <sentence xml:id="bc.divB.part3.sect8.subsect5.art1.sent1" number="1" revised="yes">
+        <new-content source="bc">
+          <sentence xml:id="nbc.divB.part3.sect8.subsect5.art1.sent1" number="1" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -42,12 +42,12 @@
 
               <revision seq="1" type="amendment" effective-date="2025-03-10" id="bc-mo-2024-05-001" status="current">
                 <content>
-                  <text>Except as provided in <ref type="internal" target="bc.divB.part3.sect8.subsect5.art1.sent2" display-type="short"/>, and as specified by <ref type="internal" target="bc.divB.part3.sect8.subsect5.art1.sent3" display-type="short"/>, this Subsection applies to</text>
-                  <clause xml:id="bc.divB.part3.sect8.subsect5.art1.sent1.clause1" letter="a">
+                  <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art1.sent2" display-type="short"/>, and as specified by <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art1.sent3" display-type="short"/>, this Subsection applies to</text>
+                  <clause xml:id="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1" letter="a">
                     <text>one <ref type="term" target="tr-dwllng-nt">storey dwelling units</ref> served by an <ref type="term" target="ccbl">accessible</ref> interior <ref type="term" target="pblc-crrd">public corridor</ref> and an <ref type="term" target="ccbl">accessible</ref> common <ref type="term" target="bldng">building</ref> entrance, as required to be <ref type="term" target="ccbl">accessible</ref> by <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art2" display-type="medium" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art3" display-type="short" pretext=" and"/>, and</text>
                   </clause>
-                  <clause xml:id="bc.divB.part3.sect8.subsect5.art1.sent1.clause2" letter="b">
-                    <text>common spaces and facilities intended for use by the residents of the <ref type="term" target="dwllng-nt">dwelling units</ref> described in <ref type="internal" target="bc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="short"/> including common rooftop <ref type="term" target="ccpn">occupancies</ref>.</text>
+                  <clause xml:id="nbc.divB.part3.sect8.subsect5.art1.sent1.clause2" letter="b">
+                    <text>common spaces and facilities intended for use by the residents of the <ref type="term" target="dwllng-nt">dwelling units</ref> described in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="short"/> including common rooftop <ref type="term" target="ccpn">occupancies</ref>.</text>
                   </clause>
                 </content>
                 <change-summary>Repealed and substituted Sentence 3.8.5.1.(1) to add reference to Sentence (3) for adaptable dwelling units requirement</change-summary>
@@ -65,10 +65,10 @@
     <!-- ================================================================== -->
     <amendment id="bc-mo-2024-05-002" sequence="3001"
                description="Add Sentence 3.8.5.1.(3) requiring one in five dwelling units to be adaptable">
-      <target type="position" parent-id="bc.divB.part3.sect8.subsect5.art1" position="last-child"/>
+      <target type="position" parent-id="nbc.divB.part3.sect8.subsect5.art1" position="last-child"/>
       <insert>
-        <new-content>
-          <sentence xml:id="bc.divB.part3.sect8.subsect5.art1.sent3" number="3" revised="yes">
+        <new-content source="bc">
+          <sentence xml:id="nbc.divB.part3.sect8.subsect5.art1.sent3" number="3" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- This sentence did not exist in the original -->
@@ -76,7 +76,7 @@
 
               <revision seq="1" type="amendment" effective-date="2025-03-10" id="bc-mo-2024-05-002" status="current">
                 <content>
-                  <text>3) At least one for every five or part thereof of <ref type="term" target="dwllng-nt">dwelling units</ref> described in <ref type="internal" target="bc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="short"/> shall conform to this Subsection. (See <ref type="internal" target="bc.divB.part3.sect10.appnoteA-3.8.5.1.3" display-type="long"/>.)</text>
+                  <text>3) At least one for every five or part thereof of <ref type="term" target="dwllng-nt">dwelling units</ref> described in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="short"/> shall conform to this Subsection. (See <ref type="internal" target="nbc.divB.part3.sect10.appnoteA-3.8.5.1.3" display-type="long"/>.)</text>
                 </content>
                 <change-summary>Added new sentence requiring one in five dwelling units to be adaptable</change-summary>
                 <note>Ministerial Order BA 2024 05</note>
@@ -95,8 +95,8 @@
                description="Add Application Note A-3.8.5.1.(3) explaining adaptable dwelling unit calculation">
       <target type="position" parent-id="nbc.divB.part3.sect9.appendix" position="last-child"/>
       <insert>
-        <new-content>
-          <application-note xml:id="bc.divB.part3.sect9.appnoteA-3.8.5.1.3" revised="yes">
+        <new-content source="bc">
+          <application-note xml:id="nbc.divB.part3.sect9.appnoteA-3.8.5.1.3" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- This application note did not exist in the original -->
@@ -106,7 +106,7 @@
                 <content>
                   <number>A-3.8.5.1.(3)</number>
                   <title>Application to Dwelling Units</title>
-                  <paragraph xml:id="bc.divB.part3.sect9.appnoteA-3.8.5.1.3.para1">The Building Code requires that for every <ref type="term" target="dwllng-nt">dwelling unit</ref> meeting the criteria described in <ref type="internal" target="bc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="long"/> that one for every five units be designed as an <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref>. To calculate, the designer shall take the number of units that meet the criteria of <ref type="internal" target="bc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="long"/> and then design not less than 20 percent of those units to be adaptable. "Or part thereof" means, for example, that if there are two units that meet the criteria of <ref type="internal" target="bc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="long"/> that one of them must be designed to be adaptable and that if there are six units that meet the criteria of <ref type="internal" target="bc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="long"/> that two of them must be designed to be adaptable.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.sect9.appnoteA-3.8.5.1.3.para1">The Building Code requires that for every <ref type="term" target="dwllng-nt">dwelling unit</ref> meeting the criteria described in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="long"/> that one for every five units be designed as an <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref>. To calculate, the designer shall take the number of units that meet the criteria of <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="long"/> and then design not less than 20 percent of those units to be adaptable. "Or part thereof" means, for example, that if there are two units that meet the criteria of <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="long"/> that one of them must be designed to be adaptable and that if there are six units that meet the criteria of <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="long"/> that two of them must be designed to be adaptable.</paragraph>
                 </content>
                 <change-summary>Added new application note explaining adaptable dwelling unit calculation requirements</change-summary>
                 <note>Ministerial Order BA 2024 05</note>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <bc-overlay id="bc-part9-amendments-2023" 
             version="1.0" 
             nbc-target-version="2020"
@@ -31,152 +31,152 @@
                     parent-id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925"
                     position="after"/>
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <!-- Row 1: Article title row for 9.36.6.3 Compliance Requirements -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925a">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925a">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect6.art3"
+                                 target="nbc.divBV2.part9.sect36.subsect6.art3"
                                  display-type="title"/>
                         </entry>
                     </row>
                     <!-- Row 2: Sentence (5) with functional statements [F90,F91,F92,F93,F95,F96,F98,F99,F100-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925b">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925b">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect6.art3.sent5"
+                                 target="nbc.divBV2.part9.sect36.subsect6.art3.sent5"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs90"/>,<ref type="functional-statement" target="fs91"/>,<ref type="functional-statement" target="fs92"/>,<ref type="functional-statement" target="fs93"/>,<ref type="functional-statement" target="fs95"/>,<ref type="functional-statement" target="fs96"/>,<ref type="functional-statement" target="fs98"/>,<ref type="functional-statement" target="fs99"/>,<ref type="functional-statement" target="fs100"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 3: Article title row for 9.36.6.5 Energy Performance Improvement Compliance Calculations -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925c">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925c">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect6.art5"
+                                 target="nbc.divBV2.part9.sect36.subsect6.art5"
                                  display-type="title"/>
                         </entry>
                     </row>
                     <!-- Row 4: Sentence (2) with [F95-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925d">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925d">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect6.art5.sent2"
+                                 target="nbc.divBV2.part9.sect36.subsect6.art5.sent2"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs95"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 5: Sentence (3) with [F90,F91,F92,F93,F95,F96,F98,F99,F100-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925e">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925e">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect6.art5.sent3"
+                                 target="nbc.divBV2.part9.sect36.subsect6.art5.sent3"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs90"/>,<ref type="functional-statement" target="fs91"/>,<ref type="functional-statement" target="fs92"/>,<ref type="functional-statement" target="fs93"/>,<ref type="functional-statement" target="fs95"/>,<ref type="functional-statement" target="fs96"/>,<ref type="functional-statement" target="fs98"/>,<ref type="functional-statement" target="fs99"/>,<ref type="functional-statement" target="fs100"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 6: Sentence (5) with [F90,F91,F92,F93,F95,F100-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925f">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925f">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect6.art5.sent5"
+                                 target="nbc.divBV2.part9.sect36.subsect6.art5.sent5"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs90"/>,<ref type="functional-statement" target="fs91"/>,<ref type="functional-statement" target="fs92"/>,<ref type="functional-statement" target="fs93"/>,<ref type="functional-statement" target="fs95"/>,<ref type="functional-statement" target="fs100"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 7: Sentence (6) with [F99-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925g">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925g">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect6.art5.sent6"
+                                 target="nbc.divBV2.part9.sect36.subsect6.art5.sent6"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs99"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 8: Sentence (7) with [F99-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925h">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925h">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect6.art5.sent7"
+                                 target="nbc.divBV2.part9.sect36.subsect6.art5.sent7"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs99"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 7: Sentence (8) with [F90,F91,F92,F93,F95,F96,F98,F99,F100-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925i">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925i">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect6.art5.sent8"
+                                 target="nbc.divBV2.part9.sect36.subsect6.art5.sent8"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs90"/>,<ref type="functional-statement" target="fs91"/>,<ref type="functional-statement" target="fs92"/>,<ref type="functional-statement" target="fs93"/>,<ref type="functional-statement" target="fs95"/>,<ref type="functional-statement" target="fs96"/>,<ref type="functional-statement" target="fs98"/>,<ref type="functional-statement" target="fs99"/>,<ref type="functional-statement" target="fs100"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 8: Sentence (9) with [F90,F91,F92,F93,F95,F100-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925j">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925j">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect6.art5.sent9"
+                                 target="nbc.divBV2.part9.sect36.subsect6.art5.sent9"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs90"/>,<ref type="functional-statement" target="fs91"/>,<ref type="functional-statement" target="fs92"/>,<ref type="functional-statement" target="fs93"/>,<ref type="functional-statement" target="fs95"/>,<ref type="functional-statement" target="fs100"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 1: Article title row for 9.36.7.3 Determination of Airtightness -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925k">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925k">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect7.art3"
+                                 target="nbc.divBV2.part9.sect36.subsect7.art3"
                                  display-type="title"/>
                         </entry>
                     </row>
                     <!-- Row 2: Sentence (1) with [F90-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925l">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925l">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect7.art3.sent1"
+                                 target="nbc.divBV2.part9.sect36.subsect7.art3.sent1"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs90"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 1: Article title row for 9.36.7.4 Determination of Airtightness Level -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925m">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925m">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect7.art4"
+                                 target="nbc.divBV2.part9.sect36.subsect7.art4"
                                  display-type="title"/>
                         </entry>
                     </row>
                     <!-- Row 2: Sentence (1) with [F90,F91,F92,F93,F95,F100-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925n">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925n">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect7.art4.sent1"
+                                 target="nbc.divBV2.part9.sect36.subsect7.art4.sent1"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs90"/>,<ref type="functional-statement" target="fs91"/>,<ref type="functional-statement" target="fs92"/>,<ref type="functional-statement" target="fs93"/>,<ref type="functional-statement" target="fs95"/>,<ref type="functional-statement" target="fs100"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 3: Sentence (2) with [F90,F91,F92,F93,F95,F100-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925o">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925o">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect7.art4.sent2"
+                                 target="nbc.divBV2.part9.sect36.subsect7.art4.sent2"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs90"/>,<ref type="functional-statement" target="fs91"/>,<ref type="functional-statement" target="fs92"/>,<ref type="functional-statement" target="fs93"/>,<ref type="functional-statement" target="fs95"/>,<ref type="functional-statement" target="fs100"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 4: Sentence (3) with [F90,F91,F92,F93,F95,F100-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925p">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925p">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect7.art4.sent3"
+                                 target="nbc.divBV2.part9.sect36.subsect7.art4.sent3"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs90"/>,<ref type="functional-statement" target="fs91"/>,<ref type="functional-statement" target="fs92"/>,<ref type="functional-statement" target="fs93"/>,<ref type="functional-statement" target="fs95"/>,<ref type="functional-statement" target="fs100"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>
                     </row>
                     <!-- Row 5: Sentence (4) with [F90,F91,F92,F93,F95,F100-OE1.1] -->
-                    <row xml:id="bc.divBV2.part9.sect38.subsect1.art1.table1.row5925q">
+                    <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925q">
                         <entry>
                             <ref type="internal"
-                                 target="bc.divBV2.part9.sect36.subsect7.art4.sent4"
+                                 target="nbc.divBV2.part9.sect36.subsect7.art4.sent4"
                                  display-type="shortNum"/>
                         </entry>
                         <entry>[<ref type="functional-statement" target="fs90"/>,<ref type="functional-statement" target="fs91"/>,<ref type="functional-statement" target="fs92"/>,<ref type="functional-statement" target="fs93"/>,<ref type="functional-statement" target="fs95"/>,<ref type="functional-statement" target="fs100"/>-<ref type="sub-objective" target="nbc-obj-oe1.1"/>]</entry>

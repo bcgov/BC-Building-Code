@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <bc-overlay
     id="bc-preface-amendments-2023"
     version="1.0"
@@ -35,8 +35,8 @@
                 position="first-child"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.intro" >
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.intro" >
                         <emphasis style="bold">The following preface is reprinted from the model National Building Code of Canada (NBC), on which the British Columbia Building Code (BCBC) is substantially based. As such, this information also pertains to the BCBC. Material that is not relevant to the BCBC has been deleted; minor BCBC-specific edits within the text have been made. Additional information only relevant to the BCBC has been included in text boxes within the document.</emphasis>
                     </paragraph>
                 </new-content>
@@ -59,14 +59,14 @@
                 reference-id="nbc.2020.preface.para2"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.para2a" >
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.para2a" >
                         <emphasis style="bold">In British Columbia, the NBC, together with the National Plumbing Code of Canada, are adopted, including any variations considered necessary, as Book I (General) and Book II (Plumbing Systems) of the BCBC, pursuant to the Building Act.</emphasis>
                     </paragraph>
-                    <paragraph xml:id="bc.2020.preface.para2b" >
+                    <paragraph xml:id="nbc.2020.preface.para2b" >
                         <emphasis style="bold">The National Fire Code of Canada is adopted, including any variations considered necessary, as the British Columbia Fire Code (BCFC), pursuant to the Fire Services Act.</emphasis>
                     </paragraph>
-                    <paragraph xml:id="bc.2020.preface.para2c" >
+                    <paragraph xml:id="nbc.2020.preface.para2c" >
                         <emphasis style="bold">The National Energy Code of Canada for Buildings (NECB) is adopted by reference from Book I (General) of the British Columbia Building Code.</emphasis>
                     </paragraph>
                 </new-content>
@@ -89,8 +89,8 @@
                 reference-id="nbc.2020.preface.para4"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.para4a" >
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.para4a" >
                         <emphasis style="bold">This edition of the BCBC succeeds the 2018 edition.</emphasis>
                     </paragraph>
                 </new-content>
@@ -113,8 +113,8 @@
                 reference-id="nbc.2020.preface.div1.para3"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.div1.para3a" >
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div1.para3a" >
                         <emphasis style="bold">Similar to the Codes themselves, such periodic revisions do not have legal effect until adopted into law by the Province of British Columbia.</emphasis>
                     </paragraph>
                 </new-content>
@@ -137,8 +137,8 @@
                 reference-id="nbc.2020.preface.div2.para4"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.div2.para4a" >
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div2.para4a" >
                         <emphasis style="bold">In context of the preceding paragraph, the terms "authority having jurisdiction" and "adopting authority" refer to the government of the Province of British Columbia. This differs from the context of application and enforcement of the BCBC, for which the Code contains a distinct definition of the term "authority having jurisdiction". (See Article 1.4.1.2. of Division A.)</emphasis>
                     </paragraph>
                 </new-content>
@@ -161,8 +161,8 @@
                 reference-id="nbc.2020.preface.div3.para1"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.div3.para1a">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div3.para1a">
                         <emphasis style="bold">The 2006 BCBC (including plumbing services as Part 7) and the 2006 BCFC were the first objective-based codes adopted by the Province of British Columbia. The following relates also to Book II (Plumbing Systems), of this Code.</emphasis>
                     </paragraph>
                 </new-content>
@@ -185,8 +185,8 @@
                 reference-id="nbc.2020.preface.div3.sub1.para5"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.div3.sub1.para5a" >
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div3.sub1.para5a" >
                         <emphasis style="bold">Objectives have also been attributed to any requirements specific to British Columbia.</emphasis>
                     </paragraph>
                 </new-content>
@@ -209,8 +209,8 @@
                 reference-id="nbc.2020.preface.div3.sub2.para4"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.div3.sub2.para4a" >
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div3.sub2.para4a" >
                         <emphasis style="bold">Functional Statements have also been attributed to any requirements specific to British Columbia.</emphasis>
                     </paragraph>
                 </new-content>
@@ -233,8 +233,8 @@
                 reference-id="nbc.2020.preface.div3.sub3.para2"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.div3.sub3.para2a" >
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div3.sub3.para2a" >
                         <emphasis style="bold">"Supplement to the NBC 2020: Intent Statements" is not available at the time of printing of this Code. Intent statements have not been attributed to any requirements specific to British Columbia.</emphasis>
                     </paragraph>
                 </new-content>
@@ -257,8 +257,8 @@
                 reference-id="nbc.2020.preface.div4.para1"
                 />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.div4.para1c" >
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div4.para1c" >
                         <emphasis style="bold">The remainder of this section relates also to Book II (Plumbing Systems) of this Code.</emphasis>
                     </paragraph>
                 </new-content>
@@ -281,8 +281,8 @@
                 reference-id="nbc.2020.preface.div4.sub2.para1"
                 />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.div4.sub2.para1a" >
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div4.sub2.para1a" >
                         <emphasis style="bold">In context of the preceding paragraph, the phrase "authority that adopts the NBC into law or regulation" refers to the government of the Province of British Columbia. This differs from the context of application and enforcement of the BCBC, for which the Code contains a distinct definition of the term "authority having jurisdiction". (See Article 1.4.1.2. of Division A.)</emphasis>
                     </paragraph>
                 </new-content>
@@ -305,8 +305,8 @@
                 reference-id="nbc.2020.preface.div4.sub3.para1"
                 />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.div4.sub3.para1a" >
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div4.sub3.para1a" >
                         <emphasis style="bold">The BCBC contains some unique administrative provisions in Division C.</emphasis>
                     </paragraph>
                 </new-content>
@@ -330,12 +330,12 @@
                 reference-id="nbc.2020.preface.div4.sub4.para1"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.div4.sub4.para1a">1)       Compliance with this Code shall be achieved by<list type="bulleted">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div4.sub4.para1a">1)       Compliance with this Code shall be achieved by<list type="bulleted">
                             <item>a)       complying with the applicable acceptable solutions in Division B (see Note A-1.2.1.1.(1)(a)), or</item>
                             <item>b)       using alternative solutions that will achieve at least the minimum level of performance required by Division B in the areas defined by the objectives and functional statements attributed to the applicable acceptable solutions (see Note A-1.2.1.1.(1)(b)).</item>
                         </list></paragraph>
-                    <paragraph xml:id="bc.2020.preface.div4.sub4.para1b">
+                    <paragraph xml:id="nbc.2020.preface.div4.sub4.para1b">
                         <emphasis style="bold">See Article 1.2.1.1. of the BCBC, which differs from above. Additional requirements apply in British Columbia.</emphasis>
                     </paragraph>
                 </new-content>
@@ -359,11 +359,11 @@
                 reference-id="nbc.2020.preface.div6.sub3.para1"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.preface.div6.sub3.para1a">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div6.sub3.para1a">
                         <emphasis style="bold">In addition to the above noted vertical lines, which indicate a change to the NBC, further unique to British Columbia technical changes, additions, and variations relative to the 2023 edition of the BCBC are identified. These changes are shown by a bold vertical line added in the margin next to the affected provision to indicate the approximate location of the unique to B.C. content, wherever practical. The bold vertical lines are for convenience only and have no legal effect. No change indication is provided for renumbered or deleted provisions.</emphasis>
                     </paragraph>
-                    <paragraph xml:id="bc.2020.preface.div6.sub3.para1b">
+                    <paragraph xml:id="nbc.2020.preface.div6.sub3.para1b">
                         <emphasis style="bold">The term "reserved" is included in place of certain deleted Codes Canada model content which has not been adopted. The term "reserved" is generally used so that the numbering structure of the model National Codes is maintained, easing comparability and harmonization.</emphasis>
                     </paragraph>
                 </new-content>
@@ -386,8 +386,8 @@
                 reference-id="nbc.2020.intro.2.para3"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.intro.2.para3a">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.intro.2.para3a">
                         <emphasis style="bold">The remainder of this section relates also to Book II (Plumbing Systems) of this Code.</emphasis>
                     </paragraph>
                 </new-content>
@@ -411,8 +411,8 @@
                 reference-id="nbc.2020.intro.2.div3.para1"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.intro.2.div3.para1a">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.intro.2.div3.para1a">
                         <emphasis style="bold">In British Columbia, local authorities are authorized to, by bylaw, regulate construction and to enforce the requirements of the BCBC.</emphasis>
                     </paragraph>
                 </new-content>
@@ -436,8 +436,8 @@
                 reference-id="nbc.2020.intro.2.div3.para2"
             />
             <insert>
-                <new-content>
-                    <paragraph xml:id="bc.2020.intro.2.div3.para2a">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.intro.2.div3.para2a">
                         <emphasis style="bold">Requirements for Registered Professionals are located in Division C of the BCBC.</emphasis>
                     </paragraph>
                 </new-content>

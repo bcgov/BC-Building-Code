@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <!--
      Ministerial Order BA 2024 06 - Adaptable Dwelling Units, Part 9 Seismic, and General Updates
 
@@ -42,8 +42,8 @@
                description="Amend Preface by striking out 'Fire Services Act' in the fourth paragraph and substituting 'Fire Safety Act'">
       <target type="canonical-id" id="nbc.2020.preface"/>
       <replace preserve-references="false">
-        <new-content>
-          <preface xml:id="bc.2020.preface">
+        <new-content source="bc">
+          <preface xml:id="nbc.2020.preface">
             <paragraph>The BC Building Code of Canada 2020 (NBC), together with the National Plumbing Code of Canada 2020 (NPC), the National Fire Code of Canada 2020 (NFC) and the National Energy Code of Canada for Buildings 2020 (NECB), has been developed by the Canadian Commission on Building and Fire Codes (CCBFC) as an objective-based national model code that can be adopted by provincial and territorial governments.</paragraph>
             <paragraph>In Canada, provincial and territorial governments have the authority to enact legislation that regulates building design and construction within their jurisdictions. This may involve the adoption of the NBC without change or with modifications to suit local needs, and the enactment of other laws and regulations regarding building design and construction, including requirements for professional involvement.</paragraph>
             <paragraph>The NBC is a model code in the sense that it helps promote consistency among provincial and territorial building codes. Persons involved in the design or construction of a building should consult the provincial or territorial jurisdiction concerned to find out which building code is applicable.</paragraph>
@@ -68,9 +68,9 @@
                 id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
-                        xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause1"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause1"
                         letter="a"
                         revised="yes"
                     >
@@ -117,12 +117,12 @@
         >
       <target
                 type="canonical-id"
-                id="bc.divA.part1.sect1.subsect1.art1.table1.row19"
+                id="nbc.divA.part1.sect1.subsect1.art1.table1.row19"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row19"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row19"
                         revised="yes"
                     >
             <revision-history>
@@ -186,12 +186,12 @@
         >
       <target
                 type="canonical-id"
-                id="bc.divA.part1.sect1.subsect1.art1.table1.row37"
+                id="nbc.divA.part1.sect1.subsect1.art1.table1.row37"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row37"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row37"
                         revised="yes"
                     >
             <revision-history>
@@ -247,12 +247,12 @@ Part 6 and Part 7</entry>
         >
       <target
                 type="canonical-id"
-                id="bc.divA.part1.sect1.subsect1.art1.table2.row5"
+                id="nbc.divA.part1.sect1.subsect1.art1.table2.row5"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divA.part1.sect1.subsect1.art1.table2.row5"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.row5"
                         revised="yes"
                     >
             <revision-history>
@@ -337,12 +337,12 @@ Part 6 and Part 7</entry>
         >
       <target
                 type="canonical-id"
-                id="bc.divA.part1.sect1.subsect1.art1.table2.row7"
+                id="nbc.divA.part1.sect1.subsect1.art1.table2.row7"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divA.part1.sect1.subsect1.art1.table2.row7"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.row7"
                         revised="yes"
                     >
             <revision-history>
@@ -398,7 +398,7 @@ In a house with a <emphasis
         >
       <target type="canonical-id" id="nbc.divA.part1.sect1.subsect3" />
       <replace>
-        <new-content>
+        <new-content source="bc">
           <subsection
                         xml:id="nbc.divA.part1.sect1.subsect3"
                         number="3"
@@ -418,13 +418,13 @@ In a house with a <emphasis
                 <content>
                   <title>Notes</title>
                   <article
-                                        xml:id="bc.divA.part1.sect1.subsect3.art1"
+                                        xml:id="nbc.divA.part1.sect1.subsect3.art1"
                                         number="1"
                                     >
                     <title
                                         >Appendices, Notes and References to Appendices and Notes have No Legal Effect</title>
                     <sentence
-                                            xml:id="bc.divA.part1.sect1.subsect3.art1.sent1"
+                                            xml:id="nbc.divA.part1.sect1.subsect3.art1.sent1"
                                             number="1"
                                         >
                       <text
@@ -451,11 +451,11 @@ In a house with a <emphasis
             sequence="4007"
             description="Change title of Article 1.1.3.1. to Notes and References to Notes have No Legal Effect"
         >
-      <target type="canonical-id" id="bc.divA.part1.sect1.subsect3.art1" />
+      <target type="canonical-id" id="nbc.divA.part1.sect1.subsect3.art1" />
       <replace>
-        <new-content>
+        <new-content source="bc">
           <article
-                        xml:id="bc.divA.part1.sect1.subsect3.art1"
+                        xml:id="nbc.divA.part1.sect1.subsect3.art1"
                         number="1"
                         revised="yes"
                     >
@@ -474,7 +474,7 @@ In a house with a <emphasis
                   <title
                                     >Notes and References to Notes have No Legal Effect</title>
                   <sentence
-                                        xml:id="bc.divA.part1.sect1.subsect3.art1.sent1"
+                                        xml:id="nbc.divA.part1.sect1.subsect3.art1.sent1"
                                         number="1"
                                     >
                     <text
@@ -502,7 +502,7 @@ In a house with a <emphasis
         >
       <target type="canonical-id" id="bc-fld-rvw" />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <item xml:id="bc-fld-rvw" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
@@ -551,7 +551,7 @@ In a house with a <emphasis
         >
       <target type="canonical-id" id="grn-grc-ccp" />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <item xml:id="grn-grc-ccp" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
@@ -585,7 +585,7 @@ In a house with a <emphasis
         >
       <target type="canonical-id" id="hgh-hzrd-grc" />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <item xml:id="hgh-hzrd-grc" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
@@ -619,7 +619,7 @@ In a house with a <emphasis
         >
       <target type="canonical-id" id="bc-scnd-t" />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <item xml:id="bc-scnd-t" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
@@ -686,11 +686,11 @@ In a house with a <emphasis
         >
       <target
                 type="canonical-id"
-                id="bc.divA.part1.sect5.appnote7.div5.para4"
+                id="nbc.divA.part1.sect5.appnote7.div5.para4"
             />
       <replace preserve-references="false">
-        <new-content>
-          <paragraph xml:id="bc.divA.part1.sect5.appnote7.div5.para4">
+        <new-content source="bc">
+          <paragraph xml:id="nbc.divA.part1.sect5.appnote7.div5.para4">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -729,7 +729,7 @@ In a house with a <emphasis
                 id="nbc.divA.part3.sect1.subsect1.art2.sent1"
             />
       <replace preserve-references="true">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divA.part3.sect1.subsect1.art2.sent1"
                         number="1"
@@ -809,7 +809,7 @@ In a house with a <emphasis
                 id="nbc.divA.part3.sect1.subsect1.art2.sent3.clause1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
                         xml:id="nbc.divA.part3.sect1.subsect1.art2.sent3.clause1"
                         letter="a"
@@ -853,7 +853,7 @@ In a house with a <emphasis
                 id="nbc.divB.part1.sect1.subsect2.art1.sent1"
             />
       <replace preserve-references="true">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part1.sect1.subsect2.art1.sent1"
                         number="1"
@@ -941,7 +941,7 @@ In a house with a <emphasis
                 id="nbc.divB.part1.sect3.subsect1.art2.table1.row8"
             />
       <replace preserve-references="true">
-        <new-content>
+        <new-content source="bc">
           <row xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.row8">
             <entry>ACGIH</entry>
             <entry>28th Edition</entry>
@@ -1005,7 +1005,7 @@ In a house with a <emphasis
                 id="nbc.divB.part1.sect3.subsect1.art2.table1.row26"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <row
                         xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.row26"
                         revised="yes"
@@ -1050,7 +1050,7 @@ In a house with a <emphasis
                 id="nbc.divB.part1.sect3.subsect1.art2.table1.row27"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <row
                         xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.row27"
                         revised="yes"
@@ -1096,9 +1096,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.bcfc2024"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bcfc2024"
                         revised="yes"
                     >
             <revision-history>
@@ -1153,9 +1153,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.bcsbc2015"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bcsbc2015"
                         revised="yes"
                     >
             <revision-history>
@@ -1205,9 +1205,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.ccbfc56529e"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.ccbfc56529e"
                         revised="yes"
                     >
             <revision-history>
@@ -1258,9 +1258,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.csaa27716"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.csaa27716"
                         revised="yes"
                     >
             <revision-history>
@@ -1310,9 +1310,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.astme33100"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.astme33100"
                         revised="yes"
                     >
             <revision-history>
@@ -1356,9 +1356,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.astme54700"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.astme54700"
                         revised="yes"
                     >
             <revision-history>
@@ -1402,9 +1402,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.astme110515"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.astme110515"
                         revised="yes"
                     >
             <revision-history>
@@ -1449,9 +1449,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.cgsb1220m89"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.cgsb1220m89"
                         revised="yes"
                     >
             <revision-history>
@@ -1495,9 +1495,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.cgsb517120005"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.cgsb517120005"
                         revised="yes"
                     >
             <revision-history>
@@ -1541,9 +1541,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.csaa44021944031"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.csaa44021944031"
                         revised="yes"
                     >
             <revision-history>
@@ -1587,9 +1587,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.csaa44021"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.csaa44021"
                         revised="yes"
                     >
             <revision-history>
@@ -1634,9 +1634,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.csab5218"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.csab5218"
                         revised="yes"
                     >
             <revision-history>
@@ -1680,9 +1680,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.ansicsab14961"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.ansicsab14961"
                         revised="yes"
                     >
             <revision-history>
@@ -1726,9 +1726,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.csab65118"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.csab65118"
                         revised="yes"
                     >
             <revision-history>
@@ -1778,9 +1778,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.csac2221131"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.csac2221131"
                         revised="yes"
                     >
             <revision-history>
@@ -1824,9 +1824,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.cancsac260m90"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.cancsac260m90"
                         revised="yes"
                     >
             <revision-history>
@@ -1870,9 +1870,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.cancsac43909"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.cancsac43909"
                         revised="yes"
                     >
             <revision-history>
@@ -1916,9 +1916,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.cancsac74503"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.cancsac74503"
                         revised="yes"
                     >
             <revision-history>
@@ -1963,9 +1963,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.cancsaf326m91"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.cancsaf326m91"
                         revised="yes"
                     >
             <revision-history>
@@ -2009,9 +2009,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.csao32516"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.csao32516"
                         revised="yes"
                     >
             <revision-history>
@@ -2055,9 +2055,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.csaz240mh"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.csaz240mh"
                         revised="yes"
                     >
             <revision-history>
@@ -2107,9 +2107,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.csaz24021116"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.csaz24021116"
                         revised="yes"
                     >
             <revision-history>
@@ -2159,9 +2159,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.csaz240101"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.csaz240101"
                         revised="yes"
                     >
             <revision-history>
@@ -2211,9 +2211,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.hrai2017"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.hrai2017"
                         revised="yes"
                     >
             <revision-history>
@@ -2258,9 +2258,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.hvipub9152013"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.hvipub9152013"
                         revised="yes"
                     >
             <revision-history>
@@ -2304,9 +2304,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.hvipub9162013"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.hvipub9162013"
                         revised="yes"
                     >
             <revision-history>
@@ -2350,9 +2350,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.nrccbd230"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.nrccbd230"
                         revised="yes"
                     >
             <revision-history>
@@ -2403,9 +2403,9 @@ In a house with a <emphasis
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <row
-                        xml:id="bc.divB.part1.sect3.subsect1.art2.table1.nrccbd2302"
+                        xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.nrccbd2302"
                         revised="yes"
                     >
             <revision-history>
@@ -2455,7 +2455,7 @@ In a house with a <emphasis
                 id="nbc.divB.part3.sect1.subsect2.art5.sent2"
             />
       <replace preserve-references="true">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part3.sect1.subsect2.art5.sent2"
                         number="2"
@@ -2547,7 +2547,7 @@ In a house with a <emphasis
                 id="nbc.divB.part3.sect1.subsect2.art8.sent1"
             />
       <replace preserve-references="true">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part3.sect1.subsect2.art8.sent1"
                         number="1"
@@ -2599,7 +2599,7 @@ In a house with a <emphasis
                 id="nbc.divB.part3.sect1.subsect6.art4.sent1"
             />
       <replace preserve-references="true">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part3.sect1.subsect6.art4.sent1"
                         number="1"
@@ -2671,7 +2671,7 @@ In a house with a <emphasis
                 id="nbc.divB.part3.sect1.subsect6.art10.sent1"
             />
       <replace preserve-references="true">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part3.sect1.subsect6.art10.sent1"
                         number="1"
@@ -2727,7 +2727,7 @@ In a house with a <emphasis
                 id="nbc.divB.part3.sect1.subsect9.art5.sent1"
             />
       <replace preserve-references="true">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part3.sect1.subsect9.art5.sent1"
                         number="1"
@@ -2809,7 +2809,7 @@ In a house with a <emphasis
                 id="nbc.divB.part3.sect2.subsect2.art48.sent1.clause3"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
                         xml:id="nbc.divB.part3.sect2.subsect2.art48.sent1.clause3"
                         letter="c"
@@ -2873,7 +2873,7 @@ In a house with a <emphasis
                 id="nbc.divB.part3.sect2.subsect2.art57.sent1.clause3"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
                         xml:id="nbc.divB.part3.sect2.subsect2.art57.sent1.clause3"
                         letter="c"
@@ -2932,7 +2932,7 @@ In a house with a <emphasis
                description="Amend Clause 3.2.2.93.(1)(c) by striking out 'that does not serve a rooftop enclosure for elevator machinery, a stairway or a service room used only for service to the building,' and substituting ', excluding any floor level within a rooftop enclosure that is not considered a storey in calculating building height in accordance with Sentence 3.2.1.1.(1),'">
       <target type="canonical-id" id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause3"/>
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause3" letter="c" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
@@ -2964,12 +2964,12 @@ In a house with a <emphasis
         >
       <target
                 type="canonical-id"
-                id="bc.divB.part3.sect2.subsect10.art2.sent1"
+                id="nbc.divB.part3.sect2.subsect10.art2.sent1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
-                        xml:id="bc.divB.part3.sect2.subsect10.art2.sent1"
+                        xml:id="nbc.divB.part3.sect2.subsect10.art2.sent1"
                         number="1"
                         revised="yes"
                     >
@@ -3036,12 +3036,12 @@ In a house with a <emphasis
         >
       <target
                 type="canonical-id"
-                id="bc.divB.part3.sect2.subsect10.art2.sent2"
+                id="nbc.divB.part3.sect2.subsect10.art2.sent2"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
-                        xml:id="bc.divB.part3.sect2.subsect10.art2.sent2"
+                        xml:id="nbc.divB.part3.sect2.subsect10.art2.sent2"
                         number="2"
                         revised="yes"
                     >
@@ -3090,7 +3090,7 @@ In a house with a <emphasis
                 id="nbc.divB.part3.sect2.subsect5.art7.sent2"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part3.sect2.subsect5.art7.sent2"
                         number="2"
@@ -3157,7 +3157,7 @@ In a house with a <emphasis
                 id="nbc.divB.part3.sect2.subsect5.art12.sent7"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part3.sect2.subsect5.art12.sent7"
                         number="7"
@@ -3235,7 +3235,7 @@ In a house with a <emphasis
                 id="nbc.divB.part3.sect8.subsect2.art1.sent2"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part3.sect8.subsect2.art1.sent2"
                         number="2"
@@ -3305,13 +3305,13 @@ In a house with a <emphasis
         >
       <target
                 type="position"
-                parent-id="bc.divB.part3.sect8.subsect4.art1"
+                parent-id="nbc.divB.part3.sect8.subsect4.art1"
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <sentence
-                        xml:id="bc.divB.part3.sect8.subsect4.art1.sent3"
+                        xml:id="nbc.divB.part3.sect8.subsect4.art1.sent3"
                         number="3"
                         revised="yes"
                     >
@@ -3364,13 +3364,13 @@ In a house with a <emphasis
         >
       <target
                 type="position"
-                parent-id="bc.divB.part3.sect8.subsect5.art2"
+                parent-id="nbc.divB.part3.sect8.subsect5.art2"
                 position="last-child"
             />
       <insert>
-        <new-content>
+        <new-content source="bc">
           <sentence
-                        xml:id="bc.divB.part3.sect8.subsect5.art2.sent4"
+                        xml:id="nbc.divB.part3.sect8.subsect5.art2.sent4"
                         number="4"
                         revised="yes"
                     >
@@ -3418,12 +3418,12 @@ In a house with a <emphasis
         >
       <target
                 type="canonical-id"
-                id="bc.divB.part3.sect8.subsect5.art6.sent1.clause3"
+                id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause3"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
-                        xml:id="bc.divB.part3.sect8.subsect5.art6.sent1.clause3"
+                        xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause3"
                         letter="c"
                         revised="yes"
                     >
@@ -3444,7 +3444,7 @@ In a house with a <emphasis
                                             target="clst"
                                         >closet</ref> with</text>
                   <subclause
-                                        xml:id="bc.divB.part3.sect8.subsect5.art6.sent1.clause3.subclause1"
+                                        xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause3.subclause1"
                                         number="1"
                                     >
                     <text>a clear opening width of not less than <measurement
@@ -3452,13 +3452,13 @@ In a house with a <emphasis
                                             >900 mm</measurement>, and</text>
                   </subclause>
                   <subclause
-                                        xml:id="bc.divB.part3.sect8.subsect5.art6.sent1.clause3.subclause2"
+                                        xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause3.subclause2"
                                         number="2"
                                     >
                     <text
                                         >a clear floor space, that need not be separate from the turning areas required in <ref
                                                 type="internal"
-                                                target="bc.divB.part3.sect8.subsect5.art6.sent1.clause1"
+                                                target="nbc.divB.part3.sect8.subsect5.art6.sent1.clause1"
                                                 display-type="short"
                                             />, of not less than <measurement
                                                 units="metric"
@@ -3495,12 +3495,12 @@ In a house with a <emphasis
         >
       <target
                 type="canonical-id"
-                id="bc.divB.part3.sect8.subsect5.art7.sent1.clause2"
+                id="nbc.divB.part3.sect8.subsect5.art7.sent1.clause2"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
-                        xml:id="bc.divB.part3.sect8.subsect5.art7.sent1.clause2"
+                        xml:id="nbc.divB.part3.sect8.subsect5.art7.sent1.clause2"
                         letter="b"
                         revised="yes"
                     >
@@ -3561,11 +3561,11 @@ In a house with a <emphasis
             sequence="4065"
             description="Amend Notes to Part 3 Fire Protection, Occupant Safety and Accessibility, A-3.8.5.6.(1) Adaptable Dwelling Unit Floor Area by striking out second through fifth sentences and substituting new text, and adding additional paragraph"
         >
-      <target type="canonical-id" id="bc.divB.part3.sect8.subsect5.art6" />
+      <target type="canonical-id" id="nbc.divB.part3.sect8.subsect5.art6" />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <article
-                        xml:id="bc.divB.part3.sect8.subsect5.art6"
+                        xml:id="nbc.divB.part3.sect8.subsect5.art6"
                         number="6"
                         revised="yes"
                     >
@@ -3583,7 +3583,7 @@ In a house with a <emphasis
                 <content>
                   <title>Adaptable Dwelling Unit Bedrooms</title>
                   <sentence
-                                        xml:id="bc.divB.part3.sect8.subsect5.art6.sent1"
+                                        xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1"
                                         number="1"
                                     >
                     <text>At least one bedroom or sleeping space in an <ref
@@ -3591,7 +3591,7 @@ In a house with a <emphasis
                                                 target="dptbl-dwllng-nt"
                                             >adaptable dwelling unit</ref> shall have</text>
                     <clause
-                                            xml:id="bc.divB.part3.sect8.subsect5.art6.sent1.clause1"
+                                            xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause1"
                                             letter="a"
                                         >
                       <text
@@ -3604,7 +3604,7 @@ In a house with a <emphasis
                                                 >1 500 mm</measurement>, that could be adjacent a bed,</text>
                     </clause>
                     <clause
-                                            xml:id="bc.divB.part3.sect8.subsect5.art6.sent1.clause2"
+                                            xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause2"
                                             letter="b"
                                         >
                       <text>a pathway clearance of not less than <measurement
@@ -3612,7 +3612,7 @@ In a house with a <emphasis
                                                 >850 mm</measurement> wide, that could be unobstructed by a bed, to allow functional use of the bedroom, and</text>
                     </clause>
                     <clause
-                                            xml:id="bc.divB.part3.sect8.subsect5.art6.sent1.clause3"
+                                            xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause3"
                                             letter="c"
                                         >
                       <text>when provided, a <ref
@@ -3620,7 +3620,7 @@ In a house with a <emphasis
                                                     target="clst"
                                                 >closet</ref> with</text>
                       <subclause
-                                                xml:id="bc.divB.part3.sect8.subsect5.art6.sent1.clause3.subclause1"
+                                                xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause3.subclause1"
                                                 number="1"
                                             >
                         <text
@@ -3629,13 +3629,13 @@ In a house with a <emphasis
                                                     >900 mm</measurement>, and</text>
                       </subclause>
                       <subclause
-                                                xml:id="bc.divB.part3.sect8.subsect5.art6.sent1.clause3.subclause2"
+                                                xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause3.subclause2"
                                                 number="2"
                                             >
                         <text
                                                 >a clear floor space, that need not be separate from the turning areas required in <ref
                                                         type="internal"
-                                                        target="bc.divB.part3.sect8.subsect5.art6.sent1.clause1"
+                                                        target="nbc.divB.part3.sect8.subsect5.art6.sent1.clause1"
                                                         display-type="short"
                                                     />, of not less than <measurement
                                                         units="metric"
@@ -3651,7 +3651,7 @@ In a house with a <emphasis
                     </clause>
                   </sentence>
                   <sentence
-                                        xml:id="bc.divB.part3.sect8.subsect5.art6.sent2"
+                                        xml:id="nbc.divB.part3.sect8.subsect5.art6.sent2"
                                         number="2"
                                         revised="yes"
                                     >
@@ -3659,7 +3659,7 @@ In a house with a <emphasis
                                         >Though the Code doesn't regulate bed furniture or sizes or styles such as bunkbeds, designs should allow for a bed to be located to accommodate transfer from the turning area to either side of the bed, such as by flipping the orientation of the bed, as well as for functional maneuvering space in the room.</text>
                   </sentence>
                   <sentence
-                                        xml:id="bc.divB.part3.sect8.subsect5.art6.sent3"
+                                        xml:id="nbc.divB.part3.sect8.subsect5.art6.sent3"
                                         number="3"
                                         revised="yes"
                                     >
@@ -3687,7 +3687,7 @@ In a house with a <emphasis
         >
       <target type="canonical-id" id="nbc.divB.part5.seealso" />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <see-also xml:id="nbc.divB.part5.seealso" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
@@ -3743,7 +3743,7 @@ In a house with a <emphasis
                 id="nbc.divB.part6.sect2.subsect1.art5.sent2"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part6.sect2.subsect1.art5.sent2"
                         number="2"
@@ -3795,7 +3795,7 @@ In a house with a <emphasis
                 id="nbc.divB.part6.sect3.subsect1.art1.sent5"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part6.sect3.subsect1.art1.sent5"
                         number="5"
@@ -3861,7 +3861,7 @@ In a house with a <emphasis
                 id="nbc.divB.part7.sect1.subsect2.art1.sent4"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divB.part7.sect1.subsect2.art1.sent4"
                         number="4"
@@ -3881,7 +3881,7 @@ In a house with a <emphasis
                 <content>
                   <text>Notwithstanding <ref
                                             type="internal"
-                                            target="bc.divB.part7.sect1.subsect2.art1.sent1"
+                                            target="nbc.divB.part7.sect1.subsect2.art1.sent1"
                                             display-type="short"
                                         />, a <ref
                                             type="term"
@@ -3917,7 +3917,7 @@ In a house with a <emphasis
                 id="nbc.divBV2.part9.sect4.subsect1.art1.seealso"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <see-also
                         xml:id="nbc.divBV2.part9.sect4.subsect1.art1.seealso"
                         revised="yes"
@@ -3963,7 +3963,7 @@ In a house with a <emphasis
                description="Amend Sentence 9.4.2.5.(2) by striking out 'for the value'">
       <target type="canonical-id" id="PENDING_CLARIFICATION"/>
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           PLACEHOLDER - AWAITING CLARIFICATION AND PART 9 BC AMENDMENTS
         </new-content>
       </replace>
@@ -3985,7 +3985,7 @@ In a house with a <emphasis
                 id="nbc.divBV2.part9.sect5.subsect3.art1.sent1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divBV2.part9.sect5.subsect3.art1.sent1"
                         number="1"
@@ -4034,7 +4034,7 @@ In a house with a <emphasis
                 id="nbc.divBV2.part9.sect5.subsect3.art1.sent4"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divBV2.part9.sect5.subsect3.art1.sent4"
                         number="4"
@@ -4084,7 +4084,7 @@ In a house with a <emphasis
                 id="nbc.divBV2.part9.sect7.subsect4.art3.sent1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divBV2.part9.sect7.subsect4.art3.sent1"
                         number="1"
@@ -4129,7 +4129,7 @@ In a house with a <emphasis
                 id="nbc.divBV2.part9.sect7.subsect5.art2.sent2"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divBV2.part9.sect7.subsect5.art2.sent2"
                         number="2"
@@ -4203,7 +4203,7 @@ In a house with a <emphasis
                description="Amend Sentence 9.10.2.2.(6) by striking out 'care' and substituting 'care'">
       <target type="canonical-id" id="PENDING_CLARIFICATION"/>
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           PLACEHOLDER - AWAITING CLARIFICATION
         </new-content>
       </replace>
@@ -4223,7 +4223,7 @@ In a house with a <emphasis
                 id="nbc.divBV2.part9.sect10.subsect3.art1.sent3.clause3.subclause1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <subclause
                         xml:id="nbc.divBV2.part9.sect10.subsect3.art1.sent3.clause3.subclause1"
                         number="1"
@@ -4264,7 +4264,7 @@ In a house with a <emphasis
         >
       <target type="canonical-id" id="nbc.divBV2.part9.sect10.subsect9" />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <subsection
                         xml:id="nbc.divBV2.part9.sect10.subsect9"
                         number="9"
@@ -4308,7 +4308,7 @@ In a house with a <emphasis
                 id="nbc.divBV2.part9.sect11.subsect1.art1.sent2.clause1.subclause1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <subclause
                         xml:id="nbc.divBV2.part9.sect11.subsect1.art1.sent2.clause1.subclause1"
                         number="1"
@@ -4354,7 +4354,7 @@ In a house with a <emphasis
                 id="nbc.divBV2.part9.sect11.subsect1.art1.sent2.clause1.subclause2"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <subclause
                         xml:id="nbc.divBV2.part9.sect11.subsect1.art1.sent2.clause1.subclause2"
                         number="2"
@@ -4395,12 +4395,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect13.subsect4.art3.sent2.clause2"
+                id="nbc.divBV2.part9.sect13.subsect4.art3.sent2.clause2"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <clause
-                        xml:id="bc.divBV2.part9.sect13.subsect4.art3.sent2.clause2"
+                        xml:id="nbc.divBV2.part9.sect13.subsect4.art3.sent2.clause2"
                         letter="b"
                         revised="yes"
                     >
@@ -4439,12 +4439,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect13.subsect4.art3.sent3.clause2"
+                id="nbc.divBV2.part9.sect13.subsect4.art3.sent3.clause2"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <clause
-                        xml:id="bc.divBV2.part9.sect13.subsect4.art3.sent3.clause2"
+                        xml:id="nbc.divBV2.part9.sect13.subsect4.art3.sent3.clause2"
                         letter="b"
                         revised="yes"
                     >
@@ -4463,7 +4463,7 @@ In a house with a <emphasis
                    <text>
                      <ref
                                             type="internal"
-                                            target="bc.divBV2.part9.sect13.subsect4.art3.sent2.clause6"
+                                            target="nbc.divBV2.part9.sect13.subsect4.art3.sent2.clause6"
                                             display-type="medium"
                                         /> where it terminates outside the <ref
                                             type="term"
@@ -4501,12 +4501,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect6.art1.sent2"
+                id="nbc.divBV2.part9.sect23.subsect6.art1.sent2"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <sentence
-                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent2"
+                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent2"
                         number="2"
                         revised="yes"
                     >
@@ -4535,14 +4535,14 @@ In a house with a <emphasis
                                             pretext="to"
                                         />, anchorage shall be provided by</text>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent2.clause1"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent2.clause1"
                                         letter="a"
                                     >
                       <text
                                         >embedding the ends of the first floor joists in concrete, or</text>
                    </clause>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent2.clause2"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent2.clause2"
                                         letter="b"
                                     >
                       <text>fastening the sill plate to the <ref
@@ -4575,12 +4575,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect6.art1.sent3"
+                id="nbc.divBV2.part9.sect23.subsect6.art1.sent3"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <sentence
-                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent3"
+                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent3"
                         number="3"
                         revised="yes"
                     >
@@ -4608,7 +4608,7 @@ In a house with a <emphasis
                                             target="fndtn"
                                         >foundation</ref> with</text>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent3.clause1"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent3.clause1"
                                         letter="a"
                                     >
                       <text>not less than two anchor bolts per <ref
@@ -4627,7 +4627,7 @@ In a house with a <emphasis
                                             >foundation</ref> wall, and</text>
                    </clause>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent3.clause2"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent3.clause2"
                                         letter="b"
                                     >
                       <text>anchor bolts spaced in accordance with <ref
@@ -4661,12 +4661,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect6.art1.table1"
+                id="nbc.divBV2.part9.sect23.subsect6.art1.table1"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <table
-                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.table1"
+                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.table1"
                         revised="yes"
                     >
              <revision-history>
@@ -4764,12 +4764,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect6.art1.sent5"
+                id="nbc.divBV2.part9.sect23.subsect6.art1.sent5"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <sentence
-                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent5"
+                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent5"
                         number="4"
                         revised="yes"
                     >
@@ -4798,14 +4798,14 @@ In a house with a <emphasis
                                             pretext="and"
                                         /> shall be</text>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent5.clause1"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent5.clause1"
                                         letter="a"
                                     >
                       <text
                                         >fastened to the sill plate with nuts and washers,</text>
                    </clause>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent5.clause2"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent5.clause2"
                                         letter="b"
                                     >
                       <text>embedded not less than <measurement
@@ -4816,7 +4816,7 @@ In a house with a <emphasis
                                             >foundation</ref>, and</text>
                    </clause>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent5.clause3"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent5.clause3"
                                         letter="c"
                                     >
                       <text
@@ -4846,12 +4846,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect6.art1.sent6"
+                id="nbc.divBV2.part9.sect23.subsect6.art1.sent6"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <sentence
-                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent6"
+                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent6"
                         number="5"
                         revised="yes"
                     >
@@ -4870,7 +4870,7 @@ In a house with a <emphasis
                    <text
                                     >Anchorage shall be designed according to Part 4, where</text>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent6.clause1"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent6.clause1"
                                         letter="a"
                                     >
                       <text
@@ -4879,14 +4879,14 @@ In a house with a <emphasis
                                             >1.2 kPa</measurement>,</text>
                    </clause>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent6.clause2"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent6.clause2"
                                         letter="b"
                                     >
                       <text>the seismic design parameter, S<sub
                                             >max</sub>, is greater than 2.6, or</text>
                    </clause>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent6.clause3"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent6.clause3"
                                         letter="c"
                                     >
                       <text>the seismic design parameter, S<sub
@@ -4901,20 +4901,20 @@ In a house with a <emphasis
                                                 target="bldng-hg"
                                             >building height</ref> and</text>
                       <subclause
-                                            xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent6.clause3.subclause1"
+                                            xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent6.clause3.subclause1"
                                             number="1"
                                         >
                          <text>of heavy weight construction,</text>
                       </subclause>
                       <subclause
-                                            xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent6.clause3.subclause2"
+                                            xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent6.clause3.subclause2"
                                             number="2"
                                         >
                          <text
                                             >clad at full height with masonry veneer, or</text>
                       </subclause>
                       <subclause
-                                            xml:id="bc.divBV2.part9.sect23.subsect6.art1.sent6.clause3.subclause3"
+                                            xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent6.clause3.subclause3"
                                             number="3"
                                         >
                          <text>clad at full height with stone veneer.</text>
@@ -4941,12 +4941,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect11.art4.sent5"
+                id="nbc.divBV2.part9.sect23.subsect11.art4.sent5"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <sentence
-                        xml:id="bc.divBV2.part9.sect23.subsect11.art4.sent5"
+                        xml:id="nbc.divBV2.part9.sect23.subsect11.art4.sent5"
                         number="5"
                         revised="yes"
                     >
@@ -4964,7 +4964,7 @@ In a house with a <emphasis
                  <content>
                    <text>Except as provided in <ref
                                             type="internal"
-                                            target="bc.divBV2.part9.sect23.subsect11.art4.sent7"
+                                            target="nbc.divBV2.part9.sect23.subsect11.art4.sent7"
                                             display-type="short"
                                         />, doubled top plates in <ref
                                             type="term"
@@ -4973,17 +4973,17 @@ In a house with a <emphasis
                                             units="metric"
                                         >76 mm</measurement> long common steel wire nails or spiral nails in accordance with the minimum number of nails required by Table 9.23.11.4.-B or <ref
                                             type="internal"
-                                            target="bc.divBV2.part9.sect23.subsect11.art4.table2"
+                                            target="nbc.divBV2.part9.sect23.subsect11.art4.table2"
                                             display-type="long"
                                         />, whichever is greater, where</text>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect11.art4.sent5.clause1"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect11.art4.sent5.clause1"
                                         letter="a"
                                     >
                       <text>S<sub>max</sub> is not greater than 2.6, or</text>
                    </clause>
                    <clause
-                                        xml:id="bc.divBV2.part9.sect23.subsect11.art4.sent5.clause2"
+                                        xml:id="nbc.divBV2.part9.sect23.subsect11.art4.sent5.clause2"
                                         letter="b"
                                     >
                       <text
@@ -5012,12 +5012,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect11.art4.table1"
+                id="nbc.divBV2.part9.sect23.subsect11.art4.table1"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <table
-                        xml:id="bc.divBV2.part9.sect23.subsect11.art4.table1"
+                        xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1"
                         revised="yes"
                     >
              <revision-history>
@@ -5038,7 +5038,7 @@ In a house with a <emphasis
                                             target="br-wl-bnd"
                                         >Braced Wall Bands</ref> where S<sub
                                         >max</sub> ≤ 2.6<note
-                                            xml:id="bc.divBV2.part9.sect23.subsect11.art4.table1.note1"
+                                            xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.note1"
                                         >(1)</note>
                    </title>
                    <tgroup cols="3">
@@ -5119,12 +5119,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect11.art4.table2"
+                id="nbc.divBV2.part9.sect23.subsect11.art4.table2"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <table
-                        xml:id="bc.divBV2.part9.sect23.subsect11.art4.table2"
+                        xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table2"
                         revised="yes"
                     >
              <revision-history>
@@ -5228,12 +5228,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect13.art3.sent1.clause3"
+                id="nbc.divBV2.part9.sect23.subsect13.art3.sent1.clause3"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <clause
-                        xml:id="bc.divBV2.part9.sect23.subsect13.art3.sent1.clause3"
+                        xml:id="nbc.divBV2.part9.sect23.subsect13.art3.sent1.clause3"
                         letter="c"
                         revised="yes"
                     >
@@ -5276,12 +5276,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect13.art10.sent2.clause1.subclause2"
+                id="nbc.divBV2.part9.sect23.subsect13.art10.sent2.clause1.subclause2"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <subclause
-                        xml:id="bc.divBV2.part9.sect23.subsect13.art10.sent2.clause1.subclause2"
+                        xml:id="nbc.divBV2.part9.sect23.subsect13.art10.sent2.clause1.subclause2"
                         number="2"
                         revised="yes"
                     >
@@ -5332,12 +5332,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect13.art10.sent6"
+                id="nbc.divBV2.part9.sect23.subsect13.art10.sent6"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <sentence
-                        xml:id="bc.divBV2.part9.sect23.subsect13.art10.sent6"
+                        xml:id="nbc.divBV2.part9.sect23.subsect13.art10.sent6"
                         number="6"
                         revised="yes"
                     >
@@ -5400,12 +5400,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect13.art11.sent1.clause8"
+                id="nbc.divBV2.part9.sect23.subsect13.art11.sent1.clause8"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <clause
-                        xml:id="bc.divBV2.part9.sect23.subsect13.art11.sent1.clause8"
+                        xml:id="nbc.divBV2.part9.sect23.subsect13.art11.sent1.clause8"
                         letter="i"
                         revised="yes"
                     >
@@ -5448,12 +5448,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect13.art11.table1"
+                id="nbc.divBV2.part9.sect23.subsect13.art11.table1"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <table
-                        xml:id="bc.divBV2.part9.sect23.subsect13.art11.table1"
+                        xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table1"
                         revised="yes"
                     >
              <revision-history>
@@ -5534,7 +5534,7 @@ In a house with a <emphasis
                       <tbody>
                          <row>
                             <entry>
-                               <figure xml:id="bc.divBV2.part9.figure23">
+                               <figure xml:id="nbc.divBV2.part9.figure23">
                                   <title
                                                         >Single storey building configuration</title>
                                   <graphic
@@ -5577,12 +5577,12 @@ In a house with a <emphasis
         >
        <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect23.subsect13.art11.table2"
+                id="nbc.divBV2.part9.sect23.subsect13.art11.table2"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <table
-                        xml:id="bc.divBV2.part9.sect23.subsect13.art11.table2"
+                        xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table2"
                         revised="yes"
                     >
              <revision-history>
@@ -5663,7 +5663,7 @@ In a house with a <emphasis
                       <tbody>
                          <row>
                             <entry>
-                               <figure xml:id="bc.divBV2.part9.figure25">
+                               <figure xml:id="nbc.divBV2.part9.figure25">
                                   <title
                                                         >Single storey building configuration</title>
                                   <graphic
@@ -5709,7 +5709,7 @@ In a house with a <emphasis
                 id="nbc.divBV2.part9.sect27.subsect2.art2.sent1.clause3.subclause2"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <subclause
                         xml:id="nbc.divBV2.part9.sect27.subsect2.art2.sent1.clause3.subclause2"
                         number="2"
@@ -5752,7 +5752,7 @@ In a house with a <emphasis
                 id="nbc.divBV2.part9.sect27.subsect2.art2.sent1.clause3.subclause3"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <subclause
                         xml:id="nbc.divBV2.part9.sect27.subsect2.art2.sent1.clause3.subclause3"
                         number="3"
@@ -5795,7 +5795,7 @@ In a house with a <emphasis
                 id="nbc.divBV2.part9.sect31.subsect6.art2.sent1"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <sentence
                         xml:id="nbc.divBV2.part9.sect31.subsect6.art2.sent1"
                         number="1"
@@ -5844,7 +5844,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 id="nbc.divBV2.part9.sect32.subsect2.art1.sent1.clause2"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <clause
                         xml:id="nbc.divBV2.part9.sect32.subsect2.art1.sent1.clause2"
                         letter="b"
@@ -5887,7 +5887,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 id="nbc.divBV2.part9.sect32.subsect3.art2.sent5"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <sentence
                         xml:id="nbc.divBV2.part9.sect32.subsect3.art2.sent5"
                         number="5"
@@ -5945,7 +5945,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 id="nbc.divBV2.part9.sect33.subsect5.art3.sent2"
             />
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <sentence
                         xml:id="nbc.divBV2.part9.sect33.subsect5.art3.sent2"
                         number="2"
@@ -6034,7 +6034,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 id="nbc.divBV2.part9.sect36.subsect1.art2.sent5"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divBV2.part9.sect36.subsect1.art2.sent5"
                         number="5"
@@ -6060,7 +6060,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                                             display-type="long"
                                         /> <ref
                                             type="internal"
-                                            target="bc.divBV2.part9.sect36.subsect6.art5"
+                                            target="nbc.divBV2.part9.sect36.subsect6.art5"
                                             display-type="short"
                                             pretext=" or"
                                         />, as applicable. (See <ref
@@ -6092,7 +6092,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 id="nbc.divBV2.part9.sect36.subsect1.art2.sent6"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divBV2.part9.sect36.subsect1.art2.sent6"
                         number="6"
@@ -6118,7 +6118,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                                             display-type="long"
                                         /> <ref
                                             type="internal"
-                                            target="bc.divBV2.part9.sect36.subsect6.art5"
+                                            target="nbc.divBV2.part9.sect36.subsect6.art5"
                                             display-type="short"
                                             pretext=" or"
                                         />, as applicable. (See <ref
@@ -6150,7 +6150,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 id="nbc.divBV2.part9.sect36.subsect2.art6.table3.row2"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <row
                         xml:id="nbc.divBV2.part9.sect36.subsect2.art6.table3.row2"
                         revised="yes"
@@ -6199,7 +6199,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 id="nbc.divBV2.part9.sect36.subsect5.art14.sent2.clause4.subclause1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <subclause
                         xml:id="nbc.divBV2.part9.sect36.subsect5.art14.sent2.clause4.subclause1"
                         number="1"
@@ -6242,7 +6242,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 id="nbc.divBV2.part9.sect36.subsect5.art14.sent2.clause4.subclause2"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <subclause
                         xml:id="nbc.divBV2.part9.sect36.subsect5.art14.sent2.clause4.subclause2"
                         number="2"
@@ -6287,7 +6287,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 id="nbc.divBV2.part9.sect36.subsect7.art3.sent1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
                         xml:id="nbc.divBV2.part9.sect36.subsect7.art3.sent1"
                         number="1"
@@ -6311,13 +6311,13 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                                             target="cgsb149.10"
                                         />, "Determination of the airtightness of building envelopes by the fan depressurization method," using the following parameters described therein:</text>
                   <clause
-                                        xml:id="bc.divBV2.part9.sect36.subsect7.art3.sent1.clause1"
+                                        xml:id="nbc.divBV2.part9.sect36.subsect7.art3.sent1.clause1"
                                         letter="a"
                                     >
                     <text>as-operated or closed-up, and</text>
                   </clause>
                   <clause
-                                        xml:id="bc.divBV2.part9.sect36.subsect7.art3.sent1.clause2"
+                                        xml:id="nbc.divBV2.part9.sect36.subsect7.art3.sent1.clause2"
                                         letter="b"
                                     >
                     <text>guarded or unguarded.</text>
@@ -6344,12 +6344,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect36.subsect7.art4.sent1"
+                id="nbc.divBV2.part9.sect36.subsect7.art4.sent1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
-                        xml:id="bc.divBV2.part9.sect36.subsect7.art4.sent1"
+                        xml:id="nbc.divBV2.part9.sect36.subsect7.art4.sent1"
                         number="1"
                         revised="yes"
                     >
@@ -6397,12 +6397,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect37.subsect1.art2.sent3"
+                id="nbc.divBV2.part9.sect37.subsect1.art2.sent3"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
-                        xml:id="bc.divBV2.part9.sect37.subsect1.art2.sent3"
+                        xml:id="nbc.divBV2.part9.sect37.subsect1.art2.sent3"
                         number="3"
                         revised="yes"
                     >
@@ -6448,12 +6448,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect37.subsect1.art2.sent4"
+                id="nbc.divBV2.part9.sect37.subsect1.art2.sent4"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
-                        xml:id="bc.divBV2.part9.sect37.subsect1.art2.sent4"
+                        xml:id="nbc.divBV2.part9.sect37.subsect1.art2.sent4"
                         number="4"
                         revised="yes"
                     >
@@ -6492,12 +6492,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect37.subsect1.art2.sent6"
+                id="nbc.divBV2.part9.sect37.subsect1.art2.sent6"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence
-                        xml:id="bc.divBV2.part9.sect37.subsect1.art2.sent6"
+                        xml:id="nbc.divBV2.part9.sect37.subsect1.art2.sent6"
                         number="6"
                         revised="yes"
                     >
@@ -6540,12 +6540,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect37.subsect1.art3.table1"
+                id="nbc.divBV2.part9.sect37.subsect1.art3.table1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <table
-                        xml:id="bc.divBV2.part9.sect37.subsect1.art3.table1"
+                        xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1"
                         revised="yes"
                     >
             <revision-history>
@@ -6572,7 +6572,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                     <colspec colname="col7" colwidth="" />
                     <thead>
                       <row
-                                                xml:id="bc.divBV2.part9.sect37.subsect1.art3.table1.rowh1"
+                                                xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.rowh1"
                                             >
                         <entry align="center">GHG Emission Level</entry>
                         <entry
@@ -6586,7 +6586,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                                                 >Reduction of GHG Emissions by Energy Source of Building Systems</entry>
                       </row>
                       <row
-                                                xml:id="bc.divBV2.part9.sect37.subsect1.art3.table1.rowh2"
+                                                xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.rowh2"
                                             >
                         <entry align="center" />
                         <entry
@@ -6603,7 +6603,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                         <entry align="center">or</entry>
                       </row>
                       <row
-                                                xml:id="bc.divBV2.part9.sect37.subsect1.art3.table1.rowh3"
+                                                xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.rowh3"
                                             >
                         <entry
                                                     align="center"
@@ -6618,7 +6618,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                     </thead>
                     <tbody>
                       <row
-                                                xml:id="bc.divBV2.part9.sect37.subsect1.art3.table1.row1"
+                                                xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.row1"
                                             >
                         <entry align="center">EL-1</entry>
                         <entry align="center">measure only</entry>
@@ -6629,7 +6629,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                         <entry align="center">exempt</entry>
                       </row>
                       <row
-                                                xml:id="bc.divBV2.part9.sect37.subsect1.art3.table1.row2"
+                                                xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.row2"
                                             >
                         <entry align="center">EL-2</entry>
                         <entry align="center">1050</entry>
@@ -6643,7 +6643,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                                                     >2</sub>e/kWh</entry>
                       </row>
                       <row
-                                                xml:id="bc.divBV2.part9.sect37.subsect1.art3.table1.row3"
+                                                xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.row3"
                                             >
                         <entry align="center">EL-3</entry>
                         <entry align="center">440</entry>
@@ -6657,7 +6657,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                                                     >2</sub>e/kWh</entry>
                       </row>
                       <row
-                                                xml:id="bc.divBV2.part9.sect37.subsect1.art3.table1.row4"
+                                                xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.row4"
                                             >
                         <entry align="center">EL-4</entry>
                         <entry align="center">265</entry>
@@ -6674,14 +6674,14 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                   </tgroup>
                   <table-notes>
                     <note
-                                            xml:id="bc.divBV2.part9.sect37.subsect1.art3.table1.note1"
+                                            xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.note1"
                                         >Notes to Table 9.37.1.3.:</note>
                     <note
-                                            xml:id="bc.divBV2.part9.sect37.subsect1.art3.table1.note2"
+                                            xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.note2"
                                         ><super
                                             >(1)</super> Redundant or back-up equipment for the systems and equipment listed in Sentence 9.36.5.4.(1). is permitted to be excluded, provided it is equipped with controls and is not required to meet the space-conditioning load of the house.</note>
                     <note
-                                            xml:id="bc.divBV2.part9.sect37.subsect1.art3.table1.note3"
+                                            xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.note3"
                                         ><super
                                             >(2)</super> Compliance for this option is demonstrated by meeting both the GHGI and the GHG emission requirements for each house.</note>
                   </table-notes>
@@ -6706,12 +6706,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause1"
+                id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause1"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
-                        xml:id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause1"
+                        xml:id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause1"
                         letter="a"
                         revised="yes"
                     >
@@ -6749,12 +6749,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause2"
+                id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause2"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
-                        xml:id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause2"
+                        xml:id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause2"
                         letter="b"
                         revised="yes"
                     >
@@ -6792,12 +6792,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause3"
+                id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause3"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
-                        xml:id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause3"
+                        xml:id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause3"
                         letter="c"
                         revised="yes"
                     >
@@ -6835,12 +6835,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause4"
+                id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause4"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
-                        xml:id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause4"
+                        xml:id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause4"
                         letter="d"
                         revised="yes"
                     >
@@ -6879,12 +6879,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause5"
+                id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause5"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
-                        xml:id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause5"
+                        xml:id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause5"
                         letter="e"
                         revised="yes"
                     >
@@ -6922,12 +6922,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause6"
+                id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause6"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
-                        xml:id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause6"
+                        xml:id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause6"
                         letter="f"
                         revised="yes"
                     >
@@ -6966,12 +6966,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
         >
       <target
                 type="canonical-id"
-                id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause7"
+                id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause7"
             />
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <clause
-                        xml:id="bc.divBV2.part9.sect37.subsect1.art3.sent2.clause7"
+                        xml:id="nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause7"
                         letter="g"
                         revised="yes"
                     >
@@ -7007,7 +7007,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 description="Amend Table 9.38.1.1., entry for Article 9.5.3.1. by striking out '(3)' and substituting '(1)'">
        <target type="canonical-id" id="nbc.divBV2.part9.sect5.subsect3.art1.sent1"/>
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <sentence xml:id="nbc.divBV2.part9.sect5.subsect3.art1.sent1" number="1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
@@ -7034,7 +7034,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 description="Amend Table 9.38.1.1., entry for Article 9.5.5.1. by striking out '(2)' and substituting '(1)'">
        <target type="canonical-id" id="nbc.divBV2.part9.sect5.subsect5.art1.sent1"/>
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <sentence xml:id="nbc.divBV2.part9.sect5.subsect5.art1.sent1" number="1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
@@ -7061,7 +7061,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 description="Amend Table 9.38.1.1., entry for Article 9.7.4.2., title by striking out 'General' and substituting 'Standards'">
        <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect4.art2"/>
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <article xml:id="nbc.divBV2.part9.sect7.subsect4.art2" number="2" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
@@ -7070,16 +7070,16 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <revision seq="1" type="amendment" effective-date="2025-06-16" id="bc-mo-2024-06-133" status="current">
                  <content>
                    <title>Standards</title>
-                   <sentence xml:id="bc.divBV2.part9.sect7.subsect4.art2.sent1" number="1">
+                   <sentence xml:id="nbc.divBV2.part9.sect7.subsect4.art2.sent1" number="1">
                      <text>Except as permitted by Sentence (2) and Article 9.7.4.3., windows, doors and skylights and their components shall conform to</text>
-                     <clause xml:id="bc.divBV2.part9.sect7.subsect4.art2.sent1.clause1" letter="a">
+                     <clause xml:id="nbc.divBV2.part9.sect7.subsect4.art2.sent1.clause1" letter="a">
                        <text><ref type="standard" target="csa101a440"/> (Harmonized Standard), and</text>
                      </clause>
-                     <clause xml:id="bc.divBV2.part9.sect7.subsect4.art2.sent1.clause2" letter="b">
+                     <clause xml:id="nbc.divBV2.part9.sect7.subsect4.art2.sent1.clause2" letter="b">
                        <text><ref type="standard" target="csaa440S1"/>,</text>
                      </clause>
                    </sentence>
-                   <sentence xml:id="bc.divBV2.part9.sect7.subsect4.art2.sent2" number="2">
+                   <sentence xml:id="nbc.divBV2.part9.sect7.subsect4.art2.sent2" number="2">
                      <text>Reserved.</text>
                    </sentence>
                  </content>
@@ -7100,7 +7100,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 description="Amend Table 9.38.1.1., entry for Article 9.8.5.5. title by deleting in its entirety">
        <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row393"/>
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row393" revised="yes" deleted="yes">
              <revision-history>
                <original effective-date="2020-12-01">
@@ -7123,7 +7123,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                  description="Amend Table 9.38.1.1., entry for Article 9.8.5.5. sentence by deleting in its entirety">
         <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row394"/>
         <replace preserve-references="false">
-          <new-content>
+          <new-content source="bc">
             <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row394" revised="yes" deleted="yes">
               <revision-history>
                 <original effective-date="2020-12-01">
@@ -7151,7 +7151,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 description="Amend Table 9.38.1.1., entry for Article 9.10.2.2. title by deleting in its entirety">
        <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row644"/>
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row644" revised="yes" deleted="yes">
              <revision-history>
                <original effective-date="2020-12-01">
@@ -7174,7 +7174,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 description="Amend Table 9.38.1.1., entry for Article 9.10.2.2. sentence by deleting in its entirety">
        <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row645"/>
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row645" revised="yes" deleted="yes">
              <revision-history>
                <original effective-date="2020-12-01">
@@ -7202,7 +7202,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 description="Amend Table 9.38.1.1., entry for Sentence 9.13.4.3., title by striking out 'Providing for the'">
        <target type="canonical-id" id="nbc.divBV2.part9.sect13.subsect4.art3"/>
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <article xml:id="nbc.divBV2.part9.sect13.subsect4.art3" number="3" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
@@ -7230,7 +7230,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 description="Amend Table 9.38.1.1., entry for Sentence 9.23.3.1.(2) by deleting in its entirety">
        <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row2815"/>
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <row xml:id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row2815" revised="yes" deleted="yes">
              <revision-history>
                <original effective-date="2020-12-01">
@@ -7254,10 +7254,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-149" sequence="4118"
                 description="Amend Note A-9.4.2.5. Seismic Design Parameter by striking out 'Note' preceding its reference">
-       <target type="canonical-id" id="bc.divBV2.part9.sect4.subsect2.art5.sent1"/>
+       <target type="canonical-id" id="nbc.divBV2.part9.sect4.subsect2.art5.sent1"/>
        <replace preserve-references="false">
-         <new-content>
-           <sentence xml:id="bc.divBV2.part9.sect4.subsect2.art5.sent1" number="1" revised="yes">
+         <new-content source="bc">
+           <sentence xml:id="nbc.divBV2.part9.sect4.subsect2.art5.sent1" number="1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                </original>
@@ -7279,10 +7279,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-150" sequence="4118"
                 description="Amend Note A-9.4.2.5. Seismic Design Parameter paragraph by striking out 'Sentence 4.1.8.4.(6)' and substituting 'Sentence 4.1.8.4.(3)'">
-       <target type="canonical-id" id="bc.divBV2.part9.appnote12a.para1"/>
+       <target type="canonical-id" id="nbc.divBV2.part9.appnote12a.para1"/>
        <replace preserve-references="false">
-         <new-content>
-           <paragraph xml:id="bc.divBV2.part9.appnote12a.para1" revised="yes">
+         <new-content source="bc">
+           <paragraph xml:id="nbc.divBV2.part9.appnote12a.para1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7305,10 +7305,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-151" sequence="4119"
                 description="Amend Note A-9.4.2.5.(2) Determination of Site Class paragraph by striking out 'Article 4.1.8.4.' and substituting 'Sentence 4.1.8.4.(3)'">
-       <target type="canonical-id" id="bc.divBV2.part9.appnote12b.para1"/>
+       <target type="canonical-id" id="nbc.divBV2.part9.appnote12b.para1"/>
        <replace preserve-references="false">
-         <new-content>
-           <paragraph xml:id="bc.divBV2.part9.appnote12b.para1" revised="yes">
+         <new-content source="bc">
+           <paragraph xml:id="nbc.divBV2.part9.appnote12b.para1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7332,10 +7332,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-152" sequence="4121"
                 description="Amend Notes to Part 9 Housing and Small Buildings, A-9.7.4.2.(1) Standards Referenced for Windows, Doors and Skylights is amended by striking out last paragraph under 'Water Penetration Resistance' in its entirety">
-       <target type="canonical-id" id="bc.divBV2.part9.appnote22.div4.para3"/>
+       <target type="canonical-id" id="nbc.divBV2.part9.appnote22.div4.para3"/>
        <replace preserve-references="false">
-         <new-content>
-           <paragraph xml:id="bc.divBV2.part9.appnote22.div4.para3" revised="yes" deleted="yes">
+         <new-content source="bc">
+           <paragraph xml:id="nbc.divBV2.part9.appnote22.div4.para3" revised="yes" deleted="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7359,10 +7359,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-153" sequence="4122"
                 description="Amend Notes to Part 9 Housing and Small Buildings, A-9.13.4.3.(2)(b) and (3)(b) Effective Depressurization is amended by deleting illustration 'Figure A-9.13.4.3.(2)(b) and (3)(b)' in its entirety">
-       <target type="canonical-id" id="bc.divBV2.part9.sect23.subsect13.art4.sent2"/>
+       <target type="canonical-id" id="nbc.divBV2.part9.sect23.subsect13.art4.sent2"/>
        <replace preserve-references="false">
-         <new-content>
-           <sentence xml:id="bc.divBV2.part9.sect23.subsect13.art4.sent2" number="2" revised="yes" deleted="yes">
+         <new-content source="bc">
+           <sentence xml:id="nbc.divBV2.part9.sect23.subsect13.art4.sent2" number="2" revised="yes" deleted="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7386,10 +7386,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-154" sequence="4123"
                 description="Amend Notes to Part 9 Housing and Small Buildings, A-Table 9.23.3.5.-B Alternative Nail Sizes is deleted in its entirety">
-       <target type="canonical-id" id="bc.divBV2.part9.appnote118.table1"/>
+       <target type="canonical-id" id="nbc.divBV2.part9.appnote118.table1"/>
        <replace preserve-references="false">
-         <new-content>
-           <table xml:id="bc.divBV2.part9.appnote118.table1" revised="yes" deleted="yes">
+         <new-content source="bc">
+           <table xml:id="nbc.divBV2.part9.appnote118.table1" revised="yes" deleted="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7417,10 +7417,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-155" sequence="4124"
                 description="Amend Notes to Part 9 Housing and Small Buildings, A-9.23.13.7.(4) Alternative Procedure to Calculate the Seismic-related Braced Wall Panel Length by striking out the portion of the equation for Ls, '(CsstoreyCwallsCroofS)', and substituting '(CsstoreyCwalls + CroofS)'">
-       <target type="canonical-id" id="bc.divBV2.part9.appnote134c.eq1"/>
+       <target type="canonical-id" id="nbc.divBV2.part9.appnote134c.eq1"/>
        <replace preserve-references="false">
-         <new-content>
-           <equation xml:id="bc.divBV2.part9.appnote134c.eq1" type="display" revised="yes">
+         <new-content source="bc">
+           <equation xml:id="nbc.divBV2.part9.appnote134c.eq1" type="display" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7446,10 +7446,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-156" sequence="4125"
                 description="Amend Notes to Part 9 Housing and Small Buildings, A-9.32.4.1. Naturally Aspirating Fuel-Fired Vented Appliance (NAFFVA) by striking out Tables A-9.32.4.1.(1)A and A-9.32.4.1.(1)B in their entirety, and substituting new tables">
-       <target type="canonical-id" id="bc.divBV2.part9.appnote199a"/>
+       <target type="canonical-id" id="nbc.divBV2.part9.appnote199a"/>
        <replace preserve-references="false">
-         <new-content>
-           <application-note xml:id="bc.divBV2.part9.appnote199a" revised="yes">
+         <new-content source="bc">
+           <application-note xml:id="nbc.divBV2.part9.appnote199a" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7459,10 +7459,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                  <content>
                    <number>9.32.4.1.</number>
                    <title>Naturally Aspirating Fuel-Fired Vented Appliance (NAFFVA)</title>
-                   <paragraph xml:id="bc.divBV2.part9.appnote199a.para1">NAFFVA, typically appliances with draft hoods, are subject to back drafting when a negative pressure condition occurs in the dwelling. The following tables describe the conditions under which Sentence 9.32.4.1.(1) applies:</paragraph>
+                   <paragraph xml:id="nbc.divBV2.part9.appnote199a.para1">NAFFVA, typically appliances with draft hoods, are subject to back drafting when a negative pressure condition occurs in the dwelling. The following tables describe the conditions under which Sentence 9.32.4.1.(1) applies:</paragraph>
                    
                    <!-- Table A-9.32.4.1.(1)A - Natural Gas and Propane -->
-                   <table xml:id="bc.divBV2.part9.appnote199a.tableA">
+                   <table xml:id="nbc.divBV2.part9.appnote199a.tableA">
                      <title>Table A-9.32.4.1.(1)A Vent Safety - Natural Gas and Propane</title>
                      <tgroup cols="5">
                        <colspec colname="col1" colwidth="1*"/>
@@ -7471,18 +7471,18 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                        <colspec colname="col4" colwidth="1*"/>
                        <colspec colname="col5" colwidth="1*"/>
                        <thead>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableA.rowh1">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableA.rowh1">
                            <entry align="center">Fuel Type</entry>
                            <entry align="center" namest="col2" nameend="col5">Natural Gas and Propane</entry>
                          </row>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableA.rowh2">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableA.rowh2">
                            <entry align="center">Vent Type</entry>
                            <entry align="center">Power Vent<super>(1)</super></entry>
                            <entry align="center">Direct Vent<super>(1)</super></entry>
                            <entry align="center">Thermal Buoyancy Chimney<super>(2)</super></entry>
                            <entry align="center">Drafthood Boiler HWT<super>(4)</super></entry>
                          </row>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableA.rowh3">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableA.rowh3">
                            <entry align="center">Appliance Type</entry>
                            <entry align="center">Furnace Boiler HWT Fireplace</entry>
                            <entry align="center">HWT Fireplace Heater</entry>
@@ -7491,21 +7491,21 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                          </row>
                        </thead>
                        <tbody>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableA.row1">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableA.row1">
                            <entry align="center">Special Conditions</entry>
                            <entry align="center"/>
                            <entry align="center"/>
                            <entry align="center"/>
                            <entry align="center">Located in Air-Barriered Room<super>(5)</super></entry>
                          </row>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableA.row2">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableA.row2">
                            <entry align="center">Classification</entry>
                            <entry align="center">Non-NAFFVA</entry>
                            <entry align="center"/>
                            <entry align="center">NAFFVA</entry>
                            <entry align="center">Non-NAFFVA</entry>
                          </row>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableA.row3">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableA.row3">
                            <entry align="center">9.32.4.1.(1) Applies</entry>
                            <entry align="center">No</entry>
                            <entry align="center"/>
@@ -7515,17 +7515,17 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                        </tbody>
                      </tgroup>
                      <table-notes>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableA.note1">Notes to Table A-9.32.4.1.(1)A:</note>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableA.note2"><super>(1)</super> Any power vented appliance with pressurized vent (1 pipe) or sealed combustion (2 pipe) or direct vent appliance (fireplace, heater or HWT) are non-NAFFVA.</note>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableA.note3"><super>(2)</super> Thermal buoyancy chimneys must be within the heated envelope of the house to provide acceptable venting performance.</note>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableA.note4"><super>(3)</super> This category applies only to (a) mid-efficient forced air furnaces equipped with induced draft fans and exhaust proving switch, and (b) boilers equipped with induced draft fans and exhaust proving switch.</note>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableA.note5"><super>(4)</super> Mid-efficient (draft induced) appliances are considered NAFFVA with the exception of a boiler or HWT located in an air-barriered room.</note>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableA.note6"><super>(5)</super> Mechanical room must be air-barriered from remainder of house with no access from within house. Room must be lined with panel products with sealed joints and all pipe and wire penetrations sealed. Effectively, the room must be finished before equipment is installed and holes drilled for pipes and wires. This option is not available for forced air furnaces as it is not possible to effectively seal the ducts.</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note1">Notes to Table A-9.32.4.1.(1)A:</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note2"><super>(1)</super> Any power vented appliance with pressurized vent (1 pipe) or sealed combustion (2 pipe) or direct vent appliance (fireplace, heater or HWT) are non-NAFFVA.</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note3"><super>(2)</super> Thermal buoyancy chimneys must be within the heated envelope of the house to provide acceptable venting performance.</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note4"><super>(3)</super> This category applies only to (a) mid-efficient forced air furnaces equipped with induced draft fans and exhaust proving switch, and (b) boilers equipped with induced draft fans and exhaust proving switch.</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note5"><super>(4)</super> Mid-efficient (draft induced) appliances are considered NAFFVA with the exception of a boiler or HWT located in an air-barriered room.</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note6"><super>(5)</super> Mechanical room must be air-barriered from remainder of house with no access from within house. Room must be lined with panel products with sealed joints and all pipe and wire penetrations sealed. Effectively, the room must be finished before equipment is installed and holes drilled for pipes and wires. This option is not available for forced air furnaces as it is not possible to effectively seal the ducts.</note>
                      </table-notes>
                    </table>
                    
                    <!-- Table A-9.32.4.1.(1)B - Oil and Solid Fuel -->
-                   <table xml:id="bc.divBV2.part9.appnote199a.tableB">
+                   <table xml:id="nbc.divBV2.part9.appnote199a.tableB">
                      <title>Table A-9.32.4.1.(1)B Vent Safety - Oil and Solid Fuel</title>
                      <tgroup cols="7">
                        <colspec colname="col1" colwidth="1*"/>
@@ -7536,12 +7536,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                        <colspec colname="col6" colwidth="1*"/>
                        <colspec colname="col7" colwidth="1*"/>
                        <thead>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableB.rowh1">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableB.rowh1">
                            <entry align="center">Fuel Type</entry>
                            <entry align="center" namest="col2" nameend="col4">Oil</entry>
                            <entry align="center" namest="col5" nameend="col7">Solid</entry>
                          </row>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableB.rowh2">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableB.rowh2">
                            <entry align="center">Vent Type</entry>
                            <entry align="center">Thermal Buoyancy Chimney<super>(1)</super></entry>
                            <entry align="center">Direct Vent</entry>
@@ -7550,7 +7550,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                            <entry align="center">NAFFVA<super>(5)</super></entry>
                            <entry align="center">N/A</entry>
                          </row>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableB.rowh3">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableB.rowh3">
                            <entry align="center">Appliance Type</entry>
                            <entry align="center">Boiler HWT<super>(2)</super></entry>
                            <entry align="center">F/A Furnace Boiler HWT<super>(2)(3)</super></entry>
@@ -7561,7 +7561,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                          </row>
                        </thead>
                        <tbody>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableB.row1">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableB.row1">
                            <entry align="center">Special Conditions</entry>
                            <entry align="center">Located in Air-Barriered Room<super>(4)</super></entry>
                            <entry align="center"/>
@@ -7570,7 +7570,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                            <entry align="center"/>
                            <entry align="center"/>
                          </row>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableB.row2">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableB.row2">
                            <entry align="center">Classification</entry>
                            <entry align="center">Non-NAFFVA</entry>
                            <entry align="center">NAFFVA</entry>
@@ -7579,7 +7579,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                            <entry align="center">NAFFVA<super>(5)</super></entry>
                            <entry align="center">N/A</entry>
                          </row>
-                         <row xml:id="bc.divBV2.part9.appnote199a.tableB.row3">
+                         <row xml:id="nbc.divBV2.part9.appnote199a.tableB.row3">
                            <entry align="center">9.32.4.1.(1) Applies</entry>
                            <entry align="center">No</entry>
                            <entry align="center">Yes</entry>
@@ -7591,12 +7591,12 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                        </tbody>
                      </tgroup>
                      <table-notes>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableB.note1">Notes to Table A-9.32.4.1.(1)B:</note>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableB.note2"><super>(1)</super> Thermal buoyancy chimneys must be within the heated envelope of the house to provide acceptable venting performance.</note>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableB.note3"><super>(2)</super> Sealed combustion kits can be added to oil-fired appliances but they switch to interior combustion air if intake is blocked and rely on barometrically dampered thermal buoyancy chimneys so they are considered NAFFVA.</note>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableB.note4"><super>(3)</super> Oil-fired HWT, boilers and furnaces equipped with blocked vent switches.</note>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableB.note5"><super>(4)</super> Mechanical room must be air-barriered from remainder of house with no access from within house. Room must be lined with panel products with sealed joints and all pipe and wire penetrations sealed. Effectively, the room must be finished before equipment is installed and holes drilled for pipes and wires. This option is not available for forced air furnaces as it is not possible to effectively seal the ducts.</note>
-                       <note xml:id="bc.divBV2.part9.appnote199a.tableB.note6"><super>(5)</super> Wood-burning appliances certified for use in mobile homes and installed to mobile home installation standards are considered non-NAFFVA and Sentence 9.32.4.1.(1) does not apply to them.</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note1">Notes to Table A-9.32.4.1.(1)B:</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note2"><super>(1)</super> Thermal buoyancy chimneys must be within the heated envelope of the house to provide acceptable venting performance.</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note3"><super>(2)</super> Sealed combustion kits can be added to oil-fired appliances but they switch to interior combustion air if intake is blocked and rely on barometrically dampered thermal buoyancy chimneys so they are considered NAFFVA.</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note4"><super>(3)</super> Oil-fired HWT, boilers and furnaces equipped with blocked vent switches.</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note5"><super>(4)</super> Mechanical room must be air-barriered from remainder of house with no access from within house. Room must be lined with panel products with sealed joints and all pipe and wire penetrations sealed. Effectively, the room must be finished before equipment is installed and holes drilled for pipes and wires. This option is not available for forced air furnaces as it is not possible to effectively seal the ducts.</note>
+                       <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note6"><super>(5)</super> Wood-burning appliances certified for use in mobile homes and installed to mobile home installation standards are considered non-NAFFVA and Sentence 9.32.4.1.(1) does not apply to them.</note>
                      </table-notes>
                    </table>
                  </content>
@@ -7616,7 +7616,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 description="Amend Notes to Part 9 Housing and Small Buildings, A-9.36.1.3.(6) Exemptions (numbering) by striking out '9.36.1.3.(6)' and substituting '9.36.1.3.(5)'">
        <target type="canonical-id" id="nbc.divBV2.part9.appnote217"/>
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <application-note xml:id="nbc.divBV2.part9.appnote217"
                              vendor-id="en001729"
                              refs="es006858"
@@ -7630,7 +7630,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                  <content>
                    <number>9.36.1.3.(5)</number>
                    <title>Exemptions</title>
-                   <paragraph xml:id="bc.divBV2.part9.appnote217.para1">Examples of buildings and spaces that are exempted from the requirements of <ref type="internal"
+                   <paragraph xml:id="nbc.divBV2.part9.appnote217.para1">Examples of buildings and spaces that are exempted from the requirements of <ref type="internal"
                            target="nbc.divBV2.part9.sect37"
                            display-type="long"/> include seasonally heated buildings, storage and parking garages, small service buildings or service rooms and unconditioned spaces in buildings and unconditioned buildings such as storage warehouses. However, note that, where a building envelope assembly of an exempted building is adjacent to a conditioned space, this assembly must meet the requirements of <ref type="internal"
                            target="nbc.divBV2.part9.sect37"
@@ -7657,7 +7657,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-159" sequence="4127"
                 description="Amend Sentence 10.2.3.2.(1) by adding '(TEUI)' after 'total energy use intensity', and striking out 'kWh/(m² • year)' and substituting 'kWh/m²/year'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art2.sent1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art2.sent1"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -7685,7 +7685,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-160" sequence="4128"
                 description="Amend Sentence 10.2.3.2.(2) by adding '(TEDI)' after 'thermal energy demand intensity', and striking out 'kWh/(m² • year)' and substituting 'kWh/m²/year'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art2.sent2"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art2.sent2"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -7714,10 +7714,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-161" sequence="4129"
                 description="Amend Table 10.2.3.3.-A (Energy Performance Requirements for Schools Other than Colleges) by striking out 'kWh/(m²•year)' and substituting 'kWh/m²/year' in both columns, striking out 'Equipment and Systems -', and striking out 'Building Envelope -'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art3.table1.rowh1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art3.table1.rowh1"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect2.subsect3.art3.table1.rowh1" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table1.rowh1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7744,10 +7744,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-162" sequence="4130"
                 description="Amend Table 10.2.3.3.-B (Energy Performance Requirements for Libraries) by striking out 'kWh/(m²•year)' and substituting 'kWh/m²/year' in both columns, striking out 'Equipment and Systems -', and striking out 'Building Envelope -'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art3.table2.rowh1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art3.table2.rowh1"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect2.subsect3.art3.table2.rowh1" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table2.rowh1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7774,10 +7774,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-163" sequence="4131"
                 description="Amend Table 10.2.3.3.-C (Energy Performance Requirements for Colleges) by striking out 'kWh/(m²•year)' and substituting 'kWh/m²/year' in both columns, striking out 'Equipment and Systems -', and striking out 'Building Envelope -'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art3.table3.rowh1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art3.table3.rowh1"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect2.subsect3.art3.table3.rowh1" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table3.rowh1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7804,10 +7804,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-164" sequence="4132"
                 description="Amend Table 10.2.3.3.-D (Energy Performance Requirements for Recreation Centres) by striking out 'kWh/(m²•year)' and substituting 'kWh/m²/year' in both columns, striking out 'Equipment and Systems -', and striking out 'Building Envelope -'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art3.table4.rowh1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art3.table4.rowh1"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect2.subsect3.art3.table4.rowh1" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table4.rowh1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7834,10 +7834,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-165" sequence="4133"
                 description="Amend Table 10.2.3.3.-E (Energy Performance Requirements for Hospitals) by striking out 'kWh/(m²•year)' and substituting 'kWh/m²/year' in both columns, striking out 'Equipment and Systems -', and striking out 'Building Envelope -'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art3.table5.rowh1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art3.table5.rowh1"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect2.subsect3.art3.table5.rowh1" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table5.rowh1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7864,10 +7864,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-166" sequence="4134"
                 description="Amend Table 10.2.3.3.-F (Energy Performance Requirements for Care Centres) by striking out 'kWh/(m²•year)' and substituting 'kWh/m²/year' in both columns, striking out 'Equipment and Systems -', and striking out 'Building Envelope -'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art3.table6.rowh1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art3.table6.rowh1"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect2.subsect3.art3.table6.rowh1" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table6.rowh1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7895,10 +7895,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-167" sequence="4135"
                 description="Amend Table 10.2.3.3.-G (Energy Performance Requirements for MURBs - 3 Storeys or Less) by striking out 'kWh/(m²•year)' and substituting 'kWh/m²/year' in both columns, striking out 'Equipment and Systems -', and striking out 'Building Envelope -'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art3.table7.rowh1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art3.table7.rowh1"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect2.subsect3.art3.table7.rowh1" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table7.rowh1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7927,10 +7927,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-168" sequence="4136"
                 description="Amend Table 10.2.3.3.-H (Energy Performance Requirements for MURBs - 4 Storeys or More) by striking out 'kWh/(m²•year)' and substituting 'kWh/m²/year' in both columns, striking out 'Equipment and Systems -', and striking out 'Building Envelope -'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art3.table8.rowh1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art3.table8.rowh1"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect2.subsect3.art3.table8.rowh1" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table8.rowh1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7958,10 +7958,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-169" sequence="4137"
                 description="Amend Table 10.2.3.3.-I (Energy Performance Requirements for Retail and Service Buildings) by striking out 'kWh/(m²•year)' and substituting 'kWh/m²/year' in both columns, striking out 'Equipment and Systems -', and striking out 'Building Envelope -'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art3.table9.rowh1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art3.table9.rowh1"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect2.subsect3.art3.table9.rowh1" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table9.rowh1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -7989,10 +7989,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-170" sequence="4138"
                 description="Amend Table 10.2.3.3.-J (Energy Performance Requirements for Office Buildings) by striking out 'kWh/(m²•year)' and substituting 'kWh/m²/year' in both columns, striking out 'Equipment and Systems -', and striking out 'Building Envelope -'">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art3.table10.rowh1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art3.table10.rowh1"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect2.subsect3.art3.table10.rowh1" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table10.rowh1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -8019,10 +8019,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-171" sequence="4139"
                 description="Amend Clause 10.2.3.5.(1)(c) by repealing and substituting new text about ASTM E 3158 standard">
-       <target type="canonical-id" id="bc.divB.part10.sect2.subsect3.art5.sent1.clause3"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect2.subsect3.art5.sent1.clause3"/>
        <replace preserve-references="false">
-         <new-content>
-           <clause xml:id="bc.divB.part10.sect2.subsect3.art5.sent1.clause3" letter="c" revised="yes">
+         <new-content source="bc">
+           <clause xml:id="nbc.divB.part10.sect2.subsect3.art5.sent1.clause3" letter="c" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -8046,7 +8046,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-172" sequence="4140"
                 description="Amend Clause 10.3.1.1.(1)(a) by striking out 'major occupancies' and substituting 'major occupancies'">
-       <target type="canonical-id" id="bc.divB.part10.sect3.subsect1.art1.sent1.clause1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect3.subsect1.art1.sent1.clause1"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -8062,7 +8062,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-173" sequence="4141"
                 description="Amend Sentence 10.3.1.2.(2) by striking out 'kgCO2e' and substituting 'kgCO2e'">
-       <target type="canonical-id" id="bc.divB.part10.sect3.subsect1.art2.sent2"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect3.subsect1.art2.sent2"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -8078,7 +8078,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-174" sequence="4142"
                 description="Amend Sentence 10.3.1.2.(3) by striking out 'CO2e' and substituting 'CO2e'">
-       <target type="canonical-id" id="bc.divB.part10.sect3.subsect1.art2.sent3"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect3.subsect1.art2.sent3"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -8094,10 +8094,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-175" sequence="4143"
                 description="Amend Table 10.3.1.3. (Greenhouse Gas Emissions) by striking out 'kgCO2e/m²/year' and substituting 'kgCO2e/m²/year'">
-       <target type="canonical-id" id="bc.divB.part10.sect3.subsect1.art3.table1.rowh1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect3.subsect1.art3.table1.rowh1"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect3.subsect1.art3.table1.rowh1" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect3.subsect1.art3.table1.rowh1" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -8122,7 +8122,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-176" sequence="4144"
                 description="Amend Clause 10.3.1.3.(2)(a) by striking out 'kg CO2e/kWh' and substituting 'kgCO2e/kWh'">
-       <target type="canonical-id" id="bc.divB.part10.sect3.subsect1.art3.sent2.clause1"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect3.subsect1.art3.sent2.clause1"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -8138,7 +8138,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-177" sequence="4145"
                 description="Amend Clause 10.3.1.3.(2)(b) by striking out 'kg CO2e/kWh' and substituting 'kgCO2e/kWh'">
-       <target type="canonical-id" id="bc.divB.part10.sect3.subsect1.art3.sent2.clause2"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect3.subsect1.art3.sent2.clause2"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -8154,7 +8154,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-178" sequence="4146"
                 description="Amend Clause 10.3.1.3.(2)(c) by striking out 'kg CO2e/kWh' and substituting 'kgCO2e/kWh'">
-       <target type="canonical-id" id="bc.divB.part10.sect3.subsect1.art3.sent2.clause3"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect3.subsect1.art3.sent2.clause3"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -8170,7 +8170,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-179" sequence="4147"
                 description="Amend Clause 10.3.1.3.(2)(d) by striking out 'kg CO2e/kWh' and substituting 'kgCO2e/kWh'">
-       <target type="canonical-id" id="bc.divB.part10.sect3.subsect1.art3.sent2.clause4"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect3.subsect1.art3.sent2.clause4"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -8186,7 +8186,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-180" sequence="4148"
                 description="Amend Clause 10.3.1.3.(2)(e) by striking out 'kg CO2e/kWh' and substituting 'kgCO2e/kWh'">
-       <target type="canonical-id" id="bc.divB.part10.sect3.subsect1.art3.sent2.clause5"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect3.subsect1.art3.sent2.clause5"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -8202,7 +8202,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-181" sequence="4149"
                 description="Amend Clause 10.3.1.3.(2)(f) by striking out 'kg CO2e/kWh' and substituting 'kgCO2e/kWh'">
-       <target type="canonical-id" id="bc.divB.part10.sect3.subsect1.art3.sent2.clause6"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect3.subsect1.art3.sent2.clause6"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -8218,7 +8218,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-182" sequence="4150"
                 description="Amend Clause 10.3.1.3.(2)(g) by striking out 'kg CO2e/kWh' and substituting 'kgCO2e/kWh'">
-       <target type="canonical-id" id="bc.divB.part10.sect3.subsect1.art3.sent2.clause7"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect3.subsect1.art3.sent2.clause7"/>
        <modify>
          <text-change xpath-within-target="text()">
            <find-replace>
@@ -8234,10 +8234,10 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
      <!-- ================================================================== -->
      <amendment id="bc-mo-2024-06-183" sequence="4151"
                 description="Amend Table 10.4.1.1. by striking out 'F85, F86,'">
-       <target type="canonical-id" id="bc.divB.part10.sect4.subsect1.art1.table1.row2"/>
+       <target type="canonical-id" id="nbc.divB.part10.sect4.subsect1.art1.table1.row2"/>
        <replace preserve-references="false">
-         <new-content>
-           <row xml:id="bc.divB.part10.sect4.subsect1.art1.table1.row2" revised="yes">
+         <new-content source="bc">
+           <row xml:id="nbc.divB.part10.sect4.subsect1.art1.table1.row2" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">
                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -8264,7 +8264,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                 description="Amend Appendix C, Climatic and Seismic Information for Building Design in Canada, by striking out 'for the 2010 edition of the Code' in the ninth paragraph under 'Wind Effects'">
        <target type="canonical-id" id="nbc.divB.appendixC.div18.para9"/>
        <replace preserve-references="false">
-         <new-content>
+         <new-content source="bc">
            <paragraph xml:id="nbc.divB.appendixC.div18.para9" revised="yes">
              <revision-history>
                <original effective-date="2020-12-01">

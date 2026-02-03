@@ -263,6 +263,7 @@
             <xsl:when test="$replace-amendment">
                 <xsl:apply-templates select="$replace-amendment/replace/new-content/*" mode="bc-to-canonical">
                     <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                    <xsl:with-param name="source-value" select="$replace-amendment/replace/new-content/@source" tunnel="yes"/>
                 </xsl:apply-templates>
             </xsl:when>
 
@@ -404,6 +405,7 @@
             <xsl:sort select="xs:integer(@sequence)"/>
             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:for-each>
 
@@ -412,6 +414,7 @@
             <xsl:sort select="xs:integer(@sequence)"/>
             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:for-each>
 
@@ -429,6 +432,7 @@
                     <xsl:sort select="xs:integer(@sequence)"/>
                     <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                         <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                        <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                     </xsl:apply-templates>
                 </xsl:for-each>
             </xsl:if>
@@ -510,6 +514,7 @@
             <xsl:sort select="xs:integer(@sequence)"/>
             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:for-each>
     </xsl:template>
@@ -526,6 +531,7 @@
         <!-- Insert the main content -->
         <xsl:apply-templates select="$amendment/insert/new-content/*" mode="bc-to-canonical">
             <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+            <xsl:with-param name="source-value" select="$amendment/insert/new-content/@source" tunnel="yes"/>
         </xsl:apply-templates>
         
         <!-- Check for dependent amendments that reference the inserted content -->
@@ -582,6 +588,7 @@
                             <xsl:sort select="xs:integer(@sequence)"/>
                             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                             </xsl:apply-templates>
                         </xsl:for-each>
 
@@ -590,6 +597,7 @@
                             <xsl:sort select="xs:integer(@sequence)"/>
                             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                             </xsl:apply-templates>
                         </xsl:for-each>
 
@@ -602,6 +610,7 @@
                             <xsl:sort select="xs:integer(@sequence)"/>
                             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                             </xsl:apply-templates>
                         </xsl:for-each>
 
@@ -610,6 +619,7 @@
                             <xsl:sort select="xs:integer(@sequence)"/>
                             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                             </xsl:apply-templates>
                         </xsl:for-each>
                     </xsl:for-each>
@@ -624,6 +634,7 @@
                 <xsl:sort select="xs:integer(@sequence)"/>
                 <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                     <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                    <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                 </xsl:apply-templates>
             </xsl:for-each>
         </xsl:copy>
@@ -663,6 +674,7 @@
                             <xsl:sort select="xs:integer(@sequence)"/>
                             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                             </xsl:apply-templates>
                         </xsl:for-each>
 
@@ -671,6 +683,7 @@
                             <xsl:sort select="xs:integer(@sequence)"/>
                             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                             </xsl:apply-templates>
                         </xsl:for-each>
 
@@ -679,6 +692,7 @@
                             <xsl:sort select="xs:integer(@sequence)"/>
                             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                             </xsl:apply-templates>
                         </xsl:for-each>
 
@@ -691,6 +705,7 @@
                             <xsl:sort select="xs:integer(@sequence)"/>
                             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                             </xsl:apply-templates>
                         </xsl:for-each>
 
@@ -699,6 +714,7 @@
                             <xsl:sort select="xs:integer(@sequence)"/>
                             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                             </xsl:apply-templates>
                         </xsl:for-each>
 
@@ -724,6 +740,7 @@
                 <xsl:sort select="xs:integer(@sequence)"/>
                 <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                     <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                    <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                 </xsl:apply-templates>
             </xsl:for-each>
         </xsl:copy>
@@ -946,6 +963,7 @@
 
     <xsl:template match="*" mode="bc-to-canonical">
         <xsl:param name="source-document" tunnel="yes"/>
+        <xsl:param name="source-value" tunnel="yes" select="''"/>
         
         <xsl:variable name="new-id" select="@xml:id"/>
         
@@ -960,6 +978,16 @@
             </xsl:if>
 
             <xsl:apply-templates select="@*[not(name() = 'xml:id')]" mode="bc-to-canonical"/>
+            
+            <!-- Add source attribute if provided via tunnel parameter and this is a structural element -->
+            <xsl:if test="$source-value != '' and 
+                          (self::division or self::part or self::section or 
+                           self::subsection or self::article or self::sentence or 
+                           self::clause or self::subclause or self::table or 
+                           self::figure or self::application-note or self::note-division or
+                           self::spectables)">
+                <xsl:attribute name="source" select="$source-value"/>
+            </xsl:if>
             
             <!-- Always process children through process-new-content-children to handle delete amendments -->
             <xsl:call-template name="process-new-content-children">
@@ -988,6 +1016,7 @@
             <xsl:sort select="xs:integer(@sequence)"/>
             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:for-each>
         
@@ -1006,6 +1035,7 @@
                     <xsl:sort select="xs:integer(@sequence)"/>
                     <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                         <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                        <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
                     </xsl:apply-templates>
                 </xsl:for-each>
             </xsl:if>
@@ -1035,6 +1065,7 @@
             <xsl:sort select="xs:integer(@sequence)"/>
             <xsl:apply-templates select="insert/new-content/*" mode="bc-to-canonical">
                 <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+                <xsl:with-param name="source-value" select="insert/new-content/@source" tunnel="yes"/>
             </xsl:apply-templates>
         </xsl:for-each>
     </xsl:template>
@@ -1051,6 +1082,7 @@
         <!-- Insert the main content -->
         <xsl:apply-templates select="$amendment/insert/new-content/*" mode="bc-to-canonical">
             <xsl:with-param name="source-document" select="$source-document" tunnel="yes"/>
+            <xsl:with-param name="source-value" select="$amendment/insert/new-content/@source" tunnel="yes"/>
         </xsl:apply-templates>
         
         <!-- Check for dependent amendments that reference the inserted content -->

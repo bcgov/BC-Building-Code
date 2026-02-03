@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <bc-overlay
     id="bc-diva-amendments-2023"
     version="1.0"
@@ -36,15 +36,15 @@
                 id="nbc.divA.part1.sect1.subsect1.art1.sent1"
             />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <sentence
-                        xml:id="bc.divA.part1.sect1.subsect1.art1.sent1"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1"
                         number="1"
                     >
                         <text
                         >This Code applies to any one or more of the following:</text>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause1"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause1"
                             letter="a"
                         >
                             <text>the design and construction of a new <ref
@@ -53,7 +53,7 @@
                                 >building</ref>,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause2"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause2"
                             letter="b"
                         >
                             <text>the <ref
@@ -65,7 +65,7 @@
                                 >building</ref>,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause3"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause3"
                             letter="c"
                         >
                             <text>a change in <ref
@@ -77,7 +77,7 @@
                                 >building</ref>,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause4"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause4"
                             letter="d"
                         >
                             <text>an <ref
@@ -89,7 +89,7 @@
                                 >building</ref>,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause5"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause5"
                             letter="e"
                         >
                             <text>an addition to any <ref
@@ -98,7 +98,7 @@
                                 >building</ref>,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause6"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause6"
                             letter="f"
                         >
                             <text>the demolition of any <ref
@@ -107,7 +107,7 @@
                                 >building</ref>,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause7"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause7"
                             letter="g"
                         >
                             <text>the reconstruction of any <ref
@@ -116,7 +116,7 @@
                                 >building</ref> that has been damaged by fire, earthquake or other cause,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause8"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause8"
                             letter="h"
                         >
                             <text>the correction of an <ref
@@ -128,7 +128,7 @@
                                 >building</ref>,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause9"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause9"
                             letter="i"
                         >
                             <text>all parts of any <ref
@@ -140,7 +140,7 @@
                                 >occupancy</ref>,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause10"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause10"
                             letter="j"
                         >
                             <text
@@ -149,13 +149,13 @@
                                     target="bldng"
                                 >building</ref></text>
                             <subclause
-                                xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause10.subclause1"
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause10.subclause1"
                                 number="1"
                             >
                                 <text>that remain after a demolition,</text>
                             </subclause>
                             <subclause
-                                xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause10.subclause2"
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause10.subclause2"
                                 number="2"
                             >
                                 <text
@@ -165,7 +165,7 @@
                                     >alterations</ref>, or</text>
                             </subclause>
                             <subclause
-                                xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause10.subclause3"
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause10.subclause3"
                                 number="3"
                             >
                                 <text
@@ -173,7 +173,7 @@
                             </subclause>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause11"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause11"
                             letter="k"
                         >
                             <text
@@ -183,7 +183,7 @@
                                 >alteration</ref> of materials or equipment regulated by this Code,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause12"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause12"
                             letter="l"
                         >
                             <text
@@ -193,7 +193,7 @@
                                 >building</ref> during and after relocation,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause13"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause13"
                             letter="m"
                         >
                             <text>safety during construction of a <ref
@@ -202,7 +202,7 @@
                                 >building</ref>, including protection of the public,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause14"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause14"
                             letter="n"
                         >
                             <text>the design, installation, extension, <ref
@@ -214,7 +214,7 @@
                                 >plumbing systems</ref>, and</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent1.clause15"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause15"
                             letter="o"
                         >
                             <text>the <ref
@@ -245,14 +245,14 @@
                 id="nbc.divA.part1.sect1.subsect1.art1.sent2"
             />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <sentence
-                        xml:id="bc.divA.part1.sect1.subsect1.art1.sent2"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2"
                         number="2"
                     >
                         <text>This Code does not apply to the following:</text>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause1"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause1"
                             letter="a"
                         >
                             <text><ref
@@ -264,7 +264,7 @@
                                 >street</ref> or a public transit right of way,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause2"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause2"
                             letter="b"
                         >
                             <text
@@ -274,7 +274,7 @@
                                 >buildings</ref>,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause3"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause3"
                             letter="c"
                         >
                             <text>mechanical or other equipment and <ref
@@ -283,14 +283,14 @@
                                 >appliances</ref> not specifically regulated in these regulations,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause4"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause4"
                             letter="d"
                         >
                             <text
                             >flood control and hydro electric dams and structures,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause5"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause5"
                             letter="e"
                         >
                             <text>accessory <ref
@@ -304,7 +304,7 @@
                                 >building area</ref> that do not create a hazard,</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause6"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause6"
                             letter="f"
                         >
                             <text>with the permission of the <ref
@@ -315,13 +315,13 @@
                                     target="bldng"
                                 >buildings</ref> including</text>
                             <subclause
-                                xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause6.subclause1"
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause6.subclause1"
                                 number="1"
                             >
                                 <text>construction site offices,</text>
                             </subclause>
                             <subclause
-                                xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause6.subclause2"
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause6.subclause2"
                                 number="2"
                             >
                                 <text>seasonal storage <ref
@@ -330,26 +330,26 @@
                                     >buildings</ref>,</text>
                             </subclause>
                             <subclause
-                                xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause6.subclause3"
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause6.subclause3"
                                 number="3"
                             >
                                 <text>special events facilities,</text>
                             </subclause>
                             <subclause
-                                xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause6.subclause4"
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause6.subclause4"
                                 number="4"
                             >
                                 <text>emergency facilities, and</text>
                             </subclause>
                             <subclause
-                                xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause6.subclause5"
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause6.subclause5"
                                 number="5"
                             >
                                 <text>similar structures,</text>
                             </subclause>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause7"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause7"
                             letter="g"
                         >
                             <text
@@ -359,7 +359,7 @@
                                 >appliances</ref>, and</text>
                         </clause>
                         <clause
-                            xml:id="bc.divA.part1.sect1.subsect1.art1.sent2.clause8"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent2.clause8"
                             letter="h"
                         >
                             <text
@@ -388,9 +388,9 @@
                 id="nbc.divA.part1.sect1.subsect1.art1.sent3"
             />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <sentence
-                        xml:id="bc.divA.part1.sect1.subsect1.art1.sent3"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.sent3"
                         number="3"
                     >
                         <text
@@ -424,9 +424,9 @@
                 reference-id="nbc.divA.part1.sect1.subsect1.art1.sent3"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <sentence
-                        xml:id="bc.divA.part1.sect1.subsect1.art1.sent4"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.sent4"
                         number="4"
                     >
                         <text><ref
@@ -435,7 +435,7 @@
                             >Farm buildings</ref> shall conform to the requirements in the National Farm Building Code of Canada 1995.</text>
                     </sentence>
                     <sentence
-                        xml:id="bc.divA.part1.sect1.subsect1.art1.sent5"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.sent5"
                         number="5"
                     >
                         <text>For <ref
@@ -443,22 +443,22 @@
                                 target="hrtg-bldng"
                             >heritage buildings</ref>, the Alternate Compliance Methods for Heritage Buildings in <ref
                                 type="internal"
-                                target="bc.divA.part1.sect1.subsect1.art1.table1"
+                                target="nbc.divA.part1.sect1.subsect1.art1.table1"
                                 display-type="long"
                             /> may be substituted for requirements contained elsewhere in this Code. (See <ref
                                 type="internal"
-                                target="bc.divA.part1.sect5.appnote3"
+                                target="nbc.divA.part1.sect5.appnote3"
                                 display-type="short"
                             />.)<!-- TODO: Verify note reference for A-1.1.1.1.(5) --></text>
                     </sentence>
-                    <table xml:id="bc.divA.part1.sect1.subsect1.art1.table1">
+                    <table xml:id="nbc.divA.part1.sect1.subsect1.art1.table1">
                         <title
                         >Alternate Compliance Methods for Heritage Buildings
                             <note
-                                xml:id="bc.divA.part1.sect1.subsect1.art1.table1.note1"
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.note1"
                             >Forming Part of <ref
                                     type="internal"
-                                    target="bc.divA.part1.sect1.subsect1.art1.sent5"
+                                    target="nbc.divA.part1.sect1.subsect1.art1.sent5"
                                     display-type="long"
                                 /></note>
                         </title>
@@ -468,7 +468,7 @@
                             <colspec colname="col3" colwidth="2*" />
                             <thead>
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.rowh1"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.rowh1"
                                 >
                                     <entry>No.</entry>
                                     <entry
@@ -479,7 +479,7 @@
                             <tbody>
                                 <!-- Row 1: Fire Separations - F1 occupancies -->
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row1"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row1"
                                 >
                                     <entry>1</entry>
                                     <entry><emphasis
@@ -522,7 +522,7 @@
 
                                 <!-- Row 2: Fire Separations - 30 min acceptable -->
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row2"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row2"
                                 >
                                     <entry>2</entry>
                                     <entry><emphasis
@@ -562,7 +562,7 @@
 
                                 <!-- Row 3: Noncombustible Construction -->
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row3"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row3"
                                 >
                                     <entry>3</entry>
                                     <entry><emphasis
@@ -613,7 +613,7 @@ All materials used in <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row4"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row4"
                                 >
                                     <entry>4</entry>
                                     <entry><emphasis
@@ -643,7 +643,7 @@ Where a material, assembly of materials or structural member is required to have
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row5"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row5"
                                 >
                                     <entry>5</entry>
                                     <entry>Rating of Supporting Construction
@@ -677,7 +677,7 @@ Supporting assemblies to have <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row6"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row6"
                                 >
                                     <entry>6</entry>
                                     <entry>Continuity of <emphasis
@@ -714,7 +714,7 @@ Supporting assemblies to have <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row7"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row7"
                                 >
                                     <entry>7</entry>
                                     <entry>Wired Glass
@@ -747,7 +747,7 @@ Supporting assemblies to have <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row8"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row8"
                                 >
                                     <entry>8</entry>
                                     <entry><emphasis
@@ -797,7 +797,7 @@ Supporting assemblies to have <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row9"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row9"
                                 >
                                     <entry>9</entry>
                                     <entry><emphasis
@@ -847,7 +847,7 @@ Supporting assemblies to have <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row10"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row10"
                                 >
                                     <entry>10</entry>
                                     <entry>Spatial Separation
@@ -888,7 +888,7 @@ The area of <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row11"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row11"
                                 >
                                     <entry>11</entry>
                                     <entry>Construction of <emphasis
@@ -934,7 +934,7 @@ The <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row12"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row12"
                                 >
                                     <entry>12</entry>
                                     <entry>Roof Covering Rating
@@ -949,7 +949,7 @@ Class A, B or C roof covering in conformance with CAN/ ULC-S107, "Fire Tests of 
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row13"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row13"
                                 >
                                     <entry>13</entry>
                                     <entry><emphasis
@@ -973,7 +973,7 @@ Class A, B or C roof covering in conformance with CAN/ ULC-S107, "Fire Tests of 
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row14"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row14"
                                 >
                                     <entry>14</entry>
                                     <entry><emphasis
@@ -1082,7 +1082,7 @@ Class A, B or C roof covering in conformance with CAN/ ULC-S107, "Fire Tests of 
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row15"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row15"
                                 >
                                     <entry>15</entry>
                                     <entry>Separation of <emphasis
@@ -1129,7 +1129,7 @@ Class A, B or C roof covering in conformance with CAN/ ULC-S107, "Fire Tests of 
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row16"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row16"
                                 >
                                     <entry>16</entry>
                                     <entry>Corridor <ref
@@ -1175,7 +1175,7 @@ Class A, B or C roof covering in conformance with CAN/ ULC-S107, "Fire Tests of 
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row17"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row17"
                                 >
                                     <entry>17</entry>
                                     <entry>Corridor Width
@@ -1215,7 +1215,7 @@ Class A, B or C roof covering in conformance with CAN/ ULC-S107, "Fire Tests of 
 
                                 <!-- Row 18: Door Swing -->
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row18"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row18"
                                 >
                                     <entry>18</entry>
                                     <entry>Door Swing
@@ -1255,7 +1255,7 @@ Doors required to swing in the direction of <emphasis
 
                                 <!-- Row 19: Stairs, Ramps, Handrails and Guards -->
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row19"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row19"
                                 >
                                     <entry>19</entry>
                                     <entry>Stairs, <emphasis
@@ -1289,7 +1289,7 @@ Doors required to swing in the direction of <emphasis
 
                                 <!-- Row 20: Transparent Doors and Panels -->
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row20"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row20"
                                 >
                                     <entry>20</entry>
                                     <entry>Transparent Doors and Panels
@@ -1311,7 +1311,7 @@ Safety glass required.</entry>
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row21"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row21"
                                 >
                                     <entry>21</entry>
                                     <entry>Dead-end Corridors
@@ -1353,7 +1353,7 @@ Dead-end corridors are permitted to a maximum length of 6 m.</entry>
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row22"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row22"
                                 >
                                     <entry>22</entry>
                                     <entry><emphasis
@@ -1405,7 +1405,7 @@ Dead-end corridors are permitted to a maximum length of 6 m.</entry>
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row23"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row23"
                                 >
                                     <entry>23</entry>
                                     <entry>Reduction of <emphasis
@@ -1444,7 +1444,7 @@ Swinging doors in their swing shall not reduce the effective width of <emphasis
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row24"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row24"
                                 >
                                     <entry>24</entry>
                                     <entry><emphasis
@@ -1520,7 +1520,7 @@ Swinging doors in their swing shall not reduce the effective width of <emphasis
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row25"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row25"
                                 >
                                     <entry>25</entry>
                                     <entry><emphasis
@@ -1555,7 +1555,7 @@ Rooms adjacent to the lobby are required to be separated by a <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row26"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row26"
                                 >
                                     <entry>26</entry>
                                     <entry>Rooms Opening into <emphasis
@@ -1588,7 +1588,7 @@ Rooms adjacent to the lobby are required to be separated by a <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row27"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row27"
                                 >
                                     <entry>27</entry>
                                     <entry>Illumination of <emphasis
@@ -1625,7 +1625,7 @@ Rooms adjacent to the lobby are required to be separated by a <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row28"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row28"
                                 >
                                     <entry>28</entry>
                                     <entry>Clearance from <emphasis
@@ -1650,7 +1650,7 @@ Stair risers shall not be closer than 300 mm from an <emphasis
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row29"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row29"
                                 >
                                     <entry>29</entry>
                                     <entry>Fire Escapes
@@ -1682,7 +1682,7 @@ Fire escapes are required to conform to <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row30"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row30"
                                 >
                                     <entry>30</entry>
                                     <entry>Fire Escape Construction
@@ -1708,7 +1708,7 @@ Fire escapes are required to conform to <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row31"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row31"
                                 >
                                     <entry>31</entry>
                                     <entry>Protection of Fire Escapes
@@ -1740,7 +1740,7 @@ Openings in the exterior wall adjacent to the fire escape are required to be pro
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row32"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row32"
                                 >
                                     <entry>32</entry>
                                     <entry><emphasis
@@ -1773,7 +1773,7 @@ Openings in the exterior wall adjacent to the fire escape are required to be pro
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row33"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row33"
                                 >
                                     <entry>33</entry>
                                     <entry>Height of Rooms
@@ -1800,7 +1800,7 @@ The height of rooms is required to comply to minimum dimension requirements.</en
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row34"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row34"
                                 >
                                     <entry>34</entry>
                                     <entry>Washroom Requirements
@@ -1832,7 +1832,7 @@ The height of rooms is required to comply to minimum dimension requirements.</en
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row35"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row35"
                                 >
                                     <entry>35</entry>
                                     <entry><emphasis
@@ -1854,7 +1854,7 @@ The height of rooms is required to comply to minimum dimension requirements.</en
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row36"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row36"
                                 >
                                     <entry>36</entry>
                                     <entry
@@ -1875,7 +1875,7 @@ The height of rooms is required to comply to minimum dimension requirements.</en
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table1.row37"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row37"
                                 >
                                     <entry>37</entry>
                                     <entry>Mechanical and <emphasis
@@ -1900,7 +1900,7 @@ Part 6 and Part 7</entry>
                         </tgroup>
                     </table>
                     <sentence
-                        xml:id="bc.divA.part1.sect1.subsect1.art1.sent6"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.sent6"
                         number="6"
                     >
                         <text
@@ -1912,22 +1912,22 @@ Part 6 and Part 7</entry>
                                 target="bldng"
                             >buildings</ref>, the Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite in <ref
                                 type="internal"
-                                target="bc.divA.part1.sect1.subsect1.art1.table2"
+                                target="nbc.divA.part1.sect1.subsect1.art1.table2"
                                 display-type="long"
                             /> may be substituted for requirements contained elsewhere in this Code. (See <ref
                                 type="internal"
-                                target="bc.divA.part1.sect5.appnote4"
+                                target="nbc.divA.part1.sect5.appnote4"
                                 display-type="short"
                             />.)<!-- TODO: Verify note reference for A-1.1.1.1.(6) --></text>
                     </sentence>
-                    <table xml:id="bc.divA.part1.sect1.subsect1.art1.table2">
+                    <table xml:id="nbc.divA.part1.sect1.subsect1.art1.table2">
                         <title
                         >Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite
                             <note
-                                xml:id="bc.divA.part1.sect1.subsect1.art1.table2.note1"
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.note1"
                             >Forming Part of <ref
                                     type="internal"
-                                    target="bc.divA.part1.sect1.subsect1.art1.sent6"
+                                    target="nbc.divA.part1.sect1.subsect1.art1.sent6"
                                     display-type="long"
                                 /></note>
                         </title>
@@ -1937,7 +1937,7 @@ Part 6 and Part 7</entry>
                             <colspec colname="col3" colwidth="2.5*" />
                             <thead>
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table2.rowh1"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.rowh1"
                                 >
                                     <entry>No</entry>
                                     <entry
@@ -1949,7 +1949,7 @@ Part 6 and Part 7</entry>
                             <tbody>
                                 <!-- Row 1: Reinforcement for Grab Bars -->
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table2.row1"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.row1"
                                 >
                                     <entry>1</entry>
                                     <entry>Reinforcement for Grab Bars <ref
@@ -1968,7 +1968,7 @@ One bathroom in a <emphasis
 
                                 <!-- Row 2: Ceiling Heights of Rooms or Spaces -->
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table2.row2"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.row2"
                                 >
                                     <entry>2</entry>
                                     <entry>Ceiling Heights of Rooms or Spaces
@@ -2009,7 +2009,7 @@ Ceiling height shall be not less than 2.1 m over the minimum area required in <r
 
                                 <!-- Row 3: Doorway Opening Sizes -->
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table2.row3"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.row3"
                                 >
                                     <entry>3</entry>
                                     <entry>Doorway Opening Sizes
@@ -2037,7 +2037,7 @@ Doorway openings shall be designed to accommodate swing-type and folding doors n
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table2.row4"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.row4"
                                 >
                                     <entry>4</entry>
                                     <entry>Height over Stairs
@@ -2059,7 +2059,7 @@ The clear height over stairs shall be not less than 1950 mm.</entry>
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table2.row5"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.row5"
                                 >
                                     <entry>5</entry>
                                     <entry
@@ -2115,7 +2115,7 @@ The clear height over stairs shall be not less than 1950 mm.</entry>
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table2.row6"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.row6"
                                 >
                                     <entry>6</entry>
                                     <entry>Openings Near <emphasis
@@ -2159,7 +2159,7 @@ Where an exterior <emphasis style="italic">exit</emphasis> door in one <ref
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table2.row7"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.row7"
                                 >
                                     <entry>7</entry>
                                     <entry
@@ -2183,7 +2183,7 @@ In a house with a <emphasis
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table2.row8"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.row8"
                                 >
                                     <entry>8</entry>
                                     <entry><emphasis
@@ -2214,7 +2214,7 @@ In a house with a <emphasis
                                 </row>
 
                                 <row
-                                    xml:id="bc.divA.part1.sect1.subsect1.art1.table2.row9"
+                                    xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.row9"
                                 >
                                     <entry>9</entry>
                                     <entry>Sound Transmission
@@ -2268,14 +2268,14 @@ Each <ref
                 reference-id="nbc.divA.part1.sect1.subsect1.art1"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <article
-                        xml:id="bc.divA.part1.sect1.subsect1.art2"
+                        xml:id="nbc.divA.part1.sect1.subsect1.art2"
                         number="2"
                     >
                         <title>Application to Existing Buildings</title>
                         <sentence
-                            xml:id="bc.divA.part1.sect1.subsect1.art2.sent1"
+                            xml:id="nbc.divA.part1.sect1.subsect1.art2.sent1"
                             number="1"
                         >
                             <text>Where a <ref
@@ -2289,7 +2289,7 @@ Each <ref
                                     target="bldng"
                                 >building</ref> performance shall not be decreased below a level that already exists. (See <ref
                                     type="internal"
-                                    target="bc.divA.part1.sect5.appnote5"
+                                    target="nbc.divA.part1.sect5.appnote5"
                                     display-type="short"
                                 />.)<!-- TODO: Verify note reference for A-1.1.1.2.(1) --></text>
                         </sentence>
@@ -2316,17 +2316,17 @@ Each <ref
                 reference-id="nbc.divA.part1.sect1.subsect1"
             />
             <insert>
-                <new-content>
-                    <subsection xml:id="bc.divA.part1.sect1.subsect2" number="2">
+                <new-content source="bc">
+                    <subsection xml:id="nbc.divA.part1.sect1.subsect2" number="2">
                         <title>Internal References to this Code</title>
                         <article
-                            xml:id="bc.divA.part1.sect1.subsect2.art1"
+                            xml:id="nbc.divA.part1.sect1.subsect2.art1"
                             number="1"
                         >
                             <title
                             >Book I (General) and Book II (Plumbing Systems) of the Code</title>
                             <sentence
-                                xml:id="bc.divA.part1.sect1.subsect2.art1.sent1"
+                                xml:id="nbc.divA.part1.sect1.subsect2.art1.sent1"
                                 number="1"
                             >
                                 <text
@@ -2334,12 +2334,12 @@ Each <ref
                             </sentence>
                         </article>
                         <article
-                            xml:id="bc.divA.part1.sect1.subsect2.art2"
+                            xml:id="nbc.divA.part1.sect1.subsect2.art2"
                             number="2"
                         >
                             <title>Internal References to the Code</title>
                             <sentence
-                                xml:id="bc.divA.part1.sect1.subsect2.art2.sent1"
+                                xml:id="nbc.divA.part1.sect1.subsect2.art2.sent1"
                                 number="1"
                             >
                                 <text
@@ -2347,16 +2347,16 @@ Each <ref
                             </sentence>
                         </article>
                     </subsection>
-                    <subsection xml:id="bc.divA.part1.sect1.subsect3" number="3">
+                    <subsection xml:id="nbc.divA.part1.sect1.subsect3" number="3">
                         <title>Appendices, Notes and Annotations</title>
                         <article
-                            xml:id="bc.divA.part1.sect1.subsect3.art1"
+                            xml:id="nbc.divA.part1.sect1.subsect3.art1"
                             number="1"
                         >
                             <title
                             >Appendices, Notes and References to Appendices and Notes have No Legal Effect</title>
                             <sentence
-                                xml:id="bc.divA.part1.sect1.subsect3.art1.sent1"
+                                xml:id="nbc.divA.part1.sect1.subsect3.art1.sent1"
                                 number="1"
                             >
                                 <text
@@ -2383,9 +2383,9 @@ Each <ref
                 id="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
             />
             <replace preserve-references="true">
-                <new-content>
+                <new-content source="bc">
                     <clause
-                        xml:id="bc.divA.part1.sect2.subsect1.art1.sent1.clause2"
+                        xml:id="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                         letter="b"
                     >
                         <text>except as required by <ref
@@ -2426,9 +2426,9 @@ Each <ref
                 reference-id="nbc.divA.part1.sect2.subsect1.art1.sent2"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <sentence
-                        xml:id="bc.divA.part1.sect2.subsect1.art1.sent3"
+                        xml:id="nbc.divA.part1.sect2.subsect1.art1.sent3"
                         number="3"
                     >
                         <text
@@ -2455,14 +2455,14 @@ Each <ref
                 reference-id="nbc.divA.part1.sect2.subsect1.art1"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <article
-                        xml:id="bc.divA.part1.sect2.subsect1.art2"
+                        xml:id="nbc.divA.part1.sect2.subsect1.art2"
                         number="2"
                     >
                         <title>Responsibility of Owner</title>
                         <sentence
-                            xml:id="bc.divA.part1.sect2.subsect1.art2.sent1"
+                            xml:id="nbc.divA.part1.sect2.subsect1.art2.sent1"
                             number="1"
                         >
                             <text
@@ -2478,7 +2478,7 @@ Each <ref
                                 >building</ref>.</text>
                         </sentence>
                         <sentence
-                            xml:id="bc.divA.part1.sect2.subsect1.art2.sent2"
+                            xml:id="nbc.divA.part1.sect2.subsect1.art2.sent2"
                             number="2"
                         >
                             <text>The <ref
@@ -2492,20 +2492,20 @@ Each <ref
                                     target="thrt-hvng-jrsdctn"
                                 >authority having jurisdiction</ref></text>
                             <clause
-                                xml:id="bc.divA.part1.sect2.subsect1.art2.sent2.clause1"
+                                xml:id="nbc.divA.part1.sect2.subsect1.art2.sent2.clause1"
                                 letter="a"
                             >
                                 <text>granting a building permit,</text>
                             </clause>
                             <clause
-                                xml:id="bc.divA.part1.sect2.subsect1.art2.sent2.clause2"
+                                xml:id="nbc.divA.part1.sect2.subsect1.art2.sent2.clause2"
                                 letter="b"
                             >
                                 <text
                                 >approving drawings or specifications, or</text>
                             </clause>
                             <clause
-                                xml:id="bc.divA.part1.sect2.subsect1.art2.sent2.clause3"
+                                xml:id="nbc.divA.part1.sect2.subsect1.art2.sent2.clause3"
                                 letter="c"
                             >
                                 <text>carrying out inspections.</text>
@@ -2533,16 +2533,16 @@ Each <ref
                 reference-id="nbc.divA.part1.sect2.subsect2"
             />
             <insert>
-                <new-content>
-                    <subsection xml:id="bc.divA.part1.sect2.subsect3" number="3">
+                <new-content source="bc">
+                    <subsection xml:id="nbc.divA.part1.sect2.subsect3" number="3">
                         <title>Installation of Plumbing Systems</title>
                         <article
-                            xml:id="bc.divA.part1.sect2.subsect3.art1"
+                            xml:id="nbc.divA.part1.sect2.subsect3.art1"
                             number="1"
                         >
                             <title>Personnel Performing Plumbing Work</title>
                             <sentence
-                                xml:id="bc.divA.part1.sect2.subsect3.art1.sent1"
+                                xml:id="nbc.divA.part1.sect2.subsect3.art1.sent1"
                                 number="1"
                             >
                                 <text
@@ -2551,25 +2551,25 @@ Each <ref
                                         target="plmbng-sstm"
                                     >plumbing system</ref> shall</text>
                                 <clause
-                                    xml:id="bc.divA.part1.sect2.subsect3.art1.sent1.clause1"
+                                    xml:id="nbc.divA.part1.sect2.subsect3.art1.sent1.clause1"
                                     letter="a"
                                 >
                                     <text
                                     >possess a Canadian tradesperson's qualification certification as a plumber,</text>
                                 </clause>
                                 <clause
-                                    xml:id="bc.divA.part1.sect2.subsect3.art1.sent1.clause2"
+                                    xml:id="nbc.divA.part1.sect2.subsect3.art1.sent1.clause2"
                                     letter="b"
                                 >
                                     <text
                                     >be an indentured apprentice supervised by a journeyperson who meets the criteria set out in <ref
                                             type="internal"
-                                            target="bc.divA.part1.sect2.subsect3.art1.sent1.clause1"
+                                            target="nbc.divA.part1.sect2.subsect3.art1.sent1.clause1"
                                             display-type="long"
                                         />, or</text>
                                 </clause>
                                 <clause
-                                    xml:id="bc.divA.part1.sect2.subsect3.art1.sent1.clause3"
+                                    xml:id="nbc.divA.part1.sect2.subsect3.art1.sent1.clause3"
                                     letter="c"
                                 >
                                     <text
@@ -2597,14 +2597,14 @@ Each <ref
                 id="nbc.divA.part1.sect3.subsect3.art1"
             />
             <replace preserve-references="true">
-                <new-content>
+                <new-content source="bc">
                     <article
-                        xml:id="bc.divA.part1.sect3.subsect3.art1"
+                        xml:id="nbc.divA.part1.sect3.subsect3.art1"
                         number="1"
                     >
                         <title>Application of Parts 1, 7, 8 and 10</title>
                         <sentence
-                            xml:id="bc.divA.part1.sect3.subsect3.art1.sent1"
+                            xml:id="nbc.divA.part1.sect3.subsect3.art1.sent1"
                             number="1"
                         >
                             <text
@@ -2639,7 +2639,7 @@ Each <ref
                 reference-id="cc-t-xt"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="bc-cc-t-ccbl">
                         <term>Access or Accessible</term>
                         <definition
@@ -2669,7 +2669,7 @@ Each <ref
                 reference-id="cc-t-xt"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="bc-dptbl-dwllng-nt">
                         <term>Adaptable dwelling unit</term>
                         <definition>means a <ref
@@ -2697,7 +2697,7 @@ Each <ref
         >
             <target type="canonical-id" id="thrt-hvn" />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="bc-thrt-hvn">
                         <term>Authority having jurisdiction</term>
                         <definition
@@ -2727,7 +2727,7 @@ Each <ref
                 reference-id="frm-bldn"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="bc-fld-rvw">
                         <term>Field review</term>
                         <definition>means a review of the work<list
@@ -2767,7 +2767,7 @@ Each <ref
                 reference-id="hv-tmbr-"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="bc-hrtg-bldng">
                         <term>Heritage building</term>
                         <definition>is a <ref
@@ -2775,7 +2775,7 @@ Each <ref
                                 target="bldng"
                             >building</ref> which is legally protected or officially recognized as a heritage property by the Provincial government or a local government.  (See <ref
                                 type="internal"
-                                target="bc.divA.part1.sect5.appnote6"
+                                target="nbc.divA.part1.sect5.appnote6"
                                 display-type="short"
                             />.)<!-- TODO: Verify note reference for A-1.1.1.1.(5) --></definition>
                     </item>
@@ -2795,7 +2795,7 @@ Each <ref
         >
             <target type="canonical-id" id="wnr" />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="bc-wnr">
                         <term>Owner</term>
                         <definition
@@ -2826,7 +2826,7 @@ Each <ref
                 reference-id="prchd-gr"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="bc-prsn-wth-dsblts">
                         <term>Persons with disabilities</term>
                         <definition
@@ -2848,7 +2848,7 @@ Each <ref
         >
             <target type="canonical-id" id="pt-dtr-b" />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="pt-dtr-b">
                         <term>Post-disaster building</term>
                         <definition
@@ -2901,7 +2901,7 @@ Each <ref
         >
             <target type="canonical-id" id="prcs-plnt" />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="prcs-plnt">
                         <term>Process plant</term>
                         <definition
@@ -2928,7 +2928,7 @@ Each <ref
                 reference-id="rmp"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="bc-rgstrd-prfssnl">
                         <term>Registered professional</term>
                         <definition>means<list type="bulleted">
@@ -2964,7 +2964,7 @@ Each <ref
                 reference-id="bc-rgstrd-prfssnl"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="bc-rgstrd-prfssnl-f-rcrd">
                         <term>Registered professional of record</term>
                         <definition>means a <emphasis
@@ -2990,7 +2990,7 @@ Each <ref
         >
             <target type="canonical-id" id="bc-scnd-t" />
             <replace preserve-references="true">
-                <new-content>
+                <new-content source="bc">
                     <item xml:id="bc-scnd-t">
                         <term>Secondary suite</term>
                         <definition>means a self-contained <ref
@@ -3090,9 +3090,9 @@ Llitre(s)</replace>
                 id="nbc.divA.part1.sect5.subsect1.art1.sent2"
             />
             <replace preserve-references="true">
-                <new-content>
+                <new-content source="bc">
                     <sentence
-                        xml:id="bc.divA.part1.sect5.subsect1.art1.sent2"
+                        xml:id="nbc.divA.part1.sect5.subsect1.art1.sent2"
                         number="2"
                     >
                         <text
@@ -3117,22 +3117,22 @@ Llitre(s)</replace>
         >
             <target type="canonical-id" id="nbc.divA.part1.sect5.appnote2" />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <application-note
-                        xml:id="bc.divA.part1.sect5.appnote2"
+                        xml:id="nbc.divA.part1.sect5.appnote2"
                         vendor-id="en000009"
                         refs="es000109"
                     >
                         <number>1.1.1.1.(2)</number>
                         <title>Factory-Constructed Buildings</title>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote2.para1"
+                            xml:id="nbc.divA.part1.sect5.appnote2.para1"
                         >The British Columbia Building Code applies the same requirements to site-built and factory-constructed buildings. However, it can often be difficult to determine whether a factory-constructed building complies with the Code once it has been delivered to the construction site because many of the wall, roof and floor assemblies are closed in and so their components cannot be inspected. CSA A277, "Procedure for certification of prefabricated buildings, modules, and panels," was developed to address this problem with regard to residential, commercial and industrial buildings. This standard describes a procedure whereby an independent certification agency can review the quality control procedures of a factory and make periodic unannounced inspections of its products. The standard is not a building code, only a procedure for certifying compliance of factory-constructed components with a building code or other standard. If a factory-constructed building bears the label of an accredited certification agency indicating that compliance with the British Columbia Building Code has been certified using the CSA A277 procedure, the accepting authority will have some assurance that the concealed components do not require re-inspection on site.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote2.para2"
+                            xml:id="nbc.divA.part1.sect5.appnote2.para2"
                         >On the other hand, standards in the CSA Z240 MH Series, "Manufactured homes," do resemble a building code. Most of the individual standards in the series contain requirements regarding many issues also covered in this Code. Some of these Z240 MH Series provisions are performance requirements with no quantitative criteria, some simply reference the applicable British Columbia Building Code requirements, while others contain requirements that differ from those in the British Columbia Building Code. One of the individual standards in the Z240 MH Series deals with special requirements for manufactured homes related to the fact that these houses must be moved over roads, which is an issue the British Columbia Building Code does not address. Therefore, labeling that indicates that a factory-constructed house complies with the Z240 MH Series standards can NOT be taken as an indication that the house necessarily complies with the building code in effect for the location where the house will be sited.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote2.para3"
+                            xml:id="nbc.divA.part1.sect5.appnote2.para3"
                         >The British Columbia Building Code does reference CSA Z240.10.1, "Site preparation, foundation, and installation of buildings," which is not actually part of the CSA Z240 MH Series. This standard contains requirements for surface foundations where buildings—not just houses—comply with the deformation resistance test provided in CSA Z240.2.1, "Structural requirements for manufactured homes."</paragraph>
                     </application-note>
                 </new-content>
@@ -3154,25 +3154,25 @@ Llitre(s)</replace>
                 type="position"
                 parent-id="nbc.divA.part1.sect5.appendix"
                 position="after"
-                reference-id="bc.divA.part1.sect5.appnote2"
+                reference-id="nbc.divA.part1.sect5.appnote2"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <application-note
-                        xml:id="bc.divA.part1.sect5.appnote2a"
+                        xml:id="nbc.divA.part1.sect5.appnote2a"
                         vendor-id="en000009a"
                         refs="es000110"
                     >
                         <number>1.1.1.1.(5)</number>
                         <title>Heritage Buildings</title>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote2a.para1"
+                            xml:id="nbc.divA.part1.sect5.appnote2a.para1"
                         >Many local governments have identified conservation of selected heritage properties, or protection of the heritage character of certain areas, as being community planning objectives. The Province's planning objectives and growth strategy encourage and support local government in this effort. The key is to find ways to make restoration and rehabilitation of <ref
                                 type="term"
                                 target="hrtg-bldng"
                             >heritage buildings</ref> economically viable for the properties' owners.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote2a.para2"
+                            xml:id="nbc.divA.part1.sect5.appnote2a.para2"
                         >It is generally recognized that the present British Columbia Building Code was primarily written for new construction and provides for a performance level that is significantly higher than what exists with many older <ref
                                 type="term"
                                 target="bldng"
@@ -3190,7 +3190,7 @@ Llitre(s)</replace>
                                 target="bldng"
                             >building</ref> from possible destruction by fire.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote2a.para3"
+                            xml:id="nbc.divA.part1.sect5.appnote2a.para3"
                         >The Table of Alternative Compliance Methods for Heritage Buildings represents some of the ways that restoration and rehabilitation of <ref
                                 type="term"
                                 target="hrtg-bldng"
@@ -3208,7 +3208,7 @@ Llitre(s)</replace>
                                 target="bldng"
                             >buildings</ref> often offer unique problems and opportunities, and each situation must be assessed individually.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote2a.para4"
+                            xml:id="nbc.divA.part1.sect5.appnote2a.para4"
                         >The use of the Alternate Compliance Methods in <ref
                                 type="internal"
                                 target="nbc.divA.part1.sect1.subsect1.art1.table2"
@@ -3216,30 +3216,30 @@ Llitre(s)</replace>
                             /> is not mandatory, and an owner may choose
                             <list type="bulleted">
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2a.item1"
+                                    xml:id="nbc.divA.part1.sect5.appnote2a.item1"
                                 >to apply acceptable solutions in Division B,</item>
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2a.item2"
+                                    xml:id="nbc.divA.part1.sect5.appnote2a.item2"
                                 >to apply alternate solutions under <ref
                                         type="internal"
                                         target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                         display-type="long"
                                     />,</item>
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2a.item3"
+                                    xml:id="nbc.divA.part1.sect5.appnote2a.item3"
                                 >to apply alternate compliance methods in <ref
                                         type="internal"
                                         target="nbc.divA.part1.sect1.subsect1.art1.table2"
                                         display-type="long"
                                     />, or</item>
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2a.item4"
+                                    xml:id="nbc.divA.part1.sect5.appnote2a.item4"
                                 >to combined these options.</item>
                             </list>
                         </paragraph>
                     </application-note>
                     <application-note
-                        xml:id="bc.divA.part1.sect5.appnote2b"
+                        xml:id="nbc.divA.part1.sect5.appnote2b"
                         vendor-id="en000009b"
                         refs="es000111"
                     >
@@ -3247,7 +3247,7 @@ Llitre(s)</replace>
                         <title
                         >Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite</title>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote2b.para1"
+                            xml:id="nbc.divA.part1.sect5.appnote2b.para1"
                         >The requirements in Division B for the construction of <ref
                                 type="term"
                                 target="bc-scnd-t"
@@ -3272,7 +3272,7 @@ Llitre(s)</replace>
                                 target="bldng"
                             >buildings</ref> of new construction where there are no existing assemblies to act as practical barriers to compliance with Division B of this Code. <ref
                                 type="internal"
-                                target="bc.divA.part1.sect5.appnote2b.figure1"
+                                target="nbc.divA.part1.sect5.appnote2b.figure1"
                                 display-type="long"
                             /> illustrates the application of <ref
                                 type="internal"
@@ -3283,7 +3283,7 @@ Llitre(s)</replace>
                                 target="bldng"
                             >buildings</ref>.</paragraph>
                         <figure
-                            xml:id="bc.divA.part1.sect5.appnote2b.figure1"
+                            xml:id="nbc.divA.part1.sect5.appnote2b.figure1"
                             vendor-id="en000009b-fig1"
                         >
                             <title
@@ -3298,7 +3298,7 @@ Llitre(s)</replace>
                             />
                         </figure>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote2b.para2"
+                            xml:id="nbc.divA.part1.sect5.appnote2b.para2"
                         ><ref
                                 type="internal"
                                 target="nbc.divA.part1.sect1.subsect1.art1.table3"
@@ -3306,24 +3306,24 @@ Llitre(s)</replace>
                             /> is not mandatory, and an owner may choose to
                             <list type="bulleted">
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2b.item1"
+                                    xml:id="nbc.divA.part1.sect5.appnote2b.item1"
                                 >apply acceptable solutions in Division B,</item>
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2b.item2"
+                                    xml:id="nbc.divA.part1.sect5.appnote2b.item2"
                                 >apply alternative solutions under <ref
                                         type="internal"
                                         target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                         display-type="long"
                                     />,</item>
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2b.item3"
+                                    xml:id="nbc.divA.part1.sect5.appnote2b.item3"
                                 >apply alternate compliance methods in <ref
                                         type="internal"
                                         target="nbc.divA.part1.sect1.subsect1.art1.table3"
                                         display-type="long"
                                     />, or</item>
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2b.item4"
+                                    xml:id="nbc.divA.part1.sect5.appnote2b.item4"
                                 >combined these options.</item>
                             </list>
                         </paragraph>
@@ -3345,12 +3345,12 @@ Llitre(s)</replace>
                 type="position"
                 parent-id="nbc.divA.part1.sect5.appendix"
                 position="after"
-                reference-id="bc.divA.part1.sect5.appnote2b"
+                reference-id="nbc.divA.part1.sect5.appnote2b"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <application-note
-                        xml:id="bc.divA.part1.sect5.appnote2c"
+                        xml:id="nbc.divA.part1.sect5.appnote2c"
                         vendor-id="en000009c"
                         refs="es000112"
                     >
@@ -3456,19 +3456,19 @@ Llitre(s)</replace>
                             >buildings</ref> can be found in the following publications:
                             <list type="bulleted">
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2c.item1"
+                                    xml:id="nbc.divA.part1.sect5.appnote2c.item1"
                                 >User's Guide -- NBC 1995 Fire Protection, Occupant Safety and Accessibility (Part 3)</item>
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2c.item2"
+                                    xml:id="nbc.divA.part1.sect5.appnote2c.item2"
                                 >Guidelines for Application of Part 3 of the National Building Code of Canada to Existing Buildings</item>
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2c.item3"
+                                    xml:id="nbc.divA.part1.sect5.appnote2c.item3"
                                 >Commentary entitled Application of NBC Part 4 of Division B for the Structural Evaluation and Upgrading of Existing Buildings of the Structural Commentaries (User's Guide -- NBC 2020: Part 4 of Division B)</item>
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2c.item4"
+                                    xml:id="nbc.divA.part1.sect5.appnote2c.item4"
                                 >User's Guide -- NBC 1995, Application of Part 9 to Existing Buildings</item>
                                 <item
-                                    xml:id="bc.divA.part1.sect5.appnote2c.item5"
+                                    xml:id="nbc.divA.part1.sect5.appnote2c.item5"
                                 >CBD 230, Applying building codes to existing buildings</item>
                             </list>
                         </paragraph>
@@ -3521,9 +3521,9 @@ Llitre(s)</replace>
                 reference-id="nbc.divA.part1.sect5.appnote4"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <application-note
-                        xml:id="bc.divA.part1.sect5.appnote4a"
+                        xml:id="nbc.divA.part1.sect5.appnote4a"
                         vendor-id="en000009d"
                         refs="es000113"
                     >
@@ -3588,23 +3588,23 @@ Llitre(s)</replace>
                 id="nbc.divA.part1.sect5.appnote7.div5"
             />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <note-division
-                        xml:id="bc.divA.part1.sect5.appnote7.div5"
+                        xml:id="nbc.divA.part1.sect5.appnote7.div5"
                         vendor-id="en001287-dngr-gd"
                     >
                         <title>Dangerous Goods</title>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote7.div5.para1"
+                            xml:id="nbc.divA.part1.sect5.appnote7.div5.para1"
                         >In previous editions of the British Columbia Building Code, the terminology used to identify dangerous goods came from "Transportation of Dangerous Goods Regulations (TDGR)." The TDGR apply solely to the adequate identification of hazards related to dangerous goods in the contexts of transportation and emergency response.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote7.div5.para2"
+                            xml:id="nbc.divA.part1.sect5.appnote7.div5.para2"
                         >Dangerous goods in the workplace are identified in accordance with the "Workplace Hazardous Materials Information System (WHMIS)," established in accordance with the "Hazardous Products Act." The WHMIS identification system is specifically designed with the users of the product in mind.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote7.div5.para3"
+                            xml:id="nbc.divA.part1.sect5.appnote7.div5.para3"
                         >This edition of the British Columbia Building Code identifies dangerous goods as products regulated by the TDGR or classified under the WHMIS. In order to harmonize these two nomenclatures for dangerous goods, class descriptors were developed taking into consideration both the TDGR and WHMIS classification systems. The NBC nomenclature uses a descriptive approach to classifying dangerous goods, which is similar to the one used by the Globally Harmonized System of Classification and Labelling of Chemicals (GHS) developed by the United Nations (UN). Canada has actively participated in the development of the GHS and has committed to its implementation through the TDGR and WHMIS regulations.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote7.div5.para4"
+                            xml:id="nbc.divA.part1.sect5.appnote7.div5.para4"
                         >The British Columbia Building Code 2018 nomenclature takes a common sense approach that corresponds more closely to how people refer to dangerous goods on a daily basis, blending TDGR and WHMIS terminology without using nondescript numbers and letters as previously found in the British Columbia Building Code, TDGR and WHMIS.</paragraph>
                     </note-division>
                 </new-content>
@@ -3623,12 +3623,12 @@ Llitre(s)</replace>
         >
             <target
                 type="position"
-                parent-id="bc.divA.part1.sect5.appnote7.div5"
+                parent-id="nbc.divA.part1.sect5.appnote7.div5"
                 position="last-child"
             />
             <insert>
-                <new-content>
-                    <table xml:id="bc.divA.part1.sect5.appnote7.div5.table1"
+                <new-content source="bc">
+                    <table xml:id="nbc.divA.part1.sect5.appnote7.div5.table1"
                         vendor-id="et000071"
                     >
                         <title
@@ -3640,7 +3640,7 @@ Llitre(s)</replace>
                             <colspec colname="col4" colwidth="180*" />
                             <thead>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row0"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row0"
                                 >
                                     <entry
                                         namest="col1"
@@ -3651,7 +3651,7 @@ Llitre(s)</replace>
                                     >British Columbia Building Code</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row0a"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row0a"
                                 >
                                     <entry>Class</entry>
                                     <entry>Descriptor</entry>
@@ -3661,7 +3661,7 @@ Llitre(s)</replace>
                             </thead>
                             <tbody>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row1"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row1"
                                 >
                                     <entry>1</entry>
                                     <entry>Explosives</entry>
@@ -3669,7 +3669,7 @@ Llitre(s)</replace>
                                     <entry>Explosives</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row2"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row2"
                                 >
                                     <entry>2</entry>
                                     <entry>Gases</entry>
@@ -3677,7 +3677,7 @@ Llitre(s)</replace>
                                     <entry>Compressed gases</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row3"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row3"
                                 >
                                     <entry>2.1</entry>
                                     <entry>Flammable gases</entry>
@@ -3687,7 +3687,7 @@ Llitre(s)</replace>
                                     >Flammable gases; Flammable aerosols</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row4"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row4"
                                 >
                                     <entry>2.2</entry>
                                     <entry
@@ -3697,7 +3697,7 @@ Llitre(s)</replace>
                                     >Non-flammable, non-toxic gases</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row5"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row5"
                                 >
                                     <entry>2.2 (5.1)</entry>
                                     <entry>---</entry>
@@ -3705,7 +3705,7 @@ Llitre(s)</replace>
                                     <entry>Oxidizing gases</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row6"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row6"
                                 >
                                     <entry>2.3</entry>
                                     <entry>Toxic gases</entry>
@@ -3713,7 +3713,7 @@ Llitre(s)</replace>
                                     <entry>Toxic gases</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row7"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row7"
                                 >
                                     <entry>3</entry>
                                     <entry>Flammable liquids</entry>
@@ -3721,7 +3721,7 @@ Llitre(s)</replace>
                                     <entry>Flammable liquids</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row8"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row8"
                                 >
                                     <entry>4.1</entry>
                                     <entry>Flammable solids</entry>
@@ -3729,7 +3729,7 @@ Llitre(s)</replace>
                                     <entry>Flammable solids</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row9"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row9"
                                 >
                                     <entry>4.2</entry>
                                     <entry
@@ -3739,7 +3739,7 @@ Llitre(s)</replace>
                                     <entry>Pyrophoric materials</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row10"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row10"
                                 >
                                     <entry>4.3</entry>
                                     <entry>Water-reactive substances</entry>
@@ -3748,7 +3748,7 @@ Llitre(s)</replace>
                                     <entry>Water-reactive substances</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row11"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row11"
                                 >
                                     <entry>5.1</entry>
                                     <entry>Oxidizing substances</entry>
@@ -3757,7 +3757,7 @@ Llitre(s)</replace>
                                     <entry>Oxidizers</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row12"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row12"
                                 >
                                     <entry>5.2</entry>
                                     <entry>Organic peroxides</entry>
@@ -3765,7 +3765,7 @@ Llitre(s)</replace>
                                     <entry>Organic peroxides</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row13"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row13"
                                 >
                                     <entry>6.1</entry>
                                     <entry>Toxic substances</entry>
@@ -3773,7 +3773,7 @@ Llitre(s)</replace>
                                     <entry>Toxic substances</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row14"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row14"
                                 >
                                     <entry>6.2</entry>
                                     <entry>Infectious substances</entry>
@@ -3781,7 +3781,7 @@ Llitre(s)</replace>
                                     <entry>Infectious materials</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row15"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row15"
                                 >
                                     <entry>7</entry>
                                     <entry>Radioactive materials</entry>
@@ -3789,7 +3789,7 @@ Llitre(s)</replace>
                                     <entry>Radioactive materials</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row16"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row16"
                                 >
                                     <entry>8</entry>
                                     <entry>Corrosives</entry>
@@ -3797,7 +3797,7 @@ Llitre(s)</replace>
                                     <entry>Corrosives</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row17"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row17"
                                 >
                                     <entry>9</entry>
                                     <entry
@@ -3806,7 +3806,7 @@ Llitre(s)</replace>
                                     <entry>Miscellaneous dangerous goods</entry>
                                 </row>
                                 <row
-                                    xml:id="bc.divA.part1.sect5.appnote7.div5.table1.row18"
+                                    xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.row18"
                                 >
                                     <entry>---</entry>
                                     <entry>---</entry>
@@ -3818,14 +3818,14 @@ Llitre(s)</replace>
                         </tgroup>
                         <table-notes>
                             <note
-                                xml:id="bc.divA.part1.sect5.appnote7.div5.table1.note1"
+                                xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.note1"
                                 >Notes to Table A-1.4.1.2.(1):</note>
                             <note
-                                xml:id="bc.divA.part1.sect5.appnote7.div5.table1.note2"
+                                xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.note2"
                                 ><super
                                     >(1)</super> The WHMIS has various descriptors for this Class of products based on their toxicity.</note>
                             <note
-                                xml:id="bc.divA.part1.sect5.appnote7.div5.table1.note3"
+                                xml:id="nbc.divA.part1.sect5.appnote7.div5.table1.note3"
                                 ><super
                                     >(2)</super> The WHMIS has various descriptors for this Class of products based on the nature of the danger presented by the product.</note>
                         </table-notes>
@@ -3851,26 +3851,26 @@ Llitre(s)</replace>
                 id="nbc.divA.part1.sect5.appnote7.div16"
             />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <note-division
-                        xml:id="bc.divA.part1.sect5.appnote7.div16"
+                        xml:id="nbc.divA.part1.sect5.appnote7.div16"
                         vendor-id="en001287-scnd-t"
                     >
                         <title>Secondary Suite</title>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote7.div16.para1"
+                            xml:id="nbc.divA.part1.sect5.appnote7.div16.para1"
                         >A secondary suite is a self-contained dwelling unit that is part of a house containing not more than two dwelling units (including the secondary suite) and any common spaces such as common storage, common service rooms, common laundry facilities or common areas used for egress. Secondary suites are typically created within an existing single dwelling unit—commonly called a "house"—either constructed as an addition or an alteration to an existing house or incorporated during the construction of a new house. A secondary suite may have more than one storey and may be on the same level as the other dwelling unit of the house or be above or below it.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote7.div16.para2"
+                            xml:id="nbc.divA.part1.sect5.appnote7.div16.para2"
                         >Examples of buildings where secondary suites are permitted include individual detached houses, or where the secondary suite is located in a portion of a building, semi-detached houses (half of a double and also known as a side-by-side) and row houses where a vertical fire separation separates the portion from the remainder of the building.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote7.div16.para3"
+                            xml:id="nbc.divA.part1.sect5.appnote7.div16.para3"
                         >Where a building has multiple vertically separated occupancies, the secondary suite can only be created in a vertically separated portion of the building that is of residential occupancy. A vertical fire separation extends continuously through all crawlspaces, storeys and attic spaces of the building. Apartment buildings have dwelling units above and below others that share a horizontal assembly and are therefore not permitted to have secondary suites. Figure A-1.4.1.2.(1)-C shows building types where secondary suites are permitted as well as building types where other dwelling units or other occupancies are located above or below such that secondary suites are not permitted.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote7.div16.para4"
+                            xml:id="nbc.divA.part1.sect5.appnote7.div16.para4"
                         >Neither dwelling unit in a house can be strata-titled or otherwise subdivided from the remainder of the house under provincial or territorial legislation. This means that both dwelling units are registered under the same title.</paragraph>
                         <figure
-                            xml:id="bc.divA.part1.sect5.appnote7.div16.figure1"
+                            xml:id="nbc.divA.part1.sect5.appnote7.div16.figure1"
                             vendor-id="en001287-scnd-t-fig1"
                         >
                             <title
@@ -3899,14 +3899,14 @@ Llitre(s)</replace>
                 id="nbc.divA.part1.sect5.appnote7.div19"
             />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <note-division
-                        xml:id="bc.divA.part1.sect5.appnote7.div19"
+                        xml:id="nbc.divA.part1.sect5.appnote7.div19"
                         vendor-id="en001287-trg-grg"
                     >
                         <title>Storage Garage</title>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote7.div19.para1"
+                            xml:id="nbc.divA.part1.sect5.appnote7.div19.para1"
                         >Entrances at which vehicles stop for a short time beneath an unenclosed canopy to pick up and drop off passengers are not considered as storage garages. As a subsidiary use, storage garages may also contain space for parking or storing other vehicles (bicycles, boat, etc.).</paragraph>
                     </note-division>
                 </new-content>
@@ -3929,9 +3929,9 @@ Llitre(s)</replace>
                 reference-id="nbc.divA.part1.sect5.appnote7.div20"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <note-division
-                        xml:id="bc.divA.part1.sect5.appnote7.div20a"
+                        xml:id="nbc.divA.part1.sect5.appnote7.div20a"
                         vendor-id="en001287-tpr-trd"
                     >
                         <title>Tapered Tread</title>
@@ -3969,23 +3969,23 @@ Llitre(s)</replace>
         >
             <target type="canonical-id" id="nbc.divA.part1.sect5.appnote8" />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <application-note
-                        xml:id="bc.divA.part1.sect5.appnote8"
+                        xml:id="nbc.divA.part1.sect5.appnote8"
                         vendor-id="en001290"
                         refs="es007219"
                     >
                         <number>1.5.1.1.(1)</number>
                         <title>Application of Referenced Documents</title>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote8.para1"
+                            xml:id="nbc.divA.part1.sect5.appnote8.para1"
                         >Documents referenced in the British Columbia Building Code may contain provisions covering a wide range of issues, including issues that are unrelated to the objectives and functional statements stated in Parts 2 and 3 of Division A respectively; e.g. aesthetic issues such as colour-fastness or uniformity. <ref
                                 type="internal"
                                 target="nbc.divA.part1.sect5.subsect1.art1.sent1"
                                 display-type="long"
                             /> is intended to make it clear that, whereas referencing a document in the British Columbia Building Code generally has the effect of making the provisions of that document part of the Code, provisions that are unrelated to buildings or to the objectives and functional statements attributed to the provisions in Division B where the document is referenced are excluded.</paragraph>
                         <paragraph
-                            xml:id="bc.divA.part1.sect5.appnote8.para2"
+                            xml:id="nbc.divA.part1.sect5.appnote8.para2"
                         >Furthermore, many documents referenced in the British Columbia Building Code contain references to other documents, which may also, in turn, refer to other documents. These secondary and tertiary referenced documents may contain provisions that are unrelated to buildings or to the objectives and functional statements of the British Columbia Building Code: such provisions—no matter how far down the chain of references they occur—are not included in the intent of <ref
                                 type="internal"
                                 target="nbc.divA.part1.sect5.subsect1.art1.sent1"
@@ -4011,7 +4011,7 @@ Llitre(s)</replace>
                 id="nbc.divA.part2.sect1.subsect1.art2.sent4.clause2"
             />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <clause
                         xml:id="nbc.divA.part2.sect1.subsect1.art2.sent4.clause2"
                         letter="b"
@@ -4112,7 +4112,7 @@ Llitre(s)</replace>
             <target type="canonical-id" id="nbc.objective.OE" />
             <modify>
                 <element-replace element="definition">
-                    <new-content>
+                    <new-content source="bc">
                         <definition
                         >An objective of this Code is to limit the probability that, as a result of the design, construction or renovation of the <ref
                                 type="term"
@@ -4134,8 +4134,8 @@ Llitre(s)</replace>
         >
             <target type="canonical-id" id="nbc.objective.OE1" />
             <replace preserve-references="true">
-                <new-content>
-                    <sub-objective xml:id="bc.objective.OE1" key="OE1">
+                <new-content source="bc">
+                    <sub-objective xml:id="nbc.objective.OE1" key="OE1">
                         <title>Energy Efficiency and Water Use</title>
                         <definition
                         >An objective of this Code is to limit the probability that, as a result of the design, construction or renovation of the <ref
@@ -4143,7 +4143,7 @@ Llitre(s)</replace>
                                 target="bldng"
                             >building</ref>, the use of energy will be inefficient or the use of water will be excessive. The risks of inefficient energy use or excessive water use addressed in this Code are those caused by –</definition>
                         <sub-sub-objective
-                            xml:id="bc.objective.OE1.1"
+                            xml:id="nbc.objective.OE1.1"
                             key="OE1.1"
                         >
                             <title
@@ -4167,11 +4167,11 @@ Llitre(s)</replace>
                 type="position"
                 parent-id="nbc.objective.OE"
                 position="after"
-                reference-id="bc.objective.OE1"
+                reference-id="nbc.objective.OE1"
             />
             <insert>
-                <new-content>
-                    <sub-objective xml:id="bc.objective.OE2" key="OE2">
+                <new-content source="bc">
+                    <sub-objective xml:id="nbc.objective.OE2" key="OE2">
                         <title>Greenhouse Gases</title>
                         <definition
                         >An objective of this Code is to limit the probability that, as a result of design and construction of the <ref
@@ -4182,7 +4182,7 @@ Llitre(s)</replace>
                                 target="bldng"
                             >building's</ref> systems, and the energy consumed in the operation of those systems, the production of greenhouse gases will be excessive. The risks of excessive greenhouse gas emissions addressed in this Code are those caused by-</definition>
                         <sub-sub-objective
-                            xml:id="bc.objective.OE2.1"
+                            xml:id="nbc.objective.OE2.1"
                             key="OE2.1"
                         >
                             <title
@@ -4207,7 +4207,7 @@ Llitre(s)</replace>
                 id="nbc.divA.part2.sect2.appnote2.div1"
             />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <note-division
                         xml:id="nbc.divA.part2.sect2.appnote2.div1"
                         vendor-id="en001280.1"
@@ -4238,7 +4238,7 @@ Llitre(s)</replace>
                 id="nbc.divA.part2.sect2.appnote2.div2"
             />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <note-division
                         xml:id="nbc.divA.part2.sect2.appnote2.div2"
                         vendor-id="en001280.2"
@@ -4266,7 +4266,7 @@ Llitre(s)</replace>
                 id="nbc.divA.part2.sect2.appnote2.div4"
             />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <note-division
                         xml:id="nbc.divA.part2.sect2.appnote2.div4"
                         vendor-id="en001280.4"
@@ -4303,9 +4303,9 @@ Llitre(s)</replace>
                 id="nbc.divA.part3.sect1.subsect1.art2.sent4"
             />
             <replace preserve-references="true">
-                <new-content>
+                <new-content source="bc">
                     <sentence
-                        xml:id="bc.divA.part3.sect1.subsect1.art2.sent4"
+                        xml:id="nbc.divA.part3.sect1.subsect1.art2.sent4"
                         number="4"
                     >
                         <text>Functional Statement F75 applies only to <ref
@@ -4341,7 +4341,7 @@ Llitre(s)</replace>
             <target type="canonical-id" id="nbc.functional.F73" />
             <modify>
                 <element-replace element="definition">
-                    <new-content>
+                    <new-content source="bc">
                         <definition
                         >To facilitate access to and circulation in the building and its facilities by persons with disabilities</definition>
                     </new-content>
@@ -4361,7 +4361,7 @@ Llitre(s)</replace>
             <target type="canonical-id" id="nbc.functional.F74" />
             <modify>
                 <element-replace element="definition">
-                    <new-content>
+                    <new-content source="bc">
                         <definition
                         >To facilitate the use of the building's facilities by persons with disabilities</definition>
                     </new-content>
@@ -4386,15 +4386,15 @@ Llitre(s)</replace>
                 reference-id="nbc.functional.F74"
             />
             <insert>
-                <new-content>
-                    <functional-statement xml:id="bc.functional.F74a" key="F74a">
+                <new-content source="bc">
+                    <functional-statement xml:id="nbc.functional.F74a" key="F74a">
                         <definition
                         >To minimize obstacles for future modification to provide <ref
                                 type="term"
                                 target="ccs"
                             >access</ref> (see <ref
                                 type="internal"
-                                target="bc.divA.part3.sect1.subsect1.art2.sent4"
+                                target="nbc.divA.part3.sect1.subsect1.art2.sent4"
                                 display-type="long"
                             /> for application limitation).</definition>
                     </functional-statement>
@@ -4419,9 +4419,9 @@ Llitre(s)</replace>
                 reference-id="nbc.functional.F100"
             />
             <insert>
-                <new-content>
+                <new-content source="bc">
                     <functional-statement
-                        xml:id="bc.functional.F100a"
+                        xml:id="nbc.functional.F100a"
                         key="F100a"
                     >
                         <definition
@@ -4442,7 +4442,7 @@ Llitre(s)</replace>
         >
             <target type="canonical-id" id="nbc.divA.part3.sect2.appnote1" />
             <replace preserve-references="false">
-                <new-content>
+                <new-content source="bc">
                     <application-note
                         xml:id="nbc.divA.part3.sect2.appnote1"
                         vendor-id="en001289"

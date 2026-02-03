@@ -298,6 +298,10 @@
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             <fn:string key="number"><xsl:value-of select="number"/></fn:string>
             
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            
             <fn:array key="parts">
                 <xsl:apply-templates select="part" mode="json"/>
             </fn:array>
@@ -317,6 +321,10 @@
                 </xsl:otherwise>
             </xsl:choose>
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
+            
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
             
             <xsl:if test="see-also">
                 <fn:string key="see_also"><xsl:apply-templates select="see-also" mode="rich-text-json"/></fn:string>
@@ -360,6 +368,10 @@
                 <fn:boolean key="deleted">true</fn:boolean>
             </xsl:if>
             
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             
             <fn:array key="subsections">
@@ -384,6 +396,10 @@
             <!-- Deleted flag -->
             <xsl:if test="@deleted = 'yes'">
                 <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
+            
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
             
             <!-- Extract title and articles from revision-history if present, otherwise from direct children -->
@@ -442,6 +458,10 @@
                 <fn:boolean key="deleted">true</fn:boolean>
             </xsl:if>
             
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             
             <xsl:if test="see-also">
@@ -481,6 +501,10 @@
             <!-- Deleted flag -->
             <xsl:if test="@deleted = 'yes'">
                 <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
+            
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
             
             <!-- Main text content with rich formatting preserved -->
@@ -557,6 +581,10 @@
                 <fn:boolean key="deleted">true</fn:boolean>
             </xsl:if>
             
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            
             <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
             
             <xsl:if test="see-also">
@@ -596,6 +624,10 @@
                 <fn:boolean key="deleted">true</fn:boolean>
             </xsl:if>
             
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            
             <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
         </fn:map>
     </xsl:template>
@@ -612,6 +644,11 @@
             <!-- Deleted flag -->
             <xsl:if test="@deleted = 'yes'">
                 <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
+            
+            <!-- Source attribute (bc or nbc) -->
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
             
             <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
@@ -699,6 +736,11 @@
                 <fn:boolean key="deleted">true</fn:boolean>
             </xsl:if>
             
+            <!-- Source attribute (bc or nbc) -->
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
             
             <fn:map key="graphic">
@@ -733,6 +775,12 @@
         <fn:map>
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="type">spectables</fn:string>
+            
+            <!-- Source attribute (bc or nbc) -->
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             <xsl:if test="@table-prefix">
                 <fn:string key="table_prefix"><xsl:value-of select="@table-prefix"/></fn:string>
@@ -777,6 +825,11 @@
             <!-- Deleted flag -->
             <xsl:if test="@deleted = 'yes'">
                 <fn:boolean key="deleted">true</fn:boolean>
+            </xsl:if>
+            
+            <!-- Source attribute (bc or nbc) -->
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
             
             <!-- Paragraphs -->
@@ -827,6 +880,12 @@
         <fn:map>
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="type">note_division</fn:string>
+            
+            <!-- Source attribute (bc or nbc) -->
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             
             <xsl:if test="paragraph">

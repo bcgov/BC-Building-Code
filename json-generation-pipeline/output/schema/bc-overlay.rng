@@ -243,6 +243,14 @@
             </attribute>
         </optional>
         <element name="new-content">
+            <optional>
+                <attribute name="source">
+                    <choice>
+                        <value>nbc</value>
+                        <value>bc</value>
+                    </choice>
+                </attribute>
+            </optional>
             <ref name="bc-content"/>
         </element>
         <optional>
@@ -259,6 +267,14 @@
     
     <define name="insert-operation">
         <element name="new-content">
+            <optional>
+                <attribute name="source">
+                    <choice>
+                        <value>nbc</value>
+                        <value>bc</value>
+                    </choice>
+                </attribute>
+            </optional>
             <ref name="bc-content"/>
         </element>
     </define>
@@ -347,6 +363,14 @@
                         <attribute name="position"><data type="positiveInteger"/></attribute>
                     </optional>
                     <element name="new-content">
+                        <optional>
+                            <attribute name="source">
+                                <choice>
+                                    <value>nbc</value>
+                                    <value>bc</value>
+                                </choice>
+                            </attribute>
+                        </optional>
                         <ref name="bc-element-replace-content"/>
                     </element>
                 </element>

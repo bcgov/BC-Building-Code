@@ -27,7 +27,7 @@
       <target type="position" parent-id="nbc.divA.part1.sect4.subsect1.art2.sent1"
               position="after" reference-id="cktp"/>
       <insert>
-        <new-content>
+        <new-content source="bc">
           <item xml:id="bc-crdntng-rgstrd-prfsnl" revised="yes">
             <term>Coordinating registered professional</term>
             <definition>
@@ -55,7 +55,7 @@
                description="Repeal Sentence 6.2.1.5.(1) and substitute with new clauses for installation standards">
       <target type="canonical-id" id="nbc.divB.part6.sect2.subsect1.art5.sent1"/>
       <replace preserve-references="false">
-        <new-content>
+        <new-content source="bc">
           <sentence xml:id="nbc.divB.part6.sect2.subsect1.art5.sent1" number="1" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
@@ -100,8 +100,8 @@
                description="Repeal Sentence 9.33.5.2.(1) and substitute with new clauses for installation standards">
       <target type="canonical-id" id="nbc.divBV2.part9.sect33.subsect5.art2.sent1"/>
       <replace preserve-references="false">
-        <new-content>
-          <sentence xml:id="bc.divBV2.part9.sect33.subsect5.art2.sent1" number="1" revised="yes">
+        <new-content source="bc">
+          <sentence xml:id="nbc.divBV2.part9.sect33.subsect5.art2.sent1" number="1" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- Merge engine will copy original content -->
@@ -109,25 +109,25 @@
               <revision seq="1" type="amendment" effective-date="2024-05-24" id="bc-mo-2024-02-003" status="current">
                 <content>
                   <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect33.subsect5.art3" display-type="long" pretext="Articles"/> and <ref type="internal" target="nbc.divBV2.part9.sect33.subsect5.art4" display-type="number"/>, the installation of heating and air-conditioning equipment, including mechanical refrigeration equipment, and including provisions for mounting, clearances and air supply, shall conform to</text>
-                  <clause xml:id="bc.divBV2.part9.sect33.subsect5.art2.sent1.clause1" letter="a">
+                  <clause xml:id="nbc.divBV2.part9.sect33.subsect5.art2.sent1.clause1" letter="a">
                     <text>the Safety Standards Act and pursuant regulations,</text>
                   </clause>
-                  <clause xml:id="bc.divBV2.part9.sect33.subsect5.art2.sent1.clause2" letter="b">
+                  <clause xml:id="nbc.divBV2.part9.sect33.subsect5.art2.sent1.clause2" letter="b">
                     <text>reserved,</text>
                   </clause>
-                  <clause xml:id="bc.divBV2.part9.sect33.subsect5.art2.sent1.clause3" letter="c">
+                  <clause xml:id="nbc.divBV2.part9.sect33.subsect5.art2.sent1.clause3" letter="c">
                     <text><ref type="standard" target="csab139" standardId="csab139"/>, "Installation code for oil-burning equipment,"</text>
                   </clause>
-                  <clause xml:id="bc.divBV2.part9.sect33.subsect5.art2.sent1.clause4" letter="d">
+                  <clause xml:id="nbc.divBV2.part9.sect33.subsect5.art2.sent1.clause4" letter="d">
                     <text>reserved,</text>
                   </clause>
-                  <clause xml:id="bc.divBV2.part9.sect33.subsect5.art2.sent1.clause5" letter="e">
+                  <clause xml:id="nbc.divBV2.part9.sect33.subsect5.art2.sent1.clause5" letter="e">
                     <text>reserved,</text>
                   </clause>
-                  <clause xml:id="bc.divBV2.part9.sect33.subsect5.art2.sent1.clause6" letter="f">
+                  <clause xml:id="nbc.divBV2.part9.sect33.subsect5.art2.sent1.clause6" letter="f">
                     <text><ref type="standard" target="csac448series" standardId="csac448series"/>, "Design and installation of earth energy systems," or</text>
                   </clause>
-                  <clause xml:id="bc.divBV2.part9.sect33.subsect5.art2.sent1.clause7" letter="g">
+                  <clause xml:id="nbc.divBV2.part9.sect33.subsect5.art2.sent1.clause7" letter="g">
                     <text>a combination thereof.
 (See also <ref type="internal" target="nbc.divBV2.part9.sect33.subsect5.art3.sent1" display-type="long" pretext="Sentence"/>.)</text>
                   </clause>
