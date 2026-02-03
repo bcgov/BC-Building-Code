@@ -33,12 +33,6 @@ Welcome to the comprehensive documentation for the BC Building Code JSON Generat
 | [06-quick-reference.md](06-quick-reference.md) | Single-page printable reference card for common tasks |
 | [07-examples-library.md](07-examples-library.md) | Curated collection of working examples for each operation |
 
-### Migration & History
-
-| Document | Description |
-|----------|-------------|
-| [08-migration-guide.md](08-migration-guide.md) | BC prefix to source attribute migration (completed 2026-02-02) |
-
 ---
 
 ## Quick Links

@@ -270,34 +270,6 @@ function renderArticle(article) {
 }
 ```
 
----
-
-## 6. Migration Scripts
-
-### Script 1: migrate-bc-prefix-to-source.ps1
-
-Updates amendment files from `bc.` prefix to unified namespace.
-
-**Usage:**
-```powershell
-.\migrate-bc-prefix-to-source.ps1
-```
-
-**What it does:**
-1. Finds all XML files in amendment/revision directories
-2. Replaces `bc.` prefixes in IDs with `nbc.`
-3. Adds `source="bc"` to `<new-content>` elements
-4. Reports changes per file
-
-### Script 2: fix-duplicate-source.ps1
-
-Fixes duplicate `source="bc"` attributes that may have been added accidentally.
-
-### Script 3: fix-revision-bc-ids.ps1
-
-Updates revision amendment files specifically.
-
----
 
 ## 7. Validation Results
 
@@ -456,5 +428,3 @@ git checkout -- json-generation-pipeline/source/bc-revisions/xml/*.xml
 - [01-system-overview.md](01-system-overview.md) - System overview with ID conventions
 - [02-overlay-amendments-guide.md](02-overlay-amendments-guide.md) - Creating overlay amendments
 - [04-merge-engine-reference.md](04-merge-engine-reference.md) - Source attribute propagation details
-- [MIGRATION-STATUS.md](../MIGRATION-STATUS.md) - Original migration status report
-- [MIGRATION-TASKS.md](../MIGRATION-TASKS.md) - Detailed migration task list
