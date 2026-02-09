@@ -8,7 +8,7 @@ The JSON Generation Pipeline is a system that transforms the **National Building
 
 The final output is a JSON file that can be consumed by web applications, search systems, and other digital tools. The pipeline:
 
-1. **Reads** the canonical NBC XML document
+1. **Normalizes** the vendor NBC XML into a canonical format with standardized IDs
 2. **Applies** BC-specific amendments (structural changes and revisions)
 3. **Transforms** the result into a JSON format
 
@@ -45,45 +45,125 @@ The amendment system solves these problems by:
 
 ## 3. High-Level Architecture
 
+The pipeline consists of four main stages:
+
 ```
-┌──────────────────────────────────────────────────────────────────────┐
-│                     JSON GENERATION PIPELINE                          │
-├──────────────────────────────────────────────────────────────────────┤
-│                                                                       │
-│  ┌─────────────────┐                                                 │
-│  │  nbc-canonical  │──┐                                              │
-│  │      .xml       │  │                                              │
-│  └─────────────────┘  │                                              │
-│                       │    ┌──────────────┐    ┌─────────────────┐  │
-│  ┌─────────────────┐  ├───►│ Phase 1:     │───►│ bc-building-    │  │
-│  │  BC Overlay     │──┤    │ Overlay      │    │ code.xml        │  │
-│  │  Amendments     │  │    │ Amendments   │    └────────┬────────┘  │
-│  └─────────────────┘  │    └──────────────┘             │           │
-│                       │                                  │           │
-│  ┌─────────────────┐  │    ┌──────────────┐    ┌───────▼─────────┐  │
-│  │  Global Text    │──┘    │ Phase 2:     │───►│ bc-building-    │  │
-│  │  Replacements   │       │ Revision     │    │ code-final.xml  │  │
-│  └─────────────────┘       │ Amendments   │    └────────┬────────┘  │
-│                            └──────────────┘             │           │
-│  ┌─────────────────┐                                    │           │
-│  │  Revision       │────────────────────────────────────┘           │
-│  │  Amendments     │                                                 │
-│  └─────────────────┘                                                 │
-│                                     │                                │
-│                            ┌────────▼────────┐                       │
-│                            │ JSON Transform  │                       │
-│                            └────────┬────────┘                       │
-│                                     │                                │
-│                            ┌────────▼────────┐                       │
-│                            │ bc-building-    │                       │
-│                            │ code.json       │                       │
-│                            └─────────────────┘                       │
-└──────────────────────────────────────────────────────────────────────┘
+  ┌─────────────────────────────────────────────────────────────────────────────────┐
+  │                          JSON GENERATION PIPELINE                                │
+  ├─────────────────────────────────────────────────────────────────────────────────┤
+  │                                                                                  │
+  │  STAGE 0: NORMALIZATION                                                         │
+  │  ┌─────────────────┐        ┌─────────────────┐        ┌─────────────────┐      │
+  │  │   NBC 2020      │        │  Normalization  │        │  nbc-canonical  │      │
+  │  │   Vendor XML    │───────►│  (XSLT)         │───────►│      .xml       │      │
+  │  │   (Arbortext)   │        │                 │        │                 │      │
+  │  └─────────────────┘        └─────────────────┘        └────────┬────────┘      │
+  │     Inconsistent IDs           Generates stable             Canonical IDs       │
+  │     Vendor format              hierarchical IDs             nbc.divB.part3...   │
+  │                                                                  │              │
+  │  STAGE 1: OVERLAY AMENDMENTS                                     ▼              │
+  │  ┌─────────────────┐        ┌─────────────────┐        ┌─────────────────┐      │
+  │  │  BC Overlay     │───────►│  Merge Engine   │◄───────│  nbc-canonical  │      │
+  │  │  Amendments     │        │  (Phase 1)      │        │      .xml       │      │
+  │  └─────────────────┘        └────────┬────────┘        └─────────────────┘      │
+  │     Replace, Insert,                 │                                          │
+  │     Modify, Delete                   ▼                                          │
+  │                             ┌─────────────────┐                                 │
+  │                             │ bc-building-    │                                 │
+  │                             │ code.xml        │                                 │
+  │                             └────────┬────────┘                                 │
+  │                                      │                                          │
+  │  STAGE 2: REVISION AMENDMENTS        ▼                                          │
+  │  ┌─────────────────┐        ┌─────────────────┐        ┌─────────────────┐      │
+  │  │  Revision       │───────►│  Merge Engine   │───────►│ bc-building-    │      │
+  │  │  Amendments     │        │  (Phase 2)      │        │ code-final.xml  │      │
+  │  └─────────────────┘        └─────────────────┘        └────────┬────────┘      │
+  │     Effective dates,                                            │              │
+  │     History tracking                                            ▼              │
+  │                                                         ┌─────────────────┐     │
+  │  STAGE 3: JSON TRANSFORMATION                           │ JSON Transform  │     │
+  │                                                         └────────┬────────┘     │
+  │                                                                  │              │
+  │                                                         ┌────────▼────────┐     │
+  │                                                         │ bc-building-    │     │
+  │                                                         │ code.json       │     │
+  │                                                         └─────────────────┘     │
+  │                                                            Web-ready output     │
+  └─────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 4. The Two-Phase Amendment System
+## 4. Stage 0: NBC Normalization
+
+Before any amendments can be applied, the NBC source XML from the vendor (Arbortext) must be **normalized** into a canonical format. This is a critical preparatory step.
+
+### Why Normalization is Needed
+
+The vendor-supplied NBC XML has:
+- **Inconsistent IDs** - IDs like `ea004586`, `es007850` that have no semantic meaning
+- **Vendor-specific markup** - Elements named for the publishing tool, not the content
+- **No stable references** - Different publishing runs may generate different IDs
+
+### What Normalization Does
+
+The normalization step (`nbc-to-canonical.xsl`) transforms vendor XML into a clean, predictable format:
+
+| Before (Vendor XML) | After (Canonical XML) |
+|--------------------|-----------------------|
+| `<OBCode>` root element | `<nbc>` root element |
+| `<OBCode.div>`, `<subsect>`, etc. | `<division>`, `<subsection>`, etc. |
+| `id="ea004586"` (vendor ID) | `xml:id="nbc.divB.part3.sect8.subsect2.art6"` (canonical ID) |
+| Inconsistent whitespace | Normalized whitespace |
+| Vendor markup | Standard XML structure |
+
+### Canonical ID Generation
+
+The normalization step generates **hierarchical canonical IDs** that encode the location in the document:
+
+```
+nbc.divB.part3.sect8.subsect2.art6.sent1.cl-a.subcl-i
+│    │    │     │    │        │    │     │    └── Subclause i
+│    │    │     │    │        │    │     └─────── Clause a
+│    │    │     │    │        │    └────────────── Sentence 1
+│    │    │     │    │        └─────────────────── Article 6
+│    │    │     │    └──────────────────────────── Subsection 2
+│    │    │     └───────────────────────────────── Section 8
+│    │    └─────────────────────────────────────── Part 3
+│    └──────────────────────────────────────────── Division B
+└───────────────────────────────────────────────── NBC namespace
+```
+
+### Vendor ID Preservation
+
+Original vendor IDs are preserved as `vendor-id` attributes for traceability:
+
+```xml
+<article xml:id="nbc.divB.part3.sect8.subsect2.art6" vendor-id="ea004586">
+```
+
+### Reference Remapping
+
+The normalization also updates all internal cross-references from vendor IDs to canonical IDs:
+
+```xml
+<!-- Before (vendor XML) -->
+<ref target="es007850">Sentence 3.8.2.6.(1)</ref>
+
+<!-- After (canonical XML) -->
+<ref target="nbc.divB.part3.sect8.subsect2.art6.sent1">Sentence 3.8.2.6.(1)</ref>
+```
+
+### Technical Details
+
+- **XSLT Transform:** `transformation-xslt/nbc-to-canonical.xsl`
+- **Input:** `source/nbc-2020-xml/nbc2020.xml` (11.76 MB vendor file)
+- **Output:** `output/nbc-canonical.xml` (~6.5 MB normalized)
+- **Processing time:** ~10 seconds
+
+---
+
+## 5. The Two-Phase Amendment System
 
 The BC Building Code uses a **two-phase amendment system** that separates structural changes from date-based versioning:
 
@@ -133,7 +213,7 @@ The BC Building Code uses a **two-phase amendment system** that separates struct
 
 ---
 
-## 5. Key Concepts and Terminology
+## 6. Key Concepts and Terminology
 
 ### Canonical IDs
 
@@ -191,7 +271,18 @@ The **merge engine** (`merge-engine-v3.xsl`) is the XSLT transformation that:
 
 ---
 
-## 6. Pipeline Workflow Summary
+## 7. Pipeline Workflow Summary
+
+### Step 0: Normalize NBC Source (One-time setup)
+
+```bash
+# Convert vendor NBC XML to canonical format
+java -jar saxon.jar -xsl:nbc-to-canonical.xsl \
+  -s:source/nbc-2020-xml/nbc2020.xml \
+  -o:output/nbc-canonical.xml
+```
+
+This step only needs to be run once when a new NBC edition is released.
 
 ### Step 1: Combine Amendment Files
 
@@ -239,11 +330,12 @@ java -jar saxon.jar -xsl:validate-amendments.xsl \
 
 ---
 
-## 7. File Locations Quick Reference
+## 8. File Locations Quick Reference
 
 | Purpose | Location |
 |---------|----------|
-| **NBC Source** | `source/nbc-canonical.xml` |
+| **NBC Vendor XML** | `source/nbc-2020-xml/nbc2020.xml` |
+| **NBC Canonical XML** | `output/nbc-canonical.xml` |
 | **Overlay Amendments** | `source/bc-amendments/xml/` |
 | **Revision Amendments** | `source/bc-revisions/xml/` |
 | **Amendment List (Phase 1)** | `source/bc-amendments/amendment-list.xml` |
@@ -255,7 +347,7 @@ java -jar saxon.jar -xsl:validate-amendments.xsl \
 
 ---
 
-## 8. Migration Note: bc. Prefix to Source Attribute
+## 9. Migration Note: bc. Prefix to Source Attribute
 
 **Completed: 2026-02-02**
 

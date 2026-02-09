@@ -25,6 +25,7 @@ Welcome to the comprehensive documentation for the BC Building Code JSON Generat
 |----------|-------------|
 | [04-merge-engine-reference.md](04-merge-engine-reference.md) | Technical reference for all merge engine operations |
 | [05-validation-troubleshooting.md](05-validation-troubleshooting.md) | Fixing common validation errors and warnings |
+| [09-json-output-guide.md](09-json-output-guide.md) | Comprehensive JSON output structure and usage guide |
 
 ### Quick Reference
 
@@ -49,6 +50,8 @@ Welcome to the comprehensive documentation for the BC Building Code JSON Generat
 | Fix "Modified text not found" error | [05-validation-troubleshooting.md](05-validation-troubleshooting.md) |
 | See working examples | [07-examples-library.md](07-examples-library.md) |
 | Look up operation syntax quickly | [06-quick-reference.md](06-quick-reference.md) |
+| Understand JSON output structure | [09-json-output-guide.md](09-json-output-guide.md) |
+| Work with JSON in applications | [09-json-output-guide.md](09-json-output-guide.md) → Working with the JSON |
 
 ---
 
@@ -120,4 +123,4 @@ When copying this documentation to Confluence:
 ---
 
 *Documentation created: 2026-02-02*
-*Last updated: 2026-02-02*
+*Last updated: 2026-02-08*
