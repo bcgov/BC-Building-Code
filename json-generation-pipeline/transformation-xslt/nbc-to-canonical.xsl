@@ -236,9 +236,12 @@
       <xsl:if test="@id">
         <xsl:attribute name="vendor-id" select="@id" />
       </xsl:if>
-      <xsl:if test="@id = 'nbc2020-b-v2'">
-        <xsl:attribute name="volume" select="'2'" />
-      </xsl:if>
+      <xsl:attribute name="volume">
+        <xsl:choose>
+          <xsl:when test="@id = 'nbc2020-b-v2'">2</xsl:when>
+          <xsl:otherwise>1</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
       <title><xsl:apply-templates
                     select="title/node()"
                     mode="rich-text"

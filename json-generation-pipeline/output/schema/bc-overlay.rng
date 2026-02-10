@@ -980,9 +980,30 @@
     <define name="bc-division-content">
         <attribute name="xml:id">
             <data type="string">
-                <param name="pattern">bc\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+                <param name="pattern">bc\.(div(A|B|BV2|C|D)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
             </data>
         </attribute>
+        
+        <!-- Add letter attribute -->
+        <attribute name="letter">
+            <choice>
+                <value>A</value>
+                <value>B</value>
+                <value>C</value>
+                <value>D</value>
+            </choice>
+        </attribute>
+        
+        <!-- Add optional volume attribute -->
+        <optional>
+            <attribute name="volume">
+                <choice>
+                    <value>1</value>
+                    <value>2</value>
+                </choice>
+            </attribute>
+        </optional>
+        
         <element name="title"><ref name="bc-rich-text"/></element>
         <element name="number"><text/></element>
         <oneOrMore>

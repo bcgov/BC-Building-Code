@@ -295,6 +295,12 @@
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="type">division</fn:string>
             <fn:string key="letter"><xsl:value-of select="@letter"/></fn:string>
+            
+            <!-- Add volume field -->
+            <xsl:if test="@volume">
+                <fn:number key="volume"><xsl:value-of select="@volume"/></fn:number>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             <fn:string key="number"><xsl:value-of select="number"/></fn:string>
             

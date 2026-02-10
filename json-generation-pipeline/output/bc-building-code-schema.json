@@ -313,6 +313,11 @@
           "type": "string",
           "pattern": "^[A-Z]+$"
         },
+        "volume": {
+          "type": "number",
+          "enum": [1, 2],
+          "description": "Physical publication volume (1 or 2)"
+        },
         "title": {
           "type": "string"
         },
