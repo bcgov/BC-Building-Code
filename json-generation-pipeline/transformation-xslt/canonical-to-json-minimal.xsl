@@ -27,8 +27,9 @@
                         <xsl:apply-templates select="front-matter" mode="json"/>
                     </fn:map>
                 </xsl:if>
-                <fn:array key="divisions">
-                    <xsl:apply-templates select="division" mode="json"/>
+                <!-- Volumes array (replaces divisions array) -->
+                <fn:array key="volumes">
+                    <xsl:apply-templates select="volume" mode="json"/>
                 </fn:array>
                 <fn:map key="cross_references_sample">
                     <xsl:call-template name="build-refs"/>
@@ -40,7 +41,8 @@
                     <xsl:call-template name="build-glossary"/>
                 </fn:map>
                 <fn:map key="statistics">
-                    <fn:number key="total_divisions"><xsl:value-of select="count(division)"/></fn:number>
+                    <fn:number key="total_volumes"><xsl:value-of select="count(volume)"/></fn:number>
+                    <fn:number key="total_divisions"><xsl:value-of select="count(.//division)"/></fn:number>
                     <fn:number key="total_parts"><xsl:value-of select="count(.//part)"/></fn:number>
                     <fn:number key="total_sections"><xsl:value-of select="count(.//section)"/></fn:number>
                     <fn:number key="total_articles"><xsl:value-of select="count(.//article)"/></fn:number>
@@ -49,6 +51,15 @@
                     <fn:number key="total_figures"><xsl:value-of select="count(.//figure)"/></fn:number>
                     <fn:number key="total_application_notes"><xsl:value-of select="count(.//application-note)"/></fn:number>
                     <fn:number key="total_revisions"><xsl:value-of select="count(.//revision-history)"/></fn:number>
+                    <!-- Volume-specific index statistics -->
+                    <xsl:if test="volume[@number='1']/index">
+                        <fn:number key="total_index_entries_vol1"><xsl:value-of select="count(volume[@number='1']/index//term)"/></fn:number>
+                        <fn:number key="total_index_references_vol1"><xsl:value-of select="count(volume[@number='1']/index//reference)"/></fn:number>
+                    </xsl:if>
+                    <xsl:if test="volume[@number='2']/index">
+                        <fn:number key="total_index_entries_vol2"><xsl:value-of select="count(volume[@number='2']/index//term)"/></fn:number>
+                        <fn:number key="total_index_references_vol2"><xsl:value-of select="count(volume[@number='2']/index//reference)"/></fn:number>
+                    </xsl:if>
                 </fn:map>
                 <fn:map key="schema_doc">
                     <xsl:call-template name="doc-schema"/>
@@ -56,6 +67,57 @@
             </fn:map>
         </xsl:variable>
         <xsl:value-of select="fn:xml-to-json($json-structure, map{'indent': true()})"/>
+    </xsl:template>
+
+    <!-- Volume template - outputs volume with divisions, index, and conversions -->
+    <xsl:template match="volume" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:number key="number"><xsl:value-of select="@number"/></fn:number>
+            <fn:string key="title">National Building Code of Canada <xsl:value-of select="/nbc/@version"/> - Volume <xsl:value-of select="@number"/></fn:string>
+            <fn:array key="divisions">
+                <xsl:apply-templates select="division" mode="json"/>
+            </fn:array>
+            <!-- Index sample (if present) -->
+            <xsl:if test="index">
+                <fn:map key="index">
+                    <fn:string key="id"><xsl:value-of select="index/@xml:id"/></fn:string>
+                    <fn:string key="type">index</fn:string>
+                    <fn:array key="letters_sample">
+                        <xsl:apply-templates select="index/letter[position() &lt;= 2]" mode="index-json"/>
+                    </fn:array>
+                    <fn:number key="total_letters"><xsl:value-of select="count(index/letter)"/></fn:number>
+                </fn:map>
+            </xsl:if>
+            <!-- Conversions sample (if present) -->
+            <xsl:if test="conversions">
+                <fn:map key="conversions">
+                    <fn:string key="id"><xsl:value-of select="conversions/@xml:id"/></fn:string>
+                    <fn:string key="type">conversions</fn:string>
+                    <fn:string key="table_id"><xsl:value-of select="conversions/table/@xml:id"/></fn:string>
+                    <fn:string key="table_title"><xsl:apply-templates select="conversions/table/title" mode="text"/></fn:string>
+                    <fn:number key="total_rows"><xsl:value-of select="count(conversions/table/tgroup/tbody/row)"/></fn:number>
+                </fn:map>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+
+    <!-- Index letter template for minimal output -->
+    <xsl:template match="letter" mode="index-json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="letter"><xsl:value-of select="@letter"/></fn:string>
+            <fn:array key="groups_sample">
+                <xsl:for-each select="group[position() &lt;= 2]">
+                    <fn:map>
+                        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                        <fn:string key="term"><xsl:apply-templates select="term" mode="text"/></fn:string>
+                        <fn:number key="reference_count"><xsl:value-of select="count(.//reference)"/></fn:number>
+                    </fn:map>
+                </xsl:for-each>
+            </fn:array>
+            <fn:number key="total_groups"><xsl:value-of select="count(group)"/></fn:number>
+        </fn:map>
     </xsl:template>
 
     <xsl:template match="division" mode="json">
@@ -541,21 +603,38 @@
 
     <xsl:template name="doc-schema">
         <fn:map key="hierarchy">
-            <fn:string key="description">BC Building Code follows strict hierarchy: division > part > section > subsection > article > sentence > clause > subclause</fn:string>
+            <fn:string key="description">BC Building Code follows strict hierarchy: volume > division > part > section > subsection > article > sentence > clause > subclause</fn:string>
             <fn:array key="levels">
-                <fn:map><fn:number key="level">1</fn:number><fn:string key="name">division</fn:string><fn:string key="example">nbc.divA, nbc.divB</fn:string></fn:map>
-                <fn:map><fn:number key="level">2</fn:number><fn:string key="name">part</fn:string><fn:string key="example">nbc.divB.part3</fn:string></fn:map>
-                <fn:map><fn:number key="level">3</fn:number><fn:string key="name">section</fn:string><fn:string key="example">nbc.divB.part3.sect8</fn:string></fn:map>
-                <fn:map><fn:number key="level">4</fn:number><fn:string key="name">subsection</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2</fn:string></fn:map>
-                <fn:map><fn:number key="level">5</fn:number><fn:string key="name">article</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6</fn:string></fn:map>
-                <fn:map><fn:number key="level">6</fn:number><fn:string key="name">sentence</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6.sent1</fn:string></fn:map>
-                <fn:map><fn:number key="level">7</fn:number><fn:string key="name">clause</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6.sent1.clause1</fn:string></fn:map>
-                <fn:map><fn:number key="level">8</fn:number><fn:string key="name">subclause</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6.sent1.clause1.subclause1</fn:string></fn:map>
+                <fn:map><fn:number key="level">1</fn:number><fn:string key="name">volume</fn:string><fn:string key="example">nbc.2020.vol1, nbc.2020.vol2</fn:string></fn:map>
+                <fn:map><fn:number key="level">2</fn:number><fn:string key="name">division</fn:string><fn:string key="example">nbc.divA, nbc.divB</fn:string></fn:map>
+                <fn:map><fn:number key="level">3</fn:number><fn:string key="name">part</fn:string><fn:string key="example">nbc.divB.part3</fn:string></fn:map>
+                <fn:map><fn:number key="level">4</fn:number><fn:string key="name">section</fn:string><fn:string key="example">nbc.divB.part3.sect8</fn:string></fn:map>
+                <fn:map><fn:number key="level">5</fn:number><fn:string key="name">subsection</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2</fn:string></fn:map>
+                <fn:map><fn:number key="level">6</fn:number><fn:string key="name">article</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6</fn:string></fn:map>
+                <fn:map><fn:number key="level">7</fn:number><fn:string key="name">sentence</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6.sent1</fn:string></fn:map>
+                <fn:map><fn:number key="level">8</fn:number><fn:string key="name">clause</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6.sent1.clause1</fn:string></fn:map>
+                <fn:map><fn:number key="level">9</fn:number><fn:string key="name">subclause</fn:string><fn:string key="example">nbc.divB.part3.sect8.subsect2.art6.sent1.clause1.subclause1</fn:string></fn:map>
             </fn:array>
         </fn:map>
+        <fn:map key="volume_structure">
+            <fn:string key="description">NBC 2020 is published in 2 physical volumes with volume-specific index and conversions</fn:string>
+            <fn:map key="volume_1">
+                <fn:string key="id">nbc.2020.vol1</fn:string>
+                <fn:array key="divisions"><fn:string>Division A</fn:string><fn:string>Division B (Parts 1-8)</fn:string><fn:string>Division C</fn:string></fn:array>
+                <fn:string key="index">nbc.2020.vol1.index</fn:string>
+                <fn:string key="conversions">nbc.2020.vol1.conversions</fn:string>
+            </fn:map>
+            <fn:map key="volume_2">
+                <fn:string key="id">nbc.2020.vol2</fn:string>
+                <fn:array key="divisions"><fn:string>Division B Part 9 (Housing and Small Buildings)</fn:string></fn:array>
+                <fn:string key="index">nbc.2020.vol2.index</fn:string>
+                <fn:string key="conversions">nbc.2020.vol2.conversions</fn:string>
+            </fn:map>
+        </fn:map>
         <fn:map key="content_types">
-            <fn:array key="structural"><fn:string>division</fn:string><fn:string>part</fn:string><fn:string>section</fn:string><fn:string>subsection</fn:string><fn:string>article</fn:string><fn:string>sentence</fn:string><fn:string>clause</fn:string><fn:string>subclause</fn:string></fn:array>
+            <fn:array key="structural"><fn:string>volume</fn:string><fn:string>division</fn:string><fn:string>part</fn:string><fn:string>section</fn:string><fn:string>subsection</fn:string><fn:string>article</fn:string><fn:string>sentence</fn:string><fn:string>clause</fn:string><fn:string>subclause</fn:string></fn:array>
             <fn:array key="content"><fn:string>table</fn:string><fn:string>figure</fn:string><fn:string>spectables</fn:string><fn:string>application_note</fn:string><fn:string>note_division</fn:string></fn:array>
+            <fn:array key="back_matter"><fn:string>index</fn:string><fn:string>conversions</fn:string></fn:array>
             <fn:array key="semantic"><fn:string>objective</fn:string><fn:string>functional_statement</fn:string><fn:string>definition</fn:string></fn:array>
             <fn:array key="references"><fn:string>internal</fn:string><fn:string>term</fn:string><fn:string>standard</fn:string><fn:string>external</fn:string></fn:array>
         </fn:map>

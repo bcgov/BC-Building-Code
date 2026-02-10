@@ -74,28 +74,48 @@
           </xsl:if>
         </metadata>
 
-        <!-- Front matter -->
-        <xsl:apply-templates select="OBCode.vol.main/front-matter" />
+        <!-- Volume 1: Front matter + Divisions A, B (Parts 1-8), C + Index + Conversions -->
+        <volume number="1" xml:id="nbc.{@code-year}.vol1">
+          <xsl:if test="OBCode.vol.main/@id">
+            <xsl:attribute name="vendor-id" select="OBCode.vol.main/@id"/>
+          </xsl:if>
+          
+          <!-- Front matter (Preface, Introduction, Committees) -->
+          <xsl:apply-templates select="OBCode.vol.main/front-matter" />
+          
+          <!-- Process divisions from Volume 1 -->
+          <xsl:apply-templates select="OBCode.vol.main/OBCode.div" />
+          
+          <!-- Volume 1 index -->
+          <xsl:apply-templates select="OBCode.vol.main/index">
+            <xsl:with-param name="volume-number" select="1"/>
+          </xsl:apply-templates>
+          
+          <!-- Volume 1 conversions -->
+          <xsl:apply-templates select="OBCode.vol.main/conversions">
+            <xsl:with-param name="volume-number" select="1"/>
+          </xsl:apply-templates>
+        </volume>
 
-        <!-- Process divisions from Volume 1 -->
-        <xsl:apply-templates select="OBCode.vol.main/OBCode.div" />
-
-        <!-- Process divisions from Volume 2 -->
-        <xsl:apply-templates select="OBCode.vol.sub/OBCode.div" />
-
-        <!-- Back matter -->
-        <xsl:if
-                    test="OBCode.vol.main/index | OBCode.vol.main/conversions | OBCode.vol.main/appendix"
-                >
-          <back-matter xml:id="nbc.{@code-year}.backmatter">
-            <xsl:apply-templates
-                            select="OBCode.vol.main/appendix"
-                            mode="back-matter"
-                        />
-            <xsl:apply-templates select="OBCode.vol.main/index" />
-            <xsl:apply-templates select="OBCode.vol.main/conversions" />
-          </back-matter>
-        </xsl:if>
+        <!-- Volume 2: Division B Part 9 + Index + Conversions -->
+        <volume number="2" xml:id="nbc.{@code-year}.vol2">
+          <xsl:if test="OBCode.vol.sub/@id">
+            <xsl:attribute name="vendor-id" select="OBCode.vol.sub/@id"/>
+          </xsl:if>
+          
+          <!-- Process divisions from Volume 2 -->
+          <xsl:apply-templates select="OBCode.vol.sub/OBCode.div" />
+          
+          <!-- Volume 2 index -->
+          <xsl:apply-templates select="OBCode.vol.sub/index">
+            <xsl:with-param name="volume-number" select="2"/>
+          </xsl:apply-templates>
+          
+          <!-- Volume 2 conversions -->
+          <xsl:apply-templates select="OBCode.vol.sub/conversions">
+            <xsl:with-param name="volume-number" select="2"/>
+          </xsl:apply-templates>
+        </volume>
       </nbc>
     </xsl:variable>
 
@@ -1666,8 +1686,144 @@
     </see-also>
   </xsl:template>
 
-  <!-- Index and conversions - just skip for now as they have complex structure -->
-  <xsl:template match="index | conversions" />
+  <!-- ================================================================== -->
+  <!-- INDEX AND CONVERSIONS PROCESSING                                   -->
+  <!-- ================================================================== -->
+
+  <!-- Process index structure -->
+  <xsl:template match="index">
+    <xsl:param name="volume-number" as="xs:integer" select="1"/>
+    <xsl:variable name="code-year" select="ancestor::OBCode/@code-year" />
+    <xsl:variable name="index-id" select="concat('nbc.', $code-year, '.vol', $volume-number, '.index')" />
+    
+    <index xml:id="{$index-id}">
+      <xsl:if test="@id">
+        <xsl:attribute name="vendor-id" select="@id" />
+      </xsl:if>
+      
+      <!-- Process introductory note if present -->
+      <xsl:if test="note.index">
+        <note>
+          <xsl:apply-templates select="note.index/para.note/node()" mode="rich-text" />
+        </note>
+      </xsl:if>
+      
+      <!-- Process letter groupings (A-Z) -->
+      <xsl:apply-templates select="iletter">
+        <xsl:with-param name="index-id" select="$index-id" />
+      </xsl:apply-templates>
+    </index>
+  </xsl:template>
+
+  <!-- Process index letter groupings -->
+  <xsl:template match="iletter">
+    <xsl:param name="index-id" as="xs:string" />
+    <xsl:variable name="letter" select="@letter" />
+    <xsl:variable name="letter-id" select="concat($index-id, '.', $letter)" />
+    
+    <index-letter xml:id="{$letter-id}" letter="{$letter}">
+      <!-- Process index groups within this letter -->
+      <xsl:apply-templates select="igroup">
+        <xsl:with-param name="letter-id" select="$letter-id" />
+      </xsl:apply-templates>
+    </index-letter>
+  </xsl:template>
+
+  <!-- Process index groups -->
+  <xsl:template match="igroup">
+    <xsl:param name="letter-id" as="xs:string" />
+    <xsl:variable name="group-num" select="position()" />
+    <xsl:variable name="group-id" select="concat($letter-id, '.group', $group-num)" />
+    
+    <index-group xml:id="{$group-id}">
+      <xsl:if test="@id">
+        <xsl:attribute name="vendor-id" select="@id" />
+      </xsl:if>
+      
+      <!-- Process main term group -->
+      <xsl:apply-templates select="itermgrp">
+        <xsl:with-param name="group-id" select="$group-id" />
+      </xsl:apply-templates>
+      
+      <!-- Process sub-term group if present -->
+      <xsl:if test="isubtermgrp">
+        <xsl:apply-templates select="isubtermgrp">
+          <xsl:with-param name="group-id" select="$group-id" />
+        </xsl:apply-templates>
+      </xsl:if>
+    </index-group>
+  </xsl:template>
+
+  <!-- Process index term groups (main terms) -->
+  <xsl:template match="itermgrp">
+    <xsl:param name="group-id" as="xs:string" />
+    <xsl:variable name="term-num" select="position()" />
+    <xsl:variable name="term-id" select="concat($group-id, '.term', $term-num)" />
+    
+    <index-term-group xml:id="{$term-id}">
+      <!-- Extract term text -->
+      <index-term>
+        <xsl:apply-templates select="iterm/node()" mode="rich-text" />
+      </index-term>
+      
+      <!-- Process references -->
+      <xsl:apply-templates select="ref.index" />
+    </index-term-group>
+  </xsl:template>
+
+  <!-- Process index sub-term groups -->
+  <xsl:template match="isubtermgrp">
+    <xsl:param name="group-id" as="xs:string" />
+    <xsl:variable name="subterm-id" select="concat($group-id, '.subterm', position())" />
+    
+    <index-subterm-group xml:id="{$subterm-id}">
+      <!-- Process each sub-term -->
+      <xsl:for-each select="itermgrp">
+        <xsl:variable name="subterm-num" select="position()" />
+        <xsl:variable name="subterm-term-id" select="concat($subterm-id, '.term', $subterm-num)" />
+        
+        <index-term-group xml:id="{$subterm-term-id}">
+          <!-- Extract sub-term text -->
+          <index-term>
+            <xsl:apply-templates select="iterm/node()" mode="rich-text" />
+          </index-term>
+          
+          <!-- Process references -->
+          <xsl:apply-templates select="ref.index" />
+        </index-term-group>
+      </xsl:for-each>
+    </index-subterm-group>
+  </xsl:template>
+
+  <!-- Process index references -->
+  <xsl:template match="ref.index">
+    <index-ref target="{@refid}">
+      <xsl:if test="@division">
+        <xsl:attribute name="division" select="@division" />
+      </xsl:if>
+      <xsl:if test="@refid">
+        <xsl:attribute name="vendor-target" select="@refid" />
+      </xsl:if>
+    </index-ref>
+  </xsl:template>
+
+  <!-- Process conversions table -->
+  <xsl:template match="conversions">
+    <xsl:param name="volume-number" as="xs:integer" select="1"/>
+    <xsl:variable name="code-year" select="ancestor::OBCode/@code-year" />
+    <xsl:variable name="conversions-id" select="concat('nbc.', $code-year, '.vol', $volume-number, '.conversions')" />
+    
+    <conversions xml:id="{$conversions-id}">
+      <xsl:if test="@id">
+        <xsl:attribute name="vendor-id" select="@id" />
+      </xsl:if>
+      
+      <!-- Process the conversion factors table -->
+      <xsl:apply-templates select="table">
+        <xsl:with-param name="parent-id" select="$conversions-id" />
+      </xsl:apply-templates>
+    </conversions>
+  </xsl:template>
 
   <!-- Skip Arbortext tracking elements -->
   <xsl:template match="atict:*" mode="#all" />
@@ -1745,6 +1901,24 @@
     <xsl:if test="not($hit)"><xsl:attribute
                 name="vendor-target"
                 select="$vendor-id"
+            /></xsl:if>
+  </xsl:template>
+
+  <!-- Update index-ref targets to use canonical IDs -->
+  <xsl:template match="index-ref/@target" mode="update-references">
+    <xsl:variable name="vendor-id" select="." />
+    <xsl:variable
+            name="hit"
+            select="key('canon-by-vendor-id', $vendor-id)[1]"
+        />
+    <xsl:attribute
+            name="target"
+            select="if ($hit) then $hit/@xml:id else $vendor-id"
+        />
+    <!-- Keep vendor-target for reference -->
+    <xsl:if test="not($hit) or @vendor-target"><xsl:attribute
+                name="vendor-target"
+                select="if (@vendor-target) then @vendor-target else $vendor-id"
             /></xsl:if>
   </xsl:template>
 

@@ -37,25 +37,12 @@
         </oneOrMore>
       </element>
 
-      <element name="front-matter">
-        <attribute name="xml:id">
-          <data type="ID"/>
-        </attribute>
-        <ref name="front-matter-content"/>
-      </element>
-
+      <!-- Volumes: Volume 1 (with front-matter) and Volume 2 -->
       <oneOrMore>
-        <element name="division">
-          <ref name="division-content"/>
+        <element name="volume">
+          <ref name="volume-content"/>
         </element>
       </oneOrMore>
-
-      <optional>
-        <element name="back-matter">
-          <attribute name="xml:id"><data type="ID"/></attribute>
-          <ref name="back-matter-content"/>
-        </element>
-      </optional>
     </element>
   </start>
 
@@ -182,6 +169,62 @@
       </optional>
     </element>
   </define>
+
+  <!-- ================================================================== -->
+  <!-- VOLUME STRUCTURE                                                   -->
+  <!-- ================================================================== -->
+
+  <define name="volume-content">
+    <attribute name="xml:id">
+      <data type="string">
+        <param name="pattern">nbc\.[0-9]{4}\.vol[12]</param>
+      </data>
+    </attribute>
+    <attribute name="number">
+      <choice>
+        <value>1</value>
+        <value>2</value>
+      </choice>
+    </attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+
+    <!-- Front matter (only in Volume 1: Preface, Introduction, Committees) -->
+    <optional>
+      <element name="front-matter">
+        <attribute name="xml:id">
+          <data type="ID"/>
+        </attribute>
+        <ref name="front-matter-content"/>
+      </element>
+    </optional>
+
+    <!-- Divisions within this volume -->
+    <oneOrMore>
+      <element name="division">
+        <ref name="division-content"/>
+      </element>
+    </oneOrMore>
+
+    <!-- Volume-specific index -->
+    <optional>
+      <element name="index">
+        <ref name="index-content"/>
+      </element>
+    </optional>
+
+    <!-- Volume-specific conversions -->
+    <optional>
+      <element name="conversions">
+        <ref name="conversions-content"/>
+      </element>
+    </optional>
+  </define>
+
+  <!-- ================================================================== -->
+  <!-- DIVISION STRUCTURE                                                 -->
+  <!-- ================================================================== -->
 
   <define name="division-content">
     <attribute name="xml:id">
@@ -2131,21 +2174,124 @@
     </zeroOrMore>
   </define>
 
-  <define name="back-matter-content">
-    <zeroOrMore>
-      <choice>
-        <element name="appendix">
-          <ref name="appendix-content"/>
-        </element>
-        <element name="index">
-          <attribute name="xml:id"><data type="ID"/></attribute>
-          <ref name="document-content"/>
-        </element>
-        <element name="conversions">
-          <ref name="table-content"/>
-        </element>
-      </choice>
-    </zeroOrMore>
+  <!-- ================================================================== -->
+  <!-- INDEX CONTENT DEFINITIONS                                          -->
+  <!-- ================================================================== -->
+
+  <define name="index-content">
+    <attribute name="xml:id"><data type="ID"/></attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    
+    <!-- Optional introductory note -->
+    <optional>
+      <element name="note">
+        <ref name="rich-text"/>
+      </element>
+    </optional>
+    
+    <!-- Index letters (A-Z groupings) -->
+    <oneOrMore>
+      <element name="index-letter">
+        <attribute name="xml:id"><data type="ID"/></attribute>
+        <attribute name="letter">
+          <data type="string">
+            <param name="pattern">[A-Z]</param>
+          </data>
+        </attribute>
+        
+        <!-- Index groups within each letter -->
+        <oneOrMore>
+          <element name="index-group">
+            <attribute name="xml:id"><data type="ID"/></attribute>
+            <optional>
+              <attribute name="vendor-id"><text/></attribute>
+            </optional>
+            
+            <!-- Main term group -->
+            <element name="index-term-group">
+              <attribute name="xml:id"><data type="ID"/></attribute>
+              
+              <!-- Main index term -->
+              <element name="index-term">
+                <ref name="rich-text"/>
+              </element>
+              
+              <!-- Optional references for main term -->
+              <zeroOrMore>
+                <element name="index-ref">
+                  <attribute name="target"><text/></attribute>
+                  <optional>
+                    <attribute name="division">
+                      <choice>
+                        <value>1</value>
+                        <value>2</value>
+                      </choice>
+                    </attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="vendor-target"><text/></attribute>
+                  </optional>
+                </element>
+              </zeroOrMore>
+            </element>
+            
+            <!-- Optional sub-term groups -->
+            <optional>
+              <element name="index-subterm-group">
+                <attribute name="xml:id"><data type="ID"/></attribute>
+                
+                <oneOrMore>
+                  <element name="index-term-group">
+                    <attribute name="xml:id"><data type="ID"/></attribute>
+                    
+                    <!-- Sub-term -->
+                    <element name="index-term">
+                      <ref name="rich-text"/>
+                    </element>
+                    
+                    <!-- References for sub-term -->
+                    <zeroOrMore>
+                      <element name="index-ref">
+                        <attribute name="target"><text/></attribute>
+                        <optional>
+                          <attribute name="division">
+                            <choice>
+                              <value>1</value>
+                              <value>2</value>
+                            </choice>
+                          </attribute>
+                        </optional>
+                        <optional>
+                          <attribute name="vendor-target"><text/></attribute>
+                        </optional>
+                      </element>
+                    </zeroOrMore>
+                  </element>
+                </oneOrMore>
+              </element>
+            </optional>
+          </element>
+        </oneOrMore>
+      </element>
+    </oneOrMore>
+  </define>
+
+  <!-- ================================================================== -->
+  <!-- CONVERSIONS CONTENT DEFINITIONS                                    -->
+  <!-- ================================================================== -->
+
+  <define name="conversions-content">
+    <attribute name="xml:id"><data type="ID"/></attribute>
+    <optional>
+      <attribute name="vendor-id"><text/></attribute>
+    </optional>
+    
+    <!-- Conversions is a single table with conversion factors -->
+    <element name="table">
+      <ref name="table-content"/>
+    </element>
   </define>
 
   <define name="appendix-content">

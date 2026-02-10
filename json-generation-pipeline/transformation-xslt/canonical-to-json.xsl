@@ -45,9 +45,9 @@
                     </fn:map>
                 </xsl:if>
                 
-                <!-- Document structure -->
-                <fn:array key="divisions">
-                    <xsl:apply-templates select="division" mode="json"/>
+                <!-- Volumes structure (replaces divisions array) -->
+                <fn:array key="volumes">
+                    <xsl:apply-templates select="volume" mode="json"/>
                 </fn:array>
                 
                 <xsl:if test="$include-cross-references">
@@ -69,7 +69,8 @@
                 
                 <!-- Statistics -->
                 <fn:map key="statistics">
-                    <fn:number key="total_divisions"><xsl:value-of select="count(division)"/></fn:number>
+                    <fn:number key="total_volumes"><xsl:value-of select="count(volume)"/></fn:number>
+                    <fn:number key="total_divisions"><xsl:value-of select="count(.//division)"/></fn:number>
                     <fn:number key="total_parts"><xsl:value-of select="count(.//part)"/></fn:number>
                     <fn:number key="total_sections"><xsl:value-of select="count(.//section)"/></fn:number>
                     <fn:number key="total_articles"><xsl:value-of select="count(.//article)"/></fn:number>
@@ -78,6 +79,16 @@
                     <fn:number key="total_figures"><xsl:value-of select="count(.//figure)"/></fn:number>
                     <fn:number key="total_spectables"><xsl:value-of select="count(.//spectables)"/></fn:number>
                     <fn:number key="total_application_notes"><xsl:value-of select="count(.//application-note)"/></fn:number>
+                    
+                    <!-- Volume-specific index statistics -->
+                    <fn:number key="total_index_entries_vol1"><xsl:value-of select="count(volume[@number='1']//index-term-group)"/></fn:number>
+                    <fn:number key="total_index_entries_vol2"><xsl:value-of select="count(volume[@number='2']//index-term-group)"/></fn:number>
+                    <fn:number key="total_index_references_vol1"><xsl:value-of select="count(volume[@number='1']//index-ref)"/></fn:number>
+                    <fn:number key="total_index_references_vol2"><xsl:value-of select="count(volume[@number='2']//index-ref)"/></fn:number>
+                    
+                    <!-- Aggregate totals for backward compatibility -->
+                    <fn:number key="total_index_entries"><xsl:value-of select="count(.//index-term-group)"/></fn:number>
+                    <fn:number key="total_index_references"><xsl:value-of select="count(.//index-ref)"/></fn:number>
                 </fn:map>
             </fn:map>
         </xsl:variable>
@@ -290,16 +301,48 @@
     <!-- STRUCTURAL HIERARCHY PROCESSING                                    -->
     <!-- ================================================================== -->
     
+    <!-- Volume template -->
+    <xsl:template match="volume" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">volume</fn:string>
+            <fn:number key="number"><xsl:value-of select="@number"/></fn:number>
+            
+            <!-- Volume title from metadata -->
+            <xsl:variable name="vol-num" select="@number"/>
+            <xsl:variable name="vol-title" select="ancestor::nbc/metadata/publication-info[@volume=$vol-num]/title"/>
+            <xsl:if test="$vol-title">
+                <fn:string key="title"><xsl:value-of select="$vol-title"/></fn:string>
+            </xsl:if>
+            
+            <!-- Divisions within this volume -->
+            <fn:array key="divisions">
+                <xsl:apply-templates select="division" mode="json"/>
+            </fn:array>
+            
+            <!-- Volume-specific index -->
+            <xsl:if test="index">
+                <fn:map key="index">
+                    <xsl:apply-templates select="index" mode="json"/>
+                </fn:map>
+            </xsl:if>
+            
+            <!-- Volume-specific conversions -->
+            <xsl:if test="conversions">
+                <fn:map key="conversions">
+                    <xsl:apply-templates select="conversions" mode="json"/>
+                </fn:map>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+    
     <xsl:template match="division" mode="json">
         <fn:map>
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="type">division</fn:string>
             <fn:string key="letter"><xsl:value-of select="@letter"/></fn:string>
             
-            <!-- Add volume field -->
-            <xsl:if test="@volume">
-                <fn:number key="volume"><xsl:value-of select="@volume"/></fn:number>
-            </xsl:if>
+            <!-- Volume field removed - now part of parent volume -->
             
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             <fn:string key="number"><xsl:value-of select="number"/></fn:string>
@@ -1855,6 +1898,135 @@
                 </xsl:if>
             </fn:map>
         </xsl:for-each>
+    </xsl:template>
+    
+    <!-- ================================================================== -->
+    <!-- INDEX AND CONVERSIONS PROCESSING (NOW IN VOLUMES)                 -->
+    <!-- ================================================================== -->
+    
+    <!-- Index JSON output -->
+    <xsl:template match="index" mode="json">
+        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+        <fn:string key="type">index</fn:string>
+        
+        <!-- Introduction note if present -->
+        <xsl:if test="note">
+            <fn:string key="introduction"><xsl:apply-templates select="note" mode="rich-text-json"/></fn:string>
+        </xsl:if>
+        
+        <!-- Letter groupings (A-Z) -->
+        <fn:array key="letters">
+            <xsl:apply-templates select="index-letter" mode="json"/>
+        </fn:array>
+    </xsl:template>
+    
+    <!-- Index letter groupings -->
+    <xsl:template match="index-letter" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="letter"><xsl:value-of select="@letter"/></fn:string>
+            
+            <!-- Index groups within this letter -->
+            <fn:array key="groups">
+                <xsl:apply-templates select="index-group" mode="json"/>
+            </fn:array>
+        </fn:map>
+    </xsl:template>
+    
+    <!-- Index groups -->
+    <xsl:template match="index-group" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            
+            <!-- Main term -->
+            <fn:string key="term_id"><xsl:value-of select="index-term-group[1]/@xml:id"/></fn:string>
+            <fn:string key="term"><xsl:apply-templates select="index-term-group[1]/index-term" mode="rich-text-json"/></fn:string>
+            
+            <!-- References for main term -->
+            <xsl:if test="index-term-group[1]/index-ref">
+                <fn:array key="references">
+                    <xsl:apply-templates select="index-term-group[1]/index-ref" mode="json"/>
+                </fn:array>
+            </xsl:if>
+            
+            <!-- Sub-terms if present -->
+            <xsl:if test="index-subterm-group">
+                <fn:array key="subterms">
+                    <xsl:apply-templates select="index-subterm-group/index-term-group" mode="json-subterm"/>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+    
+    <!-- Sub-term -->
+    <xsl:template match="index-term-group" mode="json-subterm">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="term"><xsl:apply-templates select="index-term" mode="rich-text-json"/></fn:string>
+            
+            <!-- References for sub-term -->
+            <xsl:if test="index-ref">
+                <fn:array key="references">
+                    <xsl:apply-templates select="index-ref" mode="json"/>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+    
+    <!-- Index reference -->
+    <xsl:template match="index-ref" mode="json">
+        <fn:map>
+            <fn:string key="target"><xsl:value-of select="@target"/></fn:string>
+            <xsl:if test="@division">
+                <fn:string key="division"><xsl:value-of select="@division"/></fn:string>
+            </xsl:if>
+            <xsl:if test="@vendor-target">
+                <fn:string key="vendor_target"><xsl:value-of select="@vendor-target"/></fn:string>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+    
+    <!-- Conversions JSON output -->
+    <xsl:template match="conversions" mode="json">
+        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+        <fn:string key="type">conversions</fn:string>
+        
+        <!-- Conversion factors table - extract table properties without nesting the full table object -->
+        <xsl:variable name="conv-table" select="table"/>
+        <fn:string key="table_id"><xsl:value-of select="$conv-table/@xml:id"/></fn:string>
+        <fn:string key="table_title"><xsl:apply-templates select="$conv-table/title" mode="rich-text-json"/></fn:string>
+        
+        <fn:map key="table_structure">
+            <xsl:choose>
+                <xsl:when test="$conv-table/tgroup/@cols and $conv-table/tgroup/@cols != ''">
+                    <fn:number key="columns"><xsl:value-of select="$conv-table/tgroup/@cols"/></fn:number>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fn:null key="columns"/>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            <xsl:if test="$conv-table/tgroup/colspec">
+                <fn:array key="column_specs">
+                    <xsl:for-each select="$conv-table/tgroup/colspec">
+                        <fn:map>
+                            <fn:string key="name"><xsl:value-of select="@colname"/></fn:string>
+                            <fn:string key="width"><xsl:value-of select="@colwidth"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
+            
+            <xsl:if test="$conv-table/tgroup/thead">
+                <fn:array key="header_rows">
+                    <xsl:apply-templates select="$conv-table/tgroup/thead/row" mode="json"/>
+                </fn:array>
+            </xsl:if>
+            
+            <fn:array key="body_rows">
+                <xsl:apply-templates select="$conv-table/tgroup/tbody/row" mode="json"/>
+            </fn:array>
+        </fn:map>
     </xsl:template>
     
 </xsl:stylesheet>
