@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    # Allow run only when the workflow is dispatched from the specific branch
+    # Allow run only when the workflow is dispatched from a branch
     if: ${{ github.ref == 'refs/heads/feature/IC2026-19_syncrepo2repo' }}
 
     runs-on: ubuntu-latest
