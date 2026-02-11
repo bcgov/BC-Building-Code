@@ -21,7 +21,7 @@ jobs:
           java-version: '17'
 
       - name: Run transformation pipeline
-        run: bash ../scripts/run-pipeline.sh
+        run: bash .github/scripts/run-pipeline.sh
 
 
       - name: Upload combined artifact
