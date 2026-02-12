@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Ministerial Order BA 2024 02
-
-  Uses snapshot-based revision history approach for date-based versioning.
-  Display content is derived from the latest revision (status="current").
+     Ministerial Order BA 2024 02
+     
+     Uses snapshot-based revision history approach for date-based versioning.
+     Display content is derived from the latest revision (status="current").
 -->
 <bc-overlay id="bc-mo-ba-2024-02" version="1.0" nbc-target-version="2020" 
             effective-date="2024-05-24">
@@ -129,7 +129,7 @@
                   </clause>
                   <clause xml:id="nbc.divBV2.part9.sect33.subsect5.art2.sent1.clause7" letter="g">
                     <text>a combination thereof.
-(See also <ref type="internal" target="nbc.divBV2.part9.sect33.subsect5.art3.sent1" display-type="long" pretext="Sentence"/>.)</text>
+                      (See also <ref type="internal" target="nbc.divBV2.part9.sect33.subsect5.art3.sent1" display-type="long" pretext="Sentence"/>.)</text>
                   </clause>
                 </content>
                 <change-summary>Repealed and substituted Sentence 9.33.5.2.(1) with new clauses (a) through (g) for installation standards</change-summary>

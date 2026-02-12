@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Ministerial Order BA 2024 01
-  Division 1 - Changes to Division B
-  
-  Table 1.3.1.2. amendments to add Code References for:
-  - ASTM C840-18b: add 3.1.6.6.(6)(c)
-  - ASTM C1396/C1396M-17: add 3.1.6.6.(2), 3.1.6.6.(3), 3.1.6.6.(4), 3.1.6.6.(5)
-  - ASTM D2898-10: add 3.1.6.6.(5)(b)
-  - CAN/CSA-82.27-M: add 3.1.6.6.(2), 3.1.6.6.(3), 3.1.6.6.(4), 3.1.6.6.(5)
-  
-  Table 3.1.3.1. Major Occupancy Fire Separations:
-  - Repealed and substituted with updated table
-  - Notes reformatted as numbered footnotes (1)-(6)
-  - F-1 column values updated with note (2) references
-  - Article references updated (3.2.2.51 and 3.2.2.60)
-  
-  Uses snapshot-based revision history approach for date-based versioning.
-  Display content is derived from the latest revision (status="current").
+     Ministerial Order BA 2024 01
+     Division 1 - Changes to Division B
+     
+     Table 1.3.1.2. amendments to add Code References for:
+     - ASTM C840-18b: add 3.1.6.6.(6)(c)
+     - ASTM C1396/C1396M-17: add 3.1.6.6.(2), 3.1.6.6.(3), 3.1.6.6.(4), 3.1.6.6.(5)
+     - ASTM D2898-10: add 3.1.6.6.(5)(b)
+     - CAN/CSA-82.27-M: add 3.1.6.6.(2), 3.1.6.6.(3), 3.1.6.6.(4), 3.1.6.6.(5)
+     
+     Table 3.1.3.1. Major Occupancy Fire Separations:
+     - Repealed and substituted with updated table
+     - Notes reformatted as numbered footnotes (1)-(6)
+     - F-1 column values updated with note (2) references
+     - Article references updated (3.2.2.51 and 3.2.2.60)
+     
+     Uses snapshot-based revision history approach for date-based versioning.
+     Display content is derived from the latest revision (status="current").
 -->
 <bc-overlay id="bc-mo-ba-2024-01" version="1.0" nbc-target-version="2020" 
             effective-date="2024-04-05">
@@ -199,8 +199,8 @@
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-005" status="current">
                 <content>
                   <title>Major Occupancy Fire Separations<note xml:id="nbc.divB.part3.sect1.subsect3.art1.table1.note1">
-                    <ref type="internal" target="nbc.divB.part3.sect3" display-type="long"/> contains requirements for the separation of <ref type="term" target="ccpnc">occupancies</ref> and tenancies that are in addition to the requirements for the separation of <ref type="term" target="mjr-ccpn">major occupancies</ref>.
-                  </note></title>
+                      <ref type="internal" target="nbc.divB.part3.sect3" display-type="long"/> contains requirements for the separation of <ref type="term" target="ccpnc">occupancies</ref> and tenancies that are in addition to the requirements for the separation of <ref type="term" target="mjr-ccpn">major occupancies</ref>.
+                    </note></title>
                   <ref type="internal" target="nbc.divB.part3.sect1.subsect3.art1.sent1" display-type="long"/>
                   <tgroup cols="14">
                     <colspec colname="1" colwidth="63*"/>
@@ -454,7 +454,7 @@
                       </row>
                     </tbody>
                   </tgroup>
-                  </content>
+                </content>
                 <change-summary>Repealed and substituted Table 3.1.3.1 Major Occupancy Fire Separations</change-summary>
                 <note>Ministerial Order BA 2024 01</note>
               </revision>
@@ -475,7 +475,7 @@
         <new-content source="bc">
           <article xml:id="nbc.divB.part3.sect1.subsect6.art4" number="4" vendor-id="ea003703" revised="yes">
             <title>Encapsulation of Mass Timber Elements
-(See also <ref type="internal" target="nbc.divB.part3.sect9.appnote20" display-type="short" pretext="Note"/>.)
+              (See also <ref type="internal" target="nbc.divB.part3.sect9.appnote20" display-type="short" pretext="Note"/>.)
             </title>
             <revision-history>
               <original effective-date="2020-12-01">
@@ -622,7 +622,7 @@
           <article xml:id="nbc.divB.part3.sect1.subsect6.art6" number="6" vendor-id="ea003558" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
-               
+                
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-007" status="current">
@@ -690,117 +690,117 @@
             
             <revision-history>
               <original effective-date="2020-12-01">
-               
+                
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-008" status="current">
                 <content>
                   <title>Exterior Cladding</title>
                   <sentence xml:id="nbc.divB.part3.sect1.subsect6.art9.sent1" number="1">
-                     <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2" display-type="short" pretext="Sentences"/>
-                        <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent3" display-type="short" pretext=","/>
-                        <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent4" display-type="short" pretext=","/>
-                        <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent6" display-type="short" pretext=","/>
-                        <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent9" display-type="short" pretext="and"/>, cladding on an exterior wall assembly of a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> shall be</text>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent1.clause1" letter="a">
-                        <text><ref type="term" target="ncmbtbl">noncombustible</ref>,</text>
-                     </clause>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent1.clause2" letter="b">
-                        <text>a material or combination of materials that satisfy the criteria of <ref type="internal" target="nbc.divB.part3.sect1.subsect5.art1.sent2" display-type="long"/>,</text>
-                     </clause>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent1.clause3" letter="c">
-                        <text>except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent7" display-type="short"/>, a wall assembly that satisfies the criteria of <ref type="internal" target="nbc.divB.part3.sect1.subsect5.art5.sent1.clause2" display-type="long"/>, or</text>
-                     </clause>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent1.clause4" letter="d">
-                        <text>a combination of the cladding described in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1.clause1" display-type="short" pretext="Clauses"/> <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1.clause3" display-type="short" pretext="to"/>.</text>
-                     </clause>
+                    <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2" display-type="short" pretext="Sentences"/>
+                      <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent3" display-type="short" pretext=","/>
+                      <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent4" display-type="short" pretext=","/>
+                      <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent6" display-type="short" pretext=","/>
+                      <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent9" display-type="short" pretext="and"/>, cladding on an exterior wall assembly of a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> shall be</text>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent1.clause1" letter="a">
+                      <text><ref type="term" target="ncmbtbl">noncombustible</ref>,</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent1.clause2" letter="b">
+                      <text>a material or combination of materials that satisfy the criteria of <ref type="internal" target="nbc.divB.part3.sect1.subsect5.art1.sent2" display-type="long"/>,</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent1.clause3" letter="c">
+                      <text>except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent7" display-type="short"/>, a wall assembly that satisfies the criteria of <ref type="internal" target="nbc.divB.part3.sect1.subsect5.art5.sent1.clause2" display-type="long"/>, or</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent1.clause4" letter="d">
+                      <text>a combination of the cladding described in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1.clause1" display-type="short" pretext="Clauses"/> <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1.clause3" display-type="short" pretext="to"/>.</text>
+                    </clause>
                   </sentence>
                   <sentence xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2" number="2">
-                     <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent3" display-type="short" pretext="Sentences"/>
-                        <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent4" display-type="short" pretext=","/>
-                        <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent6" display-type="short" pretext=","/>
-                        <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent8" display-type="short" pretext="and"/>, cladding on an exterior wall assembly of a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> that is not more than 12 <ref type="term" target="tr">storeys</ref> in <ref type="term" target="bldng-hght">building height</ref> is permitted to consist of</text>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1" letter="a">
-                        <text><ref type="term" target="cmbtbl">combustible</ref> cladding that</text>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause1" number="1">
-                           <text>is not contiguous over more than 4 <ref type="term" target="tr">storeys</ref>,</text>
-                        </subclause>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause2" number="2">
-                           <text>represents not more than 10% of the cladding on each exterior wall of each <ref type="term" target="tr">storey</ref>,</text>
-                        </subclause>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause3" number="3">
-                           <text>is not more than <measurement units="metric">1.2 m</measurement> in width,</text>
-                        </subclause>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause4" number="4">
-                           <text>has a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 75 on any exposed surface, or any surface that would be exposed by cutting through the material in any direction,</text>
-                        </subclause>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause5" number="5">
-                           <text>is separated from other portions of <ref type="term" target="cmbtbl">combustible</ref> cladding on adjacent <ref type="term" target="tr">storeys</ref> by a horizontal distance of not less than <measurement units="metric">2.4 m</measurement>, and</text>
-                        </subclause>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause6" number="6">
-                           <text>is separated from other portions of <ref type="term" target="cmbtbl">combustible</ref> cladding by a horizontal distance of not less than <measurement units="metric">1.2 m</measurement>,</text>
-                        </subclause>
-                     </clause>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2" letter="b">
-                        <text><ref type="term" target="cmbtbl">combustible</ref> cladding that</text>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2.subclause1" number="1">
-                           <text>is not contiguous across adjacent <ref type="term" target="tr">storeys</ref>,</text>
-                        </subclause>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2.subclause2" number="2">
-                           <text>represents not more than 10% of the cladding on each exterior wall of each <ref type="term" target="tr">storey</ref>,</text>
-                        </subclause>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2.subclause3" number="3">
-                           <text>has a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 75 on any exposed surface, or any surface that would be exposed by cutting through the material in any direction, and</text>
-                        </subclause>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2.subclause4" number="4">
-                           <text>is separated from other portions of <ref type="term" target="cmbtbl">combustible</ref> cladding on adjacent <ref type="term" target="tr">storeys</ref> by a horizontal distance of not less than <measurement units="metric">2.4 m</measurement>,</text>
-                        </subclause>
-                     </clause>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause3" letter="c">
-                        <text><ref type="term" target="cmbtbl">combustible</ref> cladding representing up to 100% of the cladding on exterior walls of the first <ref type="term" target="tr">storey</ref>, provided all portions of the cladding can be directly accessed and are located not more than <measurement units="metric">15 m</measurement> from a <ref type="term" target="trt">street</ref> or access route conforming to <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art6" display-type="long"/>, measured horizontally from the face of the <ref type="term" target="bldng">building</ref>, or</text>
-                     </clause>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause4" letter="d">
-                        <text>a combination of <ref type="term" target="ncmbtbl">noncombustible</ref> cladding and the cladding described in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1" display-type="short" pretext="Sentence"/> and <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1" display-type="short" pretext="Clauses"/> <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause3" display-type="short" pretext="to"/>.</text>
-                     </clause>
+                    <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent3" display-type="short" pretext="Sentences"/>
+                      <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent4" display-type="short" pretext=","/>
+                      <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent6" display-type="short" pretext=","/>
+                      <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent8" display-type="short" pretext="and"/>, cladding on an exterior wall assembly of a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> that is not more than 12 <ref type="term" target="tr">storeys</ref> in <ref type="term" target="bldng-hght">building height</ref> is permitted to consist of</text>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1" letter="a">
+                      <text><ref type="term" target="cmbtbl">combustible</ref> cladding that</text>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause1" number="1">
+                        <text>is not contiguous over more than 4 <ref type="term" target="tr">storeys</ref>,</text>
+                      </subclause>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause2" number="2">
+                        <text>represents not more than 10% of the cladding on each exterior wall of each <ref type="term" target="tr">storey</ref>,</text>
+                      </subclause>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause3" number="3">
+                        <text>is not more than <measurement units="metric">1.2 m</measurement> in width,</text>
+                      </subclause>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause4" number="4">
+                        <text>has a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 75 on any exposed surface, or any surface that would be exposed by cutting through the material in any direction,</text>
+                      </subclause>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause5" number="5">
+                        <text>is separated from other portions of <ref type="term" target="cmbtbl">combustible</ref> cladding on adjacent <ref type="term" target="tr">storeys</ref> by a horizontal distance of not less than <measurement units="metric">2.4 m</measurement>, and</text>
+                      </subclause>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1.subclause6" number="6">
+                        <text>is separated from other portions of <ref type="term" target="cmbtbl">combustible</ref> cladding by a horizontal distance of not less than <measurement units="metric">1.2 m</measurement>,</text>
+                      </subclause>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2" letter="b">
+                      <text><ref type="term" target="cmbtbl">combustible</ref> cladding that</text>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2.subclause1" number="1">
+                        <text>is not contiguous across adjacent <ref type="term" target="tr">storeys</ref>,</text>
+                      </subclause>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2.subclause2" number="2">
+                        <text>represents not more than 10% of the cladding on each exterior wall of each <ref type="term" target="tr">storey</ref>,</text>
+                      </subclause>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2.subclause3" number="3">
+                        <text>has a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 75 on any exposed surface, or any surface that would be exposed by cutting through the material in any direction, and</text>
+                      </subclause>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2.subclause4" number="4">
+                        <text>is separated from other portions of <ref type="term" target="cmbtbl">combustible</ref> cladding on adjacent <ref type="term" target="tr">storeys</ref> by a horizontal distance of not less than <measurement units="metric">2.4 m</measurement>,</text>
+                      </subclause>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause3" letter="c">
+                      <text><ref type="term" target="cmbtbl">combustible</ref> cladding representing up to 100% of the cladding on exterior walls of the first <ref type="term" target="tr">storey</ref>, provided all portions of the cladding can be directly accessed and are located not more than <measurement units="metric">15 m</measurement> from a <ref type="term" target="trt">street</ref> or access route conforming to <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art6" display-type="long"/>, measured horizontally from the face of the <ref type="term" target="bldng">building</ref>, or</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent2.clause4" letter="d">
+                      <text>a combination of <ref type="term" target="ncmbtbl">noncombustible</ref> cladding and the cladding described in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1" display-type="short" pretext="Sentence"/> and <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1" display-type="short" pretext="Clauses"/> <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause3" display-type="short" pretext="to"/>.</text>
+                    </clause>
                   </sentence>
                   <sentence xml:id="nbc.divB.part3.sect1.subsect6.art9.sent3" number="3">
-                     <text>The permitted area of <ref type="term" target="cmbtbl">combustible</ref> cladding in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1" display-type="medium"/> or <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2" display-type="short"/> shall not exceed 5% of the cladding on each exterior wall of each <ref type="term" target="tr">storey</ref> where the time from receipt of notification of a fire by the fire department until the arrival of the first fire department vehicle at the <ref type="term" target="bldng">building</ref> exceeds <measurement units="metric">10 min</measurement> in 10% or more of all fire department calls to the building. (See <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art1.sent8" display-type="long"/>.)</text>
+                    <text>The permitted area of <ref type="term" target="cmbtbl">combustible</ref> cladding in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1" display-type="medium"/> or <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2" display-type="short"/> shall not exceed 5% of the cladding on each exterior wall of each <ref type="term" target="tr">storey</ref> where the time from receipt of notification of a fire by the fire department until the arrival of the first fire department vehicle at the <ref type="term" target="bldng">building</ref> exceeds <measurement units="metric">10 min</measurement> in 10% or more of all fire department calls to the building. (See <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art1.sent8" display-type="long"/>.)</text>
                   </sentence>
                   <sentence xml:id="nbc.divB.part3.sect1.subsect6.art9.sent4" number="4">
-                     <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent6" display-type="short" pretext="Sentences"/> <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent8" display-type="short" pretext="and"/>, cladding on an exterior wall assembly of a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> that is not more than 6 <ref type="term" target="tr">storeys</ref> in <ref type="term" target="bldng-hght">building height</ref> is permitted to consist of</text>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1" letter="a">
-                        <text><ref type="term" target="cmbtbl">combustible</ref> cladding that</text>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1.subclause1" number="1">
-                           <text>represents not more than 10% of the cladding on each exterior wall of each <ref type="term" target="tr">storey</ref>, and</text>
-                        </subclause>
-                        <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1.subclause2" number="2">
-                           <text>has a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 75 on any exposed surface, or any surface that would be exposed by cutting through the material in any direction, or</text>
-                        </subclause>
-                     </clause>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent4.clause2" letter="b">
-                        <text>a combination of the cladding described in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1" display-type="short"/> and the cladding described in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1" display-type="short" pretext="Sentence"/> and <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause3" display-type="short"/>.</text>
-                     </clause>
+                    <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent6" display-type="short" pretext="Sentences"/> <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent8" display-type="short" pretext="and"/>, cladding on an exterior wall assembly of a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> that is not more than 6 <ref type="term" target="tr">storeys</ref> in <ref type="term" target="bldng-hght">building height</ref> is permitted to consist of</text>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1" letter="a">
+                      <text><ref type="term" target="cmbtbl">combustible</ref> cladding that</text>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1.subclause1" number="1">
+                        <text>represents not more than 10% of the cladding on each exterior wall of each <ref type="term" target="tr">storey</ref>, and</text>
+                      </subclause>
+                      <subclause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1.subclause2" number="2">
+                        <text>has a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 75 on any exposed surface, or any surface that would be exposed by cutting through the material in any direction, or</text>
+                      </subclause>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent4.clause2" letter="b">
+                      <text>a combination of the cladding described in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1" display-type="short"/> and the cladding described in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1" display-type="short" pretext="Sentence"/> and <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause3" display-type="short"/>.</text>
+                    </clause>
                   </sentence>
                   <sentence xml:id="nbc.divB.part3.sect1.subsect6.art9.sent5" number="5">
-                     <text>Where <ref type="term" target="cmbtbl">combustible</ref> cladding conforming to <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1" display-type="medium"/>, <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2" display-type="short"/> or <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1" display-type="short"/> on an exterior wall of a <ref type="term" target="fr-cmprt">fire compartment</ref> is exposed to <ref type="term" target="cmbtbl">combustible</ref> cladding conforming to <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1" display-type="medium"/>, <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2" display-type="short"/> or <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1" display-type="short"/> on an exterior wall of the same <ref type="term" target="fr-cmprt">fire compartment</ref> or of another <ref type="term" target="fr-cmprt">fire compartment</ref>, and the planes of the two walls are parallel or at an angle less than 135Â° measured from the exterior of the <ref type="term" target="bldng">building</ref>, the different portions of <ref type="term" target="cmbtbl">combustible</ref> cladding shall</text>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent5.clause1" letter="a">
-                        <text>be separated by a horizontal distance of not less than <measurement units="metric">3 m</measurement>, and</text>
-                     </clause>
-                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent5.clause2" letter="b">
-                        <text>not be contiguous over more than 2 <ref type="term" target="tr">storeys</ref>.</text>
-                     </clause>
+                    <text>Where <ref type="term" target="cmbtbl">combustible</ref> cladding conforming to <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1" display-type="medium"/>, <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2" display-type="short"/> or <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1" display-type="short"/> on an exterior wall of a <ref type="term" target="fr-cmprt">fire compartment</ref> is exposed to <ref type="term" target="cmbtbl">combustible</ref> cladding conforming to <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause1" display-type="medium"/>, <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent2.clause2" display-type="short"/> or <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent4.clause1" display-type="short"/> on an exterior wall of the same <ref type="term" target="fr-cmprt">fire compartment</ref> or of another <ref type="term" target="fr-cmprt">fire compartment</ref>, and the planes of the two walls are parallel or at an angle less than 135Â° measured from the exterior of the <ref type="term" target="bldng">building</ref>, the different portions of <ref type="term" target="cmbtbl">combustible</ref> cladding shall</text>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent5.clause1" letter="a">
+                      <text>be separated by a horizontal distance of not less than <measurement units="metric">3 m</measurement>, and</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect1.subsect6.art9.sent5.clause2" letter="b">
+                      <text>not be contiguous over more than 2 <ref type="term" target="tr">storeys</ref>.</text>
+                    </clause>
                   </sentence>
                   <sentence xml:id="nbc.divB.part3.sect1.subsect6.art9.sent6" number="6">
-                     <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent8" display-type="short"/>, cladding on an exterior wall assembly of a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> and not more than 4 <ref type="term" target="tr">storeys</ref> in <ref type="term" target="bldng-hght">building height</ref> is permitted to consist of <ref type="term" target="cmbtbl">combustible</ref> material with a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 75 on any exposed surface, or any surface that would be exposed by cutting through the material in any direction. (See Note A-3.1.6.9.(1), (2), (4) and (6).)</text>
+                    <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent8" display-type="short"/>, cladding on an exterior wall assembly of a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> and not more than 4 <ref type="term" target="tr">storeys</ref> in <ref type="term" target="bldng-hght">building height</ref> is permitted to consist of <ref type="term" target="cmbtbl">combustible</ref> material with a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 75 on any exposed surface, or any surface that would be exposed by cutting through the material in any direction. (See Note A-3.1.6.9.(1), (2), (4) and (6).)</text>
                   </sentence>
                   <sentence xml:id="nbc.divB.part3.sect1.subsect6.art9.sent7" number="7">
-                     <text>An exterior wall assembly constructed in conformance with Section D-6 of Appendix D is deemed to satisfy the criteria of <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1.clause3" display-type="medium"/>.</text>
+                    <text>An exterior wall assembly constructed in conformance with Section D-6 of Appendix D is deemed to satisfy the criteria of <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1.clause3" display-type="medium"/>.</text>
                   </sentence>
                   <sentence xml:id="nbc.divB.part3.sect1.subsect6.art9.sent8" number="8">
-                     <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art10" display-type="long"/>, where the <ref type="term" target="lmtng-dt">limiting distance</ref> in <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art1.table4" display-type="long"/> or <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art1.table5" display-type="long"/> permits an area of <ref type="term" target="nprtctd-">unprotected openings</ref> of not more than 10% of the <ref type="term" target="xpng-bld">exposing building face</ref>, the construction requirements of <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art7.table1" display-type="long"/> shall be met.</text>
+                    <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art10" display-type="long"/>, where the <ref type="term" target="lmtng-dt">limiting distance</ref> in <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art1.table4" display-type="long"/> or <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art1.table5" display-type="long"/> permits an area of <ref type="term" target="nprtctd-">unprotected openings</ref> of not more than 10% of the <ref type="term" target="xpng-bld">exposing building face</ref>, the construction requirements of <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art7.table1" display-type="long"/> shall be met.</text>
                   </sentence>
                   <sentence xml:id="nbc.divB.part3.sect1.subsect6.art9.sent9" number="9">
-                     <text>A wall assembly conforming to <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1.clause3" display-type="medium"/> that includes <ref type="term" target="cmbtbl">combustible</ref> cladding made of <ref type="term" target="fr-rtrdn">fire-retardant-treated wood</ref> shall be tested for fire exposure after the cladding has been subjected to the accelerated weathering test specified in <ref type="standard" target="astmd2898" standardId="astmd2898"/>, "Standard Practice for Accelerated Weathering of Fire-Retardant-Treated Wood for Fire Testing."</text>
+                    <text>A wall assembly conforming to <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent1.clause3" display-type="medium"/> that includes <ref type="term" target="cmbtbl">combustible</ref> cladding made of <ref type="term" target="fr-rtrdn">fire-retardant-treated wood</ref> shall be tested for fire exposure after the cladding has been subjected to the accelerated weathering test specified in <ref type="standard" target="astmd2898" standardId="astmd2898"/>, "Standard Practice for Accelerated Weathering of Fire-Retardant-Treated Wood for Fire Testing."</text>
                   </sentence>
                 </content>
                 <change-summary>Repealed and substituted Article 3.1.6.9 Exterior Cladding</change-summary>
@@ -811,7 +811,7 @@
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 9: Sentence 3.1.6.14.(2) - Add references (7) and (8)  -->
     <!-- ================================================================== -->
@@ -828,24 +828,24 @@
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-009" status="current">
                 <content>
                   <text>Except as provided in <ref type="internal"
-                          target="nbc.divB.part3.sect1.subsect6.art4.sent3"
-                          display-type="long"
-                          pretext="Sentences"/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect1.subsect6.art4.sent4"
-                          display-type="short"
-                          pretext=","/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect1.subsect6.art4.sent7"
-                          display-type="short"
-                          pretext=","/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect1.subsect6.art4.sent8"
-                          display-type="short"
-                          pretext=" and"/>, <ref type="term" target="cmbtbl">combustible</ref> interior wall
-finishes, other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be
-of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>, provided they have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 150 on any exposed surface, or any surface that would
-be exposed by cutting through the material in any direction.</text>
+                                                     target="nbc.divB.part3.sect1.subsect6.art4.sent3"
+                                                     display-type="long"
+                                                     pretext="Sentences"/>
+                    <ref type="internal"
+                         target="nbc.divB.part3.sect1.subsect6.art4.sent4"
+                         display-type="short"
+                         pretext=","/>
+                    <ref type="internal"
+                         target="nbc.divB.part3.sect1.subsect6.art4.sent7"
+                         display-type="short"
+                         pretext=","/>
+                    <ref type="internal"
+                         target="nbc.divB.part3.sect1.subsect6.art4.sent8"
+                         display-type="short"
+                         pretext=" and"/>, <ref type="term" target="cmbtbl">combustible</ref> interior wall
+                    finishes, other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be
+                    of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>, provided they have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 150 on any exposed surface, or any surface that would
+                    be exposed by cutting through the material in any direction.</text>
                 </content>
                 <change-summary>Added references to Sentences 3.1.6.4.(7) and (8)</change-summary>
                 <note>Ministerial Order BA 2024 01</note>
@@ -855,7 +855,7 @@ be exposed by cutting through the material in any direction.</text>
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 10: Sentence 3.1.6.14.(3) - Add references (7) and (8) -->
     <!-- ================================================================== -->
@@ -872,32 +872,32 @@ be exposed by cutting through the material in any direction.</text>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-010" status="current">
                 <content>
                   <text>Except as provided in <ref type="internal"
-                          target="nbc.divB.part3.sect1.subsect6.art14.sent4"
-                          display-type="short"
-                          pretext="Sentences"/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect1.subsect6.art4.sent3"
-                          display-type="medium"
-                          pretext=" and"/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect1.subsect6.art4.sent6"
-                          display-type="short"
-                          pretext=","/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect1.subsect6.art4.sent7"
-                          display-type="short"
-                          pretext=","/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect1.subsect6.art4.sent8"
-                          display-type="short"
-                          pretext=" and"/>, <ref type="term" target="cmbtbl">combustible</ref> interior ceiling finishes,
-other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of
-a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>,
-provided they have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 25 on any exposed surface, or any surface that would
-be exposed by cutting through the material in any direction, except
-that not more than 10% of the ceiling area within each <ref type="term" target="fr-cmprt">fire compartment</ref> is permitted to have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 150. (See <ref type="internal"
-                          target="nbc.divB.part3.sect9.appnote41"
-                          display-type="long"/>.)</text>
+                                                     target="nbc.divB.part3.sect1.subsect6.art14.sent4"
+                                                     display-type="short"
+                                                     pretext="Sentences"/>
+                    <ref type="internal"
+                         target="nbc.divB.part3.sect1.subsect6.art4.sent3"
+                         display-type="medium"
+                         pretext=" and"/>
+                    <ref type="internal"
+                         target="nbc.divB.part3.sect1.subsect6.art4.sent6"
+                         display-type="short"
+                         pretext=","/>
+                    <ref type="internal"
+                         target="nbc.divB.part3.sect1.subsect6.art4.sent7"
+                         display-type="short"
+                         pretext=","/>
+                    <ref type="internal"
+                         target="nbc.divB.part3.sect1.subsect6.art4.sent8"
+                         display-type="short"
+                         pretext=" and"/>, <ref type="term" target="cmbtbl">combustible</ref> interior ceiling finishes,
+                    other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of
+                    a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>,
+                    provided they have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 25 on any exposed surface, or any surface that would
+                    be exposed by cutting through the material in any direction, except
+                    that not more than 10% of the ceiling area within each <ref type="term" target="fr-cmprt">fire compartment</ref> is permitted to have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 150. (See <ref type="internal"
+                                                                                                                                                                                                                                                      target="nbc.divB.part3.sect9.appnote41"
+                                                                                                                                                                                                                                                      display-type="long"/>.)</text>
                 </content>
                 <change-summary>Added references to Sentences 3.1.6.4.(7) and (8)</change-summary>
                 <note>Ministerial Order BA 2024 01</note>
@@ -907,7 +907,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 11: Sentence 3.1.7.5.(1) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -933,7 +933,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 12: Sentence 3.1.11.5.(4) - Add reference to 3.2.2.93  -->
     <!-- ================================================================== -->
@@ -965,7 +965,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 13: Sentence 3.1.15.2.(5) - Add reference to 3.2.2.93  -->
     <!-- ================================================================== -->
@@ -991,7 +991,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 14: Sentence 3.2.1.4.(1) - Repeal and substitute       -->
     <!-- ================================================================== -->
@@ -1017,7 +1017,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 15: Sentence 3.2.1.6.(1) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1043,7 +1043,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 16: Article 3.2.2.6 - Repeal and substitute            -->
     <!-- Multiple Major Occupancies                                        -->
@@ -1078,7 +1078,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 17: Article 3.2.2.7 - Repeal and substitute            -->
     <!-- Superimposed Major Occupancies                                    -->
@@ -1089,14 +1089,14 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
       <replace preserve-references="false">
         <new-content source="bc">
           <article xml:id="nbc.divB.part3.sect2.subsect2.art7" number="7" vendor-id="ea000257" revised="yes">
-           
+            
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-017" status="current">
                 <content>
-                   <title>Superimposed Major Occupancies</title>
+                  <title>Superimposed Major Occupancies</title>
                   <sentence xml:id="nbc.divB.part3.sect2.subsect2.art7.sent1" number="1">
                     <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art8" display-type="long" pretext="Article"/> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art18.sent2" display-type="long" pretext="Sentences"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art48.sent4" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art51.sent5" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art57.sent3" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art60.sent4" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent5" display-type="number" pretext="and"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent7" display-type="short" pretext="to"/>, in a <ref type="term" target="bldng">building</ref> in which one <ref type="term" target="mjr-ccpn">major occupancy</ref> is located entirely above another <ref type="term" target="mjr-ccpn">major occupancy</ref>, the requirements in this Subsection for each portion of the <ref type="term" target="bldng">building</ref> containing a <ref type="term" target="mjr-ccpn">major occupancy</ref> shall apply to that portion as if the entire <ref type="term" target="bldng">building</ref> were of that <ref type="term" target="mjr-ccpn">major occupancy</ref>.</text>
                   </sentence>
@@ -1129,7 +1129,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 18: Sentence 3.2.2.11.(1) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1155,7 +1155,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 19: Sentence 3.2.2.11.(2) - Add reference to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1187,7 +1187,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 20: Sentence 3.2.2.12.(1) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1213,7 +1213,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 21: Sentence 3.2.2.13.(1) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1239,7 +1239,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 22: Sentence 3.2.2.14.(1) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1265,7 +1265,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 23: Sentence 3.2.2.14.(3) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1291,7 +1291,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 24: Sentence 3.2.2.16.(1) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1317,7 +1317,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 25: Article 3.2.2.18 - Repeal and substitute Automatic Sprinkler System -->
     <!-- ================================================================== -->
@@ -1350,7 +1350,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 26: Sentence 3.2.2.19.(1) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1375,7 +1375,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 27: Sentence 3.2.2.23.(1) - Add reference to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1400,7 +1400,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 28: Sentence 3.2.2.42.(1) - Add reference to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1425,7 +1425,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 29: Sentence 3.2.2.47.(1) - Add reference to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1450,7 +1450,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 30: Sentence 3.2.2.48.(4) - Update note references -->
     <!-- ================================================================== -->
@@ -1475,7 +1475,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 31: Sentence 3.2.2.56.(1) - Add reference to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1500,7 +1500,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 32: Sentence 3.2.2.57.(3) - Update note references -->
     <!-- ================================================================== -->
@@ -1525,7 +1525,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 33: Sentence 3.2.2.66.(1) - Add reference to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1550,7 +1550,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 34: Sentence 3.2.2.76.(1) - Add reference to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1575,7 +1575,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 35: Sentence 3.2.2.82.(1) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1600,7 +1600,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 36: Insert Article 3.2.2.93 - Encapsulated Mass Timber Construction -->
     <!-- ================================================================== -->
@@ -1610,7 +1610,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
       <insert>
         <new-content source="bc">
           <article xml:id="nbc.divB.part3.sect2.subsect2.art93" number="93" revised="yes">
-           
+            
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- This article did not exist in NBC 2020 -->
@@ -1618,210 +1618,210 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-036" status="current">
                 <content>
-                   <title>Encapsulated Mass Timber Construction, Various Occupancies, Heights and Areas, Sprinklered</title>
+                  <title>Encapsulated Mass Timber Construction, Various Occupancies, Heights and Areas, Sprinklered</title>
                   <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1" number="1">
-              <text>A <ref type="term" target="bldng">building</ref> that is classified as Group A, Division 2, Group B, Division 3, Group C, Group D, Group E, or Group F, Division 2 or 3, is permitted to conform to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent2" display-type="short">Sentence (2)</ref> provided</text>
-              <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause1" letter="a">
-                <text>except as permitted by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art7.sent1" display-type="long">Sentences 3.2.2.7.(1)</ref> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art18.sent2" display-type="number">3.2.2.18.(2)</ref>, the <ref type="term" target="bldng">building</ref> is <ref type="term" target="sprnklrd">sprinklered</ref>,</text>
-              </clause>
-              <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause2" letter="b">
-                <text>the <ref type="term" target="bldng">building</ref> has a <ref type="term" target="bldng-hght">building height</ref> not exceeding the number of <ref type="term" target="tr">storeys</ref> shown in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref> and minimum <ref type="term" target="encpsln-rtng">encapsulation rating</ref>,</text>
-              </clause>
-              <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause3" letter="c">
-                <text>the <ref type="term" target="bldng">building</ref> has a maximum height that conforms to the value shown in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref> and minimum <ref type="term" target="encpsln-rtng">encapsulation rating</ref> that is measured between the floor of the <ref type="term" target="frst-tr">first storey</ref> and the uppermost floor level that does not serve a rooftop enclosure for elevator machinery, a stairway or a <ref type="term" target="srvc-rm">service room</ref> used only for service to the <ref type="term" target="bldng">building</ref>,</text>
-              </clause>
-              <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause4" letter="d">
-                <text>the <ref type="term" target="bldng">building</ref> has a maximum <ref type="term" target="bldng-ar">building area</ref> that conforms to the value shown in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref>, and</text>
-              </clause>
-              <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause5" letter="e">
-                <text>except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art3.sent4" display-type="long">Sentences 3.1.6.3.(4)</ref> and <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art7.sent1" display-type="number">3.1.6.7.(1)</ref> and <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art4" display-type="long">Article 3.1.6.4.</ref>, the <ref type="term" target="encpsln-rtng">encapsulation rating</ref> conforms to the value shown in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref> and maximum <ref type="term" target="bldng-hght">building height</ref>.</text>
-              </clause>
-            </sentence>
-
-            <table xml:id="nbc.divB.part3.sect2.subsect2.art93.table1">
-              <title>Table 3.2.2.93. Encapsulated Mass Timber Construction Requirements<note xml:id="nbc.divB.part3.sect2.subsect2.art93.table1.note1">(1)</note> <note xml:id="nbc.divB.part3.sect2.subsect2.art93.table1.note2">(2)</note></title>
-              
-              <tgroup cols="5">
-                <colspec colname="col1" colwidth="*"/>
-                <colspec colname="col2" colwidth="*"/>
-                <colspec colname="col3" colwidth="*"/>
-                <colspec colname="col4" colwidth="*"/>
-                <colspec colname="col5" colwidth="*"/>
-                
-                <thead>
-                  <row>
-                    <entry align="center">MAJOR OCCUPANCY</entry>
-                    <entry align="center">MAX. BUILDING HEIGHT, STOREYS</entry>
-                    <entry align="center">MAX. HEIGHT, m</entry>
-                    <entry align="center">MAX. BUILDING AREA, m<super>2</super></entry>
-                    <entry align="center">MINIMUM ENCAPSULATION RATING, min</entry>
-                  </row>
-                </thead>
-                
-                <tbody>
-                  <row>
-                    <entry align="center" rowspan="3">A-2</entry>
-                    <entry align="center">18</entry>
-                    <entry align="center">76</entry>
-                    <entry align="center" rowspan="3">7200</entry>
-                    <entry align="center">70</entry>
-                  </row>
-                  <row>
-                    <entry align="center">12</entry>
-                    <entry align="center">51</entry>
-                    <entry align="center">50</entry>
-                  </row>
-                  <row>
-                    <entry align="center">6</entry>
-                    <entry align="center">26</entry>
-                    <entry align="center">0</entry>
-                  </row>
+                    <text>A <ref type="term" target="bldng">building</ref> that is classified as Group A, Division 2, Group B, Division 3, Group C, Group D, Group E, or Group F, Division 2 or 3, is permitted to conform to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent2" display-type="short">Sentence (2)</ref> provided</text>
+                    <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause1" letter="a">
+                      <text>except as permitted by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art7.sent1" display-type="long">Sentences 3.2.2.7.(1)</ref> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art18.sent2" display-type="number">3.2.2.18.(2)</ref>, the <ref type="term" target="bldng">building</ref> is <ref type="term" target="sprnklrd">sprinklered</ref>,</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause2" letter="b">
+                      <text>the <ref type="term" target="bldng">building</ref> has a <ref type="term" target="bldng-hght">building height</ref> not exceeding the number of <ref type="term" target="tr">storeys</ref> shown in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref> and minimum <ref type="term" target="encpsln-rtng">encapsulation rating</ref>,</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause3" letter="c">
+                      <text>the <ref type="term" target="bldng">building</ref> has a maximum height that conforms to the value shown in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref> and minimum <ref type="term" target="encpsln-rtng">encapsulation rating</ref> that is measured between the floor of the <ref type="term" target="frst-tr">first storey</ref> and the uppermost floor level that does not serve a rooftop enclosure for elevator machinery, a stairway or a <ref type="term" target="srvc-rm">service room</ref> used only for service to the <ref type="term" target="bldng">building</ref>,</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause4" letter="d">
+                      <text>the <ref type="term" target="bldng">building</ref> has a maximum <ref type="term" target="bldng-ar">building area</ref> that conforms to the value shown in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref>, and</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause5" letter="e">
+                      <text>except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art3.sent4" display-type="long">Sentences 3.1.6.3.(4)</ref> and <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art7.sent1" display-type="number">3.1.6.7.(1)</ref> and <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art4" display-type="long">Article 3.1.6.4.</ref>, the <ref type="term" target="encpsln-rtng">encapsulation rating</ref> conforms to the value shown in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref> and maximum <ref type="term" target="bldng-hght">building height</ref>.</text>
+                    </clause>
+                  </sentence>
                   
-                  <row>
-                    <entry align="center" rowspan="3">B-3</entry>
-                    <entry align="center">10</entry>
-                    <entry align="center">42</entry>
-                    <entry align="center" rowspan="3">8000</entry>
-                    <entry align="center">70</entry>
-                  </row>
-                  <row>
-                    <entry align="center">6</entry>
-                    <entry align="center">26</entry>
-                    <entry align="center">50</entry>
-                  </row>
-                  <row>
-                    <entry align="center">4</entry>
-                    <entry align="center">17</entry>
-                    <entry align="center">0</entry>
-                  </row>
+                  <table xml:id="nbc.divB.part3.sect2.subsect2.art93.table1">
+                    <title>Table 3.2.2.93. Encapsulated Mass Timber Construction Requirements<note xml:id="nbc.divB.part3.sect2.subsect2.art93.table1.note1">(1)</note> <note xml:id="nbc.divB.part3.sect2.subsect2.art93.table1.note2">(2)</note></title>
+                    
+                    <tgroup cols="5">
+                      <colspec colname="col1" colwidth="*"/>
+                      <colspec colname="col2" colwidth="*"/>
+                      <colspec colname="col3" colwidth="*"/>
+                      <colspec colname="col4" colwidth="*"/>
+                      <colspec colname="col5" colwidth="*"/>
+                      
+                      <thead>
+                        <row>
+                          <entry align="center">MAJOR OCCUPANCY</entry>
+                          <entry align="center">MAX. BUILDING HEIGHT, STOREYS</entry>
+                          <entry align="center">MAX. HEIGHT, m</entry>
+                          <entry align="center">MAX. BUILDING AREA, m<super>2</super></entry>
+                          <entry align="center">MINIMUM ENCAPSULATION RATING, min</entry>
+                        </row>
+                      </thead>
+                      
+                      <tbody>
+                        <row>
+                          <entry align="center" rowspan="3">A-2</entry>
+                          <entry align="center">18</entry>
+                          <entry align="center">76</entry>
+                          <entry align="center" rowspan="3">7200</entry>
+                          <entry align="center">70</entry>
+                        </row>
+                        <row>
+                          <entry align="center">12</entry>
+                          <entry align="center">51</entry>
+                          <entry align="center">50</entry>
+                        </row>
+                        <row>
+                          <entry align="center">6</entry>
+                          <entry align="center">26</entry>
+                          <entry align="center">0</entry>
+                        </row>
+                        
+                        <row>
+                          <entry align="center" rowspan="3">B-3</entry>
+                          <entry align="center">10</entry>
+                          <entry align="center">42</entry>
+                          <entry align="center" rowspan="3">8000</entry>
+                          <entry align="center">70</entry>
+                        </row>
+                        <row>
+                          <entry align="center">6</entry>
+                          <entry align="center">26</entry>
+                          <entry align="center">50</entry>
+                        </row>
+                        <row>
+                          <entry align="center">4</entry>
+                          <entry align="center">17</entry>
+                          <entry align="center">0</entry>
+                        </row>
+                        
+                        <row>
+                          <entry align="center" rowspan="2">C</entry>
+                          <entry align="center">18</entry>
+                          <entry align="center">76</entry>
+                          <entry align="center" rowspan="2">6000</entry>
+                          <entry align="center">70</entry>
+                        </row>
+                        <row>
+                          <entry align="center">8</entry>
+                          <entry align="center">34</entry>
+                          <entry align="center">0</entry>
+                        </row>
+                        
+                        <row>
+                          <entry align="center" rowspan="2">D</entry>
+                          <entry align="center">18</entry>
+                          <entry align="center">76</entry>
+                          <entry align="center" rowspan="2">7200</entry>
+                          <entry align="center">70</entry>
+                        </row>
+                        <row>
+                          <entry align="center">9</entry>
+                          <entry align="center">38</entry>
+                          <entry align="center">0</entry>
+                        </row>
+                        
+                        <row>
+                          <entry align="center" rowspan="3">E</entry>
+                          <entry align="center">12</entry>
+                          <entry align="center">51</entry>
+                          <entry align="center" rowspan="3">6000</entry>
+                          <entry align="center">70</entry>
+                        </row>
+                        <row>
+                          <entry align="center">8</entry>
+                          <entry align="center">34</entry>
+                          <entry align="center">50</entry>
+                        </row>
+                        <row>
+                          <entry align="center">6</entry>
+                          <entry align="center">26</entry>
+                          <entry align="center">0</entry>
+                        </row>
+                        
+                        <row>
+                          <entry align="center" rowspan="3">F-2</entry>
+                          <entry align="center">10</entry>
+                          <entry align="center">42</entry>
+                          <entry align="center" rowspan="3">4500</entry>
+                          <entry align="center">70</entry>
+                        </row>
+                        <row>
+                          <entry align="center">7</entry>
+                          <entry align="center">30</entry>
+                          <entry align="center">50</entry>
+                        </row>
+                        <row>
+                          <entry align="center">5</entry>
+                          <entry align="center">21</entry>
+                          <entry align="center">0</entry>
+                        </row>
+                        
+                        <row>
+                          <entry align="center" rowspan="3">F-3</entry>
+                          <entry align="center">12</entry>
+                          <entry align="center">51</entry>
+                          <entry align="center" rowspan="3">7200</entry>
+                          <entry align="center">70</entry>
+                        </row>
+                        <row>
+                          <entry align="center">8</entry>
+                          <entry align="center">34</entry>
+                          <entry align="center">50</entry>
+                        </row>
+                        <row>
+                          <entry align="center">5</entry>
+                          <entry align="center">21</entry>
+                          <entry align="center">0</entry>
+                        </row>
+                      </tbody>
+                    </tgroup>
+                  </table>
                   
-                  <row>
-                    <entry align="center" rowspan="2">C</entry>
-                    <entry align="center">18</entry>
-                    <entry align="center">76</entry>
-                    <entry align="center" rowspan="2">6000</entry>
-                    <entry align="center">70</entry>
-                  </row>
-                  <row>
-                    <entry align="center">8</entry>
-                    <entry align="center">34</entry>
-                    <entry align="center">0</entry>
-                  </row>
+                  <!-- Table notes and forming part note -->
+                  <note xml:id="nbc.divB.part3.sect2.subsect2.art93.forming.note">Forming part of Sentence 3.2.2.93.(1)</note>
+                  <note xml:id="nbc.divB.part3.sect2.subsect2.art93.notes.header">Notes to Table 3.2.2.93:</note>
+                  <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item1">(1) See <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent5" display-type="long">Sentences (5)</ref> to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent7" display-type="short">(7)</ref> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art4" display-type="long">Articles 3.2.2.4.</ref> to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art8" display-type="number">3.2.2.8.</ref> for information pertaining to multiple <ref type="term" target="mjr-occ">major occupancies</ref>.</note>
+                  <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item2">(2) Linear interpolation is not permitted in using <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref></note>
                   
-                  <row>
-                    <entry align="center" rowspan="2">D</entry>
-                    <entry align="center">18</entry>
-                    <entry align="center">76</entry>
-                    <entry align="center" rowspan="2">7200</entry>
-                    <entry align="center">70</entry>
-                  </row>
-                  <row>
-                    <entry align="center">9</entry>
-                    <entry align="center">38</entry>
-                    <entry align="center">0</entry>
-                  </row>
+                  <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2" number="2">
+                    <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art16" display-type="long">Article 3.2.2.16.</ref>, the <ref type="term" target="bldng">building</ref> referred to in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent1" display-type="short">Sentence (1)</ref> is permitted to be of <ref type="term" target="encpsltd-ms-tmbr-cnstrctn">encapsulated mass timber construction</ref> or <ref type="term" target="nncmbstbl-cnstrctn">noncombustible construction</ref>, used singly or in combination, and</text>
+                    <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2.clause1" letter="a">
+                      <text>except as provided in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent3" display-type="short">Sentence (3)</ref>, floor assemblies shall be <ref type="term" target="fr-prtn">fire separations</ref> with a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">2 hours</measurement>,</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2.clause2" letter="b">
+                      <text><ref type="term" target="mznn">mezzanines</ref> shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">1 hour</measurement>, and</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2.clause3" letter="c">
+                      <text><ref type="term" target="ldbr-wll">loadbearing walls</ref>, columns and arches shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than that required for the supported assembly.</text>
+                    </clause>
+                  </sentence>
                   
-                  <row>
-                    <entry align="center" rowspan="3">E</entry>
-                    <entry align="center">12</entry>
-                    <entry align="center">51</entry>
-                    <entry align="center" rowspan="3">6000</entry>
-                    <entry align="center">70</entry>
-                  </row>
-                  <row>
-                    <entry align="center">8</entry>
-                    <entry align="center">34</entry>
-                    <entry align="center">50</entry>
-                  </row>
-                  <row>
-                    <entry align="center">6</entry>
-                    <entry align="center">26</entry>
-                    <entry align="center">0</entry>
-                  </row>
+                  <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent3" number="3">
+                    <text>In a <ref type="term" target="bldng">building</ref> classified as a Group C <ref type="term" target="mjr-occ">major occupancy</ref> that contains <ref type="term" target="dwllng-unt">dwelling units</ref> that have more than one <ref type="term" target="tr">storey</ref>, subject to the requirements of <ref type="internal" target="nbc.divB.part3.sect3.subsect4.art2.sent3" display-type="long">Sentence 3.3.4.2.(3)</ref>, the floor assemblies, including floors over <ref type="term" target="bsmnt">basements</ref>, that are entirely contained within these <ref type="term" target="dwllng-unt">dwelling units</ref> shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">1 h</measurement>, but need not be constructed as <ref type="term" target="fr-prtn">fire separations</ref>.</text>
+                  </sentence>
                   
-                  <row>
-                    <entry align="center" rowspan="3">F-2</entry>
-                    <entry align="center">10</entry>
-                    <entry align="center">42</entry>
-                    <entry align="center" rowspan="3">4500</entry>
-                    <entry align="center">70</entry>
-                  </row>
-                  <row>
-                    <entry align="center">7</entry>
-                    <entry align="center">30</entry>
-                    <entry align="center">50</entry>
-                  </row>
-                  <row>
-                    <entry align="center">5</entry>
-                    <entry align="center">21</entry>
-                    <entry align="center">0</entry>
-                  </row>
+                  <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent4" number="4">
+                    <text>In <ref type="term" target="bldng">buildings</ref> referred to in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent1" display-type="short">Sentence (1)</ref> where the roof assembly of an <ref type="term" target="ext">exit</ref> stairway or <ref type="term" target="vrtcl-srvc-spc">vertical service space</ref> used as an elevator hoistway has a height greater than <measurement units="metric">55 m</measurement> measured from <ref type="term" target="grd">grade</ref> to the highest point of the roof assembly, the enclosure for the stairway or hoistway shall be of <ref type="term" target="encpsltd-ms-tmbr-cnstrctn">encapsulated mass timber construction</ref> or constructed of concrete.</text>
+                  </sentence>
                   
-                  <row>
-                    <entry align="center" rowspan="3">F-3</entry>
-                    <entry align="center">12</entry>
-                    <entry align="center">51</entry>
-                    <entry align="center" rowspan="3">7200</entry>
-                    <entry align="center">70</entry>
-                  </row>
-                  <row>
-                    <entry align="center">8</entry>
-                    <entry align="center">34</entry>
-                    <entry align="center">50</entry>
-                  </row>
-                  <row>
-                    <entry align="center">5</entry>
-                    <entry align="center">21</entry>
-                    <entry align="center">0</entry>
-                  </row>
-                </tbody>
-              </tgroup>
-            </table>
-            
-            <!-- Table notes and forming part note -->
-            <note xml:id="nbc.divB.part3.sect2.subsect2.art93.forming.note">Forming part of Sentence 3.2.2.93.(1)</note>
-            <note xml:id="nbc.divB.part3.sect2.subsect2.art93.notes.header">Notes to Table 3.2.2.93:</note>
-            <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item1">(1) See <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent5" display-type="long">Sentences (5)</ref> to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent7" display-type="short">(7)</ref> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art4" display-type="long">Articles 3.2.2.4.</ref> to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art8" display-type="number">3.2.2.8.</ref> for information pertaining to multiple <ref type="term" target="mjr-occ">major occupancies</ref>.</note>
-            <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item2">(2) Linear interpolation is not permitted in using <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref></note>
-
-            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2" number="2">
-              <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art16" display-type="long">Article 3.2.2.16.</ref>, the <ref type="term" target="bldng">building</ref> referred to in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent1" display-type="short">Sentence (1)</ref> is permitted to be of <ref type="term" target="encpsltd-ms-tmbr-cnstrctn">encapsulated mass timber construction</ref> or <ref type="term" target="nncmbstbl-cnstrctn">noncombustible construction</ref>, used singly or in combination, and</text>
-              <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2.clause1" letter="a">
-                <text>except as provided in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent3" display-type="short">Sentence (3)</ref>, floor assemblies shall be <ref type="term" target="fr-prtn">fire separations</ref> with a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">2 hours</measurement>,</text>
-              </clause>
-              <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2.clause2" letter="b">
-                <text><ref type="term" target="mznn">mezzanines</ref> shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">1 hour</measurement>, and</text>
-              </clause>
-              <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2.clause3" letter="c">
-                <text><ref type="term" target="ldbr-wll">loadbearing walls</ref>, columns and arches shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than that required for the supported assembly.</text>
-              </clause>
-            </sentence>
-
-            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent3" number="3">
-              <text>In a <ref type="term" target="bldng">building</ref> classified as a Group C <ref type="term" target="mjr-occ">major occupancy</ref> that contains <ref type="term" target="dwllng-unt">dwelling units</ref> that have more than one <ref type="term" target="tr">storey</ref>, subject to the requirements of <ref type="internal" target="nbc.divB.part3.sect3.subsect4.art2.sent3" display-type="long">Sentence 3.3.4.2.(3)</ref>, the floor assemblies, including floors over <ref type="term" target="bsmnt">basements</ref>, that are entirely contained within these <ref type="term" target="dwllng-unt">dwelling units</ref> shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">1 h</measurement>, but need not be constructed as <ref type="term" target="fr-prtn">fire separations</ref>.</text>
-            </sentence>
-
-            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent4" number="4">
-              <text>In <ref type="term" target="bldng">buildings</ref> referred to in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent1" display-type="short">Sentence (1)</ref> where the roof assembly of an <ref type="term" target="ext">exit</ref> stairway or <ref type="term" target="vrtcl-srvc-spc">vertical service space</ref> used as an elevator hoistway has a height greater than <measurement units="metric">55 m</measurement> measured from <ref type="term" target="grd">grade</ref> to the highest point of the roof assembly, the enclosure for the stairway or hoistway shall be of <ref type="term" target="encpsltd-ms-tmbr-cnstrctn">encapsulated mass timber construction</ref> or constructed of concrete.</text>
-            </sentence>
-
-            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent5" number="5">
-              <text>Group E <ref type="term" target="mjr-occ">major occupancies</ref> and <ref type="term" target="strg-grg">storage garages</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group A, Division 2, Group C, or Group D <ref type="term" target="mjr-occ">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group A, Division 2, Group C, or Group D <ref type="term" target="mjr-occ">major occupancy</ref> requirements contained in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref>, provided</text>
-              <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent5.clause1" letter="a">
-                <text>the Group E <ref type="term" target="mjr-occ">major occupancy</ref> is located below the third <ref type="term" target="tr">storey</ref>, and</text>
-              </clause>
-              <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent5.clause2" letter="b">
-                <text>the <ref type="term" target="strg-grg">storage garage</ref> is located below the fifth <ref type="term" target="tr">storey</ref> (see also <ref type="internal" target="nbc.divB.part4.sect4.subsect2.art1" display-type="long">Article 4.4.2.1.</ref>).</text>
-              </clause>
-            </sentence>
-
-            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent6" number="6">
-              <text>Group A, Division 2 <ref type="term" target="mjr-occ">major occupancies</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group C or Group D <ref type="term" target="mjr-occ">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group C or Group D <ref type="term" target="mjr-occ">major occupancy</ref> requirements contained in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref>, provided they are located below the fourth <ref type="term" target="tr">storey</ref>. (See Note A-3.2.2.48.(4), 3.2.2.57.(3) and 3.2.2.93.(5) to (7).)</text>
-            </sentence>
-
-            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent7" number="7">
-              <text>Group F, Division 2 and 3 <ref type="term" target="mjr-occ">major occupancies</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group D <ref type="term" target="mjr-occ">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group D <ref type="term" target="mjr-occ">major occupancy</ref> requirements contained in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref>, provided they are located below the third <ref type="term" target="tr">storey</ref>. (See Note A-3.2.2.48.(4), 3.2.2.57.(3) and 3.2.2.93.(5) to (7).)</text>
-            </sentence>
+                  <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent5" number="5">
+                    <text>Group E <ref type="term" target="mjr-occ">major occupancies</ref> and <ref type="term" target="strg-grg">storage garages</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group A, Division 2, Group C, or Group D <ref type="term" target="mjr-occ">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group A, Division 2, Group C, or Group D <ref type="term" target="mjr-occ">major occupancy</ref> requirements contained in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref>, provided</text>
+                    <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent5.clause1" letter="a">
+                      <text>the Group E <ref type="term" target="mjr-occ">major occupancy</ref> is located below the third <ref type="term" target="tr">storey</ref>, and</text>
+                    </clause>
+                    <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent5.clause2" letter="b">
+                      <text>the <ref type="term" target="strg-grg">storage garage</ref> is located below the fifth <ref type="term" target="tr">storey</ref> (see also <ref type="internal" target="nbc.divB.part4.sect4.subsect2.art1" display-type="long">Article 4.4.2.1.</ref>).</text>
+                    </clause>
+                  </sentence>
+                  
+                  <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent6" number="6">
+                    <text>Group A, Division 2 <ref type="term" target="mjr-occ">major occupancies</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group C or Group D <ref type="term" target="mjr-occ">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group C or Group D <ref type="term" target="mjr-occ">major occupancy</ref> requirements contained in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref>, provided they are located below the fourth <ref type="term" target="tr">storey</ref>. (See Note A-3.2.2.48.(4), 3.2.2.57.(3) and 3.2.2.93.(5) to (7).)</text>
+                  </sentence>
+                  
+                  <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent7" number="7">
+                    <text>Group F, Division 2 and 3 <ref type="term" target="mjr-occ">major occupancies</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group D <ref type="term" target="mjr-occ">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group D <ref type="term" target="mjr-occ">major occupancy</ref> requirements contained in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref>, provided they are located below the third <ref type="term" target="tr">storey</ref>. (See Note A-3.2.2.48.(4), 3.2.2.57.(3) and 3.2.2.93.(5) to (7).)</text>
+                  </sentence>
                 </content>
                 <change-summary>Added new Article 3.2.2.93 - Encapsulated Mass Timber Construction with requirements table</change-summary>
                 <note>Ministerial Order BA 2024 01</note>
@@ -1831,7 +1831,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </insert>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 37: Table 3.2.3.7 - Repeal and substitute               -->
     <!-- Minimum Construction Requirements for Exposing Building Faces      -->
@@ -1927,7 +1927,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 38: Sentence 3.2.3.9.(1) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -1940,7 +1940,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-038" status="current">
                 <content>
                   <text>Structural members, including beams, columns and arches, that are placed wholly or partly outside the exterior face of a <ref type="term" target="bldng">building</ref> and are less than <measurement units="metric">3 m</measurement> from the property line or the centre line of a public thoroughfare shall be protected from exterior fire exposure by fire protection having a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than that required for their protection from interior fire exposure, as stated in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="long" pretext="to"/>.</text>
@@ -1953,7 +1953,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 39: Sentence 3.2.5.7.(2) - Repeal and substitute        -->
     <!-- ================================================================== -->
@@ -1966,7 +1966,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-039" status="current">
                 <content>
                   <text>Except for <ref type="term" target="bldng">buildings</ref> constructed of <ref type="term" target="ncps-mss-tmbr">encapsulated mass timber construction</ref> in conformance with <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art48" display-type="long" pretext="Article"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art57" display-type="long"/> or <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="long"/>, <ref type="term" target="bldng">buildings</ref> that are <ref type="term" target="prnklrd">sprinklered</ref> throughout with a sprinkler system conforming to <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art12" display-type="long"/> or have a standpipe system conforming to <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art8" display-type="long" pretext="Article"/> to <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art10" display-type="long"/> are deemed to comply with <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art7.sent1" display-type="short"/>.</text>
@@ -1979,7 +1979,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 40: Sentence 3.2.5.12.(7) - Add reference to 3.2.2.93  -->
     <!-- ================================================================== -->
@@ -1992,7 +1992,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-040" status="current">
                 <content>
                   <text>Notwithstanding the requirements of the standards referenced in <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art12.sent1" display-type="short" pretext="Sentences"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art12.sent2" display-type="short" pretext="and"/> regarding the installation of automatic sprinkler systems, in <ref type="term" target="bldng">buildings</ref> conforming to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art48" display-type="long"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art51" display-type="long" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art60" display-type="long" pretext=","/> or <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="long"/>, balconies and exterior decks shall not be required to be <ref type="term" target="prnklrd">sprinklered</ref>.</text>
@@ -2005,7 +2005,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 41: Sentence 3.2.6.1.(2) - Repeal and substitute        -->
     <!-- ================================================================== -->
@@ -2018,7 +2018,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-041" status="current">
                 <content>
                   <text>Except as required by <ref type="internal" target="nbc.divB.part3.sect2.subsect6.art1.sent1.clause3" display-type="short" pretext="Clause"/>, this Subsection applies to a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> constructed in conformance with <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art57" display-type="long"/> or <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="long"/> in which the floor level of the highest <ref type="term" target="tr">storey</ref> is more than <measurement units="metric">18 m</measurement> above <ref type="term" target="grade">grade</ref>.</text>
@@ -2031,7 +2031,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 42: Sentence 3.3.3.7.(4) - Change reference 3.2.2.92 to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -2044,7 +2044,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-042" status="current">
                 <content>
                   <text>A <ref type="term" target="cntnd-r">contained use area</ref>, in a <ref type="term" target="bldng">building</ref> for which <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="long" pretext="to"/> do not require the installation of an automatic sprinkler system, is not required to be <ref type="term" target="prnklrd">sprinklered</ref> as required by <ref type="internal" target="nbc.divB.part3.sect3.subsect3.art7.sent3" display-type="short"/> provided</text>
@@ -2069,7 +2069,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 43: Note A-3.1.6.4.(1) - Repeal and substitute          -->
     <!-- ================================================================== -->
@@ -2082,7 +2082,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-043" status="current">
                 <content>
                   <number>3.1.6.4.(1)</number>
@@ -2097,7 +2097,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 44: Note A-3.1.6.4.(3) to (6) - Repeal and substitute  -->
     <!-- ================================================================== -->
@@ -2110,7 +2110,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-044" status="current">
                 <content>
                   <number>3.1.6.4.(3) to (8)</number>
@@ -2125,7 +2125,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 45: Note A-3.1.6.4.(4) - Repeal and substitute          -->
     <!-- ================================================================== -->
@@ -2138,7 +2138,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-045" status="current">
                 <content>
                   <number>3.1.6.4.(4)</number>
@@ -2153,7 +2153,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 46: Note A-3.1.6.6. - Repeal and substitute             -->
     <!-- ================================================================== -->
@@ -2166,7 +2166,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-046" status="current">
                 <content>
                   <number>3.1.6.6.</number>
@@ -2181,7 +2181,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 47: Note A-3.1.6.6.(2) - Amend note number             -->
     <!-- ================================================================== -->
@@ -2194,7 +2194,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-047" status="current">
                 <content>
                   <number>3.1.6.6.(6)</number>
@@ -2209,7 +2209,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 48: Note A-3.1.6.9.(1) and (2) - Repeal and substitute -->
     <!-- ================================================================== -->
@@ -2222,7 +2222,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-048" status="current">
                 <content>
                   <number>3.1.6.9.(1), (2), (4) and (6)</number>
@@ -2237,7 +2237,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 49: Note A-3.1.11.5.(3) and (4) - Add reference to 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -2250,7 +2250,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-049" status="current">
                 <content>
                   <number>3.1.11.5.(3) and (4)</number>
@@ -2266,7 +2266,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 50: Note A-3.2.2.48.(4) and 3.2.2.57.(3) - Repeal and substitute -->
     <!-- ================================================================== -->
@@ -2279,7 +2279,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
             <revision-history>
               <original effective-date="2020-12-01">
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-050" status="current">
                 <content>
                   <number>3.2.2.48.(4), 3.2.2.57.(3) and 3.2.2.93.(5) to (7)</number>
@@ -2295,7 +2295,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </replace>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 51: Insert Note A-3.2.2.93.(1) and Table 3.2.2.93.     -->
     <!-- ================================================================== -->
@@ -2309,7 +2309,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
               <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
               </original>
-
+              
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-051" status="current">
                 <content>
                   <number>3.2.2.93.(1) and Table 3.2.2.93.</number>
@@ -2324,7 +2324,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </insert>
     </amendment>
-
+    
     <!-- ================================================================== -->
     <!-- Amendment 52: Table 3.10.1.1 - Add attribution rows for Article 3.2.2.93 -->
     <!-- ================================================================== -->
@@ -2416,6 +2416,6 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
         </new-content>
       </insert>
     </amendment>
-
- </amendments>
+    
+  </amendments>
 </bc-overlay>
