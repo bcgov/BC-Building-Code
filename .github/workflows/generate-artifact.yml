@@ -32,3 +32,12 @@ jobs:
             json-generation-pipeline/output/**
             bc-graphics/**
             graphics/**
+
+      - name: Trigger Repo B sync
+        if: success()
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.REPO_B_TRIGGER_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/bcgov/HOUS-Interactive-BCBC/dispatches \
+            -d "{\"event_type\":\"sync-from-repo-a\",\"client_payload\":{\"branch\":\"${GITHUB_REF_NAME}\"}}"
