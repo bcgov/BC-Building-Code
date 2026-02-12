@@ -29,17 +29,17 @@
                 <element-replace element="row" position="4">
                     <new-content source="bc">
                         <row xml:id="nbc.divB.part4.sect1.subsect5.art11.table1.row4">
-                              <entry align="left">Operation of elevators</entry>
-                              <entry align="center">
-                                 <note xml:id="nbc.divB.part4.sect1.subsect5.art11.table1.note1"
-                                       vendor-id="et000160-1">See the Safety Standards Act and pursuant regulations.</note>
-                              </entry>
+                            <entry align="left">Operation of elevators</entry>
+                            <entry align="center">
+                                <note xml:id="nbc.divB.part4.sect1.subsect5.art11.table1.note1"
+                                      vendor-id="et000160-1">See the Safety Standards Act and pursuant regulations.</note>
+                            </entry>
                         </row>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 002: Replace ASME A17.1 reference with Safety Standards Act -->
         <!-- Article 4.1.8.18 Table 4.1.8.18 - Elevators and escalators       -->
@@ -51,19 +51,19 @@
                 <element-replace element="row" position="30">
                     <new-content source="bc">
                         <row xml:id="nbc.divB.part4.sect1.subsect8.art18.table1.row30">
-                              <entry>22</entry>
-                              <entry>Elevators and escalators<note xml:id="nbc.divB.part4.sect1.subsect8.art18.table1.note3"
-                                       vendor-id="et001041-3">See also the Safety Standards Act and pursuant regulations.</note>
-                              </entry>
-                              <entry/>
-                              <entry/>
-                              <entry/>
+                            <entry>22</entry>
+                            <entry>Elevators and escalators<note xml:id="nbc.divB.part4.sect1.subsect8.art18.table1.note3"
+                                                                     vendor-id="et001041-3">See also the Safety Standards Act and pursuant regulations.</note>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
                         </row>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 003: Add CSA A344.2 reference for steel pallet racks    -->
         <!-- Article 4.1.8.18.(13) - Steel pallet storage racks design        -->
@@ -75,15 +75,15 @@
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>Free-standing steel pallet storage racks are permitted to be designed according to CSA A344.2, "Standard for design and construction of steel storage racks," and to resist earthquake effects using rational analysis, provided design achieves the minimum performance level required by <ref type="internal"
-                                 target="nbc.divB.part4.sect1.subsect8"
-                                 display-type="long"/> (See <ref type="internal"
-                                 target="nbc.divB.part4.sect5.appnote107"
-                                 display-type="short"/>.)</text>
+                                                                                                                                                                                                                                                                                                                                  target="nbc.divB.part4.sect1.subsect8"
+                                                                                                                                                                                                                                                                                                                                  display-type="long"/> (See <ref type="internal"
+                                                            target="nbc.divB.part4.sect5.appnote107"
+                                                            display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 004: Replace NPC/NBC reference with BC Building Code    -->
         <!-- Appendix Note A-4.1.6.4.(3) - Flow Control Drains               -->
@@ -100,7 +100,7 @@
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 005: Replace NBC with British Columbia Building Code    -->
         <!-- Article 5.1.5.1 - Requirements in Other Parts of the Code        -->
@@ -117,7 +117,7 @@
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 006: Replace NPC reference with BC Book II reference    -->
         <!-- Article 5.6.2.2.(2) - Drainage requirements                      -->
@@ -129,12 +129,12 @@
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part5.sect6.subsect2.art2.sent2" number="2" vendor-id="es001645">
                         <text>Where precipitation can accumulate on sloped or horizontal assemblies,
-provision shall be made for drainage conforming with Article 2.4.10.4. of Division B of Book II (Plumbing Systems) of this Code.</text>
+                            provision shall be made for drainage conforming with Article 2.4.10.4. of Division B of Book II (Plumbing Systems) of this Code.</text>
                     </sentence>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 007: Replace wired glass text with fire-protection rating -->
         <!-- Article 5.9.2.1.(3) - General                                    -->
@@ -150,7 +150,7 @@ provision shall be made for drainage conforming with Article 2.4.10.4. of Divisi
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 008: Add exception and components text to sentence      -->
         <!-- Article 5.9.2.2.(1) - Applicable Standards                       -->
@@ -162,12 +162,12 @@ provision shall be made for drainage conforming with Article 2.4.10.4. of Divisi
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>Except as permitted in <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2.sent5" display-type="short" pretext="Sentences"/> and <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art3.sent1" display-type="long"/>, windows, doors, skylights, including their components, shall conform to the requirements
-in</text>
+                            in</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 009: Add exception text to clause (b)                   -->
         <!-- Article 5.9.2.2.(1)(b) - Applicable Standards                    -->
@@ -183,7 +183,7 @@ in</text>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 010: Add new sentence (4) about loads and procedures    -->
         <!-- Article 5.9.2.2 - Applicable Standards                           -->
@@ -202,7 +202,7 @@ in</text>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 011: Add new sentence (5) about Limited Water doors    -->
         <!-- Article 5.9.2.2 - Applicable Standards                           -->
@@ -229,7 +229,7 @@ in</text>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 012: Simplify sentence structure for non-conforming products -->
         <!-- Article 5.9.2.3.(1) - Structural and Environmental Loads         -->
@@ -245,7 +245,7 @@ in</text>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 013: Add sentence about fire-protection rating          -->
         <!-- Article 5.9.3.1 - General                                         -->
@@ -263,7 +263,7 @@ in</text>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 014: Replace NBC with code in appendix note             -->
         <!-- Appendix Note A-5.1.4.1.(2) - Multiple Functions                 -->
@@ -280,7 +280,7 @@ in</text>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 015: Replace NBC with British Columbia Building Code    -->
         <!-- Appendix Note A-5.1.4.2 - Deterioration                          -->
@@ -292,19 +292,19 @@ in</text>
                 <element-replace element="paragraph" position="6">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part5.appnote8.para6">It is also noted that <ref type="standard" target="csas478" standardId="csas478"/> contains requirements
-for actions beyond the scope of the British Columbia Building Code, which may not be the responsibility
-of the designer, builder or authority having jurisdiction. These include
-requirements relating to quality assurance, inspection, maintenance,
-minimum design service lives and potential impacts of climate change,
-which are not addressed in the Code. The reference herein to <ref type="standard" target="csas478" standardId="csas478"/> is not intended to
-imply that the designer, builder or authority having jurisdiction
-adopt, apply or enforce any of these requirements.</paragraph>
+                            for actions beyond the scope of the British Columbia Building Code, which may not be the responsibility
+                            of the designer, builder or authority having jurisdiction. These include
+                            requirements relating to quality assurance, inspection, maintenance,
+                            minimum design service lives and potential impacts of climate change,
+                            which are not addressed in the Code. The reference herein to <ref type="standard" target="csas478" standardId="csas478"/> is not intended to
+                            imply that the designer, builder or authority having jurisdiction
+                            adopt, apply or enforce any of these requirements.</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
-
+        
+        
         <!-- ================================================================== -->
         <!-- Amendment 016: Replace NBC with code in appendix note              -->
         <!-- Appendix Note A-5.2.2.2.(4) - Membrane Roofing Systems            -->
@@ -316,16 +316,16 @@ adopt, apply or enforce any of these requirements.</paragraph>
                 <element-replace element="paragraph" position="4">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part5.appnote13.para4">The wind uplift resistance obtained from the test method in <ref type="standard" target="csaa123.21" standardId="csaa123.21"/> is limited to configurations
-with specific fastener or adhesive patterns. To extrapolate the test
-data to non-tested configurations, refer to <ref type="standard" target="spriwd1" standardId="spriwd1"/> for a rational calculation procedure. However,
-in using this extrapolation procedure, wind loads should be calculated
-in accordance with the code. NRC's guide for wind design referenced
-above provides further guidance and examples of wind load calculations.</paragraph>
+                            with specific fastener or adhesive patterns. To extrapolate the test
+                            data to non-tested configurations, refer to <ref type="standard" target="spriwd1" standardId="spriwd1"/> for a rational calculation procedure. However,
+                            in using this extrapolation procedure, wind loads should be calculated
+                            in accordance with the code. NRC's guide for wind design referenced
+                            above provides further guidance and examples of wind load calculations.</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 017: Replace national reference with BC provincial       -->
         <!-- Appendix Note A-5.3.1.2.(1) - Thermal Insulation                  -->
@@ -342,8 +342,8 @@ above provides further guidance and examples of wind load calculations.</paragra
                 </text-change>
             </modify>
         </amendment>
-
-
+        
+        
         <!-- ================================================================== -->
         <!-- Amendment 018: Replace application note with broader scope         -->
         <!-- Appendix Note A-5.9.2.1.(3) - Airtightness and Watertightness     -->
@@ -361,7 +361,7 @@ above provides further guidance and examples of wind load calculations.</paragra
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 019: Add two ASTM standards to list                      -->
         <!-- Appendix Note A-5.9.3 - Testing Standards                         -->
@@ -382,7 +382,7 @@ above provides further guidance and examples of wind load calculations.</paragra
                 </element-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 020: Add sentence about indoor design temperatures       -->
         <!-- Article 6.2.1.1 - Good Engineering Practice                       -->
@@ -400,7 +400,7 @@ above provides further guidance and examples of wind load calculations.</paragra
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 021: Replace sentence 2 with Reserved                    -->
         <!-- Article 6.2.1.2 - Outdoor Design Conditions                       -->
@@ -416,7 +416,7 @@ above provides further guidance and examples of wind load calculations.</paragra
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 022: Replace sentence 3 with Reserved                    -->
         <!-- Article 6.2.1.2 - Outdoor Design Conditions                       -->
@@ -432,9 +432,9 @@ above provides further guidance and examples of wind load calculations.</paragra
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 023: Replace sentence 1 with BC Safety Standards Act     -->
         <!-- Article 6.2.1.5 - Installation Standards                          -->
@@ -450,7 +450,7 @@ above provides further guidance and examples of wind load calculations.</paragra
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 024: Add sentence about solid-fuel burning boilers      -->
         <!-- Article 6.2.1.5 - Installation Standards                          -->
@@ -468,7 +468,7 @@ above provides further guidance and examples of wind load calculations.</paragra
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 025: Add sentence about suite ventilation                -->
         <!-- Article 6.3.1.1 - Required Ventilation                            -->
@@ -486,32 +486,32 @@ above provides further guidance and examples of wind load calculations.</paragra
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 026: REMOVED - Article 6.3.2.14 already exists in NBC   -->
         <!-- Article 6.3.2.14 (Cleaning Devices) is present in canonical NBC   -->
         <!-- No need to insert a Reserved placeholder                          -->
         <!-- ================================================================== -->
         <!-- REMOVED: Duplicate article insertion
-        <amendment id="bc-026" sequence="26"
-                   description="Insert Reserved Article 6.3.2.14 after Article 6.3.2.13">
-            <target type="position"
-                    parent-id="nbc.divB.part6.sect3.subsect2"
-                    position="after"
-                    reference-id="nbc.divB.part6.sect3.subsect2.art13"/>
-            <insert>
-                <new-content source="bc">
-                    <article xml:id="nbc.divB.part6.sect3.subsect2.art14" number="14">
-                        <title>Reserved</title>
-                        <sentence xml:id="nbc.divB.part6.sect3.subsect2.art14.sent1" number="1">
-                            <text>Reserved</text>
-                        </sentence>
-                    </article>
-                </new-content>
-            </insert>
-        </amendment>
+             <amendment id="bc-026" sequence="26"
+             description="Insert Reserved Article 6.3.2.14 after Article 6.3.2.13">
+             <target type="position"
+             parent-id="nbc.divB.part6.sect3.subsect2"
+             position="after"
+             reference-id="nbc.divB.part6.sect3.subsect2.art13"/>
+             <insert>
+             <new-content source="bc">
+             <article xml:id="nbc.divB.part6.sect3.subsect2.art14" number="14">
+             <title>Reserved</title>
+             <sentence xml:id="nbc.divB.part6.sect3.subsect2.art14.sent1" number="1">
+             <text>Reserved</text>
+             </sentence>
+             </article>
+             </new-content>
+             </insert>
+             </amendment>
         -->
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 027: Replace NPC reference with BC code reference        -->
         <!-- Article 6.3.2.15.(8) - Evaporative Heat Rejection Systems         -->
@@ -523,14 +523,14 @@ above provides further guidance and examples of wind load calculations.</paragra
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>Make-up water connections shall be equipped with backflow prevention
-devices that conform to Article 2.6.2.1. of Division B of Book II, (Plumbing Systems), of this code. (See <ref type="internal"
-                   target="nbc.divB.part6.sect10.appnote17"
-                   display-type="short"/>.)</text>
+                            devices that conform to Article 2.6.2.1. of Division B of Book II, (Plumbing Systems), of this code. (See <ref type="internal"
+                                                                                                                                           target="nbc.divB.part6.sect10.appnote17"
+                                                                                                                                           display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 028: Replace NPC reference with BC code reference        -->
         <!-- Article 6.3.2.15.(10) - Evaporative Heat Rejection Systems        -->
@@ -553,7 +553,7 @@ devices that conform to Article 2.6.2.1. of Division B of Book II, (Plumbing Sys
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 029: Replace NPC reference with BC code reference        -->
         <!-- Article 6.3.2.16.(6) - Evaporative Air Coolers                    -->
@@ -565,14 +565,14 @@ devices that conform to Article 2.6.2.1. of Division B of Book II, (Plumbing Sys
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>Make-up water connections shall be equipped with backflow prevention
-devices that conform to Article 2.6.2.1. of Division B of Book II, (Plumbing Systems), of this code. (See <ref type="internal"
-                   target="nbc.divB.part6.sect10.appnote19"
-                   display-type="short"/>.)</text>
+                            devices that conform to Article 2.6.2.1. of Division B of Book II, (Plumbing Systems), of this code. (See <ref type="internal"
+                                                                                                                                           target="nbc.divB.part6.sect10.appnote19"
+                                                                                                                                           display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 030: Replace NFC reference with BC Fire Code             -->
         <!-- Article 6.3.4.2.(3) - General Ventilation                         -->
@@ -584,12 +584,12 @@ devices that conform to Article 2.6.2.1. of Division B of Book II, (Plumbing Sys
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>A ventilation system required by this Subsection shall be maintained
-in conformance with Article 5.5.4.1. of Division B of the British Columbia Fire Code.</text>
+                            in conformance with Article 5.5.4.1. of Division B of the British Columbia Fire Code.</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 031: Replace NFC reference with BC Fire Code             -->
         <!-- Article 6.3.4.3.(1) - Enclosure Exhaust Ventilation              -->
@@ -626,7 +626,7 @@ in conformance with Article 5.5.4.1. of Division B of the British Columbia Fire 
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 032: Replace NFC reference with BC Fire Code             -->
         <!-- Article 6.3.4.4.(1) - Enclosure Construction                      -->
@@ -648,7 +648,7 @@ in conformance with Article 5.5.4.1. of Division B of the British Columbia Fire 
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 033: Replace NFC reference with BC Fire Code             -->
         <!-- Article 6.9.1.2.(1) - Hazardous Gases, Dusts or Liquids          -->
@@ -660,22 +660,22 @@ in conformance with Article 5.5.4.1. of Division B of the British Columbia Fire 
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>Except as provided in <ref type="internal"
-                   target="nbc.divB.part6.sect3.subsect4"
-                   display-type="long"
-                   pretext="Subsection"/>, systems serving spaces that contain hazardous
-gases, dusts or liquids shall be designed, constructed and installed
-to conform to the requirements of the applicable provincial or territorial
-regulations or municipal bylaws or, in the absence of such regulations
-or bylaws, to good engineering practice such as that described in
-the publications of the National Fire Protection Association and in
-the British Columbia Fire Code. (See <ref type="internal"
-                   target="nbc.divB.part6.sect10.appnote22"
-                   display-type="short"/>.)</text>
+                                                             target="nbc.divB.part6.sect3.subsect4"
+                                                             display-type="long"
+                                                             pretext="Subsection"/>, systems serving spaces that contain hazardous
+                            gases, dusts or liquids shall be designed, constructed and installed
+                            to conform to the requirements of the applicable provincial or territorial
+                            regulations or municipal bylaws or, in the absence of such regulations
+                            or bylaws, to good engineering practice such as that described in
+                            the publications of the National Fire Protection Association and in
+                            the British Columbia Fire Code. (See <ref type="internal"
+                                                                      target="nbc.divB.part6.sect10.appnote22"
+                                                                      display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- Article 6.9.3.1 - Carbon Monoxide Alarms                          -->
         <!-- ================================================================== -->
         <amendment id="bc-034" sequence="34"
@@ -791,7 +791,7 @@ the British Columbia Fire Code. (See <ref type="internal"
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 035: Add row for sentence (5) in attribution table      -->
         <!-- Table 6.10.1.1 - Article 6.3.1.1.(5)                              -->
@@ -801,7 +801,7 @@ the British Columbia Fire Code. (See <ref type="internal"
             <target type="position"
                     parent-id="nbc.divB.part6.sect10.subsect1.art1.table1.row38"
                     position="after"
-                    />
+                />
             <insert>
                 <new-content source="bc">
                     <row>
@@ -813,7 +813,7 @@ the British Columbia Fire Code. (See <ref type="internal"
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 036: Add new application note A-6.2.1.2.(1)             -->
         <!-- Outdoor Design Conditions                                         -->
@@ -834,7 +834,7 @@ the British Columbia Fire Code. (See <ref type="internal"
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 037: Replace NBC with BC Building Code                  -->
         <!-- Application Note A-6.2.1.4 - Structural Movement                  -->
@@ -851,7 +851,7 @@ the British Columbia Fire Code. (See <ref type="internal"
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 038: Add new application note A-6.3.1.1.(5)             -->
         <!-- Ventilation Air Supplied to Suites                                -->
@@ -872,7 +872,7 @@ the British Columbia Fire Code. (See <ref type="internal"
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 039: Replace text in application note                   -->
         <!-- Application Note A-6.9.3.1.(2)(c) - Carbon Monoxide Alarms        -->
@@ -889,7 +889,7 @@ the British Columbia Fire Code. (See <ref type="internal"
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 040: Add three new application notes for CO alarms      -->
         <!-- Application Notes A-6.9.3.1.(6), (7), and (8)                     -->
@@ -920,7 +920,7 @@ the British Columbia Fire Code. (See <ref type="internal"
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 041: Replace entire article with BC version             -->
         <!-- Article 7.1.2.1 - Conformance                                     -->
@@ -954,7 +954,7 @@ the British Columbia Fire Code. (See <ref type="internal"
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 042: Replace NFC reference with BC Fire Code             -->
         <!-- Article 8.1.1.1.(3) - Scope                                       -->
@@ -970,7 +970,7 @@ the British Columbia Fire Code. (See <ref type="internal"
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 043: Replace NFC reference with BC Fire Code             -->
         <!-- Article 8.1.1.3.(1) - Demolition Procedures                       -->
@@ -986,10 +986,10 @@ the British Columbia Fire Code. (See <ref type="internal"
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- END OF AMENDMENTS                                                  -->
         <!-- ================================================================== -->
     </amendments>
-
+    
 </bc-overlay>

@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-10T11:59:16.9334139-08:00"
+            generated="2026-02-11T22:28:42.4784186-08:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -6055,10 +6055,10 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
                         <content>
                            <entry>37</entry>
                            <entry>Mechanical and <emphasis style="italic">Plumbing Systems</emphasis>
-Part 6 and Part 7</entry>
+                    Part 6 and Part 7</entry>
                            <entry>Existing mechanical and <ref type="term" target="plmbng-sstm">plumbing systems</ref> in <ref type="term" target="bldng">buildings</ref> are not required to fully comply to the requirements of Parts 6 or Part 7 provided:
-(a) it is not an unsafe condition and
-(b) it is acceptable to the <ref type="term" target="thrt-hvng-jrsdctn">authority having jurisdiction</ref>.</entry>
+                    (a) it is not an unsafe condition and
+                    (b) it is acceptable to the <ref type="term" target="thrt-hvng-jrsdctn">authority having jurisdiction</ref>.</entry>
                         </content>
                         <change-summary>Amended Table 1.1.1.1.(5), Item 37 by striking out term-referenced "unsafe condition" and substituting plain text "unsafe condition"</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -6130,10 +6130,10 @@ Part 6 and Part 7</entry>
                         <content>
                            <entry>7</entry>
                            <entry>Fire-Resistance Ratings and Fire-Protection Ratings
-<ref type="internal"
+                    <ref type="internal"
                                    target="nbc.divB.part9.sect10.subsect3.art1.sent3"
                                    display-type="long"/>
-In a house with a <emphasis style="italic">secondary suite</emphasis>, where a minimum <ref type="term" target="fr-rtng">fire-resistance rating</ref> of 30 min is permitted, it is permitted to use wood-frame construction where stud and joist spaces are filled with absorptive material,resilient metal channel spaced 400 or 600 mm o.c. is on one side and not less than 12.7 mm thick gypsum board is installed on ceilings and on both sides of walls.</entry>
+                    In a house with a <emphasis style="italic">secondary suite</emphasis>, where a minimum <ref type="term" target="fr-rtng">fire-resistance rating</ref> of 30 min is permitted, it is permitted to use wood-frame construction where stud and joist spaces are filled with absorptive material,resilient metal channel spaced 400 or 600 mm o.c. is on one side and not less than 12.7 mm thick gypsum board is installed on ceilings and on both sides of walls.</entry>
                            <entry>Adding resilient metal channel spaced 400 or 600 mm o.c. and an additional layer of not less than 12.7 mm gypsum board to one side of an existing finished wall assembly that has not less than 12.7 mm gypsum board on each side or an existing finished floor-ceiling assembly that has not less than 12.7 mm gypsum on the ceiling side is permitted to be used where a 30 min <ref type="term" target="fr-rtng">fire-resistance rating</ref> is required.</entry>
                         </content>
                         <change-summary>Amended Table 1.1.1.1.(6), Item 7 by striking out "Fire-Resistance and Fire-Protection Ratings" and substituting "Fire-Resistance Ratings and Fire-Protection Ratings"</change-summary>
@@ -8338,14 +8338,10 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                                  </subclause>
                               </clause>
                            </sentence>
-                           <sentence xml:id="nbc.divB.part3.sect8.subsect5.art6.sent2"
-                                     number="2"
-                                     revised="yes">
+                           <sentence xml:id="nbc.divB.part3.sect8.subsect5.art6.sent2" number="2">
                               <text>Though the Code doesn't regulate bed furniture or sizes or styles such as bunkbeds, designs should allow for a bed to be located to accommodate transfer from the turning area to either side of the bed, such as by flipping the orientation of the bed, as well as for functional maneuvering space in the room.</text>
                            </sentence>
-                           <sentence xml:id="nbc.divB.part3.sect8.subsect5.art6.sent3"
-                                     number="3"
-                                     revised="yes">
+                           <sentence xml:id="nbc.divB.part3.sect8.subsect5.art6.sent3" number="3">
                               <text>A built-in closet is not required by this Code.</text>
                            </sentence>
                         </content>
@@ -8817,8 +8813,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                        revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -8850,8 +8846,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                        revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -8864,7 +8860,7 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                                    display-type="medium"/> where it terminates outside the <ref type="term" target="bldng">building</ref>, not less than <measurement units="metric">1.8 m</measurement> from a property line, and located in accordance with either 7.2.4.6 or 7.3.4 of CAN/CGSB-149.11, "Radon control options for new construction in low-rise residential buildings," with the opening of the pipe fitted with a corrosion-resistant screen or grille with a mesh opening size of <measurement units="metric">10 mm</measurement> to <measurement units="metric">12.5 mm</measurement> or a product of equivalent air flow performance (see <ref type="internal"
                                    target="nbc.divBV2.part9.sect9.appnoteA-9.13.4.3"
                                    display-type="short"/>).
-                   </text>
+                  </text>
                         </content>
                         <change-summary>Added '(see A-9.13.4.3)' after 'air flow performance'</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -8888,8 +8884,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -8933,8 +8929,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -8975,8 +8971,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                <table xml:id="nbc.divBV2.part9.sect23.subsect6.art1.table1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9061,8 +9057,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9109,8 +9105,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9162,8 +9158,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9204,8 +9200,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                <table xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9222,7 +9218,7 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                                  <row>
                                     <entry align="center">Reference Framing Type</entry>
                                     <entry align="center">Minimum Number of Nails on Each Side of Doubled Top Plate Splice for <ref type="term" target="br-wl-bnd">Braced Wall Band</ref> Spacing of 10.6 m
-                               <super>(1)</super>
+                          <super>(1)</super>
                                     </entry>
                                  </row>
                                  <row>
@@ -9287,8 +9283,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                <table xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table2" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9296,7 +9292,7 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                                status="current">
                         <content>
                            <title>Table 9.23.11.4.-B Fasteners in Doubled Top Plate Splice Connections in Braced Wall Bands Where HWP ≤ 1.2 kPa
-                   </title>
+                  </title>
                            <tgroup cols="2">
                               <colspec colname="col1" colwidth=""/>
                               <colspec colname="col2" colwidth=""/>
@@ -9377,8 +9373,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                        revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9412,8 +9408,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                           revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9444,8 +9440,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9477,8 +9473,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                        revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9509,8 +9505,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                <table xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9610,8 +9606,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                <table xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table2" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9714,8 +9710,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                           revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9747,8 +9743,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                           revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9779,8 +9775,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9789,8 +9785,8 @@ In a house with a <emphasis style="italic">secondary suite</emphasis>, where a m
                         <content>
                            <text>
                               <ref type="term" target="rvc-wtr-">Service water heaters</ref> shall conform
-to appropriate provincial or territorial requirements or, in the absence
-of such requirements, to Book II (Plumbing Systems) of this Code.</text>
+                    to appropriate provincial or territorial requirements or, in the absence
+                    of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                         </content>
                         <change-summary>Struck out 'the NPC' and substituted 'Book II (Plumbing Systems) of this Code'</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -9814,8 +9810,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9857,8 +9853,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                        revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9889,8 +9885,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9940,8 +9936,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -9978,8 +9974,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                         revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -10024,8 +10020,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -10077,16 +10073,16 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                     deleted="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
                                id="bc-mo-2024-06-134"
                                status="current">
                         <content>
-                   <!-- Empty content indicates deletion -->
-                 </content>
+                  <!-- Empty content indicates deletion -->
+                </content>
                         <change-summary>Row deleted - Article 9.8.5.5. entry removed from table</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
                      </revision>
@@ -10110,16 +10106,16 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                     deleted="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                  <!-- Merge engine will auto-populate from bc-building-code.xml -->
-                </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
                                id="bc-mo-2024-06-135"
                                status="current">
                         <content>
-                    <!-- Empty content indicates deletion -->
-                  </content>
+                  <!-- Empty content indicates deletion -->
+                </content>
                         <change-summary>Row deleted - Article 9.8.5.5. sentence entry removed from table</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
                      </revision>
@@ -10143,16 +10139,16 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                     deleted="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
                                id="bc-mo-2024-06-136"
                                status="current">
                         <content>
-                   <!-- Empty content indicates deletion -->
-                 </content>
+                  <!-- Empty content indicates deletion -->
+                </content>
                         <change-summary>Row deleted - Article 9.10.2.2. entry removed from table</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
                      </revision>
@@ -10176,16 +10172,16 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                     deleted="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
                                id="bc-mo-2024-06-137"
                                status="current">
                         <content>
-                   <!-- Empty content indicates deletion -->
-                 </content>
+                  <!-- Empty content indicates deletion -->
+                </content>
                         <change-summary>Row deleted - Article 9.10.2.2. sentence entry removed from table</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
                      </revision>
@@ -10208,8 +10204,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                         revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -10242,16 +10238,16 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                     deleted="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
                                id="bc-mo-2024-06-139"
                                status="current">
                         <content>
-                   <!-- Empty content indicates deletion -->
-                 </content>
+                  <!-- Empty content indicates deletion -->
+                </content>
                         <change-summary>Row deleted - Sentence 9.23.3.1.(2) entry removed from table</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
                      </revision>
@@ -10567,7 +10563,7 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-               </original>
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -10596,8 +10592,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <paragraph xml:id="nbc.divBV2.part9.appnote12a.para1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -10662,8 +10658,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <paragraph xml:id="nbc.divBV2.part9.appnote12b.para1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -10833,16 +10829,16 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                           deleted="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
                                id="bc-mo-2024-06-152"
                                status="current">
                         <content>
-                   <!-- Empty content indicates deletion -->
-                 </content>
+                  <!-- Empty content indicates deletion -->
+                </content>
                         <change-summary>Paragraph deleted - Last paragraph under 'Water Penetration Resistance' removed</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
                      </revision>
@@ -10899,16 +10895,16 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                          deleted="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
                                id="bc-mo-2024-06-153"
                                status="current">
                         <content>
-                   <!-- Empty content indicates deletion -->
-                 </content>
+                  <!-- Empty content indicates deletion -->
+                </content>
                         <change-summary>Sentence deleted - Figure A-9.13.4.3.(2)(b) and (3)(b) illustration removed</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
                      </revision>
@@ -10964,16 +10960,16 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                       deleted="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
                                id="bc-mo-2024-06-154"
                                status="current">
                         <content>
-                   <!-- Empty content indicates deletion -->
-                 </content>
+                  <!-- Empty content indicates deletion -->
+                </content>
                         <change-summary>Table deleted - A-Table 9.23.3.5.-B Alternative Nail Sizes removed</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
                      </revision>
@@ -11029,8 +11025,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                          revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11092,8 +11088,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <application-note xml:id="nbc.divBV2.part9.appnote199a" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11322,8 +11318,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                                  revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11481,8 +11477,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table1.rowh1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11514,8 +11510,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table2.rowh1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11547,8 +11543,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table3.rowh1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11580,8 +11576,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table4.rowh1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11613,8 +11609,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table5.rowh1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11646,8 +11642,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table6.rowh1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11679,8 +11675,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table7.rowh1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11713,8 +11709,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table8.rowh1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11747,8 +11743,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <row xml:id="nbc.divB.part10.sect2.subsect3.art3.table9.rowh1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11782,8 +11778,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                     revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11818,8 +11814,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                        revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -11898,8 +11894,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <row xml:id="nbc.divB.part10.sect3.subsect1.art3.table1.rowh1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -12049,8 +12045,8 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <row xml:id="nbc.divB.part10.sect4.subsect1.art1.table1.row2" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
@@ -12080,21 +12076,21 @@ of such requirements, to Book II (Plumbing Systems) of this Code.</text>
                <paragraph xml:id="nbc.divB.appendixC.div18.para9" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
-               </original>
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
                      <revision seq="1"
                                type="amendment"
                                effective-date="2025-06-16"
                                id="bc-mo-2024-06-184"
                                status="current">
                         <content>As a result of the updating procedure, the 1-in-50 reference
-wind velocity pressures remained unchanged for most of
-the locations listed in <ref type="internal"
+                  wind velocity pressures remained unchanged for most of
+                  the locations listed in <ref type="internal"
                                 target="nbc.divB.appendixC.table1"
                                 display-type="long"/>. However, the reference wind velocity pressures for some locations were
-revised to reflect the availability of additional wind data. The reference wind velocity pressures for
-locations in British Columbia were revised to reflect the availability of additional wind data and the
-use of a different extreme value distribution.</content>
+                  revised to reflect the availability of additional wind data. The reference wind velocity pressures for
+                  locations in British Columbia were revised to reflect the availability of additional wind data and the
+                  use of a different extreme value distribution.</content>
                         <change-summary>Struck out "for the 2010 edition of the Code"</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
                      </revision>

@@ -3,11 +3,11 @@
             version="1.0" 
             nbc-target-version="2020"
             effective-date="2023-12-15">
-
-            <!-- ================================================================== -->
-            <!-- BC BUILDING CODE AMENDMENTS TO NBC 2020 - PART 9 (2)                  -->
-            <!-- ================================================================== -->
-
+    
+    <!-- ================================================================== -->
+    <!-- BC BUILDING CODE AMENDMENTS TO NBC 2020 - PART 9 (2)                  -->
+    <!-- ================================================================== -->
+    
     <metadata>
         <title>BC Building Code Amendments to NBC 2020 - Part 9</title>
         <description>British Columbia-specific amendments for Part 9 (Housing and Small Buildings)</description>
@@ -16,7 +16,7 @@
         <source-document>NBC2020p1 Division B Part 9.FIN_backup.docx</source-document>
     </metadata>
     
-     
+    
     <amendments>
         
         <!-- ================================================================== -->
@@ -24,7 +24,7 @@
         <!-- Article 9.36.1.1 - Scope                                          -->
         <!-- ================================================================== -->
         <amendment id="bc-272" sequence="272"
-            description="Add note reference to Article 9.36.1.1.(1)">
+                   description="Add note reference to Article 9.36.1.1.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect1.art1.sent1"/>
             <modify>
                 <element-change xpath-within-target=".">
@@ -41,11 +41,11 @@
         <!-- Article 9.36.1.2 - Definitions                                    -->
         <!-- ================================================================== -->
         <amendment id="bc-273" sequence="273"
-            description="Add new sentence (9) defining log homes in Article 9.36.1.2">
+                   description="Add new sentence (9) defining log homes in Article 9.36.1.2">
             <target type="position" 
-                parent-id="nbc.divBV2.part9.sect36.subsect1.art2"
-                position="after"
-                reference-id="nbc.divBV2.part9.sect36.subsect1.art2.sent8"/>
+                    parent-id="nbc.divBV2.part9.sect36.subsect1.art2"
+                    position="after"
+                    reference-id="nbc.divBV2.part9.sect36.subsect1.art2.sent8"/>
             <insert>
                 <new-content source="bc">
                     <sentence xml:id="nbc.divBV2.part9.sect36.subsect1.art2.sent9" number="9">
@@ -91,7 +91,7 @@
         <!-- Article 9.36.1.3.(3) - Compliance and Application                -->
         <!-- ================================================================== -->
         <amendment id="bc-275" sequence="275"
-            description="Replace sentence content with BC-specific compliance requirements in Article 9.36.1.3.(3)">
+                   description="Replace sentence content with BC-specific compliance requirements in Article 9.36.1.3.(3)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect1.art3.sent3"/>
             <replace preserve-references="true">
                 <new-content source="bc">
@@ -144,8 +144,8 @@
                 </new-content>
             </replace>
         </amendment>
-
-            <!-- ================================================================== -->
+        
+        <!-- ================================================================== -->
         <!-- Amendment 277: Add clause (c) with Table 9.37.2.6.-C requirements and note reference -->
         <!-- Article 9.36.2.6.(1) - Thermal Characteristics of Above-ground Opaque Building Assemblies -->
         <!-- ================================================================== -->
@@ -176,7 +176,7 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 278: Insert new Table 9.36.2.6.-C for buildings containing only dwelling units -->
         <!-- Table 9.36.2.6.-C - Effective Thermal Resistance for Buildings Containing Only Dwelling Units -->
@@ -264,24 +264,24 @@
                                     <entry>5.02</entry>
                                     <entry>5.02</entry>
                                     <entry>5.02</entry>
-                                     </row>
-                             </tbody>
-                         </tgroup>
-                     <table-notes>
-                         <note xml:id="nbc.divBV2.part9.sect36.subsect2.art6.appnote1">
-                             <text>Notes to Table 9.37.2.6.-C:</text>
-                             <text>(1) See <ref type="internal" target="nbc.divBV2.part9.sect1.subsect1.art3.sent1" display-type="long"/>.</text>
-                             <text>(2) Notwithstanding <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art6.sent3" display-type="short"/>, ceilings below attics shall not have a reduction in effective thermal resistance</text>
-                             <text>(3) For the purposes of this table, a roof deck shall mean a horizontal portion of a roof intended for <ref type="term" target="ccpnc">occupancy</ref>.</text>
-                             <text>(4) For the purposes of this table, flat roofs shall mean a roof that is not intended for <ref type="term" target="ccpnc">occupancy</ref>.</text>
-                             <text>(5) See <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.sent3" display-type="short"/> for requirements concerning the above-ground portion of <ref type="term" target="fndtn">foundation</ref> walls.</text>
-                         </note>
-                     </table-notes>
-                     </table>
-                 </new-content>
-             </insert>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                        <table-notes>
+                            <note xml:id="nbc.divBV2.part9.sect36.subsect2.art6.appnote1">
+                                <text>Notes to Table 9.37.2.6.-C:</text>
+                                <text>(1) See <ref type="internal" target="nbc.divBV2.part9.sect1.subsect1.art3.sent1" display-type="long"/>.</text>
+                                <text>(2) Notwithstanding <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art6.sent3" display-type="short"/>, ceilings below attics shall not have a reduction in effective thermal resistance</text>
+                                <text>(3) For the purposes of this table, a roof deck shall mean a horizontal portion of a roof intended for <ref type="term" target="ccpnc">occupancy</ref>.</text>
+                                <text>(4) For the purposes of this table, flat roofs shall mean a roof that is not intended for <ref type="term" target="ccpnc">occupancy</ref>.</text>
+                                <text>(5) See <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.sent3" display-type="short"/> for requirements concerning the above-ground portion of <ref type="term" target="fndtn">foundation</ref> walls.</text>
+                            </note>
+                        </table-notes>
+                    </table>
+                </new-content>
+            </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 279: Replace entire Article 9.36.2.7 with BC version   -->
         <!-- Article 9.36.2.7 - Complete restructure with 11 sentences and    -->
@@ -328,7 +328,7 @@
                                 </thead>
                                 <tbody>
                                     <row>
-                                         <entry>Fenestration<note xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table1.fn3">Except skylights and glass block assemblies.</note> and doors</entry>
+                                        <entry>Fenestration<note xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table1.fn3">Except skylights and glass block assemblies.</note> and doors</entry>
                                         <entry>Max. U-value, W/(m<super>2</super>×K)</entry>
                                         <entry>1.84</entry>
                                         <entry>1.84</entry>
@@ -627,30 +627,30 @@
                                 </thead>
                                 <tbody>
                                     <row>
-                                         <entry>Fenestration<note xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table4.fn3">Except doors, skylights and glass block assemblies.</note></entry>
+                                        <entry>Fenestration<note xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table4.fn3">Except doors, skylights and glass block assemblies.</note></entry>
                                         <entry>Max. U-value, W/(m<super>2</super>×K)</entry>
                                         <entry>1.22</entry>
                                         <entry>1.22</entry>
                                         <entry>1.22</entry>
                                         <entry>1.22</entry>
-                                         <entry>1.22</entry>
-                                         <entry>1.22</entry>
-                                     </row>
-                                 </tbody>
-                             </tgroup>
-                         <table-notes>
-                             <note xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table4.note1">
-                                 See <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table1.appnote1" display-type="long"/>.
-                             </note>
-                             <note xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table4.note2">
-                                 See <ref type="internal" target="nbc.divA.part1.sect1.subsect3.art1" display-type="long"/>.
-                             </note>
-                             <note xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table4.note3">
-                                 Except doors (see <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent1" display-type="short"/> and <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table1" display-type="long"/>), skylights (see <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent2" display-type="short"/> and <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table2" display-type="long"/>) and glass block assemblies (see <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent4" display-type="short"/>).
-                             </note>
-                         </table-notes>
-                         </table>
-                     </article>
+                                        <entry>1.22</entry>
+                                        <entry>1.22</entry>
+                                    </row>
+                                </tbody>
+                            </tgroup>
+                            <table-notes>
+                                <note xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table4.note1">
+                                    See <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table1.appnote1" display-type="long"/>.
+                                </note>
+                                <note xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table4.note2">
+                                    See <ref type="internal" target="nbc.divA.part1.sect1.subsect3.art1" display-type="long"/>.
+                                </note>
+                                <note xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table4.note3">
+                                    Except doors (see <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent1" display-type="short"/> and <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table1" display-type="long"/>), skylights (see <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent2" display-type="short"/> and <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table2" display-type="long"/>) and glass block assemblies (see <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent4" display-type="short"/>).
+                                </note>
+                            </table-notes>
+                        </table>
+                    </article>
                 </new-content>
             </replace>
         </amendment>
@@ -660,7 +660,7 @@
         <!-- Article 9.36.2.8.(1) - Add new clause c) for heat pump systems   -->
         <!-- ================================================================== -->
         <amendment id="bc-283" sequence="283"
-            description="Add clause c) referencing Table 9.36.2.8.-C for heat pump and HRV systems in Article 9.36.2.8.(1)">
+                   description="Add clause c) referencing Table 9.36.2.8.-C for heat pump and HRV systems in Article 9.36.2.8.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art8.sent1"/>
             <modify>
                 <element-change xpath-within-target=".">
@@ -674,14 +674,14 @@
                             <subclause xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent1.clause3.subclause1"
                                        number="1">
                                 <text>a heat-recovery ventilator conforming to <ref type="internal"
-                                        target="nbc.divBV2.part9.sect36.subsect3.art9"
-                                        display-type="long"/>, or</text>
+                                                                                        target="nbc.divBV2.part9.sect36.subsect3.art9"
+                                                                                        display-type="long"/>, or</text>
                             </subclause>
                             <subclause xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent1.clause3.subclause2"
                                        number="2">
                                 <text>a heat pump in conformance with <ref type="internal"
-                                        target="nbc.divBV2.part9.sect36.subsect3.art10"
-                                        display-type="long"/>.</text>
+                                                                               target="nbc.divBV2.part9.sect36.subsect3.art10"
+                                                                               display-type="long"/>.</text>
                             </subclause>
                         </clause>
                     </add-child>
@@ -694,7 +694,7 @@
         <!-- Article 9.36.2.8. - Add new table for heat pump systems          -->
         <!-- ================================================================== -->
         <amendment id="bc-283.5" sequence="283.5"
-            description="Insert Table 9.36.2.8.-C for buildings with heat pumps or HRVs">
+                   description="Insert Table 9.36.2.8.-C for buildings with heat pumps or HRVs">
             <target type="position" 
                     parent-id="nbc.divBV2.part9.sect36.subsect2.art8"
                     position="after" 
@@ -836,7 +836,7 @@
         <!-- Article 9.36.2.8.(2) - Update table references and add note      -->
         <!-- ================================================================== -->
         <amendment id="bc-283.6" sequence="283.6"
-            description="Add reference to Table 9.36.2.8.-C and note in Article 9.36.2.8.(2)">
+                   description="Add reference to Table 9.36.2.8.-C and note in Article 9.36.2.8.(2)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art8.sent2"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -852,7 +852,7 @@
         <!-- Article 9.36.2.8.(3) - Update table references                   -->
         <!-- ================================================================== -->
         <amendment id="bc-283.7" sequence="283.7"
-            description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(3)">
+                   description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(3)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art8.sent3"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -868,7 +868,7 @@
         <!-- Article 9.36.2.8.(5) - Update table references                   -->
         <!-- ================================================================== -->
         <amendment id="bc-283.8" sequence="283.8"
-            description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(5)">
+                   description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(5)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art8.sent5"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -884,7 +884,7 @@
         <!-- Article 9.36.2.8.(6) - Update table references                   -->
         <!-- ================================================================== -->
         <amendment id="bc-283.9" sequence="283.9"
-            description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(6)">
+                   description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(6)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art8.sent6"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -900,7 +900,7 @@
         <!-- Article 9.36.2.8.(7) - Update table references                   -->
         <!-- ================================================================== -->
         <amendment id="bc-283.91" sequence="283.91"
-            description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(7)">
+                   description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(7)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art8.sent7"/>
             <replace preserve-references="true">
                 <new-content source="bc">
@@ -922,7 +922,7 @@
         <!-- Article 9.36.2.8.(8) - Update table references                   -->
         <!-- ================================================================== -->
         <amendment id="bc-283.92" sequence="283.92"
-            description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(8)">
+                   description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(8)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art8.sent8"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -938,7 +938,7 @@
         <!-- Article 9.36.2.8.(9)(a) - Update table references                -->
         <!-- ================================================================== -->
         <amendment id="bc-283.93" sequence="283.93"
-            description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(9)(a)">
+                   description="Add reference to Table 9.36.2.8.-C in Article 9.36.2.8.(9)(a)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art8.sent9"/>
             <replace preserve-references="true">
                 <new-content source="bc">
@@ -956,29 +956,29 @@
             </replace>
         </amendment>
         
-
+        
         
         <!-- ================================================================== -->
         <!-- Amendment 290: Change standard and remove Type A4 designation     -->
         <!-- Article 9.36.2.9.(1)(c) - Update air barrier assembly testing standard -->
         <!-- ================================================================== -->
         <amendment id="bc-290" sequence="290"
-            description="Change standard from CAN/ULC-S742 to ASTM E2357 and remove Type A4 designation in Article 9.37.2.9.(1)(c)">
+                   description="Change standard from CAN/ULC-S742 to ASTM E2357 and remove Type A4 designation in Article 9.37.2.9.(1)(c)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art9.sent1.clause3"/>
             <modify>
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>a continuous <ref type="term" target="r-brrr">air barrier system</ref> in
-accordance with <ref type="internal"
-                                target="nbc.divBV2.part9.sect36.subsect2.art9.sent2"
-                                display-type="short"
-                                pretext="Sentences"/>
-                           <ref type="internal"
-                                target="nbc.divBV2.part9.sect36.subsect2.art9.sent6"
-                                display-type="short"
-                                pretext="to"/> and <ref type="internal"
-                                target="nbc.divBV2.part9.sect25.subsect3"
-                                display-type="long"/> and a <ref type="term" target="bldng">building</ref> assembly having an air leakage rate not greater than <measurement units="metric">0.20 L/(s·m<super>2</super>)</measurement> when tested in accordance with <ref type="standard" target="astme2357" standardId="astme2357"/> where</text>
+                            accordance with <ref type="internal"
+                                                 target="nbc.divBV2.part9.sect36.subsect2.art9.sent2"
+                                                 display-type="short"
+                                                 pretext="Sentences"/>
+                            <ref type="internal"
+                                 target="nbc.divBV2.part9.sect36.subsect2.art9.sent6"
+                                 display-type="short"
+                                 pretext="to"/> and <ref type="internal"
+                                                    target="nbc.divBV2.part9.sect25.subsect3"
+                                                    display-type="long"/> and a <ref type="term" target="bldng">building</ref> assembly having an air leakage rate not greater than <measurement units="metric">0.20 L/(s·m<super>2</super>)</measurement> when tested in accordance with <ref type="standard" target="astme2357" standardId="astme2357"/> where</text>
                     </new-content>
                 </element-replace>
             </modify>
@@ -990,7 +990,7 @@ accordance with <ref type="internal"
         <!-- TODO After delete re-arrange the numbers of sentence -->
         <!-- ================================================================== -->
         <amendment id="bc-291" sequence="291"
-            description="Remove introductory sentence about airtight construction scope in Article 9.37.2.10.(7)">
+                   description="Remove introductory sentence about airtight construction scope in Article 9.37.2.10.(7)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect2.art10.sent7"/>
             <delete/>
         </amendment>
@@ -1000,13 +1000,13 @@ accordance with <ref type="internal"
         <!-- Article 9.36.4.3.(2) - Replace NPC reference with Book II reference -->
         <!-- ================================================================== -->
         <amendment id="bc-293" sequence="293"
-            description="Change plumbing code reference from NPC to Book II in Article 9.36.4.3.(2)">
+                   description="Change plumbing code reference from NPC to Book II in Article 9.36.4.3.(2)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect4.art3.sent2"/>
             <modify>
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>Service water heating systems that use solar thermal technology
-shall be installed in accordance with the Book II (Plumbing Systems) of this Code.</text>
+                            shall be installed in accordance with the Book II (Plumbing Systems) of this Code.</text>
                     </new-content>
                 </element-replace>
             </modify>
@@ -1017,7 +1017,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Article 9.36.5.2.(1) - Fix reference and add table exclusions -->
         <!-- ================================================================== -->
         <amendment id="bc-294" sequence="294"
-            description="Add missing subsection reference and exclude specific tables in Article 9.37.5.2.(1)">
+                   description="Add missing subsection reference and exclude specific tables in Article 9.37.5.2.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect5.art2.sent1"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -1033,7 +1033,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Article 9.36.5.3 - Complete replacement with BC compliance structure and note reference -->
         <!-- ================================================================== -->
         <amendment id="bc-295" sequence="295"
-            description="Replace entire Article 9.37.5.3 with BC-specific compliance requirements and add note reference">
+                   description="Replace entire Article 9.37.5.3 with BC-specific compliance requirements and add note reference">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect5.art3"/>
             <replace preserve-references="true">
                 <new-content source="bc">
@@ -1080,7 +1080,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Article 9.36.5.6.(2) - Add reference to Subsection 9.36.2         -->
         <!-- ================================================================== -->
         <amendment id="bc-296" sequence="296"
-            description="Add note reference to Subsection 9.37.2 in Article 9.37.5.6.(2)">
+                   description="Add note reference to Subsection 9.37.2 in Article 9.37.5.6.(2)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect5.art6.sent2"/>
             <replace preserve-references="true">
                 <new-content source="bc">
@@ -1106,7 +1106,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Article 9.36.5.14.(2) - Fix clause letters and change ref to 9.36.7.3.(1) -->
         <!-- ================================================================== -->
         <amendment id="bc-297" sequence="297"
-            description="Correct clause lettering from (e),(d) to (d),(e) and update reference to 9.37.7.3.(1) in Article 9.37.5.14.(2)">
+                   description="Correct clause lettering from (e),(d) to (d),(e) and update reference to 9.37.7.3.(1) in Article 9.37.5.14.(2)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect5.art14.sent2"/>
             <replace preserve-references="true">
                 <new-content source="bc">
@@ -1143,7 +1143,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Article 9.36.5.10.(9)(c) - Change airtightness reference          -->
         <!-- ================================================================== -->
         <amendment id="bc-298" sequence="298"
-            description="Update reference from Sentence 9.37.6.3.(1) to Sentence 9.37.7.3.(1) in Article 9.37.5.10.(9)(c)">
+                   description="Update reference from Sentence 9.37.6.3.(1) to Sentence 9.37.7.3.(1) in Article 9.37.5.10.(9)(c)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect5.art10.sent9.clause3"/>
             <modify>
                 <attribute-change attribute-name="@target">
@@ -1157,7 +1157,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Article 9.36.5.14.(9) - Change foundation wall reference          -->
         <!-- ================================================================== -->
         <amendment id="bc-299" sequence="299"
-            description="Update reference from Sentence 9.37.2.8.(4) to Sentence 9.37.2.8.(2) in Article 9.37.5.14.(9)">
+                   description="Update reference from Sentence 9.37.2.8.(4) to Sentence 9.37.2.8.(2) in Article 9.37.5.14.(9)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect5.art14.sent9"/>
             <modify>
                 <attribute-change attribute-name="@target">
@@ -1171,7 +1171,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Article 9.36.5.14.(10)(a) - Number format change                  -->
         <!-- ================================================================== -->
         <amendment id="bc-300" sequence="300"
-            description="Change 'one or two' to '1 or 2' dwelling units in Article 9.37.5.14.(10)(a)">
+                   description="Change 'one or two' to '1 or 2' dwelling units in Article 9.37.5.14.(10)(a)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect5.art14.sent10.clause1"/>
             <modify>
                 <text-change xpath-within-target="text()">
@@ -1188,7 +1188,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Article 9.36.5.14.(10)(b) - Number format change                  -->
         <!-- ================================================================== -->
         <amendment id="bc-301" sequence="301"
-            description="Change 'more than two' to 'more than 2' dwelling units in Article 9.37.5.14.(10)(b)">
+                   description="Change 'more than two' to 'more than 2' dwelling units in Article 9.37.5.14.(10)(b)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect5.art14.sent10.clause2"/>
             <modify>
                 <text-change xpath-within-target="text()">
@@ -1778,7 +1778,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Scope and Application - remove clause (b), modify subclauses      -->
         <!-- ================================================================== -->
         <amendment id="bc-320" sequence="320"
-            description="Replace Article 9.36.7.1.(1) - remove clause (b), add 9.37.6 reference">
+                   description="Replace Article 9.36.7.1.(1) - remove clause (b), add 9.37.6 reference">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect7.art1.sent1"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -1803,7 +1803,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Definitions - remove "zone" definition                            -->
         <!-- ================================================================== -->
         <amendment id="bc-321" sequence="321"
-            description="Replace Article 9.37.7.2.(1)(a) with reserved - remove zone definition">
+                   description="Replace Article 9.37.7.2.(1)(a) with reserved - remove zone definition">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect7.art2.sent1.clause1"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -1819,7 +1819,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Definitions - remove "attached zone" definition                   -->
         <!-- ================================================================== -->
         <amendment id="bc-322" sequence="322"
-            description="Replace Article 9.37.7.2.(1)(b) with reserved - remove attached zone definition">
+                   description="Replace Article 9.37.7.2.(1)(b) with reserved - remove attached zone definition">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect7.art2.sent1.clause2"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -1835,7 +1835,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Determination of Airtightness - simplify to single sentence       -->
         <!-- ================================================================== -->
         <amendment id="bc-323" sequence="323"
-            description="Replace Article 9.37.7.3 - simplify to single sentence, remove clauses and sentences 2-3">
+                   description="Replace Article 9.37.7.3 - simplify to single sentence, remove clauses and sentences 2-3">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect7.art3"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -1854,7 +1854,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Determination of Airtightness Level - simplify to single table    -->
         <!-- ================================================================== -->
         <amendment id="bc-324" sequence="324"
-            description="Replace Article 9.37.7.4 - simplify to single sentence and table with 3 levels">
+                   description="Replace Article 9.37.7.4 - simplify to single sentence and table with 3 levels">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect7.art4"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -1918,7 +1918,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Tiered Energy Performance Compliance: Performance Path - removed  -->
         <!-- ================================================================== -->
         <amendment id="bc-325" sequence="325"
-            description="Remove Subsection 9.37.7 - Tiered Energy Performance Compliance: Performance Path">
+                   description="Remove Subsection 9.37.7 - Tiered Energy Performance Compliance: Performance Path">
             <target type="canonical-id" id="nbc.divBV2.part9.sect37.subsect7"/>
             <delete/>
         </amendment>
@@ -1928,7 +1928,7 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Tiered Energy Performance Compliance: Prescriptive Path - removed -->
         <!-- ================================================================== -->
         <amendment id="bc-326" sequence="326"
-            description="Remove Subsection 9.37.8 - Tiered Energy Performance Compliance: Prescriptive Path">
+                   description="Remove Subsection 9.37.8 - Tiered Energy Performance Compliance: Prescriptive Path">
             <target type="canonical-id" id="nbc.divBV2.part9.sect37.subsect8"/>
             <delete/>
         </amendment>
@@ -2152,17 +2152,17 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- BC removes NBC Subsection 9.36.8 "Tiered Energy Performance"      -->
         <!-- ================================================================== -->
         <amendment id="bc-332" sequence="332"
-            description="Delete NBC Subsection 9.36.7 Tiered Energy Performance O&amp;FS entries from Table 9.38.1.1">
+                   description="Delete NBC Subsection 9.36.7 Tiered Energy Performance O&amp;FS entries from Table 9.38.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect8"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 333: Delete NBC Subsection 9     -->
         <!-- BC removes NBC Subsection 9.36.9 "Tiered Energy Performance"      -->
         <!-- ================================================================== -->
         <amendment id="bc-333" sequence="333"
-            description="Delete NBC Article 9.36.7.3 Tiered Energy Performance Compliance Calculations O&amp;FS entries from Table 9.38.1.1">
+                   description="Delete NBC Article 9.36.7.3 Tiered Energy Performance Compliance Calculations O&amp;FS entries from Table 9.38.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect9"/>
             <delete/>
         </amendment>
@@ -2173,49 +2173,49 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- Deletes entries for Articles 9.36.8.2, 9.36.8.5-9.36.8.11         -->
         <!-- ================================================================== -->
         <amendment id="bc-334" sequence="334"
-            description="Delete NBC Article 9.36.8.2 Application O&amp;FS entries from Table 9.38.1.1">
+                   description="Delete NBC Article 9.36.8.2 Application O&amp;FS entries from Table 9.38.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect8.art2"/>
             <delete/>
         </amendment>
         
         <amendment id="bc-335" sequence="335"
-            description="Delete NBC Article 9.36.8.5 O&amp;FS entries from Table 9.38.1.1">
+                   description="Delete NBC Article 9.36.8.5 O&amp;FS entries from Table 9.38.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect8.art5"/>
             <delete/>
         </amendment>
         
         <amendment id="bc-336" sequence="336"
-            description="Delete NBC Article 9.36.8.6 O&amp;FS entries from Table 9.38.1.1">
+                   description="Delete NBC Article 9.36.8.6 O&amp;FS entries from Table 9.38.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect8.art6"/>
             <delete/>
         </amendment>
         
         <amendment id="bc-337" sequence="337"
-            description="Delete NBC Article 9.36.8.7 O&amp;FS entries from Table 9.38.1.1">
+                   description="Delete NBC Article 9.36.8.7 O&amp;FS entries from Table 9.38.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect8.art7"/>
             <delete/>
         </amendment>
         
         <amendment id="bc-338" sequence="338"
-            description="Delete NBC Article 9.36.8.8 O&amp;FS entries from Table 9.38.1.1">
+                   description="Delete NBC Article 9.36.8.8 O&amp;FS entries from Table 9.38.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect8.art8"/>
             <delete/>
         </amendment>
         
         <amendment id="bc-339" sequence="339"
-            description="Delete NBC Article 9.36.8.9 O&amp;FS entries from Table 9.38.1.1">
+                   description="Delete NBC Article 9.36.8.9 O&amp;FS entries from Table 9.38.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect8.art9"/>
             <delete/>
         </amendment>
         
         <amendment id="bc-340" sequence="340"
-            description="Delete NBC Article 9.36.8.10 O&amp;FS entries from Table 9.38.1.1">
+                   description="Delete NBC Article 9.36.8.10 O&amp;FS entries from Table 9.38.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect8.art10"/>
             <delete/>
         </amendment>
         
         <amendment id="bc-342" sequence="342"
-            description="Delete NBC Article 9.36.8.11 O&amp;FS entries from Table 9.38.1.1">
+                   description="Delete NBC Article 9.36.8.11 O&amp;FS entries from Table 9.38.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect36.subsect8.art11"/>
             <delete/>
         </amendment>
@@ -2226,11 +2226,11 @@ shall be installed in accordance with the Book II (Plumbing Systems) of this Cod
         <!-- ================================================================== -->
         <!--TODO-->
         <!--At least move its content to be after the new 9.37-->
-
+        
         <!-- ================================================================== -->
         <!-- END OF AMENDMENTS                                                  -->
         <!-- ================================================================== -->
         
     </amendments>
-
+    
 </bc-overlay>

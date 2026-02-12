@@ -421,11 +421,11 @@
                         <item xml:id="nbc.divB.appendixC.div20.list2.item4">Enter the latitude and longitude of the site's location manually, or determine the latitude and longitude from an address or current location.</item>
                         <item xml:id="nbc.divB.appendixC.div20.list2.item5">Click "Obtain Seismic Hazard Values." The following values are needed to determine S<sub>max</sub>: S<sub>a</sub>(0.2,X<sub>S</sub>) and S<sub>a</sub>(0.5,X<sub>S</sub>).</item>
                         <item xml:id="nbc.divB.appendixC.div20.list2.item6">Determine S(0.2,X<sub>S</sub>) in accordance with Sentence 4.1.8.4.(6):
-S(0.2,X<sub>S</sub>) = S<sub>a</sub>(0.2,X<sub>S</sub>) or S<sub>a</sub>(0.5,X<sub>S</sub>), whichever is greater</item>
+                            S(0.2,X<sub>S</sub>) = S<sub>a</sub>(0.2,X<sub>S</sub>) or S<sub>a</sub>(0.5,X<sub>S</sub>), whichever is greater</item>
                         <item xml:id="nbc.divB.appendixC.div20.list2.item7">Determine S(0.5,X<sub>S</sub>) in accordance with Sentence 4.1.8.4.(6):
-S(0.5,X<sub>S</sub>) = Sa(0.5,X<sub>S</sub>)</item>
+                            S(0.5,X<sub>S</sub>) = Sa(0.5,X<sub>S</sub>)</item>
                         <item xml:id="nbc.divB.appendixC.div20.list2.item8">Determine S<sub>max</sub>:
-S<sub>max</sub> = (2/3)S(0.2,X<sub>S</sub>) or S(0.5,X<sub>S</sub>), whichever is greater</item>
+                            S<sub>max</sub> = (2/3)S(0.2,X<sub>S</sub>) or S(0.5,X<sub>S</sub>), whichever is greater</item>
                         <item xml:id="nbc.divB.appendixC.div20.list2.item9">Round S<sub>max</sub> to three significant digits.</item>
                     </list>
                     <paragraph xml:id="nbc.divB.appendixC.div20.para4">In cases where the Site Class is determined in accordance with Sentence 4.1.8.4.(3), S<sub>max</sub> is calculated for the determined Site Class. In cases where the Site Class is unknown, S<sub>max</sub> must be calculated for each of Site Classes A, B, C, D and E, by repeating Steps 1 to 9, and the highest value of S<sub>max</sub> among all the Site Classes used for design.</paragraph>
@@ -445,18 +445,18 @@ S<sub>max</sub> = (2/3)S(0.2,X<sub>S</sub>) or S(0.5,X<sub>S</sub>), whichever i
                 <new-content source="bc">
                     <paragraph xml:id="nbc.divB.appendixC.div22.para0"><emphasis style="bold">Example</emphasis></paragraph>
                     <paragraph xml:id="nbc.divB.appendixC.div22.para1">Consider a site in Strathmore, Alberta, a location not listed in Table C-3. The latitude and longitude of Strathmore are 51.04040 and −113.40205, respectively. In this example, the Site Class is determined by a geotechnical investigation to be Site Class C.</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para2">Using the 2020 National Building Code of Canada Seismic Hazard Tool (Step 1), select "Site Class (X<sub>S</sub>)" as the site designation (Step 2). Select "C" as the Site Class (Step 3). Under "Location," enter the latitude, 51.04040, and longitude, −113.40205, and then click "Set coordinates" (Step 4). Click "Obtain Seismic Hazard Values" to obtain the values for S<sub>a</sub>(0.2,X<sub>C</sub>) and S<sub>a</sub>(0.5,X<sub>C</sub>), which are 0.191 and 0.125, respectively (Step 5).</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para3">Next, determine S(0.2,X<sub>C</sub>) as follows (Step 6):</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para4">S(0.2,X<sub>C</sub>) = S<sub>a</sub>(0.2,X<sub>C</sub>) or S<sub>a</sub>(0.5,X<sub>C</sub>), whichever is greater</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para5">S(0.2,X<sub>C</sub>) = 0.191 or 0.125, whichever is greater</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para6">S(0.2,X<sub>C</sub>) = 0.191</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para7">Now, determine S(0.5,X<sub>C</sub>) as follows (Step 7):</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para8">S(0.5,X<sub>C</sub>) = Sa(0.5,X<sub>C</sub>)</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para9">S(0.5,X<sub>C</sub>) = 0.125</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para10">Finally, determine S<sub>max</sub> for Site Class C as follows (Step 8):</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para11">S<sub>max</sub> = (2/3)S(0.2,X<sub>C</sub>) or S(0.5,X<sub>C</sub>), whichever is greater</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para12">S<sub>max</sub> = 0.127333 or 0.125, whichever is greater</paragraph>
-                        <paragraph xml:id="nbc.divB.appendixC.div22.para13">S<sub>max</sub> = 0.127 (rounded to three significant digits according to Step 9)</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para2">Using the 2020 National Building Code of Canada Seismic Hazard Tool (Step 1), select "Site Class (X<sub>S</sub>)" as the site designation (Step 2). Select "C" as the Site Class (Step 3). Under "Location," enter the latitude, 51.04040, and longitude, −113.40205, and then click "Set coordinates" (Step 4). Click "Obtain Seismic Hazard Values" to obtain the values for S<sub>a</sub>(0.2,X<sub>C</sub>) and S<sub>a</sub>(0.5,X<sub>C</sub>), which are 0.191 and 0.125, respectively (Step 5).</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para3">Next, determine S(0.2,X<sub>C</sub>) as follows (Step 6):</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para4">S(0.2,X<sub>C</sub>) = S<sub>a</sub>(0.2,X<sub>C</sub>) or S<sub>a</sub>(0.5,X<sub>C</sub>), whichever is greater</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para5">S(0.2,X<sub>C</sub>) = 0.191 or 0.125, whichever is greater</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para6">S(0.2,X<sub>C</sub>) = 0.191</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para7">Now, determine S(0.5,X<sub>C</sub>) as follows (Step 7):</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para8">S(0.5,X<sub>C</sub>) = Sa(0.5,X<sub>C</sub>)</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para9">S(0.5,X<sub>C</sub>) = 0.125</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para10">Finally, determine S<sub>max</sub> for Site Class C as follows (Step 8):</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para11">S<sub>max</sub> = (2/3)S(0.2,X<sub>C</sub>) or S(0.5,X<sub>C</sub>), whichever is greater</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para12">S<sub>max</sub> = 0.127333 or 0.125, whichever is greater</paragraph>
+                    <paragraph xml:id="nbc.divB.appendixC.div22.para13">S<sub>max</sub> = 0.127 (rounded to three significant digits according to Step 9)</paragraph>
                     <paragraph xml:id="nbc.divB.appendixC.div22.para14">If the Site Class is unknown, this procedure is repeated to determine S<sub>max</sub> for each of Site Classes A, B, C, D and E. For Strathmore, the resulting values of S<sub>max</sub> are as follows: 0.071 for Site Class A, 0.097 for Site Class B, 0.127 for Site Class C, 0.213 for Site Class D, and 0.254 for Site Class E. The highest value is selected as S<sub>max</sub> for unknown Site Class: 0.254.</paragraph>
                 </new-content>
             </insert>

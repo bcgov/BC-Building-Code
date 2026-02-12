@@ -19,7 +19,7 @@
     <amendments>
         
         
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 106: Update title and add electrical outlets sentence   -->
         <!-- Article 3.8.2.6 - Controls and Outlets                           -->
@@ -41,7 +41,7 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 107: Replace barrier-free with accessible terminology   -->
         <!-- Article 3.8.2.7 - Power Door Operators                           -->
@@ -75,7 +75,7 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 108: Replace barrier-free with accessible terminology   -->
         <!-- Article 3.8.2.8 - Plumbing Facilities (complete replacement)     -->
@@ -145,7 +145,7 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 109: Add courtrooms requirement                         -->
         <!-- Article 3.8.2.9.(1) - Assistive Listening Systems                -->
@@ -157,16 +157,16 @@
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>In a <ref type="term" target="bldng">building</ref> of <ref type="term" target="mbl-ccpn">assembly occupancy</ref>, all classrooms, auditoria, meeting rooms
-and <ref type="term" target="thtr">theatres</ref> with an area of more than <measurement units="metric">100 m<super>2</super></measurement>, including courtrooms of any size, shall be equipped with an assistive
-listening system complying with <ref type="internal"
-                             target="nbc.divB.part3.sect8.subsect3"
-                             display-type="long"/>
+                            and <ref type="term" target="thtr">theatres</ref> with an area of more than <measurement units="metric">100 m<super>2</super></measurement>, including courtrooms of any size, shall be equipped with an assistive
+                            listening system complying with <ref type="internal"
+                                                                 target="nbc.divB.part3.sect8.subsect3"
+                                                                 display-type="long"/>
                         </text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 110: Replace barrier-free terminology and expand signs  -->
         <!-- Article 3.8.2.10 - Signs and Indicators                          -->
@@ -230,7 +230,7 @@ listening system complying with <ref type="internal"
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 111: Add new Article for sleeping rooms and bed spaces  -->
         <!-- Article 3.8.2.13 - Sleeping Rooms and Bed Spaces                 -->
@@ -258,7 +258,7 @@ listening system complying with <ref type="internal"
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 112: Replace barrier-free terminology and add sentence  -->
         <!-- Article 3.8.3.1 - Design Standards (including table changes)     -->
@@ -359,7 +359,7 @@ listening system complying with <ref type="internal"
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 113: Replace barrier-free terminology and restructure   -->
         <!-- Article 3.8.3.2 - Accessible Path of Travel                      -->
@@ -432,7 +432,7 @@ listening system complying with <ref type="internal"
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 114: Replace barrier-free with accessible terminology   -->
         <!-- Article 3.8.3.3 - Exterior Walks                                 -->
@@ -449,7 +449,7 @@ listening system complying with <ref type="internal"
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 115: Update title and add CSA B651 reference            -->
         <!-- Article 3.8.3.4 - Passenger-Loading Zones                        -->
@@ -477,7 +477,7 @@ listening system complying with <ref type="internal"
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 116: Replace barrier-free terminology and grade         -->
         <!-- Article 3.8.3.5 - Ramps                                          -->
@@ -494,7 +494,7 @@ listening system complying with <ref type="internal"
                 </text-change>
             </modify>
         </amendment>
-
+        
         <amendment id="bc-116b" sequence="105"
                    description="Replace grade with ground level in Article 3.8.3.5.(5)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect3.art5.sent5"/>
@@ -502,13 +502,13 @@ listening system complying with <ref type="internal"
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>
-                        <ref type="term" target="rmp">Ramps</ref> and landings not at ground level or adjacent to a wall shall have edge protection
-consisting of </text>
+                            <ref type="term" target="rmp">Ramps</ref> and landings not at ground level or adjacent to a wall shall have edge protection
+                            consisting of </text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 117: Replace barrier-free with accessible terminology   -->
         <!-- Article 3.8.3.6 - Doorways and Doors (terminology only)          -->
@@ -525,7 +525,7 @@ consisting of </text>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 118: Add detailed measurement clauses to sentence 2     -->
         <!-- Article 3.8.3.6.(2) - Doorway clear width measurement            -->
@@ -547,7 +547,7 @@ consisting of </text>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 119: Update measurement reference in sentence 3         -->
         <!-- Article 3.8.3.6.(3) - Bathroom doorway measurement reference     -->
@@ -559,17 +559,17 @@ consisting of </text>
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>Doorways in a path of travel to at least one bathroom within
-a <ref type="term" target="t">suite</ref> of <ref type="term" target="rdntl-cc">residential
-occupancy</ref> shall have a clear width not less than <measurement units="metric">850 mm</measurement> when measured in accordance with <ref type="internal"
-                             target="nbc.divB.part3.sect8.subsect3.art6.sent2"
-                             display-type="short"/>. (See <ref type="internal"
-                             target="nbc.divB.part3.sect9.appnote208"
-                             display-type="short"/>.)</text>
+                            a <ref type="term" target="t">suite</ref> of <ref type="term" target="rdntl-cc">residential
+                                occupancy</ref> shall have a clear width not less than <measurement units="metric">850 mm</measurement> when measured in accordance with <ref type="internal"
+                                                                                                                                                                          target="nbc.divB.part3.sect8.subsect3.art6.sent2"
+                                                                                                                                                                          display-type="short"/>. (See <ref type="internal"
+                                                              target="nbc.divB.part3.sect9.appnote208"
+                                                              display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 120: Add note reference to sentence 4                   -->
         <!-- Article 3.8.3.6.(4) - Door-operating devices additional reference -->
@@ -586,7 +586,7 @@ occupancy</ref> shall have a clear width not less than <measurement units="metri
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 121: Update distance requirement in sentence 6          -->
         <!-- Article 3.8.3.6.(6)(a)(iii) - Power door operator control distance -->
@@ -602,7 +602,7 @@ occupancy</ref> shall have a clear width not less than <measurement units="metri
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 122: Update note reference in sentence 17               -->
         <!-- Article 3.8.3.6.(17) - Visual contrast note reference             -->
@@ -619,7 +619,7 @@ occupancy</ref> shall have a clear width not less than <measurement units="metri
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 123: Replace barrier-free terminology and expand clause -->
         <!-- Article 3.8.3.7 - Passenger-Elevating Devices                    -->
@@ -659,7 +659,7 @@ occupancy</ref> shall have a clear width not less than <measurement units="metri
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 124: Update title and add electrical outlets sentence   -->
         <!-- Article 3.8.3.8 - Controls and Outlets                           -->
@@ -705,7 +705,7 @@ occupancy</ref> shall have a clear width not less than <measurement units="metri
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 125: Add clause 4.5.1 and Modified Symbol of Access    -->
         <!-- Article 3.8.3.9 - Accessible Signs                               -->
@@ -717,26 +717,26 @@ occupancy</ref> shall have a clear width not less than <measurement units="metri
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>Visual information signs required by <ref type="internal"
-                             target="nbc.divB.part3.sect4.subsect5"
-                             display-type="long"
-                             pretext="Subsections"/>
-                        <ref type="internal"
-                             target="nbc.divB.part3.sect4.subsect6"
-                             display-type="short"
-                             pretext=" and"/>
-                        <ref type="internal"
-                             target="nbc.divB.part3.sect8.subsect2.art10"
-                             display-type="long"
-                             pretext=" and Article"/> shall comply with <ref type="external" target="csab651">Clauses
-4.5.1, 4.5.2, 4.5.3 and 4.5.4 of </ref>
-                        <ref type="standard" target="csab651" standardId="csab651"/> (See <ref type="internal"
-                             target="nbc.divB.part3.sect9.appnote217"
-                             display-type="short"/>.) </text>
+                                                                            target="nbc.divB.part3.sect4.subsect5"
+                                                                            display-type="long"
+                                                                            pretext="Subsections"/>
+                            <ref type="internal"
+                                 target="nbc.divB.part3.sect4.subsect6"
+                                 display-type="short"
+                                 pretext=" and"/>
+                            <ref type="internal"
+                                 target="nbc.divB.part3.sect8.subsect2.art10"
+                                 display-type="long"
+                                 pretext=" and Article"/> shall comply with <ref type="external" target="csab651">Clauses
+                                4.5.1, 4.5.2, 4.5.3 and 4.5.4 of </ref>
+                            <ref type="standard" target="csab651" standardId="csab651"/> (See <ref type="internal"
+                                                                                                   target="nbc.divB.part3.sect9.appnote217"
+                                                                                                   display-type="short"/>.) </text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 126: Add Modified International Symbol of Access        -->
         <!-- Article 3.8.3.9.(3) - Sign symbol requirements                   -->
@@ -748,18 +748,18 @@ occupancy</ref> shall have a clear width not less than <measurement units="metri
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>Signs required by <ref type="internal"
-                             target="nbc.divB.part3.sect8.subsect2.art10"
-                             display-type="long"/> shall incorporate
-the International Symbol of Access, Modified International Symbol of Access, or the International Symbol of
-Access for Hearing Loss and appropriate graphical or textual information
-that clearly indicates the type of facilities available. (See <ref type="internal"
-                             target="nbc.divB.part3.sect9.appnote218"
-                             display-type="short"/>.) </text>
+                                                         target="nbc.divB.part3.sect8.subsect2.art10"
+                                                         display-type="long"/> shall incorporate
+                            the International Symbol of Access, Modified International Symbol of Access, or the International Symbol of
+                            Access for Hearing Loss and appropriate graphical or textual information
+                            that clearly indicates the type of facilities available. (See <ref type="internal"
+                                                                                               target="nbc.divB.part3.sect9.appnote218"
+                                                                                               display-type="short"/>.) </text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 127: Replace barrier-free terminology and fix clauses   -->
         <!-- Article 3.8.3.10 - Drinking Fountains                           -->
@@ -805,7 +805,7 @@ that clearly indicates the type of facilities available. (See <ref type="interna
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 208: Replace barrier-free with accessible terminology   -->
         <!-- Article 3.8.3.11 - Water-Bottle Filling Stations                  -->
@@ -822,7 +822,7 @@ that clearly indicates the type of facilities available. (See <ref type="interna
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 209: Update door pull height range (inside)             -->
         <!-- Article 3.8.3.12.(1)(d)(vi) - Door Pull Inside                    -->
@@ -838,7 +838,7 @@ that clearly indicates the type of facilities available. (See <ref type="interna
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 210: Update door pull height range (outside)            -->
         <!-- Article 3.8.3.12.(1)(d)(vii) - Door Pull Outside                  -->
@@ -850,13 +850,13 @@ that clearly indicates the type of facilities available. (See <ref type="interna
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>is provided with a horizontal, D-shaped, visually contrasting
-door pull not less than <measurement units="metric">140 mm</measurement> long located on the outside
-such that its midpoint is <measurement units="metric">120 mm</measurement> to <measurement units="metric">220 mm</measurement> from the latch side and <measurement units="metric">900 mm</measurement> to <measurement units="metric">1 100 mm</measurement> above the floor, </text>
+                            door pull not less than <measurement units="metric">140 mm</measurement> long located on the outside
+                            such that its midpoint is <measurement units="metric">120 mm</measurement> to <measurement units="metric">220 mm</measurement> from the latch side and <measurement units="metric">900 mm</measurement> to <measurement units="metric">1 100 mm</measurement> above the floor, </text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 128: Replace barrier-free with accessible terminology   -->
         <!-- Article 3.8.3.13.(1)(a) - Universal Washrooms                     -->
@@ -873,7 +873,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 129: Add door pull description details                  -->
         <!-- Article 3.8.3.13.(1)(b)(ii) - Universal Washrooms Door Pull       -->
@@ -890,7 +890,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 130: Add counter and shelf dimension specifications     -->
         <!-- Article 3.8.3.13.(1)(i) - Universal Washrooms Shelf               -->
@@ -906,7 +906,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 131: Change clause ending punctuation                   -->
         <!-- Article 3.8.3.13.(1)(j) - Universal Washrooms Turning Space       -->
@@ -923,7 +923,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 132: Insert new clause for emergency lighting           -->
         <!-- Article 3.8.3.13.(1)(k) - Universal Washrooms Emergency Lighting  -->
@@ -942,7 +942,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 133: Expand change table requirements                   -->
         <!-- Article 3.8.3.13.(2)(a) - Adult-Sized Change Table Specs          -->
@@ -967,7 +967,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 134: Increase water closet seat height upper limit      -->
         <!-- Article 3.8.3.14.(1)(a) - Water Closets Seat Height               -->
@@ -983,7 +983,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 135: Add measurement reference for door opening         -->
         <!-- Article 3.8.3.15.(1)(b)(ii) - Door Opening Measurement            -->
@@ -1000,7 +1000,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 136: Add door pull description for stall doors          -->
         <!-- Article 3.8.3.15.(1)(b)(v) - Stall Door Pull                      -->
@@ -1017,7 +1017,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 137: Replace accessible route terminology in urinals    -->
         <!-- Article 3.8.3.15.(2)(b) - Urinals Accessible Route                -->
@@ -1033,7 +1033,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 138: Update towel dispenser wording                     -->
         <!-- Article 3.8.3.16.(1)(h) - Towel Dispenser Accessibility           -->
@@ -1050,7 +1050,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 139: Add shower seat specifications                     -->
         <!-- Article 3.8.3.17.(1)(g) - Shower Seat Requirements                -->
@@ -1081,7 +1081,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 140: Replace barrier-free with accessible terminology   -->
         <!-- Article 3.8.3.17.(2)(a) - Universal Dressing Room Path            -->
@@ -1098,7 +1098,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 141: Add bench specifications for dressing room         -->
         <!-- Article 3.8.3.17.(2)(e) - Dressing Room Bench Requirements        -->
@@ -1126,7 +1126,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 142: Remove slope percentage notation                   -->
         <!-- Article 3.8.3.17.(1)(e) - Shower Threshold Slope                  -->
@@ -1143,7 +1143,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 143: Change coat hook clause punctuation                -->
         <!-- Article 3.8.3.17.(2)(g) - Universal Dressing Room Coat Hook       -->
@@ -1155,13 +1155,13 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>have a coat hook conforming to <ref type="internal"
-                                target="nbc.divB.part3.sect8.subsect3.art12.sent1.clause8"
-                                display-type="long"/>, and</text>
+                                                                      target="nbc.divB.part3.sect8.subsect3.art12.sent1.clause8"
+                                                                      display-type="long"/>, and</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 144: Insert emergency lighting clause                   -->
         <!-- Article 3.8.3.17.(2)(h) - Universal Dressing Room Emergency Light -->
@@ -1180,7 +1180,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 145: Replace bathtub clear floor space requirements     -->
         <!-- Article 3.8.3.18.(1)(c) - Bathtub Clear Floor Space               -->
@@ -1196,7 +1196,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 146: Add valve requirement for bathtub controls         -->
         <!-- Article 3.8.3.18.(1)(e) - Bathtub Faucets and Controls            -->
@@ -1213,7 +1213,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 147: Replace barrier-free with accessible terminology   -->
         <!-- Article 3.8.3.20.(1) - Counters                                   -->
@@ -1230,7 +1230,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 148: Replace barrier-free with accessible terminology   -->
         <!-- Article 3.8.3.21.(1) - Telephones                                 -->
@@ -1247,7 +1247,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 149: Replace barrier-free with accessible terminology   -->
         <!-- Article 3.8.3.22.(1)(d) - Spaces in Seating Area                  -->
@@ -1264,7 +1264,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 150: Insert new Article 3.8.3.23 Sleeping Rooms         -->
         <!-- Article 3.8.3.23 - Sleeping Rooms and Bed Spaces (NEW)            -->
@@ -1331,7 +1331,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 151: Insert new Subsection 3.8.4                         -->
         <!-- Subsection 3.8.4 - Alterations and Additions (NEW SUBSECTION)     -->
@@ -1347,7 +1347,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 <new-content source="bc">
                     <subsection xml:id="nbc.divB.part3.sect8.subsect4" number="4">
                         <title>Alterations and Additions to Existing Buildings</title>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect4.art1" number="1">
                             <title>Application</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect4.art1.sent1" number="1">
@@ -1386,7 +1386,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                 </clause>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect4.art2" number="2">
                             <title>Specific Requirements</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect4.art2.sent1" number="1">
@@ -1405,7 +1405,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                 </clause>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect4.art3" number="3">
                             <title>Vertical Additions</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect4.art3.sent1" number="1">
@@ -1421,7 +1421,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                 </clause>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect4.art4" number="4">
                             <title>Horizontal Additions</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect4.art4.sent1" number="1">
@@ -1430,7 +1430,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                     <ref type="internal" target="nbc.divB.part3.sect8.subsect4.art6" display-type="short" pretext=" and"/>, and <ref type="internal" target="nbc.divB.part3.sect8.subsect4.art8.sent2" display-type="long"/>.</text>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect4.art5" number="5">
                             <title>Alterations and Occupancy Change</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect4.art5.sent1" number="1">
@@ -1438,7 +1438,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                     <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="short" pretext=" and"/> where providing such <ref type="term" target="cc">access</ref> would be practical.</text>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect4.art6" number="6">
                             <title>Sleeping Rooms and Bed Spaces</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect4.art6.sent1" number="1">
@@ -1448,7 +1448,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                 <text>The <ref type="term" target="ccbl">accessible</ref> sleeping rooms or bed spaces required by <ref type="internal" target="nbc.divB.part3.sect8.subsect4.art6.sent1" display-type="short"/> may be distributed between the addition and the existing <ref type="term" target="bldng">building</ref>.</text>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect4.art7" number="7">
                             <title>Existing Facilities</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect4.art7.sent1" number="1">
@@ -1458,7 +1458,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                 <text>Where <ref type="term" target="ltrtn">alterations</ref> are made to an existing <ref type="term" target="bldng">building</ref>, universal washrooms complying with <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="long"/> are permitted to be provided in lieu of facilities for <ref type="term" target="prsns-wth-phscl-dsblts">persons with disabilities</ref> in washrooms. (See <ref type="internal" target="nbc.divB.part3.sect9.appnote205" display-type="short"/>.)</text>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect4.art8" number="8">
                             <title>Egress from Floor Areas</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect4.art8.sent1" number="1">
@@ -1478,7 +1478,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 152: Insert new Subsection 3.8.5                         -->
         <!-- Subsection 3.8.5 - Adaptable Dwelling Units (NEW SUBSECTION)      -->
@@ -1494,7 +1494,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 <new-content source="bc">
                     <subsection xml:id="nbc.divB.part3.sect8.subsect5" number="5">
                         <title>Adaptable Dwelling Units</title>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art1" number="1">
                             <title>Application</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art1.sent1" number="1">
@@ -1512,7 +1512,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                     <ref type="term" target="bldng">Buildings</ref> described in <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art1.sent1.clause1" display-type="long"/> including <ref type="term" target="scndr-t">secondary suites</ref> and all other <ref type="term" target="dwllng-nt">dwelling units</ref> to which this Section applies shall, as required by Sections 3.7. and 9.31., provide at least one bathroom with walls reinforced in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art7.sent1.clause5" display-type="long"/>.</text>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art2" number="2">
                             <title>Construction Requirements</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art2.sent1" number="1">
@@ -1525,7 +1525,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                 <text>This Subsection does not require an <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref> be provided with a living space, a bedroom, a bathroom or a kitchen, but when provided, those spaces and the paths connecting them shall conform to the applicable requirements of this Subsection.</text>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art3" number="3">
                             <title>Building Access Requirements</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art3.sent1" number="1">
@@ -1541,7 +1541,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                 <text>Unless otherwise required by this Section, common spaces and paths of travel that are not intended to serve the residents of <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling units</ref> need not be <ref type="term" target="ccbl">accessible</ref>.</text>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art4" number="4">
                             <title>Adaptable Dwelling Unit Doorways</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art4.sent1" number="1">
@@ -1562,7 +1562,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                 <text>Doorways provided with power door operators, or provided with a special outlet box and cover plates that are designed, located and wired specifically to accommodate the future installation of a power door operator, may provide the clear floor space described in <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art6.sent16" display-type="long"/>.</text>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art5" number="5">
                             <title>Adaptable Dwelling Unit Hallways and Corridors</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art5.sent1" number="1">
@@ -1570,7 +1570,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                     <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art2.sent2" display-type="number" pretext=" and"/>.</text>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art6" number="6">
                             <title>Adaptable Dwelling Unit Bedrooms</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1" number="1">
@@ -1592,7 +1592,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                 </clause>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art7" number="7">
                             <title>Adaptable Dwelling Unit Bathrooms</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art7.sent1" number="1">
@@ -1630,7 +1630,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                 </clause>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art8" number="8">
                             <title>Adaptable Dwelling Unit Kitchens</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art8.sent1" number="1">
@@ -1644,7 +1644,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                                     <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art16.sent1.clause6" display-type="number" pretext=" to"/>. (See Note A-3.8.5.7.(1)(c) and (d).)</text>
                             </sentence>
                         </article>
-
+                        
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art9" number="9">
                             <title>Controls, Switches and Outlets</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art9.sent1" number="1">
@@ -1659,7 +1659,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 153: Add Article 3.3.2.18 to attributions table         -->
         <!-- Table 3.10.1.1 - Insert new entry after 3.3.2.17                  -->
@@ -1741,7 +1741,7 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 </element-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 155: Change National Fire Code to BC Fire Code          -->
         <!-- Note A-3.1.2.3.(1) - Arena Regulation                             -->
@@ -1753,12 +1753,12 @@ such that its midpoint is <measurement units="metric">120 mm</measurement> to <m
                 <element-replace element="paragraph">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part3.sect9.appnote4.para1">The
-use of an arena is regulated in the British Columbia Fire Code. </paragraph>
+                            use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 156: Insert new Note A-3.1.2.7   and 3.1.2.8             -->
         <!-- Group A, Division 2, Low Occupant Load  and Daycare Facilities for Children  -->
@@ -1779,7 +1779,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 156b: Insert new Note A-3.1.2.8                          -->
         <!-- Daycare Facilities for Children                                   -->
@@ -1800,7 +1800,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 157: Change NBC to British Columbia Building Code       -->
         <!-- Note A-3.1.8.1.(2) - Installation of Closures                     -->
@@ -1816,7 +1816,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 158: Change NBC to British Columbia Building Code       -->
         <!-- Note A-3.1.8.1.(2) - Installation of Closures (paragraph 4)       -->
@@ -1832,7 +1832,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 159: Change encapsulated mass timber to combustible     -->
         <!-- Note A-3.2.2.48.(4) and 3.2.2.57.(3) - paragraph 2                -->
@@ -1844,33 +1844,33 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 <element-replace element="paragraph" position="2">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part3.sect9.appnote54.para2">Alternatively, the requirements of <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect2.art4"
-                          display-type="long"
-                          pretext="Articles"/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect2.art8"
-                          display-type="medium"
-                          pretext=" to"/> for superimposed major occupancies can be applied, resulting in buildings of mixed construction conforming to the building height and area limits for encapsulated mass timber construction and in which the lower storeys are of noncombustible construction and the upper storeys are of combustible construction. For example, a Group A, Division 2 or Group B, Division 3 major occupancy could be located on the first <measurement units="metric">4 storeys</measurement> of a 12&#x2011;storey Group C building constructed in accordance with <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect2.art48"
-                          display-type="long"/>, as long as these first <measurement units="metric">4 storeys</measurement> were constructed of noncombustible construction in accordance with <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect2.art23"
-                          display-type="long"/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect2.art42"
-                          display-type="medium"
-                          pretext=" or"/>, as applicable. (See also <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect2.art6"
-                          display-type="long"
-                          pretext="Articles"/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect2.art7"
-                          display-type="medium"
-                          pretext=" and"/>)</paragraph>
+                                                                                                                             target="nbc.divB.part3.sect2.subsect2.art4"
+                                                                                                                             display-type="long"
+                                                                                                                             pretext="Articles"/>
+                            <ref type="internal"
+                                 target="nbc.divB.part3.sect2.subsect2.art8"
+                                 display-type="medium"
+                                 pretext=" to"/> for superimposed major occupancies can be applied, resulting in buildings of mixed construction conforming to the building height and area limits for encapsulated mass timber construction and in which the lower storeys are of noncombustible construction and the upper storeys are of combustible construction. For example, a Group A, Division 2 or Group B, Division 3 major occupancy could be located on the first <measurement units="metric">4 storeys</measurement> of a 12&#x2011;storey Group C building constructed in accordance with <ref type="internal"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        target="nbc.divB.part3.sect2.subsect2.art48"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        display-type="long"/>, as long as these first <measurement units="metric">4 storeys</measurement> were constructed of noncombustible construction in accordance with <ref type="internal"
+                                                                                                                                                                                                      target="nbc.divB.part3.sect2.subsect2.art23"
+                                                                                                                                                                                                      display-type="long"/>
+                            <ref type="internal"
+                                 target="nbc.divB.part3.sect2.subsect2.art42"
+                                 display-type="medium"
+                                 pretext=" or"/>, as applicable. (See also <ref type="internal"
+                                                                           target="nbc.divB.part3.sect2.subsect2.art6"
+                                                                           display-type="long"
+                                                                           pretext="Articles"/>
+                            <ref type="internal"
+                                 target="nbc.divB.part3.sect2.subsect2.art7"
+                                 display-type="medium"
+                                 pretext=" and"/>)</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 160: Change may to are permitted to                     -->
         <!-- Note A-3.2.2.51.(5) and 3.2.2.60.(4) - paragraph 1                -->
@@ -1882,23 +1882,23 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 <element-replace element="paragraph" position="1">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part3.sect9.appnote55.para1">Buildings conforming to the building height and area limits and the other fire protection requirements of <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect2.art51"
-                          display-type="long"/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect2.art60"
-                          display-type="medium"
-                          pretext=" or"/> are permitted to be entirely constructed of combustible construction and incorporate the occupancies specifically permitted by <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect2.art51.sent5"
-                          display-type="long"/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect2.art60.sent4"
-                          display-type="medium"
-                          pretext=" or"/>: e.g., Group A, Division 2 and Group E major occupancies on the first and second storeys, and a parking garage on the first to third storeys. </paragraph>
+                                                                                                                                                                                                    target="nbc.divB.part3.sect2.subsect2.art51"
+                                                                                                                                                                                                    display-type="long"/>
+                            <ref type="internal"
+                                 target="nbc.divB.part3.sect2.subsect2.art60"
+                                 display-type="medium"
+                                 pretext=" or"/> are permitted to be entirely constructed of combustible construction and incorporate the occupancies specifically permitted by <ref type="internal"
+                                                                                                                                                                                target="nbc.divB.part3.sect2.subsect2.art51.sent5"
+                                                                                                                                                                                display-type="long"/>
+                            <ref type="internal"
+                                 target="nbc.divB.part3.sect2.subsect2.art60.sent4"
+                                 display-type="medium"
+                                 pretext=" or"/>: e.g., Group A, Division 2 and Group E major occupancies on the first and second storeys, and a parking garage on the first to third storeys. </paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 161: Change National Fire Code to BC Fire Code          -->
         <!-- Note A-3.2.4.6.(2) - Access to Silencing Switches                 -->
@@ -1914,7 +1914,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 162: Add sentence about egress facilities               -->
         <!-- Note A-3.2.4.16.(1) - Manual Station                              -->
@@ -1930,7 +1930,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 163: Replace CSA reference and change NBC to BCBC       -->
         <!-- Note A-3.2.4.20.(9)(a) - Smoke Alarm Installation                 -->
@@ -1948,7 +1948,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 164: Add paragraph about useful documents               -->
         <!-- Note A-3.2.5.7.(1) - Water Supply                                 -->
@@ -1970,7 +1970,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 165: Update NBC reference to BC Building Code           -->
         <!-- Application Note A-3.2.5.12.(6) - Sprinklering of Roof Assemblies -->
@@ -1986,7 +1986,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 166: Update NBC reference to BC Building Code           -->
         <!-- Application Note A-3.2.5.12.(6) - Sprinklering of Roof Assemblies -->
@@ -2003,7 +2003,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 167: Add new Application Note A-3.2.5.12.(10)           -->
         <!-- Fast-Response Sprinklers - BC specific note                       -->
@@ -2017,7 +2017,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
             <insert>
                 <new-content source="bc">
                     <application-note xml:id="nbc.divB.part3.sect9.appnote.a3.2.5.12.10"
-                                    refs="es000743">
+                                      refs="es000743">
                         <number>3.2.5.12.(10)</number>
                         <title>Fast-Response Sprinklers</title>
                         <paragraph>Several types of sprinkler will respond to a fire faster than a conventional standard response sprinkler. The Response Time Index (RTI) is used to quantify the sensitivity of the sprinkler link for any given sprinkler. The RTI for the group of fast-response sprinklers described below will on average range from 22 s<super>0.5</super>•m<super>0.5</super> to 33 s<super>0.5</super>•m<super>0.5</super>. RTI values for standard response sprinklers will typically be in the range of 83 s<super>0.5</super>•m<super>0.5</super> to 110 s<super>0.5</super>•m<super>0.5</super>.</paragraph>
@@ -2031,7 +2031,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 168: Update Fire Code reference to BC Fire Code         -->
         <!-- Application Note A-3.2.6 - Smoke Control for High Buildings       -->
@@ -2043,19 +2043,19 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 <element-replace element="paragraph" position="1">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part3.sect9.appnote101.para1">Experience with high buildings has shown that the time required for complete evacuation can exceed that which is considered necessary for the safe egress of all occupants. Studies of the "chimney effect" and observations of smoke movement in actual fires have shown that fire compartmentation to contain a fire on any one storey will not usually prevent the movement of smoke through elevator, stair and other vertical shafts to the upper floors of a high building. Occupants of a high building in which an automatic sprinkler system is not installed, and particularly those on upper storeys, could be faced with severe smoke conditions from fires occurring in storeys below them before their own evacuation is possible. The requirements of <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect6"
-                          display-type="long"/> are intended to maintain safe conditions for occupants of a high building who may have to remain in the building during a fire, and to assist the firefighters by providing efficient access to the fire floor. The Notes for <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect6"
-                          display-type="long"/> are intended to assist a designer in complying with the requirements of <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect6"
-                          display-type="long"/> The knowledge requirements are well within the capabilities of a competent designer. The designer should appreciate, however, that successful application requires a clear understanding of the principles that govern smoke movement. <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect6"
-                          display-type="long"/> contains only those items that relate to the design and construction of a building; operation of the facilities and recommended actions to be taken by the building owner, occupant and fire department are covered by the British Columbia Fire Code.</paragraph>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                target="nbc.divB.part3.sect2.subsect6"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                display-type="long"/> are intended to maintain safe conditions for occupants of a high building who may have to remain in the building during a fire, and to assist the firefighters by providing efficient access to the fire floor. The Notes for <ref type="internal"
+                                                                                                                                                                                                                                                                                     target="nbc.divB.part3.sect2.subsect6"
+                                                                                                                                                                                                                                                                                     display-type="long"/> are intended to assist a designer in complying with the requirements of <ref type="internal"
+                                                                                                                               target="nbc.divB.part3.sect2.subsect6"
+                                                                                                                               display-type="long"/> The knowledge requirements are well within the capabilities of a competent designer. The designer should appreciate, however, that successful application requires a clear understanding of the principles that govern smoke movement. <ref type="internal"
+                                                                                                                                                                                                                                                                                              target="nbc.divB.part3.sect2.subsect6"
+                                                                                                                                                                                                                                                                                              display-type="long"/> contains only those items that relate to the design and construction of a building; operation of the facilities and recommended actions to be taken by the building owner, occupant and fire department are covered by the British Columbia Fire Code.</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 169: Update NFC reference to BC Fire Code               -->
         <!-- Application Note A-3.2.6 - Smoke Control for High Buildings       -->
@@ -2068,13 +2068,13 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 <element-replace element="paragraph" position="4">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part3.sect9.appnote101.para4">It is assumed that in the event of fire, occupants of the floor on which the fire occurs will leave by exit stairs immediately following the sounding of a fire alarm, and that occupants of the floor immediately above the floor on which the fire occurs will be advised to leave by the first fire department officer on the scene or other person assigned this responsibility. Occupants of all other floors may remain on their floors unless otherwise directed. It is also assumed that the owner of the building has complied with the Emergency Planning Section of the British Columbia Fire Code by preparing a comprehensive fire safety plan to safeguard the building occupants and that the building supervisory staff are familiar with the requirements of <ref type="internal"
-                          target="nbc.divB.part3.sect2.subsect6"
-                          display-type="long"/> and with their responsibilities under the fire safety plan.</paragraph>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         target="nbc.divB.part3.sect2.subsect6"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         display-type="long"/> and with their responsibilities under the fire safety plan.</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 170: Update NBC reference to BC Building Code           -->
         <!-- Application Note A-3.2.6 - Smoke Control for High Buildings       -->
@@ -2091,7 +2091,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 171: Replace barrier-free with accessible terminology   -->
         <!-- Application Note A-3.2.6.2.(3) - Pressurization of Stair Shafts  -->
@@ -2107,7 +2107,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 172: Add new Application Note A-3.3.1.3                 -->
         <!-- Means of Egress Serving Podiums and Terraces - BC specific note  -->
@@ -2121,7 +2121,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
             <insert>
                 <new-content source="bc">
                     <application-note xml:id="nbc.divB.part3.sect9.appnote.a3.3.1.3"
-                                    refs="es000828">
+                                      refs="es000828">
                         <number>3.3.1.3</number>
                         <title>Means of Egress Serving Podiums and Terraces</title>
                         <paragraph>The requirements for podiums and terraces in Sentence 3.3.1.3.(2) and (3) are intended for areas situated on a level that is not at the highest elevation in a building, and where the area can be accessed by a storey of the building. The requirements of Sentence 3.3.1.3.(4) to (9) are intended for roof-top areas, including "terraces" where the area is at the highest elevation of the building, and there is no access to a storey of the building at that level.</paragraph>
@@ -2129,7 +2129,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 173: Update Fire Code reference to BC Fire Code         -->
         <!-- Application Note A-3.3.1.7.(1) - Temporary Refuge for Persons    -->
@@ -2146,7 +2146,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 174: Update wheelchair user terminology                 -->
         <!-- Application Note A-3.3.1.7.(1) - Temporary Refuge                 -->
@@ -2158,16 +2158,16 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 <element-replace element="paragraph" position="3">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part3.sect9.appnote127.para3">If an estimate is to be made of the number of persons with disabilities in a floor area who can be accommodated in each zone in <ref type="internal"
-                          target="nbc.divB.part3.sect3.subsect1.art7.sent1.clause2"
-                          display-type="long"
-                          pretext="Clause"/>, this estimate may be based on <ref type="internal"
-                          target="nbc.divB.part3.sect8.subsect2.art3.table1"
-                          display-type="long"/>, which is used to determine the minimum number of spaces to be provided for persons using wheelchairs in fixed seating areas. If more precise information is available, it should be used for sizing the zones.</paragraph>
+                                                                                                                                                                                                                           target="nbc.divB.part3.sect3.subsect1.art7.sent1.clause2"
+                                                                                                                                                                                                                           display-type="long"
+                                                                                                                                                                                                                           pretext="Clause"/>, this estimate may be based on <ref type="internal"
+                                                                                   target="nbc.divB.part3.sect8.subsect2.art3.table1"
+                                                                                   display-type="long"/>, which is used to determine the minimum number of spaces to be provided for persons using wheelchairs in fixed seating areas. If more precise information is available, it should be used for sizing the zones.</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 175: Add paragraph about accessible balconies           -->
         <!-- Application Note A-3.3.1.7.(1) - Temporary Refuge                 -->
@@ -2183,7 +2183,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 176: Update NBC reference to BC Building Code           -->
         <!-- Application Note A-3.3.2.1.(2) - Use of NFPA 101                  -->
@@ -2195,15 +2195,15 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 <element-replace element="paragraph" position="1">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part3.sect9.appnote135.para1">The intention of <ref type="internal"
-                          target="nbc.divB.part3.sect3.subsect2.art1.sent2"
-                          display-type="short"/> is to allow Code users the option of using <ref type="standard" target="nfpa101" standardId="nfpa101"/> to address the following issues: means of egress; egress routes within assembly occupancies; aisles and access serving seating not at tables; guards and railings; life safety evaluation; and smoke-protected assembly seating.  However, opting to use <ref type="standard" target="nfpa101" standardId="nfpa101"/> under this application entails adherence to all the provisions listed in <ref type="internal"
-                          target="nbc.divB.part3.sect3.subsect2.art1.sent2"
-                          display-type="short"/>: it is not intended that Code users randomly select and apply a mix of provisions from both the British Columbia Building Code and the NFPA.</paragraph>
+                                                                                                            target="nbc.divB.part3.sect3.subsect2.art1.sent2"
+                                                                                                            display-type="short"/> is to allow Code users the option of using <ref type="standard" target="nfpa101" standardId="nfpa101"/> to address the following issues: means of egress; egress routes within assembly occupancies; aisles and access serving seating not at tables; guards and railings; life safety evaluation; and smoke-protected assembly seating.  However, opting to use <ref type="standard" target="nfpa101" standardId="nfpa101"/> under this application entails adherence to all the provisions listed in <ref type="internal"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               target="nbc.divB.part3.sect3.subsect2.art1.sent2"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               display-type="short"/>: it is not intended that Code users randomly select and apply a mix of provisions from both the British Columbia Building Code and the NFPA.</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 177: Add new Application Note A-3.3.2.18                -->
         <!-- Daycare Facilities for Children under 30 Months - BC specific    -->
@@ -2217,7 +2217,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
             <insert>
                 <new-content source="bc">
                     <application-note xml:id="nbc.divB.part3.sect9.appnote.a3.3.2.18"
-                                    refs="es000911">
+                                      refs="es000911">
                         <number>3.3.2.18.</number>
                         <title>Daycare Facilities for Children under 30 Months</title>
                         <paragraph>These daycare facilities are subject to additional requirements to address the unique profile of the occupants. The Community Care and Assisted Living Act and pursuant regulations establish care programs and prescribes the ages for children in those various programs. The Code's requirements for daycare facilities for children under 30 months is intended to coordinate with those care programs, which inform the intended use and applicable Code requirements, but the Code does not regulate the actual ages of children in those care programs or in the facility (See Note A-3.1.2.8.)</paragraph>
@@ -2225,7 +2225,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 178: Update Fire Code reference to BC Fire Code         -->
         <!-- Application Note A-3.3.3.1.(1) - Safety in Care, Treatment and   -->
@@ -2242,7 +2242,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 179: Update Fire Code reference to BC Fire Code         -->
         <!-- Application Note A-3.3.6.1.(1) - Design of Buildings Containing  -->
@@ -2255,13 +2255,13 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 <element-replace element="paragraph" position="2">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part3.sect9.appnote144.para2">This Subsection does not deal with products or materials that are directly supplied to appliances, equipment or apparatus through piping, hose, ducts, etc. For example, the gas cylinders that are mounted on propane barbecues are not covered by <ref type="internal"
-                          target="nbc.divB.part3.sect3.subsect6"
-                          display-type="long"/>; they are considered to be "in use" as opposed to "in storage" and are not intended to be regulated by the storage requirements stated in the British Columbia Fire Code.</paragraph>
+                                                                                                                                                                                                                                                                                                                                               target="nbc.divB.part3.sect3.subsect6"
+                                                                                                                                                                                                                                                                                                                                               display-type="long"/>; they are considered to be "in use" as opposed to "in storage" and are not intended to be regulated by the storage requirements stated in the British Columbia Fire Code.</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 180: Replace figure 1 with updated title                -->
         <!-- Application Note A-3.4.5.1.(2)(c) - Graphical Symbols for Exit   -->
@@ -2279,7 +2279,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 181: Replace figure 2 with updated title                -->
         <!-- Application Note A-3.4.5.1.(2)(c) - Graphical Symbols for Exit   -->
@@ -2297,7 +2297,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 182: Add new Application Note A-3.4.5.1.(3)             -->
         <!-- Internally Illuminated Signs - BC specific note                   -->
@@ -2311,7 +2311,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
             <insert>
                 <new-content source="bc">
                     <application-note xml:id="nbc.divB.part3.sect9.appnote.a3.4.5.1.3"
-                                    refs="es001090d">
+                                      refs="es001090d">
                         <number>3.4.5.1.(3)</number>
                         <title>Internally Illuminated Signs</title>
                         <paragraph>Photoluminescent signs are not internally illuminated and therefore must conform to Sentence 3.4.5.1.(4).</paragraph>
@@ -2319,7 +2319,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 183: Update Application Note A-3.4.5.1.(4)              -->
         <!-- Externally Illuminated Signs - add continuous illumination ref    -->
@@ -2337,7 +2337,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 192: Expand parking requirements with CSA B651,         -->
         <!-- updated dimensions, van accommodations                             -->
@@ -2369,7 +2369,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 193: Update title and simplify path of travel intent    -->
         <!-- Application Note A-3.8.2.5.(1) and (2) - Exterior Paths of Travel -->
@@ -2388,7 +2388,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 194: Replace NBC with "this Code"                       -->
         <!-- Application Note A-3.8.2.6.(1) - Application to Security Access   -->
@@ -2401,14 +2401,14 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 <element-replace element="paragraph" position="1">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part3.sect9.appnote191.para1">
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect8.subsect2.art6.sent1"
-                          display-type="long"/> is not intended to reduce the functionality of security devices that limit access to secure areas and are addressed by other Sections of this Code.</paragraph>
+                            <ref type="internal"
+                                 target="nbc.divB.part3.sect8.subsect2.art6.sent1"
+                                 display-type="long"/> is not intended to reduce the functionality of security devices that limit access to secure areas and are addressed by other Sections of this Code.</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 195: Add new Application Note A-3.8.2.6.(2)             -->
         <!-- Electrical Outlets - BC specific note                             -->
@@ -2422,7 +2422,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
             <insert>
                 <new-content source="bc">
                     <application-note xml:id="nbc.divB.part3.sect9.appnote.a3.8.2.6.2"
-                                    refs="es001321a">
+                                      refs="es001321a">
                         <number>3.8.2.6.(2)</number>
                         <title>Electrical Outlets</title>
                         <paragraph>Electrical outlets intended for occupant use shall be located so that their height above the finished floor is not a barrier to use. Outlets that are dedicated for specific equipment or functions and not intended to be readily available to occupants need not conform to the location requirements.</paragraph>
@@ -2430,7 +2430,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <amendment id="bc-196" sequence="144"
                    description="Replace barrier-free with accessible terminology and revise doorway width measurement details in Appendix Note A-3.8.3.6.(2)">
@@ -2451,7 +2451,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 156: Remove dwelling unit and replace barrier-free      -->
         <!-- Appendix Note A-3.8.3.6.(3) - Washrooms in Residential Occupancies -->
@@ -2474,7 +2474,7 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 157: Add guidance for sliding door handles              -->
         <!-- Appendix Note A-3.8.3.6.(4) - Lever Handles                       -->
@@ -2486,14 +2486,14 @@ use of an arena is regulated in the British Columbia Fire Code. </paragraph>
                 <element-replace element="paragraph">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part3.sect9.appnote209.para1">Lever
-handles are usable by most people and will meet the intent of this
-requirement. Lever handles with an end return towards the door are
-less prone to catch the clothing of someone passing through the doorway. Large D-shaped handles should be used on sliding doors.</paragraph>
+                            handles are usable by most people and will meet the intent of this
+                            requirement. Lever handles with an end return towards the door are
+                            less prone to catch the clothing of someone passing through the doorway. Large D-shaped handles should be used on sliding doors.</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 158: Add figure for power operated doors                -->
         <!-- Appendix Note A-3.8.3.6.(6) and (7) - Doors with Power Operators -->
@@ -2516,7 +2516,7 @@ less prone to catch the clothing of someone passing through the doorway. Large D
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 159: Replace barrier-free with accessible terminology   -->
         <!-- Appendix Note A-3.8.3.6.(14) to (16) - Minimum Clear Floor Space -->
@@ -2539,7 +2539,7 @@ less prone to catch the clothing of someone passing through the doorway. Large D
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 160: Update hearing loss terminology and add sign specs -->
         <!-- Appendix Note A-3.8.3.9.(3) - Accessibility Signs                 -->
@@ -2567,7 +2567,7 @@ less prone to catch the clothing of someone passing through the doorway. Large D
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 161: Update door pull vertical measurement range        -->
         <!-- Appendix Note A-3.8.3.12.(1)(d)(vi) - Door Pulls                 -->
@@ -2594,7 +2594,7 @@ less prone to catch the clothing of someone passing through the doorway. Large D
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 162: Replace NBC reference with this Code               -->
         <!-- Appendix Note A-3.8.3.12.(1)(f)(ii) - Additional Grab Bars       -->
@@ -2610,7 +2610,7 @@ less prone to catch the clothing of someone passing through the doorway. Large D
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 163: Add wall-mounted fixture guidance                  -->
         <!-- Appendix Note A-3.8.3.13 - Clear Floor Space in Universal Washrooms -->
@@ -2622,21 +2622,21 @@ less prone to catch the clothing of someone passing through the doorway. Large D
                 <element-replace element="paragraph" position="1">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divB.part3.sect9.appnote224.para1">Unobstructed areas in front of the lavatory, in front of the water closet and on one side of the water closet are necessary for maneuverability of a wheelchair. Wall-mounted fixtures may project into the required floor space, provided that such projections do not restrict the maneuvering space required for persons using wheelchairs. Although outward swinging doors are preferable for accessibility, inward swinging doors are also permitted. <ref type="internal"
-                          target="nbc.divB.part3.sect9.appnote224.figure1"
-                          display-type="long"
-                          pretext="Figures"/>
-                     <ref type="internal"
-                          target="nbc.divB.part3.sect9.appnote224.figure2"
-                          display-type="long"
-                          pretext="and"/> show design options that meet the intent of <ref type="internal"
-                          target="nbc.divB.part3.sect8.subsect3.art13"
-                          display-type="long"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      target="nbc.divB.part3.sect9.appnote224.figure1"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      display-type="long"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      pretext="Figures"/>
+                            <ref type="internal"
+                                 target="nbc.divB.part3.sect9.appnote224.figure2"
+                                 display-type="long"
+                                 pretext="and"/> show design options that meet the intent of <ref type="internal"
+                                                                                             target="nbc.divB.part3.sect8.subsect3.art13"
+                                                                                             display-type="long"/>
                         </paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 164: Replace barrier-free with accessible terminology   -->
         <!-- Appendix Note A-3.8.3.16.(1)(g) - Soap Dispenser Location        -->
@@ -2652,7 +2652,7 @@ less prone to catch the clothing of someone passing through the doorway. Large D
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 165: Update to person-first language                    -->
         <!-- Appendix Note A-3.8.3.21.(2) - Telephone Shelves or Counters     -->
@@ -2668,7 +2668,7 @@ less prone to catch the clothing of someone passing through the doorway. Large D
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 166: Add three new appendix notes for adaptable units   -->
         <!-- A-3.8.5.6.(1), A-3.8.5.7.(1)(c) and (d), A-3.8.5.7.(1)(e)        -->
@@ -2699,7 +2699,7 @@ less prone to catch the clothing of someone passing through the doorway. Large D
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- END OF AMENDMENTS                                                  -->
         <!-- ================================================================== -->    

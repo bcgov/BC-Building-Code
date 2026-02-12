@@ -3,11 +3,11 @@
             version="1.0" 
             nbc-target-version="2020"
             effective-date="2023-12-15">
-
-            <!-- ================================================================== -->
-            <!-- BC BUILDING CODE AMENDMENTS TO NBC 2020 - PART 9 (4)                  -->
-            <!-- ================================================================== -->
-
+    
+    <!-- ================================================================== -->
+    <!-- BC BUILDING CODE AMENDMENTS TO NBC 2020 - PART 9 (4)                  -->
+    <!-- ================================================================== -->
+    
     <metadata>
         <title>BC Building Code Amendments to NBC 2020 - Part 9</title>
         <description>British Columbia-specific amendments for Part 9 (Housing and Small Buildings)</description>
@@ -15,13 +15,13 @@
         <author>BC Building Code Team</author>
         <source-document>NBC2020p1 Division B Part 9.FIN_backup.docx</source-document>
     </metadata>
-     
+    
     <amendments>
-
+        
         <!-- ================================================================== -->
         <!-- SECTION 9.38 - ENERGY EFFICIENCY - TABLE 9.38.1.1 AMENDMENTS       -->
         <!-- ================================================================== -->
-
+        
         <!-- bc-444: Insert 9.36.6.3 "Compliance Requirements" rows into Table 9.38.1.1 -->
         <!-- BC adds new article 9.36.6.3 "Compliance Requirements" which doesn't exist in NBC -->
         <!-- This inserts rows for new subsection 6 content into Table 9.38.1.1 -->
@@ -184,194 +184,194 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- DELETE NBC ROWS FROM END OF TABLE 9.36.1.1                         -->
         <!-- BC table ends at 9.36.7.4 sentence (4) - NBC continues with        -->
         <!-- additional rows for Section 9.37 that don't exist in BC            -->
         <!-- Delete rows 5933 through 5968 (36 rows total)                      -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-448" sequence="448" description="Delete NBC row 5933 from Table 9.36.1.1 (9.37.7.2 title)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5933"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-449" sequence="449" description="Delete NBC row 5934 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5934"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-450" sequence="450" description="Delete NBC row 5935 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5935"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-451" sequence="451" description="Delete NBC row 5936 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5936"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-452" sequence="452" description="Delete NBC row 5937 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5937"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-453" sequence="453" description="Delete NBC row 5938 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5938"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-454" sequence="454" description="Delete NBC row 5939 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5939"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-455" sequence="455" description="Delete NBC row 5940 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5940"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-456" sequence="456" description="Delete NBC row 5941 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5941"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-457" sequence="457" description="Delete NBC row 5942 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5942"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-458" sequence="458" description="Delete NBC row 5943 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5943"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-459" sequence="459" description="Delete NBC row 5944 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5944"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-460" sequence="460" description="Delete NBC row 5945 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5945"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-461" sequence="461" description="Delete NBC row 5946 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5946"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-462" sequence="462" description="Delete NBC row 5947 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5947"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-463" sequence="463" description="Delete NBC row 5948 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5948"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-464" sequence="464" description="Delete NBC row 5949 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5949"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-465" sequence="465" description="Delete NBC row 5950 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5950"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-466" sequence="466" description="Delete NBC row 5951 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5951"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-467" sequence="467" description="Delete NBC row 5952 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5952"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-468" sequence="468" description="Delete NBC row 5953 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5953"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-469" sequence="469" description="Delete NBC row 5954 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5954"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-470" sequence="470" description="Delete NBC row 5955 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5955"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-471" sequence="471" description="Delete NBC row 5956 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5956"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-472" sequence="472" description="Delete NBC row 5957 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5957"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-473" sequence="473" description="Delete NBC row 5958 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5958"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-474" sequence="474" description="Delete NBC row 5959 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5959"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-475" sequence="475" description="Delete NBC row 5960 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5960"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-476" sequence="476" description="Delete NBC row 5961 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5961"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-477" sequence="477" description="Delete NBC row 5962 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5962"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-478" sequence="478" description="Delete NBC row 5963 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5963"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-479" sequence="479" description="Delete NBC row 5964 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5964"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-480" sequence="480" description="Delete NBC row 5965 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5965"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-481" sequence="481" description="Delete NBC row 5966 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5966"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-482" sequence="482" description="Delete NBC row 5967 from Table 9.36.1.1">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5967"/>
             <delete/>
         </amendment>
-
+        
         <amendment id="bc-483" sequence="483" description="Delete NBC row 5968 from Table 9.36.1.1 (last row)">
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5968"/>
             <delete/>
         </amendment>
-
+        
     </amendments>
-
+    
 </bc-overlay>

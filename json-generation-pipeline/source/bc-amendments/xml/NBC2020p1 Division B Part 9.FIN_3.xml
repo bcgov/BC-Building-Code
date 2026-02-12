@@ -3,11 +3,11 @@
             version="1.0" 
             nbc-target-version="2020"
             effective-date="2023-12-15">
-
-            <!-- ================================================================== -->
-            <!-- BC BUILDING CODE AMENDMENTS TO NBC 2020 - PART 9 (3)                  -->
-            <!-- ================================================================== -->
-
+    
+    <!-- ================================================================== -->
+    <!-- BC BUILDING CODE AMENDMENTS TO NBC 2020 - PART 9 (3)                  -->
+    <!-- ================================================================== -->
+    
     <metadata>
         <title>BC Building Code Amendments to NBC 2020 - Part 9</title>
         <description>British Columbia-specific amendments for Part 9 (Housing and Small Buildings)</description>
@@ -15,7 +15,7 @@
         <author>BC Building Code Team</author>
         <source-document>NBC2020p1 Division B Part 9.FIN_backup.docx</source-document>
     </metadata>
-     
+    
     <amendments>
         
         <!-- ================================================================== -->
@@ -38,13 +38,13 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 336: Replace Thermal Insulation note-division content    -->
         <!-- Application Note A-9.1.1.1.(1) div1 - BC-specific energy refs     -->
         <!-- ================================================================== -->
         <amendment id="bc-336" sequence="336"
-                description="Replace Thermal Insulation note-division paragraph in Application Note A-9.1.1.1.(1)">
+                   description="Replace Thermal Insulation note-division paragraph in Application Note A-9.1.1.1.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote1.div1.para1"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -52,13 +52,13 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 337: Replace Air Barrier note-division content           -->
         <!-- Application Note A-9.1.1.1.(1) div2 - Add BC-specific text        -->
         <!-- ================================================================== -->
         <amendment id="bc-337" sequence="337"
-                description="Replace Air Barrier Systems and Vapour Barriers note-division paragraph in Application Note A-9.1.1.1.(1)">
+                   description="Replace Air Barrier Systems and Vapour Barriers note-division paragraph in Application Note A-9.1.1.1.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote1.div2.para1"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -66,14 +66,14 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 338: Modify A-9.4.1.2. para3 - Replace standard ref      -->
         <!-- Application Note A-9.4.1.2. para3 - Replace CWC standard ref       -->
         <!-- with plain text                                                    -->
         <!-- ================================================================== -->
         <amendment id="bc-338" sequence="338"
-                description="Replace CWC standard reference with plain text in Application Note A-9.4.1.2. paragraph 3">
+                   description="Replace CWC standard reference with plain text in Application Note A-9.4.1.2. paragraph 3">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote9.para3"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -81,13 +81,13 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 339: Insert new Application Notes A-9.4.2.5. and A-9.4.2.5.(2) -->
         <!-- Seismic Design Parameter - BC-specific notes                       -->
         <!-- ================================================================== -->
         <amendment id="bc-339" sequence="339"
-                description="Insert new Application Notes A-9.4.2.5. Seismic Design Parameter and A-9.4.2.5.(2) Determination of Site Class">
+                   description="Insert new Application Notes A-9.4.2.5. Seismic Design Parameter and A-9.4.2.5.(2) Determination of Site Class">
             <target type="position"
                     parent-id="nbc.divBV2.part9.appendix"
                     position="after"
@@ -107,13 +107,13 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 341: Insert new Application Note A-9.5.3.1.              -->
         <!-- Ceiling Heights and Clear Heights - BC-specific note with figure  -->
         <!-- ================================================================== -->
         <amendment id="bc-341" sequence="341"
-                description="Insert new Application Note A-9.5.3.1. Ceiling Heights and Clear Heights">
+                   description="Insert new Application Note A-9.5.3.1. Ceiling Heights and Clear Heights">
             <target type="position"
                     parent-id="nbc.divBV2.part9.appendix"
                     position="after"
@@ -132,13 +132,13 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 342: Modify A-9.5.5.3. to remove "barrier-free"          -->
         <!-- Application Note 9.5.5.3. para1 - Remove "barrier-free" text       -->
         <!-- ================================================================== -->
         <amendment id="bc-342" sequence="342"
-                description="Remove 'barrier-free' from Application Note A-9.5.5.3. paragraph 1">
+                   description="Remove 'barrier-free' from Application Note A-9.5.5.3. paragraph 1">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote17.para1"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -146,13 +146,13 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 343: Insert new Application Note A-9.6.1.1.(1)           -->
         <!-- Application - BC-specific note about glass scope                   -->
         <!-- ================================================================== -->
         <amendment id="bc-343" sequence="343"
-                description="Insert new Application Note A-9.6.1.1.(1) Application">
+                   description="Insert new Application Note A-9.6.1.1.(1) Application">
             <target type="position"
                     parent-id="nbc.divBV2.part9.appendix"
                     position="after"
@@ -167,25 +167,25 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 344: Remove Application Note A-9.6.1.3.(2)               -->
         <!-- Maximum Glass Area - BC removes this note                          -->
         <!-- ================================================================== -->
         <amendment id="bc-344" sequence="344"
-                description="Remove Application Note A-9.6.1.3.(2) Maximum Glass Area">
+                   description="Remove Application Note A-9.6.1.3.(2) Maximum Glass Area">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote19"/>
             <delete/>
         </amendment>
-
-
+        
+        
         <!-- ================================================================== -->
         <!-- Amendment 345: Modify Application Note A-Table 9.6.1.3.-G          -->
         <!-- Change title from "Table 9.6.1.3.-G" to "Table 9.6.1.3."           -->
         <!-- and update table reference in paragraph                            -->
         <!-- ================================================================== -->
         <amendment id="bc-345" sequence="345"
-                description="Modify Application Note A-Table 9.6.1.3.-G - change to Table 9.6.1.3.">
+                   description="Modify Application Note A-Table 9.6.1.3.-G - change to Table 9.6.1.3.">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote20"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -197,13 +197,13 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 346: Insert new Application Note A-9.7.                  -->
         <!-- Windows, Doors and Skylights - BC-specific note                    -->
         <!-- ================================================================== -->
         <amendment id="bc-346" sequence="346"
-                description="Insert new Application Note A-9.7. Windows, Doors and Skylights">
+                   description="Insert new Application Note A-9.7. Windows, Doors and Skylights">
             <target type="position"
                     parent-id="nbc.divBV2.part9.appendix"
                     position="after"
@@ -219,13 +219,13 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 347: Insert new Application Note A-9.7.4.                -->
         <!-- Design and Construction - BC-specific note                         -->
         <!-- ================================================================== -->
         <amendment id="bc-347" sequence="347"
-                description="Insert new Application Note A-9.7.4. Design and Construction">
+                   description="Insert new Application Note A-9.7.4. Design and Construction">
             <target type="position"
                     parent-id="nbc.divBV2.part9.appendix"
                     position="after"
@@ -241,13 +241,13 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 348: Insert new General note-division in A-9.7.4.2.(1)   -->
         <!-- Standards Referenced for Windows, Doors and Skylights - General    -->
         <!-- ================================================================== -->
         <amendment id="bc-348" sequence="348"
-                description="Insert new General note-division in Application Note A-9.7.4.2.(1)">
+                   description="Insert new General note-division in Application Note A-9.7.4.2.(1)">
             <target type="position"
                     parent-id="nbc.divBV2.part9.appnote22"
                     position="before"
@@ -262,13 +262,13 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 349: Replace Water Penetration Resistance para1          -->
         <!-- A-9.7.4.2.(1) div4 - Add BC-specific text about Canadian Supplement-->
         <!-- ================================================================== -->
         <amendment id="bc-349" sequence="349"
-                description="Replace Water Penetration Resistance paragraph 1 in A-9.7.4.2.(1)">
+                   description="Replace Water Penetration Resistance paragraph 1 in A-9.7.4.2.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote22.div4.para1"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -276,13 +276,13 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 350: Insert new para3 in Water Penetration Resistance    -->
         <!-- A-9.7.4.2.(1) div4 - Table C-4 alternative                         -->
         <!-- ================================================================== -->
         <amendment id="bc-350" sequence="350"
-                description="Insert new paragraph 3 in Water Penetration Resistance A-9.7.4.2.(1)">
+                   description="Insert new paragraph 3 in Water Penetration Resistance A-9.7.4.2.(1)">
             <target type="position"
                     parent-id="nbc.divBV2.part9.appnote22.div4"
                     position="after"
@@ -293,13 +293,13 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 351: Insert new para2 in Uniform Load Structural Test    -->
         <!-- A-9.7.4.2.(1) div5 - Table C-4 alternative                         -->
         <!-- ================================================================== -->
         <amendment id="bc-351" sequence="351"
-                description="Insert new paragraph 2 in Uniform Load Structural Test A-9.7.4.2.(1)">
+                   description="Insert new paragraph 2 in Uniform Load Structural Test A-9.7.4.2.(1)">
             <target type="position"
                     parent-id="nbc.divBV2.part9.appnote22.div5"
                     position="after"
@@ -310,23 +310,23 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 352: Remove Greenhouse Windows note-division             -->
         <!-- A-9.7.4.2.(1) div8 - BC removes this section                       -->
         <!-- ================================================================== -->
         <amendment id="bc-352" sequence="352"
-                description="Remove Greenhouse Windows note-division from A-9.7.4.2.(1)">
+                   description="Remove Greenhouse Windows note-division from A-9.7.4.2.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote22.div8"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 353: Replace Performance of Doors para2                  -->
         <!-- A-9.7.4.2.(1) div9 - BC simplified version                         -->
         <!-- ================================================================== -->
         <amendment id="bc-353" sequence="353"
-                description="Replace Performance of Doors paragraph 2 in A-9.7.4.2.(1)">
+                   description="Replace Performance of Doors paragraph 2 in A-9.7.4.2.(1)">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote22.div9.para2"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -334,13 +334,13 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 354: Insert new Application Note A-9.7.4.3.(2)           -->
         <!-- Performance Requirements - BC-specific note                        -->
         <!-- ================================================================== -->
         <amendment id="bc-354" sequence="354"
-                description="Insert new Application Note A-9.7.4.3.(2) Performance Requirements">
+                   description="Insert new Application Note A-9.7.4.3.(2) Performance Requirements">
             <target type="position"
                     parent-id="nbc.divBV2.part9.appendix"
                     position="after"
@@ -355,23 +355,23 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 355: Remove Application Note A-9.8.3.1.                  -->
         <!-- Permitted Stair Configurations - BC removes this note              -->
         <!-- ================================================================== -->
         <amendment id="bc-355" sequence="355"
-                description="Remove Application Note A-9.8.3.1. Permitted Stair Configurations">
+                   description="Remove Application Note A-9.8.3.1. Permitted Stair Configurations">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote28"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 356: Replace A-9.8.4. Tread Configurations               -->
         <!-- BC version: removes spiral stairs, adds winder note, new figure    -->
         <!-- ================================================================== -->
         <amendment id="bc-356" sequence="356"
-                description="Replace Application Note A-9.8.4. Tread Configurations - remove spiral stairs, add winder note, BC figure">
+                   description="Replace Application Note A-9.8.4. Tread Configurations - remove spiral stairs, add winder note, BC figure">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote29"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -396,23 +396,23 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 357: Remove Application Note A-9.8.4.7.                  -->
         <!-- Spiral Stairs - BC removes this note                               -->
         <!-- ================================================================== -->
         <amendment id="bc-357" sequence="357"
-                description="Remove Application Note A-9.8.4.7. Spiral Stairs">
+                   description="Remove Application Note A-9.8.4.7. Spiral Stairs">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote31"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 358: Replace figure in A-9.8.4.6. Winders                -->
         <!-- BC uses different figure file                                       -->
         <!-- ================================================================== -->
         <amendment id="bc-358" sequence="358"
-                description="Replace figure in Application Note A-9.8.4.6. Winders with BC figure">
+                   description="Replace figure in Application Note A-9.8.4.6. Winders with BC figure">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote30.figure1"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -423,13 +423,13 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 359: Modify A-9.8.7.1.(2) Wider Stairs than Required     -->
         <!-- BC adds "within" to path of travel text                            -->
         <!-- ================================================================== -->
         <amendment id="bc-359" sequence="359"
-                description="Modify Application Note A-9.8.7.1.(2) - add 'within' to path of travel">
+                   description="Modify Application Note A-9.8.7.1.(2) - add 'within' to path of travel">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote34.para1"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -437,13 +437,13 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 360: Modify A-9.8.8.1.(4) Window Fall Prevention         -->
         <!-- Add ASTM F2090 standard title inline                               -->
         <!-- ================================================================== -->
         <amendment id="bc-360" sequence="360"
-                description="Add ASTM F2090 standard title in Application Note A-9.8.8.1.(4) paragraph 2">
+                   description="Add ASTM F2090 standard title in Application Note A-9.8.8.1.(4) paragraph 2">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote42.para2"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -451,33 +451,33 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 361: Remove Application Note A-9.10.2.2.                 -->
         <!-- Building Design and Staff on Duty - BC removes this note           -->
         <!-- ================================================================== -->
         <amendment id="bc-361" sequence="361"
-                description="Remove Application Note A-9.10.2.2. Building Design and Staff on Duty">
+                   description="Remove Application Note A-9.10.2.2. Building Design and Staff on Duty">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote55"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 362: Remove Application Note A-9.10.2.2.(2)(a)           -->
         <!-- Requirements for Detached Houses - BC removes this note            -->
         <!-- ================================================================== -->
         <amendment id="bc-362" sequence="362"
-                description="Remove Application Note A-9.10.2.2.(2)(a) Requirements for Detached Houses">
+                   description="Remove Application Note A-9.10.2.2.(2)(a) Requirements for Detached Houses">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote56"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 363: Modify A-9.10.3.1. note number                      -->
         <!-- Change note number from 9.10.3.1. to 9.10.3.1.(1)(c)               -->
         <!-- ================================================================== -->
         <amendment id="bc-363" sequence="363"
-                description="Change note number from 9.10.3.1. to 9.10.3.1.(1)(c) in Application Note A-9.10.3.1.">
+                   description="Change note number from 9.10.3.1. to 9.10.3.1.(1)(c) in Application Note A-9.10.3.1.">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote57"/>
             <modify>
                 <text-change xpath-within-target=".//number">
@@ -485,23 +485,23 @@
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 364: Remove Application Note A-9.10.9.2.(2) and (3)      -->
         <!-- Continuity of Smoke-Tight Barrier - BC removes this note           -->
         <!-- ================================================================== -->
         <amendment id="bc-364" sequence="364"
-                description="Remove Application Note A-9.10.9.2.(2) and (3) Continuity of Smoke-Tight Barrier">
+                   description="Remove Application Note A-9.10.9.2.(2) and (3) Continuity of Smoke-Tight Barrier">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote60"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 365: Replace A-9.10.9.3.(2) - title and content change   -->
         <!-- Change title and add standard title inline                         -->
         <!-- ================================================================== -->
         <amendment id="bc-365" sequence="365"
-                description="Replace Application Note A-9.10.9.3.(2) - change title and add standard title">
+                   description="Replace Application Note A-9.10.9.3.(2) - change title and add standard title">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote61"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -513,13 +513,13 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 366: Replace A-9.10.13.2.(1) - add standard title        -->
         <!-- Wood Doors in Fire Separations - add full standard title           -->
         <!-- ================================================================== -->
         <amendment id="bc-366" sequence="366"
-                description="Replace Application Note A-9.10.13.2.(1) - add full standard title for CAN/ULC-S113">
+                   description="Replace Application Note A-9.10.13.2.(1) - add full standard title for CAN/ULC-S113">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote68"/>
             <replace preserve-references="false">
                 <new-content source="bc">
@@ -536,7 +536,7 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 367: Modify A-9.10.15.1.(1) - Change "(doubles)" to "(side by side)" -->
         <!-- Application Note A-9.10.15.1.(1) para1 - BC terminology change     -->
@@ -553,7 +553,7 @@
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 368: Remove Application Note A-9.10.19.5.(2)             -->
         <!-- Interconnection of Smoke Alarms - BC removes this note             -->
@@ -563,7 +563,7 @@
             <target type="canonical-id" id="nbc.divBV2.part9.appnote76"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 369: Replace A-9.10.22. para1 - BC-specific text         -->
         <!-- Application Note A-9.10.22. para1 - BC Building Code reference     -->
@@ -577,7 +577,7 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 370: Remove "future editions" sentence from Impact Noise  -->
         <!-- A-9.11. div3 para1 - BC removes NBC-specific forward-looking text  -->
@@ -589,13 +589,13 @@
                 <text-change xpath-within-target=".//text()">
                     <find-replace>
                         <find> Impact noise requirements
-are being considered for inclusion in future editions of the NBC.</find>
+                            are being considered for inclusion in future editions of the NBC.</find>
                         <replace></replace>
                     </find-replace>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 371: Add sentence to A-9.11.1.1.(2) about sound resistance -->
         <!-- Application Note A-9.11.1.1.(2) para1 - BC adds carpet advice       -->
@@ -612,13 +612,13 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 372: Change subsection reference in A-9.11.1.4.           -->
         <!-- Application Note A-9.11.1.4. para1 - Change 5.9.1 to 5.8.1         -->
         <!-- ================================================================== -->
         <amendment id="bc-372" sequence="372"
-                    description="Change subsection reference from 5.9.1 to 5.8.1 in A-9.11.1.4.">
+                   description="Change subsection reference from 5.9.1 to 5.8.1 in A-9.11.1.4.">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote82.para1"/>
             <modify>
                 <text-change xpath-within-target=".//ref[@target='nbc.divB.part5.sect9.subsect1']/@target">
@@ -626,14 +626,14 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 373: Modify A-9.13.4.3. div1 title                        -->
         <!-- Application Note A-9.13.4.3. div1 - Change "Air Barrier" to         -->
         <!-- "Air Barrier System"                                                -->
         <!-- ================================================================== -->
         <amendment id="bc-373" sequence="373"
-                description="Change 'Air Barrier' to 'Air Barrier System' in A-9.13.4.3. div1 title">
+                   description="Change 'Air Barrier' to 'Air Barrier System' in A-9.13.4.3. div1 title">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote90.div1"/>
             <modify>
                 <text-change xpath-within-target=".//title">
@@ -644,7 +644,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 374: Modify A-9.13.4.3.(2)(b) and (3)(b)(i)               -->
         <!-- Change note number to (2)(b) and (3)(b), add through-footing text  -->
@@ -667,7 +667,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 375: Insert new Application Note A-9.16.2.1.(1)           -->
         <!-- Drainage Layer Beneath Floors-on-Ground - BC-specific note          -->
@@ -688,7 +688,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 376: Replace A-9.23.3.1.(2) Alternative Nail Sizes        -->
         <!-- Add Table 9.23.3.5.-A to 9.23.3.5.-C references throughout          -->
@@ -709,7 +709,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 377: Insert new Application Note A-Table 9.23.3.5.-C     -->
         <!-- Factored Shear Resistances and Framing Adjustment Factors           -->
@@ -771,26 +771,26 @@ are being considered for inclusion in future editions of the NBC.</find>
                                         <entry align="center">n/a</entry>
                                         <entry align="center">0.61<note xml:id="nbc.divBV2.part9.appnote118a.table1.note7">All framing types are based on resistances derived from CSA O86. Factored shear resistances of WSP and DWB framing types include a contribution of 0.61 kN/m from GWB-O on opposite face of the braced wall panel. DWB resistance based on Spruce-Pine-Fir (SPF) studs and Northern Species diagonal lumber boards. Compared to CSA O86, WSP-C was reduced by a factor of 0.20, WSP-D was reduced by a factor of 0.30, and WSP-E was reduced by a factor of 0.40, to account for no hold-downs.</note></entry>
                                     </row>
-                                     <row xml:id="nbc.divBV2.part9.appnote118a.table1.row2">
-                                         <entry align="center">GWB-A</entry>
-                                         <entry align="center">12.5 mm gypsum for 600 mm stud spacing</entry>
-                                         <entry align="center">2.48 mm diameter ring thread with 20 mm penetration into support framing<ref type="internal" target="nbc.divBV2.part9.appnote118a.table1.note5"/></entry>
-                                         <entry align="center">3.45 mm shank diameter Type W with 20 mm penetration into support framing<ref type="internal" target="nbc.divBV2.part9.appnote118a.table1.note6"/></entry>
-                                         <entry align="center">200 mm o.c. for nail 300 mm o.c. for screw</entry>
-                                         <entry align="center">2.85</entry>
-                                         <entry align="center">4.28</entry>
-                                         <entry align="center">1.15<ref type="internal" target="nbc.divBV2.part9.appnote118a.table1.note8"/></entry>
-                                     </row>
-                                     <row>
-                                         <entry align="center">GWB-B</entry>
-                                         <entry align="center">12.5 mm gypsum for 400 mm stud spacing</entry>
-                                         <entry align="center">2.48 mm diameter ring thread with 20 mm penetration into support framing<ref type="internal" target="nbc.divBV2.part9.appnote118a.table1.note5"/></entry>
-                                         <entry align="center">3.45 mm shank diameter Type W with 20 mm penetration into support framing<note xml:id="nbc.divBV2.part9.appnote118a.table1.note6a">Screws for GWB framing types shall meet the requirements of Article 9.29.5.7.</note></entry>
-                                         <entry align="center">150 mm o.c. Or 200 mm o.c. for blocked</entry>
-                                         <entry align="center">1.65</entry>
-                                         <entry align="center">2.148</entry>
-                                         <entry align="center">1.98<ref type="internal" target="nbc.divBV2.part9.appnote118a.table1.note8"/></entry>
-                                     </row>
+                                    <row xml:id="nbc.divBV2.part9.appnote118a.table1.row2">
+                                        <entry align="center">GWB-A</entry>
+                                        <entry align="center">12.5 mm gypsum for 600 mm stud spacing</entry>
+                                        <entry align="center">2.48 mm diameter ring thread with 20 mm penetration into support framing<ref type="internal" target="nbc.divBV2.part9.appnote118a.table1.note5"/></entry>
+                                        <entry align="center">3.45 mm shank diameter Type W with 20 mm penetration into support framing<ref type="internal" target="nbc.divBV2.part9.appnote118a.table1.note6"/></entry>
+                                        <entry align="center">200 mm o.c. for nail 300 mm o.c. for screw</entry>
+                                        <entry align="center">2.85</entry>
+                                        <entry align="center">4.28</entry>
+                                        <entry align="center">1.15<ref type="internal" target="nbc.divBV2.part9.appnote118a.table1.note8"/></entry>
+                                    </row>
+                                    <row>
+                                        <entry align="center">GWB-B</entry>
+                                        <entry align="center">12.5 mm gypsum for 400 mm stud spacing</entry>
+                                        <entry align="center">2.48 mm diameter ring thread with 20 mm penetration into support framing<ref type="internal" target="nbc.divBV2.part9.appnote118a.table1.note5"/></entry>
+                                        <entry align="center">3.45 mm shank diameter Type W with 20 mm penetration into support framing<note xml:id="nbc.divBV2.part9.appnote118a.table1.note6a">Screws for GWB framing types shall meet the requirements of Article 9.29.5.7.</note></entry>
+                                        <entry align="center">150 mm o.c. Or 200 mm o.c. for blocked</entry>
+                                        <entry align="center">1.65</entry>
+                                        <entry align="center">2.148</entry>
+                                        <entry align="center">1.98<ref type="internal" target="nbc.divBV2.part9.appnote118a.table1.note8"/></entry>
+                                    </row>
                                     <row>
                                         <entry align="center">GWB-C</entry>
                                         <entry align="center">12.5 mm gypsum for 400 mm stud spacing or 12.5 mm gypsum for 600 mm stud spacing, blocked<note xml:id="nbc.divBV2.part9.appnote118a.table1.note9">Where blocking is required, horizontal panel sheathing joints shall occur over and be fastened to blocking of not less than 38 mm x 89 mm lumber oriented either edgewise or flatwise.</note></entry>
@@ -878,7 +878,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 378: Insert new Application Note A-9.23.6.1.(3)          -->
         <!-- Anchorage of Building Frames - BC-specific note with figure        -->
@@ -902,7 +902,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 379: Replace Application Note A-9.23.13                   -->
         <!-- Bracing for Resistance to Lateral Loads                             -->
@@ -918,9 +918,9 @@ are being considered for inclusion in future editions of the NBC.</find>
                         <title>Bracing for Resistance to Lateral Loads</title>
                         <paragraph xml:id="nbc.divBV2.part9.appnote127.para1"><ref type="internal" target="nbc.divBV2.part9.sect23.subsect13" display-type="long"/> along with Articles <ref type="internal" target="nbc.divBV2.part9.sect4.subsect2.art5" display-type="number">9.4.2.5.</ref>, <ref type="internal" target="nbc.divBV2.part9.sect23.subsect3.art4" display-type="number"/>, <ref type="internal" target="nbc.divBV2.part9.sect23.subsect3.art5" display-type="number"/>, <ref type="internal" target="nbc.divBV2.part9.sect23.subsect6.art1" display-type="number"/>, <ref type="internal" target="nbc.divBV2.part9.sect23.subsect9.art8" display-type="number"/>, 9.23.11.4., <ref type="internal" target="nbc.divBV2.part9.sect23.subsect15.art5" display-type="number"/>, <ref type="internal" target="nbc.divBV2.part9.sect29.subsect5.art8" display-type="number"/>, <ref type="internal" target="nbc.divBV2.part9.sect29.subsect5.art9" display-type="number"/>, <ref type="internal" target="nbc.divBV2.part9.sect29.subsect6.art3" display-type="number"/> and <ref type="internal" target="nbc.divBV2.part9.sect29.subsect9.art3" display-type="number"/> contain design and bracing provisions that address the resistance of light wood-frame structures and non-structural components to wind and earthquake loads.</paragraph>
                         <paragraph xml:id="nbc.divBV2.part9.appnote127.para2">The bracing provisions were developed based on a combination of performance history and engineering calculations, as are most Part 9 provisions. The placement and construction methods for braced walls were determined by the following approach. The lateral forces were analyzed in accordance with Part 4 for various configurations of buildings in different locations across Canada. The lateral resistance of walls was established using an approach adapted from CSA O86, "Engineering Design in Wood." Construction details and required lengths for braced walls were determined based on location, building height, wind exposed class and construction weight. This approach relied on the following assumptions:<list type="bulleted">
-                            <item xml:id="nbc.divBV2.part9.appnote127.list1.item1">A short-term load duration factor, K<sub>D</sub>, of 1.25 was used for the calculation of resistance to wind and seismic shear forces.</item>
-                            <item xml:id="nbc.divBV2.part9.appnote127.list1.item2">The ductility- and overstrength-related seismic force modification factors, R<sub>d</sub> and R<sub>o</sub>, were assumed to have the values listed in the following table:</item>
-                        </list></paragraph>
+                                <item xml:id="nbc.divBV2.part9.appnote127.list1.item1">A short-term load duration factor, K<sub>D</sub>, of 1.25 was used for the calculation of resistance to wind and seismic shear forces.</item>
+                                <item xml:id="nbc.divBV2.part9.appnote127.list1.item2">The ductility- and overstrength-related seismic force modification factors, R<sub>d</sub> and R<sub>o</sub>, were assumed to have the values listed in the following table:</item>
+                            </list></paragraph>
                         <table xml:id="nbc.divBV2.part9.appnote127.table1">
                             <title>Seismic Force Modification Factors</title>
                             <tgroup cols="3">
@@ -954,14 +954,14 @@ are being considered for inclusion in future editions of the NBC.</find>
                             </tgroup>
                         </table>
                         <paragraph xml:id="nbc.divBV2.part9.appnote127.para2b"><list type="bulleted">
-                            <item xml:id="nbc.divBV2.part9.appnote127.list2.item1">A level of resistance of up to 50% of the wind or seismic lateral load demand was assumed to be provided by interior partitions, and other non-structural components, such as cabinetry and cladding.</item>
-                        </list></paragraph>
+                                <item xml:id="nbc.divBV2.part9.appnote127.list2.item1">A level of resistance of up to 50% of the wind or seismic lateral load demand was assumed to be provided by interior partitions, and other non-structural components, such as cabinetry and cladding.</item>
+                            </list></paragraph>
                         <paragraph xml:id="nbc.divBV2.part9.appnote127.para3">It is important to note that not all buildings satisfying the bracing provisions will have the configurations or details assumed in the calculations, which are necessary to provide adequate resistance against lateral loads. For example, buildings that have limited interior partitions and other non-structural components may have a lower lateral resistance than predicted. In such cases, the Part 9 provisions for bracing to resist lateral loads may not be adequate to satisfy the objectives of the British Columbia Building Code, and bracing requirements should instead be determined in accordance with Part 4. See Note A-9.4.2.5. for more information on the seismic design parameter, S<sub>max</sub>, used in the seismic design provisions.</paragraph>
                     </application-note>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 380: Replace Application Note A-9.23.13.1 div1 para1      -->
         <!-- Change location counts from NBC (679/614) to BC (109/68)            -->
@@ -975,7 +975,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 381: Insert new Application Note A-9.23.13.2.(3)          -->
         <!-- Weights of Construction - BC-specific note with table               -->
@@ -994,11 +994,11 @@ are being considered for inclusion in future editions of the NBC.</find>
                         <note-division xml:id="nbc.divBV2.part9.appnote129a.div1">
                             <title>Normal Weight Construction</title>
                             <paragraph xml:id="nbc.divBV2.part9.appnote129a.div1.para1">Normal-weight floor construction (<measurement units="metric">0.5 kPa</measurement>) accommodates ceramic tile, hardwood, carpet and other finishes weighing no more than <measurement units="metric">0.25 kPa</measurement>. Normal-weight roof construction (<measurement units="metric">0.5 kPa</measurement>) accommodates asphalt shingles, wood shingles, steel roofing and other roofing weighing no more than <measurement units="metric">0.12 kPa</measurement>. Normal-weight wall construction (<measurement units="metric">0.4 kPa</measurement>) accommodates fibre cement board, wood, vinyl, lightweight metal panels weighing no more than <measurement units="metric">0.10 kPa</measurement>.</paragraph>
-                             <paragraph xml:id="nbc.divBV2.part9.appnote129a.div1.para2">These cladding weights are based on the typical light wood frame construction:<list type="bulleted">
-                                 <item xml:id="nbc.divBV2.part9.appnote129a.div1.list1.item1">Floor assembly: plywood subfloor, 2×2 lumber floor joists at <measurement units="metric">400 mm</measurement> o.c. and gypsum board ceiling;</item>
-                                 <item xml:id="nbc.divBV2.part9.appnote129a.div1.list1.item2">Roof assembly: plywood roof sheathing, trusses, R60 insulation, gypsum board ceiling;</item>
-                                 <item xml:id="nbc.divBV2.part9.appnote129a.div1.list1.item3">Wall assembly: OSB exterior sheathing, strapping, 2×6 studs at <measurement units="metric">400 mm</measurement> o.c., insulation, gypsum board interior finish</item>
-                             </list></paragraph>
+                            <paragraph xml:id="nbc.divBV2.part9.appnote129a.div1.para2">These cladding weights are based on the typical light wood frame construction:<list type="bulleted">
+                                    <item xml:id="nbc.divBV2.part9.appnote129a.div1.list1.item1">Floor assembly: plywood subfloor, 2×2 lumber floor joists at <measurement units="metric">400 mm</measurement> o.c. and gypsum board ceiling;</item>
+                                    <item xml:id="nbc.divBV2.part9.appnote129a.div1.list1.item2">Roof assembly: plywood roof sheathing, trusses, R60 insulation, gypsum board ceiling;</item>
+                                    <item xml:id="nbc.divBV2.part9.appnote129a.div1.list1.item3">Wall assembly: OSB exterior sheathing, strapping, 2×6 studs at <measurement units="metric">400 mm</measurement> o.c., insulation, gypsum board interior finish</item>
+                                </list></paragraph>
                         </note-division>
                         <note-division xml:id="nbc.divBV2.part9.appnote129a.div2">
                             <title>Heavy Weight Construction</title>
@@ -1053,13 +1053,13 @@ are being considered for inclusion in future editions of the NBC.</find>
                         <note-division xml:id="nbc.divBV2.part9.appnote129a.div3">
                             <title>Masonry and Stone Veneer Wall Cladding</title>
                             <paragraph xml:id="nbc.divBV2.part9.appnote129a.div3.para1">Braced wall panels that run perpendicular to masonry- and stone veneered walls are required to have a comparatively higher lateral strength to resist increased lateral loading due to the relatively higher wall mass of the masonry. The effects of mass are accounted for using the K<sub>weight</sub> factor listed in Table 9.23.13.7-D. Under seismic action, lateral load due to the mass of a masonry or stone veneer is transferred into the wall immediately behind the veneer, which under the load path and by diaphragm action, is transferred into the roof and floors and is resisted by the braced wall panels oriented parallel to the seismic motion (perpendicular to the veneer). Therefore, only braced wall panels running perpendicular to the masonry or stone veneered walls are required to be adjusted by the K<sub>weight</sub> adjustment factor. If the entire building is clad with masonry or stone veneer, all braced wall panels are required to be adjusted by the appropriate masonry or stone "both faces" K<sub>weight</sub> adjustment factor. If only two parallel faces of a four-sided building are clad with masonry or stone veneer, only the side-yard braced wall panels are required to be adjusted using the appropriate masonry or stone "both faces" K<sub>weight</sub> adjustment factor. If only one face of the building is clad with masonry or stone veneer, the side-yard braced wall panels are required to be adjusted with the "one face" K<sub>weight</sub> adjustment factor.</paragraph>
-                             <paragraph xml:id="nbc.divBV2.part9.appnote129a.div3.para2">For buildings clad with masonry veneer, the following veneer products with a bed thickness of not more than <measurement units="metric">90 mm</measurement> are considered to meet the weight limit of <measurement units="metric">1.9 kPa</measurement>:<list type="bulleted">
-                                 <item xml:id="nbc.divBV2.part9.appnote129a.div3.list1.item1">clay brick masonry veneer</item>
-                                 <item xml:id="nbc.divBV2.part9.appnote129a.div3.list1.item2">concrete block masonry veneer</item>
-                                 <item xml:id="nbc.divBV2.part9.appnote129a.div3.list1.item3">concrete brick masonry veneer</item>
-                                 <item xml:id="nbc.divBV2.part9.appnote129a.div3.list1.item4">concrete stone masonry veneer</item>
-                                 <item xml:id="nbc.divBV2.part9.appnote129a.div3.list1.item5">calcium silicate masonry veneer</item>
-                             </list></paragraph>
+                            <paragraph xml:id="nbc.divBV2.part9.appnote129a.div3.para2">For buildings clad with masonry veneer, the following veneer products with a bed thickness of not more than <measurement units="metric">90 mm</measurement> are considered to meet the weight limit of <measurement units="metric">1.9 kPa</measurement>:<list type="bulleted">
+                                    <item xml:id="nbc.divBV2.part9.appnote129a.div3.list1.item1">clay brick masonry veneer</item>
+                                    <item xml:id="nbc.divBV2.part9.appnote129a.div3.list1.item2">concrete block masonry veneer</item>
+                                    <item xml:id="nbc.divBV2.part9.appnote129a.div3.list1.item3">concrete brick masonry veneer</item>
+                                    <item xml:id="nbc.divBV2.part9.appnote129a.div3.list1.item4">concrete stone masonry veneer</item>
+                                    <item xml:id="nbc.divBV2.part9.appnote129a.div3.list1.item5">calcium silicate masonry veneer</item>
+                                </list></paragraph>
                             <paragraph xml:id="nbc.divBV2.part9.appnote129a.div3.para3">For buildings clad with stone veneers, natural stone veneer of limestone and sandstone, excluding granite, with a bed thickness of not more than <measurement units="metric">125 mm</measurement> are considered to meet the weight limit of <measurement units="metric">3.2 kPa</measurement>.</paragraph>
                         </note-division>
                         <note-division xml:id="nbc.divBV2.part9.appnote129a.div4">
@@ -1068,16 +1068,16 @@ are being considered for inclusion in future editions of the NBC.</find>
                         </note-division>
                         <note-division xml:id="nbc.divBV2.part9.appnote129a.div5">
                             <title>Example: Area-weighted average floor calculation</title>
-                             <paragraph xml:id="nbc.divBV2.part9.appnote129a.div5.para1">For example, if a building has <measurement units="metric">400 m<super>2</super></measurement> of floor area, and <measurement units="metric">25 m<super>2</super></measurement> of that floor area has a concrete topping (floor assembly = <measurement units="metric">1.25 kPa</measurement>), and the remaining <measurement units="metric">375 m<super>2</super></measurement> has hardwood floors (floor assembly = <measurement units="metric">0.45 kPa</measurement>), the area-weighted average dead weight is:<equation type="display" xml:id="nbc.divBV2.part9.appnote129a.div5.eq1">
-                                 <latex>(25 \times 1.25 + 375 \times 0.45) / 400 = 0.50 \mathrm{kPa}</latex>
-                             </equation></paragraph>
+                            <paragraph xml:id="nbc.divBV2.part9.appnote129a.div5.para1">For example, if a building has <measurement units="metric">400 m<super>2</super></measurement> of floor area, and <measurement units="metric">25 m<super>2</super></measurement> of that floor area has a concrete topping (floor assembly = <measurement units="metric">1.25 kPa</measurement>), and the remaining <measurement units="metric">375 m<super>2</super></measurement> has hardwood floors (floor assembly = <measurement units="metric">0.45 kPa</measurement>), the area-weighted average dead weight is:<equation type="display" xml:id="nbc.divBV2.part9.appnote129a.div5.eq1">
+                                    <latex>(25 \times 1.25 + 375 \times 0.45) / 400 = 0.50 \mathrm{kPa}</latex>
+                                </equation></paragraph>
                             <paragraph xml:id="nbc.divBV2.part9.appnote129a.div5.para2">Therefore, qualifies as normal weight construction.</paragraph>
                         </note-division>
                     </application-note>
                 </new-content>
             </insert>
         </amendment>
-
+        
         
         <!-- ================================================================== -->
         <!-- Amendment 382: Modify Application Note A-9.23.13.4 figure titles    -->
@@ -1110,7 +1110,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 383: Replace Application Note A-Table 9.23.13.5           -->
         <!-- BC uses "Figure Table A-9.23.13.5.-A/B" naming and adds 2nd figure  -->
@@ -1149,7 +1149,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 384: Insert new Application Note A-9.23.13.5.(3) and (4)  -->
         <!-- Connection of Braced Wall Panels to Roof Framing - BC-specific      -->
@@ -1175,7 +1175,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 385: Insert new Application Note A-9.23.13.6.(1)          -->
         <!-- Materials in Braced Wall Panels - BC-specific                       -->
@@ -1196,7 +1196,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 386: Replace Application Note A-9.23.13.6.(5) and (6)     -->
         <!-- BC changes to A-9.23.13.6.(3) Use of Gypsum Board                   -->
@@ -1218,7 +1218,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 387: Insert new Application Note A-9.23.13.6.(5)          -->
         <!-- Mixed Braced Wall Panel Framing Types - BC-specific with 2 figures  -->
@@ -1256,7 +1256,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 388: Insert new Application Note A-9.23.13.7.(3)          -->
         <!-- Alternate Procedure to Calculate Wind-related Required Braced Wall  -->
@@ -1273,25 +1273,25 @@ are being considered for inclusion in future editions of the NBC.</find>
                     <application-note xml:id="nbc.divBV2.part9.appnote134b">
                         <number>9.23.13.7.(3)</number>
                         <title>Alternate Procedure to Calculate Wind-related Required Braced Wall Panel Length</title>
-                         <paragraph xml:id="nbc.divBV2.part9.appnote134b.para1">To facilitate calculations of prescribed braced wall panel lengths, the wind-related minimum total unadjusted braced wall panel lengths, L<sub>uw</sub>, are provided in Table 9.23.13.7.-A for categories of 1-in-50-year hourly wind pressure (HWP). The values provided within each HWP category are based on the highest HWP in the category, and must be adjusted by the factors provided in Table 9.23.13.7.-C. In lieu of the method given in Sentence 9.23.13.7.(3), the minimum required total braced wall length for wind, L<sub>w</sub> is permitted to be calculated directly using the following equation:<equation type="display" xml:id="nbc.divBV2.part9.appnote134b.eq1">
-                             <latex>L_{w} = C_{Wstorey} K_{Wframe} HWP (K_{exp} K_{roof} K_{Wspacing} K_{Wnumber} K_{gyp} K_{sheath}) \geq BWP_{min}</latex>
-                         </equation></paragraph>
-                         <paragraph xml:id="nbc.divBV2.part9.appnote134b.para2">Where:<list type="bulleted">
-                            <item xml:id="nbc.divBV2.part9.appnote134b.list1.item1">C<sub>Wstorey</sub> = coefficient for storey location, for wind
-= 3.84 for braced wall panels supporting roof only
-= 7.89 for braced wall panels supporting roof + 1 floor
-= 11.93 for braced wall panels supporting roof + 2 floors</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134b.list1.item2">K<sub>Wframe</sub> = adjustment factor for framing type used in lieu of the unadjusted length for wind braced L<sub>uw</sub>, given in Table A-9.23.13.7.(3)</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134b.list1.item3">HWP = 1-in-50 year hourly wind pressure, kPa</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134b.list1.item4">K<sub>exp</sub> = wind exposure adjustment = 1.0 for 7.6 m braced wall band spacing</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134b.list1.item5">K<sub>roof</sub> = roof eave-to-ridge height adjustment, for wind = 1.0 for 3 m</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134b.list1.item6">K<sub>Wspacing</sub> = braced wall band spacing adjustment for wind per building plan direction = 1.0 for 7.6 m braced wall band spacing</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134b.list1.item7">K<sub>Wnumber</sub> = number of braced wall bands adjustment for wind per building plan direction = 1.0 for no intermediate braced wall bands between exterior walls</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134b.list1.item8">K<sub>gyp</sub> = interior gypsum board adjustment = 1.0 for braced wall panels with interior gypsum board</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134b.list1.item9">K<sub>sheath</sub> = intermittent braced wall panels adjustment = 1.0 for braced wall bands with continuously wood-sheathed exterior walls</item>
-                             <item xml:id="nbc.divBV2.part9.appnote134b.list1.item10">BWP<sub>min</sub> = Minimum length of individual braced wall panels as per Table 9.23.13.5.</item>
-                         </list></paragraph>
-                         <table xml:id="nbc.divBV2.part9.appnote134b.table1">
+                        <paragraph xml:id="nbc.divBV2.part9.appnote134b.para1">To facilitate calculations of prescribed braced wall panel lengths, the wind-related minimum total unadjusted braced wall panel lengths, L<sub>uw</sub>, are provided in Table 9.23.13.7.-A for categories of 1-in-50-year hourly wind pressure (HWP). The values provided within each HWP category are based on the highest HWP in the category, and must be adjusted by the factors provided in Table 9.23.13.7.-C. In lieu of the method given in Sentence 9.23.13.7.(3), the minimum required total braced wall length for wind, L<sub>w</sub> is permitted to be calculated directly using the following equation:<equation type="display" xml:id="nbc.divBV2.part9.appnote134b.eq1">
+                                <latex>L_{w} = C_{Wstorey} K_{Wframe} HWP (K_{exp} K_{roof} K_{Wspacing} K_{Wnumber} K_{gyp} K_{sheath}) \geq BWP_{min}</latex>
+                            </equation></paragraph>
+                        <paragraph xml:id="nbc.divBV2.part9.appnote134b.para2">Where:<list type="bulleted">
+                                <item xml:id="nbc.divBV2.part9.appnote134b.list1.item1">C<sub>Wstorey</sub> = coefficient for storey location, for wind
+                                    = 3.84 for braced wall panels supporting roof only
+                                    = 7.89 for braced wall panels supporting roof + 1 floor
+                                    = 11.93 for braced wall panels supporting roof + 2 floors</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134b.list1.item2">K<sub>Wframe</sub> = adjustment factor for framing type used in lieu of the unadjusted length for wind braced L<sub>uw</sub>, given in Table A-9.23.13.7.(3)</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134b.list1.item3">HWP = 1-in-50 year hourly wind pressure, kPa</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134b.list1.item4">K<sub>exp</sub> = wind exposure adjustment = 1.0 for 7.6 m braced wall band spacing</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134b.list1.item5">K<sub>roof</sub> = roof eave-to-ridge height adjustment, for wind = 1.0 for 3 m</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134b.list1.item6">K<sub>Wspacing</sub> = braced wall band spacing adjustment for wind per building plan direction = 1.0 for 7.6 m braced wall band spacing</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134b.list1.item7">K<sub>Wnumber</sub> = number of braced wall bands adjustment for wind per building plan direction = 1.0 for no intermediate braced wall bands between exterior walls</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134b.list1.item8">K<sub>gyp</sub> = interior gypsum board adjustment = 1.0 for braced wall panels with interior gypsum board</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134b.list1.item9">K<sub>sheath</sub> = intermittent braced wall panels adjustment = 1.0 for braced wall bands with continuously wood-sheathed exterior walls</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134b.list1.item10">BWP<sub>min</sub> = Minimum length of individual braced wall panels as per Table 9.23.13.5.</item>
+                            </list></paragraph>
+                        <table xml:id="nbc.divBV2.part9.appnote134b.table1">
                             <title>Wind-related Framing Adjustment Factor, K<sub>Wframe</sub><note xml:id="nbc.divBV2.part9.appnote134b.table1.note1">Forming Part of Note A-9.23.13.7.(3)</note></title>
                             <tgroup cols="2">
                                 <colspec colname="col1" colwidth="1*"/>
@@ -1358,7 +1358,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 389: Insert new Application Note A-9.23.13.7.(4)          -->
         <!-- Alternative Procedure to Calculate Seismic-related Braced Wall      -->
@@ -1375,32 +1375,32 @@ are being considered for inclusion in future editions of the NBC.</find>
                     <application-note xml:id="nbc.divBV2.part9.appnote134c">
                         <number>9.23.13.7.(4)</number>
                         <title>Alternative Procedure to Calculate the Seismic-related Braced Wall Panel Length</title>
-                         <paragraph xml:id="nbc.divBV2.part9.appnote134c.para1">To facilitate calculations of prescribed braced wall panel lengths, the seismic-related minimum total unadjusted braced wall panel lengths, L<sub>us</sub>, are provided in Table 9.23.13.7.-C for categories of the seismic design parameter, S<sub>max</sub>. The values provided within each S<sub>max</sub> category are based on the highest S<sub>max</sub> in the category, and must be adjusted by the factors provided in Table 9.23.13.7.-D. In lieu of the method given in Sentence 9.23.13.7.(4), the adjusted braced wall panel length, the minimum required total braced wall length for seismic, L<sub>s</sub>, is permitted to be calculated directly using the following equation:<equation type="display" xml:id="nbc.divBV2.part9.appnote134c.eq1">
-                             <latex>L_{s} = (C_{Sstorey} C_{walls} C_{roof} S) (K_{Sframe} S_{max} K_{weight} K_{Sspacing} K_{Snumber} K_{gyp} K_{sheath}) \geq BWP_{min}</latex>
-                         </equation></paragraph>
+                        <paragraph xml:id="nbc.divBV2.part9.appnote134c.para1">To facilitate calculations of prescribed braced wall panel lengths, the seismic-related minimum total unadjusted braced wall panel lengths, L<sub>us</sub>, are provided in Table 9.23.13.7.-C for categories of the seismic design parameter, S<sub>max</sub>. The values provided within each S<sub>max</sub> category are based on the highest S<sub>max</sub> in the category, and must be adjusted by the factors provided in Table 9.23.13.7.-D. In lieu of the method given in Sentence 9.23.13.7.(4), the adjusted braced wall panel length, the minimum required total braced wall length for seismic, L<sub>s</sub>, is permitted to be calculated directly using the following equation:<equation type="display" xml:id="nbc.divBV2.part9.appnote134c.eq1">
+                                <latex>L_{s} = (C_{Sstorey} C_{walls} C_{roof} S) (K_{Sframe} S_{max} K_{weight} K_{Sspacing} K_{Snumber} K_{gyp} K_{sheath}) \geq BWP_{min}</latex>
+                            </equation></paragraph>
                         <paragraph xml:id="nbc.divBV2.part9.appnote134c.para2">Where:<list type="bulleted">
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item1">C<sub>Sstorey</sub> = coefficient of storey location, for seismic
-= 1 for braced wall panels supporting roof only
-= 3 for braced wall panels supporting roof + 1 floor
-= 5 for braced wall panels supporting roof + 2 floors</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item2">C<sub>walls</sub> = coefficient accounting for the seismic weight based on the depth of the building, for walls, given in Table A-9.23.13.7.(4)-A</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item3">C<sub>roof</sub> = coefficient accounting for the seismic weight based on the depth of the building, for roof, given in Table A-9.23.13.7.(4)-A</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item4">S = specified roof snow load, kPa (See Article 9.4.2.2)</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item5">K<sub>Sframe</sub> = adjustment factor for framing type given in Table A-9.23.13.7.(4)-B</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item6">S<sub>max</sub> = seismic design parameter, listed in Table 9.4.1.1</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item7">K<sub>weight</sub> = weight of construction and cladding adjustment, for seismic
-= 1.0 for normal weight construction (See Sentence 9.23.13.2.(3))</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item8">K<sub>snow</sub> = roof snow load adjustment, for seismic
-= 1.0 for 2 kPa roof snow load (as calculated in accordance with Article 9.4.2.2.)</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item9">K<sub>Sspacing</sub> = braced wall band spacing adjustment for seismic per building plan direction (See Sentence 9.23.13.7.(5))
-= 1.0 for 7.6 m braced wall band spacing</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item10">K<sub>Snumber</sub> = number of braced wall bands adjustment for seismic per building plan direction
-= 1.0 for no intermediate braced wall bands between exterior walls</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item11">K<sub>gyp</sub> = interior gypsum board adjustment</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item12">K<sub>sheath</sub> = intermittent braced wall panels adjustment
-= 1.0 for continuously wood-sheathed braced wall bands</item>
-                            <item xml:id="nbc.divBV2.part9.appnote134c.list1.item13">BWP<sub>min</sub> = minimum length of individual braced wall panels as per Table 9.23.13.5.</item>
-                        </list></paragraph>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item1">C<sub>Sstorey</sub> = coefficient of storey location, for seismic
+                                    = 1 for braced wall panels supporting roof only
+                                    = 3 for braced wall panels supporting roof + 1 floor
+                                    = 5 for braced wall panels supporting roof + 2 floors</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item2">C<sub>walls</sub> = coefficient accounting for the seismic weight based on the depth of the building, for walls, given in Table A-9.23.13.7.(4)-A</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item3">C<sub>roof</sub> = coefficient accounting for the seismic weight based on the depth of the building, for roof, given in Table A-9.23.13.7.(4)-A</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item4">S = specified roof snow load, kPa (See Article 9.4.2.2)</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item5">K<sub>Sframe</sub> = adjustment factor for framing type given in Table A-9.23.13.7.(4)-B</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item6">S<sub>max</sub> = seismic design parameter, listed in Table 9.4.1.1</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item7">K<sub>weight</sub> = weight of construction and cladding adjustment, for seismic
+                                    = 1.0 for normal weight construction (See Sentence 9.23.13.2.(3))</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item8">K<sub>snow</sub> = roof snow load adjustment, for seismic
+                                    = 1.0 for 2 kPa roof snow load (as calculated in accordance with Article 9.4.2.2.)</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item9">K<sub>Sspacing</sub> = braced wall band spacing adjustment for seismic per building plan direction (See Sentence 9.23.13.7.(5))
+                                    = 1.0 for 7.6 m braced wall band spacing</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item10">K<sub>Snumber</sub> = number of braced wall bands adjustment for seismic per building plan direction
+                                    = 1.0 for no intermediate braced wall bands between exterior walls</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item11">K<sub>gyp</sub> = interior gypsum board adjustment</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item12">K<sub>sheath</sub> = intermittent braced wall panels adjustment
+                                    = 1.0 for continuously wood-sheathed braced wall bands</item>
+                                <item xml:id="nbc.divBV2.part9.appnote134c.list1.item13">BWP<sub>min</sub> = minimum length of individual braced wall panels as per Table 9.23.13.5.</item>
+                            </list></paragraph>
                         <table xml:id="nbc.divBV2.part9.appnote134c.table1">
                             <title>Seismic Related Coefficients, C<sub>walls</sub> and C<sub>roof</sub><note xml:id="nbc.divBV2.part9.appnote134c.table1.note1">Forming Part of Note A-9.23.13.7.(4)</note></title>
                             <tgroup cols="3">
@@ -1485,7 +1485,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 390: Insert new Application Note A-9.23.13.8.             -->
         <!-- Foundation Cripple Walls - BC-specific note                         -->
@@ -1507,7 +1507,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 391: Insert new Application Note A-9.23.13.8.(2)          -->
         <!-- Foundation Cripple Walls Where Smax ≤ 0.60 - BC-specific with figure-->
@@ -1531,7 +1531,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 392: Insert new Application Note A-9.23.13.8.(3)          -->
         <!-- Foundation Cripple Walls Where Smax > 0.60 - BC-specific with figure-->
@@ -1555,7 +1555,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 393: Insert new Application Note A-9.23.13.9.(1)          -->
         <!-- Cripple Walls in Stepped Foundations - BC-specific with figure      -->
@@ -1583,7 +1583,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 394: Insert new Application Note A-9.23.13.10.(2)         -->
         <!-- Attachment of a Porch Roof to Exterior Wall Framing - BC-specific   -->
@@ -1600,19 +1600,19 @@ are being considered for inclusion in future editions of the NBC.</find>
                     <application-note xml:id="nbc.divBV2.part9.appnote134h">
                         <number>9.23.13.10.(2)</number>
                         <title>Attachment of a Porch Roof to Exterior Wall Framing</title>
-                         <figure xml:id="nbc.divBV2.part9.appnote134h.figure1">
-                             <title>Framing perpendicular to plane of wall (balloon construction)</title>
-                             <graphic src="bc-graphics/Figure A-9.23.13.10.(2)-A1.eps" alt="Framing perpendicular to plane of wall (balloon construction)"/>
-                         </figure>
-                         <figure xml:id="nbc.divBV2.part9.appnote134h.figure2">
-                             <title>Framing parallel to plane of wall</title>
-                             <graphic src="bc-graphics/Figure A-9.23.13.10.(2)-B1.eps" alt="Framing parallel to plane of wall"/>
-                         </figure>
+                        <figure xml:id="nbc.divBV2.part9.appnote134h.figure1">
+                            <title>Framing perpendicular to plane of wall (balloon construction)</title>
+                            <graphic src="bc-graphics/Figure A-9.23.13.10.(2)-A1.eps" alt="Framing perpendicular to plane of wall (balloon construction)"/>
+                        </figure>
+                        <figure xml:id="nbc.divBV2.part9.appnote134h.figure2">
+                            <title>Framing parallel to plane of wall</title>
+                            <graphic src="bc-graphics/Figure A-9.23.13.10.(2)-B1.eps" alt="Framing parallel to plane of wall"/>
+                        </figure>
                     </application-note>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 395: Modify Application Note A-9.27.2. para1              -->
         <!-- Replace "NBC" with "British Columbia Building Code"                 -->
@@ -1626,7 +1626,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 396: Modify A-9.27.3.2. Sheathing Membrane para1          -->
         <!-- Replace "10 mm" with "9.5 mm" drainage space measurement            -->
@@ -1640,7 +1640,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 397: Modify A-9.27.3.2. Sheathing Membrane para2          -->
         <!-- Replace "10 mm" with "9.5 mm" drainage space measurement            -->
@@ -1654,7 +1654,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 398: Insert new Seismic Bracing note-division             -->
         <!-- A-9.31.6.2.(3) - BC-specific guidance for hot water tank bracing    -->
@@ -1674,7 +1674,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 399: Modify A-9.32.1.2.(2) Ventilation for Smoke Control para1 -->
         <!-- Replace "necessary" with "an ideal solution"                        -->
@@ -1688,7 +1688,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 400: Modify A-9.32.1.2.(2) Ventilation for Smoke Control para2 -->
         <!-- Replace "Alternative" with "Other" and "workable" with "ideal"      -->
@@ -1702,7 +1702,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 401: Modify A-9.32.1.2.(2) Ventilation for Air Exchange para2 -->
         <!-- Update article reference from 9.32.3.8 to 9.32.3.4                  -->
@@ -1716,7 +1716,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 402: Replace Application Note A-9.32.3.                   -->
         <!-- Heating-Season Mechanical Ventilation - BC-specific content         -->
@@ -1736,7 +1736,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 403: Insert new Application Note A-9.32.3.2.(4)           -->
         <!-- Duct Systems Serving More Than One Space - BC-specific note         -->
@@ -1757,7 +1757,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 404: Remove Application Note A-9.32.3.3.                  -->
         <!-- Principal Ventilation System - BC removes this note                 -->
@@ -1767,7 +1767,7 @@ are being considered for inclusion in future editions of the NBC.</find>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote189"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 405: Insert new Application Note A-9.32.3.4.              -->
         <!-- Principle Ventilation System Supply Air - BC-specific note with     -->
@@ -1812,7 +1812,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 406: Insert new Application Note A-9.32.3.4.(6)(a)(ii)    -->
         <!-- Floor Area Calculation for Passive Supply Air Distribution          -->
@@ -1833,7 +1833,7 @@ are being considered for inclusion in future editions of the NBC.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 407: Insert new Application Note A-9.32.4.1.              -->
         <!-- Naturally Aspirating Fuel-Fired Vented Appliance (NAFFVA)           -->
@@ -1874,15 +1874,15 @@ are being considered for inclusion in future editions of the NBC.</find>
                                     <row xml:id="nbc.divBV2.part9.appnote199a.tableA.rowh3">
                                         <entry align="center">Appliance Type</entry>
                                         <entry align="center">Furnace
-Boiler
-HWT
-Fireplace</entry>
+                                            Boiler
+                                            HWT
+                                            Fireplace</entry>
                                         <entry align="center">HWT
-Fireplace
-Heater</entry>
+                                            Fireplace
+                                            Heater</entry>
                                         <entry align="center">Mid-Efficient F/A Furnace or Boiler<super>(5)</super></entry>
                                         <entry align="center">Drafthood Boiler
-HWT<super>(4)</super></entry>
+                                            HWT<super>(4)</super></entry>
                                     </row>
                                 </thead>
                                 <tbody>
@@ -1947,19 +1947,19 @@ HWT<super>(4)</super></entry>
                                     <row xml:id="nbc.divBV2.part9.appnote199a.tableB.rowh3">
                                         <entry align="center">Appliance Type</entry>
                                         <entry align="center">Boiler
-HWT<super>(4)</super></entry>
+                                            HWT<super>(4)</super></entry>
                                         <entry align="center">F/A Furnace
-Boiler
-HWT<super>(3), (4)</super></entry>
+                                            Boiler
+                                            HWT<super>(3), (4)</super></entry>
                                         <entry align="center">F/A Furnace
-Boiler
-HWT</entry>
+                                            Boiler
+                                            HWT</entry>
                                         <entry align="center">Boiler</entry>
                                         <entry align="center">F/A Furnace
-Boiler
-HWT
-Fireplace
-Heat Stove</entry>
+                                            Boiler
+                                            HWT
+                                            Fireplace
+                                            Heat Stove</entry>
                                         <entry align="center">Outside Boiler</entry>
                                     </row>
                                 </thead>
@@ -2005,7 +2005,7 @@ Heat Stove</entry>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 408: Remove Application Note A-9.32.3.10.                 -->
         <!-- Fans - BC removes this note                                         -->
@@ -2015,7 +2015,7 @@ Heat Stove</entry>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote200"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 409: Remove Application Note A-9.32.3.11.                 -->
         <!-- Ducts - BC removes this note                                        -->
@@ -2025,7 +2025,7 @@ Heat Stove</entry>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote201"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 410: Remove Application Note A-9.32.3.12.                 -->
         <!-- Heat Recovery Ventilators - BC removes this note                    -->
@@ -2035,7 +2035,7 @@ Heat Stove</entry>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote202"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 411: Replace Application Note A-9.32.3.9.                 -->
         <!-- Carbon Monoxide Alarms - BC renumbers to 9.32.4.2 and modifies      -->
@@ -2060,7 +2060,7 @@ Heat Stove</entry>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 412: Modify Application Note A-9.33.1.1.(2)               -->
         <!-- Combustion Air and Tight Houses - expand standard references        -->
@@ -2072,30 +2072,30 @@ Heat Stove</entry>
                 <element-replace element="paragraph">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divBV2.part9.appnote203.para2">Newer houses are generally more tightly constructed than older
-ones because of improved construction practices, including tighter
-windows, weather stripping and caulking. This fact increases the probability
-that infiltration may not be able to supply enough air to compensate
-for simultaneous operation of exhaust fans, fireplaces, clothes dryers,
-furnaces and space heaters. It is necessary, therefore, to introduce
-outdoor air to the space containing the fuel-burning appliance. Information
-regarding combustion air requirements for various types of appliances
-can be found in the installation standards referenced in <ref type="internal"
-                       target="nbc.divB.part6.sect2.subsect1.art5.sent1"
-                       display-type="long"
-                       pretext="Sentences"/>
-                  <ref type="internal"
-                       target="nbc.divBV2.part9.sect33.subsect5.art2.sent1"
-                       display-type="long"
-                       pretext=" and"/>. In the case of solid-fuel-burning stoves, ranges
-and space heaters, <ref type="standard" target="csab365" standardId="csab365">CSA B365</ref>, "<ref type="standard" target="csab365" standardId="csab365">Installation Code for Solid-Fuel-Burning Appliances and Equipment</ref>," suggests that the minimum size of openings be determined
-by trial and error to accommodate the flue characteristics, the firing
-rate, the building characteristics, etc., and that, as a guide, the
-combustion air opening should be 0.5 times the flue collar area.</paragraph>
+                            ones because of improved construction practices, including tighter
+                            windows, weather stripping and caulking. This fact increases the probability
+                            that infiltration may not be able to supply enough air to compensate
+                            for simultaneous operation of exhaust fans, fireplaces, clothes dryers,
+                            furnaces and space heaters. It is necessary, therefore, to introduce
+                            outdoor air to the space containing the fuel-burning appliance. Information
+                            regarding combustion air requirements for various types of appliances
+                            can be found in the installation standards referenced in <ref type="internal"
+                                                                                          target="nbc.divB.part6.sect2.subsect1.art5.sent1"
+                                                                                          display-type="long"
+                                                                                          pretext="Sentences"/>
+                            <ref type="internal"
+                                 target="nbc.divBV2.part9.sect33.subsect5.art2.sent1"
+                                 display-type="long"
+                                 pretext=" and"/>. In the case of solid-fuel-burning stoves, ranges
+                            and space heaters, <ref type="standard" target="csab365" standardId="csab365">CSA B365</ref>, "<ref type="standard" target="csab365" standardId="csab365">Installation Code for Solid-Fuel-Burning Appliances and Equipment</ref>," suggests that the minimum size of openings be determined
+                            by trial and error to accommodate the flue characteristics, the firing
+                            rate, the building characteristics, etc., and that, as a guide, the
+                            combustion air opening should be 0.5 times the flue collar area.</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <amendment id="bc-412b" sequence="412"
                    description="Modify Application Note A-9.33.1.1.(2) paragraph 3 - expand CBD 222 reference">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote203.para3"/>
@@ -2107,7 +2107,7 @@ combustion air opening should be 0.5 times the flue collar area.</paragraph>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 413: Insert new Application Note A-9.33.2.1.(2)           -->
         <!-- Cooling - BC-specific note                                          -->
@@ -2128,30 +2128,30 @@ combustion air opening should be 0.5 times the flue collar area.</paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <amendment id="bc-414" sequence="414"
-           description="Modify Application Note A-9.33.5.3. Design, Construction and Installation Standard - expand CSA B365 reference">
+                   description="Modify Application Note A-9.33.5.3. Design, Construction and Installation Standard - expand CSA B365 reference">
             <target type="canonical-id" id="nbc.divBV2.part9.appnote205.para1"/>
             <modify>
                 <element-replace element="paragraph">
                     <new-content source="bc">
                         <paragraph xml:id="nbc.divBV2.part9.appnote205.para1">
-                  <ref type="standard" target="csab365" standardId="csab365">CSA B365</ref>, "<ref type="standard" target="csab365" standardId="csab365">Installation Code for Solid-Fuel-Burning Appliances and Equipment</ref>," is essentially an installation
-standard, and covers such issues as accessibility, air for combustion
-and ventilation, chimney and venting, mounting and floor protection,
-wall and ceiling clearances, installation of ducts, pipes, thimbles
-and manifolds, and control and safety devices. But the standard also
-includes a requirement that solid-fuel-burning appliances and equipment
-satisfy the requirements of one of a series of standards, depending
-on the appliance or equipment, therefore also making it a design and
-construction standard. It is required that cooktops and ovens as well
-as stoves, central furnaces and other space heaters be designed and
-built in conformity with the relevant referenced standard.</paragraph>
+                            <ref type="standard" target="csab365" standardId="csab365">CSA B365</ref>, "<ref type="standard" target="csab365" standardId="csab365">Installation Code for Solid-Fuel-Burning Appliances and Equipment</ref>," is essentially an installation
+                            standard, and covers such issues as accessibility, air for combustion
+                            and ventilation, chimney and venting, mounting and floor protection,
+                            wall and ceiling clearances, installation of ducts, pipes, thimbles
+                            and manifolds, and control and safety devices. But the standard also
+                            includes a requirement that solid-fuel-burning appliances and equipment
+                            satisfy the requirements of one of a series of standards, depending
+                            on the appliance or equipment, therefore also making it a design and
+                            construction standard. It is required that cooktops and ovens as well
+                            as stoves, central furnaces and other space heaters be designed and
+                            built in conformity with the relevant referenced standard.</paragraph>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 415: Modify Application Note A-9.34.2. Lighting Outlets   -->
         <!-- Replace "NBC" with "British Columbia Building Code"                 -->
@@ -2165,7 +2165,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 416: Modify Application Note A-9.35.2.2.(1) para4         -->
         <!-- Garage Floor - add sloped garage and ramp text                      -->
@@ -2179,7 +2179,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 417: Modify Application Note A-9.35.2.2.(1) para5         -->
         <!-- Garage Floor - change "garage floor area" to "stair well"           -->
@@ -2193,7 +2193,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 418: Modify Application Note A-9.36.1.2.(5) and (6) para1 -->
         <!-- Change article reference from 9.36.7.3. to 9.36.6.5.                -->
@@ -2207,7 +2207,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 419: Modify Application Note A-9.36.1.2.(5) and (6) para2 -->
         <!-- Change article reference from 9.36.7.3. to 9.36.6.5.                -->
@@ -2221,7 +2221,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 420: Modify Application Note A-9.36.1.3. paragraph        -->
         <!-- Change text to "various compliance paths within Section 9.36."      -->
@@ -2235,8 +2235,8 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </replace>
         </amendment>
-
-                <!-- ================================================================== -->
+        
+        <!-- ================================================================== -->
         <!-- Amendment 421: Replace Table A-9.36.1.3.                            -->
         <!-- BC version with Energy Step Code column and different rows          -->
         <!-- ================================================================== -->
@@ -2254,11 +2254,11 @@ built in conformity with the relevant referenced standard.</paragraph>
                             <colspec colname="col4" colwidth="20*"/>
                             <colspec colname="col5" colwidth="20*"/>
                             <thead>
-                                 <row xml:id="nbc.divBV2.part9.appnote215.table1.rowh1">
-                                     <entry align="center">Building Types and Sizes</entry>
-                                     <entry align="center">Energy Efficiency Compliance Options</entry>
-                                 </row>
-                                 <row xml:id="nbc.divBV2.part9.appnote215.table1.rowh2">
+                                <row xml:id="nbc.divBV2.part9.appnote215.table1.rowh1">
+                                    <entry align="center">Building Types and Sizes</entry>
+                                    <entry align="center">Energy Efficiency Compliance Options</entry>
+                                </row>
+                                <row xml:id="nbc.divBV2.part9.appnote215.table1.rowh2">
                                     <entry align="center"/>
                                     <entry align="center">NBC <ref type="internal" target="nbc.divBV2.part9.sect37.subsect2" display-type="number"/><ref type="internal" target="nbc.divBV2.part9.sect37.subsect4" display-type="long" pretext="to"/> (Prescriptive)</entry>
                                     <entry align="center">NBC <ref type="internal" target="nbc.divBV2.part9.sect37.subsect5" display-type="number"/> (Performance)</entry>
@@ -2269,9 +2269,9 @@ built in conformity with the relevant referenced standard.</paragraph>
                             <tbody>
                                 <row xml:id="nbc.divBV2.part9.appnote215.table1.row3">
                                     <entry><list type="bulleted">
-                                        <item>Houses with or without a secondary suite, including their common spaces</item>
-                                        <item>Buildings containing only dwelling units with common spaces ≤ 20% of building's total floor area<super>(1)</super></item>
-                                    </list></entry>
+                                            <item>Houses with or without a secondary suite, including their common spaces</item>
+                                            <item>Buildings containing only dwelling units with common spaces ≤ 20% of building's total floor area<super>(1)</super></item>
+                                        </list></entry>
                                     <entry align="center">X</entry>
                                     <entry align="center">X</entry>
                                     <entry align="center">✓</entry>
@@ -2279,9 +2279,9 @@ built in conformity with the relevant referenced standard.</paragraph>
                                 </row>
                                 <row xml:id="nbc.divBV2.part9.appnote215.table1.row4">
                                     <entry><list type="bulleted">
-                                        <item>Buildings containing Group D, E or F Division 3 occupancies with a combined total floor area ≤ <measurement units="metric">300 m<super>2</super></measurement>, excluding storage garages that serve residential occupancies</item>
-                                        <item>Buildings with a mix of Group C and Group D, E or F Division 3 occupancies where the non-residential portion's combined total floor area ≤ <measurement units="metric">300 m<super>2</super></measurement> (excluding parking garages that serve residential occupancies)</item>
-                                    </list></entry>
+                                            <item>Buildings containing Group D, E or F Division 3 occupancies with a combined total floor area ≤ <measurement units="metric">300 m<super>2</super></measurement>, excluding storage garages that serve residential occupancies</item>
+                                            <item>Buildings with a mix of Group C and Group D, E or F Division 3 occupancies where the non-residential portion's combined total floor area ≤ <measurement units="metric">300 m<super>2</super></measurement> (excluding parking garages that serve residential occupancies)</item>
+                                        </list></entry>
                                     <entry align="center">✓</entry>
                                     <entry align="center">X</entry>
                                     <entry align="center">X</entry>
@@ -2289,9 +2289,9 @@ built in conformity with the relevant referenced standard.</paragraph>
                                 </row>
                                 <row xml:id="nbc.divBV2.part9.appnote215.table1.row5">
                                     <entry><list type="bulleted">
-                                        <item>Buildings containing Group D, E or F Division 3 occupancies whose combined total floor area > <measurement units="metric">300 m<super>2</super></measurement></item>
-                                        <item>Buildings containing F Division 2 occupancies of any size</item>
-                                    </list></entry>
+                                            <item>Buildings containing Group D, E or F Division 3 occupancies whose combined total floor area > <measurement units="metric">300 m<super>2</super></measurement></item>
+                                            <item>Buildings containing F Division 2 occupancies of any size</item>
+                                        </list></entry>
                                     <entry align="center">X</entry>
                                     <entry align="center">X</entry>
                                     <entry align="center">X</entry>
@@ -2299,24 +2299,24 @@ built in conformity with the relevant referenced standard.</paragraph>
                                 </row>
                                 <row xml:id="nbc.divBV2.part9.appnote215.table1.row6">
                                     <entry><list type="bulleted">
-                                        <item>Log homes<super>(2)</super></item>
-                                    </list></entry>
+                                            <item>Log homes<super>(2)</super></item>
+                                        </list></entry>
                                     <entry align="center">✓</entry>
                                     <entry align="center">✓</entry>
                                     <entry align="center">X</entry>
                                     <entry align="center">X</entry>
                                 </row>
                             </tbody>
-                         </tgroup>
-                         <table-notes>
-                             <note>(1) The walls that enclose a common space are excluded from the calculation of floor area of that common space.</note>
-                             <note>(2) For <ref type="internal" target="nbc.divBV2.part9.sect37.subsect2" display-type="long" pretext="Subsection"/> to <ref type="internal" target="nbc.divBV2.part9.sect37.subsect4" display-type="number"/> compliance option, see <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3.sent7" display-type="long"/> and <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3.sent8" display-type="number"/>.</note>
-                         </table-notes>
-                     </table>
+                        </tgroup>
+                        <table-notes>
+                            <note>(1) The walls that enclose a common space are excluded from the calculation of floor area of that common space.</note>
+                            <note>(2) For <ref type="internal" target="nbc.divBV2.part9.sect37.subsect2" display-type="long" pretext="Subsection"/> to <ref type="internal" target="nbc.divBV2.part9.sect37.subsect4" display-type="number"/> compliance option, see <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3.sent7" display-type="long"/> and <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3.sent8" display-type="number"/>.</note>
+                        </table-notes>
+                    </table>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 422: Modify A-9.36.1.3.(3) Houses paragraph              -->
         <!-- Add "and 9.36.1.3.(6)" reference                                   -->
@@ -2330,7 +2330,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 423: Modify A-9.36.1.3.(6) Exemptions paragraph          -->
         <!-- Add "and unconditioned buildings such as storage warehouses"       -->
@@ -2344,7 +2344,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 424: Replace A-9.36.2.7.(3) Site-built Windows paragraph -->
         <!-- BC version with expanded text about Part 5 compliance              -->
@@ -2358,7 +2358,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 425: Remove Application Note A-9.36.5.3. Compliance      -->
         <!-- BC removes this note                                               -->
@@ -2368,7 +2368,7 @@ built in conformity with the relevant referenced standard.</paragraph>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote273"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 426: Modify A-9.36.5.8.(5) Water Delivery Temperature    -->
         <!-- Replace NPC reference with Book II (Plumbing Systems)              -->
@@ -2382,7 +2382,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 427: Insert new Application Note A-9.36.6.2.              -->
         <!-- Floor Area in the Energy Step Code - BC-specific note               -->
@@ -2404,7 +2404,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 428: Insert new Application Note A-9.36.6.2.(1)(f)        -->
         <!-- Auxiliary HVAC Equipment - BC-specific note                         -->
@@ -2425,7 +2425,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 429: Delete Application Note A-9.36.6.2.(1)(a)            -->
         <!-- Zone Pressure - BC removes this note                                -->
@@ -2435,7 +2435,7 @@ built in conformity with the relevant referenced standard.</paragraph>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote296"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 430: Delete Application Note A-9.36.6.2.(1)(b)            -->
         <!-- Adjacent Zones - BC removes this note                               -->
@@ -2445,7 +2445,7 @@ built in conformity with the relevant referenced standard.</paragraph>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote297"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 431: Insert new Application Note A-9.36.6.2.(2)           -->
         <!-- Term "House" - BC-specific note                                     -->
@@ -2466,7 +2466,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 432: Insert new Application Note A-9.36.6.3.(4)          -->
         <!-- Thermal Energy Demand Intensity Adjusted - BC-specific note       -->
@@ -2570,7 +2570,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 433: Insert new Application Note A-9.36.6.3.(5)(b)       -->
         <!-- Percent Improvement - BC-specific note                             -->
@@ -2591,7 +2591,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 434: Insert new Application Note A-9.36.6.4.(2)(b)       -->
         <!-- NECB - BC-specific note                                            -->
@@ -2612,7 +2612,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 435: Insert new Application Note A-9.36.6.4.(3)          -->
         <!-- Air Leakage Rate in Energy Model Calculations - BC-specific note  -->
@@ -2633,7 +2633,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 436: Insert new Application Note A-9.36.6.5.(1)          -->
         <!-- Reference House and Proposed House - BC-specific note             -->
@@ -2654,7 +2654,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 437: Insert new Application Note A-9.36.6.5.(5)          -->
         <!-- Annual Gross Space Heat Loss - BC-specific note                   -->
@@ -2675,7 +2675,7 @@ built in conformity with the relevant referenced standard.</paragraph>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 438: Delete Application Note A-9.36.6.4.(2)              -->
         <!-- Determining Airtightness Level - BC removes this note              -->
@@ -2685,7 +2685,7 @@ built in conformity with the relevant referenced standard.</paragraph>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote298"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 439: Delete Application Note A-9.36.7.2.(1)(b)           -->
         <!-- Percent Improvement and Percent House Energy Target - BC removes   -->
@@ -2695,7 +2695,7 @@ built in conformity with the relevant referenced standard.</paragraph>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote299"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 440: Delete Application Note A-9.36.7.3.(4)              -->
         <!-- Peak Cooling Load - BC removes this note                           -->
@@ -2705,7 +2705,7 @@ built in conformity with the relevant referenced standard.</paragraph>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote301"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 441: Delete Application Note A-9.36.7.3.(9)              -->
         <!-- Airtightness Testing - BC removes this note                        -->
@@ -2715,7 +2715,7 @@ built in conformity with the relevant referenced standard.</paragraph>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote303"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 442: Delete Application Note A-9.36.8.2.(1)(b)           -->
         <!-- Compliance Options - BC removes this note                          -->
@@ -2725,7 +2725,7 @@ built in conformity with the relevant referenced standard.</paragraph>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote304"/>
             <delete/>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 443: Delete Application Note A-9.36.8.6.(4)              -->
         <!-- Energy Rating Compliance Option - BC removes this note             -->
@@ -2735,9 +2735,9 @@ built in conformity with the relevant referenced standard.</paragraph>
             <target type="canonical-id" id="nbc.divBV2.part9.appnote305"/>
             <delete/>
         </amendment>
-
-
-
+        
+        
+        
     </amendments>
-
+    
 </bc-overlay>

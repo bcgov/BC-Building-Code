@@ -3,11 +3,11 @@
             version="1.0"
             nbc-target-version="2020"
             effective-date="2023-12-15">
-
+    
     <!-- ================================================================== -->
     <!-- BC BUILDING CODE AMENDMENTS TO NBC 2020 - PART 3                  -->
     <!-- ================================================================== -->
-
+    
     <metadata>
         <title>BC Building Code Amendments to NBC 2020 - Part 3</title>
         <description>British Columbia-specific amendments for Part 3 (Fire Protection, Occupant Safety and Accessibility)</description>
@@ -15,14 +15,14 @@
         <author>BC Building Code Team</author>
         <source-document>NBC2020p1 Division B Part 3.FIN.docx</source-document>
     </metadata>
-
+    
     <amendments>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 1: Add reference to Article 3.1.2.7. in exceptions      -->
         <!-- Section 3.1.2.1.(1) - Building Classification                      -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-012" sequence="1"
                    description="Add Article 3.1.2.7. to the list of exceptions for building classification">
             <target type="canonical-id" id="nbc.divB.part3.sect1.subsect2.art1.sent1"/>
@@ -33,12 +33,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 2: Update Article 3.1.2.5. title                         -->
         <!-- Section 3.1.2.5. - Add "and Residential Care Homes" to title       -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-013" sequence="2"
                    description="Update Article 3.1.2.5. title to include Residential Care Homes">
             <target type="canonical-id" id="nbc.divB.part3.sect1.subsect2.art5"/>
@@ -51,12 +51,12 @@
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 3: Add new sentence for care facilities                  -->
         <!-- Section 3.1.2.5.(2) - Care facility residential classification     -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-014" sequence="3"
                    description="Add new sentence 2 for care facilities accepted under provincial legislation">
             <target type="position"
@@ -83,12 +83,12 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 4: Add new Article 3.1.2.7.                              -->
         <!-- Group A, Division 2, Low Occupant Load                             -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-015" sequence="4"
                    description="Add new Article 3.1.2.7. for Group A, Division 2 low occupant load classification">
             <target type="position"
@@ -99,7 +99,7 @@
                 <new-content source="bc">
                     <article xml:id="nbc.divB.part3.sect1.subsect2.art7" number="7">
                         <title>Group A, Division 2, Low Occupant Load</title>
-
+                        
                         <sentence xml:id="nbc.divB.part3.sect1.subsect2.art7.sent1" number="1">
                             <text>A <ref type="term" target="t">suite</ref> of Group A, Division 2 <ref type="term" target="mbl-ccpn">assembly occupancy</ref>, except a child or infant daycare facility, is permitted to be classified as a Group D, <ref type="term" target="bn-nd-pr">business and personal services occupancy</ref> provided</text>
                             <clause xml:id="nbc.divB.part3.sect1.subsect2.art7.sent1.clause1" letter="a">
@@ -119,12 +119,12 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 5: Add new Article 3.1.2.8.                              -->
         <!-- Daycare Facilities for Children                                    -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-016" sequence="5"
                    description="Add new Article 3.1.2.8. for daycare facilities classification">
             <target type="position"
@@ -135,7 +135,7 @@
                 <new-content source="bc">
                     <article xml:id="nbc.divB.part3.sect1.subsect2.art8" number="8">
                         <title>Daycare Facilities for Children</title>
-
+                        
                         <sentence xml:id="nbc.divB.part3.sect1.subsect2.art8.sent1" number="1">
                             <text>A daycare facility for children shall be classified as a Group A, Division 2 <ref type="term" target="mbl-ccpn">assembly occupancy</ref>. (See also <ref type="internal" target="nbc.divB.part3.sect3.subsect2.art17" display-type="long"/>.)</text>
                         </sentence>
@@ -143,12 +143,12 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 6: Change "required" to "permitted" for walk-in coolers -->
         <!-- Section 3.1.4.2.(2) - Walk-in coolers in combustible construction  -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-017" sequence="6"
                    description="Change walk-in cooler requirement from 'required to be' to 'permitted to be' of combustible construction">
             <target type="canonical-id" id="nbc.divB.part3.sect1.subsect4.art2.sent2"/>
@@ -161,12 +161,12 @@
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 7: Replace Article 3.1.4.8. Exterior Cladding           -->
         <!-- Complete replacement with BC-specific requirements                 -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-018" sequence="7"
                    description="Replace Article 3.1.4.8. with BC-specific exterior cladding requirements">
             <target type="canonical-id" id="nbc.divB.part3.sect1.subsect4.art8"/>
@@ -182,7 +182,7 @@
                                 <text>except as provided in <ref type="internal" target="nbc.divB.part3.sect1.subsect4.art8.sent4" display-type="short"/>, a wall assembly that satisfies the criteria of <ref type="internal" target="nbc.divB.part3.sect1.subsect5.art5.sent1.clause2" display-type="long"/>.</text>
                             </clause>
                         </sentence>
-
+                        
                         <sentence xml:id="nbc.divB.part3.sect1.subsect4.art8.sent2" number="2">
                             <text>For <ref type="term" target="bldng">buildings</ref> described in <ref type="internal" target="nbc.divB.part3.sect1.subsect4.art8.sent1" display-type="short"/>, <ref type="term" target="cmbtbl">combustible</ref> cladding representing up to 10% of the cladding on the face of an exterior wall facing a <ref type="term" target="trt">street</ref> or access route shall be permitted, provided all portions of the <ref type="term" target="cmbtbl">combustible</ref> cladding are located not more than <measurement units="metric">15 m</measurement> from a <ref type="term" target="trt">street</ref> or access route conforming to <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art6" display-type="long"/>, measured horizontally from the face of the <ref type="term" target="bldng">building</ref>.</text>
                         </sentence>
@@ -197,12 +197,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 8: Update Sentence 3.1.7.1.(1) exception references      -->
         <!-- Add reference to Sentences (2) to (4)                              -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-019" sequence="8"
                    description="Update Article 3.1.7.1.(1) to reference Sentences (2) to (4) in exceptions">
             <target type="canonical-id" id="nbc.divB.part3.sect1.subsect7.art1.sent1"/>
@@ -213,12 +213,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 9: Add new Sentence 3.1.7.1.(3)                          -->
         <!-- Ceiling assembly fire-resistance rating                            -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-020" sequence="9"
                    description="Add new Sentence 3.1.7.1.(3) for ceiling assembly fire-resistance rating">
             <target type="position"
@@ -233,12 +233,12 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 10: Add new Sentence 3.1.7.1.(4)                         -->
         <!-- Ceiling membrane fire-resistance rating                            -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-021" sequence="10"
                    description="Add new Sentence 3.1.7.1.(4) for ceiling membrane fire-resistance rating">
             <target type="position"
@@ -253,12 +253,12 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 11: Replace Sentence 3.2.1.1.(1)                         -->
         <!-- Restructure rooftop enclosure exceptions with clauses              -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-022" sequence="11"
                    description="Restructure Article 3.2.1.1.(1) rooftop enclosure exceptions with detailed clauses">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect1.art1.sent1"/>
@@ -284,12 +284,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 12: Update Sentence 3.2.2.14.(1)                         -->
         <!-- Add "an elevator lobby" to rooftop enclosure construction          -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-023" sequence="12"
                    description="Add elevator lobby to Article 3.2.2.14.(1) rooftop enclosure construction requirements">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect2.art14.sent1"/>
@@ -300,12 +300,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 13: Update Sentence 3.2.2.14.(2)                         -->
         <!-- Add elevator lobby and means of egress conditions                  -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-024" sequence="13"
                    description="Add elevator lobby and means of egress conditions to Article 3.2.2.14.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect2.art14.sent2"/>
@@ -316,12 +316,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 14: Update Sentence 3.2.2.14.(4)                         -->
         <!-- Add elevator lobby and dwelling unit conditions                    -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-025" sequence="14"
                    description="Add elevator lobby and dwelling unit conditions to Article 3.2.2.14.(4)">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect2.art14.sent4"/>
@@ -332,12 +332,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 15: Change height limit from 42m to 50m                 -->
         <!-- Article 3.2.2.48.(1)(c) - Group C building height                  -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-026" sequence="15"
                    description="Change height limit from 42m to 50m for Group C sprinklered buildings">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect2.art48.sent1.clause3"/>
@@ -349,12 +349,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 16: Update clause 3.2.2.51.(1)(c)                        -->
         <!-- Clarify rooftop enclosure exclusion with reference to 3.2.1.1.(1)  -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-027" sequence="16"
                    description="Update Article 3.2.2.51.(1)(c) to clarify rooftop enclosure exclusion with reference to Sentence 3.2.1.1.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect2.art51.sent1.clause3"/>
@@ -366,12 +366,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 17: Change height limit from 42m to 50m                 -->
         <!-- Article 3.2.2.57.(1)(c) - Group D building height                  -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-028" sequence="17"
                    description="Change height limit from 42m to 50m for Group D sprinklered buildings">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect2.art57.sent1.clause3"/>
@@ -383,12 +383,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 18: Update clause 3.2.2.60.(1)(c)                        -->
         <!-- Clarify rooftop enclosure exclusion with reference to 3.2.1.1.(1)  -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-029" sequence="18"
                    description="Update Article 3.2.2.60.(1)(c) to clarify rooftop enclosure exclusion with reference to Sentence 3.2.1.1.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect2.art60.sent1.clause3"/>
@@ -400,12 +400,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 19: Add Notes to Table 3.2.3.7. Title                    -->
         <!-- Modify table title to add three notes for cladding requirements    -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-030" sequence="19"
                    description="Add three notes to Table 3.2.3.7. title for cladding requirements">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect3.art7.table1"/>
@@ -421,12 +421,12 @@
                 </element-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 20: Change reference from National Fire Code to BC Fire Code -->
         <!-- Article 3.2.3.21.(1) - Outdoor storage and process equipment       -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-031" sequence="20"
                    description="Change reference from National Fire Code to British Columbia Fire Code in Article 3.2.3.21.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect3.art21.sent1"/>
@@ -437,12 +437,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 21: Change fire alarm requirement trigger                -->
         <!-- Article 3.2.4.1.(1) - Fire alarm required when sprinklers required -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-032" sequence="21"
                    description="Change fire alarm system requirement from 'installed' to 'required by this Part' in Article 3.2.4.1.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect4.art1.sent1"/>
@@ -453,12 +453,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 22: Clarify daycare facility type in clause (f)          -->
         <!-- Article 3.2.4.1.(4)(f) - Add "for children" to daycare facility    -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-033" sequence="22"
                    description="Add 'for children' to clarify daycare facility type in Article 3.2.4.1.(4)(f)">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect4.art1.sent4.clause6"/>
@@ -470,12 +470,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 23: Add exception reference in clause (b)                -->
         <!-- Article 3.2.4.15.(1)(b) - Add reference to Sentence 3.2.4.8.(2)    -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-034" sequence="23"
                    description="Add exception reference to Sentence 3.2.4.8.(2) in Article 3.2.4.15.(1)(b)">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect4.art15.sent1.clause2"/>
@@ -487,12 +487,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 24: Expand manual station requirements                   -->
         <!-- Article 3.2.4.16.(1) - Split clause (b) and add clause (c)         -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-035" sequence="24"
                    description="Expand manual station requirements to distinguish required exits from other exit facilities in Article 3.2.4.16.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect4.art16.sent1"/>
@@ -512,12 +512,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 25: Add roof occupancy audibility requirements           -->
         <!-- Article 3.2.4.18.(1) - Add "throughout any occupancy on a roof"    -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-036" sequence="25"
                    description="Add roof occupancy audibility requirements to Article 3.2.4.18.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect4.art18.sent1"/>
@@ -534,12 +534,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 26: Update language for hearing accessibility            -->
         <!-- Article 3.2.4.19.(1)(a) - Change to person-first language          -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-037" sequence="26"
                    description="Update language from 'hearing impairment' to 'deaf or hard of hearing' in Article 3.2.4.19.(1)(a)">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect4.art19.sent1.clause1"/>
@@ -551,11 +551,11 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 27a: Add Sentence 3.2.4.19.(4) for visible signal devices -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-038a" sequence="27"
                    description="Add new Sentence (4) for visible signal device requirements in dwelling units">
             <target type="position"
@@ -600,11 +600,11 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 27b: Add Sentence 3.2.4.19.(5) for visible signal devices -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-038b" sequence="28"
                    description="Add new Sentence (5) for visible signal device requirements with fire alarm system">
             <target type="position"
@@ -625,11 +625,11 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 27c: Add Sentence 3.2.4.19.(6) for visible signal devices -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-038c" sequence="29"
                    description="Add new Sentence (6) for visible signal device requirements without fire alarm system">
             <target type="position"
@@ -659,11 +659,11 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 27d: Add Sentence 3.2.4.19.(7) for adaptable dwelling units -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-038d" sequence="30"
                    description="Add new Sentence (7) for adaptable dwelling unit outlet box requirements">
             <target type="position"
@@ -696,12 +696,12 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 28: Add visible signal device requirement for care occupancies -->
         <!-- Article 3.2.4.20.(17) - New sentence for care occupancies          -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-039" sequence="31"
                    description="Add new Sentence (17) requiring visible signal devices in care occupancies without 2-stage fire alarm systems">
             <target type="position"
@@ -716,12 +716,12 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 29: Expand visible signal device scope during voice transmission -->
         <!-- Article 3.2.4.22.(6) - Add references to Article 3.2.4.20. and Section 3.8. -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-040" sequence="32"
                    description="Expand scope of visible signal devices that must continue during voice transmission to include Article 3.2.4.20. and Section 3.8.">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect4.art22.sent6"/>
@@ -732,12 +732,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 30: Add deemed-to-comply provision for water supply      -->
         <!-- Article 3.2.5.7.(2) - New sentence for sprinkler/standpipe systems -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-041" sequence="33"
                    description="Add new Sentence (2) providing deemed-to-comply provision for buildings with sprinkler or standpipe systems">
             <target type="position"
@@ -752,12 +752,12 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 31: Update NFPA 13R applicability for Group C buildings  -->
         <!-- Article 3.2.5.12.(2)(a) - Change to Group C major occupancy        -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-042" sequence="34"
                    description="Change NFPA 13R applicability from 'residential occupancy' to 'Group C major occupancy containing no other major occupancies'">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect5.art12.sent2.clause1"/>
@@ -775,12 +775,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 32: Add fast response sprinkler requirement              -->
         <!-- Article 3.2.5.12.(10) - New sentence for residential/care/treatment/detention -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-043" sequence="35"
                    description="Add new Sentence (10) requiring fast response sprinklers in residential, care, treatment and detention occupancies">
             <target type="position"
@@ -795,12 +795,12 @@
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 33: Simplify portable fire extinguisher requirements     -->
         <!-- Article 3.2.5.16.(1) - Reference BC Fire Code directly             -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-044" sequence="36"
                    description="Simplify portable fire extinguisher requirements to reference BC Fire Code directly">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect5.art16.sent1"/>
@@ -811,12 +811,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 34: Change elevator telephone requirement reference      -->
         <!-- Article 3.2.6.7.(2)(j) - Reference Safety Standards Act            -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-045" sequence="37"
                    description="Change elevator telephone requirement reference from ASME A17.1 to Safety Standards Act and pursuant regulations">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect6.art7.sent2.clause10"/>
@@ -828,12 +828,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 35: Add accessible path of travel to lighting requirements -->
         <!-- Article 3.2.7.1.(1) - Add reference to Section 3.8.                -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-046" sequence="38"
                    description="Add accessible path of travel required by Section 3.8. to minimum lighting requirements">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect7.art1.sent1"/>
@@ -844,12 +844,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 36: Update clause (j) for daycare facilities             -->
         <!-- Article 3.2.7.3.(1)(j) - Change to daycare facilities              -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-047" sequence="39"
                    description="Change clause (j) from commercial kitchens to daycare facilities in emergency lighting requirements">
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect7.art3.sent1.clause11"/>
@@ -861,12 +861,12 @@
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 37: Change "each suite" to "a suite"                     -->
         <!-- Article 3.3.1.1.(1) - Update suite reference                       -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-048" sequence="40" 
                    description="Change 'each suite' to 'a suite' in Article 3.3.1.1.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art1.sent1"/>
@@ -874,30 +874,30 @@
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>Except as permitted by <ref type="internal"
-                             target="nbc.divB.part3.sect3.subsect1.art1.sent2"
-                             display-type="short"
-                             pretext="Sentences"/>
-                        <ref type="internal"
-                             target="nbc.divB.part3.sect3.subsect1.art1.sent3"
-                             display-type="short"
-                             pretext="and"/>, a <ref type="term" target="t">suite</ref> in other than <ref type="term" target="bn-nd-pr">business and personal services occupancies </ref> shall be separated from adjoining <ref type="term" target="t">suites</ref> by
-a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="term" target="fr-rtnc-"> fire-resistance rating</ref> not less than <measurement units="metric">1 h</measurement>. (See also <ref type="internal"
-                             target="nbc.divB.part3.sect3.subsect3"
-                             display-type="long"/> for <ref type="term" target="ca-cc">care</ref>, <ref type="term" target="trtm">treatment</ref> or <ref type="term" target="dtnt-cc">detention occupancies</ref>, <ref type="internal"
-                             target="nbc.divB.part3.sect3.subsect4.art2"
-                             display-type="long"/> for <ref type="term" target="rdntl-cc"> residential occupancies</ref>, and <ref type="internal"
-                             target="nbc.divB.part3.sect1.subsect8.art7"
-                             display-type="long"/> for <ref type="term" target="fr-dmpr">fire dampers</ref>.)</text>
+                                                              target="nbc.divB.part3.sect3.subsect1.art1.sent2"
+                                                              display-type="short"
+                                                              pretext="Sentences"/>
+                            <ref type="internal"
+                                 target="nbc.divB.part3.sect3.subsect1.art1.sent3"
+                                 display-type="short"
+                                 pretext="and"/>, a <ref type="term" target="t">suite</ref> in other than <ref type="term" target="bn-nd-pr">business and personal services occupancies </ref> shall be separated from adjoining <ref type="term" target="t">suites</ref> by
+                            a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="term" target="fr-rtnc-"> fire-resistance rating</ref> not less than <measurement units="metric">1 h</measurement>. (See also <ref type="internal"
+                                                                                                                                                                                                                                            target="nbc.divB.part3.sect3.subsect3"
+                                                                                                                                                                                                                                            display-type="long"/> for <ref type="term" target="ca-cc">care</ref>, <ref type="term" target="trtm">treatment</ref> or <ref type="term" target="dtnt-cc">detention occupancies</ref>, <ref type="internal"
+                                                                                                                                                                                                                        target="nbc.divB.part3.sect3.subsect4.art2"
+                                                                                                                                                                                                                        display-type="long"/> for <ref type="term" target="rdntl-cc"> residential occupancies</ref>, and <ref type="internal"
+                                                                                                                                  target="nbc.divB.part3.sect1.subsect8.art7"
+                                                                                                                                  display-type="long"/> for <ref type="term" target="fr-dmpr">fire dampers</ref>.)</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 38: Add exemption for business and personal services     -->
         <!-- Article 3.3.1.1.(4) - No fire separation required between suites   -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-049" sequence="41"
                    description="Add new Sentence (4) exempting business and personal services occupancy suites from fire separation requirements">
             <target type="position"
@@ -912,12 +912,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 39: Change reference to British Columbia Fire Code       -->
         <!-- Article 3.3.1.2.(1)(b) - Hazardous substances regulations          -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-050" sequence="42"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.1.2.(1)(b)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art2.sent1.clause2"/>
@@ -929,12 +929,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 40: Replace Article 3.3.1.3. Means of Egress            -->
         <!-- Complete restructure with BC-specific requirements                 -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-051" sequence="43"
                    description="Replace Article 3.3.1.3. with BC-specific means of egress requirements including roof occupancies and dwelling units">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art3"/>
@@ -942,7 +942,7 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 <new-content source="bc">
                     <article xml:id="nbc.divB.part3.sect3.subsect1.art3" number="3">
                         <title>Means of Egress</title>
-
+                        
                         <sentence xml:id="nbc.divB.part3.sect3.subsect1.art3.sent1" number="1">                            <text><ref type="term" target="cc-t-xt">Access to exit</ref> within <ref type="term" target="flr-r">floor areas</ref> shall conform to <ref type="internal" target="nbc.divB.part3.sect3.subsect2" display-type="long" pretext="Subsections"/><ref type="internal" target="nbc.divB.part3.sect3.subsect5" display-type="long" pretext="to"/>, in addition to the requirements of this Subsection.</text>
                         </sentence>
                         <sentence xml:id="nbc.divB.part3.sect3.subsect1.art3.sent2" number="2">                            <text>If a podium, terrace, platform or contained open space is provided, egress requirements shall conform to the appropriate requirements of <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art5.sent1" display-type="long"/> for rooms and <ref type="term" target="t">suites</ref>.</text>
@@ -1000,12 +1000,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 41: Update Article 3.3.1.7. title                       -->
         <!-- Change "Barrier-Free" to "Accessible"                             -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-052" sequence="44"
                    description="Update Article 3.3.1.7. title from 'Barrier-Free Path of Travel' to 'Accessible Path of Travel'">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art7"/>
@@ -1018,12 +1018,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 42: Update Article 3.3.1.7.(1) opening text             -->
         <!-- Remove "above or below first storey" and change to "accessible"   -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-053" sequence="45"
                    description="Update Article 3.3.1.7.(1) to remove 'above or below first storey' restriction and change 'barrier-free' to 'accessible'">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art7.sent1"/>
@@ -1035,12 +1035,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 43: Update Article 3.3.1.7.(1)(b)(i)                    -->
         <!-- Change "physical disabilities" to "disabilities"                   -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-054" sequence="46"
                    description="Update Article 3.3.1.7.(1)(b)(i) to change 'persons with physical disabilities' to 'persons with disabilities'">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art7.sent1.clause2.subclause1"/>
@@ -1052,12 +1052,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 44: Update Article 3.3.1.7.(1)(c)                       -->
         <!-- Change to "accessible entrance that complies with"                 -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-055" sequence="47"
                    description="Update Article 3.3.1.7.(1)(c) to change 'barrier-free entrance required by' to 'accessible entrance that complies with'">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art7.sent1.clause3"/>
@@ -1069,12 +1069,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 45: Update Article 3.3.1.7.(1)(d)                       -->
         <!-- Add "accessible" before "exterior exit"                            -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-056" sequence="48"
                    description="Update Article 3.3.1.7.(1)(d) to add 'accessible' before 'exterior exit'">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art7.sent1.clause4"/>
@@ -1086,12 +1086,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 46: Update Article 3.3.1.7.(1)(e)                       -->
         <!-- Add reference to Subsection 3.8.3. for ramp requirements          -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-057" sequence="49"
                    description="Update Article 3.3.1.7.(1)(e) to add reference to Subsection 3.8.3. for ramp conformance">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art7.sent1.clause5"/>
@@ -1103,18 +1103,18 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 47: REMOVED - bc-053 already adds the note reference   -->
         <!-- The note "(See Note A-3.3.1.7.(1).)" was included in bc-053's     -->
         <!-- element-replace of the <text> element, making this redundant.    -->
         <!-- ================================================================== -->
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 48: Replace Article 3.3.1.7.(4)                         -->
         <!-- Update balcony requirements with BC-specific dimensions            -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-059" sequence="51"
                    description="Replace Article 3.3.1.7.(4) with BC-specific balcony requirements">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art7.sent4"/>
@@ -1134,12 +1134,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 49: Add new Sentence 3.3.1.7.(5)                        -->
         <!-- Horizontal exit provision for zone requirements                    -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-060" sequence="52"
                    description="Add new Sentence (5) for horizontal exit provision in zone requirements">
             <target type="position"
@@ -1154,12 +1154,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 50: Change reference to British Columbia Fire Code      -->
         <!-- Article 3.3.1.10.(1) - Aisles requirements                        -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-061" sequence="53"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.1.10.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art10.sent1"/>
@@ -1170,12 +1170,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 51: Update Article 3.3.1.13.(1)(d)                      -->
         <!-- Add beveling requirement for door thresholds                       -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-062" sequence="54"
                    description="Add beveling requirement for door thresholds higher than 6mm in Article 3.3.1.13.(1)(d)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect1.art13.sent1.clause4"/>
@@ -1193,12 +1193,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 52: Change reference to British Columbia Fire Code      -->
         <!-- Article 3.3.2.3.(1) - Non-fixed Seating                           -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-063" sequence="55"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.2.3.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect2.art3.sent1"/>
@@ -1210,12 +1210,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 53: Change reference to British Columbia Fire Code      -->
         <!-- Article 3.3.2.16.(1) - Storage Rooms for flammable/combustible liquids -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-064" sequence="56"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.2.16.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect2.art16.sent1"/>
@@ -1227,12 +1227,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 54: Add new Article 3.3.2.18.                            -->
         <!-- Daycare Facilities for Children under 30 Months                    -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-065" sequence="57"
                    description="Add new Article 3.3.2.18. for daycare facilities for children under 30 months">
             <target type="position"
@@ -1243,7 +1243,7 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 <new-content source="bc">
                     <article xml:id="nbc.divB.part3.sect3.subsect2.art18" number="18">
                         <title>Daycare Facilities for Children under 30 Months</title>
-
+                        
                         <sentence xml:id="nbc.divB.part3.sect3.subsect2.art18.sent1" number="1">
                             <text>A daycare facility for children where children under 30 months are accommodated shall be located (See <ref type="internal" target="nbc.divB.part3.sect9.appnote18" display-type="short"/>.)</text>
                             <clause xml:id="nbc.divB.part3.sect3.subsect2.art18.sent1.clause1" letter="a">
@@ -1253,7 +1253,7 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                                 <text>not more than 1 <ref type="term" target="tr">storey</ref> above or below a <ref type="term" target="tr">storey</ref> with an <ref type="term" target="xt">exit</ref> that opens directly to the exterior of the <ref type="term" target="bldng">building</ref> at ground level.</text>
                             </clause>
                         </sentence>
-
+                        
                         <sentence xml:id="nbc.divB.part3.sect3.subsect2.art18.sent2" number="2">
                             <text>A fire alarm system shall be installed in a <ref type="term" target="bldng">building</ref> that contains a daycare facility described in <ref type="internal" target="nbc.divB.part3.sect3.subsect2.art18.sent1" display-type="short"/> if</text>
                             <clause xml:id="nbc.divB.part3.sect3.subsect2.art18.sent2.clause1" letter="a">
@@ -1263,7 +1263,7 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                                 <text>the daycare facility shares an interior <ref type="term" target="mn-f-gr">means of egress</ref>.</text>
                             </clause>
                         </sentence>
-
+                        
                         <sentence xml:id="nbc.divB.part3.sect3.subsect2.art18.sent3" number="3">
                             <text>If a fire alarm system is required by <ref type="internal" target="nbc.divB.part3.sect3.subsect2.art18.sent2" display-type="short"/> or <ref type="internal" target="nbc.divB.part3.sect2.subsect4" display-type="long"/> to be installed in a daycare facility described in <ref type="internal" target="nbc.divB.part3.sect3.subsect2.art18.sent1" display-type="short"/>, <ref type="term" target="mk-dtctr">smoke detectors</ref> shall be installed in</text>
                             <clause xml:id="nbc.divB.part3.sect3.subsect2.art18.sent3.clause1" letter="a">
@@ -1273,7 +1273,7 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                                 <text>each corridor serving as part of a <ref type="term" target="mn-f-gr">means of egress</ref> from the daycare facility.</text>
                             </clause>
                         </sentence>
-
+                        
                         <sentence xml:id="nbc.divB.part3.sect3.subsect2.art18.sent4" number="4">
                             <text>If a fire alarm system is not installed in a daycare facility described in <ref type="internal" target="nbc.divB.part3.sect3.subsect2.art18.sent1" display-type="short"/>, <ref type="term" target="mk-lrm">smoke alarms</ref> conforming to <ref type="standard" target="ulcs531"/> shall be installed in</text>
                             <clause xml:id="nbc.divB.part3.sect3.subsect2.art18.sent4.clause1" letter="a">
@@ -1283,7 +1283,7 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                                 <text>each corridor serving as part of a <ref type="term" target="mn-f-gr">means of egress</ref> from the daycare facility.</text>
                             </clause>
                         </sentence>
-
+                        
                         <sentence xml:id="nbc.divB.part3.sect3.subsect2.art18.sent5" number="5">
                             <text><ref type="term" target="mk-lrm">Smoke alarms</ref> required by <ref type="internal" target="nbc.divB.part3.sect3.subsect2.art18.sent4" display-type="short"/> shall</text>
                             <clause xml:id="nbc.divB.part3.sect3.subsect2.art18.sent5.clause1" letter="a">
@@ -1297,12 +1297,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 55: Update Article 3.3.4.3.(4)                           -->
         <!-- Change to BC Fire Code and add single-family dwelling exception    -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-066" sequence="58"
                    description="Replace National Fire Code reference with British Columbia Fire Code and add exception for single-family dwelling units in Article 3.3.4.3.(4)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect4.art3.sent4"/>
@@ -1314,12 +1314,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 56: Add new Article 3.3.4.9.                             -->
         <!-- Resistance to Forced Entry                                         -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-067" sequence="59"
                    description="Add new Article 3.3.4.9. for resistance to forced entry requirements in dwelling units">
             <target type="position"
@@ -1330,7 +1330,7 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 <new-content source="bc">
                     <article xml:id="nbc.divB.part3.sect3.subsect4.art9" number="9">
                         <title>Resistance to Forced Entry</title>
-
+                        
                         <sentence xml:id="nbc.divB.part3.sect3.subsect4.art9.sent1" number="1">
                             <text><ref type="term" target="dwllng-n">Dwelling units</ref> shall conform to <ref type="internal" target="nbc.divBV2.part9.sect9.subsect7.art2.art1" display-type="long"/> and <ref type="internal" target="nbc.divBV2.part9.sect9.subsect7.art5" display-type="long"/>.</text>
                         </sentence>
@@ -1338,12 +1338,12 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 57: Change reference to British Columbia Fire Code      -->
         <!-- Article 3.3.5.2.(1)(b) - Fire Extinguishing Systems                -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-068" sequence="60"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.5.2.(1)(b)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect5.art2.sent1.clause2"/>
@@ -1351,19 +1351,19 @@ a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="te
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>the British Columbia Fire Code,
-in the absence of the regulations or bylaws referred to in <ref type="internal"
-                                target="nbc.divB.part3.sect3.subsect5.art2.sent1.clause1"
-                                display-type="short"/>.</text>
+                            in the absence of the regulations or bylaws referred to in <ref type="internal"
+                                                                                            target="nbc.divB.part3.sect3.subsect5.art2.sent1.clause1"
+                                                                                            display-type="short"/>.</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 58: Change reference to British Columbia Fire Code      -->
         <!-- Article 3.3.6.1.(1) - Application for hazardous areas              -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-069" sequence="61"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.6.1.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art1.sent1"/>
@@ -1371,21 +1371,21 @@ in the absence of the regulations or bylaws referred to in <ref type="internal"
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>This Subsection applies to design and fire protection requirements
-for <ref type="term" target="bldng">buildings</ref> or parts thereof used for
-the storage, handling, use and processing of <ref type="term" target="dngr-gd">dangerous goods</ref>, including <ref type="term" target="flmmbl-l">flammable
-liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, in quantities in excess of those identified in Table 3.2.7.1. of Division B of the British Columbia Fire Code. (See <ref type="internal"
-                             target="nbc.divB.part3.sect9.appnote144"
-                             display-type="short"/>.)</text>
+                            for <ref type="term" target="bldng">buildings</ref> or parts thereof used for
+                            the storage, handling, use and processing of <ref type="term" target="dngr-gd">dangerous goods</ref>, including <ref type="term" target="flmmbl-l">flammable
+                                liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, in quantities in excess of those identified in Table 3.2.7.1. of Division B of the British Columbia Fire Code. (See <ref type="internal"
+                                                                                                                                                                                                                                     target="nbc.divB.part3.sect9.appnote144"
+                                                                                                                                                                                                                                     display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 59: Change reference to Safety Standards Act            -->
         <!-- Article 3.3.6.2.(4) - Hazardous locations wiring requirements      -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-070" sequence="62"
                    description="Replace CSA C22.1 reference with Safety Standards Act and pursuant regulations in Article 3.3.6.2.(4)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art2.sent4"/>
@@ -1397,12 +1397,12 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 60: Change reference to British Columbia Fire Code      -->
         <!-- Article 3.3.6.3.(1) - Indoor storage of flammable gases            -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-071" sequence="63"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.6.3.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art3.sent1"/>
@@ -1432,12 +1432,12 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 61: Change reference to British Columbia Fire Code      -->
         <!-- Article 3.3.6.3.(2) - Indoor storage of ammonia and toxic/oxidizing gases -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-072" sequence="64"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.6.3.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art3.sent2"/>
@@ -1467,12 +1467,12 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 62: Change reference to British Columbia Fire Code      -->
         <!-- Article 3.3.6.4.(1) - Storage rooms for flammable/combustible liquids -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-073" sequence="65"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.6.4.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art4.sent1"/>
@@ -1484,12 +1484,12 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 63: Change reference to British Columbia Fire Code      -->
         <!-- Article 3.3.6.4.(2) - Dispensing rooms explosion protection        -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-074" sequence="66"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.6.4.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art4.sent2"/>
@@ -1501,12 +1501,12 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 64: Change reference to British Columbia Fire Code      -->
         <!-- Article 3.3.6.6.(1) - Ammonium nitrate storage requirements        -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-075" sequence="67"
                    description="Replace National Fire Code reference with British Columbia Fire Code in Article 3.3.6.6.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect3.subsect6.art6.sent1"/>
@@ -1518,12 +1518,12 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 76: Replace sentence with rooftop enclosure exit requirements -->
         <!-- Article 3.4.2.1.(5) - Exits from rooftop enclosures                -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-076" sequence="68"
                    description="Replace sentence with BC-specific rooftop enclosure exit requirements in Article 3.4.2.1.(5)">
             <target type="canonical-id" id="nbc.divB.part3.sect4.subsect2.art1.sent5"/>
@@ -1535,12 +1535,12 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 77: Update E001 symbol description                       -->
         <!-- Article 3.4.5.1.(2)(c)(i) - Exit sign symbol E001                  -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-077" sequence="69"
                    description="Update E001 symbol description in Article 3.4.5.1.(2)(c)(i)">
             <target type="canonical-id" id="nbc.divB.part3.sect4.subsect5.art1.sent2.clause3.subclause1"/>
@@ -1553,12 +1553,12 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 78: Update E002 symbol description                       -->
         <!-- Article 3.4.5.1.(2)(c)(ii) - Exit sign symbol E002                 -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-078" sequence="70"
                    description="Update E002 symbol description in Article 3.4.5.1.(2)(c)(ii)">
             <target type="canonical-id" id="nbc.divB.part3.sect4.subsect5.art1.sent2.clause3.subclause2"/>
@@ -1571,12 +1571,12 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 79: Update E005 symbol description                       -->
         <!-- Article 3.4.5.1.(2)(c)(iii) - Exit sign symbol E005                -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-079" sequence="71"
                    description="Update E005 symbol description in Article 3.4.5.1.(2)(c)(iii)">
             <target type="canonical-id" id="nbc.divB.part3.sect4.subsect5.art1.sent2.clause3.subclause3"/>
@@ -1589,12 +1589,12 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 80: Update E006 symbol description                       -->
         <!-- Article 3.4.5.1.(2)(c)(iv) - Exit sign symbol E006                 -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-080" sequence="72"
                    description="Update E006 symbol description in Article 3.4.5.1.(2)(c)(iv)">
             <target type="canonical-id" id="nbc.divB.part3.sect4.subsect5.art1.sent2.clause3.subclause4"/>
@@ -1607,16 +1607,16 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- TODO: BC references Note A-3.4.5.1.(3) which doesn't exist in NBC canonical XML.
              The note reference appears after Sentence 3, Clause b in BC. Added as plain text for now.
              May need to verify if this should map to an existing appnote or if BC has a new note. -->
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 81: Add note reference to internally illuminated signs   -->
         <!-- Article 3.4.5.1.(3) - Note reference after sentence                -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-081" sequence="73"
                    description="Add note reference text after Article 3.4.5.1.(3)">
             <target type="canonical-id" id="nbc.divB.part3.sect4.subsect5.art1.sent3"/>
@@ -1634,12 +1634,12 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 82: Add visibility requirement for slip resistance       -->
         <!-- Article 3.4.6.1.(1)(b) - Pattern visibility from both directions   -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-082" sequence="74"
                    description="Add visibility requirement in Article 3.4.6.1.(1)(b)">
             <target type="canonical-id" id="nbc.divB.part3.sect4.subsect6.art1.sent1.clause2"/>
@@ -1647,18 +1647,18 @@ liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, 
                 <text-change xpath-within-target="text()">
                     <find-replace>
                         <find>if accessible to the public, shall have either a colour contrast
-or a distinctive pattern to demarcate</find>
+                            or a distinctive pattern to demarcate</find>
                         <replace>if accessible to the public, shall have either a colour contrast or a distinctive pattern, readily visible from both directions of travel, to demarcate</replace>
                     </find-replace>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 83: Add curb ramp design requirement                     -->
         <!-- Article 3.4.6.7.(3) - New sentence for curb ramp design            -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-083" sequence="75"
                    description="Add curb ramp design requirement in Article 3.4.6.7.(3)">
             <target type="position"
@@ -1673,12 +1673,12 @@ or a distinctive pattern to demarcate</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 84: Replace sentence with clause structure for risers    -->
         <!-- Article 3.4.6.8.(2) - Riser height and rakeback requirements       -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-084" sequence="76"
                    description="Replace sentence with clause structure in Article 3.4.6.8.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect4.subsect6.art8.sent2"/>
@@ -1696,12 +1696,12 @@ or a distinctive pattern to demarcate</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 85: Replace elevator design requirements                 -->
         <!-- Article 3.5.2.1.(1) - Safety Standards Act reference               -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-085" sequence="77"
                    description="Replace elevator design requirements in Article 3.5.2.1.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect5.subsect2.art1.sent1"/>
@@ -1713,12 +1713,12 @@ or a distinctive pattern to demarcate</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 86: Replace elevator inspection requirements             -->
         <!-- Article 3.5.2.1.(2) - Safety Standards Act reference               -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-086" sequence="78"
                    description="Replace elevator inspection requirements in Article 3.5.2.1.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect5.subsect2.art1.sent2"/>
@@ -1730,12 +1730,12 @@ or a distinctive pattern to demarcate</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 87: Replace electrical wiring requirements               -->
         <!-- Article 3.6.1.2.(1) - Safety Standards Act reference               -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-087" sequence="79"
                    description="Replace electrical wiring requirements in Article 3.6.1.2.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect6.subsect1.art2.sent1"/>
@@ -1747,12 +1747,12 @@ or a distinctive pattern to demarcate</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 88: Replace electrical equipment vault requirements      -->
         <!-- Article 3.6.2.7.(1) - Safety Standards Act reference               -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-088" sequence="80"
                    description="Replace electrical equipment vault requirements in Article 3.6.2.7.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect6.subsect2.art7.sent1"/>
@@ -1764,12 +1764,12 @@ or a distinctive pattern to demarcate</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 89: Update daycare terminology in water closet requirements -->
         <!-- Article 3.7.2.2.(5) - Daycare centres to daycare facilities        -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-089" sequence="81"
                    description="Update daycare terminology in Article 3.7.2.2.(5)">
             <target type="canonical-id" id="nbc.divB.part3.sect7.subsect2.art2.sent5"/>
@@ -1777,19 +1777,19 @@ or a distinctive pattern to demarcate</find>
                 <text-change xpath-within-target="text()">
                     <find-replace>
                         <find>The number of water closets required for primary schools and
-daycare centres shall be at least one for each 30 males and one for
-each 25 females.</find>
+                            daycare centres shall be at least one for each 30 males and one for
+                            each 25 females.</find>
                         <replace>The number of water closets required for primary schools and daycare facilities, including daycare facilities for children shall be at least one for each 30 males and one for each 25 females.</replace>
                     </find-replace>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 94: Update bathtub clear floor space requirements        -->
         <!-- Article 3.7.2.8.(1)(a) - Water closet and lavatory encroachment   -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-094" sequence="82"
                    description="Update bathtub clear floor space requirements in Article 3.7.2.8.(1)(a)">
             <target type="canonical-id" id="nbc.divB.part3.sect7.subsect2.art8.sent1.clause1"/>
@@ -1801,12 +1801,12 @@ each 25 females.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 90: Change National Fire Code to British Columbia Fire Code -->
         <!-- Article 3.7.3.1.(1)(b) - Medical gas piping requirements           -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-090" sequence="83"
                    description="Change National Fire Code to British Columbia Fire Code in Article 3.7.3.1.(1)(b)">
             <target type="canonical-id" id="nbc.divB.part3.sect7.subsect3.art1.sent1.clause2"/>
@@ -1818,12 +1818,12 @@ each 25 females.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 91: Replace barrier-free with accessible terminology     -->
         <!-- Article 3.8.1.1.(1) - Scope description                            -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-091" sequence="84"
                    description="Replace barrier-free with accessible terminology in Article 3.8.1.1.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect1.art1.sent1"/>
@@ -1835,12 +1835,12 @@ each 25 females.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 92: Replace barrier-free with accessible terminology     -->
         <!-- Article 3.8.1.1.(2) - Buildings and facilities requirements        -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-092" sequence="85"
                    description="Replace barrier-free with accessible terminology in Article 3.8.1.1.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect1.art1.sent2"/>
@@ -1852,12 +1852,12 @@ each 25 females.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 95: Add exception reference to accessibility requirements -->
         <!-- Article 3.8.2.1.(1) - Add reference to Sentence (2)                -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-095" sequence="86"
                    description="Add exception reference in Article 3.8.2.1.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art1.sent1"/>
@@ -1870,12 +1870,12 @@ each 25 females.</find>
                 </text-change>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 96: Add new sentence for building compliance             -->
         <!-- Article 3.8.2.1.(2) - New sentence about Clause (1)(a) buildings  -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-096" sequence="87"
                    description="Add new sentence in Article 3.8.2.1.(2)">
             <target type="position"
@@ -1890,12 +1890,12 @@ each 25 females.</find>
                 </new-content>
             </insert>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 97: Replace barrier-free with accessible terminology     -->
         <!-- Article 3.8.2.2.(1) - Entrance accessibility requirements          -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-097" sequence="88"
                    description="Replace barrier-free with accessible terminology in Article 3.8.2.2.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art2.sent1"/>
@@ -1907,12 +1907,12 @@ each 25 females.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 98: Replace barrier-free with accessible terminology     -->
         <!-- Article 3.8.2.2.(2) - Entrance design requirements                 -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-098" sequence="89"
                    description="Replace barrier-free with accessible terminology in Article 3.8.2.2.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art2.sent2"/>
@@ -1924,12 +1924,12 @@ each 25 females.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 99: Replace barrier-free with accessible terminology     -->
         <!-- Article 3.8.2.2.(3) - Multiple doorway requirements                -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-099" sequence="90"
                    description="Replace barrier-free with accessible terminology in Article 3.8.2.2.(3)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art2.sent3"/>
@@ -1941,12 +1941,12 @@ each 25 females.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 100: Replace barrier-free with accessible terminology    -->
         <!-- Article 3.8.2.2.(4) - Walkway and bridge requirements              -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-100" sequence="91"
                    description="Replace barrier-free with accessible terminology in Article 3.8.2.2.(4)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art2.sent4"/>
@@ -1958,12 +1958,12 @@ each 25 females.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 93: Change article title from barrier-free to access     -->
         <!-- Article 3.8.2.3 - Title change                                      -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-093" sequence="92"
                    description="Change article title in Article 3.8.2.3">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art3"/>
@@ -1975,12 +1975,12 @@ each 25 females.</find>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 101: Replace barrier-free with accessible terminology    -->
         <!-- Article 3.8.2.3.(1) - Path of travel requirements                   -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-101" sequence="93"
                    description="Replace barrier-free with accessible terminology in Article 3.8.2.3.(1)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art3.sent1"/>
@@ -1992,12 +1992,12 @@ each 25 females.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 102: Complete replacement of sentence with BC structure  -->
         <!-- Article 3.8.2.3.(2) - Access exceptions with correct clause order -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-102" sequence="94"
                    description="Complete replacement of sentence with BC structure in Article 3.8.2.3.(2)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art3.sent2"/>
@@ -2072,12 +2072,12 @@ each 25 females.</find>
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 103: Replace barrier-free with accessible terminology    -->
         <!-- Article 3.8.2.3.(6) - Adaptable seats path of travel               -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-103" sequence="95"
                    description="Replace barrier-free with accessible terminology in Article 3.8.2.3.(6)">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art3.sent6"/>
@@ -2085,22 +2085,22 @@ each 25 females.</find>
                 <element-replace element="text">
                     <new-content source="bc">
                         <text>At least 5% of the adaptable seats required by <ref type="internal"
-                             target="nbc.divB.part3.sect8.subsect2.art3.sent5"
-                             display-type="short"/> but no more than 20 adaptable seats
-shall adjoin an <ref type="term" target="brrr-fr">accessible</ref> path of travel.
-(See <ref type="internal"
-                             target="nbc.divB.part3.sect9.appnote187"
-                             display-type="short"/>.)</text>
+                                                                                      target="nbc.divB.part3.sect8.subsect2.art3.sent5"
+                                                                                      display-type="short"/> but no more than 20 adaptable seats
+                            shall adjoin an <ref type="term" target="brrr-fr">accessible</ref> path of travel.
+                            (See <ref type="internal"
+                                      target="nbc.divB.part3.sect9.appnote187"
+                                      display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
             </modify>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 104: Add ramp and replace barrier-free terminology      -->
         <!-- Article 3.8.2.4 - Access to Storeys Served by Escalators         -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-104" sequence="96"
                    description="Add ramp and replace barrier-free with accessible terminology in Article 3.8.2.4">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art4"/>
@@ -2118,12 +2118,12 @@ shall adjoin an <ref type="term" target="brrr-fr">accessible</ref> path of trave
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- Amendment 105: Update title and add common ancillary buildings    -->
         <!-- Article 3.8.2.5 - Paths of Travel to Building Entrances          -->
         <!-- ================================================================== -->
-
+        
         <amendment id="bc-105" sequence="97"
                    description="Update title, replace barrier-free with accessible terminology, and add common ancillary buildings clause in Article 3.8.2.5">
             <target type="canonical-id" id="nbc.divB.part3.sect8.subsect2.art5"/>
@@ -2156,11 +2156,11 @@ shall adjoin an <ref type="term" target="brrr-fr">accessible</ref> path of trave
                 </new-content>
             </replace>
         </amendment>
-
+        
         <!-- ================================================================== -->
         <!-- END OF AMENDMENTS                                                  -->
         <!-- ================================================================== -->
         <!-- Continuing on bc-part-3-amendments.xml -->
-
+        
     </amendments>
 </bc-overlay>
