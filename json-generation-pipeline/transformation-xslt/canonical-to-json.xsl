@@ -521,15 +521,37 @@
                 <fn:boolean key="revised">true</fn:boolean>
             </xsl:if>
             
-            <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
-            
-            <xsl:if test="see-also">
-                <fn:string key="see_also"><xsl:apply-templates select="see-also" mode="rich-text-json"/></fn:string>
-            </xsl:if>
-            
-            <fn:array key="content">
-                <xsl:apply-templates select="sentence | table | figure" mode="json"/>
-            </fn:array>
+            <!-- Extract title, see-also, and content from revision-history if present, otherwise from direct children -->
+            <xsl:choose>
+                <xsl:when test="@revised='yes' and revision-history">
+                    <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                    <!-- For title: prefer current revision's title if it exists, else original -->
+                    <xsl:variable name="title-node" select="if ($current-revision/content/title) then $current-revision/content else revision-history/original"/>
+                    <!-- For content: prefer current revision if it has sentences/tables/figures, else original -->
+                    <xsl:variable name="content-node" select="if ($current-revision/content/(sentence|table|figure)) then $current-revision/content else revision-history/original"/>
+                    
+                    <fn:string key="title"><xsl:apply-templates select="$title-node/title" mode="text-only"/></fn:string>
+                    
+                    <xsl:if test="$content-node/see-also">
+                        <fn:string key="see_also"><xsl:apply-templates select="$content-node/see-also" mode="rich-text-json"/></fn:string>
+                    </xsl:if>
+                    
+                    <fn:array key="content">
+                        <xsl:apply-templates select="$content-node/sentence | $content-node/table | $content-node/figure" mode="json"/>
+                    </fn:array>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
+                    
+                    <xsl:if test="see-also">
+                        <fn:string key="see_also"><xsl:apply-templates select="see-also" mode="rich-text-json"/></fn:string>
+                    </xsl:if>
+                    
+                    <fn:array key="content">
+                        <xsl:apply-templates select="sentence | table | figure" mode="json"/>
+                    </fn:array>
+                </xsl:otherwise>
+            </xsl:choose>
             
             <!-- Revision history if present -->
             <xsl:if test="@revised = 'yes' and revision-history">
@@ -1088,7 +1110,35 @@
                             <xsl:if test="@xml:id">
                                 <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
                             </xsl:if>
-                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                            
+                            <!-- Deleted flag -->
+                            <xsl:if test="@deleted = 'yes'">
+                                <fn:boolean key="deleted">true</fn:boolean>
+                            </xsl:if>
+                            
+                            <!-- Revised flag -->
+                            <xsl:if test="@revised = 'yes'">
+                                <fn:boolean key="revised">true</fn:boolean>
+                            </xsl:if>
+                            
+                            <!-- Extract content from revision-history if present, otherwise from direct content -->
+                            <xsl:choose>
+                                <xsl:when test="@revised='yes' and revision-history">
+                                    <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                                    <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                                    <fn:string key="content"><xsl:apply-templates select="$content-node/node()" mode="rich-text-json"/></fn:string>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                            
+                            <!-- Revision history if present -->
+                            <xsl:if test="@revised = 'yes' and revision-history">
+                                <fn:array key="revisions">
+                                    <xsl:call-template name="build-paragraph-revisions"/>
+                                </fn:array>
+                            </xsl:if>
                         </fn:map>
                     </xsl:for-each>
                 </fn:array>

@@ -27,13 +27,15 @@
     <!-- ================================================================== -->
     
     <!-- Function to find JSON node by ID -->
+    <!-- Returns first match only (IDs may appear in both main content and revisions array) -->
     <xsl:function name="bc:find-json-node" as="element()?">
         <xsl:param name="json-root"/>
         <xsl:param name="target-id" as="xs:string?"/>
         
         <xsl:choose>
             <xsl:when test="exists($target-id) and string-length($target-id) > 0">
-                <xsl:sequence select="$json-root//*[@key='id'][string(.) = $target-id]/parent::*"/>
+                <!-- Return first match - prefer main content over revisions -->
+                <xsl:sequence select="($json-root//*[@key='id'][string(.) = $target-id]/parent::*)[1]"/>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:sequence select="()"/>
@@ -330,8 +332,14 @@
                                     <xsl:when test="$json-node">
                                         <xsl:variable name="has-revised-flag" select="bc:has-property($json-node, 'revised')"/>
                                         <xsl:variable name="has-revisions" select="bc:has-property($json-node, 'revisions')"/>
+                                        <!-- Check if element is deleted - deleted elements are allowed to have empty content -->
+                                        <xsl:variable name="is-deleted" select="bc:has-property($json-node, 'deleted') and bc:get-property($json-node, 'deleted') = 'true'"/>
                                         <xsl:variable name="has-content" as="xs:boolean">
                                             <xsl:choose>
+                                                <!-- Deleted elements are allowed to have empty content -->
+                                                <xsl:when test="$is-deleted">
+                                                    <xsl:sequence select="true()"/>
+                                                </xsl:when>
                                                 <xsl:when test="$element-type = 'row'">
                                                     <xsl:sequence select="bc:has-property($json-node, 'cells')"/>
                                                 </xsl:when>
@@ -415,9 +423,16 @@
                                         <xsl:variable name="has-revised-flag" select="bc:has-property($json-node, 'revised')"/>
                                         <xsl:variable name="has-revisions" select="bc:has-property($json-node, 'revisions')"/>
                                         
+                                        <!-- Check if element is deleted - deleted elements are allowed to have empty content -->
+                                        <xsl:variable name="is-deleted" select="bc:has-property($json-node, 'deleted') and bc:get-property($json-node, 'deleted') = 'true'"/>
+                                        
                                         <!-- Check content based on element type -->
                                         <xsl:variable name="has-content" as="xs:boolean">
                                             <xsl:choose>
+                                                <!-- Deleted elements are allowed to have empty content -->
+                                                <xsl:when test="$is-deleted">
+                                                    <xsl:sequence select="true()"/>
+                                                </xsl:when>
                                                 <!-- For rows, check cells array -->
                                                 <xsl:when test="$element-type = 'row'">
                                                     <xsl:sequence select="bc:has-property($json-node, 'cells')"/>
