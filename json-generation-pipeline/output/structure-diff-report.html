@@ -1,0 +1,3467 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>XML vs JSON Structure Difference Report</title>
+      <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+                    h1 { color: #003366; border-bottom: 3px solid #003366; padding-bottom: 10px; }
+                    h2 { color: #0066cc; margin-top: 30px; }
+                    h3 { color: #0088cc; margin-top: 20px; }
+                    .summary { background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
+                    table { width: 100%; border-collapse: collapse; background-color: white; margin-bottom: 20px; }
+                    th { background-color: #003366; color: white; padding: 12px; text-align: left; }
+                    td { padding: 10px 12px; border-bottom: 1px solid #ddd; }
+                    tr:hover { background-color: #f5f5f5; }
+                    tr.warning { background-color: #fff3cd; }
+                    tr.success { background-color: #d4edda; }
+                    .id-cell { font-family: monospace; font-size: 12px; }
+                    .section { background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 20px; }
+                    .count-box { display: inline-block; padding: 5px 10px; border-radius: 3px; margin: 5px; font-weight: bold; }
+                    .missing { background-color: #f8d7da; color: #721c24; }
+                    .extra { background-color: #cce5ff; color: #004085; }
+                    .timestamp { color: #666; font-size: 12px; margin-top: 20px; }
+                </style>
+   </head>
+   <body>
+      <h1>XML vs JSON Structure Difference Report</h1>
+      <div class="summary">
+         <h2>Summary</h2>
+         <table>
+            <thead>
+               <tr>
+                  <th>Element Type</th>
+                  <th>XML Count</th>
+                  <th>JSON Count</th>
+                  <th>Missing in JSON</th>
+                  <th>Extra in JSON</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="warning">
+                  <td><strong>article</strong></td>
+                  <td>2101</td>
+                  <td>2112</td>
+                  <td><span class="count-box missing">0</span></td>
+                  <td><span class="count-box extra">9</span></td>
+               </tr>
+               <tr class="warning">
+                  <td><strong>sentence</strong></td>
+                  <td>5240</td>
+                  <td>5376</td>
+                  <td><span class="count-box missing">0</span></td>
+                  <td><span class="count-box extra">83</span></td>
+               </tr>
+               <tr class="warning">
+                  <td><strong>table</strong></td>
+                  <td>343</td>
+                  <td>284</td>
+                  <td><span class="count-box missing">61</span></td>
+                  <td><span class="count-box extra">2</span></td>
+               </tr>
+               <tr class="warning">
+                  <td><strong>figure</strong></td>
+                  <td>375</td>
+                  <td>194</td>
+                  <td><span class="count-box missing">181</span></td>
+                  <td><span class="count-box extra">0</span></td>
+               </tr>
+               <tr class="warning">
+                  <td><strong>application-note</strong></td>
+                  <td>1314</td>
+                  <td>824</td>
+                  <td><span class="count-box missing">490</span></td>
+                  <td><span class="count-box extra">0</span></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="section">
+         <h2>article Details</h2>
+         <h3>Extra in JSON (9)</h3>
+         <table>
+            <thead>
+               <tr>
+                  <th>#</th>
+                  <th>Element ID</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>1</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1</td>
+               </tr>
+               <tr>
+                  <td>2</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1</td>
+               </tr>
+               <tr>
+                  <td>3</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art2</td>
+               </tr>
+               <tr>
+                  <td>4</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art2</td>
+               </tr>
+               <tr>
+                  <td>5</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3</td>
+               </tr>
+               <tr>
+                  <td>6</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3</td>
+               </tr>
+               <tr>
+                  <td>7</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art4</td>
+               </tr>
+               <tr>
+                  <td>8</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art4</td>
+               </tr>
+               <tr>
+                  <td>9</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="section">
+         <h2>sentence Details</h2>
+         <h3>Extra in JSON (83)</h3>
+         <table>
+            <thead>
+               <tr>
+                  <th>#</th>
+                  <th>Element ID</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>1</td>
+                  <td class="id-cell">nbc.divA.part1.sect3.subsect3.art2.sent2</td>
+               </tr>
+               <tr>
+                  <td>2</td>
+                  <td class="id-cell">nbc.divA.part1.sect3.subsect3.art3.sent2</td>
+               </tr>
+               <tr>
+                  <td>3</td>
+                  <td class="id-cell">nbc.divA.part1.sect3.subsect3.art3.sent2</td>
+               </tr>
+               <tr>
+                  <td>4</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art4.sent7</td>
+               </tr>
+               <tr>
+                  <td>5</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art4.sent7</td>
+               </tr>
+               <tr>
+                  <td>6</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art4.sent8</td>
+               </tr>
+               <tr>
+                  <td>7</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art4.sent8</td>
+               </tr>
+               <tr>
+                  <td>8</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art4.sent9</td>
+               </tr>
+               <tr>
+                  <td>9</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art4.sent9</td>
+               </tr>
+               <tr>
+                  <td>10</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art6.sent3</td>
+               </tr>
+               <tr>
+                  <td>11</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art6.sent3</td>
+               </tr>
+               <tr>
+                  <td>12</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art6.sent4</td>
+               </tr>
+               <tr>
+                  <td>13</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art6.sent4</td>
+               </tr>
+               <tr>
+                  <td>14</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art6.sent5</td>
+               </tr>
+               <tr>
+                  <td>15</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art6.sent5</td>
+               </tr>
+               <tr>
+                  <td>16</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art6.sent6</td>
+               </tr>
+               <tr>
+                  <td>17</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art6.sent6</td>
+               </tr>
+               <tr>
+                  <td>18</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art9.sent8</td>
+               </tr>
+               <tr>
+                  <td>19</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art9.sent8</td>
+               </tr>
+               <tr>
+                  <td>20</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art9.sent9</td>
+               </tr>
+               <tr>
+                  <td>21</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art9.sent9</td>
+               </tr>
+               <tr>
+                  <td>22</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1.sent1</td>
+               </tr>
+               <tr>
+                  <td>23</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1.sent1</td>
+               </tr>
+               <tr>
+                  <td>24</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1.sent2</td>
+               </tr>
+               <tr>
+                  <td>25</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1.sent2</td>
+               </tr>
+               <tr>
+                  <td>26</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1.sent3</td>
+               </tr>
+               <tr>
+                  <td>27</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1.sent3</td>
+               </tr>
+               <tr>
+                  <td>28</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1.sent4</td>
+               </tr>
+               <tr>
+                  <td>29</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1.sent4</td>
+               </tr>
+               <tr>
+                  <td>30</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1.sent5</td>
+               </tr>
+               <tr>
+                  <td>31</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art1.sent5</td>
+               </tr>
+               <tr>
+                  <td>32</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art2.sent1</td>
+               </tr>
+               <tr>
+                  <td>33</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art2.sent1</td>
+               </tr>
+               <tr>
+                  <td>34</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art2.sent2</td>
+               </tr>
+               <tr>
+                  <td>35</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art2.sent2</td>
+               </tr>
+               <tr>
+                  <td>36</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art2.sent3</td>
+               </tr>
+               <tr>
+                  <td>37</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art2.sent3</td>
+               </tr>
+               <tr>
+                  <td>38</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art2.sent4</td>
+               </tr>
+               <tr>
+                  <td>39</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art2.sent4</td>
+               </tr>
+               <tr>
+                  <td>40</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3.sent1</td>
+               </tr>
+               <tr>
+                  <td>41</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3.sent1</td>
+               </tr>
+               <tr>
+                  <td>42</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3.sent2</td>
+               </tr>
+               <tr>
+                  <td>43</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3.sent2</td>
+               </tr>
+               <tr>
+                  <td>44</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3.sent3</td>
+               </tr>
+               <tr>
+                  <td>45</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3.sent3</td>
+               </tr>
+               <tr>
+                  <td>46</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3.sent4</td>
+               </tr>
+               <tr>
+                  <td>47</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3.sent4</td>
+               </tr>
+               <tr>
+                  <td>48</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3.sent5</td>
+               </tr>
+               <tr>
+                  <td>49</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art3.sent5</td>
+               </tr>
+               <tr>
+                  <td>50</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art4.sent1</td>
+               </tr>
+               <tr>
+                  <td>51</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art4.sent1</td>
+               </tr>
+               <tr>
+                  <td>52</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art4.sent2</td>
+               </tr>
+               <tr>
+                  <td>53</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art4.sent2</td>
+               </tr>
+               <tr>
+                  <td>54</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art4.sent3</td>
+               </tr>
+               <tr>
+                  <td>55</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10.art4.sent3</td>
+               </tr>
+               <tr>
+                  <td>56</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art6.sent2</td>
+               </tr>
+               <tr>
+                  <td>57</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art6.sent2</td>
+               </tr>
+               <tr>
+                  <td>58</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art7.sent3</td>
+               </tr>
+               <tr>
+                  <td>59</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art7.sent3</td>
+               </tr>
+               <tr>
+                  <td>60</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent1</td>
+               </tr>
+               <tr>
+                  <td>61</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent1</td>
+               </tr>
+               <tr>
+                  <td>62</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent2</td>
+               </tr>
+               <tr>
+                  <td>63</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent2</td>
+               </tr>
+               <tr>
+                  <td>64</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent3</td>
+               </tr>
+               <tr>
+                  <td>65</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent3</td>
+               </tr>
+               <tr>
+                  <td>66</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent4</td>
+               </tr>
+               <tr>
+                  <td>67</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent4</td>
+               </tr>
+               <tr>
+                  <td>68</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent5</td>
+               </tr>
+               <tr>
+                  <td>69</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent5</td>
+               </tr>
+               <tr>
+                  <td>70</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent6</td>
+               </tr>
+               <tr>
+                  <td>71</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent6</td>
+               </tr>
+               <tr>
+                  <td>72</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent7</td>
+               </tr>
+               <tr>
+                  <td>73</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.sent7</td>
+               </tr>
+               <tr>
+                  <td>74</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect4.art1.sent7</td>
+               </tr>
+               <tr>
+                  <td>75</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect4.art1.sent3</td>
+               </tr>
+               <tr>
+                  <td>76</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art1.sent3</td>
+               </tr>
+               <tr>
+                  <td>77</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art2.sent4</td>
+               </tr>
+               <tr>
+                  <td>78</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art6.sent2</td>
+               </tr>
+               <tr>
+                  <td>79</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art6.sent2</td>
+               </tr>
+               <tr>
+                  <td>80</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art6.sent3</td>
+               </tr>
+               <tr>
+                  <td>81</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art6.sent3</td>
+               </tr>
+               <tr>
+                  <td>82</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect1.subsect1.art1.sent3</td>
+               </tr>
+               <tr>
+                  <td>83</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect10.subsect1.art3.sent12</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="section">
+         <h2>table Details</h2>
+         <h3>Missing in JSON (61)</h3>
+         <table>
+            <thead>
+               <tr>
+                  <th>#</th>
+                  <th>Element ID</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>1</td>
+                  <td class="id-cell">nbc.2020.committees.table1</td>
+               </tr>
+               <tr>
+                  <td>2</td>
+                  <td class="id-cell">nbc.2020.committees.table10</td>
+               </tr>
+               <tr>
+                  <td>3</td>
+                  <td class="id-cell">nbc.2020.committees.table11</td>
+               </tr>
+               <tr>
+                  <td>4</td>
+                  <td class="id-cell">nbc.2020.committees.table12</td>
+               </tr>
+               <tr>
+                  <td>5</td>
+                  <td class="id-cell">nbc.2020.committees.table2</td>
+               </tr>
+               <tr>
+                  <td>6</td>
+                  <td class="id-cell">nbc.2020.committees.table3</td>
+               </tr>
+               <tr>
+                  <td>7</td>
+                  <td class="id-cell">nbc.2020.committees.table4</td>
+               </tr>
+               <tr>
+                  <td>8</td>
+                  <td class="id-cell">nbc.2020.committees.table5</td>
+               </tr>
+               <tr>
+                  <td>9</td>
+                  <td class="id-cell">nbc.2020.committees.table6</td>
+               </tr>
+               <tr>
+                  <td>10</td>
+                  <td class="id-cell">nbc.2020.committees.table7</td>
+               </tr>
+               <tr>
+                  <td>11</td>
+                  <td class="id-cell">nbc.2020.committees.table8</td>
+               </tr>
+               <tr>
+                  <td>12</td>
+                  <td class="id-cell">nbc.2020.committees.table9</td>
+               </tr>
+               <tr>
+                  <td>13</td>
+                  <td class="id-cell">nbc.2020.preface.div6.sub1.table1</td>
+               </tr>
+               <tr>
+                  <td>14</td>
+                  <td class="id-cell">nbc.2020.vol1.conversions.table1</td>
+               </tr>
+               <tr>
+                  <td>15</td>
+                  <td class="id-cell">nbc.2020.vol2.conversions.table1</td>
+               </tr>
+               <tr>
+                  <td>16</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote7.div5.table1</td>
+               </tr>
+               <tr>
+                  <td>17</td>
+                  <td class="id-cell">nbc.divB.appendixC.table1</td>
+               </tr>
+               <tr>
+                  <td>18</td>
+                  <td class="id-cell">nbc.divB.appendixC.table2</td>
+               </tr>
+               <tr>
+                  <td>19</td>
+                  <td class="id-cell">nbc.divB.appendixC.table3</td>
+               </tr>
+               <tr>
+                  <td>20</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect1.subsect1.article2.table1</td>
+               </tr>
+               <tr>
+                  <td>21</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect1.subsect7.article1.table1</td>
+               </tr>
+               <tr>
+                  <td>22</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect1.article1.table1</td>
+               </tr>
+               <tr>
+                  <td>23</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect10.article1.table1</td>
+               </tr>
+               <tr>
+                  <td>24</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect2.article1.table1</td>
+               </tr>
+               <tr>
+                  <td>25</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect2.article1.table2</td>
+               </tr>
+               <tr>
+                  <td>26</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect2.article3.table1</td>
+               </tr>
+               <tr>
+                  <td>27</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect2.article3.table2</td>
+               </tr>
+               <tr>
+                  <td>28</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect3.article12.table1</td>
+               </tr>
+               <tr>
+                  <td>29</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect3.article4.table1</td>
+               </tr>
+               <tr>
+                  <td>30</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect3.article4.table2</td>
+               </tr>
+               <tr>
+                  <td>31</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect3.article4.table3</td>
+               </tr>
+               <tr>
+                  <td>32</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect3.article4.table4</td>
+               </tr>
+               <tr>
+                  <td>33</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect3.article4.table5</td>
+               </tr>
+               <tr>
+                  <td>34</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect3.article4.table6</td>
+               </tr>
+               <tr>
+                  <td>35</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect3.article4.table7</td>
+               </tr>
+               <tr>
+                  <td>36</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect3.article5.table1</td>
+               </tr>
+               <tr>
+                  <td>37</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect3.article9.table1</td>
+               </tr>
+               <tr>
+                  <td>38</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect4.article1.table1</td>
+               </tr>
+               <tr>
+                  <td>39</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect4.article3.table1</td>
+               </tr>
+               <tr>
+                  <td>40</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect5.article1.table1</td>
+               </tr>
+               <tr>
+                  <td>41</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article1.table1</td>
+               </tr>
+               <tr>
+                  <td>42</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article1.table2</td>
+               </tr>
+               <tr>
+                  <td>43</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article1.table3</td>
+               </tr>
+               <tr>
+                  <td>44</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article1.table4</td>
+               </tr>
+               <tr>
+                  <td>45</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article1.table5</td>
+               </tr>
+               <tr>
+                  <td>46</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article1.table6</td>
+               </tr>
+               <tr>
+                  <td>47</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article6.table1</td>
+               </tr>
+               <tr>
+                  <td>48</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article6.table2</td>
+               </tr>
+               <tr>
+                  <td>49</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect7.article1.table1</td>
+               </tr>
+               <tr>
+                  <td>50</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect8.article2.table1</td>
+               </tr>
+               <tr>
+                  <td>51</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect9.article1.table1</td>
+               </tr>
+               <tr>
+                  <td>52</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect3.subsect1.article1.table1</td>
+               </tr>
+               <tr>
+                  <td>53</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect3.subsect1.article1.table2</td>
+               </tr>
+               <tr>
+                  <td>54</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect6.subsect1.article1.table1</td>
+               </tr>
+               <tr>
+                  <td>55</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote107.table1</td>
+               </tr>
+               <tr>
+                  <td>56</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote107.table2</td>
+               </tr>
+               <tr>
+                  <td>57</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote107.table3</td>
+               </tr>
+               <tr>
+                  <td>58</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote107.table4</td>
+               </tr>
+               <tr>
+                  <td>59</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote42.table1</td>
+               </tr>
+               <tr>
+                  <td>60</td>
+                  <td class="id-cell">nbc.divBV2.part9.appnote199a.tableA</td>
+               </tr>
+               <tr>
+                  <td>61</td>
+                  <td class="id-cell">nbc.divBV2.part9.appnote199a.tableB</td>
+               </tr>
+            </tbody>
+         </table>
+         <h3>Extra in JSON (2)</h3>
+         <table>
+            <thead>
+               <tr>
+                  <th>#</th>
+                  <th>Element ID</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>1</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.table1</td>
+               </tr>
+               <tr>
+                  <td>2</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93.table1</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="section">
+         <h2>figure Details</h2>
+         <h3>Missing in JSON (181)</h3>
+         <table>
+            <thead>
+               <tr>
+                  <th>#</th>
+                  <th>Element ID</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>1</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote2b.figure1</td>
+               </tr>
+               <tr>
+                  <td>2</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote6.figure1</td>
+               </tr>
+               <tr>
+                  <td>3</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote7.div16.figure1</td>
+               </tr>
+               <tr>
+                  <td>4</td>
+                  <td class="id-cell">nbc.divB.appendixC.figure1</td>
+               </tr>
+               <tr>
+                  <td>5</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect11.article3.figure1</td>
+               </tr>
+               <tr>
+                  <td>6</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect11.article3.figure2</td>
+               </tr>
+               <tr>
+                  <td>7</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect11.article4.figure1</td>
+               </tr>
+               <tr>
+                  <td>8</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect3.article10.figure1</td>
+               </tr>
+               <tr>
+                  <td>9</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article1.figure1</td>
+               </tr>
+               <tr>
+                  <td>10</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article1.figure2</td>
+               </tr>
+               <tr>
+                  <td>11</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article4.figure1</td>
+               </tr>
+               <tr>
+                  <td>12</td>
+                  <td class="id-cell">nbc.divB.appendixD.appsect2.subsect6.article4.figure2</td>
+               </tr>
+               <tr>
+                  <td>13</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.appnote4.figure1</td>
+               </tr>
+               <tr>
+                  <td>14</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote104.figure1</td>
+               </tr>
+               <tr>
+                  <td>15</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote104.figure2</td>
+               </tr>
+               <tr>
+                  <td>16</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote105.figure1</td>
+               </tr>
+               <tr>
+                  <td>17</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote105.figure2</td>
+               </tr>
+               <tr>
+                  <td>18</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote105.figure3</td>
+               </tr>
+               <tr>
+                  <td>19</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote137.figure1</td>
+               </tr>
+               <tr>
+                  <td>20</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote155.figure1</td>
+               </tr>
+               <tr>
+                  <td>21</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote157.figure1</td>
+               </tr>
+               <tr>
+                  <td>22</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote157.figure2</td>
+               </tr>
+               <tr>
+                  <td>23</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote160.figure1</td>
+               </tr>
+               <tr>
+                  <td>24</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote176.figure1</td>
+               </tr>
+               <tr>
+                  <td>25</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote177.figure1</td>
+               </tr>
+               <tr>
+                  <td>26</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote178.figure1</td>
+               </tr>
+               <tr>
+                  <td>27</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote187.figure1</td>
+               </tr>
+               <tr>
+                  <td>28</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote189.figure1</td>
+               </tr>
+               <tr>
+                  <td>29</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote194.figure1</td>
+               </tr>
+               <tr>
+                  <td>30</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote201.figure1</td>
+               </tr>
+               <tr>
+                  <td>31</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote203.figure1</td>
+               </tr>
+               <tr>
+                  <td>32</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote205.figure1</td>
+               </tr>
+               <tr>
+                  <td>33</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote207.figure1</td>
+               </tr>
+               <tr>
+                  <td>34</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote208.figure1</td>
+               </tr>
+               <tr>
+                  <td>35</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote210.figure1</td>
+               </tr>
+               <tr>
+                  <td>36</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote213.figure1</td>
+               </tr>
+               <tr>
+                  <td>37</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote214.figure1</td>
+               </tr>
+               <tr>
+                  <td>38</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote217.figure1</td>
+               </tr>
+               <tr>
+                  <td>39</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote218.figure1</td>
+               </tr>
+               <tr>
+                  <td>40</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote218.figure2</td>
+               </tr>
+               <tr>
+                  <td>41</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote219.figure1</td>
+               </tr>
+               <tr>
+                  <td>42</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote221.figure1</td>
+               </tr>
+               <tr>
+                  <td>43</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote222.figure1</td>
+               </tr>
+               <tr>
+                  <td>44</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote222.figure2</td>
+               </tr>
+               <tr>
+                  <td>45</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote224.figure1</td>
+               </tr>
+               <tr>
+                  <td>46</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote224.figure2</td>
+               </tr>
+               <tr>
+                  <td>47</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote226.figure1</td>
+               </tr>
+               <tr>
+                  <td>48</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote229.figure1</td>
+               </tr>
+               <tr>
+                  <td>49</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote232.figure1</td>
+               </tr>
+               <tr>
+                  <td>50</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote232.figure2</td>
+               </tr>
+               <tr>
+                  <td>51</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote232.figure3</td>
+               </tr>
+               <tr>
+                  <td>52</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote236.figure1</td>
+               </tr>
+               <tr>
+                  <td>53</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote237.figure1</td>
+               </tr>
+               <tr>
+                  <td>54</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote45.figure1</td>
+               </tr>
+               <tr>
+                  <td>55</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote57.figure1</td>
+               </tr>
+               <tr>
+                  <td>56</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote62.figure1</td>
+               </tr>
+               <tr>
+                  <td>57</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote62.figure2</td>
+               </tr>
+               <tr>
+                  <td>58</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote62.figure3</td>
+               </tr>
+               <tr>
+                  <td>59</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote77.figure1</td>
+               </tr>
+               <tr>
+                  <td>60</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote77.figure2</td>
+               </tr>
+               <tr>
+                  <td>61</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote36.figure1</td>
+               </tr>
+               <tr>
+                  <td>62</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote40.figure1</td>
+               </tr>
+               <tr>
+                  <td>63</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote42.figure1</td>
+               </tr>
+               <tr>
+                  <td>64</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote44.figure1</td>
+               </tr>
+               <tr>
+                  <td>65</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote45.figure1</td>
+               </tr>
+               <tr>
+                  <td>66</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote46.figure1</td>
+               </tr>
+               <tr>
+                  <td>67</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote47.figure1</td>
+               </tr>
+               <tr>
+                  <td>68</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote48.figure1</td>
+               </tr>
+               <tr>
+                  <td>69</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote49.figure1</td>
+               </tr>
+               <tr>
+                  <td>70</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote50.figure1</td>
+               </tr>
+               <tr>
+                  <td>71</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote55.figure1</td>
+               </tr>
+               <tr>
+                  <td>72</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote56.figure1</td>
+               </tr>
+               <tr>
+                  <td>73</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote58.figure1</td>
+               </tr>
+               <tr>
+                  <td>74</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote59.figure1</td>
+               </tr>
+               <tr>
+                  <td>75</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote59.figure2</td>
+               </tr>
+               <tr>
+                  <td>76</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote59.figure3</td>
+               </tr>
+               <tr>
+                  <td>77</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote60.figure1</td>
+               </tr>
+               <tr>
+                  <td>78</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote63.figure1</td>
+               </tr>
+               <tr>
+                  <td>79</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote15.figure1</td>
+               </tr>
+               <tr>
+                  <td>80</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure01</td>
+               </tr>
+               <tr>
+                  <td>81</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure02</td>
+               </tr>
+               <tr>
+                  <td>82</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure03</td>
+               </tr>
+               <tr>
+                  <td>83</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure04</td>
+               </tr>
+               <tr>
+                  <td>84</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure05</td>
+               </tr>
+               <tr>
+                  <td>85</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure06</td>
+               </tr>
+               <tr>
+                  <td>86</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure07</td>
+               </tr>
+               <tr>
+                  <td>87</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure08</td>
+               </tr>
+               <tr>
+                  <td>88</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure09</td>
+               </tr>
+               <tr>
+                  <td>89</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure10</td>
+               </tr>
+               <tr>
+                  <td>90</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure11</td>
+               </tr>
+               <tr>
+                  <td>91</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure12</td>
+               </tr>
+               <tr>
+                  <td>92</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure13</td>
+               </tr>
+               <tr>
+                  <td>93</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure14</td>
+               </tr>
+               <tr>
+                  <td>94</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure15</td>
+               </tr>
+               <tr>
+                  <td>95</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure16</td>
+               </tr>
+               <tr>
+                  <td>96</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure16</td>
+               </tr>
+               <tr>
+                  <td>97</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure17</td>
+               </tr>
+               <tr>
+                  <td>98</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure18</td>
+               </tr>
+               <tr>
+                  <td>99</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure19</td>
+               </tr>
+               <tr>
+                  <td>100</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure20</td>
+               </tr>
+               <tr>
+                  <td>101</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure21</td>
+               </tr>
+               <tr>
+                  <td>102</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure21</td>
+               </tr>
+               <tr>
+                  <td>103</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure22</td>
+               </tr>
+               <tr>
+                  <td>104</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure23</td>
+               </tr>
+               <tr>
+                  <td>105</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure23</td>
+               </tr>
+               <tr>
+                  <td>106</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure23</td>
+               </tr>
+               <tr>
+                  <td>107</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure24</td>
+               </tr>
+               <tr>
+                  <td>108</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure24</td>
+               </tr>
+               <tr>
+                  <td>109</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure24</td>
+               </tr>
+               <tr>
+                  <td>110</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure25</td>
+               </tr>
+               <tr>
+                  <td>111</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure25</td>
+               </tr>
+               <tr>
+                  <td>112</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure25</td>
+               </tr>
+               <tr>
+                  <td>113</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure26</td>
+               </tr>
+               <tr>
+                  <td>114</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure26</td>
+               </tr>
+               <tr>
+                  <td>115</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure26</td>
+               </tr>
+               <tr>
+                  <td>116</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure27</td>
+               </tr>
+               <tr>
+                  <td>117</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure27</td>
+               </tr>
+               <tr>
+                  <td>118</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure27</td>
+               </tr>
+               <tr>
+                  <td>119</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure28</td>
+               </tr>
+               <tr>
+                  <td>120</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure28</td>
+               </tr>
+               <tr>
+                  <td>121</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure28</td>
+               </tr>
+               <tr>
+                  <td>122</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure29</td>
+               </tr>
+               <tr>
+                  <td>123</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure29</td>
+               </tr>
+               <tr>
+                  <td>124</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure29</td>
+               </tr>
+               <tr>
+                  <td>125</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure30</td>
+               </tr>
+               <tr>
+                  <td>126</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure30</td>
+               </tr>
+               <tr>
+                  <td>127</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure30</td>
+               </tr>
+               <tr>
+                  <td>128</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure31</td>
+               </tr>
+               <tr>
+                  <td>129</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure31</td>
+               </tr>
+               <tr>
+                  <td>130</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure31</td>
+               </tr>
+               <tr>
+                  <td>131</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure32</td>
+               </tr>
+               <tr>
+                  <td>132</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure32</td>
+               </tr>
+               <tr>
+                  <td>133</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure33</td>
+               </tr>
+               <tr>
+                  <td>134</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure33</td>
+               </tr>
+               <tr>
+                  <td>135</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure34</td>
+               </tr>
+               <tr>
+                  <td>136</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure34</td>
+               </tr>
+               <tr>
+                  <td>137</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure35</td>
+               </tr>
+               <tr>
+                  <td>138</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure35</td>
+               </tr>
+               <tr>
+                  <td>139</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure36</td>
+               </tr>
+               <tr>
+                  <td>140</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure36</td>
+               </tr>
+               <tr>
+                  <td>141</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure37</td>
+               </tr>
+               <tr>
+                  <td>142</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure37</td>
+               </tr>
+               <tr>
+                  <td>143</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure38</td>
+               </tr>
+               <tr>
+                  <td>144</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure38</td>
+               </tr>
+               <tr>
+                  <td>145</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure39</td>
+               </tr>
+               <tr>
+                  <td>146</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure39</td>
+               </tr>
+               <tr>
+                  <td>147</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure40</td>
+               </tr>
+               <tr>
+                  <td>148</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure40</td>
+               </tr>
+               <tr>
+                  <td>149</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure41</td>
+               </tr>
+               <tr>
+                  <td>150</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure42</td>
+               </tr>
+               <tr>
+                  <td>151</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure43</td>
+               </tr>
+               <tr>
+                  <td>152</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure44</td>
+               </tr>
+               <tr>
+                  <td>153</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure45</td>
+               </tr>
+               <tr>
+                  <td>154</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure46</td>
+               </tr>
+               <tr>
+                  <td>155</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure47</td>
+               </tr>
+               <tr>
+                  <td>156</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure48</td>
+               </tr>
+               <tr>
+                  <td>157</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure49</td>
+               </tr>
+               <tr>
+                  <td>158</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure50</td>
+               </tr>
+               <tr>
+                  <td>159</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure51</td>
+               </tr>
+               <tr>
+                  <td>160</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure52</td>
+               </tr>
+               <tr>
+                  <td>161</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure53</td>
+               </tr>
+               <tr>
+                  <td>162</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure54</td>
+               </tr>
+               <tr>
+                  <td>163</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure55</td>
+               </tr>
+               <tr>
+                  <td>164</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure56</td>
+               </tr>
+               <tr>
+                  <td>165</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure57</td>
+               </tr>
+               <tr>
+                  <td>166</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure58</td>
+               </tr>
+               <tr>
+                  <td>167</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure59</td>
+               </tr>
+               <tr>
+                  <td>168</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure60</td>
+               </tr>
+               <tr>
+                  <td>169</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure61</td>
+               </tr>
+               <tr>
+                  <td>170</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure62</td>
+               </tr>
+               <tr>
+                  <td>171</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure63</td>
+               </tr>
+               <tr>
+                  <td>172</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure64</td>
+               </tr>
+               <tr>
+                  <td>173</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure65</td>
+               </tr>
+               <tr>
+                  <td>174</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure66</td>
+               </tr>
+               <tr>
+                  <td>175</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure67</td>
+               </tr>
+               <tr>
+                  <td>176</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure68</td>
+               </tr>
+               <tr>
+                  <td>177</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure69</td>
+               </tr>
+               <tr>
+                  <td>178</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure70</td>
+               </tr>
+               <tr>
+                  <td>179</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure71</td>
+               </tr>
+               <tr>
+                  <td>180</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure72</td>
+               </tr>
+               <tr>
+                  <td>181</td>
+                  <td class="id-cell">nbc.divBV2.part9.figure8</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="section">
+         <h2>application-note Details</h2>
+         <h3>Missing in JSON (490)</h3>
+         <table>
+            <thead>
+               <tr>
+                  <th>#</th>
+                  <th>Element ID</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>1</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote1</td>
+               </tr>
+               <tr>
+                  <td>2</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote2</td>
+               </tr>
+               <tr>
+                  <td>3</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote2a</td>
+               </tr>
+               <tr>
+                  <td>4</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote2b</td>
+               </tr>
+               <tr>
+                  <td>5</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote2c</td>
+               </tr>
+               <tr>
+                  <td>6</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote3</td>
+               </tr>
+               <tr>
+                  <td>7</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote4</td>
+               </tr>
+               <tr>
+                  <td>8</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote4a</td>
+               </tr>
+               <tr>
+                  <td>9</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote5</td>
+               </tr>
+               <tr>
+                  <td>10</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote6</td>
+               </tr>
+               <tr>
+                  <td>11</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote7</td>
+               </tr>
+               <tr>
+                  <td>12</td>
+                  <td class="id-cell">nbc.divA.part1.sect5.appnote8</td>
+               </tr>
+               <tr>
+                  <td>13</td>
+                  <td class="id-cell">nbc.divA.part2.sect2.appnote1</td>
+               </tr>
+               <tr>
+                  <td>14</td>
+                  <td class="id-cell">nbc.divA.part2.sect2.appnote2</td>
+               </tr>
+               <tr>
+                  <td>15</td>
+                  <td class="id-cell">nbc.divA.part3.sect2.appnote1</td>
+               </tr>
+               <tr>
+                  <td>16</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.appnote1</td>
+               </tr>
+               <tr>
+                  <td>17</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.appnote2</td>
+               </tr>
+               <tr>
+                  <td>18</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.appnote3</td>
+               </tr>
+               <tr>
+                  <td>19</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.appnote4</td>
+               </tr>
+               <tr>
+                  <td>20</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote.a3.1.2.7</td>
+               </tr>
+               <tr>
+                  <td>21</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote.a3.1.2.8</td>
+               </tr>
+               <tr>
+                  <td>22</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote.a3.2.5.12.10</td>
+               </tr>
+               <tr>
+                  <td>23</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote.a3.3.1.3</td>
+               </tr>
+               <tr>
+                  <td>24</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote.a3.3.2.18</td>
+               </tr>
+               <tr>
+                  <td>25</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote.a3.4.5.1.3</td>
+               </tr>
+               <tr>
+                  <td>26</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote.a3.8.2.6.2</td>
+               </tr>
+               <tr>
+                  <td>27</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote1</td>
+               </tr>
+               <tr>
+                  <td>28</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote10</td>
+               </tr>
+               <tr>
+                  <td>29</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote100</td>
+               </tr>
+               <tr>
+                  <td>30</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote101</td>
+               </tr>
+               <tr>
+                  <td>31</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote102</td>
+               </tr>
+               <tr>
+                  <td>32</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote103</td>
+               </tr>
+               <tr>
+                  <td>33</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote104</td>
+               </tr>
+               <tr>
+                  <td>34</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote105</td>
+               </tr>
+               <tr>
+                  <td>35</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote106</td>
+               </tr>
+               <tr>
+                  <td>36</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote107</td>
+               </tr>
+               <tr>
+                  <td>37</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote108</td>
+               </tr>
+               <tr>
+                  <td>38</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote109</td>
+               </tr>
+               <tr>
+                  <td>39</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote11</td>
+               </tr>
+               <tr>
+                  <td>40</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote110</td>
+               </tr>
+               <tr>
+                  <td>41</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote111</td>
+               </tr>
+               <tr>
+                  <td>42</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote112</td>
+               </tr>
+               <tr>
+                  <td>43</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote113</td>
+               </tr>
+               <tr>
+                  <td>44</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote114</td>
+               </tr>
+               <tr>
+                  <td>45</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote115</td>
+               </tr>
+               <tr>
+                  <td>46</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote116</td>
+               </tr>
+               <tr>
+                  <td>47</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote117</td>
+               </tr>
+               <tr>
+                  <td>48</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote118</td>
+               </tr>
+               <tr>
+                  <td>49</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote119</td>
+               </tr>
+               <tr>
+                  <td>50</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote12</td>
+               </tr>
+               <tr>
+                  <td>51</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote120</td>
+               </tr>
+               <tr>
+                  <td>52</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote121</td>
+               </tr>
+               <tr>
+                  <td>53</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote122</td>
+               </tr>
+               <tr>
+                  <td>54</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote123</td>
+               </tr>
+               <tr>
+                  <td>55</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote124</td>
+               </tr>
+               <tr>
+                  <td>56</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote125</td>
+               </tr>
+               <tr>
+                  <td>57</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote126</td>
+               </tr>
+               <tr>
+                  <td>58</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote127</td>
+               </tr>
+               <tr>
+                  <td>59</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote128</td>
+               </tr>
+               <tr>
+                  <td>60</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote129</td>
+               </tr>
+               <tr>
+                  <td>61</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote13</td>
+               </tr>
+               <tr>
+                  <td>62</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote130</td>
+               </tr>
+               <tr>
+                  <td>63</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote131</td>
+               </tr>
+               <tr>
+                  <td>64</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote132</td>
+               </tr>
+               <tr>
+                  <td>65</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote133</td>
+               </tr>
+               <tr>
+                  <td>66</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote134</td>
+               </tr>
+               <tr>
+                  <td>67</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote135</td>
+               </tr>
+               <tr>
+                  <td>68</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote136</td>
+               </tr>
+               <tr>
+                  <td>69</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote137</td>
+               </tr>
+               <tr>
+                  <td>70</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote138</td>
+               </tr>
+               <tr>
+                  <td>71</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote139</td>
+               </tr>
+               <tr>
+                  <td>72</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote14</td>
+               </tr>
+               <tr>
+                  <td>73</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote140</td>
+               </tr>
+               <tr>
+                  <td>74</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote141</td>
+               </tr>
+               <tr>
+                  <td>75</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote142</td>
+               </tr>
+               <tr>
+                  <td>76</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote143</td>
+               </tr>
+               <tr>
+                  <td>77</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote144</td>
+               </tr>
+               <tr>
+                  <td>78</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote145</td>
+               </tr>
+               <tr>
+                  <td>79</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote146</td>
+               </tr>
+               <tr>
+                  <td>80</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote147</td>
+               </tr>
+               <tr>
+                  <td>81</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote148</td>
+               </tr>
+               <tr>
+                  <td>82</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote149</td>
+               </tr>
+               <tr>
+                  <td>83</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote15</td>
+               </tr>
+               <tr>
+                  <td>84</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote150</td>
+               </tr>
+               <tr>
+                  <td>85</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote151</td>
+               </tr>
+               <tr>
+                  <td>86</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote152</td>
+               </tr>
+               <tr>
+                  <td>87</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote153</td>
+               </tr>
+               <tr>
+                  <td>88</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote154</td>
+               </tr>
+               <tr>
+                  <td>89</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote155</td>
+               </tr>
+               <tr>
+                  <td>90</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote156</td>
+               </tr>
+               <tr>
+                  <td>91</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote157</td>
+               </tr>
+               <tr>
+                  <td>92</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote158</td>
+               </tr>
+               <tr>
+                  <td>93</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote159</td>
+               </tr>
+               <tr>
+                  <td>94</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote16</td>
+               </tr>
+               <tr>
+                  <td>95</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote160</td>
+               </tr>
+               <tr>
+                  <td>96</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote161</td>
+               </tr>
+               <tr>
+                  <td>97</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote162</td>
+               </tr>
+               <tr>
+                  <td>98</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote163</td>
+               </tr>
+               <tr>
+                  <td>99</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote164</td>
+               </tr>
+               <tr>
+                  <td>100</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote165</td>
+               </tr>
+               <tr>
+                  <td>101</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote166</td>
+               </tr>
+               <tr>
+                  <td>102</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote167</td>
+               </tr>
+               <tr>
+                  <td>103</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote168</td>
+               </tr>
+               <tr>
+                  <td>104</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote169</td>
+               </tr>
+               <tr>
+                  <td>105</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote17</td>
+               </tr>
+               <tr>
+                  <td>106</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote170</td>
+               </tr>
+               <tr>
+                  <td>107</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote171</td>
+               </tr>
+               <tr>
+                  <td>108</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote172</td>
+               </tr>
+               <tr>
+                  <td>109</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote173</td>
+               </tr>
+               <tr>
+                  <td>110</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote174</td>
+               </tr>
+               <tr>
+                  <td>111</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote175</td>
+               </tr>
+               <tr>
+                  <td>112</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote176</td>
+               </tr>
+               <tr>
+                  <td>113</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote177</td>
+               </tr>
+               <tr>
+                  <td>114</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote178</td>
+               </tr>
+               <tr>
+                  <td>115</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote179</td>
+               </tr>
+               <tr>
+                  <td>116</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote18</td>
+               </tr>
+               <tr>
+                  <td>117</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote180</td>
+               </tr>
+               <tr>
+                  <td>118</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote181</td>
+               </tr>
+               <tr>
+                  <td>119</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote182</td>
+               </tr>
+               <tr>
+                  <td>120</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote183</td>
+               </tr>
+               <tr>
+                  <td>121</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote184</td>
+               </tr>
+               <tr>
+                  <td>122</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote185</td>
+               </tr>
+               <tr>
+                  <td>123</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote186</td>
+               </tr>
+               <tr>
+                  <td>124</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote187</td>
+               </tr>
+               <tr>
+                  <td>125</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote188</td>
+               </tr>
+               <tr>
+                  <td>126</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote189</td>
+               </tr>
+               <tr>
+                  <td>127</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote19</td>
+               </tr>
+               <tr>
+                  <td>128</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote190</td>
+               </tr>
+               <tr>
+                  <td>129</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote191</td>
+               </tr>
+               <tr>
+                  <td>130</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote192</td>
+               </tr>
+               <tr>
+                  <td>131</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote193</td>
+               </tr>
+               <tr>
+                  <td>132</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote194</td>
+               </tr>
+               <tr>
+                  <td>133</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote195</td>
+               </tr>
+               <tr>
+                  <td>134</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote196</td>
+               </tr>
+               <tr>
+                  <td>135</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote197</td>
+               </tr>
+               <tr>
+                  <td>136</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote198</td>
+               </tr>
+               <tr>
+                  <td>137</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote199</td>
+               </tr>
+               <tr>
+                  <td>138</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote2</td>
+               </tr>
+               <tr>
+                  <td>139</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote20</td>
+               </tr>
+               <tr>
+                  <td>140</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote200</td>
+               </tr>
+               <tr>
+                  <td>141</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote201</td>
+               </tr>
+               <tr>
+                  <td>142</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote202</td>
+               </tr>
+               <tr>
+                  <td>143</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote203</td>
+               </tr>
+               <tr>
+                  <td>144</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote204</td>
+               </tr>
+               <tr>
+                  <td>145</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote205</td>
+               </tr>
+               <tr>
+                  <td>146</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote206</td>
+               </tr>
+               <tr>
+                  <td>147</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote207</td>
+               </tr>
+               <tr>
+                  <td>148</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote208</td>
+               </tr>
+               <tr>
+                  <td>149</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote209</td>
+               </tr>
+               <tr>
+                  <td>150</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote21</td>
+               </tr>
+               <tr>
+                  <td>151</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote210</td>
+               </tr>
+               <tr>
+                  <td>152</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote211</td>
+               </tr>
+               <tr>
+                  <td>153</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote212</td>
+               </tr>
+               <tr>
+                  <td>154</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote213</td>
+               </tr>
+               <tr>
+                  <td>155</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote214</td>
+               </tr>
+               <tr>
+                  <td>156</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote215</td>
+               </tr>
+               <tr>
+                  <td>157</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote216</td>
+               </tr>
+               <tr>
+                  <td>158</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote217</td>
+               </tr>
+               <tr>
+                  <td>159</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote218</td>
+               </tr>
+               <tr>
+                  <td>160</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote219</td>
+               </tr>
+               <tr>
+                  <td>161</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote22</td>
+               </tr>
+               <tr>
+                  <td>162</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote220</td>
+               </tr>
+               <tr>
+                  <td>163</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote221</td>
+               </tr>
+               <tr>
+                  <td>164</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote222</td>
+               </tr>
+               <tr>
+                  <td>165</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote223</td>
+               </tr>
+               <tr>
+                  <td>166</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote224</td>
+               </tr>
+               <tr>
+                  <td>167</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote225</td>
+               </tr>
+               <tr>
+                  <td>168</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote226</td>
+               </tr>
+               <tr>
+                  <td>169</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote227</td>
+               </tr>
+               <tr>
+                  <td>170</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote228</td>
+               </tr>
+               <tr>
+                  <td>171</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote229</td>
+               </tr>
+               <tr>
+                  <td>172</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote23</td>
+               </tr>
+               <tr>
+                  <td>173</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote230</td>
+               </tr>
+               <tr>
+                  <td>174</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote231</td>
+               </tr>
+               <tr>
+                  <td>175</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote232</td>
+               </tr>
+               <tr>
+                  <td>176</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote233</td>
+               </tr>
+               <tr>
+                  <td>177</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote234</td>
+               </tr>
+               <tr>
+                  <td>178</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote235</td>
+               </tr>
+               <tr>
+                  <td>179</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote235a</td>
+               </tr>
+               <tr>
+                  <td>180</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote235b</td>
+               </tr>
+               <tr>
+                  <td>181</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote235c</td>
+               </tr>
+               <tr>
+                  <td>182</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote236</td>
+               </tr>
+               <tr>
+                  <td>183</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote237</td>
+               </tr>
+               <tr>
+                  <td>184</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote238</td>
+               </tr>
+               <tr>
+                  <td>185</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote239</td>
+               </tr>
+               <tr>
+                  <td>186</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote24</td>
+               </tr>
+               <tr>
+                  <td>187</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote25</td>
+               </tr>
+               <tr>
+                  <td>188</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote26</td>
+               </tr>
+               <tr>
+                  <td>189</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote27</td>
+               </tr>
+               <tr>
+                  <td>190</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote28</td>
+               </tr>
+               <tr>
+                  <td>191</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote29</td>
+               </tr>
+               <tr>
+                  <td>192</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote3</td>
+               </tr>
+               <tr>
+                  <td>193</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote30</td>
+               </tr>
+               <tr>
+                  <td>194</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote31</td>
+               </tr>
+               <tr>
+                  <td>195</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote32</td>
+               </tr>
+               <tr>
+                  <td>196</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote33</td>
+               </tr>
+               <tr>
+                  <td>197</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote34</td>
+               </tr>
+               <tr>
+                  <td>198</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote35</td>
+               </tr>
+               <tr>
+                  <td>199</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote36</td>
+               </tr>
+               <tr>
+                  <td>200</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote37</td>
+               </tr>
+               <tr>
+                  <td>201</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote38</td>
+               </tr>
+               <tr>
+                  <td>202</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote39</td>
+               </tr>
+               <tr>
+                  <td>203</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote4</td>
+               </tr>
+               <tr>
+                  <td>204</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote40</td>
+               </tr>
+               <tr>
+                  <td>205</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote41</td>
+               </tr>
+               <tr>
+                  <td>206</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote42</td>
+               </tr>
+               <tr>
+                  <td>207</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote43</td>
+               </tr>
+               <tr>
+                  <td>208</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote44</td>
+               </tr>
+               <tr>
+                  <td>209</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote45</td>
+               </tr>
+               <tr>
+                  <td>210</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote46</td>
+               </tr>
+               <tr>
+                  <td>211</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote47</td>
+               </tr>
+               <tr>
+                  <td>212</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote48</td>
+               </tr>
+               <tr>
+                  <td>213</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote49</td>
+               </tr>
+               <tr>
+                  <td>214</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote5</td>
+               </tr>
+               <tr>
+                  <td>215</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote50</td>
+               </tr>
+               <tr>
+                  <td>216</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote51</td>
+               </tr>
+               <tr>
+                  <td>217</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote52</td>
+               </tr>
+               <tr>
+                  <td>218</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote53</td>
+               </tr>
+               <tr>
+                  <td>219</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote54</td>
+               </tr>
+               <tr>
+                  <td>220</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote55</td>
+               </tr>
+               <tr>
+                  <td>221</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote56</td>
+               </tr>
+               <tr>
+                  <td>222</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote57</td>
+               </tr>
+               <tr>
+                  <td>223</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote58</td>
+               </tr>
+               <tr>
+                  <td>224</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote59</td>
+               </tr>
+               <tr>
+                  <td>225</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote6</td>
+               </tr>
+               <tr>
+                  <td>226</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote60</td>
+               </tr>
+               <tr>
+                  <td>227</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote61</td>
+               </tr>
+               <tr>
+                  <td>228</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote62</td>
+               </tr>
+               <tr>
+                  <td>229</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote63</td>
+               </tr>
+               <tr>
+                  <td>230</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote64</td>
+               </tr>
+               <tr>
+                  <td>231</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote65</td>
+               </tr>
+               <tr>
+                  <td>232</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote66</td>
+               </tr>
+               <tr>
+                  <td>233</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote67</td>
+               </tr>
+               <tr>
+                  <td>234</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote68</td>
+               </tr>
+               <tr>
+                  <td>235</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote69</td>
+               </tr>
+               <tr>
+                  <td>236</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote7</td>
+               </tr>
+               <tr>
+                  <td>237</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote70</td>
+               </tr>
+               <tr>
+                  <td>238</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote71</td>
+               </tr>
+               <tr>
+                  <td>239</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote72</td>
+               </tr>
+               <tr>
+                  <td>240</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote73</td>
+               </tr>
+               <tr>
+                  <td>241</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote74</td>
+               </tr>
+               <tr>
+                  <td>242</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote75</td>
+               </tr>
+               <tr>
+                  <td>243</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote76</td>
+               </tr>
+               <tr>
+                  <td>244</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote77</td>
+               </tr>
+               <tr>
+                  <td>245</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote78</td>
+               </tr>
+               <tr>
+                  <td>246</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote79</td>
+               </tr>
+               <tr>
+                  <td>247</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote8</td>
+               </tr>
+               <tr>
+                  <td>248</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote80</td>
+               </tr>
+               <tr>
+                  <td>249</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote81</td>
+               </tr>
+               <tr>
+                  <td>250</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote82</td>
+               </tr>
+               <tr>
+                  <td>251</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote83</td>
+               </tr>
+               <tr>
+                  <td>252</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote84</td>
+               </tr>
+               <tr>
+                  <td>253</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote85</td>
+               </tr>
+               <tr>
+                  <td>254</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote86</td>
+               </tr>
+               <tr>
+                  <td>255</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote87</td>
+               </tr>
+               <tr>
+                  <td>256</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote88</td>
+               </tr>
+               <tr>
+                  <td>257</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote89</td>
+               </tr>
+               <tr>
+                  <td>258</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote9</td>
+               </tr>
+               <tr>
+                  <td>259</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote90</td>
+               </tr>
+               <tr>
+                  <td>260</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote91</td>
+               </tr>
+               <tr>
+                  <td>261</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote92</td>
+               </tr>
+               <tr>
+                  <td>262</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote93</td>
+               </tr>
+               <tr>
+                  <td>263</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote94</td>
+               </tr>
+               <tr>
+                  <td>264</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote95</td>
+               </tr>
+               <tr>
+                  <td>265</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote96</td>
+               </tr>
+               <tr>
+                  <td>266</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote97</td>
+               </tr>
+               <tr>
+                  <td>267</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote98</td>
+               </tr>
+               <tr>
+                  <td>268</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.appnote99</td>
+               </tr>
+               <tr>
+                  <td>269</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote1</td>
+               </tr>
+               <tr>
+                  <td>270</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote10</td>
+               </tr>
+               <tr>
+                  <td>271</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote100</td>
+               </tr>
+               <tr>
+                  <td>272</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote101</td>
+               </tr>
+               <tr>
+                  <td>273</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote102</td>
+               </tr>
+               <tr>
+                  <td>274</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote103</td>
+               </tr>
+               <tr>
+                  <td>275</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote104</td>
+               </tr>
+               <tr>
+                  <td>276</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote105</td>
+               </tr>
+               <tr>
+                  <td>277</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote106</td>
+               </tr>
+               <tr>
+                  <td>278</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote107</td>
+               </tr>
+               <tr>
+                  <td>279</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote108</td>
+               </tr>
+               <tr>
+                  <td>280</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote109</td>
+               </tr>
+               <tr>
+                  <td>281</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote11</td>
+               </tr>
+               <tr>
+                  <td>282</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote110</td>
+               </tr>
+               <tr>
+                  <td>283</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote111</td>
+               </tr>
+               <tr>
+                  <td>284</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote112</td>
+               </tr>
+               <tr>
+                  <td>285</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote113</td>
+               </tr>
+               <tr>
+                  <td>286</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote114</td>
+               </tr>
+               <tr>
+                  <td>287</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote115</td>
+               </tr>
+               <tr>
+                  <td>288</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote116</td>
+               </tr>
+               <tr>
+                  <td>289</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote117</td>
+               </tr>
+               <tr>
+                  <td>290</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote118</td>
+               </tr>
+               <tr>
+                  <td>291</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote119</td>
+               </tr>
+               <tr>
+                  <td>292</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote12</td>
+               </tr>
+               <tr>
+                  <td>293</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote120</td>
+               </tr>
+               <tr>
+                  <td>294</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote121</td>
+               </tr>
+               <tr>
+                  <td>295</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote122</td>
+               </tr>
+               <tr>
+                  <td>296</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote123</td>
+               </tr>
+               <tr>
+                  <td>297</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote124</td>
+               </tr>
+               <tr>
+                  <td>298</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote125</td>
+               </tr>
+               <tr>
+                  <td>299</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote126</td>
+               </tr>
+               <tr>
+                  <td>300</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote127</td>
+               </tr>
+               <tr>
+                  <td>301</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote128</td>
+               </tr>
+               <tr>
+                  <td>302</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote129</td>
+               </tr>
+               <tr>
+                  <td>303</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote13</td>
+               </tr>
+               <tr>
+                  <td>304</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote130</td>
+               </tr>
+               <tr>
+                  <td>305</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote131</td>
+               </tr>
+               <tr>
+                  <td>306</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote14</td>
+               </tr>
+               <tr>
+                  <td>307</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote15</td>
+               </tr>
+               <tr>
+                  <td>308</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote16</td>
+               </tr>
+               <tr>
+                  <td>309</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote17</td>
+               </tr>
+               <tr>
+                  <td>310</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote18</td>
+               </tr>
+               <tr>
+                  <td>311</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote19</td>
+               </tr>
+               <tr>
+                  <td>312</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote2</td>
+               </tr>
+               <tr>
+                  <td>313</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote20</td>
+               </tr>
+               <tr>
+                  <td>314</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote21</td>
+               </tr>
+               <tr>
+                  <td>315</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote22</td>
+               </tr>
+               <tr>
+                  <td>316</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote23</td>
+               </tr>
+               <tr>
+                  <td>317</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote24</td>
+               </tr>
+               <tr>
+                  <td>318</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote25</td>
+               </tr>
+               <tr>
+                  <td>319</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote26</td>
+               </tr>
+               <tr>
+                  <td>320</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote27</td>
+               </tr>
+               <tr>
+                  <td>321</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote28</td>
+               </tr>
+               <tr>
+                  <td>322</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote29</td>
+               </tr>
+               <tr>
+                  <td>323</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote3</td>
+               </tr>
+               <tr>
+                  <td>324</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote30</td>
+               </tr>
+               <tr>
+                  <td>325</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote31</td>
+               </tr>
+               <tr>
+                  <td>326</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote32</td>
+               </tr>
+               <tr>
+                  <td>327</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote33</td>
+               </tr>
+               <tr>
+                  <td>328</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote34</td>
+               </tr>
+               <tr>
+                  <td>329</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote35</td>
+               </tr>
+               <tr>
+                  <td>330</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote36</td>
+               </tr>
+               <tr>
+                  <td>331</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote37</td>
+               </tr>
+               <tr>
+                  <td>332</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote38</td>
+               </tr>
+               <tr>
+                  <td>333</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote39</td>
+               </tr>
+               <tr>
+                  <td>334</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote4</td>
+               </tr>
+               <tr>
+                  <td>335</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote40</td>
+               </tr>
+               <tr>
+                  <td>336</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote41</td>
+               </tr>
+               <tr>
+                  <td>337</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote42</td>
+               </tr>
+               <tr>
+                  <td>338</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote43</td>
+               </tr>
+               <tr>
+                  <td>339</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote44</td>
+               </tr>
+               <tr>
+                  <td>340</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote45</td>
+               </tr>
+               <tr>
+                  <td>341</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote46</td>
+               </tr>
+               <tr>
+                  <td>342</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote47</td>
+               </tr>
+               <tr>
+                  <td>343</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote48</td>
+               </tr>
+               <tr>
+                  <td>344</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote49</td>
+               </tr>
+               <tr>
+                  <td>345</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote5</td>
+               </tr>
+               <tr>
+                  <td>346</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote50</td>
+               </tr>
+               <tr>
+                  <td>347</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote51</td>
+               </tr>
+               <tr>
+                  <td>348</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote52</td>
+               </tr>
+               <tr>
+                  <td>349</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote53</td>
+               </tr>
+               <tr>
+                  <td>350</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote54</td>
+               </tr>
+               <tr>
+                  <td>351</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote55</td>
+               </tr>
+               <tr>
+                  <td>352</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote56</td>
+               </tr>
+               <tr>
+                  <td>353</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote57</td>
+               </tr>
+               <tr>
+                  <td>354</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote58</td>
+               </tr>
+               <tr>
+                  <td>355</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote59</td>
+               </tr>
+               <tr>
+                  <td>356</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote6</td>
+               </tr>
+               <tr>
+                  <td>357</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote60</td>
+               </tr>
+               <tr>
+                  <td>358</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote61</td>
+               </tr>
+               <tr>
+                  <td>359</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote62</td>
+               </tr>
+               <tr>
+                  <td>360</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote63</td>
+               </tr>
+               <tr>
+                  <td>361</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote64</td>
+               </tr>
+               <tr>
+                  <td>362</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote65</td>
+               </tr>
+               <tr>
+                  <td>363</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote66</td>
+               </tr>
+               <tr>
+                  <td>364</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote67</td>
+               </tr>
+               <tr>
+                  <td>365</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote68</td>
+               </tr>
+               <tr>
+                  <td>366</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote69</td>
+               </tr>
+               <tr>
+                  <td>367</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote7</td>
+               </tr>
+               <tr>
+                  <td>368</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote70</td>
+               </tr>
+               <tr>
+                  <td>369</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote71</td>
+               </tr>
+               <tr>
+                  <td>370</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote72</td>
+               </tr>
+               <tr>
+                  <td>371</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote73</td>
+               </tr>
+               <tr>
+                  <td>372</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote74</td>
+               </tr>
+               <tr>
+                  <td>373</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote75</td>
+               </tr>
+               <tr>
+                  <td>374</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote76</td>
+               </tr>
+               <tr>
+                  <td>375</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote77</td>
+               </tr>
+               <tr>
+                  <td>376</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote78</td>
+               </tr>
+               <tr>
+                  <td>377</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote79</td>
+               </tr>
+               <tr>
+                  <td>378</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote8</td>
+               </tr>
+               <tr>
+                  <td>379</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote80</td>
+               </tr>
+               <tr>
+                  <td>380</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote81</td>
+               </tr>
+               <tr>
+                  <td>381</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote82</td>
+               </tr>
+               <tr>
+                  <td>382</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote83</td>
+               </tr>
+               <tr>
+                  <td>383</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote84</td>
+               </tr>
+               <tr>
+                  <td>384</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote85</td>
+               </tr>
+               <tr>
+                  <td>385</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote86</td>
+               </tr>
+               <tr>
+                  <td>386</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote87</td>
+               </tr>
+               <tr>
+                  <td>387</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote88</td>
+               </tr>
+               <tr>
+                  <td>388</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote89</td>
+               </tr>
+               <tr>
+                  <td>389</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote9</td>
+               </tr>
+               <tr>
+                  <td>390</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote90</td>
+               </tr>
+               <tr>
+                  <td>391</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote91</td>
+               </tr>
+               <tr>
+                  <td>392</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote92</td>
+               </tr>
+               <tr>
+                  <td>393</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote93</td>
+               </tr>
+               <tr>
+                  <td>394</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote94</td>
+               </tr>
+               <tr>
+                  <td>395</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote95</td>
+               </tr>
+               <tr>
+                  <td>396</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote96</td>
+               </tr>
+               <tr>
+                  <td>397</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote97</td>
+               </tr>
+               <tr>
+                  <td>398</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote98</td>
+               </tr>
+               <tr>
+                  <td>399</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote99</td>
+               </tr>
+               <tr>
+                  <td>400</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote1</td>
+               </tr>
+               <tr>
+                  <td>401</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote10</td>
+               </tr>
+               <tr>
+                  <td>402</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote11</td>
+               </tr>
+               <tr>
+                  <td>403</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote12</td>
+               </tr>
+               <tr>
+                  <td>404</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote13</td>
+               </tr>
+               <tr>
+                  <td>405</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote14</td>
+               </tr>
+               <tr>
+                  <td>406</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote15</td>
+               </tr>
+               <tr>
+                  <td>407</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote16</td>
+               </tr>
+               <tr>
+                  <td>408</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote17</td>
+               </tr>
+               <tr>
+                  <td>409</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote18</td>
+               </tr>
+               <tr>
+                  <td>410</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote19</td>
+               </tr>
+               <tr>
+                  <td>411</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote2</td>
+               </tr>
+               <tr>
+                  <td>412</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote20</td>
+               </tr>
+               <tr>
+                  <td>413</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote21</td>
+               </tr>
+               <tr>
+                  <td>414</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote22</td>
+               </tr>
+               <tr>
+                  <td>415</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote23</td>
+               </tr>
+               <tr>
+                  <td>416</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote24</td>
+               </tr>
+               <tr>
+                  <td>417</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote25</td>
+               </tr>
+               <tr>
+                  <td>418</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote26</td>
+               </tr>
+               <tr>
+                  <td>419</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote27</td>
+               </tr>
+               <tr>
+                  <td>420</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote28</td>
+               </tr>
+               <tr>
+                  <td>421</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote29</td>
+               </tr>
+               <tr>
+                  <td>422</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote3</td>
+               </tr>
+               <tr>
+                  <td>423</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote30</td>
+               </tr>
+               <tr>
+                  <td>424</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote31</td>
+               </tr>
+               <tr>
+                  <td>425</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote32</td>
+               </tr>
+               <tr>
+                  <td>426</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote33</td>
+               </tr>
+               <tr>
+                  <td>427</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote34</td>
+               </tr>
+               <tr>
+                  <td>428</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote35</td>
+               </tr>
+               <tr>
+                  <td>429</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote36</td>
+               </tr>
+               <tr>
+                  <td>430</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote37</td>
+               </tr>
+               <tr>
+                  <td>431</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote38</td>
+               </tr>
+               <tr>
+                  <td>432</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote39</td>
+               </tr>
+               <tr>
+                  <td>433</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote4</td>
+               </tr>
+               <tr>
+                  <td>434</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote40</td>
+               </tr>
+               <tr>
+                  <td>435</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote41</td>
+               </tr>
+               <tr>
+                  <td>436</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote42</td>
+               </tr>
+               <tr>
+                  <td>437</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote43</td>
+               </tr>
+               <tr>
+                  <td>438</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote44</td>
+               </tr>
+               <tr>
+                  <td>439</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote45</td>
+               </tr>
+               <tr>
+                  <td>440</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote46</td>
+               </tr>
+               <tr>
+                  <td>441</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote47</td>
+               </tr>
+               <tr>
+                  <td>442</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote48</td>
+               </tr>
+               <tr>
+                  <td>443</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote49</td>
+               </tr>
+               <tr>
+                  <td>444</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote5</td>
+               </tr>
+               <tr>
+                  <td>445</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote50</td>
+               </tr>
+               <tr>
+                  <td>446</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote51</td>
+               </tr>
+               <tr>
+                  <td>447</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote52</td>
+               </tr>
+               <tr>
+                  <td>448</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote53</td>
+               </tr>
+               <tr>
+                  <td>449</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote54</td>
+               </tr>
+               <tr>
+                  <td>450</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote55</td>
+               </tr>
+               <tr>
+                  <td>451</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote56</td>
+               </tr>
+               <tr>
+                  <td>452</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote6</td>
+               </tr>
+               <tr>
+                  <td>453</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote7</td>
+               </tr>
+               <tr>
+                  <td>454</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote8</td>
+               </tr>
+               <tr>
+                  <td>455</td>
+                  <td class="id-cell">nbc.divB.part5.sect11.appnote9</td>
+               </tr>
+               <tr>
+                  <td>456</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote1</td>
+               </tr>
+               <tr>
+                  <td>457</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote10</td>
+               </tr>
+               <tr>
+                  <td>458</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote11</td>
+               </tr>
+               <tr>
+                  <td>459</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote12</td>
+               </tr>
+               <tr>
+                  <td>460</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote13</td>
+               </tr>
+               <tr>
+                  <td>461</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote14</td>
+               </tr>
+               <tr>
+                  <td>462</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote15</td>
+               </tr>
+               <tr>
+                  <td>463</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote16</td>
+               </tr>
+               <tr>
+                  <td>464</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote17</td>
+               </tr>
+               <tr>
+                  <td>465</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote18</td>
+               </tr>
+               <tr>
+                  <td>466</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote19</td>
+               </tr>
+               <tr>
+                  <td>467</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote1a</td>
+               </tr>
+               <tr>
+                  <td>468</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote2</td>
+               </tr>
+               <tr>
+                  <td>469</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote20</td>
+               </tr>
+               <tr>
+                  <td>470</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote21</td>
+               </tr>
+               <tr>
+                  <td>471</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote22</td>
+               </tr>
+               <tr>
+                  <td>472</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote23</td>
+               </tr>
+               <tr>
+                  <td>473</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote23a</td>
+               </tr>
+               <tr>
+                  <td>474</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote23b</td>
+               </tr>
+               <tr>
+                  <td>475</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote23c</td>
+               </tr>
+               <tr>
+                  <td>476</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote3</td>
+               </tr>
+               <tr>
+                  <td>477</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote4</td>
+               </tr>
+               <tr>
+                  <td>478</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote5</td>
+               </tr>
+               <tr>
+                  <td>479</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote5a</td>
+               </tr>
+               <tr>
+                  <td>480</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote6</td>
+               </tr>
+               <tr>
+                  <td>481</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote7</td>
+               </tr>
+               <tr>
+                  <td>482</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote8</td>
+               </tr>
+               <tr>
+                  <td>483</td>
+                  <td class="id-cell">nbc.divB.part6.sect10.appnote9</td>
+               </tr>
+               <tr>
+                  <td>484</td>
+                  <td class="id-cell">nbc.divB.part8.sect3.appnote1</td>
+               </tr>
+               <tr>
+                  <td>485</td>
+                  <td class="id-cell">nbc.divC.part2.sect3.appnote1</td>
+               </tr>
+               <tr>
+                  <td>486</td>
+                  <td class="id-cell">nbc.divC.part2.sect3.appnote2</td>
+               </tr>
+               <tr>
+                  <td>487</td>
+                  <td class="id-cell">nbc.divC.part2.sect3.appnote3</td>
+               </tr>
+               <tr>
+                  <td>488</td>
+                  <td class="id-cell">nbc.divC.part2.sect3.appnote4</td>
+               </tr>
+               <tr>
+                  <td>489</td>
+                  <td class="id-cell">nbc.divC.part2.sect3.appnote5</td>
+               </tr>
+               <tr>
+                  <td>490</td>
+                  <td class="id-cell">nbc.divC.part2.sect3.appnote6</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="timestamp">
+         Report generated: 2026-02-12 09:48:53</div>
+   </body>
+</html>

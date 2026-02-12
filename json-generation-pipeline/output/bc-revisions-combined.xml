@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-11T22:28:42.4784186-08:00"
+            generated="2026-02-12T09:37:13.0114768-08:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -317,7 +317,7 @@
                         <content>
                            <title>Major Occupancy Fire Separations<note xml:id="nbc.divB.part3.sect1.subsect3.art1.table1.note1">
                                  <ref type="internal" target="nbc.divB.part3.sect3" display-type="long"/> contains requirements for the separation of <ref type="term" target="ccpnc">occupancies</ref> and tenancies that are in addition to the requirements for the separation of <ref type="term" target="mjr-ccpn">major occupancies</ref>.
-                  </note>
+                    </note>
                            </title>
                            <ref type="internal"
                                 target="nbc.divB.part3.sect1.subsect3.art1.sent1"
@@ -680,7 +680,7 @@
                         vendor-id="ea003703"
                         revised="yes">
                   <title>Encapsulation of Mass Timber Elements
-(See also <ref type="internal"
+              (See also <ref type="internal"
                           target="nbc.divB.part3.sect9.appnote20"
                           display-type="short"
                           pretext="Note"/>.)
@@ -1004,7 +1004,7 @@
                         revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-               
+                
               </original>
                      <revision seq="1"
                                type="amendment"
@@ -1090,7 +1090,7 @@
                         revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
-               
+                
               </original>
                      <revision seq="1"
                                type="amendment"
@@ -1367,9 +1367,9 @@
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent8"
                                    display-type="short"
                                    pretext=" and"/>, <ref type="term" target="cmbtbl">combustible</ref> interior wall
-finishes, other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be
-of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>, provided they have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 150 on any exposed surface, or any surface that would
-be exposed by cutting through the material in any direction.</text>
+                    finishes, other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be
+                    of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>, provided they have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 150 on any exposed surface, or any surface that would
+                    be exposed by cutting through the material in any direction.</text>
                         </content>
                         <change-summary>Added references to Sentences 3.1.6.4.(7) and (8)</change-summary>
                         <note>Ministerial Order BA 2024 01</note>
@@ -1421,11 +1421,11 @@ be exposed by cutting through the material in any direction.</text>
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent8"
                                    display-type="short"
                                    pretext=" and"/>, <ref type="term" target="cmbtbl">combustible</ref> interior ceiling finishes,
-other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of
-a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>,
-provided they have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 25 on any exposed surface, or any surface that would
-be exposed by cutting through the material in any direction, except
-that not more than 10% of the ceiling area within each <ref type="term" target="fr-cmprt">fire compartment</ref> is permitted to have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 150. (See <ref type="internal"
+                    other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of
+                    a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>,
+                    provided they have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 25 on any exposed surface, or any surface that would
+                    be exposed by cutting through the material in any direction, except
+                    that not more than 10% of the ceiling area within each <ref type="term" target="fr-cmprt">fire compartment</ref> is permitted to have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 150. (See <ref type="internal"
                                    target="nbc.divB.part3.sect9.appnote41"
                                    display-type="long"/>.)</text>
                         </content>
@@ -4091,7 +4091,7 @@ that not more than 10% of the ceiling area within each <ref type="term" target="
                            </clause>
                            <clause xml:id="nbc.divBV2.part9.sect33.subsect5.art2.sent1.clause7" letter="g">
                               <text>a combination thereof.
-(See also <ref type="internal"
+                      (See also <ref type="internal"
                                       target="nbc.divBV2.part9.sect33.subsect5.art3.sent1"
                                       display-type="long"
                                       pretext="Sentence"/>.)</text>

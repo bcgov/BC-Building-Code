@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <bc-overlay id="bc-part9-amendments-2023" 
             version="1.0" 
             nbc-target-version="2020"
@@ -537,7 +537,7 @@
                 <text-change xpath-within-target="text()">
                     <find-replace>
                         <find>Metal frames and sash of windows, doors and skylights shall
-                            incorporate a thermal break.</find>
+incorporate a thermal break.</find>
                         <replace>Except as permitted in Sentence (2), metal frames and sash of windows, doors and skylights shall incorporate a thermal break.</replace>
                     </find-replace>
                 </text-change>
@@ -1178,7 +1178,7 @@
                 <text-change xpath-within-target="text()">
                     <find-replace>
                         <find>Individual treads in winders that converge on a centre point
-                            shall turn through an angle of</find>
+shall turn through an angle of</find>
                         <replace>Individual treads in winders shall turn through an angle of</replace>
                     </find-replace>
                 </text-change>
@@ -1871,9 +1871,9 @@
                 <text-change xpath-within-target="text()">
                     <find-replace>
                         <find>maintain the required opening during an emergency without the
-                            need for additional support. </find>
+need for additional support. </find>
                         <replace>maintain the required opening during an emergency without the
-                            need for additional support. (See Note A-9.9.10.1.(2).)</replace>
+need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                     </find-replace>
                 </text-change>
             </modify>

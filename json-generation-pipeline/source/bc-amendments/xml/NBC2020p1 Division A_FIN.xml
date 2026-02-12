@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <bc-overlay
     id="bc-diva-amendments-2023"
     version="1.0"
@@ -3061,16 +3061,16 @@
                 <text-change xpath-within-target="text()">
                     <find-replace>
                         <find>kWkilowatt(s)
-                            
-                            
-                            Llitre(s)</find>
+
+
+Llitre(s)</find>
                         <replace>kWkilowatt(s)
-                            
-                            
-                            kWhkilowatt hour(s)
-                            
-                            
-                            Llitre(s)</replace>
+
+
+kWhkilowatt hour(s)
+
+
+Llitre(s)</replace>
                     </find-replace>
                 </text-change>
             </modify>

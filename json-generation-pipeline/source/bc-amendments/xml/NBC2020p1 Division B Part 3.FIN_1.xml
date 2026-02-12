@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <bc-overlay id="bc-part3-amendments-2023"
             version="1.0"
             nbc-target-version="2020"
@@ -1647,7 +1647,7 @@
                 <text-change xpath-within-target="text()">
                     <find-replace>
                         <find>if accessible to the public, shall have either a colour contrast
-                            or a distinctive pattern to demarcate</find>
+or a distinctive pattern to demarcate</find>
                         <replace>if accessible to the public, shall have either a colour contrast or a distinctive pattern, readily visible from both directions of travel, to demarcate</replace>
                     </find-replace>
                 </text-change>
@@ -1777,8 +1777,8 @@
                 <text-change xpath-within-target="text()">
                     <find-replace>
                         <find>The number of water closets required for primary schools and
-                            daycare centres shall be at least one for each 30 males and one for
-                            each 25 females.</find>
+daycare centres shall be at least one for each 30 males and one for
+each 25 females.</find>
                         <replace>The number of water closets required for primary schools and daycare facilities, including daycare facilities for children shall be at least one for each 30 males and one for each 25 females.</replace>
                     </find-replace>
                 </text-change>
