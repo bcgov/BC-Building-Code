@@ -451,6 +451,11 @@
                 <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
             
+            <!-- Revised flag -->
+            <xsl:if test="@revised = 'yes'">
+                <fn:boolean key="revised">true</fn:boolean>
+            </xsl:if>
+            
             <!-- Extract title and articles from revision-history if present, otherwise from direct children -->
             <xsl:choose>
                 <xsl:when test="@revised='yes' and revision-history">
@@ -511,6 +516,11 @@
                 <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
             
+            <!-- Revised flag -->
+            <xsl:if test="@revised = 'yes'">
+                <fn:boolean key="revised">true</fn:boolean>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
             
             <xsl:if test="see-also">
@@ -552,12 +562,27 @@
                 <fn:boolean key="deleted">true</fn:boolean>
             </xsl:if>
             
+            <!-- Revised flag -->
+            <xsl:if test="@revised = 'yes'">
+                <fn:boolean key="revised">true</fn:boolean>
+            </xsl:if>
+            
             <xsl:if test="@source">
                 <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
             
             <!-- Main text content with rich formatting preserved -->
-            <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+            <!-- Extract text from revision-history if present, otherwise from direct child -->
+            <xsl:choose>
+                <xsl:when test="@revised='yes' and revision-history">
+                    <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                    <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                    <fn:string key="text"><xsl:apply-templates select="$content-node/text" mode="rich-text-json"/></fn:string>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+                </xsl:otherwise>
+            </xsl:choose>
             
             <!-- Extract equations from text element -->
             <xsl:if test="text//equation">
@@ -630,14 +655,29 @@
                 <fn:boolean key="deleted">true</fn:boolean>
             </xsl:if>
             
+            <!-- Revised flag -->
+            <xsl:if test="@revised = 'yes'">
+                <fn:boolean key="revised">true</fn:boolean>
+            </xsl:if>
+            
             <xsl:if test="@source">
                 <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
             
-            <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+            <!-- Extract text from revision-history if present, otherwise from direct child -->
+            <xsl:choose>
+                <xsl:when test="@revised='yes' and revision-history">
+                    <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                    <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                    <fn:string key="text"><xsl:apply-templates select="$content-node/text" mode="rich-text-json"/></fn:string>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+                </xsl:otherwise>
+            </xsl:choose>
             
             <xsl:if test="see-also">
-                <fn:array key="sue_also">
+                <fn:array key="see_also">
                     <xsl:for-each select="see-also">
                         <fn:map>
                             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
@@ -650,6 +690,13 @@
             <xsl:if test="subclause">
                 <fn:array key="subclauses">
                     <xsl:apply-templates select="subclause" mode="json"/>
+                </fn:array>
+            </xsl:if>
+            
+            <!-- Revision history if present -->
+            <xsl:if test="@revised = 'yes' and revision-history">
+                <fn:array key="revisions">
+                    <xsl:call-template name="build-clause-revisions"/>
                 </fn:array>
             </xsl:if>
         </fn:map>
@@ -673,11 +720,33 @@
                 <fn:boolean key="deleted">true</fn:boolean>
             </xsl:if>
             
+            <!-- Revised flag -->
+            <xsl:if test="@revised = 'yes'">
+                <fn:boolean key="revised">true</fn:boolean>
+            </xsl:if>
+            
             <xsl:if test="@source">
                 <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
             
-            <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+            <!-- Extract text from revision-history if present, otherwise from direct child -->
+            <xsl:choose>
+                <xsl:when test="@revised='yes' and revision-history">
+                    <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                    <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                    <fn:string key="text"><xsl:apply-templates select="$content-node/text" mode="rich-text-json"/></fn:string>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            <!-- Revision history if present -->
+            <xsl:if test="@revised = 'yes' and revision-history">
+                <fn:array key="revisions">
+                    <xsl:call-template name="build-subclause-revisions"/>
+                </fn:array>
+            </xsl:if>
         </fn:map>
     </xsl:template>
     
@@ -698,6 +767,11 @@
             <!-- Source attribute (bc or nbc) -->
             <xsl:if test="@source">
                 <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            
+            <!-- Revised flag -->
+            <xsl:if test="@revised = 'yes'">
+                <fn:boolean key="revised">true</fn:boolean>
             </xsl:if>
             
             <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
@@ -744,9 +818,51 @@
     </xsl:template>
     
     <xsl:template match="row" mode="json">
-        <fn:array>
-            <xsl:apply-templates select="entry" mode="json"/>
-        </fn:array>
+        <fn:map>
+            <!-- Row ID -->
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            
+            <!-- Row type (header_row or body_row) -->
+            <xsl:choose>
+                <xsl:when test="parent::thead">
+                    <fn:string key="type">header_row</fn:string>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fn:string key="type">body_row</fn:string>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            <!-- Revised flag -->
+            <xsl:if test="@revised = 'yes'">
+                <fn:boolean key="revised">true</fn:boolean>
+            </xsl:if>
+            
+            <!-- Source attribute (bc or nbc) -->
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            
+            <!-- Cells array (current content) -->
+            <fn:array key="cells">
+                <xsl:choose>
+                    <xsl:when test="@revised='yes' and revision-history">
+                        <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                        <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                        <xsl:apply-templates select="$content-node/entry" mode="json"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:apply-templates select="entry" mode="json"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </fn:array>
+            
+            <!-- Revision history if present -->
+            <xsl:if test="@revised = 'yes' and revision-history">
+                <fn:array key="revisions">
+                    <xsl:call-template name="build-row-revisions"/>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
     </xsl:template>
     
     <xsl:template match="entry" mode="json">
@@ -876,6 +992,11 @@
                 <fn:boolean key="deleted">true</fn:boolean>
             </xsl:if>
             
+            <!-- Revised flag -->
+            <xsl:if test="@revised = 'yes'">
+                <fn:boolean key="revised">true</fn:boolean>
+            </xsl:if>
+            
             <!-- Source attribute (bc or nbc) -->
             <xsl:if test="@source">
                 <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
@@ -889,7 +1010,30 @@
                             <xsl:if test="@xml:id">
                                 <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
                             </xsl:if>
-                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                            
+                            <!-- Revised flag -->
+                            <xsl:if test="@revised = 'yes'">
+                                <fn:boolean key="revised">true</fn:boolean>
+                            </xsl:if>
+                            
+                            <!-- Extract content from revision-history if present, otherwise from direct content -->
+                            <xsl:choose>
+                                <xsl:when test="@revised='yes' and revision-history">
+                                    <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                                    <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                                    <fn:string key="content"><xsl:apply-templates select="$content-node/node()" mode="rich-text-json"/></fn:string>
+                                </xsl:when>
+                                <xsl:otherwise>
+                                    <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                </xsl:otherwise>
+                            </xsl:choose>
+                            
+                            <!-- Revision history if present -->
+                            <xsl:if test="@revised = 'yes' and revision-history">
+                                <fn:array key="revisions">
+                                    <xsl:call-template name="build-paragraph-revisions"/>
+                                </fn:array>
+                            </xsl:if>
                         </fn:map>
                     </xsl:for-each>
                 </fn:array>
@@ -1890,6 +2034,218 @@
                 <fn:array key="articles">
                     <xsl:apply-templates select="content/article" mode="json"/>
                 </fn:array>
+                <xsl:if test="change-summary">
+                    <fn:string key="change_summary"><xsl:value-of select="change-summary"/></fn:string>
+                </xsl:if>
+                <xsl:if test="note">
+                    <fn:string key="note"><xsl:value-of select="note"/></fn:string>
+                </xsl:if>
+            </fn:map>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!-- Build clause revisions with consistent structure -->
+    <xsl:template name="build-clause-revisions">
+        <!-- Original baseline -->
+        <fn:map>
+            <fn:string key="type">original</fn:string>
+            <fn:string key="effective_date"><xsl:value-of select="revision-history/original/@effective-date"/></fn:string>
+            <fn:string key="text"><xsl:apply-templates select="revision-history/original/text" mode="rich-text-json"/></fn:string>
+            <xsl:if test="revision-history/original/see-also">
+                <fn:array key="see_also">
+                    <xsl:for-each select="revision-history/original/see-also">
+                        <fn:map>
+                            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
+            <xsl:if test="revision-history/original/subclause">
+                <fn:array key="subclauses">
+                    <xsl:apply-templates select="revision-history/original/subclause" mode="json"/>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
+        
+        <!-- Each revision -->
+        <xsl:for-each select="revision-history/revision">
+            <fn:map>
+                <fn:string key="type">revision</fn:string>
+                <fn:string key="revision_type"><xsl:value-of select="@type"/></fn:string>
+                <fn:string key="revision_id"><xsl:value-of select="@id"/></fn:string>
+                <xsl:choose>
+                    <xsl:when test="@seq and @seq != ''">
+                        <fn:number key="sequence"><xsl:value-of select="@seq"/></fn:number>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <fn:null key="sequence"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <fn:string key="effective_date"><xsl:value-of select="@effective-date"/></fn:string>
+                <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                
+                <!-- Deleted flag for revision (check if content is empty indicating deletion) -->
+                <xsl:choose>
+                    <xsl:when test="not(content/node()) or normalize-space(content) = ''">
+                        <fn:boolean key="deleted">true</fn:boolean>
+                    </xsl:when>
+                </xsl:choose>
+                
+                <fn:string key="text"><xsl:apply-templates select="content/text" mode="rich-text-json"/></fn:string>
+                <xsl:if test="content/see-also">
+                    <fn:array key="see_also">
+                        <xsl:for-each select="content/see-also">
+                            <fn:map>
+                                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                            </fn:map>
+                        </xsl:for-each>
+                    </fn:array>
+                </xsl:if>
+                <xsl:if test="content/subclause">
+                    <fn:array key="subclauses">
+                        <xsl:apply-templates select="content/subclause" mode="json"/>
+                    </fn:array>
+                </xsl:if>
+                <xsl:if test="change-summary">
+                    <fn:string key="change_summary"><xsl:value-of select="change-summary"/></fn:string>
+                </xsl:if>
+                <xsl:if test="note">
+                    <fn:string key="note"><xsl:value-of select="note"/></fn:string>
+                </xsl:if>
+            </fn:map>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!-- Build subclause revisions with consistent structure -->
+    <xsl:template name="build-subclause-revisions">
+        <!-- Original baseline -->
+        <fn:map>
+            <fn:string key="type">original</fn:string>
+            <fn:string key="effective_date"><xsl:value-of select="revision-history/original/@effective-date"/></fn:string>
+            <fn:string key="text"><xsl:apply-templates select="revision-history/original/text" mode="rich-text-json"/></fn:string>
+        </fn:map>
+        
+        <!-- Each revision -->
+        <xsl:for-each select="revision-history/revision">
+            <fn:map>
+                <fn:string key="type">revision</fn:string>
+                <fn:string key="revision_type"><xsl:value-of select="@type"/></fn:string>
+                <fn:string key="revision_id"><xsl:value-of select="@id"/></fn:string>
+                <xsl:choose>
+                    <xsl:when test="@seq and @seq != ''">
+                        <fn:number key="sequence"><xsl:value-of select="@seq"/></fn:number>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <fn:null key="sequence"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <fn:string key="effective_date"><xsl:value-of select="@effective-date"/></fn:string>
+                <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                
+                <!-- Deleted flag for revision (check if content is empty indicating deletion) -->
+                <xsl:choose>
+                    <xsl:when test="not(content/node()) or normalize-space(content) = ''">
+                        <fn:boolean key="deleted">true</fn:boolean>
+                    </xsl:when>
+                </xsl:choose>
+                
+                <fn:string key="text"><xsl:apply-templates select="content/text" mode="rich-text-json"/></fn:string>
+                <xsl:if test="change-summary">
+                    <fn:string key="change_summary"><xsl:value-of select="change-summary"/></fn:string>
+                </xsl:if>
+                <xsl:if test="note">
+                    <fn:string key="note"><xsl:value-of select="note"/></fn:string>
+                </xsl:if>
+            </fn:map>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!-- Build paragraph revisions with consistent structure -->
+    <xsl:template name="build-paragraph-revisions">
+        <!-- Original baseline -->
+        <fn:map>
+            <fn:string key="type">original</fn:string>
+            <fn:string key="effective_date"><xsl:value-of select="revision-history/original/@effective-date"/></fn:string>
+            <fn:string key="content"><xsl:apply-templates select="revision-history/original/node()" mode="rich-text-json"/></fn:string>
+        </fn:map>
+        
+        <!-- Each revision -->
+        <xsl:for-each select="revision-history/revision">
+            <fn:map>
+                <fn:string key="type">revision</fn:string>
+                <fn:string key="revision_type"><xsl:value-of select="@type"/></fn:string>
+                <fn:string key="revision_id"><xsl:value-of select="@id"/></fn:string>
+                <xsl:choose>
+                    <xsl:when test="@seq and @seq != ''">
+                        <fn:number key="sequence"><xsl:value-of select="@seq"/></fn:number>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <fn:null key="sequence"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <fn:string key="effective_date"><xsl:value-of select="@effective-date"/></fn:string>
+                <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                
+                <!-- Deleted flag for revision (check if content is empty indicating deletion) -->
+                <xsl:choose>
+                    <xsl:when test="not(content/node()) or normalize-space(content) = ''">
+                        <fn:boolean key="deleted">true</fn:boolean>
+                    </xsl:when>
+                </xsl:choose>
+                
+                <fn:string key="content"><xsl:apply-templates select="content/node()" mode="rich-text-json"/></fn:string>
+                <xsl:if test="change-summary">
+                    <fn:string key="change_summary"><xsl:value-of select="change-summary"/></fn:string>
+                </xsl:if>
+                <xsl:if test="note">
+                    <fn:string key="note"><xsl:value-of select="note"/></fn:string>
+                </xsl:if>
+            </fn:map>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!-- Build row revisions with consistent structure -->
+    <xsl:template name="build-row-revisions">
+        <!-- Original baseline -->
+        <fn:map>
+            <fn:string key="type">original</fn:string>
+            <fn:string key="effective_date"><xsl:value-of select="revision-history/original/@effective-date"/></fn:string>
+            <fn:array key="cells">
+                <xsl:apply-templates select="revision-history/original/entry" mode="json"/>
+            </fn:array>
+        </fn:map>
+        
+        <!-- Each revision -->
+        <xsl:for-each select="revision-history/revision">
+            <fn:map>
+                <fn:string key="type">revision</fn:string>
+                <fn:string key="revision_type"><xsl:value-of select="@type"/></fn:string>
+                <fn:string key="revision_id"><xsl:value-of select="@id"/></fn:string>
+                <xsl:choose>
+                    <xsl:when test="@seq and @seq != ''">
+                        <fn:number key="sequence"><xsl:value-of select="@seq"/></fn:number>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <fn:null key="sequence"/>
+                    </xsl:otherwise>
+                </xsl:choose>
+                <fn:string key="effective_date"><xsl:value-of select="@effective-date"/></fn:string>
+                <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                
+                <!-- Deleted flag for revision (check if content is empty indicating deletion) -->
+                <xsl:choose>
+                    <xsl:when test="not(content/node()) or (not(content/entry) and normalize-space(content) = '')">
+                        <fn:boolean key="deleted">true</fn:boolean>
+                    </xsl:when>
+                </xsl:choose>
+                
+                <!-- Cells array -->
+                <fn:array key="cells">
+                    <xsl:apply-templates select="content/entry" mode="json"/>
+                </fn:array>
+                
                 <xsl:if test="change-summary">
                     <fn:string key="change_summary"><xsl:value-of select="change-summary"/></fn:string>
                 </xsl:if>
