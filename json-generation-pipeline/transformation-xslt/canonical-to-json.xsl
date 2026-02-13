@@ -426,6 +426,13 @@
             <fn:array key="subsections">
                 <xsl:apply-templates select="subsection" mode="json"/>
             </fn:array>
+            
+            <!-- Section appendix (application notes) - some sections have their own appendix -->
+            <xsl:if test="part-appendix">
+                <fn:map key="appendix">
+                    <xsl:apply-templates select="part-appendix" mode="json"/>
+                </fn:map>
+            </xsl:if>
         </fn:map>
     </xsl:template>
     
@@ -889,7 +896,13 @@
     
     <xsl:template match="entry" mode="json">
         <fn:map>
-            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+            <!-- Content array supporting mixed text and figures -->
+            <fn:array key="content">
+                <xsl:call-template name="process-entry-content">
+                    <xsl:with-param name="entry" select="."/>
+                </xsl:call-template>
+            </fn:array>
+            
             <xsl:if test="@align">
                 <fn:string key="align"><xsl:value-of select="@align"/></fn:string>
             </xsl:if>
@@ -907,6 +920,66 @@
                 </fn:array>
             </xsl:if>
         </fn:map>
+    </xsl:template>
+    
+    <!-- Process entry content - handles mixed text and figure content -->
+    <xsl:template name="process-entry-content">
+        <xsl:param name="entry"/>
+        
+        <xsl:choose>
+            <!-- If entry contains figure(s), process as mixed content -->
+            <xsl:when test="$entry/figure">
+                <xsl:for-each select="$entry/node()">
+                    <xsl:choose>
+                        <!-- Figure element -->
+                        <xsl:when test="self::figure">
+                            <fn:map>
+                                <fn:string key="type">figure</fn:string>
+                                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                <xsl:if test="@source">
+                                    <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+                                </xsl:if>
+                                <xsl:if test="title">
+                                    <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
+                                </xsl:if>
+                                <fn:map key="graphic">
+                                    <fn:string key="src"><xsl:value-of select="graphic/@src"/></fn:string>
+                                    <fn:string key="alt_text"><xsl:value-of select="graphic/@alt"/></fn:string>
+                                    <xsl:if test="graphic/@width">
+                                        <fn:string key="width"><xsl:value-of select="graphic/@width"/></fn:string>
+                                    </xsl:if>
+                                    <xsl:if test="graphic/@height">
+                                        <fn:string key="height"><xsl:value-of select="graphic/@height"/></fn:string>
+                                    </xsl:if>
+                                </fn:map>
+                            </fn:map>
+                        </xsl:when>
+                        <!-- Text node or other elements - collect as text -->
+                        <xsl:when test="self::text()[normalize-space()] or self::*[not(self::figure)]">
+                            <xsl:variable name="text-content">
+                                <xsl:apply-templates select="." mode="rich-text-json"/>
+                            </xsl:variable>
+                            <xsl:if test="normalize-space($text-content)">
+                                <fn:map>
+                                    <fn:string key="type">text</fn:string>
+                                    <fn:string key="value"><xsl:value-of select="$text-content"/></fn:string>
+                                </fn:map>
+                            </xsl:if>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:for-each>
+            </xsl:when>
+            <!-- No figures - just text content -->
+            <xsl:otherwise>
+                <xsl:variable name="text-content">
+                    <xsl:apply-templates select="$entry" mode="rich-text-json"/>
+                </xsl:variable>
+                <fn:map>
+                    <fn:string key="type">text</fn:string>
+                    <fn:string key="value"><xsl:value-of select="$text-content"/></fn:string>
+                </fn:map>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <!-- ================================================================== -->

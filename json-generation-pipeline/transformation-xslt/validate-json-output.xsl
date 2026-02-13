@@ -568,9 +568,12 @@
             <p>Checking for empty or missing content in JSON...</p>
             
             <xsl:variable name="empty-text-nodes" select="$json-doc//*[@key='text'][string(.) = '']"/>
-            <xsl:variable name="empty-content-nodes" select="$json-doc//*[@key='content'][string(.) = '']"/>
+            <!-- For string content nodes (not array content like table cells) -->
+            <xsl:variable name="empty-content-nodes" select="$json-doc//*[@key='content'][not(fn:array)][string(.) = '']"/>
+            <!-- For array content nodes (table cells), check for empty arrays -->
+            <xsl:variable name="empty-array-content-nodes" select="$json-doc//*[@key='content'][fn:array][count(fn:array/*) = 0]"/>
             
-            <xsl:variable name="total-errors" select="count($empty-text-nodes) + count($empty-content-nodes)"/>
+            <xsl:variable name="total-errors" select="count($empty-text-nodes) + count($empty-content-nodes) + count($empty-array-content-nodes)"/>
             
             <xsl:choose>
                 <xsl:when test="$total-errors = 0">
@@ -585,6 +588,9 @@
                         <span style="color: #dc3545; font-weight: bold;">Total Errors: <xsl:value-of select="$total-errors"/></span>
                         <span style="margin-left: 20px;">Empty Text Fields: <xsl:value-of select="count($empty-text-nodes)"/></span>
                         <span style="margin-left: 20px;">Empty Content Fields: <xsl:value-of select="count($empty-content-nodes)"/></span>
+                        <xsl:if test="count($empty-array-content-nodes) > 0">
+                            <span style="margin-left: 20px;">Empty Cell Content: <xsl:value-of select="count($empty-array-content-nodes)"/></span>
+                        </xsl:if>
                     </p>
                     
                     <xsl:if test="count($empty-text-nodes) > 0">
