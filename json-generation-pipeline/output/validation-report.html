@@ -1,0 +1,593 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>BC Building Code JSON Validation Report</title>
+      <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 20px;
+                        background-color: #f5f5f5;
+                    }
+                    h1 {
+                        color: #003366;
+                        border-bottom: 3px solid #003366;
+                        padding-bottom: 10px;
+                    }
+                    h2 {
+                        color: #0066cc;
+                        margin-top: 30px;
+                        border-bottom: 2px solid #0066cc;
+                        padding-bottom: 5px;
+                    }
+                    h3 {
+                        color: #0088cc;
+                        margin-top: 20px;
+                    }
+                    .summary {
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        margin-bottom: 20px;
+                    }
+                    .summary-stats {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        gap: 15px;
+                        margin-top: 15px;
+                    }
+                    .stat-box {
+                        background-color: #f8f9fa;
+                        padding: 15px;
+                        border-radius: 5px;
+                        border-left: 4px solid #0066cc;
+                    }
+                    .stat-box.success {
+                        border-left-color: #28a745;
+                    }
+                    .stat-box.warning {
+                        border-left-color: #ffc107;
+                    }
+                    .stat-box.error {
+                        border-left-color: #dc3545;
+                    }
+                    .stat-label {
+                        font-size: 12px;
+                        color: #666;
+                        text-transform: uppercase;
+                        margin-bottom: 5px;
+                    }
+                    .stat-value {
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: #333;
+                    }
+                    .validation-section {
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        margin-bottom: 20px;
+                    }
+                    .issue {
+                        padding: 10px;
+                        margin: 10px 0;
+                        border-radius: 3px;
+                        border-left: 4px solid;
+                    }
+                    .issue.error {
+                        background-color: #f8d7da;
+                        border-left-color: #dc3545;
+                        color: #721c24;
+                    }
+                    .issue.warning {
+                        background-color: #fff3cd;
+                        border-left-color: #ffc107;
+                        color: #856404;
+                    }
+                    .issue.success {
+                        background-color: #d4edda;
+                        border-left-color: #28a745;
+                        color: #155724;
+                    }
+                    .issue-id {
+                        font-family: monospace;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    .issue-details {
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 10px;
+                    }
+                    th, td {
+                        padding: 8px;
+                        text-align: left;
+                        border-bottom: 1px solid #ddd;
+                    }
+                    th {
+                        background-color: #f8f9fa;
+                        font-weight: bold;
+                    }
+                    tr.error {
+                        background-color: #f8d7da;
+                    }
+                    tr.warning {
+                        background-color: #fff3cd;
+                    }
+                    tr.success {
+                        background-color: #d4edda;
+                    }
+                    td.id-cell {
+                        font-family: monospace;
+                        font-size: 12px;
+                    }
+                    td.status-cell {
+                        font-weight: bold;
+                    }
+                    td.status-cell.error {
+                        color: #dc3545;
+                    }
+                    td.status-cell.warning {
+                        color: #856404;
+                    }
+                    td.status-cell.success {
+                        color: #28a745;
+                    }
+                    .timestamp {
+                        color: #666;
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+                </style>
+   </head>
+   <body>
+      <h1>BC Building Code JSON Validation Report</h1>
+      <div class="summary">
+         <h2>Validation Summary</h2>
+         <div class="timestamp">
+            Generated: 2026-02-12T11:54:52.9543403-08:00</div>
+         <div class="summary-stats">
+            <div class="stat-box">
+               <div class="stat-label">Total XML Elements</div>
+               <div class="stat-value">51509</div>
+            </div>
+            <div class="stat-box">
+               <div class="stat-label">JSON Objects with IDs</div>
+               <div class="stat-value">45641</div>
+            </div>
+            <div class="stat-box">
+               <div class="stat-label">Revised Elements</div>
+               <div class="stat-value">0</div>
+            </div>
+            <div class="stat-box success">
+               <div class="stat-label">With Revision History</div>
+               <div class="stat-value">0</div>
+            </div>
+         </div>
+      </div>
+      <div class="validation-section">
+         <h2>Validation 1: Revised Nodes and Revision History</h2>
+         <p>Checking that all elements with revised="yes" have proper revision history in JSON...</p>
+      </div>
+      <div class="validation-section">
+         <h2>Validation 2: Structure Completeness</h2>
+         <p>Checking that major structural elements are present in JSON...</p>
+         <table>
+            <thead>
+               <tr>
+                  <th>Element Type</th>
+                  <th>XML Count</th>
+                  <th>JSON Count</th>
+                  <th>Status</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>division</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+               <tr>
+                  <td>part</td>
+                  <td>15</td>
+                  <td>15</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+               <tr>
+                  <td>section</td>
+                  <td>104</td>
+                  <td>104</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+               <tr>
+                  <td>subsection</td>
+                  <td>464</td>
+                  <td>464</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+               <tr>
+                  <td>article</td>
+                  <td>2101</td>
+                  <td>2101</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+               <tr>
+                  <td>sentence</td>
+                  <td>5240</td>
+                  <td>5240</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+               <tr>
+                  <td>table</td>
+                  <td>343</td>
+                  <td>290</td>
+                  <td><span style="color: orange;">⚠ Difference: 53</span></td>
+               </tr>
+               <tr>
+                  <td>figure</td>
+                  <td>375</td>
+                  <td>366</td>
+                  <td><span style="color: orange;">⚠ Difference: 9</span></td>
+               </tr>
+               <tr>
+                  <td>application-note</td>
+                  <td>1314</td>
+                  <td>1314</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="validation-section">
+         <h2>Validation 3: Content Completeness</h2>
+         <p>Checking for empty or missing content in JSON...</p>
+         <p style="margin-top: 10px;"><span style="color: #dc3545; font-weight: bold;">Total Errors: 8</span><span style="margin-left: 20px;">Empty Text Fields: 0</span><span style="margin-left: 20px;">Empty Content Fields: 8</span></p>
+         <h3>Empty Content Fields (8)</h3>
+         <table>
+            <thead>
+               <tr>
+                  <th>Status</th>
+                  <th>Element ID</th>
+                  <th>Parent ID</th>
+                  <th>Element Type</th>
+                  <th>Issue</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote59.para1</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote59</td>
+                  <td>[unknown]</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote90.para1</td>
+                  <td class="id-cell">nbc.divB.part4.sect5.appnote90</td>
+                  <td>[unknown]</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part4.appnote59.para1</td>
+                  <td class="id-cell">nbc.divB.part4.appnote59</td>
+                  <td>[unknown]</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part4.appnote90.para1</td>
+                  <td class="id-cell">nbc.divB.part4.appnote90</td>
+                  <td>[unknown]</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect7.subsect2.art2</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect7.subsect2</td>
+                  <td>article</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect8.subsect4.art5</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect8.subsect4</td>
+                  <td>article</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect8.subsect4.art7</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect8.subsect4</td>
+                  <td>article</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect2.art3</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect2</td>
+                  <td>article</td>
+                  <td>Content field is empty</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="validation-section">
+         <h2>Validation 4: Cross-References</h2>
+         <p>Checking that internal references point to valid targets...</p>
+         <p style="margin-top: 10px;"><span style="color: #dc3545; font-weight: bold;">Total Errors: 387</span><span style="margin-left: 20px;">Total Internal References: 17592</span></p>
+         <table>
+            <thead>
+               <tr>
+                  <th>Status</th>
+                  <th>Source Element ID</th>
+                  <th>Target ID (Not Found)</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row1</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect9</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row2</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect9</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row4</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect3.art1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row5</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect8.art3</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row6</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect9.art2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row7</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect13.art1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row7</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect13.art5</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row8</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect4.art1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row10</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect14</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row11</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect14.art5</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row13</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect19.art4.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row14</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect1.art3.sent6</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row15</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect9.art13</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row15</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect9.art14</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row16</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect9.art15</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row17</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect3.art3</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row18</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect6.art5</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row19</td>
+                  <td class="id-cell">nbc.divB.part9.sect8</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row20</td>
+                  <td class="id-cell">nbc.divB.part9.sect6.subsect1.art4</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row21</td>
+                  <td class="id-cell">nbc.divB.part3.sect3.subsect1.art9.sent7</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row21</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect7.art3</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row22</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect8.art2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row23</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect6.art1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row24</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect4</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row25</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect8.art5</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row26</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect5.art9</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row27</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect11.art3.sent3</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row27</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect11.art3.sent4</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row28</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect6.art6</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row29</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect2.art1.sent2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row30</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect2.art1.sent2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row31</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect2.art1.sent2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row33</td>
+                  <td class="id-cell">nbc.divB.part9.sect5</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row33</td>
+                  <td class="id-cell">nbc.divB.part9.sect5.subsect3</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row34</td>
+                  <td class="id-cell">nbc.divB.part9.sect31</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row34</td>
+                  <td class="id-cell">nbc.divB.part9.sect31</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row2</td>
+                  <td class="id-cell">nbc.divB.part9.sect5.subsect3.art1.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row2</td>
+                  <td class="id-cell">nbc.divB.part9.sect5.subsect3.art1.table1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row2</td>
+                  <td class="id-cell">nbc.divB.part9.sect5.subsect3.art1.table1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row2</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect3.art4.sent3</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row2</td>
+                  <td class="id-cell">nbc.divB.part9.sect5.subsect3.art1.table1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row2</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect3.art4.sent3</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row3</td>
+                  <td class="id-cell">nbc.divB.part9.sect5.subsect5.art1.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row3</td>
+                  <td class="id-cell">nbc.divB.part9.sect5.subsect5.art1.table1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row4</td>
+                  <td class="id-cell">nbc.divB.part9.sect8.subsect2.art2.sent3</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row5</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect4.art4.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row5</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect4.art4.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row5</td>
+                  <td class="id-cell">nbc.divB.part9.sect10.subsect19.art5.sent2.clause1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row6</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect4.art6.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row6</td>
+                  <td class="id-cell">nbc.divB.part9.sect9.subsect4.art6.sent1</td>
+               </tr>
+            </tbody>
+         </table>
+         <p style="color: #666; font-style: italic;">
+            ... and 337 more broken references.
+            </p>
+      </div>
+   </body>
+</html>

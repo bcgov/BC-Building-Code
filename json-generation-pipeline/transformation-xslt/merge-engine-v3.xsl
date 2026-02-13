@@ -997,6 +997,11 @@
                 <xsl:attribute name="source" select="$source-value"/>
             </xsl:if>
             
+            <!-- Add revised="yes" if element has revision-history child -->
+            <xsl:if test="revision-history">
+                <xsl:attribute name="revised">yes</xsl:attribute>
+            </xsl:if>
+            
             <!-- Always process children through process-new-content-children to handle delete amendments -->
             <xsl:call-template name="process-new-content-children">
                 <xsl:with-param name="parent-id" select="string($new-id)"/>
