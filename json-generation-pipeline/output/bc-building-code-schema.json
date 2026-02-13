@@ -210,6 +210,22 @@
             "columns": {
               "type": ["number", "null"]
             },
+            "colsep": {
+              "type": "string"
+            },
+            "rowsep": {
+              "type": "string"
+            },
+            "column_specs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {"type": "string"},
+                  "width": {"type": "string"}
+                }
+              }
+            },
             "header_rows": {
               "type": "array",
               "items": {
@@ -222,6 +238,13 @@
                 "$ref": "#/definitions/table_row"
               }
             }
+          }
+        },
+        "table_notes": {
+          "type": "array",
+          "description": "Resolved table note objects keyed by note ID",
+          "items": {
+            "$ref": "#/definitions/table_note"
           }
         },
         "graphic": {
@@ -985,6 +1008,9 @@
           "type": "string",
           "const": "table"
         },
+        "frame": {
+          "type": "string"
+        },
         "deleted": {
           "type": "boolean",
           "description": "Indicates if this table has been deleted (true when deleted='yes' attribute is present)"
@@ -992,12 +1018,25 @@
         "title": {
           "type": "string"
         },
+        "table_notes": {
+          "type": "array",
+          "description": "Resolved table note objects keyed by note ID",
+          "items": {
+            "$ref": "#/definitions/table_note"
+          }
+        },
         "structure": {
           "type": "object",
           "required": ["body_rows"],
           "properties": {
             "columns": {
               "type": ["number", "null"]
+            },
+            "colsep": {
+              "type": "string"
+            },
+            "rowsep": {
+              "type": "string"
             },
             "column_specs": {
               "type": "array",
@@ -1045,6 +1084,12 @@
           "enum": ["header_row", "body_row"],
           "description": "Type of row"
         },
+        "valign": {
+          "type": "string"
+        },
+        "rowsep": {
+          "type": "string"
+        },
         "cells": {
           "type": "array",
           "items": {
@@ -1075,6 +1120,24 @@
           "type": "string",
           "enum": ["left", "center", "right", "justify", "char"]
         },
+        "valign": {
+          "type": "string"
+        },
+        "colsep": {
+          "type": "string"
+        },
+        "rowsep": {
+          "type": "string"
+        },
+        "colname": {
+          "type": "string"
+        },
+        "namest": {
+          "type": "string"
+        },
+        "nameend": {
+          "type": "string"
+        },
         "rowspan": {
           "type": "number",
           "minimum": 1
@@ -1089,6 +1152,15 @@
             "$ref": "#/definitions/revision"
           }
         }
+      }
+    },
+    "table_note": {
+      "type": "object",
+      "required": ["id", "content"],
+      "properties": {
+        "id": {"type": "string"},
+        "vendor_id": {"type": "string"},
+        "content": {"type": "string"}
       }
     },
     "cell_content_item": {

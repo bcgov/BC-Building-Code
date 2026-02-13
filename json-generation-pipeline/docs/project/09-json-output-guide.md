@@ -478,28 +478,44 @@ Tables contain structured data within articles.
 {
   "id": "nbc.divA.part1.sect1.subsect1.art1.table1",
   "type": "table",
+  "frame": "all",
   "source": "bc",
   "title": "Alternate Compliance Methods for Heritage Buildings",
+  "table_notes": [
+    {
+      "id": "nbc.divA.part1.sect1.subsect1.art1.table1.note1",
+      "content": "See Note A-Table 1.1.1.1."
+    }
+  ],
   "structure": {
     "columns": 3,
+    "colsep": "1",
+    "rowsep": "1",
     "column_specs": [
       { "name": "col1", "width": "0.5*" },
       { "name": "col2", "width": "2*" },
       { "name": "col3", "width": "2*" }
     ],
     "header_rows": [
-      [
-        { "content": "No." },
-        { "content": "Code Requirement in Division B" },
-        { "content": "Alternate Compliance Method" }
-      ]
+      {
+        "id": "nbc.divA.part1.sect1.subsect1.art1.table1.row1",
+        "type": "header_row",
+        "cells": [
+          { "content": [{ "type": "text", "value": "No." }], "align": "center", "rowspan": 2 },
+          { "content": [{ "type": "text", "value": "Code Requirement in Division B" }], "align": "center", "colspan": 2, "namest": "col2", "nameend": "col3" }
+        ]
+      }
     ],
     "body_rows": [
-      [
-        { "content": "1" },
-        { "content": "Fire Separations..." },
-        { "content": "Except for F1 occupancies..." }
-      ]
+      {
+        "id": "nbc.divA.part1.sect1.subsect1.art1.table1.row2",
+        "type": "body_row",
+        "cells": [
+          { "content": [{ "type": "text", "value": "1" }], "align": "center" },
+          { "content": [{ "type": "text", "value": "Fire Separations..." }], "align": "left" },
+          { "content": [{ "type": "text", "value": "Except for F1 occupancies..." }], "align": "left" }
+        ]
+      }
     ]
   }
 }
@@ -511,13 +527,20 @@ Tables contain structured data within articles.
 |----------|------|-------------|
 | `id` | string | Canonical ID |
 | `type` | string | Always `"table"` |
+| `frame` | string | Table frame styling from XML (optional) |
 | `source` | string | `"bc"` if BC-specific (optional) |
 | `title` | string | Table title |
+| `table_notes` | array | Resolved table notes with IDs and note text (optional) |
 | `structure.columns` | number | Number of columns |
+| `structure.colsep` | string | Column separator style from XML (optional) |
+| `structure.rowsep` | string | Row separator style from XML (optional) |
 | `structure.column_specs` | array | Column width specifications |
 | `structure.header_rows` | array | Header row data |
 | `structure.body_rows` | array | Body row data |
-| `notes` | array | Table footnotes (optional) |
+| `structure.*.cells[].rowspan` | number | Numeric row span for merged cells (optional) |
+| `structure.*.cells[].colspan` | number | Numeric column span for merged cells (optional) |
+| `structure.*.cells[].namest` | string | CALS start column name when provided (optional) |
+| `structure.*.cells[].nameend` | string | CALS end column name when provided (optional) |
 
 ---
 

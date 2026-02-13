@@ -859,6 +859,7 @@
                     name="vendor-id"
                     select="@id"
                 /></xsl:if>
+      <xsl:if test="@frame"><xsl:attribute name="frame" select="@frame"/></xsl:if>
       <title>
         <!-- Process text nodes and inline elements, but not note elements -->
         <xsl:apply-templates
@@ -888,6 +889,8 @@
     <xsl:param name="table-id" as="xs:string" select="''" />
     <xsl:param name="title-note-count" as="xs:integer" select="0" />
     <tgroup cols="{@cols}">
+      <xsl:if test="@colsep"><xsl:attribute name="colsep" select="@colsep"/></xsl:if>
+      <xsl:if test="@rowsep"><xsl:attribute name="rowsep" select="@rowsep"/></xsl:if>
       <xsl:apply-templates select="colspec" />
       <xsl:apply-templates select="thead">
         <xsl:with-param name="table-id" select="$table-id" />
@@ -921,6 +924,7 @@
       else if (local-name() = 'tbody') then $title-note-count + $thead-note-count
       else $title-note-count + $thead-note-count + $tbody-note-count" />
     <xsl:element name="{local-name()}">
+      <xsl:if test="@valign"><xsl:attribute name="valign" select="@valign"/></xsl:if>
       <xsl:apply-templates select="row">
         <xsl:with-param name="table-id" select="$table-id" />
         <xsl:with-param name="section-name" select="local-name()" />
@@ -946,6 +950,8 @@
       <xsl:if test="$table-id != ''">
         <xsl:attribute name="xml:id" select="$row-id" />
       </xsl:if>
+      <xsl:if test="@valign"><xsl:attribute name="valign" select="@valign"/></xsl:if>
+      <xsl:if test="@rowsep"><xsl:attribute name="rowsep" select="@rowsep"/></xsl:if>
       <xsl:apply-templates select="entry">
         <xsl:with-param name="table-id" select="$table-id" />
         <xsl:with-param name="row-id" select="$row-id" />
@@ -960,8 +966,35 @@
     <xsl:param name="note-offset" as="xs:integer" select="0" />
     <!-- Count notes in preceding entries within this row -->
     <xsl:variable name="preceding-entry-notes" select="count(preceding-sibling::entry//note)" />
+    <xsl:variable name="colnames" as="xs:string*" select="ancestor::tgroup[1]/colspec/@colname ! string(.)"/>
+    <xsl:variable name="start-col" as="xs:integer?" select="if (@namest) then (index-of($colnames, string(@namest))[1]) else ()"/>
+    <xsl:variable name="end-col" as="xs:integer?" select="if (@nameend) then (index-of($colnames, string(@nameend))[1]) else ()"/>
+    <xsl:variable name="derived-rowspan" as="xs:integer?" select="if (not(@rowspan) and @morerows castable as xs:integer) then xs:integer(@morerows) + 1 else ()"/>
+    <xsl:variable name="derived-colspan" as="xs:integer?"
+                  select="
+                    if (not(@colspan) and @namest and @nameend and exists($start-col) and exists($end-col) and $end-col ge $start-col)
+                    then $end-col - $start-col + 1
+                    else ()"/>
     <entry>
-      <xsl:copy-of select="@align | @rowspan | @colspan" />
+      <xsl:if test="@align"><xsl:attribute name="align" select="@align"/></xsl:if>
+      <xsl:if test="@valign"><xsl:attribute name="valign" select="@valign"/></xsl:if>
+      <xsl:if test="@colsep"><xsl:attribute name="colsep" select="@colsep"/></xsl:if>
+      <xsl:if test="@rowsep"><xsl:attribute name="rowsep" select="@rowsep"/></xsl:if>
+      <xsl:if test="@colname"><xsl:attribute name="colname" select="@colname"/></xsl:if>
+      <xsl:if test="@rowspan">
+        <xsl:attribute name="rowspan" select="@rowspan"/>
+      </xsl:if>
+      <xsl:if test="not(@rowspan) and exists($derived-rowspan)">
+        <xsl:attribute name="rowspan" select="$derived-rowspan"/>
+      </xsl:if>
+      <xsl:if test="@colspan">
+        <xsl:attribute name="colspan" select="@colspan"/>
+      </xsl:if>
+      <xsl:if test="not(@colspan) and exists($derived-colspan)">
+        <xsl:attribute name="colspan" select="$derived-colspan"/>
+      </xsl:if>
+      <xsl:if test="@namest"><xsl:attribute name="namest" select="@namest"/></xsl:if>
+      <xsl:if test="@nameend"><xsl:attribute name="nameend" select="@nameend"/></xsl:if>
       <xsl:apply-templates select="node()" mode="entry-content">
         <xsl:with-param name="table-id" select="$table-id" />
         <xsl:with-param name="note-offset" select="$note-offset + $preceding-entry-notes" />

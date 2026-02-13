@@ -246,6 +246,20 @@
             <xsl:if test="title">
                 <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
             </xsl:if>
+            <xsl:if test="table-notes/note or title/note or tgroup//note">
+                <fn:array key="table_notes">
+                    <xsl:for-each-group select="table-notes/note | title/note | tgroup//note" group-by="@xml:id">
+                        <xsl:sort select="current-grouping-key()"/>
+                        <fn:map>
+                            <fn:string key="id"><xsl:value-of select="current-grouping-key()"/></fn:string>
+                            <xsl:if test="current-group()[1]/@vendor-id">
+                                <fn:string key="vendor_id"><xsl:value-of select="current-group()[1]/@vendor-id"/></fn:string>
+                            </xsl:if>
+                            <fn:string key="content"><xsl:apply-templates select="current-group()[1]" mode="rich-text-json"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each-group>
+                </fn:array>
+            </xsl:if>
             <fn:map key="structure">
                 <xsl:choose>
                     <xsl:when test="tgroup/@cols and tgroup/@cols != ''">
@@ -255,6 +269,24 @@
                         <fn:null key="columns"/>
                     </xsl:otherwise>
                 </xsl:choose>
+
+                <xsl:if test="tgroup/@colsep">
+                    <fn:string key="colsep"><xsl:value-of select="tgroup/@colsep"/></fn:string>
+                </xsl:if>
+                <xsl:if test="tgroup/@rowsep">
+                    <fn:string key="rowsep"><xsl:value-of select="tgroup/@rowsep"/></fn:string>
+                </xsl:if>
+
+                <xsl:if test="tgroup/colspec">
+                    <fn:array key="column_specs">
+                        <xsl:for-each select="tgroup/colspec">
+                            <fn:map>
+                                <fn:string key="name"><xsl:value-of select="@colname"/></fn:string>
+                                <fn:string key="width"><xsl:value-of select="@colwidth"/></fn:string>
+                            </fn:map>
+                        </xsl:for-each>
+                    </fn:array>
+                </xsl:if>
                 
                 <xsl:if test="tgroup/thead">
                     <fn:array key="header_rows">
@@ -804,6 +836,25 @@
             </xsl:if>
             
             <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
+
+            <xsl:if test="@frame">
+                <fn:string key="frame"><xsl:value-of select="@frame"/></fn:string>
+            </xsl:if>
+
+            <xsl:if test="table-notes/note or title/note or tgroup//note">
+                <fn:array key="table_notes">
+                    <xsl:for-each-group select="table-notes/note | title/note | tgroup//note" group-by="@xml:id">
+                        <xsl:sort select="current-grouping-key()"/>
+                        <fn:map>
+                            <fn:string key="id"><xsl:value-of select="current-grouping-key()"/></fn:string>
+                            <xsl:if test="current-group()[1]/@vendor-id">
+                                <fn:string key="vendor_id"><xsl:value-of select="current-group()[1]/@vendor-id"/></fn:string>
+                            </xsl:if>
+                            <fn:string key="content"><xsl:apply-templates select="current-group()[1]" mode="rich-text-json"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each-group>
+                </fn:array>
+            </xsl:if>
             
             <fn:map key="structure">
                 <xsl:choose>
@@ -814,6 +865,13 @@
                         <fn:null key="columns"/>
                     </xsl:otherwise>
                 </xsl:choose>
+
+                <xsl:if test="tgroup/@colsep">
+                    <fn:string key="colsep"><xsl:value-of select="tgroup/@colsep"/></fn:string>
+                </xsl:if>
+                <xsl:if test="tgroup/@rowsep">
+                    <fn:string key="rowsep"><xsl:value-of select="tgroup/@rowsep"/></fn:string>
+                </xsl:if>
                 
                 <xsl:if test="tgroup/colspec">
                     <fn:array key="column_specs">
@@ -870,6 +928,13 @@
             <xsl:if test="@source">
                 <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
+
+            <xsl:if test="@valign">
+                <fn:string key="valign"><xsl:value-of select="@valign"/></fn:string>
+            </xsl:if>
+            <xsl:if test="@rowsep">
+                <fn:string key="rowsep"><xsl:value-of select="@rowsep"/></fn:string>
+            </xsl:if>
             
             <!-- Cells array (current content) -->
             <fn:array key="cells">
@@ -905,6 +970,24 @@
             
             <xsl:if test="@align">
                 <fn:string key="align"><xsl:value-of select="@align"/></fn:string>
+            </xsl:if>
+            <xsl:if test="@valign">
+                <fn:string key="valign"><xsl:value-of select="@valign"/></fn:string>
+            </xsl:if>
+            <xsl:if test="@colsep">
+                <fn:string key="colsep"><xsl:value-of select="@colsep"/></fn:string>
+            </xsl:if>
+            <xsl:if test="@rowsep">
+                <fn:string key="rowsep"><xsl:value-of select="@rowsep"/></fn:string>
+            </xsl:if>
+            <xsl:if test="@colname">
+                <fn:string key="colname"><xsl:value-of select="@colname"/></fn:string>
+            </xsl:if>
+            <xsl:if test="@namest">
+                <fn:string key="namest"><xsl:value-of select="@namest"/></fn:string>
+            </xsl:if>
+            <xsl:if test="@nameend">
+                <fn:string key="nameend"><xsl:value-of select="@nameend"/></fn:string>
             </xsl:if>
             <xsl:if test="@rowspan and @rowspan != ''">
                 <fn:number key="rowspan"><xsl:value-of select="@rowspan"/></fn:number>
@@ -954,8 +1037,15 @@
                                 </fn:map>
                             </fn:map>
                         </xsl:when>
+                        <!-- Table note marker -->
+                        <xsl:when test="self::note[@xml:id]">
+                            <fn:map>
+                                <fn:string key="type">text</fn:string>
+                                <fn:string key="value">[REF:table-note:<xsl:value-of select="@xml:id"/>]</fn:string>
+                            </fn:map>
+                        </xsl:when>
                         <!-- Text node or other elements - collect as text -->
-                        <xsl:when test="self::text()[normalize-space()] or self::*[not(self::figure)]">
+                        <xsl:when test="self::text()[normalize-space()] or self::*[not(self::figure or self::note)]">
                             <xsl:variable name="text-content">
                                 <xsl:apply-templates select="." mode="rich-text-json"/>
                             </xsl:variable>
@@ -972,7 +1062,18 @@
             <!-- No figures - just text content -->
             <xsl:otherwise>
                 <xsl:variable name="text-content">
-                    <xsl:apply-templates select="$entry" mode="rich-text-json"/>
+                    <xsl:for-each select="$entry/node()">
+                        <xsl:choose>
+                            <xsl:when test="self::note[@xml:id]">
+                                <xsl:text>[REF:table-note:</xsl:text>
+                                <xsl:value-of select="@xml:id"/>
+                                <xsl:text>]</xsl:text>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:apply-templates select="." mode="rich-text-json"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:for-each>
                 </xsl:variable>
                 <fn:map>
                     <fn:string key="type">text</fn:string>
@@ -1337,6 +1438,7 @@
             <xsl:value-of select="."/>
         </xsl:if>
     </xsl:template>
+
     
     <xsl:template match="measurement" mode="rich-text-json">
         <xsl:value-of select="."/>
@@ -1880,6 +1982,20 @@
             <fn:string key="type">original</fn:string>
             <fn:string key="effective_date"><xsl:value-of select="revision-history/original/@effective-date"/></fn:string>
             <fn:string key="title"><xsl:apply-templates select="revision-history/original/title" mode="rich-text-json"/></fn:string>
+            <xsl:if test="revision-history/original/table-notes/note or revision-history/original/title/note or revision-history/original/tgroup//note">
+                <fn:array key="table_notes">
+                    <xsl:for-each-group select="revision-history/original/table-notes/note | revision-history/original/title/note | revision-history/original/tgroup//note" group-by="@xml:id">
+                        <xsl:sort select="current-grouping-key()"/>
+                        <fn:map>
+                            <fn:string key="id"><xsl:value-of select="current-grouping-key()"/></fn:string>
+                            <xsl:if test="current-group()[1]/@vendor-id">
+                                <fn:string key="vendor_id"><xsl:value-of select="current-group()[1]/@vendor-id"/></fn:string>
+                            </xsl:if>
+                            <fn:string key="content"><xsl:apply-templates select="current-group()[1]" mode="rich-text-json"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each-group>
+                </fn:array>
+            </xsl:if>
             <fn:map key="structure">
                 <xsl:choose>
                     <xsl:when test="revision-history/original/tgroup/@cols and revision-history/original/tgroup/@cols != ''">
@@ -1889,6 +2005,12 @@
                         <fn:null key="columns"/>
                     </xsl:otherwise>
                 </xsl:choose>
+                <xsl:if test="revision-history/original/tgroup/@colsep">
+                    <fn:string key="colsep"><xsl:value-of select="revision-history/original/tgroup/@colsep"/></fn:string>
+                </xsl:if>
+                <xsl:if test="revision-history/original/tgroup/@rowsep">
+                    <fn:string key="rowsep"><xsl:value-of select="revision-history/original/tgroup/@rowsep"/></fn:string>
+                </xsl:if>
                 
                 <xsl:if test="revision-history/original/tgroup/colspec">
                     <fn:array key="column_specs">
@@ -1938,6 +2060,20 @@
                 </xsl:choose>
                 
                 <fn:string key="title"><xsl:apply-templates select="content/title" mode="rich-text-json"/></fn:string>
+                <xsl:if test="content/table-notes/note or content/title/note or content/tgroup//note">
+                    <fn:array key="table_notes">
+                        <xsl:for-each-group select="content/table-notes/note | content/title/note | content/tgroup//note" group-by="@xml:id">
+                            <xsl:sort select="current-grouping-key()"/>
+                            <fn:map>
+                                <fn:string key="id"><xsl:value-of select="current-grouping-key()"/></fn:string>
+                                <xsl:if test="current-group()[1]/@vendor-id">
+                                    <fn:string key="vendor_id"><xsl:value-of select="current-group()[1]/@vendor-id"/></fn:string>
+                                </xsl:if>
+                                <fn:string key="content"><xsl:apply-templates select="current-group()[1]" mode="rich-text-json"/></fn:string>
+                            </fn:map>
+                        </xsl:for-each-group>
+                    </fn:array>
+                </xsl:if>
                 <fn:map key="structure">
                     <xsl:choose>
                         <xsl:when test="content/tgroup/@cols and content/tgroup/@cols != ''">
@@ -1947,6 +2083,12 @@
                             <fn:null key="columns"/>
                         </xsl:otherwise>
                     </xsl:choose>
+                    <xsl:if test="content/tgroup/@colsep">
+                        <fn:string key="colsep"><xsl:value-of select="content/tgroup/@colsep"/></fn:string>
+                    </xsl:if>
+                    <xsl:if test="content/tgroup/@rowsep">
+                        <fn:string key="rowsep"><xsl:value-of select="content/tgroup/@rowsep"/></fn:string>
+                    </xsl:if>
                     
                     <xsl:if test="content/tgroup/colspec">
                         <fn:array key="column_specs">
@@ -1989,6 +2131,24 @@
             <xsl:if test="revision-history/original/@align">
                 <fn:string key="align"><xsl:value-of select="revision-history/original/@align"/></fn:string>
             </xsl:if>
+            <xsl:if test="revision-history/original/@valign">
+                <fn:string key="valign"><xsl:value-of select="revision-history/original/@valign"/></fn:string>
+            </xsl:if>
+            <xsl:if test="revision-history/original/@colsep">
+                <fn:string key="colsep"><xsl:value-of select="revision-history/original/@colsep"/></fn:string>
+            </xsl:if>
+            <xsl:if test="revision-history/original/@rowsep">
+                <fn:string key="rowsep"><xsl:value-of select="revision-history/original/@rowsep"/></fn:string>
+            </xsl:if>
+            <xsl:if test="revision-history/original/@colname">
+                <fn:string key="colname"><xsl:value-of select="revision-history/original/@colname"/></fn:string>
+            </xsl:if>
+            <xsl:if test="revision-history/original/@namest">
+                <fn:string key="namest"><xsl:value-of select="revision-history/original/@namest"/></fn:string>
+            </xsl:if>
+            <xsl:if test="revision-history/original/@nameend">
+                <fn:string key="nameend"><xsl:value-of select="revision-history/original/@nameend"/></fn:string>
+            </xsl:if>
             <xsl:if test="revision-history/original/@rowspan and revision-history/original/@rowspan != ''">
                 <fn:number key="rowspan"><xsl:value-of select="revision-history/original/@rowspan"/></fn:number>
             </xsl:if>
@@ -2024,6 +2184,24 @@
                 <fn:string key="content"><xsl:apply-templates select="content" mode="rich-text-json"/></fn:string>
                 <xsl:if test="content/@align">
                     <fn:string key="align"><xsl:value-of select="content/@align"/></fn:string>
+                </xsl:if>
+                <xsl:if test="content/@valign">
+                    <fn:string key="valign"><xsl:value-of select="content/@valign"/></fn:string>
+                </xsl:if>
+                <xsl:if test="content/@colsep">
+                    <fn:string key="colsep"><xsl:value-of select="content/@colsep"/></fn:string>
+                </xsl:if>
+                <xsl:if test="content/@rowsep">
+                    <fn:string key="rowsep"><xsl:value-of select="content/@rowsep"/></fn:string>
+                </xsl:if>
+                <xsl:if test="content/@colname">
+                    <fn:string key="colname"><xsl:value-of select="content/@colname"/></fn:string>
+                </xsl:if>
+                <xsl:if test="content/@namest">
+                    <fn:string key="namest"><xsl:value-of select="content/@namest"/></fn:string>
+                </xsl:if>
+                <xsl:if test="content/@nameend">
+                    <fn:string key="nameend"><xsl:value-of select="content/@nameend"/></fn:string>
                 </xsl:if>
                 <xsl:if test="content/@rowspan and content/@rowspan != ''">
                     <fn:number key="rowspan"><xsl:value-of select="content/@rowspan"/></fn:number>

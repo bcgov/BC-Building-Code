@@ -1199,6 +1199,9 @@
         </choice>
       </attribute>
     </optional>
+    <optional>
+      <attribute name="frame"><text/></attribute>
+    </optional>
     <choice>
       <!-- Traditional table structure -->
       <group>
@@ -1259,6 +1262,8 @@
         </optional>
         <element name="tgroup">
           <attribute name="cols"><data type="positiveInteger"/></attribute>
+          <optional><attribute name="colsep"><text/></attribute></optional>
+          <optional><attribute name="rowsep"><text/></attribute></optional>
           <zeroOrMore>
             <element name="colspec">
               <attribute name="colname"><text/></attribute>
@@ -1267,6 +1272,7 @@
           </zeroOrMore>
           <optional>
             <element name="thead">
+              <optional><attribute name="valign"><text/></attribute></optional>
               <oneOrMore>
                 <element name="row">
                   <ref name="table-row-content"/>
@@ -1275,6 +1281,7 @@
             </element>
           </optional>
           <element name="tbody">
+            <optional><attribute name="valign"><text/></attribute></optional>
             <oneOrMore>
               <element name="row">
                 <ref name="table-row-content"/>
@@ -1360,6 +1367,8 @@
           </optional>
           <element name="tgroup">
             <attribute name="cols"><data type="positiveInteger"/></attribute>
+            <optional><attribute name="colsep"><text/></attribute></optional>
+            <optional><attribute name="rowsep"><text/></attribute></optional>
             <zeroOrMore>
               <element name="colspec">
                 <attribute name="colname"><text/></attribute>
@@ -1368,6 +1377,7 @@
             </zeroOrMore>
             <optional>
               <element name="thead">
+                <optional><attribute name="valign"><text/></attribute></optional>
                 <oneOrMore>
                   <element name="row">
                     <ref name="table-row-content"/>
@@ -1376,6 +1386,7 @@
               </element>
             </optional>
             <element name="tbody">
+              <optional><attribute name="valign"><text/></attribute></optional>
               <oneOrMore>
                 <element name="row">
                   <ref name="table-row-content"/>
@@ -1471,6 +1482,8 @@
               </optional>
               <element name="tgroup">
                 <attribute name="cols"><data type="positiveInteger"/></attribute>
+                <optional><attribute name="colsep"><text/></attribute></optional>
+                <optional><attribute name="rowsep"><text/></attribute></optional>
                 <zeroOrMore>
                   <element name="colspec">
                     <attribute name="colname"><text/></attribute>
@@ -1479,6 +1492,7 @@
                 </zeroOrMore>
                 <optional>
                   <element name="thead">
+                    <optional><attribute name="valign"><text/></attribute></optional>
                     <oneOrMore>
                       <element name="row">
                         <ref name="table-row-content"/>
@@ -1487,6 +1501,7 @@
                   </element>
                 </optional>
                 <element name="tbody">
+                  <optional><attribute name="valign"><text/></attribute></optional>
                   <oneOrMore>
                     <element name="row">
                       <ref name="table-row-content"/>
@@ -1517,6 +1532,12 @@
       <attribute name="xml:id"><data type="ID"/></attribute>
     </optional>
     <optional>
+      <attribute name="valign"><text/></attribute>
+    </optional>
+    <optional>
+      <attribute name="rowsep"><text/></attribute>
+    </optional>
+    <optional>
       <attribute name="revised">
         <value>yes</value>
       </attribute>
@@ -1540,6 +1561,18 @@
               <value>justify</value>
             </choice>
           </attribute>
+        </optional>
+        <optional>
+          <attribute name="valign"><text/></attribute>
+        </optional>
+        <optional>
+          <attribute name="colsep"><text/></attribute>
+        </optional>
+        <optional>
+          <attribute name="rowsep"><text/></attribute>
+        </optional>
+        <optional>
+          <attribute name="colname"><text/></attribute>
         </optional>
         <optional>
           <attribute name="rowspan"><data type="positiveInteger"/></attribute>
@@ -1579,9 +1612,19 @@
                   <value>left</value>
                   <value>center</value>
                   <value>right</value>
+                  <value>char</value>
+                  <value>justify</value>
                 </choice>
               </attribute>
             </optional>
+            <optional><attribute name="valign"><text/></attribute></optional>
+            <optional><attribute name="colsep"><text/></attribute></optional>
+            <optional><attribute name="rowsep"><text/></attribute></optional>
+            <optional><attribute name="colname"><text/></attribute></optional>
+            <optional><attribute name="rowspan"><data type="positiveInteger"/></attribute></optional>
+            <optional><attribute name="colspan"><data type="positiveInteger"/></attribute></optional>
+            <optional><attribute name="namest"><text/></attribute></optional>
+            <optional><attribute name="nameend"><text/></attribute></optional>
             <ref name="entry-content"/>
           </element>
         </oneOrMore>
@@ -1620,9 +1663,19 @@
                     <value>left</value>
                     <value>center</value>
                     <value>right</value>
+                    <value>char</value>
+                    <value>justify</value>
                   </choice>
                 </attribute>
               </optional>
+              <optional><attribute name="valign"><text/></attribute></optional>
+              <optional><attribute name="colsep"><text/></attribute></optional>
+              <optional><attribute name="rowsep"><text/></attribute></optional>
+              <optional><attribute name="colname"><text/></attribute></optional>
+              <optional><attribute name="rowspan"><data type="positiveInteger"/></attribute></optional>
+              <optional><attribute name="colspan"><data type="positiveInteger"/></attribute></optional>
+              <optional><attribute name="namest"><text/></attribute></optional>
+              <optional><attribute name="nameend"><text/></attribute></optional>
               <ref name="entry-content"/>
             </element>
           </oneOrMore>
