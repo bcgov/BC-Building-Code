@@ -2481,12 +2481,9 @@
                         <optional>
                             <attribute name="xml:id"><data type="ID"/></attribute>
                         </optional>
-                        <!-- Image reference attributes for rendering -->
+                        <!-- HTML equation rendering source -->
                         <optional>
-                            <attribute name="image"><text/></attribute>
-                        </optional>
-                        <optional>
-                            <attribute name="image-src"><text/></attribute>
+                            <attribute name="html-src"><text/></attribute>
                         </optional>
                         <optional>
                             <choice>

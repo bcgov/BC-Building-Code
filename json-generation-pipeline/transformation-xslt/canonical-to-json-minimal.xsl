@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fn="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="fn">
+<xsl:stylesheet version="3.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" exclude-result-prefixes="xs fn">
     <xsl:output method="text" encoding="UTF-8"/>
     <xsl:param name="max-parts" select="2"/>
     <xsl:param name="max-sections" select="3"/>
@@ -492,13 +492,20 @@
     
     <!-- EQUATION PROCESSING -->
     <xsl:template match="equation" mode="equation-json">
+        <xsl:variable name="equation-id" as="xs:string"
+                      select="
+                        if (@xml:id) then string(@xml:id)
+                        else if (@image) then string(@image)
+                        else if (@html-src) then replace(tokenize(string(@html-src), '/')[last()], '\.html$', '')
+                        else if (@image-src) then replace(tokenize(string(@image-src), '/')[last()], '\.eps$', '')
+                        else ''"/>
         <fn:map>
-            <fn:string key="id"><xsl:value-of select="if (@xml:id) then @xml:id else if (@image) then @image else ''"/></fn:string>
+            <fn:string key="id"><xsl:value-of select="$equation-id"/></fn:string>
             <fn:string key="type"><xsl:value-of select="@type"/></fn:string>
             <fn:string key="latex"><xsl:apply-templates select="*[local-name()='math']" mode="latex"/></fn:string>
             <fn:string key="plainText"><xsl:apply-templates select="*[local-name()='math']" mode="plain"/></fn:string>
             <xsl:if test="@image"><fn:string key="image"><xsl:value-of select="@image"/></fn:string></xsl:if>
-            <xsl:if test="@image-src"><fn:string key="imageSrc"><xsl:value-of select="@image-src"/></fn:string></xsl:if>
+            <xsl:if test="@html-src or @image-src"><fn:string key="htmlSrc"><xsl:value-of select="if (@html-src) then @html-src else @image-src"/></fn:string></xsl:if>
         </fn:map>
     </xsl:template>
     

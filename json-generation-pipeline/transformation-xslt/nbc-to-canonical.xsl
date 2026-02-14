@@ -5,8 +5,9 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:atict="http://www.arbortext.com/namespace/atict"
+    xmlns:bc="urn:bc:canonical"
     xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    exclude-result-prefixes="xs xlink atict fn"
+    exclude-result-prefixes="xs xlink atict bc fn"
 >
 
   <!-- ================================================================== -->
@@ -35,6 +36,20 @@
   <!-- Global parameters -->
   <xsl:param name="target-version" select="'2020'" />
   <xsl:param name="canonical-version" select="'1.0'" />
+
+  <!-- Build graphics asset paths from vendor IDs (e.g., EG01301B, eg02506a). -->
+  <xsl:function name="bc:asset-src" as="xs:string">
+    <xsl:param name="asset-id" as="xs:string?" />
+    <xsl:param name="extension" as="xs:string" />
+    <xsl:variable name="id" select="normalize-space($asset-id)" />
+    <xsl:sequence
+            select="
+        if (matches($id, '^(EG|GG)\d{3}.*$', 'i')) then
+          concat('graphics/', lower-case(substring($id, 1, 2)), '/', substring($id, 3, 3), '/', $id, '.', $extension)
+        else
+          concat('graphics/', $id, '.', $extension)"
+        />
+  </xsl:function>
 
   <!-- Keys -->
   <!-- Look up ORIGINAL vendor nodes in source by @id (first pass build) -->
@@ -1069,7 +1084,7 @@
                 /></title>
 
       <xsl:for-each select="graphic">
-        <graphic src="graphics/{@catalog-id}.eps" alt="{@alt}">
+        <graphic src="{bc:asset-src(string(@catalog-id), 'eps')}" alt="{@alt}">
           <xsl:copy-of select="@width | @height" />
         </graphic>
       </xsl:for-each>
@@ -1213,8 +1228,7 @@
       <xsl:if test="@id"><xsl:attribute name="xml:id" select="@id" /></xsl:if>
       <!-- Preserve image reference for rendering -->
       <xsl:if test="@image">
-        <xsl:attribute name="image" select="@image" />
-        <xsl:attribute name="image-src" select="concat('graphics/', @image, '.eps')" />
+        <xsl:attribute name="html-src" select="bc:asset-src(string(@image), 'html')" />
       </xsl:if>
       <!-- Convert to MathML -->
       <xsl:choose>
@@ -1236,8 +1250,7 @@
     <equation type="inline">
       <xsl:if test="@id"><xsl:attribute name="xml:id" select="@id" /></xsl:if>
       <xsl:if test="@image">
-        <xsl:attribute name="image" select="@image" />
-        <xsl:attribute name="image-src" select="concat('graphics/', @image, '.eps')" />
+        <xsl:attribute name="html-src" select="bc:asset-src(string(@image), 'html')" />
       </xsl:if>
       <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
         <xsl:apply-templates select="*" mode="mathml" />

@@ -968,7 +968,7 @@
       "properties": {
         "id": {
           "type": "string",
-          "description": "Equation identifier (xml:id or image reference as fallback)"
+          "description": "Equation identifier (xml:id, image reference, or html source filename fallback)"
         },
         "type": {
           "type": "string",
@@ -987,13 +987,17 @@
           "type": "string",
           "description": "Full MathML XML serialization for precise mathematical semantics"
         },
+        "htmlSrc": {
+          "type": "string",
+          "description": "Path to equation HTML file for rendering (e.g., 'graphics/eg/025/eg02506a.html')"
+        },
         "image": {
           "type": "string",
-          "description": "Image reference identifier (e.g., 'eg02764a')"
+          "description": "Legacy image reference identifier (e.g., 'eg02764a')"
         },
         "imageSrc": {
           "type": "string",
-          "description": "Path to equation image file for fallback rendering (e.g., 'graphics/eg02764a.eps')"
+          "description": "Legacy EPS equation path for backward compatibility (e.g., 'graphics/eg02764a.eps')"
         }
       }
     },
