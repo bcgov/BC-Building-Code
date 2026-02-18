@@ -868,6 +868,8 @@
     
     <!-- Count title notes to offset entry note numbering -->
     <xsl:variable name="title-note-count" select="count((title.tbl|title)/note)" />
+    <!-- Count all entry notes across the entire table -->
+    <xsl:variable name="entry-notes" select="tgroup//note" />
 
     <table xml:id="{$table-id}">
       <xsl:if test="@id"><xsl:attribute
@@ -881,13 +883,6 @@
                     select="(title.tbl|title)/node()[not(self::note)]"
                     mode="rich-text"
                 />
-        <!-- Process note elements as separate note elements inside title -->
-        <xsl:for-each select="(title.tbl|title)/note">
-          <note xml:id="{concat($table-id, '.titlenote', position())}">
-            <xsl:if test="@id"><xsl:attribute name="vendor-id" select="@id" /></xsl:if>
-            <xsl:apply-templates select="para.note/node()" mode="rich-text" />
-          </note>
-        </xsl:for-each>
       </title>
       <!-- Process any ref.int elements as separate elements after title -->
       <xsl:for-each select="ref.int">
@@ -897,6 +892,26 @@
         <xsl:with-param name="table-id" select="$table-id" />
         <xsl:with-param name="title-note-count" select="$title-note-count" />
       </xsl:apply-templates>
+      <!-- Collect all notes (title notes + entry notes) into table-notes -->
+      <xsl:if test="$title-note-count > 0 or exists($entry-notes)">
+        <table-notes>
+          <!-- Title notes first -->
+          <xsl:for-each select="(title.tbl|title)/note">
+            <note xml:id="{concat($table-id, '.titlenote', position())}">
+              <xsl:if test="@id"><xsl:attribute name="vendor-id" select="@id" /></xsl:if>
+              <xsl:apply-templates select="para.note/node()" mode="rich-text" />
+            </note>
+          </xsl:for-each>
+          <!-- Entry notes (from thead, tbody, tfoot) -->
+          <xsl:for-each select="$entry-notes">
+            <xsl:variable name="note-pos" select="position()" />
+            <note xml:id="{concat($table-id, '.note', $title-note-count + $note-pos)}">
+              <xsl:if test="@id"><xsl:attribute name="vendor-id" select="@id" /></xsl:if>
+              <xsl:apply-templates select="para.note/node()" mode="rich-text" />
+            </note>
+          </xsl:for-each>
+        </table-notes>
+      </xsl:if>
     </table>
   </xsl:template>
 
@@ -1017,17 +1032,15 @@
     </entry>
   </xsl:template>
 
-  <!-- Entry content mode: handle notes specially, pass everything else to rich-text -->
+  <!-- Entry content mode: handle notes specially - emit ref to table-notes section -->
   <xsl:template match="note" mode="entry-content">
     <xsl:param name="table-id" as="xs:string" select="''" />
     <xsl:param name="note-offset" as="xs:integer" select="0" />
     <!-- Count all preceding notes within this entry (at any depth) -->
     <xsl:variable name="preceding-notes-in-entry" select="count(ancestor::entry[1]//note[. &lt;&lt; current()])" />
     <xsl:variable name="note-number" select="$note-offset + $preceding-notes-in-entry + 1" />
-    <note xml:id="{concat($table-id, '.note', $note-number)}">
-      <xsl:if test="@id"><xsl:attribute name="vendor-id" select="@id" /></xsl:if>
-      <xsl:apply-templates select="para.note/node()" mode="rich-text" />
-    </note>
+    <!-- Emit a reference to the note in table-notes instead of inline note -->
+    <ref type="table-note" target="{concat($table-id, '.note', $note-number)}" />
   </xsl:template>
 
   <!-- ref.note in entry: reference to a table note -->
