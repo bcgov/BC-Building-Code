@@ -896,6 +896,13 @@
                 </fn:array>
             </fn:map>
             
+            <!-- Extract equations from table (title and all entries) -->
+            <xsl:if test=".//equation">
+                <fn:array key="equations">
+                    <xsl:apply-templates select=".//equation" mode="equation-json"/>
+                </fn:array>
+            </xsl:if>
+            
             <!-- Revision history if present -->
             <xsl:if test="@revised = 'yes' and revision-history">
                 <fn:array key="revisions">
@@ -1450,10 +1457,18 @@
     
     <xsl:template match="equation" mode="rich-text-json">
         <!-- Insert placeholder in text that matches the pattern [EQ:type:id] -->
+        <!-- Use same ID fallback logic as equation-json template -->
+        <xsl:variable name="equation-id" as="xs:string"
+                      select="
+                        if (@xml:id) then string(@xml:id)
+                        else if (@image) then string(@image)
+                        else if (@html-src) then replace(tokenize(string(@html-src), '/')[last()], '\.html', '')
+                        else if (@image-src) then replace(tokenize(string(@image-src), '/')[last()], '\.eps', '')
+                        else ''"/>
         <xsl:text>[EQ:</xsl:text>
         <xsl:value-of select="@type"/>
         <xsl:text>:</xsl:text>
-        <xsl:value-of select="@xml:id"/>
+        <xsl:value-of select="$equation-id"/>
         <xsl:text>]</xsl:text>
     </xsl:template>
     

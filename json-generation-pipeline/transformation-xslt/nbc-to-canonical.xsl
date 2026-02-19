@@ -1401,17 +1401,22 @@
 
   <!-- Fence (fen) - parentheses, brackets, etc. -->
   <xsl:template match="fen" mode="mathml">
-    <mo>
-      <xsl:choose>
-        <xsl:when test="@type='lp'">(</xsl:when>
-        <xsl:when test="@type='rp'">)</xsl:when>
-        <xsl:when test="@type='lb'">[</xsl:when>
-        <xsl:when test="@type='rb'">]</xsl:when>
-        <xsl:when test="@type='lc'">{</xsl:when>
-        <xsl:when test="@type='rc'">}</xsl:when>
-        <xsl:otherwise><xsl:value-of select="." /></xsl:otherwise>
-      </xsl:choose>
-    </mo>
+    <!-- Opening fence -->
+    <xsl:if test="@lp">
+      <mo>
+        <xsl:choose>
+          <xsl:when test="@lp='par'">(</xsl:when>
+          <xsl:when test="@lp='bra'">[</xsl:when>
+          <xsl:when test="@lp='brc'">{</xsl:when>
+          <xsl:otherwise>(</xsl:otherwise>
+        </xsl:choose>
+      </mo>
+    </xsl:if>
+    
+    <!-- Process children (fractions, operators, etc.) -->
+    <xsl:apply-templates select="node()" mode="mathml" />
+    
+    <!-- Note: Closing fence is handled by <rp> child element -->
   </xsl:template>
 
   <!-- Left parenthesis -->
@@ -1424,9 +1429,20 @@
     <mo>)</mo>
   </xsl:template>
 
-  <!-- Generic rp (parenthesis) -->
+  <!-- Generic rp (parenthesis) - handles closing fences -->
   <xsl:template match="rp" mode="mathml">
-    <mo><xsl:value-of select="." /></mo>
+    <mo>
+      <xsl:choose>
+        <xsl:when test="@post='par'">)</xsl:when>
+        <xsl:when test="@post='bra'">]</xsl:when>
+        <xsl:when test="@post='brc'">}</xsl:when>
+        <xsl:when test="@type='lp'">(</xsl:when>
+        <xsl:when test="@type='rp'">)</xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="if (normalize-space(.) != '') then . else ')'" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </mo>
   </xsl:template>
 
   <!-- Horizontal space -->

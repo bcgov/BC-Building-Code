@@ -416,7 +416,20 @@
     <xsl:template match="text()" mode="rich"><xsl:value-of select="."/></xsl:template>
     <xsl:template match="ref" mode="rich">[REF:<xsl:value-of select="@type"/>:<xsl:value-of select="@target"/>]<xsl:value-of select="."/></xsl:template>
     <xsl:template match="measurement" mode="rich"><xsl:value-of select="."/> (<xsl:value-of select="@units"/>)</xsl:template>
-    <xsl:template match="equation" mode="rich">[EQ:<xsl:value-of select="@type"/>:<xsl:value-of select="@xml:id"/>]</xsl:template>
+    <xsl:template match="equation" mode="rich">
+        <xsl:variable name="equation-id" as="xs:string"
+                      select="
+                        if (@xml:id) then string(@xml:id)
+                        else if (@image) then string(@image)
+                        else if (@html-src) then replace(tokenize(string(@html-src), '/')[last()], '\.html', '')
+                        else if (@image-src) then replace(tokenize(string(@image-src), '/')[last()], '\.eps', '')
+                        else ''"/>
+        <xsl:text>[EQ:</xsl:text>
+        <xsl:value-of select="@type"/>
+        <xsl:text>:</xsl:text>
+        <xsl:value-of select="$equation-id"/>
+        <xsl:text>]</xsl:text>
+    </xsl:template>
     <xsl:template match="super" mode="rich">^{<xsl:value-of select="."/>}</xsl:template>
     <xsl:template match="sub" mode="rich">_{<xsl:value-of select="."/>}</xsl:template>
     <xsl:template match="revision-history" mode="rich">
