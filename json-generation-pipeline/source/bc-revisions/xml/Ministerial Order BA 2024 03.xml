@@ -116,7 +116,7 @@
               
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-003" status="current">
                 <content>
-                  <text>A fire alarm system shall be installed in <ref type="term" target="bldng">buildings</ref> designed and constructed in accordance with <ref type="internal" target="nbc.divB.part3.sect2.subsect10" display-type="long"/>. (See <ref type="internal" target="nbc.divB.part3.sect9.appnoteA-3.2.10.2.1-2" display-type="long"/>.)</text>
+                  <text>A fire alarm system shall be installed in <ref type="term" target="bldng">buildings</ref> designed and constructed in accordance with <ref type="internal" target="nbc.divB.part3.sect2.subsect10" display-type="long"/>. (See <ref type="internal" target="nbc.divB.part3.appendix.appnoteA-3.2.10.2.1-2" display-type="long"/>.)</text>
                 </content>
                 <change-summary>Added new sentence requiring fire alarm systems in buildings designed per Subsection 3.2.10.</change-summary>
                 <note>Ministerial Order BA 2024 03</note>
@@ -173,7 +173,7 @@
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-005" status="current">
                 <content>
                   <title>Requirements for Residential Buildings with a Single Exit</title>
-                  <note>(See <ref type="internal" target="nbc.divB.part3.sect9.appnoteA-3.2.10" display-type="long"/>.) (See also <ref type="internal" target="nbc.divA.part1.sect5.appnoteA-3" display-type="long"/>.)</note>
+                  <note>(See <ref type="internal" target="nbc.divB.part3.appendix.appnoteA-3.2.10" display-type="long"/>.) (See also <ref type="internal" target="nbc.divA.part1.appendix.appnoteA-3" display-type="long"/>.)</note>
                   
                   <article xml:id="nbc.divB.part3.sect2.subsect10.art1" number="1">
                     <title>Application</title>
@@ -228,7 +228,7 @@
                         <text>care facilities accepted for residential use pursuant to provincial legislation.</text>
                       </clause>
                     </sentence>
-                    <note>(See <ref type="internal" target="nbc.divB.part3.sect9.appnoteA-3.2.10.1.4" display-type="long"/>.)</note>
+                    <note>(See <ref type="internal" target="nbc.divB.part3.appendix.appnoteA-3.2.10.1.4" display-type="long"/>.)</note>
                     <sentence xml:id="nbc.divB.part3.sect2.subsect10.art1.sent5" number="5">
                       <text>This Subsection, in accordance with the application of this Article and in conformance with the provisions of this Subsection and all other applicable provisions of this Code, may be used as an alternate to the requirements for a second <ref type="term" target="xt">exit</ref> in <ref type="internal" target="nbc.divB.part3.sect4.subsect2" display-type="long"/>.</text>
                     </sentence>
@@ -237,10 +237,10 @@
                   <article xml:id="nbc.divB.part3.sect2.subsect10.art2" number="2">
                     <title>Building Construction</title>
                     <sentence xml:id="nbc.divB.part3.sect2.subsect10.art2.sent1" number="1">
-                      <text>Notwithstanding the permissions in <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art12.sent2" display-type="short"/> to <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art12.sent4" display-type="short"/>, a <ref type="term" target="bldng">building</ref> to which this Subsection applies shall be <ref type="term" target="prnklrd">sprinklered</ref> throughout with an automatic sprinkler system designed, constructed, installed and tested in conformance with <ref type="standard" target="nfpa13" standardId="nfpa13"/>, "Standard for the Installation of Sprinkler Systems." (See <ref type="internal" target="nbc.divB.part3.sect9.appnoteA-3.2.10.2.1-2" display-type="long"/>.) (See <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art1.sent7" display-type="long"/>.)</text>
+                      <text>Notwithstanding the permissions in <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art12.sent2" display-type="short"/> to <ref type="internal" target="nbc.divB.part3.sect2.subsect5.art12.sent4" display-type="short"/>, a <ref type="term" target="bldng">building</ref> to which this Subsection applies shall be <ref type="term" target="prnklrd">sprinklered</ref> throughout with an automatic sprinkler system designed, constructed, installed and tested in conformance with <ref type="standard" target="nfpa13" standardId="nfpa13"/>, "Standard for the Installation of Sprinkler Systems." (See <ref type="internal" target="nbc.divB.part3.appendix.appnoteA-3.2.10.2.1-2" display-type="long"/>.) (See <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art1.sent7" display-type="long"/>.)</text>
                     </sentence>
                     <sentence xml:id="nbc.divB.part3.sect2.subsect10.art2.sent2" number="2">
-                      <text>All balconies and decks shall be <ref type="term" target="prnklrd">sprinklered</ref> in accordance with <ref type="internal" target="nbc.divB.part3.sect2.subsect10.art2.sent1" display-type="short"/>. (See <ref type="internal" target="nbc.divB.part3.sect9.appnoteA-3.2.10.2.1-2" display-type="long"/>.)</text>
+                      <text>All balconies and decks shall be <ref type="term" target="prnklrd">sprinklered</ref> in accordance with <ref type="internal" target="nbc.divB.part3.sect2.subsect10.art2.sent1" display-type="short"/>. (See <ref type="internal" target="nbc.divB.part3.appendix.appnoteA-3.2.10.2.1-2" display-type="long"/>.)</text>
                     </sentence>
                     <sentence xml:id="nbc.divB.part3.sect2.subsect10.art2.sent3" number="3">
                       <text>The <ref type="term" target="xt">exit</ref> facility shall be constructed either of <ref type="term" target="nncmbst">noncombustible</ref> construction or, notwithstanding the application of <ref type="internal" target="nbc.divB.part3.sect1.subsect13.art7" display-type="long"/>, with finishes that do not exceed the maximum <ref type="term" target="flm-sprd">flame-spread rating</ref> and maximum smoke developed classification for <ref type="term" target="xt">exit</ref> stairways in <ref type="internal" target="nbc.divB.part3.sect1.subsect13.art7.table1" display-type="long"/>, and shall</text>
@@ -260,9 +260,9 @@
                         <text>have signs posted in conspicuous locations near each landing to indicate that storage is not permitted.</text>
                       </clause>
                     </sentence>
-                    <note>(See <ref type="internal" target="nbc.divB.part3.sect9.appnoteA-3.2.10.1.3" display-type="long"/>.)</note>
+                    <note>(See <ref type="internal" target="nbc.divB.part3.appendix.appnoteA-3.2.10.1.3" display-type="long"/>.)</note>
                     <sentence xml:id="nbc.divB.part3.sect2.subsect10.art2.sent4" number="4">
-                      <text>The discharge from the <ref type="term" target="xt">exit</ref> stair described in <ref type="internal" target="nbc.divB.part3.sect2.subsect10.art2.sent3.clause3" display-type="long"/> shall be located not less than <measurement units="metric">3 m</measurement> and not more than <measurement units="metric">15 m</measurement> from the closest portion of the access route required for fire department use, measured horizontally from the face of the <ref type="term" target="bldng">building</ref>. (See <ref type="internal" target="nbc.divB.part3.sect9.appnoteA-3.2.10.2.4" display-type="long"/>.)</text>
+                      <text>The discharge from the <ref type="term" target="xt">exit</ref> stair described in <ref type="internal" target="nbc.divB.part3.sect2.subsect10.art2.sent3.clause3" display-type="long"/> shall be located not less than <measurement units="metric">3 m</measurement> and not more than <measurement units="metric">15 m</measurement> from the closest portion of the access route required for fire department use, measured horizontally from the face of the <ref type="term" target="bldng">building</ref>. (See <ref type="internal" target="nbc.divB.part3.appendix.appnoteA-3.2.10.2.4" display-type="long"/>.)</text>
                     </sentence>
                   </article>
                   
@@ -301,7 +301,7 @@
                       <text>Elevator hoistways shall not be designed as a means of venting.</text>
                     </sentence>
                     <sentence xml:id="nbc.divB.part3.sect2.subsect10.art3.sent5" number="5">
-                      <text>The systems for control of smoke movement required by <ref type="internal" target="nbc.divB.part3.sect2.subsect10.art3.sent1" display-type="short"/> shall be tested to ensure satisfactory operation. (See <ref type="internal" target="nbc.divB.part3.sect2.subsect6.art9.sent1" display-type="long"/> and <ref type="internal" target="nbc.divB.part3.sect9.appnoteA-3.2.6.9.1" display-type="long"/>.)</text>
+                      <text>The systems for control of smoke movement required by <ref type="internal" target="nbc.divB.part3.sect2.subsect10.art3.sent1" display-type="short"/> shall be tested to ensure satisfactory operation. (See <ref type="internal" target="nbc.divB.part3.sect2.subsect6.art9.sent1" display-type="long"/> and <ref type="internal" target="nbc.divB.part3.appendix.appnoteA-3.2.6.9.1" display-type="long"/>.)</text>
                     </sentence>
                   </article>
                   
@@ -317,7 +317,7 @@
                       <text>
                         <ref type="term" target="t">Suite</ref> entry doors shall have a <ref type="term" target="fr-prtc-">fire-protection rating</ref> of not less than <measurement units="metric">45 min</measurement>.</text>
                     </sentence>
-                    <note>(See <ref type="internal" target="nbc.divB.part3.sect9.appnoteA-3.2.10.4.3" display-type="long"/>.)</note>
+                    <note>(See <ref type="internal" target="nbc.divB.part3.appendix.appnoteA-3.2.10.4.3" display-type="long"/>.)</note>
                   </article>
                   
                 </content>
@@ -974,10 +974,10 @@
     <!-- ================================================================== -->
     <amendment id="bc-mo-2024-03-009" sequence="1008"
                description="Insert Note A-3.2.10 - Fire Protection and Firefighting Assumptions for Residential Buildings with a Single Exit">
-      <target type="position" parent-id="nbc.divB.part3.sect9.appendix" position="after" reference-id="nbc.divB.part3.sect9.appnote123"/>
+      <target type="position" parent-id="nbc.divB.part3.sect9.appendix" position="after" reference-id="nbc.divB.part3.appendix.appnote123"/>
       <insert>
         <new-content source="bc">
-          <application-note xml:id="nbc.divB.part3.sect9.appnote3210" revised="yes">
+          <application-note xml:id="nbc.divB.part3.appendix.appnote3210" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -986,15 +986,15 @@
                 <content>
                   <number>3.2.10.</number>
                   <title>Fire Protection and Firefighting Assumptions for Residential Buildings with a Single Exit.</title>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para1">The firefighting assumptions discussed in Note A-3 raise circumstances where additional firefighting capabilities and additional building protection measures may be required. The provisions in Subsection 3.2.10. for residential buildings with a single exit were developed with the expectation of a high level of capacity of the local fire department for fire prevention activities, fire suppression activities, the ability of the fire department to assist in egress of occupants in the event of an emergency, as well as a secure water supply for the function of the automatic sprinkler system and the manual fire suppression activities of a responding fire department.</paragraph>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para2"><emphasis style="bold">Fire Prevention</emphasis></paragraph>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para3">Maintenance of fire safety systems is essential for all buildings but becomes increasingly important when redundancies, such as a second and separate exit, are reduced or eliminated. The provisions for residential buildings with single exit stairs were developed with the expectation that fire officials routinely enforce the British Columbia Fire Code to ensure that the inspection intervals specified within are carried out, and that follow up inspections resulting from observed non-compliances occur at expedited intervals. Building owners and managers are required to be actively involved in carrying out the maintenance and upkeep of the building's fire safety systems. Residential buildings with a single exit should not be located in jurisdictions where a high level of fire prevention oversight cannot be maintained.</paragraph>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para4"><emphasis style="bold">Fire Suppression</emphasis></paragraph>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para5">The provisions for residential buildings with single exit stairs were developed with the expectation that a permanent, paid fire department is available to respond to a fire event twenty-four hours a day, every day. Firefighting personnel are expected to have a high level of training and the fire department is expected to be suitably equipped to provide fire suppression activities appropriate to the buildings and developments in their jurisdiction within tight response times. Residential buildings with a single exit should not be located in jurisdictions where a high level of fire suppression activities cannot be maintained.</paragraph>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para6"><emphasis style="bold">Egress and Safety of Occupants</emphasis></paragraph>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para7">The premise of egress in the British Columbia Building Code is that occupants of residential buildings receive early notification of a fire event, and occupants are able to respond unassisted in such an event. Early notification however does not guarantee occupant self-evacuation and when redundancies, such as a second and separate exit, are reduced or eliminated, occupant response options are likewise reduced. The provisions for residential buildings with single exit stairs were developed with the expectation that the local fire department has a service level that can coordinate and assist occupants with moving to a safe place in a fire event. Building owners and managers must be actively involved in fire safety planning in conjunction with the local fire department. Residential buildings with a single exit should not be located in jurisdictions where a service level that includes search and rescue by firefighting personnel cannot be maintained.</paragraph>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para8"><emphasis style="bold">Water Supply</emphasis></paragraph>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para9">The British Columbia Building Code requires an adequate water supply for firefighting be readily available and of sufficient volume and pressure to enable emergency response personnel to control fire growth so as to enable the safe evacuation of occupants and the conduct of search and rescue operations, prevent the fire from spreading to adjacent buildings, and provide a limited measure of property protection. As for any water-based fire protection systems or suppression activities, the water supply serving the building needs to be dependable over the life of the building through seasonal droughts and other eventualities. The provisions for residential buildings with single exit stairs were developed with the expectation of a highly dependable water supply would be available during construction and throughout the lifecycle of the building. Redundancies such as secondary or back up water supplies should to be considered to limit the probability that the water supply may become insufficient for an extended or even temporary period.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para1">The firefighting assumptions discussed in Note A-3 raise circumstances where additional firefighting capabilities and additional building protection measures may be required. The provisions in Subsection 3.2.10. for residential buildings with a single exit were developed with the expectation of a high level of capacity of the local fire department for fire prevention activities, fire suppression activities, the ability of the fire department to assist in egress of occupants in the event of an emergency, as well as a secure water supply for the function of the automatic sprinkler system and the manual fire suppression activities of a responding fire department.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para2"><emphasis style="bold">Fire Prevention</emphasis></paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para3">Maintenance of fire safety systems is essential for all buildings but becomes increasingly important when redundancies, such as a second and separate exit, are reduced or eliminated. The provisions for residential buildings with single exit stairs were developed with the expectation that fire officials routinely enforce the British Columbia Fire Code to ensure that the inspection intervals specified within are carried out, and that follow up inspections resulting from observed non-compliances occur at expedited intervals. Building owners and managers are required to be actively involved in carrying out the maintenance and upkeep of the building's fire safety systems. Residential buildings with a single exit should not be located in jurisdictions where a high level of fire prevention oversight cannot be maintained.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para4"><emphasis style="bold">Fire Suppression</emphasis></paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para5">The provisions for residential buildings with single exit stairs were developed with the expectation that a permanent, paid fire department is available to respond to a fire event twenty-four hours a day, every day. Firefighting personnel are expected to have a high level of training and the fire department is expected to be suitably equipped to provide fire suppression activities appropriate to the buildings and developments in their jurisdiction within tight response times. Residential buildings with a single exit should not be located in jurisdictions where a high level of fire suppression activities cannot be maintained.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para6"><emphasis style="bold">Egress and Safety of Occupants</emphasis></paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para7">The premise of egress in the British Columbia Building Code is that occupants of residential buildings receive early notification of a fire event, and occupants are able to respond unassisted in such an event. Early notification however does not guarantee occupant self-evacuation and when redundancies, such as a second and separate exit, are reduced or eliminated, occupant response options are likewise reduced. The provisions for residential buildings with single exit stairs were developed with the expectation that the local fire department has a service level that can coordinate and assist occupants with moving to a safe place in a fire event. Building owners and managers must be actively involved in fire safety planning in conjunction with the local fire department. Residential buildings with a single exit should not be located in jurisdictions where a service level that includes search and rescue by firefighting personnel cannot be maintained.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para8"><emphasis style="bold">Water Supply</emphasis></paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para9">The British Columbia Building Code requires an adequate water supply for firefighting be readily available and of sufficient volume and pressure to enable emergency response personnel to control fire growth so as to enable the safe evacuation of occupants and the conduct of search and rescue operations, prevent the fire from spreading to adjacent buildings, and provide a limited measure of property protection. As for any water-based fire protection systems or suppression activities, the water supply serving the building needs to be dependable over the life of the building through seasonal droughts and other eventualities. The provisions for residential buildings with single exit stairs were developed with the expectation of a highly dependable water supply would be available during construction and throughout the lifecycle of the building. Redundancies such as secondary or back up water supplies should to be considered to limit the probability that the water supply may become insufficient for an extended or even temporary period.</paragraph>
                 </content>
                 <change-summary>Added Note A-3.2.10 explaining fire protection and firefighting assumptions for residential buildings with single exit stairs</change-summary>
                 <note>Ministerial Order BA 2024 03</note>
@@ -1002,7 +1002,7 @@
             </revision-history>
           </application-note>
           
-          <application-note xml:id="nbc.divB.part3.sect9.appnote321014" revised="yes">
+          <application-note xml:id="nbc.divB.part3.appendix.appnote321014" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -1011,7 +1011,7 @@
                 <content>
                   <number>3.2.10.1.(4)</number>
                   <title>Residential Buildings Not Permitted.</title>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote321014.para1">The residential uses described in Sentence 3.2.10.1.(4) include short term as well as long term accommodations where Subsection 3.2.10. is not permitted to apply. For example, longer-term hotels and rooming houses sometimes referred to as single room occupancy hotels or single room accommodations with or without private bathrooms or kitchens are not permitted to apply Subsection 3.2.10.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote321014.para1">The residential uses described in Sentence 3.2.10.1.(4) include short term as well as long term accommodations where Subsection 3.2.10. is not permitted to apply. For example, longer-term hotels and rooming houses sometimes referred to as single room occupancy hotels or single room accommodations with or without private bathrooms or kitchens are not permitted to apply Subsection 3.2.10.</paragraph>
                 </content>
                 <change-summary>Added Note A-3.2.10.1.(4) clarifying residential buildings not permitted under Subsection 3.2.10</change-summary>
                 <note>Ministerial Order BA 2024 03</note>
@@ -1019,7 +1019,7 @@
             </revision-history>
           </application-note>
           
-          <application-note xml:id="nbc.divB.part3.sect9.appnote321021and2" revised="yes">
+          <application-note xml:id="nbc.divB.part3.appendix.appnote321021and2" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -1028,8 +1028,8 @@
                 <content>
                   <number>3.2.10.2.(1) and (2)</number>
                   <title>Automatic Sprinkler Systems.</title>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote321021and2.para1">Automatic sprinkler systems serving a building to which Subsection 3.2.10. applies must be sprinklered in accordance with NFPA 13, "Standard for the Installation of Sprinkler Systems," regardless of the permissions for other buildings to follow the NFPA 13R, "Standard for the Installation of Sprinkler Systems in low-Rise Residential Occupancies," or the NFPA 13D, "Standard for the Installation of Sprinkler Systems in One- and Two-Family Dwellings and Manufactured Homes," standards. All balconies and decks regardless of depth must be sprinklered.</paragraph>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote321021and2.para2">The requirement for sprinklers conforming to NFPA 13, "Standard for the Installation of Sprinkler Systems," means that a fire alarm system described in Subsection 3.2.4. is also required.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote321021and2.para1">Automatic sprinkler systems serving a building to which Subsection 3.2.10. applies must be sprinklered in accordance with NFPA 13, "Standard for the Installation of Sprinkler Systems," regardless of the permissions for other buildings to follow the NFPA 13R, "Standard for the Installation of Sprinkler Systems in low-Rise Residential Occupancies," or the NFPA 13D, "Standard for the Installation of Sprinkler Systems in One- and Two-Family Dwellings and Manufactured Homes," standards. All balconies and decks regardless of depth must be sprinklered.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote321021and2.para2">The requirement for sprinklers conforming to NFPA 13, "Standard for the Installation of Sprinkler Systems," means that a fire alarm system described in Subsection 3.2.4. is also required.</paragraph>
                 </content>
                 <change-summary>Added Note A-3.2.10.2.(1) and (2) regarding automatic sprinkler system requirements for buildings under Subsection 3.2.10</change-summary>
                 <note>Ministerial Order BA 2024 03</note>
@@ -1037,7 +1037,7 @@
             </revision-history>
           </application-note>
           
-          <application-note xml:id="nbc.divB.part3.sect9.appnote321023" revised="yes">
+          <application-note xml:id="nbc.divB.part3.appendix.appnote321023" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -1046,8 +1046,8 @@
                 <content>
                   <number>3.2.10.2.(3)</number>
                   <title>Exit Facility.</title>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote321023.para1">The single exit facility serving a building to which Subsection 3.2.10. applies shall either be of noncombustible construction or shall be finished as an exit stair serving an unsprinklered high building described in Subsection 3.2.6. Should a fire event occur, protection of the exit stairs must not solely rely on the automatic sprinkler system.</paragraph>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote321023.para2">A 1 500 mm wide exit facility facilitates the movement and passing of people for regular use as well as in an emergency. The design of intermediate handrails, such as for widths exceeding 1 700 mm, should consider the movement of emergency personnel including their equipment on each side. The design of the exit facility must also consider misuse and proactively deter the storage or collection of materials so as not to obstruct passage and to minimize fuel load. For example, excess landing areas and alcoves in all exits (not limited to residential buildings with single exit stairs) must be carefully designed to deter any activities other than exiting and accessing floor areas as per Sentence 3.4.4.4.(6). Void spaces underneath stairs should be avoided. Landings must have signage to remind occupants that storage is not permitted in exit facilities.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote321023.para1">The single exit facility serving a building to which Subsection 3.2.10. applies shall either be of noncombustible construction or shall be finished as an exit stair serving an unsprinklered high building described in Subsection 3.2.6. Should a fire event occur, protection of the exit stairs must not solely rely on the automatic sprinkler system.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote321023.para2">A 1 500 mm wide exit facility facilitates the movement and passing of people for regular use as well as in an emergency. The design of intermediate handrails, such as for widths exceeding 1 700 mm, should consider the movement of emergency personnel including their equipment on each side. The design of the exit facility must also consider misuse and proactively deter the storage or collection of materials so as not to obstruct passage and to minimize fuel load. For example, excess landing areas and alcoves in all exits (not limited to residential buildings with single exit stairs) must be carefully designed to deter any activities other than exiting and accessing floor areas as per Sentence 3.4.4.4.(6). Void spaces underneath stairs should be avoided. Landings must have signage to remind occupants that storage is not permitted in exit facilities.</paragraph>
                 </content>
                 <change-summary>Added Note A-3.2.10.2.(3) regarding exit facility design and construction requirements</change-summary>
                 <note>Ministerial Order BA 2024 03</note>
@@ -1055,7 +1055,7 @@
             </revision-history>
           </application-note>
           
-          <application-note xml:id="nbc.divB.part3.sect9.appnote321024" revised="yes">
+          <application-note xml:id="nbc.divB.part3.appendix.appnote321024" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -1064,8 +1064,8 @@
                 <content>
                   <number>3.2.10.2.(4)</number>
                   <title>Exit Facility Discharge.</title>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote321024.para1">Fire department access to buildings to which Subsection 3.2.10. applies must be provided to the principal entrance as well as to the access point most directly connected to the exit facility. As such, the exit facility discharge must be located to coordinate with the fire department access route described in Subsection 3.2.5.</paragraph>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote321024.para2">Designers should consider locating the exit facility discharge in close proximity to the principal entrance for the benefit of coordinating multiple access points with the fire department access route but also to avoid unintended use of the exit facility for package delivery or other material drop-off. There should be clear distinction between the principal building entrance (likely connecting to a lobby and elevator) and the exit facility discharge so that activities such as deliveries can be intuitively completed in the safe and intended manner. Locating the exit facility discharge in close proximity to the principal building entrance also reduces the potential that an access point is located in an isolated location of the building which could increase building and occupant security concerns.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote321024.para1">Fire department access to buildings to which Subsection 3.2.10. applies must be provided to the principal entrance as well as to the access point most directly connected to the exit facility. As such, the exit facility discharge must be located to coordinate with the fire department access route described in Subsection 3.2.5.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote321024.para2">Designers should consider locating the exit facility discharge in close proximity to the principal entrance for the benefit of coordinating multiple access points with the fire department access route but also to avoid unintended use of the exit facility for package delivery or other material drop-off. There should be clear distinction between the principal building entrance (likely connecting to a lobby and elevator) and the exit facility discharge so that activities such as deliveries can be intuitively completed in the safe and intended manner. Locating the exit facility discharge in close proximity to the principal building entrance also reduces the potential that an access point is located in an isolated location of the building which could increase building and occupant security concerns.</paragraph>
                 </content>
                 <change-summary>Added Note A-3.2.10.2.(4) regarding exit facility discharge location and coordination with fire department access</change-summary>
                 <note>Ministerial Order BA 2024 03</note>
@@ -1073,7 +1073,7 @@
             </revision-history>
           </application-note>
           
-          <application-note xml:id="nbc.divB.part3.sect9.appnote321043" revised="yes">
+          <application-note xml:id="nbc.divB.part3.appendix.appnote321043" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -1082,7 +1082,7 @@
                 <content>
                   <number>3.2.10.4.(3)</number>
                   <title>Suite Entry Doors.</title>
-                  <paragraph xml:id="nbc.divB.part3.sect9.appnote321043.para1">Sentence 3.2.10.4.(3) supersedes the permission in Article 3.1.8.12. to reduce the fire-protection rating of closures. Suite entry doors with less than a 45 min fire-protection rating are not permitted in buildings to which Subsection 3.2.10. applies, nor would these doors be permitted any undercuts such as described in Article 9.32.3.10.</paragraph>
+                  <paragraph xml:id="nbc.divB.part3.appendix.appnote321043.para1">Sentence 3.2.10.4.(3) supersedes the permission in Article 3.1.8.12. to reduce the fire-protection rating of closures. Suite entry doors with less than a 45 min fire-protection rating are not permitted in buildings to which Subsection 3.2.10. applies, nor would these doors be permitted any undercuts such as described in Article 9.32.3.10.</paragraph>
                 </content>
                 <change-summary>Added Note A-3.2.10.4.(3) regarding suite entry door fire-protection rating requirements</change-summary>
                 <note>Ministerial Order BA 2024 03</note>

@@ -382,12 +382,7 @@
                 </subsection>
               </xsl:for-each>
 
-              <!-- Process part appendix (application notes) if present after this section -->
-              <xsl:if test="following-sibling::*[1][self::partapp]">
-                <xsl:apply-templates select="following-sibling::partapp[1]">
-                  <xsl:with-param name="sect-id" select="$sect-id" />
-                </xsl:apply-templates>
-              </xsl:if>
+              <!-- Note: partapp elements are processed at part level, not section level -->
             </section>
           </xsl:for-each>
 
@@ -449,7 +444,7 @@
       <xsl:for-each select="appnote">
         <xsl:variable
                     name="appnote-id"
-                    select="concat($base-id, '.appnote', position())"
+                    select="concat($base-id, '.appendix.appnote', position())"
                 />
         <application-note xml:id="{$appnote-id}">
           <xsl:if test="@id"><xsl:attribute
