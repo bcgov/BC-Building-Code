@@ -841,7 +841,7 @@
             <replace preserve-references="false">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent2" number="2" vendor-id="es008892">
-                        <text>Where an entire floor assembly falls into two of the categories listed in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table1" display-type="long" pretext="Tables"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table2" display-type="long" pretext=","/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table3" display-type="long" pretext=" and"/>, the more stringent value shall apply. (See <ref type="internal" target="nbc.divBV2.part9.appnote239" display-type="short"/>.)</text>
+                        <text>Where an entire floor assembly falls into two of the categories listed in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table1" display-type="long" pretext="Tables"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table2" display-type="long" pretext=","/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art8.table3" display-type="long" pretext=" and"/>, the more stringent value shall apply. (See <ref type="internal" target="nbc.divBV2.part9.appendix.appnote239" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -950,7 +950,7 @@
                         <clause xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent9.clause2" letter="b" vendor-id="es008792b">
                             <text>be constructed with skirt insulation having the same effective thermal resistance as the insulation installed under the slab.</text>
                         </clause>
-                        <see-also xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent9.seealso">(See <ref type="internal" target="nbc.divBV2.part9.appnote241" display-type="short"/>.) (See also <ref type="internal" target="nbc.divBV2.part9.sect25.subsect2.art3.sent5" display-type="long" pretext="Sentences"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art5.sent9" display-type="long" pretext=" and"/>.)</see-also>
+                        <see-also xml:id="nbc.divBV2.part9.sect36.subsect2.art8.sent9.seealso">(See <ref type="internal" target="nbc.divBV2.part9.appendix.appnote241" display-type="short"/>.) (See also <ref type="internal" target="nbc.divBV2.part9.sect25.subsect2.art3.sent5" display-type="long" pretext="Sentences"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art5.sent9" display-type="long" pretext=" and"/>.)</see-also>
                     </sentence>
                 </new-content>
             </replace>

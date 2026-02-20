@@ -77,7 +77,7 @@
                         <text>Free-standing steel pallet storage racks are permitted to be designed according to CSA A344.2, "Standard for design and construction of steel storage racks," and to resist earthquake effects using rational analysis, provided design achieves the minimum performance level required by <ref type="internal"
                                                                                                                                                                                                                                                                                                                                   target="nbc.divB.part4.sect1.subsect8"
                                                                                                                                                                                                                                                                                                                                   display-type="long"/> (See <ref type="internal"
-                                                            target="nbc.divB.part4.sect5.appnote107"
+                                                            target="nbc.divB.part4.appendix.appnote107"
                                                             display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
@@ -90,7 +90,7 @@
         <!-- ================================================================== -->
         <amendment id="bc-004" sequence="4"
                    description="Replace NPC and NBC reference with BC Building Code in Note A-4.1.6.4.(3)">
-            <target type="canonical-id" id="nbc.divB.part4.sect5.appnote39"/>
+            <target type="canonical-id" id="nbc.divB.part4.appendix.appnote39"/>
             <modify>
                 <text-change xpath-within-target=".//paragraph">
                     <find-replace>
@@ -145,7 +145,7 @@
             <replace preserve-references="true">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part5.sect10.subsect2.art1.sent3" number="3">
-                        <text>Windows, doors and skylights, including their components, that are required to have a <ref type="term" target="fr-prtn-rtng">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal" target="nbc.divB.part5.appnote43" display-type="short"/>.)</text>
+                        <text>Windows, doors and skylights, including their components, that are required to have a <ref type="term" target="fr-prtn-rtng">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal" target="nbc.divB.part5.appendix.appnote43" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -240,7 +240,7 @@
             <replace preserve-references="true">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part5.sect10.subsect2.art3.sent1" number="1">
-                        <text>Windows, doors, skylights and their components that do not conform to <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2" display-type="long"/> shall be designed and constructed in accordance with <ref type="internal" target="nbc.divB.part5.sect1.subsect4.art1" display-type="long"/>, <ref type="internal" target="nbc.divB.part5.sect4" display-type="long"/> and <ref type="internal" target="nbc.divB.part5.sect6" display-type="long"/> (See <ref type="internal" target="nbc.divB.part5.appnote44" display-type="short"/>.)</text>
+                        <text>Windows, doors, skylights and their components that do not conform to <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2" display-type="long"/> shall be designed and constructed in accordance with <ref type="internal" target="nbc.divB.part5.sect1.subsect4.art1" display-type="long"/>, <ref type="internal" target="nbc.divB.part5.sect4" display-type="long"/> and <ref type="internal" target="nbc.divB.part5.sect6" display-type="long"/> (See <ref type="internal" target="nbc.divB.part5.appendix.appnote44" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -258,7 +258,7 @@
             <insert>
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part5.sect9.subsect3.art1.sent2" number="2">
-                        <text>Other fenestration assemblies and their components that are required to have a <ref type="term" target="fr-prtn-rtng">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal" target="nbc.divB.part5.appnote43" display-type="short"/>.)</text>
+                        <text>Other fenestration assemblies and their components that are required to have a <ref type="term" target="fr-prtn-rtng">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal" target="nbc.divB.part5.appendix.appnote43" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </insert>
@@ -270,7 +270,7 @@
         <!-- ================================================================== -->
         <amendment id="bc-014" sequence="14"
                    description="Replace NBC with code in Note A-5.1.4.1.(2)">
-            <target type="canonical-id" id="nbc.divB.part5.appnote5"/>
+            <target type="canonical-id" id="nbc.divB.part5.appendix.appnote5"/>
             <modify>
                 <text-change xpath-within-target=".//paragraph[3]">
                     <find-replace>
@@ -287,11 +287,11 @@
         <!-- ================================================================== -->
         <amendment id="bc-015" sequence="15"
                    description="Replace NBC with British Columbia Building Code in Note A-5.1.4.2">
-            <target type="canonical-id" id="nbc.divB.part5.appnote8"/>
+            <target type="canonical-id" id="nbc.divB.part5.appendix.appnote8"/>
             <modify>
                 <element-replace element="paragraph" position="6">
                     <new-content source="bc">
-                        <paragraph xml:id="nbc.divB.part5.appnote8.para6">It is also noted that <ref type="standard" target="csas478" standardId="csas478"/> contains requirements
+                        <paragraph xml:id="nbc.divB.part5.appendix.appnote8.para6">It is also noted that <ref type="standard" target="csas478" standardId="csas478"/> contains requirements
                             for actions beyond the scope of the British Columbia Building Code, which may not be the responsibility
                             of the designer, builder or authority having jurisdiction. These include
                             requirements relating to quality assurance, inspection, maintenance,
@@ -311,11 +311,11 @@
         <!-- ================================================================== -->
         <amendment id="bc-016" sequence="16"
                    description="Replace NBC with code in Note A-5.2.2.2.(4)">
-            <target type="canonical-id" id="nbc.divB.part5.appnote13"/>
+            <target type="canonical-id" id="nbc.divB.part5.appendix.appnote13"/>
             <modify>
                 <element-replace element="paragraph" position="4">
                     <new-content source="bc">
-                        <paragraph xml:id="nbc.divB.part5.appnote13.para4">The wind uplift resistance obtained from the test method in <ref type="standard" target="csaa123.21" standardId="csaa123.21"/> is limited to configurations
+                        <paragraph xml:id="nbc.divB.part5.appendix.appnote13.para4">The wind uplift resistance obtained from the test method in <ref type="standard" target="csaa123.21" standardId="csaa123.21"/> is limited to configurations
                             with specific fastener or adhesive patterns. To extrapolate the test
                             data to non-tested configurations, refer to <ref type="standard" target="spriwd1" standardId="spriwd1"/> for a rational calculation procedure. However,
                             in using this extrapolation procedure, wind loads should be calculated
@@ -332,7 +332,7 @@
         <!-- ================================================================== -->
         <amendment id="bc-017" sequence="17"
                    description="Replace national reference with BC provincial reference in Note A-5.3.1.2.(1)">
-            <target type="canonical-id" id="nbc.divB.part5.appnote17"/>
+            <target type="canonical-id" id="nbc.divB.part5.appendix.appnote17"/>
             <modify>
                 <text-change xpath-within-target=".//paragraph[4]">
                     <find-replace>
@@ -350,10 +350,10 @@
         <!-- ================================================================== -->
         <amendment id="bc-018" sequence="18"
                    description="Replace Note A-5.9.2.1.(3) with broader scope covering all fenestration assemblies">
-            <target type="canonical-id" id="nbc.divB.part5.appnote43"/>
+            <target type="canonical-id" id="nbc.divB.part5.appendix.appnote43"/>
             <replace preserve-references="true">
                 <new-content source="bc">
-                    <application-note xml:id="nbc.divB.part5.sect10.appnote43" vendor-id="en001183" refs="es007991">
+                    <application-note xml:id="nbc.divB.part5.appendix.appnote43" vendor-id="en001183" refs="es007991">
                         <number>5.9.2.1.(3)</number>
                         <title>Airtightness and Watertightness of Windows, Doors, Skylights, Other Fenestration Assemblies and their Components Required to have a Fire-Protection Rating</title>
                         <paragraph>The airtightness and watertightness requirements are waived for these products when used in such an application, in recognition of the fact that the availability of assemblies that meet both the requirements of the applicable standards and the requirements for fire resistance may be limited. However, control of air and water leakage should not be ignored: measures should be taken to attempt to comply with applicable requirements.</paragraph>
@@ -368,7 +368,7 @@
         <!-- ================================================================== -->
         <amendment id="bc-019" sequence="19"
                    description="Add ASTM E 331 and E 547 standards to Note A-5.9.3">
-            <target type="canonical-id" id="nbc.divB.part5.appnote47"/>
+            <target type="canonical-id" id="nbc.divB.part5.appendix.appnote47"/>
             <modify>
                 <element-change xpath-within-target=".//paragraph/list">
                     <add-child>
@@ -524,7 +524,7 @@
                     <new-content source="bc">
                         <text>Make-up water connections shall be equipped with backflow prevention
                             devices that conform to Article 2.6.2.1. of Division B of Book II, (Plumbing Systems), of this code. (See <ref type="internal"
-                                                                                                                                           target="nbc.divB.part6.sect10.appnote17"
+                                                                                                                                           target="nbc.divB.part6.appendix.appnote17"
                                                                                                                                            display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
@@ -566,7 +566,7 @@
                     <new-content source="bc">
                         <text>Make-up water connections shall be equipped with backflow prevention
                             devices that conform to Article 2.6.2.1. of Division B of Book II, (Plumbing Systems), of this code. (See <ref type="internal"
-                                                                                                                                           target="nbc.divB.part6.sect10.appnote19"
+                                                                                                                                           target="nbc.divB.part6.appendix.appnote19"
                                                                                                                                            display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
@@ -669,7 +669,7 @@
                             or bylaws, to good engineering practice such as that described in
                             the publications of the National Fire Protection Association and in
                             the British Columbia Fire Code. (See <ref type="internal"
-                                                                      target="nbc.divB.part6.sect10.appnote22"
+                                                                      target="nbc.divB.part6.appendix.appnote22"
                                                                       display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
@@ -703,7 +703,7 @@
                                 <text>be equipped with an integral alarm that satisfies the audibility requirements of <ref type="standard" target="csa6.19" standardId="csa6.19"/>,</text>
                             </clause>
                             <clause xml:id="nbc.divB.part6.sect9.subsect3.art1.sent2.clause3" letter="c">
-                                <text>have no disconnect switch between the overcurrent device and the CO alarm, where the CO alarm is powered by the electrical system serving the <ref type="term" target="t">suite</ref> (see <ref type="internal" target="nbc.divB.part6.sect10.appnote23" display-type="short"/>), and</text>
+                                <text>have no disconnect switch between the overcurrent device and the CO alarm, where the CO alarm is powered by the electrical system serving the <ref type="term" target="t">suite</ref> (see <ref type="internal" target="nbc.divB.part6.appendix.appnote23" display-type="short"/>), and</text>
                             </clause>
                             <clause xml:id="nbc.divB.part6.sect9.subsect3.art1.sent2.clause4" letter="d">
                                 <text>be installed as recommended by the manufacturer.</text>
@@ -821,12 +821,12 @@
         <amendment id="bc-036" sequence="36"
                    description="Add new application note A-6.2.1.2.(1) about outdoor design conditions">
             <target type="position"
-                    parent-id="nbc.divB.part6.sect10.appendix"
+                    parent-id="nbc.divB.part6.appendix"
                     position="after"
-                    reference-id="nbc.divB.part6.sect10.appnote1"/>
+                    reference-id="nbc.divB.part6.appendix.appnote1"/>
             <insert>
                 <new-content source="bc">
-                    <application-note xml:id="nbc.divB.part6.sect10.appnote1a">
+                    <application-note xml:id="nbc.divB.part6.appendix.appnote1a">
                         <number>6.2.1.2.(1)</number>
                         <title>Outdoor Design Conditions</title>
                         <paragraph>In the past, the practice of ventilating buildings with outdoor air assumed that the outdoor air was of better quality than the indoor air. It has become evident that the outdoor air in some areas of Canada may not be of an acceptable quality for ventilating buildings unless certain particles and gases are first removed or reduced. In order to manage the air quality of a building's indoor environment, thus reducing the potential for adverse effects on occupants' health, the quality of outdoor air for building ventilation purposes must be addressed.</paragraph>
@@ -841,7 +841,7 @@
         <!-- ================================================================== -->
         <amendment id="bc-037" sequence="37"
                    description="Replace NBC with British Columbia Building Code in Note A-6.2.1.4">
-            <target type="canonical-id" id="nbc.divB.part6.sect10.appnote4"/>
+            <target type="canonical-id" id="nbc.divB.part6.appendix.appnote4"/>
             <modify>
                 <text-change xpath-within-target=".//paragraph[2]">
                     <find-replace>
@@ -859,12 +859,12 @@
         <amendment id="bc-038" sequence="38"
                    description="Add new application note A-6.3.1.1.(5) about ventilation air supplied to suites">
             <target type="position"
-                    parent-id="nbc.divB.part6.sect10.appendix"
+                    parent-id="nbc.divB.part6.appendix"
                     position="after"
-                    reference-id="nbc.divB.part6.sect10.appnote5"/>
+                    reference-id="nbc.divB.part6.appendix.appnote5"/>
             <insert>
                 <new-content source="bc">
-                    <application-note xml:id="nbc.divB.part6.sect10.appnote5a">
+                    <application-note xml:id="nbc.divB.part6.appendix.appnote5a">
                         <number>6.3.1.1.(5)</number>
                         <title>Ventilation Air Supplied to Suites</title>
                         <paragraph>The indirect supply of required outdoor ventilation air to normally occupied spaces through corridor pressurization or other indirect systems is not permitted.</paragraph>
@@ -879,7 +879,7 @@
         <!-- ================================================================== -->
         <amendment id="bc-039" sequence="39"
                    description="Replace mechanically fastened with installed as recommended by manufacturer in Note A-6.9.3.1.(2)(c)">
-            <target type="canonical-id" id="nbc.divB.part6.sect10.appnote23"/>
+            <target type="canonical-id" id="nbc.divB.part6.appendix.appnote23"/>
             <modify>
                 <text-change xpath-within-target=".//paragraph">
                     <find-replace>
@@ -897,22 +897,22 @@
         <amendment id="bc-040" sequence="40"
                    description="Add three new application notes A-6.9.3.1.(6), (7), and (8) for carbon monoxide alarms">
             <target type="position"
-                    parent-id="nbc.divB.part6.sect10.appendix"
+                    parent-id="nbc.divB.part6.appendix"
                     position="after"
-                    reference-id="nbc.divB.part6.sect10.appnote23"/>
+                    reference-id="nbc.divB.part6.appendix.appnote23"/>
             <insert>
                 <new-content source="bc">
-                    <application-note xml:id="nbc.divB.part6.sect10.appnote23a">
+                    <application-note xml:id="nbc.divB.part6.appendix.appnote23a">
                         <number>6.9.3.1.(6)</number>
                         <title>Carbon Monoxide Devices</title>
                         <paragraph>Although the scope of <ref type="standard" target="csa6.19" standardId="csa6.19"/> and <ref type="standard" target="ul2034" standardId="ul2034"/> is limited to carbon monoxide alarms for residential applications, their use may be appropriate in some other locations where they are not subject to excessive contaminants or risk of damage, such as in classrooms and meeting spaces. The designer is also given the option to follow good engineering practice. For example, some carbon monoxide devices used in storage garages may be suitable for use in other applications.</paragraph>
                     </application-note>
-                    <application-note xml:id="nbc.divB.part6.sect10.appnote23b">
+                    <application-note xml:id="nbc.divB.part6.appendix.appnote23b">
                         <number>6.9.3.1.(7)</number>
                         <title>Spaces Served by a Fuel-Burning Appliance</title>
                         <paragraph>Where a fuel-burning appliance such as a furnace circulates or distributes air to a space there is the potential for leakage of combustion products into the duct system which could then circulate combustion products including carbon monoxide (CO) to that space, so a CO alarm is required to protect occupants of that space. Fuel-burning appliances such as a boiler do not have the same potential of the system circulating or distributing CO to the spaces served via the piping system. In both examples of a fuel-burning furnace and a fuel-burning boiler, a CO alarm is required in the service room containing the appliances.</paragraph>
                     </application-note>
-                    <application-note xml:id="nbc.divB.part6.sect10.appnote23c">
+                    <application-note xml:id="nbc.divB.part6.appendix.appnote23c">
                         <number>6.9.3.1.(8)</number>
                         <title>Adjacent Suites</title>
                         <paragraph>Suites that share a common attic or crawl space with a storage garage or service room, as well as suites that share a common wall or floor/ceiling assembly with a storage garage or service room are considered adjacent for the application of <ref type="internal" target="nbc.divB.part6.sect9.subsect3.art1.sent8" display-type="short"/>.</paragraph>

@@ -1074,32 +1074,32 @@
                             
                         </section>
                         <part-appendix xml:id="nbc.divB.part10.sect4.appendix">
-                            <application-note xml:id="nbc.divB.part10.sect10.appnote1">
+                            <application-note xml:id="nbc.divB.part10.appendix.appnote1">
                                 <number>10.</number>
                                 <title>Water Efficiency</title>
                                 <paragraph>Water efficiency requirements have been relocated in Book II, Plumbing Services, of the British Columbia Building Code.</paragraph>
                             </application-note>
                             
-                            <application-note xml:id="nbc.divB.part10.sect10.appnote2">
+                            <application-note xml:id="nbc.divB.part10.appendix.appnote2">
                                 <number>10.2.2.2.</number>
                                 <title>Energy Requirements for Alterations to Buildings and Major Occupancies</title>
                                 <paragraph>Alterations, rehabilitation, renovations and changes of occupancy to existing <ref type="term" target="bldng">buildings</ref> or <ref type="term" target="mjr-ccpn">major occupancies</ref> that were originally designed and constructed to previous editions of the ANSI/ASHRAE/IES 90.1 standard are to comply with the edition of the ANSI/ASHRAE/IES 90.1 standard referenced in this Code, or the requirements of <ref type="internal" target="nbc.divB.part10.sect2.subsect3" display-type="long"/>. Alterations, rehabilitation, renovations and changes of occupancy to existing <ref type="term" target="bldng">buildings</ref> or <ref type="term" target="mjr-ccpn">major occupancies</ref> that were originally designed and constructed to previous editions of the NECB or <ref type="internal" target="nbc.divB.part10.sect2.subsect3" display-type="long"/> are to comply with the edition of the NECB referenced in this Code, or to <ref type="internal" target="nbc.divB.part10.sect2.subsect3" display-type="long"/>. Existing <ref type="term" target="bldng">buildings</ref> or <ref type="term" target="mjr-ccpn">major occupancies</ref> that were not designed and constructed to any version of the ANSI/ASHRAE/IES 90.1 standard, the NECB or <ref type="internal" target="nbc.divB.part10.sect2.subsect3" display-type="long"/>, may use the edition of the ANSI/ASHRAE/IES 90.1 standard or the NECB referenced in this Code, or <ref type="internal" target="nbc.divB.part10.sect2.subsect3" display-type="long"/> for alterations, rehabilitation, renovations and changes in occupancy.</paragraph>
                                 <paragraph><ref type="internal" target="nbc.divA.part1.sect1.subsect1.art2.sent1" display-type="long"/> of Division A states that the level of <ref type="term" target="bldng">building</ref> performance shall not be decreased below a level that already exists. For example, a new <ref type="term" target="ccpnc">occupancy</ref> may be permitted a higher lighting power density by the ANSI/ASHRAE/IES 90.1 standard or the NECB than the lighting power density that was permitted for a previous <ref type="term" target="ccpnc">occupancy</ref>. This does not constitute a decrease in the level of <ref type="term" target="bldng">building</ref> performance, provided the design meets the minimum requirements of the relevant Code or standard.</paragraph>
                             </application-note>
                             
-                            <application-note xml:id="nbc.divB.part10.sect10.appnote3">
+                            <application-note xml:id="nbc.divB.part10.appendix.appnote3">
                                 <number>10.2.3.2.(2)</number>
                                 <title>Thermal Energy Demand Intensity (TEDI)</title>
                                 <paragraph>TEDI does not include receptacle loads and energy use from unusual uses such as spas and computer server rooms.</paragraph>
                             </application-note>
                             
-                            <application-note xml:id="nbc.divB.part10.sect10.appnote4">
+                            <application-note xml:id="nbc.divB.part10.appendix.appnote4">
                                 <number>10.2.3.3.(2)</number>
                                 <title>Energy Model Calculations for Step 1</title>
                                 <paragraph>Although the total energy use intensity and thermal energy demand intensity are not required for NECB conformance, they must still be calculated in conformance with <ref type="internal" target="nbc.divB.part10.sect3.subsect1.art4" display-type="long"/> and reported in accordance with Subsection 2.2.9. of Division C.</paragraph>
                             </application-note>
                             
-                            <application-note xml:id="nbc.divB.part10.sect10.appnote5">
+                            <application-note xml:id="nbc.divB.part10.appendix.appnote5">
                                 <number>10.2.3.4.</number>
                                 <title>Energy Modelling</title>
                                 <paragraph><emphasis style="bold">Energy Model Calculations for Steps 2 to 4</emphasis></paragraph>
@@ -1110,7 +1110,7 @@
                                 <paragraph>Section 2.4. of the City of Vancouver's Energy Modelling Guidelines provides guidance on determining infiltration/air leakage rates for <ref type="term" target="bldng">buildings</ref> conforming with <ref type="internal" target="nbc.divB.part10.sect2.subsect3" display-type="long"/> at the design stage.</paragraph>
                             </application-note>
                             
-                            <application-note xml:id="nbc.divB.part10.sect10.appnote6">
+                            <application-note xml:id="nbc.divB.part10.appendix.appnote6">
                                 <number>10.2.3.5.(1)</number>
                                 <title>Building Airtightness Testing Requirements</title>
                                 <paragraph>The intent of this testing is to quantify the airtightness level of the air barrier system, not airtightness of the <ref type="term" target="bldng">building</ref> at in-service operating conditions.</paragraph>

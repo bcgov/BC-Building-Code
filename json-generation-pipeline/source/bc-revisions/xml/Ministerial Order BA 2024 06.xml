@@ -657,7 +657,7 @@
                       target="dwllng-n"
                       >dwelling units</ref> constitute a single real estate entity. (See <ref
                       type="internal"
-                      target="nbc.divA.part1.sect5.appnote7.div16"
+                      target="nbc.divA.part1.appendix.appnote7.div16"
                       display-type="short"
                       /> and <ref
                       type="internal"
@@ -686,11 +686,11 @@
       >
       <target
         type="canonical-id"
-        id="nbc.divA.part1.sect5.appnote7.div5.para4"
+        id="nbc.divA.part1.appendix.appnote7.div5.para4"
         />
       <replace preserve-references="false">
         <new-content source="bc">
-          <paragraph xml:id="nbc.divA.part1.sect5.appnote7.div5.para4">
+          <paragraph xml:id="nbc.divA.part1.appendix.appnote7.div5.para4">
             <revision-history>
               <original effective-date="2020-12-01">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -914,7 +914,7 @@
                       display-type="short"
                       /> (See <ref
                       type="internal"
-                      target="nbc.divB.part1.sect3.appnote1"
+                      target="nbc.divB.part1.appendix.appnote1"
                       display-type="short"
                       />.)</text>
                 </content>
@@ -976,7 +976,7 @@
                       />
                     <ref
                       type="internal"
-                      target="nbc.divB.part6.sect10.appnote9"
+                      target="nbc.divB.part6.appendix.appnote9"
                       display-type="number"
                       />
                   </content>
@@ -1123,7 +1123,7 @@
                       />
                     <ref
                       type="internal"
-                      target="nbc.divA.part1.sect5.appnote7.div16"
+                      target="nbc.divA.part1.appendix.appnote7.div16"
                       display-type="number"
                       />
                   </entry>
@@ -3547,7 +3547,7 @@
       sequence="4064"
       description="Delete Notes to Part 3 Fire Protection, Occupant Safety and Accessibility, A-3.8.3.6.(3) Washrooms in Residential Occupancies in its entirety"
       >
-      <target type="canonical-id" id="nbc.divB.part3.sect9.appnote208" />
+      <target type="canonical-id" id="nbc.divB.part3.appendix.appnote208" />
       <delete />
     </amendment>
     
@@ -3700,7 +3700,7 @@
                 >
                 <content>(See <ref
                     type="internal"
-                    target="nbc.divB.part5.sect11.appnote1"
+                    target="nbc.divB.part5.appendix.appnote1"
                     display-type="long"
                     pretext="Note"
                     />)</content>
@@ -3723,7 +3723,7 @@
       sequence="4067"
       description="Delete Notes to Part 5 Environmental Separation, A-5.9.3.5 Water Penetration in its entirety"
       >
-      <target type="canonical-id" id="nbc.divB.part5.sect11.appnote54" />
+      <target type="canonical-id" id="nbc.divB.part5.appendix.appnote54" />
       <delete />
     </amendment>
     
@@ -4474,7 +4474,7 @@
                       units="metric"
                       >12.5 mm</measurement> or a product of equivalent air flow performance (see <ref
                       type="internal"
-                      target="nbc.divBV2.part9.sect9.appnoteA-9.13.4.3"
+                      target="nbc.divBV2.part9.appendix.appnoteA-9.13.4.3"
                       display-type="short"
                       />).
                   </text>
@@ -4634,7 +4634,7 @@
                         display-type="long"
                         />. (See <ref
                         type="internal"
-                        target="nbc.divBV2.part9.sect9.appnoteA-9.23.6.1.3"
+                        target="nbc.divBV2.part9.appendix.appnoteA-9.23.6.1.3"
                         display-type="short"
                         />.)</text>
                   </clause>

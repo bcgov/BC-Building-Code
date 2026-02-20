@@ -28,7 +28,7 @@
             <target type="canonical-id" id="nbc.divB.part3.sect1.subsect2.art1.sent1"/>
             <replace preserve-references="true">
                 <new-content source="bc">
-                    <sentence xml:id="nbc.divB.part3.sect1.subsect2.art1.sent1" number="1">                        <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect1.subsect2.art3" display-type="long" pretext="Articles"/><ref type="internal" target="nbc.divB.part3.sect1.subsect2.art5" display-type="long" pretext="to"/>, and <ref type="internal" target="nbc.divB.part3.sect1.subsect2.art7" display-type="long"/>, every <ref type="term" target="bldng">building</ref> or part thereof shall be classified according to its <ref type="term" target="mjr-ccpn">major occupancy</ref> as belonging to one of the Groups or Divisions described in <ref type="internal" target="nbc.divB.part3.sect1.subsect2.art1.table1" display-type="long"/> (See <ref type="internal" target="nbc.divB.part3.sect9.appnote3" display-type="short"/>.)</text>
+                    <sentence xml:id="nbc.divB.part3.sect1.subsect2.art1.sent1" number="1">                        <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect1.subsect2.art3" display-type="long" pretext="Articles"/><ref type="internal" target="nbc.divB.part3.sect1.subsect2.art5" display-type="long" pretext="to"/>, and <ref type="internal" target="nbc.divB.part3.sect1.subsect2.art7" display-type="long"/>, every <ref type="term" target="bldng">building</ref> or part thereof shall be classified according to its <ref type="term" target="mjr-ccpn">major occupancy</ref> as belonging to one of the Groups or Divisions described in <ref type="internal" target="nbc.divB.part3.sect1.subsect2.art1.table1" display-type="long"/> (See <ref type="internal" target="nbc.divB.part3.appendix.appnote3" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -790,7 +790,7 @@
             <insert>
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part3.sect2.subsect5.art12.sent10" number="10">
-                        <text>Fast response sprinklers shall be installed in <ref type="term" target="rdntl-cc">residential occupancies</ref>, <ref type="term" target="ca-cc">care occupancies</ref>, <ref type="term" target="trtm-cc">treatment occupancies</ref> and <ref type="term" target="dtnt-cc">detention occupancies</ref>. (See <ref type="internal" target="nbc.divB.part3.sect9.appnote12a" display-type="short"/>.)</text>
+                        <text>Fast response sprinklers shall be installed in <ref type="term" target="rdntl-cc">residential occupancies</ref>, <ref type="term" target="ca-cc">care occupancies</ref>, <ref type="term" target="trtm-cc">treatment occupancies</ref> and <ref type="term" target="dtnt-cc">detention occupancies</ref>. (See <ref type="internal" target="nbc.divB.part3.appendix.appnote12a" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </insert>
@@ -1245,7 +1245,7 @@
                         <title>Daycare Facilities for Children under 30 Months</title>
                         
                         <sentence xml:id="nbc.divB.part3.sect3.subsect2.art18.sent1" number="1">
-                            <text>A daycare facility for children where children under 30 months are accommodated shall be located (See <ref type="internal" target="nbc.divB.part3.sect9.appnote18" display-type="short"/>.)</text>
+                            <text>A daycare facility for children where children under 30 months are accommodated shall be located (See <ref type="internal" target="nbc.divB.part3.appendix.appnote18" display-type="short"/>.)</text>
                             <clause xml:id="nbc.divB.part3.sect3.subsect2.art18.sent1.clause1" letter="a">
                                 <text>in a <ref type="term" target="bldng">building</ref> that is <ref type="term" target="prnklrd">sprinklered</ref> throughout, or</text>
                             </clause>
@@ -1374,7 +1374,7 @@
                             for <ref type="term" target="bldng">buildings</ref> or parts thereof used for
                             the storage, handling, use and processing of <ref type="term" target="dngr-gd">dangerous goods</ref>, including <ref type="term" target="flmmbl-l">flammable
                                 liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref>, in quantities in excess of those identified in Table 3.2.7.1. of Division B of the British Columbia Fire Code. (See <ref type="internal"
-                                                                                                                                                                                                                                     target="nbc.divB.part3.sect9.appnote144"
+                                                                                                                                                                                                                                     target="nbc.divB.part3.appendix.appnote144"
                                                                                                                                                                                                                                      display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
@@ -1392,7 +1392,7 @@
             <replace preserve-references="true">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part3.sect3.subsect6.art2.sent4" number="4">
-                        <text>Where wiring or electrical equipment is located in areas in which flammable gases or vapours, <ref type="term" target="cmbtbl-dst">combustible dusts</ref> or <ref type="term" target="cmbtbl-fbr">combustible fibres</ref> are present in quantities sufficient to create a hazard, such wiring and electrical equipment shall conform to the requirements for hazardous locations as required by the Safety Standards Act and pursuant regulations. (See <ref type="internal" target="nbc.divB.part3.sect9.appnote146" display-type="short"/>.)</text>
+                        <text>Where wiring or electrical equipment is located in areas in which flammable gases or vapours, <ref type="term" target="cmbtbl-dst">combustible dusts</ref> or <ref type="term" target="cmbtbl-fbr">combustible fibres</ref> are present in quantities sufficient to create a hazard, such wiring and electrical equipment shall conform to the requirements for hazardous locations as required by the Safety Standards Act and pursuant regulations. (See <ref type="internal" target="nbc.divB.part3.appendix.appnote146" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -1496,7 +1496,7 @@
             <replace preserve-references="true">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part3.sect3.subsect6.art4.sent2" number="2" vendor-id="es016323">
-                        <text>Where Class IA or IB liquids specified in Subsection 4.1.2. of Division B of the British Columbia Fire Code are dispensed within a storage room, the room shall be designed to prevent critical structural and mechanical damage from an internal explosion in conformance with good engineering practice such as that described in <ref type="standard" target="nfpa68" standardId="nfpa68"/>. (See <ref type="internal" target="nbc.divB.part3.sect9.appnote147" display-type="short"/>.)</text>
+                        <text>Where Class IA or IB liquids specified in Subsection 4.1.2. of Division B of the British Columbia Fire Code are dispensed within a storage room, the room shall be designed to prevent critical structural and mechanical damage from an internal explosion in conformance with good engineering practice such as that described in <ref type="standard" target="nfpa68" standardId="nfpa68"/>. (See <ref type="internal" target="nbc.divB.part3.appendix.appnote147" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -1708,7 +1708,7 @@ or a distinctive pattern to demarcate</find>
             <replace preserve-references="true">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part3.sect5.subsect2.art1.sent1" number="1">
-                        <text>The design, construction, installation and <ref type="term" target="ltrtn">alteration</ref> of every elevator, escalator and dumbwaiter shall conform to the Safety Standards Act and pursuant regulations. (See <ref type="internal" target="nbc.divB.part3.sect9.appnote169" display-type="long"/>.)</text>
+                        <text>The design, construction, installation and <ref type="term" target="ltrtn">alteration</ref> of every elevator, escalator and dumbwaiter shall conform to the Safety Standards Act and pursuant regulations. (See <ref type="internal" target="nbc.divB.part3.appendix.appnote169" display-type="long"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -1725,7 +1725,7 @@ or a distinctive pattern to demarcate</find>
             <replace preserve-references="true">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part3.sect5.subsect2.art1.sent2" number="2">
-                        <text>Before being placed in service, every elevator, escalator or dumbwaiter installation, including safety and control devices, shall be inspected and tested in accordance with the Safety Standards Act and pursuant regulations. (See <ref type="internal" target="nbc.divB.part3.sect9.appnote169" display-type="long"/>.)</text>
+                        <text>Before being placed in service, every elevator, escalator or dumbwaiter installation, including safety and control devices, shall be inspected and tested in accordance with the Safety Standards Act and pursuant regulations. (See <ref type="internal" target="nbc.divB.part3.appendix.appnote169" display-type="long"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -2024,7 +2024,7 @@ each 25 females.</find>
                             <text>to <ref type="term" target="ttc-r-rf">attic or roof spaces</ref>,</text>
                         </clause>
                         <clause xml:id="nbc.divB.part3.sect8.subsect2.art3.sent2.clause7" letter="g">
-                            <text>to the floor level above or below the entrance level in <ref type="term" target="t">suites</ref> with more than one level, provided the floor level above or below (see <ref type="internal" target="nbc.divB.part3.sect9.appnote185" display-type="short"/>)</text>
+                            <text>to the floor level above or below the entrance level in <ref type="term" target="t">suites</ref> with more than one level, provided the floor level above or below (see <ref type="internal" target="nbc.divB.part3.appendix.appnote185" display-type="short"/>)</text>
                             <subclause xml:id="nbc.divB.part3.sect8.subsect2.art3.sent2.clause7.subclause1" number="1">
                                 <text>is not served by a ramp, a passenger elevator, a platform-equipped passenger-elevating device, an escalator or an inclined moving walk,</text>
                             </subclause>
@@ -2089,7 +2089,7 @@ each 25 females.</find>
                                                                                       display-type="short"/> but no more than 20 adaptable seats
                             shall adjoin an <ref type="term" target="brrr-fr">accessible</ref> path of travel.
                             (See <ref type="internal"
-                                      target="nbc.divB.part3.sect9.appnote187"
+                                      target="nbc.divB.part3.appendix.appnote187"
                                       display-type="short"/>.)</text>
                     </new-content>
                 </element-replace>
@@ -2109,7 +2109,7 @@ each 25 females.</find>
                     <article xml:id="nbc.divB.part3.sect8.subsect2.art4" number="4">
                         <title>Access to Storeys Served by Escalators and Moving Walks</title>
                         <sentence xml:id="nbc.divB.part3.sect8.subsect2.art4.sent1" number="1">
-                            <text>In a <ref type="term" target="bldng">building</ref> in which a ramp, escalator or inclined moving walk provides access to any floor level, an interior <ref type="term" target="brrr-fr">accessible</ref> path of travel shall also be provided to that floor level. (See <ref type="internal" target="nbc.divB.part3.sect9.appnote188" display-type="short"/>.)</text>
+                            <text>In a <ref type="term" target="bldng">building</ref> in which a ramp, escalator or inclined moving walk provides access to any floor level, an interior <ref type="term" target="brrr-fr">accessible</ref> path of travel shall also be provided to that floor level. (See <ref type="internal" target="nbc.divB.part3.appendix.appnote188" display-type="short"/>.)</text>
                         </sentence>
                         <sentence xml:id="nbc.divB.part3.sect8.subsect2.art4.sent2" number="2">
                             <text>The route from the ramp, escalator or inclined moving walk to the <ref type="term" target="brrr-fr">accessible</ref> path of travel that leads from floor to floor as required by <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art4.sent1" display-type="short"/> shall be clearly indicated by appropriate signs.</text>
@@ -2143,11 +2143,11 @@ each 25 females.</find>
                                 <text>common ancillary <ref type="term" target="bldng">buildings</ref> on the lot, and</text>
                             </clause>
                             <clause xml:id="nbc.divB.part3.sect8.subsect2.art5.sent1.clause4" letter="d">
-                                <text>a public thoroughfare. (See <ref type="internal" target="nbc.divB.part3.sect9.appnote189" display-type="short"/>.)</text>
+                                <text>a public thoroughfare. (See <ref type="internal" target="nbc.divB.part3.appendix.appnote189" display-type="short"/>.)</text>
                             </clause>
                         </sentence>
                         <sentence xml:id="nbc.divB.part3.sect8.subsect2.art5.sent2" number="2">
-                            <text>In <ref type="term" target="trg-grg">storage garages</ref>, an <ref type="term" target="brrr-fr">accessible</ref> path of travel that complies with <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="long"/> shall be provided between each parking level with parking spaces designated for <ref type="term" target="brrr-fr">persons with disabilities</ref> and all other parts of the <ref type="term" target="bldng">building</ref> required to be provided with <ref type="term" target="brrr-fr">access</ref> in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect2" display-type="long"/> that are served by that <ref type="term" target="trg-grg">storage garage</ref>. (See <ref type="internal" target="nbc.divB.part3.sect9.appnote190" display-type="short"/>.)</text>
+                            <text>In <ref type="term" target="trg-grg">storage garages</ref>, an <ref type="term" target="brrr-fr">accessible</ref> path of travel that complies with <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="long"/> shall be provided between each parking level with parking spaces designated for <ref type="term" target="brrr-fr">persons with disabilities</ref> and all other parts of the <ref type="term" target="bldng">building</ref> required to be provided with <ref type="term" target="brrr-fr">access</ref> in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect2" display-type="long"/> that are served by that <ref type="term" target="trg-grg">storage garage</ref>. (See <ref type="internal" target="nbc.divB.part3.appendix.appnote190" display-type="short"/>.)</text>
                         </sentence>
                         <sentence xml:id="nbc.divB.part3.sect8.subsect2.art5.sent3" number="3">
                             <text>Exterior passenger-loading zones shall comply with <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="long"/></text>

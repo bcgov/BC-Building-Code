@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-19T17:31:43.871294-08:00"
+            generated="2026-02-19T18:35:18.955918-08:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -681,7 +681,7 @@
                         revised="yes">
                   <title>Encapsulation of Mass Timber Elements
               (See also <ref type="internal"
-                          target="nbc.divB.part3.sect9.appnote20"
+                          target="nbc.divB.part3.appendix.appnote20"
                           display-type="short"
                           pretext="Note"/>.)
             </title>
@@ -738,7 +738,7 @@
                                          target="nbc.divB.part3.sect2.subsect2.art93.table1"
                                          display-type="long"
                                          pretext="Table"/> for the applicable <ref type="term" target="mjr-ccpn">major occupancy</ref> and <ref type="term" target="bldng-hght">building height</ref>. (See <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote21"
+                                         target="nbc.divB.part3.appendix.appnote21"
                                          display-type="short"
                                          pretext="Note"/>.)</text>
                               </clause>
@@ -805,11 +805,11 @@
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect1.subsect6.art4.sent3.clause2" letter="b">
                                  <text>the <ref type="term" target="flm-prd-">flame-spread rating</ref> on any exposed surface is not more than 150. (See <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote22"
+                                         target="nbc.divB.part3.appendix.appnote22"
                                          display-type="short"
                                          pretext="Notes"/>
                                     <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote28"
+                                         target="nbc.divB.part3.appendix.appnote28"
                                          display-type="short"
                                          pretext="to"/>.)</text>
                               </clause>
@@ -847,11 +847,11 @@
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect1.subsect6.art4.sent4.clause2" letter="b">
                                  <text>the <ref type="term" target="flm-prd-">flame-spread rating</ref> on any exposed surface is not more than 150. (See <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote24"
+                                         target="nbc.divB.part3.appendix.appnote24"
                                          display-type="short"
                                          pretext="Notes"/>
                                     <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote28"
+                                         target="nbc.divB.part3.appendix.appnote28"
                                          display-type="short"
                                          pretext="and"/>.)</text>
                               </clause>
@@ -867,11 +867,11 @@
                                       target="nbc.divB.part3.sect1.subsect6.art4.sent4"
                                       display-type="short"
                                       pretext="and"/> shall not exceed 35% of the total wall area of the perimeter of the <ref type="term" target="t">suite</ref>. (See <ref type="internal"
-                                      target="nbc.divB.part3.sect9.appnote22"
+                                      target="nbc.divB.part3.appendix.appnote22"
                                       display-type="short"
                                       pretext="Note"/>
                                  <ref type="internal"
-                                      target="nbc.divB.part3.sect9.appnote28"
+                                      target="nbc.divB.part3.appendix.appnote28"
                                       display-type="short"
                                       pretext="to"/>.)</text>
                            </sentence>
@@ -895,11 +895,11 @@
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect1.subsect6.art4.sent6.clause2" letter="b">
                                  <text>25% of the total ceiling area of the <ref type="term" target="t">suite</ref> or <ref type="term" target="fr-cmprt">fire compartment</ref>, where the <ref type="term" target="flm-prd-">flame-spread rating</ref> on any exposed surface of a mass timber wall or ceiling is not more than 75. (See <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote22"
+                                         target="nbc.divB.part3.appendix.appnote22"
                                          display-type="short"
                                          pretext="Note"/>
                                     <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote28"
+                                         target="nbc.divB.part3.appendix.appnote28"
                                          display-type="short"
                                          pretext="to"/>.)</text>
                               </clause>
@@ -939,11 +939,11 @@
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect1.subsect6.art4.sent7.clause3" letter="c">
                                  <text>the <ref type="term" target="flm-prd-">flame-spread rating</ref> on any exposed mass timber wall or ceiling is not more than 75. (See <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote22"
+                                         target="nbc.divB.part3.appendix.appnote22"
                                          display-type="short"
                                          pretext="Note"/>
                                     <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote28"
+                                         target="nbc.divB.part3.appendix.appnote28"
                                          display-type="short"
                                          pretext="to"/>.)</text>
                               </clause>
@@ -964,11 +964,11 @@
                                  <text>concealed spaces are protected in conformance with <ref type="internal"
                                          target="nbc.divB.part3.sect1.subsect6.art3.sent4"
                                          display-type="long"/>. (See <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote22"
+                                         target="nbc.divB.part3.appendix.appnote22"
                                          display-type="short"
                                          pretext="Note"/>
                                     <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote28"
+                                         target="nbc.divB.part3.appendix.appnote28"
                                          display-type="short"
                                          pretext="to"/>.)</text>
                               </clause>
@@ -1061,7 +1061,7 @@
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect1.subsect6.art6.sent6.clause3" letter="c">
                                  <text>installed in conformance with <ref type="standard" target="astmc840" standardId="astmc840"/>, "Standard Specification for Application and Finishing of Gypsum Board," except that, for multiple layer systems, their joints need not be taped and finished. (See <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnote24"
+                                         target="nbc.divB.part3.appendix.appnote24"
                                          display-type="short"
                                          pretext="Note"/>.)</text>
                               </clause>
@@ -1426,7 +1426,7 @@
                     provided they have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 25 on any exposed surface, or any surface that would
                     be exposed by cutting through the material in any direction, except
                     that not more than 10% of the ceiling area within each <ref type="term" target="fr-cmprt">fire compartment</ref> is permitted to have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 150. (See <ref type="internal"
-                                   target="nbc.divB.part3.sect9.appnote41"
+                                   target="nbc.divB.part3.appendix.appnote41"
                                    display-type="long"/>.)</text>
                         </content>
                         <change-summary>Added references to Sentences 3.1.6.4.(7) and (8)</change-summary>
@@ -1519,11 +1519,11 @@
                            <clause xml:id="nbc.divB.part3.sect1.subsect11.art5.sent4.clause2" letter="b">
                               <text>not more than <measurement units="metric">300 m<super>2</super>
                                  </measurement> in area with no dimension more than <measurement units="metric">20 m</measurement>, if the exposed construction materials within the space have a <ref type="term" target="flm-prd-">flame-spread rating</ref> more than 25. (See <ref type="internal"
-                                      target="nbc.divB.part3.sect9.appnote32"
+                                      target="nbc.divB.part3.appendix.appnote32"
                                       display-type="short"
                                       pretext="Notes"/>
                                  <ref type="internal"
-                                      target="nbc.divB.part3.sect9.appnote33"
+                                      target="nbc.divB.part3.appendix.appnote33"
                                       display-type="short"
                                       pretext="and"/>.)</text>
                            </clause>
@@ -3389,10 +3389,10 @@
                  original-sequence="1042"
                  original-id="bc-mo-2024-01-043"
                  description="Repeal and substitute Note A-3.1.6.4.(1) - Encapsulation of Mass Timber Elements">
-         <target type="canonical-id" id="nbc.divB.part3.sect9.appnote21"/>
+         <target type="canonical-id" id="nbc.divB.part3.appendix.appnote21"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <application-note xml:id="nbc.divB.part3.sect9.appnote21" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote21" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
               </original>
@@ -3404,7 +3404,7 @@
                         <content>
                            <number>3.1.6.4.(1)</number>
                            <title>Encapsulation of Mass Timber Elements</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote21.para1">The general intent of <ref type="internal"
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote21.para1">The general intent of <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent1"
                                    display-type="long"/>, which generally applies for any building where a 50- or 70-minute encapsulation rating is otherwise required, is that all exposed surfaces of the mass timber elements be encapsulated, including the upper surface of a mass timber floor assembly. However, for some buildings, depending on the building height and occupancy, portions of mass timber elements are permitted to be exposed to varying degrees in accordance with the permissions stated in <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent3"
@@ -3453,10 +3453,10 @@
                  original-sequence="1043"
                  original-id="bc-mo-2024-01-044"
                  description="Repeal and substitute Note A-3.1.6.4.(3) to (6) - Fire-Resistance Rating of Mass Timber with Exposed Surfaces">
-         <target type="canonical-id" id="nbc.divB.part3.sect9.appnote22"/>
+         <target type="canonical-id" id="nbc.divB.part3.appendix.appnote22"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <application-note xml:id="nbc.divB.part3.sect9.appnote22" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote22" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
               </original>
@@ -3468,7 +3468,7 @@
                         <content>
                            <number>3.1.6.4.(3) to (8)</number>
                            <title>Fire-Resistance Rating of Mass Timber with Exposed Surfaces</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote22.para1">Portions of mass timber elements required to have a fire-resistance rating are permitted to be exposed in accordance with the permissions stated in <ref type="internal"
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote22.para1">Portions of mass timber elements required to have a fire-resistance rating are permitted to be exposed in accordance with the permissions stated in <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent3"
                                    display-type="long"
                                    pretext="Sentences"/>
@@ -3498,10 +3498,10 @@
                  original-sequence="1044"
                  original-id="bc-mo-2024-01-045"
                  description="Repeal and substitute Note A-3.1.6.4.(4) - Exposed Surfaces of Mass Timber Walls">
-         <target type="canonical-id" id="nbc.divB.part3.sect9.appnote23"/>
+         <target type="canonical-id" id="nbc.divB.part3.appendix.appnote23"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <application-note xml:id="nbc.divB.part3.sect9.appnote23" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote23" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
               </original>
@@ -3513,7 +3513,7 @@
                         <content>
                            <number>3.1.6.4.(4)</number>
                            <title>Exposed Surfaces of Mass Timber Walls</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote23.para1">The primary objective of encapsulating mass timber elements is to limit the probability that these elements will significantly contribute to fire spread and fire duration in the event of a fire. Since thick wood members require a source of imposed heat flux to burn, the stipulation in <ref type="internal"
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote23.para1">The primary objective of encapsulating mass timber elements is to limit the probability that these elements will significantly contribute to fire spread and fire duration in the event of a fire. Since thick wood members require a source of imposed heat flux to burn, the stipulation in <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent4.clause1"
                                    display-type="long"/> that any portions of the exposed surfaces of different mass timber walls within a suite either face the same direction or have a minimum horizontal distance between one another. If the sprinkler system fails to operate or to control the fire, this directional orientation or minimum distance is intended to avoid or reduce the potential for re-radiation between portions of burning mass timber surfaces on different walls, and particularly those that either face or are in close proximity to one another, which could sustain flaming combustion into the decay phase of a fire. Additionally, if the sprinkler system fails to operate or to control the fire, the maximum percentages of exposed surface areas and maximum flame-spread ratings stated in <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art4"
@@ -3533,10 +3533,10 @@
                  original-sequence="1045"
                  original-id="bc-mo-2024-01-046"
                  description="Repeal and substitute Note A-3.1.6.6. - Encapsulation Materials">
-         <target type="canonical-id" id="nbc.divB.part3.sect9.appnote24"/>
+         <target type="canonical-id" id="nbc.divB.part3.appendix.appnote24"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <application-note xml:id="nbc.divB.part3.sect9.appnote24" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote24" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
               </original>
@@ -3548,7 +3548,7 @@
                         <content>
                            <number>3.1.6.6.</number>
                            <title>Encapsulation Materials</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote24.para1">Research has been conducted on different types of encapsulation materials, such as gypsum board, gypsum concrete and cement board. The results of tests using an intermediate-scale furnace and of cone calorimeter tests indicate that a combustible timber element protected with a <measurement units="metric">38 mm</measurement> thick layer of gypsum-concrete topping or with one <measurement units="metric">(25 min)</measurement>, two <measurement units="metric">(50 min)</measurement> or three <measurement units="metric">(80 min)</measurement> layers of <measurement units="metric">12.7 mm</measurement> Type X gypsum board or two layers <measurement units="metric">(70 min)</measurement> of <measurement units="metric">15.9 mm</measurement> Type X gypsum board will not ignite or contribute significant heat to a fire until the time at which average temperatures of <measurement units="metric">325°C to 380°C</measurement> are attained at the interface between the encapsulation material or assembly of materials and the combustible substrate. These temperatures are consistent with the ignition temperatures of wood-based materials.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote24.para1">Research has been conducted on different types of encapsulation materials, such as gypsum board, gypsum concrete and cement board. The results of tests using an intermediate-scale furnace and of cone calorimeter tests indicate that a combustible timber element protected with a <measurement units="metric">38 mm</measurement> thick layer of gypsum-concrete topping or with one <measurement units="metric">(25 min)</measurement>, two <measurement units="metric">(50 min)</measurement> or three <measurement units="metric">(80 min)</measurement> layers of <measurement units="metric">12.7 mm</measurement> Type X gypsum board or two layers <measurement units="metric">(70 min)</measurement> of <measurement units="metric">15.9 mm</measurement> Type X gypsum board will not ignite or contribute significant heat to a fire until the time at which average temperatures of <measurement units="metric">325°C to 380°C</measurement> are attained at the interface between the encapsulation material or assembly of materials and the combustible substrate. These temperatures are consistent with the ignition temperatures of wood-based materials.</paragraph>
                         </content>
                         <change-summary>Updated layer specifications to include specific timing (25 min, 50 min, 80 min, 70 min) and board thickness details (12.7 mm and 15.9 mm Type X gypsum board)</change-summary>
                         <note>Ministerial Order BA 2024 01</note>
@@ -3564,10 +3564,10 @@
                  original-sequence="1046"
                  original-id="bc-mo-2024-01-047"
                  description="Amend Note A-3.1.6.6.(2) by changing note number from A-3.1.6.6.(2) to A-3.1.6.6.(6)">
-         <target type="canonical-id" id="nbc.divB.part3.sect9.appnote25"/>
+         <target type="canonical-id" id="nbc.divB.part3.appendix.appnote25"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <application-note xml:id="nbc.divB.part3.sect9.appnote25" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote25" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
               </original>
@@ -3579,7 +3579,7 @@
                         <content>
                            <number>3.1.6.6.(6)</number>
                            <title>Protection of Gypsum Board from Foot Traffic</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote25.para1">Where gypsum board is used as the encapsulation material on the top of a mass timber floor assembly, it should be protected from physical impact arising from normal pedestrian traffic that could damage it and possibly compromise its encapsulation rating.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote25.para1">Where gypsum board is used as the encapsulation material on the top of a mass timber floor assembly, it should be protected from physical impact arising from normal pedestrian traffic that could damage it and possibly compromise its encapsulation rating.</paragraph>
                         </content>
                         <change-summary>Changed note number from A-3.1.6.6.(2) to A-3.1.6.6.(6)</change-summary>
                         <note>Ministerial Order BA 2024 01</note>
@@ -3595,10 +3595,10 @@
                  original-sequence="1047"
                  original-id="bc-mo-2024-01-048"
                  description="Repeal and substitute Note A-3.1.6.9.(1) and (2) - Exterior Cladding">
-         <target type="canonical-id" id="nbc.divB.part3.sect9.appnote26"/>
+         <target type="canonical-id" id="nbc.divB.part3.appendix.appnote26"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <application-note xml:id="nbc.divB.part3.sect9.appnote26" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote26" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
               </original>
@@ -3610,7 +3610,7 @@
                         <content>
                            <number>3.1.6.9.(1), (2), (4) and (6)</number>
                            <title>Exterior Cladding</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote26.para1">The requirements in <ref type="internal"
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote26.para1">The requirements in <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art9.sent1"
                                    display-type="long"
                                    pretext="Sentences"/>
@@ -3641,10 +3641,10 @@
                  original-sequence="1048"
                  original-id="bc-mo-2024-01-049"
                  description="Amend Note A-3.1.11.5.(3) and (4) by adding reference to 3.2.2.93">
-         <target type="canonical-id" id="nbc.divB.part3.sect9.appnote43"/>
+         <target type="canonical-id" id="nbc.divB.part3.appendix.appnote43"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <application-note xml:id="nbc.divB.part3.sect9.appnote43" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote43" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
               </original>
@@ -3656,7 +3656,7 @@
                         <content>
                            <number>3.1.11.5.(3) and (4)</number>
                            <title>Fire Blocks in Concealed Spaces</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote43.para1">To reduce the risk of fire spread in combustible concealed spaces within the types of buildings referred to in <ref type="internal"
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote43.para1">To reduce the risk of fire spread in combustible concealed spaces within the types of buildings referred to in <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect11.art5.sent3"
                                    display-type="long"
                                    pretext="Sentences"/>
@@ -3664,9 +3664,9 @@
                                    target="nbc.divB.part3.sect1.subsect11.art5.sent4"
                                    display-type="short"
                                    pretext=" and"/>, fire blocking is required regardless of whether the horizontal concealed space is protected by sprinklers or not, unless the space is filled with noncombustible insulation so that any air gap at the top of the insulation is very small. (See also <ref type="internal"
-                                   target="nbc.divB.part3.sect9.appnote42"
+                                   target="nbc.divB.part3.appendix.appnote42"
                                    display-type="long"/> for roof venting.)</paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote43.para2">A 5- or 6-storey building constructed in accordance with <ref type="internal"
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote43.para2">A 5- or 6-storey building constructed in accordance with <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art51"
                                    display-type="long"/> and buildings constructed in accordance with <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art48"
@@ -3698,10 +3698,10 @@
                  original-sequence="1050"
                  original-id="bc-mo-2024-01-050"
                  description="Repeal and substitute Note A-3.2.2.48.(4) and 3.2.2.57.(3) - Occupancy Combinations in Buildings of Mixed Construction">
-         <target type="canonical-id" id="nbc.divB.part3.sect9.appnote54"/>
+         <target type="canonical-id" id="nbc.divB.part3.appendix.appnote54"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <application-note xml:id="nbc.divB.part3.sect9.appnote54" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote54" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
               </original>
@@ -3713,7 +3713,7 @@
                         <content>
                            <number>3.2.2.48.(4), 3.2.2.57.(3) and 3.2.2.93.(5) to (7)</number>
                            <title>Occupancy Combinations in Buildings of Mixed Construction</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote54.para1">Buildings conforming to the building height and area limits and the other fire protection requirements of <ref type="internal"
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote54.para1">Buildings conforming to the building height and area limits and the other fire protection requirements of <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art48"
                                    display-type="long"
                                    pretext="Article"/>
@@ -3732,7 +3732,7 @@
                                    display-type="number"/> to <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art93.sent7"
                                    display-type="number"/>: e.g., Group A, Division 2 major occupancies on the first to third storeys, Group E major occupancies on the first and second storeys, and a parking garage on the first to fourth storeys.</paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote54.para2">Alternatively, the requirements of <ref type="internal"
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote54.para2">Alternatively, the requirements of <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art4"
                                    display-type="long"
                                    pretext="Articles"/>
@@ -3771,10 +3771,10 @@
          <target type="position"
                  parent-id="nbc.divB.part3.sect9.appendix"
                  position="after"
-                 reference-id="nbc.divB.part3.sect9.appnote55"/>
+                 reference-id="nbc.divB.part3.appendix.appnote55"/>
          <insert>
             <new-content source="bc">
-               <application-note xml:id="nbc.divB.part3.sect9.appnote55a" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote55a" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -3787,7 +3787,7 @@
                         <content>
                            <number>3.2.2.93.(1) and Table 3.2.2.93.</number>
                            <title>Occupancy Combinations in Buildings of Mixed Encapsulation Ratings</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote55a.para1">Buildings conforming to the building height and minimum encapsulation rating requirements and the other fire protection requirements of <ref type="internal"
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote55a.para1">Buildings conforming to the building height and minimum encapsulation rating requirements and the other fire protection requirements of <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art93"
                                    display-type="long"
                                    pretext="Article"/> may be entirely constructed of encapsulated mass timber construction and incorporate the multiple major occupancies otherwise permitted by <ref type="internal"
@@ -4247,7 +4247,7 @@
                            <text>A fire alarm system shall be installed in <ref type="term" target="bldng">buildings</ref> designed and constructed in accordance with <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect10"
                                    display-type="long"/>. (See <ref type="internal"
-                                   target="nbc.divB.part3.sect9.appnoteA-3.2.10.2.1-2"
+                                   target="nbc.divB.part3.appendix.appnoteA-3.2.10.2.1-2"
                                    display-type="long"/>.)</text>
                         </content>
                         <change-summary>Added new sentence requiring fire alarm systems in buildings designed per Subsection 3.2.10.</change-summary>
@@ -4331,9 +4331,9 @@
                         <content>
                            <title>Requirements for Residential Buildings with a Single Exit</title>
                            <note>(See <ref type="internal"
-                                   target="nbc.divB.part3.sect9.appnoteA-3.2.10"
+                                   target="nbc.divB.part3.appendix.appnoteA-3.2.10"
                                    display-type="long"/>.) (See also <ref type="internal"
-                                   target="nbc.divA.part1.sect5.appnoteA-3"
+                                   target="nbc.divA.part1.appendix.appnoteA-3"
                                    display-type="long"/>.)</note>
                            <article xml:id="nbc.divB.part3.sect2.subsect10.art1" number="1">
                               <title>Application</title>
@@ -4399,7 +4399,7 @@
                                  </clause>
                               </sentence>
                               <note>(See <ref type="internal"
-                                      target="nbc.divB.part3.sect9.appnoteA-3.2.10.1.4"
+                                      target="nbc.divB.part3.appendix.appnoteA-3.2.10.1.4"
                                       display-type="long"/>.)</note>
                               <sentence xml:id="nbc.divB.part3.sect2.subsect10.art1.sent5" number="5">
                                  <text>This Subsection, in accordance with the application of this Article and in conformance with the provisions of this Subsection and all other applicable provisions of this Code, may be used as an alternate to the requirements for a second <ref type="term" target="xt">exit</ref> in <ref type="internal"
@@ -4415,7 +4415,7 @@
                                          display-type="short"/> to <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect5.art12.sent4"
                                          display-type="short"/>, a <ref type="term" target="bldng">building</ref> to which this Subsection applies shall be <ref type="term" target="prnklrd">sprinklered</ref> throughout with an automatic sprinkler system designed, constructed, installed and tested in conformance with <ref type="standard" target="nfpa13" standardId="nfpa13"/>, "Standard for the Installation of Sprinkler Systems." (See <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnoteA-3.2.10.2.1-2"
+                                         target="nbc.divB.part3.appendix.appnoteA-3.2.10.2.1-2"
                                          display-type="long"/>.) (See <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect4.art1.sent7"
                                          display-type="long"/>.)</text>
@@ -4424,7 +4424,7 @@
                                  <text>All balconies and decks shall be <ref type="term" target="prnklrd">sprinklered</ref> in accordance with <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect10.art2.sent1"
                                          display-type="short"/>. (See <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnoteA-3.2.10.2.1-2"
+                                         target="nbc.divB.part3.appendix.appnoteA-3.2.10.2.1-2"
                                          display-type="long"/>.)</text>
                               </sentence>
                               <sentence xml:id="nbc.divB.part3.sect2.subsect10.art2.sent3" number="3">
@@ -4450,13 +4450,13 @@
                                  </clause>
                               </sentence>
                               <note>(See <ref type="internal"
-                                      target="nbc.divB.part3.sect9.appnoteA-3.2.10.1.3"
+                                      target="nbc.divB.part3.appendix.appnoteA-3.2.10.1.3"
                                       display-type="long"/>.)</note>
                               <sentence xml:id="nbc.divB.part3.sect2.subsect10.art2.sent4" number="4">
                                  <text>The discharge from the <ref type="term" target="xt">exit</ref> stair described in <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect10.art2.sent3.clause3"
                                          display-type="long"/> shall be located not less than <measurement units="metric">3 m</measurement> and not more than <measurement units="metric">15 m</measurement> from the closest portion of the access route required for fire department use, measured horizontally from the face of the <ref type="term" target="bldng">building</ref>. (See <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnoteA-3.2.10.2.4"
+                                         target="nbc.divB.part3.appendix.appnoteA-3.2.10.2.4"
                                          display-type="long"/>.)</text>
                               </sentence>
                            </article>
@@ -4516,7 +4516,7 @@
                                          display-type="short"/> shall be tested to ensure satisfactory operation. (See <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect6.art9.sent1"
                                          display-type="long"/> and <ref type="internal"
-                                         target="nbc.divB.part3.sect9.appnoteA-3.2.6.9.1"
+                                         target="nbc.divB.part3.appendix.appnoteA-3.2.6.9.1"
                                          display-type="long"/>.)</text>
                               </sentence>
                            </article>
@@ -4535,7 +4535,7 @@
                                     <ref type="term" target="t">Suite</ref> entry doors shall have a <ref type="term" target="fr-prtc-">fire-protection rating</ref> of not less than <measurement units="metric">45 min</measurement>.</text>
                               </sentence>
                               <note>(See <ref type="internal"
-                                      target="nbc.divB.part3.sect9.appnoteA-3.2.10.4.3"
+                                      target="nbc.divB.part3.appendix.appnoteA-3.2.10.4.3"
                                       display-type="long"/>.)</note>
                            </article>
                         </content>
@@ -5469,10 +5469,10 @@
          <target type="position"
                  parent-id="nbc.divB.part3.sect9.appendix"
                  position="after"
-                 reference-id="nbc.divB.part3.sect9.appnote123"/>
+                 reference-id="nbc.divB.part3.appendix.appnote123"/>
          <insert>
             <new-content source="bc">
-               <application-note xml:id="nbc.divB.part3.sect9.appnote3210" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote3210" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -5485,30 +5485,30 @@
                         <content>
                            <number>3.2.10.</number>
                            <title>Fire Protection and Firefighting Assumptions for Residential Buildings with a Single Exit.</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para1">The firefighting assumptions discussed in Note A-3 raise circumstances where additional firefighting capabilities and additional building protection measures may be required. The provisions in Subsection 3.2.10. for residential buildings with a single exit were developed with the expectation of a high level of capacity of the local fire department for fire prevention activities, fire suppression activities, the ability of the fire department to assist in egress of occupants in the event of an emergency, as well as a secure water supply for the function of the automatic sprinkler system and the manual fire suppression activities of a responding fire department.</paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para2">
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para1">The firefighting assumptions discussed in Note A-3 raise circumstances where additional firefighting capabilities and additional building protection measures may be required. The provisions in Subsection 3.2.10. for residential buildings with a single exit were developed with the expectation of a high level of capacity of the local fire department for fire prevention activities, fire suppression activities, the ability of the fire department to assist in egress of occupants in the event of an emergency, as well as a secure water supply for the function of the automatic sprinkler system and the manual fire suppression activities of a responding fire department.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para2">
                               <emphasis style="bold">Fire Prevention</emphasis>
                            </paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para3">Maintenance of fire safety systems is essential for all buildings but becomes increasingly important when redundancies, such as a second and separate exit, are reduced or eliminated. The provisions for residential buildings with single exit stairs were developed with the expectation that fire officials routinely enforce the British Columbia Fire Code to ensure that the inspection intervals specified within are carried out, and that follow up inspections resulting from observed non-compliances occur at expedited intervals. Building owners and managers are required to be actively involved in carrying out the maintenance and upkeep of the building's fire safety systems. Residential buildings with a single exit should not be located in jurisdictions where a high level of fire prevention oversight cannot be maintained.</paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para4">
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para3">Maintenance of fire safety systems is essential for all buildings but becomes increasingly important when redundancies, such as a second and separate exit, are reduced or eliminated. The provisions for residential buildings with single exit stairs were developed with the expectation that fire officials routinely enforce the British Columbia Fire Code to ensure that the inspection intervals specified within are carried out, and that follow up inspections resulting from observed non-compliances occur at expedited intervals. Building owners and managers are required to be actively involved in carrying out the maintenance and upkeep of the building's fire safety systems. Residential buildings with a single exit should not be located in jurisdictions where a high level of fire prevention oversight cannot be maintained.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para4">
                               <emphasis style="bold">Fire Suppression</emphasis>
                            </paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para5">The provisions for residential buildings with single exit stairs were developed with the expectation that a permanent, paid fire department is available to respond to a fire event twenty-four hours a day, every day. Firefighting personnel are expected to have a high level of training and the fire department is expected to be suitably equipped to provide fire suppression activities appropriate to the buildings and developments in their jurisdiction within tight response times. Residential buildings with a single exit should not be located in jurisdictions where a high level of fire suppression activities cannot be maintained.</paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para6">
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para5">The provisions for residential buildings with single exit stairs were developed with the expectation that a permanent, paid fire department is available to respond to a fire event twenty-four hours a day, every day. Firefighting personnel are expected to have a high level of training and the fire department is expected to be suitably equipped to provide fire suppression activities appropriate to the buildings and developments in their jurisdiction within tight response times. Residential buildings with a single exit should not be located in jurisdictions where a high level of fire suppression activities cannot be maintained.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para6">
                               <emphasis style="bold">Egress and Safety of Occupants</emphasis>
                            </paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para7">The premise of egress in the British Columbia Building Code is that occupants of residential buildings receive early notification of a fire event, and occupants are able to respond unassisted in such an event. Early notification however does not guarantee occupant self-evacuation and when redundancies, such as a second and separate exit, are reduced or eliminated, occupant response options are likewise reduced. The provisions for residential buildings with single exit stairs were developed with the expectation that the local fire department has a service level that can coordinate and assist occupants with moving to a safe place in a fire event. Building owners and managers must be actively involved in fire safety planning in conjunction with the local fire department. Residential buildings with a single exit should not be located in jurisdictions where a service level that includes search and rescue by firefighting personnel cannot be maintained.</paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para8">
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para7">The premise of egress in the British Columbia Building Code is that occupants of residential buildings receive early notification of a fire event, and occupants are able to respond unassisted in such an event. Early notification however does not guarantee occupant self-evacuation and when redundancies, such as a second and separate exit, are reduced or eliminated, occupant response options are likewise reduced. The provisions for residential buildings with single exit stairs were developed with the expectation that the local fire department has a service level that can coordinate and assist occupants with moving to a safe place in a fire event. Building owners and managers must be actively involved in fire safety planning in conjunction with the local fire department. Residential buildings with a single exit should not be located in jurisdictions where a service level that includes search and rescue by firefighting personnel cannot be maintained.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para8">
                               <emphasis style="bold">Water Supply</emphasis>
                            </paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote3210.para9">The British Columbia Building Code requires an adequate water supply for firefighting be readily available and of sufficient volume and pressure to enable emergency response personnel to control fire growth so as to enable the safe evacuation of occupants and the conduct of search and rescue operations, prevent the fire from spreading to adjacent buildings, and provide a limited measure of property protection. As for any water-based fire protection systems or suppression activities, the water supply serving the building needs to be dependable over the life of the building through seasonal droughts and other eventualities. The provisions for residential buildings with single exit stairs were developed with the expectation of a highly dependable water supply would be available during construction and throughout the lifecycle of the building. Redundancies such as secondary or back up water supplies should to be considered to limit the probability that the water supply may become insufficient for an extended or even temporary period.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote3210.para9">The British Columbia Building Code requires an adequate water supply for firefighting be readily available and of sufficient volume and pressure to enable emergency response personnel to control fire growth so as to enable the safe evacuation of occupants and the conduct of search and rescue operations, prevent the fire from spreading to adjacent buildings, and provide a limited measure of property protection. As for any water-based fire protection systems or suppression activities, the water supply serving the building needs to be dependable over the life of the building through seasonal droughts and other eventualities. The provisions for residential buildings with single exit stairs were developed with the expectation of a highly dependable water supply would be available during construction and throughout the lifecycle of the building. Redundancies such as secondary or back up water supplies should to be considered to limit the probability that the water supply may become insufficient for an extended or even temporary period.</paragraph>
                         </content>
                         <change-summary>Added Note A-3.2.10 explaining fire protection and firefighting assumptions for residential buildings with single exit stairs</change-summary>
                         <note>Ministerial Order BA 2024 03</note>
                      </revision>
                   </revision-history>
                </application-note>
-               <application-note xml:id="nbc.divB.part3.sect9.appnote321014" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote321014" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -5521,14 +5521,14 @@
                         <content>
                            <number>3.2.10.1.(4)</number>
                            <title>Residential Buildings Not Permitted.</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote321014.para1">The residential uses described in Sentence 3.2.10.1.(4) include short term as well as long term accommodations where Subsection 3.2.10. is not permitted to apply. For example, longer-term hotels and rooming houses sometimes referred to as single room occupancy hotels or single room accommodations with or without private bathrooms or kitchens are not permitted to apply Subsection 3.2.10.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote321014.para1">The residential uses described in Sentence 3.2.10.1.(4) include short term as well as long term accommodations where Subsection 3.2.10. is not permitted to apply. For example, longer-term hotels and rooming houses sometimes referred to as single room occupancy hotels or single room accommodations with or without private bathrooms or kitchens are not permitted to apply Subsection 3.2.10.</paragraph>
                         </content>
                         <change-summary>Added Note A-3.2.10.1.(4) clarifying residential buildings not permitted under Subsection 3.2.10</change-summary>
                         <note>Ministerial Order BA 2024 03</note>
                      </revision>
                   </revision-history>
                </application-note>
-               <application-note xml:id="nbc.divB.part3.sect9.appnote321021and2" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote321021and2" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -5541,15 +5541,15 @@
                         <content>
                            <number>3.2.10.2.(1) and (2)</number>
                            <title>Automatic Sprinkler Systems.</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote321021and2.para1">Automatic sprinkler systems serving a building to which Subsection 3.2.10. applies must be sprinklered in accordance with NFPA 13, "Standard for the Installation of Sprinkler Systems," regardless of the permissions for other buildings to follow the NFPA 13R, "Standard for the Installation of Sprinkler Systems in low-Rise Residential Occupancies," or the NFPA 13D, "Standard for the Installation of Sprinkler Systems in One- and Two-Family Dwellings and Manufactured Homes," standards. All balconies and decks regardless of depth must be sprinklered.</paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote321021and2.para2">The requirement for sprinklers conforming to NFPA 13, "Standard for the Installation of Sprinkler Systems," means that a fire alarm system described in Subsection 3.2.4. is also required.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote321021and2.para1">Automatic sprinkler systems serving a building to which Subsection 3.2.10. applies must be sprinklered in accordance with NFPA 13, "Standard for the Installation of Sprinkler Systems," regardless of the permissions for other buildings to follow the NFPA 13R, "Standard for the Installation of Sprinkler Systems in low-Rise Residential Occupancies," or the NFPA 13D, "Standard for the Installation of Sprinkler Systems in One- and Two-Family Dwellings and Manufactured Homes," standards. All balconies and decks regardless of depth must be sprinklered.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote321021and2.para2">The requirement for sprinklers conforming to NFPA 13, "Standard for the Installation of Sprinkler Systems," means that a fire alarm system described in Subsection 3.2.4. is also required.</paragraph>
                         </content>
                         <change-summary>Added Note A-3.2.10.2.(1) and (2) regarding automatic sprinkler system requirements for buildings under Subsection 3.2.10</change-summary>
                         <note>Ministerial Order BA 2024 03</note>
                      </revision>
                   </revision-history>
                </application-note>
-               <application-note xml:id="nbc.divB.part3.sect9.appnote321023" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote321023" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -5562,15 +5562,15 @@
                         <content>
                            <number>3.2.10.2.(3)</number>
                            <title>Exit Facility.</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote321023.para1">The single exit facility serving a building to which Subsection 3.2.10. applies shall either be of noncombustible construction or shall be finished as an exit stair serving an unsprinklered high building described in Subsection 3.2.6. Should a fire event occur, protection of the exit stairs must not solely rely on the automatic sprinkler system.</paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote321023.para2">A 1 500 mm wide exit facility facilitates the movement and passing of people for regular use as well as in an emergency. The design of intermediate handrails, such as for widths exceeding 1 700 mm, should consider the movement of emergency personnel including their equipment on each side. The design of the exit facility must also consider misuse and proactively deter the storage or collection of materials so as not to obstruct passage and to minimize fuel load. For example, excess landing areas and alcoves in all exits (not limited to residential buildings with single exit stairs) must be carefully designed to deter any activities other than exiting and accessing floor areas as per Sentence 3.4.4.4.(6). Void spaces underneath stairs should be avoided. Landings must have signage to remind occupants that storage is not permitted in exit facilities.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote321023.para1">The single exit facility serving a building to which Subsection 3.2.10. applies shall either be of noncombustible construction or shall be finished as an exit stair serving an unsprinklered high building described in Subsection 3.2.6. Should a fire event occur, protection of the exit stairs must not solely rely on the automatic sprinkler system.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote321023.para2">A 1 500 mm wide exit facility facilitates the movement and passing of people for regular use as well as in an emergency. The design of intermediate handrails, such as for widths exceeding 1 700 mm, should consider the movement of emergency personnel including their equipment on each side. The design of the exit facility must also consider misuse and proactively deter the storage or collection of materials so as not to obstruct passage and to minimize fuel load. For example, excess landing areas and alcoves in all exits (not limited to residential buildings with single exit stairs) must be carefully designed to deter any activities other than exiting and accessing floor areas as per Sentence 3.4.4.4.(6). Void spaces underneath stairs should be avoided. Landings must have signage to remind occupants that storage is not permitted in exit facilities.</paragraph>
                         </content>
                         <change-summary>Added Note A-3.2.10.2.(3) regarding exit facility design and construction requirements</change-summary>
                         <note>Ministerial Order BA 2024 03</note>
                      </revision>
                   </revision-history>
                </application-note>
-               <application-note xml:id="nbc.divB.part3.sect9.appnote321024" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote321024" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -5583,15 +5583,15 @@
                         <content>
                            <number>3.2.10.2.(4)</number>
                            <title>Exit Facility Discharge.</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote321024.para1">Fire department access to buildings to which Subsection 3.2.10. applies must be provided to the principal entrance as well as to the access point most directly connected to the exit facility. As such, the exit facility discharge must be located to coordinate with the fire department access route described in Subsection 3.2.5.</paragraph>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote321024.para2">Designers should consider locating the exit facility discharge in close proximity to the principal entrance for the benefit of coordinating multiple access points with the fire department access route but also to avoid unintended use of the exit facility for package delivery or other material drop-off. There should be clear distinction between the principal building entrance (likely connecting to a lobby and elevator) and the exit facility discharge so that activities such as deliveries can be intuitively completed in the safe and intended manner. Locating the exit facility discharge in close proximity to the principal building entrance also reduces the potential that an access point is located in an isolated location of the building which could increase building and occupant security concerns.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote321024.para1">Fire department access to buildings to which Subsection 3.2.10. applies must be provided to the principal entrance as well as to the access point most directly connected to the exit facility. As such, the exit facility discharge must be located to coordinate with the fire department access route described in Subsection 3.2.5.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote321024.para2">Designers should consider locating the exit facility discharge in close proximity to the principal entrance for the benefit of coordinating multiple access points with the fire department access route but also to avoid unintended use of the exit facility for package delivery or other material drop-off. There should be clear distinction between the principal building entrance (likely connecting to a lobby and elevator) and the exit facility discharge so that activities such as deliveries can be intuitively completed in the safe and intended manner. Locating the exit facility discharge in close proximity to the principal building entrance also reduces the potential that an access point is located in an isolated location of the building which could increase building and occupant security concerns.</paragraph>
                         </content>
                         <change-summary>Added Note A-3.2.10.2.(4) regarding exit facility discharge location and coordination with fire department access</change-summary>
                         <note>Ministerial Order BA 2024 03</note>
                      </revision>
                   </revision-history>
                </application-note>
-               <application-note xml:id="nbc.divB.part3.sect9.appnote321043" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnote321043" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- This note did not exist in NBC 2020 -->
@@ -5604,7 +5604,7 @@
                         <content>
                            <number>3.2.10.4.(3)</number>
                            <title>Suite Entry Doors.</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnote321043.para1">Sentence 3.2.10.4.(3) supersedes the permission in Article 3.1.8.12. to reduce the fire-protection rating of closures. Suite entry doors with less than a 45 min fire-protection rating are not permitted in buildings to which Subsection 3.2.10. applies, nor would these doors be permitted any undercuts such as described in Article 9.32.3.10.</paragraph>
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnote321043.para1">Sentence 3.2.10.4.(3) supersedes the permission in Article 3.1.8.12. to reduce the fire-protection rating of closures. Suite entry doors with less than a 45 min fire-protection rating are not permitted in buildings to which Subsection 3.2.10. applies, nor would these doors be permitted any undercuts such as described in Article 9.32.3.10.</paragraph>
                         </content>
                         <change-summary>Added Note A-3.2.10.4.(3) regarding suite entry door fire-protection rating requirements</change-summary>
                         <note>Ministerial Order BA 2024 03</note>
@@ -5905,7 +5905,7 @@
                            <text>3) At least one for every five or part thereof of <ref type="term" target="dwllng-nt">dwelling units</ref> described in <ref type="internal"
                                    target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1"
                                    display-type="short"/> shall conform to this Subsection. (See <ref type="internal"
-                                   target="nbc.divB.part3.sect10.appnoteA-3.8.5.1.3"
+                                   target="nbc.divB.part3.appendix.appnoteA-3.8.5.1.3"
                                    display-type="long"/>.)</text>
                         </content>
                         <change-summary>Added new sentence requiring one in five dwelling units to be adaptable</change-summary>
@@ -5927,7 +5927,7 @@
                  position="last-child"/>
          <insert>
             <new-content source="bc">
-               <application-note xml:id="nbc.divB.part3.sect9.appnoteA-3.8.5.1.3" revised="yes">
+               <application-note xml:id="nbc.divB.part3.appendix.appnoteA-3.8.5.1.3" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- This application note did not exist in the original -->
@@ -5940,7 +5940,7 @@
                         <content>
                            <number>A-3.8.5.1.(3)</number>
                            <title>Application to Dwelling Units</title>
-                           <paragraph xml:id="nbc.divB.part3.sect9.appnoteA-3.8.5.1.3.para1">The Building Code requires that for every <ref type="term" target="dwllng-nt">dwelling unit</ref> meeting the criteria described in <ref type="internal"
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnoteA-3.8.5.1.3.para1">The Building Code requires that for every <ref type="term" target="dwllng-nt">dwelling unit</ref> meeting the criteria described in <ref type="internal"
                                    target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1"
                                    display-type="long"/> that one for every five units be designed as an <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref>. To calculate, the designer shall take the number of units that meet the criteria of <ref type="internal"
                                    target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1"
@@ -6327,7 +6327,7 @@
                         <content>
                            <term>Secondary suite</term>
                            <definition>means a self-contained <ref type="term" target="dwllng-n">dwelling unit</ref> with a prescribed <ref type="term" target="flr-r">floor area</ref> located in a <ref type="term" target="bldng">building</ref> or portion of a <ref type="term" target="bldng">building</ref> of only <ref type="term" target="rdntl-cc">residential occupancy</ref> that contains only one other <ref type="term" target="dwllng-n">dwelling unit</ref> and common spaces, and where both <ref type="term" target="dwllng-n">dwelling units</ref> constitute a single real estate entity. (See <ref type="internal"
-                                   target="nbc.divA.part1.sect5.appnote7.div16"
+                                   target="nbc.divA.part1.appendix.appnote7.div16"
                                    display-type="short"/> and <ref type="internal"
                                    target="nbc.divBV2.part9.sect1.subsect2.art1"
                                    display-type="long"/>.)</definition>
@@ -6346,10 +6346,10 @@
                  original-sequence="4012"
                  original-id="bc-mo-2024-06-013"
                  description="Amend Notes to Part 1 Compliance, A-1.4.1.2.(1) Defined Terms by striking out '2018' in the fourth paragraph under 'Dangerous Goods'">
-         <target type="canonical-id" id="nbc.divA.part1.sect5.appnote7.div5.para4"/>
+         <target type="canonical-id" id="nbc.divA.part1.appendix.appnote7.div5.para4"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <paragraph xml:id="nbc.divA.part1.sect5.appnote7.div5.para4">
+               <paragraph xml:id="nbc.divA.part1.appendix.appnote7.div5.para4">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -6489,7 +6489,7 @@
                                    target="nbc.divB.part10.sect4"
                                    pretext=" and"
                                    display-type="short"/> (See <ref type="internal"
-                                   target="nbc.divB.part1.sect3.appnote1"
+                                   target="nbc.divB.part1.appendix.appnote1"
                                    display-type="short"/>.)</text>
                         </content>
                         <change-summary>Struck out "2.5.,"</change-summary>
@@ -6533,7 +6533,7 @@
                                    target="nbc.divB.part6.sect3.subsect2.art14.sent2"
                                    display-type="number"/>
                               <ref type="internal"
-                                   target="nbc.divB.part6.sect10.appnote9"
+                                   target="nbc.divB.part6.appendix.appnote9"
                                    display-type="number"/>
                            </content>
                            <change-summary>Struck out "6.3.2.14.(2)" from Code Reference column</change-summary>
@@ -6641,7 +6641,7 @@
                                    target="nbc.divB.part3.sect3.subsect1.art2.sent1"
                                    display-type="number"/>
                               <ref type="internal"
-                                   target="nbc.divA.part1.sect5.appnote7.div16"
+                                   target="nbc.divA.part1.appendix.appnote7.div16"
                                    display-type="number"/>
                            </entry>
                         </content>
@@ -8290,7 +8290,7 @@
                  original-sequence="4064"
                  original-id="bc-mo-2024-06-065"
                  description="Delete Notes to Part 3 Fire Protection, Occupant Safety and Accessibility, A-3.8.3.6.(3) Washrooms in Residential Occupancies in its entirety">
-         <target type="canonical-id" id="nbc.divB.part3.sect9.appnote208"/>
+         <target type="canonical-id" id="nbc.divB.part3.appendix.appnote208"/>
          <delete/>
       </amendment>
       <amendment sequence="136"
@@ -8373,7 +8373,7 @@
                                id="bc-mo-2024-06-067"
                                status="current">
                         <content>(See <ref type="internal"
-                                target="nbc.divB.part5.sect11.appnote1"
+                                target="nbc.divB.part5.appendix.appnote1"
                                 display-type="long"
                                 pretext="Note"/>)</content>
                         <change-summary>Changed see-also reference to display as "(See Note A-5.)"</change-summary>
@@ -8390,7 +8390,7 @@
                  original-sequence="4067"
                  original-id="bc-mo-2024-06-068"
                  description="Delete Notes to Part 5 Environmental Separation, A-5.9.3.5 Water Penetration in its entirety">
-         <target type="canonical-id" id="nbc.divB.part5.sect11.appnote54"/>
+         <target type="canonical-id" id="nbc.divB.part5.appendix.appnote54"/>
          <delete/>
       </amendment>
       <amendment sequence="139"
@@ -8858,7 +8858,7 @@
                               <ref type="internal"
                                    target="nbc.divBV2.part9.sect13.subsect4.art3.sent2.clause6"
                                    display-type="medium"/> where it terminates outside the <ref type="term" target="bldng">building</ref>, not less than <measurement units="metric">1.8 m</measurement> from a property line, and located in accordance with either 7.2.4.6 or 7.3.4 of CAN/CGSB-149.11, "Radon control options for new construction in low-rise residential buildings," with the opening of the pipe fitted with a corrosion-resistant screen or grille with a mesh opening size of <measurement units="metric">10 mm</measurement> to <measurement units="metric">12.5 mm</measurement> or a product of equivalent air flow performance (see <ref type="internal"
-                                   target="nbc.divBV2.part9.sect9.appnoteA-9.13.4.3"
+                                   target="nbc.divBV2.part9.appendix.appnoteA-9.13.4.3"
                                    display-type="short"/>).
                   </text>
                         </content>
@@ -8947,7 +8947,7 @@
                               <text>anchor bolts spaced in accordance with <ref type="internal"
                                       target="nbc.divBV2.part9.sect23.subsect6.art1.table1"
                                       display-type="long"/>. (See <ref type="internal"
-                                      target="nbc.divBV2.part9.sect9.appnoteA-9.23.6.1.3"
+                                      target="nbc.divBV2.part9.appendix.appnoteA-9.23.6.1.3"
                                       display-type="short"/>.)</text>
                            </clause>
                         </content>
