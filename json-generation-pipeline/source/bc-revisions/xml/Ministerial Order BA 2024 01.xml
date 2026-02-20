@@ -1390,7 +1390,7 @@
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-027" status="current">
                 <content>
-                  <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art23.sent2" display-type="short">Sentences (2)</ref> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art23.sent3" display-type="short">(3)</ref>, a <ref type="term" target="bldng">building</ref> containing a <ref type="term" target="grp-a-div-1-occ">Group A, Division 1 occupancy</ref> shall conform to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art24" display-type="long">Articles 3.2.2.24.</ref> to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art28" display-type="number">3.2.2.28.</ref> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="number">3.2.2.93.</ref></text>
+                  <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art24" display-type="long">Articles 3.2.2.24.</ref> to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art28" display-type="number">3.2.2.28.</ref> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="number">3.2.2.93.</ref>, a <ref type="term" target="bldng">building</ref> containing a <ref type="term" target="grp-a-div-1-occ">Group A, Division 1 occupancy</ref> shall conform to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art23.sent2" display-type="short"></text>
                 </content>
                 <change-summary>Added reference to 3.2.2.93 after 3.2.2.28</change-summary>
                 <note>Ministerial Order BA 2024 01</note>
