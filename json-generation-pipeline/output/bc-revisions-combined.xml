@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-19T18:40:15.129-08:00"
+            generated="2026-02-19T19:12:18.574864-08:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -6476,7 +6476,7 @@
                                status="current">
                         <content>
                            <text>For the purpose of compliance with this Code as required in <ref type="internal"
-                                   target="nbc.divA.part1.sect1.subsect1.art2.sent1.clause2"
+                                   target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                    display-type="short"/>, the objectives and functional statements attributed to the acceptable solutions in Division B shall be the objectives and functional statements identified in <ref type="internal" target="nbc.divB.part2.sect5" pretext="Sections"/>
                               <ref type="internal" target="nbc.divB.part3.sect9" pretext=","/>
                               <ref type="internal" target="nbc.divB.part4.sect5" pretext=","/>
@@ -6719,7 +6719,7 @@
                            <entry>National Research Council of Canada Construction</entry>
                            <entry>
                               <ref type="internal"
-                                   target="nbc.divA.part1.sect1.subsect1.art2.sent1.clause2"
+                                   target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                    display-type="number"/>
                            </entry>
                         </content>
@@ -6758,7 +6758,7 @@
                            <entry>Accessible Design for the Built Environment</entry>
                            <entry>
                               <ref type="internal"
-                                   target="nbc.divA.part1.sect1.subsect1.art2.sent1.clause2"
+                                   target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                    display-type="number"/>
                            </entry>
                         </content>
@@ -7361,7 +7361,7 @@
                            <entry>Mobile Homes</entry>
                            <entry>
                               <ref type="internal"
-                                   target="nbc.divA.part1.sect1.subsect1.art2.sent1.clause2"
+                                   target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                    display-type="number"/>
                            </entry>
                         </content>
@@ -7400,7 +7400,7 @@
                            <entry>Mobile Homes - Part 2: Plumbing</entry>
                            <entry>
                               <ref type="internal"
-                                   target="nbc.divA.part1.sect1.subsect1.art2.sent1.clause2"
+                                   target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                    display-type="number"/>
                            </entry>
                         </content>
@@ -7439,7 +7439,7 @@
                            <entry>Mobile Homes - Part 10: Energy Efficiency</entry>
                            <entry>
                               <ref type="internal"
-                                   target="nbc.divA.part1.sect1.subsect1.art2.sent1.clause2"
+                                   target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                    display-type="number"/>
                            </entry>
                         </content>
@@ -7583,7 +7583,7 @@
                            <entry>National Research Council of Canada Construction Digest</entry>
                            <entry>
                               <ref type="internal"
-                                   target="nbc.divA.part1.sect1.subsect1.art2.sent1.clause2"
+                                   target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                    display-type="number"/>
                            </entry>
                         </content>
@@ -7622,7 +7622,7 @@
                            <entry>National Research Council of Canada Construction Digest</entry>
                            <entry>
                               <ref type="internal"
-                                   target="nbc.divA.part1.sect1.subsect1.art2.sent1.clause2"
+                                   target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                    display-type="number"/>
                            </entry>
                         </content>

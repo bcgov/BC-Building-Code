@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-19T18:32:24.556-08:00"
+            generated="2026-02-19T19:11:43.839327-08:00"
             source-count="12">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -1542,16 +1542,16 @@ Llitre(s)</replace>
                   <number>1.1.1.1.(6)</number>
                   <title>Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite</title>
                   <paragraph xml:id="nbc.divA.part1.appendix.appnote2b.para1">The requirements in Division B for the construction of <ref type="term" target="bc-scnd-t">secondary suites</ref> was written primarily for new construction and provides for a performance level that is higher than what may exist in existing <ref type="term" target="bldng">buildings</ref>. To apply present Code provisions to existing <ref type="term" target="bldng">buildings</ref> is in many cases impractical. The Table of Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite was developed to provide alternate methods, when dealing with existing construction, without compromising the objectives of the Code. <ref type="internal"
-                          target="nbc.divA.part1.sect1.subsect1.art1.table3"
+                          target="nbc.divA.part1.sect1.subsect1.art1.table2"
                           display-type="long"/> may be considered when assessing an existing additional <ref type="term" target="dwllng-n">dwelling unit</ref> located in a single family dwelling <ref type="term" target="bldng">building</ref> (house), however is not intended to be applied as a retroactive code to these existing units, nor be applied to <ref type="term" target="bldng">buildings</ref> of new construction where there are no existing assemblies to act as practical barriers to compliance with Division B of this Code. <ref type="internal"
                           target="nbc.divA.part1.appendix.appnote2b.figure1"
                           display-type="long"/> illustrates the application of <ref type="internal"
-                          target="nbc.divA.part1.sect1.subsect1.art1.table3"
+                          target="nbc.divA.part1.sect1.subsect1.art1.table2"
                           display-type="long"/> to existing <ref type="term" target="bldng">buildings</ref>.</paragraph>
                   <figure xml:id="nbc.divA.part1.appendix.appnote2b.figure1"
                           vendor-id="en000009b-fig1">
                      <title>Figure A-1.1.1.1.(6) Application of Alternative Compliance Methods in <ref type="internal"
-                             target="nbc.divA.part1.sect1.subsect1.art1.table3"
+                             target="nbc.divA.part1.sect1.subsect1.art1.table2"
                              display-type="long"/>
                      </title>
                      <graphic src="bc-graphics/Figure A-1.1.1.1.(6) of Division A.eps"
@@ -1559,7 +1559,7 @@ Llitre(s)</replace>
                   </figure>
                   <paragraph xml:id="nbc.divA.part1.appendix.appnote2b.para2">
                      <ref type="internal"
-                          target="nbc.divA.part1.sect1.subsect1.art1.table3"
+                          target="nbc.divA.part1.sect1.subsect1.art1.table2"
                           display-type="long"/> is not mandatory, and an owner may choose to
                             <list type="bulleted">
                         <item xml:id="nbc.divA.part1.appendix.appnote2b.item1">apply acceptable solutions in Division B,</item>
@@ -1567,7 +1567,7 @@ Llitre(s)</replace>
                                 target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                 display-type="long"/>,</item>
                         <item xml:id="nbc.divA.part1.appendix.appnote2b.item3">apply alternate compliance methods in <ref type="internal"
-                                target="nbc.divA.part1.sect1.subsect1.art1.table3"
+                                target="nbc.divA.part1.sect1.subsect1.art1.table2"
                                 display-type="long"/>, or</item>
                         <item xml:id="nbc.divA.part1.appendix.appnote2b.item4">combined these options.</item>
                      </list>
@@ -3716,7 +3716,7 @@ Llitre(s)</replace>
                <sentence xml:id="nbc.divB.part1.sect1.subsect2.art1.sent1" number="1">
                   <text>For the purpose of compliance with this Code as required in 
                             <ref type="internal"
-                          target="nbc.divA.part1.sect1.subsect1.art2.sent1.clause2"
+                          target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                           display-type="short"/>, the objectives and functional statements
                             attributed to the acceptable solutions in Division B shall be the
                             objectives and functional statements identified in 
