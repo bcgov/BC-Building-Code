@@ -11207,7 +11207,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                             <text>In a house with a <ref type="term" target="scndr-st">secondary suite</ref> including their common spaces, where a heating or ventilation system serves more than a single <ref type="term" target="dwllng-n">dwelling unit</ref>, the system shall be designed and installed to prevent the circulation of smoke upon a signal from a duct-type <ref type="term" target="mk-dtctr">smoke detector</ref>. (See Note A-9.32.3.2.(4).)</text>
                         </sentence>
                         <sentence xml:id="nbc.divBV2.part9.sect32.subsect3.art2.sent5" number="5">
-                            <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect9.art6.sent14" display-type="short"/>, ducts penetrating <ref type="term" target="fr-sprtn">fire separations</ref> shall be equipped with <ref type="term" target="fr-dmpr">fire dampers</ref> in conformance with <ref type="internal" target="nbc.divB.part3.sect1.subsect8.art10" display-type="long"/>.</text>
+                            <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect9.art6" display-type="short"/>, ducts penetrating <ref type="term" target="fr-sprtn">fire separations</ref> shall be equipped with <ref type="term" target="fr-dmpr">fire dampers</ref> in conformance with <ref type="internal" target="nbc.divB.part3.sect1.subsect8.art10" display-type="long"/>.</text>
                         </sentence>
                     </article>
                 </new-content>

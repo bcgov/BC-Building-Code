@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-20T14:01:44.136-08:00"
+            generated="2026-02-20T14:35:43.487-08:00"
             source-count="12">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -4717,7 +4717,7 @@ Llitre(s)</replace>
                                 pretext="Articles"/>, <ref type="internal"
                                 target="nbc.divB.part3.sect2.subsect4.art21"
                                 display-type="long"/> or <ref type="internal"
-                                target="nbc.divBV2.part9.sect9.subsect10.art19.art8"
+                                target="nbc.divBV2.part9.sect9.subsect10.art1"
                                 display-type="long"/>, and</text>
                      </subclause>
                   </clause>
@@ -5490,7 +5490,7 @@ Llitre(s)</replace>
                   <sentence xml:id="nbc.divB.part3.sect3.subsect4.art9.sent1" number="1">
                      <text>
                         <ref type="term" target="dwllng-n">Dwelling units</ref> shall conform to <ref type="internal"
-                             target="nbc.divBV2.part9.sect9.subsect7.art2.art1"
+                             target="nbc.divBV2.part9.sect9.subsect7.art2.sent1"
                              display-type="long"/> and <ref type="internal"
                              target="nbc.divBV2.part9.sect9.subsect7.art5"
                              display-type="long"/>.</text>
@@ -14476,7 +14476,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 target="nbc.divBV2.part9.sect23.subsect6.art1.table1"
                                 display-type="long"/>. (See <ref type="internal"
                                 target="nbc.divBV2.part9.appendix.appnote123"
-                                vendor-target="nbc.divBV2.part9.appendix.appnote123"
+                                vendor-target="en000324"
                                 display-type="short"/>.)</text>
                      </clause>
                   </sentence>
@@ -21707,7 +21707,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         <row xml:id="nbc.divBV2.part9.sect28.subsect4.art3.table1.row5">
                            <entry>Horizontal surfaces<ref type="internal"
                                    target="nbc.divBV2.part9.appendix.appnote190"
-                                   vendor-target="nbc.divBV2.part9.appendix.appnote190"
+                                   vendor-target="en000350"
                                    display-type="short"/>
                            </entry>
                            <entry>
@@ -22303,7 +22303,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                              target="nbc.divBV2.part9.sect32.subsect3"
                              display-type="long"/> (See <ref type="internal"
                              target="nbc.divBV2.part9.appendix.appnote194"
-                             vendor-target="nbc.divBV2.part9.appendix.appnote194"
+                             vendor-target="en001526"
                              display-type="short"/>.)</text>
                   </sentence>
                   <sentence xml:id="nbc.divBV2.part9.sect32.subsect1.art2.sent3" number="3">
@@ -22442,7 +22442,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </sentence>
                   <sentence xml:id="nbc.divBV2.part9.sect32.subsect3.art2.sent5" number="5">
                      <text>Except as provided in <ref type="internal"
-                             target="nbc.divBV2.part9.sect10.subsect9.art6.sent14"
+                             target="nbc.divBV2.part9.sect10.subsect9.art6"
                              display-type="short"/>, ducts penetrating <ref type="term" target="fr-sprtn">fire separations</ref> shall be equipped with <ref type="term" target="fr-dmpr">fire dampers</ref> in conformance with <ref type="internal"
                              target="nbc.divB.part3.sect1.subsect8.art10"
                              display-type="long"/>.</text>
@@ -24345,7 +24345,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </clause>
                   <text> (See <ref type="internal"
                           target="nbc.divBV2.part9.appendix.appnote232"
-                          vendor-target="nbc.divBV2.part9.appendix.appnote232"
+                          vendor-target="en001785"
                           display-type="short"/>.)</text>
                </sentence>
             </new-content>
@@ -25448,7 +25448,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                              target="nbc.divBV2.part9.sect36.subsect5.art3.sent7"
                              display-type="short"/>, the annual energy consumption of the proposed house in comparison to the house energy target of the reference house shall demonstrate a percent improvement in accordance with Table 9.37.6.3.-G. (See <ref type="internal"
                              target="nbc.divBV2.part9.appendix.appnote274"
-                             vendor-target="nbc.divBV2.part9.appendix.appnote274"
+                             vendor-target="en001765"
                              display-type="short"/>.)</text>
                   </sentence>
                   <sentence xml:id="nbc.divBV2.part9.sect36.subsect5.art3.sent3" number="3">
@@ -25468,7 +25468,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divBV2.part9.sect36.subsect5.art3.sent7" number="7">
                      <text>For log homes, the annual energy consumption of the proposed house shall not exceed the house energy target of the reference house. (See <ref type="internal"
                              target="nbc.divBV2.part9.appendix.appnote274"
-                             vendor-target="nbc.divBV2.part9.appendix.appnote274"
+                             vendor-target="en001765"
                              display-type="short"/>.)</text>
                   </sentence>
                </article>

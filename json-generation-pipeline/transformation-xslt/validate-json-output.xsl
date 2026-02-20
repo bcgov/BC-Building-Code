@@ -756,6 +756,32 @@
                 </xsl:for-each>
             </xsl:variable>
             
+            <!-- Generate separate text file with all broken references -->
+            <xsl:if test="count($broken-refs) > 0">
+                <xsl:result-document href="broken-references-full.txt" method="text">
+                    <xsl:text>BC BUILDING CODE - BROKEN CROSS-REFERENCES REPORT&#10;</xsl:text>
+                    <xsl:text>Generated: </xsl:text>
+                    <xsl:value-of select="current-dateTime()"/>
+                    <xsl:text>&#10;&#10;</xsl:text>
+                    <xsl:text>Total Broken References: </xsl:text>
+                    <xsl:value-of select="count($broken-refs)"/>
+                    <xsl:text>&#10;</xsl:text>
+                    <xsl:text>Total Internal References: </xsl:text>
+                    <xsl:value-of select="count($xml-doc//ref[@type='internal'])"/>
+                    <xsl:text>&#10;</xsl:text>
+                    <xsl:text>================================================================&#10;&#10;</xsl:text>
+                    
+                    <xsl:for-each select="$broken-refs">
+                        <xsl:value-of select="position()"/>
+                        <xsl:text>. Source: </xsl:text>
+                        <xsl:value-of select="source"/>
+                        <xsl:text>&#10;   Target (Not Found): </xsl:text>
+                        <xsl:value-of select="target"/>
+                        <xsl:text>&#10;&#10;</xsl:text>
+                    </xsl:for-each>
+                </xsl:result-document>
+            </xsl:if>
+            
             <xsl:choose>
                 <xsl:when test="count($broken-refs) = 0">
                     <xsl:if test="$hide-success = 'false'">
@@ -770,6 +796,11 @@
                     <p style="margin-top: 10px;">
                         <span style="color: #dc3545; font-weight: bold;">Total Errors: <xsl:value-of select="count($broken-refs)"/></span>
                         <span style="margin-left: 20px;">Total Internal References: <xsl:value-of select="count($xml-doc//ref[@type='internal'])"/></span>
+                    </p>
+                    
+                    <p style="margin-top: 10px; padding: 10px; background-color: #fff3cd; border-left: 4px solid #ffc107; border-radius: 3px;">
+                        <strong>📄 Full Report:</strong> All <xsl:value-of select="count($broken-refs)"/> broken references have been exported to 
+                        <a href="broken-references-full.txt" style="color: #0066cc; text-decoration: underline;">broken-references-full.txt</a>
                     </p>
                     
                     <table>
@@ -793,7 +824,8 @@
                     
                     <xsl:if test="count($broken-refs) > 50">
                         <p style="color: #666; font-style: italic;">
-                            ... and <xsl:value-of select="count($broken-refs) - 50"/> more broken references.
+                            Showing first 50 of <xsl:value-of select="count($broken-refs)"/> broken references. 
+                            <a href="broken-references-full.txt" style="color: #0066cc;">View complete list</a>
                         </p>
                     </xsl:if>
                 </xsl:otherwise>

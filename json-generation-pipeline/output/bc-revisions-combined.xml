@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-20T14:01:55.681-08:00"
+            generated="2026-02-20T14:35:54.945-08:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -101,7 +101,7 @@
                                    display-type="number"/>
                               <ref type="internal"
                                    target="nbc.divBV2.part9.appendix.appnote191"
-                                   vendor-target="nbc.divBV2.part9.appendix.appnote191"
+                                   vendor-target="en001090"
                                    display-type="number"/>
                            </content>
                            <change-summary>Added 3.1.6.6.(6)(c) to Code Reference</change-summary>
@@ -213,7 +213,7 @@
                                    target="nbc.divB.part3.sect1.subsect5.art24.sent1"
                                    display-type="number"/>
                               <ref type="internal"
-                                   target="nbc.divB.part3.sect1.subsect6.art6.sent5.clause2"
+                                   target="nbc.divB.part3.sect1.subsect6.art6.sent5"
                                    display-type="number"/>
                               <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art9.sent6"
@@ -4183,7 +4183,7 @@
                                       vendor-id="es007226b">
                                  <text>Group C, <ref type="term" target="rdntl-cc">residential occupancies</ref> (see <ref type="internal"
                                          target="nbc.divBV2.part9.appendix.appnote1"
-                                         vendor-target="nbc.divBV2.part9.appendix.appnote1"
+                                         vendor-target="en000253"
                                          display-type="long"/>),</text>
                               </clause>
                               <clause xml:id="nbc.divA.part1.sect3.subsect3.art3.sent1.clause3"
@@ -8511,7 +8511,7 @@
                                status="current">
                         <content>(See <ref type="internal"
                                 target="nbc.divBV2.part9.appendix.appnote9"
-                                vendor-target="nbc.divBV2.part9.appendix.appnote9"
+                                vendor-target="en001205"
                                 display-type="short"/>.)</content>
                         <change-summary>Amended Article 9.4.1.1. title note by striking out "and Article 2.2.7.6. of Division C"</change-summary>
                         <note>Ministerial Order BA 2024 06</note>

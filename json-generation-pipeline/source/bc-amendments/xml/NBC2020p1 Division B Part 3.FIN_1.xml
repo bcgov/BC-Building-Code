@@ -649,7 +649,7 @@
                                 <text>the <ref type="term" target="mk-lrm">smoke alarms</ref> required by <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art20" display-type="long" pretext="Article"/> and <ref type="internal" target="nbc.divBV2.part9.sect9.subsect10.art19.art1" display-type="long"/>, or</text>
                             </subclause>
                             <subclause xml:id="nbc.divB.part3.sect2.subsect4.art19.sent6.clause2.subclause2" number="2">
-                                <text>the <ref type="term" target="mk-dtctr">smoke detectors</ref> permitted by <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art20" display-type="long" pretext="Articles"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art21" display-type="long"/> or <ref type="internal" target="nbc.divBV2.part9.sect9.subsect10.art19.art8" display-type="long"/>, and</text>
+                                <text>the <ref type="term" target="mk-dtctr">smoke detectors</ref> permitted by <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art20" display-type="long" pretext="Articles"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art21" display-type="long"/> or <ref type="internal" target="nbc.divBV2.part9.sect9.subsect10.art1" display-type="long"/>, and</text>
                             </subclause>
                         </clause>
                         <clause xml:id="nbc.divB.part3.sect2.subsect4.art19.sent6.clause3" letter="c">
@@ -1332,7 +1332,7 @@
                         <title>Resistance to Forced Entry</title>
                         
                         <sentence xml:id="nbc.divB.part3.sect3.subsect4.art9.sent1" number="1">
-                            <text><ref type="term" target="dwllng-n">Dwelling units</ref> shall conform to <ref type="internal" target="nbc.divBV2.part9.sect9.subsect7.art2.art1" display-type="long"/> and <ref type="internal" target="nbc.divBV2.part9.sect9.subsect7.art5" display-type="long"/>.</text>
+                            <text><ref type="term" target="dwllng-n">Dwelling units</ref> shall conform to <ref type="internal" target="nbc.divBV2.part9.sect9.subsect7.art2.sent1" display-type="long"/> and <ref type="internal" target="nbc.divBV2.part9.sect9.subsect7.art5" display-type="long"/>.</text>
                         </sentence>
                     </article>
                 </new-content>
