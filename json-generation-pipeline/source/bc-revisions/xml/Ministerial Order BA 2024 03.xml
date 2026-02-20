@@ -74,7 +74,7 @@
                       <text>reserved</text>
                     </clause>
                     <clause xml:id="nbc.divA.part1.sect3.subsect3.art3.sent1.clause2" letter="b" vendor-id="es007226b">
-                      <text>Group C, <ref type="term" target="rdntl-cc">residential occupancies</ref> (see <ref type="internal" target="en000253" vendor-target="en000253" display-type="long"/>),</text>
+                      <text>Group C, <ref type="term" target="rdntl-cc">residential occupancies</ref> (see <ref type="internal" target="nbc.divBV2.part9.appendix.appnote1" vendor-target="en000253" display-type="long"/>),</text>
                     </clause>
                     <clause xml:id="nbc.divA.part1.sect3.subsect3.art3.sent1.clause3" letter="c" vendor-id="es007226c">
                       <text>Group D, <ref type="term" target="bn-nd-pr">business and personal services occupancies</ref>,</text>

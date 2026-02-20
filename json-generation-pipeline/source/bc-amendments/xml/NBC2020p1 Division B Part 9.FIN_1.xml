@@ -3916,7 +3916,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <text>there are not less than two anchor bolts per <ref type="term" target="br-wl-pnl">braced wall panel</ref>, located at opposite ends of the <ref type="term" target="br-wl-pnl">braced wall panel</ref> within <measurement units="metric">0.5 m</measurement> of the <ref type="term" target="fndtn">foundation</ref> end or within <measurement units="metric">0.3 m</measurement> of the end of the <ref type="term" target="br-wl-pnl">braced wall panel</ref>, and</text>
                             </clause>
                             <clause xml:id="nbc.divBV2.part9.sect23.subsect6.art1.sent3.clause2" letter="b">
-                                <text>anchor bolts spaced in accordance with <ref type="internal" target="nbc.divBV2.part9.sect23.subsect6.art1.table1" display-type="long"/>. (See <ref type="internal" target="en000324" vendor-target="en000324" display-type="short"/>.)</text>
+                                <text>anchor bolts spaced in accordance with <ref type="internal" target="nbc.divBV2.part9.sect23.subsect6.art1.table1" display-type="long"/>. (See <ref type="internal" target="nbc.divBV2.part9.appendix.appnote123" vendor-target="en000324" display-type="short"/>.)</text>
                             </clause>
                         </sentence>
                         <table xml:id="nbc.divBV2.part9.sect23.subsect6.art1.table1">
@@ -10558,7 +10558,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry>0.98</entry>
                                 </row>
                                 <row xml:id="nbc.divBV2.part9.sect28.subsect4.art3.table1.row5">
-                                    <entry>Horizontal surfaces<ref type="internal" target="en000350" vendor-target="en000350" display-type="short"/></entry>
+                                    <entry>Horizontal surfaces<ref type="internal" target="nbc.divBV2.part9.appendix.appnote190" vendor-target="en000350" display-type="short"/></entry>
                                     <entry><measurement units="metric">9.5 mm</measurement> rib lath</entry>
                                     <entry>—</entry>
                                     <entry>—</entry>
@@ -11083,7 +11083,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                             </clause>
                         </sentence>
                         <sentence xml:id="nbc.divBV2.part9.sect32.subsect1.art2.sent2" number="2">
-                            <text>A self-contained heating-season ventilation system serving a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a <ref type="term" target="scndr-st">secondary suite</ref> including their common spaces shall comply with <ref type="internal" target="nbc.divBV2.part9.sect32.subsect3" display-type="long"/> (See <ref type="internal" target="en001526" vendor-target="en001526" display-type="short"/>.)</text>
+                            <text>A self-contained heating-season ventilation system serving a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a <ref type="term" target="scndr-st">secondary suite</ref> including their common spaces shall comply with <ref type="internal" target="nbc.divBV2.part9.sect32.subsect3" display-type="long"/> (See <ref type="internal" target="nbc.divBV2.part9.appendix.appnote194" vendor-target="en001526" display-type="short"/>.)</text>
                         </sentence>
                         <sentence xml:id="nbc.divBV2.part9.sect32.subsect1.art2.sent3" number="3">
                             <text>In houses that contain a <ref type="term" target="scndr-st">secondary suite</ref> including their common spaces, heating-season ventilation need not be provided for</text>

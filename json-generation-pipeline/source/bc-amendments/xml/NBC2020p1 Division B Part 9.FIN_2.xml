@@ -171,7 +171,7 @@
                                 <text>a heat pump in conformance with <ref type="internal" target="nbc.divBV2.part9.sect36.subsect3.art10" display-type="long"/>.</text>
                             </subclause>
                         </clause>
-                        <text> (See <ref type="internal" target="en001785" vendor-target="en001785" display-type="short"/>.)</text>
+                        <text> (See <ref type="internal" target="nbc.divBV2.part9.appendix.appnote232" vendor-target="en001785" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -1053,7 +1053,7 @@
                             <text> (See <ref type="internal" target="en001475" vendor-target="en001475" display-type="short"/>.)</text>
                         </sentence>
                         <sentence xml:id="nbc.divBV2.part9.sect36.subsect5.art3.sent2" number="2">
-                            <text>Except as permitted by <ref type="internal" target="nbc.divBV2.part9.sect36.subsect5.art3.sent7" display-type="short"/>, the annual energy consumption of the proposed house in comparison to the house energy target of the reference house shall demonstrate a percent improvement in accordance with Table 9.37.6.3.-G. (See <ref type="internal" target="en001765" vendor-target="en001765" display-type="short"/>.)</text>
+                            <text>Except as permitted by <ref type="internal" target="nbc.divBV2.part9.sect36.subsect5.art3.sent7" display-type="short"/>, the annual energy consumption of the proposed house in comparison to the house energy target of the reference house shall demonstrate a percent improvement in accordance with Table 9.37.6.3.-G. (See <ref type="internal" target="nbc.divBV2.part9.appendix.appnote274" vendor-target="en001765" display-type="short"/>.)</text>
                         </sentence>
                         <sentence xml:id="nbc.divBV2.part9.sect36.subsect5.art3.sent3" number="3">
                             <text>Except for Tables 9.37.2.6.-C, 9.37.2.7.-D, and 9.37.2.8.-C, in establishing the house energy target, <ref type="term" target="bldng">building</ref> components, systems and assemblies shall be accounted for in accordance with the prescriptive requirements of Subsections 9.37.2. to 9.37.4. for the climate zone under consideration.</text>
@@ -1068,7 +1068,7 @@
                             <text>Both the proposed and reference houses shall be modeled using the same climatic data, <ref type="term" target="l">soil</ref> conditions, operating schedules in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect5.art4" display-type="long"/> and temperature set-points.</text>
                         </sentence>
                         <sentence xml:id="nbc.divBV2.part9.sect36.subsect5.art3.sent7" number="7">
-                            <text>For log homes, the annual energy consumption of the proposed house shall not exceed the house energy target of the reference house. (See <ref type="internal" target="en001765" vendor-target="en001765" display-type="short"/>.)</text>
+                            <text>For log homes, the annual energy consumption of the proposed house shall not exceed the house energy target of the reference house. (See <ref type="internal" target="nbc.divBV2.part9.appendix.appnote274" vendor-target="en001765" display-type="short"/>.)</text>
                         </sentence>
                     </article>
                 </new-content>

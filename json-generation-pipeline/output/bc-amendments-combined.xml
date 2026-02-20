@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-20T13:53:06.434-08:00"
+            generated="2026-02-20T14:01:44.136-08:00"
             source-count="12">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -14475,8 +14475,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         <text>anchor bolts spaced in accordance with <ref type="internal"
                                 target="nbc.divBV2.part9.sect23.subsect6.art1.table1"
                                 display-type="long"/>. (See <ref type="internal"
-                                target="en000324"
-                                vendor-target="en000324"
+                                target="nbc.divBV2.part9.appendix.appnote123"
+                                vendor-target="nbc.divBV2.part9.appendix.appnote123"
                                 display-type="short"/>.)</text>
                      </clause>
                   </sentence>
@@ -21706,8 +21706,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         </row>
                         <row xml:id="nbc.divBV2.part9.sect28.subsect4.art3.table1.row5">
                            <entry>Horizontal surfaces<ref type="internal"
-                                   target="en000350"
-                                   vendor-target="en000350"
+                                   target="nbc.divBV2.part9.appendix.appnote190"
+                                   vendor-target="nbc.divBV2.part9.appendix.appnote190"
                                    display-type="short"/>
                            </entry>
                            <entry>
@@ -22302,8 +22302,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <text>A self-contained heating-season ventilation system serving a single <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a <ref type="term" target="scndr-st">secondary suite</ref> including their common spaces shall comply with <ref type="internal"
                              target="nbc.divBV2.part9.sect32.subsect3"
                              display-type="long"/> (See <ref type="internal"
-                             target="en001526"
-                             vendor-target="en001526"
+                             target="nbc.divBV2.part9.appendix.appnote194"
+                             vendor-target="nbc.divBV2.part9.appendix.appnote194"
                              display-type="short"/>.)</text>
                   </sentence>
                   <sentence xml:id="nbc.divBV2.part9.sect32.subsect1.art2.sent3" number="3">
@@ -24344,8 +24344,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      </subclause>
                   </clause>
                   <text> (See <ref type="internal"
-                          target="en001785"
-                          vendor-target="en001785"
+                          target="nbc.divBV2.part9.appendix.appnote232"
+                          vendor-target="nbc.divBV2.part9.appendix.appnote232"
                           display-type="short"/>.)</text>
                </sentence>
             </new-content>
@@ -25447,8 +25447,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <text>Except as permitted by <ref type="internal"
                              target="nbc.divBV2.part9.sect36.subsect5.art3.sent7"
                              display-type="short"/>, the annual energy consumption of the proposed house in comparison to the house energy target of the reference house shall demonstrate a percent improvement in accordance with Table 9.37.6.3.-G. (See <ref type="internal"
-                             target="en001765"
-                             vendor-target="en001765"
+                             target="nbc.divBV2.part9.appendix.appnote274"
+                             vendor-target="nbc.divBV2.part9.appendix.appnote274"
                              display-type="short"/>.)</text>
                   </sentence>
                   <sentence xml:id="nbc.divBV2.part9.sect36.subsect5.art3.sent3" number="3">
@@ -25467,8 +25467,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </sentence>
                   <sentence xml:id="nbc.divBV2.part9.sect36.subsect5.art3.sent7" number="7">
                      <text>For log homes, the annual energy consumption of the proposed house shall not exceed the house energy target of the reference house. (See <ref type="internal"
-                             target="en001765"
-                             vendor-target="en001765"
+                             target="nbc.divBV2.part9.appendix.appnote274"
+                             vendor-target="nbc.divBV2.part9.appendix.appnote274"
                              display-type="short"/>.)</text>
                   </sentence>
                </article>
