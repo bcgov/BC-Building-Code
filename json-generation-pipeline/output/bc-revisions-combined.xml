@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-18T21:20:38.551-08:00"
+            generated="2026-02-19T17:31:43.871294-08:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -6021,7 +6021,7 @@
                                    target="nbc.divB.part3.sect3.subsect1.art16"
                                    display-type="long"/>., <ref type="internal"
                                    target="nbc.divB.part3.sect3.subsect1.art18"
-                                   display-type="long"/>., Articles 3.4.6.5 to 3.4.6.9., <ref type="internal" target="nbc.divB.part9.sect8" display-type="long"/>.</entry>
+                                   display-type="long"/>., Articles 3.4.6.5 to 3.4.6.9., <ref type="internal" target="nbc.divBV2.part9.sect8" display-type="long"/>.</entry>
                            <entry>Existing conditions that do not comply fully with the requirements are permitted if they are acceptable to the <ref type="term" target="thrt-hvng-jrsdctn">authority having jurisdiction</ref>.</entry>
                         </content>
                         <change-summary>Amended Table 1.1.1.1.(5), Item 19 by striking out italic "Ramps" and substituting regular "Ramps", and by striking out "3.4.6.79." and substituting "3.4.6.9."</change-summary>
@@ -6091,13 +6091,13 @@
                            <entry>5</entry>
                            <entry>Openings Near Unenclosed Exterior <emphasis style="italic">Exit</emphasis> Stairs and Ramps
                     <ref type="internal"
-                                   target="nbc.divB.part9.sect9.subsect4.art4.sent1"
+                                   target="nbc.divBV2.part9.sect9.subsect4.art4.sent1"
                                    display-type="long"/>
                               <emphasis style="italic">Unprotected openings</emphasis> in exterior walls that are within 3 m horizontally and less than 10 m below or less than 5 m above an unenclosed exterior <emphasis style="italic">exit</emphasis> stair or ramp of a house with a <emphasis style="italic">secondary suite</emphasis> shall be protected where the unenclosed exterior <emphasis style="italic">exit</emphasis> stair or ramp provides the only <emphasis style="italic">means of egress</emphasis> from a <ref type="term" target="t">suite</ref> and is exposed to fire from <ref type="term" target="nprtctd-pnng">unprotected openings</ref> in the exterior walls of another <ref type="term" target="dwllng-nt">dwelling unit</ref>, ancillary space or common space.</entry>
                            <entry>Protection of the <ref type="term" target="nprtctd-pnng">unprotected openings</ref> as described in <ref type="internal"
-                                   target="nbc.divB.part9.sect9.subsect4.art4.sent1"
+                                   target="nbc.divBV2.part9.sect9.subsect4.art4.sent1"
                                    display-type="long"/> is not required when all <ref type="term" target="mk-lrm">smoke alarms</ref> within a house with a <emphasis style="italic">secondary suite</emphasis> are of photo-electric type and interconnected as described in <ref type="internal"
-                                   target="nbc.divB.part9.sect10.subsect19.art5.sent2.clause1"
+                                   target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause1"
                                    display-type="long"/>.</entry>
                         </content>
                         <change-summary>Amended Table 1.1.1.1.(6), Item 5 by striking out italic "Ramps" and substituting regular "Ramps", and by striking out italic "ramp" and substituting regular "ramp" throughout Item 5</change-summary>
@@ -6131,7 +6131,7 @@
                            <entry>7</entry>
                            <entry>Fire-Resistance Ratings and Fire-Protection Ratings
                     <ref type="internal"
-                                   target="nbc.divB.part9.sect10.subsect3.art1.sent3"
+                                   target="nbc.divBV2.part9.sect10.subsect3.art1.sent3"
                                    display-type="long"/>
                     In a house with a <emphasis style="italic">secondary suite</emphasis>, where a minimum <ref type="term" target="fr-rtng">fire-resistance rating</ref> of 30 min is permitted, it is permitted to use wood-frame construction where stud and joist spaces are filled with absorptive material,resilient metal channel spaced 400 or 600 mm o.c. is on one side and not less than 12.7 mm thick gypsum board is installed on ceilings and on both sides of walls.</entry>
                            <entry>Adding resilient metal channel spaced 400 or 600 mm o.c. and an additional layer of not less than 12.7 mm gypsum board to one side of an existing finished wall assembly that has not less than 12.7 mm gypsum board on each side or an existing finished floor-ceiling assembly that has not less than 12.7 mm gypsum on the ceiling side is permitted to be used where a 30 min <ref type="term" target="fr-rtng">fire-resistance rating</ref> is required.</entry>
@@ -6484,7 +6484,7 @@
                               <ref type="internal" target="nbc.divB.part6.sect10" pretext=","/>
                               <ref type="internal" target="nbc.divB.part7.sect2" pretext=","/>
                               <ref type="internal" target="nbc.divB.part8.sect3" pretext=","/>
-                              <ref type="internal" target="nbc.divB.part9.sect38" pretext=","/>
+                              <ref type="internal" target="nbc.divBV2.part9.sect38" pretext=","/>
                               <ref type="internal"
                                    target="nbc.divB.part10.sect4"
                                    pretext=" and"

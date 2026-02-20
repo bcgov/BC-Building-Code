@@ -223,7 +223,7 @@
                             <text>is designed with a clear width, a clear and level space, a door-opening device and a door closer in conformance with <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="long"/> (see <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art6" display-type="long"/>.), or</text>
                         </clause>
                         <clause xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5.clause3" letter="c">
-                            <text>meets the criteria in <ref type="internal" target="nbc.divB.part9.sect27.subsect3.art8.sent3" display-type="short"/> such that flashing would not be required.</text>
+                            <text>meets the criteria in <ref type="internal" target="nbc.divBV2.part9.sect27.subsect3.art8.sent3" display-type="short"/> such that flashing would not be required.</text>
                         </clause>
                     </sentence>
                 </new-content>
@@ -395,7 +395,7 @@
             <insert>
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part6.sect2.subsect1.art1.sent2" number="2">
-                        <text>Indoor design temperatures for residential <ref type="term" target="bldng">buildings</ref> shall be those established in <ref type="internal" target="nbc.divB.part9.sect33.subsect3.art1" display-type="long"/>.</text>
+                        <text>Indoor design temperatures for residential <ref type="term" target="bldng">buildings</ref> shall be those established in <ref type="internal" target="nbc.divBV2.part9.sect33.subsect3.art1" display-type="long"/>.</text>
                     </sentence>
                 </new-content>
             </insert>
@@ -481,7 +481,7 @@
             <insert>
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part6.sect3.subsect1.art1.sent5" number="5">
-                        <text>For suites in <ref type="term" target="bldng">buildings</ref> conforming to <ref type="internal" target="nbc.divB.part9.sect36.subsect6" display-type="long"/> or <ref type="internal" target="nbc.divB.part10.sect2.subsect3" display-type="number"/>, the outdoor air required by <ref type="internal" target="nbc.divB.part6.sect3.subsect1.art1.sent2" display-type="short"/> shall be supplied directly to each suite by mechanical ventilation through ducting.</text>
+                        <text>For suites in <ref type="term" target="bldng">buildings</ref> conforming to <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6" display-type="long"/> or <ref type="internal" target="nbc.divB.part10.sect2.subsect3" display-type="number"/>, the outdoor air required by <ref type="internal" target="nbc.divB.part6.sect3.subsect1.art1.sent2" display-type="short"/> shall be supplied directly to each suite by mechanical ventilation through ducting.</text>
                     </sentence>
                 </new-content>
             </insert>
