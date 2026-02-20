@@ -974,7 +974,7 @@
     <!-- ================================================================== -->
     <amendment id="bc-mo-2024-03-009" sequence="1008"
                description="Insert Note A-3.2.10 - Fire Protection and Firefighting Assumptions for Residential Buildings with a Single Exit">
-      <target type="position" parent-id="nbc.divB.part3.sect9.appendix" position="after" reference-id="nbc.divB.part3.appendix.appnote123"/>
+      <target type="position" parent-id="nbc.divB.part3.appendix" position="after" reference-id="nbc.divB.part3.appendix.appnote123"/>
       <insert>
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote3210" revised="yes">

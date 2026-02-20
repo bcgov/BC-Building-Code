@@ -2301,7 +2301,7 @@
     <!-- ================================================================== -->
     <amendment id="bc-mo-2024-01-051" sequence="1051"
                description="Insert new Note A-3.2.2.93.(1) and Table 3.2.2.93. - Occupancy Combinations in Buildings of Mixed Encapsulation Ratings">
-      <target type="position" parent-id="nbc.divB.part3.sect9.appendix" position="after" reference-id="nbc.divB.part3.appendix.appnote55"/>
+      <target type="position" parent-id="nbc.divB.part3.appendix" position="after" reference-id="nbc.divB.part3.appendix.appnote55"/>
       <insert>
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote55a" revised="yes">

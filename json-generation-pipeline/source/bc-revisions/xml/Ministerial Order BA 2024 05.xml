@@ -93,7 +93,7 @@
     <!-- ================================================================== -->
     <amendment id="bc-mo-2024-05-003" sequence="3002"
                description="Add Application Note A-3.8.5.1.(3) explaining adaptable dwelling unit calculation">
-      <target type="position" parent-id="nbc.divB.part3.sect9.appendix" position="last-child"/>
+      <target type="position" parent-id="nbc.divB.part3.appendix" position="last-child"/>
       <insert>
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnoteA-3.8.5.1.3" revised="yes">

@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-19T18:35:18.955918-08:00"
+            generated="2026-02-19T18:40:15.129-08:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -3769,7 +3769,7 @@
                  original-id="bc-mo-2024-01-051"
                  description="Insert new Note A-3.2.2.93.(1) and Table 3.2.2.93. - Occupancy Combinations in Buildings of Mixed Encapsulation Ratings">
          <target type="position"
-                 parent-id="nbc.divB.part3.sect9.appendix"
+                 parent-id="nbc.divB.part3.appendix"
                  position="after"
                  reference-id="nbc.divB.part3.appendix.appnote55"/>
          <insert>
@@ -5467,7 +5467,7 @@
                  original-id="bc-mo-2024-03-009"
                  description="Insert Note A-3.2.10 - Fire Protection and Firefighting Assumptions for Residential Buildings with a Single Exit">
          <target type="position"
-                 parent-id="nbc.divB.part3.sect9.appendix"
+                 parent-id="nbc.divB.part3.appendix"
                  position="after"
                  reference-id="nbc.divB.part3.appendix.appnote123"/>
          <insert>
@@ -5923,7 +5923,7 @@
                  original-id="bc-mo-2024-05-003"
                  description="Add Application Note A-3.8.5.1.(3) explaining adaptable dwelling unit calculation">
          <target type="position"
-                 parent-id="nbc.divB.part3.sect9.appendix"
+                 parent-id="nbc.divB.part3.appendix"
                  position="last-child"/>
          <insert>
             <new-content source="bc">
@@ -10286,7 +10286,7 @@
                                    target="nbc.divBV2.part9.sect36.subsect6.art5"
                                    display-type="short"
                                    pretext=" or"/>, as applicable. (See <ref type="internal"
-                                   target="nbc.divBV2.part9.appnote214"
+                                   target="nbc.divBV2.part9.appendix.appnote214"
                                    display-type="short"/>.)</text>
                         </content>
                         <change-summary>Struck out "9.36.7.3." and substituted "9.36.6.5."</change-summary>
@@ -10327,7 +10327,7 @@
                                    target="nbc.divBV2.part9.sect36.subsect6.art5"
                                    display-type="short"
                                    pretext=" or"/>, as applicable. (See <ref type="internal"
-                                   target="nbc.divBV2.part9.appnote214"
+                                   target="nbc.divBV2.part9.appendix.appnote214"
                                    display-type="short"/>.)</text>
                         </content>
                         <change-summary>Struck out "9.36.7.3." and substituted "9.36.6.5."</change-summary>
@@ -10586,10 +10586,10 @@
                  original-sequence="4118"
                  original-id="bc-mo-2024-06-150"
                  description="Amend Note A-9.4.2.5. Seismic Design Parameter paragraph by striking out 'Sentence 4.1.8.4.(6)' and substituting 'Sentence 4.1.8.4.(3)'">
-         <target type="canonical-id" id="nbc.divBV2.part9.appnote12a.para1"/>
+         <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote12a.para1"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <paragraph xml:id="nbc.divBV2.part9.appnote12a.para1" revised="yes">
+               <paragraph xml:id="nbc.divBV2.part9.appendix.appnote12a.para1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -10652,10 +10652,10 @@
                  original-sequence="4119"
                  original-id="bc-mo-2024-06-151"
                  description="Amend Note A-9.4.2.5.(2) Determination of Site Class paragraph by striking out 'Article 4.1.8.4.' and substituting 'Sentence 4.1.8.4.(3)'">
-         <target type="canonical-id" id="nbc.divBV2.part9.appnote12b.para1"/>
+         <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote12b.para1"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <paragraph xml:id="nbc.divBV2.part9.appnote12b.para1" revised="yes">
+               <paragraph xml:id="nbc.divBV2.part9.appendix.appnote12b.para1" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -10821,10 +10821,10 @@
                  original-sequence="4121"
                  original-id="bc-mo-2024-06-152"
                  description="Amend Notes to Part 9 Housing and Small Buildings, A-9.7.4.2.(1) Standards Referenced for Windows, Doors and Skylights is amended by striking out last paragraph under 'Water Penetration Resistance' in its entirety">
-         <target type="canonical-id" id="nbc.divBV2.part9.appnote22.div4.para3"/>
+         <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote22.div4.para3"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <paragraph xml:id="nbc.divBV2.part9.appnote22.div4.para3"
+               <paragraph xml:id="nbc.divBV2.part9.appendix.appnote22.div4.para3"
                           revised="yes"
                           deleted="yes">
                   <revision-history>
@@ -10952,10 +10952,10 @@
                  original-sequence="4123"
                  original-id="bc-mo-2024-06-154"
                  description="Amend Notes to Part 9 Housing and Small Buildings, A-Table 9.23.3.5.-B Alternative Nail Sizes is deleted in its entirety">
-         <target type="canonical-id" id="nbc.divBV2.part9.appnote118.table1"/>
+         <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote118.table1"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <table xml:id="nbc.divBV2.part9.appnote118.table1"
+               <table xml:id="nbc.divBV2.part9.appendix.appnote118.table1"
                       revised="yes"
                       deleted="yes">
                   <revision-history>
@@ -11017,10 +11017,10 @@
                  original-sequence="4124"
                  original-id="bc-mo-2024-06-155"
                  description="Amend Notes to Part 9 Housing and Small Buildings, A-9.23.13.7.(4) Alternative Procedure to Calculate the Seismic-related Braced Wall Panel Length by striking out the portion of the equation for Ls, '(CsstoreyCwallsCroofS)', and substituting '(CsstoreyCwalls + CroofS)'">
-         <target type="canonical-id" id="nbc.divBV2.part9.appnote134c.eq1"/>
+         <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote134c.eq1"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <equation xml:id="nbc.divBV2.part9.appnote134c.eq1"
+               <equation xml:id="nbc.divBV2.part9.appendix.appnote134c.eq1"
                          type="display"
                          revised="yes">
                   <revision-history>
@@ -11082,10 +11082,10 @@
                  original-sequence="4125"
                  original-id="bc-mo-2024-06-156"
                  description="Amend Notes to Part 9 Housing and Small Buildings, A-9.32.4.1. Naturally Aspirating Fuel-Fired Vented Appliance (NAFFVA) by striking out Tables A-9.32.4.1.(1)A and A-9.32.4.1.(1)B in their entirety, and substituting new tables">
-         <target type="canonical-id" id="nbc.divBV2.part9.appnote199a"/>
+         <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote199a"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <application-note xml:id="nbc.divBV2.part9.appnote199a" revised="yes">
+               <application-note xml:id="nbc.divBV2.part9.appendix.appnote199a" revised="yes">
                   <revision-history>
                      <original effective-date="2020-12-01">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -11098,9 +11098,9 @@
                         <content>
                            <number>9.32.4.1.</number>
                            <title>Naturally Aspirating Fuel-Fired Vented Appliance (NAFFVA)</title>
-                           <paragraph xml:id="nbc.divBV2.part9.appnote199a.para1">NAFFVA, typically appliances with draft hoods, are subject to back drafting when a negative pressure condition occurs in the dwelling. The following tables describe the conditions under which Sentence 9.32.4.1.(1) applies:</paragraph>
+                           <paragraph xml:id="nbc.divBV2.part9.appendix.appnote199a.para1">NAFFVA, typically appliances with draft hoods, are subject to back drafting when a negative pressure condition occurs in the dwelling. The following tables describe the conditions under which Sentence 9.32.4.1.(1) applies:</paragraph>
                            <!-- Table A-9.32.4.1.(1)A - Natural Gas and Propane -->
-                           <table xml:id="nbc.divBV2.part9.appnote199a.tableA">
+                           <table xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA">
                               <title>Table A-9.32.4.1.(1)A Vent Safety - Natural Gas and Propane</title>
                               <tgroup cols="5">
                                  <colspec colname="col1" colwidth="1*"/>
@@ -11109,11 +11109,11 @@
                                  <colspec colname="col4" colwidth="1*"/>
                                  <colspec colname="col5" colwidth="1*"/>
                                  <thead>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableA.rowh1">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.rowh1">
                                        <entry align="center">Fuel Type</entry>
                                        <entry align="center" namest="col2" nameend="col5">Natural Gas and Propane</entry>
                                     </row>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableA.rowh2">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.rowh2">
                                        <entry align="center">Vent Type</entry>
                                        <entry align="center">Power Vent<super>(1)</super>
                                        </entry>
@@ -11124,7 +11124,7 @@
                                        <entry align="center">Drafthood Boiler HWT<super>(4)</super>
                                        </entry>
                                     </row>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableA.rowh3">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.rowh3">
                                        <entry align="center">Appliance Type</entry>
                                        <entry align="center">Furnace Boiler HWT Fireplace</entry>
                                        <entry align="center">HWT Fireplace Heater</entry>
@@ -11134,7 +11134,7 @@
                                     </row>
                                  </thead>
                                  <tbody>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableA.row1">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.row1">
                                        <entry align="center">Special Conditions</entry>
                                        <entry align="center"/>
                                        <entry align="center"/>
@@ -11142,14 +11142,14 @@
                                        <entry align="center">Located in Air-Barriered Room<super>(5)</super>
                                        </entry>
                                     </row>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableA.row2">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.row2">
                                        <entry align="center">Classification</entry>
                                        <entry align="center">Non-NAFFVA</entry>
                                        <entry align="center"/>
                                        <entry align="center">NAFFVA</entry>
                                        <entry align="center">Non-NAFFVA</entry>
                                     </row>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableA.row3">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.row3">
                                        <entry align="center">9.32.4.1.(1) Applies</entry>
                                        <entry align="center">No</entry>
                                        <entry align="center"/>
@@ -11159,21 +11159,21 @@
                                  </tbody>
                               </tgroup>
                               <table-notes>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note1">Notes to Table A-9.32.4.1.(1)A:</note>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note2">
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.note1">Notes to Table A-9.32.4.1.(1)A:</note>
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.note2">
                                     <super>(1)</super> Any power vented appliance with pressurized vent (1 pipe) or sealed combustion (2 pipe) or direct vent appliance (fireplace, heater or HWT) are non-NAFFVA.</note>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note3">
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.note3">
                                     <super>(2)</super> Thermal buoyancy chimneys must be within the heated envelope of the house to provide acceptable venting performance.</note>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note4">
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.note4">
                                     <super>(3)</super> This category applies only to (a) mid-efficient forced air furnaces equipped with induced draft fans and exhaust proving switch, and (b) boilers equipped with induced draft fans and exhaust proving switch.</note>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note5">
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.note5">
                                     <super>(4)</super> Mid-efficient (draft induced) appliances are considered NAFFVA with the exception of a boiler or HWT located in an air-barriered room.</note>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableA.note6">
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.note6">
                                     <super>(5)</super> Mechanical room must be air-barriered from remainder of house with no access from within house. Room must be lined with panel products with sealed joints and all pipe and wire penetrations sealed. Effectively, the room must be finished before equipment is installed and holes drilled for pipes and wires. This option is not available for forced air furnaces as it is not possible to effectively seal the ducts.</note>
                               </table-notes>
                            </table>
                            <!-- Table A-9.32.4.1.(1)B - Oil and Solid Fuel -->
-                           <table xml:id="nbc.divBV2.part9.appnote199a.tableB">
+                           <table xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB">
                               <title>Table A-9.32.4.1.(1)B Vent Safety - Oil and Solid Fuel</title>
                               <tgroup cols="7">
                                  <colspec colname="col1" colwidth="1*"/>
@@ -11184,12 +11184,12 @@
                                  <colspec colname="col6" colwidth="1*"/>
                                  <colspec colname="col7" colwidth="1*"/>
                                  <thead>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableB.rowh1">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.rowh1">
                                        <entry align="center">Fuel Type</entry>
                                        <entry align="center" namest="col2" nameend="col4">Oil</entry>
                                        <entry align="center" namest="col5" nameend="col7">Solid</entry>
                                     </row>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableB.rowh2">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.rowh2">
                                        <entry align="center">Vent Type</entry>
                                        <entry align="center">Thermal Buoyancy Chimney<super>(1)</super>
                                        </entry>
@@ -11201,7 +11201,7 @@
                                        </entry>
                                        <entry align="center">N/A</entry>
                                     </row>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableB.rowh3">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.rowh3">
                                        <entry align="center">Appliance Type</entry>
                                        <entry align="center">Boiler HWT<super>(2)</super>
                                        </entry>
@@ -11214,7 +11214,7 @@
                                     </row>
                                  </thead>
                                  <tbody>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableB.row1">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.row1">
                                        <entry align="center">Special Conditions</entry>
                                        <entry align="center">Located in Air-Barriered Room<super>(4)</super>
                                        </entry>
@@ -11225,7 +11225,7 @@
                                        <entry align="center"/>
                                        <entry align="center"/>
                                     </row>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableB.row2">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.row2">
                                        <entry align="center">Classification</entry>
                                        <entry align="center">Non-NAFFVA</entry>
                                        <entry align="center">NAFFVA</entry>
@@ -11235,7 +11235,7 @@
                                        </entry>
                                        <entry align="center">N/A</entry>
                                     </row>
-                                    <row xml:id="nbc.divBV2.part9.appnote199a.tableB.row3">
+                                    <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.row3">
                                        <entry align="center">9.32.4.1.(1) Applies</entry>
                                        <entry align="center">No</entry>
                                        <entry align="center">Yes</entry>
@@ -11248,16 +11248,16 @@
                                  </tbody>
                               </tgroup>
                               <table-notes>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note1">Notes to Table A-9.32.4.1.(1)B:</note>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note2">
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.note1">Notes to Table A-9.32.4.1.(1)B:</note>
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.note2">
                                     <super>(1)</super> Thermal buoyancy chimneys must be within the heated envelope of the house to provide acceptable venting performance.</note>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note3">
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.note3">
                                     <super>(2)</super> Sealed combustion kits can be added to oil-fired appliances but they switch to interior combustion air if intake is blocked and rely on barometrically dampered thermal buoyancy chimneys so they are considered NAFFVA.</note>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note4">
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.note4">
                                     <super>(3)</super> Oil-fired HWT, boilers and furnaces equipped with blocked vent switches.</note>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note5">
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.note5">
                                     <super>(4)</super> Mechanical room must be air-barriered from remainder of house with no access from within house. Room must be lined with panel products with sealed joints and all pipe and wire penetrations sealed. Effectively, the room must be finished before equipment is installed and holes drilled for pipes and wires. This option is not available for forced air furnaces as it is not possible to effectively seal the ducts.</note>
-                                 <note xml:id="nbc.divBV2.part9.appnote199a.tableB.note6">
+                                 <note xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.note6">
                                     <super>(5)</super> Wood-burning appliances certified for use in mobile homes and installed to mobile home installation standards are considered non-NAFFVA and Sentence 9.32.4.1.(1) does not apply to them.</note>
                               </table-notes>
                            </table>
@@ -11309,10 +11309,10 @@
                  original-sequence="4126"
                  original-id="bc-mo-2024-06-157"
                  description="Amend Notes to Part 9 Housing and Small Buildings, A-9.36.1.3.(6) Exemptions (numbering) by striking out '9.36.1.3.(6)' and substituting '9.36.1.3.(5)'">
-         <target type="canonical-id" id="nbc.divBV2.part9.appnote217"/>
+         <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote217"/>
          <replace preserve-references="false">
             <new-content source="bc">
-               <application-note xml:id="nbc.divBV2.part9.appnote217"
+               <application-note xml:id="nbc.divBV2.part9.appendix.appnote217"
                                  vendor-id="en001729"
                                  refs="es006858"
                                  revised="yes">
@@ -11328,7 +11328,7 @@
                         <content>
                            <number>9.36.1.3.(5)</number>
                            <title>Exemptions</title>
-                           <paragraph xml:id="nbc.divBV2.part9.appnote217.para1">Examples of buildings and spaces that are exempted from the requirements of <ref type="internal"
+                           <paragraph xml:id="nbc.divBV2.part9.appendix.appnote217.para1">Examples of buildings and spaces that are exempted from the requirements of <ref type="internal"
                                    target="nbc.divBV2.part9.sect37"
                                    display-type="long"/> include seasonally heated buildings, storage and parking garages, small service buildings or service rooms and unconditioned spaces in buildings and unconditioned buildings such as storage warehouses. However, note that, where a building envelope assembly of an exempted building is adjacent to a conditioned space, this assembly must meet the requirements of <ref type="internal"
                                    target="nbc.divBV2.part9.sect37"
