@@ -488,15 +488,52 @@
                                     select="title/node()"
                                     mode="rich-text"
                                 /></title>
-              <xsl:for-each select="para">
-                <xsl:variable
-                                    name="para-id"
-                                    select="concat($div-id, '.para', position())"
-                                />
-                <paragraph xml:id="{$para-id}"><xsl:apply-templates
-                                        select="node()"
-                                        mode="rich-text"
-                                    /></paragraph>
+              
+              <!-- Process all child elements in order -->
+              <xsl:for-each select="*[not(self::title)]">
+                <xsl:choose>
+                  <!-- Paragraphs -->
+                  <xsl:when test="self::para">
+                    <xsl:variable
+                                        name="para-id"
+                                        select="concat($div-id, '.para', position())"
+                                    />
+                    <paragraph xml:id="{$para-id}">
+                      <xsl:apply-templates select="node()" mode="rich-text"/>
+                    </paragraph>
+                  </xsl:when>
+                  
+                  <!-- Tables -->
+                  <xsl:when test="self::table">
+                    <xsl:apply-templates select=".">
+                      <xsl:with-param name="parent-id" select="$div-id"/>
+                    </xsl:apply-templates>
+                  </xsl:when>
+                  
+                  <!-- Figures -->
+                  <xsl:when test="self::figure">
+                    <xsl:apply-templates select=".">
+                      <xsl:with-param name="parent-id" select="$div-id"/>
+                    </xsl:apply-templates>
+                  </xsl:when>
+                  
+                  <!-- Lists -->
+                  <xsl:when test="self::list">
+                    <xsl:apply-templates select="." mode="rich-text"/>
+                  </xsl:when>
+                  
+                  <!-- Examples -->
+                  <xsl:when test="self::example">
+                    <xsl:apply-templates select=".">
+                      <xsl:with-param name="parent-id" select="$div-id"/>
+                    </xsl:apply-templates>
+                  </xsl:when>
+                  
+                  <!-- Default: try to process as rich-text -->
+                  <xsl:otherwise>
+                    <xsl:apply-templates select="." mode="rich-text"/>
+                  </xsl:otherwise>
+                </xsl:choose>
               </xsl:for-each>
             </note-division>
           </xsl:for-each>
@@ -586,16 +623,74 @@
             name="div-num"
             select="count(preceding-sibling::division) + 1"
         />
-    <xsl:for-each select="para">
-      <xsl:variable
-                name="para-id"
-                select="concat($appendix-id, '.div', $div-num, '.para', position())"
-            />
-      <paragraph xml:id="{$para-id}"><xsl:apply-templates
-                    select="node()"
-                    mode="rich-text"
-                /></paragraph>
-    </xsl:for-each>
+    <xsl:variable
+            name="div-id"
+            select="concat($appendix-id, '.div', $div-num)"
+        />
+    
+    <!-- Create note-division wrapper -->
+    <note-division xml:id="{$div-id}">
+      <xsl:if test="@id"><xsl:attribute name="vendor-id" select="@id"/></xsl:if>
+      
+      <!-- Process title if present -->
+      <xsl:if test="title">
+        <title><xsl:apply-templates select="title/node()" mode="rich-text"/></title>
+      </xsl:if>
+      
+      <!-- Process all child elements in order -->
+      <xsl:for-each select="*[not(self::title)]">
+        <xsl:choose>
+          <!-- Paragraphs -->
+          <xsl:when test="self::para">
+            <xsl:variable
+                    name="para-id"
+                    select="concat($div-id, '.para', position())"
+                />
+            <paragraph xml:id="{$para-id}">
+              <xsl:apply-templates select="node()" mode="rich-text"/>
+            </paragraph>
+          </xsl:when>
+          
+          <!-- Tables -->
+          <xsl:when test="self::table">
+            <xsl:apply-templates select=".">
+              <xsl:with-param name="parent-id" select="$div-id"/>
+            </xsl:apply-templates>
+          </xsl:when>
+          
+          <!-- Figures -->
+          <xsl:when test="self::figure">
+            <xsl:apply-templates select=".">
+              <xsl:with-param name="parent-id" select="$div-id"/>
+            </xsl:apply-templates>
+          </xsl:when>
+          
+          <!-- Lists -->
+          <xsl:when test="self::list">
+            <xsl:apply-templates select="." mode="rich-text"/>
+          </xsl:when>
+          
+          <!-- Examples -->
+          <xsl:when test="self::example">
+            <xsl:apply-templates select=".">
+              <xsl:with-param name="parent-id" select="$div-id"/>
+            </xsl:apply-templates>
+          </xsl:when>
+          
+          <!-- Nested divisions -->
+          <xsl:when test="self::division">
+            <xsl:apply-templates select="." mode="appendix-content">
+              <xsl:with-param name="appendix-id" select="$div-id"/>
+            </xsl:apply-templates>
+          </xsl:when>
+          
+          <!-- Default: try to process as rich-text -->
+          <xsl:otherwise>
+            <xsl:apply-templates select="." mode="rich-text"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:for-each>
+    </note-division>
   </xsl:template>
 
   <!-- Process paragraphs within appendices (direct children, not in divisions) -->

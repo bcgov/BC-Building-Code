@@ -405,7 +405,7 @@
         
         <amendment id="bc-016" sequence="16"
                    description="Insert paragraphs describing the Tool and procedure for determining Smax">
-            <target type="position" parent-id="nbc.divB.appendixC" position="after" reference-id="nbc.divB.appendixC.div20.para1"/>
+            <target type="position" parent-id="nbc.divB.appendixC.div20" position="after" reference-id="nbc.divB.appendixC.div20.para1"/>
             <insert>
                 <new-content source="bc">
                     <paragraph xml:id="nbc.divB.appendixC.div20.para2">The Tool provides seismic hazard values for any site in Canada based on the following information:</paragraph>
