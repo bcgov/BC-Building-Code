@@ -1,862 +1,796 @@
 BC BUILDING CODE - BROKEN CROSS-REFERENCES REPORT
-Generated: 2026-02-20T14:32:24.685356-08:00
+Generated: 2026-02-20T18:38:24.797462-08:00
 
-Total Broken References: 285
-Total Internal References: 17768
+Total Broken References: 263
+Total Internal References: 17767
 ================================================================
 
-1. Source: bc-crdntng-rgstrd-prfsnl
-   Target (Not Found): nbc.divC.part2.sect2.subsect7.art2.sent1.clause1
-
-2. Source: bc-scnd-t
+1. Source: bc-scnd-t
    Target (Not Found): nbc.divBV2.part9.sect1.subsect2.art1
 
-3. Source: nbc.divB.part1.sect1.subsect3.art1.sent5
+2. Source: nbc.divB.part1.sect1.subsect3.art1.sent5
    Target (Not Found): nbc.example.ex000108
 
-4. Source: et001030-5
+3. Source: et001030-5
    Target (Not Found): et000279
 
-5. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row26
+4. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row26
    Target (Not Found): nbc.divBV2.part9.appendix.appnote201
 
-6. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row132
+5. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row132
    Target (Not Found): nbc.divBV2.part9.appendix.appnote55
 
-7. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row133
+6. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row133
    Target (Not Found): nbc.divBV2.part9.sect36.subsect9.art9.sent2
 
-8. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row133
+7. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row133
    Target (Not Found): nbc.divBV2.part9.sect36.subsect9.art10.sent2
 
-9. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row148
+8. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row148
    Target (Not Found): nbc.divBV2.part9.appendix.appnote19
 
-10. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row168
+9. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row168
    Target (Not Found): nbc.divBV2.part9.sect36.subsect7.art3.sent2
 
-11. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row172
+10. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row172
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent2
 
-12. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row172
+11. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row172
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent3
 
-13. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row202
+12. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row202
    Target (Not Found): nbc.divB.part5.appendix.appnote54
 
-14. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row204
+13. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row204
    Target (Not Found): nbc.divBV2.part9.sect36.subsect9.art6.table1
 
-15. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row228
+14. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row228
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent7
+
+15. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row234
+   Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent2
 
 16. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row234
-   Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent2
-
-17. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row234
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.table2
+
+17. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row237
+   Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent4
 
 18. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row237
-   Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent4
-
-19. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row237
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent5
 
-20. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row240
+19. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row240
    Target (Not Found): nbc.divBV2.part9.sect36.subsect9.art10.table1
 
-21. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row269
+20. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row269
    Target (Not Found): nbc.divBV2.part9.sect23.subsect13.art6.table1
 
-22. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row272
+21. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row272
    Target (Not Found): nbc.divBV2.part9.sect36.subsect9.art10.table1
 
-23. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row324
+22. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row324
    Target (Not Found): nbc.divBV2.part9.sect32.subsect2.art3.sent4
+
+23. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row326
+   Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent2
 
 24. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row326
-   Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent2
-
-25. Source: nbc.divB.part1.sect3.subsect1.art2.table1.row326
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.table2
 
-26. Source: nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-2
-   Target (Not Found): nbc.divB.part1.sect1.subsect2.art1.sent4
-
-27. Source: nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-3
+25. Source: nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-3
    Target (Not Found): nbc.divB.part2.sect2.subsect1.art1.sent4
 
-28. Source: nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-5
+26. Source: nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-5
    Target (Not Found): nbc.divB.part10.sect22.subsect3.art4.sent1
 
-29. Source: nbc.divB.part3.sect1.subsect4.art8.sent4
+27. Source: nbc.divB.part3.sect1.subsect4.art8.sent4
    Target (Not Found): ex000109.7
 
-30. Source: nbc.divB.part3.sect1.subsect6.art10.sent1
-   Target (Not Found): nbc.divB.part3.sect1.subsect5.art5.sent5.clause1
-
-31. Source: nbc.divB.part3.sect1.subsect6.art10.sent1
-   Target (Not Found): nbc.divB.part3.sect1.subsect5.art5.sent5.clause1
-
-32. Source: nbc.divB.part3.sect1.subsect7.art1.sent3
+28. Source: nbc.divB.part3.sect1.subsect7.art1.sent3
    Target (Not Found): nbc.divBV2.part9.sect9.subsect10.art3.table2
 
-33. Source: nbc.divB.part3.sect1.subsect7.art1.sent4
+29. Source: nbc.divB.part3.sect1.subsect7.art1.sent4
    Target (Not Found): nbc.divBV2.part9.sect9.subsect10.art3.table2
 
-34. Source: nbc.divB.part3.sect2.subsect2.art19.sent1
-   Target (Not Found): nbc.divB.part3.sect2.subsect2.art19.sent2
-
-35. Source: nbc.divB.part3.sect2.subsect4.art1.sent7
+30. Source: nbc.divB.part3.sect2.subsect4.art1.sent7
    Target (Not Found): nbc.divB.part3.appendix.appnoteA-3.2.10.2.1-2
 
-36. Source: nbc.divB.part3.sect2.subsect4.art19.sent6.clause2.subclause1
+31. Source: nbc.divB.part3.sect2.subsect4.art19.sent6.clause2.subclause1
    Target (Not Found): nbc.divBV2.part9.sect9.subsect10.art19.art1
 
-37. Source: nbc.divB.part3.sect2.subsect5.art12.sent10
+32. Source: nbc.divB.part3.sect2.subsect5.art12.sent10
    Target (Not Found): nbc.divB.part3.appendix.appnote12a
 
-38. Source: nbc.divB.part3.sect2.subsect10
+33. Source: nbc.divB.part3.sect2.subsect10
    Target (Not Found): nbc.divB.part3.appendix.appnoteA-3.2.10
 
-39. Source: nbc.divB.part3.sect2.subsect10
+34. Source: nbc.divB.part3.sect2.subsect10
    Target (Not Found): nbc.divA.part1.appendix.appnoteA-3
 
-40. Source: nbc.divB.part3.sect2.subsect10.art1
+35. Source: nbc.divB.part3.sect2.subsect10.art1
    Target (Not Found): nbc.divB.part3.appendix.appnoteA-3.2.10.1.4
 
-41. Source: nbc.divB.part3.sect2.subsect10.art2.sent1
+36. Source: nbc.divB.part3.sect2.subsect10.art2.sent1
    Target (Not Found): nbc.divB.part3.appendix.appnoteA-3.2.10.2.1-2
 
-42. Source: nbc.divB.part3.sect2.subsect10.art2.sent2
+37. Source: nbc.divB.part3.sect2.subsect10.art2.sent2
    Target (Not Found): nbc.divB.part3.appendix.appnoteA-3.2.10.2.1-2
 
-43. Source: nbc.divB.part3.sect2.subsect10.art2
+38. Source: nbc.divB.part3.sect2.subsect10.art2
    Target (Not Found): nbc.divB.part3.appendix.appnoteA-3.2.10.1.3
 
-44. Source: nbc.divB.part3.sect2.subsect10.art2.sent4
+39. Source: nbc.divB.part3.sect2.subsect10.art2.sent4
    Target (Not Found): nbc.divB.part3.appendix.appnoteA-3.2.10.2.4
 
-45. Source: nbc.divB.part3.sect2.subsect10.art3.sent5
+40. Source: nbc.divB.part3.sect2.subsect10.art3.sent5
    Target (Not Found): nbc.divB.part3.appendix.appnoteA-3.2.6.9.1
 
-46. Source: nbc.divB.part3.sect2.subsect10.art4
+41. Source: nbc.divB.part3.sect2.subsect10.art4
    Target (Not Found): nbc.divB.part3.appendix.appnoteA-3.2.10.4.3
 
-47. Source: nbc.divB.part3.sect8.subsect3.art6.sent3
+42. Source: nbc.divB.part3.sect8.subsect3.art6.sent3
    Target (Not Found): nbc.divB.part3.appendix.appnote208
 
-48. Source: nbc.divB.part3.appendix.appnote105.para3
+43. Source: nbc.divB.part3.appendix.appnote105.para3
    Target (Not Found): en000437.1
 
-49. Source: nbc.divB.part3.appendix.appnote105.para3
+44. Source: nbc.divB.part3.appendix.appnote105.para3
    Target (Not Found): en000437.2
 
-50. Source: nbc.divB.part3.appendix.appnote107.para1
+45. Source: nbc.divB.part3.appendix.appnote107.para1
    Target (Not Found): en000439.1
 
-51. Source: nbc.divB.part3.appendix.appnote107.para1
+46. Source: nbc.divB.part3.appendix.appnote107.para1
    Target (Not Found): en000439.2
 
-52. Source: nbc.divB.part3.appendix.appnote107.para1
+47. Source: nbc.divB.part3.appendix.appnote107.para1
    Target (Not Found): en000439.8
 
-53. Source: nbc.divB.part3.appendix.appnote107.para1
+48. Source: nbc.divB.part3.appendix.appnote107.para1
    Target (Not Found): en000439.9
 
-54. Source: nbc.divB.part5.sect10.subsect3.art5.sent3
+49. Source: nbc.divB.part5.sect10.subsect3.art5.sent3
    Target (Not Found): nbc.divB.part5.appendix.appnote54
 
-55. Source: nbc.divB.part10.appendix.appnote4
+50. Source: nbc.divB.part10.appendix.appnote4
    Target (Not Found): nbc.divB.part10.sect3.subsect1.art4
 
-56. Source: nbc.divBV2.part9.sect6.subsect1.art3.table1
+51. Source: nbc.divBV2.part9.sect4.subsect1.art1.seealso
+   Target (Not Found): nbc.divC.part2.sect2.subsect7.art6
+
+52. Source: nbc.divBV2.part9.sect6.subsect1.art3.table1
    Target (Not Found): nbc.divBV2.part9.sect6.subsect1.art3.sent2.clause1
 
-57. Source: nbc.divBV2.part9.sect6.subsect1.art3.table2
+53. Source: nbc.divBV2.part9.sect6.subsect1.art3.table2
    Target (Not Found): nbc.divBV2.part9.sect6.subsect1.art3.sent2.clause1
 
-58. Source: nbc.divBV2.part9.sect6.subsect1.art3.table3
+54. Source: nbc.divBV2.part9.sect6.subsect1.art3.table3
    Target (Not Found): nbc.divBV2.part9.sect6.subsect1.art3.sent2.clause1
 
-59. Source: nbc.divBV2.part9.sect6.subsect1.art3.table4
+55. Source: nbc.divBV2.part9.sect6.subsect1.art3.table4
    Target (Not Found): nbc.divBV2.part9.sect6.subsect1.art3.sent2.clause2
 
-60. Source: nbc.divBV2.part9.sect6.subsect1.art3.table5
+56. Source: nbc.divBV2.part9.sect6.subsect1.art3.table5
    Target (Not Found): nbc.divBV2.part9.sect6.subsect1.art3.sent2.clause2
 
-61. Source: nbc.divBV2.part9.sect6.subsect1.art3.table6
+57. Source: nbc.divBV2.part9.sect6.subsect1.art3.table6
    Target (Not Found): nbc.divBV2.part9.sect6.subsect1.art3.sent2.clause2
 
-62. Source: nbc.divBV2.part9.sect7.subsect5.art2.sent2.seealso
+58. Source: nbc.divBV2.part9.sect7.subsect5.art2.sent2.seealso
    Target (Not Found): en001211
 
-63. Source: nbc.divBV2.part9.sect8.subsect3.art1.seealso
+59. Source: nbc.divBV2.part9.sect8.subsect3.art1.seealso
    Target (Not Found): nbc.divBV2.part9.appendix.appnote28
 
-64. Source: nbc.divBV2.part9.sect8.subsect7.art1.sent1
+60. Source: nbc.divBV2.part9.sect8.subsect7.art1.sent1
    Target (Not Found): nbc.divBV2.part9.sect8.subsect7.art1.table1
 
-65. Source: nbc.divBV2.part9.sect10.subsect9.art2.sent3
+61. Source: nbc.divBV2.part9.sect10.subsect9.art2.sent3
    Target (Not Found): nbc.divBV2.part9.appendix.appnote60
 
-66. Source: nbc.divBV2.part9.sect23.subsect6.art1.sent3.clause2
+62. Source: nbc.divBV2.part9.sect23.subsect6.art1.sent3.clause2
    Target (Not Found): nbc.divBV2.part9.appendix.appnoteA-9.23.6.1.3
 
-67. Source: nbc.divBV2.part9.sect23.subsect13.art3.sent1.clause3
+63. Source: nbc.divBV2.part9.sect23.subsect13.art3.sent1.clause3
    Target (Not Found): nbc.divB.part4.sect1.subsect2.art3.sent1
 
-68. Source: nbc.divBV2.part9.sect23.subsect13.art11.sent1.clause8
+64. Source: nbc.divBV2.part9.sect23.subsect13.art11.sent1.clause8
    Target (Not Found): nbc.divB.part4.sect1.subsect2.art3.sent1
 
-69. Source: nbc.divBV2.part9.sect32.subsect3.art2.sent5
-   Target (Not Found): nbc.divBV2.part9.sect10.subsect9.art6.sent14
-
-70. Source: nbc.divBV2.part9.sect32.subsect3.art4.sent1
+65. Source: nbc.divBV2.part9.sect32.subsect3.art4.sent1
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent4
 
-71. Source: nbc.divBV2.part9.sect32.subsect3.art4.sent6.clause1.subclause1
+66. Source: nbc.divBV2.part9.sect32.subsect3.art4.sent6.clause1.subclause1
    Target (Not Found): nbc.divA.sect1.subsect1.art3.sent1
 
-72. Source: nbc.divBV2.part9.sect32.subsect3.art4.sent6.clause1.subclause4
+67. Source: nbc.divBV2.part9.sect32.subsect3.art4.sent6.clause1.subclause4
    Target (Not Found): nbc.divBV2.part2.sect2.subsect3
 
-73. Source: nbc.divBV2.part9.sect33.subsect1.art1.sent2
+68. Source: nbc.divBV2.part9.sect33.subsect1.art1.sent2
    Target (Not Found): en000354
 
-74. Source: nbc.divBV2.part9.sect33.subsect2.art1.sent2
+69. Source: nbc.divBV2.part9.sect33.subsect2.art1.sent2
    Target (Not Found): en001271
 
-75. Source: nbc.divBV2.part9.sect36.subsect1.art2.sent5
+70. Source: nbc.divBV2.part9.sect36.subsect1.art2.sent5
    Target (Not Found): nbc.divBV2.part9.sect36.subsect8.art3
 
-76. Source: nbc.divBV2.part9.sect36.subsect1.art2.sent6
+71. Source: nbc.divBV2.part9.sect36.subsect1.art2.sent6
    Target (Not Found): nbc.divBV2.part9.sect36.subsect8.art3
 
-77. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent1.clause1
+72. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent1.clause1
    Target (Not Found): nbc.divBV2.part9.sect38.subsect4
 
-78. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent1.clause3
+73. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent1.clause3
    Target (Not Found): nbc.divBV2.part9.sect38.subsect7
 
-79. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent1.clause4
+74. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent1.clause4
    Target (Not Found): nbc.divBV2.part9.sect38.subsect8
 
-80. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent4
+75. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent4
    Target (Not Found): nbc.divBV2.part9.sect36.subsect9
 
-81. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent6
+76. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent6
    Target (Not Found): nbc.divBV2.part9.sect38.subsect1.art3.sent2
 
-82. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent6
+77. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent6
    Target (Not Found): nbc.divBV2.part9.sect38.subsect1.art3.sent3
 
-83. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent6
+78. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent6
    Target (Not Found): nbc.divBV2.part9.sect38.subsect6
 
-84. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent7.clause1
+79. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent7.clause1
    Target (Not Found): nbc.divBV2.part9.sect38.subsect4
 
-85. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent7.clause3
+80. Source: nbc.divBV2.part9.sect36.subsect1.art3.sent7.clause3
    Target (Not Found): nbc.divBV2.part9.sect38.subsect6
 
-86. Source: nbc.divBV2.part9.sect36.subsect2.art6.appnote1
+81. Source: nbc.divBV2.part9.sect36.subsect2.art6.appnote1
    Target (Not Found): nbc.divBV2.part9.sect1.subsect1.art3.sent1
 
-87. Source: nbc.divBV2.part9.sect36.subsect2.art7.sent1
-   Target (Not Found): nbc.divBV2.part9.sect36.subsect2.art7.appnote1
-
-88. Source: nbc.divBV2.part9.sect36.subsect2.art7.table1.fn1
+82. Source: nbc.divBV2.part9.sect36.subsect2.art7.table1.fn1
    Target (Not Found): nbc.divBV2.part9.sect36.subsect2.art7.table1.appnote1
 
-89. Source: nbc.divBV2.part9.sect36.subsect2.art7.sent2
-   Target (Not Found): nbc.divBV2.part9.sect36.subsect2.art7.appnote1
-
-90. Source: nbc.divBV2.part9.sect36.subsect2.art7.sent3
-   Target (Not Found): nbc.divBV2.part9.sect36.subsect2.art7.appnote3
-
-91. Source: nbc.divBV2.part9.sect36.subsect2.art7.table4.fn1
+83. Source: nbc.divBV2.part9.sect36.subsect2.art7.table4.fn1
    Target (Not Found): nbc.divBV2.part9.sect36.subsect2.art7.table1.appnote1
 
-92. Source: nbc.divBV2.part9.sect36.subsect2.art7.table4.note1
+84. Source: nbc.divBV2.part9.sect36.subsect2.art7.table4.note1
    Target (Not Found): nbc.divBV2.part9.sect36.subsect2.art7.table1.appnote1
 
-93. Source: nbc.divBV2.part9.sect36.subsect5.art3.note1
+85. Source: nbc.divBV2.part9.sect36.subsect5.art3.note1
    Target (Not Found): en001088
 
-94. Source: nbc.divBV2.part9.sect36.subsect5.art3.sent1
+86. Source: nbc.divBV2.part9.sect36.subsect5.art3.sent1
    Target (Not Found): en001475
 
-95. Source: nbc.divBV2.part9.sect36.subsect5.art14.sent2.clause4.subclause1
+87. Source: nbc.divBV2.part9.sect36.subsect5.art14.sent2.clause4.subclause1
    Target (Not Found): nbc.divBV2.part9.sect38.subsect7.art3.sent1
 
-96. Source: nbc.divBV2.part9.sect36.subsect6.art1.sent2
+88. Source: nbc.divBV2.part9.sect36.subsect6.art1.sent2
    Target (Not Found): nbc.divBV2.part9.sect38.subsect1.art3.sent3
 
-97. Source: nbc.divBV2.part9.sect36.subsect6.art3.sent2.clause2
+89. Source: nbc.divBV2.part9.sect36.subsect6.art3.sent2.clause2
    Target (Not Found): nbc.divBV2.part9.sect38.subsect7
 
-98. Source: nbc.divBV2.part9.sect36.subsect6.art4.sent3
+90. Source: nbc.divBV2.part9.sect36.subsect6.art4.sent3
    Target (Not Found): nbc.divBV2.part9.sect38.subsect7
 
-99. Source: nbc.divBV2.part9.sect36.subsect6.art5.sent9
+91. Source: nbc.divBV2.part9.sect36.subsect6.art5.sent9
    Target (Not Found): nbc.divBV2.part9.sect38.subsect7.art3.sent1
 
-100. Source: nbc.divBV2.part9.sect36.subsect7.art1.sent1.clause1.subclause1
+92. Source: nbc.divBV2.part9.sect36.subsect7.art1.sent1.clause1.subclause1
    Target (Not Found): nbc.divBV2.part9.sect38.subsect6
 
-101. Source: nbc.divBV2.part9.sect36.subsect7.art4.sent1
+93. Source: nbc.divBV2.part9.sect36.subsect7.art4.sent1
    Target (Not Found): nbc.divBV2.part9.sect38.subsect6.art4.table1
 
-102. Source: nbc.divBV2.part9.sect36.subsect7.art4.sent1
+94. Source: nbc.divBV2.part9.sect36.subsect7.art4.sent1
    Target (Not Found): nbc.divBV2.part9.sect38.subsect6.art4.table1
 
-103. Source: nbc.divBV2.part9.sect37.subsect1.art1.sent1
+95. Source: nbc.divBV2.part9.sect37.subsect1.art1.sent1
    Target (Not Found): nbc.divBV2.part9.sect37new.subsect1.art1.sent2
 
-104. Source: nbc.divBV2.part9.sect37.subsect1.art2.sent1
+96. Source: nbc.divBV2.part9.sect37.subsect1.art2.sent1
    Target (Not Found): nbc.divBV2.part9.sect37new.subsect1.art1.sent2
 
-105. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row2
+97. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row2
    Target (Not Found): nbc.divBV2.part9.sect1.subsect2.art1
 
-106. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row3
+98. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row3
    Target (Not Found): nbc.divBV2.part9.sect1.subsect2.art1.sent1
 
-107. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row372
+99. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row372
    Target (Not Found): nbc.divBV2.part9.sect8.subsect4.art5.sent1
 
-108. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row373
+100. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row373
    Target (Not Found): nbc.divBV2.part9.sect8.subsect4.art5.sent2
 
-109. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row378
+101. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row378
    Target (Not Found): nbc.divBV2.part9.sect8.subsect4.art7.sent1
 
-110. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row379
+102. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row379
    Target (Not Found): nbc.divBV2.part9.sect8.subsect4.art7.sent3
 
-111. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row1208
+103. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row1208
    Target (Not Found): nbc.divBV2.part9.sect13.subsect4.art2.sent3
 
-112. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row2896
+104. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row2896
    Target (Not Found): nbc.divBV2.part9.sect23.subsect3.art5.sent7
 
-113. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row2901
+105. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row2901
    Target (Not Found): nbc.divBV2.part9.sect23.subsect3.art5.sent8
 
-114. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row3008
+106. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row3008
    Target (Not Found): nbc.divBV2.part9.sect23.subsect6.art1.sent4
 
-115. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row3444
+107. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row3444
    Target (Not Found): nbc.divBV2.part9.sect23.subsect13.art4.sent3
 
-116. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row3487
+108. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row3487
    Target (Not Found): nbc.divBV2.part9.sect23.subsect13.art6.sent6
 
-117. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row3494
+109. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row3494
    Target (Not Found): nbc.divBV2.part9.sect23.subsect13.art7.sent7
 
-118. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5219
+110. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5219
    Target (Not Found): nbc.divBV2.part9.sect32.subsect2.art3.sent1
 
-119. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5220
+111. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5220
    Target (Not Found): nbc.divBV2.part9.sect32.subsect2.art3.sent3
 
-120. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5221
+112. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5221
    Target (Not Found): nbc.divBV2.part9.sect32.subsect2.art3.sent4
 
-121. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
+113. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art1.sent2
 
-122. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
+114. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art1.sent2.clause1
 
-123. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
+115. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art1.sent2.clause2
 
-124. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
+116. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art1.sent2.clause1
 
-125. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
+117. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art1.sent2.clause2
 
-126. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
+118. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5225
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art1.sent2.clause3
 
-127. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5226
+119. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5226
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art1.sent2.clause3
 
-128. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5236
+120. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5236
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art2.sent6
 
-129. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5239
+121. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5239
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.sent2
 
-130. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5240
+122. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5240
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.sent4
 
-131. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5241
+123. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5241
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.sent5
 
-132. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5242
+124. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5242
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.sent6
 
-133. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5243
+125. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5243
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.sent7
 
-134. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5244
+126. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5244
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.sent8
 
-135. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5245
+127. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5245
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.sent9
 
-136. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5246
+128. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5246
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.sent10
 
-137. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5255
+129. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5255
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent7
 
-138. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5257
+130. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5257
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent8
 
-139. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5257
+131. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5257
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent8.clause1
 
-140. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5257
+132. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5257
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent8.clause2
 
-141. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5257
+133. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5257
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent8.clause3
 
-142. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5258
+134. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5258
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent8.clause3
 
-143. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5259
+135. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5259
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent9
 
-144. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5259
+136. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5259
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent9.clause1
 
-145. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5259
+137. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5259
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent9.clause2
 
-146. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5259
+138. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5259
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent9.clause3
 
-147. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5260
+139. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5260
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent9.clause1
 
-148. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5260
+140. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5260
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent9.clause2
 
-149. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5261
+141. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5261
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent9.clause3
 
-150. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5262
+142. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5262
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent10
 
-151. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5265
+143. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5265
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent11
 
-152. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5266
+144. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5266
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent12
 
-153. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5278
+145. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5278
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent6
 
-154. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5281
+146. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5281
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent7
 
-155. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5282
+147. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5282
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent8
 
-156. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5283
+148. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5283
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent9
 
-157. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5284
+149. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5284
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent10
 
-158. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5285
+150. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5285
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent12
 
-159. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5286
+151. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5286
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent13
 
-160. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5287
+152. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5287
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent14
 
-161. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5292
+153. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5292
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art6.sent3
 
-162. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5298
+154. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5298
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art7.sent6
 
-163. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5299
+155. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5299
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art7.sent7
 
-164. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5300
+156. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5300
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art7.sent8
 
-165. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5303
+157. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5303
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art8.sent2.clause1
 
-166. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5304
+158. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5304
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art8.sent2.clause2
 
-167. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5315
+159. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5315
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent2
 
-168. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5315
+160. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5315
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent2.clause1
 
-169. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5315
+161. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5315
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent2.clause2
 
-170. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5315
+162. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5315
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent2.clause4
 
-171. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5315
+163. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5315
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent2.clause3
 
-172. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5316
+164. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5316
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent3
 
-173. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5317
+165. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5317
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent4
 
-174. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5318
+166. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5318
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent5
 
-175. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5319
+167. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5319
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent6
 
-176. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5320
+168. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5320
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent7
 
-177. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5324
+169. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5324
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent2
 
-178. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5325
+170. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5325
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent3
 
-179. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5327
+171. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5327
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent4
 
-180. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5328
+172. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5328
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent5
 
-181. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5329
+173. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5329
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent6
 
-182. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5331
+174. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5331
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent7
 
-183. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5333
+175. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5333
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11
 
-184. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5334
+176. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5334
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent1
 
-185. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5335
+177. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5335
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent2
 
-186. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5337
+178. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5337
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent3
 
-187. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5339
+179. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5339
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent4
 
-188. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5340
+180. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5340
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent5
 
-189. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
+181. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent6
 
-190. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
+182. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent6.clause1
 
-191. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
+183. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent6.clause2
 
-192. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
+184. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent6.clause3
 
-193. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
+185. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent6.clause1
 
-194. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
+186. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5342
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent6.clause3
 
-195. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5343
+187. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5343
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent7
 
-196. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5344
+188. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5344
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent8
 
-197. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5346
+189. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5346
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent9
 
-198. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5348
+190. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5348
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11.sent12
 
-199. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5350
+191. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5350
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art12
 
-200. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5351
+192. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5351
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art12.sent2
 
-201. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5352
+193. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5352
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art12.sent3
 
-202. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5353
+194. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5353
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art12.sent4
 
-203. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5356
+195. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5356
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art12.sent5
 
-204. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5357
+196. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5357
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art12.sent6
 
-205. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5358
+197. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5358
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13
 
-206. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5359
+198. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5359
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent1
 
-207. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5361
+199. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5361
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent2
 
-208. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5363
+200. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5363
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent3
 
-209. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5365
+201. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5365
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent4
 
-210. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5367
+202. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5367
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent5
 
-211. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5369
+203. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5369
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent6
 
-212. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5371
+204. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5371
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent7
 
-213. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5373
+205. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5373
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent8
 
-214. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5374
+206. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5374
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent9
 
-215. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5376
+207. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5376
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent10
 
-216. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5379
+208. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5379
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent11
 
-217. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5381
+209. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5381
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent12
 
-218. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5383
+210. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5383
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent13
 
-219. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5385
+211. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5385
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent14
 
-220. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5387
+212. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5387
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent15
 
-221. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5736
+213. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5736
    Target (Not Found): nbc.divBV2.part9.sect36.subsect2.art10.sent7
 
-222. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925o
+214. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5930
    Target (Not Found): nbc.divBV2.part9.sect36.subsect7.art4.sent2
 
-223. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925p
+215. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5931
    Target (Not Found): nbc.divBV2.part9.sect36.subsect7.art4.sent3
 
-224. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5925q
+216. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5932
    Target (Not Found): nbc.divBV2.part9.sect36.subsect7.art4.sent4
 
-225. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5930
-   Target (Not Found): nbc.divBV2.part9.sect36.subsect7.art4.sent2
-
-226. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5931
-   Target (Not Found): nbc.divBV2.part9.sect36.subsect7.art4.sent3
-
-227. Source: nbc.divBV2.part9.sect38.subsect1.art1.table1.row5932
-   Target (Not Found): nbc.divBV2.part9.sect36.subsect7.art4.sent4
-
-228. Source: nbc.divBV2.part9.appendix.appnote1.div0.para1
-   Target (Not Found): nbc.divBV2.part9.sect37.subsect1.art3.sent5.clause2
-
-229. Source: nbc.divBV2.part9.appendix.appnote89.para1
+217. Source: nbc.divBV2.part9.appendix.appnote89.para1
    Target (Not Found): nbc.divBV2.part9.sect13.subsect4.art2.sent3
 
-230. Source: nbc.divBV2.part9.appendix.appnote118a.table1.row2
+218. Source: nbc.divBV2.part9.appendix.appnote118a.table1.row2
    Target (Not Found): nbc.divBV2.part9.appendix.appnote118a.table1.note8
 
-231. Source: nbc.divBV2.part9.appendix.appnote118a.table1
+219. Source: nbc.divBV2.part9.appendix.appnote118a.table1
    Target (Not Found): nbc.divBV2.part9.appendix.appnote118a.table1.note8
 
-232. Source: nbc.divBV2.part9.appendix.appnote118a.table1
+220. Source: nbc.divBV2.part9.appendix.appnote118a.table1
    Target (Not Found): nbc.divBV2.part9.appendix.appnote118a.table1.note8
 
-233. Source: nbc.divBV2.part9.appendix.appnote118a.table1.row5
+221. Source: nbc.divBV2.part9.appendix.appnote118a.table1.row5
    Target (Not Found): nbc.divBV2.part9.appendix.appnote118a.table1.note8
 
-234. Source: nbc.divBV2.part9.appendix.appnote130.figure3
-   Target (Not Found): nbc.divBV2.part9.sect23.subsect13.art4.sent3
-
-235. Source: nbc.divBV2.part9.appendix.appnote134.para1
-   Target (Not Found): nbc.divBV2.part9.sect23.subsect13.art6.sent6
-
-236. Source: nbc.divBV2.part9.appendix.appnote190.para4
+222. Source: nbc.divBV2.part9.appendix.appnote190.para4
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.sent2
 
-237. Source: nbc.divBV2.part9.appendix.appnote194.para1
+223. Source: nbc.divBV2.part9.appendix.appnote194.para1
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent9
 
-238. Source: nbc.divBV2.part9.appendix.appnote194.para1
+224. Source: nbc.divBV2.part9.appendix.appnote194.para1
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent8
 
-239. Source: nbc.divBV2.part9.appendix.appnote194.para3
+225. Source: nbc.divBV2.part9.appendix.appnote194.para3
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.table1
 
-240. Source: nbc.divBV2.part9.appendix.appnote194.para3
+226. Source: nbc.divBV2.part9.appendix.appnote194.para3
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent10
 
-241. Source: nbc.divBV2.part9.appendix.appnote194.para4
+227. Source: nbc.divBV2.part9.appendix.appnote194.para4
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.table1
 
-242. Source: nbc.divBV2.part9.appendix.appnote194.para4
+228. Source: nbc.divBV2.part9.appendix.appnote194.para4
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.sent2
 
-243. Source: nbc.divBV2.part9.appendix.appnote194.para4
+229. Source: nbc.divBV2.part9.appendix.appnote194.para4
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.table1
 
-244. Source: nbc.divBV2.part9.appendix.appnote194.para4
+230. Source: nbc.divBV2.part9.appendix.appnote194.para4
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.table1
 
-245. Source: nbc.divBV2.part9.appendix.appnote194.para5
+231. Source: nbc.divBV2.part9.appendix.appnote194.para5
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art3.sent9
 
-246. Source: nbc.divBV2.part9.appendix.appnote194.para6
+232. Source: nbc.divBV2.part9.appendix.appnote194.para6
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art4.sent10
 
-247. Source: nbc.divBV2.part9.appendix.appnote195.para1
+233. Source: nbc.divBV2.part9.appendix.appnote195.para1
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent7
 
-248. Source: nbc.divBV2.part9.appendix.appnote195.div1.para1
+234. Source: nbc.divBV2.part9.appendix.appnote195.div1.para1
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent8
 
-249. Source: nbc.divBV2.part9.appendix.appnote195.div2.para1
+235. Source: nbc.divBV2.part9.appendix.appnote195.div2.para1
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent10
 
-250. Source: nbc.divBV2.part9.appendix.appnote195.div2.para1
+236. Source: nbc.divBV2.part9.appendix.appnote195.div2.para1
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent14
 
-251. Source: nbc.divBV2.part9.appendix.appnote195.div2.para3
+237. Source: nbc.divBV2.part9.appendix.appnote195.div2.para3
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art5.sent11
 
-252. Source: nbc.divBV2.part9.appendix.appnote196.para3
+238. Source: nbc.divBV2.part9.appendix.appnote196.para3
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art10.sent3
 
-253. Source: nbc.divBV2.part9.appendix.appnote198.div3.para1
+239. Source: nbc.divBV2.part9.appendix.appnote198.div3.para1
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent3
 
-254. Source: nbc.divBV2.part9.appendix.appnote198.div3.para2
+240. Source: nbc.divBV2.part9.appendix.appnote198.div3.para2
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art9.sent3
 
-255. Source: nbc.divBV2.part9.appendix.appnote214.para1
-   Target (Not Found): nbc.divBV2.part9.sect37.subsect5.art4
-
-256. Source: nbc.divBV2.part9.appendix.appnote214.para1
-   Target (Not Found): nbc.divBV2.part9.sect37.subsect5.art4
-
-257. Source: nbc.divBV2.part9.appendix.appnote214.para1
-   Target (Not Found): nbc.divBV2.part9.sect37.subsect6.art5
-
-258. Source: nbc.divBV2.part9.appendix.appnote214.para2
-   Target (Not Found): nbc.divBV2.part9.sect37.subsect6.art5
-
-259. Source: nbc.divBV2.part9.appendix.appnote215.table1.rowh2
+241. Source: nbc.divBV2.part9.appendix.appnote215.table1.rowh2
    Target (Not Found): nbc.divBV2.part9.sect37.subsect2
 
-260. Source: nbc.divBV2.part9.appendix.appnote215.table1.rowh2
+242. Source: nbc.divBV2.part9.appendix.appnote215.table1.rowh2
    Target (Not Found): nbc.divBV2.part9.sect37.subsect4
 
-261. Source: nbc.divBV2.part9.appendix.appnote215.table1.rowh2
+243. Source: nbc.divBV2.part9.appendix.appnote215.table1.rowh2
    Target (Not Found): nbc.divBV2.part9.sect37.subsect5
 
-262. Source: nbc.divBV2.part9.appendix.appnote215.table1.rowh2
+244. Source: nbc.divBV2.part9.appendix.appnote215.table1.rowh2
    Target (Not Found): nbc.divBV2.part9.sect37.subsect6
 
-263. Source: nbc.divBV2.part9.appendix.appnote215.table1
+245. Source: nbc.divBV2.part9.appendix.appnote215.table1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect2
 
-264. Source: nbc.divBV2.part9.appendix.appnote215.table1
+246. Source: nbc.divBV2.part9.appendix.appnote215.table1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect4
 
-265. Source: nbc.divBV2.part9.appendix.appnote215.table1
+247. Source: nbc.divBV2.part9.appendix.appnote215.table1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect1.art3.sent7
 
-266. Source: nbc.divBV2.part9.appendix.appnote215.table1
+248. Source: nbc.divBV2.part9.appendix.appnote215.table1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect1.art3.sent8
 
-267. Source: nbc.divBV2.part9.appendix.appnote216.div1.para1
-   Target (Not Found): nbc.divBV2.part9.sect37.subsect1.art3.sent3
-
-268. Source: nbc.divBV2.part9.appendix.appnote216.div1.para1
-   Target (Not Found): nbc.divBV2.part9.sect37.subsect1.art3.sent6
-
-269. Source: nbc.divBV2.part9.appendix.appnote236.para1
+249. Source: nbc.divBV2.part9.appendix.appnote236.para1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect2.art7.sent3
 
-270. Source: nbc.divBV2.part9.appendix.appnote236.para1
+250. Source: nbc.divBV2.part9.appendix.appnote236.para1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect2.art7.sent1
 
-271. Source: nbc.divBV2.part9.appendix.appnote248.para1
+251. Source: nbc.divBV2.part9.appendix.appnote248.para1
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art11
 
-272. Source: nbc.divBV2.part9.appendix.appnote258.para1
+252. Source: nbc.divBV2.part9.appendix.appnote258.para1
    Target (Not Found): nbc.divBV2.part9.sect32.subsect3.art13.sent11
 
-273. Source: nbc.divBV2.part9.appendix.appnote295a.para1
+253. Source: nbc.divBV2.part9.appendix.appnote295a.para1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect6.art2.sent1
 
-274. Source: nbc.divBV2.part9.appendix.appnote295a.para1
+254. Source: nbc.divBV2.part9.appendix.appnote295a.para1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect6.art2.sent3
 
-275. Source: nbc.divBV2.part9.appendix.appnote295a.para1
+255. Source: nbc.divBV2.part9.appendix.appnote295a.para1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect6.art3.sent1
 
-276. Source: nbc.divBV2.part9.appendix.appnote295a.para1
-   Target (Not Found): nbc.divC.part2.sect2.subsect8.art3.sent3
-
-277. Source: nbc.divBV2.part9.appendix.appnote295a.para2
+256. Source: nbc.divBV2.part9.appendix.appnote295a.para2
    Target (Not Found): nbc.divBV2.part9.sect37.subsect6.art2.sent1
 
-278. Source: nbc.divBV2.part9.appendix.appnote295a.para2
+257. Source: nbc.divBV2.part9.appendix.appnote295a.para2
    Target (Not Found): nbc.divBV2.part9.sect37.subsect6.art2.sent3
 
-279. Source: nbc.divBV2.part9.appendix.appnote295a.para2
+258. Source: nbc.divBV2.part9.appendix.appnote295a.para2
    Target (Not Found): nbc.divBV2.part9.sect37.subsect6.art3.sent1
 
-280. Source: nbc.divBV2.part9.appendix.appnote295a.para2
-   Target (Not Found): nbc.divC.part2.sect2.subsect8.art3.sent3
-
-281. Source: nbc.divBV2.part9.appendix.appnote295c.para1
+259. Source: nbc.divBV2.part9.appendix.appnote295c.para1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect6
 
-282. Source: nbc.divBV2.part9.appendix.appnote295c.para1
+260. Source: nbc.divBV2.part9.appendix.appnote295c.para1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect6
 
-283. Source: nbc.divBV2.part9.appendix.appnote295h.para1
+261. Source: nbc.divBV2.part9.appendix.appnote295h.para1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect5
 
-284. Source: nbc.divBV2.part9.appendix.appnote295h.para1
+262. Source: nbc.divBV2.part9.appendix.appnote295h.para1
    Target (Not Found): nbc.divBV2.part9.sect37.subsect6
 
-285. Source: nbc.divBV2.part9.appendix.appnote300.para1
+263. Source: nbc.divBV2.part9.appendix.appnote300.para1
    Target (Not Found): nbc.divBV2.part9.sect36.subsect8
 

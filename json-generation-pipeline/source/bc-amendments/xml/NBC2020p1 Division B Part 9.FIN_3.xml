@@ -33,7 +33,7 @@
                 <new-content source="bc">
                     <note-division xml:id="nbc.divBV2.part9.appendix.appnote1.div0">
                         <title>Energy Efficiency</title>
-                        <paragraph xml:id="nbc.divBV2.part9.appendix.appnote1.div0.para1"><ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3.sent5.clause2" display-type="long" pretext="Clause"/> exempts seasonally occupied residential buildings such as summer cottages from the requirements of <ref type="internal" target="nbc.divBV2.part9.sect37" display-type="long" pretext="Section"/>. Cottages intended for continuous or regular winter use such as ski cabins are required to conform to <ref type="internal" target="nbc.divBV2.part9.sect37" display-type="long" pretext="Section"/>.</paragraph>
+                        <paragraph xml:id="nbc.divBV2.part9.appendix.appnote1.div0.para1"><ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3" display-type="long" pretext="Clause"/> exempts seasonally occupied residential buildings such as summer cottages from the requirements of <ref type="internal" target="nbc.divBV2.part9.sect37" display-type="long" pretext="Section"/>. Cottages intended for continuous or regular winter use such as ski cabins are required to conform to <ref type="internal" target="nbc.divBV2.part9.sect37" display-type="long" pretext="Section"/>.</paragraph>
                     </note-division>
                 </new-content>
             </insert>
@@ -1103,7 +1103,7 @@
                             <graphic src="graphics/eg/006/eg00683a.eps" alt="Lapping bands and building perimeter within braced wall bands [Clauses 9.23.13.4.(1)(a) and (c)]"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote130.figure3">
-                            <title>Braced wall bands at changes in floor level in split-level buildings [<ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent3" display-type="long"/>]</title>
+                            <title>Braced wall bands at changes in floor level in split-level buildings [<ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4" display-type="long"/>]</title>
                             <graphic src="graphics/eg/001/eg00171c.eps" alt="Braced wall bands at changes in floor level in split-level buildings [Sentence 9.23.13.4.(3)]"/>
                         </figure>
                     </application-note>
@@ -1209,7 +1209,7 @@
                     <application-note xml:id="nbc.divBV2.part9.appendix.appnote134">
                         <number>9.23.13.6.(3)</number>
                         <title>Use of Gypsum Board to Provide Required Bracing</title>
-                        <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134.para1">Braced wall panels constructed with gypsum board alone provide less resistance to lateral loads than panels constructed with OSB, waferboard, plywood or diagonal lumber board; <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art6.sent3" display-type="short">Sentence 9.23.13.6.(3)</ref> limits the use of gypsum board to interior walls. <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art6.sent6" display-type="short">Sentence (6)</ref> further limits its use to provide the required lateral resistance by requiring that walls in basements and crawl spaces be constructed with braced wall panels made of wood-based sheathing at braced wall band intervals of not more than <measurement units="metric">15 m</measurement> apart. See <ref type="internal" target="nbc.divBV2.part9.appendix.appnote134.figure1" display-type="long">Figure A-9.23.13.6.(3)</ref>.</paragraph>
+                        <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134.para1">Braced wall panels constructed with gypsum board alone provide less resistance to lateral loads than panels constructed with OSB, waferboard, plywood or diagonal lumber board; <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art6.sent3" display-type="short">Sentence 9.23.13.6.(3)</ref> limits the use of gypsum board to interior walls. <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art6" display-type="short">Sentence (6)</ref> further limits its use to provide the required lateral resistance by requiring that walls in basements and crawl spaces be constructed with braced wall panels made of wood-based sheathing at braced wall band intervals of not more than <measurement units="metric">15 m</measurement> apart. See <ref type="internal" target="nbc.divBV2.part9.appendix.appnote134.figure1" display-type="long">Figure A-9.23.13.6.(3)</ref>.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134.figure1">
                             <title>Braced wall panels constructed of wood-based material</title>
                             <graphic src="graphics/eg/006/eg00686a.eps" alt="Braced wall panels constructed of wood-based material"/>
@@ -2203,7 +2203,7 @@
             <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote214.para1"/>
             <replace preserve-references="false">
                 <new-content source="bc">
-                    <paragraph xml:id="nbc.divBV2.part9.appendix.appnote214.para1">The annual energy consumption and the house energy target are not intended to include loads from small appliances and lighting. They represent the annual sum of service water heating and space-conditioning energy consumption in the proposed and reference houses, respectively. The values of these metrics are calculated by subtracting the loads specified in <ref type="internal" target="nbc.divBV2.part9.sect37.subsect5.art4" display-type="long"/> from the total annual energy consumption, which is generated by the models for the proposed and reference houses in accordance with <ref type="internal" target="nbc.divBV2.part9.sect37.subsect5.art4" display-type="long"/><ref type="internal" target="nbc.divBV2.part9.sect37.subsect6.art5" display-type="short" pretext=" or"/></paragraph>
+                    <paragraph xml:id="nbc.divBV2.part9.appendix.appnote214.para1">The annual energy consumption and the house energy target are not intended to include loads from small appliances and lighting. They represent the annual sum of service water heating and space-conditioning energy consumption in the proposed and reference houses, respectively. The values of these metrics are calculated by subtracting the loads specified in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect5.art4" display-type="long"/> from the total annual energy consumption, which is generated by the models for the proposed and reference houses in accordance with <ref type="internal" target="nbc.divBV2.part9.sect36.subsect5.art4" display-type="long"/><ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art5" display-type="short" pretext=" or"/></paragraph>
                 </new-content>
             </replace>
         </amendment>
@@ -2217,7 +2217,7 @@
             <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote214.para2"/>
             <replace preserve-references="false">
                 <new-content source="bc">
-                    <paragraph xml:id="nbc.divBV2.part9.appendix.appnote214.para2">The annual energy consumption and the house energy target are then used to calculate the percent house energy target or the percent improvement in <ref type="internal" target="nbc.divBV2.part9.sect37.subsect6.art5" display-type="long"/></paragraph>
+                    <paragraph xml:id="nbc.divBV2.part9.appendix.appnote214.para2">The annual energy consumption and the house energy target are then used to calculate the percent house energy target or the percent improvement in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art5" display-type="long"/></paragraph>
                 </new-content>
             </replace>
         </amendment>
@@ -2326,7 +2326,7 @@
             <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote216.div1.para1"/>
             <replace preserve-references="false">
                 <new-content source="bc">
-                    <paragraph xml:id="nbc.divBV2.part9.appendix.appnote216.div1.para1">For the purpose of <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3.sent3" display-type="long"/> and <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3.sent6" display-type="number"/>, the term "houses" includes detached houses, semi-detached houses, duplexes, triplexes, townhouses, row houses and boarding houses.</paragraph>
+                    <paragraph xml:id="nbc.divBV2.part9.appendix.appnote216.div1.para1">For the purpose of <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3" display-type="long"/> and <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3" display-type="number"/>, the term "houses" includes detached houses, semi-detached houses, duplexes, triplexes, townhouses, row houses and boarding houses.</paragraph>
                 </new-content>
             </replace>
         </amendment>

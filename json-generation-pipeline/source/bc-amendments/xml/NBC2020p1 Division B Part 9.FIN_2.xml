@@ -296,7 +296,7 @@
                         <title>Thermal Characteristics of Fenestration, Doors and Skylights</title>
                         
                         <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art7.sent1" number="1">
-                            <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent2" display-type="short"/> to <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent11" display-type="short"/> and <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art11" display-type="long"/>, fenestration and doors shall have an overall thermal transmittance (U-value) not greater than the values listed in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table1" display-type="long"/> for the applicable heating-degree day category. (See <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.appnote1" display-type="short"/>)</text>
+                            <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent2" display-type="short"/> to <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent11" display-type="short"/> and <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art11" display-type="long"/>, fenestration and doors shall have an overall thermal transmittance (U-value) not greater than the values listed in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table1" display-type="long"/> for the applicable heating-degree day category. (See <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7" display-type="short"/>)</text>
                         </sentence>
                         
                         <table xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table1">
@@ -342,7 +342,7 @@
                         </table>
                         
                         <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art7.sent2" number="2">
-                            <text>Skylights shall have an overall thermal transmittance not greater than the values listed in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table2" display-type="long"/> for the applicable heating-degree day category. (See <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.appnote1" display-type="short"/>)</text>
+                            <text>Skylights shall have an overall thermal transmittance not greater than the values listed in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table2" display-type="long"/> for the applicable heating-degree day category. (See <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7" display-type="short"/>)</text>
                         </sentence>
                         
                         <table xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table2">
@@ -385,7 +385,7 @@
                         </table>
                         
                         <sentence xml:id="nbc.divBV2.part9.sect36.subsect2.art7.sent3" number="3">
-                            <text>Except for site-assembled or site-glazed factory-made fenestration products, curtain wall construction, and site-built windows and glazed doors that are tested in accordance with <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art2.sent3" display-type="long"/>, site-built windows and glazed doors need not comply with <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent1" display-type="short"/>, provided they are constructed in accordance with one of the options presented in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table3" display-type="long"/> for the applicable climate zone. (See <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.appnote3" display-type="short"/>)</text>
+                            <text>Except for site-assembled or site-glazed factory-made fenestration products, curtain wall construction, and site-built windows and glazed doors that are tested in accordance with <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art2.sent3" display-type="long"/>, site-built windows and glazed doors need not comply with <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent1" display-type="short"/>, provided they are constructed in accordance with one of the options presented in <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.table3" display-type="long"/> for the applicable climate zone. (See <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7" display-type="short"/>)</text>
                         </sentence>
                         
                         <table xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table3">

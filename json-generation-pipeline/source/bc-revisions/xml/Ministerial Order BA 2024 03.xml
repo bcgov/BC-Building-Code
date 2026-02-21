@@ -1156,7 +1156,7 @@
           <sentence xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1" number="1" revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
-                <text>This Subsection applies only to <ref type="term" target="bldng">buildings</ref> covered in Part 4 of Division B (see <ref type="internal" target="nbc.divA.part1.sect3.subsect3.art2" display-type="long"/>), except that <ref type="internal" target="nbc.divC.part2.sect2.subsect7.art5" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divC.part2.sect2.subsect7.art6" display-type="long" pretext="and"/> apply to all <ref type="term" target="bldng">buildings</ref> covered in this Code. (See <ref type="internal" target="nbc.divA.part1.sect1.subsect1.art1" display-type="long"/>.)</text>
+                    <!-- Merge engine will auto pouplate the contnet -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-012" status="current">
                 <content>
