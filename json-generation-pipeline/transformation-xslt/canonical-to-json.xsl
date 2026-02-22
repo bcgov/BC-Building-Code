@@ -634,68 +634,120 @@
             </xsl:if>
             
             <!-- Main text content with rich formatting preserved -->
-            <!-- Extract text from revision-history if present, otherwise from direct child -->
+            <!-- Extract text and child elements from revision-history if present, otherwise from direct children -->
             <xsl:choose>
                 <xsl:when test="@revised='yes' and revision-history">
                     <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
                     <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                    
                     <fn:string key="text"><xsl:apply-templates select="$content-node/text" mode="rich-text-json"/></fn:string>
+                    
+                    <!-- Extract equations from text element -->
+                    <xsl:if test="$content-node/text//equation">
+                        <fn:array key="equations">
+                            <xsl:apply-templates select="$content-node/text//equation" mode="equation-json"/>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <!-- Intent reference if present -->
+                    <xsl:if test="$content-node/intent-ref">
+                        <fn:string key="intent_reference"><xsl:value-of select="$content-node/intent-ref/@target"/></fn:string>
+                    </xsl:if>
+                    
+                    <!-- Clauses -->
+                    <xsl:if test="$content-node/clause">
+                        <fn:array key="clauses">
+                            <xsl:apply-templates select="$content-node/clause" mode="json"/>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <!-- See-also references -->
+                    <xsl:if test="$content-node/see-also">
+                        <fn:array key="see_also">
+                            <xsl:for-each select="$content-node/see-also">
+                                <fn:map>
+                                    <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                    <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                </fn:map>
+                            </xsl:for-each>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <!-- Objectives and functional statements -->
+                    <xsl:if test="$content-node/objectives">
+                        <fn:array key="objectives">
+                            <xsl:apply-templates select="$content-node/objectives/objective" mode="json"/>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <xsl:if test="$content-node/functional-statements">
+                        <fn:array key="functional_statements">
+                            <xsl:apply-templates select="$content-node/functional-statements/functional-statement" mode="json"/>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <!-- BC annotations if present -->
+                    <xsl:if test="$content-node/bc-annotation">
+                        <fn:array key="bc_annotations">
+                            <xsl:apply-templates select="$content-node/bc-annotation" mode="json"/>
+                        </fn:array>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
                     <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+                    
+                    <!-- Extract equations from text element -->
+                    <xsl:if test="text//equation">
+                        <fn:array key="equations">
+                            <xsl:apply-templates select="text//equation" mode="equation-json"/>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <!-- Intent reference if present -->
+                    <xsl:if test="intent-ref">
+                        <fn:string key="intent_reference"><xsl:value-of select="intent-ref/@target"/></fn:string>
+                    </xsl:if>
+                    
+                    <!-- Clauses -->
+                    <xsl:if test="clause">
+                        <fn:array key="clauses">
+                            <xsl:apply-templates select="clause" mode="json"/>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <!-- See-also references -->
+                    <xsl:if test="see-also">
+                        <fn:array key="see_also">
+                            <xsl:for-each select="see-also">
+                                <fn:map>
+                                    <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                    <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                </fn:map>
+                            </xsl:for-each>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <!-- Objectives and functional statements -->
+                    <xsl:if test="objectives">
+                        <fn:array key="objectives">
+                            <xsl:apply-templates select="objectives/objective" mode="json"/>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <xsl:if test="functional-statements">
+                        <fn:array key="functional_statements">
+                            <xsl:apply-templates select="functional-statements/functional-statement" mode="json"/>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <!-- BC annotations if present -->
+                    <xsl:if test="bc-annotation">
+                        <fn:array key="bc_annotations">
+                            <xsl:apply-templates select="bc-annotation" mode="json"/>
+                        </fn:array>
+                    </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
-            
-            <!-- Extract equations from text element -->
-            <xsl:if test="text//equation">
-                <fn:array key="equations">
-                    <xsl:apply-templates select="text//equation" mode="equation-json"/>
-                </fn:array>
-            </xsl:if>
-            
-            <!-- Intent reference if present -->
-            <xsl:if test="intent-ref">
-                <fn:string key="intent_reference"><xsl:value-of select="intent-ref/@target"/></fn:string>
-            </xsl:if>
-            
-            <!-- Clauses -->
-            <xsl:if test="clause">
-                <fn:array key="clauses">
-                    <xsl:apply-templates select="clause" mode="json"/>
-                </fn:array>
-            </xsl:if>
-            
-            <!-- See-also references -->
-            <xsl:if test="see-also">
-                <fn:array key="see_also">
-                    <xsl:for-each select="see-also">
-                        <fn:map>
-                            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
-                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
-                        </fn:map>
-                    </xsl:for-each>
-                </fn:array>
-            </xsl:if>
-            
-            <!-- Objectives and functional statements -->
-            <xsl:if test="objectives">
-                <fn:array key="objectives">
-                    <xsl:apply-templates select="objectives/objective" mode="json"/>
-                </fn:array>
-            </xsl:if>
-            
-            <xsl:if test="functional-statements">
-                <fn:array key="functional_statements">
-                    <xsl:apply-templates select="functional-statements/functional-statement" mode="json"/>
-                </fn:array>
-            </xsl:if>
-            
-            <!-- BC annotations if present -->
-            <xsl:if test="bc-annotation">
-                <fn:array key="bc_annotations">
-                    <xsl:apply-templates select="bc-annotation" mode="json"/>
-                </fn:array>
-            </xsl:if>
             
             <!-- Revision history if present -->
             <xsl:if test="@revised = 'yes' and revision-history">
@@ -726,34 +778,52 @@
                 <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
             
-            <!-- Extract text from revision-history if present, otherwise from direct child -->
+            <!-- Extract text and child elements from revision-history if present, otherwise from direct children -->
             <xsl:choose>
                 <xsl:when test="@revised='yes' and revision-history">
                     <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
                     <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                    
                     <fn:string key="text"><xsl:apply-templates select="$content-node/text" mode="rich-text-json"/></fn:string>
+                    
+                    <xsl:if test="$content-node/see-also">
+                        <fn:array key="see_also">
+                            <xsl:for-each select="$content-node/see-also">
+                                <fn:map>
+                                    <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                    <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                </fn:map>
+                            </xsl:for-each>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <xsl:if test="$content-node/subclause">
+                        <fn:array key="subclauses">
+                            <xsl:apply-templates select="$content-node/subclause" mode="json"/>
+                        </fn:array>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
                     <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+                    
+                    <xsl:if test="see-also">
+                        <fn:array key="see_also">
+                            <xsl:for-each select="see-also">
+                                <fn:map>
+                                    <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                    <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                </fn:map>
+                            </xsl:for-each>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <xsl:if test="subclause">
+                        <fn:array key="subclauses">
+                            <xsl:apply-templates select="subclause" mode="json"/>
+                        </fn:array>
+                    </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
-            
-            <xsl:if test="see-also">
-                <fn:array key="see_also">
-                    <xsl:for-each select="see-also">
-                        <fn:map>
-                            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
-                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
-                        </fn:map>
-                    </xsl:for-each>
-                </fn:array>
-            </xsl:if>
-            
-            <xsl:if test="subclause">
-                <fn:array key="subclauses">
-                    <xsl:apply-templates select="subclause" mode="json"/>
-                </fn:array>
-            </xsl:if>
             
             <!-- Revision history if present -->
             <xsl:if test="@revised = 'yes' and revision-history">
@@ -1884,7 +1954,15 @@
         <fn:map>
             <fn:string key="type">original</fn:string>
             <fn:string key="effective_date"><xsl:value-of select="revision-history/original/@effective-date"/></fn:string>
-            <fn:string key="text"><xsl:apply-templates select="revision-history/original" mode="rich-text-json"/></fn:string>
+            <fn:string key="text"><xsl:apply-templates select="revision-history/original/text" mode="rich-text-json"/></fn:string>
+            
+            <!-- Clauses in original -->
+            <xsl:if test="revision-history/original/clause">
+                <fn:array key="clauses">
+                    <xsl:apply-templates select="revision-history/original/clause" mode="json"/>
+                </fn:array>
+            </xsl:if>
+            
             <xsl:if test="revision-history/original/see-also">
                 <fn:array key="see_also">
                     <xsl:for-each select="revision-history/original/see-also">
@@ -1921,7 +1999,15 @@
                     </xsl:when>
                 </xsl:choose>
                 
-                <fn:string key="text"><xsl:apply-templates select="content" mode="rich-text-json"/></fn:string>
+                <fn:string key="text"><xsl:apply-templates select="content/text" mode="rich-text-json"/></fn:string>
+                
+                <!-- Clauses in revision -->
+                <xsl:if test="content/clause">
+                    <fn:array key="clauses">
+                        <xsl:apply-templates select="content/clause" mode="json"/>
+                    </fn:array>
+                </xsl:if>
+                
                 <xsl:if test="content/see-also">
                     <fn:array key="see_also">
                         <xsl:for-each select="content/see-also">
