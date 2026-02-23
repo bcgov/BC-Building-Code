@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-20T18:37:22.016187-08:00"
+            generated="2026-02-23T10:17:24.2421-08:00"
             source-count="13">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -32625,7 +32625,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                <article xml:id="nbc.divC.part2.sect2.subsect1.art1" number="1">
                   <title>Conformance with Administrative Requirements</title>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect1.art1.sent1" number="1">
-                     <text>This Code is made pursuant to Section 3 of the Building Act.</text>
+                     <text>This Code is made pursuant to Section 3 of the <ref type="term" target="bldng">Building</ref> Act.</text>
                   </sentence>
                </article>
             </new-content>
@@ -32643,7 +32643,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                <article xml:id="nbc.divC.part2.sect2.subsect1.art2" number="2">
                   <title>Structural Design</title>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect1.art2.sent1" number="1">
-                     <text>For design carried out in accordance with Part 4 of Division B, the designer shall be a registered professional skilled in the work concerned. (See <ref type="internal"
+                     <text>For design carried out in accordance with Part 4 of Division B, the designer shall be a <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> skilled in the work concerned. (See <ref type="internal"
                              target="nbc.divC.part2.appendix.appnote1"
                              display-type="short">Note A-2.2.1.2.(1)</ref>.)</text>
                   </sentence>
@@ -32668,31 +32668,31 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect2.art1.sent2" number="2">
                      <text>Plans shall be drawn to scale and shall indicate</text>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art1.sent2.clause1" letter="a">
-                        <text>the nature and extent of the work or proposed occupancy in sufficient detail to establish that, when completed, the work and the proposed occupancy will conform to this Code,</text>
+                        <text>the nature and extent of the work or proposed <ref type="term" target="ccpnc">occupancy</ref> in sufficient detail to establish that, when completed, the work and the proposed <ref type="term" target="ccpnc">occupancy</ref> will conform to this Code,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art1.sent2.clause2" letter="b">
                         <text>the applicable edition of the Code,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art1.sent2.clause3" letter="c">
-                        <text>whether the building is designed under Part 3 or Part 9,</text>
+                        <text>whether the <ref type="term" target="bldng">building</ref> is designed under Part 3 or Part 9,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art1.sent2.clause4" letter="d">
-                        <text>the major occupancy classifications of the building,</text>
+                        <text>the <ref type="term" target="mjr-ccpn">major occupancy</ref> classifications of the <ref type="term" target="bldng">building</ref>,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art1.sent2.clause5" letter="e">
-                        <text>the building area and building height,</text>
+                        <text>the <ref type="term" target="bldng">building</ref> area and <ref type="term" target="bldng">building</ref> height,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art1.sent2.clause6" letter="f">
-                        <text>the number of streets the building faces,</text>
+                        <text>the number of <ref type="term" target="trt">streets</ref> the <ref type="term" target="bldng">building</ref> faces,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art1.sent2.clause7" letter="g">
                         <text>the accessible entrances, work areas and washrooms,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art1.sent2.clause8" letter="h">
-                        <text>the accessible facilities particular to the occupancies, and</text>
+                        <text>the accessible facilities particular to the <ref type="term" target="ccpnc">occupancies</ref>, and</text>
                         <subclause xml:id="nbc.divC.part2.sect2.subsect2.art1.sent2.clause8.subclause1"
                                    number="1">
-                           <text>the energy compliance path to which the building conforms, and, where a building conforms to Subsection 9.36.6. or 10.2.3. of Division B, the Step to which it conforms.</text>
+                           <text>the energy compliance path to which the <ref type="term" target="bldng">building</ref> conforms, and, where a <ref type="term" target="bldng">building</ref> conforms to Subsection 9.36.6. or 10.2.3. of Division B, the Step to which it conforms.</text>
                         </subclause>
                      </clause>
                   </sentence>
@@ -32720,10 +32720,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect2.art2.sent2" number="2">
                      <text>Site plans shall show</text>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art2.sent2.clause1" letter="a">
-                        <text>by dimensions from property lines, the location of the proposed building,</text>
+                        <text>by dimensions from property lines, the location of the proposed <ref type="term" target="bldng">building</ref>,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art2.sent2.clause2" letter="b">
-                        <text>the similarly dimensioned location of every adjacent existing building on the property,</text>
+                        <text>the similarly dimensioned location of every adjacent existing <ref type="term" target="bldng">building</ref> on the property,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art2.sent2.clause3" letter="c">
                         <text>existing and finished ground levels to an established datum at or adjacent to the site,</text>
@@ -32732,10 +32732,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         <text>the access routes for firefighting, and</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect2.art2.sent2.clause5" letter="e">
-                        <text>the accessible paths of travel to the building from</text>
+                        <text>the accessible paths of travel to the <ref type="term" target="bldng">building</ref> from</text>
                         <subclause xml:id="nbc.divC.part2.sect2.subsect2.art2.sent2.clause5.subclause1"
                                    number="1">
-                           <text>the sidewalk, roadway or street, and</text>
+                           <text>the sidewalk, roadway or <ref type="term" target="trt">street</ref>, and</text>
                         </subclause>
                         <subclause xml:id="nbc.divC.part2.sect2.subsect2.art2.sent2.clause5.subclause2"
                                    number="2">
@@ -32759,7 +32759,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                <article xml:id="nbc.divC.part2.sect2.subsect8.art1" number="1">
                   <title>Application</title>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect8.art1.sent1" number="1">
-                     <text>This Subsection applies only to houses with or without a secondary suite including their common spaces and to buildings containing only dwelling units and common spaces whose total floor area does not exceed 20% of the total floor area of the building that are modeled in accordance with Subsection 9.36.5. and 9.37.1 of Division B as applicable .(See <ref type="internal"
+                     <text>This Subsection applies only to houses with or without a secondary suite including their common spaces and to buildings containing only dwelling units and common spaces whose total <ref type="term" target="flr-r">floor area</ref> does not exceed 20% of the total <ref type="term" target="flr-r">floor area</ref> of the <ref type="term" target="bldng">building</ref> that are modeled in accordance with Subsection 9.36.5. and 9.37.1 of Division B as applicable .(See <ref type="internal"
                              target="nbc.divC.part2.appendix.appnote4"
                              display-type="short">Note A-2.2.8.1.(1)</ref>.) (See also Sentence 9.36.1.2.(1) and Note A-9.36.1.3.(3) of Division B.)</text>
                   </sentence>
@@ -32781,7 +32781,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect8.art2.sent1" number="1">
                      <text>Except as provided in Sentences (2) to (4), the drawings and specifications for the proposed house shall include</text>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art2.sent1.clause1" letter="a">
-                        <text>the effective thermal resistance values and respective areas of all opaque building envelope assemblies, including all above-ground and below-ground roof/ceiling, wall, and floor assemblies,</text>
+                        <text>the effective thermal resistance values and respective areas of all opaque <ref type="term" target="bldng">building</ref> envelope assemblies, including all above-ground and below-ground roof/ceiling, wall, and floor assemblies,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art2.sent1.clause2" letter="b">
                         <text>the overall thermal transmittance (U-value), solar heat gain coefficient and respective areas of all fenestration and door components,</text>
@@ -32796,14 +32796,14 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         <text>the design basis for the ventilation rates,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art2.sent1.clause6" letter="f">
-                        <text>where a test is used to determine the airtightness of a house, the measured airtightness of the building envelope in air changes per hour, and</text>
+                        <text>where a test is used to determine the airtightness of a house, the measured airtightness of the <ref type="term" target="bldng">building</ref> envelope in air changes per hour, and</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art2.sent1.clause7" letter="g">
                         <text>any additional features used in the energy model calculations that account for a significant difference in house energy performance.</text>
                      </clause>
                   </sentence>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect8.art2.sent2" number="2">
-                     <text>The effective thermal resistance values and respective areas of opaque building envelope assemblies that cover less than 2% of the total area of their respective assembly type need not be provided in the drawings and specifications required in Sentence (1).</text>
+                     <text>The effective thermal resistance values and respective areas of opaque <ref type="term" target="bldng">building</ref> envelope assemblies that cover less than 2% of the total area of their respective assembly type need not be provided in the drawings and specifications required in Sentence (1).</text>
                   </sentence>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect8.art2.sent3" number="3">
                      <text>Where part-load characteristics are used in the modeling of the HVAC equipment, they need not be provided in the drawings and specifications required in Sentence (1).</text>
@@ -32866,9 +32866,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         </subclause>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause2" letter="b">
-                        <text>a summary of the characteristics of the building envelope, HVAC system and service water heating system reflecting the information provided in <ref type="internal"
+                        <text>a summary of the characteristics of the <ref type="term" target="bldng">building</ref> envelope, HVAC system and service water heating system reflecting the information provided in <ref type="internal"
                                 target="nbc.divC.part2.sect2.subsect8.art2"
-                                display-type="short">Article 2.2.8.2.</ref>, including energy sources for the building’s systems, as applicable,</text>
+                                display-type="short">Article 2.2.8.2.</ref>, including energy sources for the <ref type="term" target="bldng">building</ref>’s systems, as applicable,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause3" letter="c">
                         <text>an energy performance data summary containing</text>
@@ -32922,9 +32922,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      </clause>
                   </sentence>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3" number="3">
-                     <text>Where a building complies with Subsection 9.36.6. of Division B, the energy performance data summary in Clause (2)(c) shall also contain:</text>
+                     <text>Where a <ref type="term" target="bldng">building</ref> complies with Subsection 9.36.6. of Division B, the energy performance data summary in Clause (2)(c) shall also contain:</text>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3.clause1" letter="a">
-                        <text>the floor area of conditioned space used for the energy modelling calculations (see Note A-9.36.6.2. of Division B),</text>
+                        <text>the <ref type="term" target="flr-r">floor area</ref> of conditioned space used for the energy modelling calculations (see Note A-9.36.6.2. of Division B),</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3.clause2" letter="b">
                         <text>the mechanical energy use intensity,</text>
@@ -32936,7 +32936,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         <text>where applicable, the percent heat loss reduction and percent improvement,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3.clause5" letter="e">
-                        <text>for buildings conforming to Steps 3 to 5, the airtightness of the building as tested that is accounted for in accordance with Sentence 9.36.6.4.(3) of Division B, and derived in accordance with Subsection 9.36.7., recorded in</text>
+                        <text>for buildings conforming to Steps 3 to 5, the airtightness of the <ref type="term" target="bldng">building</ref> as tested that is accounted for in accordance with Sentence 9.36.6.4.(3) of Division B, and derived in accordance with Subsection 9.36.7., recorded in</text>
                         <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3.clause5.subclause1"
                                    number="1">
                            <text>air changes per hour at 50 Pa,</text>
@@ -32951,7 +32951,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         </subclause>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3.clause6" letter="f">
-                        <text>percent of the building’s conditioned space served by space-cooling equipment.</text>
+                        <text>percent of the <ref type="term" target="bldng">building</ref>’s conditioned space served by space-cooling equipment.</text>
                      </clause>
                   </sentence>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect8.art3.sent4" number="4">
@@ -32977,7 +32977,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <article xml:id="nbc.divC.part2.sect2.subsect9.art1" number="1">
                      <title>Application</title>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect9.art1.sent1" number="1">
-                        <text>This Subsection applies to buildings and major occupancies in buildings to which <ref type="internal"
+                        <text>This Subsection applies to <ref type="term" target="bldng">buildings</ref> and <ref type="term" target="mjr-ccpn">major occupancies</ref> in <ref type="term" target="bldng">buildings</ref> to which <ref type="internal"
                                 target="nbc.divB.part10.sect2.subsect3"
                                 display-type="short">Subsection 10.2.3.</ref> and <ref type="internal" target="nbc.divB.part10.sect3" display-type="short">Section 10.3.</ref> of Division B are applicable.</text>
                      </sentence>
@@ -32985,7 +32985,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <article xml:id="nbc.divC.part2.sect2.subsect9.art2" number="2">
                      <title>Information Required</title>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect9.art2.sent1" number="1">
-                        <text>For buildings and major occupancies that are designed and constructed in compliance with <ref type="internal"
+                        <text>For <ref type="term" target="bldng">buildings</ref> and <ref type="term" target="mjr-ccpn">major occupancies</ref> that are designed and constructed in compliance with <ref type="internal"
                                 target="nbc.divB.part10.sect2.subsect3"
                                 display-type="short">Subsection 10.2.3.</ref> and <ref type="internal" target="nbc.divB.part10.sect3" display-type="short">Section 10.3.</ref> of Division B, design drawings, specifications, or an energy design report shall indicate:</text>
                         <clause xml:id="nbc.divC.part2.sect2.subsect9.art2.sent1.clause1" letter="a">
@@ -33030,13 +33030,13 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            <text>the GHG Emission Level achieved, as applicable, and</text>
                         </clause>
                         <clause xml:id="nbc.divC.part2.sect2.subsect9.art2.sent1.clause6" letter="f">
-                           <text>the maximum GHGI of the building, expressed in kgCO2e/m2/year, as applicable.</text>
+                           <text>the maximum GHGI of the <ref type="term" target="bldng">building</ref>, expressed in kgCO2e/m2/year, as applicable.</text>
                         </clause>
                      </sentence>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect9.art2.sent2" number="2">
-                        <text>For buildings and major occupancies that are designed and constructed in compliance with <ref type="internal"
+                        <text>For buildings and <ref type="term" target="mjr-ccpn">major occupancies</ref> that are designed and constructed in compliance with <ref type="internal"
                                 target="nbc.divB.part10.sect2.subsect3"
-                                display-type="short">Subsection 10.2.3.</ref> and <ref type="internal" target="nbc.divB.part10.sect3" display-type="short">Section 10.3.</ref> of Division B, as applicable,  before an owner occupies or receives permission to occupy the building, an energy report shall indicate:</text>
+                                display-type="short">Subsection 10.2.3.</ref> and <ref type="internal" target="nbc.divB.part10.sect3" display-type="short">Section 10.3.</ref> of Division B, as applicable,  before an owner occupies or receives permission to occupy the <ref type="term" target="bldng">building</ref>, an energy report shall indicate:</text>
                         <clause xml:id="nbc.divC.part2.sect2.subsect9.art2.sent2.clause1" letter="a">
                            <text>the total energy use intensity as defined by <ref type="internal"
                                    target="nbc.divB.part10.sect2.subsect3.art2.sent1"
@@ -33071,12 +33071,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                    display-type="short">Sentence 10.2.3.2.(2)</ref> of Division B,</text>
                         </clause>
                         <clause xml:id="nbc.divC.part2.sect2.subsect9.art2.sent2.clause4" letter="d">
-                           <text>for buildings conforming to Step 2, the air leakage rate as tested, derived in accordance with <ref type="internal"
+                           <text>for <ref type="term" target="bldng">buildings</ref> conforming to Step 2, the air leakage rate as tested, derived in accordance with <ref type="internal"
                                    target="nbc.divB.part10.sect2.subsect3.art5"
                                    display-type="short">Article 10.2.3.5.</ref> of Division B, and recorded in L/(s•m2) at 75 Pa, and</text>
                         </clause>
                         <clause xml:id="nbc.divC.part2.sect2.subsect9.art2.sent2.clause5" letter="e">
-                           <text>for buildings conforming to any of Steps 2 to 4, the air leakage rate as tested that is accounted for in accordance with <ref type="internal"
+                           <text>for <ref type="term" target="bldng">buildings</ref> conforming to any of Steps 2 to 4, the air leakage rate as tested that is accounted for in accordance with <ref type="internal"
                                    target="nbc.divB.part10.sect2.subsect3.art4.sent2"
                                    display-type="short">Sentence 10.2.3.4.(2)</ref> of Division B and derived in accordance with <ref type="internal"
                                    target="nbc.divB.part10.sect2.subsect3.art5"
@@ -33086,7 +33086,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            <text>the GHG Emission Level achieved, as applicable, and</text>
                         </clause>
                         <clause xml:id="nbc.divC.part2.sect2.subsect9.art2.sent2.clause7" letter="g">
-                           <text>the maximum GHGI of the building, expressed in kgCO2e/m2/year, as applicable.</text>
+                           <text>the maximum GHGI of the <ref type="term" target="bldng">building</ref>, expressed in kgCO2e/m2/year, as applicable.</text>
                         </clause>
                      </sentence>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect9.art2.sent3" number="3">
@@ -33111,14 +33111,14 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divC.part2.sect3.subsect1.art1.sent1" number="1">
                      <text>For the purposes of <ref type="internal"
                              target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
-                             display-type="short">Clause 1.2.1.1.(1)(b)</ref> of Division A, on written request by the owner of a building or an authorized agent of that owner, the authority having jurisdiction shall accept a measure as an alternate solution to an acceptable solution for the building if satisfied that</text>
+                             display-type="short">Clause 1.2.1.1.(1)(b)</ref> of Division A, on written request by the owner of a <ref type="term" target="bldng">building</ref> or an authorized agent of that owner, the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> shall accept a measure as an alternate solution to an acceptable solution for the <ref type="term" target="bldng">building</ref> if satisfied that</text>
                      <clause xml:id="nbc.divC.part2.sect3.subsect1.art1.sent1.clause1" letter="a">
                         <text>the measure will achieve at least the level of performance required by <ref type="internal"
                                 target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                                 display-type="short">Clause 1.2.1.1.(1)(b)</ref> of Division A, and</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect3.subsect1.art1.sent1.clause2" letter="b">
-                        <text>the acceptable solution does not expressly require conformance to a provincial enactment other than the British Columbia Building Code.</text>
+                        <text>the acceptable solution does not expressly require conformance to a provincial enactment other than the British Columbia <ref type="term" target="bldng">Building</ref> Code.</text>
                      </clause>
                   </sentence>
                </article>
@@ -33139,7 +33139,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                <article xml:id="nbc.divC.part2.sect3.subsect1.art2" number="2">
                   <title>Documentation</title>
                   <sentence xml:id="nbc.divC.part2.sect3.subsect1.art2.sent1" number="1">
-                     <text>The authority having jurisdiction may require a person requesting the use of an alternative solution to provide documentation to demonstrate that the proposed alternative solution will achieve at least the level of performance required by <ref type="internal"
+                     <text>The <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> may require a person requesting the use of an alternative solution to provide documentation to demonstrate that the proposed alternative solution will achieve at least the level of performance required by <ref type="internal"
                              target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
                              display-type="short">Clause 1.2.1.1.(1)(b)</ref> of Division A.</text>
                   </sentence>
@@ -33151,11 +33151,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 display-type="short">Clause 1.2.1.1.(1)(b)</ref> of Division A, and</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect3.subsect1.art2.sent2.clause2" letter="b">
-                        <text>information concerning any special maintenance or operational requirements, including any building component commissioning requirements, that are necessary for the alternative solution to achieve compliance with the Code after the building is constructed.</text>
+                        <text>information concerning any special maintenance or operational requirements, including any <ref type="term" target="bldng">building</ref> component commissioning requirements, that are necessary for the alternative solution to achieve compliance with the Code after the <ref type="term" target="bldng">building</ref> is constructed.</text>
                      </clause>
                   </sentence>
                   <sentence xml:id="nbc.divC.part2.sect3.subsect1.art2.sent3" number="3">
-                     <text>The Code analysis referred to in Clause (2)(a) shall identify the applicable objectives, functional statements and acceptable solutions, and any assumptions, limiting or restricting factors, testing procedures, engineering studies or building performance parameters that will support a Code compliance assessment.</text>
+                     <text>The Code analysis referred to in Clause (2)(a) shall identify the applicable objectives, functional statements and acceptable solutions, and any assumptions, limiting or restricting factors, testing procedures, engineering studies or <ref type="term" target="bldng">building</ref> performance parameters that will support a Code compliance assessment.</text>
                   </sentence>
                   <sentence xml:id="nbc.divC.part2.sect3.subsect1.art2.sent4" number="4">
                      <text>The Code analysis referred to in Clause (2)(a) shall include information about the qualifications, experience and background of the person or persons taking responsibility for the design.</text>
@@ -33164,7 +33164,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <text>The information provided under Sentence (3) shall be in sufficient detail to convey the design intent and to support the validity, accuracy, relevance and precision of the Code analysis.</text>
                   </sentence>
                   <sentence xml:id="nbc.divC.part2.sect3.subsect1.art2.sent6" number="6">
-                     <text>Where more than one person is responsible for the design of a building or facility that includes a proposed alternative solution, the person requesting the use of the alternative solution shall identify a single person to co-ordinate the preparation of the design, Code analysis and documentation referred to in this Article.</text>
+                     <text>Where more than one person is responsible for the design of a <ref type="term" target="bldng">building</ref> or facility that includes a proposed alternative solution, the person requesting the use of the alternative solution shall identify a single person to co-ordinate the preparation of the design, Code analysis and documentation referred to in this Article.</text>
                   </sentence>
                </article>
             </new-content>
@@ -33186,15 +33186,17 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1" number="1">
                         <text>The requirements of this Subsection apply to</text>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1.clause1" letter="a">
-                           <text>buildings within the scope of Part 3 of Division B,</text>
+                           <text>
+                              <ref type="term" target="bldng">buildings</ref> within the scope of Part 3 of Division B,</text>
                         </clause>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1.clause2" letter="b">
-                           <text>buildings within the scope of Part 9 of Division B that are designed with common egress systems for the occupants and require the use of firewalls according to <ref type="internal"
+                           <text>
+                              <ref type="term" target="bldng">buildings</ref> within the scope of Part 9 of Division B that are designed with common egress systems for the occupants and require the use of firewalls according to <ref type="internal"
                                    target="nbc.divA.part1.sect3.subsect3.art4"
                                    display-type="short">Article 1.3.3.4.</ref> of Division A, and</text>
                         </clause>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1.clause3" letter="c">
-                           <text>the following, in respect of buildings within the scope of Part 9 of Division B other than buildings described in Clause (b),</text>
+                           <text>the following, in respect of <ref type="term" target="bldng">buildings</ref> within the scope of Part 9 of Division B other than <ref type="term" target="bldng">buildings</ref> described in Clause (b),</text>
                            <subclause xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1.clause3.subclause1"
                                       number="1">
                               <text>structural components that are not within the scope of Part 9 of Division B</text>
@@ -33202,7 +33204,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            <!-- (See Note A-2.2.7.1.(1)(c)(i).), -->
                            <subclause xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1.clause3.subclause2"
                                       number="2">
-                              <text>geotechnical conditions at building sites that are not within the scope of Part 9 of Division B,</text>
+                              <text>geotechnical conditions at <ref type="term" target="bldng">building</ref> sites that are not within the scope of Part 9 of Division B,</text>
                            </subclause>
                            <subclause xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1.clause3.subclause3"
                                       number="3">
@@ -33218,51 +33220,51 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <article xml:id="nbc.divC.part2.sect2.subsect7.art2" number="2">
                      <title>Before Construction or Alteration</title>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect7.art2.sent1" number="1">
-                        <text>Before the construction of or the alteration to a building, the owner shall</text>
+                        <text>Before the construction of or the <ref type="term" target="ltrtn">alteration</ref> to a <ref type="term" target="bldng">building</ref>, the owner shall</text>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art2.sent1.clause1" letter="a">
-                           <text>retain a coordinating registered professional to coordinate all design work and field reviews of the registered professionals of record required for the project in order to ascertain that (see Note A-2.2.7.2.(1)(a))</text>
+                           <text>retain a coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> to coordinate all design work and field reviews of the registered professionals of record required for the project in order to ascertain that (see Note A-2.2.7.2.(1)(a))</text>
                            <subclause xml:id="nbc.divC.part2.sect2.subsect7.art2.sent1.clause1.subclause1"
                                       number="1">
-                              <text>the design will substantially comply with the British Columbia Building Code and other applicable enactments respecting safety, and</text>
+                              <text>the design will substantially comply with the British Columbia <ref type="term" target="bldng">Building</ref> Code and other applicable enactments respecting safety, and</text>
                            </subclause>
                            <subclause xml:id="nbc.divC.part2.sect2.subsect7.art2.sent1.clause1.subclause2"
                                       number="2">
-                              <text>the construction of the project will substantially comply with the British Columbia Building Code and other applicable enactments respecting safety, not including the construction safety aspects, and</text>
+                              <text>the construction of the project will substantially comply with the British Columbia <ref type="term" target="bldng">Building</ref> Code and other applicable enactments respecting safety, not including the construction safety aspects, and</text>
                            </subclause>
                         </clause>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art2.sent1.clause2" letter="b">
-                           <text>if a building permit is required, deliver to the authority having jurisdiction letters in the forms set out in Schedules A and B. (See the end of Division C and Note A-2.2.7.2.(1)(b).)</text>
+                           <text>if a <ref type="term" target="bldng">building</ref> permit is required, deliver to the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> letters in the forms set out in Schedules A and B. (See the end of Division C and Note A-2.2.7.2.(1)(b).)</text>
                         </clause>
                      </sentence>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect7.art2.sent2" number="2">
-                        <text>If an occupancy permit or final inspection from an authority having jurisdiction is required and before an owner occupies or receives permission to occupy the building, the owner or coordinating registered professional shall deliver to that authority letters in the forms set out in Schedules C-A and C-B (See the end of Division C and Note A-2.2.7.2.(2).)</text>
+                        <text>If an <ref type="term" target="ccpnc">occupancy</ref> permit or final inspection from an <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> is required and before an owner occupies or receives permission to occupy the <ref type="term" target="bldng">building</ref>, the owner or coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> shall deliver to that authority letters in the forms set out in Schedules C-A and C-B (See the end of Division C and Note A-2.2.7.2.(2).)</text>
                      </sentence>
                   </article>
                   <article xml:id="nbc.divC.part2.sect2.subsect7.art3" number="3">
                      <title>Registered Professional Responsibilities</title>
                      <!-- (See Note A-2.2.7.3.) -->
                      <sentence xml:id="nbc.divC.part2.sect2.subsect7.art3.sent1" number="1">
-                        <text>A registered professional of record who signs a letter, the form of which is set out in a Schedule to this Subsection, and an owner who signs or has an agent sign a letter the form of which is set out in a Schedule to this Subsection, shall comply with this Subsection and the provisions of the letter that apply to the person signing.</text>
+                        <text>A <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record who signs a letter, the form of which is set out in a Schedule to this Subsection, and an owner who signs or has an agent sign a letter the form of which is set out in a Schedule to this Subsection, shall comply with this Subsection and the provisions of the letter that apply to the person signing.</text>
                      </sentence>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect7.art3.sent2" number="2">
-                        <text>A registered professional of record or coordinating registered professional who is responsible for a field review shall keep a record of the field review and of any corrective action taken as a result of the field review and shall make the record available to the authority having jurisdiction on the request of that authority.</text>
+                        <text>A <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record or coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> who is responsible for a field review shall keep a record of the field review and of any corrective action taken as a result of the field review and shall make the record available to the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> on the request of that authority.</text>
                      </sentence>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect7.art3.sent3" number="3">
-                        <text>A registered professional of record who is retained to undertake design work and field reviews and who is required to provide letters pursuant to <ref type="internal"
+                        <text>A <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record who is retained to undertake design work and field reviews and who is required to provide letters pursuant to <ref type="internal"
                                 target="nbc.divC.part2.sect2.subsect7.art2.sent1.clause2"
                                 display-type="short">Clause 2.2.7.2.(1)(b)</ref> shall</text>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art3.sent3.clause1" letter="a">
-                           <text>place their professional seal or stamp on the plans submitted by them in support of the application for a building permit, after ascertaining that they substantially comply with the British Columbia Building Code and other applicable enactments respecting safety,</text>
+                           <text>place their professional seal or stamp on the plans submitted by them in support of the application for a <ref type="term" target="bldng">building</ref> permit, after ascertaining that they substantially comply with the British Columbia <ref type="term" target="bldng">Building</ref> Code and other applicable enactments respecting safety,</text>
                         </clause>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art3.sent3.clause2" letter="b">
-                           <text>provide to the authority having jurisdiction a letter in the form of Schedule C-B (see the end of Division C) after ascertaining that the components of the project for which the registered professional of record is responsible are constructed so as to substantially comply, in all material respects, with</text>
+                           <text>provide to the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> a letter in the form of Schedule C-B (see the end of Division C) after ascertaining that the components of the project for which the <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record is responsible are constructed so as to substantially comply, in all material respects, with</text>
                            <subclause xml:id="nbc.divC.part2.sect2.subsect7.art3.sent3.clause2.subclause1"
                                       number="1">
-                              <text>the plans and supporting documents prepared by the registered professional of record, and</text>
+                              <text>the plans and supporting documents prepared by the <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record, and</text>
                            </subclause>
                            <subclause xml:id="nbc.divC.part2.sect2.subsect7.art3.sent3.clause2.subclause2"
                                       number="2">
-                              <text>the requirements of the British Columbia Building Code and other applicable enactments respecting safety, not including construction safety aspects.</text>
+                              <text>the requirements of the British Columbia <ref type="term" target="bldng">Building</ref> Code and other applicable enactments respecting safety, not including construction safety aspects.</text>
                            </subclause>
                         </clause>
                      </sentence>
@@ -33270,29 +33272,29 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <article xml:id="nbc.divC.part2.sect2.subsect7.art4" number="4">
                      <title>Termination</title>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect7.art4.sent1" number="1">
-                        <text>An owner must not terminate the appointment of a coordinating registered professional or registered professional of record unless</text>
+                        <text>An owner must not terminate the appointment of a coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> or <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record unless</text>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art4.sent1.clause1" letter="a">
-                           <text>the owner immediately replaces the coordinating registered professional or registered professional of record, or</text>
+                           <text>the owner immediately replaces the coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> or <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record, or</text>
                         </clause>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art4.sent1.clause2" letter="b">
                            <text>the owner has complied with Clause (1)(b) and Sentence (2) of <ref type="internal"
                                    target="nbc.divC.part2.sect2.subsect7.art2"
-                                   display-type="short">Article 2.2.7.2.</ref> by delivering letters in the forms set out in Schedule A, B, C-A and C-B, as applicable, to the authority having jurisdiction.</text>
+                                   display-type="short">Article 2.2.7.2.</ref> by delivering letters in the forms set out in Schedule A, B, C-A and C-B, as applicable, to the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref>.</text>
                         </clause>
                      </sentence>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect7.art4.sent2" number="2">
                         <text>In respect of a project to which this Subsection applies,</text>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art4.sent2.clause1" letter="a">
-                           <text>if the coordinating registered professional ceases to be retained at any time before the completion of the project, both the owner and the coordinating registered professional shall notify the authority having jurisdiction, and</text>
+                           <text>if the coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> ceases to be retained at any time before the completion of the project, both the owner and the coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> shall notify the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref>, and</text>
                         </clause>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art4.sent2.clause2" letter="b">
-                           <text>if a registered professional of record ceases to be retained at any time before the completion of the project, both the coordinating registered professional and the registered professional of record shall notify the authority having jurisdiction.</text>
+                           <text>if a <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record ceases to be retained at any time before the completion of the project, both the coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> and the <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record shall notify the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref>.</text>
                         </clause>
                      </sentence>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect7.art4.sent3" number="3">
                         <text>Notification under Sentences (1) and (2) shall be made,</text>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art4.sent3.clause1" letter="a">
-                           <text>if possible, before the coordinating registered professional or registered professional of record, as the case may be, ceases to be retained, or</text>
+                           <text>if possible, before the coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> or <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record, as the case may be, ceases to be retained, or</text>
                         </clause>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art4.sent3.clause2" letter="b">
                            <text>if advance notice is not possible, as soon as possible..</text>
