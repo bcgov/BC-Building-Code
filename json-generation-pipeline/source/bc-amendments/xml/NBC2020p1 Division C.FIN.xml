@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <bc-overlay id="bc-divc-amendments-2023" version="1.0" nbc-target-version="2020" effective-date="2023-12-15">
 
-    <!-- ================================================================== -->
-    <!-- BC BUILDING CODE AMENDMENTS TO NBC 2020 - Division C.FIN          -->
-    <!-- Source: NBC2020p1 Division C.FIN.docx (440 tracked-change paras)  -->
-    <!-- ================================================================== -->
+    
+    
+    
+    
 
     <metadata>
         <title>BC Building Code Amendments to NBC 2020 - Division C.FIN</title>
@@ -16,9 +16,9 @@
 
     <amendments>
 
-        <!-- Amend 001: Article 1.2.1.1 | Non-defined Terms -->
+        
         <amendment id="bc-001" sequence="1" description="Replace Article 1.2.1.1 (Non-defined Terms) - 1/4 sentences changed">
-            <target type="canonical-id" id="nbc.divC.part1.sect2.subsect1.art1"/>
+            <target type="canonical-id" id="nbc.divC.part1.sect2.subsect1.art1" />
             <replace preserve-references="true">
                 <new-content source="bc">
                     <article xml:id="nbc.divC.part1.sect2.subsect1.art1" number="1">
@@ -40,9 +40,9 @@
             </replace>
         </amendment>
 
-        <!-- Amend 002: Article 2.2.1.1 | Conformance with Administrative Requirements -->
+        
         <amendment id="bc-002" sequence="2" description="Replace Article 2.2.1.1 (Conformance with Administrative Requirem) - 1/1 sentences changed">
-            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect1.art1"/>
+            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect1.art1" />
             <replace preserve-references="true">
                 <new-content source="bc">
                     <article xml:id="nbc.divC.part2.sect2.subsect1.art1" number="1">
@@ -55,9 +55,9 @@
             </replace>
         </amendment>
 
-        <!-- Amend 003: Article 2.2.1.2 | Structural Design -->
+        
         <amendment id="bc-003" sequence="3" description="Replace Article 2.2.1.2 (Structural Design) - 1/1 sentences changed">
-            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect1.art2"/>
+            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect1.art2" />
             <replace preserve-references="true">
                 <new-content source="bc">
                     <article xml:id="nbc.divC.part2.sect2.subsect1.art2" number="2">
@@ -70,9 +70,9 @@
             </replace>
         </amendment>
 
-        <!-- Amend 004: Article 2.2.2.1 | General Information Required -->
+        
         <amendment id="bc-004" sequence="4" description="Replace Article 2.2.2.1 (General Information Required) - 10/12 sentences changed">
-            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect2.art1"/>
+            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect2.art1" />
             <replace preserve-references="true">
                 <new-content source="bc">
                     <article xml:id="nbc.divC.part2.sect2.subsect2.art1" number="1">
@@ -118,9 +118,9 @@
             </replace>
         </amendment>
 
-        <!-- Amend 005: Article 2.2.2.2 | Site Plans -->
+        
         <amendment id="bc-005" sequence="5" description="Replace Article 2.2.2.2 (Site Plans) - 4/9 sentences changed">
-            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect2.art2"/>
+            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect2.art2" />
             <replace preserve-references="true">
                 <new-content source="bc">
                     <article xml:id="nbc.divC.part2.sect2.subsect2.art2" number="2">
@@ -157,24 +157,24 @@
             </replace>
         </amendment>
 
-        <!-- Amend 006: Article 2.2.8.1 | Application -->
+        
         <amendment id="bc-006" sequence="6" description="Replace Article 2.2.8.1 (Application) - 1/1 sentences changed">
-            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect8.art1"/>
+            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect8.art1" />
             <replace preserve-references="true">
                 <new-content source="bc">
                     <article xml:id="nbc.divC.part2.sect2.subsect8.art1" number="1">
                         <title>Application</title>
                         <sentence xml:id="nbc.divC.part2.sect2.subsect8.art1.sent1" number="1">
-                            <text>This Subsection applies only to houses with or without a secondary suite including their common spaces and to buildings containing only dwelling units and common spaces whose total <ref type="term" target="flr-r">floor area</ref> does not exceed 20% of the total <ref type="term" target="flr-r">floor area</ref> of the <ref type="term" target="bldng">building</ref> that are modeled in accordance with Subsection 9.36.5. and 9.37.1 of Division B as applicable .(See <ref type="internal" target="nbc.divC.part2.appendix.appnote4" display-type="short">Note A-2.2.8.1.(1)</ref>.) (See also Sentence 9.36.1.2.(1) and Note A-9.36.1.3.(3) of Division B.)</text>
+                            <text>This Subsection applies only to houses with or without a secondary suite including their common spaces and to buildings containing only dwelling units and common spaces whose total <ref type="term" target="flr-r">floor area</ref> does not exceed 20% of the total <ref type="term" target="flr-r">floor area</ref> of the <ref type="term" target="bldng">building</ref> that are modeled in accordance with Subsection 9.36.5. and 9.37.1 of Division B as applicable .(See <ref type="internal" target="nbc.divC.part2.appendix.appnote8" display-type="short">Note A-2.2.8.1.(1)</ref>.) (See also <ref type="internal" target="nbc.divBV2.part9.sect36.subsect1.art2.sent1" display-type="short">Sentence 9.36.1.2.(1)</ref> and Note A-9.36.1.3.(3) of Division B.)</text>
                         </sentence>
                     </article>
                 </new-content>
             </replace>
         </amendment>
 
-        <!-- Amend 007: Article 2.2.8.2 | Information Required on Drawings and Specification -->
+        
         <amendment id="bc-007" sequence="7" description="Replace Article 2.2.8.2 (Information Required on Drawings and Spe) - 2/12 sentences changed">
-            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect8.art2"/>
+            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect8.art2" />
             <replace preserve-references="true">
                 <new-content source="bc">
                     <article xml:id="nbc.divC.part2.sect2.subsect8.art2" number="2">
@@ -220,9 +220,9 @@
             </replace>
         </amendment>
 
-        <!-- Amend 008: Article 2.2.8.3 | House Performance Compliance Calculation Report -->
+        
         <amendment id="bc-008" sequence="8" description="Replace Article 2.2.8.3 (House Performance Compliance Calculation) - 19/34 sentences changed">
-            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect8.art3"/>
+            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect8.art3" />
             <replace preserve-references="true">
                 <new-content source="bc">
                     <article xml:id="nbc.divC.part2.sect2.subsect8.art3" number="3">
@@ -259,7 +259,7 @@
                             <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause3" letter="c">
                                 <text>an energy performance data summary containing</text>
                                 <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause3.subclause1" number="1">
-                                    <text>the annual energy consumption of all energy sources calculated for the proposed house (see <ref type="internal" target="nbc.divC.part2.appendix.appnote5" display-type="short">Note A-2.2.8.3.(2)</ref>(c)(i)), and</text>
+                                    <text>the annual energy consumption of all energy sources calculated for the proposed house (see <ref type="internal" target="nbc.divC.part2.appendix.appnote8" display-type="short">Note A-2.2.8.3.(2)</ref>(c)(i)), and</text>
                                 </subclause>
                                 <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause3.subclause2" number="2">
                                     <text>the house energy target of all energy sources calculated for the reference house,</text>
@@ -280,10 +280,10 @@
                                     <text>Subsection 9.36.5. of Division B,</text>
                                 </subclause>
                                 <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause5.subclause2" number="2">
-                                    <text>Sentence 9.36.6.3.(3) of Division B, or</text>
+                                    <text><ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent3" display-type="short">Sentence 9.36.6.3.(3)</ref> of Division B, or</text>
                                 </subclause>
                                 <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause5.subclause3" number="3">
-                                    <text>Sentence 9.36.6.4.(2) of Division B, and</text>
+                                    <text><ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art4.sent2" display-type="short">Sentence 9.36.6.4.(2)</ref> of Division B, and</text>
                                 </subclause>
                             </clause>
                             <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause6" letter="f">
@@ -311,7 +311,7 @@
                                 <text>where applicable, the percent heat loss reduction and percent improvement,</text>
                             </clause>
                             <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3.clause5" letter="e">
-                                <text>for buildings conforming to Steps 3 to 5, the airtightness of the <ref type="term" target="bldng">building</ref> as tested that is accounted for in accordance with Sentence 9.36.6.4.(3) of Division B, and derived in accordance with Subsection 9.36.7., recorded in</text>
+                                <text>for buildings conforming to Steps 3 to 5, the airtightness of the <ref type="term" target="bldng">building</ref> as tested that is accounted for in accordance with <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art4.sent3" display-type="short">Sentence 9.36.6.4.(3)</ref> of Division B, and derived in accordance with Subsection 9.36.7., recorded in</text>
                                 <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3.clause5.subclause1" number="1">
                                     <text>air changes per hour at 50 Pa,</text>
                                 </subclause>
@@ -334,9 +334,9 @@
             </replace>
         </amendment>
 
-        <!-- Amend 009: Insert new Subsection 2.2.9 (Energy Performance) - Articles 2.2.9.1 + 2.2.9.2 -->
+        
         <amendment id="bc-009" sequence="9" description="Insert new Subsection 2.2.9 (Energy Performance) with Articles 2.2.9.1 and 2.2.9.2 - entirely new BC content">
-            <target type="position" parent-id="nbc.divC.part2.sect2" position="last-child"/>
+            <target type="position" parent-id="nbc.divC.part2.sect2" position="last-child" />
             <insert><new-content source="bc">
                     <subsection xml:id="nbc.divC.part2.sect2.subsect9" number="9"><title>Energy Performance</title><article xml:id="nbc.divC.part2.sect2.subsect9.art1" number="1">
                         <title>Application</title>
@@ -428,9 +428,9 @@
             </subsection></new-content></insert>
         </amendment>
 
-        <!-- Amend 011: Article 2.3.1.1 | Application -->
+        
         <amendment id="bc-011" sequence="11" description="Replace Article 2.3.1.1 (Application) - 3/3 sentences changed">
-            <target type="canonical-id" id="nbc.divC.part2.sect3.subsect1.art1"/>
+            <target type="canonical-id" id="nbc.divC.part2.sect3.subsect1.art1" />
             <replace preserve-references="true">
                 <new-content source="bc">
                     <article xml:id="nbc.divC.part2.sect3.subsect1.art1" number="1">
@@ -449,9 +449,9 @@
             </replace>
         </amendment>
 
-        <!-- Amend 012: Article 2.3.1.2 | Documentation -->
+        
         <amendment id="bc-012" sequence="12" description="Insert Article 2.3.1.2 (Documentation) - 2/8 sentences changed">
-            <target type="position" parent-id="nbc.divC.part2.sect3.subsect1" position="last-child"/>
+            <target type="position" parent-id="nbc.divC.part2.sect3.subsect1" position="last-child" />
             <insert><new-content source="bc">
                     <article xml:id="nbc.divC.part2.sect3.subsect1.art2" number="2">
                         <title>Documentation</title>
@@ -483,9 +483,9 @@
             </new-content></insert>
         </amendment>
 
-        <!-- Amend 013: Subsect 2.2.7 Professional Design and Review - full BC replacement -->
+        
         <amendment id="bc-013" sequence="13" description="Replace Subsection 2.2.7 (Professional Design and Review) with BC-specific registered professional requirements (Articles 2.2.7.1-2.2.7.4)">
-            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect7"/>
+            <target type="canonical-id" id="nbc.divC.part2.sect2.subsect7" />
             <replace preserve-references="false">
                 <new-content source="bc">
                     <subsection xml:id="nbc.divC.part2.sect2.subsect7" number="7">
@@ -505,7 +505,7 @@
                                     <subclause xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1.clause3.subclause1" number="1">
                                         <text>structural components that are not within the scope of Part 9 of Division B</text>
                                     </subclause>
-                                <!-- (See Note A-2.2.7.1.(1)(c)(i).), -->
+                                
                                     <subclause xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1.clause3.subclause2" number="2">
                                         <text>geotechnical conditions at <ref type="term" target="bldng">building</ref> sites that are not within the scope of Part 9 of Division B,</text>
                                     </subclause>
@@ -519,11 +519,11 @@
                             </sentence>
                         </article>
                         <article xml:id="nbc.divC.part2.sect2.subsect7.art2" number="2">
-                            <title>Before Construction or Alteration</title>
+                            <title>Owner Responsibilities</title>
                             <sentence xml:id="nbc.divC.part2.sect2.subsect7.art2.sent1" number="1">
                                 <text>Before the construction of or the <ref type="term" target="ltrtn">alteration</ref> to a <ref type="term" target="bldng">building</ref>, the owner shall</text>
                                 <clause xml:id="nbc.divC.part2.sect2.subsect7.art2.sent1.clause1" letter="a">
-                                    <text>retain a coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> to coordinate all design work and field reviews of the registered professionals of record required for the project in order to ascertain that (see Note A-2.2.7.2.(1)(a))</text>
+                                    <text>retain a coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> to coordinate all design work and field reviews of the registered professionals of record required for the project in order to ascertain that (see <ref type="internal" target="nbc.divC.part2.appendix.appnote7" display-type="short">Note A-2.2.7.2.(1)</ref>(a))</text>
                                     <subclause xml:id="nbc.divC.part2.sect2.subsect7.art2.sent1.clause1.subclause1" number="1">
                                         <text>the design will substantially comply with the British Columbia <ref type="term" target="bldng">Building</ref> Code and other applicable enactments respecting safety, and</text>
                                     </subclause>
@@ -532,16 +532,16 @@
                                     </subclause>
                                 </clause>
                                 <clause xml:id="nbc.divC.part2.sect2.subsect7.art2.sent1.clause2" letter="b">
-                                    <text>if a <ref type="term" target="bldng">building</ref> permit is required, deliver to the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> letters in the forms set out in Schedules A and B. (See the end of Division C and Note A-2.2.7.2.(1)(b).)</text>
+                                    <text>if a <ref type="term" target="bldng">building</ref> permit is required, deliver to the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> letters in the forms set out in Schedules A and B. (See the end of Division C and <ref type="internal" target="nbc.divC.part2.appendix.appnote7" display-type="short">Note A-2.2.7.2.(1)</ref>(b).)</text>
                                 </clause>
                             </sentence>
                             <sentence xml:id="nbc.divC.part2.sect2.subsect7.art2.sent2" number="2">
-                                <text>If an <ref type="term" target="ccpnc">occupancy</ref> permit or final inspection from an <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> is required and before an owner occupies or receives permission to occupy the <ref type="term" target="bldng">building</ref>, the owner or coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> shall deliver to that authority letters in the forms set out in Schedules C-A and C-B (See the end of Division C and Note A-2.2.7.2.(2).)</text>
+                                <text>If an <ref type="term" target="ccpnc">occupancy</ref> permit or final inspection from an <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> is required and before an owner occupies or receives permission to occupy the <ref type="term" target="bldng">building</ref>, the owner or coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> shall deliver to that authority letters in the forms set out in Schedules C-A and C-B (See the end of Division C and <ref type="internal" target="nbc.divC.part2.appendix.appnote7" display-type="short">Note A-2.2.7.2.(2)</ref>.)</text>
                             </sentence>
                         </article>
                         <article xml:id="nbc.divC.part2.sect2.subsect7.art3" number="3">
                             <title>Registered Professional Responsibilities</title>
-                            <!-- (See Note A-2.2.7.3.) -->
+                            
                             <sentence xml:id="nbc.divC.part2.sect2.subsect7.art3.sent1" number="1">
                                 <text>A <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record who signs a letter, the form of which is set out in a Schedule to this Subsection, and an owner who signs or has an agent sign a letter the form of which is set out in a Schedule to this Subsection, shall comply with this Subsection and the provisions of the letter that apply to the person signing.</text>
                             </sentence>
@@ -549,7 +549,7 @@
                                 <text>A <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record or coordinating <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> who is responsible for a field review shall keep a record of the field review and of any corrective action taken as a result of the field review and shall make the record available to the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> on the request of that authority.</text>
                             </sentence>
                             <sentence xml:id="nbc.divC.part2.sect2.subsect7.art3.sent3" number="3">
-                                <text>A <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record who is retained to undertake design work and field reviews and who is required to provide letters pursuant to <ref type="internal" target="nbc.divC.part2.sect2.subsect7.art2.sent1.clause2" display-type="short">Clause 2.2.7.2.(1)(b)</ref> shall</text>
+                                <text>A <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record who is retained to undertake design work and field reviews and who is required to provide letters pursuant to <ref type="internal" target="nbc.divB.part2.sect2.subsect7.art2.sent1.clause2" display-type="short">Clause 2.2.7.2.(1)(b)</ref> shall</text>
                                 <clause xml:id="nbc.divC.part2.sect2.subsect7.art3.sent3.clause1" letter="a">
                                     <text>place their professional seal or stamp on the plans submitted by them in support of the application for a <ref type="term" target="bldng">building</ref> permit, after ascertaining that they substantially comply with the British Columbia <ref type="term" target="bldng">Building</ref> Code and other applicable enactments respecting safety,</text>
                                 </clause>
@@ -599,9 +599,9 @@
             </replace>
         </amendment>
 
-        <!-- Amend 014: Appnote | A-2.2.1.2.(1)   Structural Design. Part 4 of Division B is w -->
+        
         <amendment id="bc-014" sequence="14" description="Replace appnote A-2.2.1.2.(1)   Structural Design. Part 4 of Division B is written on the assump">
-            <target type="canonical-id" id="nbc.divC.part2.appendix.appnote1"/>
+            <target type="canonical-id" id="nbc.divC.part2.appendix.appnote1" />
             <replace preserve-references="false">
                 <new-content source="bc">
                     <application-note xml:id="nbc.divC.part2.appendix.appnote1">
@@ -613,9 +613,9 @@
             </replace>
         </amendment>
 
-        <!-- Amend 015: Appnote | A-2.2.7.   Professional Design and Review.  This Subsection  -->
+        
         <amendment id="bc-015" sequence="15" description="Insert new BC appnote: A-2.2.7.   Professional Design and Review.  This Subsection provides f">
-            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child"/>
+            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child" />
             <insert><new-content source="bc">
                     <application-note xml:id="nbc.divC.part2.appendix.appnote7">
                         <number>2.2.7.</number>
@@ -628,9 +628,9 @@
             </new-content></insert>
         </amendment>
 
-        <!-- Amend 016: Appnote | A-2.2.7.1.(1)(c)(i)   Structural Components.  The reference  -->
+        
         <amendment id="bc-016" sequence="16" description="Insert new BC appnote: A-2.2.7.1.(1)(c)(i)   Structural Components.  The reference to “struct">
-            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child"/>
+            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child" />
             <insert><new-content source="bc">
                     <application-note xml:id="nbc.divC.part2.appendix.appnote8">
                         <number>2.2.7.1.(1)(c)(i)</number>
@@ -640,9 +640,9 @@
             </new-content></insert>
         </amendment>
 
-        <!-- Amend 017: Appnote | A-2.2.7.2.(1)(a)   Coordinating Registered Professional.  Th -->
+        
         <amendment id="bc-017" sequence="17" description="Insert new BC appnote: A-2.2.7.2.(1)(a)   Coordinating Registered Professional.  The coordina">
-            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child"/>
+            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child" />
             <insert><new-content source="bc">
                     <application-note xml:id="nbc.divC.part2.appendix.appnote9">
                         <number>2.2.7.2.(1)(a)</number>
@@ -652,9 +652,9 @@
             </new-content></insert>
         </amendment>
 
-        <!-- Amend 018: Appnote | A-2.2.7.2.(1)(b)   Schedule B.  The purpose of Schedule B is -->
+        
         <amendment id="bc-018" sequence="18" description="Insert new BC appnote: A-2.2.7.2.(1)(b)   Schedule B.  The purpose of Schedule B is to clearl">
-            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child"/>
+            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child" />
             <insert><new-content source="bc">
                     <application-note xml:id="nbc.divC.part2.appendix.appnote10">
                         <number>2.2.7.2.(1)(b)</number>
@@ -664,9 +664,9 @@
             </new-content></insert>
         </amendment>
 
-        <!-- Amend 019: Appnote | A-2.2.7.2.(2)   Schedule C-A.   Schedule C-A provides confir -->
+        
         <amendment id="bc-019" sequence="19" description="Insert new BC appnote: A-2.2.7.2.(2)   Schedule C-A.   Schedule C-A provides confirmation tha">
-            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child"/>
+            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child" />
             <insert><new-content source="bc">
                     <application-note xml:id="nbc.divC.part2.appendix.appnote11">
                         <number>2.2.7.2.(2)</number>
@@ -676,9 +676,9 @@
             </new-content></insert>
         </amendment>
 
-        <!-- Amend 020: Appnote | A-2.2.7.3.   Demonstration of the Coordinated Fire and Life  -->
+        
         <amendment id="bc-020" sequence="20" description="Insert new BC appnote: A-2.2.7.3.   Demonstration of the Coordinated Fire and Life Safety Sys">
-            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child"/>
+            <target type="position" parent-id="nbc.divC.part2.appendix" position="last-child" />
             <insert><new-content source="bc">
                     <application-note xml:id="nbc.divC.part2.appendix.appnote12">
                         <number>2.2.7.3.</number>
@@ -1008,9 +1008,9 @@
             </new-content></insert>
         </amendment>
 
-        <!-- Amend 021: Appnote | A-2.3.1.    Alternative Solutions. Beyond the purposes of de -->
+        
         <amendment id="bc-021" sequence="21" description="Replace appnote A-2.3.1.    Alternative Solutions. Beyond the purposes of demonstrating complian">
-            <target type="canonical-id" id="nbc.divC.part2.appendix.appnote6"/>
+            <target type="canonical-id" id="nbc.divC.part2.appendix.appnote6" />
             <replace preserve-references="false">
                 <new-content source="bc">
                     <application-note xml:id="nbc.divC.part2.appendix.appnote6">

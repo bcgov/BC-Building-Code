@@ -1,8 +1,8 @@
 BC BUILDING CODE - BROKEN CROSS-REFERENCES REPORT
-Generated: 2026-02-23T10:18:34.316307-08:00
+Generated: 2026-02-23T18:17:17.028041-08:00
 
 Total Broken References: 263
-Total Internal References: 17767
+Total Internal References: 17774
 ================================================================
 
 1. Source: bc-scnd-t

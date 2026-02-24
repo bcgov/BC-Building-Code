@@ -236,6 +236,21 @@
                 </fn:array>
             </xsl:if>
             
+            <!-- Extract definition lists from text element -->
+            <xsl:if test="text//list[@type='definition']">
+                <fn:array key="definitions">
+                    <xsl:for-each select="text//list[@type='definition']/item">
+                        <fn:map>
+                            <xsl:if test="@xml:id">
+                                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                            </xsl:if>
+                            <fn:string key="term"><xsl:apply-templates select="term" mode="text"/></fn:string>
+                            <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
+            
             <xsl:if test="clause">
                 <fn:array key="clauses">
                     <xsl:apply-templates select="clause[position() &lt;= $max-clauses]" mode="json"/>
@@ -432,6 +447,12 @@
     </xsl:template>
     <xsl:template match="super" mode="rich">^{<xsl:value-of select="."/>}</xsl:template>
     <xsl:template match="sub" mode="rich">_{<xsl:value-of select="."/>}</xsl:template>
+    
+    <!-- Skip definition lists in rich mode - they're extracted separately -->
+    <xsl:template match="list[@type='definition']" mode="rich" priority="2">
+        <!-- Output nothing - definition lists are extracted as structured data -->
+    </xsl:template>
+    
     <xsl:template match="revision-history" mode="rich">
         <xsl:variable name="cur" select="revision[@status='current'][last()]"/>
         <xsl:choose>

@@ -649,6 +649,21 @@
                         </fn:array>
                     </xsl:if>
                     
+                    <!-- Extract definition lists from text element -->
+                    <xsl:if test="$content-node/text//list[@type='definition']">
+                        <fn:array key="definitions">
+                            <xsl:for-each select="$content-node/text//list[@type='definition']/item">
+                                <fn:map>
+                                    <xsl:if test="@xml:id">
+                                        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                    </xsl:if>
+                                    <fn:string key="term"><xsl:apply-templates select="term" mode="text-only"/></fn:string>
+                                    <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
+                                </fn:map>
+                            </xsl:for-each>
+                        </fn:array>
+                    </xsl:if>
+                    
                     <!-- Intent reference if present -->
                     <xsl:if test="$content-node/intent-ref">
                         <fn:string key="intent_reference"><xsl:value-of select="$content-node/intent-ref/@target"/></fn:string>
@@ -700,6 +715,21 @@
                     <xsl:if test="text//equation">
                         <fn:array key="equations">
                             <xsl:apply-templates select="text//equation" mode="equation-json"/>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <!-- Extract definition lists from text element -->
+                    <xsl:if test="text//list[@type='definition']">
+                        <fn:array key="definitions">
+                            <xsl:for-each select="text//list[@type='definition']/item">
+                                <fn:map>
+                                    <xsl:if test="@xml:id">
+                                        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                    </xsl:if>
+                                    <fn:string key="term"><xsl:apply-templates select="term" mode="text-only"/></fn:string>
+                                    <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
+                                </fn:map>
+                            </xsl:for-each>
                         </fn:array>
                     </xsl:if>
                     
@@ -1477,7 +1507,7 @@
     </xsl:template>
     
     <xsl:template match="text()" mode="rich-text-json">
-        <xsl:value-of select="."/>
+        <xsl:value-of select="normalize-space(.)"/>
     </xsl:template>
     
     <xsl:template match="emphasis" mode="rich-text-json">
@@ -1552,6 +1582,11 @@
     
     <xsl:template match="see-also" mode="rich-text-json">
         <xsl:apply-templates select="node()" mode="rich-text-json"/>
+    </xsl:template>
+    
+    <!-- Skip definition lists in rich-text-json mode - they're extracted separately -->
+    <xsl:template match="list[@type='definition']" mode="rich-text-json" priority="2">
+        <!-- Output nothing - definition lists are extracted as structured data -->
     </xsl:template>
     
     <!-- Revision history processing for JSON output (snapshot approach for date-based versioning) -->
@@ -1805,7 +1840,7 @@
     </xsl:template>
     
     <xsl:template match="text()" mode="text-only">
-        <xsl:value-of select="."/>
+        <xsl:value-of select="normalize-space(.)"/>
     </xsl:template>
     
     <xsl:template match="emphasis | super | sub | ref | measurement" mode="text-only">
