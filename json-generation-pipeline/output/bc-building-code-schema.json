@@ -687,7 +687,35 @@
           "description": "Source of the subsection - 'nbc' for National Building Code, 'bc' for BC-specific modifications"
         },
         "title": {
-          "type": "string"
+          "oneOf": [
+            {
+              "type": "string",
+              "description": "Title as a simple string (when no revision history)"
+            },
+            {
+              "type": "object",
+              "required": ["revised", "text", "revisions"],
+              "description": "Title with revision history (when title has been amended)",
+              "properties": {
+                "revised": {
+                  "type": "boolean",
+                  "const": true,
+                  "description": "Always true when title has revision history"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Current title text from the latest revision"
+                },
+                "revisions": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/definitions/title_revision"
+                  },
+                  "description": "Revision history for the title (original and all revisions)"
+                }
+              }
+            }
+          ]
         },
         "see_also": {
           "type": "string"
@@ -1592,6 +1620,45 @@
           "items": {
             "$ref": "#/definitions/article"
           }
+        },
+        "change_summary": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "title_revision": {
+      "type": "object",
+      "required": ["type", "effective_date", "text"],
+      "description": "Revision entry for title elements (child-element amendments)",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["original", "revision"]
+        },
+        "revision_type": {
+          "type": "string",
+          "enum": ["amendment", "errata", "policy", "accessibility", "correction"]
+        },
+        "revision_id": {
+          "type": "string"
+        },
+        "sequence": {
+          "type": ["number", "null"]
+        },
+        "effective_date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["current", "superseded"]
+        },
+        "text": {
+          "type": "string",
+          "description": "Title text content"
         },
         "change_summary": {
           "type": "string"

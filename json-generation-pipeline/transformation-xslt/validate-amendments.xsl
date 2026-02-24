@@ -292,10 +292,13 @@
         <xsl:variable name="source-file-index" select="$amendment/@source-file-index"/>
         <xsl:variable name="sequence" select="$amendment/@sequence"/>
         <xsl:variable name="operation" select="local-name($amendment/*[2])"/>
-        <!-- Get target: use @id for canonical-id type, @parent-id for position type, or @xpath for xpath type -->
+        <!-- Get target: use @id for canonical-id type, @parent-id for position type, child-element for child-element type, or @xpath for xpath type -->
         <xsl:variable name="target" select="
             if ($amendment/target/@type = 'position') then
                 concat($amendment/target/@parent-id, ' (', $amendment/target/@position, ')')
+            else if ($amendment/target/@type = 'child-element') then
+                concat($amendment/target/@parent-id, '/', $amendment/target/@element-name, '[', 
+                       if ($amendment/target/@position) then $amendment/target/@position else '1', ']')
             else if ($amendment/target/@type = 'xpath') then
                 concat('XPath: ', $amendment/target/@xpath, ' (', $amendment/target/@position, ')')
             else
@@ -338,10 +341,65 @@
     <xsl:function name="bc:validate-replace">
         <xsl:param name="amendment"/>
         
-        <xsl:variable name="target-id" select="$amendment/target/@id"/>
+        <xsl:variable name="target" select="$amendment/target"/>
+        <xsl:variable name="target-id" select="$target/@id"/>
         <xsl:variable name="new-content" select="$amendment/replace/new-content/*"/>
         
         <xsl:choose>
+            <!-- Handle child-element target type -->
+            <xsl:when test="$target/@type = 'child-element'">
+                <xsl:variable name="parent-id" select="$target/@parent-id"/>
+                <xsl:variable name="element-name" select="$target/@element-name"/>
+                <xsl:variable name="position" select="if ($target/@position) then xs:integer($target/@position) else 1"/>
+                
+                <xsl:variable name="parent-element" select="($bc-code-doc//*[@xml:id = $parent-id or @xml:id = replace($parent-id, '^nbc\.', 'bc.')])[1]"/>
+                
+                <xsl:choose>
+                    <xsl:when test="not($parent-element)">
+                        <xsl:attribute name="status">error</xsl:attribute>
+                        <xsl:attribute name="message">Parent element not found</xsl:attribute>
+                        <xsl:attribute name="error">Parent with ID '<xsl:value-of select="$parent-id"/>' does not exist</xsl:attribute>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <!-- Find the target child element by name and position -->
+                        <xsl:variable name="child-elements" select="$parent-element/*[local-name() = $element-name]"/>
+                        <xsl:variable name="target-child" select="$child-elements[$position]"/>
+                        
+                        <xsl:choose>
+                            <xsl:when test="not($target-child)">
+                                <xsl:attribute name="status">error</xsl:attribute>
+                                <xsl:attribute name="message">Child element not found</xsl:attribute>
+                                <xsl:attribute name="error">Child element '<xsl:value-of select="$element-name"/>' at position <xsl:value-of select="$position"/> not found in parent</xsl:attribute>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <!-- Check if the child element has revision-history -->
+                                <xsl:variable name="has-revision" select="exists($target-child[@revised='yes']/revision-history)"/>
+                                <!-- Use original-id if available (from combined amendments), otherwise use id -->
+                                <xsl:variable name="revision-id" select="if ($amendment/@original-id) then $amendment/@original-id else $amendment/@id"/>
+                                <xsl:variable name="revision-matches" select="exists($target-child//revision[@id = $revision-id])"/>
+                                
+                                <xsl:choose>
+                                    <xsl:when test="$has-revision and $revision-matches">
+                                        <xsl:attribute name="status">success</xsl:attribute>
+                                        <xsl:attribute name="message">Child element successfully replaced with revision history</xsl:attribute>
+                                    </xsl:when>
+                                    <xsl:when test="$has-revision">
+                                        <xsl:attribute name="status">warning</xsl:attribute>
+                                        <xsl:attribute name="message">Child element has revision history but revision ID doesn't match</xsl:attribute>
+                                        <xsl:attribute name="error">Expected revision ID '<xsl:value-of select="$revision-id"/>' not found in revision-history</xsl:attribute>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <xsl:attribute name="status">warning</xsl:attribute>
+                                        <xsl:attribute name="message">Child element found but no revision history present</xsl:attribute>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+            
+            <!-- Handle canonical-id target type (existing logic) -->
             <xsl:when test="$new-content">
                 <!-- For replace operations, check if the NEW content exists (not the original target) -->
                 <xsl:variable name="new-id" select="($new-content/@xml:id, $new-content/@bc-id)[1]"/>
