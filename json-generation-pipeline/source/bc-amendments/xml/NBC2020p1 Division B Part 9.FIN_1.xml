@@ -4788,7 +4788,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="3">HWP ≤ 0.3</entry>
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure23">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">0.65</entry>
@@ -4805,7 +4805,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row5">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure24">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">1.33</entry>
@@ -4822,7 +4822,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row6">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure25">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="Single storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">2.02</entry>
@@ -4842,7 +4842,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="3">0.3 &lt; HWP ≤ 0.4</entry>
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure26">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">0.86</entry>
@@ -4859,7 +4859,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row8">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure27">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">1.78</entry>
@@ -4876,7 +4876,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row9">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure28">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="Single storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">2.69</entry>
@@ -4896,7 +4896,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="3">0.4 &lt; HWP ≤ 0.5</entry>
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure29">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">1.08</entry>
@@ -4913,7 +4913,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row11">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure30">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">2.22</entry>
@@ -4930,7 +4930,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row12">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure31">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="Single storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">3.37</entry>
@@ -4950,7 +4950,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="3">0.5 &lt; HWP ≤ 0.6</entry>
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure32">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">1.29</entry>
@@ -4967,7 +4967,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row14">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure33">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">2.67</entry>
@@ -4984,7 +4984,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row15">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure34">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="Single storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">4.04</entry>
@@ -5004,7 +5004,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="3">0.6 &lt; HWP ≤ 0.9</entry>
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure35">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">1.94</entry>
@@ -5021,7 +5021,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row17">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure36">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">4.00</entry>
@@ -5038,7 +5038,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row18">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure37">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="Single storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">6.06</entry>
@@ -5058,7 +5058,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="3">0.9 &lt; HWP ≤ 1.2</entry>
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure38">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">2.59</entry>
@@ -5075,7 +5075,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row20">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure39">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">5.33</entry>
@@ -5092,7 +5092,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1.row21">
                                     <entry>
                                         <figure xml:id="nbc.divBV2.part9.figure40">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="Single storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="Single storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry align="center">8.08</entry>
@@ -5428,7 +5428,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="18">S<sub>max</sub> ≤ 0.2</entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure01">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -5513,7 +5513,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row7">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure02">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -5598,7 +5598,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row13">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure03">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="One storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="One storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -5688,7 +5688,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="18">0.2 &lt; S<sub>max</sub> ≤ 0.4</entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure04">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -5773,7 +5773,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row25">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure05">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -5858,7 +5858,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row31">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure06">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="One storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="One storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -5948,7 +5948,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="18">0.4 &lt; S<sub>max</sub> ≤ 0.6</entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure07">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6033,7 +6033,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row43">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure08">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6118,7 +6118,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row49">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure09">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="One storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="One storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6208,7 +6208,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="18">0.6 &lt; S<sub>max</sub> ≤ 0.8</entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure10">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6293,7 +6293,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row61">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure11">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6378,7 +6378,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row67">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure12">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="One storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="One storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6468,7 +6468,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="18">0.8 &lt; S<sub>max</sub> ≤ 1.2</entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure13">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6553,7 +6553,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row79">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure14">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6638,7 +6638,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row85">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure15">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="One storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="One storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6728,7 +6728,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="18">1.2 &lt; S<sub>max</sub> ≤ 1.6</entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure16">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6813,7 +6813,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row97">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure17">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6898,7 +6898,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row103">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure18">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="One storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="One storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -6988,7 +6988,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="18">1.6 &lt; S<sub>max</sub> ≤ 2.0</entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure19">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -7073,7 +7073,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row115">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure20">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -7158,7 +7158,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row121">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure21">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="One storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="One storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -7248,7 +7248,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="18">2.0 &lt; S<sub>max</sub> ≤ 2.6</entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure22">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -7333,7 +7333,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row133">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure23">
-                                            <graphic src="bc-graphics/gg00555a.eps" alt="Two storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00555a" alt="Two storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -7418,7 +7418,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3.row139">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure24">
-                                            <graphic src="bc-graphics/gg00554a.eps" alt="One storey building configuration"/>
+                                            <graphic src="bc-graphics/gg00554a" alt="One storey building configuration"/>
                                         </figure>
                                     </entry>
                                     <entry>3.1</entry>
@@ -7564,12 +7564,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="37">Heavy construction: apply factor corresponding to Lwl separately to each <ref type="term" target="tr">storey</ref>
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure25">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row1.eps" alt="Building depth diagram showing 3.1 to 18.3 m"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row1" alt="Building depth diagram showing 3.1 to 18.3 m"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure26">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building - storey supporting roof only"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_only" alt="Three storey building - storey supporting roof only"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof only
@@ -7604,7 +7604,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row8">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure27">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building - storey supporting roof and 1 floor"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_1floor_only" alt="Two storey building - storey supporting roof and 1 floor"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof and 1 floor
@@ -7637,7 +7637,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row14">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure28">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - storey supporting roof and 2 floors"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_2floor_only" alt="One storey building - storey supporting roof and 2 floors"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof and 2 floors
@@ -7680,12 +7680,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="18">Masonry veneer cladding perpendicular to <ref type="term" target="br-wl-bnd">braced wall band</ref>, fully clad: <super>(3)</super> apply factor corresponding to Lwl for one <ref type="term" target="bldng">building</ref> face (or two <ref type="term" target="bldng">building</ref> faces)
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure29">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row2.eps" alt="Building depth diagram for masonry veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row2" alt="Building depth diagram for masonry veneer fully clad"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure30">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building - masonry veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_only" alt="Three storey building - masonry veneer fully clad"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof only
@@ -7724,7 +7724,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row27">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure31">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building - masonry veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_1floor_only" alt="Two storey building - masonry veneer fully clad"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof and 1 floor
@@ -7763,7 +7763,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row33">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure32">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - masonry veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_2floor_only" alt="One storey building - masonry veneer fully clad"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof and 2 floors
@@ -7803,12 +7803,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="18">Masonry veneer cladding perpendicular to <ref type="term" target="br-wl-bnd">braced wall band</ref>, partially clad: <super>(3)</super> apply factor corresponding to Lwl for one <ref type="term" target="bldng">building</ref> face (or two <ref type="term" target="bldng">building</ref> faces)
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure33">
-                                            <graphic src="bc-graphics/gg00556a.eps" alt="Building depth diagram for masonry veneer partially clad"/>
+                                            <graphic src="bc-graphics/gg00556a" alt="Building depth diagram for masonry veneer partially clad"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure34">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building - masonry veneer partially clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_only" alt="Three storey building - masonry veneer partially clad"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof only
@@ -7847,7 +7847,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row45">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure35">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building - masonry veneer partially clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_1floor_only" alt="Two storey building - masonry veneer partially clad"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof and 1 floor
@@ -7886,7 +7886,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row51">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure36">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - masonry veneer partially clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_2floor_only" alt="One storey building - masonry veneer partially clad"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof and 2 floors
@@ -7927,12 +7927,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="12">Masonry veneer cladding perpendicular to the <ref type="term" target="br-wl-bnd">braced wall band</ref>, 2- <ref type="term" target="tr">storey</ref> height, partially clad: <super>(3)</super> apply factor corresponding to Lwl for one <ref type="term" target="bldng">building</ref> face( or two <ref type="term" target="bldng">building</ref> faces))
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure37">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row4.eps" alt="Building depth diagram for 2-storey masonry veneer"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row4" alt="Building depth diagram for 2-storey masonry veneer"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure38">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange.eps" alt="Two storey building - 2-storey masonry veneer"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_1floor_orange" alt="Two storey building - 2-storey masonry veneer"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof and 1 floor
@@ -7971,7 +7971,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row63">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure39">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_2floor_orange.eps" alt="One storey building - 2-storey masonry veneer"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_2floor_orange" alt="One storey building - 2-storey masonry veneer"/>
                                         </figure>
                                         
                                         Supporting roof + 2 floors
@@ -8011,12 +8011,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="12">Masonry veneer cladding perpendicular to the <ref type="term" target="br-wl-bnd">braced wall band</ref>, 1- <ref type="term" target="tr">storey</ref> height, partially clad: <super>(3)</super> apply factor corresponding to Lwl for one <ref type="term" target="bldng">building</ref> face (or two <ref type="term" target="bldng">building</ref> faces))
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure40">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row5.eps" alt="Building depth diagram for 1-storey masonry veneer"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row5" alt="Building depth diagram for 1-storey masonry veneer"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure41">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="Two storey building - 1-storey masonry veneer"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_1floor_orange2" alt="Two storey building - 1-storey masonry veneer"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof and 1 floor
@@ -8055,7 +8055,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row75">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure42">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="One storey building - 1-storey masonry veneer"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_1floor_orange2" alt="One storey building - 1-storey masonry veneer"/>
                                         </figure>
                                         
                                         Supporting roof + 2 floors
@@ -8096,12 +8096,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         Apply factor corresponding to <ref type="term" target="bldng">building</ref> depth Lwl in the direction of the <ref type="term" target="br-wl-bnd">braced wall band</ref> for one or two <ref type="term" target="bldng">building</ref> face(s)
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure43">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row6.eps" alt="Building depth diagram for 2-storey fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row6" alt="Building depth diagram for 2-storey fully clad"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure44">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="Two storey building - 2-storey fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_1floor_orange2" alt="Two storey building - 2-storey fully clad"/>
                                         </figure>
                                         
                                         Supporting roof + 1 floor
@@ -8140,7 +8140,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row87">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure45">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="One storey building - 2-storey fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_1floor_orange2" alt="One storey building - 2-storey fully clad"/>
                                         </figure>
                                         
                                         Supporting roof + 2 floors
@@ -8181,12 +8181,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         Apply factor corresponding to <ref type="term" target="bldng">building</ref> depth Lwl in the direction of the <ref type="term" target="br-wl-bnd">braced wall band</ref> for one or two <ref type="term" target="bldng">building</ref> face(s)
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure46">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row7.eps" alt="Building depth diagram for 1-storey fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row7" alt="Building depth diagram for 1-storey fully clad"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure47">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="Two storey building - 1-storey fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_1floor_orange2" alt="Two storey building - 1-storey fully clad"/>
                                         </figure>
                                         
                                         Supporting roof + 1 floor
@@ -8225,7 +8225,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row99">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure48">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_2floor_orange" alt="One storey building - 1-storey fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_2floor_orange" alt="One storey building - 1-storey fully clad"/>
                                         </figure>
                                         
                                         Supporting roof + 2 floors
@@ -8284,12 +8284,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         Apply factor corresponding to <ref type="term" target="bldng">building</ref> depth in the direction of the <ref type="term" target="br-wl-bnd">braced wall band</ref> for one or two <ref type="term" target="bldng">building</ref> face(s)
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure49">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row8.eps" alt="Building depth diagram for stone veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row8" alt="Building depth diagram for stone veneer fully clad"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure50">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building - stone veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_only" alt="Three storey building - stone veneer fully clad"/>
                                         </figure>
                                         
                                         Supporting roof only
@@ -8328,7 +8328,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row113">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure51">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building - stone veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_1floor_only" alt="Two storey building - stone veneer fully clad"/>
                                         </figure>
                                         
                                         Supporting roof + 1 floor
@@ -8367,7 +8367,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row119">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure52">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - stone veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_2floor_only" alt="One storey building - stone veneer fully clad"/>
                                         </figure>
                                         
                                         Supporting roof + 2 floors
@@ -8408,12 +8408,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         Apply factor corresponding to <ref type="term" target="bldng">building</ref> depth in the direction of the braced wall bad for one or two <ref type="term" target="bldng">building</ref> face(s)
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure53">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row9.eps" alt="Building depth diagram for stone veneer partially clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row9" alt="Building depth diagram for stone veneer partially clad"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure54">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building - stone veneer partially clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_only" alt="Three storey building - stone veneer partially clad"/>
                                         </figure>
                                         
                                         Supporting roof only
@@ -8452,7 +8452,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row131">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure55">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building - stone veneer partially clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_1floor_only" alt="Two storey building - stone veneer partially clad"/>
                                         </figure>
                                         
                                         Supporting roof + 1 floor
@@ -8491,7 +8491,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row137">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure56">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - stone veneer partially clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_2floor_only" alt="One storey building - stone veneer partially clad"/>
                                         </figure>
                                         
                                         Supporting roof + 2 floors
@@ -8532,12 +8532,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         Apply factor corresonding to depth Lwl in the direction of the <ref type="term" target="br-wl-bnd">braced wall band</ref> for one or two <ref type="term" target="bldng">building</ref> face(s).
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure57">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row10.eps" alt="Building depth diagram for 1-storey stone veneer with openings"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row10" alt="Building depth diagram for 1-storey stone veneer with openings"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure58">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="Two storey building - 1-storey stone veneer with openings"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_2floor_only" alt="Two storey building - 1-storey stone veneer with openings"/>
                                         </figure>
                                         
                                         Supporting roof + 1 floor
@@ -8576,7 +8576,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row149">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure59">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building - 1-storey stone veneer with openings"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_2floor_only" alt="One storey building - 1-storey stone veneer with openings"/>
                                         </figure>
                                         
                                         Supporting roof + 2 floors
@@ -8616,12 +8616,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="12">Stone veneer cladding perpendicular to the <ref type="term" target="br-wl-bnd">braced wall band</ref>, 2 <ref type="term" target="tr">storey</ref> height, with openings: Apply factor corresonding to depth Lwl in the direction of the <ref type="term" target="br-wl-bnd">braced wall band</ref> for one or two <ref type="term" target="bldng">building</ref> face(s).
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure60">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row11.eps" alt="Building depth diagram for 2-storey stone veneer with openings"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row11" alt="Building depth diagram for 2-storey stone veneer with openings"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure61">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange.eps" alt="Two storey building - 2-storey stone veneer with openings"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_1floor_orange" alt="Two storey building - 2-storey stone veneer with openings"/>
                                         </figure>
                                         
                                         Supporting roof + 1 floor
@@ -8660,7 +8660,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row161">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure62">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_2floor_orange.eps" alt="One storey building - 2-storey stone veneer with openings"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_2floor_orange" alt="One storey building - 2-storey stone veneer with openings"/>
                                         </figure>
                                         
                                         Supporting roof + 2 floors
@@ -8700,12 +8700,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="12">Stone veneer cladding perpendicular to the <ref type="term" target="br-wl-bnd">braced wall band</ref>, 1 <ref type="term" target="tr">storey</ref> height, fully clad: Apply factor corresonding to depth Lwl in the direction of the <ref type="term" target="br-wl-bnd">braced wall band</ref> for one or two <ref type="term" target="bldng">building</ref> face(s).
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure63">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row12.eps" alt="Building depth diagram for 1-storey stone veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row12" alt="Building depth diagram for 1-storey stone veneer fully clad"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure64">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange2.eps" alt="Two storey building - 1-storey stone veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_1floor_orange2" alt="Two storey building - 1-storey stone veneer fully clad"/>
                                         </figure>
                                         
                                         Supporting roof + 1 floor
@@ -8744,7 +8744,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row173">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure65">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_2floor_orange.eps" alt="One storey building - 1-storey stone veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_2floor_orange" alt="One storey building - 1-storey stone veneer fully clad"/>
                                         </figure>
                                         
                                         Supporting roof + 2 floor2
@@ -8784,12 +8784,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="12">Stone veneer cladding perpendicular to the <ref type="term" target="br-wl-bnd">braced wall band</ref>, 2 <ref type="term" target="tr">storey</ref> height, fully clad: Apply factor corresonding to depth Lwl in the direction of the <ref type="term" target="br-wl-bnd">braced wall band</ref> for one or two <ref type="term" target="bldng">building</ref> face(s).
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure66">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row13.eps" alt="Building depth diagram for 2-storey stone veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row13" alt="Building depth diagram for 2-storey stone veneer fully clad"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure67">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_1floor_orange.eps" alt="Two storey building - 2-storey stone veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_1floor_orange" alt="Two storey building - 2-storey stone veneer fully clad"/>
                                         </figure>
                                         
                                         Supporting roof + 1 floor
@@ -8828,7 +8828,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row185">
                                     <entry rowspan="6">
                                         <figure xml:id="nbc.divBV2.part9.figure68">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_and_2floor_orange.eps" alt="One storey building - 2-storey stone veneer fully clad"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_and_2floor_orange" alt="One storey building - 2-storey stone veneer fully clad"/>
                                         </figure>
                                         
                                         Supporting roof + 2 floors
@@ -8871,12 +8871,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                     <entry rowspan="10">Stone veneer cladding perpendicular to the <ref type="term" target="br-wl-bnd">braced wall band</ref>, 2 <ref type="term" target="tr">storey</ref> height, fully clad: Apply factor corresonding to depth Lwl in the direction of the <ref type="term" target="br-wl-bnd">braced wall band</ref> for one or two <ref type="term" target="bldng">building</ref> face(s).
                                         
                                         <figure xml:id="nbc.divBV2.part9.figure69">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.row14.eps" alt="Building depth diagram for K_snow"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-row14" alt="Building depth diagram for K_snow"/>
                                         </figure>
                                     </entry>
                                     <entry rowspan="5">
                                         <figure xml:id="nbc.divBV2.part9.figure70">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof_only.eps" alt="Three storey building for K_snow"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof_only" alt="Three storey building for K_snow"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof only
@@ -8904,7 +8904,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row196">
                                     <entry rowspan="5">
                                         <figure xml:id="nbc.divBV2.part9.figure71">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_1floor_only.eps" alt="Two storey building for K_snow"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_1floor_only" alt="Two storey building for K_snow"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof and 1 floor
@@ -8932,7 +8932,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 <row xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4.row201">
                                     <entry rowspan="5">
                                         <figure xml:id="nbc.divBV2.part9.figure72">
-                                            <graphic src="bc-graphics/Figure 9.23.13.7.D.roof and_2floor_only.eps" alt="One storey building for K_snow"/>
+                                            <graphic src="bc-graphics/figure-9-23-13-7-d-roof-and_2floor_only" alt="One storey building for K_snow"/>
                                         </figure>
                                         
                                         <ref type="term" target="tr">Storey</ref> supporting roof and 2 floors
@@ -9388,7 +9388,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 </thead>
                                 <tbody>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure23"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Single storey building configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure23"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a" alt="Single storey building configuration"/></figure></entry>
                                         <entry>1.89</entry>
                                         <entry>9.47 (4.74)</entry>
                                         <entry>5.50 (2.75)</entry>
@@ -9401,7 +9401,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         <entry>1.26</entry>
                                     </row>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure28"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Three storey building configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure28"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00556a" alt="Three storey building configuration"/></figure></entry>
                                         <entry>3.89</entry>
                                         <entry>19.45 (9.73)</entry>
                                         <entry>11.30 (5.65)</entry>
@@ -9414,7 +9414,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         <entry>2.59</entry>
                                     </row>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure24"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a.eps" alt="Three storey building configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure24"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a" alt="Three storey building configuration"/></figure></entry>
                                         <entry>5.88</entry>
                                         <entry>NP (14.71)</entry>
                                         <entry>17.09 (8.55)</entry>
@@ -9480,7 +9480,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 </thead>
                                 <tbody>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure25"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Single storey building configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure25"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a" alt="Single storey building configuration"/></figure></entry>
                                         <entry>2.27</entry>
                                         <entry>11.36 (5.68)</entry>
                                         <entry>6.60 (3.30)</entry>
@@ -9493,7 +9493,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         <entry>1.51</entry>
                                     </row>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure16"><title>Two storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Two storey building configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure16"><title>Two storey building configuration</title><graphic src="bc-graphics/gg00556a" alt="Two storey building configuration"/></figure></entry>
                                         <entry>4.66</entry>
                                         <entry>NP (11.68)</entry>
                                         <entry>13.56 (6.78)</entry>
@@ -9505,7 +9505,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         <entry>3.11</entry>
                                     </row>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure26"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a.eps" alt="Three storey building configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure26"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a" alt="Three storey building configuration"/></figure></entry>
                                         <entry>7.05</entry>
                                         <entry>NP (17.96)</entry>
                                         <entry>20.86 (10.43)</entry>
@@ -9580,7 +9580,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 </thead>
                                 <tbody>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure27"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Single storey building configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure27"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a" alt="Single storey building configuration"/></figure></entry>
                                         <entry>1.89</entry>
                                         <entry>9.47 (4.74)</entry>
                                         <entry>5.50 (2.75)</entry>
@@ -9593,7 +9593,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         <entry>1.26</entry>
                                     </row>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure8"><title>Two storey building with masonry veneer configuration</title><graphic src="bc-graphics/gg00555a.eps" alt="Two storey building with masonry veneer configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure8"><title>Two storey building with masonry veneer configuration</title><graphic src="bc-graphics/gg00555a" alt="Two storey building with masonry veneer configuration"/></figure></entry>
                                         <entry>3.89</entry>                     <entry>3.89</entry>
                                         <entry>19.45 (9.73)</entry>
                                         <entry>11.30 (5.65)</entry>
@@ -9606,7 +9606,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         <entry>2.59</entry>
                                     </row>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure31"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a.eps" alt="Three storey building configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure31"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a" alt="Three storey building configuration"/></figure></entry>
                                         <entry>5.88</entry>
                                         <entry>NP (15.01)</entry>
                                         <entry>17.44 (8.72)</entry>
@@ -9672,7 +9672,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 </thead>
                                 <tbody>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure29"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a.eps" alt="Single storey building configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure29"><title>Single storey building configuration</title><graphic src="bc-graphics/gg00556a" alt="Single storey building configuration"/></figure></entry>
                                         <entry>2.27</entry>
                                         <entry>13.12 (6.56)</entry>
                                         <entry>7.63 (3.81)</entry>
@@ -9685,7 +9685,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         <entry>1.51</entry>
                                     </row>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure21"><title>Two storey building with masonry veneer configuration</title><graphic src="bc-graphics/gg00555a.eps" alt="Two storey building with masonry veneer configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure21"><title>Two storey building with masonry veneer configuration</title><graphic src="bc-graphics/gg00555a" alt="Two storey building with masonry veneer configuration"/></figure></entry>
                                         <entry>4.66</entry>
                                         <entry>NP (15.14)</entry>
                                         <entry>17.59 (8.79)</entry>
@@ -9698,7 +9698,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                         <entry>3.11</entry>
                                     </row>
                                     <row>
-                                        <entry><figure xml:id="nbc.divBV2.part9.figure30"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a.eps" alt="Three storey building configuration"/></figure></entry>
+                                        <entry><figure xml:id="nbc.divBV2.part9.figure30"><title>Three storey building configuration</title><graphic src="bc-graphics/gg00554a" alt="Three storey building configuration"/></figure></entry>
                                         <entry>7.05</entry>
                                         <entry>NP (NP)</entry>
                                         <entry>NP (13.66)</entry>

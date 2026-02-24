@@ -802,12 +802,18 @@ function getContentAsOfDate(element, targetDate) {
 
 Figures contain illustrations, diagrams, and images within the building code.
 
+**Image Path Convention (IMPORTANT):**
+- XML `src` attributes contain paths WITHOUT file extensions
+- All paths are lowercase with hyphens
+- Rendering layer appends `.jpg` (web) or `.eps` (print) as needed
+
 ### XML Representation
 
 ```xml
 <figure xml:id="nbc.divA.part1.sect5.appnote6.figure1" vendor-id="en001231f1">
   <title>Application of the definition of grade</title>
-  <graphic src="graphics/EG00907B.eps" alt="Application of the definition of grade"/>
+  <!-- Note: No .eps extension, lowercase path -->
+  <graphic src="graphics/eg/009/eg00907b" alt="Application of the definition of grade"/>
   <note>
     <para>See the definition of grade in Division A...</para>
   </note>
@@ -822,7 +828,7 @@ Figures contain illustrations, diagrams, and images within the building code.
   "type": "figure",
   "title": "Application of the definition of grade",
   "graphic": {
-    "src": "graphics/EG00907B.eps",
+    "src": "graphics/eg/009/eg00907b",
     "alt_text": "Application of the definition of grade"
   },
   "source": "bc",
@@ -844,7 +850,7 @@ Figures contain illustrations, diagrams, and images within the building code.
 | `type` | string | Always `"figure"` |
 | `title` | string | Figure title/caption |
 | `graphic` | object | Image details |
-| `graphic.src` | string | Path to image file (e.g., `"graphics/EG00907B.eps"`) |
+| `graphic.src` | string | Path to image WITHOUT extension (e.g., `"graphics/eg/009/eg00907b"`) |
 | `graphic.alt_text` | string | Accessibility text for the image |
 | `source` | string | `"bc"` if BC-specific (optional) |
 | `deleted` | boolean | `true` if deleted by amendment (optional) |
@@ -852,16 +858,33 @@ Figures contain illustrations, diagrams, and images within the building code.
 
 ### Image File Formats
 
-The building code uses various image formats:
+The building code provides images in multiple formats:
 
-| Format | Extension | Usage |
-|--------|-----------|-------|
-| EPS | `.eps` | Original vector graphics (Encapsulated PostScript) |
-| PNG | `.png` | Raster graphics for web display |
-| JPG | `.jpg` | Photographs and complex images |
-| SVG | `.svg` | Modern vector graphics (converted from EPS) |
+| Format | Extension | Usage | Notes |
+|--------|-----------|-------|-------|
+| EPS | `.eps` | Vector graphics for print/PDF | High quality, scalable |
+| JPG | `.jpg` | Raster graphics for web | Optimized for web display |
 
-**Note:** Applications should handle format conversion as needed. EPS files may need to be converted to PNG/JPG/SVG for web display.
+**Important:** The XML and JSON contain paths WITHOUT extensions. The rendering application must append the appropriate extension based on context:
+
+```javascript
+// Web application - append .jpg
+const webImageSrc = graphic.src + '.jpg';  
+// Result: "graphics/eg/009/eg00907b.jpg"
+
+// PDF generator - append .eps
+const printImageSrc = graphic.src + '.eps';  
+// Result: "graphics/eg/009/eg00907b.eps"
+
+// With fallback logic
+function resolveImage(src, preferredFormat = 'jpg') {
+    const path = src + '.' + preferredFormat;
+    if (fileExists(path)) return path;
+    // Fallback to other format
+    const altFormat = preferredFormat === 'jpg' ? 'eps' : 'jpg';
+    return src + '.' + altFormat;
+}
+```
 
 ### Figure Location in Hierarchy
 

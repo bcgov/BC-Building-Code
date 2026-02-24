@@ -422,17 +422,30 @@ Use `type="table-row-insert"` to insert rows into existing tables:
 
 ### Figures and Graphics
 
+**Image Naming Convention (IMPORTANT):**
+- Use lowercase filenames with hyphens
+- NO file extensions in XML `src` attributes
+- Rendering layer appends `.jpg` (web) or `.eps` (print) as needed
+
 ```xml
+<!-- CORRECT: Lowercase, no extension -->
 <figure xml:id="nbc.divB.part3.sect1.appnote1.figure1">
     <title>Figure A-3.1.1.1. Example Diagram</title>
-    <graphic fileref="bc-graphics/A-3.1.1.1-example.png">
-        <alt>Description of the figure for accessibility</alt>
-    </graphic>
+    <graphic src="bc-graphics/figure-a-3-1-1-1-example" alt="Description of the figure for accessibility"/>
 </figure>
+
+<!-- WRONG: Has extension -->
+<graphic src="bc-graphics/figure-a-3-1-1-1-example.png" alt="..."/>
+
+<!-- WRONG: Uppercase -->
+<graphic src="bc-graphics/Figure-A-3.1.1.1-Example" alt="..."/>
 ```
 
 **Key points:**
-- Graphics path uses `bc-graphics/` folder
+- Graphics path uses `bc-graphics/` folder for BC-specific images
+- Graphics path uses `graphics/` folder for NBC images
+- Always use lowercase with hyphens (e.g., `figure-a-9-23-13-7-4-a`)
+- Never include file extensions (`.eps`, `.jpg`, `.png`) in XML
 - Always include `<alt>` text for accessibility
 
 ### Application Notes

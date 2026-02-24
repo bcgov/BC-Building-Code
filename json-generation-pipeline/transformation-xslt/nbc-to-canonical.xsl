@@ -42,12 +42,14 @@
     <xsl:param name="asset-id" as="xs:string?" />
     <xsl:param name="extension" as="xs:string" />
     <xsl:variable name="id" select="normalize-space($asset-id)" />
+    <!-- NOTE: Extension parameter kept for backward compatibility but not appended to output -->
+    <!-- Rendering layer should append .jpg or .eps as needed -->
     <xsl:sequence
             select="
         if (matches($id, '^(EG|GG)\d{3}.*$', 'i')) then
-          concat('graphics/', lower-case(substring($id, 1, 2)), '/', substring($id, 3, 3), '/', $id, '.', $extension)
+          concat('graphics/', lower-case(substring($id, 1, 2)), '/', substring($id, 3, 3), '/', lower-case($id))
         else
-          concat('graphics/', $id, '.', $extension)"
+          concat('graphics/', lower-case($id))"
         />
   </xsl:function>
 

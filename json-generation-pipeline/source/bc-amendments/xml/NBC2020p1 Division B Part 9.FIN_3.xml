@@ -126,7 +126,7 @@
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote16a.para1"><ref type="internal" target="nbc.divBV2.part9.appendix.appnote16a.figure1" display-type="long"/> shows ceiling heights in relation to clear heights and also clear heights over stairs described in <ref type="internal" target="nbc.divBV2.part9.sect8.subsect2.art2" display-type="long"/>.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote16a.figure1">
                             <title>Ceiling Heights and Clear Heights</title>
-                            <graphic src="bc-graphics/Figure A-9.5.3.1_.eps" alt="Diagram showing ceiling heights in relation to clear heights and clear heights over stairs"/>
+                            <graphic src="bc-graphics/figure-a-9-5-3-1_" alt="Diagram showing ceiling heights in relation to clear heights and clear heights over stairs"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -386,11 +386,11 @@
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote29.para2"><ref type="internal" target="nbc.divBV2.part9.sect8.subsect4.art1" display-type="long" pretext="Articles"/><ref type="internal" target="nbc.divBV2.part9.sect8.subsect4.art8" display-type="long" pretext="to"/> specify various dimensional limits for steps. <ref type="internal" target="nbc.divBV2.part9.appendix.appnote29.figure2" display-type="long"/> illustrates the elements of a step and how these are to be measured.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote29.figure1">
                             <title>Types of treads</title>
-                            <graphic src="bc-graphics/Figure A-9.8.4.-A.eps" alt="Types of treads"/>
+                            <graphic src="bc-graphics/figure-a-9-8-4-a" alt="Types of treads"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote29.figure2">
                             <title>Step dimensions and their measurement</title>
-                            <graphic src="graphics/eg/006/eg00689c.eps" alt="Step dimensions and their measurement"/>
+                            <graphic src="graphics/eg/006/eg00689c" alt="Step dimensions and their measurement"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -418,7 +418,7 @@
                 <new-content source="bc">
                     <figure xml:id="nbc.divBV2.part9.appendix.appnote30.figure1">
                         <title>Winders</title>
-                        <graphic src="bc-graphics/Figure A-9.8.4.6_.eps" alt="Winders"/>
+                        <graphic src="bc-graphics/figure-a-9-8-4-6_" alt="Winders"/>
                     </figure>
                 </new-content>
             </replace>
@@ -896,7 +896,7 @@
                         <title>Anchorage of Building Frames</title>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote123a.figure1">
                             <title>Anchorage of Building Frames</title>
-                            <graphic src="bc-graphics/Figure A-9.23.6.1.(3).eps" alt="Diagram showing anchorage of building frames"/>
+                            <graphic src="bc-graphics/figure-a-9-23-6-1-3" alt="Diagram showing anchorage of building frames"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1096,15 +1096,15 @@
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote130.para1"><ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4" display-type="long"/> specifies the required characteristics of braced wall bands and their position in the building. <ref type="internal" target="nbc.divBV2.part9.appendix.appnote130.figure1" display-type="long" pretext="Figures"/><ref type="internal" target="nbc.divBV2.part9.appendix.appnote130.figure2" display-type="long" pretext=","/><ref type="internal" target="nbc.divBV2.part9.appendix.appnote130.figure3" display-type="long" pretext="and"/> illustrate these requirements.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote130.figure1">
                             <title>Braced wall bands in an example building section [<ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent1.clause1" display-type="long" pretext="Clauses"/><ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent1.clause2" display-type="short" pretext=","/>, (c) <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent1.clause4" display-type="short" pretext="and"/>]</title>
-                            <graphic src="graphics/eg/006/eg00682a.eps" alt="Braced wall bands in an example building section [Clauses 9.23.13.4.(1)(a), (b), (c) and (d)]"/>
+                            <graphic src="graphics/eg/006/eg00682a" alt="Braced wall bands in an example building section [Clauses 9.23.13.4.(1)(a), (b), (c) and (d)]"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote130.figure2">
                             <title>Lapping bands and building perimeter within braced wall bands [<ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent1.clause1" display-type="long" pretext="Clauses"/><ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4.sent1.clause3" display-type="short" pretext="and"/>]</title>
-                            <graphic src="graphics/eg/006/eg00683a.eps" alt="Lapping bands and building perimeter within braced wall bands [Clauses 9.23.13.4.(1)(a) and (c)]"/>
+                            <graphic src="graphics/eg/006/eg00683a" alt="Lapping bands and building perimeter within braced wall bands [Clauses 9.23.13.4.(1)(a) and (c)]"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote130.figure3">
                             <title>Braced wall bands at changes in floor level in split-level buildings [<ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art4" display-type="long"/>]</title>
-                            <graphic src="graphics/eg/001/eg00171c.eps" alt="Braced wall bands at changes in floor level in split-level buildings [Sentence 9.23.13.4.(3)]"/>
+                            <graphic src="graphics/eg/001/eg00171c" alt="Braced wall bands at changes in floor level in split-level buildings [Sentence 9.23.13.4.(3)]"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1139,11 +1139,11 @@
                         </note-division>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote131.figure1">
                             <title>Spacing of parallel braced wall bands and spacing of braced wall panels</title>
-                            <graphic src="graphics/eg/006/eg00684a.eps" alt="Spacing of parallel braced wall bands and spacing of braced wall panels"/>
+                            <graphic src="graphics/eg/006/eg00684a" alt="Spacing of parallel braced wall bands and spacing of braced wall panels"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote131.figure2">
                             <title>Identification and spacing of adjacent non-parallel braced wall bands</title>
-                            <graphic src="graphics/eg/006/eg00685a.eps" alt="Identification and spacing of adjacent non-parallel braced wall bands"/>
+                            <graphic src="graphics/eg/006/eg00685a" alt="Identification and spacing of adjacent non-parallel braced wall bands"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1169,7 +1169,7 @@
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote133a.para2">The connection of interior gypsum-sheathed braced wall panels to trusses also needs to accommodate vertical movement of the roof framing in order to facilitate "truss uplift" and to prevent the gypsum board from cracking.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote133a.figure1">
                             <title>Wood-sheathed braced wall panel to roof framing connection details (Sentence 9.23.13.5.(3)(a) and (b))</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.5.(3) and (4).eps" alt="Wood-sheathed braced wall panel to roof framing connection details"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-5-3-and-4" alt="Wood-sheathed braced wall panel to roof framing connection details"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1212,7 +1212,7 @@
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134.para1">Braced wall panels constructed with gypsum board alone provide less resistance to lateral loads than panels constructed with OSB, waferboard, plywood or diagonal lumber board; <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art6.sent3" display-type="short">Sentence 9.23.13.6.(3)</ref> limits the use of gypsum board to interior walls. <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art6" display-type="short">Sentence (6)</ref> further limits its use to provide the required lateral resistance by requiring that walls in basements and crawl spaces be constructed with braced wall panels made of wood-based sheathing at braced wall band intervals of not more than <measurement units="metric">15 m</measurement> apart. See <ref type="internal" target="nbc.divBV2.part9.appendix.appnote134.figure1" display-type="long">Figure A-9.23.13.6.(3)</ref>.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134.figure1">
                             <title>Braced wall panels constructed of wood-based material</title>
-                            <graphic src="graphics/eg/006/eg00686a.eps" alt="Braced wall panels constructed of wood-based material"/>
+                            <graphic src="graphics/eg/006/eg00686a" alt="Braced wall panels constructed of wood-based material"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1242,7 +1242,7 @@
                         </note-division>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134a.figure1">
                             <title>One sheathing type in all braced wall panels</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.6.(5)-A.eps" alt="One sheathing type in all braced wall panels"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-6-5-a" alt="One sheathing type in all braced wall panels"/>
                         </figure>
                         <note-division xml:id="nbc.divBV2.part9.appendix.appnote134a.div2">
                             <title>Example 2 — Mixed sheathing types in all braced wall panels using direct length substitution approach</title>
@@ -1250,7 +1250,7 @@
                         </note-division>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134a.figure2">
                             <title>Mixed sheathing types in all braced wall panels using direct length substitution approach</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.6.(5)-B.eps" alt="Mixed sheathing types in all braced wall panels using direct length substitution approach"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-6-5-b" alt="Mixed sheathing types in all braced wall panels using direct length substitution approach"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1325,12 +1325,12 @@
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134b.para4">When wind acts on the building width, the length of the building (dimension parallel to the wind) is irrelevant to determining the bracing required to resist that wind force. A short building receives the same wind force as a long building with an equivalent width. This concept is illustrated in Figure A-9.23.13.7.(3)-A. As a result, in calculating the length of required wind bracing, the input is the braced wall band spacing (the building width), regardless of building length.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134b.figure1">
                             <title>Wind Force on Different Length Buildings</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.7.(3)-A.eps" alt="Wind Force on Different Length Buildings"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-7-3-a" alt="Wind Force on Different Length Buildings"/>
                         </figure>
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134b.para5">The equation provided in Sentence 9.23.13.7.(3) is used to calculate the required length of braced wall panels, L<sub>w</sub>, within a braced wall band to resist wind acting on the surface perpendicular to the wall line. The unadjusted length, L<sub>uw</sub>, provided in Table 9.23.13.7.-A, refers to a reference building with an eave-to-ridge height of 3 m and two exterior braced wall bands spaced 7.6 m apart, located in an urban location. Adjustment factors are applied to account for deviations from the reference building. These adjustment factors are explained below and their values are provided in Table 9.23.13.7.-B.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134b.figure2">
                             <title>Eave-to-ridge Height</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.7.(3)-B.eps" alt="Eave-to-ridge Height"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-7-3-b" alt="Eave-to-ridge Height"/>
                         </figure>
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134b.para6">K<sub>roof</sub> accounts for the effect of eave-to-ridge height, as defined in Figure A-9.23.13.7.(3)-B.</paragraph>
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134b.para7">K<sub>exp</sub> adjusts for wind loading on a building caused by the effects of local terrain. Wind blows at a lower speed in rough terrain and a higher speed in smooth terrain. Rough terrain, such as an urban or suburban setting or wooded terrain extending upwind for a least one km, offers a comparatively sheltered exposure for a building. For rough terrain, K<sub>exp</sub> is assigned the value 1.0 and no exposure adjustment is needed for a building located in rough terrain. A building located in an open terrain, sheltered from wind only by the presence of adjacent scattered trees and buildings or other obstacles, or located near open water or shorelines, will experience a higher wind load than would the same building located in rough terrain.</paragraph>
@@ -1338,20 +1338,20 @@
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134b.para9">K<sub>Wnumber</sub> accounts for the distribution of forces when more than two braced wall bands resist wind load, Figure A-9.23.13.7.(3)-C. The same explanation in Note A-9.23.13.7.(4) for K<sub>Snumber</sub> applies here for K<sub>Wnumber</sub>, except that under wind load the forces are not evenly distributed due to the critical load case occurring when the wind blows at an angle to the building. As a result, K<sub>Wnumber</sub> factor differs slightly from the K<sub>Snumber</sub> factor. When the spacing of the parallel braced wall bands is not uniform, the average spacing value, as illustrated in Figure A-9.23.13.7.(3)-D, shall be used. Refer to K<sub>Snumber</sub> for additional information.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134b.figure3">
                             <title>Adjustment for number of braced wall bands resisting wind load</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.7.(3)-C.eps" alt="Adjustment for number of braced wall bands resisting wind load"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-7-3-c" alt="Adjustment for number of braced wall bands resisting wind load"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134b.figure4">
                             <title>Calculation of mean braced wall band spacing for wind when the spacings between adjacent braced wall bands are not uniform</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.7.(3)-D.eps" alt="Calculation of mean braced wall band spacing for wind when the spacings between adjacent braced wall bands are not uniform"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-7-3-d" alt="Calculation of mean braced wall band spacing for wind when the spacings between adjacent braced wall bands are not uniform"/>
                         </figure>
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134b.para10">Where the braced wall band is intermittently sheathed, the lengths of braced wall panels listed in Table 9.23.13.7.-A shall be increased by the K<sub>sheath</sub> factor. Braced wall bands with intermittent braced wall panels permit the use of nonstructural sheathing in areas of the wall where bracing is not required. This factor accounts for a lack of additional resistance otherwise provided by structural sheathing above and below openings and on other non-designated braced wall panels within the braced wall band (Figure A-9.23.13.7.(3)-E), as there would be when the entire braced wall line is continuously sheathed (Figure A-9.23.13.7.(3)-F).</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134b.figure5">
                             <title>Intermittently sheathed braced wall band</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.7.(3)-E.eps" alt="Intermittently sheathed braced wall band"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-7-3-e" alt="Intermittently sheathed braced wall band"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134b.figure6">
                             <title>Continuously sheathed braced wall band</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.7.(3)-F.eps" alt="Continuously sheathed braced wall band"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-7-3-f" alt="Continuously sheathed braced wall band"/>
                         </figure>
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134b.para11">Non-designated wall segments within continuously-sheathed braced wall bands are required to be constructed with wood sheathing, but are not required to use the same sheathing and fastening as used in the designated braced wall panels along the braced wall band. Instead, the non-designated wall segments may be constructed with any of the plywood, OSB, or waferboard element options and corresponding fastening in accordance with Table 9.23.3.5.-A, and anchored in accordance with Sentence 9.23.6.1.(2). Note that when the calculated L<sub>w</sub> exceeds the available length of the wall line, a stronger framing type or a closer braced wall band spacing may be considered.</paragraph>
                     </application-note>
@@ -1458,7 +1458,7 @@
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134c.para3">The force demand exerted on a building by seismic motion is directly proportional to the mass of the building. When determining the amount of bracing required to resist seismic forces, the length of the building parallel to the direction of loading is the most important consideration, because mass is generally evenly distributed along the length and width of a building. For a given building width, a longer building has more mass — and thus receives greater seismic forces — than a shorter building. As a result, the longer building requires a greater amount of bracing. For this reason, in the seismic bracing table, Table 9.23.13.7.-C, the amount of braced wall panel required in a wall line is dependent on the available building depth parallel to the braced wall band being considered, and is less dependent of the width of the building (perpendicular to the direction of the seismic force). This is illustrated in Figure A-9.23.13.7.(4)-A.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134c.figure1">
                             <title>Seismic Force on Different Length Buildings</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.7.(4)-A.eps" alt="Seismic Force on Different Length Buildings"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-7-4-a" alt="Seismic Force on Different Length Buildings"/>
                         </figure>
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134c.para4">The equation provided in Sentence 9.23.13.7.(4) is used to calculate the total required length of braced wall panels, L<sub>s</sub>, within a braced wall band to resist seismic force applied in that direction. The unadjusted length, L<sub>us</sub>, provided in Table 9.23.13.7.-C, refers to a reference building with an eave-to-ridge height of 3 m and two braced wall bands spaced 7.6 m apart, with a roof snow load of 2 kPa. Adjustment factors are applied to account for construction that deviates from the reference building. The values of the adjustment factors are presented in Table 9.23.13.7.-D. The adjustment factors are explained below.</paragraph>
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134c.para5">K<sub>snow</sub> accounts for specified roof snow load larger than 2 kPa.</paragraph>
@@ -1466,16 +1466,16 @@
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134c.para7">K<sub>Snumber</sub> accounts for the distribution of forces when more than two braced wall bands resist seismic load, Figure A-9.23.13.7.(4)-B. At first glance, it may seem counter-intuitive for the factor to increase when there are additional braced wall bands. However, since the braced wall panel lengths are determined based on the braced wall band spacing, the factor is needed to account for the actual distributed loads. Consider a 15 m building with a uniform seismic load of 10 kN/m horizontally applied to the width of a building with two exterior braced wall bands and one interior braced wall band. Equally distributing the seismic load to the three braced wall bands results in an actual force distribution of (15 m x 10 kN/m) / 3 braced wall bands = 50 kN per braced wall band. However, based on the braced wall band spacing, each braced wall band would receive only (10 kN/m x 7.5 m braced wall band spacing) / 2 braced wall bands = 37.5 kN. K<sub>Snumber</sub> corrects the calculated braced wall panel length by applying, for 3 braced wall bands, a factor of 50 kN/37.5 kN = 1.33. Note that in this case, K<sub>Snumber</sub> is applied to the unadjusted braced wall panel length for a 7.5 m braced wall band spacing to obtain the total braced wall panel length for each of the three braced wall bands in the 15 m wide building. As the amount of braced wall bands increases, the effect diminishes, and therefore the highest K<sub>Snumber</sub> factor applied to 5 braced wall bands is also sufficient for more than 5 braced wall bands. When the spacing of the parallel braced wall bands is not uniform, the average spacing value, as illustrated in Figure A-9.23.13.7.(4)-C, may be used in lieu of the largest spacing.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134c.figure2">
                             <title>Adjustment for Number of Braced Wall Bands Resisting Seismic Load</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.7.(4)-B.eps" alt="Adjustment for Number of Braced Wall Bands Resisting Seismic Load"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-7-4-b" alt="Adjustment for Number of Braced Wall Bands Resisting Seismic Load"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134c.figure3">
                             <title>Calculation of Mean Braced Wall Band Spacing for Seismic When the Spacings between Adjacent Braced Wall Bands are Not Uniform</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.7.(4)-C.eps" alt="Calculation of Mean Braced Wall Band Spacing for Seismic When the Spacings between Adjacent Braced Wall Bands are Not Uniform"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-7-4-c" alt="Calculation of Mean Braced Wall Band Spacing for Seismic When the Spacings between Adjacent Braced Wall Bands are Not Uniform"/>
                         </figure>
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134c.para8">As stated above, heavy buildings generate high seismic loads. For buildings that have construction weights higher than normal construction, the total length of braced wall panels needs to be adjusted by the weight of construction factor, K<sub>weight</sub>. The value of K<sub>weight</sub> depends on whether the building is classified as heavy construction, or it is clad with masonry veneer or stone veneer on one or two building faces, as illustrated in Figure A-9.23.13.7.(4)-D. Note that in the case of masonry veneer or stone veneer clad buildings, only the veneer located on the building faces perpendicular to the direction of seismic load are assumed to contribute to the seismic mass.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134c.figure4">
                             <title>Masonry Veneer or Stone Veneer Walls that Contribute to Seismic Force Applied on a Building</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.7.(4)-D.eps" alt="Masonry Veneer or Stone Veneer Walls that Contribute to Seismic Force Applied on a Building"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-7-4-d" alt="Masonry Veneer or Stone Veneer Walls that Contribute to Seismic Force Applied on a Building"/>
                         </figure>
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134c.para9">The minimum braced wall panel lengths provided in Table 9.23.13.7.-D assume that gypsum board is attached to the interior face of braced wall panels. If gypsum board is omitted, the braced wall panels are to be adjusted by the K<sub>gyp</sub> factor.</paragraph>
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134c.para10">Where the braced wall band is intermittently sheathed, the minimum lengths of braced wall panels listed in Table 9.23.13.7.-C must be increased by the K<sub>sheath</sub> factor. Braced wall bands with intermittent braced wall panels permit the use of non-structural sheathing in areas of the wall where bracing is not required. This factor accounts for a lack of additional resistance otherwise provided by structural sheathed above and below openings and on other non-designated braced wall panels within the braced wall band (Figure A-9.23.13.7.(3)-E), as there would be when the entire braced wall band is continuously wood-sheathed (Figure A-9.23.13.7.(3)-F).</paragraph>
@@ -1525,7 +1525,7 @@
                         <title>Foundation Cripple Walls Where S<sub>max</sub> ≤ 0.60</title>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134e.figure1">
                             <title>Foundation cripple wall where S<sub>max</sub> ≤ 0.60</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.8.(2).eps" alt="Foundation cripple wall where Smax is less than or equal to 0.60"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-8-2" alt="Foundation cripple wall where Smax is less than or equal to 0.60"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1549,7 +1549,7 @@
                         <title>Foundation Cripple Walls Where S<sub>max</sub> > 0.60</title>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134f.figure1">
                             <title>Foundation cripple wall where S<sub>max</sub> > 0.60</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.8.(3).eps" alt="Foundation cripple wall where Smax is greater than 0.60"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-8-3" alt="Foundation cripple wall where Smax is greater than 0.60"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1577,7 +1577,7 @@
                         <paragraph xml:id="nbc.divBV2.part9.appendix.appnote134g.para4">Where the cripple wall exceeds 1.2 m in height, it must be considered as a storey or designed in accordance with Part 4 (see Sentence 9.23.13.8.(1)), regardless of the adequacy of the bracing it provides.</paragraph>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134g.figure1">
                             <title>Cripple wall in a stepped foundation</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.9.(1).eps" alt="Cripple wall in a stepped foundation"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-9-1" alt="Cripple wall in a stepped foundation"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1602,11 +1602,11 @@
                         <title>Attachment of a Porch Roof to Exterior Wall Framing</title>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134h.figure1">
                             <title>Framing perpendicular to plane of wall (balloon construction)</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.10.(2)-A1.eps" alt="Framing perpendicular to plane of wall (balloon construction)"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-10-2-a1" alt="Framing perpendicular to plane of wall (balloon construction)"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote134h.figure2">
                             <title>Framing parallel to plane of wall</title>
-                            <graphic src="bc-graphics/Figure A-9.23.13.10.(2)-B1.eps" alt="Framing parallel to plane of wall"/>
+                            <graphic src="bc-graphics/figure-a-9-23-13-10-2-b1" alt="Framing parallel to plane of wall"/>
                         </figure>
                     </application-note>
                 </new-content>
@@ -1786,27 +1786,27 @@
                         <title>Principle Ventilation System Supply Air</title>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote193a.figure1">
                             <title>Forced-Air Heating System Supply Air Distribution</title>
-                            <graphic src="bc-graphics/Figure A-9.32.3.4.(2).eps" alt="Forced-Air Heating System Supply Air Distribution"/>
+                            <graphic src="bc-graphics/figure-a-9-32-3-4-2" alt="Forced-Air Heating System Supply Air Distribution"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote193a.figure2">
                             <title>Forced-Air Heating System with Heat Recovery Ventilator Supply Air Distribution</title>
-                            <graphic src="bc-graphics/Figure A-9.32.3.4.(3).eps" alt="Forced-Air Heating System with Heat Recovery Ventilator Supply Air Distribution"/>
+                            <graphic src="bc-graphics/figure-a-9-32-3-4-3" alt="Forced-Air Heating System with Heat Recovery Ventilator Supply Air Distribution"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote193a.figure3">
                             <title>Heat Recovery Ventilator Supply Air Distribution</title>
-                            <graphic src="bc-graphics/Figure A-9.32.3.4.(4).eps" alt="Heat Recovery Ventilator Supply Air Distribution"/>
+                            <graphic src="bc-graphics/figure-a-9-32-3-4-4" alt="Heat Recovery Ventilator Supply Air Distribution"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote193a.figure4">
                             <title>Central Recirculation System Supply Air Distribution</title>
-                            <graphic src="bc-graphics/Figure A-9.32.3.4.(5)(b)(i).eps" alt="Central Recirculation System Supply Air Distribution"/>
+                            <graphic src="bc-graphics/figure-a-9-32-3-4-5-b-i" alt="Central Recirculation System Supply Air Distribution"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote193a.figure5">
                             <title>Central Recirculation System Supply Air Distribution</title>
-                            <graphic src="bc-graphics/Figure A-9.32.3.4.(5)(b)(ii).eps" alt="Central Recirculation System Supply Air Distribution"/>
+                            <graphic src="bc-graphics/figure-a-9-32-3-4-5-b-ii" alt="Central Recirculation System Supply Air Distribution"/>
                         </figure>
                         <figure xml:id="nbc.divBV2.part9.appendix.appnote193a.figure6">
                             <title>Passive Supply Air Distribution</title>
-                            <graphic src="bc-graphics/Figure A-9.32.3.4.(6).eps" alt="Passive Supply Air Distribution"/>
+                            <graphic src="bc-graphics/figure-a-9-32-3-4-6" alt="Passive Supply Air Distribution"/>
                         </figure>
                     </application-note>
                 </new-content>
