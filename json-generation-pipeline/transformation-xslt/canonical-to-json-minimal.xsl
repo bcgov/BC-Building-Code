@@ -429,7 +429,7 @@
 
     <xsl:template match="*" mode="rich"><xsl:apply-templates select="text()|*" mode="rich"/></xsl:template>
     <xsl:template match="text()" mode="rich"><xsl:value-of select="."/></xsl:template>
-    <xsl:template match="ref" mode="rich">[REF:<xsl:value-of select="@type"/>:<xsl:value-of select="@target"/>]<xsl:value-of select="."/></xsl:template>
+    <xsl:template match="ref" mode="rich"> [REF:<xsl:value-of select="@type"/>:<xsl:value-of select="@target"/>] <xsl:value-of select="."/></xsl:template>
     <xsl:template match="measurement" mode="rich"><xsl:value-of select="."/> (<xsl:value-of select="@units"/>)</xsl:template>
     <xsl:template match="equation" mode="rich">
         <xsl:variable name="equation-id" as="xs:string"

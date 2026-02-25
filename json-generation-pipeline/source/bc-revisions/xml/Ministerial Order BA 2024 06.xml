@@ -4260,17 +4260,19 @@
       sequence="4079"
       description="Amend Subsection 9.10.9. title by striking out 'and Smoke-tight Barriers'"
       >
-      <target type="canonical-id" id="nbc.divBV2.part9.sect10.subsect9" />
+      <target
+        type="child-element"
+        parent-id="nbc.divBV2.part9.sect10.subsect9"
+        element-name="title"
+        position="1"
+        />
       <replace preserve-references="false">
-        <new-content source="bc">
-          <subsection
-            xml:id="nbc.divBV2.part9.sect10.subsect9"
-            number="9"
-            revised="yes"
-            >
+        <new-content>
+          <title revised="yes">
             <revision-history>
               <original effective-date="2020-12-01">
-                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+                Fire Separations and Smoke-tight Barriers between Rooms and
+Spaces within Buildings
               </original>
               <revision
                 seq="1"
@@ -4279,16 +4281,14 @@
                 id="bc-mo-2024-06-081"
                 status="current"
                 >
-                <content>
-                  <title
-                    >Fire Separations between Rooms and Spaces within Buildings</title>
-                </content>
+                <content
+                  >Fire Separations between Rooms and Spaces within Buildings</content>
                 <change-summary
                   >Amended Subsection 9.10.9. title by striking out "and Smoke-tight Barriers"</change-summary>
                 <note>Ministerial Order BA 2024 06</note>
               </revision>
             </revision-history>
-          </subsection>
+          </title>
         </new-content>
       </replace>
     </amendment>

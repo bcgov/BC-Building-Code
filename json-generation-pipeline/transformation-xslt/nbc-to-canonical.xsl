@@ -1117,6 +1117,21 @@
       </xsl:if>
       <xsl:if test="@namest"><xsl:attribute name="namest" select="@namest"/></xsl:if>
       <xsl:if test="@nameend"><xsl:attribute name="nameend" select="@nameend"/></xsl:if>
+      
+      <!-- Preserve standard reference metadata from child elements -->
+      <xsl:if test="StandTitle/@StandID">
+        <xsl:attribute name="standard-id" select="StandTitle/@StandID"/>
+      </xsl:if>
+      <xsl:if test="StandTitle/@StandRefID">
+        <xsl:attribute name="standard-ref-id" select="StandTitle/@StandRefID"/>
+      </xsl:if>
+      <xsl:if test="StandTitle/@StandRefTitle">
+        <xsl:attribute name="standard-ref-title" select="StandTitle/@StandRefTitle"/>
+      </xsl:if>
+      <xsl:if test="StandNumb/@StandRefNumb">
+        <xsl:attribute name="standard-ref-number" select="StandNumb/@StandRefNumb"/>
+      </xsl:if>
+      
       <xsl:apply-templates select="node()" mode="entry-content">
         <xsl:with-param name="table-id" select="$table-id" />
         <xsl:with-param name="note-offset" select="$note-offset + $preceding-entry-notes" />
@@ -1155,6 +1170,11 @@
   <!-- Text nodes in entry-content mode -->
   <xsl:template match="text()" mode="entry-content">
     <xsl:value-of select="replace(., '\\s+', ' ')" />
+  </xsl:template>
+
+  <!-- Standard reference elements in entry-content mode - output text only -->
+  <xsl:template match="StandAgency | StandNumb | StandTitle" mode="entry-content">
+    <xsl:value-of select="normalize-space(.)" />
   </xsl:template>
 
   <!-- Default: pass through to rich-text mode for other elements -->

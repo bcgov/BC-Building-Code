@@ -1584,6 +1584,19 @@
         <optional>
           <attribute name="nameend"><text/></attribute>
         </optional>
+        <!-- Standard reference metadata attributes -->
+        <optional>
+          <attribute name="standard-id"><text/></attribute>
+        </optional>
+        <optional>
+          <attribute name="standard-ref-id"><text/></attribute>
+        </optional>
+        <optional>
+          <attribute name="standard-ref-title"><text/></attribute>
+        </optional>
+        <optional>
+          <attribute name="standard-ref-number"><text/></attribute>
+        </optional>
         <ref name="entry-content"/>
       </element>
     </oneOrMore>

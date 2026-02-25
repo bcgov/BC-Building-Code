@@ -68,6 +68,11 @@
                     <xsl:call-template name="build-glossary"/>
                 </fn:map>
                 
+                <!-- Standards reference mapping -->
+                <fn:map key="standards">
+                    <xsl:call-template name="build-standards-reference"/>
+                </fn:map>
+                
                 <!-- Statistics -->
                 <fn:map key="statistics">
                     <fn:number key="total_volumes"><xsl:value-of select="count(volume)"/></fn:number>
@@ -1170,7 +1175,7 @@
                         <xsl:when test="self::note[@xml:id]">
                             <fn:map>
                                 <fn:string key="type">text</fn:string>
-                                <fn:string key="value">[REF:table-note:<xsl:value-of select="@xml:id"/>]</fn:string>
+                                <fn:string key="value"> [REF:table-note:<xsl:value-of select="@xml:id"/>] </fn:string>
                             </fn:map>
                         </xsl:when>
                         <!-- Text node or other elements - collect as text -->
@@ -1554,7 +1559,7 @@
     </xsl:template>
     
     <xsl:template match="ref" mode="rich-text-json">
-        <xsl:text>[REF:</xsl:text>
+        <xsl:text> [REF:</xsl:text>
         <xsl:value-of select="@type"/>
         <xsl:text>:</xsl:text>
         <xsl:value-of select="@target"/>
@@ -1562,7 +1567,7 @@
             <xsl:text>:</xsl:text>
             <xsl:value-of select="@display-type"/>
         </xsl:if>
-        <xsl:text>]</xsl:text>
+        <xsl:text>] </xsl:text>
         <xsl:if test="text()">
             <xsl:value-of select="."/>
         </xsl:if>
@@ -1998,6 +2003,37 @@
                 <fn:string key="location_id"><xsl:value-of select="ancestor::*[@xml:id][1]/@xml:id"/></fn:string>
             </fn:map>
         </xsl:for-each>
+    </xsl:template>
+    
+    <!-- ================================================================== -->
+    <!-- STANDARDS REFERENCE MAPPING                                        -->
+    <!-- ================================================================== -->
+    
+    <xsl:template name="build-standards-reference">
+        <!-- Build a mapping of standard-ref-id to standard details from table entries -->
+        <xsl:for-each-group select=".//entry[@standard-ref-id]" group-by="@standard-ref-id">
+            <xsl:sort select="@standard-ref-id"/>
+            <fn:map key="{current-grouping-key()}">
+                <fn:string key="standard_id"><xsl:value-of select="@standard-id"/></fn:string>
+                <fn:string key="standard_ref_id"><xsl:value-of select="@standard-ref-id"/></fn:string>
+                <fn:string key="title"><xsl:value-of select="@standard-ref-title"/></fn:string>
+                <fn:string key="full_title"><xsl:apply-templates select="." mode="text-only"/></fn:string>
+                
+                <!-- Get agency and number from sibling entries in the same row -->
+                <xsl:variable name="row" select="parent::row"/>
+                <xsl:if test="$row/entry[@standard-ref-number]">
+                    <fn:string key="number"><xsl:value-of select="$row/entry[@standard-ref-number]/@standard-ref-number"/></fn:string>
+                    <fn:string key="full_number"><xsl:apply-templates select="$row/entry[@standard-ref-number]" mode="text-only"/></fn:string>
+                </xsl:if>
+                <xsl:if test="$row/entry[position() = 1 and not(@standard-ref-id) and not(@standard-ref-number)]">
+                    <fn:string key="agency"><xsl:apply-templates select="$row/entry[1]" mode="text-only"/></fn:string>
+                </xsl:if>
+                
+                <!-- Location information -->
+                <fn:string key="table_id"><xsl:value-of select="ancestor::table[1]/@xml:id"/></fn:string>
+                <fn:string key="location_id"><xsl:value-of select="ancestor::article[1]/@xml:id"/></fn:string>
+            </fn:map>
+        </xsl:for-each-group>
     </xsl:template>
     
     <!-- ================================================================== -->
