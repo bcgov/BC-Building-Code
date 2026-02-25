@@ -1585,7 +1585,19 @@
     </xsl:template>
     
     <xsl:template match="text()" mode="rich-text-json">
-        <xsl:value-of select="normalize-space(.)"/>
+        <!-- Normalize whitespace but preserve word boundaries -->
+        <xsl:variable name="normalized" select="normalize-space(.)"/>
+        <xsl:if test="$normalized != ''">
+            <!-- Add leading space if original text started with whitespace and we're not first -->
+            <xsl:if test="preceding-sibling::node() and matches(., '^\s')">
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <xsl:value-of select="$normalized"/>
+            <!-- Add trailing space if original text ended with whitespace and we're not last -->
+            <xsl:if test="following-sibling::node() and matches(., '\s$')">
+                <xsl:text> </xsl:text>
+            </xsl:if>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="emphasis" mode="rich-text-json">
@@ -1611,7 +1623,11 @@
     </xsl:template>
     
     <xsl:template match="ref" mode="rich-text-json">
-        <xsl:text> [REF:</xsl:text>
+        <!-- Add leading space if preceded by non-whitespace -->
+        <xsl:if test="preceding-sibling::node()[1][self::text() and not(matches(., '\s$'))]">
+            <xsl:text> </xsl:text>
+        </xsl:if>
+        <xsl:text>[REF:</xsl:text>
         <xsl:value-of select="@type"/>
         <xsl:text>:</xsl:text>
         <xsl:value-of select="@target"/>
@@ -1619,18 +1635,33 @@
             <xsl:text>:</xsl:text>
             <xsl:value-of select="@display-type"/>
         </xsl:if>
-        <xsl:text>] </xsl:text>
-        <xsl:if test="text()">
-            <xsl:value-of select="."/>
+        <!-- Include display text if present -->
+        <xsl:if test="normalize-space(.) != ''">
+            <xsl:text>:</xsl:text>
+            <xsl:value-of select="normalize-space(.)"/>
+        </xsl:if>
+        <xsl:text>]</xsl:text>
+        <!-- Add trailing space if followed by non-whitespace -->
+        <xsl:if test="following-sibling::node()[1][self::text() and not(matches(., '^\s'))]">
+            <xsl:text> </xsl:text>
         </xsl:if>
     </xsl:template>
 
     
     <xsl:template match="measurement" mode="rich-text-json">
-        <xsl:value-of select="."/>
+        <!-- Add leading space if preceded by text without trailing space -->
+        <xsl:if test="preceding-sibling::node()[1][self::text() and not(matches(., '\s$'))]">
+            <xsl:text> </xsl:text>
+        </xsl:if>
+        <!-- Process child nodes to handle super/sub elements -->
+        <xsl:apply-templates select="node()" mode="rich-text-json"/>
         <xsl:text> (</xsl:text>
         <xsl:value-of select="@units"/>
         <xsl:text>)</xsl:text>
+        <!-- Add trailing space if followed by text without leading space -->
+        <xsl:if test="following-sibling::node()[1][self::text() and not(matches(., '^\s'))]">
+            <xsl:text> </xsl:text>
+        </xsl:if>
     </xsl:template>
     
     <xsl:template match="equation" mode="rich-text-json">

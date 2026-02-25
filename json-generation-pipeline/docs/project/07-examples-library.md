@@ -119,7 +119,7 @@ A curated collection of working examples for each operation type, organized by u
                     <ref type="term" target="rdntl-cc">residential occupancy</ref>, provided</text>
                 <clause xml:id="nbc.divB.part3.sect1.subsect2.art5.sent2.clause1" letter="a">
                     <text>occupants live as a single housekeeping unit in a
-                        <ref type="term" target="dwllng-nt">dwelling unit</ref>
+                        <ref type="term" target="dwllng-n">dwelling unit</ref>
                         with sleeping accommodation for not more than 10 persons,</text>
                 </clause>
                 <clause xml:id="nbc.divB.part3.sect1.subsect2.art5.sent2.clause2" letter="b">

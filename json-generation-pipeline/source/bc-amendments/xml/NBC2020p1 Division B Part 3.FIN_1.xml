@@ -68,7 +68,7 @@
                     <sentence xml:id="nbc.divB.part3.sect1.subsect2.art5.sent2" number="2">
                         <text>A care facility accepted for residential use pursuant to provincial legislation is permitted to be classified as a <ref type="term" target="rdntl-cc">residential occupancy</ref>, provided</text>
                         <clause xml:id="nbc.divB.part3.sect1.subsect2.art5.sent2.clause1" letter="a">
-                            <text>occupants live as a single housekeeping unit in a <ref type="term" target="dwllng-nt">dwelling unit</ref> with sleeping accommodation for not more than 10 persons,</text>
+                            <text>occupants live as a single housekeeping unit in a <ref type="term" target="dwllng-n">dwelling unit</ref> with sleeping accommodation for not more than 10 persons,</text>
                         </clause>
                         <clause xml:id="nbc.divB.part3.sect1.subsect2.art5.sent2.clause2" letter="b">
                             <text><ref type="term" target="mk-lrm">smoke alarms</ref>  are installed in conformance with <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art20" display-type="long"/>,</text>
@@ -327,7 +327,7 @@
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect2.art14.sent4"/>
             <replace preserve-references="true">
                 <new-content source="bc">
-                    <sentence xml:id="nbc.divB.part3.sect2.subsect2.art14.sent4" number="4">                        <text>A rooftop enclosure for a stairway or an elevator lobby serving an <ref type="term" target="ccpnc">occupancy</ref> on a roof that serves only one <ref type="term" target="dwllng-nt">dwelling unit</ref> need not have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> nor be constructed as a <ref type="term" target="fr-prtn">fire separation</ref>.</text>
+                    <sentence xml:id="nbc.divB.part3.sect2.subsect2.art14.sent4" number="4">                        <text>A rooftop enclosure for a stairway or an elevator lobby serving an <ref type="term" target="ccpnc">occupancy</ref> on a roof that serves only one <ref type="term" target="dwllng-n">dwelling unit</ref> need not have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> nor be constructed as a <ref type="term" target="fr-prtn">fire separation</ref>.</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -673,7 +673,7 @@
             <insert>
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part3.sect2.subsect4.art19.sent7" number="7">
-                        <text>Each adaptable <ref type="term" target="dwllng-nt">dwelling unit</ref> shall be provided with special outlet boxes and cover plates that</text>
+                        <text>Each adaptable <ref type="term" target="dwllng-n">dwelling unit</ref> shall be provided with special outlet boxes and cover plates that</text>
                         <clause xml:id="nbc.divB.part3.sect2.subsect4.art19.sent7.clause1" letter="a">
                             <text>are designed, located and wired specifically to allow strobe lights to operate in conformance with</text>
                             <subclause xml:id="nbc.divB.part3.sect2.subsect4.art19.sent7.clause1.subclause1" number="1">
@@ -950,7 +950,7 @@
                         <sentence xml:id="nbc.divB.part3.sect3.subsect1.art3.sent3" number="3">                            <text><ref type="term" target="mn-f-gr">Means of egress</ref> shall be provided from every podium, terrace, platform or contained open space used or intended for <ref type="term" target="ccpnc">occupancy</ref>, to <ref type="term" target="xt">exits</ref> in conformance with the requirements of <ref type="internal" target="nbc.divB.part3.sect4" display-type="long"/>.</text>
                         </sentence>
                         <sentence xml:id="nbc.divB.part3.sect3.subsect1.art3.sent4" number="4">
-                            <text><ref type="term" target="mn-f-gr">Means of egress</ref> from an <ref type="term" target="ccpnc">occupancy</ref> on a roof serving only a single <ref type="term" target="dwllng-nt">dwelling unit</ref> shall be provided in conformance with <ref type="internal" target="nbc.divB.part3.sect3.subsect4.art4" display-type="long"/>.</text>
+                            <text><ref type="term" target="mn-f-gr">Means of egress</ref> from an <ref type="term" target="ccpnc">occupancy</ref> on a roof serving only a single <ref type="term" target="dwllng-n">dwelling unit</ref> shall be provided in conformance with <ref type="internal" target="nbc.divB.part3.sect3.subsect4.art4" display-type="long"/>.</text>
                         </sentence>
                         <sentence xml:id="nbc.divB.part3.sect3.subsect1.art3.sent5" number="5">
                             <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art3.sent4" display-type="short"/> and except as required by <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art3.sent6" display-type="short"/>, a <ref type="term" target="mn-f-gr">means of egress</ref> at the roof level, designed in conformance with the requirements for <ref type="term" target="xt">exits</ref> in <ref type="internal" target="nbc.divB.part3.sect4" display-type="long"/>, shall be provided from an <ref type="term" target="ccpnc">occupancy</ref> on a roof.</text>
@@ -1309,7 +1309,7 @@
             <replace preserve-references="true">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part3.sect3.subsect4.art3.sent4" number="4">
-                        <text>Except for the storage of <ref type="term" target="flmmbl-l">flammable liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref> inside a single-family <ref type="term" target="dwllng-nt">dwelling unit</ref> and garages or sheds attached to these <ref type="term" target="dwllng-n">dwelling units</ref>, where storage rooms are required by Part 4 of Division B of the British Columbia Fire Code for the storage of <ref type="term" target="flmmbl-l">flammable liquids</ref> or <ref type="term" target="cmbtbl-l">combustible liquids</ref> in <ref type="term" target="rdntl-cc">residential occupancies</ref>, such rooms shall not be located above or below the <ref type="term" target="frt-tr">first storey</ref>.</text>
+                        <text>Except for the storage of <ref type="term" target="flmmbl-l">flammable liquids</ref> and <ref type="term" target="cmbtbl-l">combustible liquids</ref> inside a single-family <ref type="term" target="dwllng-n">dwelling unit</ref> and garages or sheds attached to these <ref type="term" target="dwllng-n">dwelling units</ref>, where storage rooms are required by Part 4 of Division B of the British Columbia Fire Code for the storage of <ref type="term" target="flmmbl-l">flammable liquids</ref> or <ref type="term" target="cmbtbl-l">combustible liquids</ref> in <ref type="term" target="rdntl-cc">residential occupancies</ref>, such rooms shall not be located above or below the <ref type="term" target="frt-tr">first storey</ref>.</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -2051,7 +2051,7 @@ each 25 females.</find>
                             <text>within floor levels of a <ref type="term" target="t">suite</ref> of <ref type="term" target="rdntl-cc">residential occupancy</ref> that are not at the same level as the entry level to the <ref type="term" target="t">suite</ref>,</text>
                         </clause>
                         <clause xml:id="nbc.divB.part3.sect8.subsect2.art3.sent2.clause12" letter="l">
-                            <text>within a <ref type="term" target="t">suite</ref> of <ref type="term" target="rdntl-cc">residential occupancy</ref> that has not been designated by this Code or an <ref type="term" target="thrt-hvn">authority having jurisdiction</ref> to be accessible or designed and constructed as an adaptable dwelling unit, or</text>
+                            <text>within a <ref type="term" target="t">suite</ref> of <ref type="term" target="rdntl-cc">residential occupancy</ref> that has not been designated by this Code or an <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> to be accessible or designed and constructed as an adaptable dwelling unit, or</text>
                         </clause>
                         <clause xml:id="nbc.divB.part3.sect8.subsect2.art3.sent2.clause13" letter="m">
                             <text>in a <ref type="term" target="bldng">building</ref> of <ref type="term" target="rdntl-cc">residential occupancy</ref> that is not more than two <ref type="term" target="tr">storeys</ref> that contains multiple <ref type="term" target="dwllng-n">dwelling units</ref> and common interior space served by a common <ref type="term" target="bldng">building</ref> entrance, on a floor level that</text>

@@ -121,7 +121,7 @@
                             >
                             <text>the correction of an <ref
                                     type="term"
-                                    target="nsf-cndtn"
+                                    target="nf-cndtn"
                                     >unsafe condition</ref> in or about any <ref
                                     type="term"
                                     target="bldng"
@@ -210,7 +210,7 @@
                                     target="ltrtn"
                                     >alteration</ref>, renewal or repair of <ref
                                     type="term"
-                                    target="plmbng-sstm"
+                                    target="plmbng-t"
                                     >plumbing systems</ref>, and</text>
                         </clause>
                         <clause
@@ -222,7 +222,7 @@
                                     target="ltrtn"
                                     >alteration</ref>, rehabilitation and change of occupancy of <ref
                                     type="term"
-                                    target="hrtg-bldng"
+                                    target="bc-hrtg-bldng"
                                     >heritage buildings</ref>.</text>
                         </clause>
                     </sentence>
@@ -260,7 +260,7 @@
                                     target="swg"
                                     >sewage</ref>, water, electrical, telephone, rail or similar public infrastructure systems located in a <ref
                                     type="term"
-                                    target="strt"
+                                    target="trt"
                                     >street</ref> or a public transit right of way,</text>
                         </clause>
                         <clause
@@ -309,7 +309,7 @@
                             >
                             <text>with the permission of the <ref
                                     type="term"
-                                    target="thrt-hvng-jrsdctn"
+                                    target="bc-thrt-hvn"
                                     >authority having jurisdiction</ref>, temporary <ref
                                     type="term"
                                     target="bldng"
@@ -440,7 +440,7 @@
                         >
                         <text>For <ref
                                 type="term"
-                                target="hrtg-bldng"
+                                target="bc-hrtg-bldng"
                                 >heritage buildings</ref>, the Alternate Compliance Methods for Heritage Buildings in <ref
                                 type="internal"
                                 target="nbc.divA.part1.sect1.subsect1.art1.table1"
@@ -498,7 +498,7 @@
                                             />.
                                         2 h <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> required between some <ref
                                             type="term"
                                             target="mjr-ccpn"
@@ -508,7 +508,7 @@
                                             target="ccpnc"
                                             >occupancies</ref>, 1 h <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> is acceptable, provided the <ref
                                             type="term"
                                             target="bldng"
@@ -539,14 +539,14 @@
                                             />.
                                         1 h <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> required between some <ref
                                             type="term"
                                             target="mjr-ccpn"
                                             >major occupancies</ref>.</entry>
                                     <entry>30 min <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> is acceptable if the <ref
                                             type="term"
                                             target="bldng"
@@ -622,11 +622,11 @@
                                             />.
                                         Where a material, assembly of materials or structural member is required to have a <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> it shall be tested in accordance with CAN/ULC-S101, "Fire Endurance Tests of Building Construction Materials."</entry>
                                     <entry>A <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> may also be used based on:
                                         (a) HUD No. 8 Guideline on Fire Ratings of Archaic Materials and Assemblies.,
                                         (b) Fire Endurance of Protected Steel Columns and Beams, DBR Technical Paper No. 194.,
@@ -650,17 +650,17 @@
                                             />.
                                         Supporting assemblies to have <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> at least equivalent to that of the supported floor.</entry>
                                     <entry><ref type="term" target="hv-tmbr-">Heavy timber construction</ref> is permitted to have a <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> less than would be required by the Code provided the <ref
                                             type="term"
                                             target="bldng"
                                             >building</ref>:
                                         (a) is <ref type="term" target="prnklrd">sprinklered</ref>, and
-                                        (b) does not exceed 6 <ref type="term" target="str">storeys</ref> in <ref
+                                        (b) does not exceed 6 <ref type="term" target="tr">storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
                                             >building height</ref>.</entry>
@@ -690,7 +690,7 @@
                                             type="term"
                                             target="nncmbtbl-cnstrctn"
                                             >noncombustible construction</ref>,
-                                        (b) both <ref type="term" target="fr-cmprtmnt">fire compartments</ref> are <ref
+                                        (b) both <ref type="term" target="fr-cmprt">fire compartments</ref> are <ref
                                             type="term"
                                             target="prnklrd"
                                             >sprinklered</ref>, or
@@ -721,12 +721,12 @@
                                             />.
                                         6 mm wired glass in steel frame required in <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separations</ref>.</entry>
                                     <entry
                                         >For fixed transoms or sidelights, 6 mm wired glass fixed to a wood frame of at least 50 mm thickness with steel stops is permitted in a required <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref>.</entry>
                                 </row>
                                 
@@ -750,20 +750,20 @@
                                             />.
                                         <ref type="term" target="mzznn">Mezzanines</ref> enclosing more than 10% above the horizontal plane are considered as <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storey</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
                                             >building height</ref>.</entry>
                                     <entry>Enclosed <ref
                                             type="term"
-                                            target="mznn"
+                                            target="mzznn"
                                             >mezzanines</ref> may be up to 40% of the <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storey</ref> in which they occur and not be considered a <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storey</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
@@ -799,7 +799,7 @@
                                             target="cmbtbl-cnstrctn"
                                             >combustible construction</ref> up to 6 <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storeys</ref> provided:
                                         (a) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
@@ -814,7 +814,7 @@
                                             >occupancies</ref>, and
                                         (c) floor assemblies not required to exceed 1 h <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> requirements may be of <ref type="term" target="hv-tmbr-">heavy timber construction</ref>.</entry>
                                 </row>
                                 
@@ -834,11 +834,11 @@
                                             />.
                                         The area of <ref
                                             type="term"
-                                            target="nprtctd-pnng"
+                                            target="nprtctd-"
                                             >unprotected opening</ref> shall not exceed the limits in Tables 3.2.3.1.A to Table 3.2.3.1.E</entry>
                                     <entry>The area of <ref
                                             type="term"
-                                            target="nprtctd-pnng"
+                                            target="nprtctd-"
                                             >unprotected opening</ref> is not limited provided:
                                         (a) the <ref
                                             type="term"
@@ -878,14 +878,14 @@
                                             target="xpsng-bldng-fc"
                                             >exposing building face</ref> is required to have a <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> and/or be of <ref
                                             type="term"
                                             target="nncmbtbl-cnstrctn"
                                             >noncombustible construction</ref>.</entry>
                                     <entry><ref type="term" target="xpng-bld">Exposing building face</ref> is not required to have a <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> if the <ref
                                             type="term"
                                             target="bldng"
@@ -953,7 +953,7 @@
                                             target="bldng"
                                             >buildings</ref> of maximum 4 <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
@@ -981,7 +981,7 @@
                                             target="ntrconnctd-flr-spc"
                                             >interconnected floor space</ref> by a <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> with the rating required for the corridor, and
                                         (d) <ref
                                             type="term"
@@ -997,16 +997,16 @@
                                             target="bldng"
                                             >buildings</ref> of maximum 3 <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
                                             >building height</ref>, or first 2 <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storeys</ref> and <ref
                                             type="term"
-                                            target="bsmnt"
+                                            target="bmnt"
                                             >basement</ref>, need not comply with <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect8"
@@ -1062,11 +1062,11 @@
                                             target="t"
                                             >suites</ref> by a <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> having a fire resistance rating of 45 min or 1 hr.</entry>
                                     <entry>Existing <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separations</ref> of 30 min, such as wood lath and plaster in good condition, are acceptable in <ref
                                             type="term"
                                             target="prnklrd"
@@ -1075,7 +1075,7 @@
                                             target="bldng"
                                             >buildings</ref> not exceeding 6 <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
@@ -1088,7 +1088,7 @@
                                     <entry>16</entry>
                                     <entry>Corridor <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref>
                                         <ref
                                             type="internal"
@@ -1104,17 +1104,17 @@
                                             target="bldng"
                                             >building</ref> by a <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> having a <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> of at least 45 min.</entry>
                                     <entry
                                         >Existing corridors with 30 min fire resistance ratings, such as wood lath and plaster in good condition, are acceptable in <ref type="term" target="rdntl-cc">residential occupancies</ref> provided the <ref
                                             type="term"
                                             target="bldng"
                                             >building</ref>:
-                                        (a) does not exceed 6 <ref type="term" target="str">storeys</ref> in <ref
+                                        (a) does not exceed 6 <ref type="term" target="tr">storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
                                             >building height</ref>, and
@@ -1150,7 +1150,7 @@
                                             >building</ref> is maximum 20 people, and
                                         (b) the <ref type="term" target="bldng">building</ref> does not exceed 3 <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
@@ -1219,7 +1219,7 @@
                                     <entry
                                         >Existing conditions that do not comply fully with the requirements are permitted if they are acceptable to the <ref
                                             type="term"
-                                            target="thrt-hvng-jrsdctn"
+                                            target="bc-thrt-hvn"
                                             >authority having jurisdiction</ref>.</entry>
                                 </row>
                                 
@@ -1242,7 +1242,7 @@
                                     <entry
                                         >Existing glass or transparent panels that do not comply fully with the requirements are permitted if sufficiently discernible or <ref
                                             type="term"
-                                            target="grd"
+                                            target="grade"
                                             >guards</ref> are provided in hazardous situations.</entry>
                                 </row>
                                 
@@ -1313,7 +1313,7 @@
                                             /> provided:
                                         (a) the <ref type="term" target="bldng">building</ref> does not exceed 3 <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
@@ -1348,7 +1348,7 @@
                                         (a) they serve Group C or D <ref type="term" target="ccpnc">occupancies</ref>,
                                         (b) the <ref type="term" target="bldng">building</ref> does not exceed 4 <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
@@ -1377,10 +1377,10 @@
                                             />.
                                         <ref type="term" target="xt">Exits</ref> are required to be separated from the remainder of the <ref type="term" target="flr-r">floor area</ref> by a <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> having a <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> of not less than required by <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect2"
@@ -1388,13 +1388,13 @@
                                             />. , but not less than 45 min.</entry>
                                     <entry>1. <ref type="term" target="bldng">Buildings</ref> of 3 <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storeys</ref> or less may have <ref type="term" target="xt">exits</ref> that are separated by a <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> that does not have a <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> provided:
                                         (a) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
@@ -1407,13 +1407,13 @@
                                             />.
                                         2. <ref type="term" target="bldng">Buildings</ref> not exceeding 6 <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
                                             >building height</ref> may have <ref type="term" target="xt">exits</ref> that are separated by a <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> having a fire resistance rating of not less than 45 min provided the <ref
                                             type="term"
                                             target="bldng"
@@ -1439,12 +1439,12 @@
                                             />.
                                         Rooms adjacent to the lobby are required to be separated by a <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref>.</entry>
                                     <entry
                                         >Rooms adjacent to the lobby are not required to be separated by a <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> provided:
                                         (a) the <ref type="term" target="flr-r">floor area</ref> is <ref
                                             type="term"
@@ -1625,11 +1625,11 @@
                                             />.
                                         <ref type="term" target="vrtcl-rv">Vertical service spaces</ref> are required to be separated from the adjacent <ref type="term" target="flr-r">floor area</ref> by a rated <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref>.</entry>
                                     <entry>Existing <ref type="term" target="vrtcl-rv">vertical service spaces</ref> that do not completely conform to the rated <ref
                                             type="term"
-                                            target="fr-sprtn"
+                                            target="fr-prtn"
                                             >fire separation</ref> requirements are acceptable provided the <ref type="term" target="vrtcl-rv">vertical service spaces</ref> are <ref
                                             type="term"
                                             target="prnklrd"
@@ -1689,7 +1689,7 @@
                                             display-type="long"
                                             />. provided it is acceptable to the <ref
                                             type="term"
-                                            target="thrt-hvng-jrsdctn"
+                                            target="bc-thrt-hvn"
                                             >authority having jurisdiction</ref>.</entry>
                                 </row>
                                 
@@ -1744,15 +1744,15 @@
                                         Part 6 and Part 7</entry>
                                     <entry>Existing mechanical and <ref
                                             type="term"
-                                            target="plmbng-sstm"
+                                            target="plmbng-t"
                                             >plumbing systems</ref> in <ref
                                             type="term"
                                             target="bldng"
                                             >buildings</ref> are not required to fully comply to the requirements of Parts 6 or Part 7 provided:
-                                        (a) it is not an <ref type="term" target="nsf-cndtn">unsafe condition</ref> and
+                                        (a) it is not an <ref type="term" target="nf-cndtn">unsafe condition</ref> and
                                         (b) it is acceptable to the <ref
                                             type="term"
-                                            target="thrt-hvng-jrsdctn"
+                                            target="bc-thrt-hvn"
                                             >authority having jurisdiction</ref>.</entry>
                                 </row>
                                 
@@ -1817,9 +1817,9 @@
                                             target="nbc.divB.part3.sect8.subsect5.art1.sent2"
                                             display-type="long"
                                             />
-                                        One bathroom in a <ref type="term" target="scnd-t">secondary suite</ref> shall have walls adjacent the water closet and shower or bathtub location reinforced to accommodate the future installation of grab bars.</entry>
+                                        One bathroom in a <ref type="term" target="bc-scnd-t">secondary suite</ref> shall have walls adjacent the water closet and shower or bathtub location reinforced to accommodate the future installation of grab bars.</entry>
                                     <entry
-                                        >Reinforcement to accommodate the future installation of grab bars is not required in existing bathrooms serving a <ref type="term" target="scnd-t">secondary suite</ref>.</entry>
+                                        >Reinforcement to accommodate the future installation of grab bars is not required in existing bathrooms serving a <ref type="term" target="bc-scnd-t">secondary suite</ref>.</entry>
                                 </row>
                                 
                                 <!-- Row 2: Ceiling Heights of Rooms or Spaces -->
@@ -1846,15 +1846,15 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect3.art4.sent3"
                                             display-type="long"
-                                            />, the minimum ceiling heights in a <ref type="term" target="scnd-t">secondary suite</ref> over the required area as indicated in <ref
+                                            />, the minimum ceiling heights in a <ref type="term" target="bc-scnd-t">secondary suite</ref> over the required area as indicated in <ref
                                             type="internal"
                                             target="nbc.divBV2.part9.sect5.subsect3.art1.table1"
                                             display-type="long"
-                                            />. shall be not less than 1.95 m. It shall be possible to travel from the required area of one room to the required areas of all other rooms within the <ref type="term" target="scnd-t">secondary suite</ref> without reduction of the ceiling height to less than 1.95 m.Except as required by <ref
+                                            />. shall be not less than 1.95 m. It shall be possible to travel from the required area of one room to the required areas of all other rooms within the <ref type="term" target="bc-scnd-t">secondary suite</ref> without reduction of the ceiling height to less than 1.95 m.Except as required by <ref
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect3.art4.sent3"
                                             display-type="long"
-                                            />, the minimum clear height under beams and ducting, including where located over stairs, in a <ref type="term" target="scnd-t">secondary suite</ref> shall be not less than 1.85 m.</entry>
+                                            />, the minimum clear height under beams and ducting, including where located over stairs, in a <ref type="term" target="bc-scnd-t">secondary suite</ref> shall be not less than 1.85 m.</entry>
                                 </row>
                                 
                                 <!-- Row 3: Doorway Opening Sizes -->
@@ -1873,7 +1873,7 @@
                                             display-type="long"
                                             />.
                                         Doorway openings shall be designed to accommodate swing-type and folding doors not less than 1 980 mm high.</entry>
-                                    <entry>Except for <ref type="term" target="xt">exit</ref> doors and for doors serving <ref type="term" target="pblc-crr">public corridors</ref> and <ref type="term" target="xt">exit</ref> corridors that serve a house with a <ref type="term" target="scnd-t">secondary suite</ref>, doorway openings within a <ref type="term" target="scnd-t">secondary suite</ref> shall be designed to accommodate swing-type and folding doors not less than 1 890 mm high.</entry>
+                                    <entry>Except for <ref type="term" target="xt">exit</ref> doors and for doors serving <ref type="term" target="pblc-crr">public corridors</ref> and <ref type="term" target="xt">exit</ref> corridors that serve a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref>, doorway openings within a <ref type="term" target="bc-scnd-t">secondary suite</ref> shall be designed to accommodate swing-type and folding doors not less than 1 890 mm high.</entry>
                                 </row>
                                 
                                 <row
@@ -1887,7 +1887,7 @@
                                             display-type="long"
                                             />
                                         The clear height over stairs shall be not less than 1950 mm.</entry>
-                                    <entry>Except for stairs in a <ref type="term" target="pblc-crr">public corridor</ref> or <ref type="term" target="xt">exit</ref> corridor that serve a house with a <ref type="term" target="scnd-t">secondary suite</ref>, the clear height over stairs that are located under existing beams and existing ducting in a house with a <ref type="term" target="scnd-t">secondary suite</ref> shall be not less than 1 850 mm.</entry>
+                                    <entry>Except for stairs in a <ref type="term" target="pblc-crr">public corridor</ref> or <ref type="term" target="xt">exit</ref> corridor that serve a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref>, the clear height over stairs that are located under existing beams and existing ducting in a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> shall be not less than 1 850 mm.</entry>
                                 </row>
                                 
                                 <row
@@ -1901,19 +1901,19 @@
                                             target="nbc.divBV2.part9.sect9.subsect4.art4.sent1"
                                             display-type="long"
                                             />
-                                        <ref type="term" target="nprtctd-">Unprotected openings</ref> in exterior walls that are within 3 m horizontally and less than 10 m below or less than 5 m above an unenclosed exterior <ref type="term" target="xt">exit</ref> stair or ramp of a house with a <ref type="term" target="scnd-t">secondary suite</ref> shall be protected where the unenclosed exterior <ref type="term" target="xt">exit</ref> stair or <ref type="term" target="rmp">ramp</ref> provides the only <ref type="term" target="mn-f-gr">means of egress</ref> from a <ref
+                                        <ref type="term" target="nprtctd-">Unprotected openings</ref> in exterior walls that are within 3 m horizontally and less than 10 m below or less than 5 m above an unenclosed exterior <ref type="term" target="xt">exit</ref> stair or ramp of a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> shall be protected where the unenclosed exterior <ref type="term" target="xt">exit</ref> stair or <ref type="term" target="rmp">ramp</ref> provides the only <ref type="term" target="mn-f-gr">means of egress</ref> from a <ref
                                             type="term"
                                             target="t"
                                             >suite</ref> and is exposed to fire from <ref
                                             type="term"
-                                            target="nprtctd-pnng"
+                                            target="nprtctd-"
                                             >unprotected openings</ref> in the exterior walls of another <ref
                                             type="term"
-                                            target="dwllng-nt"
+                                            target="dwllng-n"
                                             >dwelling unit</ref>, ancillary space or common space.</entry>
                                     <entry>Protection of the <ref
                                             type="term"
-                                            target="nprtctd-pnng"
+                                            target="nprtctd-"
                                             >unprotected openings</ref> as described in <ref
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect4.art4.sent1"
@@ -1921,7 +1921,7 @@
                                             /> is not required when all <ref
                                             type="term"
                                             target="mk-lrm"
-                                            >smoke alarms</ref> within a house with a <ref type="term" target="scnd-t">secondary suite</ref> are of photo-electric type and interconnected as described in <ref
+                                            >smoke alarms</ref> within a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> are of photo-electric type and interconnected as described in <ref
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause1"
                                             display-type="long"
@@ -1940,20 +1940,20 @@
                                             />
                                         Where an exterior <ref type="term" target="xt">exit</ref> door in one <ref
                                             type="term"
-                                            target="fr-cmprtmnt"
+                                            target="fr-cmprt"
                                             >fire compartment</ref> iswithin 3 m horizontally of an <ref
                                             type="term"
-                                            target="nprtctd-pnng"
+                                            target="nprtctd-"
                                             >unprotected opening</ref> inanother <ref
                                             type="term"
-                                            target="fr-cmprtmnt"
+                                            target="fr-cmprt"
                                             >fire compartment</ref> and the exterior walls of these <ref
                                             type="term"
-                                            target="fr-cmprtmnt"
+                                            target="fr-cmprt"
                                             >fire compartments</ref> intersect at an exterior angle of less than 135°, the opening shall be protected.</entry>
                                     <entry>Protection of the <ref
                                             type="term"
-                                            target="nprtctd-pnng"
+                                            target="nprtctd-"
                                             >unprotected openings</ref> as described in <ref
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect4.art6.sent1"
@@ -1961,7 +1961,7 @@
                                             /> is not required when all <ref
                                             type="term"
                                             target="mk-lrm"
-                                            >smoke alarms</ref> within a house with a <ref type="term" target="scnd-t">secondary suite</ref> are of photo-electric type and interconnected as described in <ref
+                                            >smoke alarms</ref> within a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> are of photo-electric type and interconnected as described in <ref
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause1"
                                             display-type="long"
@@ -1979,14 +1979,14 @@
                                             target="nbc.divBV2.part9.sect10.subsect3.art1.sent3"
                                             display-type="long"
                                             />
-                                        In a house with a <ref type="term" target="scnd-t">secondary suite</ref>, where a minimum <ref
+                                        In a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref>, where a minimum <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> of 30 min is permitted, it is permitted to use wood-frame construction where stud and joist spaces are filled with absorptive material,resilient metal channel spaced 400 or 600 mm o.c. is on one side and not less than 12.7 mm thick gypsum board is installed on ceilings and on both sides of walls.</entry>
                                     <entry
                                         >Adding resilient metal channel spaced 400 or 600 mm o.c. and an additional layer of not less than 12.7 mm gypsum board to one side of an existing finished wall assembly that has not less than 12.7 mm gypsum board on each side or an existing finished floor-ceiling assembly that has not less than 12.7 mm gypsum on the ceiling side is permitted to be used where a 30 min <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> is required.</entry>
                                 </row>
                                 
@@ -2001,16 +2001,16 @@
                                             />
                                         <ref type="term" target="ldbrng">Loadbearing</ref> walls, columns and arches in the <ref
                                             type="term"
-                                            target="str"
+                                            target="tr"
                                             >storey</ref> immediately below a floor or roof assembly shall have a <ref
                                             type="term"
-                                            target="fr-rtng"
+                                            target="fr-rtnc-"
                                             >fire-resistance rating</ref> of not less than that required for the supported floor or roof assembly.</entry>
                                     <entry
                                         >Except for heavy timber elements and those of masonry or concrete construction, light frame walls, columns, arches and beams as well as <ref type="term" target="ldbrng">loadbearing</ref> steel elements that support floors between <ref
                                             type="term"
-                                            target="dwllng-nt"
-                                            >dwelling units</ref> in a house with a <ref type="term" target="scnd-t">secondary suite</ref> including their common spaces shall be protected by not less than 12.7 mm thick gypsum board.</entry>
+                                            target="dwllng-n"
+                                            >dwelling units</ref> in a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces shall be protected by not less than 12.7 mm thick gypsum board.</entry>
                                 </row>
                                 
                                 <row
@@ -2025,15 +2025,15 @@
                                             />
                                         Each <ref
                                             type="term"
-                                            target="dwllng-nt"
-                                            >dwelling unit</ref> shall be separated from every other space in a house with a <ref type="term" target="scnd-t">secondary suite</ref> in which noise may be transmitted by construction having joist and stud spaces <emphasis
+                                            target="dwllng-n"
+                                            >dwelling unit</ref> shall be separated from every other space in a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> in which noise may be transmitted by construction having joist and stud spaces <emphasis
                                             style="italic"
                                             >filled</emphasis> with sound-absorbing material, resilient channel on one side of the separation, and 12.7 mm thick gypsum board on ceilings and on both sides of walls, or by either construction providing an STC rating of not less than 43, or by using a separating assembly and adjoining construction providing an ASTC rating of not less than 40.</entry>
                                     <entry
                                         >The assemblies and adjoining constructions that separate the <ref
                                             type="term"
-                                            target="dwllng-nt"
-                                            >dwelling units</ref> in a house with a <ref type="term" target="scnd-t">secondary suite</ref> including their common spaces need not comply with <ref
+                                            target="dwllng-n"
+                                            >dwelling units</ref> in a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces need not comply with <ref
                                             type="internal"
                                             target="nbc.divBV2.part9.sect11.subsect1.art1.sent2.clause1"
                                             display-type="long"
@@ -2190,7 +2190,7 @@
                                 display-type="short"
                                 />, using alternative solutions, accepted by the <ref
                                 type="term"
-                                target="thrt-hvng-jrsdctn"
+                                target="bc-thrt-hvn"
                                 >authority having jurisdiction</ref> under <ref
                                 type="internal"
                                 target="nbc.divC.part2.sect3"
@@ -2264,7 +2264,7 @@
                             <text
                                 >Unless otherwise specified in this Code, the <ref
                                     type="term"
-                                    target="wnr"
+                                    target="bc-wnr"
                                     >owner</ref> of a <ref
                                     type="term"
                                     target="bldng"
@@ -2279,13 +2279,13 @@
                             >
                             <text>The <ref
                                     type="term"
-                                    target="wnr"
+                                    target="bc-wnr"
                                     >owner</ref> of a <ref
                                     type="term"
                                     target="bldng"
                                     >building</ref> is in no way relieved of full responsibility for complying with this Code by the <ref
                                     type="term"
-                                    target="thrt-hvng-jrsdctn"
+                                    target="bc-thrt-hvn"
                                     >authority having jurisdiction</ref></text>
                             <clause
                                 xml:id="nbc.divA.part1.sect2.subsect1.art2.sent2.clause1"
@@ -2344,7 +2344,7 @@
                                 <text
                                     >Personnel performing the installation, alteration, renewal or repair of a <ref
                                         type="term"
-                                        target="plmbng-sstm"
+                                        target="plmbng-t"
                                         >plumbing system</ref> shall</text>
                                 <clause
                                     xml:id="nbc.divA.part1.sect2.subsect3.art1.sent1.clause1"
@@ -2441,7 +2441,7 @@
                         <definition
                             >means an area and its facilities, or both, as required by this Code, which is easy to approach, enter, exit, operate, participate in, pass to and from, and use safely and independently by <ref
                                 type="term"
-                                target="prsn-wth-dsblts"
+                                target="bc-prsn-wth-dsblts"
                                 >persons with disabilities</ref>.</definition>
                     </item>
                 </new-content>
@@ -2470,7 +2470,7 @@
                         <term>Adaptable dwelling unit</term>
                         <definition>means a <ref
                                 type="term"
-                                target="dwllng-nt"
+                                target="dwllng-n"
                                 >dwelling unit</ref> designed and constructed with some <emphasis
                                 style="italic"
                                 >accessible</emphasis> features and which accommodates the future modification to provide more <emphasis
@@ -2810,7 +2810,7 @@
                                         target="fr-prtn"
                                         >fire separation</ref> that has a <ref
                                         type="term"
-                                        target="fr-rstnc-rtng"
+                                        target="fr-rtnc-"
                                         >fire-resistance rating</ref> of not less than 1 h and extends from ground or lowermost assembly continuously through or adjacent to all <ref
                                         type="term"
                                         target="tr"
@@ -2965,7 +2965,7 @@ Llitre(s)</replace>
                             xml:id="nbc.divA.part1.appendix.appnote2a.para1"
                             >Many local governments have identified conservation of selected heritage properties, or protection of the heritage character of certain areas, as being community planning objectives. The Province's planning objectives and growth strategy encourage and support local government in this effort. The key is to find ways to make restoration and rehabilitation of <ref
                                 type="term"
-                                target="hrtg-bldng"
+                                target="bc-hrtg-bldng"
                                 >heritage buildings</ref> economically viable for the properties' owners.</paragraph>
                         <paragraph
                             xml:id="nbc.divA.part1.appendix.appnote2a.para2"
@@ -2977,10 +2977,10 @@ Llitre(s)</replace>
                                 target="bldng"
                                 >buildings</ref> is, in many cases, impractical and with <ref
                                 type="term"
-                                target="hrtg-bldng"
+                                target="bc-hrtg-bldng"
                                 >heritage buildings</ref> may compromise historic appearances or authenticity. Therefore, the Table of Alternate Compliance Methods for Heritage Buildings was developed to provide alternate methods for complying with the performance level intended by the Code. The use of sprinklers is advocated as one of the primary methods in assuring this performance level for <ref
                                 type="term"
-                                target="hrtg-bldng"
+                                target="bc-hrtg-bldng"
                                 >heritage buildings</ref>. Sprinkler systems not only control the fire, which aids evacuation, but also provides the added benefit of protecting the <ref
                                 type="term"
                                 target="bldng"
@@ -2989,13 +2989,13 @@ Llitre(s)</replace>
                             xml:id="nbc.divA.part1.appendix.appnote2a.para3"
                             >The Table of Alternative Compliance Methods for Heritage Buildings represents some of the ways that restoration and rehabilitation of <ref
                                 type="term"
-                                target="hrtg-bldng"
+                                target="bc-hrtg-bldng"
                                 >heritage buildings</ref> can be facilitated without compromising the objectives of the Code. Only <ref
                                 type="term"
                                 target="bldng"
                                 >buildings</ref> which have been identified by the provincial or a local government are included in the definition of "<ref
                                 type="term"
-                                target="hrtg-bldng"
+                                target="bc-hrtg-bldng"
                                 >heritage building</ref>." For these <ref
                                 type="term"
                                 target="bldng"
@@ -3179,10 +3179,10 @@ Llitre(s)</replace>
                                 target="bldng"
                                 >buildings</ref> unless the <ref
                                 type="term"
-                                target="thrt-hvn"
+                                target="bc-thrt-hvn"
                                 >authority having jurisdiction</ref> has determined that there is an inherent threat to occupant safety and has issued an order to eliminate the <ref
                                 type="term"
-                                target="nsf-cndtn"
+                                target="nf-cndtn"
                                 >unsafe condition</ref>, or where substantial changes or additions are being made to an existing <ref
                                 type="term"
                                 target="bldng"
@@ -3243,7 +3243,7 @@ Llitre(s)</replace>
                         <paragraph
                             >The successful application of Code requirements to existing construction becomes a matter of balancing the cost of implementing a requirement with the relative importance of that requirement to the overall Code objectives. The degree to which any particular requirement can be relaxed without affecting the intended level of safety of the Code requires considerable judgment on the part of both the designer and the <ref
                                 type="term"
-                                target="thrt-hvn"
+                                target="bc-thrt-hvn"
                                 >authority having jurisdiction</ref>.</paragraph>
                         <paragraph
                             >Further information on the application of Code requirements to existing or relocated <ref
@@ -4075,7 +4075,7 @@ Llitre(s)</replace>
                                 target="fr"
                                 >fire</ref> will start or, if it does start, that it will spread beyond the <ref
                                 type="term"
-                                target="fr-cmprtmnt"
+                                target="fr-cmprt"
                                 >fire compartment</ref> in which it started.</paragraph>
                         <paragraph
                             xml:id="nbc.divA.part2.appendix.appnote2.div4.para2"

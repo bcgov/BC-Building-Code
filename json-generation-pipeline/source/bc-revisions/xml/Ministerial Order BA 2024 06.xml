@@ -92,7 +92,7 @@
                       target="swg"
                       >sewage</ref>, water, electrical, telephone, rail or similar public infrastructure systems located in a <ref
                       type="term"
-                      target="strt"
+                      target="trt"
                       >street</ref> or a public transit right of way,</text>
                 </content>
                 <change-summary
@@ -162,7 +162,7 @@
                   <entry
                     >Existing conditions that do not comply fully with the requirements are permitted if they are acceptable to the <ref
                       type="term"
-                      target="thrt-hvng-jrsdctn"
+                      target="bc-thrt-hvn"
                       >authority having jurisdiction</ref>.</entry>
                 </content>
                 <change-summary
@@ -214,7 +214,7 @@
                     Part 6 and Part 7</entry>
                   <entry>Existing mechanical and <ref
                       type="term"
-                      target="plmbng-sstm"
+                      target="plmbng-t"
                       >plumbing systems</ref> in <ref
                       type="term"
                       target="bldng"
@@ -222,7 +222,7 @@
                     (a) it is not an unsafe condition and
                     (b) it is acceptable to the <ref
                       type="term"
-                      target="thrt-hvng-jrsdctn"
+                      target="bc-thrt-hvn"
                       >authority having jurisdiction</ref>.</entry>
                 </content>
                 <change-summary
@@ -292,14 +292,14 @@
                       target="t"
                       >suite</ref> and is exposed to fire from <ref
                       type="term"
-                      target="nprtctd-pnng"
+                      target="nprtctd-"
                       >unprotected openings</ref> in the exterior walls of another <ref
                       type="term"
-                      target="dwllng-nt"
+                      target="dwllng-n"
                       >dwelling unit</ref>, ancillary space or common space.</entry>
                   <entry>Protection of the <ref
                       type="term"
-                      target="nprtctd-pnng"
+                      target="nprtctd-"
                       >unprotected openings</ref> as described in <ref
                       type="internal"
                       target="nbc.divBV2.part9.sect9.subsect4.art4.sent1"
@@ -369,12 +369,12 @@
                       style="italic"
                       >secondary suite</emphasis>, where a minimum <ref
                       type="term"
-                      target="fr-rtng"
+                      target="fr-rtnc-"
                       >fire-resistance rating</ref> of 30 min is permitted, it is permitted to use wood-frame construction where stud and joist spaces are filled with absorptive material,resilient metal channel spaced 400 or 600 mm o.c. is on one side and not less than 12.7 mm thick gypsum board is installed on ceilings and on both sides of walls.</entry>
                   <entry
                     >Adding resilient metal channel spaced 400 or 600 mm o.c. and an additional layer of not less than 12.7 mm gypsum board to one side of an existing finished wall assembly that has not less than 12.7 mm gypsum board on each side or an existing finished floor-ceiling assembly that has not less than 12.7 mm gypsum on the ceiling side is permitted to be used where a 30 min <ref
                       type="term"
-                      target="fr-rtng"
+                      target="fr-rtnc-"
                       >fire-resistance rating</ref> is required.</entry>
                 </content>
                 <change-summary
@@ -2483,7 +2483,7 @@
                     >
                     <text>occupants live as a single housekeeping unit in a <ref
                         type="term"
-                        target="dwllng-nt"
+                        target="dwllng-n"
                         >dwelling unit</ref> with sleeping accommodation for not more than 10 persons,</text>
                   </clause>
                   <clause
@@ -3588,7 +3588,7 @@
                     >
                     <text>At least one bedroom or sleeping space in an <ref
                         type="term"
-                        target="dptbl-dwllng-nt"
+                        target="bc-dptbl-dwllng-nt"
                         >adaptable dwelling unit</ref> shall have</text>
                     <clause
                       xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause1"
@@ -3820,13 +3820,13 @@
                       display-type="long"
                       />, the <ref
                       type="term"
-                      target="plmbng-fxtr"
+                      target="plmbng-t"
                       >plumbing fixtures</ref> shall be designed and installed in conformance with the British Columbia Building Code Book II (Plumbing Systems), that being the National Plumbing Code of Canada, except that a <ref
                       type="term"
                       target="t"
                       >suite</ref> shall be permitted to have a single <ref
                       type="term"
-                      target="plmbng-fxtr"
+                      target="plmbng-t"
                       >plumbing fixture</ref> serving as both a <ref
                       type="term"
                       target="bth"
@@ -3883,7 +3883,7 @@
                       display-type="short"
                       />, a <ref
                       type="term"
-                      target="plmbng-fxtr"
+                      target="plmbng-t"
                       >plumbing fixture</ref> with a <ref
                       type="term"
                       target="trp-sfl"
@@ -5301,7 +5301,7 @@ Spaces within Buildings
                       target="bldng"
                       >building</ref> and the floor joists are supported on a <ref
                       type="term"
-                      target="bng-wl"
+                      target="brng-rfc"
                       >bearing wall</ref> or <ref
                       type="term"
                       target="bm"
@@ -5353,7 +5353,7 @@ Spaces within Buildings
                 <content>
                   <text>The <ref
                       type="term"
-                      target="flr"
+                      target="flr-r"
                       >floor</ref> system shall be anchored to the <ref
                       type="term"
                       target="fndtn"
@@ -5364,13 +5364,13 @@ Spaces within Buildings
                       target="fndtn"
                       >foundation</ref> wall, except that where the <ref
                       type="term"
-                      target="flr"
+                      target="flr-r"
                       >floor</ref> is anchored to the <ref
                       type="term"
                       target="fndtn"
                       >foundation</ref> at adjacent <ref
                       type="term"
-                      target="bng-wl"
+                      target="brng-rfc"
                       >bearing walls</ref> or <ref
                       type="term"
                       target="bm"
@@ -6420,7 +6420,7 @@ Spaces within Buildings
                     >For the purposes of this Section, the term "greenhouse gas intensity", expressed with the abbreviation "GHGI", shall mean the total greenhouse gas emissions, expressed as kgCO<sub
                       >2</sub>e per square metre of floor area of <ref
                       type="term"
-                      target="cndtnd-spc"
+                      target="cnd-sp"
                       >conditioned space</ref> per year, associated with the energy used by the <ref
                       type="term"
                       target="bldng"
@@ -7040,7 +7040,7 @@ Spaces within Buildings
               </original>
               <revision seq="1" type="amendment" effective-date="2025-06-16" id="bc-mo-2024-06-132" status="current">
                 <content>
-                  <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect5.subsect5.art1.sent1" display-type="short"/> and <ref type="internal" target="nbc.divBV2.part9.sect5.subsect5.art3" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divBV2.part9.sect5.subsect5.art1.sent1" display-type="long" pretext=","/> <ref type="internal" target="nbc.divBV2.part9.sect9.subsect6.art2" display-type="long" pretext=","/> <ref type="internal" target="nbc.divBV2.part9.sect9.subsect6.art3" display-type="long" pretext=" and"/>, doorway openings within <ref type="term" target="dwllng-n">dwelling units</ref> and within houses with a <ref type="term" target="scnd-t">secondary suite</ref> including their common spaces shall be designed to accommodate at least the door sizes given in <ref type="internal" target="nbc.divBV2.part9.sect5.subsect5.art1.table1" display-type="long"/> for swing-type and folding doors.</text>
+                  <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect5.subsect5.art1.sent1" display-type="short"/> and <ref type="internal" target="nbc.divBV2.part9.sect5.subsect5.art3" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divBV2.part9.sect5.subsect5.art1.sent1" display-type="long" pretext=","/> <ref type="internal" target="nbc.divBV2.part9.sect9.subsect6.art2" display-type="long" pretext=","/> <ref type="internal" target="nbc.divBV2.part9.sect9.subsect6.art3" display-type="long" pretext=" and"/>, doorway openings within <ref type="term" target="dwllng-n">dwelling units</ref> and within houses with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces shall be designed to accommodate at least the door sizes given in <ref type="internal" target="nbc.divBV2.part9.sect5.subsect5.art1.table1" display-type="long"/> for swing-type and folding doors.</text>
                 </content>
                 <change-summary>Struck out "(2)" and substituted "(1)" in reference to Sentence</change-summary>
                 <note>Ministerial Order BA 2024 06</note>

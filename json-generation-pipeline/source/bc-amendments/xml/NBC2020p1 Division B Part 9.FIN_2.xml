@@ -1217,10 +1217,10 @@
                         <article xml:id="nbc.divBV2.part9.sect36.subsect6.art1" number="1">
                             <title>Application</title>
                             <sentence xml:id="nbc.divBV2.part9.sect36.subsect6.art1.sent1" number="1">
-                                <text>Where a <ref type="term" target="bldng">building</ref> contains more than one <ref type="term" target="dwllng-nt">dwelling unit</ref>, the requirements of this Subsection shall apply to the energy performance of the <ref type="term" target="bldng">building</ref> and not to individual <ref type="term" target="dwllng-nt">dwelling units</ref>.</text>
+                                <text>Where a <ref type="term" target="bldng">building</ref> contains more than one <ref type="term" target="dwllng-n">dwelling unit</ref>, the requirements of this Subsection shall apply to the energy performance of the <ref type="term" target="bldng">building</ref> and not to individual <ref type="term" target="dwllng-n">dwelling units</ref>.</text>
                             </sentence>
                             <sentence xml:id="nbc.divBV2.part9.sect36.subsect6.art1.sent2" number="2">
-                                <text>This Subsection is concerned with determining compliance with one of the energy performance Steps through modeling the energy performance of components, systems and assemblies that are installed in <ref type="term" target="bldng">buildings</ref> and houses with or without a <ref type="term" target="scndry-st">secondary suite</ref>, described in <ref type="internal" target="nbc.divBV2.part9.sect38.subsect1.art3.sent3" display-type="long"/>.</text>
+                                <text>This Subsection is concerned with determining compliance with one of the energy performance Steps through modeling the energy performance of components, systems and assemblies that are installed in <ref type="term" target="bldng">buildings</ref> and houses with or without a <ref type="term" target="bc-scnd-t">secondary suite</ref>, described in <ref type="internal" target="nbc.divBV2.part9.sect38.subsect1.art3.sent3" display-type="long"/>.</text>
                             </sentence>
                         </article>
                         <article xml:id="nbc.divBV2.part9.sect36.subsect6.art2" number="2">
@@ -1250,15 +1250,15 @@
                                 </clause>
                             </sentence>
                             <sentence xml:id="nbc.divBV2.part9.sect36.subsect6.art2.sent2" number="2">
-                                <text>Notwithstanding <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art1.sent1" display-type="long"/>, for the purpose of this Subsection, the term "house" shall mean all houses, with or without a <ref type="term" target="scndry-st">secondary suite</ref>, that</text>
+                                <text>Notwithstanding <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art1.sent1" display-type="long"/>, for the purpose of this Subsection, the term "house" shall mean all houses, with or without a <ref type="term" target="bc-scnd-t">secondary suite</ref>, that</text>
                                 <clause xml:id="nbc.divBV2.part9.sect36.subsect6.art2.sent2.clause1" letter="a">
-                                    <text>have HVAC systems that serve only the house, only the <ref type="term" target="scndry-st">secondary suite</ref>, or both the house and the <ref type="term" target="scndry-st">secondary suite</ref> including their common spaces,</text>
+                                    <text>have HVAC systems that serve only the house, only the <ref type="term" target="bc-scnd-t">secondary suite</ref>, or both the house and the <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces,</text>
                                 </clause>
                                 <clause xml:id="nbc.divBV2.part9.sect36.subsect6.art2.sent2.clause2" letter="b">
-                                    <text>have service water heating systems that serve only the house, only the <ref type="term" target="scndry-st">secondary suite</ref>, or both the house and the <ref type="term" target="scndry-st">secondary suite</ref> including their common spaces, and</text>
+                                    <text>have service water heating systems that serve only the house, only the <ref type="term" target="bc-scnd-t">secondary suite</ref>, or both the house and the <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, and</text>
                                 </clause>
                                 <clause xml:id="nbc.divBV2.part9.sect36.subsect6.art2.sent2.clause3" letter="c">
-                                    <text>except for common spaces in the house with the <ref type="term" target="scndry-st">secondary suite</ref>, do not share common spaces intended for <ref type="term" target="ccpnc">occupancy</ref> with other <ref type="term" target="dwllng-nt">dwelling units</ref> or houses.</text>
+                                    <text>except for common spaces in the house with the <ref type="term" target="bc-scnd-t">secondary suite</ref>, do not share common spaces intended for <ref type="term" target="ccpnc">occupancy</ref> with other <ref type="term" target="dwllng-n">dwelling units</ref> or houses.</text>
                                 </clause>
                                 <text> (See Note A-9.36.6.2.(2).)</text>
                             </sentence>
@@ -1684,7 +1684,7 @@
                             
                             <!-- Sentence 9.36.6.3.(5) -->
                             <sentence xml:id="nbc.divBV2.part9.sect36.subsect6.art3.sent5" number="5">
-                                <text>The energy performance of <ref type="term" target="bldng">buildings</ref> and houses, when calculated in accordance with <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art5" display-type="long"/>, shall conform to the target energy performance based on the total volume of <ref type="term" target="cndtnd-spc">conditioned space</ref> within the <ref type="term" target="bldng">building</ref> or house for the energy performance metrics indicated in Table 9.36.6.3.-G such that</text>
+                                <text>The energy performance of <ref type="term" target="bldng">buildings</ref> and houses, when calculated in accordance with <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art5" display-type="long"/>, shall conform to the target energy performance based on the total volume of <ref type="term" target="cnd-sp">conditioned space</ref> within the <ref type="term" target="bldng">building</ref> or house for the energy performance metrics indicated in Table 9.36.6.3.-G such that</text>
                                 <clause xml:id="nbc.divBV2.part9.sect36.subsect6.art3.sent5.clause1" letter="a">
                                     <text>the target "percent heat loss reduction" is met or exceeded, and</text>
                                 </clause>
@@ -1745,7 +1745,7 @@
                             <sentence xml:id="nbc.divBV2.part9.sect36.subsect6.art5.sent5" number="5">
                                 <text>The annual gross space heat loss shall be calculated as the sum of the cumulative heat loss from</text>
                                 <clause xml:id="nbc.divBV2.part9.sect36.subsect6.art5.sent5.clause1" letter="a">
-                                    <text>conduction across opaque and transparent elements of the <ref type="term" target="bldng-nvlp">building envelope</ref>,</text>
+                                    <text>conduction across opaque and transparent elements of the <ref type="term" target="bldng-r">building envelope</ref>,</text>
                                 </clause>
                                 <clause xml:id="nbc.divBV2.part9.sect36.subsect6.art5.sent5.clause2" letter="b">
                                     <text>air infiltration and exfiltration, and</text>
@@ -1962,7 +1962,7 @@
                                 <sentence xml:id="nbc.divBV2.part9.sect37.subsect1.art1.sent1" number="1">
                                     <text>Notwithstanding <ref type="internal" target="nbc.divBV2.part9.sect37new.subsect1.art1.sent2" display-type="short"/>, the requirements of this Section apply only to <ref type="term" target="bldng">buildings</ref> that</text>
                                     <clause xml:id="nbc.divBV2.part9.sect37.subsect1.art1.sent1.clause1" letter="a">
-                                        <text>are a house with or without a <ref type="term" target="scndry-st">secondary suite</ref> including their common spaces,</text>
+                                        <text>are a house with or without a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces,</text>
                                     </clause>
                                     <clause xml:id="nbc.divBV2.part9.sect37.subsect1.art1.sent1.clause2" letter="b">
                                         <text>contain only houses and common spaces whose total <ref type="term" target="flr-r">floor area</ref> does not exceed 20% of the total <ref type="term" target="flr-r">floor area</ref> of the <ref type="term" target="bldng">building</ref>, and</text>
@@ -1978,7 +1978,7 @@
                                     </clause>
                                 </sentence>
                                 <sentence xml:id="nbc.divBV2.part9.sect37.subsect1.art1.sent2" number="2">
-                                    <text>Where a <ref type="term" target="bldng">building</ref> contains more than one house, with or without a <ref type="term" target="scndry-st">secondary suite</ref>, the requirements of this Subsection shall apply to the greenhouse gas emissions of the <ref type="term" target="bldng">building</ref> and not to the individual house. (See Note A-9.36.6.2.(2).)</text>
+                                    <text>Where a <ref type="term" target="bldng">building</ref> contains more than one house, with or without a <ref type="term" target="bc-scnd-t">secondary suite</ref>, the requirements of this Subsection shall apply to the greenhouse gas emissions of the <ref type="term" target="bldng">building</ref> and not to the individual house. (See Note A-9.36.6.2.(2).)</text>
                                 </sentence>
                             </article>
                             
@@ -1986,15 +1986,15 @@
                             <article xml:id="nbc.divBV2.part9.sect37.subsect1.art2" number="2">
                                 <title>Definitions and Abbreviations</title>
                                 <sentence xml:id="nbc.divBV2.part9.sect37.subsect1.art2.sent1" number="1">
-                                    <text>Notwithstanding <ref type="internal" target="nbc.divBV2.part9.sect37new.subsect1.art1.sent2" display-type="short"/>, for the purposes of this Section, the term "house" shall mean all houses, with or without a <ref type="term" target="scndry-st">secondary suite</ref>, that</text>
+                                    <text>Notwithstanding <ref type="internal" target="nbc.divBV2.part9.sect37new.subsect1.art1.sent2" display-type="short"/>, for the purposes of this Section, the term "house" shall mean all houses, with or without a <ref type="term" target="bc-scnd-t">secondary suite</ref>, that</text>
                                     <clause xml:id="nbc.divBV2.part9.sect37.subsect1.art2.sent1.clause1" letter="a">
-                                        <text>have HVAC systems that serve only the house, only the <ref type="term" target="scndry-st">secondary suite</ref>, or both the house and the <ref type="term" target="scndry-st">secondary suite</ref> including their common spaces,</text>
+                                        <text>have HVAC systems that serve only the house, only the <ref type="term" target="bc-scnd-t">secondary suite</ref>, or both the house and the <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces,</text>
                                     </clause>
                                     <clause xml:id="nbc.divBV2.part9.sect37.subsect1.art2.sent1.clause2" letter="b">
-                                        <text>have service water heating systems that serve only the house, only the <ref type="term" target="scndry-st">secondary suite</ref>, or both the house and the <ref type="term" target="scndry-st">secondary suite</ref> including their common spaces, and</text>
+                                        <text>have service water heating systems that serve only the house, only the <ref type="term" target="bc-scnd-t">secondary suite</ref>, or both the house and the <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, and</text>
                                     </clause>
                                     <clause xml:id="nbc.divBV2.part9.sect37.subsect1.art2.sent1.clause3" letter="c">
-                                        <text>except for common spaces in the house with the <ref type="term" target="scndry-st">secondary suite</ref>, do not share common spaces intended for occupancy with other <ref type="term" target="dwllng-nt">dwelling units</ref> or houses.</text>
+                                        <text>except for common spaces in the house with the <ref type="term" target="bc-scnd-t">secondary suite</ref>, do not share common spaces intended for occupancy with other <ref type="term" target="dwllng-n">dwelling units</ref> or houses.</text>
                                     </clause>
                                 </sentence>
                                 <sentence xml:id="nbc.divBV2.part9.sect37.subsect1.art2.sent9" number="9">
@@ -2004,7 +2004,7 @@
                                     <text>For the purposes of this Section, the term "greenhouse gas", expressed with the abbreviation "GHG", shall have the same meaning as defined in the Climate Change Accountability Act.</text>
                                 </sentence>
                                 <sentence xml:id="nbc.divBV2.part9.sect37.subsect1.art2.sent3" number="3">
-                                    <text>For the purposes of this Section, the term "greenhouse gas intensity", expressed with the abbreviation "GHGI", shall mean the total greenhouse gas emissions, expressed as kgCO<sub>2</sub>e per square metre of floor area of <ref type="term" target="cndtnd-spc">conditioned space</ref> per year, associated with the energy used by the building's systems.</text>
+                                    <text>For the purposes of this Section, the term "greenhouse gas intensity", expressed with the abbreviation "GHGI", shall mean the total greenhouse gas emissions, expressed as kgCO<sub>2</sub>e per square metre of floor area of <ref type="term" target="cnd-sp">conditioned space</ref> per year, associated with the energy used by the building's systems.</text>
                                 </sentence>
                                 <sentence xml:id="nbc.divBV2.part9.sect37.subsect1.art2.sent4" number="4">
                                     <text>For the purposes of this Section, the symbol "CO<sub>2</sub>e" shall mean carbon dioxide or carbon dioxide equivalent, with carbon dioxide equivalent meaning one or more greenhouse gases with a global warming potential equivalent to carbon dioxide.</text>

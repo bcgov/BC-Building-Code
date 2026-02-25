@@ -428,9 +428,49 @@
     <xsl:template match="emphasis|super|sub|ref|measurement" mode="text"><xsl:apply-templates select="text()" mode="text"/></xsl:template>
 
     <xsl:template match="*" mode="rich"><xsl:apply-templates select="text()|*" mode="rich"/></xsl:template>
-    <xsl:template match="text()" mode="rich"><xsl:value-of select="."/></xsl:template>
-    <xsl:template match="ref" mode="rich"> [REF:<xsl:value-of select="@type"/>:<xsl:value-of select="@target"/>] <xsl:value-of select="."/></xsl:template>
-    <xsl:template match="measurement" mode="rich"><xsl:value-of select="."/> (<xsl:value-of select="@units"/>)</xsl:template>
+    <xsl:template match="text()" mode="rich">
+        <xsl:variable name="normalized" select="normalize-space(.)"/>
+        <xsl:if test="$normalized != ''">
+            <xsl:if test="preceding-sibling::node() and matches(., '^\s')">
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <xsl:value-of select="$normalized"/>
+            <xsl:if test="following-sibling::node() and matches(., '\s$')">
+                <xsl:text> </xsl:text>
+            </xsl:if>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="ref" mode="rich">
+        <xsl:if test="preceding-sibling::node()[1][self::text() and not(matches(., '\s$'))]">
+            <xsl:text> </xsl:text>
+        </xsl:if>
+        <xsl:text>[REF:</xsl:text>
+        <xsl:value-of select="@type"/>
+        <xsl:text>:</xsl:text>
+        <xsl:value-of select="@target"/>
+        <xsl:if test="normalize-space(.) != ''">
+            <xsl:text>:</xsl:text>
+            <xsl:value-of select="normalize-space(.)"/>
+        </xsl:if>
+        <xsl:text>]</xsl:text>
+        <xsl:if test="following-sibling::node()[1][self::text() and not(matches(., '^\s'))]">
+            <xsl:text> </xsl:text>
+        </xsl:if>
+    </xsl:template>
+    <xsl:template match="super" mode="rich">^{<xsl:value-of select="."/>}</xsl:template>
+    <xsl:template match="sub" mode="rich">_{<xsl:value-of select="."/>}</xsl:template>
+    <xsl:template match="measurement" mode="rich">
+        <xsl:if test="preceding-sibling::node()[1][self::text() and not(matches(., '\s$'))]">
+            <xsl:text> </xsl:text>
+        </xsl:if>
+        <xsl:apply-templates select="node()" mode="rich"/>
+        <xsl:text> (</xsl:text>
+        <xsl:value-of select="@units"/>
+        <xsl:text>)</xsl:text>
+        <xsl:if test="following-sibling::node()[1][self::text() and not(matches(., '^\s'))]">
+            <xsl:text> </xsl:text>
+        </xsl:if>
+    </xsl:template>
     <xsl:template match="equation" mode="rich">
         <xsl:variable name="equation-id" as="xs:string"
                       select="

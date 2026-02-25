@@ -139,7 +139,7 @@
                             <text>In <ref type="term" target="bldng">buildings</ref> containing Group A, Group B, Division 2 or Group E <ref type="term" target="mjr-ccpn">major occupancies</ref> where at least one of these <ref type="term" target="mjr-ccpn">major occupancies</ref> has an <ref type="term" target="ccpnt-ld">occupant load</ref> of more than 500, at least one universal washroom on the <ref type="term" target="tr">storey</ref> on which the main <ref type="term" target="brrr-fr">accessible</ref> entrance to the <ref type="term" target="bldng">building</ref> is located shall incorporate an <ref type="term" target="brrr-fr">accessible</ref> change space conforming to <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="long"/> (See <ref type="internal" target="nbc.divB.part3.appendix.appnote198" display-type="short"/>.)</text>
                         </sentence>
                         <sentence xml:id="nbc.divB.part3.sect8.subsect2.art8.sent16" number="16">
-                            <text>In <ref type="term" target="ccpn">occupancies</ref> or parts of <ref type="term" target="ccpn">occupancies</ref> designed to be <ref type="term" target="brrr-fr">accessible</ref> and used predominantly by children, in patient areas in <ref type="term" target="trtmnt-ccpn">treatment occupancies</ref>, and in resident areas in <ref type="term" target="ca-cc">care occupancies</ref>, it is permissible to design and locate plumbing fixtures and grab bars differently than described in <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="short"/> to accommodate the special needs of children, patients, residents, and <ref type="term" target="ca">care</ref> providers.</text>
+                            <text>In <ref type="term" target="ccpnc">occupancies</ref> or parts of <ref type="term" target="ccpnc">occupancies</ref> designed to be <ref type="term" target="brrr-fr">accessible</ref> and used predominantly by children, in patient areas in <ref type="term" target="trtm-cc">treatment occupancies</ref>, and in resident areas in <ref type="term" target="ca-cc">care occupancies</ref>, it is permissible to design and locate plumbing fixtures and grab bars differently than described in <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="short"/> to accommodate the special needs of children, patients, residents, and <ref type="term" target="ca">care</ref> providers.</text>
                         </sentence>
                     </article>
                 </new-content>
@@ -251,7 +251,7 @@
                                 <text>hotels and motels (see also <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art19.sent1.clause7" display-type="short"/> and <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art20.sent7" display-type="short"/> and <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art20.sent8" display-type="short"/>), and</text>
                             </clause>
                             <clause xml:id="nbc.divB.part3.sect8.subsect2.art13.sent1.clause2" letter="b">
-                                <text>not including apartments and condominiums and the <ref type="term" target="bldng">buildings</ref> described in <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art1.sent1.clause1" display-type="short"/>, other <ref type="term" target="bldng">buildings</ref> or parts of <ref type="term" target="bldng">buildings</ref> used for <ref type="term" target="rdntl-mjr-ccpn">residential major occupancies</ref> (see also <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art20.sent17" display-type="short"/>).</text>
+                                <text>not including apartments and condominiums and the <ref type="term" target="bldng">buildings</ref> described in <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art1.sent1.clause1" display-type="short"/>, other <ref type="term" target="bldng">buildings</ref> or parts of <ref type="term" target="bldng">buildings</ref> used for <ref type="term" target="rdntl-cc">residential major occupancies</ref> (see also <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art20.sent17" display-type="short"/>).</text>
                             </clause>
                         </sentence>
                     </article>
@@ -1363,7 +1363,7 @@
                                     <text>to the extent required by <ref type="internal" target="nbc.divB.part3.sect8.subsect4.art5" display-type="long"/>, to existing <ref type="term" target="bldng">buildings</ref>
                                     </text>
                                     <subclause xml:id="nbc.divB.part3.sect8.subsect4.art1.sent1.clause3.subclause1" number="1">
-                                        <text>where the <ref type="term" target="ccpn">occupancy</ref> is changed, or</text>
+                                        <text>where the <ref type="term" target="ccpnc">occupancy</ref> is changed, or</text>
                                     </subclause>
                                     <subclause xml:id="nbc.divB.part3.sect8.subsect4.art1.sent1.clause3.subclause2" number="2">
                                         <text>that are altered or renovated.</text>
@@ -1378,10 +1378,10 @@
                                 </clause>
                                 <clause xml:id="nbc.divB.part3.sect8.subsect4.art1.sent2.clause2" letter="b">
                                     <text>vertical additions of one <ref type="term" target="tr">storey</ref> not more than <measurement units="metric">600 m<super>2</super>
-                                        </measurement> in <ref type="term" target="flr-r">floor area</ref> regardless of <ref type="term" target="ccpn">occupancy</ref>, or</text>
+                                        </measurement> in <ref type="term" target="flr-r">floor area</ref> regardless of <ref type="term" target="ccpnc">occupancy</ref>, or</text>
                                 </clause>
                                 <clause xml:id="nbc.divB.part3.sect8.subsect4.art1.sent2.clause3" letter="c">
-                                    <text>horizontal or vertical additions to <ref type="term" target="ccpn">occupancies</ref> described in <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art1.sent1.clause1" display-type="medium" pretext="Clauses"/>
+                                    <text>horizontal or vertical additions to <ref type="term" target="ccpnc">occupancies</ref> described in <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art1.sent1.clause1" display-type="medium" pretext="Clauses"/>
                                         <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art1.sent1.clause3" display-type="number" pretext=" to"/>.</text>
                                 </clause>
                             </sentence>
@@ -1434,7 +1434,7 @@
                         <article xml:id="nbc.divB.part3.sect8.subsect4.art5" number="5">
                             <title>Alterations and Occupancy Change</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect4.art5.sent1" number="1">
-                                <text>Where an existing <ref type="term" target="bldng">building</ref> is altered or renovated, or where the <ref type="term" target="ccpn">occupancy</ref> is changed, <ref type="term" target="cc">access</ref> shall be provided in conformance with <ref type="internal" target="nbc.divB.part3.sect8.subsect2" display-type="medium" pretext="Subsections"/>
+                                <text>Where an existing <ref type="term" target="bldng">building</ref> is altered or renovated, or where the <ref type="term" target="ccpnc">occupancy</ref> is changed, <ref type="term" target="cc">access</ref> shall be provided in conformance with <ref type="internal" target="nbc.divB.part3.sect8.subsect2" display-type="medium" pretext="Subsections"/>
                                     <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="short" pretext=" and"/> where providing such <ref type="term" target="cc">access</ref> would be practical.</text>
                             </sentence>
                         </article>
@@ -1455,7 +1455,7 @@
                                 <text>Where an addition is required to be <ref type="term" target="ccbl">accessible</ref>, facilities located in the existing <ref type="term" target="bldng">building</ref> that are necessary to the operation of the addition shall be <ref type="term" target="ccbl">accessible</ref>.</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect4.art7.sent2" number="2">
-                                <text>Where <ref type="term" target="ltrtn">alterations</ref> are made to an existing <ref type="term" target="bldng">building</ref>, universal washrooms complying with <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="long"/> are permitted to be provided in lieu of facilities for <ref type="term" target="prsns-wth-phscl-dsblts">persons with disabilities</ref> in washrooms. (See <ref type="internal" target="nbc.divB.part3.appendix.appnote205" display-type="short"/>.)</text>
+                                <text>Where <ref type="term" target="ltrtn">alterations</ref> are made to an existing <ref type="term" target="bldng">building</ref>, universal washrooms complying with <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="long"/> are permitted to be provided in lieu of facilities for <ref type="term" target="bc-prsn-wth-dsblts">persons with disabilities</ref> in washrooms. (See <ref type="internal" target="nbc.divB.part3.appendix.appnote205" display-type="short"/>.)</text>
                             </sentence>
                         </article>
                         
@@ -1500,59 +1500,59 @@
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art1.sent1" number="1">
                                 <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art1.sent2" display-type="short"/>, this Subsection applies to</text>
                                 <clause xml:id="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1" letter="a">
-                                    <text>one <ref type="term" target="tr-dwllng-nt">storey dwelling units</ref> served by an <ref type="term" target="ccbl">accessible</ref> interior <ref type="term" target="pblc-crrd">public corridor</ref> and an <ref type="term" target="ccbl">accessible</ref> common <ref type="term" target="bldng">building</ref> entrance, as required to be <ref type="term" target="ccbl">accessible</ref> by <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art2" display-type="medium" pretext="Articles"/>
+                                    <text>one <ref type="term" target="dwllng-n">storey dwelling units</ref> served by an <ref type="term" target="ccbl">accessible</ref> interior <ref type="term" target="pblc-crr">public corridor</ref> and an <ref type="term" target="ccbl">accessible</ref> common <ref type="term" target="bldng">building</ref> entrance, as required to be <ref type="term" target="ccbl">accessible</ref> by <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art2" display-type="medium" pretext="Articles"/>
                                         <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art3" display-type="short" pretext=" and"/>, and</text>
                                 </clause>
                                 <clause xml:id="nbc.divB.part3.sect8.subsect5.art1.sent1.clause2" letter="b">
-                                    <text>common spaces and facilities intended for use by the residents of the <ref type="term" target="dwllng-nt">dwelling units</ref> described in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="short"/> including common rooftop <ref type="term" target="ccpn">occupancies</ref>.</text>
+                                    <text>common spaces and facilities intended for use by the residents of the <ref type="term" target="dwllng-n">dwelling units</ref> described in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1" display-type="short"/> including common rooftop <ref type="term" target="ccpnc">occupancies</ref>.</text>
                                 </clause>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art1.sent2" number="2">
                                 <text>
-                                    <ref type="term" target="bldng">Buildings</ref> described in <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art1.sent1.clause1" display-type="long"/> including <ref type="term" target="scndr-t">secondary suites</ref> and all other <ref type="term" target="dwllng-nt">dwelling units</ref> to which this Section applies shall, as required by Sections 3.7. and 9.31., provide at least one bathroom with walls reinforced in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art7.sent1.clause5" display-type="long"/>.</text>
+                                    <ref type="term" target="bldng">Buildings</ref> described in <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art1.sent1.clause1" display-type="long"/> including <ref type="term" target="bc-scnd-t">secondary suites</ref> and all other <ref type="term" target="dwllng-n">dwelling units</ref> to which this Section applies shall, as required by Sections 3.7. and 9.31., provide at least one bathroom with walls reinforced in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art7.sent1.clause5" display-type="long"/>.</text>
                             </sentence>
                         </article>
                         
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art2" number="2">
                             <title>Construction Requirements</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art2.sent1" number="1">
-                                <text>The construction of <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling units</ref> and the <ref type="term" target="bldng">building</ref> in which they are located shall conform to the requirements of this Subsection and, as required by this Subsection, to <ref type="term" target="cc">access</ref> requirements for <ref type="term" target="bldng">buildings</ref> of <ref type="term" target="rdntl-cc">residential occupancy</ref> elsewhere in this Code.</text>
+                                <text>The construction of <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling units</ref> and the <ref type="term" target="bldng">building</ref> in which they are located shall conform to the requirements of this Subsection and, as required by this Subsection, to <ref type="term" target="cc">access</ref> requirements for <ref type="term" target="bldng">buildings</ref> of <ref type="term" target="rdntl-cc">residential occupancy</ref> elsewhere in this Code.</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art2.sent2" number="2">
                                 <text>Unless otherwise required, clear areas and spaces required in this Subsection are permitted to overlap with other clear area and space requirements.</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art2.sent3" number="3">
-                                <text>This Subsection does not require an <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref> be provided with a living space, a bedroom, a bathroom or a kitchen, but when provided, those spaces and the paths connecting them shall conform to the applicable requirements of this Subsection.</text>
+                                <text>This Subsection does not require an <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling unit</ref> be provided with a living space, a bedroom, a bathroom or a kitchen, but when provided, those spaces and the paths connecting them shall conform to the applicable requirements of this Subsection.</text>
                             </sentence>
                         </article>
                         
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art3" number="3">
                             <title>Building Access Requirements</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art3.sent1" number="1">
-                                <text>Common areas, spaces and facilities and all common exterior and interior paths of travel serving <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling units</ref> shall be <ref type="term" target="ccbl">accessible</ref> in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect2" display-type="long"/> with <ref type="term" target="flr-r">floor areas</ref> protected in conformance with <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art7" display-type="long"/>.</text>
+                                <text>Common areas, spaces and facilities and all common exterior and interior paths of travel serving <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling units</ref> shall be <ref type="term" target="ccbl">accessible</ref> in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect2" display-type="long"/> with <ref type="term" target="flr-r">floor areas</ref> protected in conformance with <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art7" display-type="long"/>.</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art3.sent2" number="2">
-                                <text>Common corridors and passageways serving <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling units</ref> shall be equipped to provide illumination, measured at floor or tread level, of not less than <measurement units="metric">50 lx</measurement>.</text>
+                                <text>Common corridors and passageways serving <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling units</ref> shall be equipped to provide illumination, measured at floor or tread level, of not less than <measurement units="metric">50 lx</measurement>.</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art3.sent3" number="3">
-                                <text>Each <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref> shall be provided with special outlet boxes and cover plates as described in <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art19.sent7" display-type="long"/>.</text>
+                                <text>Each <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling unit</ref> shall be provided with special outlet boxes and cover plates as described in <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art19.sent7" display-type="long"/>.</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art3.sent4" number="4">
-                                <text>Unless otherwise required by this Section, common spaces and paths of travel that are not intended to serve the residents of <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling units</ref> need not be <ref type="term" target="ccbl">accessible</ref>.</text>
+                                <text>Unless otherwise required by this Section, common spaces and paths of travel that are not intended to serve the residents of <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling units</ref> need not be <ref type="term" target="ccbl">accessible</ref>.</text>
                             </sentence>
                         </article>
                         
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art4" number="4">
                             <title>Adaptable Dwelling Unit Doorways</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art4.sent1" number="1">
-                                <text>The principal entrance door to <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling units</ref> shall have a clear width of not less than <measurement units="metric">850 mm</measurement> when the door is in the open position. (See Note 3.8.5.4.(1))</text>
+                                <text>The principal entrance door to <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling units</ref> shall have a clear width of not less than <measurement units="metric">850 mm</measurement> when the door is in the open position. (See Note 3.8.5.4.(1))</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art4.sent2" number="2">
                                 <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art4.sent5" display-type="short"/>, there shall be a clear floor space in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art6.sent14" display-type="medium" pretext="Sentences"/>
-                                    <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art6.sent15" display-type="number" pretext=" and"/> adjacent to and on both sides of the <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref> entrance door described in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art4.sent1" display-type="short"/>.</text>
+                                    <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art6.sent15" display-type="number" pretext=" and"/> adjacent to and on both sides of the <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling unit</ref> entrance door described in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art4.sent1" display-type="short"/>.</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art4.sent3" number="3">
-                                <text>Within an <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref>, every doorway along a path of travel connecting the entrance door described in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art4.sent1" display-type="short"/> with a living space, adaptable bedroom, adaptable bathroom, and adaptable kitchen shall have a clear width of not less than <measurement units="metric">850 mm</measurement> when the door is in the open position.</text>
+                                <text>Within an <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling unit</ref>, every doorway along a path of travel connecting the entrance door described in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art4.sent1" display-type="short"/> with a living space, adaptable bedroom, adaptable bathroom, and adaptable kitchen shall have a clear width of not less than <measurement units="metric">850 mm</measurement> when the door is in the open position.</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art4.sent4" number="4">
                                 <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art4.sent5" display-type="short"/>, there shall be a clear floor space in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art6.sent14" display-type="medium" pretext="Sentences"/>
@@ -1566,7 +1566,7 @@
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art5" number="5">
                             <title>Adaptable Dwelling Unit Hallways and Corridors</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art5.sent1" number="1">
-                                <text>Hallways and corridors in <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling units</ref> forming a path of travel connecting the entrance door described in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art4.sent1" display-type="long"/> with a living space, adaptable bedroom, adaptable bathroom and adaptable kitchen shall have a clear width conforming to <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art2.sent1" display-type="medium" pretext="Sentences"/>
+                                <text>Hallways and corridors in <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling units</ref> forming a path of travel connecting the entrance door described in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art4.sent1" display-type="long"/> with a living space, adaptable bedroom, adaptable bathroom and adaptable kitchen shall have a clear width conforming to <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art2.sent1" display-type="medium" pretext="Sentences"/>
                                     <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art2.sent2" display-type="number" pretext=" and"/>.</text>
                             </sentence>
                         </article>
@@ -1574,7 +1574,7 @@
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art6" number="6">
                             <title>Adaptable Dwelling Unit Bedrooms</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1" number="1">
-                                <text>At least one bedroom or sleeping space in an <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref> shall have</text>
+                                <text>At least one bedroom or sleeping space in an <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling unit</ref> shall have</text>
                                 <clause xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause1" letter="a">
                                     <text>a floor area that permits a turning area of not less than <measurement units="metric">1 700 mm</measurement> in diameter, or not less than <measurement units="metric">1 700 mm</measurement> by <measurement units="metric">1 500 mm</measurement>, that could be adjacent a bed,</text>
                                 </clause>
@@ -1596,7 +1596,7 @@
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art7" number="7">
                             <title>Adaptable Dwelling Unit Bathrooms</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art7.sent1" number="1">
-                                <text>At least one bathroom in an <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref> shall be designed to be adaptable for use by <ref type="term" target="prsns-wth-phscl-dsblts">persons with disabilities</ref> by providing</text>
+                                <text>At least one bathroom in an <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling unit</ref> shall be designed to be adaptable for use by <ref type="term" target="bc-prsn-wth-dsblts">persons with disabilities</ref> by providing</text>
                                 <clause xml:id="nbc.divB.part3.sect8.subsect5.art7.sent1.clause1" letter="a">
                                     <text>a clear lateral transfer space adjacent a water closet conforming to <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art12.sent1.clause2" display-type="long"/>,</text>
                                 </clause>
@@ -1604,11 +1604,11 @@
                                     <text>a distance between the centre line of the water closet and the wall on one side of <measurement units="metric">460 mm</measurement> to <measurement units="metric">480 mm</measurement>,</text>
                                 </clause>
                                 <clause xml:id="nbc.divB.part3.sect8.subsect5.art7.sent1.clause3" letter="c">
-                                    <text>a <ref type="term" target="plmbng-sstm">plumbing system</ref> that accommodates the future installation of a lavatory with a clear space in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art16.sent1.clause1" display-type="medium" pretext="Clauses"/>
+                                    <text>a <ref type="term" target="plmbng-t">plumbing system</ref> that accommodates the future installation of a lavatory with a clear space in accordance with <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art16.sent1.clause1" display-type="medium" pretext="Clauses"/>
                                         <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art16.sent1.clause6" display-type="number" pretext=" to"/> that does not impede the space for or use of other fixtures described in this Article (see Note A-3.8.5.7.(1)(c) and (d)),</text>
                                 </clause>
                                 <clause xml:id="nbc.divB.part3.sect8.subsect5.art7.sent1.clause4" letter="d">
-                                    <text>a <ref type="term" target="plmbng-sstm">plumbing system</ref> that accommodates the future installation of a</text>
+                                    <text>a <ref type="term" target="plmbng-t">plumbing system</ref> that accommodates the future installation of a</text>
                                     <subclause xml:id="nbc.divB.part3.sect8.subsect5.art7.sent1.clause4.subclause1" number="1">
                                         <text>shower described in <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art17.sent1" display-type="long"/> that does not impede the space for or use of other fixtures described in this Article, or</text>
                                     </subclause>
@@ -1634,13 +1634,13 @@
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art8" number="8">
                             <title>Adaptable Dwelling Unit Kitchens</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art8.sent1" number="1">
-                                <text>The kitchen in an <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref> shall be designed so that the <ref type="term" target="cktop">cooktop</ref> and sink are adjacent or can have a continuous counter between them.</text>
+                                <text>The kitchen in an <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling unit</ref> shall be designed so that the <ref type="term" target="cktp">cooktop</ref> and sink are adjacent or can have a continuous counter between them.</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art8.sent2" number="2">
                                 <text>A clear floor space shall be provided in the kitchen area that is not less than <measurement units="metric">1 700 mm</measurement> in diameter or <measurement units="metric">1 700 mm</measurement> by <measurement units="metric">1 500 mm</measurement>.</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art8.sent3" number="3">
-                                <text>The <ref type="term" target="plmbng-sstm">plumbing system</ref> serving the kitchen shall accommodate the future installation of a kitchen sink that could be installed in accordance with the requirements for the installation of a lavatory as described in <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art16.sent1.clause2" display-type="medium" pretext="Clauses"/>
+                                <text>The <ref type="term" target="plmbng-t">plumbing system</ref> serving the kitchen shall accommodate the future installation of a kitchen sink that could be installed in accordance with the requirements for the installation of a lavatory as described in <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art16.sent1.clause2" display-type="medium" pretext="Clauses"/>
                                     <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art16.sent1.clause6" display-type="number" pretext=" to"/>. (See Note A-3.8.5.7.(1)(c) and (d).)</text>
                             </sentence>
                         </article>
@@ -1648,7 +1648,7 @@
                         <article xml:id="nbc.divB.part3.sect8.subsect5.art9" number="9">
                             <title>Controls, Switches and Outlets</title>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art9.sent1" number="1">
-                                <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art9.sent2" display-type="short"/>, controls and switches for <ref type="term" target="bldng">building</ref> systems and outlets in <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling units</ref>, that are intended for frequent operation by occupants, shall not require activities for operation below <measurement units="metric">400 mm</measurement> from the floor or above <measurement units="metric">1 200 mm</measurement> from the floor.</text>
+                                <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect8.subsect5.art9.sent2" display-type="short"/>, controls and switches for <ref type="term" target="bldng">building</ref> systems and outlets in <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling units</ref>, that are intended for frequent operation by occupants, shall not require activities for operation below <measurement units="metric">400 mm</measurement> from the floor or above <measurement units="metric">1 200 mm</measurement> from the floor.</text>
                             </sentence>
                             <sentence xml:id="nbc.divB.part3.sect8.subsect5.art9.sent2" number="2">
                                 <text>

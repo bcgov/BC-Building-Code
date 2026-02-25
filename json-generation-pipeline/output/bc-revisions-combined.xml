@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-24T17:43:25.622439-08:00"
+            generated="2026-02-24T21:52:45.801334-08:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -878,7 +878,7 @@
                            <sentence xml:id="nbc.divB.part3.sect1.subsect6.art4.sent6" number="6">
                               <text>Except as provided by <ref type="internal"
                                       target="nbc.divB.part3.sect1.subsect6.art4.sent7"
-                                      display-type="short"/>, the exposed surfaces of mass timber ceilings within a <ref type="term" target="t">suite</ref> or <ref type="term" target="fr-cmprt">fire compartment</ref>, other than an <ref type="term" target="xt">exit</ref> or <ref type="term" target="pblc-crdr">public corridor</ref>, in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> constructed in conformance with <ref type="internal"
+                                      display-type="short"/>, the exposed surfaces of mass timber ceilings within a <ref type="term" target="t">suite</ref> or <ref type="term" target="fr-cmprt">fire compartment</ref>, other than an <ref type="term" target="xt">exit</ref> or <ref type="term" target="pblc-crr">public corridor</ref>, in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> constructed in conformance with <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art48"
                                       display-type="long"
                                       pretext="Article"/> or <ref type="internal"
@@ -956,7 +956,7 @@
                                       target="nbc.divB.part3.sect1.subsect6.art4.sent1"
                                       display-type="short"/>, provided</text>
                               <clause xml:id="nbc.divB.part3.sect1.subsect6.art4.sent8.clause1" letter="a">
-                                 <text>mass timber walls and ceilings within <ref type="term" target="vrtcl-srvc-spc">vertical service spaces</ref>, <ref type="term" target="pblc-crdr">public corridors</ref>, and <ref type="term" target="xt">exits</ref> are protected from adjacent spaces with a material or assembly of materials conforming to <ref type="internal"
+                                 <text>mass timber walls and ceilings within <ref type="term" target="vrtcl-rv">vertical service spaces</ref>, <ref type="term" target="pblc-crr">public corridors</ref>, and <ref type="term" target="xt">exits</ref> are protected from adjacent spaces with a material or assembly of materials conforming to <ref type="internal"
                                          target="nbc.divB.part3.sect1.subsect6.art4.sent2"
                                          display-type="short"/> that provides an <ref type="term" target="ncps-rtng">encapsulation rating</ref> of not less than <measurement units="metric">25 min</measurement>, and</text>
                               </clause>
@@ -1627,7 +1627,7 @@
                                    target="nbc.divB.part3.sect2.subsect2.art55.sent3"
                                    display-type="number"/> or <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art93.sent3"
-                                   display-type="number"/>, a floor assembly immediately above a <ref type="term" target="bsmnt">basement</ref> shall be constructed as a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> conforming to the requirements of <ref type="internal"
+                                   display-type="number"/>, a floor assembly immediately above a <ref type="term" target="bmnt">basement</ref> shall be constructed as a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> conforming to the requirements of <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art20"
                                    display-type="long"
                                    pretext="Articles"/>
@@ -1665,7 +1665,7 @@
                                id="bc-mo-2024-01-015"
                                status="current">
                         <content>
-                           <text>The floor assembly of a <ref type="term" target="mznn">mezzanine</ref> that is required to be considered as a <ref type="term" target="tr">storey</ref> in calculating the <ref type="term" target="bldng-hght">building height</ref> shall be constructed in conformance with the <ref type="term" target="fr-prtn">fire separation</ref> requirements for floor assemblies stated in <ref type="internal"
+                           <text>The floor assembly of a <ref type="term" target="mzznn">mezzanine</ref> that is required to be considered as a <ref type="term" target="tr">storey</ref> in calculating the <ref type="term" target="bldng-hght">building height</ref> shall be constructed in conformance with the <ref type="term" target="fr-prtn">fire separation</ref> requirements for floor assemblies stated in <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art20"
                                    display-type="long"
                                    pretext="Articles"/>
@@ -1755,7 +1755,7 @@
                                       pretext="Article"/> and <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art93.table1"
                                       display-type="long"
-                                      pretext="Table"/> for any <ref type="term" target="mjr-ccpn">major occupancy</ref> contained within a <ref type="term" target="tr">storey</ref> shall apply to the encapsulation required on the interior of a <ref type="term" target="pblc-crdr">public corridor</ref> or <ref type="term" target="xt">exit</ref> within that <ref type="term" target="tr">storey</ref>.</text>
+                                      pretext="Table"/> for any <ref type="term" target="mjr-ccpn">major occupancy</ref> contained within a <ref type="term" target="tr">storey</ref> shall apply to the encapsulation required on the interior of a <ref type="term" target="pblc-crr">public corridor</ref> or <ref type="term" target="xt">exit</ref> within that <ref type="term" target="tr">storey</ref>.</text>
                            </sentence>
                         </content>
                         <change-summary>Repealed and substituted Article 3.2.2.6 Multiple Major Occupancies with updated references and additional sentence for encapsulation requirements</change-summary>
@@ -1847,7 +1847,7 @@
                                          pretext="Article"/> and <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect2.art93.table1"
                                          display-type="long"
-                                         pretext="Table"/> for any <ref type="term" target="mjr-ccpn">major occupancy</ref> contained within the <ref type="term" target="bldng">building</ref> shall apply to the encapsulation required on the interior of <ref type="term" target="vrtcl-srvc-spc">vertical service spaces</ref> and <ref type="term" target="xt">exit</ref> stairs, and</text>
+                                         pretext="Table"/> for any <ref type="term" target="mjr-ccpn">major occupancy</ref> contained within the <ref type="term" target="bldng">building</ref> shall apply to the encapsulation required on the interior of <ref type="term" target="vrtcl-rv">vertical service spaces</ref> and <ref type="term" target="xt">exit</ref> stairs, and</text>
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect2.subsect2.art7.sent3.clause2" letter="b">
                                  <text>the encapsulation requirements of <ref type="internal"
@@ -2300,7 +2300,7 @@
                               </text>
                            </sentence>
                            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art18.sent2" number="2">
-                              <text>If a <ref type="term" target="tr">storey</ref> in a <ref type="term" target="bldng">building</ref> or a <ref type="term" target="flr-ar">floor area</ref> is required to have an automatic sprinkler system installed throughout in accordance with one or more of <ref type="internal"
+                              <text>If a <ref type="term" target="tr">storey</ref> in a <ref type="term" target="bldng">building</ref> or a <ref type="term" target="flr-r">floor area</ref> is required to have an automatic sprinkler system installed throughout in accordance with one or more of <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art20"
                                       display-type="long">Articles 3.2.2.20.</ref> to <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art93"
@@ -2342,7 +2342,7 @@
                         <content>
                            <text>Except as permitted by <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art19"
-                                   display-type="short">Sentence (2)</ref>, a <ref type="term" target="bldng">building</ref> of <ref type="term" target="cmbstbl-cnstrctn">combustible construction</ref> that is required to be sprinklered in accordance with <ref type="internal"
+                                   display-type="short">Sentence (2)</ref>, a <ref type="term" target="bldng">building</ref> of <ref type="term" target="cmbtbl-c">combustible construction</ref> that is required to be sprinklered in accordance with <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art20"
                                    display-type="long">Articles 3.2.2.20.</ref> to <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art93"
@@ -2735,22 +2735,22 @@
                                          target="nbc.divB.part3.sect2.subsect2.art7.sent1"
                                          display-type="long">Sentences 3.2.2.7.(1)</ref> and <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect2.art18.sent2"
-                                         display-type="number">3.2.2.18.(2)</ref>, the <ref type="term" target="bldng">building</ref> is <ref type="term" target="sprnklrd">sprinklered</ref>,</text>
+                                         display-type="number">3.2.2.18.(2)</ref>, the <ref type="term" target="bldng">building</ref> is <ref type="term" target="prnklrd">sprinklered</ref>,</text>
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause2" letter="b">
                                  <text>the <ref type="term" target="bldng">building</ref> has a <ref type="term" target="bldng-hght">building height</ref> not exceeding the number of <ref type="term" target="tr">storeys</ref> shown in <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect2.art93.table1"
-                                         display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref> and minimum <ref type="term" target="encpsln-rtng">encapsulation rating</ref>,</text>
+                                         display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-ccpn">major occupancy</ref> and minimum <ref type="term" target="ncps-rtng">encapsulation rating</ref>,</text>
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause3" letter="c">
                                  <text>the <ref type="term" target="bldng">building</ref> has a maximum height that conforms to the value shown in <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect2.art93.table1"
-                                         display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref> and minimum <ref type="term" target="encpsln-rtng">encapsulation rating</ref> that is measured between the floor of the <ref type="term" target="frst-tr">first storey</ref> and the uppermost floor level that does not serve a rooftop enclosure for elevator machinery, a stairway or a <ref type="term" target="srvc-rm">service room</ref> used only for service to the <ref type="term" target="bldng">building</ref>,</text>
+                                         display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-ccpn">major occupancy</ref> and minimum <ref type="term" target="ncps-rtng">encapsulation rating</ref> that is measured between the floor of the <ref type="term" target="frt-tr">first storey</ref> and the uppermost floor level that does not serve a rooftop enclosure for elevator machinery, a stairway or a <ref type="term" target="rvc-rm">service room</ref> used only for service to the <ref type="term" target="bldng">building</ref>,</text>
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause4" letter="d">
-                                 <text>the <ref type="term" target="bldng">building</ref> has a maximum <ref type="term" target="bldng-ar">building area</ref> that conforms to the value shown in <ref type="internal"
+                                 <text>the <ref type="term" target="bldng">building</ref> has a maximum <ref type="term" target="bldng-r">building area</ref> that conforms to the value shown in <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect2.art93.table1"
-                                         display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref>, and</text>
+                                         display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-ccpn">major occupancy</ref>, and</text>
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent1.clause5" letter="e">
                                  <text>except as provided in <ref type="internal"
@@ -2759,9 +2759,9 @@
                                          target="nbc.divB.part3.sect1.subsect6.art7.sent1"
                                          display-type="number">3.1.6.7.(1)</ref> and <ref type="internal"
                                          target="nbc.divB.part3.sect1.subsect6.art4"
-                                         display-type="long">Article 3.1.6.4.</ref>, the <ref type="term" target="encpsln-rtng">encapsulation rating</ref> conforms to the value shown in <ref type="internal"
+                                         display-type="long">Article 3.1.6.4.</ref>, the <ref type="term" target="ncps-rtng">encapsulation rating</ref> conforms to the value shown in <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect2.art93.table1"
-                                         display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-occ">major occupancy</ref> and maximum <ref type="term" target="bldng-hght">building height</ref>.</text>
+                                         display-type="long">Table 3.2.2.93.</ref> for the applicable <ref type="term" target="mjr-ccpn">major occupancy</ref> and maximum <ref type="term" target="bldng-hght">building height</ref>.</text>
                               </clause>
                            </sentence>
                            <table xml:id="nbc.divB.part3.sect2.subsect2.art93.table1">
@@ -2908,7 +2908,7 @@
                                    target="nbc.divB.part3.sect2.subsect2.art4"
                                    display-type="long">Articles 3.2.2.4.</ref> to <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art8"
-                                   display-type="number">3.2.2.8.</ref> for information pertaining to multiple <ref type="term" target="mjr-occ">major occupancies</ref>.</note>
+                                   display-type="number">3.2.2.8.</ref> for information pertaining to multiple <ref type="term" target="mjr-ccpn">major occupancies</ref>.</note>
                            <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item2">(2) Linear interpolation is not permitted in using <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art93.table1"
                                    display-type="long">Table 3.2.2.93.</ref>
@@ -2918,7 +2918,7 @@
                                       target="nbc.divB.part3.sect2.subsect2.art16"
                                       display-type="long">Article 3.2.2.16.</ref>, the <ref type="term" target="bldng">building</ref> referred to in <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art93.sent1"
-                                      display-type="short">Sentence (1)</ref> is permitted to be of <ref type="term" target="encpsltd-ms-tmbr-cnstrctn">encapsulated mass timber construction</ref> or <ref type="term" target="nncmbstbl-cnstrctn">noncombustible construction</ref>, used singly or in combination, and</text>
+                                      display-type="short">Sentence (1)</ref> is permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> or <ref type="term" target="ncmbtbl-">noncombustible construction</ref>, used singly or in combination, and</text>
                               <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2.clause1" letter="a">
                                  <text>except as provided in <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect2.art93.sent3"
@@ -2926,43 +2926,43 @@
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2.clause2" letter="b">
                                  <text>
-                                    <ref type="term" target="mznn">mezzanines</ref> shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">1 hour</measurement>, and</text>
+                                    <ref type="term" target="mzznn">mezzanines</ref> shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">1 hour</measurement>, and</text>
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2.clause3" letter="c">
                                  <text>
-                                    <ref type="term" target="ldbr-wll">loadbearing walls</ref>, columns and arches shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than that required for the supported assembly.</text>
+                                    <ref type="term" target="ldbrng">loadbearing walls</ref>, columns and arches shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than that required for the supported assembly.</text>
                               </clause>
                            </sentence>
                            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent3" number="3">
-                              <text>In a <ref type="term" target="bldng">building</ref> classified as a Group C <ref type="term" target="mjr-occ">major occupancy</ref> that contains <ref type="term" target="dwllng-unt">dwelling units</ref> that have more than one <ref type="term" target="tr">storey</ref>, subject to the requirements of <ref type="internal"
+                              <text>In a <ref type="term" target="bldng">building</ref> classified as a Group C <ref type="term" target="mjr-ccpn">major occupancy</ref> that contains <ref type="term" target="dwllng-n">dwelling units</ref> that have more than one <ref type="term" target="tr">storey</ref>, subject to the requirements of <ref type="internal"
                                       target="nbc.divB.part3.sect3.subsect4.art2.sent3"
-                                      display-type="long">Sentence 3.3.4.2.(3)</ref>, the floor assemblies, including floors over <ref type="term" target="bsmnt">basements</ref>, that are entirely contained within these <ref type="term" target="dwllng-unt">dwelling units</ref> shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">1 h</measurement>, but need not be constructed as <ref type="term" target="fr-prtn">fire separations</ref>.</text>
+                                      display-type="long">Sentence 3.3.4.2.(3)</ref>, the floor assemblies, including floors over <ref type="term" target="bmnt">basements</ref>, that are entirely contained within these <ref type="term" target="dwllng-n">dwelling units</ref> shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">1 h</measurement>, but need not be constructed as <ref type="term" target="fr-prtn">fire separations</ref>.</text>
                            </sentence>
                            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent4" number="4">
                               <text>In <ref type="term" target="bldng">buildings</ref> referred to in <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art93.sent1"
-                                      display-type="short">Sentence (1)</ref> where the roof assembly of an <ref type="term" target="ext">exit</ref> stairway or <ref type="term" target="vrtcl-srvc-spc">vertical service space</ref> used as an elevator hoistway has a height greater than <measurement units="metric">55 m</measurement> measured from <ref type="term" target="grd">grade</ref> to the highest point of the roof assembly, the enclosure for the stairway or hoistway shall be of <ref type="term" target="encpsltd-ms-tmbr-cnstrctn">encapsulated mass timber construction</ref> or constructed of concrete.</text>
+                                      display-type="short">Sentence (1)</ref> where the roof assembly of an <ref type="term" target="xt">exit</ref> stairway or <ref type="term" target="vrtcl-rv">vertical service space</ref> used as an elevator hoistway has a height greater than <measurement units="metric">55 m</measurement> measured from <ref type="term" target="grade">grade</ref> to the highest point of the roof assembly, the enclosure for the stairway or hoistway shall be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> or constructed of concrete.</text>
                            </sentence>
                            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent5" number="5">
-                              <text>Group E <ref type="term" target="mjr-occ">major occupancies</ref> and <ref type="term" target="strg-grg">storage garages</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group A, Division 2, Group C, or Group D <ref type="term" target="mjr-occ">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group A, Division 2, Group C, or Group D <ref type="term" target="mjr-occ">major occupancy</ref> requirements contained in <ref type="internal"
+                              <text>Group E <ref type="term" target="mjr-ccpn">major occupancies</ref> and <ref type="term" target="trg-grg">storage garages</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group A, Division 2, Group C, or Group D <ref type="term" target="mjr-ccpn">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group A, Division 2, Group C, or Group D <ref type="term" target="mjr-ccpn">major occupancy</ref> requirements contained in <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art93.table1"
                                       display-type="long">Table 3.2.2.93.</ref>, provided</text>
                               <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent5.clause1" letter="a">
-                                 <text>the Group E <ref type="term" target="mjr-occ">major occupancy</ref> is located below the third <ref type="term" target="tr">storey</ref>, and</text>
+                                 <text>the Group E <ref type="term" target="mjr-ccpn">major occupancy</ref> is located below the third <ref type="term" target="tr">storey</ref>, and</text>
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect2.subsect2.art93.sent5.clause2" letter="b">
-                                 <text>the <ref type="term" target="strg-grg">storage garage</ref> is located below the fifth <ref type="term" target="tr">storey</ref> (see also <ref type="internal"
+                                 <text>the <ref type="term" target="trg-grg">storage garage</ref> is located below the fifth <ref type="term" target="tr">storey</ref> (see also <ref type="internal"
                                          target="nbc.divB.part4.sect4.subsect2.art1"
                                          display-type="long">Article 4.4.2.1.</ref>).</text>
                               </clause>
                            </sentence>
                            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent6" number="6">
-                              <text>Group A, Division 2 <ref type="term" target="mjr-occ">major occupancies</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group C or Group D <ref type="term" target="mjr-occ">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group C or Group D <ref type="term" target="mjr-occ">major occupancy</ref> requirements contained in <ref type="internal"
+                              <text>Group A, Division 2 <ref type="term" target="mjr-ccpn">major occupancies</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group C or Group D <ref type="term" target="mjr-ccpn">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group C or Group D <ref type="term" target="mjr-ccpn">major occupancy</ref> requirements contained in <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art93.table1"
                                       display-type="long">Table 3.2.2.93.</ref>, provided they are located below the fourth <ref type="term" target="tr">storey</ref>. (See Note A-3.2.2.48.(4), 3.2.2.57.(3) and 3.2.2.93.(5) to (7).)</text>
                            </sentence>
                            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent7" number="7">
-                              <text>Group F, Division 2 and 3 <ref type="term" target="mjr-occ">major occupancies</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group D <ref type="term" target="mjr-occ">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group D <ref type="term" target="mjr-occ">major occupancy</ref> requirements contained in <ref type="internal"
+                              <text>Group F, Division 2 and 3 <ref type="term" target="mjr-ccpn">major occupancies</ref> located in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> classified as a Group D <ref type="term" target="mjr-ccpn">major occupancy</ref> within the scope of this Article are permitted to be constructed in accordance with this Article and the corresponding Group D <ref type="term" target="mjr-ccpn">major occupancy</ref> requirements contained in <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art93.table1"
                                       display-type="long">Table 3.2.2.93.</ref>, provided they are located below the third <ref type="term" target="tr">storey</ref>. (See Note A-3.2.2.48.(4), 3.2.2.57.(3) and 3.2.2.93.(5) to (7).)</text>
                            </sentence>
@@ -3046,7 +3046,7 @@
                                     <entry align="center">&gt;10 to 25</entry>
                                     <entry align="center">1 h</entry>
                                     <entry align="center">
-                                       <ref type="term" target="ncmbtbl">Noncombustible</ref>, <ref type="term" target="cmbstbl">Combustible</ref>, <ref type="term" target="ncps-mss-tmbr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
+                                       <ref type="term" target="ncmbtbl">Noncombustible</ref>, <ref type="term" target="cmbtbl">Combustible</ref>, <ref type="term" target="ncps-mt-nstr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
                                     </entry>
                                     <entry align="center">
                                        <ref type="term" target="ncmbtbl">Noncombustible</ref>
@@ -3056,7 +3056,7 @@
                                     <entry align="center">&gt;25 to 50</entry>
                                     <entry align="center">45 min</entry>
                                     <entry align="center">
-                                       <ref type="term" target="ncmbtbl">Noncombustible</ref>, <ref type="term" target="cmbstbl">Combustible</ref>, <ref type="term" target="ncps-mss-tmbr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
+                                       <ref type="term" target="ncmbtbl">Noncombustible</ref>, <ref type="term" target="cmbtbl">Combustible</ref>, <ref type="term" target="ncps-mt-nstr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
                                     </entry>
                                     <entry align="center">
                                        <ref type="term" target="ncmbtbl">Noncombustible</ref>
@@ -3066,10 +3066,10 @@
                                     <entry align="center">&gt;50 to &lt;100</entry>
                                     <entry align="center">45 min</entry>
                                     <entry align="center">
-                                       <ref type="term" target="cmbstbl">Combustible</ref>, <ref type="term" target="ncps-mss-tmbr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
+                                       <ref type="term" target="cmbtbl">Combustible</ref>, <ref type="term" target="ncps-mt-nstr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
                                     </entry>
                                     <entry align="center">
-                                       <ref type="term" target="cmbstbl">Combustible</ref> or <ref type="term" target="ncmbtbl">Noncombustible</ref>
+                                       <ref type="term" target="cmbtbl">Combustible</ref> or <ref type="term" target="ncmbtbl">Noncombustible</ref>
                                        <note xml:id="nbc.divB.part3.sect2.subsect3.art7.table1.note1">The cladding on Group C <ref type="term" target="bldng">buildings</ref> conforming to <ref type="internal"
                                                target="nbc.divB.part3.sect2.subsect2.art51"
                                                display-type="long"
@@ -3097,7 +3097,7 @@
                                     <entry align="center">&gt;10 to 25</entry>
                                     <entry align="center">2 h</entry>
                                     <entry align="center">
-                                       <ref type="term" target="ncmbtbl">Noncombustible</ref>, <ref type="term" target="cmbstbl">Combustible</ref>, <ref type="term" target="ncps-mss-tmbr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
+                                       <ref type="term" target="ncmbtbl">Noncombustible</ref>, <ref type="term" target="cmbtbl">Combustible</ref>, <ref type="term" target="ncps-mt-nstr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
                                     </entry>
                                     <entry align="center">
                                        <ref type="term" target="ncmbtbl">Noncombustible</ref>
@@ -3107,7 +3107,7 @@
                                     <entry align="center">&gt;25 to 50</entry>
                                     <entry align="center">1 h</entry>
                                     <entry align="center">
-                                       <ref type="term" target="ncmbtbl">Noncombustible</ref>, <ref type="term" target="cmbstbl">Combustible</ref>, <ref type="term" target="ncps-mss-tmbr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
+                                       <ref type="term" target="ncmbtbl">Noncombustible</ref>, <ref type="term" target="cmbtbl">Combustible</ref>, <ref type="term" target="ncps-mt-nstr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
                                     </entry>
                                     <entry align="center">
                                        <ref type="term" target="ncmbtbl">Noncombustible</ref>
@@ -3117,10 +3117,10 @@
                                     <entry align="center">&gt;50 to &lt;100</entry>
                                     <entry align="center">1 h</entry>
                                     <entry align="center">
-                                       <ref type="term" target="cmbstbl">Combustible</ref>, <ref type="term" target="ncps-mss-tmbr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
+                                       <ref type="term" target="cmbtbl">Combustible</ref>, <ref type="term" target="ncps-mt-nstr">Encapsulated mass timber</ref>, or <ref type="term" target="ncmbtbl">Noncombustible</ref>
                                     </entry>
                                     <entry align="center">
-                                       <ref type="term" target="cmbstbl">Combustible</ref> or <ref type="term" target="ncmbtbl">Noncombustible</ref>
+                                       <ref type="term" target="cmbtbl">Combustible</ref> or <ref type="term" target="ncmbtbl">Noncombustible</ref>
                                        <note xml:id="nbc.divB.part3.sect2.subsect3.art7.table1.note2">The cladding on <ref type="term" target="bldng">buildings</ref> or parts thereof conforming to <ref type="internal"
                                                target="nbc.divB.part3.sect2.subsect2.art48"
                                                display-type="long"
@@ -3213,7 +3213,7 @@
                                id="bc-mo-2024-01-039"
                                status="current">
                         <content>
-                           <text>Except for <ref type="term" target="bldng">buildings</ref> constructed of <ref type="term" target="ncps-mss-tmbr">encapsulated mass timber construction</ref> in conformance with <ref type="internal"
+                           <text>Except for <ref type="term" target="bldng">buildings</ref> constructed of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> in conformance with <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art48"
                                    display-type="long"
                                    pretext="Article"/>, <ref type="internal"
@@ -4425,9 +4425,9 @@
                                          display-type="long"/>.)</text>
                               </sentence>
                               <sentence xml:id="nbc.divB.part3.sect2.subsect10.art2.sent3" number="3">
-                                 <text>The <ref type="term" target="xt">exit</ref> facility shall be constructed either of <ref type="term" target="nncmbst">noncombustible</ref> construction or, notwithstanding the application of <ref type="internal"
+                                 <text>The <ref type="term" target="xt">exit</ref> facility shall be constructed either of <ref type="term" target="ncmbtbl">noncombustible</ref> construction or, notwithstanding the application of <ref type="internal"
                                          target="nbc.divB.part3.sect1.subsect13.art7"
-                                         display-type="long"/>, with finishes that do not exceed the maximum <ref type="term" target="flm-sprd">flame-spread rating</ref> and maximum smoke developed classification for <ref type="term" target="xt">exit</ref> stairways in <ref type="internal"
+                                         display-type="long"/>, with finishes that do not exceed the maximum <ref type="term" target="flm-prd-">flame-spread rating</ref> and maximum smoke developed classification for <ref type="term" target="xt">exit</ref> stairways in <ref type="internal"
                                          target="nbc.divB.part3.sect1.subsect13.art7.table1"
                                          display-type="long"/>, and shall</text>
                                  <clause xml:id="nbc.divB.part3.sect2.subsect10.art2.sent3.clause1" letter="a">
@@ -4478,9 +4478,9 @@
                               <sentence xml:id="nbc.divB.part3.sect2.subsect10.art3.sent3" number="3">
                                  <text>Pressurization of the stair shaft described in <ref type="internal"
                                          target="nbc.divB.part3.sect2.subsect10.art3.sent1"
-                                         display-type="short"/> is not required if each doorway from the <ref type="term" target="pblc-crrd">public corridor</ref> serving the <ref type="term" target="xt">exit</ref> facility is protected with a vestibule on the <ref type="term" target="pblc-crrd">public corridor</ref> side of the doorway</text>
+                                         display-type="short"/> is not required if each doorway from the <ref type="term" target="pblc-crr">public corridor</ref> serving the <ref type="term" target="xt">exit</ref> facility is protected with a vestibule on the <ref type="term" target="pblc-crr">public corridor</ref> side of the doorway</text>
                                  <clause xml:id="nbc.divB.part3.sect2.subsect10.art3.sent3.clause1" letter="a">
-                                    <text>consisting of a <ref type="term" target="cls">closure</ref> in the <ref type="term" target="pblc-crrd">public corridor</ref>
+                                    <text>consisting of a <ref type="term" target="clr">closure</ref> in the <ref type="term" target="pblc-crr">public corridor</ref>
                                     </text>
                                     <subclause xml:id="nbc.divB.part3.sect2.subsect10.art3.sent3.clause1.subclause1"
                                                number="1">
@@ -4488,7 +4488,7 @@
                                     </subclause>
                                     <subclause xml:id="nbc.divB.part3.sect2.subsect10.art3.sent3.clause1.subclause2"
                                                number="2">
-                                       <text>that has a <ref type="term" target="fr-prtc-">fire-protection rating</ref> not less than a <measurement units="metric">45 min</measurement>, and</text>
+                                       <text>that has a <ref type="term" target="fr-prtct">fire-protection rating</ref> not less than a <measurement units="metric">45 min</measurement>, and</text>
                                     </subclause>
                                  </clause>
                                  <clause xml:id="nbc.divB.part3.sect2.subsect10.art3.sent3.clause2" letter="b">
@@ -4500,7 +4500,7 @@
                                     </subclause>
                                     <subclause xml:id="nbc.divB.part3.sect2.subsect10.art3.sent3.clause2.subclause2"
                                                number="2">
-                                       <text>with the distance from doorway to the <ref type="term" target="xt">exit</ref> facility and the <ref type="term" target="cls">closure</ref> not less than <measurement units="metric">1 800 mm</measurement> long and a width of the path between doorways not less than <measurement units="metric">1 500 mm</measurement>.</text>
+                                       <text>with the distance from doorway to the <ref type="term" target="xt">exit</ref> facility and the <ref type="term" target="clr">closure</ref> not less than <measurement units="metric">1 800 mm</measurement> long and a width of the path between doorways not less than <measurement units="metric">1 500 mm</measurement>.</text>
                                     </subclause>
                                  </clause>
                               </sentence>
@@ -4520,7 +4520,7 @@
                            <article xml:id="nbc.divB.part3.sect2.subsect10.art4" number="4">
                               <title>Doors in Public Corridors and Suite Entry Doors</title>
                               <sentence xml:id="nbc.divB.part3.sect2.subsect10.art4.sent1" number="1">
-                                 <text>All doors along <ref type="term" target="pblc-crrd">public corridors</ref> and all <ref type="term" target="t">suite</ref> entry doors shall be equipped with electromagnetic hold-open devices designed to release upon activation of the fire alarm system in accordance with <ref type="internal"
+                                 <text>All doors along <ref type="term" target="pblc-crr">public corridors</ref> and all <ref type="term" target="t">suite</ref> entry doors shall be equipped with electromagnetic hold-open devices designed to release upon activation of the fire alarm system in accordance with <ref type="internal"
                                          target="nbc.divB.part3.sect1.subsect8.art14"
                                          display-type="long"/>.</text>
                               </sentence>
@@ -4529,7 +4529,7 @@
                               </sentence>
                               <sentence xml:id="nbc.divB.part3.sect2.subsect10.art4.sent3" number="3">
                                  <text>
-                                    <ref type="term" target="t">Suite</ref> entry doors shall have a <ref type="term" target="fr-prtc-">fire-protection rating</ref> of not less than <measurement units="metric">45 min</measurement>.</text>
+                                    <ref type="term" target="t">Suite</ref> entry doors shall have a <ref type="term" target="fr-prtct">fire-protection rating</ref> of not less than <measurement units="metric">45 min</measurement>.</text>
                               </sentence>
                               <note>(See <ref type="internal"
                                       target="nbc.divB.part3.appendix.appnoteA-3.2.10.4.3"
@@ -4572,7 +4572,7 @@
                                    target="nbc.divB.part3.sect4.subsect2.art1.sent2"
                                    display-type="short"/>, at the point where a doorway referred to in <ref type="internal"
                                    target="nbc.divB.part3.sect3.subsect1.art3.sent11"
-                                   display-type="short"/> opens onto a <ref type="term" target="pblc-crrd">public corridor</ref> or exterior passageway, it shall be possible to go in opposite directions to each of 2 separate <ref type="term" target="xt">exits</ref>.</text>
+                                   display-type="short"/> opens onto a <ref type="term" target="pblc-crr">public corridor</ref> or exterior passageway, it shall be possible to go in opposite directions to each of 2 separate <ref type="term" target="xt">exits</ref>.</text>
                         </content>
                         <change-summary>Replaced Sentence 3.3.1.3.(12) to add exception for buildings designed per Subsection 3.2.10.</change-summary>
                         <note>Ministerial Order BA 2024 03</note>
@@ -5717,7 +5717,7 @@
                            </clause>
                            <clause xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1.clause2" letter="b">
                               <text>
-                                 <ref type="term" target="bldng">buildings</ref> within the scope of Part 9 of Division B that are designed with common egress systems for the occupants and require the use of <ref type="term" target="fr-wll">firewalls</ref> according to Article 1.3.3.4. of Division A, and</text>
+                                 <ref type="term" target="bldng">buildings</ref> within the scope of Part 9 of Division B that are designed with common egress systems for the occupants and require the use of <ref type="term" target="frwll">firewalls</ref> according to Article 1.3.3.4. of Division A, and</text>
                            </clause>
                            <clause xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1.clause3" letter="c">
                               <text>the following, in respect of <ref type="term" target="bldng">buildings</ref> within the scope of Part 9 of Division B other than <ref type="term" target="bldng">buildings</ref> described in Clause (b),</text>
@@ -5841,7 +5841,7 @@
                                    target="nbc.divB.part3.sect8.subsect5.art1.sent3"
                                    display-type="short"/>, this Subsection applies to</text>
                            <clause xml:id="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1" letter="a">
-                              <text>one <ref type="term" target="tr-dwllng-nt">storey dwelling units</ref> served by an <ref type="term" target="ccbl">accessible</ref> interior <ref type="term" target="pblc-crrd">public corridor</ref> and an <ref type="term" target="ccbl">accessible</ref> common <ref type="term" target="bldng">building</ref> entrance, as required to be <ref type="term" target="ccbl">accessible</ref> by <ref type="internal"
+                              <text>one <ref type="term" target="dwllng-n">storey dwelling units</ref> served by an <ref type="term" target="ccbl">accessible</ref> interior <ref type="term" target="pblc-crr">public corridor</ref> and an <ref type="term" target="ccbl">accessible</ref> common <ref type="term" target="bldng">building</ref> entrance, as required to be <ref type="term" target="ccbl">accessible</ref> by <ref type="internal"
                                       target="nbc.divB.part3.sect8.subsect2.art2"
                                       display-type="medium"
                                       pretext="Articles"/>
@@ -5851,9 +5851,9 @@
                                       pretext=" and"/>, and</text>
                            </clause>
                            <clause xml:id="nbc.divB.part3.sect8.subsect5.art1.sent1.clause2" letter="b">
-                              <text>common spaces and facilities intended for use by the residents of the <ref type="term" target="dwllng-nt">dwelling units</ref> described in <ref type="internal"
+                              <text>common spaces and facilities intended for use by the residents of the <ref type="term" target="dwllng-n">dwelling units</ref> described in <ref type="internal"
                                       target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1"
-                                      display-type="short"/> including common rooftop <ref type="term" target="ccpn">occupancies</ref>.</text>
+                                      display-type="short"/> including common rooftop <ref type="term" target="ccpnc">occupancies</ref>.</text>
                            </clause>
                         </content>
                         <change-summary>Repealed and substituted Sentence 3.8.5.1.(1) to add reference to Sentence (3) for adaptable dwelling units requirement</change-summary>
@@ -5888,7 +5888,7 @@
                                id="bc-mo-2024-05-002"
                                status="current">
                         <content>
-                           <text>3) At least one for every five or part thereof of <ref type="term" target="dwllng-nt">dwelling units</ref> described in <ref type="internal"
+                           <text>3) At least one for every five or part thereof of <ref type="term" target="dwllng-n">dwelling units</ref> described in <ref type="internal"
                                    target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1"
                                    display-type="short"/> shall conform to this Subsection. (See <ref type="internal"
                                    target="nbc.divB.part3.appendix.appnoteA-3.8.5.1.3"
@@ -5926,9 +5926,9 @@
                         <content>
                            <number>A-3.8.5.1.(3)</number>
                            <title>Application to Dwelling Units</title>
-                           <paragraph xml:id="nbc.divB.part3.appendix.appnoteA-3.8.5.1.3.para1">The Building Code requires that for every <ref type="term" target="dwllng-nt">dwelling unit</ref> meeting the criteria described in <ref type="internal"
+                           <paragraph xml:id="nbc.divB.part3.appendix.appnoteA-3.8.5.1.3.para1">The Building Code requires that for every <ref type="term" target="dwllng-n">dwelling unit</ref> meeting the criteria described in <ref type="internal"
                                    target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1"
-                                   display-type="long"/> that one for every five units be designed as an <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref>. To calculate, the designer shall take the number of units that meet the criteria of <ref type="internal"
+                                   display-type="long"/> that one for every five units be designed as an <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling unit</ref>. To calculate, the designer shall take the number of units that meet the criteria of <ref type="internal"
                                    target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1"
                                    display-type="long"/> and then design not less than 20 percent of those units to be adaptable. "Or part thereof" means, for example, that if there are two units that meet the criteria of <ref type="internal"
                                    target="nbc.divB.part3.sect8.subsect5.art1.sent1.clause1"
@@ -5968,7 +5968,7 @@
                                status="current">
                         <content>
                            <text>
-                              <ref type="term" target="swg">sewage</ref>, water, electrical, telephone, rail or similar public infrastructure systems located in a <ref type="term" target="strt">street</ref> or a public transit right of way,</text>
+                              <ref type="term" target="swg">sewage</ref>, water, electrical, telephone, rail or similar public infrastructure systems located in a <ref type="term" target="trt">street</ref> or a public transit right of way,</text>
                         </content>
                         <change-summary>Amended Clause 1.1.1.1.(2)(a) by striking out "sewage" and substituting "sewage"</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -6008,7 +6008,7 @@
                                    display-type="long"/>., <ref type="internal"
                                    target="nbc.divB.part3.sect3.subsect1.art18"
                                    display-type="long"/>., Articles 3.4.6.5 to 3.4.6.9., <ref type="internal" target="nbc.divBV2.part9.sect8" display-type="long"/>.</entry>
-                           <entry>Existing conditions that do not comply fully with the requirements are permitted if they are acceptable to the <ref type="term" target="thrt-hvng-jrsdctn">authority having jurisdiction</ref>.</entry>
+                           <entry>Existing conditions that do not comply fully with the requirements are permitted if they are acceptable to the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref>.</entry>
                         </content>
                         <change-summary>Amended Table 1.1.1.1.(5), Item 19 by striking out italic "Ramps" and substituting regular "Ramps", and by striking out "3.4.6.79." and substituting "3.4.6.9."</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -6042,9 +6042,9 @@
                            <entry>37</entry>
                            <entry>Mechanical and <emphasis style="italic">Plumbing Systems</emphasis>
                     Part 6 and Part 7</entry>
-                           <entry>Existing mechanical and <ref type="term" target="plmbng-sstm">plumbing systems</ref> in <ref type="term" target="bldng">buildings</ref> are not required to fully comply to the requirements of Parts 6 or Part 7 provided:
+                           <entry>Existing mechanical and <ref type="term" target="plmbng-t">plumbing systems</ref> in <ref type="term" target="bldng">buildings</ref> are not required to fully comply to the requirements of Parts 6 or Part 7 provided:
                     (a) it is not an unsafe condition and
-                    (b) it is acceptable to the <ref type="term" target="thrt-hvng-jrsdctn">authority having jurisdiction</ref>.</entry>
+                    (b) it is acceptable to the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref>.</entry>
                         </content>
                         <change-summary>Amended Table 1.1.1.1.(5), Item 37 by striking out term-referenced "unsafe condition" and substituting plain text "unsafe condition"</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -6079,8 +6079,8 @@
                     <ref type="internal"
                                    target="nbc.divBV2.part9.sect9.subsect4.art4.sent1"
                                    display-type="long"/>
-                              <emphasis style="italic">Unprotected openings</emphasis> in exterior walls that are within 3 m horizontally and less than 10 m below or less than 5 m above an unenclosed exterior <emphasis style="italic">exit</emphasis> stair or ramp of a house with a <emphasis style="italic">secondary suite</emphasis> shall be protected where the unenclosed exterior <emphasis style="italic">exit</emphasis> stair or ramp provides the only <emphasis style="italic">means of egress</emphasis> from a <ref type="term" target="t">suite</ref> and is exposed to fire from <ref type="term" target="nprtctd-pnng">unprotected openings</ref> in the exterior walls of another <ref type="term" target="dwllng-nt">dwelling unit</ref>, ancillary space or common space.</entry>
-                           <entry>Protection of the <ref type="term" target="nprtctd-pnng">unprotected openings</ref> as described in <ref type="internal"
+                              <emphasis style="italic">Unprotected openings</emphasis> in exterior walls that are within 3 m horizontally and less than 10 m below or less than 5 m above an unenclosed exterior <emphasis style="italic">exit</emphasis> stair or ramp of a house with a <emphasis style="italic">secondary suite</emphasis> shall be protected where the unenclosed exterior <emphasis style="italic">exit</emphasis> stair or ramp provides the only <emphasis style="italic">means of egress</emphasis> from a <ref type="term" target="t">suite</ref> and is exposed to fire from <ref type="term" target="nprtctd-">unprotected openings</ref> in the exterior walls of another <ref type="term" target="dwllng-n">dwelling unit</ref>, ancillary space or common space.</entry>
+                           <entry>Protection of the <ref type="term" target="nprtctd-">unprotected openings</ref> as described in <ref type="internal"
                                    target="nbc.divBV2.part9.sect9.subsect4.art4.sent1"
                                    display-type="long"/> is not required when all <ref type="term" target="mk-lrm">smoke alarms</ref> within a house with a <emphasis style="italic">secondary suite</emphasis> are of photo-electric type and interconnected as described in <ref type="internal"
                                    target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause1"
@@ -6119,8 +6119,8 @@
                     <ref type="internal"
                                    target="nbc.divBV2.part9.sect10.subsect3.art1.sent3"
                                    display-type="long"/>
-                    In a house with a <emphasis style="italic">secondary suite</emphasis>, where a minimum <ref type="term" target="fr-rtng">fire-resistance rating</ref> of 30 min is permitted, it is permitted to use wood-frame construction where stud and joist spaces are filled with absorptive material,resilient metal channel spaced 400 or 600 mm o.c. is on one side and not less than 12.7 mm thick gypsum board is installed on ceilings and on both sides of walls.</entry>
-                           <entry>Adding resilient metal channel spaced 400 or 600 mm o.c. and an additional layer of not less than 12.7 mm gypsum board to one side of an existing finished wall assembly that has not less than 12.7 mm gypsum board on each side or an existing finished floor-ceiling assembly that has not less than 12.7 mm gypsum on the ceiling side is permitted to be used where a 30 min <ref type="term" target="fr-rtng">fire-resistance rating</ref> is required.</entry>
+                    In a house with a <emphasis style="italic">secondary suite</emphasis>, where a minimum <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> of 30 min is permitted, it is permitted to use wood-frame construction where stud and joist spaces are filled with absorptive material,resilient metal channel spaced 400 or 600 mm o.c. is on one side and not less than 12.7 mm thick gypsum board is installed on ceilings and on both sides of walls.</entry>
+                           <entry>Adding resilient metal channel spaced 400 or 600 mm o.c. and an additional layer of not less than 12.7 mm gypsum board to one side of an existing finished wall assembly that has not less than 12.7 mm gypsum board on each side or an existing finished floor-ceiling assembly that has not less than 12.7 mm gypsum on the ceiling side is permitted to be used where a 30 min <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> is required.</entry>
                         </content>
                         <change-summary>Amended Table 1.1.1.1.(6), Item 7 by striking out "Fire-Resistance and Fire-Protection Ratings" and substituting "Fire-Resistance Ratings and Fire-Protection Ratings"</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -7642,7 +7642,7 @@
                         <content>
                            <text>A care facility accepted for residential use pursuant to provincial legislation is permitted to be classified as a <ref type="term" target="rdntl-cc">residential occupancy</ref>, provided</text>
                            <clause xml:id="nbc.divB.part3.sect1.subsect2.art5.sent2.clause1" letter="a">
-                              <text>occupants live as a single housekeeping unit in a <ref type="term" target="dwllng-nt">dwelling unit</ref> with sleeping accommodation for not more than 10 persons,</text>
+                              <text>occupants live as a single housekeeping unit in a <ref type="term" target="dwllng-n">dwelling unit</ref> with sleeping accommodation for not more than 10 persons,</text>
                            </clause>
                            <clause xml:id="nbc.divB.part3.sect1.subsect2.art5.sent2.clause2" letter="b">
                               <text>
@@ -8303,7 +8303,7 @@
                         <content>
                            <title>Adaptable Dwelling Unit Bedrooms</title>
                            <sentence xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1" number="1">
-                              <text>At least one bedroom or sleeping space in an <ref type="term" target="dptbl-dwllng-nt">adaptable dwelling unit</ref> shall have</text>
+                              <text>At least one bedroom or sleeping space in an <ref type="term" target="bc-dptbl-dwllng-nt">adaptable dwelling unit</ref> shall have</text>
                               <clause xml:id="nbc.divB.part3.sect8.subsect5.art6.sent1.clause1" letter="a">
                                  <text>a floor area that permits a turning area of not less than <measurement units="metric">1 700 mm</measurement> in diameter, or not less than <measurement units="metric">1 700 mm</measurement> by <measurement units="metric">1 500 mm</measurement>, that could be adjacent a bed,</text>
                               </clause>
@@ -8435,7 +8435,7 @@
                         <content>
                            <text>For suites in <ref type="term" target="bldng">buildings</ref> conforming to <ref type="internal"
                                    target="nbc.divBV2.part9.sect36.subsect6"
-                                   display-type="long"/>, the <ref type="term" target="plmbng-fxtr">plumbing fixtures</ref> shall be designed and installed in conformance with the British Columbia Building Code Book II (Plumbing Systems), that being the National Plumbing Code of Canada, except that a <ref type="term" target="t">suite</ref> shall be permitted to have a single <ref type="term" target="plmbng-fxtr">plumbing fixture</ref> serving as both a <ref type="term" target="bth">bath</ref> and a <ref type="term" target="shwr">shower</ref>.</text>
+                                   display-type="long"/>, the <ref type="term" target="plmbng-t">plumbing fixtures</ref> shall be designed and installed in conformance with the British Columbia Building Code Book II (Plumbing Systems), that being the National Plumbing Code of Canada, except that a <ref type="term" target="t">suite</ref> shall be permitted to have a single <ref type="term" target="plmbng-t">plumbing fixture</ref> serving as both a <ref type="term" target="bth">bath</ref> and a <ref type="term" target="shwr">shower</ref>.</text>
                         </content>
                         <change-summary>Amended Sentence 6.3.1.1.(5) by striking out "suites" and substituting "suites", striking out "buildings" and substituting "buildings", and striking out "suite" and substituting "suite"</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -8469,7 +8469,7 @@
                         <content>
                            <text>Notwithstanding <ref type="internal"
                                    target="nbc.divB.part7.sect1.subsect2.art1.sent1"
-                                   display-type="short"/>, a <ref type="term" target="plmbng-fxtr">plumbing fixture</ref> with a <ref type="term" target="trp-sfl">trap seal</ref> of <measurement units="metric">4.1 L</measurement> or less is deemed to comply with Sentence 2.6.1.6.(3) and Table 2.6.1.6. of Division B of the British Columbia Building Code Book II (Plumbing Systems).</text>
+                                   display-type="short"/>, a <ref type="term" target="plmbng-t">plumbing fixture</ref> with a <ref type="term" target="trp-sfl">trap seal</ref> of <measurement units="metric">4.1 L</measurement> or less is deemed to comply with Sentence 2.6.1.6.(3) and Table 2.6.1.6. of Division B of the British Columbia Building Code Book II (Plumbing Systems).</text>
                         </content>
                         <change-summary>Amended Sentence 7.1.2.1.(4) by striking out "Table 2.6.2.6." and substituting "Table 2.6.1.6."</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -9404,7 +9404,7 @@ Spaces within Buildings
                                id="bc-mo-2024-06-095"
                                status="current">
                         <content>
-                           <text>floor joists are not continuous over the full length of the <ref type="term" target="bldng">building</ref> and the floor joists are supported on a <ref type="term" target="bng-wl">bearing wall</ref> or <ref type="term" target="bm">beam</ref> at the location of the <ref type="term" target="br-wl-pnl">braced wall panel</ref>, or</text>
+                           <text>floor joists are not continuous over the full length of the <ref type="term" target="bldng">building</ref> and the floor joists are supported on a <ref type="term" target="brng-rfc">bearing wall</ref> or <ref type="term" target="bm">beam</ref> at the location of the <ref type="term" target="br-wl-pnl">braced wall panel</ref>, or</text>
                         </content>
                         <change-summary>Struck out 'half' from the subclause</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -9436,7 +9436,7 @@ Spaces within Buildings
                                id="bc-mo-2024-06-096"
                                status="current">
                         <content>
-                           <text>The <ref type="term" target="flr">floor</ref> system shall be anchored to the <ref type="term" target="fndtn">foundation</ref> at intervals not exceeding <measurement units="metric">3 m</measurement> along the length of the <ref type="term" target="fndtn">foundation</ref> wall, except that where the <ref type="term" target="flr">floor</ref> is anchored to the <ref type="term" target="fndtn">foundation</ref> at adjacent <ref type="term" target="bng-wl">bearing walls</ref> or <ref type="term" target="bm">beams</ref>, the maximum spacing shall be <measurement units="metric">6 m</measurement>.</text>
+                           <text>The <ref type="term" target="flr-r">floor</ref> system shall be anchored to the <ref type="term" target="fndtn">foundation</ref> at intervals not exceeding <measurement units="metric">3 m</measurement> along the length of the <ref type="term" target="fndtn">foundation</ref> wall, except that where the <ref type="term" target="flr-r">floor</ref> is anchored to the <ref type="term" target="fndtn">foundation</ref> at adjacent <ref type="term" target="brng-rfc">bearing walls</ref> or <ref type="term" target="bm">beams</ref>, the maximum spacing shall be <measurement units="metric">6 m</measurement>.</text>
                         </content>
                         <change-summary>Struck out 'a72djacent' and substituted 'adjacent'</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -9896,7 +9896,7 @@ Spaces within Buildings
                               <ref type="internal"
                                    target="nbc.divBV2.part9.sect9.subsect6.art3"
                                    display-type="long"
-                                   pretext=" and"/>, doorway openings within <ref type="term" target="dwllng-n">dwelling units</ref> and within houses with a <ref type="term" target="scnd-t">secondary suite</ref> including their common spaces shall be designed to accommodate at least the door sizes given in <ref type="internal"
+                                   pretext=" and"/>, doorway openings within <ref type="term" target="dwllng-n">dwelling units</ref> and within houses with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces shall be designed to accommodate at least the door sizes given in <ref type="internal"
                                    target="nbc.divBV2.part9.sect5.subsect5.art1.table1"
                                    display-type="long"/> for swing-type and folding doors.</text>
                         </content>
@@ -10525,7 +10525,7 @@ Spaces within Buildings
                                id="bc-mo-2024-06-120"
                                status="current">
                         <content>
-                           <text>For the purposes of this Section, the term "greenhouse gas intensity", expressed with the abbreviation "GHGI", shall mean the total greenhouse gas emissions, expressed as kgCO<sub>2</sub>e per square metre of floor area of <ref type="term" target="cndtnd-spc">conditioned space</ref> per year, associated with the energy used by the <ref type="term" target="bldng">building's</ref> systems.</text>
+                           <text>For the purposes of this Section, the term "greenhouse gas intensity", expressed with the abbreviation "GHGI", shall mean the total greenhouse gas emissions, expressed as kgCO<sub>2</sub>e per square metre of floor area of <ref type="term" target="cnd-sp">conditioned space</ref> per year, associated with the energy used by the <ref type="term" target="bldng">building's</ref> systems.</text>
                         </content>
                         <change-summary>Struck out "kgCO2e" and substituted "kgCO₂e", and struck out "building's" and substituted "building's"</change-summary>
                         <note>Ministerial Order BA 2024 06</note>

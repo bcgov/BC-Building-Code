@@ -145,7 +145,7 @@
             <replace preserve-references="true">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part5.sect10.subsect2.art1.sent3" number="3">
-                        <text>Windows, doors and skylights, including their components, that are required to have a <ref type="term" target="fr-prtn-rtng">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal" target="nbc.divB.part5.appendix.appnote43" display-type="short"/>.)</text>
+                        <text>Windows, doors and skylights, including their components, that are required to have a <ref type="term" target="fr-prtn">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal" target="nbc.divB.part5.appendix.appnote43" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -217,7 +217,7 @@
                     <sentence xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5" number="5">
                         <text>A door designated as a "Limited Water" door in accordance with the standard referenced in <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2.sent1.clause1" display-type="medium"/> shall not be used unless the door</text>
                         <clause xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5.clause1" letter="a">
-                            <text>separates a <ref type="term" target="dwllng-nt">dwelling unit</ref> from an unconditioned <ref type="term" target="trg-grg">storage garage</ref> or a carport,</text>
+                            <text>separates a <ref type="term" target="dwllng-n">dwelling unit</ref> from an unconditioned <ref type="term" target="trg-grg">storage garage</ref> or a carport,</text>
                         </clause>
                         <clause xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5.clause2" letter="b">
                             <text>is designed with a clear width, a clear and level space, a door-opening device and a door closer in conformance with <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="long"/> (see <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art6" display-type="long"/>.), or</text>
@@ -258,7 +258,7 @@
             <insert>
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part5.sect9.subsect3.art1.sent2" number="2">
-                        <text>Other fenestration assemblies and their components that are required to have a <ref type="term" target="fr-prtn-rtng">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal" target="nbc.divB.part5.appendix.appnote43" display-type="short"/>.)</text>
+                        <text>Other fenestration assemblies and their components that are required to have a <ref type="term" target="fr-prtn">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal" target="nbc.divB.part5.appendix.appnote43" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </insert>
