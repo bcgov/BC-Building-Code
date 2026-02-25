@@ -690,6 +690,32 @@
                         </fn:array>
                     </xsl:if>
                     
+                    <!-- Extract organization lists from text element -->
+                    <xsl:if test="$content-node/text//list[@type='organization']">
+                        <fn:array key="organizations">
+                            <xsl:for-each select="$content-node/text//list[@type='organization']/item">
+                                <fn:map>
+                                    <xsl:if test="@xml:id">
+                                        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                    </xsl:if>
+                                    <fn:string key="abbreviation"><xsl:apply-templates select="organization" mode="text-only"/></fn:string>
+                                    <!-- Extract full name (text nodes before the ref element, trim trailing parenthesis) -->
+                                    <xsl:variable name="name-text">
+                                        <xsl:for-each select="address/text()[following-sibling::ref[@type='external']]">
+                                            <xsl:value-of select="."/>
+                                        </xsl:for-each>
+                                    </xsl:variable>
+                                    <xsl:variable name="trimmed-name" select="normalize-space(replace($name-text, '\s*\($', ''))"/>
+                                    <fn:string key="fullName"><xsl:value-of select="$trimmed-name"/></fn:string>
+                                    <!-- Extract website URL from ref element if present -->
+                                    <xsl:if test="address//ref[@type='external']">
+                                        <fn:string key="website"><xsl:value-of select="address//ref[@type='external']/@target"/></fn:string>
+                                    </xsl:if>
+                                </fn:map>
+                            </xsl:for-each>
+                        </fn:array>
+                    </xsl:if>
+                    
                     <!-- Intent reference if present -->
                     <xsl:if test="$content-node/intent-ref">
                         <fn:string key="intent_reference"><xsl:value-of select="$content-node/intent-ref/@target"/></fn:string>
@@ -754,6 +780,32 @@
                                     </xsl:if>
                                     <fn:string key="term"><xsl:apply-templates select="term" mode="text-only"/></fn:string>
                                     <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
+                                </fn:map>
+                            </xsl:for-each>
+                        </fn:array>
+                    </xsl:if>
+                    
+                    <!-- Extract organization lists from text element -->
+                    <xsl:if test="text//list[@type='organization']">
+                        <fn:array key="organizations">
+                            <xsl:for-each select="text//list[@type='organization']/item">
+                                <fn:map>
+                                    <xsl:if test="@xml:id">
+                                        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                    </xsl:if>
+                                    <fn:string key="abbreviation"><xsl:apply-templates select="organization" mode="text-only"/></fn:string>
+                                    <!-- Extract full name (text nodes before the ref element, trim trailing parenthesis) -->
+                                    <xsl:variable name="name-text">
+                                        <xsl:for-each select="address/text()[following-sibling::ref[@type='external']]">
+                                            <xsl:value-of select="."/>
+                                        </xsl:for-each>
+                                    </xsl:variable>
+                                    <xsl:variable name="trimmed-name" select="normalize-space(replace($name-text, '\s*\($', ''))"/>
+                                    <fn:string key="fullName"><xsl:value-of select="$trimmed-name"/></fn:string>
+                                    <!-- Extract website URL from ref element if present -->
+                                    <xsl:if test="address//ref[@type='external']">
+                                        <fn:string key="website"><xsl:value-of select="address//ref[@type='external']/@target"/></fn:string>
+                                    </xsl:if>
                                 </fn:map>
                             </xsl:for-each>
                         </fn:array>
@@ -1613,6 +1665,11 @@
     <!-- Skip definition lists in rich-text-json mode - they're extracted separately -->
     <xsl:template match="list[@type='definition']" mode="rich-text-json" priority="2">
         <!-- Output nothing - definition lists are extracted as structured data -->
+    </xsl:template>
+    
+    <!-- Skip organization lists in rich-text-json mode - they're extracted separately -->
+    <xsl:template match="list[@type='organization']" mode="rich-text-json" priority="2">
+        <!-- Output nothing - organization lists are extracted as structured data -->
     </xsl:template>
     
     <!-- Revision history processing for JSON output (snapshot approach for date-based versioning) -->

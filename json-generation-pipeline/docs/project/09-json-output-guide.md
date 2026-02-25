@@ -46,6 +46,7 @@ java -jar saxon.jar -xsl:canonical-to-json.xsl \
   "divisions": [ ... ],
   "bc_amendments": [ ... ],
   "glossary": { ... },
+  "standards": { ... },
   "statistics": { ... }
 }
 ```
@@ -63,6 +64,7 @@ java -jar saxon.jar -xsl:canonical-to-json.xsl \
 | `divisions` | array | Main document content (Division A, B, C) |
 | `bc_amendments` | array | List of BC-specific amendments applied |
 | `glossary` | object | Term definitions |
+| `standards` | object | Standards reference mapping |
 | `statistics` | object | Document statistics |
 
 ---
@@ -634,7 +636,156 @@ function renderArticle(article) {
 
 ---
 
-## 17. Statistics Section
+## 17. Standards Reference Mapping
+
+The JSON includes a `standards` object that provides a complete mapping of all standard references found in the building code tables. This enables web applications to display detailed standard information in popups when users interact with standard references.
+
+### Standards Object Structure
+
+```json
+"standards": {
+  "aama501": {
+    "standard_id": "aama501-05",
+    "standard_ref_id": "aama501",
+    "title": "Methods of Test for Exterior Walls",
+    "full_title": "Methods of Test for Exterior Walls",
+    "number": "501",
+    "full_number": "501-05",
+    "agency": "AAMA",
+    "table_id": "nbc.divB.part1.sect3.subsect1.art2.table1",
+    "location_id": "nbc.divB.part1.sect3.subsect1.art2"
+  },
+  "aama501.1": {
+    "standard_id": "aama501.1-05",
+    "standard_ref_id": "aama501.1",
+    "title": "Standard Test Method for Water Penetration of Windows, Curtain Walls and Doors Using Dynamic Pressure",
+    "full_title": "Standard Test Method for Water Penetration of Windows, Curtain Walls and Doors Using Dynamic Pressure",
+    "number": "501.1",
+    "full_number": "501.1-05",
+    "agency": "AAMA",
+    "table_id": "nbc.divB.part1.sect3.subsect1.art2.table1",
+    "location_id": "nbc.divB.part1.sect3.subsect1.art2"
+  }
+}
+```
+
+### Standards Properties
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `standard_id` | string | Full standard identifier with version (e.g., `"aama501-05"`) |
+| `standard_ref_id` | string | Base standard reference ID used as key (e.g., `"aama501"`) |
+| `title` | string | Short title from StandRefTitle attribute |
+| `full_title` | string | Complete title text from table entry |
+| `number` | string | Base standard number (e.g., `"501"`) |
+| `full_number` | string | Full standard number with version (e.g., `"501-05"`) |
+| `agency` | string | Standards organization (e.g., `"AAMA"`, `"CSA"`, `"ASTM"`) |
+| `table_id` | string | Canonical ID of the table containing this standard |
+| `location_id` | string | Canonical ID of the article containing the table |
+
+### Matching References to Standards
+
+When rendering a `<ref type="standard">` element in the content:
+
+```json
+{
+  "text": "Windows shall comply with [REF:standard:aama501]AAMA 501."
+}
+```
+
+Look up the standard details using the reference ID:
+
+```javascript
+// Extract standard reference from text
+const refPattern = /\[REF:standard:([^\]]+)\]/g;
+const matches = text.matchAll(refPattern);
+
+for (const match of matches) {
+  const standardId = match[1]; // "aama501"
+  const standardInfo = jsonData.standards[standardId];
+
+  if (standardInfo) {
+    // Display popup with standard details
+    showStandardPopup(standardInfo);
+  }
+}
+```
+
+### Example: Standard Reference Popup
+
+```javascript
+function showStandardPopup(standard) {
+  return `
+    <div class="standard-popup">
+      <div class="standard-header">
+        <span class="standard-agency">${standard.agency}</span>
+        <span class="standard-number">${standard.full_number}</span>
+      </div>
+      <div class="standard-title">${standard.full_title}</div>
+      <div class="standard-footer">
+        <a href="#${standard.table_id}">View in Standards Table</a>
+      </div>
+    </div>
+  `;
+}
+```
+
+### React Component Example
+
+```jsx
+function StandardReference({ standardId, standards, children }) {
+  const [showPopup, setShowPopup] = useState(false);
+  const standard = standards[standardId];
+
+  if (!standard) {
+    return <span>{children}</span>;
+  }
+
+  return (
+    <span 
+      className="standard-ref"
+      onMouseEnter={() => setShowPopup(true)}
+      onMouseLeave={() => setShowPopup(false)}
+    >
+      {children}
+      {showPopup && (
+        <div className="standard-popup">
+          <div className="standard-header">
+            <span className="standard-agency">{standard.agency}</span>
+            <span className="standard-number">{standard.full_number}</span>
+          </div>
+          <div className="standard-title">{standard.full_title}</div>
+          <div className="standard-footer">
+            <a href={`#${standard.table_id}`}>View in Standards Table</a>
+          </div>
+        </div>
+      )}
+    </span>
+  );
+}
+```
+
+### Standards Statistics
+
+The NBC 2020 contains approximately **506 unique standard references** in the standards mapping, covering organizations such as:
+- AAMA (American Architectural Manufacturers Association)
+- CSA (Canadian Standards Association)
+- ASTM (American Society for Testing and Materials)
+- ULC (Underwriters' Laboratories of Canada)
+- NFPA (National Fire Protection Association)
+- And many others
+
+### Benefits
+
+1. **Consistent Information**: All standard details come from authoritative standards tables
+2. **Fast Lookup**: O(1) lookup time using standard reference ID as key
+3. **Rich Metadata**: Includes agency, number, title, and location information
+4. **Navigation**: Links back to source table for full context
+5. **Similar to Glossary**: Follows the same pattern as the existing glossary feature
+
+---
+
+## 18. Statistics Section
 
 The JSON includes document statistics for validation and reporting.
 
@@ -654,7 +805,7 @@ The JSON includes document statistics for validation and reporting.
 
 ---
 
-## 18. Front Matter Structure
+## 19. Front Matter Structure
 
 The front matter includes introductory content.
 

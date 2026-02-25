@@ -17,6 +17,8 @@ This JSON output powers the BC Building Code digital platform, enabling features
 - Cross-reference navigation
 - Date-based code queries (seeing the code as it was on any specific date)
 - Filtering BC-specific content from NBC content
+- Term definitions (glossary)
+- Standards reference mapping (linking standards to their details)
 
 ---
 

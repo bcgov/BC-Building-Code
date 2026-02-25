@@ -52,6 +52,7 @@ Welcome to the comprehensive documentation for the BC Building Code JSON Generat
 | Look up operation syntax quickly | [06-quick-reference.md](06-quick-reference.md) |
 | Understand JSON output structure | [09-json-output-guide.md](09-json-output-guide.md) |
 | Work with JSON in applications | [09-json-output-guide.md](09-json-output-guide.md) → Working with the JSON |
+| Use standards reference mapping | [09-json-output-guide.md](09-json-output-guide.md) → Standards Reference Mapping |
 
 ---
 
