@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bc-overlay id="bc-part2-reserved" 
+            version="1.0" 
+            nbc-target-version="2020"
+            effective-date="2023-12-15">
+    
+    <!-- ================================================================== -->
+    <!-- BC BUILDING CODE - DIVISION B PART 2 RESERVED                      -->
+    <!-- Replace entire Part 2 (Farm Buildings) with RESERVED text          -->
+    <!-- ================================================================== -->
+    
+    <metadata>
+        <title>BC Building Code - Division B Part 2 Reserved</title>
+        <description>Replace Division B Part 2 (Farm Buildings) with RESERVED text for BC Building Code</description>
+        <authority>Province of British Columbia</authority>
+        <author>BC Building Code Team</author>
+        <source-document>NBC2020p1 Division B Part 2.FIN.docx</source-document>
+    </metadata>
+    
+    <amendments>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 1: Replace entire Part 2 with RESERVED                   -->
+        <!-- ================================================================== -->
+        
+        <amendment id="bc-part2-001" sequence="1" 
+                   description="Replace Division B Part 2 (Farm Buildings) with RESERVED">
+            <target type="canonical-id" id="nbc.divB.part2"/>
+            <replace preserve-references="false">
+                <new-content source="bc">
+                    <part xml:id="nbc.divB.part2" number="2">
+                        <title>RESERVED</title>
+                        <section xml:id="nbc.divB.part2.sect1" number="1">
+                            <title>RESERVED</title>
+                            <subsection xml:id="nbc.divB.part2.sect1.subsect1" number="1">
+                                <title>RESERVED</title>
+                                <article xml:id="nbc.divB.part2.sect1.subsect1.art1" number="1">
+                                    <title>RESERVED</title>
+                                    <sentence xml:id="nbc.divB.part2.sect1.subsect1.art1.sent1" number="1">
+                                        <text>RESERVED</text>
+                                    </sentence>
+                                </article>
+                            </subsection>
+                        </section>
+                    </part>
+                </new-content>
+            </replace>
+        </amendment>
+        
+    </amendments>
+</bc-overlay>

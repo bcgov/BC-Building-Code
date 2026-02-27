@@ -1363,8 +1363,21 @@
         <fn:map>
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="type">application_note</fn:string>
-            <fn:string key="number"><xsl:value-of select="number"/></fn:string>
-            <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
+            
+            <!-- Extract number and title from revision-history if present, otherwise from direct children -->
+            <xsl:choose>
+                <xsl:when test="@revised='yes' and revision-history">
+                    <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                    <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                    <fn:string key="number"><xsl:value-of select="$content-node/number"/></fn:string>
+                    <fn:string key="title"><xsl:apply-templates select="$content-node/title" mode="text-only"/></fn:string>
+                </xsl:when>
+                <xsl:otherwise>
+                    <fn:string key="number"><xsl:value-of select="number"/></fn:string>
+                    <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
+                </xsl:otherwise>
+            </xsl:choose>
+            
             <xsl:if test="@refs">
                 <fn:string key="refs"><xsl:value-of select="@refs"/></fn:string>
             </xsl:if>
@@ -1384,42 +1397,60 @@
                 <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
             </xsl:if>
             
-            <!-- Paragraphs -->
-            <xsl:if test="paragraph">
-                <fn:array key="paragraphs">
-                    <xsl:for-each select="paragraph">
-                        <fn:map>
-                            <xsl:if test="@xml:id">
-                                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
-                            </xsl:if>
-                            
-                            <!-- Revised flag -->
-                            <xsl:if test="@revised = 'yes'">
-                                <fn:boolean key="revised">true</fn:boolean>
-                            </xsl:if>
-                            
-                            <!-- Extract content from revision-history if present, otherwise from direct content -->
-                            <xsl:choose>
-                                <xsl:when test="@revised='yes' and revision-history">
-                                    <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
-                                    <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
-                                    <fn:string key="content"><xsl:apply-templates select="$content-node/node()" mode="rich-text-json"/></fn:string>
-                                </xsl:when>
-                                <xsl:otherwise>
+            <!-- Paragraphs - extract from revision-history if present -->
+            <xsl:choose>
+                <xsl:when test="@revised='yes' and revision-history">
+                    <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                    <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                    <xsl:if test="$content-node/paragraph">
+                        <fn:array key="paragraphs">
+                            <xsl:for-each select="$content-node/paragraph">
+                                <fn:map>
+                                    <xsl:if test="@xml:id">
+                                        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                    </xsl:if>
                                     <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                            
-                            <!-- Revision history if present -->
-                            <xsl:if test="@revised = 'yes' and revision-history">
-                                <fn:array key="revisions">
-                                    <xsl:call-template name="build-paragraph-revisions"/>
-                                </fn:array>
-                            </xsl:if>
-                        </fn:map>
-                    </xsl:for-each>
-                </fn:array>
-            </xsl:if>
+                                </fn:map>
+                            </xsl:for-each>
+                        </fn:array>
+                    </xsl:if>
+                </xsl:when>
+                <xsl:when test="paragraph">
+                    <fn:array key="paragraphs">
+                        <xsl:for-each select="paragraph">
+                            <fn:map>
+                                <xsl:if test="@xml:id">
+                                    <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                </xsl:if>
+                                
+                                <!-- Revised flag -->
+                                <xsl:if test="@revised = 'yes'">
+                                    <fn:boolean key="revised">true</fn:boolean>
+                                </xsl:if>
+                                
+                                <!-- Extract content from revision-history if present, otherwise from direct content -->
+                                <xsl:choose>
+                                    <xsl:when test="@revised='yes' and revision-history">
+                                        <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                                        <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                                        <fn:string key="content"><xsl:apply-templates select="$content-node/node()" mode="rich-text-json"/></fn:string>
+                                    </xsl:when>
+                                    <xsl:otherwise>
+                                        <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                    </xsl:otherwise>
+                                </xsl:choose>
+                                
+                                <!-- Revision history if present -->
+                                <xsl:if test="@revised = 'yes' and revision-history">
+                                    <fn:array key="revisions">
+                                        <xsl:call-template name="build-paragraph-revisions"/>
+                                    </fn:array>
+                                </xsl:if>
+                            </fn:map>
+                        </xsl:for-each>
+                    </fn:array>
+                </xsl:when>
+            </xsl:choose>
             
             <!-- Note divisions (sub-sections within application notes) -->
             <xsl:if test="note-division">
@@ -1623,10 +1654,26 @@
     </xsl:template>
     
     <xsl:template match="ref" mode="rich-text-json">
-        <!-- Add leading space if preceded by non-whitespace -->
-        <xsl:if test="preceding-sibling::node()[1][self::text() and not(matches(., '\s$'))]">
+        <!-- Determine the next significant sibling (skipping whitespace-only text nodes) -->
+        <xsl:variable name="next-significant" select="following-sibling::node()[not(self::text() and normalize-space(.) = '')][1]"/>
+        <!-- Determine the previous significant sibling (skipping whitespace-only text nodes) -->
+        <xsl:variable name="prev-significant" select="preceding-sibling::node()[not(self::text() and normalize-space(.) = '')][1]"/>
+        
+        <!-- Add leading space if preceded by non-whitespace text OR another ref element -->
+        <!-- BUT: Don't add leading space if this ref has pretext (pretext will provide the separation) -->
+        <xsl:if test="not(@pretext) and ($prev-significant[self::text() and not(matches(., '\s$'))] or $prev-significant[self::ref])">
             <xsl:text> </xsl:text>
         </xsl:if>
+        
+        <!-- Include pretext if present (with leading space only if preceded by something) -->
+        <xsl:if test="@pretext">
+            <xsl:if test="$prev-significant">
+                <xsl:text> </xsl:text>
+            </xsl:if>
+            <xsl:value-of select="@pretext"/>
+            <xsl:text> </xsl:text>
+        </xsl:if>
+        
         <xsl:text>[REF:</xsl:text>
         <xsl:value-of select="@type"/>
         <xsl:text>:</xsl:text>
@@ -1635,14 +1682,21 @@
             <xsl:text>:</xsl:text>
             <xsl:value-of select="@display-type"/>
         </xsl:if>
-        <!-- Include display text if present -->
+        <!-- Include display text if present, preserving trailing space -->
+        <xsl:variable name="has-trailing-space" select="matches(., '\s$')"/>
         <xsl:if test="normalize-space(.) != ''">
             <xsl:text>:</xsl:text>
             <xsl:value-of select="normalize-space(.)"/>
+            <!-- Preserve trailing space if original text had one -->
+            <xsl:if test="$has-trailing-space">
+                <xsl:text> </xsl:text>
+            </xsl:if>
         </xsl:if>
         <xsl:text>]</xsl:text>
-        <!-- Add trailing space if followed by non-whitespace -->
-        <xsl:if test="following-sibling::node()[1][self::text() and not(matches(., '^\s'))]">
+        
+        <!-- Add trailing space if followed by non-whitespace text OR another ref WITHOUT pretext -->
+        <!-- BUT: Don't add trailing space if the ref content already had a trailing space -->
+        <xsl:if test="not($has-trailing-space) and ($next-significant[self::text() and not(matches(., '^\s'))] or $next-significant[self::ref and not(@pretext)])">
             <xsl:text> </xsl:text>
         </xsl:if>
     </xsl:template>
