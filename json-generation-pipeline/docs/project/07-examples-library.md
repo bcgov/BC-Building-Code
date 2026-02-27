@@ -21,7 +21,7 @@ A curated collection of working examples for each operation type, organized by u
 
 ### Example 1.1: Replace Sentence with Clauses
 
-**Source:** `NBC2020p1 Division A_FIN.xml`
+**Source:** `json-generation-pipeline/source/bc-amendments/xml/NBC2020p1 Division A_FIN.xml`
 **Amendment ID:** `bc-001`
 **Description:** Replace a simple sentence with detailed clause structure
 
@@ -57,7 +57,7 @@ A curated collection of working examples for each operation type, organized by u
 
 ### Example 1.2: Replace Article with BC Requirements
 
-**Source:** `NBC2020p1 Division B Part 3.FIN_1.xml`
+**Source:** `json-generation-pipeline/source/bc-amendments/xml/NBC2020p1 Division B Part 3.FIN_1.xml`
 **Amendment ID:** `bc-018`
 **Description:** Replace entire article with BC-specific exterior cladding requirements
 
@@ -100,7 +100,7 @@ A curated collection of working examples for each operation type, organized by u
 
 ### Example 2.1: Insert New Sentence After Existing
 
-**Source:** `NBC2020p1 Division B Part 3.FIN_1.xml`
+**Source:** `json-generation-pipeline/source/bc-amendments/xml/NBC2020p1 Division B Part 3.FIN_1.xml`
 **Amendment ID:** `bc-014`
 **Description:** Add new sentence with clause structure
 
@@ -152,7 +152,7 @@ A curated collection of working examples for each operation type, organized by u
 
 ### Example 2.2: Insert New Article (Chained Inserts)
 
-**Source:** `NBC2020p1 Division B Part 3.FIN_1.xml`
+**Source:** `json-generation-pipeline/source/bc-amendments/xml/NBC2020p1 Division B Part 3.FIN_1.xml`
 **Amendment IDs:** `bc-015`, `bc-016`
 **Description:** Insert two new articles in sequence
 
@@ -206,7 +206,7 @@ A curated collection of working examples for each operation type, organized by u
 
 ### Example 3.1: Simple Word Change
 
-**Source:** `NBC2020p1 Division B Part 3.FIN_1.xml`
+**Source:** `json-generation-pipeline/source/bc-amendments/xml/NBC2020p1 Division B Part 3.FIN_1.xml`
 **Amendment ID:** `bc-017`
 **Description:** Change "required" to "permitted"
 
@@ -231,7 +231,7 @@ A curated collection of working examples for each operation type, organized by u
 
 ### Example 3.2: Change Title Text
 
-**Source:** `NBC2020p1 Division B Part 3.FIN_1.xml`
+**Source:** `json-generation-pipeline/source/bc-amendments/xml/NBC2020p1 Division B Part 3.FIN_1.xml`
 **Amendment ID:** `bc-013`
 **Description:** Update article title
 
@@ -324,7 +324,7 @@ A curated collection of working examples for each operation type, organized by u
 
 ### Example 6.1: Table Row Update with Revision History
 
-**Source:** `Ministerial Order BA 2024 01.xml`
+**Source:** `json-generation-pipeline/source/bc-revisions/xml/Ministerial Order BA 2024 01.xml`
 **Amendment ID:** `bc-mo-2024-01-001`
 
 ```xml
@@ -371,7 +371,7 @@ A curated collection of working examples for each operation type, organized by u
 
 ### Example 6.2: Clause Update with Revision History
 
-**Source:** `Ministerial Order BA 2024 06.xml`
+**Source:** `json-generation-pipeline/source/bc-revisions/xml/Ministerial Order BA 2024 06.xml`
 **Amendment ID:** `bc-mo-2024-06-002`
 
 ```xml
@@ -408,7 +408,7 @@ A curated collection of working examples for each operation type, organized by u
 
 ### Example 7.1: Delete Table Row with History
 
-**Source:** `Ministerial Order BA 2024 06.xml`
+**Source:** `json-generation-pipeline/source/bc-revisions/xml/Ministerial Order BA 2024 06.xml`
 **Amendment ID:** `bc-mo-2024-06-134`
 
 ```xml

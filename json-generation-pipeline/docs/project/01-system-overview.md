@@ -322,17 +322,257 @@ java -jar saxon.jar -xsl:canonical-to-json.xsl \
   -o:bc-building-code.json
 ```
 
-### Step 4: Validate
+### Step 4: Validate Amendments
 
 ```bash
+# Validate overlay amendments (Phase 1)
 java -jar saxon.jar -xsl:validate-amendments.xsl \
   -s:bc-amendments-combined.xml \
-  -o:validation-report.html
+  combined-amendments=bc-amendments-combined.xml \
+  bc-building-code=bc-building-code.xml \
+  -o:amendment-validation-report.html
+
+# Validate revision amendments (Phase 2)
+java -jar saxon.jar -xsl:validate-amendments.xsl \
+  -s:bc-revisions-combined.xml \
+  combined-amendments=bc-revisions-combined.xml \
+  bc-building-code=bc-building-code-final.xml \
+  -o:revision-validation-report.html
 ```
+
+### Step 5: Validate JSON Output
+
+```bash
+# Validate JSON output against canonical XML source
+java -jar saxon.jar -xsl:validate-json-output.xsl \
+  -s:bc-building-code-final.xml \
+  json-output=bc-building-code.json \
+  -o:json-validation-report.html
+
+# Optional: Hide successful validations (show only errors/warnings)
+java -jar saxon.jar -xsl:validate-json-output.xsl \
+  -s:bc-building-code-final.xml \
+  json-output=bc-building-code.json \
+  hide-success=true \
+  -o:json-validation-report.html
+```
+
+**Output:**
+- `json-validation-report.html` - Interactive HTML report with validation results
+- `broken-references-full.txt` - Complete list of broken cross-references (if any found)
+
+**What it validates:**
+1. **Revised Nodes** - All elements with `revised="yes"` have proper revision history in JSON
+2. **Structure Completeness** - Element counts match between XML and JSON
+3. **Content Completeness** - No empty text or content fields in JSON
+4. **Cross-References** - All internal references point to valid targets
+
+### Step 6: Compare XML vs JSON Structure
+
+```bash
+# Compare structure differences between XML and JSON
+java -jar saxon.jar -xsl:compare-structure.xsl \
+  -s:bc-building-code-final.xml \
+  json-file=bc-building-code.json \
+  -o:structure-comparison-report.html
+```
+
+**Output:**
+- `structure-comparison-report.html` - HTML report showing differences
+
+**What it compares:**
+- Element counts by type (articles, sentences, tables, figures, application-notes)
+- IDs missing in JSON but present in XML
+- IDs present in JSON but missing in XML
+
+**Use cases:**
+- Verify JSON transformation completeness
+- Identify elements that were filtered out during JSON generation
+- Debug missing content issues
 
 ---
 
-## 8. File Locations Quick Reference
+## 8. Validation Tools
+
+The pipeline includes three validation scripts to ensure data integrity and completeness:
+
+### 8.1 Amendment Validation (`validate-amendments.xsl`)
+
+**Purpose:** Validates that amendments were applied correctly to the source document.
+
+**Command:**
+```bash
+java -jar saxon.jar -xsl:validate-amendments.xsl \
+  -s:bc-amendments-combined.xml \
+  combined-amendments=bc-amendments-combined.xml \
+  bc-building-code=bc-building-code.xml \
+  -o:amendment-validation-report.html
+```
+
+**Parameters:**
+- `-s:` - The combined amendments file (input document)
+- `combined-amendments=` - Path to combined amendments file
+- `bc-building-code=` - Path to merged output file to validate against
+- `-o:` - Output HTML report path
+
+**Output:** HTML report showing:
+- ✓ Successfully applied amendments
+- ⚠ Warnings (e.g., "Modified text not found exactly")
+- ✗ Errors (e.g., target element not found)
+
+**When to use:**
+- After applying overlay amendments (Phase 1)
+- After applying revision amendments (Phase 2)
+- When debugging amendment application issues
+
+### 8.2 JSON Output Validation (`validate-json-output.xsl`)
+
+**Purpose:** Validates JSON output against the canonical XML source to ensure transformation completeness and data integrity.
+
+**Command:**
+```bash
+java -jar saxon.jar -xsl:validate-json-output.xsl \
+  -s:bc-building-code-final.xml \
+  json-output=bc-building-code.json \
+  -o:json-validation-report.html
+```
+
+**Parameters:**
+- `-s:` - The canonical XML source file (input document)
+- `json-output=` - Path to JSON output file to validate
+- `hide-success=` - Optional: `true` to show only errors/warnings, `false` (default) to show all results
+- `-o:` - Output HTML report path
+
+**Output:**
+- `json-validation-report.html` - Interactive HTML report with:
+  - Summary statistics (element counts, revision counts)
+  - Validation results organized by category
+  - Color-coded status indicators (✓ success, ⚠ warning, ✗ error)
+- `broken-references-full.txt` - Complete list of broken cross-references (generated only if broken refs found)
+
+**Validation Categories:**
+
+1. **Revised Nodes and Revision History**
+   - Checks all elements with `revised="yes"` have proper revision history in JSON
+   - Validates `revised` flag, `revisions` array, and content presence
+   - Special handling for deleted elements (allowed to have empty content)
+
+2. **Structure Completeness**
+   - Compares element counts between XML and JSON
+   - Validates: divisions, parts, sections, subsections, articles, sentences, tables, figures, application-notes
+   - Reports differences with counts
+
+3. **Content Completeness**
+   - Identifies empty `text` fields in JSON
+   - Identifies empty `content` fields in JSON
+   - Reports element ID, parent ID, and element type for each issue
+
+4. **Cross-References**
+   - Validates all internal references point to valid targets
+   - Generates separate text file with complete list of broken references
+   - Shows first 50 broken references in HTML report (with link to full list)
+
+**When to use:**
+- After generating JSON output
+- Before deploying to production
+- When debugging missing or incorrect JSON data
+- To verify revision history was properly transformed
+
+**Example with hide-success:**
+```bash
+# Show only errors and warnings (cleaner report for large documents)
+java -jar saxon.jar -xsl:validate-json-output.xsl \
+  -s:bc-building-code-final.xml \
+  json-output=bc-building-code.json \
+  hide-success=true \
+  -o:json-validation-report.html
+```
+
+### 8.3 Structure Comparison (`compare-structure.xsl`)
+
+**Purpose:** Compares XML and JSON structure to identify missing or extra elements.
+
+**Command:**
+```bash
+java -jar saxon.jar -xsl:compare-structure.xsl \
+  -s:bc-building-code-final.xml \
+  json-file=bc-building-code.json \
+  -o:structure-comparison-report.html
+```
+
+**Parameters:**
+- `-s:` - The canonical XML source file (input document)
+- `json-file=` - Path to JSON output file to compare
+- `-o:` - Output HTML report path
+
+**Output:** HTML report with:
+- **Summary Table** - Element counts by type with difference counts
+- **Detailed Sections** - For each element type with differences:
+  - Missing in JSON (IDs present in XML but not in JSON)
+  - Extra in JSON (IDs present in JSON but not in XML)
+- Color-coded rows (warning for differences, success for matches)
+
+**Element Types Compared:**
+- Articles
+- Sentences
+- Tables
+- Figures
+- Application-notes
+
+**When to use:**
+- After JSON generation to verify completeness
+- When debugging missing content in JSON
+- To identify elements filtered out during transformation
+- To verify JSON transformation logic
+
+**Use Cases:**
+- **Missing in JSON:** Elements that should be in JSON but aren't (potential transformation bug)
+- **Extra in JSON:** Elements in JSON that don't exist in XML (potential ID mismatch or duplicate)
+
+### Validation Workflow Best Practices
+
+1. **After Phase 1 (Overlay Amendments):**
+   ```bash
+   java -jar saxon.jar -xsl:validate-amendments.xsl \
+     -s:bc-amendments-combined.xml \
+     combined-amendments=bc-amendments-combined.xml \
+     bc-building-code=bc-building-code.xml \
+     -o:amendment-validation-report.html
+   ```
+
+2. **After Phase 2 (Revision Amendments):**
+   ```bash
+   java -jar saxon.jar -xsl:validate-amendments.xsl \
+     -s:bc-revisions-combined.xml \
+     combined-amendments=bc-revisions-combined.xml \
+     bc-building-code=bc-building-code-final.xml \
+     -o:revision-validation-report.html
+   ```
+
+3. **After JSON Generation:**
+   ```bash
+   # Validate JSON output
+   java -jar saxon.jar -xsl:validate-json-output.xsl \
+     -s:bc-building-code-final.xml \
+     json-output=bc-building-code.json \
+     -o:json-validation-report.html
+   
+   # Compare structure
+   java -jar saxon.jar -xsl:compare-structure.xsl \
+     -s:bc-building-code-final.xml \
+     json-file=bc-building-code.json \
+     -o:structure-comparison-report.html
+   ```
+
+4. **Review Reports:**
+   - Open HTML reports in browser
+   - Address any errors (✗) first
+   - Review warnings (⚠) and determine if they're acceptable
+   - Check `broken-references-full.txt` if cross-reference issues found
+
+---
+
+## 9. File Locations Quick Reference
 
 | Purpose | Location |
 |---------|----------|
@@ -349,7 +589,7 @@ java -jar saxon.jar -xsl:validate-amendments.xsl \
 
 ---
 
-## 9. Migration Note: bc. Prefix to Source Attribute
+## 10. Migration Note: bc. Prefix to Source Attribute
 
 **Completed: 2026-02-02**
 
@@ -370,7 +610,7 @@ When creating amendments:
 
 ---
 
-## Next Steps
+## 11. Next Steps
 
 Now that you understand the system overview, proceed to:
 

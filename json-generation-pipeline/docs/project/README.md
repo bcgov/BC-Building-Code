@@ -26,6 +26,7 @@ Welcome to the comprehensive documentation for the BC Building Code JSON Generat
 | [04-merge-engine-reference.md](04-merge-engine-reference.md) | Technical reference for all merge engine operations |
 | [05-validation-troubleshooting.md](05-validation-troubleshooting.md) | Fixing common validation errors and warnings |
 | [09-json-output-guide.md](09-json-output-guide.md) | Comprehensive JSON output structure and usage guide |
+| [10-oxygen-xml-editor-guide.md](10-oxygen-xml-editor-guide.md) | **Visual editing with Oxygen XML Editor** - Complete guide for non-technical users |
 
 ### Quick Reference
 
@@ -43,6 +44,7 @@ Welcome to the comprehensive documentation for the BC Building Code JSON Generat
 | Task | Go to |
 |------|-------|
 | Understand how the system works | [01-system-overview.md](01-system-overview.md) |
+| **Use Oxygen XML Editor (no command line)** | [10-oxygen-xml-editor-guide.md](10-oxygen-xml-editor-guide.md) |
 | Create a new BC-specific article | [02-overlay-amendments-guide.md](02-overlay-amendments-guide.md) → Insert Operations |
 | Replace existing NBC content | [02-overlay-amendments-guide.md](02-overlay-amendments-guide.md) → Replace Operations |
 | Track changes with effective dates | [03-revision-amendments-guide.md](03-revision-amendments-guide.md) |
@@ -124,4 +126,4 @@ When copying this documentation to Confluence:
 ---
 
 *Documentation created: 2026-02-02*
-*Last updated: 2026-02-08*
+*Last updated: 2026-02-26*

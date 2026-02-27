@@ -229,40 +229,81 @@ bc-mo-2024-01-001   (Revision amendment: year-order-sequence)
 
 ```bash
 # Combine
-java -jar saxon.jar -xsl:combine-amendments.xsl \
-  -s:amendment-list.xml -o:bc-amendments-combined.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
+  -s:json-generation-pipeline/source/bc-amendments/amendment-list.xml \
+  -o:json-generation-pipeline/output/bc-amendments-combined.xml
 
 # Apply
-java -jar saxon.jar -xsl:merge-engine.xsl \
-  -s:nbc-canonical.xml overlay-document=bc-amendments-combined.xml \
-  -o:bc-building-code.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl \
+  -s:json-generation-pipeline/output/nbc-canonical.xml \
+  overlay-document=json-generation-pipeline/output/bc-amendments-combined.xml \
+  -o:json-generation-pipeline/output/bc-building-code.xml
 ```
 
 ### Phase 2: Revision Amendments
 
 ```bash
 # Combine
-java -jar saxon.jar -xsl:combine-amendments.xsl \
-  -s:revision-list.xml -o:bc-revisions-combined.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
+  -s:json-generation-pipeline/source/bc-revisions/revision-list.xml \
+  -o:json-generation-pipeline/output/bc-revisions-combined.xml
 
 # Apply
-java -jar saxon.jar -xsl:merge-engine.xsl \
-  -s:bc-building-code.xml overlay-document=bc-revisions-combined.xml \
-  -o:bc-building-code-final.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl \
+  -s:json-generation-pipeline/output/bc-building-code.xml \
+  overlay-document=json-generation-pipeline/output/bc-revisions-combined.xml \
+  -o:json-generation-pipeline/output/bc-building-code-final.xml
 ```
 
 ### Generate JSON
 
 ```bash
-java -jar saxon.jar -xsl:canonical-to-json.xsl \
-  -s:bc-building-code-final.xml -o:bc-building-code.json
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/canonical-to-json.xsl \
+  -s:json-generation-pipeline/output/bc-building-code-final.xml \
+  -o:json-generation-pipeline/output/bc-building-code.json
 ```
 
-### Validate
+### Validate Amendments
 
 ```bash
-java -jar saxon.jar -xsl:validate-amendments.xsl \
-  -s:bc-amendments-combined.xml -o:validation-report.html
+# Phase 1 validation
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/validate-amendments.xsl \
+  -s:json-generation-pipeline/output/bc-amendments-combined.xml \
+  combined-amendments=json-generation-pipeline/output/bc-amendments-combined.xml \
+  bc-building-code=json-generation-pipeline/output/bc-building-code.xml \
+  -o:json-generation-pipeline/output/amendment-validation-report.html
+
+# Phase 2 validation
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/validate-amendments.xsl \
+  -s:json-generation-pipeline/output/bc-revisions-combined.xml \
+  combined-amendments=json-generation-pipeline/output/bc-revisions-combined.xml \
+  bc-building-code=json-generation-pipeline/output/bc-building-code-final.xml \
+  -o:json-generation-pipeline/output/revision-validation-report.html
+```
+
+### Validate JSON Output
+
+```bash
+# Validate JSON against XML source
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/validate-json-output.xsl \
+  -s:json-generation-pipeline/output/bc-building-code-final.xml \
+  json-output=json-generation-pipeline/output/bc-building-code.json \
+  -o:json-generation-pipeline/output/json-validation-report.html
+
+# Compare XML vs JSON structure
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/compare-structure.xsl \
+  -s:json-generation-pipeline/output/bc-building-code-final.xml \
+  json-file=json-generation-pipeline/output/bc-building-code.json \
+  -o:json-generation-pipeline/output/structure-comparison-report.html
 ```
 
 ---
