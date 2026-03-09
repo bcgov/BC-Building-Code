@@ -193,6 +193,31 @@
             <xsl:value-of select="bc:apply-global-text-replacements(string(.))"/>
         </xsl:attribute>
     </xsl:template>
+    
+    <!-- Smart number attribute update for structural elements -->
+    <!-- When xml:id changes (e.g., sect36 -> sect37), automatically update number attribute -->
+    <xsl:template match="section/@number | subsection/@number | article/@number" mode="pre-process" priority="10">
+        <xsl:variable name="original-id" select="../@xml:id"/>
+        <xsl:variable name="updated-id" select="bc:apply-global-text-replacements(string($original-id))"/>
+        
+        <xsl:choose>
+            <!-- If ID changed, extract new number from the FINAL updated ID -->
+            <xsl:when test="$original-id != $updated-id">
+                <xsl:variable name="new-number" select="bc:extract-number-from-id($updated-id, local-name(..))"/>
+                <xsl:attribute name="number">
+                    <xsl:value-of select="$new-number"/>
+                </xsl:attribute>
+                <!-- Debug message -->
+                <xsl:message>Smart number update: <xsl:value-of select="local-name(..)"/> ID changed from <xsl:value-of select="$original-id"/> to <xsl:value-of select="$updated-id"/>, number updated to <xsl:value-of select="$new-number"/></xsl:message>
+            </xsl:when>
+            <!-- Otherwise, apply normal text replacements -->
+            <xsl:otherwise>
+                <xsl:attribute name="number">
+                    <xsl:value-of select="bc:apply-global-text-replacements(string(.))"/>
+                </xsl:attribute>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 
     <!-- Apply global text replacements to ALL text nodes in pre-process -->
     <xsl:template match="text()" mode="pre-process">
@@ -1406,6 +1431,31 @@
                     if ($is-regex) then replace($current-text, $from, $to)
                     else replace($current-text, $from, $to, 'q')
             })"/>
+    </xsl:function>
+    
+    <!-- Extract number from canonical ID for structural elements -->
+    <!-- Examples: 
+         nbc.divBV2.part9.sect36 -> 36
+         nbc.divBV2.part9.sect36.subsect7 -> 7
+         nbc.divBV2.part9.sect36.subsect7.art5 -> 5
+    -->
+    <xsl:function name="bc:extract-number-from-id" as="xs:string">
+        <xsl:param name="id" as="xs:string"/>
+        <xsl:param name="element-type" as="xs:string"/>
+        
+        <xsl:variable name="pattern">
+            <xsl:choose>
+                <xsl:when test="$element-type = 'section'">sect(\d+)</xsl:when>
+                <xsl:when test="$element-type = 'subsection'">subsect(\d+)</xsl:when>
+                <xsl:when test="$element-type = 'article'">art(\d+)</xsl:when>
+                <xsl:otherwise>(\d+)</xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
+        
+        <xsl:variable name="matches" select="analyze-string($id, $pattern)"/>
+        <xsl:variable name="all-groups" select="$matches//fn:group[@nr='1']"/>
+        
+        <xsl:sequence select="if (exists($all-groups)) then string($all-groups[last()]) else ''"/>
     </xsl:function>
 
     <!-- Helper function to get amendments for an ID (handles bc/nbc conversion) -->

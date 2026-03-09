@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-02-26T23:09:29.434209-08:00"
+            generated="2026-03-06T18:00:57.24132-08:00"
             source-count="14">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -25801,7 +25801,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  reference-id="nbc.divBV2.part9.sect36"/>
          <insert>
             <new-content source="bc">
-               <section xml:id="nbc.divBV2.part9.sect37" number="38">
+               <section xml:id="nbc.divBV2.part9.sect37" number="37">
                   <title>Greenhouse Gas Emissions</title>
                   <subsection xml:id="nbc.divBV2.part9.sect37.subsect1" number="1">
                      <title>General</title>

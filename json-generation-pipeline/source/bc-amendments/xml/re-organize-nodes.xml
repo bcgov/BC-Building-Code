@@ -27,7 +27,15 @@
     <!--   - Text content                                                   -->
     <!-- ================================================================== -->
     <text-replacements>
+        <!-- ================================================================== -->
+        <!-- SMART NUMBER ATTRIBUTE UPDATE ENABLED                              -->
+        <!-- The merge engine now automatically updates number attributes       -->
+        <!-- when it detects ID changes (e.g., sect36 -> sect37)               -->
+        <!-- No need to manually specify number attribute replacements!         -->
+        <!-- ================================================================== -->
+        
         <!-- Swapping Part 9 sec 36 and 37 to match the bc code -->
+        <!-- Note: number attributes will be auto-updated by merge engine -->
         <replace from="nbc.divBV2.part9.sect36" to="nbc.divBV2.part9.sect36_bkp"/>
         <replace from="nbc.divBV2.part9.sect37" to="nbc.divBV2.part9.sect36"/>
         <replace from="nbc.divBV2.part9.sect36_bkp" to="nbc.divBV2.part9.sect37"/>
@@ -39,6 +47,7 @@
         
         <!-- Renumber existing subsect6-8 to make room for new 9.36.6 -->
         <!-- Work backwards to avoid conflicts -->
+        <!-- Note: subsection number attributes will be auto-updated -->
         <replace from="sect36.subsect8" to="sect36.subsect9"/>
         <replace from="9.36.8." to="9.36.9."/>
         
@@ -48,15 +57,11 @@
         <replace from="sect36.subsect6" to="sect36.subsect7"/>
         <replace from="9.36.6." to="9.36.7."/>
         
+        <!-- Renumber sect37 to sect38 to make space for inserting new 37  Amendment 328--> 
+        <!-- Note: section number attribute will be auto-updated from 37 to 38 -->
         <replace from="nbc.divBV2.part9.sect37" to="nbc.divBV2.part9.sect38"/>
-
         
         <!-- Swap display text (9.37. ↔ 9.38.) -->
         <replace from="9.37." to="9.38."/>
- 
-        
-        <!-- Regex replacement (set regex="true") -->
-        <!-- <replace from="sect37" to="sect38"/> -->
-        <!-- <replace from="9\.37\.(\d+)" to="9.38.$1" regex="true"/> -->
     </text-replacements>
 </bc-overlay>
