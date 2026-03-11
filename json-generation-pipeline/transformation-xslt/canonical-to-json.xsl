@@ -39,14 +39,8 @@
                     </fn:map>
                 </xsl:if>
                 
-                <!-- Front matter (preface, introduction, committees) -->
-                <xsl:if test="front-matter">
-                    <fn:map key="front_matter">
-                        <xsl:apply-templates select="front-matter" mode="json"/>
-                    </fn:map>
-                </xsl:if>
-                
                 <!-- Volumes structure (replaces divisions array) -->
+                <!-- Front matter is included in Volume 1 -->
                 <fn:array key="volumes">
                     <xsl:apply-templates select="volume" mode="json"/>
                 </fn:array>
@@ -351,6 +345,13 @@
             <xsl:variable name="vol-title" select="ancestor::nbc/metadata/publication-info[@volume=$vol-num]/title"/>
             <xsl:if test="$vol-title">
                 <fn:string key="title"><xsl:value-of select="$vol-title"/></fn:string>
+            </xsl:if>
+            
+            <!-- Front matter (child of volume element) -->
+            <xsl:if test="front-matter">
+                <fn:map key="front_matter">
+                    <xsl:apply-templates select="front-matter" mode="json"/>
+                </fn:map>
             </xsl:if>
             
             <!-- Divisions within this volume -->

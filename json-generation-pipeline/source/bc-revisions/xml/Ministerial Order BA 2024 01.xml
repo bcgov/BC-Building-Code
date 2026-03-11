@@ -46,7 +46,7 @@
             <entry revised="yes">
               <!-- Content derived from revision-history (latest revision is authoritative) -->
               <revision-history>
-                <original effective-date="2020-12-01">
+                <original effective-date="2024-03-08">
                   
                 </original>
                 <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-001" status="current">
@@ -82,7 +82,7 @@
             <entry revised="yes">
               <!-- Content derived from revision-history (latest revision is authoritative) -->
               <revision-history>
-                <original effective-date="2020-12-01">
+                <original effective-date="2024-03-08">
                 </original>
                 <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-002" status="current">
                   <content>
@@ -122,7 +122,7 @@
             <entry revised="yes">
               <!-- Content derived from revision-history (latest revision is authoritative) -->
               <revision-history>
-                <original effective-date="2020-12-01">
+                <original effective-date="2024-03-08">
                 </original>
                 <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-003" status="current">
                   <content>
@@ -160,7 +160,7 @@
             <entry revised="yes">
               <!-- Content derived from revision-history (latest revision is authoritative) -->
               <revision-history>
-                <original effective-date="2020-12-01">
+                <original effective-date="2024-03-08">
                 </original>
                 <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-004" status="current">
                   <content>
@@ -193,7 +193,7 @@
         <new-content source="bc">
           <table xml:id="nbc.divB.part3.sect1.subsect3.art1.table1" vendor-id="et000115" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-005" status="current">
@@ -478,7 +478,7 @@
               (See also <ref type="internal" target="nbc.divB.part3.appendix.appnote20" display-type="short" pretext="Note"/>.)
             </title>
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 
               </original>
               
@@ -621,7 +621,7 @@
         <new-content source="bc">
           <article xml:id="nbc.divB.part3.sect1.subsect6.art6" number="6" vendor-id="ea003558" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 
               </original>
               
@@ -689,7 +689,7 @@
           <article xml:id="nbc.divB.part3.sect1.subsect6.art9" number="9" vendor-id="ea003706" revised="yes">
             
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 
               </original>
               
@@ -822,7 +822,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect1.subsect6.art14.sent2" number="2" vendor-id="es013866" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-009" status="current">
@@ -866,7 +866,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect1.subsect6.art14.sent3" number="3" vendor-id="es013867" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-010" status="current">
@@ -918,7 +918,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect1.subsect7.art5.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-011" status="current">
@@ -944,7 +944,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect1.subsect11.art5.sent4" number="4" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-012" status="current">
@@ -976,7 +976,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect1.subsect15.art2.sent5" number="5" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-013" status="current">
@@ -1002,7 +1002,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect1.art4.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-014" status="current">
@@ -1028,7 +1028,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect1.art6.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-015" status="current">
@@ -1056,7 +1056,7 @@
           <article xml:id="nbc.divB.part3.sect2.subsect2.art6" number="6" vendor-id="ea000256" revised="yes">
             
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-016" status="current">
@@ -1091,7 +1091,7 @@
           <article xml:id="nbc.divB.part3.sect2.subsect2.art7" number="7" vendor-id="ea000257" revised="yes">
             
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-017" status="current">
@@ -1140,7 +1140,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art11.sent1" number="1" vendor-id="es000408" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-018" status="current">
@@ -1166,7 +1166,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art11.sent2" number="2" vendor-id="es013645" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-019" status="current">
@@ -1198,7 +1198,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art12.sent1" number="1" vendor-id="es000409" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-020" status="current">
@@ -1224,7 +1224,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art13.sent1" number="1" vendor-id="es000410" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-021" status="current">
@@ -1250,7 +1250,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art14.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-022" status="current">
@@ -1276,7 +1276,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art14.sent3" number="3" vendor-id="es000413" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-023" status="current">
@@ -1302,7 +1302,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art16.sent1" number="1" vendor-id="es000418" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-024" status="current">
@@ -1329,7 +1329,7 @@
           <article xml:id="nbc.divB.part3.sect2.subsect2.art18" number="18" revised="yes">
             
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-025" status="current">
@@ -1361,7 +1361,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art19.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-026" status="current">
                 <content>
@@ -1386,7 +1386,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art23.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-027" status="current">
                 <content>
@@ -1411,7 +1411,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art42.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-028" status="current">
                 <content>
@@ -1436,7 +1436,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art47.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-029" status="current">
                 <content>
@@ -1461,7 +1461,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art48.sent4" number="4" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-030" status="current">
                 <content>
@@ -1486,7 +1486,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art56.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-031" status="current">
                 <content>
@@ -1511,7 +1511,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art57.sent3" number="3" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-032" status="current">
                 <content>
@@ -1536,7 +1536,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art66.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-033" status="current">
                 <content>
@@ -1561,7 +1561,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art76.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-034" status="current">
                 <content>
@@ -1586,7 +1586,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect2.art82.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-035" status="current">
                 <content>
@@ -1612,7 +1612,7 @@
           <article xml:id="nbc.divB.part3.sect2.subsect2.art93" number="93" revised="yes">
             
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This article did not exist in NBC 2020 -->
               </original>
               
@@ -1843,7 +1843,7 @@
         <new-content source="bc">
           <table xml:id="nbc.divB.part3.sect2.subsect3.art7.table1" vendor-id="et001204" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-037" status="current">
@@ -1938,7 +1938,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect3.art9.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-038" status="current">
@@ -1964,7 +1964,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect5.art7.sent2" number="2" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-039" status="current">
@@ -1990,7 +1990,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect5.art12.sent7" number="7" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-040" status="current">
@@ -2016,7 +2016,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect6.art1.sent2" number="2" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-041" status="current">
@@ -2042,7 +2042,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect3.subsect3.art7.sent4" number="4" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-042" status="current">
@@ -2080,7 +2080,7 @@
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote21" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-043" status="current">
@@ -2108,7 +2108,7 @@
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote22" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-044" status="current">
@@ -2136,7 +2136,7 @@
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote23" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-045" status="current">
@@ -2164,7 +2164,7 @@
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote24" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-046" status="current">
@@ -2192,7 +2192,7 @@
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote25" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-047" status="current">
@@ -2220,7 +2220,7 @@
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote26" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-048" status="current">
@@ -2248,7 +2248,7 @@
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote43" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-049" status="current">
@@ -2277,7 +2277,7 @@
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote54" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
               </original>
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-050" status="current">
@@ -2306,7 +2306,7 @@
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote55a" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This note did not exist in NBC 2020 -->
               </original>
               
@@ -2336,7 +2336,7 @@
           <!-- Title row for Article 3.2.2.93 -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.row919a" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-052" status="current">
@@ -2353,7 +2353,7 @@
           <!-- Sentence (2) attribution row -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.row919b" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-052" status="current">
@@ -2371,7 +2371,7 @@
           <!-- Sentence (2) OP1.3 attribution row -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.row919c" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-052" status="current">
@@ -2386,7 +2386,7 @@
           <!-- Sentence (2) OS1.2 combined attribution row -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.row919d" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-052" status="current">
@@ -2401,7 +2401,7 @@
           <!-- Sentence (2) OP1.2 combined attribution row -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.row919e" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-052" status="current">

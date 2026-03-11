@@ -33,7 +33,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divA.part1.sect3.subsect3.art2.sent2" number="2" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This sentence did not exist in the original -->
               </original>
               
@@ -61,7 +61,7 @@
         <new-content source="bc">
           <article xml:id="nbc.divA.part1.sect3.subsect3.art3" number="3" vendor-id="ea004139" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
               </original>
               
@@ -110,7 +110,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect4.art1.sent7" number="7" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This sentence did not exist in the original -->
               </original>
               
@@ -138,7 +138,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect2.subsect5.art7.sent2" number="2" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
               </original>
               
@@ -166,7 +166,7 @@
         <new-content source="bc">
           <subsection xml:id="nbc.divB.part3.sect2.subsect10" number="10" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This subsection did not exist in the original -->
               </original>
               
@@ -341,7 +341,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect3.subsect1.art3.sent12" number="12" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
               </original>
               
@@ -369,7 +369,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divB.part3.sect4.subsect2.art1.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
               </original>
               
@@ -398,7 +398,7 @@
           <!-- 3.2.4.1 row (7) - Sentence reference -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow001" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
@@ -416,7 +416,7 @@
           <!-- 3.2.4.1 row (7) - OP1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow002" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
@@ -433,7 +433,7 @@
           <!-- 3.2.10.1 title row -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow003" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
@@ -450,7 +450,7 @@
           <!-- 3.2.10.1.(1) -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow004" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
@@ -469,7 +469,7 @@
           <!-- 3.2.10.2 title row -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow005" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
@@ -486,7 +486,7 @@
           <!-- 3.2.10.2.(1) OS objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow006" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
@@ -504,7 +504,7 @@
           <!-- 3.2.10.2.(1) OP objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow007" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This row did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
@@ -520,7 +520,7 @@
           <!-- 3.2.10.2.(2) OS objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow008" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art2.sent2" display-type="shortNum"/></entry>
@@ -534,7 +534,7 @@
           <!-- 3.2.10.2.(2) OP1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow009" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -548,7 +548,7 @@
           <!-- 3.2.10.2.(2) OP3.1 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow010" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -562,7 +562,7 @@
           <!-- 3.2.10.2.(3) OS1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow011" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art2.sent3" display-type="shortNum"/></entry>
@@ -576,7 +576,7 @@
           <!-- 3.2.10.2.(3) OP1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow012" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -590,7 +590,7 @@
           <!-- 3.2.10.2.(3) clause (a) OS objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow013" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -604,7 +604,7 @@
           <!-- 3.2.10.2.(3) clause (a) OP1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow014" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -618,7 +618,7 @@
           <!-- 3.2.10.2.(3) clause (b) objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow015" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -632,7 +632,7 @@
           <!-- 3.2.10.2.(3) clause (c) objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow016" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -646,7 +646,7 @@
           <!-- 3.2.10.2.(3) clause (d) OS objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow017" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -660,7 +660,7 @@
           <!-- 3.2.10.2.(3) clause (d) OP objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow018" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -674,7 +674,7 @@
           <!-- 3.2.10.2.(4) OS objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow019" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art2.sent4" display-type="shortNum"/></entry>
@@ -688,7 +688,7 @@
           <!-- 3.2.10.2.(4) OP1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow020" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -703,7 +703,7 @@
           <!-- 3.2.10.3 title row -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow021" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art3" display-type="title"/></entry>
@@ -716,7 +716,7 @@
           <!-- 3.2.10.3.(1) OS objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow022" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art3.sent1" display-type="shortNum"/></entry>
@@ -730,7 +730,7 @@
           <!-- 3.2.10.3.(1) OP1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow023" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -744,7 +744,7 @@
           <!-- 3.2.10.3.(2) OS objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow024" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art3.sent2" display-type="shortNum"/></entry>
@@ -758,7 +758,7 @@
           <!-- 3.2.10.3.(2) OP1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow025" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -772,7 +772,7 @@
           <!-- 3.2.10.3.(3) OS objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow026" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art3.sent3" display-type="shortNum"/></entry>
@@ -786,7 +786,7 @@
           <!-- 3.2.10.3.(3) OP1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow027" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -800,7 +800,7 @@
           <!-- 3.2.10.3.(4) objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow028" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art3.sent4" display-type="shortNum"/></entry>
@@ -814,7 +814,7 @@
           <!-- 3.2.10.3.(5) OS objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow029" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art3.sent5" display-type="shortNum"/></entry>
@@ -828,7 +828,7 @@
           <!-- 3.2.10.3.(5) OP1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow030" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -843,7 +843,7 @@
           <!-- 3.2.10.4 title row -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow031" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art4" display-type="title"/></entry>
@@ -856,7 +856,7 @@
           <!-- 3.2.10.4.(1) OS objectives -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow032" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art4.sent1" display-type="shortNum"/></entry>
@@ -870,7 +870,7 @@
           <!-- 3.2.10.4.(1) OP1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow033" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -884,7 +884,7 @@
           <!-- 3.2.10.4.(1) OS1.4 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow034" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -898,7 +898,7 @@
           <!-- 3.2.10.4.(1) OP1.4 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow035" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -912,7 +912,7 @@
           <!-- 3.2.10.4.(2) OS1.4 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow036" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art4.sent2" display-type="shortNum"/></entry>
@@ -926,7 +926,7 @@
           <!-- 3.2.10.4.(2) OP1.4 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow037" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -940,7 +940,7 @@
           <!-- 3.2.10.4.(3) OS1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow038" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry><ref type="internal" target="nbc.divB.part3.sect2.subsect10.art4.sent3" display-type="shortNum"/></entry>
@@ -954,7 +954,7 @@
           <!-- 3.2.10.4.(3) OP1.2 objective -->
           <row xml:id="nbc.divB.part3.sect9.subsect1.art1.table1.bcrow039" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01"><!-- This row did not exist in NBC 2020 --></original>
+              <original effective-date="2024-03-08"><!-- This row did not exist in NBC 2020 --></original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-008" status="current">
                 <content>
                   <entry/>
@@ -979,7 +979,7 @@
         <new-content source="bc">
           <application-note xml:id="nbc.divB.part3.appendix.appnote3210" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This note did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-009" status="current">
@@ -1004,7 +1004,7 @@
           
           <application-note xml:id="nbc.divB.part3.appendix.appnote321014" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This note did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-009" status="current">
@@ -1021,7 +1021,7 @@
           
           <application-note xml:id="nbc.divB.part3.appendix.appnote321021and2" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This note did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-009" status="current">
@@ -1039,7 +1039,7 @@
           
           <application-note xml:id="nbc.divB.part3.appendix.appnote321023" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This note did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-009" status="current">
@@ -1057,7 +1057,7 @@
           
           <application-note xml:id="nbc.divB.part3.appendix.appnote321024" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This note did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-009" status="current">
@@ -1075,7 +1075,7 @@
           
           <application-note xml:id="nbc.divB.part3.appendix.appnote321043" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This note did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-009" status="current">
@@ -1103,7 +1103,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divBV2.part9.sect1.subsect1.art1.sent3" number="3" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This sentence did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-010" status="current">
@@ -1129,7 +1129,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divBV2.part9.sect10.subsect1.art3.sent12" number="12" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                 <!-- This sentence did not exist in NBC 2020 -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-011" status="current">
@@ -1155,7 +1155,7 @@
         <new-content source="bc">
           <sentence xml:id="nbc.divC.part2.sect2.subsect7.art1.sent1" number="1" revised="yes">
             <revision-history>
-              <original effective-date="2020-12-01">
+              <original effective-date="2024-03-08">
                     <!-- Merge engine will auto pouplate the contnet -->
               </original>
               <revision seq="1" type="amendment" effective-date="2024-08-27" id="bc-mo-2024-03-012" status="current">
