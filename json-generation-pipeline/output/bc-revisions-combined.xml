@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-10T20:32:36.2688955-07:00"
+            generated="2026-03-11T22:31:47.2290077-07:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -315,13 +315,12 @@
                                id="bc-mo-2024-01-005"
                                status="current">
                         <content>
-                           <title>Major Occupancy Fire Separations<note xml:id="nbc.divB.part3.sect1.subsect3.art1.table1.note1">
-                                 <ref type="internal" target="nbc.divB.part3.sect3" display-type="long"/> contains requirements for the separation of <ref type="term" target="ccpnc">occupancies</ref> and tenancies that are in addition to the requirements for the separation of <ref type="term" target="mjr-ccpn">major occupancies</ref>.
-                    </note>
-                           </title>
-                           <ref type="internal"
-                                target="nbc.divB.part3.sect1.subsect3.art1.sent1"
-                                display-type="long"/>
+                           <title>Major Occupancy Fire Separations</title>
+                           <forming-part>
+                              <ref type="internal"
+                                   target="nbc.divB.part3.sect1.subsect3.art1.sent1"
+                                   display-type="long"/>
+                           </forming-part>
                            <tgroup cols="14">
                               <colspec colname="1" colwidth="63*"/>
                               <colspec colname="2" colwidth="27*"/>
@@ -657,6 +656,11 @@
                                  </row>
                               </tbody>
                            </tgroup>
+                           <table-notes>
+                              <note xml:id="nbc.divB.part3.sect1.subsect3.art1.table1.note1">
+                                 <ref type="internal" target="nbc.divB.part3.sect3" display-type="long"/> contains requirements for the separation of <ref type="term" target="ccpnc">occupancies</ref> and tenancies that are in addition to the requirements for the separation of <ref type="term" target="mjr-ccpn">major occupancies</ref>.
+                    </note>
+                           </table-notes>
                         </content>
                         <change-summary>Repealed and substituted Table 3.1.3.1 Major Occupancy Fire Separations</change-summary>
                         <note>Ministerial Order BA 2024 01</note>
@@ -2765,9 +2769,12 @@
                               </clause>
                            </sentence>
                            <table xml:id="nbc.divB.part3.sect2.subsect2.art93.table1">
-                              <title>Table 3.2.2.93. Encapsulated Mass Timber Construction Requirements<note xml:id="nbc.divB.part3.sect2.subsect2.art93.table1.note1">(1)</note>
-                                 <note xml:id="nbc.divB.part3.sect2.subsect2.art93.table1.note2">(2)</note>
-                              </title>
+                              <title>Table 3.2.2.93. Encapsulated Mass Timber Construction Requirements</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part3.sect2.subsect2.art93.sent1"
+                                      display-type="long"/>
+                              </forming-part>
                               <tgroup cols="5">
                                  <colspec colname="col1" colwidth="*"/>
                                  <colspec colname="col2" colwidth="*"/>
@@ -2896,23 +2903,24 @@
                                     </row>
                                  </tbody>
                               </tgroup>
+                              <table-notes>
+                                 <note xml:id="nbc.divB.part3.sect2.subsect2.art93.notes.header">Notes to Table 3.2.2.93:</note>
+                                 <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item1">(1) See <ref type="internal"
+                                         target="nbc.divB.part3.sect2.subsect2.art93.sent5"
+                                         display-type="long">Sentences (5)</ref> to <ref type="internal"
+                                         target="nbc.divB.part3.sect2.subsect2.art93.sent7"
+                                         display-type="short">(7)</ref> and <ref type="internal"
+                                         target="nbc.divB.part3.sect2.subsect2.art4"
+                                         display-type="long">Articles 3.2.2.4.</ref> to <ref type="internal"
+                                         target="nbc.divB.part3.sect2.subsect2.art8"
+                                         display-type="number">3.2.2.8.</ref> for information pertaining to multiple <ref type="term" target="mjr-ccpn">major occupancies</ref>.</note>
+                                 <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item2">(2) Linear interpolation is not permitted in using <ref type="internal"
+                                         target="nbc.divB.part3.sect2.subsect2.art93.table1"
+                                         display-type="long">Table 3.2.2.93.</ref>
+                                 </note>
+                              </table-notes>
                            </table>
                            <!-- Table notes and forming part note -->
-                           <note xml:id="nbc.divB.part3.sect2.subsect2.art93.forming.note">Forming part of Sentence 3.2.2.93.(1)</note>
-                           <note xml:id="nbc.divB.part3.sect2.subsect2.art93.notes.header">Notes to Table 3.2.2.93:</note>
-                           <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item1">(1) See <ref type="internal"
-                                   target="nbc.divB.part3.sect2.subsect2.art93.sent5"
-                                   display-type="long">Sentences (5)</ref> to <ref type="internal"
-                                   target="nbc.divB.part3.sect2.subsect2.art93.sent7"
-                                   display-type="short">(7)</ref> and <ref type="internal"
-                                   target="nbc.divB.part3.sect2.subsect2.art4"
-                                   display-type="long">Articles 3.2.2.4.</ref> to <ref type="internal"
-                                   target="nbc.divB.part3.sect2.subsect2.art8"
-                                   display-type="number">3.2.2.8.</ref> for information pertaining to multiple <ref type="term" target="mjr-ccpn">major occupancies</ref>.</note>
-                           <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item2">(2) Linear interpolation is not permitted in using <ref type="internal"
-                                   target="nbc.divB.part3.sect2.subsect2.art93.table1"
-                                   display-type="long">Table 3.2.2.93.</ref>
-                           </note>
                            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2" number="2">
                               <text>Except as provided in <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art16"
@@ -2996,22 +3004,20 @@
                                id="bc-mo-2024-01-037"
                                status="current">
                         <content>
-                           <title>Minimum Construction Requirements for Exposing Building Faces<note xml:id="nbc.divB.part3.sect2.subsect3.art7.table1.note0">Forming Part of <ref type="internal"
-                                      target="nbc.divB.part3.sect1.subsect6.art9.sent5"
-                                      display-type="long"
-                                      pretext="Sentences"/> and <ref type="internal"
-                                      target="nbc.divB.part3.sect2.subsect3.art7.sent1"
-                                      display-type="long"
-                                      pretext="to"/>
-                                 <ref type="internal"
-                                      target="nbc.divB.part3.sect2.subsect3.art7.sent4"
-                                      display-type="short"
-                                      pretext="to"/>
-                              </note>
-                           </title>
-                           <ref type="internal"
-                                target="nbc.divB.part3.sect2.subsect3.art7.sent1"
-                                display-type="long"/>
+                           <title>Minimum Construction Requirements for Exposing Building Faces</title>
+                           <forming-part>
+                              <ref type="internal"
+                                   target="nbc.divB.part3.sect1.subsect6.art9.sent5"
+                                   display-type="long"
+                                   pretext="Sentences"/> and <ref type="internal"
+                                   target="nbc.divB.part3.sect2.subsect3.art7.sent1"
+                                   display-type="long"
+                                   pretext="to"/>
+                              <ref type="internal"
+                                   target="nbc.divB.part3.sect2.subsect3.art7.sent4"
+                                   display-type="short"
+                                   pretext="to"/>
+                           </forming-part>
                            <tgroup cols="5">
                               <colspec colname="col1" colwidth="*"/>
                               <colspec colname="col2" colwidth="*"/>
@@ -10717,7 +10723,11 @@ Spaces within Buildings
                                status="current">
                         <content>
                            <title>Greenhouse Gas Emissions</title>
-                           <subtitle>Forming Part of Sentence 9.37.1.3.(1)</subtitle>
+                           <forming-part>
+                              <ref type="internal"
+                                   target="nbc.divBV2.part9.sect37.subsect1.art3.sent1"
+                                   display-type="long"/>
+                           </forming-part>
                            <tgroup cols="7">
                               <colspec colname="col1" colwidth=""/>
                               <colspec colname="col2" colwidth=""/>

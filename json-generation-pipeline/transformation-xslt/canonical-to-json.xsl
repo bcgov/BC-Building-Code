@@ -246,9 +246,43 @@
             <xsl:if test="title">
                 <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
             </xsl:if>
-            <xsl:if test="table-notes/note or title/note or tgroup//note">
+            
+            <!-- Subtitle (notes from title) - Option A -->
+            <xsl:if test="subtitle">
+                <fn:array key="subtitle">
+                    <xsl:for-each select="subtitle/note">
+                        <fn:map>
+                            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                            <xsl:if test="@vendor-id">
+                                <fn:string key="vendor_id"><xsl:value-of select="@vendor-id"/></fn:string>
+                            </xsl:if>
+                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
+
+            <!-- Forming part references - Option A -->
+            <xsl:if test="forming-part">
+                <fn:array key="forming_part">
+                    <xsl:for-each select="forming-part/ref">
+                        <fn:map>
+                            <fn:string key="type"><xsl:value-of select="@type"/></fn:string>
+                            <fn:string key="target"><xsl:value-of select="@target"/></fn:string>
+                            <xsl:if test="@display-type">
+                                <fn:string key="display_type"><xsl:value-of select="@display-type"/></fn:string>
+                            </xsl:if>
+                            <xsl:if test="text()">
+                                <fn:string key="text"><xsl:value-of select="text()"/></fn:string>
+                            </xsl:if>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
+            
+            <xsl:if test="table-notes/note or subtitle/note or title/note or tgroup//note">
                 <fn:array key="table_notes">
-                    <xsl:for-each-group select="table-notes/note | title/note | tgroup//note" group-by="@xml:id">
+                    <xsl:for-each-group select="table-notes/note | subtitle/note | title/note | tgroup//note" group-by="@xml:id">
                         <xsl:sort select="current-grouping-key()"/>
                         <fn:map>
                             <fn:string key="id"><xsl:value-of select="current-grouping-key()"/></fn:string>
@@ -1017,13 +1051,46 @@
             
             <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
 
+            <!-- Subtitle (notes from title) - Option A -->
+            <xsl:if test="subtitle">
+                <fn:array key="subtitle">
+                    <xsl:for-each select="subtitle/note">
+                        <fn:map>
+                            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                            <xsl:if test="@vendor-id">
+                                <fn:string key="vendor_id"><xsl:value-of select="@vendor-id"/></fn:string>
+                            </xsl:if>
+                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
+
+            <!-- Forming part references - Option A -->
+            <xsl:if test="forming-part">
+                <fn:array key="forming_part">
+                    <xsl:for-each select="forming-part/ref">
+                        <fn:map>
+                            <fn:string key="type"><xsl:value-of select="@type"/></fn:string>
+                            <fn:string key="target"><xsl:value-of select="@target"/></fn:string>
+                            <xsl:if test="@display-type">
+                                <fn:string key="display_type"><xsl:value-of select="@display-type"/></fn:string>
+                            </xsl:if>
+                            <xsl:if test="text()">
+                                <fn:string key="text"><xsl:value-of select="text()"/></fn:string>
+                            </xsl:if>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
+
             <xsl:if test="@frame">
                 <fn:string key="frame"><xsl:value-of select="@frame"/></fn:string>
             </xsl:if>
 
-            <xsl:if test="table-notes/note or title/note or tgroup//note">
+            <xsl:if test="table-notes/note or subtitle/note or title/note or tgroup//note">
                 <fn:array key="table_notes">
-                    <xsl:for-each-group select="table-notes/note | title/note | tgroup//note" group-by="@xml:id">
+                    <xsl:for-each-group select="table-notes/note | subtitle/note | title/note | tgroup//note" group-by="@xml:id">
                         <xsl:sort select="current-grouping-key()"/>
                         <fn:map>
                             <fn:string key="id"><xsl:value-of select="current-grouping-key()"/></fn:string>
@@ -2326,6 +2393,22 @@
             <fn:string key="type">original</fn:string>
             <fn:string key="effective_date"><xsl:value-of select="revision-history/original/@effective-date"/></fn:string>
             <fn:string key="title"><xsl:apply-templates select="revision-history/original/title" mode="rich-text-json"/></fn:string>
+            <xsl:if test="revision-history/original/forming-part">
+                <fn:array key="forming_part">
+                    <xsl:for-each select="revision-history/original/forming-part/ref">
+                        <fn:map>
+                            <fn:string key="type"><xsl:value-of select="@type"/></fn:string>
+                            <fn:string key="target"><xsl:value-of select="@target"/></fn:string>
+                            <xsl:if test="@display-type">
+                                <fn:string key="display_type"><xsl:value-of select="@display-type"/></fn:string>
+                            </xsl:if>
+                            <xsl:if test="text()">
+                                <fn:string key="text"><xsl:value-of select="text()"/></fn:string>
+                            </xsl:if>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
             <xsl:if test="revision-history/original/table-notes/note or revision-history/original/title/note or revision-history/original/tgroup//note">
                 <fn:array key="table_notes">
                     <xsl:for-each-group select="revision-history/original/table-notes/note | revision-history/original/title/note | revision-history/original/tgroup//note" group-by="@xml:id">
@@ -2404,6 +2487,22 @@
                 </xsl:choose>
                 
                 <fn:string key="title"><xsl:apply-templates select="content/title" mode="rich-text-json"/></fn:string>
+                <xsl:if test="content/forming-part">
+                    <fn:array key="forming_part">
+                        <xsl:for-each select="content/forming-part/ref">
+                            <fn:map>
+                                <fn:string key="type"><xsl:value-of select="@type"/></fn:string>
+                                <fn:string key="target"><xsl:value-of select="@target"/></fn:string>
+                                <xsl:if test="@display-type">
+                                    <fn:string key="display_type"><xsl:value-of select="@display-type"/></fn:string>
+                                </xsl:if>
+                                <xsl:if test="text()">
+                                    <fn:string key="text"><xsl:value-of select="text()"/></fn:string>
+                                </xsl:if>
+                            </fn:map>
+                        </xsl:for-each>
+                    </fn:array>
+                </xsl:if>
                 <xsl:if test="content/table-notes/note or content/title/note or content/tgroup//note">
                     <fn:array key="table_notes">
                         <xsl:for-each-group select="content/table-notes/note | content/title/note | content/tgroup//note" group-by="@xml:id">

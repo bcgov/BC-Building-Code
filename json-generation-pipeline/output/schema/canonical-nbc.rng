@@ -1200,22 +1200,38 @@
       <attribute name="frame"><text/></attribute>
     </optional>
     <choice>
-      <!-- Traditional table structure -->
+      <!-- Option A: Structured table with separate title, subtitle, and forming-part -->
       <group>
-        <element name="title">
-          <ref name="rich-text"/>
-          <zeroOrMore>
-            <element name="note">
-              <attribute name="xml:id"><data type="ID"/></attribute>
-              <optional><attribute name="vendor-id"><text/></attribute></optional>
-              <ref name="rich-text"/>
-            </element>
-          </zeroOrMore>
-        </element>
-        <!-- Allow ref elements with mixed text after title and before tgroup -->
+        <!-- Title element (main title text only, no notes) -->
         <optional>
-          <mixed>
-            <zeroOrMore>
+          <element name="title">
+            <ref name="rich-text"/>
+          </element>
+        </optional>
+        
+        <!-- Subtitle element (contains notes from title) -->
+        <optional>
+          <element name="subtitle">
+            <oneOrMore>
+              <choice>
+                <element name="note">
+                  <attribute name="xml:id"><data type="ID"/></attribute>
+                  <optional><attribute name="vendor-id"><text/></attribute></optional>
+                  <ref name="rich-text"/>
+                </element>
+                <element name="paragraph">
+                  <ref name="rich-text"/>
+                </element>
+                <text/>
+              </choice>
+            </oneOrMore>
+          </element>
+        </optional>
+        
+        <!-- Forming-part element (contains forming part references) -->
+        <optional>
+          <element name="forming-part">
+            <oneOrMore>
               <element name="ref">
                 <attribute name="type">
                   <choice>
@@ -1226,8 +1242,8 @@
                     <value>functional-statement</value>
                     <value>sub-objective</value>
                     <value>objective</value>
-                      <value>bc-code</value>
-                    </choice>
+                    <value>bc-code</value>
+                  </choice>
                 </attribute>
                 <attribute name="target"><text/></attribute>
                 <optional>
@@ -1254,8 +1270,8 @@
                 </optional>
                 <text/>
               </element>
-            </zeroOrMore>
-          </mixed>
+            </oneOrMore>
+          </element>
         </optional>
         <element name="tgroup">
           <attribute name="cols"><data type="positiveInteger"/></attribute>
@@ -1300,27 +1316,39 @@
          </optional>
       </group>
 
-      <!-- Revision history structure for tables -->
+      <!-- Revision history structure for tables with Option A -->
       <element name="revision-history">
         <!-- Original content (baseline before any amendments) -->
         <element name="original">
           <attribute name="effective-date">
             <data type="date"/>
           </attribute>
-          <element name="title">
-            <ref name="rich-text"/>
-            <zeroOrMore>
-              <element name="note">
-                <attribute name="xml:id"><data type="ID"/></attribute>
-                <optional><attribute name="vendor-id"><text/></attribute></optional>
-                <ref name="rich-text"/>
-              </element>
-            </zeroOrMore>
-          </element>
-          <!-- Allow ref elements with mixed text after title and before tgroup -->
+          <!-- Option A structure in original -->
           <optional>
-            <mixed>
-              <zeroOrMore>
+            <element name="title">
+              <ref name="rich-text"/>
+            </element>
+          </optional>
+          <optional>
+            <element name="subtitle">
+              <oneOrMore>
+                <choice>
+                  <element name="note">
+                    <attribute name="xml:id"><data type="ID"/></attribute>
+                    <optional><attribute name="vendor-id"><text/></attribute></optional>
+                    <ref name="rich-text"/>
+                  </element>
+                  <element name="paragraph">
+                    <ref name="rich-text"/>
+                  </element>
+                  <text/>
+                </choice>
+              </oneOrMore>
+            </element>
+          </optional>
+          <optional>
+            <element name="forming-part">
+              <oneOrMore>
                 <element name="ref">
                   <attribute name="type">
                     <choice>
@@ -1359,8 +1387,8 @@
                   </optional>
                   <text/>
                 </element>
-              </zeroOrMore>
-            </mixed>
+              </oneOrMore>
+            </element>
           </optional>
           <element name="tgroup">
             <attribute name="cols"><data type="positiveInteger"/></attribute>
@@ -1420,22 +1448,33 @@
                 <value>superseded</value>
               </choice>
             </attribute>
-            <!-- Complete content snapshot as of this revision -->
+            <!-- Complete content snapshot as of this revision with Option A structure -->
             <element name="content">
-              <element name="title">
-                <ref name="rich-text"/>
-                <zeroOrMore>
-                  <element name="note">
-                    <attribute name="xml:id"><data type="ID"/></attribute>
-                    <optional><attribute name="vendor-id"><text/></attribute></optional>
-                    <ref name="rich-text"/>
-                  </element>
-                </zeroOrMore>
-              </element>
-              <!-- Allow ref elements with mixed text after title and before tgroup -->
               <optional>
-                <mixed>
-                  <zeroOrMore>
+                <element name="title">
+                  <ref name="rich-text"/>
+                </element>
+              </optional>
+              <optional>
+                <element name="subtitle">
+                  <oneOrMore>
+                    <choice>
+                      <element name="note">
+                        <attribute name="xml:id"><data type="ID"/></attribute>
+                        <optional><attribute name="vendor-id"><text/></attribute></optional>
+                        <ref name="rich-text"/>
+                      </element>
+                      <element name="paragraph">
+                        <ref name="rich-text"/>
+                      </element>
+                      <text/>
+                    </choice>
+                  </oneOrMore>
+                </element>
+              </optional>
+              <optional>
+                <element name="forming-part">
+                  <oneOrMore>
                     <element name="ref">
                       <attribute name="type">
                         <choice>
@@ -1446,8 +1485,8 @@
                           <value>functional-statement</value>
                           <value>sub-objective</value>
                           <value>objective</value>
-                      <value>bc-code</value>
-                    </choice>
+                          <value>bc-code</value>
+                        </choice>
                       </attribute>
                       <attribute name="target"><text/></attribute>
                       <optional>
@@ -1474,8 +1513,8 @@
                       </optional>
                       <text/>
                     </element>
-                  </zeroOrMore>
-                </mixed>
+                  </oneOrMore>
+                </element>
               </optional>
               <element name="tgroup">
                 <attribute name="cols"><data type="positiveInteger"/></attribute>

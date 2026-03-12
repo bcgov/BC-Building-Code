@@ -452,16 +452,14 @@
                                 />.)<!-- TODO: Verify note reference for A-1.1.1.1.(5) --></text>
                     </sentence>
                     <table xml:id="nbc.divA.part1.sect1.subsect1.art1.table1">
-                        <title
-                            >Alternate Compliance Methods for Heritage Buildings
-                            <note
-                                xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.note1"
-                                >Forming Part of <ref
+                        <title>Alternate Compliance Methods for Heritage Buildings</title>
+                        <forming-part>
+                            <ref
                                     type="internal"
                                     target="nbc.divA.part1.sect1.subsect1.art1.sent5"
                                     display-type="long"
-                                    /></note>
-                        </title>
+                                    />
+                        </forming-part>
                         <tgroup cols="3">
                             <colspec colname="col1" colwidth="0.5*" />
                             <colspec colname="col2" colwidth="2*" />
@@ -1781,16 +1779,14 @@
                                 />.)<!-- TODO: Verify note reference for A-1.1.1.1.(6) --></text>
                     </sentence>
                     <table xml:id="nbc.divA.part1.sect1.subsect1.art1.table2">
-                        <title
-                            >Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite
-                            <note
-                                xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.note1"
-                                >Forming Part of <ref
+                        <title>Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite</title>
+                        <forming-part>
+                            <ref
                                     type="internal"
                                     target="nbc.divA.part1.sect1.subsect1.art1.sent6"
                                     display-type="long"
-                                    /></note>
-                        </title>
+                                    />
+                        </forming-part>
                         <tgroup cols="3">
                             <colspec colname="col1" colwidth="0.5*" />
                             <colspec colname="col2" colwidth="2*" />

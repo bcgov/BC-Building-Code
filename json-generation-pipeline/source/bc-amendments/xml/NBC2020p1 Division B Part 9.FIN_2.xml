@@ -191,7 +191,10 @@
                 <new-content source="bc">
                     <table xml:id="nbc.divBV2.part9.sect36.subsect2.art6.table3">
                         <title>Effective Thermal Resistance of Above-ground Opaque Assemblies for Buildings Containing Only Dwelling Units</title>
-                        <subtitle>Forming Part of Sentences 9.37.1.3.(6) and 9.37.2.6.(1)</subtitle>
+                        <forming-part>
+                            <ref type="internal" target="nbc.divBV2.part9.sect36.subsect1.art3.sent6" display-type="long"/>
+                            <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art6.sent1" display-type="short"/>
+                        </forming-part>
                         <tgroup cols="7">
                             <colspec colname="col1" colwidth="96.00*"/>
                             <colspec colname="col2" colwidth="40.00*"/>
@@ -301,7 +304,9 @@
                         
                         <table xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table1">
                             <title>Required Thermal Characteristics of Fenestration and Doors</title>
-                            <subtitle>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent1" display-type="long"/></subtitle>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent1" display-type="long"/>
+                            </forming-part>
                             <tgroup cols="8">
                                 <colspec colname="c1" colwidth="2*"/>
                                 <colspec colname="c2" colwidth="1.5*"/>
@@ -347,7 +352,9 @@
                         
                         <table xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table2">
                             <title>Overall Thermal Transmittance of Skylights</title>
-                            <subtitle>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent2" display-type="long"/></subtitle>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent2" display-type="long"/>
+                            </forming-part>
                             <tgroup cols="7">
                                 <colspec colname="c1" colwidth="2*"/>
                                 <colspec colname="c2" colwidth="1*"/>
@@ -390,7 +397,9 @@
                         
                         <table xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table3">
                             <title>Compliance Options for Site-built Windows and Glazed Portion of Doors</title>
-                            <subtitle>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent3" display-type="long"/></subtitle>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent3" display-type="long"/>
+                            </forming-part>
                             <tgroup cols="10">
                                 <colspec colname="col1" colwidth="1.51*"/>
                                 <colspec colname="col2" colwidth="1.45*"/>
@@ -600,7 +609,10 @@
                         
                         <table xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table4">
                             <title>Required Thermal Characteristics of Fenestration for Buildings Containing Only Dwelling Units</title>
-                            <subtitle>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect36.subsect1.art3.sent6" display-type="long"/> and <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent11" display-type="long"/></subtitle>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.sect36.subsect1.art3.sent6" display-type="long"/>
+                                <ref type="internal" target="nbc.divBV2.part9.sect36.subsect2.art7.sent11" display-type="long"/>
+                            </forming-part>
                             <tgroup cols="8">
                                 <colspec colname="c1" colwidth="2*"/>
                                 <colspec colname="c2" colwidth="1.5*"/>
@@ -703,20 +715,17 @@
                 <new-content source="bc">
                     <table xml:id="nbc.divBV2.part9.sect36.subsect2.art8.table3">
                         <title>Effective Thermal Resistance of Assemblies Below-Grade or in Contact with the Ground for Buildings Containing Only Dwelling Units</title>
-                        <subtitle>
+                        <forming-part>
                             <ref type="internal"
                                  target="nbc.divBV2.part9.sect36.subsect1.art3.sent6"
-                                 display-type="long"
-                                 pretext="Forming Part of Sentences"/>
+                                 display-type="long"/>
                             <ref type="internal"
                                  target="nbc.divBV2.part9.sect36.subsect2.art8.sent1"
-                                 display-type="short"
-                                 pretext=" and"/>
+                                 display-type="short"/>
                             <ref type="internal"
                                  target="nbc.divBV2.part9.sect36.subsect2.art8.sent9"
-                                 display-type="short"
-                                 pretext=" to"/>
-                        </subtitle>
+                                 display-type="short"/>
+                        </forming-part>
                         <tgroup cols="7">
                             <colspec colname="col1" colwidth="60.00*"/>
                             <colspec colname="col2" colwidth="46.00*"/>
@@ -1306,7 +1315,9 @@
                             <!-- Table 9.36.6.3.-A: Requirements for HDD < 3000 -->
                             <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableA">
                                 <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is less than 3000<super>(1)</super></title>
-                                <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                                <forming-part>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                                </forming-part>
                                 <tgroup cols="4">
                                     <colspec colname="col1" colwidth="1*"/>
                                     <colspec colname="col2" colwidth="1*"/>
@@ -1337,7 +1348,9 @@
                             <!-- Table 9.36.6.3.-B: Requirements for HDD 3000-3999 -->
                             <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableB">
                                 <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is 3000 to 3999<super>(1)</super></title>
-                                <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                                <forming-part>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                                </forming-part>
                                 <tgroup cols="4">
                                     <colspec colname="col1" colwidth="1*"/>
                                     <colspec colname="col2" colwidth="1*"/>
@@ -1368,7 +1381,9 @@
                             <!-- Table 9.36.6.3.-C: Requirements for HDD 4000-4999 -->
                             <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableC">
                                 <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is 4000 to 4999<super>(1)</super></title>
-                                <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                                <forming-part>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                                </forming-part>
                                 <tgroup cols="4">
                                     <colspec colname="col1" colwidth="1*"/>
                                     <colspec colname="col2" colwidth="1*"/>
@@ -1399,7 +1414,9 @@
                             <!-- Table 9.36.6.3.-D: Requirements for HDD 5000-5999 -->
                             <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableD">
                                 <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is 5000 to 5999<super>(1)</super></title>
-                                <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                                <forming-part>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                                </forming-part>
                                 <tgroup cols="4">
                                     <colspec colname="col1" colwidth="1*"/>
                                     <colspec colname="col2" colwidth="1*"/>
@@ -1430,7 +1447,9 @@
                             <!-- Table 9.36.6.3.-E: Requirements for HDD 6000-6999 -->
                             <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableE">
                                 <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is 6000 to 6999<super>(1)</super></title>
-                                <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                                <forming-part>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                                </forming-part>
                                 <tgroup cols="4">
                                     <colspec colname="col1" colwidth="1*"/>
                                     <colspec colname="col2" colwidth="1*"/>
@@ -1461,7 +1480,9 @@
                             <!-- Table 9.36.6.3.-F: Requirements for HDD >= 7000 -->
                             <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableF">
                                 <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is greater than 6999<super>(1)</super></title>
-                                <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                                <forming-part>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                                </forming-part>
                                 <tgroup cols="4">
                                     <colspec colname="col1" colwidth="1*"/>
                                     <colspec colname="col2" colwidth="1*"/>
@@ -1492,7 +1513,11 @@
                             <!-- Table 9.36.6.3.-G: Energy Performance Steps -->
                             <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG">
                                 <title>Energy Performance Steps for Buildings and Houses<super>(1)</super></title>
-                                <subtitle>Forming Part of Sentence 9.36.5.3.(2) and 9.36.6.3.(1) and (5)</subtitle>
+                                <forming-part>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect36.subsect5.art3.sent2"/>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent5"/>
+                                </forming-part>
                                 <tgroup cols="5">
                                     <colspec colname="col1" colwidth="2*"/>
                                     <colspec colname="col2" colwidth="2*"/>
@@ -1559,7 +1584,9 @@
                             <!-- Table 9.36.6.3.-H: Mechanical Energy Use Intensity Requirements -->
                             <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableH">
                                 <title>Mechanical Energy Use Intensity Requirements</title>
-                                <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                                <forming-part>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                                </forming-part>
                                 <tgroup cols="9">
                                     <colspec colname="col1" colwidth="1*"/>
                                     <colspec colname="col2" colwidth="1*"/>
@@ -2028,7 +2055,9 @@
                                 </sentence>
                                 <table xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1">
                                     <title>Greenhouse Gas Emissions</title>
-                                    <subtitle>Forming part of Sentence 9.37.1.3.(1)</subtitle>
+                                    <forming-part>
+                                        <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3.sent1"/>
+                                    </forming-part>
                                     <tgroup cols="7">
                                         <colspec colname="col1" colwidth=""/>
                                         <colspec colname="col2" colwidth=""/>

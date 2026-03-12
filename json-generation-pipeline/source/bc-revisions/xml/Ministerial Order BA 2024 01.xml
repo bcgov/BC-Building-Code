@@ -198,10 +198,11 @@
               </original>
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-005" status="current">
                 <content>
-                  <title>Major Occupancy Fire Separations<note xml:id="nbc.divB.part3.sect1.subsect3.art1.table1.note1">
-                      <ref type="internal" target="nbc.divB.part3.sect3" display-type="long"/> contains requirements for the separation of <ref type="term" target="ccpnc">occupancies</ref> and tenancies that are in addition to the requirements for the separation of <ref type="term" target="mjr-ccpn">major occupancies</ref>.
-                    </note></title>
-                  <ref type="internal" target="nbc.divB.part3.sect1.subsect3.art1.sent1" display-type="long"/>
+                  <title>Major Occupancy Fire Separations</title>
+                 
+                  <forming-part>
+                    <ref type="internal" target="nbc.divB.part3.sect1.subsect3.art1.sent1" display-type="long"/>
+                  </forming-part>
                   <tgroup cols="14">
                     <colspec colname="1" colwidth="63*"/>
                     <colspec colname="2" colwidth="27*"/>
@@ -246,7 +247,7 @@
                     <tbody>
                       <row xml:id="nbc.divB.part3.sect1.subsect3.art1.table1.row1">
                         <entry align="center">A-1</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">1</entry>
                         <entry align="center">1</entry>
                         <entry align="center">1</entry>
@@ -263,7 +264,7 @@
                       <row>
                         <entry align="center">A-2</entry>
                         <entry align="center">1</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">1</entry>
                         <entry align="center">1</entry>
                         <entry align="center">2</entry>
@@ -280,7 +281,7 @@
                         <entry align="center">A-3</entry>
                         <entry align="center">1</entry>
                         <entry align="center">1</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">1</entry>
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
@@ -297,7 +298,7 @@
                         <entry align="center">1</entry>
                         <entry align="center">1</entry>
                         <entry align="center">1</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
@@ -314,7 +315,7 @@
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
@@ -331,7 +332,7 @@
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">1</entry>
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
@@ -348,7 +349,7 @@
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
                         <entry align="center">1</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">1</entry>
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
@@ -365,7 +366,7 @@
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
                         <entry align="center">1</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">1</entry>
                         <entry align="center">2<note xml:id="nbc.divB.part3.sect1.subsect3.art1.table1.note5">See <ref type="internal" target="nbc.divB.part3.sect1.subsect3.art1.sent2" display-type="long" pretext="Sentence"/></note></entry>
                         <entry align="center"><ref type="internal" target="nbc.divB.part3.sect1.subsect3.art1.table1.note2"/></entry>
@@ -382,11 +383,11 @@
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
                         <entry align="center">1</entry>
-                        <entry align="center">â€”</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">3</entry>
-                        <entry align="center">â€”</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
+                        <entry align="center">-</entry>
                       </row>
                       <row>
                         <entry align="center">E</entry>
@@ -398,11 +399,11 @@
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
                         <entry align="center"><ref type="internal" target="nbc.divB.part3.sect1.subsect3.art1.table1.note5"/></entry>
-                        <entry align="center">â€”</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">3</entry>
-                        <entry align="center">â€”</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
+                        <entry align="center">-</entry>
                       </row>
                       <row>
                         <entry align="center">F-1</entry>
@@ -416,7 +417,7 @@
                         <entry align="center"><ref type="internal" target="nbc.divB.part3.sect1.subsect3.art1.table1.note2"/></entry>
                         <entry align="center">3</entry>
                         <entry align="center">3</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
                       </row>
@@ -430,11 +431,11 @@
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
                         <entry align="center"><ref type="internal" target="nbc.divB.part3.sect1.subsect3.art1.table1.note6"/></entry>
-                        <entry align="center">â€”</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">2</entry>
-                        <entry align="center">â€”</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
+                        <entry align="center">-</entry>
                       </row>
                       <row>
                         <entry align="center">F-3</entry>
@@ -446,14 +447,19 @@
                         <entry align="center">2</entry>
                         <entry align="center">2</entry>
                         <entry align="center">1</entry>
-                        <entry align="center">â€”</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
+                        <entry align="center">-</entry>
                         <entry align="center">2</entry>
-                        <entry align="center">â€”</entry>
-                        <entry align="center">â€”</entry>
+                        <entry align="center">-</entry>
+                        <entry align="center">-</entry>
                       </row>
                     </tbody>
                   </tgroup>
+                   <table-notes>
+                    <note xml:id="nbc.divB.part3.sect1.subsect3.art1.table1.note1">
+                      <ref type="internal" target="nbc.divB.part3.sect3" display-type="long"/> contains requirements for the separation of <ref type="term" target="ccpnc">occupancies</ref> and tenancies that are in addition to the requirements for the separation of <ref type="term" target="mjr-ccpn">major occupancies</ref>.
+                    </note>
+                  </table-notes>
                 </content>
                 <change-summary>Repealed and substituted Table 3.1.3.1 Major Occupancy Fire Separations</change-summary>
                 <note>Ministerial Order BA 2024 01</note>
@@ -1639,7 +1645,15 @@
                   </sentence>
                   
                   <table xml:id="nbc.divB.part3.sect2.subsect2.art93.table1">
-                    <title>Table 3.2.2.93. Encapsulated Mass Timber Construction Requirements<note xml:id="nbc.divB.part3.sect2.subsect2.art93.table1.note1">(1)</note> <note xml:id="nbc.divB.part3.sect2.subsect2.art93.table1.note2">(2)</note></title>
+                    <title>Table 3.2.2.93. Encapsulated Mass Timber Construction Requirements</title>
+                    
+                    <forming-part>
+                            <ref
+                                    type="internal"
+                                    target="nbc.divB.part3.sect2.subsect2.art93.sent1"
+                                    display-type="long"
+                                    />
+                        </forming-part>
                     
                     <tgroup cols="5">
                       <colspec colname="col1" colwidth="*"/>
@@ -1776,13 +1790,15 @@
                         </row>
                       </tbody>
                     </tgroup>
+                    <table-notes>
+                       <note xml:id="nbc.divB.part3.sect2.subsect2.art93.notes.header">Notes to Table 3.2.2.93:</note>
+                       <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item1">(1) See <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent5" display-type="long">Sentences (5)</ref> to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent7" display-type="short">(7)</ref> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art4" display-type="long">Articles 3.2.2.4.</ref> to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art8" display-type="number">3.2.2.8.</ref> for information pertaining to multiple <ref type="term" target="mjr-ccpn">major occupancies</ref>.</note>
+                       <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item2">(2) Linear interpolation is not permitted in using <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref></note>
+                    </table-notes>
                   </table>
                   
                   <!-- Table notes and forming part note -->
-                  <note xml:id="nbc.divB.part3.sect2.subsect2.art93.forming.note">Forming part of Sentence 3.2.2.93.(1)</note>
-                  <note xml:id="nbc.divB.part3.sect2.subsect2.art93.notes.header">Notes to Table 3.2.2.93:</note>
-                  <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item1">(1) See <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent5" display-type="long">Sentences (5)</ref> to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent7" display-type="short">(7)</ref> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art4" display-type="long">Articles 3.2.2.4.</ref> to <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art8" display-type="number">3.2.2.8.</ref> for information pertaining to multiple <ref type="term" target="mjr-ccpn">major occupancies</ref>.</note>
-                  <note xml:id="nbc.divB.part3.sect2.subsect2.art93.note.item2">(2) Linear interpolation is not permitted in using <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.table1" display-type="long">Table 3.2.2.93.</ref></note>
+                 
                   
                   <sentence xml:id="nbc.divB.part3.sect2.subsect2.art93.sent2" number="2">
                     <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art16" display-type="long">Article 3.2.2.16.</ref>, the <ref type="term" target="bldng">building</ref> referred to in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent1" display-type="short">Sentence (1)</ref> is permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref> or <ref type="term" target="ncmbtbl-">noncombustible construction</ref>, used singly or in combination, and</text>
@@ -1848,8 +1864,10 @@
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-037" status="current">
                 <content>
-                  <title>Minimum Construction Requirements for Exposing Building Faces<note xml:id="nbc.divB.part3.sect2.subsect3.art7.table1.note0">Forming Part of <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent5" display-type="long" pretext="Sentences"/> and <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art7.sent1" display-type="long" pretext="to"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art7.sent4" display-type="short" pretext="to"/></note></title>
-                  <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art7.sent1" display-type="long"/>
+                  <title>Minimum Construction Requirements for Exposing Building Faces</title>
+                  <forming-part>
+                    <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art9.sent5" display-type="long" pretext="Sentences"/> and <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art7.sent1" display-type="long" pretext="to"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect3.art7.sent4" display-type="short" pretext="to"/>
+                  </forming-part>
                   <tgroup cols="5">
                     <colspec colname="col1" colwidth="*"/>
                     <colspec colname="col2" colwidth="*"/>

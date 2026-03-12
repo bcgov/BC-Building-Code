@@ -218,9 +218,11 @@
                                     
                                     <!-- Table A: Schools -->
                                     <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table1">
-                                        <title>Energy Performance Requirements for Schools Other than Colleges
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table1.note1">Forming part of Sentences 10.2.3.3.(1) and (2)</note>
-                                        </title>
+                                        <title>Energy Performance Requirements for Schools Other than Colleges</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/>
+                                        </forming-part>
                                         <tgroup cols="3">
                                             <colspec colname="col1" colwidth="0.5*"/>
                                             <colspec colname="col2" colwidth="2*"/>
@@ -247,9 +249,11 @@
                                     
                                     <!-- Table B: Libraries -->
                                     <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table2">
-                                        <title>Energy Performance Requirements for Libraries
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table2.note1">Forming part of <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/> and <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/></note>
-                                        </title>
+                                        <title>Energy Performance Requirements for Libraries</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/>
+                                        </forming-part>
                                         <tgroup cols="3">
                                             <colspec colname="col1" colwidth="0.5*"/>
                                             <colspec colname="col2" colwidth="2*"/>
@@ -276,9 +280,11 @@
                                     
                                     <!-- Table C: Colleges -->
                                     <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table3">
-                                        <title>Energy Performance Requirements for Colleges
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table3.note1">Forming part of <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/> and <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/></note>
-                                        </title>
+                                        <title>Energy Performance Requirements for Colleges</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/>
+                                        </forming-part>
                                         <tgroup cols="3">
                                             <colspec colname="col1" colwidth="0.5*"/>
                                             <colspec colname="col2" colwidth="2*"/>
@@ -305,9 +311,11 @@
                                     
                                     <!-- Table D: Recreation Centres -->
                                     <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table4">
-                                        <title>Energy Performance Requirements for Recreation Centres
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table4.note1">Forming part of <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/> and <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/></note>
-                                        </title>
+                                        <title>Energy Performance Requirements for Recreation Centres</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/>
+                                        </forming-part>
                                         <tgroup cols="3">
                                             <colspec colname="col1" colwidth="0.5*"/>
                                             <colspec colname="col2" colwidth="2*"/>
@@ -334,9 +342,11 @@
                                     
                                     <!-- Table E: Hospitals -->
                                     <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table5">
-                                        <title>Energy Performance Requirements for Hospitals
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table5.note1">Forming part of <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/> and <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/></note>
-                                        </title>
+                                        <title>Energy Performance Requirements for Hospitals</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/>
+                                        </forming-part>
                                         <tgroup cols="3">
                                             <colspec colname="col1" colwidth="0.5*"/>
                                             <colspec colname="col2" colwidth="2*"/>
@@ -363,9 +373,11 @@
                                     
                                     <!-- Table F: Care Centres -->
                                     <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table6">
-                                        <title>Energy Performance Requirements for Care Centres
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table6.note1">Forming part of <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/> and <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/></note>
-                                        </title>
+                                        <title>Energy Performance Requirements for Care Centres</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/>
+                                        </forming-part>
                                         <tgroup cols="3">
                                             <colspec colname="col1" colwidth="0.5*"/>
                                             <colspec colname="col2" colwidth="2*"/>
@@ -391,9 +403,11 @@
                                     </table>
                                     <!-- Table G: Hotels and Motels -->
                                     <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table7">
-                                        <title>Energy Performance Requirements for Hotels and Motels
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table7.note1">Forming part of <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/> and <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/></note>
-                                        </title>
+                                        <title>Energy Performance Requirements for Hotels and Motels</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/>
+                                        </forming-part>
                                         <tgroup cols="4">
                                             <colspec colname="col1" colwidth="1.5*"/>
                                             <colspec colname="col2" colwidth="0.5*"/>
@@ -506,9 +520,11 @@
                                     
                                     <!-- Table H: Other Residential Occupancies -->
                                     <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table8">
-                                        <title>Energy Performance Requirements for Other Residential Occupancies
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table8.note1">Forming part of <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/> and <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/></note>
-                                        </title>
+                                        <title>Energy Performance Requirements for Other Residential Occupancies</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/>
+                                        </forming-part>
                                         <tgroup cols="4">
                                             <colspec colname="col1" colwidth="1.5*"/>
                                             <colspec colname="col2" colwidth="0.5*"/>
@@ -667,9 +683,11 @@
                                     
                                     <!-- Table I: Offices -->
                                     <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table9">
-                                        <title>Energy Performance Requirements for Offices
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table9.note1">Forming part of <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/> and <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/></note>
-                                        </title>
+                                        <title>Energy Performance Requirements for Offices</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/>
+                                        </forming-part>
                                         <tgroup cols="4">
                                             <colspec colname="col1" colwidth="1.5*"/>
                                             <colspec colname="col2" colwidth="0.5*"/>
@@ -758,9 +776,11 @@
                                     
                                     <!-- Table J: Other Business and Mercantile -->
                                     <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table10">
-                                        <title>Energy Performance Requirements for Other Business and Personal Service or Mercantile Occupancies
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table10.note1">Forming part of <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/> and <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/></note>
-                                        </title>
+                                        <title>Energy Performance Requirements for Other Business and Personal Service or Mercantile Occupancies</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent1" display-type="short"/>
+                                            <ref type="internal" target="nbc.divB.part10.sect2.subsect3.art3.sent2" display-type="short"/>
+                                        </forming-part>
                                         <tgroup cols="4">
                                             <colspec colname="col1" colwidth="1.5*"/>
                                             <colspec colname="col2" colwidth="0.5*"/>
@@ -944,9 +964,10 @@
                                         <text><ref type="term" target="bldng">Buildings</ref> conforming to the requirements of any of GHG Emission Levels EL-1 to EL-4 shall be designed and constructed to conform to <ref type="internal" target="nbc.divB.part10.sect3.subsect1.art3.table1" display-type="long"/> based on <ref type="term" target="ccpnc">occupancy</ref>.</text>
                                     </sentence>
                                     <table xml:id="nbc.divB.part10.sect3.subsect1.art3.table1">
-                                        <title>Greenhouse Gas Emissions
-                                            <note xml:id="nbc.divB.part10.sect3.subsect1.art3.table1.note1">Forming Part of <ref type="internal" target="nbc.divB.part10.sect3.subsect1.art3.sent1" display-type="long"/></note>
-                                        </title>
+                                        <title>Greenhouse Gas Emissions</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect3.subsect1.art3.sent1" display-type="long"/>
+                                        </forming-part>
                                         <tgroup cols="5">
                                             <colspec colname="col1" colwidth="1*"/>
                                             <colspec colname="col2" colwidth="1*"/>
@@ -1039,9 +1060,10 @@
                                         <text>For the purpose of compliance with this Code as required in <ref type="internal" target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2" display-type="medium"/> of Division A, the objectives and functional statements attributed to the acceptable solutions in this Part shall be the objectives and functional statements listed in <ref type="internal" target="nbc.divB.part10.sect4.subsect1.art1.table1" display-type="long"/>.</text>
                                     </sentence>
                                     <table xml:id="nbc.divB.part10.sect4.subsect1.art1.table1">
-                                        <title>Objectives and Functional Statements Attributed to the Acceptable Solutions in Part 10
-                                            <note xml:id="nbc.divB.part10.sect4.subsect1.art1.table1.note1">Forming Part of <ref type="internal" target="nbc.divB.part10.sect4.subsect1.art1.sent1" display-type="long"/></note>
-                                        </title>
+                                        <title>Objectives and Functional Statements Attributed to the Acceptable Solutions in Part 10</title>
+                                        <forming-part>
+                                            <ref type="internal" target="nbc.divB.part10.sect4.subsect1.art1.sent1" display-type="long"/>
+                                        </forming-part>
                                         <tgroup cols="2">
                                             <colspec colname="col1" colwidth="2*"/>
                                             <colspec colname="col2" colwidth="3*"/>

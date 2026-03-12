@@ -958,8 +958,9 @@
       else concat('table.', generate-id())"
         />
     
-    <!-- Count title notes to offset entry note numbering -->
-    <xsl:variable name="title-note-count" select="count((title.tbl|title)/note)" />
+    <!-- Count title notes so table-note numbering stays stable -->
+    <xsl:variable name="title-notes" select="(title.tbl|title)/note" />
+    <xsl:variable name="title-note-count" select="count($title-notes)" />
     <!-- Count all entry notes across the entire table -->
     <xsl:variable name="entry-notes" select="tgroup//note" />
 
@@ -969,31 +970,44 @@
                     select="@id"
                 /></xsl:if>
       <xsl:if test="@frame"><xsl:attribute name="frame" select="@frame"/></xsl:if>
-      <title>
-        <!-- Process text nodes and inline elements, but not note elements -->
-        <xsl:apply-templates
-                    select="(title.tbl|title)/node()[not(self::note)]"
-                    mode="rich-text"
-                />
-      </title>
-      <!-- Process any ref.int elements as separate elements after title -->
-      <xsl:for-each select="ref.int">
-        <xsl:apply-templates select="." mode="rich-text" />
-      </xsl:for-each>
+      
+      <!-- Title element (main title text only, no notes) -->
+      <xsl:if test="title.tbl or title">
+        <title>
+          <!-- Process text nodes and inline elements, but not note elements -->
+          <xsl:apply-templates
+                      select="(title.tbl|title)/node()[not(self::note)]"
+                      mode="rich-text"
+                  />
+        </title>
+      </xsl:if>
+      
+      <!-- Forming-part element (contains forming part references) -->
+      <xsl:if test="ref.int">
+        <forming-part>
+          <xsl:for-each select="ref.int">
+            <xsl:apply-templates select="." mode="rich-text" />
+          </xsl:for-each>
+        </forming-part>
+      </xsl:if>
+      
+      <!-- Tgroup (table structure) -->
       <xsl:apply-templates select="tgroup">
         <xsl:with-param name="table-id" select="$table-id" />
         <xsl:with-param name="title-note-count" select="$title-note-count" />
       </xsl:apply-templates>
-      <!-- Collect all notes (title notes + entry notes) into table-notes -->
-      <xsl:if test="$title-note-count > 0 or exists($entry-notes)">
+      
+      <!-- Table-notes (title notes first, then entry notes) -->
+      <xsl:if test="exists($title-notes) or exists($entry-notes)">
         <table-notes>
-          <!-- Title notes first -->
-          <xsl:for-each select="(title.tbl|title)/note">
-            <note xml:id="{concat($table-id, '.titlenote', position())}">
+          <!-- Title notes (from title.tbl/title) -->
+          <xsl:for-each select="$title-notes">
+            <note xml:id="{concat($table-id, '.note', position())}">
               <xsl:if test="@id"><xsl:attribute name="vendor-id" select="@id" /></xsl:if>
               <xsl:apply-templates select="para.note/node()" mode="rich-text" />
             </note>
           </xsl:for-each>
+
           <!-- Entry notes (from thead, tbody, tfoot) -->
           <xsl:for-each select="$entry-notes">
             <xsl:variable name="note-pos" select="position()" />

@@ -1005,7 +1005,10 @@
                             <paragraph xml:id="nbc.divBV2.part9.appendix.appnote129a.div2.para1">In a building of "heavy weight construction," the average dead weight per storey of floors, roof or exterior walls is permitted to exceed the value stated in Clause 9.23.13.2.(3)(a), but must not exceed the maximum average dead weights per storey stated in Clause 9.23.13.2.(3)(b). The heavy weight floor construction provisions account for an additional total dead load of <measurement units="metric">1.0 kPa</measurement> compared to the normal weight floor construction, accommodating, for example, a <measurement units="metric">38 mm</measurement> normal-weight concrete topping. Heavy-weight roof construction, accommodates lighter roofing materials to be replaced with slate or clay tile shingles weighing up to <measurement units="metric">0.65 kPa</measurement> (provided the heavy roofing is not installed over existing normal weight roofing). The heavy-weight roof construction provisions also accommodate the installation of solar panels over normal weight roofing such as asphalt shingles. Solar panels add approximately <measurement units="metric">0.12 kPa</measurement> to the roof. Heavy-weight wall construction provisions account for cladding weighing up to <measurement units="metric">0.85 kPa</measurement>, when this heavier cladding replaces normal weight cladding. This accommodates cementitious stucco, heavier weight metal panels, and, if averaged with lighter claddings, adhered manufactured or natural stone veneer. Heavy weight wall construction does not accommodate masonry or stone veneer except where advantage can be made of "Area-weighted Average". The maximum average dead weights per storey for the three cases are listed in Table A-9.23.13.2.(3).</paragraph>
                         </note-division>
                         <table xml:id="nbc.divBV2.part9.appendix.appnote129a.table1">
-                            <title>Maximum Average Dead Weights per Storey for Heavy Weight Construction<note xml:id="nbc.divBV2.part9.appendix.appnote129a.table1.note1">Forming Part of Note A-9.23.13.2.(3)</note></title>
+                            <title>Maximum Average Dead Weights per Storey for Heavy Weight Construction</title>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.appendix.appnote129a" display-type="short"/>
+                            </forming-part>
                             <tgroup cols="5">
                                 <colspec colname="col1" colwidth="2*"/>
                                 <colspec colname="col2" colwidth="1*"/>
@@ -1292,7 +1295,10 @@
                                 <item xml:id="nbc.divBV2.part9.appendix.appnote134b.list1.item10">BWP<sub>min</sub> = Minimum length of individual braced wall panels as per Table 9.23.13.5.</item>
                             </list></paragraph>
                         <table xml:id="nbc.divBV2.part9.appendix.appnote134b.table1">
-                            <title>Wind-related Framing Adjustment Factor, K<sub>Wframe</sub><note xml:id="nbc.divBV2.part9.appendix.appnote134b.table1.note1">Forming Part of Note A-9.23.13.7.(3)</note></title>
+                            <title>Wind-related Framing Adjustment Factor, K<sub>Wframe</sub></title>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.appendix.appnote134b" display-type="short"/>
+                            </forming-part>
                             <tgroup cols="2">
                                 <colspec colname="col1" colwidth="1*"/>
                                 <colspec colname="col2" colwidth="1*"/>
@@ -1402,7 +1408,10 @@
                                 <item xml:id="nbc.divBV2.part9.appendix.appnote134c.list1.item13">BWP<sub>min</sub> = minimum length of individual braced wall panels as per Table 9.23.13.5.</item>
                             </list></paragraph>
                         <table xml:id="nbc.divBV2.part9.appendix.appnote134c.table1">
-                            <title>Seismic Related Coefficients, C<sub>walls</sub> and C<sub>roof</sub><note xml:id="nbc.divBV2.part9.appendix.appnote134c.table1.note1">Forming Part of Note A-9.23.13.7.(4)</note></title>
+                            <title>Seismic Related Coefficients, C<sub>walls</sub> and C<sub>roof</sub></title>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.appendix.appnote134c" display-type="short"/>
+                            </forming-part>
                             <tgroup cols="3">
                                 <colspec colname="col1" colwidth="2*"/>
                                 <colspec colname="col2" colwidth="1*"/>
@@ -1425,7 +1434,10 @@
                             </tgroup>
                         </table>
                         <table xml:id="nbc.divBV2.part9.appendix.appnote134c.table2">
-                            <title>Seismic Related Framing Adjustment Factor, K<sub>Sframe</sub><note xml:id="nbc.divBV2.part9.appendix.appnote134c.table2.note1">Forming Part of Note A-9.23.13.7.(4)</note></title>
+                            <title>Seismic Related Framing Adjustment Factor, K<sub>Sframe</sub></title>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.appendix.appnote134c" display-type="short"/>
+                            </forming-part>
                             <tgroup cols="2">
                                 <colspec colname="col1" colwidth="1*"/>
                                 <colspec colname="col2" colwidth="1*"/>

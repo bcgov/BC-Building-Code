@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-06T18:00:57.24132-08:00"
+            generated="2026-03-11T22:31:04.6193205-07:00"
             source-count="14">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -324,12 +324,12 @@
                           display-type="short"/>.)<!-- TODO: Verify note reference for A-1.1.1.1.(5) --></text>
                </sentence>
                <table xml:id="nbc.divA.part1.sect1.subsect1.art1.table1">
-                  <title>Alternate Compliance Methods for Heritage Buildings
-                            <note xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.note1">Forming Part of <ref type="internal"
-                             target="nbc.divA.part1.sect1.subsect1.art1.sent5"
-                             display-type="long"/>
-                     </note>
-                  </title>
+                  <title>Alternate Compliance Methods for Heritage Buildings</title>
+                  <forming-part>
+                     <ref type="internal"
+                          target="nbc.divA.part1.sect1.subsect1.art1.sent5"
+                          display-type="long"/>
+                  </forming-part>
                   <tgroup cols="3">
                      <colspec colname="col1" colwidth="0.5*"/>
                      <colspec colname="col2" colwidth="2*"/>
@@ -884,12 +884,12 @@
                           display-type="short"/>.)<!-- TODO: Verify note reference for A-1.1.1.1.(6) --></text>
                </sentence>
                <table xml:id="nbc.divA.part1.sect1.subsect1.art1.table2">
-                  <title>Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite
-                            <note xml:id="nbc.divA.part1.sect1.subsect1.art1.table2.note1">Forming Part of <ref type="internal"
-                             target="nbc.divA.part1.sect1.subsect1.art1.sent6"
-                             display-type="long"/>
-                     </note>
-                  </title>
+                  <title>Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite</title>
+                  <forming-part>
+                     <ref type="internal"
+                          target="nbc.divA.part1.sect1.subsect1.art1.sent6"
+                          display-type="long"/>
+                  </forming-part>
                   <tgroup cols="3">
                      <colspec colname="col1" colwidth="0.5*"/>
                      <colspec colname="col2" colwidth="2*"/>
@@ -6865,15 +6865,15 @@ each 25 females.</find>
                              display-type="short"/>.</text>
                   </sentence>
                   <table xml:id="nbc.divB.part3.sect8.subsect3.art1.table1">
-                     <title>Accessible Design Provisions
-                                <note xml:id="nbc.divB.part3.sect8.subsect3.art1.table1.note1">
-                           <ref type="internal"
-                                target="nbc.divB.part3.sect8.subsect3.art1.sent1"
-                                display-type="long"/> and <ref type="internal"
-                                target="nbc.divB.part3.sect8.subsect3.art1.sent2"
-                                display-type="short"/>
-                        </note>
-                     </title>
+                     <title>Accessible Design Provisions</title>
+                     <forming-part>
+                        <ref type="internal"
+                             target="nbc.divB.part3.sect8.subsect3.art1.sent1"
+                             display-type="long"/>
+                        <ref type="internal"
+                             target="nbc.divB.part3.sect8.subsect3.art1.sent2"
+                             display-type="short"/>
+                     </forming-part>
                      <tgroup cols="2">
                         <colspec colname="col1" colwidth=""/>
                         <colspec colname="col2" colwidth=""/>
@@ -14717,12 +14717,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </sentence>
                   <!-- Table 9.23.11.4.-A - Seismic Parameters -->
                   <table xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1">
-                     <title>Table 9.23.11.4.-A Fasteners in Doubled Top Plate Splice Connections in <ref type="term" target="br-wl-bnd">Braced Wall Bands</ref> where S<sub>max</sub> for Site Class C &gt; 0.47 and S<sub>max</sub> ≤ 2.6<note xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.note1">(1)</note>
-                     </title>
-                     <subtitle>Forming Part of <ref type="internal"
+                     <title>Fasteners in Doubled Top Plate Splice Connections in <ref type="term" target="br-wl-bnd">Braced Wall Bands</ref> where S<sub>max</sub> for Site Class C &gt; 0.47 and S<sub>max</sub> ≤ 2.6</title>
+                     <forming-part>
+                        <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect11.art4.sent5"
                              display-type="short"/>
-                     </subtitle>
+                     </forming-part>
                      <tgroup cols="5">
                         <colspec colname="col1" colwidth="1*"/>
                         <colspec colname="col2" colwidth="1*"/>
@@ -15587,9 +15587,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <insert>
             <new-content source="bc">
                <table xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1">
-                  <title>Table 9.23.13.7.-A</title>
                   <title>Unadjusted Minimum Total Braced Wall Panel Lengths for Wind</title>
-                  <title>Forming Part of Sentence 9.23.13.7.(3)</title>
+                  <forming-part>
+                     <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent3"/>
+                  </forming-part>
                   <tgroup cols="12">
                      <colspec colname="col1" colwidth="8*"/>
                      <colspec colname="col2" colwidth="12*"/>
@@ -15980,10 +15981,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <insert>
             <new-content source="bc">
                <table xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table2">
-                  <title>Table 9.23.13.7.-B</title>
                   <title>Adjustment Factors for the Determination of Minimum Total Braced Wall Panel Lengths for Wind</title>
-                  <title>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent3">Sentence 9.23.13.7.(3)</ref>
-                  </title>
+                  <forming-part>
+                     <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent3"/>
+                  </forming-part>
                   <tgroup cols="5">
                      <colspec colname="col1" colwidth="20.00*"/>
                      <colspec colname="col2" colwidth="35.00*"/>
@@ -16241,10 +16242,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <insert>
             <new-content source="bc">
                <table xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3">
-                  <title>Table 9.23.13.7.-C</title>
                   <title>Unadjusted Minimum Total Braced Wall Panel Lengths for Seismic Forces</title>
-                  <title>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent4">Sentence 9.23.13.7.(4)</ref>
-                  </title>
+                  <forming-part>
+                     <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent4"/>
+                  </forming-part>
                   <tgroup cols="12">
                      <colspec colname="col1" colwidth="8.00*"/>
                      <colspec colname="col2" colwidth="8.00*"/>
@@ -18410,10 +18411,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <insert>
             <new-content source="bc">
                <table xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4">
-                  <title>Table 9.23.13.7.-D</title>
                   <title>Adjustment Factors for the Determination of Minimum Total Braced Wall Panel Lengths for Seismic Forces</title>
-                  <title>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent4">Sentence 9.23.13.7.(4)</ref>
-                  </title>
+                  <forming-part>
+                     <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent4"/>
+                  </forming-part>
                   <tgroup cols="5">
                      <colspec colname="col1" colwidth="15.00*"/>
                      <colspec colname="col2" colwidth="35.00*"/>
@@ -20355,10 +20356,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </sentence>
                   <table xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table1">
                      <title>Minimum Total Length of Braced Wall Panels where HWP ≤ 0.5 kPa and S<sub>max</sub> ≤ 0.3</title>
-                     <subtitle>Forming Part of <ref type="internal"
+                     <forming-part>
+                        <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect13.art11.sent2"
                              display-type="short"/>
-                     </subtitle>
+                     </forming-part>
                      <tgroup cols="11">
                         <colspec colname="col1" colwidth="1*"/>
                         <colspec colname="col2" colwidth="1*"/>
@@ -20478,10 +20480,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </table>
                   <table xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table2">
                      <title>Minimum Total Length of Braced Wall Panels Where HWP ≤ 0.6 kPa and S<sub>max</sub> ≤ 0.47</title>
-                     <subtitle>Forming Part of <ref type="internal"
+                     <forming-part>
+                        <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect13.art11.sent2"
                              display-type="short"/>
-                     </subtitle>
+                     </forming-part>
                      <tgroup cols="11">
                         <colspec colname="col1" colwidth="1*"/>
                         <colspec colname="col2" colwidth="1*"/>
@@ -20619,10 +20622,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </sentence>
                   <table xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table3">
                      <title>Minimum Total Length of Braced Wall Panels in a Braced Wall Band Perpendicular to a Building Face Partially Clad with Masonry Veneer where HWP ≤ 0.5 kPa and S<sub>max</sub> ≤ 0.3</title>
-                     <subtitle>Forming Part of <ref type="internal"
+                     <forming-part>
+                        <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect13.art11.sent3"
                              display-type="short"/>
-                     </subtitle>
+                     </forming-part>
                      <tgroup cols="11">
                         <colspec colname="col1" colwidth="1*"/>
                         <colspec colname="col2" colwidth="1*"/>
@@ -20744,10 +20748,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </table>
                   <table xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table4">
                      <title>Minimum Total Length of Braced Wall Panels in a Braced Wall Band Perpendicular to a Building Face Partially Clad with Masonry Veneer where HWP ≤ 0.6 kPa and S<sub>max</sub> ≤ 0.47</title>
-                     <subtitle>Forming Part of <ref type="internal"
+                     <forming-part>
+                        <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect13.art11.sent3"
                              display-type="short"/>
-                     </subtitle>
+                     </forming-part>
                      <tgroup cols="11">
                         <colspec colname="col1" colwidth="1*"/>
                         <colspec colname="col2" colwidth="1*"/>
@@ -23798,10 +23803,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </sentence>
                   <table xml:id="nbc.divBV2.part9.sect32.subsect3.art8.table1">
                      <title>Maximum Equivalent Duct Length<super>(1)</super>, m</title>
-                     <subtitle>Forming part of <ref type="internal"
+                     <forming-part>
+                        <ref type="internal"
                              target="nbc.divBV2.part9.sect32.subsect3.art8.sent4"
                              display-type="short"/>
-                     </subtitle>
+                     </forming-part>
                      <tgroup cols="7">
                         <colspec colname="col1" colwidth="2*"/>
                         <colspec colname="col2" colwidth="1*"/>
@@ -24069,15 +24075,14 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                <table xml:id="nbc.divBV2.part9.sect34.subsect2.art7.table1"
                       vendor-id="et000233">
                   <title>Lighting for Public Areas</title>
-                  <subtitle>Forming Part of <ref type="internal"
+                  <forming-part>
+                     <ref type="internal"
                           target="nbc.divBV2.part9.sect34.subsect2.art7.sent2"
-                          display-type="long"
-                          pretext="Sentences"/> and
-                            <ref type="internal"
+                          display-type="long"/>
+                     <ref type="internal"
                           target="nbc.divBV2.part9.sect34.subsect2.art7.sent3"
-                          display-type="short"
-                          pretext=" and"/>
-                  </subtitle>
+                          display-type="short"/>
+                  </forming-part>
                   <tgroup cols="3">
                      <colspec colname="tbody1" colwidth="182*"/>
                      <colspec colname="tbody2" colwidth="106*"/>
@@ -24377,7 +24382,14 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <new-content source="bc">
                <table xml:id="nbc.divBV2.part9.sect36.subsect2.art6.table3">
                   <title>Effective Thermal Resistance of Above-ground Opaque Assemblies for Buildings Containing Only Dwelling Units</title>
-                  <subtitle>Forming Part of Sentences 9.37.1.3.(6) and 9.37.2.6.(1)</subtitle>
+                  <forming-part>
+                     <ref type="internal"
+                          target="nbc.divBV2.part9.sect36.subsect1.art3.sent6"
+                          display-type="long"/>
+                     <ref type="internal"
+                          target="nbc.divBV2.part9.sect36.subsect2.art6.sent1"
+                          display-type="short"/>
+                  </forming-part>
                   <tgroup cols="7">
                      <colspec colname="col1" colwidth="96.00*"/>
                      <colspec colname="col2" colwidth="40.00*"/>
@@ -24503,10 +24515,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </sentence>
                   <table xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table1">
                      <title>Required Thermal Characteristics of Fenestration and Doors</title>
-                     <subtitle>Forming Part of <ref type="internal"
+                     <forming-part>
+                        <ref type="internal"
                              target="nbc.divBV2.part9.sect36.subsect2.art7.sent1"
                              display-type="long"/>
-                     </subtitle>
+                     </forming-part>
                      <tgroup cols="8">
                         <colspec colname="c1" colwidth="2*"/>
                         <colspec colname="c2" colwidth="1.5*"/>
@@ -24559,10 +24572,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </sentence>
                   <table xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table2">
                      <title>Overall Thermal Transmittance of Skylights</title>
-                     <subtitle>Forming Part of <ref type="internal"
+                     <forming-part>
+                        <ref type="internal"
                              target="nbc.divBV2.part9.sect36.subsect2.art7.sent2"
                              display-type="long"/>
-                     </subtitle>
+                     </forming-part>
                      <tgroup cols="7">
                         <colspec colname="c1" colwidth="2*"/>
                         <colspec colname="c2" colwidth="1*"/>
@@ -24613,10 +24627,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </sentence>
                   <table xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table3">
                      <title>Compliance Options for Site-built Windows and Glazed Portion of Doors</title>
-                     <subtitle>Forming Part of <ref type="internal"
+                     <forming-part>
+                        <ref type="internal"
                              target="nbc.divBV2.part9.sect36.subsect2.art7.sent3"
                              display-type="long"/>
-                     </subtitle>
+                     </forming-part>
                      <tgroup cols="10">
                         <colspec colname="col1" colwidth="1.51*"/>
                         <colspec colname="col2" colwidth="1.45*"/>
@@ -24833,12 +24848,14 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </sentence>
                   <table xml:id="nbc.divBV2.part9.sect36.subsect2.art7.table4">
                      <title>Required Thermal Characteristics of Fenestration for Buildings Containing Only Dwelling Units</title>
-                     <subtitle>Forming Part of <ref type="internal"
+                     <forming-part>
+                        <ref type="internal"
                              target="nbc.divBV2.part9.sect36.subsect1.art3.sent6"
-                             display-type="long"/> and <ref type="internal"
+                             display-type="long"/>
+                        <ref type="internal"
                              target="nbc.divBV2.part9.sect36.subsect2.art7.sent11"
                              display-type="long"/>
-                     </subtitle>
+                     </forming-part>
                      <tgroup cols="8">
                         <colspec colname="c1" colwidth="2*"/>
                         <colspec colname="c2" colwidth="1.5*"/>
@@ -24958,20 +24975,17 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <new-content source="bc">
                <table xml:id="nbc.divBV2.part9.sect36.subsect2.art8.table3">
                   <title>Effective Thermal Resistance of Assemblies Below-Grade or in Contact with the Ground for Buildings Containing Only Dwelling Units</title>
-                  <subtitle>
+                  <forming-part>
                      <ref type="internal"
                           target="nbc.divBV2.part9.sect36.subsect1.art3.sent6"
-                          display-type="long"
-                          pretext="Forming Part of Sentences"/>
+                          display-type="long"/>
                      <ref type="internal"
                           target="nbc.divBV2.part9.sect36.subsect2.art8.sent1"
-                          display-type="short"
-                          pretext=" and"/>
+                          display-type="short"/>
                      <ref type="internal"
                           target="nbc.divBV2.part9.sect36.subsect2.art8.sent9"
-                          display-type="short"
-                          pretext=" to"/>
-                  </subtitle>
+                          display-type="short"/>
+                  </forming-part>
                   <tgroup cols="7">
                      <colspec colname="col1" colwidth="60.00*"/>
                      <colspec colname="col2" colwidth="46.00*"/>
@@ -25882,7 +25896,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         </sentence>
                         <table xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1">
                            <title>Greenhouse Gas Emissions</title>
-                           <subtitle>Forming part of Sentence 9.37.1.3.(1)</subtitle>
+                           <forming-part>
+                              <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art3.sent1"/>
+                           </forming-part>
                            <tgroup cols="7">
                               <colspec colname="col1" colwidth=""/>
                               <colspec colname="col2" colwidth=""/>
@@ -26201,7 +26217,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableA">
                         <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is less than 3000<super>(1)</super>
                         </title>
-                        <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                        <forming-part>
+                           <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                        </forming-part>
                         <tgroup cols="4">
                            <colspec colname="col1" colwidth="1*"/>
                            <colspec colname="col2" colwidth="1*"/>
@@ -26260,7 +26278,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableB">
                         <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is 3000 to 3999<super>(1)</super>
                         </title>
-                        <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                        <forming-part>
+                           <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                        </forming-part>
                         <tgroup cols="4">
                            <colspec colname="col1" colwidth="1*"/>
                            <colspec colname="col2" colwidth="1*"/>
@@ -26319,7 +26339,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableC">
                         <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is 4000 to 4999<super>(1)</super>
                         </title>
-                        <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                        <forming-part>
+                           <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                        </forming-part>
                         <tgroup cols="4">
                            <colspec colname="col1" colwidth="1*"/>
                            <colspec colname="col2" colwidth="1*"/>
@@ -26378,7 +26400,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableD">
                         <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is 5000 to 5999<super>(1)</super>
                         </title>
-                        <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                        <forming-part>
+                           <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                        </forming-part>
                         <tgroup cols="4">
                            <colspec colname="col1" colwidth="1*"/>
                            <colspec colname="col2" colwidth="1*"/>
@@ -26437,7 +26461,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableE">
                         <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is 6000 to 6999<super>(1)</super>
                         </title>
-                        <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                        <forming-part>
+                           <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                        </forming-part>
                         <tgroup cols="4">
                            <colspec colname="col1" colwidth="1*"/>
                            <colspec colname="col2" colwidth="1*"/>
@@ -26496,7 +26522,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableF">
                         <title>Requirements for Buildings Located Where the Degree-Days Below 18°C Value is greater than 6999<super>(1)</super>
                         </title>
-                        <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                        <forming-part>
+                           <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                        </forming-part>
                         <tgroup cols="4">
                            <colspec colname="col1" colwidth="1*"/>
                            <colspec colname="col2" colwidth="1*"/>
@@ -26555,7 +26583,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG">
                         <title>Energy Performance Steps for Buildings and Houses<super>(1)</super>
                         </title>
-                        <subtitle>Forming Part of Sentence 9.36.5.3.(2) and 9.36.6.3.(1) and (5)</subtitle>
+                        <forming-part>
+                           <ref type="internal" target="nbc.divBV2.part9.sect36.subsect5.art3.sent2"/>
+                           <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                           <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent5"/>
+                        </forming-part>
                         <tgroup cols="5">
                            <colspec colname="col1" colwidth="2*"/>
                            <colspec colname="col2" colwidth="2*"/>
@@ -26638,7 +26670,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <!-- Table 9.36.6.3.-H: Mechanical Energy Use Intensity Requirements -->
                      <table xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableH">
                         <title>Mechanical Energy Use Intensity Requirements</title>
-                        <subtitle>Forming Part of Sentence 9.36.6.3.(1)</subtitle>
+                        <forming-part>
+                           <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent1"/>
+                        </forming-part>
                         <tgroup cols="9">
                            <colspec colname="col1" colwidth="1*"/>
                            <colspec colname="col2" colwidth="1*"/>
@@ -28425,8 +28459,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <paragraph xml:id="nbc.divBV2.part9.appendix.appnote129a.div2.para1">In a building of "heavy weight construction," the average dead weight per storey of floors, roof or exterior walls is permitted to exceed the value stated in Clause 9.23.13.2.(3)(a), but must not exceed the maximum average dead weights per storey stated in Clause 9.23.13.2.(3)(b). The heavy weight floor construction provisions account for an additional total dead load of <measurement units="metric">1.0 kPa</measurement> compared to the normal weight floor construction, accommodating, for example, a <measurement units="metric">38 mm</measurement> normal-weight concrete topping. Heavy-weight roof construction, accommodates lighter roofing materials to be replaced with slate or clay tile shingles weighing up to <measurement units="metric">0.65 kPa</measurement> (provided the heavy roofing is not installed over existing normal weight roofing). The heavy-weight roof construction provisions also accommodate the installation of solar panels over normal weight roofing such as asphalt shingles. Solar panels add approximately <measurement units="metric">0.12 kPa</measurement> to the roof. Heavy-weight wall construction provisions account for cladding weighing up to <measurement units="metric">0.85 kPa</measurement>, when this heavier cladding replaces normal weight cladding. This accommodates cementitious stucco, heavier weight metal panels, and, if averaged with lighter claddings, adhered manufactured or natural stone veneer. Heavy weight wall construction does not accommodate masonry or stone veneer except where advantage can be made of "Area-weighted Average". The maximum average dead weights per storey for the three cases are listed in Table A-9.23.13.2.(3).</paragraph>
                   </note-division>
                   <table xml:id="nbc.divBV2.part9.appendix.appnote129a.table1">
-                     <title>Maximum Average Dead Weights per Storey for Heavy Weight Construction<note xml:id="nbc.divBV2.part9.appendix.appnote129a.table1.note1">Forming Part of Note A-9.23.13.2.(3)</note>
-                     </title>
+                     <title>Maximum Average Dead Weights per Storey for Heavy Weight Construction</title>
+                     <forming-part>
+                        <ref type="internal"
+                             target="nbc.divBV2.part9.appendix.appnote129a"
+                             display-type="short"/>
+                     </forming-part>
                      <tgroup cols="5">
                         <colspec colname="col1" colwidth="2*"/>
                         <colspec colname="col2" colwidth="1*"/>
@@ -28762,8 +28800,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </paragraph>
                   <table xml:id="nbc.divBV2.part9.appendix.appnote134b.table1">
                      <title>Wind-related Framing Adjustment Factor, K<sub>Wframe</sub>
-                        <note xml:id="nbc.divBV2.part9.appendix.appnote134b.table1.note1">Forming Part of Note A-9.23.13.7.(3)</note>
                      </title>
+                     <forming-part>
+                        <ref type="internal"
+                             target="nbc.divBV2.part9.appendix.appnote134b"
+                             display-type="short"/>
+                     </forming-part>
                      <tgroup cols="2">
                         <colspec colname="col1" colwidth="1*"/>
                         <colspec colname="col2" colwidth="1*"/>
@@ -28928,8 +28970,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </paragraph>
                   <table xml:id="nbc.divBV2.part9.appendix.appnote134c.table1">
                      <title>Seismic Related Coefficients, C<sub>walls</sub> and C<sub>roof</sub>
-                        <note xml:id="nbc.divBV2.part9.appendix.appnote134c.table1.note1">Forming Part of Note A-9.23.13.7.(4)</note>
                      </title>
+                     <forming-part>
+                        <ref type="internal"
+                             target="nbc.divBV2.part9.appendix.appnote134c"
+                             display-type="short"/>
+                     </forming-part>
                      <tgroup cols="3">
                         <colspec colname="col1" colwidth="2*"/>
                         <colspec colname="col2" colwidth="1*"/>
@@ -28980,8 +29026,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </table>
                   <table xml:id="nbc.divBV2.part9.appendix.appnote134c.table2">
                      <title>Seismic Related Framing Adjustment Factor, K<sub>Sframe</sub>
-                        <note xml:id="nbc.divBV2.part9.appendix.appnote134c.table2.note1">Forming Part of Note A-9.23.13.7.(4)</note>
                      </title>
+                     <forming-part>
+                        <ref type="internal"
+                             target="nbc.divBV2.part9.appendix.appnote134c"
+                             display-type="short"/>
+                     </forming-part>
                      <tgroup cols="2">
                         <colspec colname="col1" colwidth="1*"/>
                         <colspec colname="col2" colwidth="1*"/>
@@ -31576,9 +31626,15 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            <!-- Tables 10.2.3.3.-A through 10.2.3.3.-J -->
                            <!-- Table A: Schools -->
                            <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table1">
-                              <title>Energy Performance Requirements for Schools Other than Colleges
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table1.note1">Forming part of Sentences 10.2.3.3.(1) and (2)</note>
-                              </title>
+                              <title>Energy Performance Requirements for Schools Other than Colleges</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent1"
+                                      display-type="short"/>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent2"
+                                      display-type="short"/>
+                              </forming-part>
                               <tgroup cols="3">
                                  <colspec colname="col1" colwidth="0.5*"/>
                                  <colspec colname="col2" colwidth="2*"/>
@@ -31605,14 +31661,15 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </table>
                            <!-- Table B: Libraries -->
                            <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table2">
-                              <title>Energy Performance Requirements for Libraries
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table2.note1">Forming part of <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent1"
-                                         display-type="short"/> and <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent2"
-                                         display-type="short"/>
-                                 </note>
-                              </title>
+                              <title>Energy Performance Requirements for Libraries</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent1"
+                                      display-type="short"/>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent2"
+                                      display-type="short"/>
+                              </forming-part>
                               <tgroup cols="3">
                                  <colspec colname="col1" colwidth="0.5*"/>
                                  <colspec colname="col2" colwidth="2*"/>
@@ -31639,14 +31696,15 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </table>
                            <!-- Table C: Colleges -->
                            <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table3">
-                              <title>Energy Performance Requirements for Colleges
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table3.note1">Forming part of <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent1"
-                                         display-type="short"/> and <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent2"
-                                         display-type="short"/>
-                                 </note>
-                              </title>
+                              <title>Energy Performance Requirements for Colleges</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent1"
+                                      display-type="short"/>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent2"
+                                      display-type="short"/>
+                              </forming-part>
                               <tgroup cols="3">
                                  <colspec colname="col1" colwidth="0.5*"/>
                                  <colspec colname="col2" colwidth="2*"/>
@@ -31673,14 +31731,15 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </table>
                            <!-- Table D: Recreation Centres -->
                            <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table4">
-                              <title>Energy Performance Requirements for Recreation Centres
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table4.note1">Forming part of <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent1"
-                                         display-type="short"/> and <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent2"
-                                         display-type="short"/>
-                                 </note>
-                              </title>
+                              <title>Energy Performance Requirements for Recreation Centres</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent1"
+                                      display-type="short"/>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent2"
+                                      display-type="short"/>
+                              </forming-part>
                               <tgroup cols="3">
                                  <colspec colname="col1" colwidth="0.5*"/>
                                  <colspec colname="col2" colwidth="2*"/>
@@ -31707,14 +31766,15 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </table>
                            <!-- Table E: Hospitals -->
                            <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table5">
-                              <title>Energy Performance Requirements for Hospitals
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table5.note1">Forming part of <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent1"
-                                         display-type="short"/> and <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent2"
-                                         display-type="short"/>
-                                 </note>
-                              </title>
+                              <title>Energy Performance Requirements for Hospitals</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent1"
+                                      display-type="short"/>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent2"
+                                      display-type="short"/>
+                              </forming-part>
                               <tgroup cols="3">
                                  <colspec colname="col1" colwidth="0.5*"/>
                                  <colspec colname="col2" colwidth="2*"/>
@@ -31741,14 +31801,15 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </table>
                            <!-- Table F: Care Centres -->
                            <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table6">
-                              <title>Energy Performance Requirements for Care Centres
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table6.note1">Forming part of <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent1"
-                                         display-type="short"/> and <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent2"
-                                         display-type="short"/>
-                                 </note>
-                              </title>
+                              <title>Energy Performance Requirements for Care Centres</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent1"
+                                      display-type="short"/>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent2"
+                                      display-type="short"/>
+                              </forming-part>
                               <tgroup cols="3">
                                  <colspec colname="col1" colwidth="0.5*"/>
                                  <colspec colname="col2" colwidth="2*"/>
@@ -31775,14 +31836,15 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </table>
                            <!-- Table G: Hotels and Motels -->
                            <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table7">
-                              <title>Energy Performance Requirements for Hotels and Motels
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table7.note1">Forming part of <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent1"
-                                         display-type="short"/> and <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent2"
-                                         display-type="short"/>
-                                 </note>
-                              </title>
+                              <title>Energy Performance Requirements for Hotels and Motels</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent1"
+                                      display-type="short"/>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent2"
+                                      display-type="short"/>
+                              </forming-part>
                               <tgroup cols="4">
                                  <colspec colname="col1" colwidth="1.5*"/>
                                  <colspec colname="col2" colwidth="0.5*"/>
@@ -31895,14 +31957,15 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </table>
                            <!-- Table H: Other Residential Occupancies -->
                            <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table8">
-                              <title>Energy Performance Requirements for Other Residential Occupancies
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table8.note1">Forming part of <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent1"
-                                         display-type="short"/> and <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent2"
-                                         display-type="short"/>
-                                 </note>
-                              </title>
+                              <title>Energy Performance Requirements for Other Residential Occupancies</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent1"
+                                      display-type="short"/>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent2"
+                                      display-type="short"/>
+                              </forming-part>
                               <tgroup cols="4">
                                  <colspec colname="col1" colwidth="1.5*"/>
                                  <colspec colname="col2" colwidth="0.5*"/>
@@ -32061,14 +32124,15 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </table>
                            <!-- Table I: Offices -->
                            <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table9">
-                              <title>Energy Performance Requirements for Offices
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table9.note1">Forming part of <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent1"
-                                         display-type="short"/> and <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent2"
-                                         display-type="short"/>
-                                 </note>
-                              </title>
+                              <title>Energy Performance Requirements for Offices</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent1"
+                                      display-type="short"/>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent2"
+                                      display-type="short"/>
+                              </forming-part>
                               <tgroup cols="4">
                                  <colspec colname="col1" colwidth="1.5*"/>
                                  <colspec colname="col2" colwidth="0.5*"/>
@@ -32157,14 +32221,15 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </table>
                            <!-- Table J: Other Business and Mercantile -->
                            <table xml:id="nbc.divB.part10.sect2.subsect3.art3.table10">
-                              <title>Energy Performance Requirements for Other Business and Personal Service or Mercantile Occupancies
-                                            <note xml:id="nbc.divB.part10.sect2.subsect3.art3.table10.note1">Forming part of <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent1"
-                                         display-type="short"/> and <ref type="internal"
-                                         target="nbc.divB.part10.sect2.subsect3.art3.sent2"
-                                         display-type="short"/>
-                                 </note>
-                              </title>
+                              <title>Energy Performance Requirements for Other Business and Personal Service or Mercantile Occupancies</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent1"
+                                      display-type="short"/>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect2.subsect3.art3.sent2"
+                                      display-type="short"/>
+                              </forming-part>
                               <tgroup cols="4">
                                  <colspec colname="col1" colwidth="1.5*"/>
                                  <colspec colname="col2" colwidth="0.5*"/>
@@ -32370,12 +32435,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                       display-type="long"/> based on <ref type="term" target="ccpnc">occupancy</ref>.</text>
                            </sentence>
                            <table xml:id="nbc.divB.part10.sect3.subsect1.art3.table1">
-                              <title>Greenhouse Gas Emissions
-                                            <note xml:id="nbc.divB.part10.sect3.subsect1.art3.table1.note1">Forming Part of <ref type="internal"
-                                         target="nbc.divB.part10.sect3.subsect1.art3.sent1"
-                                         display-type="long"/>
-                                 </note>
-                              </title>
+                              <title>Greenhouse Gas Emissions</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect3.subsect1.art3.sent1"
+                                      display-type="long"/>
+                              </forming-part>
                               <tgroup cols="5">
                                  <colspec colname="col1" colwidth="1*"/>
                                  <colspec colname="col2" colwidth="1*"/>
@@ -32477,12 +32542,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                       display-type="long"/>.</text>
                            </sentence>
                            <table xml:id="nbc.divB.part10.sect4.subsect1.art1.table1">
-                              <title>Objectives and Functional Statements Attributed to the Acceptable Solutions in Part 10
-                                            <note xml:id="nbc.divB.part10.sect4.subsect1.art1.table1.note1">Forming Part of <ref type="internal"
-                                         target="nbc.divB.part10.sect4.subsect1.art1.sent1"
-                                         display-type="long"/>
-                                 </note>
-                              </title>
+                              <title>Objectives and Functional Statements Attributed to the Acceptable Solutions in Part 10</title>
+                              <forming-part>
+                                 <ref type="internal"
+                                      target="nbc.divB.part10.sect4.subsect1.art1.sent1"
+                                      display-type="long"/>
+                              </forming-part>
                               <tgroup cols="2">
                                  <colspec colname="col1" colwidth="2*"/>
                                  <colspec colname="col2" colwidth="3*"/>

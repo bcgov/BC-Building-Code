@@ -4077,8 +4077,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         </sentence>
                         <!-- Table 9.23.11.4.-A - Seismic Parameters -->
                         <table xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1">
-                            <title>Table 9.23.11.4.-A Fasteners in Doubled Top Plate Splice Connections in <ref type="term" target="br-wl-bnd">Braced Wall Bands</ref> where S<sub>max</sub> for Site Class C &gt; 0.47 and S<sub>max</sub> ≤ 2.6<note xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.note1">(1)</note></title>
-                            <subtitle>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect23.subsect11.art4.sent5" display-type="short"/></subtitle>
+                            <title>Fasteners in Doubled Top Plate Splice Connections in <ref type="term" target="br-wl-bnd">Braced Wall Bands</ref> where S<sub>max</sub> for Site Class C &gt; 0.47 and S<sub>max</sub> &#8804; 2.6</title>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.sect23.subsect11.art4.sent5" display-type="short"/>
+                            </forming-part>
                             <tgroup cols="5">
                                 <colspec colname="col1" colwidth="1*"/>
                                 <colspec colname="col2" colwidth="1*"/>
@@ -4743,9 +4745,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <insert>
                 <new-content source="bc">
                     <table xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table1">
-                        <title>Table 9.23.13.7.-A</title>
                         <title>Unadjusted Minimum Total Braced Wall Panel Lengths for Wind</title>
-                        <title>Forming Part of Sentence 9.23.13.7.(3)</title>
+                        <forming-part>
+                            <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent3"/>
+                        </forming-part>
                         <tgroup cols="12">
                             <colspec colname="col1" colwidth="8*"/>
                             <colspec colname="col2" colwidth="12*"/>
@@ -5132,9 +5135,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <insert>
                 <new-content source="bc">
                     <table xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table2">
-                        <title>Table 9.23.13.7.-B</title>
                         <title>Adjustment Factors for the Determination of Minimum Total Braced Wall Panel Lengths for Wind</title>
-                        <title>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent3">Sentence 9.23.13.7.(3)</ref></title>
+                        <forming-part>
+                            <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent3"/>
+                        </forming-part>
                         
                         <tgroup cols="5">
                             <colspec colname="col1" colwidth="20.00*"/>
@@ -5363,9 +5367,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <insert>
                 <new-content source="bc">
                     <table xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table3">
-                        <title>Table 9.23.13.7.-C</title>
                         <title>Unadjusted Minimum Total Braced Wall Panel Lengths for Seismic Forces</title>
-                        <title>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent4">Sentence 9.23.13.7.(4)</ref></title>
+                        <forming-part>
+                            <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent4"/>
+                        </forming-part>
                         
                         <tgroup cols="12">
                             <colspec colname="col1" colwidth="8.00*"/>
@@ -7526,9 +7531,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <insert>
                 <new-content source="bc">
                     <table xml:id="nbc.divBV2.part9.sect23.subsect13.art7.table4">
-                        <title>Table 9.23.13.7.-D</title>
                         <title>Adjustment Factors for the Determination of Minimum Total Braced Wall Panel Lengths for Seismic Forces</title>
-                        <title>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent4">Sentence 9.23.13.7.(4)</ref></title>
+                        <forming-part>
+                            <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7.sent4"/>
+                        </forming-part>
                         
                         <tgroup cols="5">
                             <colspec colname="col1" colwidth="15.00*"/>
@@ -9348,7 +9354,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         </sentence>
                         <table xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table1">
                             <title>Minimum Total Length of Braced Wall Panels where HWP ≤ 0.5 kPa and S<sub>max</sub> ≤ 0.3</title>
-                            <subtitle>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art11.sent2" display-type="short"/></subtitle>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art11.sent2" display-type="short"/>
+                            </forming-part>
                             <tgroup cols="11">
                                 <colspec colname="col1" colwidth="1*"/>
                                 <colspec colname="col2" colwidth="1*"/>
@@ -9440,7 +9448,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         </table>
                         <table xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table2">
                             <title>Minimum Total Length of Braced Wall Panels Where HWP ≤ 0.6 kPa and S<sub>max</sub> ≤ 0.47</title>
-                            <subtitle>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art11.sent2" display-type="short"/></subtitle>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art11.sent2" display-type="short"/>
+                            </forming-part>
                             <tgroup cols="11">
                                 <colspec colname="col1" colwidth="1*"/>
                                 <colspec colname="col2" colwidth="1*"/>
@@ -9540,7 +9550,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         </sentence>
                         <table xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table3">
                             <title>Minimum Total Length of Braced Wall Panels in a Braced Wall Band Perpendicular to a Building Face Partially Clad with Masonry Veneer where HWP ≤ 0.5 kPa and S<sub>max</sub> ≤ 0.3</title>
-                            <subtitle>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art11.sent3" display-type="short"/></subtitle>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art11.sent3" display-type="short"/>
+                            </forming-part>
                             <tgroup cols="11">
                                 <colspec colname="col1" colwidth="1*"/>
                                 <colspec colname="col2" colwidth="1*"/>
@@ -9632,7 +9644,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         </table>
                         <table xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table4">
                             <title>Minimum Total Length of Braced Wall Panels in a Braced Wall Band Perpendicular to a Building Face Partially Clad with Masonry Veneer where HWP ≤ 0.6 kPa and S<sub>max</sub> ≤ 0.47</title>
-                            <subtitle>Forming Part of <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art11.sent3" display-type="short"/></subtitle>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art11.sent3" display-type="short"/>
+                            </forming-part>
                             <tgroup cols="11">
                                 <colspec colname="col1" colwidth="1*"/>
                                 <colspec colname="col2" colwidth="1*"/>
@@ -11709,7 +11723,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         </sentence>
                         <table xml:id="nbc.divBV2.part9.sect32.subsect3.art8.table1">
                             <title>Maximum Equivalent Duct Length<super>(1)</super>, m</title>
-                            <subtitle>Forming part of <ref type="internal" target="nbc.divBV2.part9.sect32.subsect3.art8.sent4" display-type="short"/></subtitle>
+                            <forming-part>
+                                <ref type="internal" target="nbc.divBV2.part9.sect32.subsect3.art8.sent4" display-type="short"/>
+                            </forming-part>
                             <tgroup cols="7">
                                 <colspec colname="col1" colwidth="2*"/>
                                 <colspec colname="col2" colwidth="1*"/>
@@ -12675,14 +12691,14 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                     <table xml:id="nbc.divBV2.part9.sect34.subsect2.art7.table1"
                            vendor-id="et000233">
                         <title>Lighting for Public Areas</title>
-                        <subtitle>Forming Part of <ref type="internal"
-                                                           target="nbc.divBV2.part9.sect34.subsect2.art7.sent2"
-                                                           display-type="long"
-                                                           pretext="Sentences"/> and
+                        <forming-part>
+                            <ref type="internal"
+                                 target="nbc.divBV2.part9.sect34.subsect2.art7.sent2"
+                                 display-type="long"/>
                             <ref type="internal"
                                  target="nbc.divBV2.part9.sect34.subsect2.art7.sent3"
-                                 display-type="short"
-                                 pretext=" and"/></subtitle>
+                                 display-type="short"/>
+                        </forming-part>
                         
                         <tgroup cols="3">
                             <colspec colname="tbody1" colwidth="182*"/>
