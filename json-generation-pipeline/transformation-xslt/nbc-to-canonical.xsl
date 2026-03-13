@@ -1129,8 +1129,6 @@
       <xsl:if test="not(@colspan) and exists($derived-colspan)">
         <xsl:attribute name="colspan" select="$derived-colspan"/>
       </xsl:if>
-      <xsl:if test="@namest"><xsl:attribute name="namest" select="@namest"/></xsl:if>
-      <xsl:if test="@nameend"><xsl:attribute name="nameend" select="@nameend"/></xsl:if>
       
       <!-- Preserve standard reference metadata from child elements -->
       <xsl:if test="StandTitle/@StandID">

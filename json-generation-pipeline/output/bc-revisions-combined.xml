@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-11T22:31:47.2290077-07:00"
+            generated="2026-03-11T23:54:21.0339658-07:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -368,7 +368,7 @@
                               <tbody>
                                  <row xml:id="nbc.divB.part3.sect1.subsect3.art1.table1.row1">
                                     <entry align="center">A-1</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">1</entry>
                                     <entry align="center">1</entry>
                                     <entry align="center">1</entry>
@@ -388,7 +388,7 @@
                                  <row>
                                     <entry align="center">A-2</entry>
                                     <entry align="center">1</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">1</entry>
                                     <entry align="center">1</entry>
                                     <entry align="center">2</entry>
@@ -418,7 +418,7 @@
                                     <entry align="center">A-3</entry>
                                     <entry align="center">1</entry>
                                     <entry align="center">1</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">1</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
@@ -438,7 +438,7 @@
                                     <entry align="center">1</entry>
                                     <entry align="center">1</entry>
                                     <entry align="center">1</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
@@ -458,7 +458,7 @@
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
@@ -478,7 +478,7 @@
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">1</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
@@ -498,7 +498,7 @@
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">1</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">1</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
@@ -521,7 +521,7 @@
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">1</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">1</entry>
                                     <entry align="center">2<note xml:id="nbc.divB.part3.sect1.subsect3.art1.table1.note5">See <ref type="internal"
                                                target="nbc.divB.part3.sect1.subsect3.art1.sent2"
@@ -554,11 +554,11 @@
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">1</entry>
-                                    <entry align="center">â€”</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">3</entry>
-                                    <entry align="center">â€”</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
+                                    <entry align="center">-</entry>
                                  </row>
                                  <row>
                                     <entry align="center">E</entry>
@@ -573,11 +573,11 @@
                                        <ref type="internal"
                                             target="nbc.divB.part3.sect1.subsect3.art1.table1.note5"/>
                                     </entry>
-                                    <entry align="center">â€”</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">3</entry>
-                                    <entry align="center">â€”</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
+                                    <entry align="center">-</entry>
                                  </row>
                                  <row>
                                     <entry align="center">F-1</entry>
@@ -615,7 +615,7 @@
                                     </entry>
                                     <entry align="center">3</entry>
                                     <entry align="center">3</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
                                  </row>
@@ -632,11 +632,11 @@
                                        <ref type="internal"
                                             target="nbc.divB.part3.sect1.subsect3.art1.table1.note6"/>
                                     </entry>
-                                    <entry align="center">â€”</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">2</entry>
-                                    <entry align="center">â€”</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
+                                    <entry align="center">-</entry>
                                  </row>
                                  <row>
                                     <entry align="center">F-3</entry>
@@ -648,11 +648,11 @@
                                     <entry align="center">2</entry>
                                     <entry align="center">2</entry>
                                     <entry align="center">1</entry>
-                                    <entry align="center">â€”</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
+                                    <entry align="center">-</entry>
                                     <entry align="center">2</entry>
-                                    <entry align="center">â€”</entry>
-                                    <entry align="center">â€”</entry>
+                                    <entry align="center">-</entry>
+                                    <entry align="center">-</entry>
                                  </row>
                               </tbody>
                            </tgroup>
@@ -10732,24 +10732,27 @@ Spaces within Buildings
                               <colspec colname="col1" colwidth=""/>
                               <colspec colname="col2" colwidth=""/>
                               <colspec colname="col3" colwidth=""/>
+                              <!-- "or" separator -->
                               <colspec colname="col4" colwidth=""/>
                               <colspec colname="col5" colwidth=""/>
                               <colspec colname="col6" colwidth=""/>
+                              <!-- "or" separator -->
                               <colspec colname="col7" colwidth=""/>
                               <thead>
                                  <row xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.rowh1">
-                                    <entry align="center">GHG Emission Level</entry>
-                                    <entry align="center" namest="col2" nameend="col6">GHG Emission Compliance Options<super>(1)</super>
+                                    <entry align="center" rowspan="3">GHG Emission Level</entry>
+                                    <entry align="center" colspan="5">GHG Emission Compliance Options<super>(1)</super>
                                     </entry>
-                                    <entry align="center">Reduction of GHG Emissions by Energy Source of Building Systems</entry>
+                                    <entry align="center" rowspan="3">Reduction of GHG Emissions by Energy Source of Building Systems</entry>
                                  </row>
                                  <row xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.rowh2">
-                                    <entry align="center"/>
-                                    <entry align="center">Maximum GHG Emissions by House, Expressed in kgCO<sub>2</sub>e/year</entry>
-                                    <entry align="center">or</entry>
-                                    <entry align="center" namest="col4" nameend="col5">Maximum GHG Emissions by House<super>(2)</super>
+                                    <entry align="center" rowspan="2">Maximum GHG Emissions by House, Expressed in kgCO<sub>2</sub>e/year</entry>
+                                    <entry align="center" rowspan="2"/>
+                                    <!-- "or" col — empty header -->
+                                    <entry align="center" colspan="2">Maximum GHG Emissions by House<super>(2)</super>
                                     </entry>
-                                    <entry align="center">or</entry>
+                                    <entry align="center" rowspan="2"/>
+                                    <!-- "or" col — empty header -->
                                  </row>
                                  <row xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.rowh3">
                                     <entry align="center">Maximum GHGI of the House, Expressed in kgCO<sub>2</sub>e/m<super>2</super>/year</entry>
@@ -10757,50 +10760,45 @@ Spaces within Buildings
                                  </row>
                               </thead>
                               <tbody>
+    <!-- EL-1: "measure only" spans col2–col5 (4 cols), no "or" separators shown -->
                                  <row xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.row1">
                                     <entry align="center">EL-1</entry>
                                     <entry align="center">measure only</entry>
                                     <entry align="center"/>
-                                    <entry align="center">measure only</entry>
-                                    <entry align="center"/>
+                                    <entry align="center" colspan="2">measure only</entry>
                                     <entry align="center"/>
                                     <entry align="center">exempt</entry>
                                  </row>
+                                 <!-- EL-2 through EL-4: "or" cols get rowspan=3 -->
                                  <row xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.row2">
                                     <entry align="center">EL-2</entry>
                                     <entry align="center">1050</entry>
-                                    <entry align="center">or</entry>
+                                    <entry align="center" rowspan="3">or</entry>
                                     <entry align="center">6.0</entry>
                                     <entry align="center">2400</entry>
-                                    <entry align="center">or</entry>
+                                    <entry align="center" rowspan="3">or</entry>
                                     <entry align="center">Energy sources supplying heating systems have an emissions factor ≤ 0.011 kgCO<sub>2</sub>e/kWh</entry>
                                  </row>
                                  <row xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.row3">
                                     <entry align="center">EL-3</entry>
                                     <entry align="center">440</entry>
-                                    <entry align="center"/>
                                     <entry align="center">2.5</entry>
                                     <entry align="center">800</entry>
-                                    <entry align="center"/>
                                     <entry align="center">Energy sources supplying heating and service water heating systems have an emissions factor ≤ 0.011 kgCO<sub>2</sub>e/kWh</entry>
                                  </row>
                                  <row xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.row4">
                                     <entry align="center">EL-4</entry>
                                     <entry align="center">265</entry>
-                                    <entry align="center"/>
                                     <entry align="center">1.5</entry>
                                     <entry align="center">500</entry>
-                                    <entry align="center"/>
                                     <entry align="center">Energy sources supplying all building systems, including equipment and appliances, have an emissions factor ≤ 0.011 kgCO<sub>2</sub>e/kWh</entry>
                                  </row>
                               </tbody>
                            </tgroup>
                            <table-notes>
                               <note xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.note1">Notes to Table 9.37.1.3.:</note>
-                              <note xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.note2">
-                                 <super>(1)</super> Redundant or back-up equipment for the systems and equipment listed in Sentence 9.36.5.4.(1). is permitted to be excluded, provided it is equipped with controls and is not required to meet the space-conditioning load of the house.</note>
-                              <note xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.note3">
-                                 <super>(2)</super> Compliance for this option is demonstrated by meeting both the GHGI and the GHG emission requirements for each house.</note>
+                              <note xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.note2">Redundant or back-up equipment for the systems and equipment listed in Sentence 9.36.5.4.(1). is permitted to be excluded, provided it is equipped with controls and is not required to meet the space-conditioning load of the house.</note>
+                              <note xml:id="nbc.divBV2.part9.sect37.subsect1.art3.table1.note3">Compliance for this option is demonstrated by meeting both the GHGI and the GHG emission requirements for each house.</note>
                            </table-notes>
                         </content>
                         <change-summary>Struck out entire Table 9.37.1.3 and substituted new table with revised structure, header rows, and notes</change-summary>
@@ -11107,7 +11105,7 @@ Spaces within Buildings
                                  <thead>
                                     <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.rowh1">
                                        <entry align="center">Fuel Type</entry>
-                                       <entry align="center" namest="col2" nameend="col5">Natural Gas and Propane</entry>
+                                       <entry align="center" colspan="4">Natural Gas and Propane</entry>
                                     </row>
                                     <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableA.rowh2">
                                        <entry align="center">Vent Type</entry>
@@ -11182,8 +11180,8 @@ Spaces within Buildings
                                  <thead>
                                     <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.rowh1">
                                        <entry align="center">Fuel Type</entry>
-                                       <entry align="center" namest="col2" nameend="col4">Oil</entry>
-                                       <entry align="center" namest="col5" nameend="col7">Solid</entry>
+                                       <entry align="center" colspan="3">Oil</entry>
+                                       <entry align="center" colspan="3">Solid</entry>
                                     </row>
                                     <row xml:id="nbc.divBV2.part9.appendix.appnote199a.tableB.rowh2">
                                        <entry align="center">Vent Type</entry>

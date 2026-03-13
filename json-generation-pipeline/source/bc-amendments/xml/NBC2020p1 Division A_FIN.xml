@@ -3435,8 +3435,7 @@ Llitre(s)</replace>
                                     xml:id="nbc.divA.part1.appendix.appnote7.div5.table1.row0"
                                     >
                                     <entry
-                                        namest="col1"
-                                        nameend="col2"
+                                        colspan="2"
                                         >TDGR</entry>
                                     <entry>WHMIS</entry>
                                     <entry

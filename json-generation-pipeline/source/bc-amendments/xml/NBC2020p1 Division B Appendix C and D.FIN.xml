@@ -492,7 +492,7 @@
                                 <row xml:id="nbc.divB.appendixC.table3.row1">
                                     <entry align="center">Province and Location</entry>
                                     <entry align="center">S<sub>max</sub> for Unknown Site Class</entry>
-                                    <entry align="center" namest="col3" nameend="col7">S<sub>max</sub> According to Site Class</entry>
+                                    <entry align="center" colspan="5">S<sub>max</sub> According to Site Class</entry>
                                 </row>
                                 <row xml:id="nbc.divB.appendixC.table3.row2">
                                     <entry/>

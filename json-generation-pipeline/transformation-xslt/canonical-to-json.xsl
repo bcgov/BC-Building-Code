@@ -1237,12 +1237,6 @@
             <xsl:if test="@colname">
                 <fn:string key="colname"><xsl:value-of select="@colname"/></fn:string>
             </xsl:if>
-            <xsl:if test="@namest">
-                <fn:string key="namest"><xsl:value-of select="@namest"/></fn:string>
-            </xsl:if>
-            <xsl:if test="@nameend">
-                <fn:string key="nameend"><xsl:value-of select="@nameend"/></fn:string>
-            </xsl:if>
             <xsl:if test="@rowspan and @rowspan != ''">
                 <fn:number key="rowspan"><xsl:value-of select="@rowspan"/></fn:number>
             </xsl:if>
@@ -2586,12 +2580,6 @@
             <xsl:if test="revision-history/original/@colname">
                 <fn:string key="colname"><xsl:value-of select="revision-history/original/@colname"/></fn:string>
             </xsl:if>
-            <xsl:if test="revision-history/original/@namest">
-                <fn:string key="namest"><xsl:value-of select="revision-history/original/@namest"/></fn:string>
-            </xsl:if>
-            <xsl:if test="revision-history/original/@nameend">
-                <fn:string key="nameend"><xsl:value-of select="revision-history/original/@nameend"/></fn:string>
-            </xsl:if>
             <xsl:if test="revision-history/original/@rowspan and revision-history/original/@rowspan != ''">
                 <fn:number key="rowspan"><xsl:value-of select="revision-history/original/@rowspan"/></fn:number>
             </xsl:if>
@@ -2639,12 +2627,6 @@
                 </xsl:if>
                 <xsl:if test="content/@colname">
                     <fn:string key="colname"><xsl:value-of select="content/@colname"/></fn:string>
-                </xsl:if>
-                <xsl:if test="content/@namest">
-                    <fn:string key="namest"><xsl:value-of select="content/@namest"/></fn:string>
-                </xsl:if>
-                <xsl:if test="content/@nameend">
-                    <fn:string key="nameend"><xsl:value-of select="content/@nameend"/></fn:string>
                 </xsl:if>
                 <xsl:if test="content/@rowspan and content/@rowspan != ''">
                     <fn:number key="rowspan"><xsl:value-of select="content/@rowspan"/></fn:number>
