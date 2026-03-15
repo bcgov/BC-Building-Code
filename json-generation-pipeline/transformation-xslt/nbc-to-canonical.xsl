@@ -840,6 +840,9 @@
       <!-- Include number as text content, not as separate element -->
       <xsl:if test="number">
         <xsl:value-of select="number" />
+        <xsl:if test="node()[not(self::number)][normalize-space()]">
+          <xsl:text> </xsl:text>
+        </xsl:if>
       </xsl:if>
       <xsl:apply-templates select="node()[not(self::number)]" mode="rich-text" />
     </paragraph>
@@ -970,6 +973,11 @@
                     select="@id"
                 /></xsl:if>
       <xsl:if test="@frame"><xsl:attribute name="frame" select="@frame"/></xsl:if>
+      
+      <!-- Number element (table number, e.g. 9.20.17.4.-A in spectables) -->
+      <xsl:if test="number">
+        <number><xsl:value-of select="number"/></number>
+      </xsl:if>
       
       <!-- Title element (main title text only, no notes) -->
       <xsl:if test="title.tbl or title">
@@ -1189,6 +1197,15 @@
     <xsl:value-of select="normalize-space(.)" />
   </xsl:template>
 
+  <!-- Graphics inside table entries -->
+  <xsl:template match="graphic" mode="entry-content">
+    <xsl:param name="table-id" as="xs:string" select="''" />
+    <xsl:param name="note-offset" as="xs:integer" select="0" />
+    <graphic src="{bc:asset-src(string(@catalog-id), 'eps')}" alt="{@alt}">
+      <xsl:copy-of select="@width | @height" />
+    </graphic>
+  </xsl:template>
+
   <!-- Default: pass through to rich-text mode for other elements -->
   <xsl:template match="*" mode="entry-content">
     <xsl:param name="table-id" as="xs:string" select="''" />
@@ -1219,6 +1236,15 @@
                     select="title/node()"
                     mode="rich-text"
                 /></title>
+
+      <!-- Forming-part element (contains forming part references) -->
+      <xsl:if test="ref.int">
+        <forming-part>
+          <xsl:for-each select="ref.int">
+            <xsl:apply-templates select="." mode="rich-text" />
+          </xsl:for-each>
+        </forming-part>
+      </xsl:if>
 
       <xsl:for-each select="graphic">
         <graphic src="{bc:asset-src(string(@catalog-id), 'eps')}" alt="{@alt}">
@@ -1335,6 +1361,13 @@
                 select="node()"
                 mode="rich-text"
             /></ref>
+  </xsl:template>
+
+  <!-- Inline graphics (e.g., logos in table cells, appendix content) -->
+  <xsl:template match="graphic" mode="rich-text">
+    <graphic src="{bc:asset-src(string(@catalog-id), 'eps')}" alt="{@alt}">
+      <xsl:copy-of select="@width | @height" />
+    </graphic>
   </xsl:template>
 
   <!-- Functional statement references -->

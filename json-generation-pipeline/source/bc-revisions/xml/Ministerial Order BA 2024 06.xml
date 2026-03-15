@@ -4682,14 +4682,22 @@ Spaces within Buildings
                   <title
                     >Anchor Bolt Spacing within Braced Wall Panels Where HWP ≤ 1.2 kPa and S<sub
                       >max</sub> ≤ 2.6</title>
+                      <forming-part>
+                            <ref
+                                    type="internal"
+                                    target="nbc.divBV2.part9.sect23.subsect6.art1.sent3"
+                                    display-type="long"
+                                    />
+                        </forming-part>
                   <tgroup cols="3">
                     <colspec colname="1" colwidth="100*" />
                     <colspec colname="2" colwidth="100*" />
                     <colspec colname="3" colwidth="100*" />
                     <thead>
                       <row>
-                        <entry align="center">Reference Framing Type</entry>
+                        <entry align="center" rowspan="3">Reference Framing Type</entry>
                         <entry
+                          colspan="2"
                           align="center"
                           >Maximum Spacing of Anchor Bolts within <ref
                             type="term"
@@ -4697,7 +4705,7 @@ Spaces within Buildings
                             >Braced Wall Panels</ref>, m</entry>
                       </row>
                       <row>
-                        <entry align="center">Anchor Bolt Diameter</entry>
+                        <entry align="center" colspan="2">Anchor Bolt Diameter</entry>
                       </row>
                       <row>
                         <entry align="center">12.7 mm</entry>
@@ -4736,6 +4744,22 @@ Spaces within Buildings
                         <entry align="center">1.2</entry>
                       </row>
                       <row>
+                        <entry align="center">WSP-C</entry>
+                        <entry align="center">0.7</entry>
+                        <entry align="center">1.0</entry>
+                      </row>
+                      <row>
+                        <entry align="center">WSP-D</entry>
+                        <entry align="center">0.6</entry>
+                        <entry align="center">0.9</entry>
+                      </row>
+                      <row>
+                        <entry align="center">WSP-E</entry>
+                        <entry align="center">0.5</entry>
+                        <entry align="center">0.8</entry>
+                      </row>
+                      <row>
+                        <entry align="center">DWB</entry>
                         <entry align="center">0.8</entry>
                         <entry align="center">1.2</entry>
                       </row>

@@ -301,6 +301,9 @@
         <fn:map>
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="type">table</fn:string>
+            <xsl:if test="number">
+                <fn:string key="number"><xsl:value-of select="number"/></fn:string>
+            </xsl:if>
             <fn:string key="title"><xsl:apply-templates select="title" mode="rich"/></fn:string>
             <fn:map key="structure">
                 <xsl:if test="tgroup/@cols"><fn:number key="columns"><xsl:value-of select="tgroup/@cols"/></fn:number></xsl:if>
@@ -464,9 +467,6 @@
             <xsl:text> </xsl:text>
         </xsl:if>
         <xsl:apply-templates select="node()" mode="rich"/>
-        <xsl:text> (</xsl:text>
-        <xsl:value-of select="@units"/>
-        <xsl:text>)</xsl:text>
         <xsl:if test="following-sibling::node()[1][self::text() and not(matches(., '^\s'))]">
             <xsl:text> </xsl:text>
         </xsl:if>

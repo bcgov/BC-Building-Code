@@ -427,6 +427,12 @@
             <fn:array key="parts">
                 <xsl:apply-templates select="part" mode="json"/>
             </fn:array>
+            
+            <xsl:if test="appendix">
+                <fn:array key="appendices">
+                    <xsl:apply-templates select="appendix" mode="json"/>
+                </fn:array>
+            </xsl:if>
         </fn:map>
     </xsl:template>
     
@@ -658,6 +664,101 @@
             <xsl:if test="@revised = 'yes' and revision-history">
                 <fn:array key="revisions">
                     <xsl:call-template name="build-article-revisions"/>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+    
+    <xsl:template match="appendix" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">appendix</fn:string>
+            <xsl:if test="@letter">
+                <fn:string key="letter"><xsl:value-of select="@letter"/></fn:string>
+            </xsl:if>
+            <xsl:if test="@number">
+                <fn:string key="number"><xsl:value-of select="@number"/></fn:string>
+            </xsl:if>
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
+            <xsl:if test="introduction">
+                <fn:string key="introduction"><xsl:apply-templates select="introduction" mode="rich-text-json"/></fn:string>
+            </xsl:if>
+            <fn:array key="sections">
+                <xsl:apply-templates select="appendix-section | note-division" mode="json"/>
+            </fn:array>
+            <xsl:if test="table | figure">
+                <fn:array key="content">
+                    <xsl:apply-templates select="table | figure" mode="json"/>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+    
+    <xsl:template match="appendix-section" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">appendix_section</fn:string>
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
+            <xsl:if test="paragraph">
+                <fn:array key="paragraphs">
+                    <xsl:for-each select="paragraph">
+                        <fn:map>
+                            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
+            <fn:array key="subsections">
+                <xsl:apply-templates select="appendix-subsection" mode="json"/>
+            </fn:array>
+        </fn:map>
+    </xsl:template>
+    
+    <xsl:template match="appendix-subsection" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">appendix_subsection</fn:string>
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
+            <fn:array key="articles">
+                <xsl:apply-templates select="appendix-article" mode="json"/>
+            </fn:array>
+        </fn:map>
+    </xsl:template>
+    
+    <xsl:template match="appendix-article" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">appendix_article</fn:string>
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
+            <xsl:if test="paragraph">
+                <fn:array key="paragraphs">
+                    <xsl:for-each select="paragraph">
+                        <fn:map>
+                            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
+            <xsl:if test="see-also">
+                <fn:string key="see_also"><xsl:apply-templates select="see-also" mode="rich-text-json"/></fn:string>
+            </xsl:if>
+            <xsl:if test="sentence | table | figure">
+                <fn:array key="content">
+                    <xsl:apply-templates select="sentence | table | figure" mode="json"/>
                 </fn:array>
             </xsl:if>
         </fn:map>
@@ -1049,6 +1150,11 @@
                 <fn:boolean key="revised">true</fn:boolean>
             </xsl:if>
             
+            <!-- Table number (e.g. 9.20.17.4.-A in spectables) -->
+            <xsl:if test="number">
+                <fn:string key="number"><xsl:value-of select="number"/></fn:string>
+            </xsl:if>
+            
             <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
 
             <!-- Subtitle (notes from title) - Option A -->
@@ -1258,8 +1364,8 @@
         <xsl:param name="entry"/>
         
         <xsl:choose>
-            <!-- If entry contains figure(s), process as mixed content -->
-            <xsl:when test="$entry/figure">
+            <!-- If entry contains figure(s) or bare graphic(s), process as mixed content -->
+            <xsl:when test="$entry/figure or $entry/graphic">
                 <xsl:for-each select="$entry/node()">
                     <xsl:choose>
                         <!-- Figure element -->
@@ -1292,8 +1398,27 @@
                                 <fn:string key="value"> [REF:table-note:<xsl:value-of select="@xml:id"/>] </fn:string>
                             </fn:map>
                         </xsl:when>
+                        <!-- Bare graphic element (not wrapped in figure) - output in figure structure for consistency -->
+                        <xsl:when test="self::graphic">
+                            <fn:map>
+                                <fn:string key="type">figure</fn:string>
+                                <xsl:if test="@alt">
+                                    <fn:string key="title"><xsl:value-of select="@alt"/></fn:string>
+                                </xsl:if>
+                                <fn:map key="graphic">
+                                    <fn:string key="src"><xsl:value-of select="@src"/></fn:string>
+                                    <fn:string key="alt_text"><xsl:value-of select="@alt"/></fn:string>
+                                    <xsl:if test="@width">
+                                        <fn:string key="width"><xsl:value-of select="@width"/></fn:string>
+                                    </xsl:if>
+                                    <xsl:if test="@height">
+                                        <fn:string key="height"><xsl:value-of select="@height"/></fn:string>
+                                    </xsl:if>
+                                </fn:map>
+                            </fn:map>
+                        </xsl:when>
                         <!-- Text node or other elements - collect as text -->
-                        <xsl:when test="self::text()[normalize-space()] or self::*[not(self::figure or self::note)]">
+                        <xsl:when test="self::text()[normalize-space()] or self::*[not(self::figure or self::graphic or self::note)]">
                             <xsl:variable name="text-content">
                                 <xsl:apply-templates select="." mode="rich-text-json"/>
                             </xsl:variable>
@@ -1351,6 +1476,24 @@
             </xsl:if>
             
             <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
+            
+            <!-- Forming part references -->
+            <xsl:if test="forming-part">
+                <fn:array key="forming_part">
+                    <xsl:for-each select="forming-part/ref">
+                        <fn:map>
+                            <fn:string key="type"><xsl:value-of select="@type"/></fn:string>
+                            <fn:string key="target"><xsl:value-of select="@target"/></fn:string>
+                            <xsl:if test="@display-type">
+                                <fn:string key="display_type"><xsl:value-of select="@display-type"/></fn:string>
+                            </xsl:if>
+                            <xsl:if test="text()">
+                                <fn:string key="text"><xsl:value-of select="text()"/></fn:string>
+                            </xsl:if>
+                        </fn:map>
+                    </xsl:for-each>
+                </fn:array>
+            </xsl:if>
             
             <fn:map key="graphic">
                 <fn:string key="src"><xsl:value-of select="graphic/@src"/></fn:string>
@@ -1771,9 +1914,6 @@
         </xsl:if>
         <!-- Process child nodes to handle super/sub elements -->
         <xsl:apply-templates select="node()" mode="rich-text-json"/>
-        <xsl:text> (</xsl:text>
-        <xsl:value-of select="@units"/>
-        <xsl:text>)</xsl:text>
         <!-- Add trailing space if followed by text without leading space -->
         <xsl:if test="following-sibling::node()[1][self::text() and not(matches(., '^\s'))]">
             <xsl:text> </xsl:text>
@@ -1807,6 +1947,17 @@
     
     <xsl:template match="see-also" mode="rich-text-json">
         <xsl:apply-templates select="node()" mode="rich-text-json"/>
+    </xsl:template>
+    
+    <!-- Bare graphic elements (e.g., logos in table cells) -->
+    <xsl:template match="graphic" mode="rich-text-json">
+        <xsl:text>[GRAPHIC:</xsl:text>
+        <xsl:value-of select="@src"/>
+        <xsl:if test="@alt">
+            <xsl:text>:</xsl:text>
+            <xsl:value-of select="@alt"/>
+        </xsl:if>
+        <xsl:text>]</xsl:text>
     </xsl:template>
     
     <!-- Skip definition lists in rich-text-json mode - they're extracted separately -->
@@ -2235,7 +2386,7 @@
                 
                 <!-- Location information -->
                 <fn:string key="table_id"><xsl:value-of select="ancestor::table[1]/@xml:id"/></fn:string>
-                <fn:string key="location_id"><xsl:value-of select="ancestor::article[1]/@xml:id"/></fn:string>
+                <fn:string key="location_id"><xsl:value-of select="(ancestor::article | ancestor::appendix-article | ancestor::note-division | ancestor::appendix)[last()]/@xml:id"/></fn:string>
             </fn:map>
         </xsl:for-each-group>
     </xsl:template>

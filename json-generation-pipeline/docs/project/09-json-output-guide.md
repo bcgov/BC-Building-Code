@@ -504,7 +504,7 @@ Tables contain structured data within articles.
         "type": "header_row",
         "cells": [
           { "content": [{ "type": "text", "value": "No." }], "align": "center", "rowspan": 2 },
-          { "content": [{ "type": "text", "value": "Code Requirement in Division B" }], "align": "center", "colspan": 2, "namest": "col2", "nameend": "col3" }
+          { "content": [{ "type": "text", "value": "Code Requirement in Division B" }], "align": "center", "colspan": 2 }
         ]
       }
     ],
@@ -541,8 +541,6 @@ Tables contain structured data within articles.
 | `structure.body_rows` | array | Body row data |
 | `structure.*.cells[].rowspan` | number | Numeric row span for merged cells (optional) |
 | `structure.*.cells[].colspan` | number | Numeric column span for merged cells (optional) |
-| `structure.*.cells[].namest` | string | CALS start column name when provided (optional) |
-| `structure.*.cells[].nameend` | string | CALS end column name when provided (optional) |
 
 ---
 

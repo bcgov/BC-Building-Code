@@ -1853,6 +1853,42 @@
             <attribute name="vendor-id"><text/></attribute>
         </optional>
         <element name="title"><ref name="bc-rich-text"/></element>
+        <!-- Forming-part element (contains forming part references) -->
+        <optional>
+            <element name="forming-part">
+                <oneOrMore>
+                    <element name="ref">
+                        <attribute name="type">
+                            <choice>
+                                <value>internal</value>
+                                <value>external</value>
+                                <value>standard</value>
+                                <value>term</value>
+                                <value>functional-statement</value>
+                                <value>sub-objective</value>
+                                <value>objective</value>
+                                <value>bc-code</value>
+                            </choice>
+                        </attribute>
+                        <attribute name="target"><text/></attribute>
+                        <optional>
+                            <attribute name="display-type">
+                                <choice>
+                                    <value>long</value>
+                                    <value>medium</value>
+                                    <value>short</value>
+                                    <value>number</value>
+                                    <value>shortNum</value>
+                                    <value>shortSbcl</value>
+                                    <value>title</value>
+                                </choice>
+                            </attribute>
+                        </optional>
+                        <optional><text/></optional>
+                    </element>
+                </oneOrMore>
+            </element>
+        </optional>
         <element name="graphic">
             <attribute name="src"><data type="anyURI"/></attribute>
             <attribute name="alt"><text/></attribute>

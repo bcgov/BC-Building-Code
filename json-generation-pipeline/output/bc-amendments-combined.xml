@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-11T23:40:23.1725489-07:00"
+            generated="2026-03-14T22:38:38.8681101-07:00"
             source-count="14">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -3852,12 +3852,7 @@ Llitre(s)</replace>
             <element-replace element="title">
                <new-content source="bc">
                   <title>Documents Referenced in Book I (General) of the British Columbia Building Code
-                            <note xml:id="et001030-2">While every effort was made to ensure the accuracy of the information in this Table, the NRC is not responsible for the accuracy, timeliness or reliability of the content presented therein. For all purposes of interpreting and applying the referenced standards, Code users should refer to the most recent official versions of the referenced editions.</note>
-                     <note xml:id="et001030-5">See <ref type="internal"
-                             target="et000279"
-                             display-type="long"
-                             pretext="Table"/> of Appendix D for the list of standards referenced therein.</note>
-                  </title>
+                        </title>
                </new-content>
             </element-replace>
          </modify>
