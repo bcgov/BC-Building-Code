@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-14T22:38:38.8681101-07:00"
+            generated="2026-03-16T22:33:35.0582974-07:00"
             source-count="14">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -3733,7 +3733,7 @@ Llitre(s)</replace>
                   <text>For the purpose of compliance with this Code as required in 
                             <ref type="internal"
                           target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
-                          display-type="short"/>, the objectives and functional statements
+                          display-type="medium"/>, the objectives and functional statements
                             attributed to the acceptable solutions in Division B shall be the
                             objectives and functional statements identified in 
                             <ref type="internal" target="nbc.divB.part2.sect5" pretext="Sections"/>
@@ -3766,24 +3766,21 @@ Llitre(s)</replace>
          <replace>
             <new-content source="bc">
                <sentence xml:id="nbc.divB.part1.sect1.subsect3.art1.sent1" number="1">
-                  <text>
-                     <bc-change type="bc-insert" amendment-id="bc-002">Except as provided
-                                in <ref type="internal"
-                             target="nbc.divB.part1.sect1.subsect3.art1.sent3"
-                             pretext="Sentences"
-                             display-type="short"/>
-                        <ref type="internal"
-                             target="nbc.divB.part1.sect1.subsect3.art1.sent2"
-                             pretext=" and"
-                             display-type="short"/> 
-                                and as required by <ref type="internal"
-                             target="nbc.divBV2.part9.sect7.subsect4.art3.sent2"
-                             pretext="Sentence"
-                             display-type="short"/>, the</bc-change> 
-                            climatic and seismic values required for the design of 
-                            <ref type="term" target="bldng">buildings</ref> under this Code shall be in conformance with the
-                            values established by the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref>.
-                        </text>
+                  <text>Except as provided in <ref type="internal"
+                          target="nbc.divB.part1.sect1.subsect3.art1.sent2"
+                          pretext="Sentences"
+                          display-type="short"/>
+                     <ref type="internal"
+                          target="nbc.divB.part1.sect1.subsect3.art1.sent4"
+                          pretext=" and"
+                          display-type="short"/> and as required by <ref type="internal"
+                          target="nbc.divBV2.part9.sect7.subsect4.art3.sent2"
+                          pretext="Sentence"
+                          display-type="medium"/>, the
+                                    climatic and seismic values required for the design of 
+                    <ref type="term" target="bldng">buildings</ref> under this Code shall be in conformance with the
+                                    values established by the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref>.
+                </text>
                </sentence>
             </new-content>
          </replace>
@@ -3802,7 +3799,7 @@ Llitre(s)</replace>
             <new-content source="bc">
                <sentence xml:id="nbc.divB.part1.sect1.subsect3.art1.sent5" number="5">
                   <text>The outside summer design temperatures determined from 
-                            <ref type="internal" target="nbc.example.ex000108"/> shall be those listed for the July 2.5% dry values.
+                            <ref type="internal" target="nbc.divB.appendixC"/> shall be those listed for the July 2.5% dry values.
                         </text>
                </sentence>
             </new-content>
@@ -4355,10 +4352,10 @@ Llitre(s)</replace>
                <sentence xml:id="nbc.divB.part3.sect2.subsect2.art14.sent2" number="2">
                   <text>A rooftop enclosure for elevator machinery, an elevator lobby, or for a <ref type="term" target="rvc-rm">service room</ref>, not more than one <ref type="term" target="tr">storey</ref> high, and that does not serve as part of a <ref type="term" target="mn-f-gr">means of egress</ref> for an <ref type="term" target="ccpnc">occupancy</ref> on a roof in accordance with <ref type="internal"
                           target="nbc.divB.part3.sect3.subsect1.art3.sent4"
-                          display-type="short"
+                          display-type="medium"
                           pretext="Sentences"/> to <ref type="internal"
                           target="nbc.divB.part3.sect3.subsect1.art3.sent6"
-                          display-type="short"/>, is not required to have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref>.</text>
+                          display-type="medium"/>, is not required to have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref>.</text>
                </sentence>
             </new-content>
          </replace>
@@ -4407,7 +4404,7 @@ Llitre(s)</replace>
                <clause xml:id="nbc.divB.part3.sect2.subsect2.art51.sent1.clause3" letter="c">
                   <text>it has a height not more than <measurement units="metric">18 m</measurement> measured between the floor of the <ref type="term" target="frt-tr">first storey</ref> and the uppermost floor level, excluding any floor level within a rooftop enclosure that is not considered as a <ref type="term" target="tr">storey</ref> in calculating <ref type="term" target="bldng-hg">building height</ref> in accordance with <ref type="internal"
                           target="nbc.divB.part3.sect2.subsect1.art1.sent1"
-                          display-type="short"/>, and</text>
+                          display-type="medium"/>, and</text>
                </clause>
             </new-content>
          </replace>
@@ -4441,7 +4438,7 @@ Llitre(s)</replace>
                <clause xml:id="nbc.divB.part3.sect2.subsect2.art60.sent1.clause3" letter="c">
                   <text>it has a height not more than <measurement units="metric">18 m</measurement> measured between the floor of the <ref type="term" target="frt-tr">first storey</ref> and the uppermost floor level, excluding any floor level within a rooftop enclosure that is not considered as a <ref type="term" target="tr">storey</ref> in calculating <ref type="term" target="bldng-hg">building height</ref> in accordance with <ref type="internal"
                           target="nbc.divB.part3.sect2.subsect1.art1.sent1"
-                          display-type="short"/>, and</text>
+                          display-type="medium"/>, and</text>
                </clause>
             </new-content>
          </replace>
@@ -4550,7 +4547,7 @@ Llitre(s)</replace>
                <clause xml:id="nbc.divB.part3.sect2.subsect4.art15.sent1.clause2" letter="b">
                   <text>except as required by <ref type="internal"
                           target="nbc.divB.part3.sect2.subsect4.art8.sent2"
-                          display-type="short"/>, an area on each <ref type="term" target="tr">storey</ref> that is not more than the system area limits as specified in <ref type="standard" target="nfpa13"/>
+                          display-type="medium"/>, an area on each <ref type="term" target="tr">storey</ref> that is not more than the system area limits as specified in <ref type="standard" target="nfpa13"/>
                   </text>
                </clause>
             </new-content>
@@ -5164,7 +5161,7 @@ Llitre(s)</replace>
                              pretext="Sentences"/>
                         <ref type="internal"
                              target="nbc.divB.part3.sect3.subsect4.art4.sent6"
-                             display-type="short"
+                             display-type="medium"
                              pretext="and"/>, each <ref type="term" target="t">suite</ref> in a <ref type="term" target="flr-r">floor area</ref> that contains more than one <ref type="term" target="t">suite</ref> shall have</text>
                      <clause xml:id="nbc.divB.part3.sect3.subsect1.art3.sent11.clause1" letter="a">
                         <text>an exterior <ref type="term" target="xt">exit</ref> doorway, or</text>
@@ -5761,10 +5758,10 @@ Llitre(s)</replace>
                   <text>
                      <ref type="term" target="xt">Exits</ref> are not required directly from rooftop enclosures that comply with <ref type="internal"
                           target="nbc.divB.part3.sect3.subsect1.art3.sent8"
-                          display-type="short"
+                          display-type="medium"
                           pretext="Sentences"/> and <ref type="internal"
                           target="nbc.divB.part3.sect3.subsect1.art3.sent9"
-                          display-type="short"/> or where they are served by <ref type="term" target="mn-f-gr">means of egress</ref> in conformance with Sentences 3.3.1.3.(4) to (5).</text>
+                          display-type="medium"/> or where they are served by <ref type="term" target="mn-f-gr">means of egress</ref> in conformance with Sentences 3.3.1.3.(4) to (5).</text>
                </sentence>
             </new-content>
          </replace>
@@ -7052,11 +7049,11 @@ each 25 females.</find>
                   <sentence xml:id="nbc.divB.part3.sect8.subsect3.art2.sent7" number="7">
                      <text>An <ref type="term" target="brrr-fr">accessible</ref> path of travel shall be equipped to provide illumination in accordance with <ref type="internal"
                              target="nbc.divB.part3.sect2.subsect7.art1.sent1"
-                             display-type="short"/> and <ref type="internal"
+                             display-type="medium"/> and <ref type="internal"
                              target="nbc.divB.part3.sect2.subsect7.art1.sent2"
-                             display-type="short"/>. (See also <ref type="internal"
+                             display-type="medium"/>. (See also <ref type="internal"
                              target="nbc.divB.part3.sect2.subsect7.art1.sent3"
-                             display-type="short"/> and <ref type="internal"
+                             display-type="medium"/> and <ref type="internal"
                              target="nbc.divBV2.part9.sect34.subsect2.art7"
                              display-type="long"/>.)</text>
                   </sentence>
@@ -7212,7 +7209,7 @@ each 25 females.</find>
                   <find>above the floor.</find>
                   <replace>above the floor. (See also <ref type="internal"
                           target="nbc.divB.part3.sect3.subsect1.art13.sent4"
-                          display-type="short"/> regarding additional devices.)</replace>
+                          display-type="medium"/> regarding additional devices.)</replace>
                </find-replace>
             </text-change>
          </modify>
@@ -7611,7 +7608,7 @@ each 25 females.</find>
                   <find>when it is open,</find>
                   <replace>when it is open, measured in accordance with <ref type="internal"
                           target="nbc.divB.part3.sect8.subsect3.art6.sent2"
-                          display-type="short"/>,</replace>
+                          display-type="medium"/>,</replace>
                </find-replace>
             </text-change>
          </modify>
@@ -10768,7 +10765,7 @@ each 25 females.</find>
                   <clause xml:id="nbc.divBV2.part9.sect6.subsect1.art1.sent1.clause3" letter="c">
                      <text>skylights as defined in <ref type="internal"
                              target="nbc.divBV2.part9.sect7.subsect1.art1.sent2"
-                             display-type="short"/>,</text>
+                             display-type="medium"/>,</text>
                   </clause>
                   <clause xml:id="nbc.divBV2.part9.sect6.subsect1.art1.sent1.clause4" letter="d">
                      <text>shower or bathtub enclosures, and</text>
@@ -12182,7 +12179,7 @@ shall turn through an angle of</find>
                                 display-type="long"
                                 pretext="Clauses"/> and <ref type="internal"
                                 target="nbc.divBV2.part9.sect9.subsect9.art1.sent2.clause2"
-                                display-type="short"/>.</text>
+                                display-type="medium"/>.</text>
                      </clause>
                   </sentence>
                </article>
@@ -12278,7 +12275,7 @@ shall turn through an angle of</find>
                                 display-type="long"
                                 pretext="Clauses"/> and <ref type="internal"
                                 target="nbc.divBV2.part9.sect9.subsect9.art1.sent2.clause2"
-                                display-type="short"/>.</text>
+                                display-type="medium"/>.</text>
                      </clause>
                   </sentence>
                </article>
@@ -12423,7 +12420,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                              display-type="long"
                              pretext="Clauses"/> and <ref type="internal"
                              target="nbc.divB.part3.sect4.subsect6.art16.sent6.clause7"
-                             display-type="short"/>, and</text>
+                             display-type="medium"/>, and</text>
                   </clause>
                   <clause xml:id="nbc.divBV2.part9.sect9.subsect12.art3.sent1.clause8" letter="h">
                      <text>universal washrooms, universal shower rooms and accessible change spaces required by <ref type="internal"
@@ -12832,7 +12829,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                              target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause1"
                              display-type="long"/> (see also <ref type="internal"
                              target="nbc.divBV2.part9.sect10.subsect3.art1.sent2"
-                             display-type="short"/>),</text>
+                             display-type="medium"/>),</text>
                   </clause>
                   <clause xml:id="nbc.divBV2.part9.sect10.subsect9.art16.sent4.clause2"
                           letter="b">
@@ -12840,7 +12837,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                              target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause2"
                              display-type="long"/> (see also <ref type="internal"
                              target="nbc.divBV2.part9.sect10.subsect3.art1.sent3"
-                             display-type="short"/>),</text>
+                             display-type="medium"/>),</text>
                   </clause>
                   <clause xml:id="nbc.divBV2.part9.sect10.subsect9.art16.sent4.clause3"
                           letter="c">
@@ -12871,7 +12868,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                              target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause1"
                              display-type="long"/> (see also <ref type="internal"
                              target="nbc.divBV2.part9.sect10.subsect3.art1.sent2"
-                             display-type="short"/>),</text>
+                             display-type="medium"/>),</text>
                   </clause>
                   <clause xml:id="nbc.divBV2.part9.sect10.subsect9.art17.sent4.clause2"
                           letter="b">
@@ -12879,7 +12876,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                              target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause2"
                              display-type="long"/> (see also <ref type="internal"
                              target="nbc.divBV2.part9.sect10.subsect3.art1.sent3"
-                             display-type="short"/>),</text>
+                             display-type="medium"/>),</text>
                   </clause>
                   <clause xml:id="nbc.divBV2.part9.sect10.subsect9.art17.sent4.clause3"
                           letter="c">
@@ -13160,7 +13157,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 display-type="long"
                                 pretext="and"/> have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">15 min</measurement> (see also <ref type="internal"
                                 target="nbc.divBV2.part9.sect10.subsect3.art1.sent2"
-                                display-type="short"/>), or</text>
+                                display-type="medium"/>), or</text>
                      </clause>
                      <clause xml:id="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause2"
                              letter="b">
@@ -13177,7 +13174,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 display-type="long"
                                 pretext="and"/> have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">30 min</measurement> (see also <ref type="internal"
                                 target="nbc.divBV2.part9.sect10.subsect3.art1.sent3"
-                                display-type="short"/>).</text>
+                                display-type="medium"/>).</text>
                      </clause>
                   </sentence>
                   <sentence xml:id="nbc.divBV2.part9.sect10.subsect19.art5.sent3" number="3">
@@ -13279,7 +13276,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </clause>
                   <see-also xml:id="nbc.divBV2.part9.sect11.subsect1.art1.sent2.see-also1">(See also <ref type="internal"
                           target="nbc.divBV2.part9.sect10.subsect3.art1.sent2"
-                          display-type="short"/> and Note A-9.11.1.1.(2).)</see-also>
+                          display-type="medium"/> and Note A-9.11.1.1.(2).)</see-also>
                </sentence>
             </new-content>
          </replace>
@@ -14379,9 +14376,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <text>
                         <super>(4)</super> For plywood, OSB, or waferboard panel sheathing, the maximum fastener spacing along intermediate supports shall be 300 mm o.c. For gypsum sheathing, the maximum spacing along intermediate supports shall conform to <ref type="internal"
                              target="nbc.divBV2.part9.sect29.subsect5.art8.sent4"
-                             display-type="short"/> for nails and <ref type="internal"
+                             display-type="medium"/> for nails and <ref type="internal"
                              target="nbc.divBV2.part9.sect29.subsect5.art9.sent4"
-                             display-type="short"/> for screws.</text>
+                             display-type="medium"/> for screws.</text>
                   </note>
                   <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote9">
                      <text>
@@ -14436,7 +14433,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote14">
                      <text>(See <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect13.art2.sent3"
-                             display-type="short"/>.)</text>
+                             display-type="medium"/>.)</text>
                   </note>
                   <sentence xml:id="nbc.divBV2.part9.sect23.subsect3.art5.sent5" number="5">
                      <text>Staples shall not be less than <measurement units="metric">1.6 mm</measurement> in diameter or thickness, with not less than a <measurement units="metric">9.5 mm</measurement> crown driven with the crown parallel to framing.</text>
@@ -14635,7 +14632,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <note xml:id="nbc.divBV2.part9.sect23.subsect6.art1.appnote1">
                      <text>(See <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect13.art2.sent3"
-                             display-type="short"/>.)</text>
+                             display-type="medium"/>.)</text>
                   </note>
                </article>
             </new-content>
@@ -14806,7 +14803,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.fnote2">(2) For <ref type="term" target="br-wl-bnd">braced wall band</ref> spacing of <measurement units="metric">7.6 m</measurement> or less, the minimum number of fasteners is permitted to be divided by 2.</note>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.fnote3">(3) See <ref type="internal"
                                 target="nbc.divBV2.part9.sect23.subsect13.art2.sent3"
-                                display-type="short"/>.</note>
+                                display-type="medium"/>.</note>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.fnote4">(4) Limited to 2 <ref type="term" target="tr">storeys</ref> in <ref type="term" target="bldng-hg">building height</ref>. See <ref type="internal"
                                 target="nbc.divBV2.part9.sect23.subsect11.art4.sent7"
                                 display-type="short"/>.</note>
@@ -15257,7 +15254,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                              display-type="short"
                              pretext="Sentences"/> and <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect13.art10.sent2"
-                             display-type="short"
+                             display-type="medium"
                              pretext="9.23.13.10.(2) to (4)"/> and <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect13.art7"
                              display-type="long"/>, <ref type="term" target="br-wl-pnl">braced wall panels</ref> shall</text>
@@ -15456,7 +15453,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 target="nbc.divBV2.part9.sect23.subsect17"
                                 display-type="long"/> fastened in accordance with <ref type="internal"
                                 target="nbc.divBV2.part9.sect23.subsect3.art5.sent3"
-                                display-type="short"/> and finished on the interior side with gypsum board complying with <ref type="internal"
+                                display-type="medium"/> and finished on the interior side with gypsum board complying with <ref type="internal"
                                 target="nbc.divBV2.part9.sect29.subsect5"
                                 display-type="long"/>, or</text>
                      </clause>
@@ -15466,7 +15463,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                 target="nbc.divBV2.part9.sect29.subsect5"
                                 display-type="long"/> and fastened in accordance with <ref type="internal"
                                 target="nbc.divBV2.part9.sect23.subsect3.art5.sent3"
-                                display-type="short"/>. (See Note A-9.23.13.6.(1).)</text>
+                                display-type="medium"/>. (See Note A-9.23.13.6.(1).)</text>
                      </clause>
                   </sentence>
                   <sentence xml:id="nbc.divBV2.part9.sect23.subsect13.art6.sent2" number="2">
@@ -22455,7 +22452,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divBV2.part9.sect32.subsect3.art2.sent5" number="5">
                      <text>Except as provided in <ref type="internal"
                              target="nbc.divBV2.part9.sect10.subsect9.art6"
-                             display-type="short"/>, ducts penetrating <ref type="term" target="fr-prtn">fire separations</ref> shall be equipped with <ref type="term" target="fr-dmpr">fire dampers</ref> in conformance with <ref type="internal"
+                             display-type="medium"/>, ducts penetrating <ref type="term" target="fr-prtn">fire separations</ref> shall be equipped with <ref type="term" target="fr-dmpr">fire dampers</ref> in conformance with <ref type="internal"
                              target="nbc.divB.part3.sect1.subsect8.art10"
                              display-type="long"/>.</text>
                   </sentence>
@@ -23461,7 +23458,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   </clause>
                   <text> (See also <ref type="internal"
                           target="nbc.divBV2.part9.sect33.subsect5.art3.sent1"
-                          display-type="short"/>.)</text>
+                          display-type="medium"/>.)</text>
                </sentence>
             </new-content>
          </replace>
@@ -23952,9 +23949,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divBV2.part9.sect32.subsect3.art8.sent8" number="8">
                      <text>Except for a supply air system described in <ref type="internal"
                              target="nbc.divBV2.part9.sect32.subsect3.art4.sent2"
-                             display-type="short"/> or <ref type="internal"
+                             display-type="medium"/> or <ref type="internal"
                              target="nbc.divBV2.part9.sect32.subsect3.art4.sent3"
-                             display-type="short"/>, all joints in <ref type="term" target="xht-dct">exhaust ducts</ref>, and in <ref type="term" target="ppl-dct">supply ducts</ref> that conduct conditioned air, shall be sealed against air leakage with</text>
+                             display-type="medium"/>, all joints in <ref type="term" target="xht-dct">exhaust ducts</ref>, and in <ref type="term" target="ppl-dct">supply ducts</ref> that conduct conditioned air, shall be sealed against air leakage with</text>
                      <clause xml:id="nbc.divBV2.part9.sect32.subsect3.art8.sent8.clause1" letter="a">
                         <text>sealants or gaskets made from liquids, mastics or heat-applied materials,</text>
                      </clause>
@@ -24257,10 +24254,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                <sentence xml:id="nbc.divBV2.part9.sect36.subsect1.art3.sent6" number="6">
                   <text>Notwithstanding <ref type="internal"
                           target="nbc.divBV2.part9.sect38.subsect1.art3.sent2"
-                          display-type="short"
+                          display-type="medium"
                           pretext="Sentences"/> and <ref type="internal"
                           target="nbc.divBV2.part9.sect38.subsect1.art3.sent3"
-                          display-type="short"/>, and except for the purpose of modeling the reference <ref type="term" target="bldng">building</ref> for compliance with <ref type="internal"
+                          display-type="medium"/>, and except for the purpose of modeling the reference <ref type="term" target="bldng">building</ref> for compliance with <ref type="internal"
                           target="nbc.divBV2.part9.sect36.subsect5"
                           display-type="long"
                           pretext="Subsections"/> and <ref type="internal"
@@ -32659,7 +32656,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divC.part1.sect2.subsect1.art1.sent1" number="1">
                      <text>Words and phrases used in Division C that are not included in the list of definitions in <ref type="internal"
                              target="nbc.divA.part1.sect4.subsect1.art2"
-                             display-type="short">Article 1.4.1.2.</ref> of Division A shall have the meanings that are commonly assigned to them in the context in which they are used, taking into account the specialized use of terms by the various trades and professions to which the terminology applies.</text>
+                             display-type="medium">Article 1.4.1.2.</ref> of Division A shall have the meanings that are commonly assigned to them in the context in which they are used, taking into account the specialized use of terms by the various trades and professions to which the terminology applies.</text>
                   </sentence>
                   <sentence xml:id="nbc.divC.part1.sect2.subsect1.art1.sent2" number="2">
                      <text>Where objectives and functional statements are referred to in Division C, they shall be the objectives and functional statements described in Parts 2 and 3 of Division A.</text>
@@ -32670,7 +32667,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divC.part1.sect2.subsect1.art1.sent4" number="4">
                      <text>Where alternative solutions are referred to in Division C, they shall be the alternative solutions mentioned in <ref type="internal"
                              target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
-                             display-type="short">Clause 1.2.1.1.(1)(b)</ref> of Division A.</text>
+                             display-type="medium">Clause 1.2.1.1.(1)(b)</ref> of Division A.</text>
                   </sentence>
                </article>
             </new-content>
@@ -32825,7 +32822,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                              target="nbc.divC.part2.appendix.appnote8"
                              display-type="short">Note A-2.2.8.1.(1)</ref>.) (See also <ref type="internal"
                              target="nbc.divBV2.part9.sect36.subsect1.art2.sent1"
-                             display-type="short">Sentence 9.36.1.2.(1)</ref> and Note A-9.36.1.3.(3) of Division B.)</text>
+                             display-type="medium">Sentence 9.36.1.2.(1)</ref> and Note A-9.36.1.3.(3) of Division B.)</text>
                   </sentence>
                </article>
             </new-content>
@@ -32878,7 +32875,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect8.art2.sent5" number="5">
                      <text>The drawings and specifications for the proposed house shall include the GHG Emission Level achieved, as applicable. (See <ref type="internal"
                              target="nbc.divBV2.part9.sect37.subsect1.art2.sent5"
-                             display-type="short">Sentence 9.37.1.2.(5)</ref> of Division B).</text>
+                             display-type="medium">Sentence 9.37.1.2.(5)</ref> of Division B).</text>
                   </sentence>
                </article>
             </new-content>
@@ -32901,7 +32898,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2" number="2">
                      <text>In addition to the drawings and specifications required in <ref type="internal"
                              target="nbc.divC.part2.sect2.subsect8.art2"
-                             display-type="short">Article 2.2.8.2.</ref>, the house performance compliance calculation report shall include</text>
+                             display-type="medium">Article 2.2.8.2.</ref>, the house performance compliance calculation report shall include</text>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause1" letter="a">
                         <text>a project information section containing</text>
                         <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause1.subclause1"
@@ -32932,7 +32929,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause2" letter="b">
                         <text>a summary of the characteristics of the <ref type="term" target="bldng">building</ref> envelope, HVAC system and service water heating system reflecting the information provided in <ref type="internal"
                                 target="nbc.divC.part2.sect2.subsect8.art2"
-                                display-type="short">Article 2.2.8.2.</ref>, including energy sources for the <ref type="term" target="bldng">building</ref>’s systems, as applicable,</text>
+                                display-type="medium">Article 2.2.8.2.</ref>, including energy sources for the <ref type="term" target="bldng">building</ref>’s systems, as applicable,</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause3" letter="c">
                         <text>an energy performance data summary containing</text>
@@ -32969,14 +32966,14 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            <text>
                               <ref type="internal"
                                    target="nbc.divBV2.part9.sect36.subsect6.art3.sent3"
-                                   display-type="short">Sentence 9.36.6.3.(3)</ref> of Division B, or</text>
+                                   display-type="medium">Sentence 9.36.6.3.(3)</ref> of Division B, or</text>
                         </subclause>
                         <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause5.subclause3"
                                    number="3">
                            <text>
                               <ref type="internal"
                                    target="nbc.divBV2.part9.sect36.subsect6.art4.sent2"
-                                   display-type="short">Sentence 9.36.6.4.(2)</ref> of Division B, and</text>
+                                   display-type="medium">Sentence 9.36.6.4.(2)</ref> of Division B, and</text>
                         </subclause>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause6" letter="f">
@@ -33008,7 +33005,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3.clause5" letter="e">
                         <text>for buildings conforming to Steps 3 to 5, the airtightness of the <ref type="term" target="bldng">building</ref> as tested that is accounted for in accordance with <ref type="internal"
                                 target="nbc.divBV2.part9.sect36.subsect6.art4.sent3"
-                                display-type="short">Sentence 9.36.6.4.(3)</ref> of Division B, and derived in accordance with Subsection 9.36.7., recorded in</text>
+                                display-type="medium">Sentence 9.36.6.4.(3)</ref> of Division B, and derived in accordance with Subsection 9.36.7., recorded in</text>
                         <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3.clause5.subclause1"
                                    number="1">
                            <text>air changes per hour at 50 Pa,</text>
@@ -33183,11 +33180,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divC.part2.sect3.subsect1.art1.sent1" number="1">
                      <text>For the purposes of <ref type="internal"
                              target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
-                             display-type="short">Clause 1.2.1.1.(1)(b)</ref> of Division A, on written request by the owner of a <ref type="term" target="bldng">building</ref> or an authorized agent of that owner, the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> shall accept a measure as an alternate solution to an acceptable solution for the <ref type="term" target="bldng">building</ref> if satisfied that</text>
+                             display-type="medium">Clause 1.2.1.1.(1)(b)</ref> of Division A, on written request by the owner of a <ref type="term" target="bldng">building</ref> or an authorized agent of that owner, the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> shall accept a measure as an alternate solution to an acceptable solution for the <ref type="term" target="bldng">building</ref> if satisfied that</text>
                      <clause xml:id="nbc.divC.part2.sect3.subsect1.art1.sent1.clause1" letter="a">
                         <text>the measure will achieve at least the level of performance required by <ref type="internal"
                                 target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
-                                display-type="short">Clause 1.2.1.1.(1)(b)</ref> of Division A, and</text>
+                                display-type="medium">Clause 1.2.1.1.(1)(b)</ref> of Division A, and</text>
                      </clause>
                      <clause xml:id="nbc.divC.part2.sect3.subsect1.art1.sent1.clause2" letter="b">
                         <text>the acceptable solution does not expressly require conformance to a provincial enactment other than the British Columbia <ref type="term" target="bldng">Building</ref> Code.</text>

@@ -24,7 +24,7 @@
                     <article xml:id="nbc.divC.part1.sect2.subsect1.art1" number="1">
                         <title>Non-defined Terms</title>
                         <sentence xml:id="nbc.divC.part1.sect2.subsect1.art1.sent1" number="1">
-                            <text>Words and phrases used in Division C that are not included in the list of definitions in <ref type="internal" target="nbc.divA.part1.sect4.subsect1.art2" display-type="short">Article 1.4.1.2.</ref> of Division A shall have the meanings that are commonly assigned to them in the context in which they are used, taking into account the specialized use of terms by the various trades and professions to which the terminology applies.</text>
+                            <text>Words and phrases used in Division C that are not included in the list of definitions in <ref type="internal" target="nbc.divA.part1.sect4.subsect1.art2" display-type="medium">Article 1.4.1.2.</ref> of Division A shall have the meanings that are commonly assigned to them in the context in which they are used, taking into account the specialized use of terms by the various trades and professions to which the terminology applies.</text>
                         </sentence>
                         <sentence xml:id="nbc.divC.part1.sect2.subsect1.art1.sent2" number="2">
                             <text>Where objectives and functional statements are referred to in Division C, they shall be the objectives and functional statements described in Parts 2 and 3 of Division A.</text>
@@ -33,7 +33,7 @@
                             <text>Where acceptable solutions are referred to in Division C, they shall be the provisions stated in Parts 3 to 10 of Division B.</text>
                         </sentence>
                         <sentence xml:id="nbc.divC.part1.sect2.subsect1.art1.sent4" number="4">
-                            <text>Where alternative solutions are referred to in Division C, they shall be the alternative solutions mentioned in <ref type="internal" target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2" display-type="short">Clause 1.2.1.1.(1)(b)</ref> of Division A.</text>
+                            <text>Where alternative solutions are referred to in Division C, they shall be the alternative solutions mentioned in <ref type="internal" target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2" display-type="medium">Clause 1.2.1.1.(1)(b)</ref> of Division A.</text>
                         </sentence>
                     </article>
                 </new-content>
@@ -165,7 +165,7 @@
                     <article xml:id="nbc.divC.part2.sect2.subsect8.art1" number="1">
                         <title>Application</title>
                         <sentence xml:id="nbc.divC.part2.sect2.subsect8.art1.sent1" number="1">
-                            <text>This Subsection applies only to houses with or without a secondary suite including their common spaces and to buildings containing only dwelling units and common spaces whose total <ref type="term" target="flr-r">floor area</ref> does not exceed 20% of the total <ref type="term" target="flr-r">floor area</ref> of the <ref type="term" target="bldng">building</ref> that are modeled in accordance with Subsection 9.36.5. and 9.37.1 of Division B as applicable .(See <ref type="internal" target="nbc.divC.part2.appendix.appnote8" display-type="short">Note A-2.2.8.1.(1)</ref>.) (See also <ref type="internal" target="nbc.divBV2.part9.sect36.subsect1.art2.sent1" display-type="short">Sentence 9.36.1.2.(1)</ref> and Note A-9.36.1.3.(3) of Division B.)</text>
+                            <text>This Subsection applies only to houses with or without a secondary suite including their common spaces and to buildings containing only dwelling units and common spaces whose total <ref type="term" target="flr-r">floor area</ref> does not exceed 20% of the total <ref type="term" target="flr-r">floor area</ref> of the <ref type="term" target="bldng">building</ref> that are modeled in accordance with Subsection 9.36.5. and 9.37.1 of Division B as applicable .(See <ref type="internal" target="nbc.divC.part2.appendix.appnote8" display-type="short">Note A-2.2.8.1.(1)</ref>.) (See also <ref type="internal" target="nbc.divBV2.part9.sect36.subsect1.art2.sent1" display-type="medium">Sentence 9.36.1.2.(1)</ref> and Note A-9.36.1.3.(3) of Division B.)</text>
                         </sentence>
                     </article>
                 </new-content>
@@ -213,7 +213,7 @@
                             <text>The features of the proposed house that differ from those of the reference house shall be detailed in the specifications required in Sentence (1).</text>
                         </sentence>
                         <sentence xml:id="nbc.divC.part2.sect2.subsect8.art2.sent5" number="5">
-                            <text>The drawings and specifications for the proposed house shall include the GHG Emission Level achieved, as applicable. (See <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art2.sent5" display-type="short">Sentence 9.37.1.2.(5)</ref> of Division B).</text>
+                            <text>The drawings and specifications for the proposed house shall include the GHG Emission Level achieved, as applicable. (See <ref type="internal" target="nbc.divBV2.part9.sect37.subsect1.art2.sent5" display-type="medium">Sentence 9.37.1.2.(5)</ref> of Division B).</text>
                         </sentence>
                     </article>
                 </new-content>
@@ -231,7 +231,7 @@
                             <text>A house performance compliance calculation report shall be provided in accordance with Sentence (2) for each proposed house design.</text>
                         </sentence>
                         <sentence xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2" number="2">
-                            <text>In addition to the drawings and specifications required in <ref type="internal" target="nbc.divC.part2.sect2.subsect8.art2" display-type="short">Article 2.2.8.2.</ref>, the house performance compliance calculation report shall include</text>
+                            <text>In addition to the drawings and specifications required in <ref type="internal" target="nbc.divC.part2.sect2.subsect8.art2" display-type="medium">Article 2.2.8.2.</ref>, the house performance compliance calculation report shall include</text>
                             <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause1" letter="a">
                                 <text>a project information section containing</text>
                                 <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause1.subclause1" number="1">
@@ -254,7 +254,7 @@
                                 </subclause>
                             </clause>
                             <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause2" letter="b">
-                                <text>a summary of the characteristics of the <ref type="term" target="bldng">building</ref> envelope, HVAC system and service water heating system reflecting the information provided in <ref type="internal" target="nbc.divC.part2.sect2.subsect8.art2" display-type="short">Article 2.2.8.2.</ref>, including energy sources for the <ref type="term" target="bldng">building</ref>’s systems, as applicable,</text>
+                                <text>a summary of the characteristics of the <ref type="term" target="bldng">building</ref> envelope, HVAC system and service water heating system reflecting the information provided in <ref type="internal" target="nbc.divC.part2.sect2.subsect8.art2" display-type="medium">Article 2.2.8.2.</ref>, including energy sources for the <ref type="term" target="bldng">building</ref>’s systems, as applicable,</text>
                             </clause>
                             <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause3" letter="c">
                                 <text>an energy performance data summary containing</text>
@@ -280,10 +280,10 @@
                                     <text>Subsection 9.36.5. of Division B,</text>
                                 </subclause>
                                 <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause5.subclause2" number="2">
-                                    <text><ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent3" display-type="short">Sentence 9.36.6.3.(3)</ref> of Division B, or</text>
+                                    <text><ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art3.sent3" display-type="medium">Sentence 9.36.6.3.(3)</ref> of Division B, or</text>
                                 </subclause>
                                 <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause5.subclause3" number="3">
-                                    <text><ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art4.sent2" display-type="short">Sentence 9.36.6.4.(2)</ref> of Division B, and</text>
+                                    <text><ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art4.sent2" display-type="medium">Sentence 9.36.6.4.(2)</ref> of Division B, and</text>
                                 </subclause>
                             </clause>
                             <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent2.clause6" letter="f">
@@ -311,7 +311,7 @@
                                 <text>where applicable, the percent heat loss reduction and percent improvement,</text>
                             </clause>
                             <clause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3.clause5" letter="e">
-                                <text>for buildings conforming to Steps 3 to 5, the airtightness of the <ref type="term" target="bldng">building</ref> as tested that is accounted for in accordance with <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art4.sent3" display-type="short">Sentence 9.36.6.4.(3)</ref> of Division B, and derived in accordance with Subsection 9.36.7., recorded in</text>
+                                <text>for buildings conforming to Steps 3 to 5, the airtightness of the <ref type="term" target="bldng">building</ref> as tested that is accounted for in accordance with <ref type="internal" target="nbc.divBV2.part9.sect36.subsect6.art4.sent3" display-type="medium">Sentence 9.36.6.4.(3)</ref> of Division B, and derived in accordance with Subsection 9.36.7., recorded in</text>
                                 <subclause xml:id="nbc.divC.part2.sect2.subsect8.art3.sent3.clause5.subclause1" number="1">
                                     <text>air changes per hour at 50 Pa,</text>
                                 </subclause>
@@ -436,9 +436,9 @@
                     <article xml:id="nbc.divC.part2.sect3.subsect1.art1" number="1">
                         <title>Application</title>
                         <sentence xml:id="nbc.divC.part2.sect3.subsect1.art1.sent1" number="1">
-                            <text>For the purposes of <ref type="internal" target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2" display-type="short">Clause 1.2.1.1.(1)(b)</ref> of Division A, on written request by the owner of a <ref type="term" target="bldng">building</ref> or an authorized agent of that owner, the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> shall accept a measure as an alternate solution to an acceptable solution for the <ref type="term" target="bldng">building</ref> if satisfied that</text>
+                            <text>For the purposes of <ref type="internal" target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2" display-type="medium">Clause 1.2.1.1.(1)(b)</ref> of Division A, on written request by the owner of a <ref type="term" target="bldng">building</ref> or an authorized agent of that owner, the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> shall accept a measure as an alternate solution to an acceptable solution for the <ref type="term" target="bldng">building</ref> if satisfied that</text>
                             <clause xml:id="nbc.divC.part2.sect3.subsect1.art1.sent1.clause1" letter="a">
-                                <text>the measure will achieve at least the level of performance required by <ref type="internal" target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2" display-type="short">Clause 1.2.1.1.(1)(b)</ref> of Division A, and</text>
+                                <text>the measure will achieve at least the level of performance required by <ref type="internal" target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2" display-type="medium">Clause 1.2.1.1.(1)(b)</ref> of Division A, and</text>
                             </clause>
                             <clause xml:id="nbc.divC.part2.sect3.subsect1.art1.sent1.clause2" letter="b">
                                 <text>the acceptable solution does not expressly require conformance to a provincial enactment other than the British Columbia <ref type="term" target="bldng">Building</ref> Code.</text>

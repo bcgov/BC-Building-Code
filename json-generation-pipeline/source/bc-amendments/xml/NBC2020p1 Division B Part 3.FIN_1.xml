@@ -311,7 +311,7 @@
             <target type="canonical-id" id="nbc.divB.part3.sect2.subsect2.art14.sent2"/>
             <replace preserve-references="true">
                 <new-content source="bc">
-                    <sentence xml:id="nbc.divB.part3.sect2.subsect2.art14.sent2" number="2">                        <text>A rooftop enclosure for elevator machinery, an elevator lobby, or for a <ref type="term" target="rvc-rm">service room</ref>, not more than one <ref type="term" target="tr">storey</ref> high, and that does not serve as part of a <ref type="term" target="mn-f-gr">means of egress</ref> for an <ref type="term" target="ccpnc">occupancy</ref> on a roof in accordance with <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art3.sent4" display-type="short" pretext="Sentences"/> to <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art3.sent6" display-type="short"/>, is not required to have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref>.</text>
+                    <sentence xml:id="nbc.divB.part3.sect2.subsect2.art14.sent2" number="2">                        <text>A rooftop enclosure for elevator machinery, an elevator lobby, or for a <ref type="term" target="rvc-rm">service room</ref>, not more than one <ref type="term" target="tr">storey</ref> high, and that does not serve as part of a <ref type="term" target="mn-f-gr">means of egress</ref> for an <ref type="term" target="ccpnc">occupancy</ref> on a roof in accordance with <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art3.sent4" display-type="medium" pretext="Sentences"/> to <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art3.sent6" display-type="medium"/>, is not required to have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref>.</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -361,7 +361,7 @@
             <replace preserve-references="true">
                 <new-content source="bc">
                     <clause xml:id="nbc.divB.part3.sect2.subsect2.art51.sent1.clause3" letter="c">
-                        <text>it has a height not more than <measurement units="metric">18 m</measurement> measured between the floor of the <ref type="term" target="frt-tr">first storey</ref> and the uppermost floor level, excluding any floor level within a rooftop enclosure that is not considered as a <ref type="term" target="tr">storey</ref> in calculating <ref type="term" target="bldng-hg">building height</ref> in accordance with <ref type="internal" target="nbc.divB.part3.sect2.subsect1.art1.sent1" display-type="short"/>, and</text>
+                        <text>it has a height not more than <measurement units="metric">18 m</measurement> measured between the floor of the <ref type="term" target="frt-tr">first storey</ref> and the uppermost floor level, excluding any floor level within a rooftop enclosure that is not considered as a <ref type="term" target="tr">storey</ref> in calculating <ref type="term" target="bldng-hg">building height</ref> in accordance with <ref type="internal" target="nbc.divB.part3.sect2.subsect1.art1.sent1" display-type="medium"/>, and</text>
                     </clause>
                 </new-content>
             </replace>
@@ -395,7 +395,7 @@
             <replace preserve-references="true">
                 <new-content source="bc">
                     <clause xml:id="nbc.divB.part3.sect2.subsect2.art60.sent1.clause3" letter="c">
-                        <text>it has a height not more than <measurement units="metric">18 m</measurement> measured between the floor of the <ref type="term" target="frt-tr">first storey</ref> and the uppermost floor level, excluding any floor level within a rooftop enclosure that is not considered as a <ref type="term" target="tr">storey</ref> in calculating <ref type="term" target="bldng-hg">building height</ref> in accordance with <ref type="internal" target="nbc.divB.part3.sect2.subsect1.art1.sent1" display-type="short"/>, and</text>
+                        <text>it has a height not more than <measurement units="metric">18 m</measurement> measured between the floor of the <ref type="term" target="frt-tr">first storey</ref> and the uppermost floor level, excluding any floor level within a rooftop enclosure that is not considered as a <ref type="term" target="tr">storey</ref> in calculating <ref type="term" target="bldng-hg">building height</ref> in accordance with <ref type="internal" target="nbc.divB.part3.sect2.subsect1.art1.sent1" display-type="medium"/>, and</text>
                     </clause>
                 </new-content>
             </replace>
@@ -482,7 +482,7 @@
             <replace preserve-references="true">
                 <new-content source="bc">
                     <clause xml:id="nbc.divB.part3.sect2.subsect4.art15.sent1.clause2" letter="b">
-                        <text>except as required by <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art8.sent2" display-type="short"/>, an area on each <ref type="term" target="tr">storey</ref> that is not more than the system area limits as specified in <ref type="standard" target="nfpa13"/></text>
+                        <text>except as required by <ref type="internal" target="nbc.divB.part3.sect2.subsect4.art8.sent2" display-type="medium"/>, an area on each <ref type="term" target="tr">storey</ref> that is not more than the system area limits as specified in <ref type="standard" target="nfpa13"/></text>
                     </clause>
                 </new-content>
             </replace>
@@ -980,7 +980,7 @@
                                 <text>the travel distance measured from any point in the <ref type="term" target="rvc-pc">service space</ref> to a point of egress is more than <measurement units="metric">25 m</measurement>.</text>
                             </clause>
                         </sentence>
-                        <sentence xml:id="nbc.divB.part3.sect3.subsect1.art3.sent11" number="11">                            <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect3.subsect4.art4.sent5" display-type="long" pretext="Sentences"/><ref type="internal" target="nbc.divB.part3.sect3.subsect4.art4.sent6" display-type="short" pretext="and"/>, each <ref type="term" target="t">suite</ref> in a <ref type="term" target="flr-r">floor area</ref> that contains more than one <ref type="term" target="t">suite</ref> shall have</text>
+                        <sentence xml:id="nbc.divB.part3.sect3.subsect1.art3.sent11" number="11">                            <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect3.subsect4.art4.sent5" display-type="long" pretext="Sentences"/><ref type="internal" target="nbc.divB.part3.sect3.subsect4.art4.sent6" display-type="medium" pretext="and"/>, each <ref type="term" target="t">suite</ref> in a <ref type="term" target="flr-r">floor area</ref> that contains more than one <ref type="term" target="t">suite</ref> shall have</text>
                             <clause xml:id="nbc.divB.part3.sect3.subsect1.art3.sent11.clause1" letter="a">
                                 <text>an exterior <ref type="term" target="xt">exit</ref> doorway, or</text>
                             </clause>
@@ -1530,7 +1530,7 @@
             <replace preserve-references="true">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part3.sect4.subsect2.art1.sent5" number="5">
-                        <text><ref type="term" target="xt">Exits</ref> are not required directly from rooftop enclosures that comply with <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art3.sent8" display-type="short" pretext="Sentences"/> and <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art3.sent9" display-type="short"/> or where they are served by <ref type="term" target="mn-f-gr">means of egress</ref> in conformance with Sentences 3.3.1.3.(4) to (5).</text>
+                        <text><ref type="term" target="xt">Exits</ref> are not required directly from rooftop enclosures that comply with <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art3.sent8" display-type="medium" pretext="Sentences"/> and <ref type="internal" target="nbc.divB.part3.sect3.subsect1.art3.sent9" display-type="medium"/> or where they are served by <ref type="term" target="mn-f-gr">means of egress</ref> in conformance with Sentences 3.3.1.3.(4) to (5).</text>
                     </sentence>
                 </new-content>
             </replace>

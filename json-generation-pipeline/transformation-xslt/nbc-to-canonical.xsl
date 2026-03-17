@@ -1434,12 +1434,12 @@
 
   <!-- Fraction display (fd) - wrapper for fractions -->
   <xsl:template match="fd" mode="mathml">
-    <xsl:apply-templates select="*" mode="mathml" />
+    <xsl:apply-templates select="node()" mode="mathml" />
   </xsl:template>
 
   <!-- Fraction line (fl) - numerator or denominator -->
   <xsl:template match="fl" mode="mathml">
-    <xsl:apply-templates select="*" mode="mathml" />
+    <xsl:apply-templates select="node()" mode="mathml" />
   </xsl:template>
 
   <!-- Fraction (fr) with numerator (nu) and denominator (de) -->
@@ -1549,11 +1549,45 @@
     </msup>
   </xsl:template>
 
-  <!-- Grouping (g) -->
+  <!-- Grouping (g) - Greek letter mapping -->
+  <!-- In Arbortext, <g> maps Latin letters to Greek equivalents -->
   <xsl:template match="g" mode="mathml">
-    <mrow>
-      <xsl:apply-templates select="node()" mode="mathml" />
-    </mrow>
+    <xsl:variable name="letter" select="normalize-space(.)" />
+    <mi>
+      <xsl:choose>
+        <xsl:when test="$letter='a'">α</xsl:when>
+        <xsl:when test="$letter='b'">β</xsl:when>
+        <xsl:when test="$letter='g'">γ</xsl:when>
+        <xsl:when test="$letter='d'">δ</xsl:when>
+        <xsl:when test="$letter='e'">ε</xsl:when>
+        <xsl:when test="$letter='f'">φ</xsl:when>
+        <xsl:when test="$letter='h'">η</xsl:when>
+        <xsl:when test="$letter='l'">λ</xsl:when>
+        <xsl:when test="$letter='m'">μ</xsl:when>
+        <xsl:when test="$letter='n'">ν</xsl:when>
+        <xsl:when test="$letter='p'">π</xsl:when>
+        <xsl:when test="$letter='q'">θ</xsl:when>
+        <xsl:when test="$letter='r'">ρ</xsl:when>
+        <xsl:when test="$letter='s'">σ</xsl:when>
+        <xsl:when test="$letter='t'">τ</xsl:when>
+        <xsl:when test="$letter='w'">ω</xsl:when>
+        <xsl:when test="$letter='x'">ξ</xsl:when>
+        <xsl:when test="$letter='y'">ψ</xsl:when>
+        <xsl:when test="$letter='z'">ζ</xsl:when>
+        <xsl:when test="$letter='A'">Α</xsl:when>
+        <xsl:when test="$letter='B'">Β</xsl:when>
+        <xsl:when test="$letter='D'">Δ</xsl:when>
+        <xsl:when test="$letter='F'">Φ</xsl:when>
+        <xsl:when test="$letter='G'">Γ</xsl:when>
+        <xsl:when test="$letter='L'">Λ</xsl:when>
+        <xsl:when test="$letter='P'">Π</xsl:when>
+        <xsl:when test="$letter='S'">Σ</xsl:when>
+        <xsl:when test="$letter='W'">Ω</xsl:when>
+        <xsl:when test="$letter='X'">Ξ</xsl:when>
+        <xsl:when test="$letter='Y'">Ψ</xsl:when>
+        <xsl:otherwise><xsl:value-of select="$letter" /></xsl:otherwise>
+      </xsl:choose>
+    </mi>
   </xsl:template>
 
   <!-- Fence (fen) - parentheses, brackets, etc. -->

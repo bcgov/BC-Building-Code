@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-14T22:40:12.1095473-07:00"
+            generated="2026-03-16T22:35:24.0384288-07:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -770,7 +770,7 @@
                                          pretext="Sentences"/>
                                     <ref type="internal"
                                          target="nbc.divB.part3.sect1.subsect5.art1.sent4"
-                                         display-type="short"
+                                         display-type="medium"
                                          pretext="to"/>, or</text>
                               </clause>
                               <clause xml:id="nbc.divB.part3.sect1.subsect6.art4.sent2.clause5" letter="e">
@@ -1361,15 +1361,15 @@
                                    pretext="Sentences"/>
                               <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent4"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext=","/>
                               <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent7"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext=","/>
                               <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent8"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext=" and"/>, <ref type="term" target="cmbtbl">combustible</ref> interior wall
                     finishes, other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be
                     of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>, provided they have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 150 on any exposed surface, or any surface that would
@@ -1415,15 +1415,15 @@
                                    pretext=" and"/>
                               <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent6"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext=","/>
                               <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent7"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext=","/>
                               <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect6.art4.sent8"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext=" and"/>, <ref type="term" target="cmbtbl">combustible</ref> interior ceiling finishes,
                     other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of
                     a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>,
@@ -1470,7 +1470,7 @@
                                    pretext="Articles"/>
                               <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art93"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext="to"/> for mixed types of construction, all loadbearing walls, columns and arches in the <ref type="term" target="tr">storey</ref> immediately below a floor or roof assembly required to have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than that required for the supported floor or roof assembly.</text>
                         </content>
                         <change-summary>Changed reference from 3.2.2.92 to 3.2.2.93</change-summary>
@@ -1637,7 +1637,7 @@
                                    pretext="Articles"/>
                               <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art93"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext="to"/> for a floor assembly, but not less than <measurement units="metric">45 min</measurement>.</text>
                         </content>
                         <change-summary>Repealed and substituted with updated references including 3.2.2.93.(3) and extended article range to 3.2.2.93</change-summary>
@@ -1675,7 +1675,7 @@
                                    pretext="Articles"/>
                               <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect2.art93"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext="to"/>.</text>
                         </content>
                         <change-summary>Changed reference from 3.2.2.92 to 3.2.2.93</change-summary>
@@ -1739,7 +1739,7 @@
                                       pretext="and"/>
                                  <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art93.sent7"
-                                      display-type="short"
+                                      display-type="medium"
                                       pretext="to"/>, in a <ref type="term" target="bldng">building</ref> containing more than one <ref type="term" target="mjr-ccpn">major occupancy</ref>, the requirements of this Subsection for the most restricted <ref type="term" target="mjr-ccpn">major occupancy</ref> contained shall apply to the whole <ref type="term" target="bldng">building</ref>.</text>
                            </sentence>
                            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art6.sent2" number="2">
@@ -1823,7 +1823,7 @@
                                       pretext="and"/>
                                  <ref type="internal"
                                       target="nbc.divB.part3.sect2.subsect2.art93.sent7"
-                                      display-type="short"
+                                      display-type="medium"
                                       pretext="to"/>, in a <ref type="term" target="bldng">building</ref> in which one <ref type="term" target="mjr-ccpn">major occupancy</ref> is located entirely above another <ref type="term" target="mjr-ccpn">major occupancy</ref>, the requirements in this Subsection for each portion of the <ref type="term" target="bldng">building</ref> containing a <ref type="term" target="mjr-ccpn">major occupancy</ref> shall apply to that portion as if the entire <ref type="term" target="bldng">building</ref> were of that <ref type="term" target="mjr-ccpn">major occupancy</ref>.</text>
                            </sentence>
                            <sentence xml:id="nbc.divB.part3.sect2.subsect2.art7.sent2" number="2">
@@ -4576,7 +4576,7 @@
                                    target="nbc.divB.part3.sect2.subsect10"
                                    display-type="long"/> and except as permitted by this Section and by <ref type="internal"
                                    target="nbc.divB.part3.sect4.subsect2.art1.sent2"
-                                   display-type="short"/>, at the point where a doorway referred to in <ref type="internal"
+                                   display-type="medium"/>, at the point where a doorway referred to in <ref type="internal"
                                    target="nbc.divB.part3.sect3.subsect1.art3.sent11"
                                    display-type="short"/> opens onto a <ref type="term" target="pblc-crr">public corridor</ref> or exterior passageway, it shall be possible to go in opposite directions to each of 2 separate <ref type="term" target="xt">exits</ref>.</text>
                         </content>
@@ -5853,7 +5853,7 @@
                                       pretext="Articles"/>
                                  <ref type="internal"
                                       target="nbc.divB.part3.sect8.subsect2.art3"
-                                      display-type="short"
+                                      display-type="medium"
                                       pretext=" and"/>, and</text>
                            </clause>
                            <clause xml:id="nbc.divB.part3.sect8.subsect5.art1.sent1.clause2" letter="b">
@@ -6469,7 +6469,7 @@
                         <content>
                            <text>For the purpose of compliance with this Code as required in <ref type="internal"
                                    target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
-                                   display-type="short"/>, the objectives and functional statements attributed to the acceptable solutions in Division B shall be the objectives and functional statements identified in <ref type="internal" target="nbc.divB.part2.sect5" pretext="Sections"/>
+                                   display-type="medium"/>, the objectives and functional statements attributed to the acceptable solutions in Division B shall be the objectives and functional statements identified in <ref type="internal" target="nbc.divB.part2.sect5" pretext="Sections"/>
                               <ref type="internal" target="nbc.divB.part3.sect9" pretext=","/>
                               <ref type="internal" target="nbc.divB.part4.sect5" pretext=","/>
                               <ref type="internal" target="nbc.divB.part5.sect10" pretext=","/>
@@ -7776,7 +7776,7 @@
                                    target="nbc.divB.part3.sect1.subsect5.art5"
                                    display-type="long"/> of Appendix D is deemed to satisfy the criteria of <ref type="internal"
                                    target="nbc.divB.part3.sect1.subsect5.art5"
-                                   display-type="short"/>.</text>
+                                   display-type="medium"/>.</text>
                         </content>
                         <change-summary>Struck out "meets the requirements of Clause 3.1.6.9.(2)(d)" and substituted "satisfies the criteria of Clause 3.1.5.5.(1)(b)"</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -7933,11 +7933,11 @@
                         <content>
                            <text>Notwithstanding the permissions in <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect5.art12.sent2"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext="Sentences"/>
                               <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect5.art12.sent4"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext="to"/> and as required by <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect10.art2.sent2"
                                    display-type="short"
@@ -9959,11 +9959,11 @@ Spaces within Buildings
                         <content>
                            <text>Where <ref type="term" target="bldng">buildings</ref> are sprinklered in accordance with <ref type="internal"
                                    target="nbc.divBV2.part9.sect32.subsect3.art1.sent1"
-                                   display-type="short"/>, the sprinkler system shall be designed, constructed, installed and tested in accordance with <ref type="internal"
+                                   display-type="medium"/>, the sprinkler system shall be designed, constructed, installed and tested in accordance with <ref type="internal"
                                    target="nbc.divB.part3.sect2.subsect5.art12.sent1"
                                    display-type="long"/>, except that the maximum distance between sprinklers shall be in accordance with <ref type="internal"
                                    target="nbc.divBV2.part9.sect10.subsect9.art9.sent6"
-                                   display-type="short"/>.</text>
+                                   display-type="medium"/>.</text>
                         </content>
                         <change-summary>Struck out 'Sentence 9.10.9.6.(14)' and substituted 'Sentence 9.10.9.9.(6)'</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -10297,7 +10297,7 @@ Spaces within Buildings
                                    display-type="long"/>
                               <ref type="internal"
                                    target="nbc.divBV2.part9.sect36.subsect6.art5"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext=" or"/>, as applicable. (See <ref type="internal"
                                    target="nbc.divBV2.part9.appendix.appnote214"
                                    display-type="short"/>.)</text>
@@ -10338,7 +10338,7 @@ Spaces within Buildings
                                    display-type="long"/>
                               <ref type="internal"
                                    target="nbc.divBV2.part9.sect36.subsect6.art5"
-                                   display-type="short"
+                                   display-type="medium"
                                    pretext=" or"/>, as applicable. (See <ref type="internal"
                                    target="nbc.divBV2.part9.appendix.appnote214"
                                    display-type="short"/>.)</text>

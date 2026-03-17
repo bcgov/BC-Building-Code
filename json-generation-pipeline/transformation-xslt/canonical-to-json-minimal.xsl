@@ -236,20 +236,10 @@
                 </fn:array>
             </xsl:if>
             
-            <!-- Extract definition lists from text element -->
-            <xsl:if test="text//list[@type='definition']">
-                <fn:array key="definitions">
-                    <xsl:for-each select="text//list[@type='definition']/item">
-                        <fn:map>
-                            <xsl:if test="@xml:id">
-                                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
-                            </xsl:if>
-                            <fn:string key="term"><xsl:apply-templates select="term" mode="text"/></fn:string>
-                            <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich"/></fn:string>
-                        </fn:map>
-                    </xsl:for-each>
-                </fn:array>
-            </xsl:if>
+            <!-- Extract all lists from text element -->
+            <xsl:call-template name="extract-lists">
+                <xsl:with-param name="content-root" select="text"/>
+            </xsl:call-template>
             
             <xsl:if test="clause">
                 <fn:array key="clauses">
@@ -280,6 +270,19 @@
             <fn:string key="type">clause</fn:string>
             <fn:string key="letter"><xsl:value-of select="@letter"/></fn:string>
             <fn:string key="text"><xsl:apply-templates select="text" mode="rich"/></fn:string>
+            
+            <!-- Extract equations from text element -->
+            <xsl:if test="text//equation">
+                <fn:array key="equations">
+                    <xsl:apply-templates select="text//equation" mode="equation-json"/>
+                </fn:array>
+            </xsl:if>
+            
+            <!-- Extract all lists from text element -->
+            <xsl:call-template name="extract-lists">
+                <xsl:with-param name="content-root" select="text"/>
+            </xsl:call-template>
+            
             <xsl:if test="subclause">
                 <fn:array key="subclauses">
                     <xsl:apply-templates select="subclause[position() &lt;= 2]" mode="json"/>
@@ -294,6 +297,18 @@
             <fn:string key="type">subclause</fn:string>
             <xsl:if test="@number"><fn:number key="number"><xsl:value-of select="@number"/></fn:number></xsl:if>
             <fn:string key="text"><xsl:apply-templates select="text" mode="rich"/></fn:string>
+            
+            <!-- Extract equations from text element -->
+            <xsl:if test="text//equation">
+                <fn:array key="equations">
+                    <xsl:apply-templates select="text//equation" mode="equation-json"/>
+                </fn:array>
+            </xsl:if>
+            
+            <!-- Extract all lists from text element -->
+            <xsl:call-template name="extract-lists">
+                <xsl:with-param name="content-root" select="text"/>
+            </xsl:call-template>
         </fn:map>
     </xsl:template>
 
@@ -317,6 +332,13 @@
                 </fn:array>
                 <fn:number key="total_rows"><xsl:value-of select="count(tgroup/tbody/row)"/></fn:number>
             </fn:map>
+            
+            <!-- Extract equations from table -->
+            <xsl:if test=".//equation">
+                <fn:array key="equations">
+                    <xsl:apply-templates select=".//equation" mode="equation-json"/>
+                </fn:array>
+            </xsl:if>
         </fn:map>
     </xsl:template>
 
@@ -379,6 +401,18 @@
                         <fn:map>
                             <xsl:if test="@xml:id"><fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string></xsl:if>
                             <fn:string key="content"><xsl:apply-templates select="." mode="rich"/></fn:string>
+                            
+                            <!-- Extract equations from paragraph -->
+                            <xsl:if test=".//equation">
+                                <fn:array key="equations">
+                                    <xsl:apply-templates select=".//equation" mode="equation-json"/>
+                                </fn:array>
+                            </xsl:if>
+                            
+                            <!-- Extract all lists from paragraph -->
+                            <xsl:call-template name="extract-lists">
+                                <xsl:with-param name="content-root" select="."/>
+                            </xsl:call-template>
                         </fn:map>
                     </xsl:for-each>
                 </fn:array>
@@ -401,6 +435,18 @@
                     <xsl:for-each select="paragraph[position() &lt;= 2]">
                         <fn:map>
                             <fn:string key="content"><xsl:apply-templates select="." mode="rich"/></fn:string>
+                            
+                            <!-- Extract equations from paragraph -->
+                            <xsl:if test=".//equation">
+                                <fn:array key="equations">
+                                    <xsl:apply-templates select=".//equation" mode="equation-json"/>
+                                </fn:array>
+                            </xsl:if>
+                            
+                            <!-- Extract all lists from paragraph -->
+                            <xsl:call-template name="extract-lists">
+                                <xsl:with-param name="content-root" select="."/>
+                            </xsl:call-template>
                         </fn:map>
                     </xsl:for-each>
                 </fn:array>
@@ -488,9 +534,11 @@
     <xsl:template match="super" mode="rich">^{<xsl:value-of select="."/>}</xsl:template>
     <xsl:template match="sub" mode="rich">_{<xsl:value-of select="."/>}</xsl:template>
     
-    <!-- Skip definition lists in rich mode - they're extracted separately -->
-    <xsl:template match="list[@type='definition']" mode="rich" priority="2">
-        <!-- Output nothing - definition lists are extracted as structured data -->
+    <!-- Skip all list types in rich mode - they're extracted as structured data -->
+    <xsl:template match="list" mode="rich" priority="2">
+        <xsl:text>[LIST:</xsl:text>
+        <xsl:value-of select="@type"/>
+        <xsl:text>]</xsl:text>
     </xsl:template>
     
     <xsl:template match="revision-history" mode="rich">
@@ -729,5 +777,58 @@
             <fn:array key="types"><fn:string>amendment</fn:string><fn:string>errata</fn:string><fn:string>policy</fn:string><fn:string>accessibility</fn:string><fn:string>correction</fn:string></fn:array>
             <fn:array key="status"><fn:string>current</fn:string><fn:string>superseded</fn:string></fn:array>
         </fn:map>
+    </xsl:template>
+    
+    <!-- ================================================================== -->
+    <!-- GENERIC LIST EXTRACTION                                            -->
+    <!-- Extracts all list types as a unified "lists" array                 -->
+    <!-- ================================================================== -->
+    
+    <xsl:template name="extract-lists">
+        <xsl:param name="content-root"/>
+        <xsl:if test="$content-root//list">
+            <fn:array key="lists">
+                <xsl:for-each select="$content-root//list">
+                    <fn:map>
+                        <fn:string key="type"><xsl:value-of select="@type"/></fn:string>
+                        <fn:array key="items">
+                            <xsl:for-each select="item">
+                                <fn:map>
+                                    <xsl:if test="@xml:id">
+                                        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                    </xsl:if>
+                                    <xsl:choose>
+                                        <xsl:when test="parent::list/@type = 'variable'">
+                                            <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich"/></fn:string>
+                                            <fn:string key="description"><xsl:apply-templates select="description" mode="rich"/></fn:string>
+                                        </xsl:when>
+                                        <xsl:when test="parent::list/@type = 'definition'">
+                                            <fn:string key="term"><xsl:apply-templates select="term" mode="text"/></fn:string>
+                                            <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich"/></fn:string>
+                                        </xsl:when>
+                                        <xsl:when test="parent::list/@type = 'organization'">
+                                            <fn:string key="abbreviation"><xsl:apply-templates select="organization" mode="text"/></fn:string>
+                                            <xsl:variable name="name-text">
+                                                <xsl:for-each select="address/text()[following-sibling::ref[@type='external']]">
+                                                    <xsl:value-of select="."/>
+                                                </xsl:for-each>
+                                            </xsl:variable>
+                                            <xsl:variable name="trimmed-name" select="normalize-space(replace($name-text, '\s*\($', ''))"/>
+                                            <fn:string key="fullName"><xsl:value-of select="$trimmed-name"/></fn:string>
+                                            <xsl:if test="address//ref[@type='external']">
+                                                <fn:string key="website"><xsl:value-of select="address//ref[@type='external']/@target"/></fn:string>
+                                            </xsl:if>
+                                        </xsl:when>
+                                        <xsl:otherwise>
+                                            <fn:string key="content"><xsl:apply-templates select="." mode="rich"/></fn:string>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
+                                </fn:map>
+                            </xsl:for-each>
+                        </fn:array>
+                    </fn:map>
+                </xsl:for-each>
+            </fn:array>
+        </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

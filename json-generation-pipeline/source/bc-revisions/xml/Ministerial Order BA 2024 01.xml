@@ -517,7 +517,7 @@
                     </clause>
                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art4.sent2.clause4" letter="d">
                       <text>materials that conform to <ref type="internal" target="nbc.divB.part3.sect1.subsect5.art1.sent2" display-type="long" pretext="Sentences"/>
-                        <ref type="internal" target="nbc.divB.part3.sect1.subsect5.art1.sent4" display-type="short" pretext="to"/>, or</text>
+                        <ref type="internal" target="nbc.divB.part3.sect1.subsect5.art1.sent4" display-type="medium" pretext="to"/>, or</text>
                     </clause>
                     <clause xml:id="nbc.divB.part3.sect1.subsect6.art4.sent2.clause5" letter="e">
                       <text>any combination of the materials listed in <ref type="internal" target="nbc.divB.part3.sect1.subsect6.art4.sent2.clause1" display-type="short" pretext="Clauses"/>
@@ -839,15 +839,15 @@
                                                      pretext="Sentences"/>
                     <ref type="internal"
                          target="nbc.divB.part3.sect1.subsect6.art4.sent4"
-                         display-type="short"
+                         display-type="medium"
                          pretext=","/>
                     <ref type="internal"
                          target="nbc.divB.part3.sect1.subsect6.art4.sent7"
-                         display-type="short"
+                         display-type="medium"
                          pretext=","/>
                     <ref type="internal"
                          target="nbc.divB.part3.sect1.subsect6.art4.sent8"
-                         display-type="short"
+                         display-type="medium"
                          pretext=" and"/>, <ref type="term" target="cmbtbl">combustible</ref> interior wall
                     finishes, other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of a <ref type="term" target="bldng">building</ref> permitted to be
                     of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>, provided they have a <ref type="term" target="flm-prd-">flame-spread rating</ref> not more than 150 on any exposed surface, or any surface that would
@@ -887,15 +887,15 @@
                          pretext=" and"/>
                     <ref type="internal"
                          target="nbc.divB.part3.sect1.subsect6.art4.sent6"
-                         display-type="short"
+                         display-type="medium"
                          pretext=","/>
                     <ref type="internal"
                          target="nbc.divB.part3.sect1.subsect6.art4.sent7"
-                         display-type="short"
+                         display-type="medium"
                          pretext=","/>
                     <ref type="internal"
                          target="nbc.divB.part3.sect1.subsect6.art4.sent8"
-                         display-type="short"
+                         display-type="medium"
                          pretext=" and"/>, <ref type="term" target="cmbtbl">combustible</ref> interior ceiling finishes,
                     other than foamed plastics, that are not more than <measurement units="metric">25 mm thick</measurement> are permitted in a <ref type="term" target="bldng">building</ref> or part of
                     a <ref type="term" target="bldng">building</ref> permitted to be of <ref type="term" target="ncps-mt-nstr">encapsulated mass timber construction</ref>,
@@ -929,7 +929,7 @@
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-011" status="current">
                 <content>
-                  <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect1.subsect7.art5.sent2" display-type="short"/> and by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="short" pretext="to"/> for mixed types of construction, all loadbearing walls, columns and arches in the <ref type="term" target="tr">storey</ref> immediately below a floor or roof assembly required to have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than that required for the supported floor or roof assembly.</text>
+                  <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect1.subsect7.art5.sent2" display-type="short"/> and by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="medium" pretext="to"/> for mixed types of construction, all loadbearing walls, columns and arches in the <ref type="term" target="tr">storey</ref> immediately below a floor or roof assembly required to have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> shall have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than that required for the supported floor or roof assembly.</text>
                 </content>
                 <change-summary>Changed reference from 3.2.2.92 to 3.2.2.93</change-summary>
                 <note>Ministerial Order BA 2024 01</note>
@@ -1013,7 +1013,7 @@
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-014" status="current">
                 <content>
-                  <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art47.sent3" display-type="long" pretext="Sentence"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art48.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art49.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art50.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art51.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art52.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art53.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art54.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art55.sent3" display-type="number"/> or <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent3" display-type="number"/>, a floor assembly immediately above a <ref type="term" target="bmnt">basement</ref> shall be constructed as a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> conforming to the requirements of <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="short" pretext="to"/> for a floor assembly, but not less than <measurement units="metric">45 min</measurement>.</text>
+                  <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art47.sent3" display-type="long" pretext="Sentence"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art48.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art49.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art50.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art51.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art52.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art53.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art54.sent3" display-type="number"/>, <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art55.sent3" display-type="number"/> or <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent3" display-type="number"/>, a floor assembly immediately above a <ref type="term" target="bmnt">basement</ref> shall be constructed as a <ref type="term" target="fr-prtn">fire separation</ref> having a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> conforming to the requirements of <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="medium" pretext="to"/> for a floor assembly, but not less than <measurement units="metric">45 min</measurement>.</text>
                 </content>
                 <change-summary>Repealed and substituted with updated references including 3.2.2.93.(3) and extended article range to 3.2.2.93</change-summary>
                 <note>Ministerial Order BA 2024 01</note>
@@ -1039,7 +1039,7 @@
               
               <revision seq="1" type="amendment" effective-date="2024-04-05" id="bc-mo-2024-01-015" status="current">
                 <content>
-                  <text>The floor assembly of a <ref type="term" target="mzznn">mezzanine</ref> that is required to be considered as a <ref type="term" target="tr">storey</ref> in calculating the <ref type="term" target="bldng-hght">building height</ref> shall be constructed in conformance with the <ref type="term" target="fr-prtn">fire separation</ref> requirements for floor assemblies stated in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="short" pretext="to"/>.</text>
+                  <text>The floor assembly of a <ref type="term" target="mzznn">mezzanine</ref> that is required to be considered as a <ref type="term" target="tr">storey</ref> in calculating the <ref type="term" target="bldng-hght">building height</ref> shall be constructed in conformance with the <ref type="term" target="fr-prtn">fire separation</ref> requirements for floor assemblies stated in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art20" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93" display-type="medium" pretext="to"/>.</text>
                 </content>
                 <change-summary>Changed reference from 3.2.2.92 to 3.2.2.93</change-summary>
                 <note>Ministerial Order BA 2024 01</note>
@@ -1069,7 +1069,7 @@
                 <content>
                   <title>Multiple Major Occupancies</title>
                   <sentence xml:id="nbc.divB.part3.sect2.subsect2.art6.sent1" number="1">
-                    <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art7" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art8" display-type="long" pretext="and"/>, and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art48.sent4" display-type="long" pretext="Sentences"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art51.sent5" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art57.sent3" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art60.sent4" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent5" display-type="number" pretext="and"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent7" display-type="short" pretext="to"/>, in a <ref type="term" target="bldng">building</ref> containing more than one <ref type="term" target="mjr-ccpn">major occupancy</ref>, the requirements of this Subsection for the most restricted <ref type="term" target="mjr-ccpn">major occupancy</ref> contained shall apply to the whole <ref type="term" target="bldng">building</ref>.</text>
+                    <text>Except as permitted by <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art7" display-type="long" pretext="Articles"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art8" display-type="long" pretext="and"/>, and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art48.sent4" display-type="long" pretext="Sentences"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art51.sent5" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art57.sent3" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art60.sent4" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent5" display-type="number" pretext="and"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent7" display-type="medium" pretext="to"/>, in a <ref type="term" target="bldng">building</ref> containing more than one <ref type="term" target="mjr-ccpn">major occupancy</ref>, the requirements of this Subsection for the most restricted <ref type="term" target="mjr-ccpn">major occupancy</ref> contained shall apply to the whole <ref type="term" target="bldng">building</ref>.</text>
                   </sentence>
                   
                   <sentence xml:id="nbc.divB.part3.sect2.subsect2.art6.sent2" number="2">
@@ -1104,7 +1104,7 @@
                 <content>
                   <title>Superimposed Major Occupancies</title>
                   <sentence xml:id="nbc.divB.part3.sect2.subsect2.art7.sent1" number="1">
-                    <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art8" display-type="long" pretext="Article"/> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art18.sent2" display-type="long" pretext="Sentences"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art48.sent4" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art51.sent5" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art57.sent3" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art60.sent4" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent5" display-type="number" pretext="and"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent7" display-type="short" pretext="to"/>, in a <ref type="term" target="bldng">building</ref> in which one <ref type="term" target="mjr-ccpn">major occupancy</ref> is located entirely above another <ref type="term" target="mjr-ccpn">major occupancy</ref>, the requirements in this Subsection for each portion of the <ref type="term" target="bldng">building</ref> containing a <ref type="term" target="mjr-ccpn">major occupancy</ref> shall apply to that portion as if the entire <ref type="term" target="bldng">building</ref> were of that <ref type="term" target="mjr-ccpn">major occupancy</ref>.</text>
+                    <text>Except as provided in <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art8" display-type="long" pretext="Article"/> and <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art18.sent2" display-type="long" pretext="Sentences"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art48.sent4" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art51.sent5" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art57.sent3" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art60.sent4" display-type="number" pretext=","/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent5" display-type="number" pretext="and"/> <ref type="internal" target="nbc.divB.part3.sect2.subsect2.art93.sent7" display-type="medium" pretext="to"/>, in a <ref type="term" target="bldng">building</ref> in which one <ref type="term" target="mjr-ccpn">major occupancy</ref> is located entirely above another <ref type="term" target="mjr-ccpn">major occupancy</ref>, the requirements in this Subsection for each portion of the <ref type="term" target="bldng">building</ref> containing a <ref type="term" target="mjr-ccpn">major occupancy</ref> shall apply to that portion as if the entire <ref type="term" target="bldng">building</ref> were of that <ref type="term" target="mjr-ccpn">major occupancy</ref>.</text>
                   </sentence>
                   
                   <sentence xml:id="nbc.divB.part3.sect2.subsect2.art7.sent2" number="2">

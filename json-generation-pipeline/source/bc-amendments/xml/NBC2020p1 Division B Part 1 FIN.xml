@@ -32,7 +32,7 @@
                     <sentence xml:id="nbc.divB.part1.sect1.subsect2.art1.sent1" number="1">
                         <text>For the purpose of compliance with this Code as required in 
                             <ref type="internal" target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2" 
-                                 display-type="short"/>, the objectives and functional statements
+                                 display-type="medium"/>, the objectives and functional statements
                             attributed to the acceptable solutions in Division B shall be the
                             objectives and functional statements identified in 
                             <ref type="internal" target="nbc.divB.part2.sect5" pretext="Sections"/>
@@ -55,24 +55,20 @@
         <!-- Amendment 2: Add reference to BC seismic requirements              -->
         <!-- ================================================================== -->
         
-        <amendment id="bc-002" sequence="2"
-                   description="Add reference to Sentence 9.7.4.3.(2) for climatic and seismic values">
+        <amendment id="bc-002" sequence="2" description="Add reference to Sentence 9.7.4.3.(2) for climatic and seismic values">
             <target type="canonical-id" id="nbc.divB.part1.sect1.subsect3.art1.sent1"/>
             <replace>
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part1.sect1.subsect3.art1.sent1" number="1">
-                        <text>
-                            <bc-change type="bc-insert" amendment-id="bc-002">Except as provided
-                                in <ref type="internal" target="nbc.divB.part1.sect1.subsect3.art1.sent3" pretext="Sentences" display-type="short"/>
-                                <ref type="internal" target="nbc.divB.part1.sect1.subsect3.art1.sent2" pretext=" and" display-type="short"/> 
-                                and as required by <ref type="internal" target="nbc.divBV2.part9.sect7.subsect4.art3.sent2" pretext="Sentence" display-type="short"/>, the</bc-change> 
-                            climatic and seismic values required for the design of 
-                            <ref type="term" target="bldng">buildings</ref> under this Code shall be in conformance with the
-                            values established by the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref>.
-                        </text>
-                    </sentence>
-                </new-content>
-            </replace>
+                        <text>Except as provided in <ref type="internal" target="nbc.divB.part1.sect1.subsect3.art1.sent2" pretext="Sentences" display-type="short"/>
+                        <ref type="internal" target="nbc.divB.part1.sect1.subsect3.art1.sent4" pretext=" and" display-type="short"/> and as required by <ref type="internal" target="nbc.divBV2.part9.sect7.subsect4.art3.sent2" pretext="Sentence" display-type="medium"/>, the
+                                    climatic and seismic values required for the design of 
+                    <ref type="term" target="bldng">buildings</ref> under this Code shall be in conformance with the
+                                    values established by the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref>.
+                </text>
+            </sentence>
+        </new-content>
+        </replace>
         </amendment>
         
         <!-- ================================================================== -->
@@ -89,7 +85,7 @@
                 <new-content source="bc">
                     <sentence xml:id="nbc.divB.part1.sect1.subsect3.art1.sent5" number="5">
                         <text>The outside summer design temperatures determined from 
-                            <ref type="internal" target="nbc.example.ex000108"/> shall be those listed for the July 2.5% dry values.
+                            <ref type="internal" target="nbc.divB.appendixC"/> shall be those listed for the July 2.5% dry values.
                         </text>
                     </sentence>
                 </new-content>

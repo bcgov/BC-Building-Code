@@ -307,7 +307,7 @@
                             <text>windows,</text>
                         </clause>
                         <clause xml:id="nbc.divBV2.part9.sect6.subsect1.art1.sent1.clause3" letter="c">
-                            <text>skylights as defined in <ref type="internal" target="nbc.divBV2.part9.sect7.subsect1.art1.sent2" display-type="short"/>,</text>
+                            <text>skylights as defined in <ref type="internal" target="nbc.divBV2.part9.sect7.subsect1.art1.sent2" display-type="medium"/>,</text>
                         </clause>
                         <clause xml:id="nbc.divBV2.part9.sect6.subsect1.art1.sent1.clause4" letter="d">
                             <text>shower or bathtub enclosures, and</text>
@@ -1774,7 +1774,7 @@ shall turn through an angle of</find>
                                 <text>a balcony, or</text>
                             </clause>
                             <clause xml:id="nbc.divBV2.part9.sect9.subsect9.art2.sent2.clause2" letter="b">
-                                <text>an openable window conforming to <ref type="internal" target="nbc.divBV2.part9.sect9.subsect9.art1.sent2.clause1" display-type="long" pretext="Clauses"/> and <ref type="internal" target="nbc.divBV2.part9.sect9.subsect9.art1.sent2.clause2" display-type="short"/>.</text>
+                                <text>an openable window conforming to <ref type="internal" target="nbc.divBV2.part9.sect9.subsect9.art1.sent2.clause1" display-type="long" pretext="Clauses"/> and <ref type="internal" target="nbc.divBV2.part9.sect9.subsect9.art1.sent2.clause2" display-type="medium"/>.</text>
                             </clause>
                         </sentence>
                     </article>
@@ -1851,7 +1851,7 @@ shall turn through an angle of</find>
                                 <text>a balcony, or</text>
                             </clause>
                             <clause xml:id="nbc.divBV2.part9.sect9.subsect9.art3.sent3.clause2" letter="b">
-                                <text>an openable window conforming to <ref type="internal" target="nbc.divBV2.part9.sect9.subsect9.art1.sent2.clause1" display-type="long" pretext="Clauses"/> and <ref type="internal" target="nbc.divBV2.part9.sect9.subsect9.art1.sent2.clause2" display-type="short"/>.</text>
+                                <text>an openable window conforming to <ref type="internal" target="nbc.divBV2.part9.sect9.subsect9.art1.sent2.clause1" display-type="long" pretext="Clauses"/> and <ref type="internal" target="nbc.divBV2.part9.sect9.subsect9.art1.sent2.clause2" display-type="medium"/>.</text>
                             </clause>
                         </sentence>
                     </article>
@@ -1999,7 +1999,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                             <text>public washrooms that are equipped to serve more than one person at a time,</text>
                         </clause>
                         <clause xml:id="nbc.divBV2.part9.sect9.subsect12.art3.sent1.clause7" letter="g">
-                            <text>locations where doors are equipped with an electromagnetic lock as described in <ref type="internal" target="nbc.divB.part3.sect4.subsect6.art16.sent5.clause11" display-type="long" pretext="Clauses"/> and <ref type="internal" target="nbc.divB.part3.sect4.subsect6.art16.sent6.clause7" display-type="short"/>, and</text>
+                            <text>locations where doors are equipped with an electromagnetic lock as described in <ref type="internal" target="nbc.divB.part3.sect4.subsect6.art16.sent5.clause11" display-type="long" pretext="Clauses"/> and <ref type="internal" target="nbc.divB.part3.sect4.subsect6.art16.sent6.clause7" display-type="medium"/>, and</text>
                         </clause>
                         <clause xml:id="nbc.divBV2.part9.sect9.subsect12.art3.sent1.clause8" letter="h">
                             <text>universal washrooms, universal shower rooms and accessible change spaces required by <ref type="internal" target="nbc.divB.part3.sect8.subsect2.art8" display-type="long"/>.</text>
@@ -2398,10 +2398,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                     <sentence xml:id="nbc.divBV2.part9.sect10.subsect9.art16.sent4" number="4">
                         <text>In a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref>, <ref type="term" target="dwllng-n">dwelling units</ref> shall be separated from each other and from ancillary spaces and common spaces with a fire separation</text>
                         <clause xml:id="nbc.divBV2.part9.sect10.subsect9.art16.sent4.clause1" letter="a">
-                            <text>having a fire-resistance rating not less than <measurement units="metric">15 min</measurement> when all smoke alarms within the house are of photo-electric type and interconnected as described in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause1" display-type="long"/> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent2" display-type="short"/>),</text>
+                            <text>having a fire-resistance rating not less than <measurement units="metric">15 min</measurement> when all smoke alarms within the house are of photo-electric type and interconnected as described in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause1" display-type="long"/> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent2" display-type="medium"/>),</text>
                         </clause>
                         <clause xml:id="nbc.divBV2.part9.sect10.subsect9.art16.sent4.clause2" letter="b">
-                            <text>having a fire-resistance rating not less than <measurement units="metric">30 min</measurement> when additional smoke alarms of photo-electric type are installed and interconnected as described in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause2" display-type="long"/> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent3" display-type="short"/>),</text>
+                            <text>having a fire-resistance rating not less than <measurement units="metric">30 min</measurement> when additional smoke alarms of photo-electric type are installed and interconnected as described in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause2" display-type="long"/> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent3" display-type="medium"/>),</text>
                         </clause>
                         <clause xml:id="nbc.divBV2.part9.sect10.subsect9.art16.sent4.clause3" letter="c">
                             <text>having a fire-resistance rating not less than <measurement units="metric">45 min</measurement> when smoke alarms are not installed and interconnected as described in Clauses (a) or (b), or</text>
@@ -2425,10 +2425,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                     <sentence xml:id="nbc.divBV2.part9.sect10.subsect9.art17.sent4" number="4">
                         <text>A <ref type="term" target="pblc-crr">public corridor</ref> located in a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> shall be separated from the remainder of the spaces in the house with a fire separation</text>
                         <clause xml:id="nbc.divBV2.part9.sect10.subsect9.art17.sent4.clause1" letter="a">
-                            <text>having a fire-resistance rating not less than <measurement units="metric">15 min</measurement> when all smoke alarms within the house are of photo-electric type and interconnected as described in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause1" display-type="long"/> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent2" display-type="short"/>),</text>
+                            <text>having a fire-resistance rating not less than <measurement units="metric">15 min</measurement> when all smoke alarms within the house are of photo-electric type and interconnected as described in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause1" display-type="long"/> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent2" display-type="medium"/>),</text>
                         </clause>
                         <clause xml:id="nbc.divBV2.part9.sect10.subsect9.art17.sent4.clause2" letter="b">
-                            <text>having a fire-resistance rating not less than <measurement units="metric">30 min</measurement> when additional smoke alarms of photo-electric type are installed and interconnected as described in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause2" display-type="long"/> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent3" display-type="short"/>),</text>
+                            <text>having a fire-resistance rating not less than <measurement units="metric">30 min</measurement> when additional smoke alarms of photo-electric type are installed and interconnected as described in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause2" display-type="long"/> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent3" display-type="medium"/>),</text>
                         </clause>
                         <clause xml:id="nbc.divBV2.part9.sect10.subsect9.art17.sent4.clause3" letter="c">
                             <text>having a fire-resistance rating not less than <measurement units="metric">45 min</measurement> when smoke alarms are not installed and interconnected as described in Clauses (a) or (b), or</text>
@@ -2697,12 +2697,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                             <clause xml:id="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause1" letter="a">
                                 <text>all <ref type="term" target="mk-lrm">smoke alarms</ref> shall be of photo-electric type and interconnected so that the actuation of any one <ref type="term" target="mk-lrm">smoke alarm</ref> causes all <ref type="term" target="mk-lrm">smoke alarms</ref> within the house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces to sound when the <ref type="term" target="fr-prtn">fire separations</ref> described in <ref type="internal" target="nbc.divBV2.part9.sect9.subsect4.art2" display-type="long" pretext="Articles"/>
                                     <ref type="internal" target="nbc.divBV2.part9.sect10.subsect9.art16" display-type="long" pretext=","/>
-                                    <ref type="internal" target="nbc.divBV2.part9.sect10.subsect9.art17" display-type="long" pretext="and"/> have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">15 min</measurement> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent2" display-type="short"/>), or</text>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect10.subsect9.art17" display-type="long" pretext="and"/> have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">15 min</measurement> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent2" display-type="medium"/>), or</text>
                             </clause>
                             <clause xml:id="nbc.divBV2.part9.sect10.subsect19.art5.sent2.clause2" letter="b">
                                 <text>an additional <ref type="term" target="mk-lrm">smoke alarm</ref> of photo-electric type shall be installed in each <ref type="term" target="dwllng-n">dwelling unit</ref> and common space and be interconnected so that the actuation of one <ref type="term" target="mk-lrm">smoke alarm</ref> will cause the additional <ref type="term" target="mk-lrm">smoke alarms</ref> in the other <ref type="term" target="dwllng-n">dwelling unit</ref>, <ref type="term" target="dwllng-n">dwelling units</ref> or common spaces to sound when the <ref type="term" target="fr-prtn">fire separations</ref> described in <ref type="internal" target="nbc.divBV2.part9.sect9.subsect4.art2" display-type="long" pretext="Articles"/>
                                     <ref type="internal" target="nbc.divBV2.part9.sect10.subsect9.art16" display-type="long" pretext=","/>
-                                    <ref type="internal" target="nbc.divBV2.part9.sect10.subsect9.art17" display-type="long" pretext="and"/> have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">30 min</measurement> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent3" display-type="short"/>).</text>
+                                    <ref type="internal" target="nbc.divBV2.part9.sect10.subsect9.art17" display-type="long" pretext="and"/> have a <ref type="term" target="fr-rtnc-">fire-resistance rating</ref> not less than <measurement units="metric">30 min</measurement> (see also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent3" display-type="medium"/>).</text>
                             </clause>
                         </sentence>
                         <sentence xml:id="nbc.divBV2.part9.sect10.subsect19.art5.sent3" number="3">
@@ -2792,7 +2792,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         <clause xml:id="nbc.divBV2.part9.sect11.subsect1.art1.sent2.clause3" letter="c">
                             <text>a separating assembly and adjoining constructions, which together provide an <ref type="term" target="astc">ASTC</ref> rating of not less than 40.</text>
                         </clause>
-                        <see-also xml:id="nbc.divBV2.part9.sect11.subsect1.art1.sent2.see-also1">(See also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent2" display-type="short"/> and Note A-9.11.1.1.(2).)</see-also>
+                        <see-also xml:id="nbc.divBV2.part9.sect11.subsect1.art1.sent2.see-also1">(See also <ref type="internal" target="nbc.divBV2.part9.sect10.subsect3.art1.sent2" display-type="medium"/> and Note A-9.11.1.1.(2).)</see-also>
                     </sentence>
                 </new-content>
             </replace>
@@ -3814,7 +3814,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                             <text><super>(3)</super> See Note A-9.23.3.1.(2).</text>
                         </note>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote8">
-                            <text><super>(4)</super> For plywood, OSB, or waferboard panel sheathing, the maximum fastener spacing along intermediate supports shall be 300 mm o.c. For gypsum sheathing, the maximum spacing along intermediate supports shall conform to <ref type="internal" target="nbc.divBV2.part9.sect29.subsect5.art8.sent4" display-type="short"/> for nails and <ref type="internal" target="nbc.divBV2.part9.sect29.subsect5.art9.sent4" display-type="short"/> for screws.</text>
+                            <text><super>(4)</super> For plywood, OSB, or waferboard panel sheathing, the maximum fastener spacing along intermediate supports shall be 300 mm o.c. For gypsum sheathing, the maximum spacing along intermediate supports shall conform to <ref type="internal" target="nbc.divBV2.part9.sect29.subsect5.art8.sent4" display-type="medium"/> for nails and <ref type="internal" target="nbc.divBV2.part9.sect29.subsect5.art9.sent4" display-type="medium"/> for screws.</text>
                         </note>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote9">
                             <text><super>(5)</super> Nails for GWB framing types shall conform to <ref type="internal" target="nbc.divBV2.part9.sect29.subsect5.art6" display-type="long"/>.</text>
@@ -3853,7 +3853,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                             </clause>
                         </sentence>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote14">
-                            <text>(See <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art2.sent3" display-type="short"/>.)</text>
+                            <text>(See <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art2.sent3" display-type="medium"/>.)</text>
                         </note>
                         <sentence xml:id="nbc.divBV2.part9.sect23.subsect3.art5.sent5" number="5">
                             <text>Staples shall not be less than <measurement units="metric">1.6 mm</measurement> in diameter or thickness, with not less than a <measurement units="metric">9.5 mm</measurement> crown driven with the crown parallel to framing.</text>
@@ -4026,7 +4026,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                             </clause>
                         </sentence>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect6.art1.appnote1">
-                            <text>(See <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art2.sent3" display-type="short"/>.)</text>
+                            <text>(See <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art2.sent3" display-type="medium"/>.)</text>
                         </note>
                     </article>
                 </new-content>
@@ -4151,7 +4151,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                             <table-notes>
                                 <note xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.fnote1">(1) See <ref type="internal" target="nbc.divBV2.part9.sect4.subsect2.art5" display-type="long"/>.</note>
                                 <note xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.fnote2">(2) For <ref type="term" target="br-wl-bnd">braced wall band</ref> spacing of <measurement units="metric">7.6 m</measurement> or less, the minimum number of fasteners is permitted to be divided by 2.</note>
-                                <note xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.fnote3">(3) See <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art2.sent3" display-type="short"/>.</note>
+                                <note xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.fnote3">(3) See <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art2.sent3" display-type="medium"/>.</note>
                                 <note xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.fnote4">(4) Limited to 2 <ref type="term" target="tr">storeys</ref> in <ref type="term" target="bldng-hg">building height</ref>. See <ref type="internal" target="nbc.divBV2.part9.sect23.subsect11.art4.sent7" display-type="short"/>.</note>
                                 <note xml:id="nbc.divBV2.part9.sect23.subsect11.art4.table1.fnote5">(5) Where the height of the masonry or stone veneer does not exceed half <ref type="term" target="tr">storey</ref> above the <ref type="term" target="fndtn">foundation</ref>, the veneer may be disregarded.</note>
                             </table-notes>
@@ -4508,7 +4508,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                     <article xml:id="nbc.divBV2.part9.sect23.subsect13.art5" number="5">
                         <title>Braced Wall Panels in Braced Wall Bands</title>
                         <sentence xml:id="nbc.divBV2.part9.sect23.subsect13.art5.sent1" number="1">
-                            <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art5.sent2" display-type="short" pretext="Sentences"/> and <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art10.sent2" display-type="short" pretext="9.23.13.10.(2) to (4)"/> and <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7" display-type="long"/>, <ref type="term" target="br-wl-pnl">braced wall panels</ref> shall</text>
+                            <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art5.sent2" display-type="short" pretext="Sentences"/> and <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art10.sent2" display-type="medium" pretext="9.23.13.10.(2) to (4)"/> and <ref type="internal" target="nbc.divBV2.part9.sect23.subsect13.art7" display-type="long"/>, <ref type="term" target="br-wl-pnl">braced wall panels</ref> shall</text>
                             <clause xml:id="nbc.divBV2.part9.sect23.subsect13.art5.sent1.clause1" letter="a">
                                 <text>be located within <ref type="term" target="br-wl-bnd">braced wall bands</ref>,</text>
                             </clause>
@@ -4649,10 +4649,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         <sentence xml:id="nbc.divBV2.part9.sect23.subsect13.art6.sent1" number="1">
                             <text>Required <ref type="term" target="br-wl-pnl">braced wall panels</ref> shall be</text>
                             <clause xml:id="nbc.divBV2.part9.sect23.subsect13.art6.sent1.clause1" letter="a">
-                                <text>sheathed on the exterior side with plywood, OSB, waferboard or diagonal lumber complying with <ref type="internal" target="nbc.divBV2.part9.sect23.subsect17" display-type="long"/> fastened in accordance with <ref type="internal" target="nbc.divBV2.part9.sect23.subsect3.art5.sent3" display-type="short"/> and finished on the interior side with gypsum board complying with <ref type="internal" target="nbc.divBV2.part9.sect29.subsect5" display-type="long"/>, or</text>
+                                <text>sheathed on the exterior side with plywood, OSB, waferboard or diagonal lumber complying with <ref type="internal" target="nbc.divBV2.part9.sect23.subsect17" display-type="long"/> fastened in accordance with <ref type="internal" target="nbc.divBV2.part9.sect23.subsect3.art5.sent3" display-type="medium"/> and finished on the interior side with gypsum board complying with <ref type="internal" target="nbc.divBV2.part9.sect29.subsect5" display-type="long"/>, or</text>
                             </clause>
                             <clause xml:id="nbc.divBV2.part9.sect23.subsect13.art6.sent1.clause2" letter="b">
-                                <text>sheathed on the interior side or exterior side with gypsum board complying with <ref type="internal" target="nbc.divBV2.part9.sect29.subsect5" display-type="long"/> and fastened in accordance with <ref type="internal" target="nbc.divBV2.part9.sect23.subsect3.art5.sent3" display-type="short"/>. (See Note A-9.23.13.6.(1).)</text>
+                                <text>sheathed on the interior side or exterior side with gypsum board complying with <ref type="internal" target="nbc.divBV2.part9.sect29.subsect5" display-type="long"/> and fastened in accordance with <ref type="internal" target="nbc.divBV2.part9.sect23.subsect3.art5.sent3" display-type="medium"/>. (See Note A-9.23.13.6.(1).)</text>
                             </clause>
                         </sentence>
                         <sentence xml:id="nbc.divBV2.part9.sect23.subsect13.art6.sent2" number="2">
@@ -11221,7 +11221,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                             <text>In a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref> including their common spaces, where a heating or ventilation system serves more than a single <ref type="term" target="dwllng-n">dwelling unit</ref>, the system shall be designed and installed to prevent the circulation of smoke upon a signal from a duct-type <ref type="term" target="mk-dtctr">smoke detector</ref>. (See Note A-9.32.3.2.(4).)</text>
                         </sentence>
                         <sentence xml:id="nbc.divBV2.part9.sect32.subsect3.art2.sent5" number="5">
-                            <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect9.art6" display-type="short"/>, ducts penetrating <ref type="term" target="fr-prtn">fire separations</ref> shall be equipped with <ref type="term" target="fr-dmpr">fire dampers</ref> in conformance with <ref type="internal" target="nbc.divB.part3.sect1.subsect8.art10" display-type="long"/>.</text>
+                            <text>Except as provided in <ref type="internal" target="nbc.divBV2.part9.sect10.subsect9.art6" display-type="medium"/>, ducts penetrating <ref type="term" target="fr-prtn">fire separations</ref> shall be equipped with <ref type="term" target="fr-dmpr">fire dampers</ref> in conformance with <ref type="internal" target="nbc.divB.part3.sect1.subsect8.art10" display-type="long"/>.</text>
                         </sentence>
                     </article>
                 </new-content>
@@ -11872,7 +11872,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                             </clause>
                         </sentence>
                         <sentence xml:id="nbc.divBV2.part9.sect32.subsect3.art8.sent8" number="8">
-                            <text>Except for a supply air system described in <ref type="internal" target="nbc.divBV2.part9.sect32.subsect3.art4.sent2" display-type="short"/> or <ref type="internal" target="nbc.divBV2.part9.sect32.subsect3.art4.sent3" display-type="short"/>, all joints in <ref type="term" target="xht-dct">exhaust ducts</ref>, and in <ref type="term" target="ppl-dct">supply ducts</ref> that conduct conditioned air, shall be sealed against air leakage with</text>
+                            <text>Except for a supply air system described in <ref type="internal" target="nbc.divBV2.part9.sect32.subsect3.art4.sent2" display-type="medium"/> or <ref type="internal" target="nbc.divBV2.part9.sect32.subsect3.art4.sent3" display-type="medium"/>, all joints in <ref type="term" target="xht-dct">exhaust ducts</ref>, and in <ref type="term" target="ppl-dct">supply ducts</ref> that conduct conditioned air, shall be sealed against air leakage with</text>
                             <clause xml:id="nbc.divBV2.part9.sect32.subsect3.art8.sent8.clause1" letter="a">
                                 <text>sealants or gaskets made from liquids, mastics or heat-applied materials,</text>
                             </clause>
@@ -12380,7 +12380,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         <clause xml:id="nbc.divBV2.part9.sect33.subsect5.art2.sent1.clause3" letter="c">
                             <text><ref type="standard" target="csac448series"/>.</text>
                         </clause>
-                        <text> (See also <ref type="internal" target="nbc.divBV2.part9.sect33.subsect5.art3.sent1" display-type="short"/>.)</text>
+                        <text> (See also <ref type="internal" target="nbc.divBV2.part9.sect33.subsect5.art3.sent1" display-type="medium"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
