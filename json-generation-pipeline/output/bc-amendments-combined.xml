@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-16T22:33:35.0582974-07:00"
+            generated="2026-03-17T21:48:27.2407013-07:00"
             source-count="14">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -3736,8 +3736,7 @@ Llitre(s)</replace>
                           display-type="medium"/>, the objectives and functional statements
                             attributed to the acceptable solutions in Division B shall be the
                             objectives and functional statements identified in 
-                            <ref type="internal" target="nbc.divB.part2.sect5" pretext="Sections"/>
-                     <ref type="internal" target="nbc.divB.part3.sect9" pretext=","/>
+                            <ref type="internal" target="nbc.divB.part3.sect9" pretext="Sections"/>
                      <ref type="internal" target="nbc.divB.part4.sect5" pretext=","/>
                      <ref type="internal" target="nbc.divB.part5.sect10" pretext=","/>
                      <ref type="internal" target="nbc.divB.part6.sect10" pretext=","/>
@@ -3918,10 +3917,8 @@ Llitre(s)</replace>
                   <entry>S.B.C. 2015</entry>
                   <entry>Building Act</entry>
                   <entry>
-                     <ref type="internal"
-                          target="nbc.divB.part2.sect2.subsect1.art1.sent4"
-                          display-type="number"/>
-                  </entry>
+                            2.2.1.1.(1)
+                        </entry>
                </row>
                <row xml:id="nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-4">
                   <entry>BC</entry>
@@ -33324,7 +33321,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      </sentence>
                      <sentence xml:id="nbc.divC.part2.sect2.subsect7.art3.sent3" number="3">
                         <text>A <ref type="term" target="bc-rgstrd-prfssnl">registered professional</ref> of record who is retained to undertake design work and field reviews and who is required to provide letters pursuant to <ref type="internal"
-                                target="nbc.divB.part2.sect2.subsect7.art2.sent1.clause2"
+                                target="nbc.divC.part2.sect2.subsect7.art2.sent1.clause2"
                                 display-type="short">Clause 2.2.7.2.(1)(b)</ref> shall</text>
                         <clause xml:id="nbc.divC.part2.sect2.subsect7.art3.sent3.clause1" letter="a">
                            <text>place their professional seal or stamp on the plans submitted by them in support of the application for a <ref type="term" target="bldng">building</ref> permit, after ascertaining that they substantially comply with the British Columbia <ref type="term" target="bldng">Building</ref> Code and other applicable enactments respecting safety,</text>

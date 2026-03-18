@@ -877,12 +877,8 @@
                       display-type="medium"
                       />, the objectives and functional statements attributed to the acceptable solutions in Division B shall be the objectives and functional statements identified in <ref
                       type="internal"
-                      target="nbc.divB.part2.sect5"
-                      pretext="Sections"
-                      /> <ref
-                      type="internal"
                       target="nbc.divB.part3.sect9"
-                      pretext=","
+                      pretext="Sections"
                       /> <ref
                       type="internal"
                       target="nbc.divB.part4.sect5"
@@ -959,11 +955,6 @@
                   status="current"
                   >
                   <content>
-                    <ref
-                      type="internal"
-                      target="nbc.divB.part2.sect4.subsect2.art5.sent1"
-                      display-type="number"
-                      />
                     <ref
                       type="internal"
                       target="nbc.divB.part6.sect2.subsect1.art1.sent1"
