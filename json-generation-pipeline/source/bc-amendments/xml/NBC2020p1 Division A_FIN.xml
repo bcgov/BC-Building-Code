@@ -4261,6 +4261,32 @@ Llitre(s)</replace>
         </amendment>
         
         <!-- ================================================================== -->
+        <!-- Amendment 056: Delete Article 1.3.3.5. Application of Part 2       -->
+        <!-- BC removes this article from Subsection 1.3.3.                     -->
+        <!-- ================================================================== -->
+        <amendment
+            id="bc-056"
+            sequence="56"
+            description="Delete Article 1.3.3.5. Application of Part 2"
+            >
+            <target type="canonical-id" id="nbc.divA.part1.sect3.subsect3.art5"/>
+            <delete/>
+        </amendment>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 057: Delete Article 1.3.3.6. Classification of Buildings -->
+        <!-- Containing Agricultural Occupancies - BC removes this article      -->
+        <!-- ================================================================== -->
+        <amendment
+            id="bc-057"
+            sequence="57"
+            description="Delete Article 1.3.3.6. Classification of Buildings Containing Agricultural Occupancies"
+            >
+            <target type="canonical-id" id="nbc.divA.part1.sect3.subsect3.art6"/>
+            <delete/>
+        </amendment>
+        
+        <!-- ================================================================== -->
         <!-- END OF AMENDMENTS                                                  -->
         <!-- ================================================================== -->
     </amendments>
