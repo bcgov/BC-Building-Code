@@ -1335,13 +1335,13 @@
         </fn:map>
     </xsl:template>
     
-    <!-- Process entry content - handles mixed text and figure content -->
+    <!-- Process entry content - handles mixed text, figure, and list content -->
     <xsl:template name="process-entry-content">
         <xsl:param name="entry"/>
         
         <xsl:choose>
-            <!-- If entry contains figure(s) or bare graphic(s), process as mixed content -->
-            <xsl:when test="$entry/figure or $entry/graphic">
+            <!-- If entry contains figure(s), bare graphic(s), or list(s), process as mixed content -->
+            <xsl:when test="$entry/figure or $entry/graphic or $entry/list">
                 <xsl:for-each select="$entry/node()">
                     <xsl:choose>
                         <!-- Figure element -->
@@ -1365,6 +1365,35 @@
                                         <fn:string key="height"><xsl:value-of select="graphic/@height"/></fn:string>
                                     </xsl:if>
                                 </fn:map>
+                            </fn:map>
+                        </xsl:when>
+                        <!-- List element - extract as structured data -->
+                        <xsl:when test="self::list">
+                            <fn:map>
+                                <fn:string key="type">list</fn:string>
+                                <fn:string key="list_type"><xsl:value-of select="@type"/></fn:string>
+                                <fn:array key="items">
+                                    <xsl:for-each select="item">
+                                        <fn:map>
+                                            <xsl:if test="@xml:id">
+                                                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                            </xsl:if>
+                                            <xsl:choose>
+                                                <xsl:when test="parent::list/@type = 'variable'">
+                                                    <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich-text-json"/></fn:string>
+                                                    <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
+                                                </xsl:when>
+                                                <xsl:when test="parent::list/@type = 'definition'">
+                                                    <fn:string key="term"><xsl:apply-templates select="term" mode="text-only"/></fn:string>
+                                                    <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </fn:map>
+                                    </xsl:for-each>
+                                </fn:array>
                             </fn:map>
                         </xsl:when>
                         <!-- Table note marker -->
@@ -1394,7 +1423,7 @@
                             </fn:map>
                         </xsl:when>
                         <!-- Text node or other elements - collect as text -->
-                        <xsl:when test="self::text()[normalize-space()] or self::*[not(self::figure or self::graphic or self::note)]">
+                        <xsl:when test="self::text()[normalize-space()] or self::*[not(self::figure or self::graphic or self::note or self::list)]">
                             <xsl:variable name="text-content">
                                 <xsl:apply-templates select="." mode="rich-text-json"/>
                             </xsl:variable>
@@ -1408,7 +1437,7 @@
                     </xsl:choose>
                 </xsl:for-each>
             </xsl:when>
-            <!-- No figures - just text content -->
+            <!-- No figures or lists - just text content -->
             <xsl:otherwise>
                 <xsl:variable name="text-content">
                     <xsl:for-each select="$entry/node()">
