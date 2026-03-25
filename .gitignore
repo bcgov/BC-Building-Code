@@ -402,3 +402,4 @@ FodyWeavers.xsd
 venv
 .kiro
 /n8n-workflows
+build-and-deploy.sh
