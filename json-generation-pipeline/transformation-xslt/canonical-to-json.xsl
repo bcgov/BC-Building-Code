@@ -687,13 +687,48 @@
                 <fn:string key="introduction"><xsl:apply-templates select="introduction" mode="rich-text-json"/></fn:string>
             </xsl:if>
             <fn:array key="sections">
-                <xsl:apply-templates select="appendix-section | note-division" mode="json"/>
+                <xsl:for-each select="appendix-section | note-division | paragraph | list | table | figure">
+                    <xsl:choose>
+                        <xsl:when test="self::appendix-section">
+                            <xsl:apply-templates select="." mode="json"/>
+                        </xsl:when>
+                        <xsl:when test="self::note-division">
+                            <xsl:apply-templates select="." mode="json"/>
+                        </xsl:when>
+                        <xsl:when test="self::paragraph">
+                            <fn:map>
+                                <fn:string key="type">paragraph</fn:string>
+                                <xsl:if test="@xml:id">
+                                    <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                </xsl:if>
+                                <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                            </fn:map>
+                        </xsl:when>
+                        <xsl:when test="self::list">
+                            <fn:map>
+                                <fn:string key="type">list</fn:string>
+                                <fn:string key="list_type"><xsl:value-of select="@type"/></fn:string>
+                                <fn:array key="items">
+                                    <xsl:for-each select="item">
+                                        <fn:map>
+                                            <xsl:if test="@xml:id">
+                                                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                            </xsl:if>
+                                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                        </fn:map>
+                                    </xsl:for-each>
+                                </fn:array>
+                            </fn:map>
+                        </xsl:when>
+                        <xsl:when test="self::table">
+                            <xsl:apply-templates select="." mode="json"/>
+                        </xsl:when>
+                        <xsl:when test="self::figure">
+                            <xsl:apply-templates select="." mode="json"/>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:for-each>
             </fn:array>
-            <xsl:if test="table | figure">
-                <fn:array key="content">
-                    <xsl:apply-templates select="table | figure" mode="json"/>
-                </fn:array>
-            </xsl:if>
         </fn:map>
     </xsl:template>
     
@@ -1612,37 +1647,211 @@
                 <xsl:when test="@revised='yes' and revision-history">
                     <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
                     <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
-                    <xsl:if test="$content-node/paragraph">
-                        <fn:array key="paragraphs">
-                            <xsl:for-each select="$content-node/paragraph">
-                                <fn:map>
-                                    <xsl:if test="@xml:id">
-                                        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
-                                    </xsl:if>
-                                    <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
-                                    
-                                    <!-- Extract equations from paragraph -->
-                                    <xsl:if test=".//equation">
-                                        <fn:array key="equations">
-                                            <xsl:apply-templates select=".//equation" mode="equation-json"/>
+                    <!-- Content array preserving document order from revision content -->
+                    <fn:array key="content">
+                        <xsl:for-each select="$content-node/paragraph | $content-node/list | $content-node/note-division | $content-node/table | $content-node/figure">
+                            <xsl:choose>
+                                <xsl:when test="self::paragraph">
+                                    <fn:map>
+                                        <fn:string key="type">paragraph</fn:string>
+                                        <xsl:if test="@xml:id">
+                                            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                        </xsl:if>
+                                        <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                        
+                                        <!-- Extract equations from paragraph -->
+                                        <xsl:if test=".//equation">
+                                            <fn:array key="equations">
+                                                <xsl:apply-templates select=".//equation" mode="equation-json"/>
+                                            </fn:array>
+                                        </xsl:if>
+                                        
+                                        <!-- Extract all lists from paragraph -->
+                                        <xsl:call-template name="extract-lists">
+                                            <xsl:with-param name="content-root" select="."/>
+                                        </xsl:call-template>
+                                    </fn:map>
+                                </xsl:when>
+                                <xsl:when test="self::note-division">
+                                    <xsl:apply-templates select="." mode="json"/>
+                                </xsl:when>
+                                <xsl:when test="self::table">
+                                    <xsl:apply-templates select="." mode="json"/>
+                                </xsl:when>
+                                <xsl:when test="self::figure">
+                                    <xsl:apply-templates select="." mode="json"/>
+                                </xsl:when>
+                                <xsl:when test="self::list">
+                                    <fn:map>
+                                        <fn:string key="type">list</fn:string>
+                                        <fn:string key="list_type"><xsl:value-of select="@type"/></fn:string>
+                                        <fn:array key="items">
+                                            <xsl:for-each select="item">
+                                                <fn:map>
+                                                    <xsl:if test="@xml:id">
+                                                        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                                    </xsl:if>
+                                                    <xsl:choose>
+                                                        <xsl:when test="parent::list/@type = 'variable'">
+                                                            <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich-text-json"/></fn:string>
+                                                            <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
+                                                        </xsl:when>
+                                                        <xsl:when test="parent::list/@type = 'definition'">
+                                                            <fn:string key="term"><xsl:apply-templates select="term" mode="text-only"/></fn:string>
+                                                            <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
+                                                        </xsl:when>
+                                                        <xsl:otherwise>
+                                                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                                        </xsl:otherwise>
+                                                    </xsl:choose>
+                                                </fn:map>
+                                            </xsl:for-each>
                                         </fn:array>
-                                    </xsl:if>
-                                    
-                                    <!-- Extract all lists from paragraph -->
-                                    <xsl:call-template name="extract-lists">
-                                        <xsl:with-param name="content-root" select="."/>
-                                    </xsl:call-template>
-                                </fn:map>
-                            </xsl:for-each>
-                        </fn:array>
-                    </xsl:if>
+                                    </fn:map>
+                                </xsl:when>
+                            </xsl:choose>
+                        </xsl:for-each>
+                    </fn:array>
                 </xsl:when>
-                <xsl:when test="paragraph">
-                    <fn:array key="paragraphs">
-                        <xsl:for-each select="paragraph">
+                <xsl:otherwise>
+                    <!-- Content array preserving document order of paragraphs, lists, note-divisions, tables, and figures -->
+                    <fn:array key="content">
+                        <xsl:for-each select="paragraph | list | note-division | table | figure">
+                            <xsl:choose>
+                                <xsl:when test="self::paragraph">
+                                    <fn:map>
+                                        <fn:string key="type">paragraph</fn:string>
+                                        <xsl:if test="@xml:id">
+                                            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                        </xsl:if>
+                                        
+                                        <!-- Revised flag -->
+                                        <xsl:if test="@revised = 'yes'">
+                                            <fn:boolean key="revised">true</fn:boolean>
+                                        </xsl:if>
+                                        
+                                        <!-- Extract content from revision-history if present, otherwise from direct content -->
+                                        <xsl:choose>
+                                            <xsl:when test="@revised='yes' and revision-history">
+                                                <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
+                                                <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
+                                                <fn:string key="content"><xsl:apply-templates select="$content-node/node()" mode="rich-text-json"/></fn:string>
+                                                
+                                                <!-- Extract equations from revised paragraph -->
+                                                <xsl:if test="$content-node//equation">
+                                                    <fn:array key="equations">
+                                                        <xsl:apply-templates select="$content-node//equation" mode="equation-json"/>
+                                                    </fn:array>
+                                                </xsl:if>
+                                                
+                                                <!-- Extract all lists from revised paragraph -->
+                                                <xsl:call-template name="extract-lists">
+                                                    <xsl:with-param name="content-root" select="$content-node"/>
+                                                </xsl:call-template>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                                
+                                                <!-- Extract equations from paragraph -->
+                                                <xsl:if test=".//equation">
+                                                    <fn:array key="equations">
+                                                        <xsl:apply-templates select=".//equation" mode="equation-json"/>
+                                                    </fn:array>
+                                                </xsl:if>
+                                                
+                                                <!-- Extract all lists from paragraph -->
+                                                <xsl:call-template name="extract-lists">
+                                                    <xsl:with-param name="content-root" select="."/>
+                                                </xsl:call-template>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                        
+                                        <!-- Revision history if present -->
+                                        <xsl:if test="@revised = 'yes' and revision-history">
+                                            <fn:array key="revisions">
+                                                <xsl:call-template name="build-paragraph-revisions"/>
+                                            </fn:array>
+                                        </xsl:if>
+                                    </fn:map>
+                                </xsl:when>
+                                <xsl:when test="self::note-division">
+                                    <xsl:apply-templates select="." mode="json"/>
+                                </xsl:when>
+                                <xsl:when test="self::table">
+                                    <xsl:apply-templates select="." mode="json"/>
+                                </xsl:when>
+                                <xsl:when test="self::figure">
+                                    <xsl:apply-templates select="." mode="json"/>
+                                </xsl:when>
+                                <xsl:when test="self::list">
+                                    <fn:map>
+                                        <fn:string key="type">list</fn:string>
+                                        <fn:string key="list_type"><xsl:value-of select="@type"/></fn:string>
+                                        <fn:array key="items">
+                                            <xsl:for-each select="item">
+                                                <fn:map>
+                                                    <xsl:if test="@xml:id">
+                                                        <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                                    </xsl:if>
+                                                    <xsl:choose>
+                                                        <xsl:when test="parent::list/@type = 'variable'">
+                                                            <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich-text-json"/></fn:string>
+                                                            <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
+                                                        </xsl:when>
+                                                        <xsl:when test="parent::list/@type = 'definition'">
+                                                            <fn:string key="term"><xsl:apply-templates select="term" mode="text-only"/></fn:string>
+                                                            <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
+                                                        </xsl:when>
+                                                        <xsl:otherwise>
+                                                            <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                                        </xsl:otherwise>
+                                                    </xsl:choose>
+                                                </fn:map>
+                                            </xsl:for-each>
+                                        </fn:array>
+                                    </fn:map>
+                                </xsl:when>
+                            </xsl:choose>
+                        </xsl:for-each>
+                    </fn:array>
+                </xsl:otherwise>
+            </xsl:choose>
+            
+            <!-- Revision history if present -->
+            <xsl:if test="@revised = 'yes' and revision-history">
+                <fn:array key="revisions">
+                    <xsl:call-template name="build-appnote-revisions"/>
+                </fn:array>
+            </xsl:if>
+        </fn:map>
+    </xsl:template>
+    
+    <xsl:template match="note-division" mode="json">
+        <fn:map>
+            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+            <fn:string key="type">note_division</fn:string>
+            
+            <!-- Source attribute (bc or nbc) -->
+            <xsl:if test="@source">
+                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
+            </xsl:if>
+            
+            <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
+            
+            <!-- Content array preserving document order of paragraphs, lists, tables, and figures -->
+            <fn:array key="content">
+                <xsl:for-each select="paragraph | list | table | figure">
+                    <xsl:choose>
+                        <xsl:when test="self::paragraph">
                             <fn:map>
+                                <fn:string key="type">paragraph</fn:string>
                                 <xsl:if test="@xml:id">
                                     <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                </xsl:if>
+                                
+                                <!-- Deleted flag -->
+                                <xsl:if test="@deleted = 'yes'">
+                                    <fn:boolean key="deleted">true</fn:boolean>
                                 </xsl:if>
                                 
                                 <!-- Revised flag -->
@@ -1693,131 +1902,44 @@
                                     </fn:array>
                                 </xsl:if>
                             </fn:map>
-                        </xsl:for-each>
-                    </fn:array>
-                </xsl:when>
-            </xsl:choose>
-            
-            <!-- Note divisions (sub-sections within application notes) -->
-            <xsl:if test="note-division">
-                <fn:array key="divisions">
-                    <xsl:apply-templates select="note-division" mode="json"/>
-                </fn:array>
-            </xsl:if>
-            
-            <!-- Tables within application notes -->
-            <xsl:if test="table">
-                <fn:array key="tables">
-                    <xsl:apply-templates select="table" mode="json"/>
-                </fn:array>
-            </xsl:if>
-            
-            <!-- Figures within application notes -->
-            <xsl:if test="figure">
-                <fn:array key="figures">
-                    <xsl:apply-templates select="figure" mode="json"/>
-                </fn:array>
-            </xsl:if>
-            
-            <!-- Revision history if present -->
-            <xsl:if test="@revised = 'yes' and revision-history">
-                <fn:array key="revisions">
-                    <xsl:call-template name="build-appnote-revisions"/>
-                </fn:array>
-            </xsl:if>
-        </fn:map>
-    </xsl:template>
-    
-    <xsl:template match="note-division" mode="json">
-        <fn:map>
-            <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
-            <fn:string key="type">note_division</fn:string>
-            
-            <!-- Source attribute (bc or nbc) -->
-            <xsl:if test="@source">
-                <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
-            </xsl:if>
-            
-            <fn:string key="title"><xsl:apply-templates select="title" mode="text-only"/></fn:string>
-            
-            <xsl:if test="paragraph">
-                <fn:array key="paragraphs">
-                    <xsl:for-each select="paragraph">
-                        <fn:map>
-                            <xsl:if test="@xml:id">
-                                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
-                            </xsl:if>
-                            
-                            <!-- Deleted flag -->
-                            <xsl:if test="@deleted = 'yes'">
-                                <fn:boolean key="deleted">true</fn:boolean>
-                            </xsl:if>
-                            
-                            <!-- Revised flag -->
-                            <xsl:if test="@revised = 'yes'">
-                                <fn:boolean key="revised">true</fn:boolean>
-                            </xsl:if>
-                            
-                            <!-- Extract content from revision-history if present, otherwise from direct content -->
-                            <xsl:choose>
-                                <xsl:when test="@revised='yes' and revision-history">
-                                    <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
-                                    <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
-                                    <fn:string key="content"><xsl:apply-templates select="$content-node/node()" mode="rich-text-json"/></fn:string>
-                                    
-                                    <!-- Extract equations from revised paragraph -->
-                                    <xsl:if test="$content-node//equation">
-                                        <fn:array key="equations">
-                                            <xsl:apply-templates select="$content-node//equation" mode="equation-json"/>
-                                        </fn:array>
-                                    </xsl:if>
-                                    
-                                    <!-- Extract all lists from revised paragraph -->
-                                    <xsl:call-template name="extract-lists">
-                                        <xsl:with-param name="content-root" select="$content-node"/>
-                                    </xsl:call-template>
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
-                                    
-                                    <!-- Extract equations from paragraph -->
-                                    <xsl:if test=".//equation">
-                                        <fn:array key="equations">
-                                            <xsl:apply-templates select=".//equation" mode="equation-json"/>
-                                        </fn:array>
-                                    </xsl:if>
-                                    
-                                    <!-- Extract all lists from paragraph -->
-                                    <xsl:call-template name="extract-lists">
-                                        <xsl:with-param name="content-root" select="."/>
-                                    </xsl:call-template>
-                                </xsl:otherwise>
-                            </xsl:choose>
-                            
-                            <!-- Revision history if present -->
-                            <xsl:if test="@revised = 'yes' and revision-history">
-                                <fn:array key="revisions">
-                                    <xsl:call-template name="build-paragraph-revisions"/>
+                        </xsl:when>
+                        <xsl:when test="self::table">
+                            <xsl:apply-templates select="." mode="json"/>
+                        </xsl:when>
+                        <xsl:when test="self::figure">
+                            <xsl:apply-templates select="." mode="json"/>
+                        </xsl:when>
+                        <xsl:when test="self::list">
+                            <fn:map>
+                                <fn:string key="type">list</fn:string>
+                                <fn:string key="list_type"><xsl:value-of select="@type"/></fn:string>
+                                <fn:array key="items">
+                                    <xsl:for-each select="item">
+                                        <fn:map>
+                                            <xsl:if test="@xml:id">
+                                                <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                            </xsl:if>
+                                            <xsl:choose>
+                                                <xsl:when test="parent::list/@type = 'variable'">
+                                                    <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich-text-json"/></fn:string>
+                                                    <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
+                                                </xsl:when>
+                                                <xsl:when test="parent::list/@type = 'definition'">
+                                                    <fn:string key="term"><xsl:apply-templates select="term" mode="text-only"/></fn:string>
+                                                    <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </fn:map>
+                                    </xsl:for-each>
                                 </fn:array>
-                            </xsl:if>
-                        </fn:map>
-                    </xsl:for-each>
-                </fn:array>
-            </xsl:if>
-            
-            <!-- Tables within note divisions -->
-            <xsl:if test="table">
-                <fn:array key="tables">
-                    <xsl:apply-templates select="table" mode="json"/>
-                </fn:array>
-            </xsl:if>
-            
-            <!-- Figures within note divisions -->
-            <xsl:if test="figure">
-                <fn:array key="figures">
-                    <xsl:apply-templates select="figure" mode="json"/>
-                </fn:array>
-            </xsl:if>
+                            </fn:map>
+                        </xsl:when>
+                    </xsl:choose>
+                </xsl:for-each>
+            </fn:array>
         </fn:map>
     </xsl:template>
     
@@ -2109,14 +2231,23 @@
             <fn:string key="id"><xsl:value-of select="$equation-id"/></fn:string>
             <fn:string key="type"><xsl:value-of select="@type"/></fn:string>
             
-            <!-- LaTeX representation (converted from MathML) -->
-            <fn:string key="latex"><xsl:apply-templates select="*[local-name()='math']" mode="mathml-to-latex"/></fn:string>
-            
-            <!-- Plain text representation -->
-            <fn:string key="plainText"><xsl:apply-templates select="*[local-name()='math']" mode="mathml-to-plaintext"/></fn:string>
-            
-            <!-- MathML (optional - can be large) -->
-            <fn:string key="mathml"><xsl:value-of select="fn:serialize(*[local-name()='math'])"/></fn:string>
+            <xsl:choose>
+                <!-- MathML-based equation -->
+                <xsl:when test="*[local-name()='math']">
+                    <!-- LaTeX representation (converted from MathML) -->
+                    <fn:string key="latex"><xsl:apply-templates select="*[local-name()='math']" mode="mathml-to-latex"/></fn:string>
+                    
+                    <!-- Plain text representation -->
+                    <fn:string key="plainText"><xsl:apply-templates select="*[local-name()='math']" mode="mathml-to-plaintext"/></fn:string>
+                    
+                    <!-- MathML (optional - can be large) -->
+                    <fn:string key="mathml"><xsl:value-of select="fn:serialize(*[local-name()='math'])"/></fn:string>
+                </xsl:when>
+                <!-- Plain text equation (from eqtxt) -->
+                <xsl:when test="text">
+                    <fn:string key="plainText"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+                </xsl:when>
+            </xsl:choose>
             
             <!-- Image reference for fallback rendering -->
             <xsl:if test="@image">

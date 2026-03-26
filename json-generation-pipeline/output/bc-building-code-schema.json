@@ -1392,7 +1392,8 @@
     },
     "application_note": {
       "type": "object",
-      "required": ["id", "type", "number", "title"],
+      "required": ["id", "type", "number", "title", "content"],
+      "description": "An application note containing paragraphs, note-divisions, tables, and figures in document order",
       "properties": {
         "id": {
           "type": "string"
@@ -1408,38 +1409,26 @@
           "type": "boolean",
           "description": "Indicates if this application note has been deleted (true when deleted='yes' attribute is present)"
         },
+        "revised": {
+          "type": "boolean",
+          "description": "Indicates if this application note has revision history"
+        },
+        "source": {
+          "type": "string",
+          "enum": ["nbc", "bc"],
+          "description": "Source of the application note"
+        },
         "title": {
           "type": "string"
         },
         "refs": {
           "type": "string"
         },
-        "paragraphs": {
+        "content": {
           "type": "array",
+          "description": "Content items in document order (paragraphs, note-divisions, tables, figures)",
           "items": {
-            "type": "object",
-            "properties": {
-              "id": {"type": "string"},
-              "content": {"type": "string"}
-            }
-          }
-        },
-        "divisions": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/note_division"
-          }
-        },
-        "tables": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/table"
-          }
-        },
-        "figures": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/figure"
+            "$ref": "#/definitions/application_note_content_item"
           }
         },
         "revisions": {
@@ -1450,9 +1439,29 @@
         }
       }
     },
+    "application_note_content_item": {
+      "type": "object",
+      "required": ["type"],
+      "description": "A content item within an application note - paragraph, note_division, table, or figure. Discriminate by 'type' field.",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/content_paragraph"
+        },
+        {
+          "$ref": "#/definitions/note_division"
+        },
+        {
+          "$ref": "#/definitions/table"
+        },
+        {
+          "$ref": "#/definitions/figure"
+        }
+      ]
+    },
     "note_division": {
       "type": "object",
-      "required": ["id", "type", "title"],
+      "required": ["id", "type", "title", "content"],
+      "description": "A sub-division within an application note, containing paragraphs, tables, and figures in document order",
       "properties": {
         "id": {
           "type": "string"
@@ -1461,32 +1470,102 @@
           "type": "string",
           "const": "note_division"
         },
+        "source": {
+          "type": "string",
+          "enum": ["nbc", "bc"],
+          "description": "Source of the note division"
+        },
         "title": {
           "type": "string"
         },
-        "paragraphs": {
+        "content": {
           "type": "array",
+          "description": "Content items in document order (paragraphs, tables, figures)",
           "items": {
-            "type": "object",
-            "properties": {
-              "id": {"type": "string"},
-              "content": {"type": "string"}
-            }
-          }
-        },
-        "tables": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/table"
-          }
-        },
-        "figures": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/figure"
+            "$ref": "#/definitions/note_division_content_item"
           }
         }
       }
+    },
+    "content_paragraph": {
+      "type": "object",
+      "required": ["type"],
+      "description": "A paragraph content item used within application notes and note divisions",
+      "properties": {
+        "type": {
+          "type": "string",
+          "const": "paragraph"
+        },
+        "id": {
+          "type": "string"
+        },
+        "deleted": {
+          "type": "boolean",
+          "description": "Indicates if this paragraph has been deleted"
+        },
+        "revised": {
+          "type": "boolean",
+          "description": "Indicates if this paragraph has revision history"
+        },
+        "content": {
+          "type": "string"
+        },
+        "equations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/equation"
+          }
+        },
+        "lists": {
+          "type": "array",
+          "description": "Extracted lists from paragraph content",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string",
+                "enum": ["bulleted", "numbered", "variable", "definition", "alphabetic"]
+              },
+              "items": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {"type": "string"},
+                    "content": {"type": "string"},
+                    "symbol": {"type": "string"},
+                    "description": {"type": "string"},
+                    "term": {"type": "string"},
+                    "definition": {"type": "string"}
+                  }
+                }
+              }
+            }
+          }
+        },
+        "revisions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/revision"
+          }
+        }
+      }
+    },
+    "note_division_content_item": {
+      "type": "object",
+      "required": ["type"],
+      "description": "A content item within a note division - paragraph, table, or figure. Discriminate by 'type' field: 'paragraph', 'table', or 'figure'.",
+      "anyOf": [
+        {
+          "$ref": "#/definitions/content_paragraph"
+        },
+        {
+          "$ref": "#/definitions/table"
+        },
+        {
+          "$ref": "#/definitions/figure"
+        }
+      ]
     },
     "objective": {
       "type": "object",
@@ -1633,16 +1712,24 @@
           }
         },
         "content": {
-          "type": "array",
-          "description": "Content array for article revisions (sentences, tables, figures)",
-          "items": {
-            "type": "object",
-            "required": ["id", "type"],
-            "properties": {
-              "id": {"type": "string"},
-              "type": {"type": "string", "enum": ["sentence", "table", "figure"]}
+          "oneOf": [
+            {
+              "type": "string",
+              "description": "Text content for paragraph, sentence, clause, or subclause revisions"
+            },
+            {
+              "type": "array",
+              "description": "Content array for article revisions (sentences, tables, figures)",
+              "items": {
+                "type": "object",
+                "required": ["id", "type"],
+                "properties": {
+                  "id": {"type": "string"},
+                  "type": {"type": "string", "enum": ["sentence", "table", "figure"]}
+                }
+              }
             }
-          }
+          ]
         },
         "articles": {
           "type": "array",

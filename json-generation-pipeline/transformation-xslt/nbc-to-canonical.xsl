@@ -1407,6 +1407,10 @@
             <xsl:apply-templates select="*" mode="mathml" />
           </math>
         </xsl:when>
+        <xsl:when test="eqtxt">
+          <!-- Plain text equation - process rich text content from eqtxt -->
+          <text><xsl:apply-templates select="eqtxt/node()" mode="rich-text" /></text>
+        </xsl:when>
         <xsl:otherwise>
           <!-- Fallback: preserve as text if no recognizable structure -->
           <text>[Equation: <xsl:value-of select="if (@image) then @image else 'unknown'" />]</text>
@@ -1422,9 +1426,16 @@
       <xsl:if test="@image">
         <xsl:attribute name="html-src" select="bc:asset-src(string(@image), 'html')" />
       </xsl:if>
-      <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
-        <xsl:apply-templates select="*" mode="mathml" />
-      </math>
+      <xsl:choose>
+        <xsl:when test="eqtxt">
+          <text><xsl:apply-templates select="eqtxt/node()" mode="rich-text" /></text>
+        </xsl:when>
+        <xsl:otherwise>
+          <math xmlns="http://www.w3.org/1998/Math/MathML" display="inline">
+            <xsl:apply-templates select="*" mode="mathml" />
+          </math>
+        </xsl:otherwise>
+      </xsl:choose>
     </equation>
   </xsl:template>
 
