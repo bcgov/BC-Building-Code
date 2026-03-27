@@ -1,0 +1,2633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"
+         datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+    
+    <!-- ================================================================== -->
+    <!-- BC OVERLAY SCHEMA - Structured amendments to NBC                   -->
+    <!-- Based on the BC diff format but normalized for canonical structure -->
+    <!-- ================================================================== -->
+    
+    <start>
+        <element name="bc-overlay">
+            <optional>
+                <attribute name="id">
+                    <data type="string">
+                        <param name="pattern">[a-z0-9\-]+</param>
+                    </data>
+                </attribute>
+            </optional>
+            <attribute name="version">
+                <data type="string">
+                    <param name="pattern">[0-9]+\.[0-9]+</param>
+                </data>
+            </attribute>
+            <optional>
+                <attribute name="nbc-target-version">
+                    <data type="string">
+                        <param name="pattern">20[0-9]{2}</param>
+                    </data>
+                </attribute>
+            </optional>
+            <optional>
+                <attribute name="target-nbc-version">
+                    <data type="string">
+                        <param name="pattern">20[0-9]{2}</param>
+                    </data>
+                </attribute>
+            </optional>
+            <optional>
+                <attribute name="effective-date">
+                    <data type="date"/>
+                </attribute>
+            </optional>
+            <optional>
+                <attribute name="combined">
+                    <data type="boolean"/>
+                </attribute>
+            </optional>
+            <optional>
+                <attribute name="generated">
+                    <data type="dateTime"/>
+                </attribute>
+            </optional>
+            <optional>
+                <attribute name="source-count">
+                    <data type="positiveInteger"/>
+                </attribute>
+            </optional>
+            
+            <!-- Metadata about the overlay -->
+            <element name="metadata">
+                <element name="title"><text/></element>
+                <element name="description"><text/></element>
+                <optional>
+                    <element name="authority"><text/></element>
+                </optional>
+                <optional>
+                    <element name="author"><text/></element>
+                </optional>
+                <optional>
+                    <element name="source-document"><text/></element>
+                </optional>
+                <optional>
+                    <element name="source-files">
+                        <oneOrMore>
+                            <element name="source-file"><text/></element>
+                        </oneOrMore>
+                    </element>
+                </optional>
+                <zeroOrMore>
+                    <element name="original-metadata">
+                        <attribute name="source-index"><data type="positiveInteger"/></attribute>
+                        <zeroOrMore>
+                            <choice>
+                                <element name="title"><text/></element>
+                                <element name="description"><text/></element>
+                                <element name="authority"><text/></element>
+                                <element name="author"><text/></element>
+                                <element name="source-document"><text/></element>
+                            </choice>
+                        </zeroOrMore>
+                    </element>
+                </zeroOrMore>
+                <optional>
+                    <element name="dependencies">
+                        <oneOrMore>
+                            <element name="dependency">
+                                <attribute name="overlay-id"><text/></attribute>
+                                <attribute name="min-version"><text/></attribute>
+                            </element>
+                        </oneOrMore>
+                    </element>
+                </optional>
+            </element>
+            
+            <!-- Text replacements (optional, applied before amendments) -->
+            <optional>
+                <element name="text-replacements">
+                    <oneOrMore>
+                        <element name="replace">
+                            <optional>
+                                <attribute name="source-file-index"><data type="positiveInteger"/></attribute>
+                            </optional>
+                            <attribute name="from"><text/></attribute>
+                            <attribute name="to"><text/></attribute>
+                            <optional>
+                                <attribute name="regex"><data type="boolean"/></attribute>
+                            </optional>
+                        </element>
+                    </oneOrMore>
+                </element>
+            </optional>
+            
+            <!-- Amendment operations -->
+            <element name="amendments">
+                <oneOrMore>
+                    <element name="amendment">
+                        <ref name="amendment-content"/>
+                    </element>
+                </oneOrMore>
+            </element>
+        </element>
+    </start>
+    
+    <!-- ================================================================== -->
+    <!-- AMENDMENT OPERATION DEFINITIONS                                    -->
+    <!-- ================================================================== -->
+    
+    <define name="amendment-content">
+        <attribute name="sequence">
+            <data type="nonNegativeInteger"/>
+        </attribute>
+        <optional>
+            <attribute name="source-file-index">
+                <data type="positiveInteger"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="original-sequence">
+                <data type="decimal"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="original-id">
+                <data type="string"/>
+            </attribute>
+        </optional>
+        <attribute name="id">
+            <data type="ID"/>
+        </attribute>
+        <optional>
+            <attribute name="description"><text/></attribute>
+        </optional>
+        
+        <!-- Target selector (hierarchical ID or XPath) -->
+        <element name="target">
+            <choice>
+                <!-- Canonical ID reference -->
+                <group>
+                    <attribute name="type">
+                        <value>canonical-id</value>
+                    </attribute>
+                    <attribute name="id">
+                        <data type="string">
+                            <!-- Supports: nbc.divX, nbc.divX.partY, articles, sentences, tables (with optional row), appnotes (with optional div/para/figure), seealso, objectives, functional statements, terms, appendix tables, and simple IDs -->
+                             <param name="pattern">((nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?(\.table[0-9]+(\.row[0-9]+[a-z]?)?|(\.sect[0-9]+)?\.appnote[0-9]+(\.div[0-9]+)?(\.figure[0-9]+|\.para[0-9]+|\.table[0-9]+)?|\.appendix[A-Z](\.div[0-9]+)?(\.para[0-9]+|\.table[0-9]+(\.row[0-9]+[a-z_]*)?)?|\.seealso)?|(nbc|bc)\.(objective|functional|term)\.[A-Za-z0-9]+(\.[0-9]+)?|[a-z0-9\-]+)</param>
+                        </data>
+                    </attribute>
+                </group>
+                
+                <!-- XPath selector (for complex targeting) -->
+                <group>
+                    <attribute name="type">
+                        <value>xpath</value>
+                    </attribute>
+                    <attribute name="path"><text/></attribute>
+                </group>
+                
+                <!-- Position-based insertion -->
+                <group>
+                    <attribute name="type">
+                        <value>position</value>
+                    </attribute>
+                    <attribute name="parent-id">
+                        <data type="string">
+                            <!-- Extended pattern to support table tbody targeting, note-divisions, objectives, functional statement containers, appendix tables, and preface/frontmatter -->
+                            <param name="pattern">(nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause)[0-9]+)*)?(\.table[0-9]+(\.(tbody|thead|row[0-9]+[a-z_]*))?|\.appendix[A-Z]?(\.div[0-9]+)?(\.table[0-9]+(\.row[0-9]+[a-z_]*)?)?|(\.sect[0-9]+)?\.appnote[0-9]+(\.div[0-9]+)?|\.functionalstatements)?|(nbc|bc)\.org\.[a-z]+|(nbc|bc)\.(objective|functional)\.[A-Za-z0-9]+(\.[0-9]+)?|(nbc|bc)\.[0-9]{4}\.[a-z]+(\.[a-z0-9]+)*</param>
+                        </data>
+                    </attribute>
+                    <attribute name="position">
+                        <choice>
+                            <value>before</value>
+                            <value>after</value>
+                            <value>first-child</value>
+                            <value>last-child</value>
+                        </choice>
+                    </attribute>
+                    <optional>
+                        <attribute name="reference-id"><text/></attribute>
+                    </optional>
+                </group>
+            </choice>
+        </element>
+        
+        <!-- Amendment operation -->
+        <choice>
+            <element name="replace">
+                <ref name="replace-operation"/>
+            </element>
+            <element name="insert">
+                <ref name="insert-operation"/>
+            </element>
+            <element name="delete">
+                <ref name="delete-operation"/>
+            </element>
+            <element name="modify">
+                <ref name="modify-operation"/>
+            </element>
+            <element name="annotate">
+                <ref name="annotate-operation"/>
+            </element>
+        </choice>
+    </define>
+    
+    <!-- ================================================================== -->
+    <!-- OPERATION TYPE DEFINITIONS                                         -->
+    <!-- ================================================================== -->
+    
+    <define name="replace-operation">
+        <optional>
+            <attribute name="preserve-references">
+                <data type="boolean"/>
+            </attribute>
+        </optional>
+        <element name="new-content">
+            <optional>
+                <attribute name="source">
+                    <choice>
+                        <value>nbc</value>
+                        <value>bc</value>
+                    </choice>
+                </attribute>
+            </optional>
+            <ref name="bc-content"/>
+        </element>
+        <optional>
+            <element name="reference-updates">
+                <oneOrMore>
+                    <element name="update">
+                        <attribute name="from-id"><text/></attribute>
+                        <attribute name="to-id"><text/></attribute>
+                    </element>
+                </oneOrMore>
+            </element>
+        </optional>
+    </define>
+    
+    <define name="insert-operation">
+        <element name="new-content">
+            <optional>
+                <attribute name="source">
+                    <choice>
+                        <value>nbc</value>
+                        <value>bc</value>
+                    </choice>
+                </attribute>
+            </optional>
+            <ref name="bc-content"/>
+        </element>
+    </define>
+    
+    <define name="delete-operation">
+        <optional>
+            <attribute name="cascade-references">
+                <data type="boolean"/>
+            </attribute>
+        </optional>
+        <optional>
+            <element name="reference-updates">
+                <oneOrMore>
+                    <element name="redirect">
+                        <attribute name="from-id"><text/></attribute>
+                        <attribute name="to-id"><text/></attribute>
+                    </element>
+                </oneOrMore>
+            </element>
+        </optional>
+    </define>
+    
+    <define name="modify-operation">
+        <oneOrMore>
+            <choice>
+                <element name="text-change">
+                    <attribute name="xpath-within-target"><text/></attribute>
+                    <choice>
+                        <element name="find-replace">
+                            <element name="find"><ref name="bc-rich-text"/></element>
+                            <element name="replace"><ref name="bc-rich-text"/></element>
+                            <optional>
+                                <attribute name="regex">
+                                    <data type="boolean"/>
+                                </attribute>
+                            </optional>
+                        </element>
+                        <element name="set-text">
+                            <ref name="bc-rich-text"/>
+                        </element>
+                    </choice>
+                </element>
+                
+                <element name="attribute-change">
+                    <attribute name="attribute-name"><text/></attribute>
+                    <choice>
+                        <element name="set-value"><text/></element>
+                        <element name="remove"><empty/></element>
+                    </choice>
+                </element>
+                
+                <element name="element-change">
+                    <attribute name="xpath-within-target"><text/></attribute>
+                    <choice>
+                        <element name="replace-element">
+                            <ref name="bc-content"/>
+                        </element>
+                        <element name="add-child">
+                            <optional>
+                                <attribute name="position">
+                                    <choice>
+                                        <value>before</value>
+                                        <value>after</value>
+                                        <value>first-child</value>
+                                        <value>last-child</value>
+                                    </choice>
+                                </attribute>
+                            </optional>
+                            <optional>
+                                <attribute name="reference-element"><text/></attribute>
+                            </optional>
+                            <ref name="bc-content"/>
+                        </element>
+                        <element name="remove-element"><empty/></element>
+                        <element name="replace-child">
+                            <attribute name="element-name"><text/></attribute>
+                            <ref name="bc-element-replace-content"/>
+                        </element>
+                    </choice>
+                </element>
+                
+                <!-- Element replace for replacing child elements without IDs -->
+                <element name="element-replace">
+                    <attribute name="element"><text/></attribute>
+                    <optional>
+                        <attribute name="position"><data type="positiveInteger"/></attribute>
+                    </optional>
+                    <element name="new-content">
+                        <optional>
+                            <attribute name="source">
+                                <choice>
+                                    <value>nbc</value>
+                                    <value>bc</value>
+                                </choice>
+                            </attribute>
+                        </optional>
+                        <ref name="bc-element-replace-content"/>
+                    </element>
+                </element>
+            </choice>
+        </oneOrMore>
+    </define>
+    
+    <!-- Content allowed in element-replace (includes definition, title, measurement, etc.) -->
+    <define name="bc-element-replace-content">
+        <choice>
+            <element name="definition">
+                <ref name="bc-rich-text"/>
+            </element>
+            <element name="title">
+                <ref name="bc-rich-text"/>
+            </element>
+            <element name="paragraph">
+                <optional>
+                    <attribute name="xml:id"><data type="ID"/></attribute>
+                </optional>
+                <ref name="bc-rich-text"/>
+            </element>
+            <element name="text">
+                <ref name="bc-rich-text"/>
+            </element>
+            <element name="measurement">
+                <attribute name="units">
+                    <choice>
+                        <value>metric</value>
+                        <value>imperial</value>
+                    </choice>
+                </attribute>
+                <text/>
+            </element>
+            <!-- Allow any bc-content as well -->
+            <ref name="bc-content"/>
+        </choice>
+    </define>
+    
+    <define name="annotate-operation">
+        <element name="annotation">
+            <attribute name="type">
+                <choice>
+                    <value>bc-note</value>
+                    <value>bc-exception</value>
+                    <value>bc-clarification</value>
+                    <value>bc-reference</value>
+                </choice>
+            </attribute>
+            <element name="content">
+                <ref name="bc-rich-text"/>
+            </element>
+        </element>
+    </define>
+    
+    <!-- ================================================================== -->
+    <!-- BC CONTENT DEFINITIONS                                             -->
+    <!-- ================================================================== -->
+    
+    <define name="bc-content">
+        <choice>
+            <!-- Structural elements -->
+            <element name="division">
+                <ref name="bc-division-content"/>
+            </element>
+            <element name="part">
+                <ref name="bc-part-content"/>
+            </element>
+            <element name="appendix">
+                <ref name="bc-appendix-content"/>
+            </element>
+            <element name="section">
+                <ref name="bc-section-content"/>
+            </element>
+            <element name="subsection">
+                <ref name="bc-subsection-content"/>
+            </element>
+            <element name="article">
+                <ref name="bc-article-content"/>
+            </element>
+            <element name="sentence">
+                <ref name="bc-sentence-content"/>
+            </element>
+            <element name="clause">
+                <ref name="bc-clause-content"/>
+            </element>
+            <element name="subclause">
+                <ref name="bc-subclause-content"/>
+            </element>
+
+            <!-- Content elements -->
+            <element name="table">
+                <ref name="bc-table-content"/>
+            </element>
+            <element name="figure">
+                <ref name="bc-figure-content"/>
+            </element>
+            <element name="list">
+                <ref name="bc-list-content"/>
+            </element>
+            <element name="note-division">
+                <ref name="bc-note-division-content"/>
+            </element>
+
+            <!-- Objective elements for Division A objectives -->
+            <element name="sub-objective">
+                <ref name="bc-sub-objective-content"/>
+            </element>
+            <element name="sub-sub-objective">
+                <ref name="bc-sub-sub-objective-content"/>
+            </element>
+            <element name="functional-statement">
+                <ref name="bc-functional-statement-content"/>
+            </element>
+
+            <!-- Appendix section elements (for Division B Appendix D structure) -->
+            <element name="appendix-section">
+                <ref name="bc-appendix-section-content"/>
+            </element>
+            <element name="appendix-subsection">
+                <ref name="bc-appendix-subsection-content"/>
+            </element>
+            <element name="appendix-article">
+                <ref name="bc-appendix-article-content"/>
+            </element>
+
+            <!-- Paragraph for application notes -->
+            <element name="paragraph">
+                <optional>
+                    <attribute name="xml:id"><data type="ID"/></attribute>
+                </optional>
+                <optional>
+                    <attribute name="revised">
+                        <value>yes</value>
+                    </attribute>
+                </optional>
+                <choice>
+                    <ref name="bc-rich-text"/>
+                    <ref name="bc-revision-history"/>
+                </choice>
+            </element>
+
+            <!-- Multiple sentences and tables for insertions (e.g., adding sentence + table) -->
+            <oneOrMore>
+                <choice>
+                    <element name="sentence">
+                        <ref name="bc-sentence-content"/>
+                    </element>
+                    <element name="table">
+                        <ref name="bc-table-content"/>
+                    </element>
+                </choice>
+            </oneOrMore>
+
+            <!-- Multiple subsections for insertions (e.g., adding multiple subsections) -->
+            <oneOrMore>
+                <element name="subsection">
+                    <ref name="bc-subsection-content"/>
+                </element>
+            </oneOrMore>
+
+            <!-- Multiple articles for insertions (e.g., adding multiple articles) -->
+            <oneOrMore>
+                <element name="article">
+                    <ref name="bc-article-content"/>
+                </element>
+            </oneOrMore>
+
+            <!-- Table row for insertions into tables -->
+            <oneOrMore>
+                <element name="row">
+                    <ref name="bc-table-row-content"/>
+                </element>
+            </oneOrMore>
+
+            <!-- List item for insertions into lists -->
+            <oneOrMore>
+                <element name="item">
+                    <optional>
+                        <attribute name="xml:id"><data type="ID"/></attribute>
+                    </optional>
+                    <optional>
+                        <attribute name="revised">
+                            <choice>
+                                <value>yes</value>
+                                <value>no</value>
+                            </choice>
+                        </attribute>
+                    </optional>
+                    <choice>
+                        <!-- Regular list item -->
+                        <ref name="bc-rich-text"/>
+
+                        <!-- Definition list item -->
+                        <group>
+                            <element name="term">
+                                <optional>
+                                    <attribute name="xml:id"><data type="ID"/></attribute>
+                                </optional>
+                                <ref name="bc-rich-text"/>
+                            </element>
+                            <element name="definition">
+                                <choice>
+                                    <ref name="bc-rich-text"/>
+                                    <ref name="bc-revision-history"/>
+                                </choice>
+                            </element>
+                        </group>
+
+                        <!-- Variable list item -->
+                        <group>
+                            <element name="variable">
+                                <ref name="bc-rich-text"/>
+                            </element>
+                            <element name="description">
+                                <ref name="bc-rich-text"/>
+                            </element>
+                        </group>
+
+                        <!-- Organization list item -->
+                        <group>
+                            <element name="organization">
+                                <text/>
+                            </element>
+                            <element name="address">
+                                <ref name="bc-rich-text"/>
+                            </element>
+                        </group>
+                        
+                        <!-- Item with revision history (for definition list items with tracked changes) -->
+                        <ref name="bc-revision-history"/>
+                    </choice>
+                </element>
+            </oneOrMore>
+
+            <!-- Application notes for appendix insertions -->
+            <oneOrMore>
+                <element name="application-note">
+                    <ref name="bc-application-note-content"/>
+                </element>
+            </oneOrMore>
+
+            <!-- Text content -->
+            <element name="text">
+                <ref name="bc-rich-text"/>
+            </element>
+            <element name="title">
+                <ref name="bc-rich-text"/>
+            </element>
+            
+            <!-- See-also element for part/subsection references -->
+            <element name="see-also">
+                <attribute name="xml:id"><text/></attribute>
+                <optional>
+                    <attribute name="revised">
+                        <value>yes</value>
+                    </attribute>
+                </optional>
+                <choice>
+                    <ref name="bc-rich-text"/>
+                    <ref name="bc-revision-history"/>
+                </choice>
+            </element>
+
+            <!-- Multiple paragraphs and lists for appendix content insertions -->
+            <oneOrMore>
+                <choice>
+                    <element name="paragraph">
+                        <optional>
+                            <attribute name="xml:id"><data type="ID"/></attribute>
+                        </optional>
+                        <ref name="bc-rich-text"/>
+                    </element>
+                    <element name="list">
+                        <ref name="bc-list-content"/>
+                    </element>
+                </choice>
+            </oneOrMore>
+
+             <!-- Multiple notes for insertions (e.g., adding multiple notes) -->
+             <oneOrMore>
+                 <element name="note">
+                     <optional>
+                         <attribute name="xml:id"><data type="ID"/></attribute>
+                     </optional>
+                     <optional>
+                         <attribute name="revised">
+                             <value>yes</value>
+                         </attribute>
+                     </optional>
+                     <choice>
+                         <!-- Note with text wrapper -->
+                         <element name="text">
+                             <ref name="bc-rich-text"/>
+                         </element>
+                         <!-- Note with direct rich text -->
+                         <ref name="bc-rich-text"/>
+                         <!-- Note with revision history -->
+                         <ref name="bc-revision-history"/>
+                     </choice>
+                 </element>
+             </oneOrMore>
+        </choice>
+    </define>
+
+    <!-- ================================================================== -->
+    <!-- BC APPLICATION NOTE CONTENT                                        -->
+    <!-- ================================================================== -->
+
+    <define name="bc-application-note-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="ID"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="refs"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="revised">
+                <choice>
+                    <value>yes</value>
+                    <value>no</value>
+                </choice>
+            </attribute>
+        </optional>
+        <choice>
+            <!-- Standard application note content -->
+            <group>
+                <element name="number"><text/></element>
+                <element name="title"><ref name="bc-rich-text"/></element>
+                <zeroOrMore>
+                    <choice>
+                        <element name="paragraph">
+                            <optional>
+                                <attribute name="xml:id"><data type="ID"/></attribute>
+                            </optional>
+                            <ref name="bc-rich-text"/>
+                        </element>
+                        <element name="note-division">
+                            <ref name="bc-note-division-content"/>
+                        </element>
+                        <element name="table">
+                            <ref name="bc-table-content"/>
+                        </element>
+                        <element name="figure">
+                            <ref name="bc-figure-content"/>
+                        </element>
+                    </choice>
+                </zeroOrMore>
+            </group>
+            <!-- Application note with revision history -->
+            <ref name="bc-application-note-revision-history"/>
+        </choice>
+    </define>
+
+    <!-- Revision history specifically for application notes -->
+    <define name="bc-application-note-revision-history">
+        <element name="revision-history">
+            <element name="original">
+                <attribute name="effective-date">
+                    <data type="date"/>
+                </attribute>
+                <optional>
+                    <ref name="bc-application-note-revision-content"/>
+                </optional>
+            </element>
+            <oneOrMore>
+                <element name="revision">
+                    <attribute name="seq">
+                        <data type="positiveInteger"/>
+                    </attribute>
+                    <attribute name="type">
+                        <choice>
+                            <value>errata</value>
+                            <value>policy</value>
+                            <value>accessibility</value>
+                            <value>correction</value>
+                            <value>amendment</value>
+                        </choice>
+                    </attribute>
+                    <attribute name="effective-date">
+                        <data type="date"/>
+                    </attribute>
+                    <attribute name="id">
+                        <text/>
+                    </attribute>
+                    <attribute name="status">
+                        <choice>
+                            <value>current</value>
+                            <value>superseded</value>
+                        </choice>
+                    </attribute>
+                    <element name="content">
+                        <ref name="bc-application-note-revision-content"/>
+                    </element>
+                    <optional>
+                        <element name="change-summary">
+                            <text/>
+                        </element>
+                    </optional>
+                    <optional>
+                        <element name="note">
+                            <text/>
+                        </element>
+                    </optional>
+                </element>
+            </oneOrMore>
+        </element>
+    </define>
+
+    <!-- Content for application note revisions -->
+    <define name="bc-application-note-revision-content">
+        <element name="number"><text/></element>
+        <element name="title"><ref name="bc-rich-text"/></element>
+        <zeroOrMore>
+            <choice>
+                <element name="paragraph">
+                    <optional>
+                        <attribute name="xml:id"><data type="ID"/></attribute>
+                    </optional>
+                    <ref name="bc-rich-text"/>
+                </element>
+                <element name="note-division">
+                    <ref name="bc-note-division-content"/>
+                </element>
+                <element name="table">
+                    <ref name="bc-table-content"/>
+                </element>
+                <element name="figure">
+                    <ref name="bc-figure-content"/>
+                </element>
+            </choice>
+        </zeroOrMore>
+    </define>
+
+    <!-- BC note-division content for subdivisions within application notes -->
+    <define name="bc-note-division-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="ID"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <element name="title"><ref name="bc-rich-text"/></element>
+        <!-- Allow paragraphs, tables, and figures in any order within note-division -->
+        <zeroOrMore>
+            <choice>
+                <element name="paragraph">
+                    <optional>
+                        <attribute name="xml:id"><data type="ID"/></attribute>
+                    </optional>
+                    <ref name="bc-rich-text"/>
+                </element>
+                <element name="table">
+                    <ref name="bc-table-content"/>
+                </element>
+                <element name="figure">
+                    <ref name="bc-figure-content"/>
+                </element>
+            </choice>
+        </zeroOrMore>
+    </define>
+
+    <!-- ================================================================== -->
+    <!-- BC APPENDIX SECTION CONTENT (for Division B Appendix D structure)  -->
+    <!-- ================================================================== -->
+
+    <define name="bc-appendix-section-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="ID"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <element name="title"><ref name="bc-rich-text"/></element>
+        <zeroOrMore>
+            <element name="paragraph">
+                <optional>
+                    <attribute name="xml:id"><data type="ID"/></attribute>
+                </optional>
+                <ref name="bc-rich-text"/>
+            </element>
+        </zeroOrMore>
+        <zeroOrMore>
+            <element name="appendix-subsection">
+                <ref name="bc-appendix-subsection-content"/>
+            </element>
+        </zeroOrMore>
+    </define>
+
+    <define name="bc-appendix-subsection-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="ID"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <element name="title"><ref name="bc-rich-text"/></element>
+        <zeroOrMore>
+            <element name="appendix-article">
+                <ref name="bc-appendix-article-content"/>
+            </element>
+        </zeroOrMore>
+    </define>
+
+    <define name="bc-appendix-article-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="ID"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <element name="title"><ref name="bc-rich-text"/></element>
+        <zeroOrMore>
+            <choice>
+                <element name="paragraph">
+                    <optional>
+                        <attribute name="xml:id"><data type="ID"/></attribute>
+                    </optional>
+                    <ref name="bc-rich-text"/>
+                </element>
+                <element name="table">
+                    <ref name="bc-table-content"/>
+                </element>
+                <element name="figure">
+                    <ref name="bc-figure-content"/>
+                </element>
+                <element name="list">
+                    <ref name="bc-list-content"/>
+                </element>
+            </choice>
+        </zeroOrMore>
+    </define>
+
+    <!-- BC sub-objective content for Division A objectives -->
+    <define name="bc-sub-objective-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="ID"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="key"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <element name="title"><ref name="bc-rich-text"/></element>
+        <optional>
+            <element name="definition"><ref name="bc-rich-text"/></element>
+        </optional>
+        <zeroOrMore>
+            <element name="sub-sub-objective">
+                <ref name="bc-sub-sub-objective-content"/>
+            </element>
+        </zeroOrMore>
+    </define>
+
+    <!-- BC sub-sub-objective content for Division A objectives -->
+    <define name="bc-sub-sub-objective-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="ID"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="key"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <element name="title"><ref name="bc-rich-text"/></element>
+        <optional>
+            <element name="definition"><ref name="bc-rich-text"/></element>
+        </optional>
+    </define>
+
+    <!-- BC functional-statement content for Division A functional statements -->
+    <define name="bc-functional-statement-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="ID"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="key"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <element name="definition"><ref name="bc-rich-text"/></element>
+    </define>
+    
+    <!-- BC structural content mirrors canonical but with BC-specific IDs -->
+    <define name="bc-division-content">
+        <attribute name="xml:id">
+            <data type="string">
+                <param name="pattern">bc\.(div(A|B|BV2|C|D)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+            </data>
+        </attribute>
+        
+        <!-- Add letter attribute -->
+        <attribute name="letter">
+            <choice>
+                <value>A</value>
+                <value>B</value>
+                <value>C</value>
+                <value>D</value>
+            </choice>
+        </attribute>
+        
+        <!-- Add optional volume attribute -->
+        <optional>
+            <attribute name="volume">
+                <choice>
+                    <value>1</value>
+                    <value>2</value>
+                </choice>
+            </attribute>
+        </optional>
+        
+        <element name="title"><ref name="bc-rich-text"/></element>
+        <element name="number"><text/></element>
+        <oneOrMore>
+            <element name="part">
+                <ref name="bc-part-content"/>
+            </element>
+        </oneOrMore>
+    </define>
+    
+    <define name="bc-part-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="string">
+                    <param name="pattern">(nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+                </data>
+            </attribute>
+        </optional>
+        <attribute name="number"><data type="positiveInteger"/></attribute>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="revised">
+                <choice>
+                    <value>yes</value>
+                    <value>no</value>
+                </choice>
+            </attribute>
+        </optional>
+        <choice>
+            <!-- Standard part content -->
+            <group>
+                <element name="title"><ref name="bc-rich-text"/></element>
+                <optional>
+                    <element name="see-also">
+                        <attribute name="xml:id"><text/></attribute>
+                        <optional>
+                            <attribute name="revised">
+                                <value>yes</value>
+                            </attribute>
+                        </optional>
+                        <choice>
+                            <ref name="bc-rich-text"/>
+                            <ref name="bc-revision-history"/>
+                        </choice>
+                    </element>
+                </optional>
+                <oneOrMore>
+                    <element name="section">
+                        <ref name="bc-section-content"/>
+                    </element>
+                </oneOrMore>
+                <optional>
+                    <element name="part-appendix">
+                        <ref name="bc-part-appendix-content"/>
+                    </element>
+                </optional>
+            </group>
+            <!-- Part with revision history -->
+            <group>
+                <element name="title"><ref name="bc-rich-text"/></element>
+                <ref name="bc-revision-history"/>
+            </group>
+        </choice>
+    </define>
+    
+    <!-- BC part-appendix content for application notes -->
+    <define name="bc-part-appendix-content">
+        <attribute name="xml:id">
+            <data type="string">
+                <param name="pattern">bc\.(div(A|B|BV2|C)\.part[0-9]+\.sect[0-9]+\.appendix)</param>
+            </data>
+        </attribute>
+        <optional>
+            <element name="introduction">
+                <text/>
+            </element>
+        </optional>
+        <oneOrMore>
+            <element name="application-note">
+                <ref name="bc-application-note-content"/>
+            </element>
+        </oneOrMore>
+    </define>
+    
+    <!-- BC appendix content for Division B appendices (Appendix C, D, etc.) -->
+    <define name="bc-appendix-content">
+        <attribute name="xml:id">
+            <data type="string">
+                <param name="pattern">bc\.(div(A|B|BV2|C)\.appendix[A-Z])</param>
+            </data>
+        </attribute>
+        <attribute name="letter">
+            <data type="string">
+                <param name="pattern">[A-Z]</param>
+            </data>
+        </attribute>
+        <element name="title"><ref name="bc-rich-text"/></element>
+        <optional>
+            <element name="introduction">
+                <oneOrMore>
+                    <element name="paragraph">
+                        <ref name="bc-rich-text"/>
+                    </element>
+                </oneOrMore>
+            </element>
+        </optional>
+        <zeroOrMore>
+            <choice>
+                <element name="section">
+                    <ref name="bc-section-content"/>
+                </element>
+                <element name="table">
+                    <ref name="bc-table-content"/>
+                </element>
+                <element name="figure">
+                    <ref name="bc-figure-content"/>
+                </element>
+                <element name="paragraph">
+                    <ref name="bc-rich-text"/>
+                </element>
+            </choice>
+        </zeroOrMore>
+    </define>
+    
+    <define name="bc-section-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="string">
+                    <param name="pattern">(nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+                </data>
+            </attribute>
+        </optional>
+        <attribute name="number"><data type="positiveInteger"/></attribute>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="revised">
+                <choice>
+                    <value>yes</value>
+                    <value>no</value>
+                </choice>
+            </attribute>
+        </optional>
+        <choice>
+            <!-- Standard section content -->
+            <group>
+                <element name="title"><ref name="bc-rich-text"/></element>
+                <zeroOrMore>
+                    <element name="note">
+                        <optional>
+                            <attribute name="xml:id"><data type="ID"/></attribute>
+                        </optional>
+                        <choice>
+                            <!-- Note with text wrapper -->
+                            <element name="text">
+                                <ref name="bc-rich-text"/>
+                            </element>
+                            <!-- Note with direct rich text -->
+                            <ref name="bc-rich-text"/>
+                        </choice>
+                    </element>
+                </zeroOrMore>
+                <oneOrMore>
+                    <element name="subsection">
+                        <ref name="bc-subsection-content"/>
+                    </element>
+                </oneOrMore>
+            </group>
+            <!-- Section with revision history -->
+            <group>
+                <element name="title"><ref name="bc-rich-text"/></element>
+                <ref name="bc-revision-history"/>
+            </group>
+        </choice>
+    </define>
+    
+    <define name="bc-subsection-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="string">
+                    <param name="pattern">(nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+                </data>
+            </attribute>
+        </optional>
+        <attribute name="number"><data type="positiveInteger"/></attribute>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="revised">
+                <choice>
+                    <value>yes</value>
+                    <value>no</value>
+                </choice>
+            </attribute>
+        </optional>
+        <choice>
+            <!-- Standard subsection content -->
+            <group>
+                <element name="title"><ref name="bc-rich-text"/></element>
+                <zeroOrMore>
+                    <element name="see-also">
+                        <attribute name="xml:id"><text/></attribute>
+                        <optional>
+                            <attribute name="revised">
+                                <value>yes</value>
+                            </attribute>
+                        </optional>
+                        <choice>
+                            <ref name="bc-rich-text"/>
+                            <ref name="bc-revision-history"/>
+                        </choice>
+                    </element>
+                </zeroOrMore>
+                <zeroOrMore>
+                    <element name="article">
+                        <ref name="bc-article-content"/>
+                    </element>
+                </zeroOrMore>
+            </group>
+            <!-- Subsection with revision history (title outside) -->
+            <group>
+                <element name="title"><ref name="bc-rich-text"/></element>
+                <ref name="bc-revision-history"/>
+            </group>
+            <!-- Subsection with revision history (title inside revision content) -->
+            <ref name="bc-revision-history"/>
+        </choice>
+    </define>
+    
+    <define name="bc-article-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="string">
+                    <param name="pattern">(nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+                </data>
+            </attribute>
+        </optional>
+        <attribute name="number"><data type="positiveInteger"/></attribute>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="revised">
+                <choice>
+                    <value>yes</value>
+                    <value>no</value>
+                </choice>
+            </attribute>
+        </optional>
+        <choice>
+            <!-- Standard article content -->
+            <group>
+                <element name="title"><ref name="bc-rich-text"/></element>
+                <zeroOrMore>
+                    <element name="see-also">
+                        <attribute name="xml:id"><text/></attribute>
+                        <optional>
+                            <attribute name="revised">
+                                <value>yes</value>
+                            </attribute>
+                        </optional>
+                        <choice>
+                            <ref name="bc-rich-text"/>
+                            <ref name="bc-revision-history"/>
+                        </choice>
+                    </element>
+                </zeroOrMore>
+                <zeroOrMore>
+                    <choice>
+                        <element name="sentence">
+                            <ref name="bc-sentence-content"/>
+                        </element>
+                        <element name="table">
+                            <ref name="bc-table-content"/>
+                        </element>
+                        <element name="figure">
+                            <ref name="bc-figure-content"/>
+                        </element>
+                        <element name="note">
+                            <optional>
+                                <attribute name="xml:id"><data type="ID"/></attribute>
+                            </optional>
+                            <choice>
+                                <!-- Note with text wrapper -->
+                                <element name="text">
+                                    <ref name="bc-rich-text"/>
+                                </element>
+                                <!-- Note with direct rich text -->
+                                <ref name="bc-rich-text"/>
+                            </choice>
+                        </element>
+                    </choice>
+                </zeroOrMore>
+            </group>
+            <!-- Article with revision history (title outside) -->
+            <group>
+                <element name="title"><ref name="bc-rich-text"/></element>
+                <ref name="bc-revision-history"/>
+            </group>
+            <!-- Article with revision history (title inside revision content) -->
+            <ref name="bc-revision-history"/>
+        </choice>
+    </define>
+    
+    <define name="bc-sentence-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="string">
+                    <param name="pattern">(nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+                </data>
+            </attribute>
+        </optional>
+        <attribute name="number"><data type="positiveInteger"/></attribute>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="revised">
+                <choice>
+                    <value>yes</value>
+                    <value>no</value>
+                </choice>
+            </attribute>
+        </optional>
+        <choice>
+            <!-- Standard sentence content -->
+            <group>
+                <element name="text"><ref name="bc-rich-text"/></element>
+                <zeroOrMore>
+                    <choice>
+                        <element name="clause">
+                            <ref name="bc-clause-content"/>
+                        </element>
+                        <element name="text"><ref name="bc-rich-text"/></element>
+                    </choice>
+                </zeroOrMore>
+                <zeroOrMore>
+                    <element name="see-also">
+                        <attribute name="xml:id"><text/></attribute>
+                        <optional>
+                            <attribute name="revised">
+                                <value>yes</value>
+                            </attribute>
+                        </optional>
+                        <choice>
+                            <ref name="bc-rich-text"/>
+                            <ref name="bc-revision-history"/>
+                        </choice>
+                    </element>
+                </zeroOrMore>
+            </group>
+            <!-- Sentence with revision history -->
+            <ref name="bc-revision-history"/>
+        </choice>
+    </define>
+    
+    <define name="bc-clause-content">
+        <attribute name="xml:id">
+            <data type="string">
+                <param name="pattern">(nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+            </data>
+        </attribute>
+        <attribute name="letter">
+            <data type="string">
+                <param name="pattern">[a-z]</param>
+            </data>
+        </attribute>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="revised">
+                <choice>
+                    <value>yes</value>
+                    <value>no</value>
+                </choice>
+            </attribute>
+        </optional>
+        <choice>
+            <!-- Standard clause content -->
+            <group>
+                <element name="text"><ref name="bc-rich-text"/></element>
+                <zeroOrMore>
+                    <element name="see-also">
+                        <attribute name="xml:id"><text/></attribute>
+                        <optional>
+                            <attribute name="revised">
+                                <value>yes</value>
+                            </attribute>
+                        </optional>
+                        <choice>
+                            <ref name="bc-rich-text"/>
+                            <ref name="bc-revision-history"/>
+                        </choice>
+                    </element>
+                </zeroOrMore>
+                <zeroOrMore>
+                    <element name="subclause">
+                        <ref name="bc-subclause-content"/>
+                    </element>
+                </zeroOrMore>
+            </group>
+            <!-- Clause with revision history -->
+            <ref name="bc-revision-history"/>
+        </choice>
+    </define>
+    
+    <define name="bc-subclause-content">
+        <attribute name="xml:id">
+            <data type="string">
+                <param name="pattern">(nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+            </data>
+        </attribute>
+        <attribute name="number"><data type="positiveInteger"/></attribute>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="revised">
+                <choice>
+                    <value>yes</value>
+                    <value>no</value>
+                </choice>
+            </attribute>
+        </optional>
+        <choice>
+            <!-- Standard subclause content -->
+            <element name="text"><ref name="bc-rich-text"/></element>
+            <!-- Subclause with revision history -->
+            <ref name="bc-revision-history"/>
+        </choice>
+    </define>
+    
+    <!-- ================================================================== -->
+    <!-- BC TABLE AND FIGURE CONTENT                                       -->
+    <!-- ================================================================== -->
+    
+    <define name="bc-table-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="ID"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <optional>
+            <attribute name="revised">
+                <value>yes</value>
+            </attribute>
+        </optional>
+        <!-- Table-level revision history for tracking complete table replacements -->
+        <optional>
+            <element name="revision-history">
+                <element name="original">
+                    <attribute name="effective-date">
+                        <data type="date"/>
+                    </attribute>
+                    <ref name="bc-table-revision-content"/>
+                </element>
+                <oneOrMore>
+                    <element name="revision">
+                        <attribute name="seq">
+                            <data type="positiveInteger"/>
+                        </attribute>
+                        <attribute name="type">
+                            <choice>
+                                <value>errata</value>
+                                <value>policy</value>
+                                <value>accessibility</value>
+                                <value>correction</value>
+                                <value>amendment</value>
+                            </choice>
+                        </attribute>
+                        <attribute name="effective-date">
+                            <data type="date"/>
+                        </attribute>
+                        <attribute name="id">
+                            <text/>
+                        </attribute>
+                        <attribute name="status">
+                            <choice>
+                                <value>current</value>
+                                <value>superseded</value>
+                            </choice>
+                        </attribute>
+                        <element name="content">
+                            <ref name="bc-table-revision-content"/>
+                        </element>
+                        <optional>
+                            <element name="change-summary">
+                                <text/>
+                            </element>
+                        </optional>
+                        <optional>
+                            <element name="note">
+                                <text/>
+                            </element>
+                        </optional>
+                    </element>
+                </oneOrMore>
+            </element>
+        </optional>
+        <optional>
+            <element name="title">
+                <ref name="bc-rich-text"/>
+                <zeroOrMore>
+                    <element name="note">
+                        <optional>
+                            <attribute name="xml:id"><data type="ID"/></attribute>
+                        </optional>
+                        <optional>
+                            <attribute name="vendor-id"><text/></attribute>
+                        </optional>
+                        <choice>
+                            <!-- Direct rich text content (legacy format) -->
+                            <ref name="bc-rich-text"/>
+                            <!-- Text wrapper format (canonical format) -->
+                            <element name="text">
+                                <ref name="bc-rich-text"/>
+                            </element>
+                        </choice>
+                    </element>
+                </zeroOrMore>
+            </element>
+         </optional>
+         <optional>
+             <element name="subtitle">
+                 <ref name="bc-rich-text"/>
+             </element>
+         </optional>
+         <optional>
+             <element name="tgroup">
+                <attribute name="cols"><data type="positiveInteger"/></attribute>
+                <zeroOrMore>
+                    <element name="colspec">
+                        <attribute name="colname"><text/></attribute>
+                        <attribute name="colwidth"><text/></attribute>
+                    </element>
+                </zeroOrMore>
+                <optional>
+                    <element name="thead">
+                        <oneOrMore>
+                            <element name="row">
+                                <ref name="bc-table-row-content"/>
+                            </element>
+                        </oneOrMore>
+                    </element>
+                </optional>
+                <element name="tbody">
+                    <oneOrMore>
+                        <element name="row">
+                            <ref name="bc-table-row-content"/>
+                        </element>
+                    </oneOrMore>
+                </element>
+            </element>
+         </optional>
+         <!-- Table notes (footnotes) -->
+         <optional>
+             <element name="table-notes">
+                 <oneOrMore>
+                     <element name="note">
+                         <optional>
+                             <attribute name="xml:id"><data type="ID"/></attribute>
+                         </optional>
+                         <optional>
+                             <attribute name="vendor-id"><text/></attribute>
+                         </optional>
+                         <choice>
+                             <!-- Direct rich text content (legacy format) -->
+                             <ref name="bc-rich-text"/>
+                             <!-- Multiple text wrapper format (canonical format) -->
+                             <oneOrMore>
+                                 <element name="text">
+                                     <ref name="bc-rich-text"/>
+                                 </element>
+                             </oneOrMore>
+                         </choice>
+                     </element>
+                 </oneOrMore>
+             </element>
+         </optional>
+    </define>
+    
+    <define name="bc-table-row-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="ID"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="revised">
+                <value>yes</value>
+            </attribute>
+        </optional>
+        <choice>
+            <!-- Normal row content: one or more entry elements -->
+            <oneOrMore>
+                <element name="entry">
+                <optional>
+                    <attribute name="revised">
+                        <value>yes</value>
+                    </attribute>
+                </optional>
+                <optional>
+                    <attribute name="align">
+                        <choice>
+                            <value>left</value>
+                            <value>center</value>
+                            <value>right</value>
+                        </choice>
+                    </attribute>
+                </optional>
+                <optional>
+                    <attribute name="rowspan"><data type="positiveInteger"/></attribute>
+                </optional>
+                <optional>
+                    <attribute name="colspan"><data type="positiveInteger"/></attribute>
+                </optional>
+                <!-- CALS table spanning attributes -->
+                <optional>
+                    <attribute name="namest"><text/></attribute>
+                </optional>
+                <optional>
+                    <attribute name="nameend"><text/></attribute>
+                </optional>
+                 <choice>
+                     <!-- Simple text content -->
+                     <ref name="bc-rich-text"/>
+
+                     <!-- Figure element for inline figures in tables -->
+                     <element name="figure">
+                         <ref name="bc-figure-content"/>
+                     </element>
+
+                     <!-- Single standard element -->
+                    <element name="standard">
+                        <attribute name="agency"><text/></attribute>
+                        <attribute name="number"><text/></attribute>
+                        <optional>
+                            <attribute name="bc-adoption"><text/></attribute>
+                        </optional>
+                        <text/>
+                    </element>
+                    
+                    <!-- Multiple ref elements -->
+                    <oneOrMore>
+                        <element name="ref">
+                            <attribute name="type"><text/></attribute>
+                            <attribute name="target"><text/></attribute>
+                            <optional>
+                                <attribute name="display-type"><text/></attribute>
+                            </optional>
+                            <optional>
+                                <attribute name="pretext"><text/></attribute>
+                            </optional>
+                            <optional>
+                                <attribute name="vendor-target"><text/></attribute>
+                            </optional>
+                            <text/>
+                        </element>
+                    </oneOrMore>
+                    
+                    <!-- BC-specific reference -->
+                    <element name="bc-ref">
+                        <attribute name="type"><text/></attribute>
+                        <attribute name="target"><text/></attribute>
+                        <optional>
+                            <attribute name="section"><text/></attribute>
+                        </optional>
+                        <text/>
+                    </element>
+                </choice>
+            </element>
+            </oneOrMore>
+            <!-- Revision history for row-level amendments (new rows) -->
+            <element name="revision-history">
+                <ref name="bc-row-revision-history-content"/>
+            </element>
+        </choice>
+    </define>
+    
+    <!-- Revision history content for table rows in BC overlay -->
+    <define name="bc-row-revision-history-content">
+        <element name="original">
+            <attribute name="effective-date">
+                <data type="date"/>
+            </attribute>
+            <zeroOrMore>
+                <text/>
+            </zeroOrMore>
+        </element>
+        <oneOrMore>
+            <element name="revision">
+                <attribute name="seq">
+                    <data type="positiveInteger"/>
+                </attribute>
+                <attribute name="type">
+                    <choice>
+                        <value>amendment</value>
+                        <value>errata</value>
+                        <value>policy</value>
+                        <value>accessibility</value>
+                        <value>correction</value>
+                    </choice>
+                </attribute>
+                <attribute name="effective-date">
+                    <data type="date"/>
+                </attribute>
+                <attribute name="id"><text/></attribute>
+                <attribute name="status">
+                    <choice>
+                        <value>current</value>
+                        <value>superseded</value>
+                    </choice>
+                </attribute>
+                <element name="content">
+                     <oneOrMore>
+                        <element name="entry">
+                            <optional>
+                                <attribute name="align">
+                                    <choice>
+                                        <value>left</value>
+                                        <value>center</value>
+                                        <value>right</value>
+                                    </choice>
+                                </attribute>
+                            </optional>
+                            <choice>
+                                <!-- Rich text content -->
+                                <ref name="bc-rich-text"/>
+                                <!-- Figure element for inline figures in tables -->
+                                <element name="figure">
+                                    <ref name="bc-figure-content"/>
+                                </element>
+                            </choice>
+                        </element>
+                    </oneOrMore>
+                </element>
+                <element name="change-summary"><text/></element>
+                <element name="note"><text/></element>
+            </element>
+        </oneOrMore>
+    </define>
+    
+    <!-- Table revision content - full table structure for revision history snapshots -->
+    <define name="bc-table-revision-content">
+        <optional>
+            <element name="title">
+                <ref name="bc-rich-text"/>
+                <zeroOrMore>
+                    <element name="note">
+                        <optional>
+                            <attribute name="xml:id"><data type="ID"/></attribute>
+                        </optional>
+                        <ref name="bc-rich-text"/>
+                    </element>
+                </zeroOrMore>
+            </element>
+        </optional>
+        <optional>
+            <element name="subtitle">
+                <ref name="bc-rich-text"/>
+            </element>
+        </optional>
+        <zeroOrMore>
+            <element name="ref">
+                <attribute name="type"><text/></attribute>
+                <attribute name="target"><text/></attribute>
+                <optional>
+                    <attribute name="display-type"><text/></attribute>
+                </optional>
+                <optional>
+                    <attribute name="pretext"><text/></attribute>
+                </optional>
+                <optional>
+                    <attribute name="vendor-target"><text/></attribute>
+                </optional>
+                <text/>
+            </element>
+        </zeroOrMore>
+        <optional>
+            <element name="tgroup">
+                <attribute name="cols"><data type="positiveInteger"/></attribute>
+                <zeroOrMore>
+                    <element name="colspec">
+                        <attribute name="colname"><text/></attribute>
+                        <attribute name="colwidth"><text/></attribute>
+                    </element>
+                </zeroOrMore>
+                <optional>
+                    <element name="thead">
+                        <oneOrMore>
+                            <element name="row">
+                                <ref name="bc-table-row-content"/>
+                            </element>
+                        </oneOrMore>
+                    </element>
+                </optional>
+                <element name="tbody">
+                    <oneOrMore>
+                        <element name="row">
+                            <ref name="bc-table-row-content"/>
+                        </element>
+                    </oneOrMore>
+                </element>
+            </element>
+        </optional>
+        <!-- Table notes (footnotes) -->
+        <optional>
+            <element name="table-notes">
+                <oneOrMore>
+                    <element name="note">
+                        <optional>
+                            <attribute name="xml:id"><data type="ID"/></attribute>
+                        </optional>
+                        <optional>
+                            <attribute name="vendor-id"><text/></attribute>
+                        </optional>
+                        <choice>
+                            <!-- Direct rich text content (legacy format) -->
+                            <ref name="bc-rich-text"/>
+                            <!-- Multiple text wrapper format (canonical format) -->
+                            <oneOrMore>
+                                <element name="text">
+                                    <ref name="bc-rich-text"/>
+                                </element>
+                            </oneOrMore>
+                        </choice>
+                    </element>
+                </oneOrMore>
+            </element>
+        </optional>
+    </define>
+    
+    <define name="bc-figure-content">
+        <optional>
+            <attribute name="xml:id">
+                <data type="ID"/>
+            </attribute>
+        </optional>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <element name="title"><ref name="bc-rich-text"/></element>
+        <!-- Forming-part element (contains forming part references) -->
+        <optional>
+            <element name="forming-part">
+                <oneOrMore>
+                    <element name="ref">
+                        <attribute name="type">
+                            <choice>
+                                <value>internal</value>
+                                <value>external</value>
+                                <value>standard</value>
+                                <value>term</value>
+                                <value>functional-statement</value>
+                                <value>sub-objective</value>
+                                <value>objective</value>
+                                <value>bc-code</value>
+                            </choice>
+                        </attribute>
+                        <attribute name="target"><text/></attribute>
+                        <optional>
+                            <attribute name="display-type">
+                                <choice>
+                                    <value>long</value>
+                                    <value>medium</value>
+                                    <value>short</value>
+                                    <value>number</value>
+                                    <value>shortNum</value>
+                                    <value>shortSbcl</value>
+                                    <value>title</value>
+                                </choice>
+                            </attribute>
+                        </optional>
+                        <optional><text/></optional>
+                    </element>
+                </oneOrMore>
+            </element>
+        </optional>
+        <element name="graphic">
+            <attribute name="src"><data type="anyURI"/></attribute>
+            <attribute name="alt"><text/></attribute>
+            <optional>
+                <attribute name="width"><text/></attribute>
+            </optional>
+            <optional>
+                <attribute name="height"><text/></attribute>
+            </optional>
+        </element>
+        <zeroOrMore>
+            <element name="note">
+                <attribute name="xml:id"><data type="ID"/></attribute>
+                <ref name="bc-rich-text"/>
+            </element>
+        </zeroOrMore>
+    </define>
+    
+    <!-- ================================================================== -->
+    <!-- BC LIST CONTENT                                                    -->
+    <!-- ================================================================== -->
+    
+    <define name="bc-list-content">
+        <attribute name="type">
+            <choice>
+                <value>bulleted</value>
+                <value>numbered</value>
+                <value>alphabetic</value>
+                <value>definition</value>
+                <value>variable</value>
+                <value>organization</value>
+            </choice>
+        </attribute>
+        <oneOrMore>
+            <element name="item">
+                <optional>
+                    <attribute name="xml:id"><data type="ID"/></attribute>
+                </optional>
+                <optional>
+                    <attribute name="revised">
+                        <choice>
+                            <value>yes</value>
+                            <value>no</value>
+                        </choice>
+                    </attribute>
+                </optional>
+                <choice>
+                    <!-- Regular list item -->
+                    <ref name="bc-rich-text"/>
+                    
+                    <!-- Definition list item -->
+                    <group>
+                        <element name="term">
+                            <optional>
+                                <attribute name="xml:id"><data type="ID"/></attribute>
+                            </optional>
+                            <ref name="bc-rich-text"/>
+                        </element>
+                        <element name="definition">
+                            <choice>
+                                <ref name="bc-rich-text"/>
+                                <ref name="bc-revision-history"/>
+                            </choice>
+                        </element>
+                    </group>
+                    
+                    <!-- Variable list item -->
+                    <group>
+                        <element name="variable">
+                            <ref name="bc-rich-text"/>
+                        </element>
+                        <element name="description">
+                            <ref name="bc-rich-text"/>
+                        </element>
+                    </group>
+                    
+                    <!-- Organization list item -->
+                    <group>
+                        <element name="organization">
+                            <text/>
+                        </element>
+                        <element name="address">
+                            <ref name="bc-rich-text"/>
+                        </element>
+                    </group>
+                </choice>
+            </element>
+        </oneOrMore>
+    </define>
+    
+    <!-- ================================================================== -->
+    <!-- REVISION HISTORY PATTERNS                                           -->
+    <!-- ================================================================== -->
+    
+    <!-- Generic revision history for any structural element -->
+    <define name="bc-revision-history">
+        <element name="revision-history">
+            <!-- Original content (baseline before any amendments) -->
+            <element name="original">
+                <attribute name="effective-date">
+                    <data type="date"/>
+                </attribute>
+                <ref name="bc-revision-original-content"/>
+            </element>
+            <!-- Revision snapshots with complete content at each point -->
+            <oneOrMore>
+                <element name="revision">
+                    <attribute name="seq">
+                        <data type="positiveInteger"/>
+                    </attribute>
+                    <attribute name="type">
+                        <choice>
+                            <value>errata</value>
+                            <value>policy</value>
+                            <value>accessibility</value>
+                            <value>correction</value>
+                            <value>amendment</value>
+                        </choice>
+                    </attribute>
+                    <attribute name="effective-date">
+                        <data type="date"/>
+                    </attribute>
+                    <attribute name="id">
+                        <text/>
+                    </attribute>
+                    <attribute name="status">
+                        <choice>
+                            <value>current</value>
+                            <value>superseded</value>
+                        </choice>
+                    </attribute>
+                    <!-- Complete content snapshot as of this revision -->
+                    <element name="content">
+                        <ref name="bc-revision-content"/>
+                    </element>
+                    <!-- Summary of what changed -->
+                    <optional>
+                        <element name="change-summary">
+                            <text/>
+                        </element>
+                    </optional>
+                    <optional>
+                        <element name="note">
+                            <text/>
+                        </element>
+                    </optional>
+                </element>
+            </oneOrMore>
+        </element>
+    </define>
+    
+    <!-- Content patterns for revision history - allows any structural content -->
+    <define name="bc-revision-original-content">
+        <choice>
+            <ref name="bc-rich-text"/>
+            <!-- Sentence content for sentence-level revision history -->
+            <group>
+                <optional>
+                    <element name="intent-ref">
+                        <attribute name="target"><text/></attribute>
+                        <optional>
+                            <attribute name="vendor-target"><text/></attribute>
+                        </optional>
+                    </element>
+                </optional>
+                <element name="text"><ref name="bc-rich-text"/></element>
+                <zeroOrMore>
+                    <element name="clause">
+                        <ref name="bc-clause-content"/>
+                    </element>
+                </zeroOrMore>
+                <zeroOrMore>
+                    <element name="see-also">
+                        <attribute name="xml:id"><text/></attribute>
+                        <ref name="bc-rich-text"/>
+                    </element>
+                </zeroOrMore>
+            </group>
+            <!-- Article content for article-level revision history (title + sentences/tables/figures) -->
+            <group>
+                <element name="title"><ref name="bc-rich-text"/></element>
+                <optional>
+                    <element name="see-also">
+                        <attribute name="xml:id"><text/></attribute>
+                        <ref name="bc-rich-text"/>
+                    </element>
+                </optional>
+                <oneOrMore>
+                    <choice>
+                        <ref name="bc-structural-elements"/>
+                        <ref name="canonical-structural-elements"/>
+                    </choice>
+                </oneOrMore>
+            </group>
+            <oneOrMore>
+                <ref name="bc-structural-elements"/>
+            </oneOrMore>
+            <oneOrMore>
+                <ref name="canonical-structural-elements"/>
+            </oneOrMore>
+        </choice>
+    </define>
+    
+    <define name="bc-revision-content">
+        <choice>
+            <!-- Allow empty content (for auto-populated original elements) -->
+            <empty/>
+            <ref name="bc-rich-text"/>
+            <!-- Standalone title element (for subsection/article title-only content) -->
+            <element name="title"><ref name="bc-rich-text"/></element>
+            <!-- Sentence content for sentence-level revision history -->
+            <group>
+                <optional>
+                    <element name="intent-ref">
+                        <attribute name="target"><text/></attribute>
+                        <optional>
+                            <attribute name="vendor-target"><text/></attribute>
+                        </optional>
+                    </element>
+                </optional>
+                <element name="text"><ref name="bc-rich-text"/></element>
+                <zeroOrMore>
+                    <element name="clause">
+                        <ref name="bc-clause-content"/>
+                    </element>
+                </zeroOrMore>
+                <zeroOrMore>
+                    <element name="see-also">
+                        <attribute name="xml:id"><text/></attribute>
+                        <ref name="bc-rich-text"/>
+                    </element>
+                </zeroOrMore>
+            </group>
+            <!-- Clause content for clause-level revision history (text + subclauses) -->
+            <group>
+                <element name="text"><ref name="bc-rich-text"/></element>
+                <oneOrMore>
+                    <element name="subclause">
+                        <ref name="bc-subclause-content"/>
+                    </element>
+                </oneOrMore>
+            </group>
+            <!-- Definition list item content (term + definition) -->
+            <group>
+                <element name="term">
+                    <optional>
+                        <attribute name="xml:id"><data type="ID"/></attribute>
+                    </optional>
+                    <ref name="bc-rich-text"/>
+                </element>
+                <element name="definition">
+                    <ref name="bc-rich-text"/>
+                </element>
+            </group>
+            <!-- Article content for article-level revision history (title + sentences/tables/figures) -->
+            <group>
+                <element name="title"><ref name="bc-rich-text"/></element>
+                <optional>
+                    <element name="see-also">
+                        <attribute name="xml:id"><text/></attribute>
+                        <ref name="bc-rich-text"/>
+                    </element>
+                </optional>
+                <oneOrMore>
+                    <choice>
+                        <ref name="bc-structural-elements"/>
+                        <!-- Allow note elements in revision content -->
+                        <element name="note">
+                            <optional>
+                                <attribute name="xml:id"><data type="ID"/></attribute>
+                            </optional>
+                            <ref name="bc-rich-text"/>
+                        </element>
+                    </choice>
+                </oneOrMore>
+            </group>
+            <!-- Mixed content with structural elements and notes -->
+            <group>
+                <oneOrMore>
+                    <choice>
+                        <ref name="bc-structural-elements"/>
+                        <!-- Allow note elements in revision content -->
+                        <element name="note">
+                            <optional>
+                                <attribute name="xml:id"><data type="ID"/></attribute>
+                            </optional>
+                            <ref name="bc-rich-text"/>
+                        </element>
+                    </choice>
+                </oneOrMore>
+            </group>
+            <oneOrMore>
+                <ref name="bc-structural-elements"/>
+            </oneOrMore>
+        </choice>
+    </define>
+    
+    <!-- Canonical structural elements (for original content in revision history) -->
+    <define name="canonical-structural-elements">
+        <choice>
+            <!-- Sentences and their components with canonical IDs -->
+            <element name="sentence">
+                <ref name="canonical-sentence-content"/>
+            </element>
+            <element name="clause">
+                <ref name="canonical-clause-content"/>
+            </element>
+            <element name="subclause">
+                <ref name="canonical-subclause-content"/>
+            </element>
+            <!-- Tables and figures with canonical structure -->
+            <element name="table">
+                <ref name="bc-table-content"/>
+            </element>
+            <element name="figure">
+                <ref name="bc-figure-content"/>
+            </element>
+        </choice>
+    </define>
+    
+    <!-- Canonical sentence content (for original sections) -->
+    <define name="canonical-sentence-content">
+        <attribute name="xml:id">
+            <data type="string">
+                <param name="pattern">(nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+            </data>
+        </attribute>
+        <attribute name="number"><data type="positiveInteger"/></attribute>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <optional>
+            <element name="intent-ref">
+                <attribute name="target"><text/></attribute>
+                <optional>
+                    <attribute name="vendor-target"><text/></attribute>
+                </optional>
+            </element>
+        </optional>
+        <element name="text"><ref name="bc-rich-text"/></element>
+        <zeroOrMore>
+            <element name="clause">
+                <ref name="canonical-clause-content"/>
+            </element>
+        </zeroOrMore>
+    </define>
+    
+    <!-- Canonical clause content (for original sections) -->
+    <define name="canonical-clause-content">
+        <attribute name="xml:id">
+            <data type="string">
+                <param name="pattern">(nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+            </data>
+        </attribute>
+        <attribute name="letter">
+            <data type="string">
+                <param name="pattern">[a-z]</param>
+            </data>
+        </attribute>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <element name="text"><ref name="bc-rich-text"/></element>
+        <zeroOrMore>
+            <element name="subclause">
+                <ref name="canonical-subclause-content"/>
+            </element>
+        </zeroOrMore>
+    </define>
+    
+    <!-- Canonical subclause content (for original sections) -->
+    <define name="canonical-subclause-content">
+        <attribute name="xml:id">
+            <data type="string">
+                <param name="pattern">(nbc|bc)\.(div(A|B|BV2|C)(\.(part|sect|subsect|art|sent|clause|subclause)[0-9]+)*)?</param>
+            </data>
+        </attribute>
+        <attribute name="number"><data type="positiveInteger"/></attribute>
+        <optional>
+            <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <element name="text"><ref name="bc-rich-text"/></element>
+    </define>
+    
+    <!-- All structural elements that can appear in revision content -->
+    <define name="bc-structural-elements">
+        <choice>
+            <!-- High-level structural elements -->
+            <element name="part">
+                <ref name="bc-part-content"/>
+            </element>
+            <element name="section">
+                <ref name="bc-section-content"/>
+            </element>
+            <element name="subsection">
+                <ref name="bc-subsection-content"/>
+            </element>
+            <element name="article">
+                <ref name="bc-article-content"/>
+            </element>
+            <!-- Sentences and their components -->
+            <element name="sentence">
+                <ref name="bc-sentence-content"/>
+            </element>
+            <element name="clause">
+                <ref name="bc-clause-content"/>
+            </element>
+            <element name="subclause">
+                <ref name="bc-subclause-content"/>
+            </element>
+            <!-- Tables and figures -->
+            <element name="table">
+                <ref name="bc-table-content"/>
+            </element>
+            <element name="figure">
+                <ref name="bc-figure-content"/>
+            </element>
+            <!-- Lists -->
+            <element name="list">
+                <ref name="bc-list-content"/>
+            </element>
+        </choice>
+    </define>
+
+    <!-- ================================================================== -->
+    <!-- BC RICH TEXT CONTENT                                               -->
+    <!-- ================================================================== -->
+    
+    <define name="bc-rich-text">
+        <mixed>
+            <zeroOrMore>
+                <choice>
+                    <!-- Formatting elements -->
+                    <element name="emphasis">
+                        <attribute name="style">
+                            <choice>
+                                <value>bold</value>
+                                <value>italic</value>
+                                <value>bolditalic</value>
+                                <value>underscore</value>
+                            </choice>
+                        </attribute>
+                        <ref name="bc-rich-text"/>
+                    </element>
+                    
+                     <element name="super"><text/></element>
+                     <element name="sub"><text/></element>
+
+                     <element name="subtitle"><ref name="bc-rich-text"/></element>
+
+                     <!-- Cross-references with BC-specific handling -->
+                    <element name="ref">
+                        <attribute name="type">
+                            <choice>
+                                <value>internal</value>
+                                <value>external</value>
+                                <value>standard</value>
+                                <value>term</value>
+                                <value>bc-code</value>
+                                <value>bc-act</value>
+                                <value>functional-statement</value>
+                                <value>sub-objective</value>
+                            </choice>
+                        </attribute>
+                        <attribute name="target"><data type="string"/></attribute>
+                        <optional>
+                            <attribute name="display-type">
+                                <choice>
+                                    <value>long</value>
+                                    <value>medium</value>
+                                    <value>short</value>
+                                    <value>number</value>
+                                    <value>shortNum</value>
+                                    <value>title</value>
+                                </choice>
+                            </attribute>
+                        </optional>
+                        <optional>
+                            <attribute name="pretext"><text/></attribute>
+                        </optional>
+                        <optional>
+                            <attribute name="standardId"><text/></attribute>
+                        </optional>
+                        <optional>
+                            <attribute name="vendor-target"><text/></attribute>
+                        </optional>
+                        <text/>
+                    </element>
+                    
+                    <!-- BC-specific reference elements -->
+                    <element name="bc-ref">
+                        <attribute name="type">
+                            <choice>
+                                <value>bc-fire-code</value>
+                                <value>bc-building-code</value>
+                                <value>bc-plumbing-code</value>
+                                <value>bc-act</value>
+                                <value>bc-regulation</value>
+                            </choice>
+                        </attribute>
+                        <attribute name="target"><text/></attribute>
+                        <optional>
+                            <attribute name="section"><text/></attribute>
+                        </optional>
+                        <text/>
+                    </element>
+                    
+                    <!-- Measurements -->
+                    <element name="measurement">
+                        <attribute name="units">
+                            <choice>
+                                <value>metric</value>
+                                <value>imperial</value>
+                            </choice>
+                        </attribute>
+                        <mixed>
+                            <zeroOrMore>
+                                <choice>
+                                    <element name="super"><text/></element>
+                                    <element name="sub"><text/></element>
+                                    <element name="ref">
+                                        <attribute name="type">
+                                            <choice>
+                                                <value>internal</value>
+                                                <value>external</value>
+                                                <value>standard</value>
+                                                <value>term</value>
+                                                <value>bc-code</value>
+                                                <value>bc-act</value>
+                                                <value>functional-statement</value>
+                                                <value>sub-objective</value>
+                                            </choice>
+                                        </attribute>
+                                        <attribute name="target"><data type="string"/></attribute>
+                                        <optional>
+                                            <attribute name="display-type">
+                                                <choice>
+                                                    <value>long</value>
+                                                    <value>medium</value>
+                                                    <value>short</value>
+                                                    <value>number</value>
+                                                    <value>shortNum</value>
+                                                    <value>title</value>
+                                                </choice>
+                                            </attribute>
+                                        </optional>
+                                        <optional>
+                                            <attribute name="pretext"><text/></attribute>
+                                        </optional>
+                                        <optional>
+                                            <attribute name="standardId"><text/></attribute>
+                                        </optional>
+                                        <optional>
+                                            <attribute name="vendor-target"><text/></attribute>
+                                        </optional>
+                                        <text/>
+                                    </element>
+                                </choice>
+                            </zeroOrMore>
+                        </mixed>
+                    </element>
+                    
+                    <!-- Standards references with BC context -->
+                    <element name="standard">
+                        <attribute name="agency"><text/></attribute>
+                        <attribute name="number"><text/></attribute>
+                        <optional>
+                            <attribute name="bc-adoption"><text/></attribute>
+                        </optional>
+                        <ref name="bc-rich-text"/>
+                    </element>
+                    
+                    <!-- BC-specific annotations -->
+                    <element name="bc-note">
+                        <attribute name="type">
+                            <choice>
+                                <value>provincial-requirement</value>
+                                <value>exemption</value>
+                                <value>clarification</value>
+                                <value>reference</value>
+                            </choice>
+                        </attribute>
+                        <ref name="bc-rich-text"/>
+                    </element>
+                    
+                    <!-- Note elements (for table titles, etc.) -->
+                    <element name="note">
+                        <optional>
+                            <attribute name="xml:id"><data type="ID"/></attribute>
+                        </optional>
+                        <ref name="bc-rich-text"/>
+                    </element>
+                    
+                    <!-- Web addresses -->
+                    <element name="web-addr">
+                        <attribute name="href"><data type="anyURI"/></attribute>
+                        <text/>
+                    </element>
+                    
+                    <!-- Change tracking for BC amendments -->
+                    <element name="bc-change">
+                        <attribute name="type">
+                            <choice>
+                                <value>bc-insert</value>
+                                <value>bc-delete</value>
+                                <value>bc-modify</value>
+                            </choice>
+                        </attribute>
+                        <optional>
+                            <attribute name="amendment-id"><text/></attribute>
+                        </optional>
+                        <optional>
+                            <attribute name="effective-date"><data type="date"/></attribute>
+                        </optional>
+                        <ref name="bc-rich-text"/>
+                    </element>
+                    
+                    <!-- Mathematical equations -->
+                    <element name="equation">
+                        <attribute name="type">
+                            <choice>
+                                <value>inline</value>
+                                <value>display</value>
+                            </choice>
+                        </attribute>
+                        <optional>
+                            <attribute name="xml:id"><data type="ID"/></attribute>
+                        </optional>
+                        <!-- HTML equation rendering source -->
+                        <optional>
+                            <attribute name="html-src"><text/></attribute>
+                        </optional>
+                        <optional>
+                            <choice>
+                                <element name="mathml">
+                                    <!-- MathML content -->
+                                    <ref name="mathml-content"/>
+                                </element>
+                                <!-- Direct MathML math element (with namespace) -->
+                                <ref name="mathml-content"/>
+                                <element name="latex"><text/></element>
+                                <element name="text"><text/></element>
+                            </choice>
+                        </optional>
+                    </element>
+                    
+                    <!-- Lists -->
+                    <element name="list">
+                        <ref name="bc-list-content"/>
+                    </element>
+
+                    <!-- Figures -->
+                    <element name="figure">
+                        <ref name="bc-figure-content"/>
+                    </element>
+
+                    <!-- Revision history for date-based versioning (snapshot approach) -->
+                    <element name="revision-history">
+                        <!-- Original content (baseline before any amendments) -->
+                        <element name="original">
+                            <attribute name="effective-date">
+                                <data type="date"/>
+                            </attribute>
+                            <ref name="bc-rich-text"/>
+                        </element>
+                        <!-- Revision snapshots with complete content at each point -->
+                        <oneOrMore>
+                            <element name="revision">
+                                <attribute name="seq">
+                                    <data type="positiveInteger"/>
+                                </attribute>
+                                <attribute name="type">
+                                    <choice>
+                                        <value>errata</value>
+                                        <value>policy</value>
+                                        <value>accessibility</value>
+                                        <value>correction</value>
+                                        <value>amendment</value>
+                                    </choice>
+                                </attribute>
+                                <attribute name="effective-date">
+                                    <data type="date"/>
+                                </attribute>
+                                <attribute name="id">
+                                    <text/>
+                                </attribute>
+                                <attribute name="status">
+                                    <choice>
+                                        <value>current</value>
+                                        <value>superseded</value>
+                                    </choice>
+                                </attribute>
+                                <!-- Complete content snapshot as of this revision -->
+                                <element name="content">
+                                    <ref name="bc-rich-text"/>
+                                </element>
+                                <!-- Summary of what changed -->
+                                <optional>
+                                    <element name="change-summary">
+                                        <text/>
+                                    </element>
+                                </optional>
+                                <optional>
+                                    <element name="note">
+                                        <text/>
+                                    </element>
+                                </optional>
+                            </element>
+                        </oneOrMore>
+                    </element>
+                </choice>
+            </zeroOrMore>
+        </mixed>
+    </define>
+    
+    <!-- ================================================================== -->
+    <!-- MATHML CONTENT DEFINITION                                          -->
+    <!-- ================================================================== -->
+
+    <!-- Placeholder for MathML content - allows any elements in any namespace -->
+    <define name="mathml-content">
+        <element>
+            <anyName/>
+            <zeroOrMore>
+                <attribute>
+                    <anyName>
+                        <except>
+                            <name>xml:id</name>
+                            <name>id</name>
+                        </except>
+                    </anyName>
+                </attribute>
+            </zeroOrMore>
+            <mixed>
+                <zeroOrMore>
+                    <ref name="mathml-content"/>
+                </zeroOrMore>
+            </mixed>
+        </element>
+    </define>
+    
+</grammar>

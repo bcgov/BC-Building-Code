@@ -1,0 +1,3475 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>BC Building Code JSON Validation Report</title>
+      <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 20px;
+                        background-color: #f5f5f5;
+                    }
+                    h1 {
+                        color: #003366;
+                        border-bottom: 3px solid #003366;
+                        padding-bottom: 10px;
+                    }
+                    h2 {
+                        color: #0066cc;
+                        margin-top: 30px;
+                        border-bottom: 2px solid #0066cc;
+                        padding-bottom: 5px;
+                    }
+                    h3 {
+                        color: #0088cc;
+                        margin-top: 20px;
+                    }
+                    .summary {
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        margin-bottom: 20px;
+                    }
+                    .summary-stats {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        gap: 15px;
+                        margin-top: 15px;
+                    }
+                    .stat-box {
+                        background-color: #f8f9fa;
+                        padding: 15px;
+                        border-radius: 5px;
+                        border-left: 4px solid #0066cc;
+                    }
+                    .stat-box.success {
+                        border-left-color: #28a745;
+                    }
+                    .stat-box.warning {
+                        border-left-color: #ffc107;
+                    }
+                    .stat-box.error {
+                        border-left-color: #dc3545;
+                    }
+                    .stat-label {
+                        font-size: 12px;
+                        color: #666;
+                        text-transform: uppercase;
+                        margin-bottom: 5px;
+                    }
+                    .stat-value {
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: #333;
+                    }
+                    .validation-section {
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        margin-bottom: 20px;
+                    }
+                    .issue {
+                        padding: 10px;
+                        margin: 10px 0;
+                        border-radius: 3px;
+                        border-left: 4px solid;
+                    }
+                    .issue.error {
+                        background-color: #f8d7da;
+                        border-left-color: #dc3545;
+                        color: #721c24;
+                    }
+                    .issue.warning {
+                        background-color: #fff3cd;
+                        border-left-color: #ffc107;
+                        color: #856404;
+                    }
+                    .issue.success {
+                        background-color: #d4edda;
+                        border-left-color: #28a745;
+                        color: #155724;
+                    }
+                    .issue-id {
+                        font-family: monospace;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    .issue-details {
+                        font-size: 14px;
+                        margin-top: 5px;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 10px;
+                    }
+                    th, td {
+                        padding: 8px;
+                        text-align: left;
+                        border-bottom: 1px solid #ddd;
+                    }
+                    th {
+                        background-color: #f8f9fa;
+                        font-weight: bold;
+                    }
+                    tr.error {
+                        background-color: #f8d7da;
+                    }
+                    tr.warning {
+                        background-color: #fff3cd;
+                    }
+                    tr.success {
+                        background-color: #d4edda;
+                    }
+                    td.id-cell {
+                        font-family: monospace;
+                        font-size: 12px;
+                    }
+                    td.status-cell {
+                        font-weight: bold;
+                    }
+                    td.status-cell.error {
+                        color: #dc3545;
+                    }
+                    td.status-cell.warning {
+                        color: #856404;
+                    }
+                    td.status-cell.success {
+                        color: #28a745;
+                    }
+                    .timestamp {
+                        color: #666;
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+                </style>
+   </head>
+   <body>
+      <h1>BC Building Code JSON Validation Report</h1>
+      <div class="summary">
+         <h2>Validation Summary</h2>
+         <div class="timestamp">
+            Generated: 2026-03-16T14:26:48.7488171-07:00</div>
+         <div class="summary-stats">
+            <div class="stat-box">
+               <div class="stat-label">Total XML Elements</div>
+               <div class="stat-value">50300</div>
+            </div>
+            <div class="stat-box">
+               <div class="stat-label">JSON Objects with IDs</div>
+               <div class="stat-value">47654</div>
+            </div>
+            <div class="stat-box">
+               <div class="stat-label">Revised Elements</div>
+               <div class="stat-value">257</div>
+            </div>
+            <div class="stat-box error">
+               <div class="stat-label">With Revision History</div>
+               <div class="stat-value">242</div>
+            </div>
+         </div>
+      </div>
+      <div class="validation-section">
+         <h2>Validation 1: Revised Nodes and Revision History</h2>
+         <p>Checking that all elements with revised="yes" have proper revision history in JSON...</p>
+         <p>Found <strong>250</strong> revised elements in XML.</p>
+         <p style="margin-top: 10px;"><span style="color: #dc3545; font-weight: bold;">Errors: 6</span><span style="margin-left: 20px; color: #856404; font-weight: bold;">Warnings: 2</span></p>
+         <table>
+            <thead>
+               <tr>
+                  <th>Status</th>
+                  <th>Element ID</th>
+                  <th>Type</th>
+                  <th>Revised Flag</th>
+                  <th>Revisions Array</th>
+                  <th>Content</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.sent2.clause1</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row19</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table1.row37</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row5</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect1.art1.table2.row7</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divA.part1.sect1.subsect3</td>
+                  <td>subsection</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divA.part1.sect3.subsect3.art2.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divA.part1.sect3.subsect3.art3</td>
+                  <td>article</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">bc-crdntng-rgstrd-prfsnl</td>
+                  <td>item</td>
+                  <td>✗</td>
+                  <td>✗</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">bc-fld-rvw</td>
+                  <td>item</td>
+                  <td>✗</td>
+                  <td>✗</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">grn-grc-ccp</td>
+                  <td>item</td>
+                  <td>✗</td>
+                  <td>✗</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">hgh-hzrd-grc</td>
+                  <td>item</td>
+                  <td>✗</td>
+                  <td>✗</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">bc-scnd-t</td>
+                  <td>item</td>
+                  <td>✗</td>
+                  <td>✗</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divA.part1.appendix.appnote7.div5.para4</td>
+                  <td>paragraph</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divA.part3.sect1.subsect1.art2.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divA.part3.sect1.subsect1.art2.sent3.clause1</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect1.subsect2.art1.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row26</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row27</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.bcfc2024</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.bcsbc2015</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.ccbfc56529e</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.csaa27716</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.astme33100</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.astme54700</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.astme110515</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.cgsb1220m89</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.cgsb517120005</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.csaa44021944031</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.csaa44021</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.csab5218</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.ansicsab14961</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.csab65118</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.csac2221131</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.cancsac260m90</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.cancsac43909</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.cancsac74503</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.cancsaf326m91</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.csao32516</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.csaz240mh</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.csaz24021116</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.csaz240101</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.hrai2017</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.hvipub9152013</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.hvipub9162013</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.nrccbd230</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.nrccbd2302</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect2.art5.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect2.art8.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect3.art1.table1</td>
+                  <td>table</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art4</td>
+                  <td>article</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art6</td>
+                  <td>article</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art9</td>
+                  <td>article</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art10.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art14.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect6.art14.sent3</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect7.art5.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect9.art5.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect11.art5.sent4</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect15.art2.sent5</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect1.art4.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect1.art6.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art6</td>
+                  <td>article</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art7</td>
+                  <td>article</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art11.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art11.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art12.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art13.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art14.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art14.sent3</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art16.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art18</td>
+                  <td>article</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art19.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art23.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art42.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art47.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art48.sent1.clause3</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art48.sent4</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art56.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art57.sent1.clause3</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art57.sent3</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art66.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art76.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art82.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93</td>
+                  <td>article</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect3.art7.table1</td>
+                  <td>table</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect3.art9.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect4.art1.sent7</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect5.art7.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect5.art12.sent7</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect6.art1.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect10</td>
+                  <td>subsection</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect3.subsect1.art3.sent12</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect3.subsect3.art7.sent4</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect4.subsect2.art1.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect2.art1.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect4.art1.sent3</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art1.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art1.sent3</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art2.sent4</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art6</td>
+                  <td>article</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art7.sent1.clause2</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.row919a</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.row919b</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.row919c</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.row919d</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.row919e</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow001</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow002</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow003</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow004</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow005</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow006</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow007</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow008</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow009</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow010</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow011</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow012</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow013</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow014</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow015</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow016</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow017</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow018</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow019</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow020</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow021</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow022</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow023</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow024</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow025</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow026</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow027</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow028</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow029</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow030</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow031</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow032</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow033</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow034</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow035</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow036</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow037</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow038</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.sect9.subsect1.art1.table1.bcrow039</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote21</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote22</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote23</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote24</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote25</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote26</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote43</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote54</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote55a</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote3210</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote321014</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote321021and2</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote321023</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote321024</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnote321043</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part3.appendix.appnoteA-3.8.5.1.3</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="warning">
+                  <td class="status-cell warning">⚠</td>
+                  <td class="id-cell">nbc.divB.part5.seealso</td>
+                  <td>see-also</td>
+                  <td colspan="3">Node not found in JSON (may be inline element)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part6.sect2.subsect1.art5.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part6.sect2.subsect1.art5.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part6.sect3.subsect1.art1.sent5</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part7.sect1.subsect2.art1.sent4</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect2.subsect3.art3.table1.rowh1</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect2.subsect3.art3.table2.rowh1</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect2.subsect3.art3.table3.rowh1</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect2.subsect3.art3.table4.rowh1</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect2.subsect3.art3.table5.rowh1</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect2.subsect3.art3.table6.rowh1</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect2.subsect3.art3.table7.rowh1</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect2.subsect3.art3.table8.rowh1</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect2.subsect3.art3.table9.rowh1</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect2.subsect3.art3.table10.rowh1</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect2.subsect3.art5.sent1.clause3</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect3.subsect1.art3.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect3.subsect1.art3.table1.rowh1</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.part10.sect4.subsect1.art1.table1.row2</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divB.appendixC.div18.para9</td>
+                  <td>paragraph</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divC.part2.sect2.subsect7.art1.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect1.subsect1.art1.sent3</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="warning">
+                  <td class="status-cell warning">⚠</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect4.subsect1.art1.seealso</td>
+                  <td>see-also</td>
+                  <td colspan="3">Node not found in JSON (may be inline element)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect4.subsect2.art5.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect5.subsect3.art1.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect5.subsect3.art1.sent4</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect5.subsect5.art1.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect7.subsect4.art2</td>
+                  <td>article</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect7.subsect4.art3.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect7.subsect5.art2.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect10.subsect1.art3.sent12</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect10.subsect3.art1.sent3.clause3.subclause1</td>
+                  <td>subclause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect11.subsect1.art1.sent2.clause1.subclause1</td>
+                  <td>subclause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect11.subsect1.art1.sent2.clause1.subclause2</td>
+                  <td>subclause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect13.subsect4.art3</td>
+                  <td>article</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect6.art1.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect6.art1.sent3</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect6.art1.table1</td>
+                  <td>table</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect6.art1.sent5</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect6.art1.sent6</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect11.art4.sent5</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect11.art4.table1</td>
+                  <td>table</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect11.art4.table2</td>
+                  <td>table</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect13.art3.sent1.clause3</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect13.art4.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect13.art10.sent2.clause1.subclause2</td>
+                  <td>subclause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect13.art10.sent6</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect13.art11.sent1.clause8</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect13.art11.table1</td>
+                  <td>table</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect13.art11.table2</td>
+                  <td>table</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect27.subsect2.art2.sent1.clause3.subclause2</td>
+                  <td>subclause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect27.subsect2.art2.sent1.clause3.subclause3</td>
+                  <td>subclause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect31.subsect6.art2.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect2.art1.sent1.clause2</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect3.art2.sent5</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect33.subsect5.art2.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect33.subsect5.art3.sent2</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect1.art2.sent5</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect1.art2.sent6</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect2.art6.table3.row2</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect5.art14.sent2.clause4.subclause1</td>
+                  <td>subclause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect5.art14.sent2.clause4.subclause2</td>
+                  <td>subclause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect7.art3.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect7.art4.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art2.sent3</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art2.sent4</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art2.sent6</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art3.sent1</td>
+                  <td>sentence</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art3.table1</td>
+                  <td>table</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause1</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause2</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause3</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause4</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause5</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause6</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect37.subsect1.art3.sent2.clause7</td>
+                  <td>clause</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect38.subsect1.art1.table1.row393</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect38.subsect1.art1.table1.row394</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect38.subsect1.art1.table1.row644</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect38.subsect1.art1.table1.row645</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect38.subsect1.art1.table1.row2815</td>
+                  <td>row</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓ (cells)</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote12a.para1</td>
+                  <td>paragraph</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote12b.para1</td>
+                  <td>paragraph</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote22.div4.para3</td>
+                  <td>paragraph</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote118.table1</td>
+                  <td>table</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote134c.eq1</td>
+                  <td>equation</td>
+                  <td>✗</td>
+                  <td>✗</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote199a</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+               <tr class="success">
+                  <td class="status-cell success">✓</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote217</td>
+                  <td>application-note</td>
+                  <td>✓</td>
+                  <td>✓</td>
+                  <td>✓</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="validation-section">
+         <h2>Validation 2: Structure Completeness</h2>
+         <p>Checking that major structural elements are present in JSON...</p>
+         <table>
+            <thead>
+               <tr>
+                  <th>Element Type</th>
+                  <th>XML Count</th>
+                  <th>JSON Count</th>
+                  <th>Status</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>division</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+               <tr>
+                  <td>part</td>
+                  <td>15</td>
+                  <td>15</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+               <tr>
+                  <td>section</td>
+                  <td>100</td>
+                  <td>100</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+               <tr>
+                  <td>subsection</td>
+                  <td>447</td>
+                  <td>447</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+               <tr>
+                  <td>article</td>
+                  <td>2022</td>
+                  <td>2027</td>
+                  <td><span style="color: orange;">⚠ Difference: -5</span></td>
+               </tr>
+               <tr>
+                  <td>sentence</td>
+                  <td>5135</td>
+                  <td>5201</td>
+                  <td><span style="color: orange;">⚠ Difference: -66</span></td>
+               </tr>
+               <tr>
+                  <td>table</td>
+                  <td>351</td>
+                  <td>346</td>
+                  <td><span style="color: orange;">⚠ Difference: 5</span></td>
+               </tr>
+               <tr>
+                  <td>figure</td>
+                  <td>318</td>
+                  <td>455</td>
+                  <td><span style="color: orange;">⚠ Difference: -137</span></td>
+               </tr>
+               <tr>
+                  <td>application-note</td>
+                  <td>828</td>
+                  <td>828</td>
+                  <td><span style="color: green;">✓ Match</span></td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="validation-section">
+         <h2>Validation 3: Content Completeness</h2>
+         <p>Checking for empty or missing content in JSON...</p>
+         <p style="margin-top: 10px;"><span style="color: #dc3545; font-weight: bold;">Total Errors: 130</span><span style="margin-left: 20px;">Empty Text Fields: 9</span><span style="margin-left: 20px;">Empty Content Fields: 121</span></p>
+         <h3>Empty Text Fields (9)</h3>
+         <table>
+            <thead>
+               <tr>
+                  <th>Status</th>
+                  <th>Element ID</th>
+                  <th>Parent ID</th>
+                  <th>Element Type</th>
+                  <th>Issue</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">nbc.divA.part1.sect3.subsect3.art2.sent2</td>
+                  <td>original</td>
+                  <td>Text field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect4.art1.sent7</td>
+                  <td>original</td>
+                  <td>Text field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect4.art1.sent3</td>
+                  <td>original</td>
+                  <td>Text field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art1.sent3</td>
+                  <td>original</td>
+                  <td>Text field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">nbc.divB.part3.sect8.subsect5.art2.sent4</td>
+                  <td>original</td>
+                  <td>Text field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect1.subsect1.art1.sent3</td>
+                  <td>original</td>
+                  <td>Text field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect10.subsect1.art3.sent12</td>
+                  <td>original</td>
+                  <td>Text field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect13.art4.sent2</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect13.art4</td>
+                  <td>sentence</td>
+                  <td>Text field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect13.art4.sent2</td>
+                  <td>revision</td>
+                  <td>Text field is empty</td>
+               </tr>
+            </tbody>
+         </table>
+         <h3>Empty Content Fields (121)</h3>
+         <table>
+            <thead>
+               <tr>
+                  <th>Status</th>
+                  <th>Element ID</th>
+                  <th>Parent ID</th>
+                  <th>Element Type</th>
+                  <th>Issue</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">nbc.divB.part3.sect2.subsect2.art93</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part4.appendix.appnote59.para1</td>
+                  <td class="id-cell">nbc.divB.part4.appendix.appnote59</td>
+                  <td>[unknown]</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part4.appendix.appnote90.para1</td>
+                  <td class="id-cell">nbc.divB.part4.appendix.appnote90</td>
+                  <td>[unknown]</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect7.subsect2.art2</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect7.subsect2</td>
+                  <td>article</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect8.subsect4.art5</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect8.subsect4</td>
+                  <td>article</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect8.subsect4.art7</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect8.subsect4</td>
+                  <td>article</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect13.subsect4.art3</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect2.art3</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect2</td>
+                  <td>article</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote22.div4.para3</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote22.div4</td>
+                  <td>[unknown]</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote22.div4.para3</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>original</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">[No ID]</td>
+                  <td class="id-cell">[No parent ID found]</td>
+                  <td>revision</td>
+                  <td>Content field is empty</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+      <div class="validation-section">
+         <h2>Validation 4: Cross-References</h2>
+         <p>Checking that internal references point to valid targets...</p>
+         <p style="margin-top: 10px;"><span style="color: #dc3545; font-weight: bold;">Total Errors: 285</span><span style="margin-left: 20px;">Total Internal References: 17351</span></p>
+         <p style="margin-top: 10px; padding: 10px; background-color: #fff3cd; border-left: 4px solid #ffc107; border-radius: 3px;"><strong>📄 Full Report:</strong> All 285 broken references have been exported to 
+            <a href="broken-references-full.txt" style="color: #0066cc; text-decoration: underline;">broken-references-full.txt</a></p>
+         <table>
+            <thead>
+               <tr>
+                  <th>Status</th>
+                  <th>Source Element ID</th>
+                  <th>Target ID (Not Found)</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">bc-scnd-t</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect1.subsect2.art1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect1.subsect2.art1.sent1</td>
+                  <td class="id-cell">nbc.divB.part2.sect5</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect1.subsect2.art1.sent1</td>
+                  <td class="id-cell">nbc.divB.part2.sect5</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect1.subsect3.art1.sent5</td>
+                  <td class="id-cell">nbc.example.ex000108</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row8</td>
+                  <td class="id-cell">nbc.divB.part2.sect4.subsect2.art5.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row8</td>
+                  <td class="id-cell">nbc.divB.part2.sect4.subsect2.art5.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row26</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote201</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row27</td>
+                  <td class="id-cell">nbc.divB.part2.appendix.appnote22</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row131</td>
+                  <td class="id-cell">nbc.divB.part2.sect2.subsect4.art3.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row131</td>
+                  <td class="id-cell">nbc.divB.part2.sect2.subsect6.art11.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row131</td>
+                  <td class="id-cell">nbc.divB.part2.sect2.subsect8.art1.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row131</td>
+                  <td class="id-cell">nbc.divB.part2.sect2.subsect8.art1.sent4</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row131</td>
+                  <td class="id-cell">nbc.divB.part2.sect2.subsect8.art7.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row131</td>
+                  <td class="id-cell">nbc.divB.part2.sect4.subsect2.art3.sent4</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row131</td>
+                  <td class="id-cell">nbc.divB.part2.appendix.appnote12</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row132</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote55</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row133</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect9.art9.sent2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row133</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect9.art10.sent2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row134</td>
+                  <td class="id-cell">nbc.divB.part2.appendix.appnote14</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row134</td>
+                  <td class="id-cell">nbc.divB.part2.appendix.appnote20</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row134</td>
+                  <td class="id-cell">nbc.divB.part2.appendix.appnote21</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row148</td>
+                  <td class="id-cell">nbc.divBV2.part9.appendix.appnote19</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row168</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect7.art3.sent2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row172</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect3.art9.sent2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row172</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect3.art9.sent3</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row173</td>
+                  <td class="id-cell">nbc.divB.part2.sect3.subsect2.art5.sent5</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row202</td>
+                  <td class="id-cell">nbc.divB.part5.appendix.appnote54</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row204</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect9.art6.table1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row217</td>
+                  <td class="id-cell">nbc.divB.part2.sect4.subsect2.art2.sent2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row218</td>
+                  <td class="id-cell">nbc.divB.part2.sect2.subsect8.art1.sent3</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row226</td>
+                  <td class="id-cell">nbc.divB.part2.sect2.subsect1.art15.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row228</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect3.art10.sent7</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row234</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect3.art10.sent2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row234</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect3.art10.table2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row237</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect3.art10.sent4</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row237</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect3.art10.sent5</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row240</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect9.art10.table1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row269</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect23.subsect13.art6.table1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row272</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect36.subsect9.art10.table1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row324</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect2.art3.sent4</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row326</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect3.art10.sent2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row326</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect32.subsect3.art10.table2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row411</td>
+                  <td class="id-cell">nbc.divB.part2.sect2.subsect1.art8.sent4</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row411</td>
+                  <td class="id-cell">nbc.divB.part2.sect2.subsect1.art10.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.row420</td>
+                  <td class="id-cell">nbc.divB.part2.sect2.subsect1.art14.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-3</td>
+                  <td class="id-cell">nbc.divB.part2.sect2.subsect1.art1.sent4</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part1.sect3.subsect1.art2.table1.bc-row-5</td>
+                  <td class="id-cell">nbc.divB.part10.sect22.subsect3.art4.sent1</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect4.art8.sent4</td>
+                  <td class="id-cell">ex000109.7</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect7.art1.sent3</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect9.subsect10.art3.table2</td>
+               </tr>
+               <tr class="error">
+                  <td class="status-cell error">✗</td>
+                  <td class="id-cell">nbc.divB.part3.sect1.subsect7.art1.sent4</td>
+                  <td class="id-cell">nbc.divBV2.part9.sect9.subsect10.art3.table2</td>
+               </tr>
+            </tbody>
+         </table>
+         <p style="color: #666; font-style: italic;">
+            Showing first 50 of 285 broken references. 
+            <a href="broken-references-full.txt" style="color: #0066cc;">View complete list</a></p>
+      </div>
+   </body>
+</html>

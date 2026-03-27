@@ -1,0 +1,1471 @@
+/* ================================================================== */
+/* NBC CANONICAL XML - OXYGEN AUTHOR MODE STYLESHEET                  */
+/* ================================================================== */
+/* This stylesheet provides visual formatting for editing NBC         */
+/* canonical XML documents in Oxygen XML Editor's Author mode         */
+/* ================================================================== */
+
+/* Root element */
+nbc {
+    display: block;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* ================================================================== */
+/* METADATA SECTION                                                   */
+/* ================================================================== */
+
+metadata {
+    display: block;
+    background-color: #e8f4f8;
+    border: 2px solid #0066cc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+metadata:before {
+    content: "📋 METADATA";
+    display: block;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+catalog-info {
+    display: block;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #0066cc;
+}
+
+catalog-info:before {
+    content: "Catalog Information";
+    display: block;
+    font-weight: bold;
+    color: #0066cc;
+    margin-bottom: 5px;
+}
+
+nrc-number:before { content: "NRC Number: "; font-weight: bold; }
+isbn:before { content: "ISBN: "; font-weight: bold; }
+isbn-pdf:before { content: "ISBN (PDF): "; font-weight: bold; }
+library-number:before { content: "Library Number: "; font-weight: bold; }
+library-number-pdf:before { content: "Library Number (PDF): "; font-weight: bold; }
+
+nrc-number, isbn, isbn-pdf, library-number, library-number-pdf {
+    display: block;
+    margin: 3px 0;
+    padding: 2px 5px;
+}
+
+publication-info {
+    display: block;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #0066cc;
+}
+
+publication-info:before {
+    content: "Publication Info - Volume " attr(volume);
+    display: block;
+    font-weight: bold;
+    color: #0066cc;
+    margin-bottom: 5px;
+}
+
+publication-info > title {
+    display: block;
+    font-size: 13pt;
+    font-weight: bold;
+    color: #003366;
+    margin: 5px 0;
+}
+
+publication-info > subtitle {
+    display: block;
+    font-size: 11pt;
+    font-style: italic;
+    color: #666;
+    margin: 3px 0;
+}
+
+authority, publication-date, print-date {
+    display: block;
+    margin: 3px 0;
+    padding: 2px 5px;
+}
+
+authority:before { content: "Authority: "; font-weight: bold; }
+publication-date:before { content: "Publication Date: "; font-weight: bold; }
+print-date:before { content: "Print Date: "; font-weight: bold; }
+
+/* ================================================================== */
+/* FRONT MATTER                                                       */
+/* ================================================================== */
+
+front-matter {
+    display: block;
+    background-color: #fff9e6;
+    border: 2px solid #ff9900;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+front-matter:before {
+    content: "📄 FRONT MATTER";
+    display: block;
+    font-weight: bold;
+    font-size: 16pt;
+    color: #ff9900;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff9900;
+    padding-bottom: 5px;
+}
+
+preface {
+    display: block;
+    margin: 15px 0;
+}
+
+preface:before {
+    content: "Preface";
+    display: block;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #cc6600;
+    margin-bottom: 10px;
+}
+
+introduction {
+    display: block;
+    margin: 15px 0;
+}
+
+introduction:before {
+    content: "Introduction";
+    display: block;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #cc6600;
+    margin-bottom: 10px;
+}
+
+committees {
+    display: block;
+    margin: 15px 0;
+}
+
+committees:before {
+    content: "Committees";
+    display: block;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #cc6600;
+    margin-bottom: 10px;
+}
+
+/* ================================================================== */
+/* DIVISION STRUCTURE                                                 */
+/* ================================================================== */
+
+division {
+    display: block;
+    background-color: white;
+    border: 3px solid #cc0000;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    page-break-before: always;
+}
+
+division:before {
+    content: "📚 DIVISION " attr(letter) " - " attr(number);
+    display: block;
+    font-weight: bold;
+    font-size: 18pt;
+    color: #cc0000;
+    background-color: #ffe6e6;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+    border-radius: 5px 5px 0 0;
+}
+
+division > title {
+    display: block;
+    font-size: 16pt;
+    font-weight: bold;
+    color: #990000;
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    background-color: #fff0f0;
+    border-left: 5px solid #cc0000;
+}
+
+division > number {
+    display: none;
+}
+
+/* ================================================================== */
+/* PART STRUCTURE                                                     */
+/* ================================================================== */
+
+part {
+    display: block;
+    background-color: #f0f8ff;
+    border: 2px solid #0066cc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+part:before {
+    content: "📖 PART " attr(number);
+    display: block;
+    font-weight: bold;
+    font-size: 15pt;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+part > title {
+    display: block;
+    font-size: 14pt;
+    font-weight: bold;
+    color: #003366;
+    margin: 5px 0 15px 0;
+    padding: 8px;
+    background-color: #e6f2ff;
+    border-left: 4px solid #0066cc;
+}
+
+toc {
+    display: block;
+    background-color: #ffffcc;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px dashed #999;
+}
+
+toc:before {
+    content: "📑 Table of Contents (placeholder)";
+    font-style: italic;
+    color: #666;
+}
+
+/* ================================================================== */
+/* SECTION STRUCTURE                                                  */
+/* ================================================================== */
+
+section {
+    display: block;
+    background-color: #f5fff5;
+    border: 1px solid #009900;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 15px 0;
+}
+
+section:before {
+    content: "📑 Section " attr(number);
+    display: block;
+    font-weight: bold;
+    font-size: 13pt;
+    color: #009900;
+    margin-bottom: 8px;
+}
+
+section > title {
+    display: block;
+    font-size: 12pt;
+    font-weight: bold;
+    color: #006600;
+    margin: 5px 0 10px 0;
+    padding: 6px;
+    background-color: #e6ffe6;
+    border-left: 3px solid #009900;
+}
+
+/* ================================================================== */
+/* SUBSECTION STRUCTURE                                               */
+/* ================================================================== */
+
+subsection {
+    display: block;
+    background-color: #fffef5;
+    border: 1px solid #cc9900;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 12px 0;
+}
+
+subsection:before {
+    content: "📄 Subsection " attr(number);
+    display: block;
+    font-weight: bold;
+    font-size: 11pt;
+    color: #cc9900;
+    margin-bottom: 6px;
+}
+
+subsection > title {
+    display: block;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #996600;
+    margin: 3px 0 8px 0;
+    padding: 5px;
+    background-color: #fffce6;
+    border-left: 3px solid #cc9900;
+}
+
+/* ================================================================== */
+/* ARTICLE STRUCTURE                                                  */
+/* ================================================================== */
+
+article {
+    display: block;
+    background-color: #fafafa;
+    border: 1px solid #666;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+article:before {
+    content: "📋 Article " attr(number);
+    display: block;
+    font-weight: bold;
+    font-size: 10pt;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+article > title {
+    display: block;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #000;
+    margin: 3px 0 8px 0;
+    padding: 4px;
+    background-color: #f0f0f0;
+    border-left: 3px solid #666;
+}
+
+/* Revised articles get special styling */
+article[revised="yes"] {
+    border: 2px solid #ff6b35;
+    background-color: #fff8f5;
+}
+
+article[revised="yes"]:before {
+    content: "📋📝 Article " attr(number) " (REVISED)";
+    color: #ff6b35;
+}
+
+/* ================================================================== */
+/* SENTENCE, CLAUSE, SUBCLAUSE                                        */
+/* ================================================================== */
+
+sentence {
+    display: block;
+    background-color: white;
+    border-left: 3px solid #3399ff;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+sentence:before {
+    content: "(" attr(number) ") ";
+    font-weight: bold;
+    color: #3399ff;
+    font-size: 10pt;
+}
+
+sentence > text {
+    display: inline;
+}
+
+/* Revised sentences get special styling */
+sentence[revised="yes"] {
+    border-left: 4px solid #ff6b35;
+    background-color: #fff8f5;
+}
+
+sentence[revised="yes"]:before {
+    content: "(" attr(number) ") 📝 ";
+    color: #ff6b35;
+}
+
+intent-ref {
+    display: block;
+    background-color: #e6f7ff;
+    padding: 5px;
+    margin: 5px 0;
+    border-left: 3px solid #00aaff;
+    font-size: 9pt;
+}
+
+intent-ref:before {
+    content: "🎯 Intent Reference: " attr(target);
+    font-style: italic;
+    color: #0088cc;
+}
+
+clause {
+    display: block;
+    background-color: #f9f9f9;
+    border-left: 2px solid #9966cc;
+    padding: 6px;
+    margin: 6px 0 6px 20px;
+}
+
+clause:before {
+    content: attr(letter) ") ";
+    font-weight: bold;
+    color: #9966cc;
+}
+
+clause > text {
+    display: inline;
+}
+
+subclause {
+    display: block;
+    background-color: #fefefe;
+    border-left: 2px solid #cc66cc;
+    padding: 5px;
+    margin: 5px 0 5px 40px;
+}
+
+subclause:before {
+    content: attr(number) ") ";
+    font-weight: bold;
+    color: #cc66cc;
+    font-size: 9pt;
+}
+
+subclause > text {
+    display: inline;
+}
+
+/* ================================================================== */
+/* OBJECTIVES AND FUNCTIONAL STATEMENTS                               */
+/* ================================================================== */
+
+objectives {
+    display: block;
+    background-color: #fff0f5;
+    border: 2px solid #ff1493;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+objectives:before {
+    content: "🎯 OBJECTIVES";
+    display: block;
+    font-weight: bold;
+    color: #ff1493;
+    margin-bottom: 8px;
+}
+
+objective {
+    display: block;
+    background-color: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-left: 3px solid #ff69b4;
+}
+
+objective:before {
+    content: "Objective [" attr(key) "]";
+    display: block;
+    font-weight: bold;
+    color: #ff1493;
+    font-size: 9pt;
+}
+
+objective > title {
+    display: block;
+    font-weight: bold;
+    color: #cc0066;
+    margin: 3px 0;
+}
+
+objective > definition {
+    display: block;
+    margin: 3px 0;
+}
+
+sub-objective {
+    display: block;
+    background-color: #fff5fa;
+    padding: 6px;
+    margin: 5px 0 5px 15px;
+    border-left: 2px solid #ffb6c1;
+}
+
+sub-objective:before {
+    content: "Sub-objective [" attr(key) "]";
+    display: block;
+    font-weight: bold;
+    color: #ff69b4;
+    font-size: 8pt;
+}
+
+sub-objective > title {
+    display: block;
+    font-weight: bold;
+    color: #ff1493;
+    font-size: 9pt;
+    margin: 2px 0;
+}
+
+sub-objective > definition {
+    display: block;
+    font-size: 9pt;
+    margin: 2px 0;
+}
+
+functional-statements {
+    display: block;
+    background-color: #f0fff0;
+    border: 2px solid #32cd32;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+functional-statements:before {
+    content: "⚙️ FUNCTIONAL STATEMENTS";
+    display: block;
+    font-weight: bold;
+    color: #228b22;
+    margin-bottom: 8px;
+}
+
+functional-statement {
+    display: block;
+    background-color: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-left: 3px solid #90ee90;
+}
+
+functional-statement:before {
+    content: "Function [" attr(key) "]";
+    display: block;
+    font-weight: bold;
+    color: #228b22;
+    font-size: 9pt;
+}
+
+functional-statement > definition {
+    display: block;
+    margin: 3px 0;
+}
+
+/* ================================================================== */
+/* TABLES                                                             */
+/* ================================================================== */
+
+table {
+    display: table;
+    border-collapse: collapse;
+    border: 2px solid #333;
+    margin: 15px 0;
+    width: 100%;
+    background-color: white;
+}
+
+table > title {
+    display: table-caption;
+    caption-side: top;
+    font-weight: bold;
+    background-color: #e6e6e6;
+    padding: 8px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+table > title:before {
+    content: "Table: ";
+    color: #0066cc;
+}
+
+/* Revised tables get special styling */
+table[revised="yes"] {
+    border: 3px solid #ff6b35;
+    background-color: #fff8f5;
+}
+
+table[revised="yes"] > title {
+    background-color: #ff6b35;
+    color: white;
+}
+
+table[revised="yes"] > title:before {
+    content: "📝 Table (REVISED): ";
+    color: white;
+}
+
+/* Revised table entries */
+entry[revised="yes"] {
+    background-color: #fff8f5;
+    border: 2px solid #ff6b35;
+    position: relative;
+}
+
+entry[revised="yes"]:before {
+    content: "📝";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    color: #ff6b35;
+    font-size: 8pt;
+}
+
+tgroup {
+    display: table;
+    width: 100%;
+}
+
+colspec {
+    display: none;
+}
+
+thead {
+    display: table-header-group;
+    background-color: #d9d9d9;
+    font-weight: bold;
+}
+
+tbody {
+    display: table-row-group;
+}
+
+row {
+    display: table-row;
+}
+
+entry {
+    display: table-cell;
+    border: 1px solid #999;
+    padding: 6px;
+    vertical-align: top;
+}
+
+thead entry {
+    background-color: #cccccc;
+    font-weight: bold;
+    text-align: center;
+}
+
+entry[align="left"] { text-align: left; }
+entry[align="center"] { text-align: center; }
+entry[align="right"] { text-align: right; }
+entry[align="justify"] { text-align: justify; }
+
+/* ================================================================== */
+/* FIGURES                                                            */
+/* ================================================================== */
+
+figure {
+    display: block;
+    background-color: #f5f5f5;
+    border: 2px solid #666;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+figure > title {
+    display: block;
+    font-weight: bold;
+    background-color: #e6e6e6;
+    padding: 8px;
+    margin: -15px -15px 10px -15px;
+    text-align: left;
+}
+
+figure > title:before {
+    content: "Figure: ";
+    color: #0066cc;
+}
+
+graphic {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px dashed #999;
+}
+
+graphic:before {
+    content: "🖼️ Image: " attr(src);
+    display: block;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+graphic[alt]:after {
+    content: "Alt text: " attr(alt);
+    display: block;
+    font-size: 9pt;
+    color: #999;
+    margin-top: 5px;
+}
+
+/* ================================================================== */
+/* LISTS                                                              */
+/* ================================================================== */
+
+list {
+    display: block;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+list[type="bulleted"] {
+    list-style-type: disc;
+}
+
+list[type="numbered"] {
+    list-style-type: decimal;
+}
+
+list[type="alphabetic"] {
+    list-style-type: lower-alpha;
+}
+
+list[type="bulleted"] > item {
+    display: list-item;
+    list-style-type: disc;
+    margin: 5px 0;
+}
+
+list[type="numbered"] > item {
+    display: list-item;
+    list-style-type: decimal;
+    margin: 5px 0;
+}
+
+list[type="alphabetic"] > item {
+    display: list-item;
+    list-style-type: lower-alpha;
+    margin: 5px 0;
+}
+
+list[type="definition"] > item,
+list[type="variable"] > item,
+list[type="symbol"] > item,
+list[type="organization"] > item {
+    display: block;
+    margin: 8px 0;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ccc;
+}
+
+term {
+    display: block;
+    font-weight: bold;
+    color: #0066cc;
+}
+
+definition {
+    display: block;
+    margin-left: 15px;
+}
+
+variable {
+    display: block;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #cc6600;
+}
+
+description {
+    display: block;
+    margin-left: 15px;
+}
+
+organization {
+    display: block;
+    font-weight: bold;
+    color: #009900;
+}
+
+address {
+    display: block;
+    margin-left: 15px;
+    font-style: italic;
+}
+
+/* ================================================================== */
+/* PARAGRAPHS                                                         */
+/* ================================================================== */
+
+paragraph {
+    display: block;
+    margin: 10px 0;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* ================================================================== */
+/* INLINE FORMATTING                                                  */
+/* ================================================================== */
+
+emphasis[style="bold"] {
+    font-weight: bold;
+}
+
+emphasis[style="italic"] {
+    font-style: italic;
+}
+
+emphasis[style="bolditalic"] {
+    font-weight: bold;
+    font-style: italic;
+}
+
+emphasis[style="underscore"] {
+    text-decoration: underline;
+}
+
+super {
+    vertical-align: super;
+    font-size: 0.8em;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 0.8em;
+}
+
+/* ================================================================== */
+/* REFERENCES                                                         */
+/* ================================================================== */
+
+ref {
+    color: #0066cc;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* Show target ID as placeholder text */
+ref:after {
+    content: " [→ " attr(target) "]";
+    font-size: 0.85em;
+    color: #0066cc;
+    font-style: italic;
+}
+
+ref:before {
+    content: "🔗 ";
+    font-size: 0.8em;
+}
+
+ref[type="internal"]:before {
+    content: "🔗 ";
+}
+
+ref[type="external"]:before {
+    content: "🌐 ";
+}
+
+ref[type="standard"]:before {
+    content: "📘 ";
+}
+
+ref[type="term"]:before {
+    content: "📖 ";
+}
+
+ref:hover {
+    background-color: #e6f2ff;
+}
+
+/* If ref has text content, don't show the target */
+ref:not(:empty):after {
+    content: "";
+}
+
+/* ================================================================== */
+/* MEASUREMENTS                                                       */
+/* ================================================================== */
+
+measurement {
+    font-family: "Courier New", monospace;
+    background-color: #f0f0f0;
+    padding: 1px 3px;
+    border-radius: 2px;
+}
+
+measurement[units="metric"] {
+    color: #0066cc;
+}
+
+measurement[units="imperial"] {
+    color: #cc6600;
+}
+
+measurement[units="metric"]:before {
+    content: "[M] ";
+    font-size: 0.7em;
+    vertical-align: super;
+}
+
+measurement[units="imperial"]:before {
+    content: "[I] ";
+    font-size: 0.7em;
+    vertical-align: super;
+}
+
+/* ================================================================== */
+/* EQUATIONS                                                          */
+/* ================================================================== */
+
+equation {
+    display: block;
+    background-color: #fffef0;
+    border: 1px solid #cc9900;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: "Cambria Math", "Times New Roman", serif;
+}
+
+equation[type="inline"] {
+    display: inline-block;
+    padding: 2px 5px;
+    margin: 0 3px;
+}
+
+equation:before {
+    content: "📐 Equation";
+    display: block;
+    font-weight: bold;
+    color: #996600;
+    font-size: 9pt;
+    margin-bottom: 5px;
+}
+
+equation[type="inline"]:before {
+    content: "";
+    display: none;
+}
+
+mathml, latex {
+    display: block;
+    font-family: "Cambria Math", "Times New Roman", serif;
+    padding: 5px;
+}
+
+/* ================================================================== */
+/* REVISION HISTORY (snapshot approach for date-based versioning)     */
+/* ================================================================== */
+
+/* Elements with revision history */
+*[revised="yes"] {
+    position: relative;
+    border-left: 4px solid #ff6b35;
+    background-color: #fff8f5;
+    padding-left: 8px;
+}
+
+*[revised="yes"]:before {
+    content: "📝 REVISED";
+    position: absolute;
+    top: -2px;
+    right: 5px;
+    background-color: #ff6b35;
+    color: white;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+/* Revision history container */
+revision-history {
+    display: block;
+    background-color: #f0f8ff;
+    border: 2px solid #4169e1;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+revision-history:before {
+    content: "📋 REVISION HISTORY";
+    display: block;
+    background-color: #4169e1;
+    color: white;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+/* Original baseline content */
+original {
+    display: block;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin: 0;
+}
+
+original:before {
+    content: "📄 ORIGINAL (effective " attr(effective-date) ")";
+    display: block;
+    font-weight: bold;
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    border-bottom: 1px dotted #999;
+}
+
+/* Revision entries */
+revision {
+    display: block;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin: 0;
+}
+
+revision:last-child {
+    border-bottom: none;
+}
+
+revision[status="current"] {
+    background-color: #e8f5e8;
+    border-left: 4px solid #28a745;
+}
+
+revision[status="superseded"] {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+}
+
+revision:before {
+    content: "✏️ " attr(type) " #" attr(seq) " (effective " attr(effective-date) ")";
+    display: block;
+    font-weight: bold;
+    font-size: 9pt;
+    color: #333;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    border-bottom: 1px dotted #999;
+}
+
+revision[status="current"]:before {
+    color: #28a745;
+    content: "✅ " attr(type) " #" attr(seq) " (effective " attr(effective-date) ") - CURRENT";
+}
+
+revision[status="superseded"]:before {
+    color: #ffc107;
+    content: "⚠️ " attr(type) " #" attr(seq) " (effective " attr(effective-date) ") - SUPERSEDED";
+}
+
+/* Revision metadata */
+revision[id]:after {
+    content: "ID: " attr(id);
+    display: block;
+    font-size: 8pt;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Revision content */
+content {
+    display: block;
+    margin: 5px 0;
+}
+
+change-summary {
+    display: block;
+    background-color: #e6f3ff;
+    border-left: 3px solid #007bff;
+    padding: 5px 8px;
+    margin: 5px 0;
+    font-style: italic;
+    font-size: 9pt;
+}
+
+change-summary:before {
+    content: "📝 Summary: ";
+    font-weight: bold;
+    color: #007bff;
+}
+
+revision > note {
+    display: block;
+    background-color: #fff9e6;
+    border-left: 3px solid #ffc107;
+    padding: 5px 8px;
+    margin: 5px 0;
+    font-size: 9pt;
+}
+
+revision > note:before {
+    content: "📌 Note: ";
+    font-weight: bold;
+    color: #856404;
+}
+
+/* ================================================================== */
+/* CHANGE TRACKING                                                    */
+/* ================================================================== */
+
+change[type="insert"] {
+    background-color: #ccffcc;
+    border-bottom: 2px solid #00cc00;
+    padding: 2px;
+}
+
+change[type="insert"]:before {
+    content: "➕";
+    color: #00cc00;
+    font-weight: bold;
+}
+
+change[type="delete"] {
+    background-color: #ffcccc;
+    border-bottom: 2px solid #cc0000;
+    text-decoration: line-through;
+    padding: 2px;
+}
+
+change[type="delete"]:before {
+    content: "➖";
+    color: #cc0000;
+    font-weight: bold;
+}
+
+change[type="modify"] {
+    background-color: #ffffcc;
+    border-bottom: 2px solid #cccc00;
+    padding: 2px;
+}
+
+change[type="modify"]:before {
+    content: "✏️";
+    color: #cc9900;
+    font-weight: bold;
+}
+
+change[pcf-number]:after {
+    content: " [PCF-" attr(pcf-number) "]";
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+}
+
+/* ================================================================== */
+/* APPENDICES                                                         */
+/* ================================================================== */
+
+appendix {
+    display: block;
+    background-color: #fff5e6;
+    border: 2px solid #ff9900;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+appendix:before {
+    content: "📎 APPENDIX";
+    display: block;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #ff9900;
+    margin-bottom: 10px;
+}
+
+appendix > title {
+    display: block;
+    font-size: 13pt;
+    font-weight: bold;
+    color: #cc6600;
+    margin: 5px 0 10px 0;
+}
+
+part-appendix {
+    display: block;
+    background-color: #fffef5;
+    border: 1px solid #cc9900;
+    border-radius: 4px;
+    padding: 12px;
+    margin: 15px 0;
+}
+
+part-appendix:before {
+    content: "📎 Part Appendix";
+    display: block;
+    font-weight: bold;
+    font-size: 12pt;
+    color: #cc9900;
+    margin-bottom: 8px;
+}
+
+application-note {
+    display: block;
+    background-color: #f0f8ff;
+    border: 1px solid #4682b4;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+application-note:before {
+    content: "📝 Application Note " attr(number);
+    display: block;
+    font-weight: bold;
+    color: #4682b4;
+    margin-bottom: 5px;
+}
+
+application-note > title {
+    display: block;
+    font-weight: bold;
+    color: #2c5282;
+    margin: 5px 0;
+}
+
+note-division {
+    display: block;
+    background-color: #f9f9f9;
+    border-left: 3px solid #4682b4;
+    padding: 8px;
+    margin: 8px 0 8px 15px;
+}
+
+note-division > title {
+    display: block;
+    font-weight: bold;
+    color: #4682b4;
+    margin-bottom: 5px;
+}
+
+/* ================================================================== */
+/* NOTES                                                              */
+/* ================================================================== */
+
+note {
+    display: block;
+    background-color: #fffacd;
+    border: 1px solid #ffd700;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 8px 0;
+    font-size: 9pt;
+}
+
+note:before {
+    content: "📌 Note: ";
+    font-weight: bold;
+    color: #b8860b;
+}
+
+/* ================================================================== */
+/* BACK MATTER                                                        */
+/* ================================================================== */
+
+back-matter {
+    display: block;
+    background-color: #f0f0f0;
+    border: 2px solid #666;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+back-matter:before {
+    content: "📚 BACK MATTER";
+    display: block;
+    font-weight: bold;
+    font-size: 16pt;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #666;
+    padding-bottom: 5px;
+}
+
+index {
+    display: block;
+    margin: 15px 0;
+}
+
+index:before {
+    content: "📇 Index";
+    display: block;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+conversions {
+    display: block;
+    margin: 15px 0;
+}
+
+conversions:before {
+    content: "🔄 Conversion Tables";
+    display: block;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* ================================================================== */
+/* STANDARDS                                                          */
+/* ================================================================== */
+
+standard {
+    display: inline;
+    font-family: "Courier New", monospace;
+    background-color: #e6f2ff;
+    padding: 2px 5px;
+    border-radius: 2px;
+    color: #0066cc;
+}
+
+standard:before {
+    content: attr(agency) " ";
+    font-weight: bold;
+}
+
+standard[bc-adoption]:after {
+    content: " [BC: " attr(bc-adoption) "]";
+    font-size: 0.8em;
+    color: #cc0000;
+}
+
+/* ================================================================== */
+/* REVISION HISTORY CONTROLS                                          */
+/* ================================================================== */
+
+/* Toggle for showing/hiding revision history details */
+revision-history {
+    cursor: pointer;
+}
+
+revision-history:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Collapsed state - show only current content */
+revision-history.collapsed original,
+revision-history.collapsed revision[status="superseded"] {
+    display: none;
+}
+
+revision-history.collapsed:before {
+    content: "📋 REVISION HISTORY (click to expand)";
+}
+
+/* Expanded state */
+revision-history.expanded:before {
+    content: "📋 REVISION HISTORY (click to collapse)";
+}
+
+/* Revision comparison mode */
+revision-history.compare-mode original,
+revision-history.compare-mode revision {
+    display: block;
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+revision-history.compare-mode:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ================================================================== */
+/* UTILITY CLASSES                                                    */
+/* ================================================================== */
+
+/* Hide vendor IDs by default */
+*[vendor-id]:after {
+    content: " [VID: " attr(vendor-id) "]";
+    font-size: 0.7em;
+    color: #999;
+    font-style: italic;
+    display: none; /* Set to 'inline' to show vendor IDs */
+}
+
+/* Show XML IDs on hover for debugging */
+*[xml\:id]:hover:after {
+    content: " [ID: " attr(xml\:id) "]";
+    font-size: 0.7em;
+    color: #666;
+    background-color: #ffffe0;
+    padding: 2px 4px;
+    border-radius: 2px;
+    margin-left: 5px;
+}
+
+/* Show revision info on hover for revised elements */
+*[revised="yes"]:hover:after {
+    content: " [REVISED ELEMENT - contains revision history]";
+    font-size: 0.7em;
+    color: #ff6b35;
+    background-color: #fff8f5;
+    padding: 2px 4px;
+    border-radius: 2px;
+    margin-left: 5px;
+    border: 1px solid #ff6b35;
+}
+
+/* ================================================================== */
+/* PRINT STYLES                                                       */
+/* ================================================================== */
+
+@media print {
+    nbc {
+        background-color: white;
+    }
+    
+    division {
+        page-break-before: always;
+    }
+    
+    part {
+        page-break-before: always;
+    }
+    
+    table {
+        page-break-inside: avoid;
+    }
+    
+    figure {
+        page-break-inside: avoid;
+    }
+}

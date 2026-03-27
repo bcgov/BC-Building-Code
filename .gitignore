@@ -398,3 +398,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+venv
+.kiro
+/n8n-workflows
+build-and-deploy.sh

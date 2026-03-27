@@ -1,0 +1,2739 @@
+
+ { "document_type" : "bc_building_code_minimal_sample",
+  "description" : "Minimal representative sample of all node types for LLM study",
+  "version" : "2020",
+  "canonical_version" : "1.0",
+  "metadata" : 
+  { "title" : "National Building Code of Canada 2020",
+   "subtitle" : "Volume 1",
+   "authority" : "Issued by the Canadian Commission on Building and Fire Codes National Research Council of Canada" },
+  "volumes" : 
+  [ 
+   { "id" : "nbc.2020.vol1",
+    "number" : 1,
+    "title" : "National Building Code of Canada 2020 - Volume 1",
+    "divisions" : 
+    [ 
+     { "id" : "nbc.divA",
+      "type" : "division",
+      "letter" : "A",
+      "title" : "Compliance, Objectives and Functional Statements",
+      "parts" : 
+      [ 
+       { "id" : "nbc.divA.part1",
+        "type" : "part",
+        "number" : 1,
+        "title" : "Compliance",
+        "sections" : 
+        [ 
+         { "id" : "nbc.divA.part1.sect1",
+          "type" : "section",
+          "number" : 1,
+          "title" : "General",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divA.part1.sect1.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Application of this Code",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divA.part1.sect1.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Application of this Code",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect1.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "This Code applies to any one or more of the following:",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divA.part1.sect1.subsect1.art1.sent1.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "the design and construction of a new [REF:term:bldng:building] ," },
+                 
+                 { "id" : "nbc.divA.part1.sect1.subsect1.art1.sent1.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "the [REF:term:ccpnc:occupancy] of any [REF:term:bldng:building] ," },
+                 
+                 { "id" : "nbc.divA.part1.sect1.subsect1.art1.sent1.clause3",
+                  "type" : "clause",
+                  "letter" : "c",
+                  "text" : "a change in [REF:term:ccpnc:occupancy] of any [REF:term:bldng:building] ," } ] },
+               
+               { "id" : "nbc.divA.part1.sect1.subsect1.art1.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "This Code does not apply to the following:",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divA.part1.sect1.subsect1.art1.sent2.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "" },
+                 
+                 { "id" : "nbc.divA.part1.sect1.subsect1.art1.sent2.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "utility towers and poles, and television, radio and other communication aerials and towers, except for loads resulting from their being located on or attached to [REF:term:bldng:buildings] ," },
+                 
+                 { "id" : "nbc.divA.part1.sect1.subsect1.art1.sent2.clause3",
+                  "type" : "clause",
+                  "letter" : "c",
+                  "text" : "mechanical or other equipment and [REF:term:pplnc:appliances] not specifically regulated in these regulations," } ] },
+               
+               { "id" : "nbc.divA.part1.sect1.subsect1.art1.sent3",
+                "type" : "sentence",
+                "number" : 3,
+                "text" : "This Code applies to both site-built and factory-constructed [REF:term:bldng:buildings] . (See [REF:internal:nbc.divA.part1.appendix.appnote2] .)" },
+               
+               { "id" : "nbc.divA.part1.sect1.subsect1.art1.sent4",
+                "type" : "sentence",
+                "number" : 4,
+                "text" : "[REF:term:frm-bldn:Farm buildings] shall conform to the requirements in the National Farm Building Code of Canada 1995." } ] },
+             
+             { "id" : "nbc.divA.part1.sect1.subsect1.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Application to Existing Buildings",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect1.subsect1.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Where a [REF:term:bldng:building] is altered, rehabilitated, renovated or repaired, or there is a change in [REF:term:ccpnc:occupancy] , the level of life safety and [REF:term:bldng:building] performance shall not be decreased below a level that already exists. (See [REF:internal:nbc.divA.part1.appendix.appnote5] .)" } ] } ],
+            "total_articles" : 2 },
+           
+           { "id" : "nbc.divA.part1.sect1.subsect2",
+            "type" : "subsection",
+            "number" : 2,
+            "title" : "Internal References to this Code",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divA.part1.sect1.subsect2.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Book I (General) and Book II (Plumbing Systems) of the Code",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect1.subsect2.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "This is the first of the two Books, Book I (General) and Book II (Plumbing Systems), that together form the British Columbia Building Code." } ] },
+             
+             { "id" : "nbc.divA.part1.sect1.subsect2.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Internal References to the Code",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect1.subsect2.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Unless a Book is specified, references to \"the British Columbia Building Code,\" \"the Code,\" \"this Code\" and the like shall be read as references to the Book in which they appear." } ] } ],
+            "total_articles" : 2 },
+           
+           { "id" : "nbc.divA.part1.sect1.subsect3",
+            "type" : "subsection",
+            "number" : 3,
+            "title" : "Notes",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divA.part1.sect1.subsect3.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Appendices, Notes and References to Appendices and Notes have No Legal Effect",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect1.subsect3.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Except for Notes A-Table 9.23.3.5.-B and A-9.23.13., including Table A-9.23.13. in Division B, Notes to Parts of this Code have no legal effect." } ] } ],
+            "total_articles" : 1,
+            "revisions" : 
+            [ 
+             { "type" : "original",
+              "date" : "2024-03-08" },
+             
+             { "type" : "revision",
+              "revision_type" : "amendment",
+              "id" : "bc-mo-2024-06-007",
+              "date" : "2025-06-16",
+              "status" : "current",
+              "summary" : "Amended title by striking out “Appendices,” and “and Annotations”" } ] } ],
+          "total_subsections" : 3 },
+         
+         { "id" : "nbc.divA.part1.sect2",
+          "type" : "section",
+          "number" : 2,
+          "title" : "Compliance",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divA.part1.sect2.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Compliance with this Code",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divA.part1.sect2.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Compliance with this Code",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect2.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Compliance with this Code shall be achieved by",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divA.part1.sect2.subsect1.art1.sent1.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "complying with the applicable acceptable solutions in Division B (see [REF:internal:nbc.divA.part1.appendix.appnote3] ), or" },
+                 
+                 { "id" : "nbc.divA.part1.sect2.subsect1.art1.sent1.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "except as required by [REF:internal:nbc.divA.part1.sect2.subsect1.art1.sent3] , using alternative solutions, accepted by the [REF:term:bc-thrt-hvn:authority having jurisdiction] under [REF:internal:nbc.divC.part2.sect3] of Division C, that will achieve at least the minimum level of performance required by Division B in the areas defined by the objectives and functional statements attributed to the applicable acceptable solutions (see [REF:internal:nbc.divA.part1.appendix.appnote4] )." } ] },
+               
+               { "id" : "nbc.divA.part1.sect2.subsect1.art1.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "For the purposes of compliance with this Code as required in [REF:internal:nbc.divA.part1.sect2.subsect1.art1.sent1.clause2] , the objectives and functional statements attributed to the acceptable solutions in Division B shall be the objectives and functional statements referred to in [REF:internal:nbc.divB.part1.sect1.subsect2] ." },
+               
+               { "id" : "nbc.divA.part1.sect2.subsect1.art1.sent3",
+                "type" : "sentence",
+                "number" : 3,
+                "text" : "An alternative solution shall not be used in place of an acceptable solution if the acceptable solution expressly requires conformance to a provincial enactment other than Book I (General) or Book II (Plumbing Systems) of the British Columbia Building Code." } ] },
+             
+             { "id" : "nbc.divA.part1.sect2.subsect1.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Responsibility of Owner",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect2.subsect1.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Unless otherwise specified in this Code, the [REF:term:bc-wnr:owner] of a [REF:term:bldng:building] shall be the person responsible for carrying out the provisions of this Code in relation to that [REF:term:bldng:building] ." },
+               
+               { "id" : "nbc.divA.part1.sect2.subsect1.art2.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "The [REF:term:bc-wnr:owner] of a [REF:term:bldng:building] is in no way relieved of full responsibility for complying with this Code by the [REF:term:bc-thrt-hvn:authority having jurisdiction]",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divA.part1.sect2.subsect1.art2.sent2.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "granting a building permit," },
+                 
+                 { "id" : "nbc.divA.part1.sect2.subsect1.art2.sent2.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "approving drawings or specifications, or" },
+                 
+                 { "id" : "nbc.divA.part1.sect2.subsect1.art2.sent2.clause3",
+                  "type" : "clause",
+                  "letter" : "c",
+                  "text" : "carrying out inspections." } ] } ] } ],
+            "total_articles" : 2 },
+           
+           { "id" : "nbc.divA.part1.sect2.subsect2",
+            "type" : "subsection",
+            "number" : 2,
+            "title" : "Materials, Appliances, Systems and Equipment",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divA.part1.sect2.subsect2.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Characteristics of Materials, Appliances, Systems and Equipment",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect2.subsect2.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "All materials, [REF:term:pplnc:appliances] , systems and equipment installed to meet the requirements of this Code shall possess the necessary characteristics to perform their intended functions when installed in a [REF:term:bldng:building] ." } ] },
+             
+             { "id" : "nbc.divA.part1.sect2.subsect2.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Storage on the Building Site",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect2.subsect2.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "All [REF:term:bldng:building] materials, [REF:term:pplnc:appliances] and equipment on the [REF:term:bldng:building] site shall be stored in such a way as to prevent the deterioration or impairment of their essential properties." } ] },
+             
+             { "id" : "nbc.divA.part1.sect2.subsect2.art3",
+              "type" : "article",
+              "number" : 3,
+              "title" : "Used Materials, Appliances and Equipment",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect2.subsect2.art3.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Unless otherwise specified, used materials, [REF:term:pplnc:appliances] and equipment are permitted to be reused when they meet the requirements of this Code for new materials and are satisfactory for the intended use." } ] } ],
+            "total_articles" : 3 },
+           
+           { "id" : "nbc.divA.part1.sect2.subsect3",
+            "type" : "subsection",
+            "number" : 3,
+            "title" : "Installation of Plumbing Systems",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divA.part1.sect2.subsect3.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Personnel Performing Plumbing Work",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect2.subsect3.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Personnel performing the installation, alteration, renewal or repair of a [REF:term:plmbng-t:plumbing system] shall",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divA.part1.sect2.subsect3.art1.sent1.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "possess a Canadian tradesperson's qualification certification as a plumber," },
+                 
+                 { "id" : "nbc.divA.part1.sect2.subsect3.art1.sent1.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "be an indentured apprentice supervised by a journeyperson who meets the criteria set out in [REF:internal:nbc.divA.part1.sect2.subsect3.art1.sent1.clause1] , or" },
+                 
+                 { "id" : "nbc.divA.part1.sect2.subsect3.art1.sent1.clause3",
+                  "type" : "clause",
+                  "letter" : "c",
+                  "text" : "be the registered owner and occupant or intended occupant of the single detached dwelling in which plumbing work will occur." } ] } ] } ],
+            "total_articles" : 1 } ],
+          "total_subsections" : 3 },
+         
+         { "id" : "nbc.divA.part1.sect3",
+          "type" : "section",
+          "number" : 3,
+          "title" : "Divisions A, B and C of this Code",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divA.part1.sect3.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "General",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divA.part1.sect3.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Scope of Division A",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect3.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Division A contains the compliance and application provisions, objectives and functional statements of this Code." } ] },
+             
+             { "id" : "nbc.divA.part1.sect3.subsect1.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Scope of Division B",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect3.subsect1.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Division B contains the acceptable solutions of this Code." } ] },
+             
+             { "id" : "nbc.divA.part1.sect3.subsect1.art3",
+              "type" : "article",
+              "number" : 3,
+              "title" : "Scope of Division C",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect3.subsect1.art3.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Division C contains the administrative provisions of this Code." } ] } ],
+            "total_articles" : 4 },
+           
+           { "id" : "nbc.divA.part1.sect3.subsect2",
+            "type" : "subsection",
+            "number" : 2,
+            "title" : "Application of Division A",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divA.part1.sect3.subsect2.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Application of Parts 1, 2 and 3",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect3.subsect2.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Parts 1, 2 and 3 of Division A apply to all [REF:term:bldng:buildings] covered in this Code. (See [REF:internal:nbc.divA.part1.sect1.subsect1.art1] )" } ] } ],
+            "total_articles" : 1 },
+           
+           { "id" : "nbc.divA.part1.sect3.subsect3",
+            "type" : "subsection",
+            "number" : 3,
+            "title" : "Application of Division B",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divA.part1.sect3.subsect3.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Application of Parts 1, 7, 8 and 10",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect3.subsect3.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Parts 1, 7, 8 and 10 of Division B apply to all [REF:term:bldng:buildings] covered in this Code. (See [REF:internal:nbc.divA.part1.sect1.subsect1.art1] )" } ] },
+             
+             { "id" : "nbc.divA.part1.sect3.subsect3.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Application of Parts 3, 4, 5 and 6",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part1.sect3.subsect3.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Parts 3, 4, 5, and 6 of Division B apply to all [REF:term:bldng:buildings] described in [REF:internal:nbc.divA.part1.sect1.subsect1.art1] and",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divA.part1.sect3.subsect3.art2.sent1.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "classified as [REF:term:pt-dtr-b:post-disaster buildings] ," },
+                 
+                 { "id" : "nbc.divA.part1.sect3.subsect3.art2.sent1.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "used for [REF:term:mjr-ccpn:major occupancies] classified as",
+                  "subclauses" : 
+                  [ 
+                   { "id" : "nbc.divA.part1.sect3.subsect3.art2.sent1.clause2.subclause1",
+                    "type" : "subclause",
+                    "number" : 1,
+                    "text" : "Group A, [REF:term:mbl-ccpn:assembly occupancies] ," },
+                   
+                   { "id" : "nbc.divA.part1.sect3.subsect3.art2.sent1.clause2.subclause2",
+                    "type" : "subclause",
+                    "number" : 2,
+                    "text" : "Group B, [REF:term:ca-cc:care] , [REF:term:trtm-cc:treatment] or [REF:term:dtnt-cc:detention occupancies] , or" } ] },
+                 
+                 { "id" : "nbc.divA.part1.sect3.subsect3.art2.sent1.clause3",
+                  "type" : "clause",
+                  "letter" : "c",
+                  "text" : "exceeding 600 m^{2} in [REF:term:bldng-r:building area] or exceeding 3 [REF:term:tr:storeys] in [REF:term:bldng-hg:building height] used for [REF:term:mjr-ccpn:major occupancies] classified as",
+                  "subclauses" : 
+                  [ 
+                   { "id" : "nbc.divA.part1.sect3.subsect3.art2.sent1.clause3.subclause1",
+                    "type" : "subclause",
+                    "number" : 1,
+                    "text" : "Group C, [REF:term:rdntl-cc:residential occupancies] ," },
+                   
+                   { "id" : "nbc.divA.part1.sect3.subsect3.art2.sent1.clause3.subclause2",
+                    "type" : "subclause",
+                    "number" : 2,
+                    "text" : "Group D, [REF:term:bn-nd-pr:business and personal services occupancies] ," } ] } ] },
+               
+               { "id" : "nbc.divA.part1.sect3.subsect3.art2.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "",
+                "revisions" : 
+                [ 
+                 { "type" : "original",
+                  "date" : "2024-03-08" },
+                 
+                 { "type" : "revision",
+                  "revision_type" : "amendment",
+                  "id" : "bc-mo-2024-03-001",
+                  "date" : "2024-08-27",
+                  "status" : "current",
+                  "summary" : "Added new sentence to extend application of Parts 3, 4, 5 and 6 to buildings designed per Subsection 3.2.10." } ] } ] },
+             
+             { "id" : "nbc.divA.part1.sect3.subsect3.art3",
+              "type" : "article",
+              "number" : 3,
+              "title" : "",
+              "content" : 
+              [  ],
+              "revisions" : 
+              [ 
+               { "type" : "original",
+                "date" : "2024-03-08" },
+               
+               { "type" : "revision",
+                "revision_type" : "amendment",
+                "id" : "bc-mo-2024-03-002",
+                "date" : "2024-08-27",
+                "status" : "current",
+                "summary" : "Replaced Article 1.3.3.3. - Modified Sentence 1 to add exception reference and reorganized clauses; added new Sentence 2 to exclude buildings designed per Subsection 3.2.10. from Part 9 application." } ] } ],
+            "total_articles" : 6 } ],
+          "total_subsections" : 4 } ],
+        "appendix" : 
+        { "id" : "nbc.divA.part1.appendix",
+         "type" : "part_appendix",
+         "application_notes" : 
+         [ 
+          { "id" : "nbc.divA.part1.appendix.appnote1",
+           "type" : "application_note",
+           "number" : "1.1.1.1.(1)",
+           "title" : "Application to Existing Buildings",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divA.part1.appendix.appnote1.para1",
+             "content" : "This Code is most often applied to existing or relocated buildings when an owner wishes to rehabilitate a building, change its use, or build an addition, or when an enforcement authority decrees that a building or class of buildings be altered for reasons of public safety. It is not intended that the NBC be used to enforce the retrospective application of new requirements to existing buildings or existing portions of relocated buildings, unless specifically required by local regulations or bylaws. For example, although the [REF:standard:nrcc-nfc] could be interpreted to require the installation of fire alarm, standpipe and hose, and automatic sprinkler systems in an existing building for which there were no requirements at the time of construction, it is the intent of the CCBFC that the NFC not be applied in this manner to these buildings unless the authority having jurisdiction has determined that there is an inherent threat to occupant safety and has issued an order to eliminate the unsafe condition, or where substantial changes or additions are being made to an existing building or the occupancy has been changed. (See also [REF:external:nfc:Note A-1.1.1.1.(1) of Division A of the NFC] .)" },
+            
+            { "id" : "nbc.divA.part1.appendix.appnote1.para2",
+             "content" : "Relocated buildings that have been in use in another location for a number of years can be considered as existing buildings, in part, and the same analytical process can be applied as for existing buildings. It should be noted, however, that a change in occupancy may affect some requirements (e.g. loads and fire separations) and relocation to an area with different wind, snow or earthquake loads will require the application of current code requirements. Depending on the construction of the building and the changes in load, structural modifications may be required. Similarly, parts of a relocated or existing building that are reconstructed, such as foundations and basements, or parts being modified are required to be built to current codes." } ] },
+          
+          { "id" : "nbc.divA.part1.appendix.appnote2",
+           "type" : "application_note",
+           "number" : "1.1.1.1.(2)",
+           "title" : "Factory-Constructed Buildings",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divA.part1.appendix.appnote2.para1",
+             "content" : "The British Columbia Building Code applies the same requirements to site-built and factory-constructed buildings. However, it can often be difficult to determine whether a factory-constructed building complies with the Code once it has been delivered to the construction site because many of the wall, roof and floor assemblies are closed in and so their components cannot be inspected. CSA A277, \"Procedure for certification of prefabricated buildings, modules, and panels,\" was developed to address this problem with regard to residential, commercial and industrial buildings. This standard describes a procedure whereby an independent certification agency can review the quality control procedures of a factory and make periodic unannounced inspections of its products. The standard is not a building code, only a procedure for certifying compliance of factory-constructed components with a building code or other standard. If a factory-constructed building bears the label of an accredited certification agency indicating that compliance with the British Columbia Building Code has been certified using the CSA A277 procedure, the accepting authority will have some assurance that the concealed components do not require re-inspection on site." },
+            
+            { "id" : "nbc.divA.part1.appendix.appnote2.para2",
+             "content" : "On the other hand, standards in the CSA Z240 MH Series, \"Manufactured homes,\" do resemble a building code. Most of the individual standards in the series contain requirements regarding many issues also covered in this Code. Some of these Z240 MH Series provisions are performance requirements with no quantitative criteria, some simply reference the applicable British Columbia Building Code requirements, while others contain requirements that differ from those in the British Columbia Building Code. One of the individual standards in the Z240 MH Series deals with special requirements for manufactured homes related to the fact that these houses must be moved over roads, which is an issue the British Columbia Building Code does not address. Therefore, labeling that indicates that a factory-constructed house complies with the Z240 MH Series standards can NOT be taken as an indication that the house necessarily complies with the building code in effect for the location where the house will be sited." } ] },
+          
+          { "id" : "nbc.divA.part1.appendix.appnote2a",
+           "type" : "application_note",
+           "number" : "1.1.1.1.(5)",
+           "title" : "Heritage Buildings",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divA.part1.appendix.appnote2a.para1",
+             "content" : "Many local governments have identified conservation of selected heritage properties, or protection of the heritage character of certain areas, as being community planning objectives. The Province's planning objectives and growth strategy encourage and support local government in this effort. The key is to find ways to make restoration and rehabilitation of [REF:term:bc-hrtg-bldng:heritage buildings] economically viable for the properties' owners." },
+            
+            { "id" : "nbc.divA.part1.appendix.appnote2a.para2",
+             "content" : "It is generally recognized that the present British Columbia Building Code was primarily written for new construction and provides for a performance level that is significantly higher than what exists with many older [REF:term:bldng:buildings] . To apply present Code provisions to existing [REF:term:bldng:buildings] is, in many cases, impractical and with [REF:term:bc-hrtg-bldng:heritage buildings] may compromise historic appearances or authenticity. Therefore, the Table of Alternate Compliance Methods for Heritage Buildings was developed to provide alternate methods for complying with the performance level intended by the Code. The use of sprinklers is advocated as one of the primary methods in assuring this performance level for [REF:term:bc-hrtg-bldng:heritage buildings] . Sprinkler systems not only control the fire, which aids evacuation, but also provides the added benefit of protecting the [REF:term:bldng:building] from possible destruction by fire." } ] },
+          
+          { "id" : "nbc.divA.part1.appendix.appnote2b",
+           "type" : "application_note",
+           "number" : "1.1.1.1.(6)",
+           "title" : "Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divA.part1.appendix.appnote2b.para1",
+             "content" : "The requirements in Division B for the construction of [REF:term:bc-scnd-t:secondary suites] was written primarily for new construction and provides for a performance level that is higher than what may exist in existing [REF:term:bldng:buildings] . To apply present Code provisions to existing [REF:term:bldng:buildings] is in many cases impractical. The Table of Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite was developed to provide alternate methods, when dealing with existing construction, without compromising the objectives of the Code. [REF:internal:nbc.divA.part1.sect1.subsect1.art1.table2] may be considered when assessing an existing additional [REF:term:dwllng-n:dwelling unit] located in a single family dwelling [REF:term:bldng:building] (house), however is not intended to be applied as a retroactive code to these existing units, nor be applied to [REF:term:bldng:buildings] of new construction where there are no existing assemblies to act as practical barriers to compliance with Division B of this Code. [REF:internal:nbc.divA.part1.appendix.appnote2b.figure1] illustrates the application of [REF:internal:nbc.divA.part1.sect1.subsect1.art1.table2] to existing [REF:term:bldng:buildings] ." },
+            
+            { "id" : "nbc.divA.part1.appendix.appnote2b.para2",
+             "content" : "[REF:internal:nbc.divA.part1.sect1.subsect1.art1.table2] is not mandatory, and an owner may choose to [LIST:bulleted]",
+             "lists" : 
+             [ 
+              { "type" : "bulleted",
+               "items" : 
+               [ 
+                { "id" : "nbc.divA.part1.appendix.appnote2b.item1",
+                 "content" : "apply acceptable solutions in Division B," },
+                
+                { "id" : "nbc.divA.part1.appendix.appnote2b.item2",
+                 "content" : "apply alternative solutions under [REF:internal:nbc.divA.part1.sect2.subsect1.art1.sent1.clause2] ," },
+                
+                { "id" : "nbc.divA.part1.appendix.appnote2b.item3",
+                 "content" : "apply alternate compliance methods in [REF:internal:nbc.divA.part1.sect1.subsect1.art1.table2] , or" },
+                
+                { "id" : "nbc.divA.part1.appendix.appnote2b.item4",
+                 "content" : "combined these options." } ] } ] } ] },
+          
+          { "id" : "nbc.divA.part1.appendix.appnote2c",
+           "type" : "application_note",
+           "number" : "1.1.1.2.(1)",
+           "title" : "Application to Existing Buildings",
+           "paragraphs" : 
+           [ 
+            { "content" : "This Code is most often applied to existing or relocated [REF:term:bldng:buildings] when an owner wishes to rehabilitate a [REF:term:bldng:building] , change its use, or build an addition, or when an enforcement authority decrees that a [REF:term:bldng:building] or class of [REF:term:bldng:buildings] be altered for reasons of public safety. It is not intended that the British Columbia Building Code be used to enforce the retrospective application of new requirements to existing [REF:term:bldng:buildings] or existing portions of relocated [REF:term:bldng:buildings] , unless specifically required by local regulations or bylaws. For example, although the British Columbia Fire Code could be interpreted to require the installation of fire alarm, standpipe and hose, and automatic sprinkler systems in an existing [REF:term:bldng:building] for which there were no requirements at the time of construction, it is not intented that the British Columbia Fire Code be applied in this manner to these [REF:term:bldng:buildings] unless the [REF:term:bc-thrt-hvn:authority having jurisdiction] has determined that there is an inherent threat to occupant safety and has issued an order to eliminate the [REF:term:nf-cndtn:unsafe condition] , or where substantial changes or additions are being made to an existing [REF:term:bldng:building] or the [REF:term:ccpnc:occupancy] has been changed. (See also Note A-1.1.1.1.(1) of Division A of the British Columbia Fire Code.)" },
+            
+            { "content" : "Relocated [REF:term:bldng:buildings] that have been in use in another location for a number of years can be considered as existing [REF:term:bldng:buildings] , in part, and the same analytical process can be applied as for existing [REF:term:bldng:buildings] . It should be noted, however, that a change in [REF:term:ccpnc:occupancy] may affect some requirements (e.g. loads and [REF:term:fr-prtn:fire separations] ) and relocation to an area with different wind, snow or earthquake loads will require the application of current code requirements. Depending on the construction of the [REF:term:bldng:building] and the changes in load, structural modifications may be required. Similarly, parts of a relocated or existing [REF:term:bldng:building] that are reconstructed, such as foundations and basements, or parts being modified are required to be built to current codes." } ] } ],
+         "total_notes" : 12 },
+        "total_sections" : 5 },
+       
+       { "id" : "nbc.divA.part2",
+        "type" : "part",
+        "number" : 2,
+        "title" : "Objectives",
+        "sections" : 
+        [ 
+         { "id" : "nbc.divA.part2.sect1",
+          "type" : "section",
+          "number" : 1,
+          "title" : "Application",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divA.part2.sect1.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Application",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divA.part2.sect1.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Application",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part2.sect1.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "This Part applies to all [REF:term:bldng:buildings] covered in this Code. (See [REF:internal:nbc.divA.part1.sect1.subsect1.art1] )" } ] },
+             
+             { "id" : "nbc.divA.part2.sect1.subsect1.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Application of Objectives",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part2.sect1.subsect1.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Except as provided in [REF:internal:nbc.divA.part2.sect1.subsect1.art2.sent2][REF:internal:nbc.divA.part2.sect1.subsect1.art2.sent6] , the objectives described in this Part apply",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divA.part2.sect1.subsect1.art2.sent1.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "to all [REF:term:bldng:buildings] covered in this Code (see [REF:internal:nbc.divA.part1.sect1.subsect1.art1] ), and" },
+                 
+                 { "id" : "nbc.divA.part2.sect1.subsect1.art2.sent1.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "only to the extent that they relate to compliance with this Code as required in [REF:internal:nbc.divA.part1.sect2.subsect1.art1]" } ] },
+               
+               { "id" : "nbc.divA.part2.sect1.subsect1.art2.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "Objective OS4, Resistance to Unwanted Entry, applies only to [REF:term:dwllng-n:dwelling units] in [REF:term:bldng:buildings] covered in Part 9 of Division B. (See [REF:internal:nbc.divA.part1.sect3.subsect3.art3] )" },
+               
+               { "id" : "nbc.divA.part2.sect1.subsect1.art2.sent3",
+                "type" : "sentence",
+                "number" : 3,
+                "text" : "Objective OH3, Noise Protection, applies only to [REF:term:dwllng-n:dwelling units] ." },
+               
+               { "id" : "nbc.divA.part2.sect1.subsect1.art2.sent4",
+                "type" : "sentence",
+                "number" : 4,
+                "text" : "Objective OH5, Hazardous Substances Containment, applies only to the extent defined in",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divA.part2.sect1.subsect1.art2.sent4.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "the [REF:standard:nrcc-npc] and" },
+                 
+                 { "id" : "nbc.divA.part2.sect1.subsect1.art2.sent4.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "the British Columbia Fire Code" } ] } ] } ],
+            "total_articles" : 2 } ],
+          "total_subsections" : 1 },
+         
+         { "id" : "nbc.divA.part2.sect2",
+          "type" : "section",
+          "number" : 2,
+          "title" : "Objectives",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divA.part2.sect2.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Objectives",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divA.part2.sect2.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Objectives",
+              "content" : 
+              [ 
+               { "id" : "nbc.divA.part2.sect2.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "The objectives of this Code are as follows (see [REF:internal:nbc.divA.part2.appendix.appnote2] ):",
+                "objectives" : 
+                [ 
+                 { "id" : "nbc.objective.OS",
+                  "key" : "OS",
+                  "title" : "Safety",
+                  "definition" : "An objective of this Code is to limit the probability that, as a result of the design, construction or demolition of the [REF:term:bldng:building] , a person in or adjacent to the [REF:term:bldng:building] will be exposed to an unacceptable risk of injury." },
+                 
+                 { "id" : "nbc.objective.OH",
+                  "key" : "OH",
+                  "title" : "Health",
+                  "definition" : "An objective of this Code is to limit the probability that, as a result of the design or construction of the [REF:term:bldng:building] , a person will be exposed to an unacceptable risk of illness." } ] } ] } ],
+            "total_articles" : 1 } ],
+          "total_subsections" : 1 } ],
+        "appendix" : 
+        { "id" : "nbc.divA.part2.appendix",
+         "type" : "part_appendix",
+         "application_notes" : 
+         [ 
+          { "id" : "nbc.divA.part2.appendix.appnote1",
+           "type" : "application_note",
+           "number" : "2.1.1.2.(6)",
+           "title" : "Application of Environment Objective",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divA.part2.appendix.appnote1.para1",
+             "content" : "Objective OE, Environment (including its sub-objectives), is attributed to the requirements in [REF:internal:nbc.divBV2.part9.sect36] , which address energy efficiency for small residential buildings and certain small non-residential and mixed-use buildings (see [REF:internal:nbc.divBV2.part9.sect36.subsect1.art3] ). The objectives, functional statements and energy efficiency requirements for larger Part 9 residential buildings as well as for non-residential buildings whose combined total floor area exceeds 300 m^{2} and some mixed-use buildings are addressed in the [REF:standard:nrcc-necb]" } ] },
+          
+          { "id" : "nbc.divA.part2.appendix.appnote2",
+           "type" : "application_note",
+           "number" : "2.2.1.1.(1)",
+           "title" : "Objectives",
+           "divisions" : 
+           [ 
+            { "id" : "nbc.divA.part2.appendix.appnote2.div1",
+             "type" : "note_division",
+             "title" : "Listing of objectives",
+             "paragraphs" : 
+             [ 
+              { "content" : "Any gaps in the numbering sequence of the objectives are due to the fact that there is a master list of objectives covering the principal Code Documents---the British Columbia Building Code Book I: General, British Columbia Building Code Book II: Plumbing Systems, and the [REF:bc-code:bcfc:British Columbia Fire Code] ---but not all objectives are pertinent to all Codes." } ] },
+            
+            { "id" : "nbc.divA.part2.appendix.appnote2.div2",
+             "type" : "note_division",
+             "title" : "The building",
+             "paragraphs" : 
+             [ 
+              { "content" : "Where the term \"the building\" is used in the wording of the objectives, it refers to the building for which compliance with the British Columbia Building Code is being assessed." } ] } ] } ],
+         "total_notes" : 2 },
+        "total_sections" : 2 } ],
+      "total_parts" : 3 },
+     
+     { "id" : "nbc.divB",
+      "type" : "division",
+      "letter" : "B",
+      "title" : "Acceptable Solutions",
+      "parts" : 
+      [ 
+       { "id" : "nbc.divB.part1",
+        "type" : "part",
+        "number" : 1,
+        "title" : "General",
+        "sections" : 
+        [ 
+         { "id" : "nbc.divB.part1.sect1",
+          "type" : "section",
+          "number" : 1,
+          "title" : "General",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divB.part1.sect1.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Application",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divB.part1.sect1.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Application",
+              "content" : 
+              [ 
+               { "id" : "nbc.divB.part1.sect1.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "This Part applies to all [REF:term:bldng:buildings] covered in this Code. (See [REF:internal:nbc.divA.part1.sect1.subsect1.art1] .)" } ] } ],
+            "total_articles" : 1 },
+           
+           { "id" : "nbc.divB.part1.sect1.subsect2",
+            "type" : "subsection",
+            "number" : 2,
+            "title" : "Objectives and Functional Statements",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divB.part1.sect1.subsect2.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Attributions to Acceptable Solutions",
+              "content" : 
+              [ 
+               { "id" : "nbc.divB.part1.sect1.subsect2.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "",
+                "revisions" : 
+                [ 
+                 { "type" : "original",
+                  "date" : "2024-03-08" },
+                 
+                 { "type" : "revision",
+                  "revision_type" : "amendment",
+                  "id" : "bc-mo-2024-06-016",
+                  "date" : "2025-06-16",
+                  "status" : "current",
+                  "summary" : "Struck out \"2.5.,\"" } ] } ] } ],
+            "total_articles" : 1 },
+           
+           { "id" : "nbc.divB.part1.sect1.subsect3",
+            "type" : "subsection",
+            "number" : 3,
+            "title" : "Climatic and Seismic Data",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divB.part1.sect1.subsect3.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Climatic and Seismic Values",
+              "content" : 
+              [ 
+               { "id" : "nbc.divB.part1.sect1.subsect3.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Except as provided in [REF:internal:nbc.divB.part1.sect1.subsect3.art1.sent3][REF:internal:nbc.divB.part1.sect1.subsect3.art1.sent2] and as required by [REF:internal:nbc.divBV2.part9.sect7.subsect4.art3.sent2] , the climatic and seismic values required for the design of [REF:term:bldng:buildings] under this Code shall be in conformance with the values established by the [REF:term:bc-thrt-hvn:authority having jurisdiction] ." },
+               
+               { "id" : "nbc.divB.part1.sect1.subsect3.art1.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "Where they have not been established by the [REF:term:thrt-hvn:authority having jurisdiction] , the climatic values required for the design of [REF:term:bldng:buildings] shall be in conformance with [REF:internal:nbc.divB.part1.sect1.subsect3.art1.sent3] and the values listed in [REF:internal:nbc.divB.appendixC] . (See [REF:internal:nbc.divB.part1.appendix.appnote2] .)" },
+               
+               { "id" : "nbc.divB.part1.sect1.subsect3.art1.sent3",
+                "type" : "sentence",
+                "number" : 3,
+                "text" : "The outside winter design temperatures determined from [REF:internal:nbc.divB.appendixC] shall be those listed for the January 2.5% values. (See [REF:internal:nbc.divB.part1.appendix.appnote3] .)" },
+               
+               { "id" : "nbc.divB.part1.sect1.subsect3.art1.sent4",
+                "type" : "sentence",
+                "number" : 4,
+                "text" : "Where they have not been established by the [REF:term:thrt-hvn:authority having jurisdiction] , the seismic values required for the design of [REF:term:bldng:buildings] under Part 4 and Part 9 shall be in conformance with [REF:internal:nbc.divB.appendixC] . (See [REF:internal:nbc.divB.part1.appendix.appnote4] .)" } ] },
+             
+             { "id" : "nbc.divB.part1.sect1.subsect3.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Depth of Frost Penetration",
+              "content" : 
+              [ 
+               { "id" : "nbc.divB.part1.sect1.subsect3.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Depth of frost penetration shall be established on the basis of local experience." } ] } ],
+            "total_articles" : 2 } ],
+          "total_subsections" : 4 },
+         
+         { "id" : "nbc.divB.part1.sect2",
+          "type" : "section",
+          "number" : 2,
+          "title" : "Terms and Abbreviations",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divB.part1.sect2.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Definitions of Words and Phrases",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divB.part1.sect2.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Non-defined Terms",
+              "content" : 
+              [ 
+               { "id" : "nbc.divB.part1.sect2.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Words and phrases used in Division B that are not included in the list of definitions in [REF:internal:nbc.divA.part1.sect4.subsect1.art2] shall have the meanings that are commonly assigned to them in the context in which they are used, taking into account the specialized use of terms by the various trades and professions to which the terminology applies." },
+               
+               { "id" : "nbc.divB.part1.sect2.subsect1.art1.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "Where objectives and functional statements are referred to in Division B, they shall be the objectives and functional statements described in Parts 2 and 3 of Division A." },
+               
+               { "id" : "nbc.divB.part1.sect2.subsect1.art1.sent3",
+                "type" : "sentence",
+                "number" : 3,
+                "text" : "Where acceptable solutions are referred to in Division B, they shall be the provisions stated in Parts 3 to 10." } ] },
+             
+             { "id" : "nbc.divB.part1.sect2.subsect1.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Defined Terms",
+              "content" : 
+              [ 
+               { "id" : "nbc.divB.part1.sect2.subsect1.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "The words and terms in italics in Division B shall have the meanings assigned to them in [REF:internal:nbc.divA.part1.sect4.subsect1.art2] ." } ] } ],
+            "total_articles" : 2 },
+           
+           { "id" : "nbc.divB.part1.sect2.subsect2",
+            "type" : "subsection",
+            "number" : 2,
+            "title" : "Symbols and Other Abbreviations",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divB.part1.sect2.subsect2.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Symbols and Other Abbreviations",
+              "content" : 
+              [ 
+               { "id" : "nbc.divB.part1.sect2.subsect2.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "The symbols and other abbreviations in Division B shall have the meanings assigned to them in [REF:internal:nbc.divA.part1.sect4.subsect2.art1] and [REF:internal:nbc.divB.part1.sect3.subsect2.art1]" } ] } ],
+            "total_articles" : 1 } ],
+          "total_subsections" : 2 },
+         
+         { "id" : "nbc.divB.part1.sect3",
+          "type" : "section",
+          "number" : 3,
+          "title" : "Referenced Documents and Organizations",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divB.part1.sect3.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Referenced Documents",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divB.part1.sect3.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Effective Date",
+              "content" : 
+              [ 
+               { "id" : "nbc.divB.part1.sect3.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Unless otherwise specified herein, the documents referenced in this Code shall include all amendments, revisions, reaffirmations, reapprovals, addenda and supplements effective to 15 July 2019." } ] },
+             
+             { "id" : "nbc.divB.part1.sect3.subsect1.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Applicable Editions",
+              "content" : 
+              [ 
+               { "id" : "nbc.divB.part1.sect3.subsect1.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Where documents are referenced in this Code, they shall be the editions designated in [REF:internal:nbc.divB.part1.sect3.subsect1.art2.table1]" },
+               
+               { "id" : "nbc.divB.part1.sect3.subsect1.art2.table1",
+                "type" : "table",
+                "title" : "Documents Referenced in Book I (General) of the British Columbia Building Code",
+                "structure" : 
+                { "columns" : 4,
+                 "header_rows" : 
+                 [ 
+                  [ 
+                   { "content" : "Issuing Agency" },
+                   
+                   { "content" : "Document Number [REF:table-note:nbc.divB.part1.sect3.subsect1.art2.table1.note3]" },
+                   
+                   { "content" : "Title of Document" },
+                   
+                   { "content" : "Code Reference" } ] ],
+                 "body_rows" : 
+                 [ 
+                  [ 
+                   { "content" : "AAMA" },
+                   
+                   { "content" : "501-05" },
+                   
+                   { "content" : "Methods of Test for Exterior Walls" },
+                   
+                   { "content" : "[REF:internal:nbc.divB.part5.appendix.appnote47]" } ],
+                  
+                  [ 
+                   { "content" : "AAMA" },
+                   
+                   { "content" : "501.1-05" },
+                   
+                   { "content" : "Standard Test Method for Water Penetration of Windows, Curtain Walls and Doors Using Dynamic Pressure" },
+                   
+                   { "content" : "[REF:internal:nbc.divB.part5.appendix.appnote47]" } ],
+                  
+                  [ 
+                   { "content" : "AAMA" },
+                   
+                   { "content" : "501.2-09" },
+                   
+                   { "content" : "Quality Assurance and Diagnostic Water Leakage Field Check of Installed Storefronts, Curtain Walls, and Sloped Glazing Systems" },
+                   
+                   { "content" : "[REF:internal:nbc.divB.part5.appendix.appnote47]" } ],
+                  
+                  [ 
+                   { "content" : "AAMA" },
+                   
+                   { "content" : "501.4-09" },
+                   
+                   { "content" : "Recommended Static Test Method for Evaluating Curtain Wall and Storefront Systems Subjected to Seismic and Wind-Induced Inter-Story Drifts" },
+                   
+                   { "content" : "[REF:internal:nbc.divB.part5.appendix.appnote47]" } ],
+                  
+                  [ 
+                   { "content" : "AAMA" },
+                   
+                   { "content" : "501.5-07" },
+                   
+                   { "content" : "Test Method for Thermal Cycling of Exterior Walls" },
+                   
+                   { "content" : "[REF:internal:nbc.divB.part5.appendix.appnote47][REF:internal:nbc.divB.part5.appendix.appnote50]" } ] ],
+                 "total_rows" : 506 } } ] } ],
+            "total_articles" : 2 },
+           
+           { "id" : "nbc.divB.part1.sect3.subsect2",
+            "type" : "subsection",
+            "number" : 2,
+            "title" : "Organizations",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divB.part1.sect3.subsect2.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Abbreviations of Proper Names",
+              "content" : 
+              [ 
+               { "id" : "nbc.divB.part1.sect3.subsect2.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "The abbreviations of proper names in this Code shall have the meanings assigned to them in this Article.[LIST:organization]",
+                "lists" : 
+                [ 
+                 { "type" : "organization",
+                  "items" : 
+                  [ 
+                   { "id" : "org.d1e20605",
+                    "abbreviation" : "AAMA",
+                    "fullName" : "Fenestration and Glazing Industry Alliance (formerly American Architectural Manufacturers Association)",
+                    "website" : "https:\/\/www.fgiaonline.org" },
+                   
+                   { "id" : "org.d1e20615",
+                    "abbreviation" : "ACGIH",
+                    "fullName" : "American Conference of Governmental Industrial Hygienists",
+                    "website" : "https:\/\/www.acgih.org" },
+                   
+                   { "id" : "org.d1e20625",
+                    "abbreviation" : "ACI",
+                    "fullName" : "American Concrete Institute",
+                    "website" : "https:\/\/www.concrete.org" },
+                   
+                   { "id" : "org.d1e20635",
+                    "abbreviation" : "AHRI",
+                    "fullName" : "Air-Conditioning, Heating and Refrigeration Institute",
+                    "website" : "https:\/\/www.ahrinet.org" },
+                   
+                   { "id" : "org.d1e20645",
+                    "abbreviation" : "AISI",
+                    "fullName" : "American Iron and Steel Institute",
+                    "website" : "https:\/\/www.steel.org" },
+                   
+                   { "id" : "org.d1e20656",
+                    "abbreviation" : "ANSI",
+                    "fullName" : "American National Standards Institute",
+                    "website" : "https:\/\/www.ansi.org" },
+                   
+                   { "id" : "org.d1e20666",
+                    "abbreviation" : "APA",
+                    "fullName" : "APA — The Engineered Wood Association",
+                    "website" : "https:\/\/www.apawood.org" },
+                   
+                   { "id" : "org.d1e20676",
+                    "abbreviation" : "ASCE",
+                    "fullName" : "American Society of Civil Engineers",
+                    "website" : "https:\/\/www.asce.org" },
+                   
+                   { "id" : "org.d1e20686",
+                    "abbreviation" : "ASHRAE",
+                    "fullName" : "American Society of Heating, Refrigerating and Air-Conditioning Engineers",
+                    "website" : "https:\/\/www.ashrae.org" },
+                   
+                   { "id" : "org.d1e20696",
+                    "abbreviation" : "ASME",
+                    "fullName" : "American Society of Mechanical Engineers",
+                    "website" : "https:\/\/www.asme.org" },
+                   
+                   { "id" : "org.d1e20706",
+                    "abbreviation" : "ASTM",
+                    "fullName" : "ASTM International",
+                    "website" : "https:\/\/www.astm.org" },
+                   
+                   { "id" : "org.d1e20717",
+                    "abbreviation" : "BNQ",
+                    "fullName" : "Bureau de normalisation du Québec",
+                    "website" : "https:\/\/www.bnq.qc.ca\/en" },
+                   
+                   { "id" : "org.d1e20727",
+                    "abbreviation" : "CAN",
+                    "fullName" : "National Standard of Canada designation",
+                    "website" : "https:\/\/www.scc.ca" },
+                   
+                   { "id" : "org.d1e20739",
+                    "abbreviation" : "CCBFC",
+                    "fullName" : "" },
+                   
+                   { "id" : "org.d1e20745",
+                    "abbreviation" : "CCME",
+                    "fullName" : "Canadian Council of Ministers of the Environment",
+                    "website" : "https:\/\/www.ccme.ca" },
+                   
+                   { "id" : "org.d1e20755",
+                    "abbreviation" : "CGSB",
+                    "fullName" : "Canadian General Standards Board",
+                    "website" : "https:\/\/www.tpsgc-pwgsc.gc.ca\/ongc-cgsb\/index-eng.html" },
+                   
+                   { "id" : "org.d1e20765",
+                    "abbreviation" : "CHC",
+                    "fullName" : "Canadian Hydronics Council",
+                    "website" : "https:\/\/www.chchydro.com" },
+                   
+                   { "id" : "org.d1e20776",
+                    "abbreviation" : "CISC",
+                    "fullName" : "Canadian Institute of Steel Construction",
+                    "website" : "https:\/\/www.cisc-icca.ca" },
+                   
+                   { "id" : "org.d1e20786",
+                    "abbreviation" : "CMHC",
+                    "fullName" : "Canada Mortgage and Housing Corporation",
+                    "website" : "https:\/\/www.cmhc.ca" },
+                   
+                   { "id" : "org.d1e20796A",
+                    "abbreviation" : "CoV",
+                    "fullName" : "City of Vancouver",
+                    "website" : "https:\/\/www.vancouver.ca" },
+                   
+                   { "id" : "org.d1e20796",
+                    "abbreviation" : "CRCA",
+                    "fullName" : "Canadian Roofing Contractors' Association",
+                    "website" : "https:\/\/www.roofingcanada.com" },
+                   
+                   { "id" : "org.d1e20806",
+                    "abbreviation" : "CSA",
+                    "fullName" : "CSA Group",
+                    "website" : "https:\/\/www.csagroup.org" },
+                   
+                   { "id" : "org.d1e20816",
+                    "abbreviation" : "CSSBI",
+                    "fullName" : "Canadian Sheet Steel Building Institute",
+                    "website" : "https:\/\/www.cssbi.ca" },
+                   
+                   { "id" : "org.d1e20826",
+                    "abbreviation" : "CWC",
+                    "fullName" : "Canadian Wood Council",
+                    "website" : "https:\/\/www.cwc.ca" },
+                   
+                   { "id" : "org.d1e20837",
+                    "abbreviation" : "DOE",
+                    "fullName" : "U.S. Department of Energy",
+                    "website" : "https:\/\/www.energy.gov" },
+                   
+                   { "id" : "org.d1e20847",
+                    "abbreviation" : "EC",
+                    "fullName" : "Environment and Climate Change Canada",
+                    "website" : "https:\/\/www.ec.gc.ca" },
+                   
+                   { "id" : "org.d1e20857",
+                    "abbreviation" : "ECC",
+                    "fullName" : "EIFS Council of Canada",
+                    "website" : "https:\/\/www.eifscouncil.org" },
+                   
+                   { "id" : "org.d1e20867",
+                    "abbreviation" : "EPA",
+                    "fullName" : "Environmental Protection Agency (U.S.)",
+                    "website" : "https:\/\/www.epa.gov" },
+                   
+                   { "id" : "org.d1e20877",
+                    "abbreviation" : "FEMA",
+                    "fullName" : "Federal Emergency Management Agency (U.S.)",
+                    "website" : "https:\/\/www.fema.gov" },
+                   
+                   { "id" : "org.d1e20887",
+                    "abbreviation" : "FLL",
+                    "fullName" : "German Landscape Research, Development and Construction Society",
+                    "website" : "https:\/\/shop.fll.de\/en" },
+                   
+                   { "id" : "org.d1e20898",
+                    "abbreviation" : "FPI",
+                    "fullName" : "FPInnovations – Wood Products (formerly FCC – Forintek Canada Corporation)",
+                    "website" : "https:\/\/https:\/\/shop.fll.de\/en" },
+                   
+                   { "id" : "org.d1e20908",
+                    "abbreviation" : "GRHC",
+                    "fullName" : "Green Roofs for Healthy Cities",
+                    "website" : "https:\/\/www.greenroofs.org" },
+                   
+                   { "id" : "org.d1e20918",
+                    "abbreviation" : "HC",
+                    "fullName" : "Health Canada",
+                    "website" : "https:\/\/www.hc-sc.gc.ca" },
+                   
+                   { "id" : "org.d1e20928",
+                    "abbreviation" : "HPVA",
+                    "fullName" : "Decorative Hardwoods Association (formerly Hardwood Plywood & Veneer Association)",
+                    "website" : "https:\/\/www.decorativehardwoods.org" },
+                   
+                   { "id" : "org.d1e20938",
+                    "abbreviation" : "HRAI",
+                    "fullName" : "Heating, Refrigeration and Air Conditioning Institute of Canada",
+                    "website" : "https:\/\/www.hrai.ca" },
+                   
+                   { "id" : "org.d1e20948",
+                    "abbreviation" : "HVI",
+                    "fullName" : "Home Ventilating Institute",
+                    "website" : "https:\/\/www.hrai.ca" },
+                   
+                   { "id" : "org.d1e20959",
+                    "abbreviation" : "ICC",
+                    "fullName" : "International Code Council",
+                    "website" : "https:\/\/" },
+                   
+                   { "id" : "org.d1e20969",
+                    "abbreviation" : "IEC",
+                    "fullName" : "International Electrotechnical Commission",
+                    "website" : "https:\/\/www.iec.ch" },
+                   
+                   { "id" : "org.d1e20979",
+                    "abbreviation" : "ISO",
+                    "fullName" : "International Organization for Standardization",
+                    "website" : "https:\/\/" },
+                   
+                   { "id" : "org.d1e20989",
+                    "abbreviation" : "NBC",
+                    "fullName" : "" },
+                   
+                   { "id" : "org.d1e20995",
+                    "abbreviation" : "NCMA",
+                    "fullName" : "National Concrete Masonry Association",
+                    "website" : "https:\/\/www.ncma.org" },
+                   
+                   { "id" : "org.d1e21005",
+                    "abbreviation" : "NECB",
+                    "fullName" : "" },
+                   
+                   { "id" : "org.d1e21012",
+                    "abbreviation" : "NEMA",
+                    "fullName" : "National Electrical Manufacturers Association",
+                    "website" : "https:\/\/www.nema.org" },
+                   
+                   { "id" : "org.d1e21022",
+                    "abbreviation" : "NFC",
+                    "fullName" : "" },
+                   
+                   { "id" : "org.d1e21028",
+                    "abbreviation" : "NFPA",
+                    "fullName" : "National Fire Protection Association",
+                    "website" : "https:\/\/www.nfpa.org" },
+                   
+                   { "id" : "org.d1e21038",
+                    "abbreviation" : "NFRC",
+                    "fullName" : "National Fenestration Rating Council",
+                    "website" : "https:\/\/www.nfpa.org" },
+                   
+                   { "id" : "org.d1e21048",
+                    "abbreviation" : "NLGA",
+                    "fullName" : "National Lumber Grades Authority",
+                    "website" : "https:\/\/www.nlga.org" },
+                   
+                   { "id" : "org.d1e21058",
+                    "abbreviation" : "NPC",
+                    "fullName" : "" },
+                   
+                   { "id" : "org.d1e21065",
+                    "abbreviation" : "NRC",
+                    "fullName" : "National Research Council of Canada",
+                    "website" : "https:\/\/nrc.canada.ca\/en" },
+                   
+                   { "id" : "org.d1e21075",
+                    "abbreviation" : "NRCA",
+                    "fullName" : "National Roofing Contractors Association",
+                    "website" : "https:\/\/www.nrca.net" },
+                   
+                   { "id" : "org.d1e21085",
+                    "abbreviation" : "NRCan",
+                    "fullName" : "Natural Resources Canada",
+                    "website" : "https:\/\/www.nrcan.gc.ca" },
+                   
+                   { "id" : "org.d1e21095",
+                    "abbreviation" : "NYCDH",
+                    "fullName" : "New York City Department of Health and Mental Hygiene",
+                    "website" : "https:\/\/www.nrcan.gc.ca" },
+                   
+                   { "id" : "org.d1e21105",
+                    "abbreviation" : "OMMAH",
+                    "fullName" : "Ontario Ministry of Municipal Affairs and Housing",
+                    "website" : "https:\/\/www.mah.gov.on.ca" },
+                   
+                   { "id" : "org.d1e21115",
+                    "abbreviation" : "SEI",
+                    "fullName" : "Structural Engineering Institute",
+                    "website" : "https:\/\/www.asce.org\/structural-engineering\/structural-engineering" },
+                   
+                   { "id" : "org.d1e21128",
+                    "abbreviation" : "SMACNA",
+                    "fullName" : "Sheet Metal and Air Conditioning Contractors' National Association",
+                    "website" : "https:\/\/www.smacna.org" },
+                   
+                   { "id" : "org.d1e21138",
+                    "abbreviation" : "SPRI",
+                    "fullName" : "Single Ply Roofing Industry",
+                    "website" : "https:\/\/www.spri.org" },
+                   
+                   { "id" : "org.d1e21148",
+                    "abbreviation" : "TC",
+                    "fullName" : "Transport Canada",
+                    "website" : "https:\/\/www.tc.canada.ca" },
+                   
+                   { "id" : "org.d1e21158",
+                    "abbreviation" : "TIAC",
+                    "fullName" : "Thermal Insulation Association of Canada",
+                    "website" : "https:\/\/www.tiac.ca" },
+                   
+                   { "id" : "org.d1e21168",
+                    "abbreviation" : "TPIC",
+                    "fullName" : "Truss Plate Institute of Canada",
+                    "website" : "https:\/\/www.tpic.ca" },
+                   
+                   { "id" : "org.d1e21178",
+                    "abbreviation" : "TWC",
+                    "fullName" : "Tarion Warranty Corporation (formerly Ontario New Home Warranty Program)",
+                    "website" : "https:\/\/www.tarion.com" },
+                   
+                   { "id" : "org.d1e21189",
+                    "abbreviation" : "UL",
+                    "fullName" : "Underwriters' Laboratories Inc.",
+                    "website" : "https:\/\/www.ul.com" },
+                   
+                   { "id" : "org.d1e21199",
+                    "abbreviation" : "ULC",
+                    "fullName" : "ULC Standards",
+                    "website" : "https:\/\/canada.ul.com\/ulcstandards" },
+                   
+                   { "id" : "org.d1e21209",
+                    "abbreviation" : "WCLIB",
+                    "fullName" : "Pacific Lumber Inspection Bureau (formerly West Coast Lumber Inspection Bureau)",
+                    "website" : "https:\/\/www.plib.org" },
+                   
+                   { "id" : "org.d1e21219",
+                    "abbreviation" : "WWPA",
+                    "fullName" : "Western Wood Products Association",
+                    "website" : "https:\/\/www.wwpa.org" } ] } ] } ] } ],
+            "total_articles" : 1 } ],
+          "total_subsections" : 2 } ],
+        "appendix" : 
+        { "id" : "nbc.divB.part1.appendix",
+         "type" : "part_appendix",
+         "application_notes" : 
+         [ 
+          { "id" : "nbc.divB.part1.appendix.appnote1",
+           "type" : "application_note",
+           "number" : "1.1.2.1.(1)",
+           "title" : "Objectives and Functional Statements\nAttributed to Acceptable Solutions",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divB.part1.appendix.appnote1.para1",
+             "content" : "The objectives and functional statements attributed to each Code provision are listed in a table following the provisions in each Part." },
+            
+            { "id" : "nbc.divB.part1.appendix.appnote1.para2",
+             "content" : "Many provisions in Division B serve as modifiers of or pointers to other provisions, or serve other clarification or explanatory purposes. In most cases, no objectives and functional statements have been attributed to such provisions, which therefore do not appear in the above-mentioned tables." } ] },
+          
+          { "id" : "nbc.divB.part1.appendix.appnote2",
+           "type" : "application_note",
+           "number" : "1.1.3.1.(2)",
+           "title" : "Climatic Values",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divB.part1.appendix.appnote2.para1",
+             "content" : "Climatic values for municipalities not listed in [REF:internal:nbc.divB.appendixC] can be obtained at [REF:external:https:\/\/www.climate.weather.gc.ca:www.climate.weather.gc.ca] or by e-mail from the Engineering Climate Services Unit of Environment and Climate Change Canada at scg-ecs@ec.gc.ca." } ] },
+          
+          { "id" : "nbc.divB.part1.appendix.appnote3",
+           "type" : "application_note",
+           "number" : "1.1.3.1.(3)",
+           "title" : "Winter Design Temperatures",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divB.part1.appendix.appnote3.para1",
+             "content" : "The 2.5% values referred to in [REF:internal:nbc.divB.part1.sect1.subsect3.art1.sent3] are the least restrictive temperatures that can be used. A designer may choose to use the 1% values given in [REF:internal:nbc.divB.appendixC] , which are in excess of the Code minimums but are considered acceptable." } ] },
+          
+          { "id" : "nbc.divB.part1.appendix.appnote4",
+           "type" : "application_note",
+           "number" : "1.1.3.1.(4)",
+           "title" : "Seismic Values",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divB.part1.appendix.appnote4.para1",
+             "content" : "[REF:internal:nbc.divB.part1.appendix.appnote4.figure1] illustrates how to determine the seismic hazard values to be used in the application of the Part 4 and Part 9 seismic provisions." } ] } ],
+         "total_notes" : 4 },
+        "total_sections" : 3 },
+       
+       { "id" : "nbc.divB.part2",
+        "type" : "part",
+        "number" : 2,
+        "title" : "RESERVED",
+        "sections" : 
+        [ 
+         { "id" : "nbc.divB.part2.sect1",
+          "type" : "section",
+          "number" : 1,
+          "title" : "RESERVED",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divB.part2.sect1.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "RESERVED",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divB.part2.sect1.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "RESERVED",
+              "content" : 
+              [ 
+               { "id" : "nbc.divB.part2.sect1.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "RESERVED" } ] } ],
+            "total_articles" : 1 } ],
+          "total_subsections" : 1 } ],
+        "total_sections" : 1 } ],
+      "total_parts" : 9 },
+     
+     { "id" : "nbc.divC",
+      "type" : "division",
+      "letter" : "C",
+      "title" : "Administrative Provisions",
+      "parts" : 
+      [ 
+       { "id" : "nbc.divC.part1",
+        "type" : "part",
+        "number" : 1,
+        "title" : "General",
+        "sections" : 
+        [ 
+         { "id" : "nbc.divC.part1.sect1",
+          "type" : "section",
+          "number" : 1,
+          "title" : "Application",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divC.part1.sect1.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Application",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divC.part1.sect1.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Application",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part1.sect1.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "This Part applies to all [REF:term:bldng:buildings] covered in this Code. (See [REF:internal:nbc.divA.part1.sect1.subsect1.art1] .)" } ] } ],
+            "total_articles" : 1 } ],
+          "total_subsections" : 1 },
+         
+         { "id" : "nbc.divC.part1.sect2",
+          "type" : "section",
+          "number" : 2,
+          "title" : "Terms and Abbreviations",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divC.part1.sect2.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Definitions of Words and Phrases",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divC.part1.sect2.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Non-defined Terms",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part1.sect2.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Words and phrases used in Division C that are not included in the list of definitions in [REF:internal:nbc.divA.part1.sect4.subsect1.art2:Article 1.4.1.2.] of Division A shall have the meanings that are commonly assigned to them in the context in which they are used, taking into account the specialized use of terms by the various trades and professions to which the terminology applies." },
+               
+               { "id" : "nbc.divC.part1.sect2.subsect1.art1.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "Where objectives and functional statements are referred to in Division C, they shall be the objectives and functional statements described in Parts 2 and 3 of Division A." },
+               
+               { "id" : "nbc.divC.part1.sect2.subsect1.art1.sent3",
+                "type" : "sentence",
+                "number" : 3,
+                "text" : "Where acceptable solutions are referred to in Division C, they shall be the provisions stated in Parts 3 to 10 of Division B." },
+               
+               { "id" : "nbc.divC.part1.sect2.subsect1.art1.sent4",
+                "type" : "sentence",
+                "number" : 4,
+                "text" : "Where alternative solutions are referred to in Division C, they shall be the alternative solutions mentioned in [REF:internal:nbc.divA.part1.sect2.subsect1.art1.sent1.clause2:Clause 1.2.1.1.(1)(b)] of Division A." } ] },
+             
+             { "id" : "nbc.divC.part1.sect2.subsect1.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Defined Terms",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part1.sect2.subsect1.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "The words and terms in italics in Division C shall have the meanings assigned to them in [REF:internal:nbc.divA.part1.sect4.subsect1.art2] ." } ] } ],
+            "total_articles" : 2 },
+           
+           { "id" : "nbc.divC.part1.sect2.subsect2",
+            "type" : "subsection",
+            "number" : 2,
+            "title" : "Symbols and Other Abbreviations",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divC.part1.sect2.subsect2.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Symbols and Other Abbreviations",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part1.sect2.subsect2.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "The symbols and other abbreviations in Division C shall have the meanings assigned to them in [REF:internal:nbc.divA.part1.sect4.subsect2.art1] ." } ] } ],
+            "total_articles" : 1 } ],
+          "total_subsections" : 2 } ],
+        "total_sections" : 2 },
+       
+       { "id" : "nbc.divC.part2",
+        "type" : "part",
+        "number" : 2,
+        "title" : "Administrative Provisions",
+        "sections" : 
+        [ 
+         { "id" : "nbc.divC.part2.sect1",
+          "type" : "section",
+          "number" : 1,
+          "title" : "Application",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divC.part2.sect1.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Application",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divC.part2.sect1.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Application",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part2.sect1.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "This Part applies to all [REF:term:bldng:buildings] covered in this Code. (See [REF:internal:nbc.divA.part1.sect1.subsect1.art1] .)" } ] } ],
+            "total_articles" : 1 } ],
+          "total_subsections" : 1 },
+         
+         { "id" : "nbc.divC.part2.sect2",
+          "type" : "section",
+          "number" : 2,
+          "title" : "Administration",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divC.part2.sect2.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Administration",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divC.part2.sect2.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Conformance with Administrative Requirements",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part2.sect2.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "This Code is made pursuant to Section 3 of the [REF:term:bldng:Building] Act." } ] },
+             
+             { "id" : "nbc.divC.part2.sect2.subsect1.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Structural Design",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part2.sect2.subsect1.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "For design carried out in accordance with Part 4 of Division B, the designer shall be a [REF:term:bc-rgstrd-prfssnl:registered professional] skilled in the work concerned. (See [REF:internal:nbc.divC.part2.appendix.appnote1:Note A-2.2.1.2.(1)] .)" } ] } ],
+            "total_articles" : 2 },
+           
+           { "id" : "nbc.divC.part2.sect2.subsect2",
+            "type" : "subsection",
+            "number" : 2,
+            "title" : "Information Required for Proposed Work",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divC.part2.sect2.subsect2.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "General Information Required",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part2.sect2.subsect2.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Sufficient information shall be provided to show that the proposed work will conform to this Code and whether or not it may affect adjacent property." },
+               
+               { "id" : "nbc.divC.part2.sect2.subsect2.art1.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "Plans shall be drawn to scale and shall indicate",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divC.part2.sect2.subsect2.art1.sent2.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "the nature and extent of the work or proposed [REF:term:ccpnc:occupancy] in sufficient detail to establish that, when completed, the work and the proposed [REF:term:ccpnc:occupancy] will conform to this Code," },
+                 
+                 { "id" : "nbc.divC.part2.sect2.subsect2.art1.sent2.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "the applicable edition of the Code," },
+                 
+                 { "id" : "nbc.divC.part2.sect2.subsect2.art1.sent2.clause3",
+                  "type" : "clause",
+                  "letter" : "c",
+                  "text" : "whether the [REF:term:bldng:building] is designed under Part 3 or Part 9," } ] },
+               
+               { "id" : "nbc.divC.part2.sect2.subsect2.art1.sent3",
+                "type" : "sentence",
+                "number" : 3,
+                "text" : "When proposed work is changed during construction, information on the changes shall comply with the requirements of this Section for proposed work." } ] },
+             
+             { "id" : "nbc.divC.part2.sect2.subsect2.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Site Plans",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part2.sect2.subsect2.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Site plans shall be referenced to an up-to-date survey and, when required to prove compliance with this Code, a copy of the survey shall be provided." },
+               
+               { "id" : "nbc.divC.part2.sect2.subsect2.art2.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "Site plans shall show",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divC.part2.sect2.subsect2.art2.sent2.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "by dimensions from property lines, the location of the proposed [REF:term:bldng:building] ," },
+                 
+                 { "id" : "nbc.divC.part2.sect2.subsect2.art2.sent2.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "the similarly dimensioned location of every adjacent existing [REF:term:bldng:building] on the property," },
+                 
+                 { "id" : "nbc.divC.part2.sect2.subsect2.art2.sent2.clause3",
+                  "type" : "clause",
+                  "letter" : "c",
+                  "text" : "existing and finished ground levels to an established datum at or adjacent to the site," } ] } ] } ],
+            "total_articles" : 2 },
+           
+           { "id" : "nbc.divC.part2.sect2.subsect3",
+            "type" : "subsection",
+            "number" : 3,
+            "title" : "Fire Protection Components",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divC.part2.sect2.subsect3.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Information Required for Fire Protection Components",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part2.sect2.subsect3.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Information shall be submitted to show the major components of fire protection including",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divC.part2.sect2.subsect3.art1.sent1.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "the division of the [REF:term:bldng:building] by [REF:term:frwll:firewalls] ," },
+                 
+                 { "id" : "nbc.divC.part2.sect2.subsect3.art1.sent1.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "the [REF:term:bldng-r:building area] ," },
+                 
+                 { "id" : "nbc.divC.part2.sect2.subsect3.art1.sent1.clause3",
+                  "type" : "clause",
+                  "letter" : "c",
+                  "text" : "the degree of [REF:term:fr-prtn:fire separation] of [REF:term:tr:storeys] , shafts and special rooms or areas, including the location and rating of [REF:term:clr:closures] in [REF:term:fr-prtn:fire separations] ," } ] } ] },
+             
+             { "id" : "nbc.divC.part2.sect2.subsect3.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Plans of Sprinkler Systems",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part2.sect2.subsect3.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Before a sprinkler system is installed or altered, plans showing full details of the proposed sprinkler system and essential details of the [REF:term:bldng:building] in which it is to be installed shall be drawn to an indicated scale." } ] } ],
+            "total_articles" : 2 } ],
+          "total_subsections" : 9 },
+         
+         { "id" : "nbc.divC.part2.sect3",
+          "type" : "section",
+          "number" : 3,
+          "title" : "Alternative Solutions",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divC.part2.sect3.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Documentation of Alternative Solutions",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divC.part2.sect3.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Application",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part2.sect3.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "For the purposes of [REF:internal:nbc.divA.part1.sect2.subsect1.art1.sent1.clause2:Clause 1.2.1.1.(1)(b)] of Division A, on written request by the owner of a [REF:term:bldng:building] or an authorized agent of that owner, the [REF:term:bc-thrt-hvn:authority having jurisdiction] shall accept a measure as an alternate solution to an acceptable solution for the [REF:term:bldng:building] if satisfied that",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divC.part2.sect3.subsect1.art1.sent1.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "the measure will achieve at least the level of performance required by [REF:internal:nbc.divA.part1.sect2.subsect1.art1.sent1.clause2:Clause 1.2.1.1.(1)(b)] of Division A, and" },
+                 
+                 { "id" : "nbc.divC.part2.sect3.subsect1.art1.sent1.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "the acceptable solution does not expressly require conformance to a provincial enactment other than the British Columbia [REF:term:bldng:Building] Code." } ] } ] },
+             
+             { "id" : "nbc.divC.part2.sect3.subsect1.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Documentation",
+              "content" : 
+              [ 
+               { "id" : "nbc.divC.part2.sect3.subsect1.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "The [REF:term:bc-thrt-hvn:authority having jurisdiction] may require a person requesting the use of an alternative solution to provide documentation to demonstrate that the proposed alternative solution will achieve at least the level of performance required by [REF:internal:nbc.divA.part1.sect2.subsect1.art1.sent1.clause2:Clause 1.2.1.1.(1)(b)] of Division A." },
+               
+               { "id" : "nbc.divC.part2.sect3.subsect1.art2.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "The documentation referred to in Sentence (1) shall include",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divC.part2.sect3.subsect1.art2.sent2.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "a Code analysis outlining the analytical methods and rationales used to determine that a proposed alternative solution will achieve at least the level of performance required by [REF:internal:nbc.divA.part1.sect2.subsect1.art1.sent1.clause2:Clause 1.2.1.1.(1)(b)] of Division A, and" },
+                 
+                 { "id" : "nbc.divC.part2.sect3.subsect1.art2.sent2.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "information concerning any special maintenance or operational requirements, including any [REF:term:bldng:building] component commissioning requirements, that are necessary for the alternative solution to achieve compliance with the Code after the [REF:term:bldng:building] is constructed." } ] },
+               
+               { "id" : "nbc.divC.part2.sect3.subsect1.art2.sent3",
+                "type" : "sentence",
+                "number" : 3,
+                "text" : "The Code analysis referred to in Clause (2)(a) shall identify the applicable objectives, functional statements and acceptable solutions, and any assumptions, limiting or restricting factors, testing procedures, engineering studies or [REF:term:bldng:building] performance parameters that will support a Code compliance assessment." },
+               
+               { "id" : "nbc.divC.part2.sect3.subsect1.art2.sent4",
+                "type" : "sentence",
+                "number" : 4,
+                "text" : "The Code analysis referred to in Clause (2)(a) shall include information about the qualifications, experience and background of the person or persons taking responsibility for the design." } ] } ],
+            "total_articles" : 2 } ],
+          "total_subsections" : 1 } ],
+        "appendix" : 
+        { "id" : "nbc.divC.part2.appendix",
+         "type" : "part_appendix",
+         "application_notes" : 
+         [ 
+          { "id" : "nbc.divC.part2.appendix.appnote1",
+           "type" : "application_note",
+           "number" : "2.2.1.2.(1)",
+           "title" : "Structural Design. Part 4 of Division B is written on the assumption that structural design will be ",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divC.part2.appendix.appnote1.para1",
+             "content" : "A-2.2.1.2.(1) Structural Design. Part 4 of Division B is written on the assumption that structural design will be carried out by a professional who is qualified to perform such design. Sentence 2.2.1.2.(1) is not intended to imply that a professional may not also be required in the application of requirements in other Parts of the British Columbia Building Code." } ] },
+          
+          { "id" : "nbc.divC.part2.appendix.appnote2",
+           "type" : "application_note",
+           "number" : "2.2.6.2.(1)",
+           "title" : "Information Required on Drawings\nand Specifications",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divC.part2.appendix.appnote2.para1",
+             "content" : "Examples of information that should be shown on architectural drawings and drawings for heating, ventilating and air-conditioning systems are:[LIST:alphabetic]",
+             "lists" : 
+             [ 
+              { "type" : "alphabetic",
+               "items" : 
+               [ 
+                { "content" : "the name, type and location of the building," },
+                
+                { "content" : "the name of the owner," },
+                
+                { "content" : "the name of the architect," },
+                
+                { "content" : "the name of the engineer or designer," },
+                
+                { "content" : "the north point," },
+                
+                { "content" : "the dimensions and height of all rooms," },
+                
+                { "content" : "the intended use of all rooms," },
+                
+                { "content" : "the details or description of the wall, roof, ceiling and floor construction, including insulation," },
+                
+                { "content" : "the details or description of the windows and outside doors, including the size, weatherstripping, storm sashes, sills and storm doors," },
+                
+                { "content" : "the size and continuity of all pipes, ducts, shafts, flues and fire dampers," },
+                
+                { "content" : "the location, size, capacity and type of all principal units of equipment," },
+                
+                { "content" : "the size, shape and height of all chimneys and gas vents," },
+                
+                { "content" : "the size and location of all combustion air and ventilation openings, and" },
+                
+                { "content" : "the location and fire-resistance rating of required fire separations." } ] } ] } ] },
+          
+          { "id" : "nbc.divC.part2.appendix.appnote3",
+           "type" : "application_note",
+           "number" : "2.2.7.6.",
+           "title" : "Conversions and Tolerances",
+           "divisions" : 
+           [ 
+            { "id" : "nbc.divC.part2.appendix.appnote3.div1",
+             "type" : "note_division",
+             "title" : "Historical Background",
+             "paragraphs" : 
+             [ 
+              { "content" : "For the 1977 edition of the NBC, most imperial values in the Code were converted to metric values. A document entitled “Metric Values for Use with the National Building Code 1977,” published by the NRC Associate Committee on the National Building Code, lists all of the metric values and provides some commentary on the rationale applied in the conversion process." },
+              
+              { "content" : "As explained in this document, the metric values of dimensions were “rounded off to the greatest extent possible, consistent with the sensitivity of the particular dimension to the standard of safety to be achieved.” For more sensitive dimensions, such as heights of handrails and guards, headroom clearances and design loads, the metric values were rounded to a higher precision." } ] },
+            
+            { "id" : "nbc.divC.part2.appendix.appnote3.div2",
+             "type" : "note_division",
+             "title" : "Review of Construction Dimensions",
+             "paragraphs" : 
+             [ 
+              { "content" : "When reviewing workmanship, materials or construction for compliance with the Code, for any measurement related to commonly available building components and materials, the designer or another suitably qualified person must consider the imperial value that formed the basis for the original prescriptive requirement." },
+              
+              { "content" : "For instance, the metric values given for the spacing between framing members are soft conversions, rather than exact conversions of the original imperial values. However, it remains common construction practice to arrange joists, rafters and studs in 12, 16 or 24 in. increments so as to properly align them with the edges of sheathing materials. It is, therefore, assumed that framing members will be spaced according to the exact metric equivalents as shown for the examples in the following table." } ] } ] },
+          
+          { "id" : "nbc.divC.part2.appendix.appnote4",
+           "type" : "application_note",
+           "number" : "2.2.8.1.(1)",
+           "title" : "Use of Terms “Building” and “House”",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divC.part2.appendix.appnote4.para1",
+             "content" : "Although the word “house” is used in the terms “proposed house,” “reference house” and “house performance compliance calculation report” in [REF:internal:nbc.divC.part2.sect2.subsect8] , it is intended to include other types of residential buildings also addressed by [REF:internal:nbc.divBV2.part9.sect36.subsect5] . The terms “proposed building,” “reference building” and “building performance compliance calculation report” used in the [REF:standard:nrcc-necb] apply to other types of buildings." } ] },
+          
+          { "id" : "nbc.divC.part2.appendix.appnote5",
+           "type" : "application_note",
+           "number" : "2.2.8.3.(2)(c)(i)",
+           "title" : "Annual Energy Consumption",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divC.part2.appendix.appnote5.para1",
+             "content" : "The performance compliance calculation method detailed in [REF:internal:nbc.divBV2.part9.sect36.subsect5] uses a number of assumptions regarding environmental values and operating conditions in order to standardize the calculations and neutralize the impact of occupant behaviour or to exclude issues that are not addressed in the requirements. Note that the result of the energy model calculations is not a prediction of the actual energy consumption of the proposed house." } ] } ],
+         "total_notes" : 12 },
+        "total_sections" : 3 } ],
+      "total_parts" : 2 } ],
+    "index" : 
+    { "id" : "nbc.2020.vol1.index",
+     "type" : "index",
+     "letters_sample" : 
+     [  ],
+     "total_letters" : 0 },
+    "conversions" : 
+    { "id" : "nbc.2020.vol1.conversions",
+     "type" : "conversions",
+     "table_id" : "nbc.2020.vol1.conversions.table1",
+     "table_title" : "Conversion Factors",
+     "total_rows" : 17 } },
+   
+   { "id" : "nbc.2020.vol2",
+    "number" : 2,
+    "title" : "National Building Code of Canada 2020 - Volume 2",
+    "divisions" : 
+    [ 
+     { "id" : "nbc.divBV2",
+      "type" : "division",
+      "letter" : "B",
+      "title" : "Acceptable Solutions",
+      "parts" : 
+      [ 
+       { "id" : "nbc.divBV2.part9",
+        "type" : "part",
+        "number" : 9,
+        "title" : "Housing and Small Buildings",
+        "sections" : 
+        [ 
+         { "id" : "nbc.divBV2.part9.sect1",
+          "type" : "section",
+          "number" : 1,
+          "title" : "General",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divBV2.part9.sect1.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Application",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divBV2.part9.sect1.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Application",
+              "content" : 
+              [ 
+               { "id" : "nbc.divBV2.part9.sect1.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "The application of this Part shall be as described in [REF:internal:nbc.divA.part1.sect3.subsect3] . (See [REF:internal:nbc.divBV2.part9.appendix.appnote1] regarding application to seasonally and intermittently occupied [REF:term:bldng:buildings] .)" },
+               
+               { "id" : "nbc.divBV2.part9.sect1.subsect1.art1.sent3",
+                "type" : "sentence",
+                "number" : 3,
+                "text" : "",
+                "revisions" : 
+                [ 
+                 { "type" : "original",
+                  "date" : "2024-03-08" },
+                 
+                 { "type" : "revision",
+                  "revision_type" : "amendment",
+                  "id" : "bc-mo-2024-03-010",
+                  "date" : "2024-08-27",
+                  "status" : "current",
+                  "summary" : "Added Sentence 9.1.1.1.(3) to clarify Part 9 does not apply to buildings designed under Subsection 3.2.10" } ] } ] } ],
+            "total_articles" : 1 },
+           
+           { "id" : "nbc.divBV2.part9.sect1.subsect2",
+            "type" : "subsection",
+            "number" : 2,
+            "title" : "Reserved",
+            "articles" : 
+            [  ],
+            "total_articles" : 0 } ],
+          "total_subsections" : 2 },
+         
+         { "id" : "nbc.divBV2.part9.sect2",
+          "type" : "section",
+          "number" : 2,
+          "title" : "Definitions",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divBV2.part9.sect2.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "General",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divBV2.part9.sect2.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Defined Words",
+              "content" : 
+              [ 
+               { "id" : "nbc.divBV2.part9.sect2.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Words in italics are defined in [REF:internal:nbc.divA.part1.sect4.subsect1.art2] ." } ] } ],
+            "total_articles" : 1 } ],
+          "total_subsections" : 1 },
+         
+         { "id" : "nbc.divBV2.part9.sect3",
+          "type" : "section",
+          "number" : 3,
+          "title" : "Materials, Systems and Equipment",
+          "subsections" : 
+          [ 
+           { "id" : "nbc.divBV2.part9.sect3.subsect1",
+            "type" : "subsection",
+            "number" : 1,
+            "title" : "Concrete",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divBV2.part9.sect3.subsect1.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "General",
+              "content" : 
+              [ 
+               { "id" : "nbc.divBV2.part9.sect3.subsect1.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Except as provided in [REF:internal:nbc.divBV2.part9.sect3.subsect1.art1.sent2] and [REF:internal:nbc.divBV2.part9.sect3.subsect1.art6][REF:internal:nbc.divBV2.part9.sect3.subsect1.art7] , unreinforced and nominally reinforced concrete shall be designed, mixed, placed, cured and tested in accordance with the requirements for “R” class concrete stated in [REF:external:csaa23.1:Section 9 of][REF:standard:csaa23.1]" },
+               
+               { "id" : "nbc.divBV2.part9.sect3.subsect1.art1.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "Unreinforced and nominally reinforced site-batched concrete shall be designed, mixed, placed and cured in accordance with [REF:internal:nbc.divBV2.part9.sect3.subsect1.art2][REF:internal:nbc.divBV2.part9.sect3.subsect1.art9]" },
+               
+               { "id" : "nbc.divBV2.part9.sect3.subsect1.art1.sent3",
+                "type" : "sentence",
+                "number" : 3,
+                "text" : "Except as provided in [REF:internal:nbc.divBV2.part9.sect3.subsect1.art1.sent4] , reinforced concrete shall be designed to conform to the requirements of Part 4." },
+               
+               { "id" : "nbc.divBV2.part9.sect3.subsect1.art1.sent4",
+                "type" : "sentence",
+                "number" : 4,
+                "text" : "For flat insulating concrete form walls not exceeding 2 [REF:term:tr:storeys] in [REF:term:bldng-hg:building height] and having a maximum floor to floor height of 3 m , in [REF:term:bldng:buildings] of light-frame construction, the concrete and reinforcing shall comply with Part 4 or",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divBV2.part9.sect3.subsect1.art1.sent4.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "the concrete shall conform to [REF:standard:csaa23.1] with a maximum aggregate size of 19 mm , and" },
+                 
+                 { "id" : "nbc.divBV2.part9.sect3.subsect1.art1.sent4.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "the reinforcing shall",
+                  "subclauses" : 
+                  [ 
+                   { "id" : "nbc.divBV2.part9.sect3.subsect1.art1.sent4.clause2.subclause1",
+                    "type" : "subclause",
+                    "number" : 1,
+                    "text" : "conform to [REF:standard:csag30.18]" },
+                   
+                   { "id" : "nbc.divBV2.part9.sect3.subsect1.art1.sent4.clause2.subclause2",
+                    "type" : "subclause",
+                    "number" : 2,
+                    "text" : "have a minimum specified yield strength of 400 MPa , and" } ] } ] } ] },
+             
+             { "id" : "nbc.divBV2.part9.sect3.subsect1.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Cement",
+              "content" : 
+              [ 
+               { "id" : "nbc.divBV2.part9.sect3.subsect1.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Cement shall meet the requirements of [REF:standard:csaa3001]" } ] },
+             
+             { "id" : "nbc.divBV2.part9.sect3.subsect1.art3",
+              "type" : "article",
+              "number" : 3,
+              "title" : "Concrete in Contact with Sulphate Soil",
+              "content" : 
+              [ 
+               { "id" : "nbc.divBV2.part9.sect3.subsect1.art3.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Concrete in contact with sulphate [REF:term:l:soil] , which is deleterious to normal cement, shall conform to the requirements in [REF:external:csaa23.1:Clause 4.1.1.6 of][REF:standard:csaa23.1]" } ] } ],
+            "total_articles" : 9 },
+           
+           { "id" : "nbc.divBV2.part9.sect3.subsect2",
+            "type" : "subsection",
+            "number" : 2,
+            "title" : "Lumber and Wood Products",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divBV2.part9.sect3.subsect2.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Grade Marking",
+              "content" : 
+              [ 
+               { "id" : "nbc.divBV2.part9.sect3.subsect2.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Lumber for joists, rafters, trusses and beams and for the uses listed in [REF:internal:nbc.divBV2.part9.sect3.subsect2.art1.table1] shall be identified by a grade stamp to indicate its grade as determined by [REF:standard:nlga_sgrcl] (See [REF:internal:nbc.divBV2.part9.appendix.appnote3] .)" },
+               
+               { "id" : "nbc.divBV2.part9.sect3.subsect2.art1.table1",
+                "type" : "table",
+                "title" : "Minimum Lumber Grades for Specific End Uses",
+                "structure" : 
+                { "columns" : 5,
+                 "header_rows" : 
+                 [ 
+                  [ 
+                   { "content" : "Use",
+                    "rowspan" : 4 },
+                   
+                   { "content" : "Boards [REF:table-note:nbc.divBV2.part9.sect3.subsect2.art1.table1.note1]",
+                    "colspan" : 3 },
+                   
+                   { "content" : "Framing",
+                    "rowspan" : 2 } ],
+                  
+                  [ 
+                   { "content" : "Paragraph in the NLGA Grading Rules under which boards are graded",
+                    "colspan" : 3 } ] ],
+                 "body_rows" : 
+                 [ 
+                  [ 
+                   { "content" : "Stud wall framing ( [REF:term:ldbrng:loadbearing] members)" },
+                   
+                   { "content" : "—" },
+                   
+                   { "content" : "—" },
+                   
+                   { "content" : "—" },
+                   
+                   { "content" : "Stud, Standard, No. 2" } ],
+                  
+                  [ 
+                   { "content" : "Stud wall framing (non- [REF:term:ldbrng:loadbearing] members)" },
+                   
+                   { "content" : "—" },
+                   
+                   { "content" : "—" },
+                   
+                   { "content" : "—" },
+                   
+                   { "content" : "Stud, Utility, No. 3" } ],
+                  
+                  [ 
+                   { "content" : "Plank frame construction ( [REF:term:ldbrng:loadbearing] members)" },
+                   
+                   { "content" : "No. 3 Common" },
+                   
+                   { "content" : "—" },
+                   
+                   { "content" : "No. 3 Common" },
+                   
+                   { "content" : "No. 2" } ],
+                  
+                  [ 
+                   { "content" : "Plank frame construction (non- [REF:term:ldbrng:loadbearing] members)" },
+                   
+                   { "content" : "No. 5 Common" },
+                   
+                   { "content" : "—" },
+                   
+                   { "content" : "No. 5 Common" },
+                   
+                   { "content" : "Economy, No. 3" } ],
+                  
+                  [ 
+                   { "content" : "Posts and beams less than 114 mm in thickness" },
+                   
+                   { "content" : "—" },
+                   
+                   { "content" : "—" },
+                   
+                   { "content" : "—" },
+                   
+                   { "content" : "Standard, No. 2" } ] ],
+                 "total_rows" : 10 } } ] },
+             
+             { "id" : "nbc.divBV2.part9.sect3.subsect2.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Lumber Grades",
+              "content" : 
+              [ 
+               { "id" : "nbc.divBV2.part9.sect3.subsect2.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Except for joists, rafters, trusses and beams, visually graded lumber shall conform to the grades in [REF:internal:nbc.divBV2.part9.sect3.subsect2.art1.table1] (See [REF:internal:nbc.divBV2.part9.sect23.subsect4.art2] for joists, rafters and beams and [REF:internal:nbc.divBV2.part9.sect23.subsect14.art11] for trusses.)" } ] },
+             
+             { "id" : "nbc.divBV2.part9.sect3.subsect2.art3",
+              "type" : "article",
+              "number" : 3,
+              "title" : "Machine Stress Rated Lumber",
+              "content" : 
+              [ 
+               { "id" : "nbc.divBV2.part9.sect3.subsect2.art3.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Machine stress rated lumber shall conform to the requirements of [REF:internal:nbc.divB.part4.sect3.subsect1]" } ] } ],
+            "total_articles" : 9 },
+           
+           { "id" : "nbc.divBV2.part9.sect3.subsect3",
+            "type" : "subsection",
+            "number" : 3,
+            "title" : "Metal",
+            "articles" : 
+            [ 
+             { "id" : "nbc.divBV2.part9.sect3.subsect3.art1",
+              "type" : "article",
+              "number" : 1,
+              "title" : "Sheet Metal Thickness",
+              "content" : 
+              [ 
+               { "id" : "nbc.divBV2.part9.sect3.subsect3.art1.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Minimum thicknesses for sheet metal material that are stated in this Part refer to the actual minimum base metal thicknesses measured at any point of the material and, in the case of galvanized steel described in [REF:internal:nbc.divBV2.part9.sect3.subsect3.art2.sent1] , include the thickness of the galvanizing coating unless otherwise indicated." } ] },
+             
+             { "id" : "nbc.divBV2.part9.sect3.subsect3.art2",
+              "type" : "article",
+              "number" : 2,
+              "title" : "Galvanized Sheet Steel",
+              "content" : 
+              [ 
+               { "id" : "nbc.divBV2.part9.sect3.subsect3.art2.sent1",
+                "type" : "sentence",
+                "number" : 1,
+                "text" : "Where sheet steel is required to be galvanized, it shall be metallic-coated with zinc or an alloy of 55% aluminum-zinc meeting the requirements of",
+                "clauses" : 
+                [ 
+                 { "id" : "nbc.divBV2.part9.sect3.subsect3.art2.sent1.clause1",
+                  "type" : "clause",
+                  "letter" : "a",
+                  "text" : "[REF:standard:astma653m] or" },
+                 
+                 { "id" : "nbc.divBV2.part9.sect3.subsect3.art2.sent1.clause2",
+                  "type" : "clause",
+                  "letter" : "b",
+                  "text" : "[REF:standard:astma792m]" } ] },
+               
+               { "id" : "nbc.divBV2.part9.sect3.subsect3.art2.sent2",
+                "type" : "sentence",
+                "number" : 2,
+                "text" : "Where galvanized sheet steel is intended for use in locations exposed to the weather or as a flashing material, it shall have a zinc coating not less than the G90 [Z275] coating designation or an aluminum-zinc alloy coating not less than the AZM150 coating designation, as referred to in [REF:internal:nbc.divBV2.part9.sect3.subsect3.art2.sent1] ." } ] } ],
+            "total_articles" : 2 } ],
+          "total_subsections" : 3 } ],
+        "spectables" : 
+        [ 
+         { "id" : "nbc.divBV2.part9.spectables1",
+          "type" : "spectables",
+          "title" : "Fire and Sound Resistance Tables",
+          "tables" : 
+          [ 
+           { "id" : "nbc.divBV2.part9.spectables1.table1",
+            "type" : "table",
+            "number" : "9.10.3.1.-A",
+            "title" : "Fire and Sound Resistance of Walls",
+            "structure" : 
+            { "columns" : 6,
+             "header_rows" : 
+             [ 
+              [ 
+               { "content" : "Type of Wall",
+                "rowspan" : 2 },
+               
+               { "content" : "Wall Number",
+                "rowspan" : 2 },
+               
+               { "content" : "Description",
+                "rowspan" : 2 },
+               
+               { "content" : "[REF:term:fr-rtnc-:Fire-Resistance Rating][REF:table-note:nbc.divBV2.part9.spectables1.table1.note2][REF:table-note:nbc.divBV2.part9.spectables1.table1.note3][REF:table-note:nbc.divBV2.part9.spectables1.table1.note4]",
+                "colspan" : 2 },
+               
+               { "content" : "Typical [REF:term:stc:Sound Transmission Class][REF:table-note:nbc.divBV2.part9.spectables1.table1.note2][REF:table-note:nbc.divBV2.part9.spectables1.table1.note4][REF:table-note:nbc.divBV2.part9.spectables1.table1.note5]",
+                "rowspan" : 2 } ],
+              
+              [ 
+               { "content" : "[REF:term:ldbrng:Loadbearing]" },
+               
+               { "content" : "Non- [REF:term:ldbrng:Loadbearing]" } ] ],
+             "body_rows" : 
+             [ 
+              [ 
+               { "content" : "• Wood Studs" },
+               
+               { "content" : "W1" },
+               
+               { "content" : "• 38 mm × 89 mm studs spaced 400 mm or 600 mm o.c.• with or without absorptive material• 1 layer of gypsum board on each side" },
+               
+               { "content" : "",
+                "colspan" : 3 } ],
+              
+              [ 
+               { "content" : "• Single Row" },
+               
+               { "content" : "W1a" },
+               
+               { "content" : "W1 with• 89 mm thick absorptive materialSound absorptive material includes fibre processed from rock, slag, glass or cellulose fibre. It must fill at least 90% of the cavity thickness for the wall to have the listed [REF:term:stc:STC] value. The absorptive material should not overfill the cavity to the point of producing significant outward pressure on the finishes; such an assembly will not achieve the [REF:term:stc:STC] rating. Where the absorptive material used with steel stud assemblies is in batt form, “steel stud batts,” which are wide enough to fill the cavity from the web of one stud to the web of the adjacent stud, must be used.• 15.9 mm Type X gypsum boardThe complete descriptions of indicated finishes are as follows:[LIST:bulleted]" },
+               
+               { "content" : "1 h" },
+               
+               { "content" : "1 h" },
+               
+               { "content" : "36" } ],
+              
+              [ 
+               { "content" : "• [REF:term:ldbrng:Loadbearing] or Non- [REF:term:ldbrng:Loadbearing]" },
+               
+               { "content" : "W1b" },
+               
+               { "content" : "W1 with• 89 mm thick absorptive material• 12.7 mm Type X gypsum board" },
+               
+               { "content" : "45 min[1 h [REF:table-note:nbc.divBV2.part9.spectables1.table1.note8] ]" },
+               
+               { "content" : "45 min[1 h [REF:table-note:nbc.divBV2.part9.spectables1.table1.note8] ]" },
+               
+               { "content" : "34" } ],
+              
+              [ 
+               { "content" : "" },
+               
+               { "content" : "W1c" },
+               
+               { "content" : "W1 with• 89 mm thick absorptive material• 12.7 mm regular gypsum boardRegular gypsum board used in single layer assemblies must be installed so all edges are supported." },
+               
+               { "content" : "30 min" },
+               
+               { "content" : "30 min[45 min [REF:table-note:nbc.divBV2.part9.spectables1.table1.note8] ]" },
+               
+               { "content" : "32" } ],
+              
+              [ 
+               { "content" : "" },
+               
+               { "content" : "W1d" },
+               
+               { "content" : "W1 with• no absorptive material• 15.9 mm Type X gypsum board" },
+               
+               { "content" : "1 h" },
+               
+               { "content" : "1 h" },
+               
+               { "content" : "32" } ] ],
+             "total_rows" : 285 } },
+           
+           { "id" : "nbc.divBV2.part9.spectables1.table2",
+            "type" : "table",
+            "number" : "9.10.3.1.-B",
+            "title" : "Fire and Sound Resistance of Floors, Ceilings and Roofs",
+            "structure" : 
+            { "columns" : 6,
+             "header_rows" : 
+             [ 
+              [ 
+               { "content" : "Type of Assembly" },
+               
+               { "content" : "Assembly Number" },
+               
+               { "content" : "Description [REF:table-note:nbc.divBV2.part9.spectables1.table2.note2][REF:table-note:nbc.divBV2.part9.spectables1.table2.note3][REF:table-note:nbc.divBV2.part9.spectables1.table2.note4]" },
+               
+               { "content" : "[REF:term:fr-rtnc-:Fire-Resistance Rating][REF:table-note:nbc.divBV2.part9.spectables1.table2.note5][REF:table-note:nbc.divBV2.part9.spectables1.table2.note6][REF:table-note:nbc.divBV2.part9.spectables1.table2.note7][REF:table-note:nbc.divBV2.part9.spectables1.table2.note8]" },
+               
+               { "content" : "Typical [REF:term:stc:Sound Transmission Class][REF:table-note:nbc.divBV2.part9.spectables1.table2.note5][REF:table-note:nbc.divBV2.part9.spectables1.table2.note6][REF:table-note:nbc.divBV2.part9.spectables1.table2.note7][REF:table-note:nbc.divBV2.part9.spectables1.table2.note9][REF:table-note:nbc.divBV2.part9.spectables1.table2.note10][REF:table-note:nbc.divBV2.part9.spectables1.table2.note11] ( [REF:term:stc:STC] )" },
+               
+               { "content" : "Typical Impact Insulation Class [REF:table-note:nbc.divBV2.part9.spectables1.table2.note5][REF:table-note:nbc.divBV2.part9.spectables1.table2.note9][REF:table-note:nbc.divBV2.part9.spectables1.table2.note12] (IIC)" } ] ],
+             "body_rows" : 
+             [ 
+              [ 
+               { "content" : "Floors and Ceilings" },
+               
+               { "content" : "" },
+               
+               { "content" : "" },
+               
+               { "content" : "" },
+               
+               { "content" : "" },
+               
+               { "content" : "" } ],
+              
+              [ 
+               { "content" : "Concrete Slabs" },
+               
+               { "content" : "F1" },
+               
+               { "content" : "• concrete floors" },
+               
+               { "content" : "",
+                "colspan" : 3 } ],
+              
+              [ 
+               { "content" : "" },
+               
+               { "content" : "F1a" },
+               
+               { "content" : "• 90 mm reinforced concrete with 20 mm minimum cover over reinforcing steel" },
+               
+               { "content" : "1 h" },
+               
+               { "content" : "47" },
+               
+               { "content" : "23" } ],
+              
+              [ 
+               { "content" : "" },
+               
+               { "content" : "F1b" },
+               
+               { "content" : "• 130 mm reinforced concrete with 25 mm minimum cover over reinforcing steel" },
+               
+               { "content" : "2 h" },
+               
+               { "content" : "52" },
+               
+               { "content" : "27" } ],
+              
+              [ 
+               { "content" : "" },
+               
+               { "content" : "F1c" },
+               
+               { "content" : "• pre-stressed hollow core slab 200 mm deep with 25 mm minimum cover over reinforcing steel" },
+               
+               { "content" : "1 h" },
+               
+               { "content" : "50" },
+               
+               { "content" : "28" } ] ],
+             "total_rows" : 685 } } ],
+          "total_tables" : 2 } ],
+        "appendix" : 
+        { "id" : "nbc.divBV2.part9.appendix",
+         "type" : "part_appendix",
+         "application_notes" : 
+         [ 
+          { "id" : "nbc.divBV2.part9.appendix.appnote1",
+           "type" : "application_note",
+           "number" : "9.1.1.1.(1)",
+           "title" : "Application of Part 9 to Seasonally\nand Intermittently Occupied Buildings",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divBV2.part9.appendix.appnote1.para1",
+             "content" : "The National Building Code does not provide separate requirements which would apply to seasonally or intermittently occupied buildings. Without compromising the basic health and safety provisions, however, various requirements in Part 9 recognize that leniency may be appropriate in some circumstances. With greater use of “cottages” through the winter months, the proliferation of seasonally occupied multiple-dwelling buildings and the increasing installation of modern conveniences in these buildings, the number and extent of possible exceptions is reduced." } ],
+           "divisions" : 
+           [ 
+            { "id" : "nbc.divBV2.part9.appendix.appnote1.div0",
+             "type" : "note_division",
+             "title" : "Energy Efficiency",
+             "paragraphs" : 
+             [ 
+              { "content" : "[REF:internal:nbc.divBV2.part9.sect37.subsect1.art3] exempts seasonally occupied residential buildings such as summer cottages from the requirements of [REF:internal:nbc.divBV2.part9.sect37] . Cottages intended for continuous or regular winter use such as ski cabins are required to conform to [REF:internal:nbc.divBV2.part9.sect37] ." } ] },
+            
+            { "id" : "nbc.divBV2.part9.appendix.appnote1.div1",
+             "type" : "note_division",
+             "title" : "Thermal Insulation",
+             "paragraphs" : 
+             [ 
+              { "content" : "[REF:internal:nbc.divBV2.part9.sect25.subsect2.art1] specifies that insulation is to be installed in walls, ceilings and floors which separate heated space from unheated space. Cottages intended for use only in the summer and which, therefore, have no space heating appliances, would not be required to be insulated. Should a heating system be installed at some later date, insulation should also be installed at that time in accordance with [REF:internal:nbc.divBV2.part9.sect25.subsect1.art1] and the insulation tables in [REF:internal:nbc.divBV2.part9.sect37] . However, if the building were not intended for continuous or regular winter use, it may still be exempted from the remainder of the energy efficiency requirements in [REF:internal:nbc.divBV2.part9.sect37] ." } ] } ] },
+          
+          { "id" : "nbc.divBV2.part9.appendix.appnote2",
+           "type" : "application_note",
+           "number" : "9.3.1.7.",
+           "title" : "Ratio of Water to Cementing Material",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divBV2.part9.appendix.appnote2.para1",
+             "content" : "While adding water to concrete on site may facilitate its distribution through formwork, this practice can have several undesirable results, such as reduced strength, greater porosity, and more propensity to shrinkage cracking. The ratio of water to cementing material is determined according to weight. For example, using [REF:internal:nbc.divBV2.part9.sect3.subsect1.art7.table1] , the maximum water-cement ratio of 0.45 for a 20 mm coarse aggregate would require 18 kg (or 18 L) of water (1 L of water weighs 1 kg)." } ] },
+          
+          { "id" : "nbc.divBV2.part9.appendix.appnote3",
+           "type" : "application_note",
+           "number" : "9.3.2.1.(1)",
+           "title" : "Grade Marking of Lumber",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divBV2.part9.appendix.appnote3.para1",
+             "content" : "Lumber is generally grouped for marketing into the species combinations contained in [REF:internal:nbc.divBV2.part9.appendix.appnote3.table1] . The maximum allowable spans for those combinations are listed in the span tables for joists, rafters and beams. Some species of lumber are also marketed individually. Since the allowable span for the northern species combination is based on the weakest species in the combination, the use of the span for this combination is permitted for any individual species not included in the Spruce-Pine-Fir, Douglas Fir-Larch and Hemlock-Fir combinations." },
+            
+            { "id" : "nbc.divBV2.part9.appendix.appnote3.para2",
+             "content" : "Facsimiles of typical grade marks of lumber associations and grading agencies accredited by the Canadian Lumber Standards (CLS) Accreditation Board to grade mark lumber in Canada are shown in [REF:internal:nbc.divBV2.part9.appendix.appnote3.table2] . Accreditation by the CLS Accreditation Board applies to the inspection, grading and grade marking of lumber, including mill supervisory service, in accordance with [REF:standard:csao141]" } ] },
+          
+          { "id" : "nbc.divBV2.part9.appendix.appnote4",
+           "type" : "application_note",
+           "number" : "Table 9.3.2.1.",
+           "title" : "Lumber Grading",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divBV2.part9.appendix.appnote4.para1",
+             "content" : "To identify board grades, the paragraph number of the NLGA [REF:standard:nlga_sgrcl] under which the lumber is graded must be shown in the grade mark. Paragraph 113 is equivalent to the WWPA [REF:standard:wwpa_wlgr] and paragraph 114 is equivalent to the WCLIB [REF:standard:wclib17] When graded in accordance with WWPA or WCLIB rules, the grade mark will not contain a paragraph number." } ] },
+          
+          { "id" : "nbc.divBV2.part9.appendix.appnote5",
+           "type" : "application_note",
+           "number" : "9.3.2.8.(1)",
+           "title" : "Non-Standard Lumber",
+           "paragraphs" : 
+           [ 
+            { "id" : "nbc.divBV2.part9.appendix.appnote5.para1",
+             "content" : "[REF:standard:nlga_sgrcl] permits lumber to be dressed to sizes below the standard sizes (38 × 89, 38 × 140, 38 × 184, etc.) provided the grade stamp shows the reduced size. This Sentence permits the use of the span tables for such lumber, provided the size indicated on the stamp is not less than 95% of the corresponding standard size. Allowable spans in the tables must be reduced a full 5% even if the undersize is less than the 5% permitted." } ] } ],
+         "total_notes" : 320 },
+        "total_sections" : 38 } ],
+      "total_parts" : 1 } ],
+    "index" : 
+    { "id" : "nbc.2020.vol2.index",
+     "type" : "index",
+     "letters_sample" : 
+     [  ],
+     "total_letters" : 0 },
+    "conversions" : 
+    { "id" : "nbc.2020.vol2.conversions",
+     "type" : "conversions",
+     "table_id" : "nbc.2020.vol2.conversions.table1",
+     "table_title" : "Conversion Factors",
+     "total_rows" : 17 } } ],
+  "cross_references_sample" : 
+  { "internal" : 
+   [ 
+    { "source" : "nbc.2020.preface.div4.sub4.para1",
+     "target" : "nbc.divA.part1.sect2.subsect1.art1.sent1" },
+    
+    { "source" : "nbc.divA.part1.sect1.subsect1.art1.sent3",
+     "target" : "nbc.divA.part1.appendix.appnote2" },
+    
+    { "source" : "nbc.divA.part1.sect1.subsect1.art1.sent5",
+     "target" : "nbc.divA.part1.sect1.subsect1.art1.table1" },
+    
+    { "source" : "nbc.divA.part1.sect1.subsect1.art1.sent5",
+     "target" : "nbc.divA.part1.appendix.appnote3" },
+    
+    { "source" : "nbc.divA.part1.sect1.subsect1.art1.table1",
+     "target" : "nbc.divA.part1.sect1.subsect1.art1.sent5" } ],
+   "terms" : 
+   [ 
+    { "term" : "bldng",
+     "text" : "building" },
+    
+    { "term" : "ccpnc",
+     "text" : "occupancy" },
+    
+    { "term" : "bldng",
+     "text" : "building" },
+    
+    { "term" : "ccpnc",
+     "text" : "occupancy" },
+    
+    { "term" : "bldng",
+     "text" : "building" } ],
+   "standards" : 
+   [ 
+    { "standard" : "ulcs114",
+     "text" : "" },
+    
+    { "standard" : "tc_sor95",
+     "text" : "" },
+    
+    { "standard" : "nrcc-nfc",
+     "text" : "" },
+    
+    { "standard" : "hc_sor15-17",
+     "text" : "" },
+    
+    { "standard" : "nrcc-nfc",
+     "text" : "" } ] },
+  "bc_amendments_sample" : 
+  [ 
+   { "location" : "nbc.divA.part1.sect1.subsect1.art1.sent2.clause1",
+    "original_date" : "2024-03-08",
+    "revisions" : 
+    [ 
+     { "type" : "amendment",
+      "id" : "bc-mo-2024-06-002",
+      "date" : "2025-06-16",
+      "status" : "current",
+      "summary" : "Amended Clause 1.1.1.1.(2)(a) by striking out \"sewage\" and substituting \"sewage\"" } ] },
+   
+   { "location" : "nbc.divA.part1.sect1.subsect1.art1.table1.row19",
+    "original_date" : "2024-03-08",
+    "revisions" : 
+    [ 
+     { "type" : "amendment",
+      "id" : "bc-mo-2024-06-003",
+      "date" : "2025-06-16",
+      "status" : "current",
+      "summary" : "Amended Table 1.1.1.1.(5), Item 19 by striking out italic \"Ramps\" and substituting regular \"Ramps\", and by striking out \"3.4.6.79.\" and substituting \"3.4.6.9.\"" } ] },
+   
+   { "location" : "nbc.divA.part1.sect1.subsect1.art1.table1.row37",
+    "original_date" : "2024-03-08",
+    "revisions" : 
+    [ 
+     { "type" : "amendment",
+      "id" : "bc-mo-2024-06-004",
+      "date" : "2025-06-16",
+      "status" : "current",
+      "summary" : "Amended Table 1.1.1.1.(5), Item 37 by striking out term-referenced \"unsafe condition\" and substituting plain text \"unsafe condition\"" } ] },
+   
+   { "location" : "nbc.divA.part1.sect1.subsect1.art1.table2.row5",
+    "original_date" : "2024-03-08",
+    "revisions" : 
+    [ 
+     { "type" : "amendment",
+      "id" : "bc-mo-2024-06-005",
+      "date" : "2025-06-16",
+      "status" : "current",
+      "summary" : "Amended Table 1.1.1.1.(6), Item 5 by striking out italic \"Ramps\" and substituting regular \"Ramps\", and by striking out italic \"ramp\" and substituting regular \"ramp\" throughout Item 5" } ] },
+   
+   { "location" : "nbc.divA.part1.sect1.subsect1.art1.table2.row7",
+    "original_date" : "2024-03-08",
+    "revisions" : 
+    [ 
+     { "type" : "amendment",
+      "id" : "bc-mo-2024-06-006",
+      "date" : "2025-06-16",
+      "status" : "current",
+      "summary" : "Amended Table 1.1.1.1.(6), Item 7 by striking out \"Fire-Resistance and Fire-Protection Ratings\" and substituting \"Fire-Resistance Ratings and Fire-Protection Ratings\"" } ] } ],
+  "glossary_sample" : 
+  { "bc-cc-t-ccbl" : 
+   { "term" : "Access or Accessible",
+    "definition" : "means an area and its facilities, or both, as required by this Code, which is easy to approach, enter, exit, operate, participate in, pass to and from, and use safely and independently by [REF:term:bc-prsn-wth-dsblts:persons with disabilities] ." },
+   "cc-t-xt" : 
+   { "term" : "Access to exit",
+    "definition" : "means that part of a [REF:term:mn-f-gr:means of egress] within a [REF:term:flr-r:floor area] that provides access to an [REF:term:xt:exit] serving the [REF:term:flr-r:floor area] ." },
+   "bc-dptbl-dwllng-nt" : 
+   { "term" : "Adaptable dwelling unit",
+    "definition" : "means a [REF:term:dwllng-n:dwelling unit] designed and constructed with some accessible features and which accommodates the future modification to provide more accessible features." },
+   "dfrzng" : 
+   { "term" : "Adfreezing",
+    "definition" : "means the adhesion of [REF:term:l:soil] to a [REF:term:fndtn-nt:foundation unit] resulting from the freezing of [REF:term:l:soil] water. (Also referred to as “frost grip.”)" },
+   "grc-ccp" : 
+   { "term" : "Agricultural occupancy",
+    "definition" : "(Group G) means the [REF:term:ccpnc:occupancy] of a [REF:term:bldng:building] or part thereof that is located on land that is associated with and devoted to the practice of farming, and is used for the purpose of producing crops, raising farm animals, or preparing, marketing, storing or processing agricultural products. (See [REF:internal:nbc.divA.part1.appendix.appnote7.div1] .)" },
+   "grc-ccp-nh" : 
+   { "term" : "Agricultural occupancy with no human occupants (Group G, Division 4)",
+    "definition" : "means an [REF:term:grc-ccp:agricultural occupancy] that is not intended to be occupied by persons under normal use and is generally used for the storage of agricultural materials and by-products. (See [REF:internal:nbc.divA.part1.appendix.appnote7.div2] .)" },
+   "r-brrr" : 
+   { "term" : "Air barrier system",
+    "definition" : "means the assembly installed to provide a continuous barrier to the movement of air." },
+   "r-pprtd-" : 
+   { "term" : "Air-supported structure",
+    "definition" : "means a structure consisting of a pliable membrane that achieves and maintains its shape and support by internal air pressure." },
+   "lrm-gnl" : 
+   { "term" : "Alarm signal",
+    "definition" : "means an audible signal transmitted throughout a zone or zones or throughout a [REF:term:bldng:building] to advise occupants that a fire emergency exists." },
+   "lrt-gnl" : 
+   { "term" : "Alert signal",
+    "definition" : "means an audible signal to advise designated persons of a fire emergency." } },
+  "statistics" : 
+  { "total_volumes" : 2,
+   "total_divisions" : 4,
+   "total_parts" : 15,
+   "total_sections" : 100,
+   "total_articles" : 2022,
+   "total_sentences" : 5135,
+   "total_tables" : 351,
+   "total_figures" : 318,
+   "total_application_notes" : 828,
+   "total_revisions" : 256,
+   "total_index_entries_vol1" : 0,
+   "total_index_references_vol1" : 0,
+   "total_index_entries_vol2" : 0,
+   "total_index_references_vol2" : 0 },
+  "schema_doc" : 
+  { "hierarchy" : 
+   { "description" : "BC Building Code follows strict hierarchy: volume > division > part > section > subsection > article > sentence > clause > subclause",
+    "levels" : 
+    [ 
+     { "level" : 1,
+      "name" : "volume",
+      "example" : "nbc.2020.vol1, nbc.2020.vol2" },
+     
+     { "level" : 2,
+      "name" : "division",
+      "example" : "nbc.divA, nbc.divB" },
+     
+     { "level" : 3,
+      "name" : "part",
+      "example" : "nbc.divB.part3" },
+     
+     { "level" : 4,
+      "name" : "section",
+      "example" : "nbc.divB.part3.sect8" },
+     
+     { "level" : 5,
+      "name" : "subsection",
+      "example" : "nbc.divB.part3.sect8.subsect2" },
+     
+     { "level" : 6,
+      "name" : "article",
+      "example" : "nbc.divB.part3.sect8.subsect2.art6" },
+     
+     { "level" : 7,
+      "name" : "sentence",
+      "example" : "nbc.divB.part3.sect8.subsect2.art6.sent1" },
+     
+     { "level" : 8,
+      "name" : "clause",
+      "example" : "nbc.divB.part3.sect8.subsect2.art6.sent1.clause1" },
+     
+     { "level" : 9,
+      "name" : "subclause",
+      "example" : "nbc.divB.part3.sect8.subsect2.art6.sent1.clause1.subclause1" } ] },
+   "volume_structure" : 
+   { "description" : "NBC 2020 is published in 2 physical volumes with volume-specific index and conversions",
+    "volume_1" : 
+    { "id" : "nbc.2020.vol1",
+     "divisions" : 
+     [ "Division A",
+      "Division B (Parts 1-8)",
+      "Division C" ],
+     "index" : "nbc.2020.vol1.index",
+     "conversions" : "nbc.2020.vol1.conversions" },
+    "volume_2" : 
+    { "id" : "nbc.2020.vol2",
+     "divisions" : 
+     [ "Division B Part 9 (Housing and Small Buildings)" ],
+     "index" : "nbc.2020.vol2.index",
+     "conversions" : "nbc.2020.vol2.conversions" } },
+   "content_types" : 
+   { "structural" : 
+    [ "volume",
+     "division",
+     "part",
+     "section",
+     "subsection",
+     "article",
+     "sentence",
+     "clause",
+     "subclause" ],
+    "content" : 
+    [ "table",
+     "figure",
+     "spectables",
+     "application_note",
+     "note_division" ],
+    "back_matter" : 
+    [ "index",
+     "conversions" ],
+    "semantic" : 
+    [ "objective",
+     "functional_statement",
+     "definition" ],
+    "references" : 
+    [ "internal",
+     "term",
+     "standard",
+     "external" ] },
+   "bc_specific" : 
+   { "description" : "BC-specific content uses bc. prefix instead of nbc.",
+    "example" : "bc.divB.part10.sect1.subsect1.art1",
+    "amendment_types" : 
+    [ "replace",
+     "insert",
+     "modify",
+     "remove" ] },
+   "revision_history" : 
+   { "description" : "Tracks changes over time with effective dates",
+    "types" : 
+    [ "amendment",
+     "errata",
+     "policy",
+     "accessibility",
+     "correction" ],
+    "status" : 
+    [ "current",
+     "superseded" ] } } }
