@@ -366,6 +366,21 @@
         <ref name="title-revision-history"/>
       </choice>
     </element>
+    <!-- Allow note elements at section level (e.g., "See Note A-9.7.") -->
+    <zeroOrMore>
+      <element name="note">
+        <optional>
+          <attribute name="xml:id"><data type="ID"/></attribute>
+        </optional>
+        <optional><attribute name="vendor-id"><text/></attribute></optional>
+        <choice>
+          <ref name="rich-text"/>
+          <group>
+            <element name="text"><ref name="rich-text"/></element>
+          </group>
+        </choice>
+      </element>
+    </zeroOrMore>
     <oneOrMore>
       <element name="subsection">
         <ref name="subsection-content"/>
@@ -467,6 +482,20 @@
           </element>
         </oneOrMore>
       </group>
+      <!-- Empty subsection (e.g., "Reserved") -->
+      <group>
+        <element name="title">
+          <optional>
+            <attribute name="revised">
+              <value>yes</value>
+            </attribute>
+          </optional>
+          <choice>
+            <ref name="rich-text"/>
+            <ref name="title-revision-history"/>
+          </choice>
+        </element>
+      </group>
       <!-- Subsection with revision history (title outside) -->
       <group>
         <element name="title">
@@ -504,6 +533,11 @@
     </optional>
     <optional>
       <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="deleted">
         <value>yes</value>
       </attribute>
     </optional>
@@ -546,8 +580,39 @@
             <element name="figure">
               <ref name="figure-content"/>
             </element>
+            <!-- Allow note elements between sentences (e.g., "See Note A-...") -->
+            <element name="note">
+              <optional>
+                <attribute name="xml:id"><data type="ID"/></attribute>
+              </optional>
+              <optional><attribute name="vendor-id"><text/></attribute></optional>
+              <choice>
+                <ref name="rich-text"/>
+                <group>
+                  <element name="text"><ref name="rich-text"/></element>
+                </group>
+              </choice>
+            </element>
           </choice>
         </oneOrMore>
+        <!-- Allow trailing text elements after clauses/sentences (see-also pattern) -->
+        <zeroOrMore>
+          <element name="text"><ref name="rich-text"/></element>
+        </zeroOrMore>
+      </group>
+      <!-- Empty article (e.g., "Reserved") -->
+      <group>
+        <element name="title">
+          <optional>
+            <attribute name="revised">
+              <value>yes</value>
+            </attribute>
+          </optional>
+          <choice>
+            <ref name="rich-text"/>
+            <ref name="title-revision-history"/>
+          </choice>
+        </element>
       </group>
       <!-- Article with revision history (title outside) -->
       <group>
@@ -586,6 +651,11 @@
     </optional>
     <optional>
       <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="deleted">
         <value>yes</value>
       </attribute>
     </optional>
@@ -636,6 +706,21 @@
             <ref name="functional-statement-list"/>
           </element>
         </optional>
+        <!-- Allow trailing text elements after clauses (e.g., "See Note A-..." pattern) -->
+        <zeroOrMore>
+          <choice>
+            <element name="text"><ref name="rich-text"/></element>
+            <element name="see-also">
+              <attribute name="xml:id"><text/></attribute>
+              <optional>
+                <attribute name="revised">
+                  <value>yes</value>
+                </attribute>
+              </optional>
+              <ref name="rich-text"/>
+            </element>
+          </choice>
+        </zeroOrMore>
       </group>
       <!-- Sentence with revision history -->
       <element name="revision-history">
@@ -747,6 +832,11 @@
     </optional>
     <optional>
       <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="deleted">
         <value>yes</value>
       </attribute>
     </optional>
@@ -877,6 +967,11 @@
         <value>yes</value>
       </attribute>
     </optional>
+    <optional>
+      <attribute name="deleted">
+        <value>yes</value>
+      </attribute>
+    </optional>
     <attribute name="number">
       <data type="positiveInteger"/>
     </attribute>
@@ -941,7 +1036,20 @@
       <attribute name="vendor-id"><text/></attribute>
     </optional>
     <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
+    </optional>
+    <optional>
       <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="deleted">
         <value>yes</value>
       </attribute>
     </optional>
@@ -966,6 +1074,19 @@
     <optional>
       <attribute name="vendor-id"><text/></attribute>
     </optional>
+    <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="deleted">
+        <value>yes</value>
+      </attribute>
+    </optional>
     <attribute name="number">
       <data type="positiveInteger"/>
     </attribute>
@@ -988,6 +1109,7 @@
                 <value>italic</value>
                 <value>bolditalic</value>
                 <value>underscore</value>
+                <value>roman</value>
               </choice>
             </attribute>
             <ref name="rich-text"/>
@@ -1001,6 +1123,14 @@
             </mixed>
           </element>
           <element name="sub">
+            <mixed>
+              <zeroOrMore>
+                <element name="super"><text/></element>
+              </zeroOrMore>
+            </mixed>
+          </element>
+          <!-- Alias: subscript maps to sub -->
+          <element name="subscript">
             <mixed>
               <zeroOrMore>
                 <element name="super"><text/></element>
@@ -1113,6 +1243,11 @@
             <ref name="rich-text"/>
           </element>
 
+          <!-- Text wrapper element (used in notes and other contexts) -->
+          <element name="text">
+            <ref name="rich-text"/>
+          </element>
+
           <!-- Revision history for date-based versioning (snapshot approach) -->
           <element name="revision-history">
             <!-- Original content (baseline before any amendments) -->
@@ -1185,6 +1320,11 @@
     </optional>
     <optional>
       <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="deleted">
         <value>yes</value>
       </attribute>
     </optional>
@@ -1312,7 +1452,9 @@
            <element name="table-notes">
              <oneOrMore>
                <element name="note">
-                 <attribute name="xml:id"><data type="ID"/></attribute>
+                 <optional>
+                   <attribute name="xml:id"><data type="ID"/></attribute>
+                 </optional>
                  <optional><attribute name="vendor-id"><text/></attribute></optional>
                  <ref name="rich-text"/>
                </element>
@@ -1589,6 +1731,11 @@
         <value>yes</value>
       </attribute>
     </optional>
+    <optional>
+      <attribute name="deleted">
+        <value>yes</value>
+      </attribute>
+    </optional>
     <choice>
       <!-- Normal row content: one or more entry elements -->
       <oneOrMore>
@@ -1685,6 +1832,10 @@
             <optional><attribute name="colspan"><data type="positiveInteger"/></attribute></optional>
             <optional><attribute name="namest"><text/></attribute></optional>
             <optional><attribute name="nameend"><text/></attribute></optional>
+            <optional><attribute name="standard-id"><text/></attribute></optional>
+            <optional><attribute name="standard-ref-id"><text/></attribute></optional>
+            <optional><attribute name="standard-ref-title"><text/></attribute></optional>
+            <optional><attribute name="standard-ref-number"><text/></attribute></optional>
             <ref name="entry-content"/>
           </element>
         </oneOrMore>
@@ -1736,6 +1887,10 @@
               <optional><attribute name="colspan"><data type="positiveInteger"/></attribute></optional>
               <optional><attribute name="namest"><text/></attribute></optional>
               <optional><attribute name="nameend"><text/></attribute></optional>
+              <optional><attribute name="standard-id"><text/></attribute></optional>
+              <optional><attribute name="standard-ref-id"><text/></attribute></optional>
+              <optional><attribute name="standard-ref-title"><text/></attribute></optional>
+              <optional><attribute name="standard-ref-number"><text/></attribute></optional>
               <ref name="entry-content"/>
             </element>
           </oneOrMore>
@@ -1759,6 +1914,7 @@
                 <value>italic</value>
                 <value>bolditalic</value>
                 <value>underscore</value>
+                <value>roman</value>
               </choice>
             </attribute>
             <ref name="rich-text"/>
@@ -1771,6 +1927,13 @@
             </mixed>
           </element>
           <element name="sub">
+            <mixed>
+              <zeroOrMore>
+                <element name="super"><text/></element>
+              </zeroOrMore>
+            </mixed>
+          </element>
+          <element name="subscript">
             <mixed>
               <zeroOrMore>
                 <element name="super"><text/></element>
@@ -1870,9 +2033,23 @@
             <ref name="figure-content"/>
           </element>
 
+          <!-- Standalone graphic in table entries (without figure wrapper) -->
+          <element name="graphic">
+            <attribute name="src"><data type="anyURI"/></attribute>
+            <attribute name="alt"><text/></attribute>
+            <optional>
+              <attribute name="width"><text/></attribute>
+            </optional>
+            <optional>
+              <attribute name="height"><text/></attribute>
+            </optional>
+          </element>
+
           <!-- Notes inside table entries (footnotes) -->
           <element name="note">
-            <attribute name="xml:id"><data type="ID"/></attribute>
+            <optional>
+              <attribute name="xml:id"><data type="ID"/></attribute>
+            </optional>
             <optional><attribute name="vendor-id"><text/></attribute></optional>
             <ref name="rich-text"/>
           </element>
@@ -1962,7 +2139,9 @@
         </choice>
       </attribute>
     </optional>
-    <element name="title"><ref name="rich-text"/></element>
+    <optional>
+      <element name="title"><ref name="rich-text"/></element>
+    </optional>
     <!-- Forming-part element (contains forming part references) -->
     <optional>
       <element name="forming-part">
@@ -1994,24 +2173,37 @@
                 </choice>
               </attribute>
             </optional>
-            <optional><text/></optional>
+            <optional>
+              <attribute name="pretext"><text/></attribute>
+            </optional>
+            <optional>
+              <attribute name="vendor-target"><text/></attribute>
+            </optional>
+            <optional>
+              <attribute name="standardId"><text/></attribute>
+            </optional>
+            <text/>
           </element>
         </oneOrMore>
       </element>
     </optional>
-    <element name="graphic">
-      <attribute name="src"><data type="anyURI"/></attribute>
-      <attribute name="alt"><text/></attribute>
-      <optional>
-        <attribute name="width"><text/></attribute>
-      </optional>
-      <optional>
-        <attribute name="height"><text/></attribute>
-      </optional>
-    </element>
+    <optional>
+      <element name="graphic">
+        <attribute name="src"><data type="anyURI"/></attribute>
+        <attribute name="alt"><text/></attribute>
+        <optional>
+          <attribute name="width"><text/></attribute>
+        </optional>
+        <optional>
+          <attribute name="height"><text/></attribute>
+        </optional>
+      </element>
+    </optional>
     <zeroOrMore>
       <element name="note">
-        <attribute name="xml:id"><data type="ID"/></attribute>
+        <optional>
+          <attribute name="xml:id"><data type="ID"/></attribute>
+        </optional>
         <optional><attribute name="vendor-id"><text/></attribute></optional>
         <ref name="rich-text"/>
       </element>
@@ -2487,12 +2679,149 @@
     </optional>
     <element name="title"><ref name="rich-text"/></element>
     <zeroOrMore>
-      <element name="paragraph">
-        <optional>
+      <choice>
+        <element name="paragraph">
+          <optional>
+            <attribute name="xml:id"><data type="ID"/></attribute>
+          </optional>
+          <optional>
+            <attribute name="source">
+              <choice>
+                <value>nbc</value>
+                <value>bc</value>
+              </choice>
+            </attribute>
+          </optional>
+          <ref name="rich-text"/>
+        </element>
+        <element name="note-division">
           <attribute name="xml:id"><data type="ID"/></attribute>
-        </optional>
-        <ref name="rich-text"/>
-      </element>
+          <optional>
+            <attribute name="vendor-id"><text/></attribute>
+          </optional>
+          <optional>
+            <attribute name="source">
+              <choice>
+                <value>nbc</value>
+                <value>bc</value>
+              </choice>
+            </attribute>
+          </optional>
+          <element name="title"><ref name="rich-text"/></element>
+          <mixed>
+            <zeroOrMore>
+              <choice>
+                <element name="paragraph">
+                  <optional>
+                    <attribute name="xml:id"><data type="ID"/></attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="source">
+                      <choice>
+                        <value>nbc</value>
+                        <value>bc</value>
+                      </choice>
+                    </attribute>
+                  </optional>
+                  <ref name="rich-text"/>
+                </element>
+                <element name="table">
+                  <ref name="table-content"/>
+                </element>
+                <element name="figure">
+                  <ref name="figure-content"/>
+                </element>
+                <element name="list">
+                  <ref name="list-content"/>
+                </element>
+                <element name="ref">
+                  <attribute name="type">
+                    <choice>
+                      <value>internal</value>
+                      <value>external</value>
+                      <value>standard</value>
+                      <value>term</value>
+                      <value>functional-statement</value>
+                      <value>sub-objective</value>
+                      <value>objective</value>
+                      <value>table-note</value>
+                      <value>bc-code</value>
+                    </choice>
+                  </attribute>
+                  <attribute name="target"><text/></attribute>
+                  <optional>
+                    <attribute name="display-type">
+                      <choice>
+                        <value>long</value>
+                        <value>medium</value>
+                        <value>short</value>
+                        <value>number</value>
+                        <value>shortNum</value>
+                        <value>shortSbcl</value>
+                        <value>title</value>
+                      </choice>
+                    </attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="pretext"><text/></attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="vendor-target"><text/></attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="standardId"><text/></attribute>
+                  </optional>
+                  <text/>
+                </element>
+                <element name="measurement">
+                  <attribute name="units">
+                    <choice>
+                      <value>metric</value>
+                      <value>imperial</value>
+                    </choice>
+                  </attribute>
+                  <ref name="rich-text"/>
+                </element>
+                <element name="super">
+                  <mixed>
+                    <zeroOrMore>
+                      <element name="sub"><text/></element>
+                    </zeroOrMore>
+                  </mixed>
+                </element>
+                <element name="sub">
+                  <mixed>
+                    <zeroOrMore>
+                      <element name="super"><text/></element>
+                    </zeroOrMore>
+                  </mixed>
+                </element>
+                <element name="emphasis">
+                  <attribute name="style">
+                    <choice>
+                      <value>bold</value>
+                      <value>italic</value>
+                      <value>bolditalic</value>
+                      <value>underscore</value>
+                      <value>roman</value>
+                    </choice>
+                  </attribute>
+                  <ref name="rich-text"/>
+                </element>
+              </choice>
+            </zeroOrMore>
+          </mixed>
+        </element>
+        <element name="table">
+          <ref name="table-content"/>
+        </element>
+        <element name="figure">
+          <ref name="figure-content"/>
+        </element>
+        <element name="list">
+          <ref name="list-content"/>
+        </element>
+      </choice>
     </zeroOrMore>
     <zeroOrMore>
       <element name="appendix-subsection">
@@ -2602,6 +2931,14 @@
                   <optional>
                     <attribute name="xml:id"><data type="ID"/></attribute>
                   </optional>
+                  <optional>
+                    <attribute name="source">
+                      <choice>
+                        <value>nbc</value>
+                        <value>bc</value>
+                      </choice>
+                    </attribute>
+                  </optional>
                   <ref name="rich-text"/>
                 </element>
                 <element name="note-division">
@@ -2618,29 +2955,119 @@
                     </attribute>
                   </optional>
                   <element name="title"><ref name="rich-text"/></element>
-                  <!-- Allow paragraphs, tables, and figures in any order within note-division -->
-                  <zeroOrMore>
-                    <choice>
-                      <element name="paragraph">
-                        <optional>
-                          <attribute name="xml:id"><data type="ID"/></attribute>
-                        </optional>
-                        <ref name="rich-text"/>
-                      </element>
-                      <element name="table">
-                        <ref name="table-content"/>
-                      </element>
-                      <element name="figure">
-                        <ref name="figure-content"/>
-                      </element>
-                    </choice>
-                  </zeroOrMore>
+                  <!-- Allow paragraphs, tables, figures, and lists in any order within note-division -->
+                  <mixed>
+                    <zeroOrMore>
+                      <choice>
+                        <element name="paragraph">
+                          <optional>
+                            <attribute name="xml:id"><data type="ID"/></attribute>
+                          </optional>
+                          <optional>
+                            <attribute name="source">
+                              <choice>
+                                <value>nbc</value>
+                                <value>bc</value>
+                              </choice>
+                            </attribute>
+                          </optional>
+                          <ref name="rich-text"/>
+                        </element>
+                        <element name="table">
+                          <ref name="table-content"/>
+                        </element>
+                        <element name="figure">
+                          <ref name="figure-content"/>
+                        </element>
+                        <element name="list">
+                          <ref name="list-content"/>
+                        </element>
+                        <element name="ref">
+                          <attribute name="type">
+                            <choice>
+                              <value>internal</value>
+                              <value>external</value>
+                              <value>standard</value>
+                              <value>term</value>
+                              <value>functional-statement</value>
+                              <value>sub-objective</value>
+                              <value>objective</value>
+                              <value>table-note</value>
+                              <value>bc-code</value>
+                            </choice>
+                          </attribute>
+                          <attribute name="target"><text/></attribute>
+                          <optional>
+                            <attribute name="display-type">
+                              <choice>
+                                <value>long</value>
+                                <value>medium</value>
+                                <value>short</value>
+                                <value>number</value>
+                                <value>shortNum</value>
+                                <value>shortSbcl</value>
+                                <value>title</value>
+                              </choice>
+                            </attribute>
+                          </optional>
+                          <optional>
+                            <attribute name="pretext"><text/></attribute>
+                          </optional>
+                          <optional>
+                            <attribute name="vendor-target"><text/></attribute>
+                          </optional>
+                          <optional>
+                            <attribute name="standardId"><text/></attribute>
+                          </optional>
+                          <text/>
+                        </element>
+                        <element name="measurement">
+                          <attribute name="units">
+                            <choice>
+                              <value>metric</value>
+                              <value>imperial</value>
+                            </choice>
+                          </attribute>
+                          <ref name="rich-text"/>
+                        </element>
+                        <element name="super">
+                          <mixed>
+                            <zeroOrMore>
+                              <element name="sub"><text/></element>
+                            </zeroOrMore>
+                          </mixed>
+                        </element>
+                        <element name="sub">
+                          <mixed>
+                            <zeroOrMore>
+                              <element name="super"><text/></element>
+                            </zeroOrMore>
+                          </mixed>
+                        </element>
+                        <element name="emphasis">
+                          <attribute name="style">
+                            <choice>
+                              <value>bold</value>
+                              <value>italic</value>
+                              <value>bolditalic</value>
+                              <value>underscore</value>
+                              <value>roman</value>
+                            </choice>
+                          </attribute>
+                          <ref name="rich-text"/>
+                        </element>
+                      </choice>
+                    </zeroOrMore>
+                  </mixed>
                 </element>
                 <element name="table">
                   <ref name="table-content"/>
                 </element>
                 <element name="figure">
                   <ref name="figure-content"/>
+                </element>
+                <element name="list">
+                  <ref name="list-content"/>
                 </element>
               </choice>
             </zeroOrMore>
@@ -2899,7 +3326,20 @@
       <attribute name="vendor-id"><text/></attribute>
     </optional>
     <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
+    </optional>
+    <optional>
       <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="deleted">
         <value>yes</value>
       </attribute>
     </optional>
@@ -2953,7 +3393,20 @@
       <attribute name="vendor-id"><text/></attribute>
     </optional>
     <optional>
+      <attribute name="source">
+        <choice>
+          <value>nbc</value>
+          <value>bc</value>
+        </choice>
+      </attribute>
+    </optional>
+    <optional>
       <attribute name="revised">
+        <value>yes</value>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="deleted">
         <value>yes</value>
       </attribute>
     </optional>
@@ -3158,7 +3611,134 @@
           <optional>
             <attribute name="xml:id"><data type="ID"/></attribute>
           </optional>
+          <optional>
+            <attribute name="source">
+              <choice>
+                <value>nbc</value>
+                <value>bc</value>
+              </choice>
+            </attribute>
+          </optional>
           <ref name="rich-text"/>
+        </element>
+        <element name="note-division">
+          <attribute name="xml:id"><data type="ID"/></attribute>
+          <optional>
+            <attribute name="vendor-id"><text/></attribute>
+          </optional>
+          <optional>
+            <attribute name="source">
+              <choice>
+                <value>nbc</value>
+                <value>bc</value>
+              </choice>
+            </attribute>
+          </optional>
+          <element name="title"><ref name="rich-text"/></element>
+          <mixed>
+            <zeroOrMore>
+              <choice>
+                <element name="paragraph">
+                  <optional>
+                    <attribute name="xml:id"><data type="ID"/></attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="source">
+                      <choice>
+                        <value>nbc</value>
+                        <value>bc</value>
+                      </choice>
+                    </attribute>
+                  </optional>
+                  <ref name="rich-text"/>
+                </element>
+                <element name="table">
+                  <ref name="table-content"/>
+                </element>
+                <element name="figure">
+                  <ref name="figure-content"/>
+                </element>
+                <element name="list">
+                  <ref name="list-content"/>
+                </element>
+                <!-- Inline elements that may appear in mixed content -->
+                <element name="ref">
+                  <attribute name="type">
+                    <choice>
+                      <value>internal</value>
+                      <value>external</value>
+                      <value>standard</value>
+                      <value>term</value>
+                      <value>functional-statement</value>
+                      <value>sub-objective</value>
+                      <value>objective</value>
+                      <value>table-note</value>
+                      <value>bc-code</value>
+                    </choice>
+                  </attribute>
+                  <attribute name="target"><text/></attribute>
+                  <optional>
+                    <attribute name="display-type">
+                      <choice>
+                        <value>long</value>
+                        <value>medium</value>
+                        <value>short</value>
+                        <value>number</value>
+                        <value>shortNum</value>
+                        <value>shortSbcl</value>
+                        <value>title</value>
+                      </choice>
+                    </attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="pretext"><text/></attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="vendor-target"><text/></attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="standardId"><text/></attribute>
+                  </optional>
+                  <text/>
+                </element>
+                <element name="measurement">
+                  <attribute name="units">
+                    <choice>
+                      <value>metric</value>
+                      <value>imperial</value>
+                    </choice>
+                  </attribute>
+                  <ref name="rich-text"/>
+                </element>
+                <element name="super">
+                  <mixed>
+                    <zeroOrMore>
+                      <element name="sub"><text/></element>
+                    </zeroOrMore>
+                  </mixed>
+                </element>
+                <element name="sub">
+                  <mixed>
+                    <zeroOrMore>
+                      <element name="super"><text/></element>
+                    </zeroOrMore>
+                  </mixed>
+                </element>
+                <element name="emphasis">
+                  <attribute name="style">
+                    <choice>
+                      <value>bold</value>
+                      <value>italic</value>
+                      <value>bolditalic</value>
+                      <value>underscore</value>
+                      <value>roman</value>
+                    </choice>
+                  </attribute>
+                  <ref name="rich-text"/>
+                </element>
+              </choice>
+            </zeroOrMore>
+          </mixed>
         </element>
         <element name="table">
           <ref name="table-content"/>
