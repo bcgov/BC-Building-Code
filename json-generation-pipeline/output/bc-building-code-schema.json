@@ -261,7 +261,7 @@
         },
         "list_type": {
           "type": "string",
-          "enum": ["bulleted", "numbered"],
+          "enum": ["bulleted", "numbered", "bibliography"],
           "description": "List type (for list type only)"
         },
         "items": {
@@ -1270,7 +1270,7 @@
             },
             "list_type": {
               "type": "string",
-              "enum": ["bulleted", "numbered"],
+              "enum": ["bulleted", "numbered", "bibliography"],
               "description": "Type of list"
             },
             "items": {
@@ -1524,7 +1524,11 @@
             "properties": {
               "type": {
                 "type": "string",
-                "enum": ["bulleted", "numbered", "variable", "definition", "alphabetic"]
+                "enum": ["bulleted", "numbered", "variable", "definition", "alphabetic", "bibliography"]
+              },
+              "header": {
+                "type": "string",
+                "description": "Optional header text for bibliography lists (e.g., 'References:')"
               },
               "items": {
                 "type": "array",

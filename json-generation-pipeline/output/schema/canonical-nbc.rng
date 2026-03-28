@@ -2028,8 +2028,13 @@
         <value>variable</value>
         <value>symbol</value>
         <value>organization</value>
+        <value>bibliography</value>
       </choice>
     </attribute>
+    <!-- Optional header for bibliography lists (e.g., "References:") -->
+    <optional>
+      <element name="header"><text/></element>
+    </optional>
     <oneOrMore>
       <element name="item">
         <optional>
@@ -2502,6 +2507,17 @@
       <attribute name="vendor-id"><text/></attribute>
     </optional>
     <element name="title"><ref name="rich-text"/></element>
+    <zeroOrMore>
+      <element name="paragraph">
+        <optional>
+          <attribute name="xml:id"><data type="ID"/></attribute>
+        </optional>
+        <optional>
+          <attribute name="vendor-id"><text/></attribute>
+        </optional>
+        <ref name="rich-text"/>
+      </element>
+    </zeroOrMore>
     <zeroOrMore>
       <element name="appendix-article">
         <ref name="appendix-article-content"/>

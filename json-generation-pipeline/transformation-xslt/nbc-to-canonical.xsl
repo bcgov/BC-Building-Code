@@ -776,6 +776,15 @@
       <xsl:if test="@id"><xsl:attribute name="vendor-id" select="@id" /></xsl:if>
       <title><xsl:apply-templates select="title/node()" mode="rich-text" /></title>
 
+      <!-- Process paragraphs (may contain bibliography lists) -->
+      <xsl:for-each select="para">
+        <xsl:variable name="para-id" select="concat($appsubsect-id, '.para', count(preceding-sibling::para) + 1)" />
+        <paragraph xml:id="{$para-id}">
+          <xsl:if test="@id"><xsl:attribute name="vendor-id" select="@id" /></xsl:if>
+          <xsl:apply-templates select="node()" mode="rich-text" />
+        </paragraph>
+      </xsl:for-each>
+
       <!-- Process apparticle elements -->
       <xsl:apply-templates select="apparticle">
         <xsl:with-param name="appsubsect-id" select="$appsubsect-id" />
@@ -1773,6 +1782,22 @@
                             select="descrip/node()"
                             mode="rich-text"
                         /></description>
+        </item>
+      </xsl:for-each>
+    </list>
+  </xsl:template>
+
+  <!-- Bibliography list (references in appendices) -->
+  <xsl:template match="list.bib" mode="rich-text">
+    <list type="bibliography">
+      <!-- Optional bibliography header (e.g., "References:") -->
+      <xsl:if test="bibh">
+        <header><xsl:value-of select="bibh"/></header>
+      </xsl:if>
+      <xsl:for-each select="bib">
+        <item>
+          <xsl:if test="@id"><xsl:attribute name="xml:id" select="@id"/></xsl:if>
+          <xsl:apply-templates select="publine/node()" mode="rich-text"/>
         </item>
       </xsl:for-each>
     </list>
