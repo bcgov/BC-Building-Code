@@ -789,7 +789,9 @@
                   </optional>
                 </element>
               </optional>
-              <element name="text"><ref name="rich-text"/></element>
+              <optional>
+                <element name="text"><ref name="rich-text"/></element>
+              </optional>
               <zeroOrMore>
                 <choice>
                   <element name="clause">
@@ -804,6 +806,7 @@
                     </optional>
                     <ref name="rich-text"/>
                   </element>
+                  <element name="text"><ref name="rich-text"/></element>
                 </choice>
               </zeroOrMore>
             </element>
@@ -1201,6 +1204,11 @@
             <optional>
               <attribute name="xml:id"><data type="ID"/></attribute>
             </optional>
+            <optional>
+              <attribute name="revised">
+                <value>yes</value>
+              </attribute>
+            </optional>
             <!-- HTML equation rendering source -->
             <optional>
               <attribute name="html-src"><text/></attribute>
@@ -1540,18 +1548,28 @@
               </oneOrMore>
             </element>
           </optional>
-          <element name="tgroup">
-            <attribute name="cols"><data type="positiveInteger"/></attribute>
-            <optional><attribute name="colsep"><text/></attribute></optional>
-            <optional><attribute name="rowsep"><text/></attribute></optional>
-            <zeroOrMore>
-              <element name="colspec">
-                <attribute name="colname"><text/></attribute>
-                <attribute name="colwidth"><text/></attribute>
-              </element>
-            </zeroOrMore>
-            <optional>
-              <element name="thead">
+          <optional>
+            <element name="tgroup">
+              <attribute name="cols"><data type="positiveInteger"/></attribute>
+              <optional><attribute name="colsep"><text/></attribute></optional>
+              <optional><attribute name="rowsep"><text/></attribute></optional>
+              <zeroOrMore>
+                <element name="colspec">
+                  <attribute name="colname"><text/></attribute>
+                  <attribute name="colwidth"><text/></attribute>
+                </element>
+              </zeroOrMore>
+              <optional>
+                <element name="thead">
+                  <optional><attribute name="valign"><text/></attribute></optional>
+                  <oneOrMore>
+                    <element name="row">
+                      <ref name="table-row-content"/>
+                    </element>
+                  </oneOrMore>
+                </element>
+              </optional>
+              <element name="tbody">
                 <optional><attribute name="valign"><text/></attribute></optional>
                 <oneOrMore>
                   <element name="row">
@@ -1559,16 +1577,8 @@
                   </element>
                 </oneOrMore>
               </element>
-            </optional>
-            <element name="tbody">
-              <optional><attribute name="valign"><text/></attribute></optional>
-              <oneOrMore>
-                <element name="row">
-                  <ref name="table-row-content"/>
-                </element>
-              </oneOrMore>
             </element>
-          </element>
+          </optional>
         </element>
 
         <!-- Revision snapshots with complete content at each point -->
@@ -1669,18 +1679,28 @@
                   </oneOrMore>
                 </element>
               </optional>
-              <element name="tgroup">
-                <attribute name="cols"><data type="positiveInteger"/></attribute>
-                <optional><attribute name="colsep"><text/></attribute></optional>
-                <optional><attribute name="rowsep"><text/></attribute></optional>
-                <zeroOrMore>
-                  <element name="colspec">
-                    <attribute name="colname"><text/></attribute>
-                    <attribute name="colwidth"><text/></attribute>
-                  </element>
-                </zeroOrMore>
-                <optional>
-                  <element name="thead">
+              <optional>
+                <element name="tgroup">
+                  <attribute name="cols"><data type="positiveInteger"/></attribute>
+                  <optional><attribute name="colsep"><text/></attribute></optional>
+                  <optional><attribute name="rowsep"><text/></attribute></optional>
+                  <zeroOrMore>
+                    <element name="colspec">
+                      <attribute name="colname"><text/></attribute>
+                      <attribute name="colwidth"><text/></attribute>
+                    </element>
+                  </zeroOrMore>
+                  <optional>
+                    <element name="thead">
+                      <optional><attribute name="valign"><text/></attribute></optional>
+                      <oneOrMore>
+                        <element name="row">
+                          <ref name="table-row-content"/>
+                        </element>
+                      </oneOrMore>
+                    </element>
+                  </optional>
+                  <element name="tbody">
                     <optional><attribute name="valign"><text/></attribute></optional>
                     <oneOrMore>
                       <element name="row">
@@ -1688,16 +1708,21 @@
                       </element>
                     </oneOrMore>
                   </element>
-                </optional>
-                <element name="tbody">
-                  <optional><attribute name="valign"><text/></attribute></optional>
+                </element>
+              </optional>
+              <optional>
+                <element name="table-notes">
                   <oneOrMore>
-                    <element name="row">
-                      <ref name="table-row-content"/>
+                    <element name="note">
+                      <optional>
+                        <attribute name="xml:id"><data type="ID"/></attribute>
+                      </optional>
+                      <optional><attribute name="vendor-id"><text/></attribute></optional>
+                      <ref name="rich-text"/>
                     </element>
                   </oneOrMore>
                 </element>
-              </element>
+              </optional>
             </element>
             <!-- Summary of what changed -->
             <optional>
@@ -1866,7 +1891,7 @@
           </choice>
         </attribute>
         <element name="content">
-          <oneOrMore>
+          <zeroOrMore>
             <element name="entry">
               <optional>
                 <attribute name="align">
@@ -1893,7 +1918,7 @@
               <optional><attribute name="standard-ref-number"><text/></attribute></optional>
               <ref name="entry-content"/>
             </element>
-          </oneOrMore>
+          </zeroOrMore>
         </element>
         <element name="change-summary"><text/></element>
         <element name="note"><text/></element>
@@ -2249,6 +2274,11 @@
                   <ref name="rich-text"/>
                 </element>
                 <element name="definition">
+                  <optional>
+                    <attribute name="revised">
+                      <value>yes</value>
+                    </attribute>
+                  </optional>
                   <choice>
                     <ref name="rich-text"/>
                     <ref name="definition-revision-history"/>
@@ -2723,6 +2753,16 @@
                       </choice>
                     </attribute>
                   </optional>
+                  <optional>
+                    <attribute name="revised">
+                      <value>yes</value>
+                    </attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="deleted">
+                      <value>yes</value>
+                    </attribute>
+                  </optional>
                   <ref name="rich-text"/>
                 </element>
                 <element name="table">
@@ -2939,6 +2979,16 @@
                       </choice>
                     </attribute>
                   </optional>
+                  <optional>
+                    <attribute name="revised">
+                      <value>yes</value>
+                    </attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="deleted">
+                      <value>yes</value>
+                    </attribute>
+                  </optional>
                   <ref name="rich-text"/>
                 </element>
                 <element name="note-division">
@@ -3140,6 +3190,24 @@
           <optional>
             <attribute name="xml:id"><data type="ID"/></attribute>
           </optional>
+          <optional>
+            <attribute name="source">
+              <choice>
+                <value>nbc</value>
+                <value>bc</value>
+              </choice>
+            </attribute>
+          </optional>
+          <optional>
+            <attribute name="revised">
+              <value>yes</value>
+            </attribute>
+          </optional>
+          <optional>
+            <attribute name="deleted">
+              <value>yes</value>
+            </attribute>
+          </optional>
           <ref name="rich-text"/>
         </element>
         <element name="table">
@@ -3218,7 +3286,7 @@
     <optional>
       <element name="title"><ref name="rich-text"/></element>
     </optional>
-    <oneOrMore>
+    <zeroOrMore>
       <choice>
         <element name="sentence">
           <ref name="sentence-content-revision"/>
@@ -3231,12 +3299,14 @@
         </element>
         <!-- Allow standalone note elements in article revision content -->
         <element name="note">
-          <attribute name="xml:id"><data type="ID"/></attribute>
+          <optional>
+            <attribute name="xml:id"><data type="ID"/></attribute>
+          </optional>
           <optional><attribute name="vendor-id"><text/></attribute></optional>
           <ref name="rich-text"/>
         </element>
       </choice>
-    </oneOrMore>
+    </zeroOrMore>
   </define>
 
   <!-- Subsection revision history pattern -->
@@ -3519,7 +3589,9 @@
                   </optional>
                 </element>
               </optional>
-              <element name="text"><ref name="rich-text"/></element>
+              <optional>
+                <element name="text"><ref name="rich-text"/></element>
+              </optional>
               <zeroOrMore>
                 <choice>
                   <element name="clause">
@@ -3534,6 +3606,7 @@
                     </optional>
                     <ref name="rich-text"/>
                   </element>
+                  <element name="text"><ref name="rich-text"/></element>
                 </choice>
               </zeroOrMore>
             </element>
@@ -3619,6 +3692,16 @@
               </choice>
             </attribute>
           </optional>
+          <optional>
+            <attribute name="revised">
+              <value>yes</value>
+            </attribute>
+          </optional>
+          <optional>
+            <attribute name="deleted">
+              <value>yes</value>
+            </attribute>
+          </optional>
           <ref name="rich-text"/>
         </element>
         <element name="note-division">
@@ -3648,6 +3731,16 @@
                         <value>nbc</value>
                         <value>bc</value>
                       </choice>
+                    </attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="revised">
+                      <value>yes</value>
+                    </attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="deleted">
+                      <value>yes</value>
                     </attribute>
                   </optional>
                   <ref name="rich-text"/>
