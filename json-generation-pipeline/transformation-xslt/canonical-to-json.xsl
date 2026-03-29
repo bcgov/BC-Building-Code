@@ -212,6 +212,18 @@
                 <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             </xsl:if>
             <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+            
+            <!-- Extract equations from paragraph -->
+            <xsl:if test=".//equation">
+                <fn:array key="equations">
+                    <xsl:apply-templates select=".//equation" mode="equation-json"/>
+                </fn:array>
+            </xsl:if>
+            
+            <!-- Extract all lists from paragraph -->
+            <xsl:call-template name="extract-lists">
+                <xsl:with-param name="content-root" select="."/>
+            </xsl:call-template>
         </fn:map>
     </xsl:template>
     

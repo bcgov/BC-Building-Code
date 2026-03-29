@@ -1913,37 +1913,55 @@
         <xsl:apply-templates select="title/node()" mode="rich-text" />
       </title>
     </xsl:if>
-    <!-- Process paragraphs -->
-    <xsl:for-each select="para">
-      <paragraph xml:id="{$div-id}.para{position()}">
-        <xsl:apply-templates select="node()" mode="rich-text" />
-      </paragraph>
+    <!-- Process all non-title children in document order to preserve source ordering -->
+    <xsl:for-each select="*[not(self::title)]">
+      <xsl:choose>
+        <!-- Paragraphs -->
+        <xsl:when test="self::para">
+          <xsl:variable name="para-pos" select="count(preceding-sibling::para) + 1" />
+          <paragraph xml:id="{$div-id}.para{$para-pos}">
+            <xsl:apply-templates select="node()" mode="rich-text" />
+          </paragraph>
+        </xsl:when>
+        <!-- Nested division.sub1 elements -->
+        <xsl:when test="self::division.sub1">
+          <xsl:variable name="sub-num" select="count(preceding-sibling::division.sub1) + 1" />
+          <xsl:variable name="sub-id" select="concat($div-id, '.sub', $sub-num)" />
+          <!-- Process sub-division title -->
+          <xsl:if test="title">
+            <title xml:id="{$sub-id}.title">
+              <xsl:apply-templates select="title/node()" mode="rich-text" />
+            </title>
+          </xsl:if>
+          <!-- Process sub-division paragraphs -->
+          <xsl:for-each select="para">
+            <paragraph xml:id="{$sub-id}.para{position()}">
+              <xsl:apply-templates select="node()" mode="rich-text" />
+            </paragraph>
+          </xsl:for-each>
+          <!-- Process tables in sub-division -->
+          <xsl:apply-templates select="table" mode="document-content">
+            <xsl:with-param name="parent-id" select="$sub-id" />
+          </xsl:apply-templates>
+        </xsl:when>
+        <!-- Tables directly in division -->
+        <xsl:when test="self::table">
+          <xsl:apply-templates select="." mode="document-content">
+            <xsl:with-param name="parent-id" select="$div-id" />
+          </xsl:apply-templates>
+        </xsl:when>
+        <!-- Lists directly in division -->
+        <xsl:when test="self::list or self::list.def or self::list.var or self::list.bib or self::list.org">
+          <xsl:apply-templates select="." mode="rich-text" />
+        </xsl:when>
+        <!-- Figures directly in division -->
+        <xsl:when test="self::figure">
+          <xsl:apply-templates select="." mode="document-content">
+            <xsl:with-param name="parent-id" select="$div-id" />
+          </xsl:apply-templates>
+        </xsl:when>
+      </xsl:choose>
     </xsl:for-each>
-    <!-- Process nested division.sub1 elements -->
-    <xsl:for-each select="division.sub1">
-      <xsl:variable name="sub-num" select="position()" />
-      <xsl:variable name="sub-id" select="concat($div-id, '.sub', $sub-num)" />
-      <!-- Process sub-division title -->
-      <xsl:if test="title">
-        <title xml:id="{$sub-id}.title">
-          <xsl:apply-templates select="title/node()" mode="rich-text" />
-        </title>
-      </xsl:if>
-      <!-- Process sub-division paragraphs -->
-      <xsl:for-each select="para">
-        <paragraph xml:id="{$sub-id}.para{position()}">
-          <xsl:apply-templates select="node()" mode="rich-text" />
-        </paragraph>
-      </xsl:for-each>
-      <!-- Process tables in sub-division -->
-      <xsl:apply-templates select="table" mode="document-content">
-        <xsl:with-param name="parent-id" select="$sub-id" />
-      </xsl:apply-templates>
-    </xsl:for-each>
-    <!-- Process tables directly in division -->
-    <xsl:apply-templates select="table" mode="document-content">
-      <xsl:with-param name="parent-id" select="$div-id" />
-    </xsl:apply-templates>
   </xsl:template>
 
   <xsl:template match="comm-note.grp" mode="document-content">
