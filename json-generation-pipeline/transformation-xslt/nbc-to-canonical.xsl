@@ -1787,6 +1787,24 @@
     </list>
   </xsl:template>
 
+  <!-- Symbol list (symbols and abbreviations) -->
+  <xsl:template match="list.sym" mode="rich-text">
+    <list type="symbol">
+      <xsl:for-each select="sym.group">
+        <item>
+          <symbol><xsl:apply-templates
+                            select="symbol/node()"
+                            mode="rich-text"
+                        /></symbol>
+          <description><xsl:apply-templates
+                            select="descrip/node()"
+                            mode="rich-text"
+                        /></description>
+        </item>
+      </xsl:for-each>
+    </list>
+  </xsl:template>
+
   <!-- Bibliography list (references in appendices) -->
   <xsl:template match="list.bib" mode="rich-text">
     <list type="bibliography">

@@ -879,6 +879,10 @@
                                                     <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich-text-json"/></fn:string>
                                                     <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
                                                 </xsl:when>
+                                                <xsl:when test="parent::list/@type = 'symbol'">
+                                                    <fn:string key="symbol"><xsl:apply-templates select="symbol" mode="rich-text-json"/></fn:string>
+                                                    <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
+                                                </xsl:when>
                                                 <xsl:when test="parent::list/@type = 'definition'">
                                                     <fn:string key="term"><xsl:apply-templates select="term" mode="text-only"/></fn:string>
                                                     <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
@@ -1517,6 +1521,10 @@
                                                     <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich-text-json"/></fn:string>
                                                     <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
                                                 </xsl:when>
+                                                <xsl:when test="parent::list/@type = 'symbol'">
+                                                    <fn:string key="symbol"><xsl:apply-templates select="symbol" mode="rich-text-json"/></fn:string>
+                                                    <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
+                                                </xsl:when>
                                                 <xsl:when test="parent::list/@type = 'definition'">
                                                     <fn:string key="term"><xsl:apply-templates select="term" mode="text-only"/></fn:string>
                                                     <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
@@ -1795,6 +1803,10 @@
                                                             <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich-text-json"/></fn:string>
                                                             <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
                                                         </xsl:when>
+                                                        <xsl:when test="parent::list/@type = 'symbol'">
+                                                            <fn:string key="symbol"><xsl:apply-templates select="symbol" mode="rich-text-json"/></fn:string>
+                                                            <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
+                                                        </xsl:when>
                                                         <xsl:when test="parent::list/@type = 'definition'">
                                                             <fn:string key="term"><xsl:apply-templates select="term" mode="text-only"/></fn:string>
                                                             <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
@@ -1895,6 +1907,10 @@
                                                     <xsl:choose>
                                                         <xsl:when test="parent::list/@type = 'variable'">
                                                             <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich-text-json"/></fn:string>
+                                                            <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
+                                                        </xsl:when>
+                                                        <xsl:when test="parent::list/@type = 'symbol'">
+                                                            <fn:string key="symbol"><xsl:apply-templates select="symbol" mode="rich-text-json"/></fn:string>
                                                             <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
                                                         </xsl:when>
                                                         <xsl:when test="parent::list/@type = 'definition'">
@@ -2021,6 +2037,10 @@
                                             <xsl:choose>
                                                 <xsl:when test="parent::list/@type = 'variable'">
                                                     <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich-text-json"/></fn:string>
+                                                    <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
+                                                </xsl:when>
+                                                <xsl:when test="parent::list/@type = 'symbol'">
+                                                    <fn:string key="symbol"><xsl:apply-templates select="symbol" mode="rich-text-json"/></fn:string>
                                                     <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
                                                 </xsl:when>
                                                 <xsl:when test="parent::list/@type = 'definition'">
@@ -3619,6 +3639,11 @@
                                         <!-- Variable list: symbol + description -->
                                         <xsl:when test="parent::list/@type = 'variable'">
                                             <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich-text-json"/></fn:string>
+                                            <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
+                                        </xsl:when>
+                                        <!-- Symbol list: symbol + description -->
+                                        <xsl:when test="parent::list/@type = 'symbol'">
+                                            <fn:string key="symbol"><xsl:apply-templates select="symbol" mode="rich-text-json"/></fn:string>
                                             <fn:string key="description"><xsl:apply-templates select="description" mode="rich-text-json"/></fn:string>
                                         </xsl:when>
                                         <!-- Definition list: term + definition -->

@@ -2296,6 +2296,16 @@
                 </element>
               </group>
 
+              <!-- Symbol list item -->
+              <group>
+                <element name="symbol">
+                  <ref name="rich-text"/>
+                </element>
+                <element name="description">
+                  <ref name="rich-text"/>
+                </element>
+              </group>
+
               <!-- Organization list item -->
               <group>
                 <element name="organization">
