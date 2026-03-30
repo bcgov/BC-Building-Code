@@ -2079,9 +2079,9 @@
                                     target="bldng"
                                     >building</ref> performance shall not be decreased below a level that already exists. (See <ref
                                     type="internal"
-                                    target="nbc.divA.part1.appendix.appnote5"
+                                    target="nbc.divA.part1.appendix.appnote1"
                                     display-type="short"
-                                    />.)<!-- TODO: Verify note reference for A-1.1.1.2.(1) --></text>
+                                    />.)</text>
                         </sentence>
                     </article>
                 </new-content>
@@ -2363,7 +2363,7 @@
                                     letter="c"
                                     >
                                     <text
-                                        >be the registered owner and occupant or intended occupant of the single detached dwelling in which plumbing work will occur.</text>
+                                        >be the registered <ref type="term" target="bc-wnr">owner</ref> and occupant or intended occupant of the single detached dwelling in which plumbing work will occur.</text>
                                 </clause>
                             </sentence>
                         </article>
@@ -2465,11 +2465,13 @@
                         <definition>means a <ref
                                 type="term"
                                 target="dwllng-n"
-                                >dwelling unit</ref> designed and constructed with some <emphasis
-                                style="italic"
-                                >accessible</emphasis> features and which accommodates the future modification to provide more <emphasis
-                                style="italic"
-                                >accessible</emphasis> features.</definition>
+                                >dwelling unit</ref> designed and constructed with some <ref
+                                type="term"
+                                target="bc-cc-t-ccbl"
+                                >accessible</ref> features and which accommodates the future modification to provide more <ref
+                                type="term"
+                                target="bc-cc-t-ccbl"
+                                >accessible</ref> features.</definition>
                     </item>
                 </new-content>
             </insert>
@@ -3186,7 +3188,7 @@ Llitre(s)</replace>
                                 type="internal"
                                 target="nbc.divA.part1.sect1.subsect1.art1"
                                 display-type="long"
-                                />, and the owner of a <ref
+                                />, and the <ref type="term" target="bc-wnr">owner</ref> of a <ref
                                 type="term"
                                 target="bldng"
                                 >building</ref> is therefore made responsible for ensuring the <ref

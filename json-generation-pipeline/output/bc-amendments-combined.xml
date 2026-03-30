@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-29T19:32:15.013-07:00"
+            generated="2026-03-29T21:22:45.492-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -1186,7 +1186,7 @@
                                    display-type="long"/>.</entry>
                            <entry>Existing exterior decorations are not required to fully comply to the anchorage requirements of <ref type="internal"
                                    target="nbc.divB.part4.sect1.subsect8"
-                                   display-type="long"/>. provided:<list type="bulleted">
+                                   display-type="long"/>. provided:<list type="alphabetic">
                                  <item>adequate means of protection is provided, or</item>
                                  <item>there is no exposure to the public.</item>
                               </list>
@@ -1356,8 +1356,8 @@
                   <title>Application to Existing Buildings</title>
                   <sentence xml:id="nbc.divA.part1.sect1.subsect1.art2.sent1" number="1">
                      <text>Where a <ref type="term" target="bldng">building</ref> is altered, rehabilitated, renovated or repaired, or there is a change in <ref type="term" target="ccpnc">occupancy</ref>, the level of life safety and <ref type="term" target="bldng">building</ref> performance shall not be decreased below a level that already exists. (See <ref type="internal"
-                             target="nbc.divA.part1.appendix.appnote5"
-                             display-type="short"/>.)<!-- TODO: Verify note reference for A-1.1.1.2.(1) --></text>
+                             target="nbc.divA.part1.appendix.appnote1"
+                             display-type="short"/>.)</text>
                   </sentence>
                </article>
             </new-content>
@@ -1501,7 +1501,7 @@
                                    display-type="long"/>, or</text>
                         </clause>
                         <clause xml:id="nbc.divA.part1.sect2.subsect3.art1.sent1.clause3" letter="c">
-                           <text>be the registered owner and occupant or intended occupant of the single detached dwelling in which plumbing work will occur.</text>
+                           <text>be the registered <ref type="term" target="bc-wnr">owner</ref> and occupant or intended occupant of the single detached dwelling in which plumbing work will occur.</text>
                         </clause>
                      </sentence>
                   </article>
@@ -1562,7 +1562,7 @@
             <new-content source="bc">
                <item xml:id="bc-dptbl-dwllng-nt">
                   <term>Adaptable dwelling unit</term>
-                  <definition>means a <ref type="term" target="dwllng-n">dwelling unit</ref> designed and constructed with some <emphasis style="italic">accessible</emphasis> features and which accommodates the future modification to provide more <emphasis style="italic">accessible</emphasis> features.</definition>
+                  <definition>means a <ref type="term" target="dwllng-n">dwelling unit</ref> designed and constructed with some <ref type="term" target="bc-cc-t-ccbl">accessible</ref> features and which accommodates the future modification to provide more <ref type="term" target="bc-cc-t-ccbl">accessible</ref> features.</definition>
                </item>
             </new-content>
          </insert>
@@ -1957,7 +1957,7 @@ Llitre(s)</replace>
                           target="nbc.divA.part1.sect1.subsect1.art1.sent1"
                           display-type="long"/> is not intended to imply that a person who becomes the owner of a <ref type="term" target="bldng">building</ref> must bring the entire <ref type="term" target="bldng">building</ref> into compliance with the Code. The Code applies only in the cases and to the extent specified by <ref type="internal"
                           target="nbc.divA.part1.sect1.subsect1.art1"
-                          display-type="long"/>, and the owner of a <ref type="term" target="bldng">building</ref> is therefore made responsible for ensuring the <ref type="term" target="bldng">building</ref> complies with the Code by <ref type="internal"
+                          display-type="long"/>, and the <ref type="term" target="bc-wnr">owner</ref> of a <ref type="term" target="bldng">building</ref> is therefore made responsible for ensuring the <ref type="term" target="bldng">building</ref> complies with the Code by <ref type="internal"
                           target="nbc.divA.part1.sect2.subsect1.art2.sent1"
                           display-type="long"/> only in the cases and to the extent specified by <ref type="internal"
                           target="nbc.divA.part1.sect1.subsect1.art1"
@@ -9375,7 +9375,7 @@ each 25 females.</find>
                           target="nbc.divB.part3.sect2.subsect6"
                           display-type="long"/> The knowledge requirements are well within the capabilities of a competent designer. The designer should appreciate, however, that successful application requires a clear understanding of the principles that govern smoke movement. <ref type="internal"
                           target="nbc.divB.part3.sect2.subsect6"
-                          display-type="long"/> contains only those items that relate to the design and construction of a building; operation of the facilities and recommended actions to be taken by the building owner, occupant and fire department are covered by the British Columbia Fire Code.</paragraph>
+                          display-type="long"/> contains only those items that relate to the design and construction of a building; operation of the facilities and recommended actions to be taken by the building <ref type="term" target="bc-wnr">owner</ref>, occupant and fire department are covered by the British Columbia Fire Code.</paragraph>
                </new-content>
             </element-replace>
          </modify>
