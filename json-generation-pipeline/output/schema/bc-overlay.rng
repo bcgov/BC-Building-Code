@@ -1919,6 +1919,7 @@
                 <value>alphabetic</value>
                 <value>definition</value>
                 <value>variable</value>
+                <value>symbol</value>
                 <value>organization</value>
             </choice>
         </attribute>
@@ -1958,6 +1959,16 @@
                     <!-- Variable list item -->
                     <group>
                         <element name="variable">
+                            <ref name="bc-rich-text"/>
+                        </element>
+                        <element name="description">
+                            <ref name="bc-rich-text"/>
+                        </element>
+                    </group>
+                    
+                    <!-- Symbol list item -->
+                    <group>
+                        <element name="symbol">
                             <ref name="bc-rich-text"/>
                         </element>
                         <element name="description">

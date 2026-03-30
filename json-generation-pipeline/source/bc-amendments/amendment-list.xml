@@ -26,10 +26,10 @@
     <!-- Re organize nodes to match with BC building code -->
     <file>xml/re-organize-nodes.xml</file>
     
-    <!-- Front Matter -->
-    <!--<file>xml/NBC2020p1 Preface.xml</file>-->
-    
     <!-- Files Completed -->
+    
+    <!-- Front Matter -->
+    <file>xml/NBC2020p1 Preface.xml</file>
     <file>xml/NBC2020p1 Division A_FIN.xml</file>
     <file>xml/NBC2020p1 Division B Appendix C and D.FIN.xml</file>
     <file>xml/NBC2020p1 Division B Part 1 FIN.xml</file>

@@ -776,6 +776,15 @@
       <xsl:if test="@id"><xsl:attribute name="vendor-id" select="@id" /></xsl:if>
       <title><xsl:apply-templates select="title/node()" mode="rich-text" /></title>
 
+      <!-- Process paragraphs (may contain bibliography lists) -->
+      <xsl:for-each select="para">
+        <xsl:variable name="para-id" select="concat($appsubsect-id, '.para', count(preceding-sibling::para) + 1)" />
+        <paragraph xml:id="{$para-id}">
+          <xsl:if test="@id"><xsl:attribute name="vendor-id" select="@id" /></xsl:if>
+          <xsl:apply-templates select="node()" mode="rich-text" />
+        </paragraph>
+      </xsl:for-each>
+
       <!-- Process apparticle elements -->
       <xsl:apply-templates select="apparticle">
         <xsl:with-param name="appsubsect-id" select="$appsubsect-id" />
@@ -1778,6 +1787,40 @@
     </list>
   </xsl:template>
 
+  <!-- Symbol list (symbols and abbreviations) -->
+  <xsl:template match="list.sym" mode="rich-text">
+    <list type="symbol">
+      <xsl:for-each select="sym.group">
+        <item>
+          <symbol><xsl:apply-templates
+                            select="symbol/node()"
+                            mode="rich-text"
+                        /></symbol>
+          <description><xsl:apply-templates
+                            select="descrip/node()"
+                            mode="rich-text"
+                        /></description>
+        </item>
+      </xsl:for-each>
+    </list>
+  </xsl:template>
+
+  <!-- Bibliography list (references in appendices) -->
+  <xsl:template match="list.bib" mode="rich-text">
+    <list type="bibliography">
+      <!-- Optional bibliography header (e.g., "References:") -->
+      <xsl:if test="bibh">
+        <header><xsl:value-of select="bibh"/></header>
+      </xsl:if>
+      <xsl:for-each select="bib">
+        <item>
+          <xsl:if test="@id"><xsl:attribute name="xml:id" select="@id"/></xsl:if>
+          <xsl:apply-templates select="publine/node()" mode="rich-text"/>
+        </item>
+      </xsl:for-each>
+    </list>
+  </xsl:template>
+
   <!-- Organization list (abbreviations and addresses) -->
   <xsl:template match="list.org" mode="rich-text">
     <list type="organization">
@@ -1888,37 +1931,55 @@
         <xsl:apply-templates select="title/node()" mode="rich-text" />
       </title>
     </xsl:if>
-    <!-- Process paragraphs -->
-    <xsl:for-each select="para">
-      <paragraph xml:id="{$div-id}.para{position()}">
-        <xsl:apply-templates select="node()" mode="rich-text" />
-      </paragraph>
+    <!-- Process all non-title children in document order to preserve source ordering -->
+    <xsl:for-each select="*[not(self::title)]">
+      <xsl:choose>
+        <!-- Paragraphs -->
+        <xsl:when test="self::para">
+          <xsl:variable name="para-pos" select="count(preceding-sibling::para) + 1" />
+          <paragraph xml:id="{$div-id}.para{$para-pos}">
+            <xsl:apply-templates select="node()" mode="rich-text" />
+          </paragraph>
+        </xsl:when>
+        <!-- Nested division.sub1 elements -->
+        <xsl:when test="self::division.sub1">
+          <xsl:variable name="sub-num" select="count(preceding-sibling::division.sub1) + 1" />
+          <xsl:variable name="sub-id" select="concat($div-id, '.sub', $sub-num)" />
+          <!-- Process sub-division title -->
+          <xsl:if test="title">
+            <title xml:id="{$sub-id}.title">
+              <xsl:apply-templates select="title/node()" mode="rich-text" />
+            </title>
+          </xsl:if>
+          <!-- Process sub-division paragraphs -->
+          <xsl:for-each select="para">
+            <paragraph xml:id="{$sub-id}.para{position()}">
+              <xsl:apply-templates select="node()" mode="rich-text" />
+            </paragraph>
+          </xsl:for-each>
+          <!-- Process tables in sub-division -->
+          <xsl:apply-templates select="table" mode="document-content">
+            <xsl:with-param name="parent-id" select="$sub-id" />
+          </xsl:apply-templates>
+        </xsl:when>
+        <!-- Tables directly in division -->
+        <xsl:when test="self::table">
+          <xsl:apply-templates select="." mode="document-content">
+            <xsl:with-param name="parent-id" select="$div-id" />
+          </xsl:apply-templates>
+        </xsl:when>
+        <!-- Lists directly in division -->
+        <xsl:when test="self::list or self::list.def or self::list.var or self::list.bib or self::list.org">
+          <xsl:apply-templates select="." mode="rich-text" />
+        </xsl:when>
+        <!-- Figures directly in division -->
+        <xsl:when test="self::figure">
+          <xsl:apply-templates select="." mode="document-content">
+            <xsl:with-param name="parent-id" select="$div-id" />
+          </xsl:apply-templates>
+        </xsl:when>
+      </xsl:choose>
     </xsl:for-each>
-    <!-- Process nested division.sub1 elements -->
-    <xsl:for-each select="division.sub1">
-      <xsl:variable name="sub-num" select="position()" />
-      <xsl:variable name="sub-id" select="concat($div-id, '.sub', $sub-num)" />
-      <!-- Process sub-division title -->
-      <xsl:if test="title">
-        <title xml:id="{$sub-id}.title">
-          <xsl:apply-templates select="title/node()" mode="rich-text" />
-        </title>
-      </xsl:if>
-      <!-- Process sub-division paragraphs -->
-      <xsl:for-each select="para">
-        <paragraph xml:id="{$sub-id}.para{position()}">
-          <xsl:apply-templates select="node()" mode="rich-text" />
-        </paragraph>
-      </xsl:for-each>
-      <!-- Process tables in sub-division -->
-      <xsl:apply-templates select="table" mode="document-content">
-        <xsl:with-param name="parent-id" select="$sub-id" />
-      </xsl:apply-templates>
-    </xsl:for-each>
-    <!-- Process tables directly in division -->
-    <xsl:apply-templates select="table" mode="document-content">
-      <xsl:with-param name="parent-id" select="$div-id" />
-    </xsl:apply-templates>
   </xsl:template>
 
   <xsl:template match="comm-note.grp" mode="document-content">

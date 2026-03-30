@@ -137,14 +137,14 @@
         
         <!-- ================================================================== -->
         <!-- Amendment 007: Replace wired glass text with fire-protection rating -->
-        <!-- Article 5.9.2.1.(3) - General                                    -->
+        <!-- Article 5.8.2.1.(3) - General                                    -->
         <!-- ================================================================== -->
         <amendment id="bc-007" sequence="7"
-                   description="Replace wired glass assembly text with fire-protection rating in Article 5.9.2.1.(3)">
-            <target type="canonical-id" id="nbc.divB.part5.sect10.subsect2.art1.sent3"/>
+                   description="Replace wired glass assembly text with fire-protection rating in Article 5.8.2.1.(3)">
+            <target type="canonical-id" id="nbc.divB.part5.sect9.subsect2.art1.sent3"/>
             <replace preserve-references="true">
                 <new-content source="bc">
-                    <sentence xml:id="nbc.divB.part5.sect10.subsect2.art1.sent3" number="3">
+                    <sentence xml:id="nbc.divB.part5.sect9.subsect2.art1.sent3" number="3">
                         <text>Windows, doors and skylights, including their components, that are required to have a <ref type="term" target="fr-prtn">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal" target="nbc.divB.part5.appendix.appnote43" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
@@ -153,15 +153,15 @@
         
         <!-- ================================================================== -->
         <!-- Amendment 008: Add exception and components text to sentence      -->
-        <!-- Article 5.9.2.2.(1) - Applicable Standards                       -->
+        <!-- Article 5.8.2.2.(1) - Applicable Standards                       -->
         <!-- ================================================================== -->
         <amendment id="bc-008" sequence="8"
-                   description="Add exception and components text to sentence in Article 5.9.2.2.(1)">
-            <target type="canonical-id" id="nbc.divB.part5.sect10.subsect2.art2.sent1"/>
+                   description="Add exception and components text to sentence in Article 5.8.2.2.(1)">
+            <target type="canonical-id" id="nbc.divB.part5.sect9.subsect2.art2.sent1"/>
             <modify>
                 <element-replace element="text">
                     <new-content source="bc">
-                        <text>Except as permitted in <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2.sent5" display-type="short" pretext="Sentences"/> and <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art3.sent1" display-type="long"/>, windows, doors, skylights, including their components, shall conform to the requirements
+                        <text>Except as permitted in <ref type="internal" target="nbc.divB.part5.sect9.subsect2.art2.sent5" display-type="short" pretext="Sentences"/> and <ref type="internal" target="nbc.divB.part5.sect9.subsect2.art3.sent1" display-type="long"/>, windows, doors, skylights, including their components, shall conform to the requirements
                             in</text>
                     </new-content>
                 </element-replace>
@@ -170,15 +170,15 @@
         
         <!-- ================================================================== -->
         <!-- Amendment 009: Add exception text to clause (b)                   -->
-        <!-- Article 5.9.2.2.(1)(b) - Applicable Standards                    -->
+        <!-- Article 5.8.2.2.(1)(b) - Applicable Standards                    -->
         <!-- ================================================================== -->
         <amendment id="bc-009" sequence="9"
-                   description="Add exception text to clause (b) in Article 5.9.2.2.(1)">
-            <target type="canonical-id" id="nbc.divB.part5.sect10.subsect2.art2.sent1.clause2"/>
+                   description="Add exception text to clause (b) in Article 5.8.2.2.(1)">
+            <target type="canonical-id" id="nbc.divB.part5.sect9.subsect2.art2.sent1.clause2"/>
             <modify>
                 <element-replace element="text">
                     <new-content source="bc">
-                        <text>except as permitted in <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2.sent4" display-type="short"/>, <ref type="standard" target="csaa440S1" standardId="csaa440S1"/></text>
+                        <text>except as permitted in <ref type="internal" target="nbc.divB.part5.sect9.subsect2.art2.sent4" display-type="short"/>, <ref type="standard" target="csaa440S1" standardId="csaa440S1"/></text>
                     </new-content>
                 </element-replace>
             </modify>
@@ -186,18 +186,18 @@
         
         <!-- ================================================================== -->
         <!-- Amendment 010: Add new sentence (4) about loads and procedures    -->
-        <!-- Article 5.9.2.2 - Applicable Standards                           -->
+        <!-- Article 5.8.2.2 - Applicable Standards                           -->
         <!-- ================================================================== -->
         <amendment id="bc-010" sequence="10"
-                   description="Add new sentence (4) about loads and procedures in Article 5.9.2.2">
+                   description="Add new sentence (4) about loads and procedures in Article 5.8.2.2">
             <target type="position" 
-                    parent-id="nbc.divB.part5.sect10.subsect2.art2"
+                    parent-id="nbc.divB.part5.sect9.subsect2.art2"
                     position="after"
-                    reference-id="nbc.divB.part5.sect10.subsect2.art2.sent3"/>
+                    reference-id="nbc.divB.part5.sect9.subsect2.art2.sent3"/>
             <insert>
                 <new-content source="bc">
-                    <sentence xml:id="nbc.divB.part5.sect10.subsect2.art2.sent4" number="4">
-                        <text>For the purposes of conformance with <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2.sent1.clause2" display-type="medium"/>, loads and procedures from <ref type="internal" target="nbc.divB.part5.sect2" display-type="long"/> may be used instead of the loads and procedures set out in the standard. (See Note 5.9.2.2.(4).)</text>
+                    <sentence xml:id="nbc.divB.part5.sect9.subsect2.art2.sent4" number="4">
+                        <text>For the purposes of conformance with <ref type="internal" target="nbc.divB.part5.sect9.subsect2.art2.sent1.clause2" display-type="medium"/>, loads and procedures from <ref type="internal" target="nbc.divB.part5.sect2" display-type="long"/> may be used instead of the loads and procedures set out in the standard. (See Note 5.8.2.2.(4).)</text>
                     </sentence>
                 </new-content>
             </insert>
@@ -205,24 +205,24 @@
         
         <!-- ================================================================== -->
         <!-- Amendment 011: Add new sentence (5) about Limited Water doors    -->
-        <!-- Article 5.9.2.2 - Applicable Standards                           -->
+        <!-- Article 5.8.2.2 - Applicable Standards                           -->
         <!-- ================================================================== -->
         <amendment id="bc-011" sequence="11"
-                   description="Add new sentence (5) about Limited Water doors in Article 5.9.2.2">
+                   description="Add new sentence (5) about Limited Water doors in Article 5.8.2.2">
             <target type="position" 
-                    parent-id="nbc.divB.part5.sect10.subsect2.art2"
+                    parent-id="nbc.divB.part5.sect9.subsect2.art2"
                     position="last-child"/>
             <insert>
                 <new-content source="bc">
-                    <sentence xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5" number="5">
-                        <text>A door designated as a "Limited Water" door in accordance with the standard referenced in <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2.sent1.clause1" display-type="medium"/> shall not be used unless the door</text>
-                        <clause xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5.clause1" letter="a">
+                    <sentence xml:id="nbc.divB.part5.sect9.subsect2.art2.sent5" number="5">
+                        <text>A door designated as a "Limited Water" door in accordance with the standard referenced in <ref type="internal" target="nbc.divB.part5.sect9.subsect2.art2.sent1.clause1" display-type="medium"/> shall not be used unless the door</text>
+                        <clause xml:id="nbc.divB.part5.sect9.subsect2.art2.sent5.clause1" letter="a">
                             <text>separates a <ref type="term" target="dwllng-n">dwelling unit</ref> from an unconditioned <ref type="term" target="trg-grg">storage garage</ref> or a carport,</text>
                         </clause>
-                        <clause xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5.clause2" letter="b">
+                        <clause xml:id="nbc.divB.part5.sect9.subsect2.art2.sent5.clause2" letter="b">
                             <text>is designed with a clear width, a clear and level space, a door-opening device and a door closer in conformance with <ref type="internal" target="nbc.divB.part3.sect8.subsect3" display-type="long"/> (see <ref type="internal" target="nbc.divB.part3.sect8.subsect3.art6" display-type="long"/>.), or</text>
                         </clause>
-                        <clause xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5.clause3" letter="c">
+                        <clause xml:id="nbc.divB.part5.sect9.subsect2.art2.sent5.clause3" letter="c">
                             <text>meets the criteria in <ref type="internal" target="nbc.divBV2.part9.sect27.subsect3.art8.sent3" display-type="short"/> such that flashing would not be required.</text>
                         </clause>
                     </sentence>
@@ -232,15 +232,15 @@
         
         <!-- ================================================================== -->
         <!-- Amendment 012: Simplify sentence structure for non-conforming products -->
-        <!-- Article 5.9.2.3.(1) - Structural and Environmental Loads         -->
+        <!-- Article 5.8.2.3.(1) - Structural and Environmental Loads         -->
         <!-- ================================================================== -->
         <amendment id="bc-012" sequence="12"
-                   description="Simplify sentence structure for non-conforming products in Article 5.9.2.3.(1)">
-            <target type="canonical-id" id="nbc.divB.part5.sect10.subsect2.art3.sent1"/>
+                   description="Simplify sentence structure for non-conforming products in Article 5.8.2.3.(1)">
+            <target type="canonical-id" id="nbc.divB.part5.sect9.subsect2.art3.sent1"/>
             <replace preserve-references="true">
                 <new-content source="bc">
-                    <sentence xml:id="nbc.divB.part5.sect10.subsect2.art3.sent1" number="1">
-                        <text>Windows, doors, skylights and their components that do not conform to <ref type="internal" target="nbc.divB.part5.sect10.subsect2.art2" display-type="long"/> shall be designed and constructed in accordance with <ref type="internal" target="nbc.divB.part5.sect1.subsect4.art1" display-type="long"/>, <ref type="internal" target="nbc.divB.part5.sect4" display-type="long"/> and <ref type="internal" target="nbc.divB.part5.sect6" display-type="long"/> (See <ref type="internal" target="nbc.divB.part5.appendix.appnote44" display-type="short"/>.)</text>
+                    <sentence xml:id="nbc.divB.part5.sect9.subsect2.art3.sent1" number="1">
+                        <text>Windows, doors, skylights and their components that do not conform to <ref type="internal" target="nbc.divB.part5.sect9.subsect2.art2" display-type="long"/> shall be designed and constructed in accordance with <ref type="internal" target="nbc.divB.part5.sect1.subsect4.art1" display-type="long"/>, <ref type="internal" target="nbc.divB.part5.sect4" display-type="long"/> and <ref type="internal" target="nbc.divB.part5.sect6" display-type="long"/> (See <ref type="internal" target="nbc.divB.part5.appendix.appnote44" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -248,16 +248,16 @@
         
         <!-- ================================================================== -->
         <!-- Amendment 013: Add sentence about fire-protection rating          -->
-        <!-- Article 5.9.3.1 - General                                         -->
+        <!-- Article 5.8.3.1 - General                                         -->
         <!-- ================================================================== -->
         <amendment id="bc-013" sequence="13"
-                   description="Add sentence (2) about fire-protection rating in Article 5.9.3.1">
+                   description="Add sentence (2) about fire-protection rating in Article 5.8.3.1">
             <target type="position" 
-                    parent-id="nbc.divB.part5.sect10.subsect3.art1"
+                    parent-id="nbc.divB.part5.sect9.subsect3.art1"
                     position="last-child"/>
             <insert>
                 <new-content source="bc">
-                    <sentence xml:id="nbc.divB.part5.sect9.subsect3.art1.sent2" number="2">
+                    <sentence xml:id="nbc.divB.part5.sect8.subsect3.art1.sent2" number="2">
                         <text>Other fenestration assemblies and their components that are required to have a <ref type="term" target="fr-prtn">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal" target="nbc.divB.part5.appendix.appnote43" display-type="short"/>.)</text>
                     </sentence>
                 </new-content>
@@ -346,15 +346,15 @@
         
         <!-- ================================================================== -->
         <!-- Amendment 018: Replace application note with broader scope         -->
-        <!-- Appendix Note A-5.9.2.1.(3) - Airtightness and Watertightness     -->
+        <!-- Appendix Note A-5.8.2.1.(3) - Airtightness and Watertightness     -->
         <!-- ================================================================== -->
         <amendment id="bc-018" sequence="18"
-                   description="Replace Note A-5.9.2.1.(3) with broader scope covering all fenestration assemblies">
+                   description="Replace Note A-5.8.2.1.(3) with broader scope covering all fenestration assemblies">
             <target type="canonical-id" id="nbc.divB.part5.appendix.appnote43"/>
             <replace preserve-references="true">
                 <new-content source="bc">
                     <application-note xml:id="nbc.divB.part5.appendix.appnote43" vendor-id="en001183" refs="es007991">
-                        <number>5.9.2.1.(3)</number>
+                        <number>5.8.2.1.(3)</number>
                         <title>Airtightness and Watertightness of Windows, Doors, Skylights, Other Fenestration Assemblies and their Components Required to have a Fire-Protection Rating</title>
                         <paragraph>The airtightness and watertightness requirements are waived for these products when used in such an application, in recognition of the fact that the availability of assemblies that meet both the requirements of the applicable standards and the requirements for fire resistance may be limited. However, control of air and water leakage should not be ignored: measures should be taken to attempt to comply with applicable requirements.</paragraph>
                     </application-note>
@@ -364,10 +364,10 @@
         
         <!-- ================================================================== -->
         <!-- Amendment 019: Add two ASTM standards to list                      -->
-        <!-- Appendix Note A-5.9.3 - Testing Standards                         -->
+        <!-- Appendix Note A-5.8.3 - Testing Standards                         -->
         <!-- ================================================================== -->
         <amendment id="bc-019" sequence="19"
-                   description="Add ASTM E 331 and E 547 standards to Note A-5.9.3">
+                   description="Add ASTM E 331 and E 547 standards to Note A-5.8.3">
             <target type="canonical-id" id="nbc.divB.part5.appendix.appnote47"/>
             <modify>
                 <element-change xpath-within-target=".//paragraph/list">

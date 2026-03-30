@@ -802,6 +802,10 @@
                                             <fn:string key="symbol"><xsl:apply-templates select="variable" mode="rich"/></fn:string>
                                             <fn:string key="description"><xsl:apply-templates select="description" mode="rich"/></fn:string>
                                         </xsl:when>
+                                        <xsl:when test="parent::list/@type = 'symbol'">
+                                            <fn:string key="symbol"><xsl:apply-templates select="symbol" mode="rich"/></fn:string>
+                                            <fn:string key="description"><xsl:apply-templates select="description" mode="rich"/></fn:string>
+                                        </xsl:when>
                                         <xsl:when test="parent::list/@type = 'definition'">
                                             <fn:string key="term"><xsl:apply-templates select="term" mode="text"/></fn:string>
                                             <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich"/></fn:string>
