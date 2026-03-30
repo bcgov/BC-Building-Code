@@ -14,31 +14,26 @@ This file is the startup context for any agent working in this repository.
 
 Read these before making edits:
 
-### Steering docs (`.kiro/steering/`)
+### Repository-level docs (`docs/`)
 
-- `.kiro/steering/product.md`
-- `.kiro/steering/tech.md`
-- `.kiro/steering/structure.md`
-- `.kiro/steering/BC Builiding Code - Amendment Creation Guide.md`
-- `.kiro/steering/How to make Revision Amendments like Errata, Policy Change, Code revisions etc.md`
-- `.kiro/steering/Global Text Replacements Feature.md`
-- `.kiro/steering/Fixing Amendment Validation Warnings.md`
-- `.kiro/steering/repo_list_of_files.xml`
-- `.kiro/steering/USE_BASH_COMMANDS.md`
+- `docs/product-overview.md` - Product overview and purpose
+- `docs/technology-stack.md` - Technology stack, commands, performance
+- `docs/project-structure.md` - Repository structure and file organization
 
-### JSON pipeline docs (`json-generation-pipeline/docs/project/`)
+### Pipeline docs (`json-generation-pipeline/docs/project/`)
 
-- `json-generation-pipeline/docs/project/README.md`
-- `json-generation-pipeline/docs/project/01-system-overview.md`
-- `json-generation-pipeline/docs/project/02-overlay-amendments-guide.md`
-- `json-generation-pipeline/docs/project/03-revision-amendments-guide.md`
-- `json-generation-pipeline/docs/project/04-merge-engine-reference.md`
-- `json-generation-pipeline/docs/project/05-validation-troubleshooting.md`
-- `json-generation-pipeline/docs/project/06-quick-reference.md`
-- `json-generation-pipeline/docs/project/07-examples-library.md`
-- `json-generation-pipeline/docs/project/08-migration-guide.md`
-- `json-generation-pipeline/docs/project/09-json-output-guide.md`
-- `json-generation-pipeline/docs/project/BC-Building-Code-Pipeline-Demo.pptx`
+- `json-generation-pipeline/docs/project/README.md` - Documentation index
+- `json-generation-pipeline/docs/project/01-system-overview.md` - System overview and key concepts
+- `json-generation-pipeline/docs/project/02-overlay-amendments-guide.md` - Phase 1 amendment guide
+- `json-generation-pipeline/docs/project/03-revision-amendments-guide.md` - Phase 2 amendment guide
+- `json-generation-pipeline/docs/project/04-merge-engine-reference.md` - Merge engine operations reference
+- `json-generation-pipeline/docs/project/05-validation-troubleshooting.md` - Validation error troubleshooting
+- `json-generation-pipeline/docs/project/06-quick-reference.md` - Single-page quick reference
+- `json-generation-pipeline/docs/project/07-examples-library.md` - Curated working examples
+- `json-generation-pipeline/docs/project/08-migration-guide.md` - Migration guide (legacy to new pipeline)
+- `json-generation-pipeline/docs/project/09-json-output-guide.md` - JSON output structure and usage
+- `json-generation-pipeline/docs/project/10-oxygen-xml-editor-guide.md` - Oxygen XML Editor guide
+- `json-generation-pipeline/docs/project/11-global-text-replacements.md` - Global text replacements (pre-processing)
 
 ## 3) Pipeline Architecture (Authoritative Mental Model)
 
@@ -48,8 +43,7 @@ Read these before making edits:
 4. Generate JSON (`canonical-to-json.xsl` / minimal variant).
 5. Validate XML and JSON outputs.
 
-Primary working area is `json-generation-pipeline/`.  
-Legacy `proposed/` and older command references still appear in docs/examples.
+Primary working area is `json-generation-pipeline/`.
 
 ## 4) Non-Negotiable Authoring Rules
 
@@ -104,16 +98,13 @@ Typical fix path:
 3. Copy current element content and apply `element-replace`.
 4. Re-run combine/merge/validate.
 
-See:
-
-- `.kiro/steering/Fixing Amendment Validation Warnings.md`
-- `json-generation-pipeline/docs/project/05-validation-troubleshooting.md`
+See: `json-generation-pipeline/docs/project/05-validation-troubleshooting.md`
 
 ## 8) Command Conventions
 
 - Environment convention in this repo: generate commands for **Git Bash** style usage.
 - Prefer forward slashes in paths.
-- Toolchain references in docs include both legacy and current locations; default to current pipeline paths under `json-generation-pipeline/` unless task explicitly targets legacy flow.
+- All commands use current pipeline paths under `json-generation-pipeline/`.
 
 ## 9) Key Paths
 

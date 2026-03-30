@@ -26,7 +26,7 @@ java -jar json-generation-pipeline/tools/saxon.jar -xsl:json-generation-pipeline
 - **[FOLDER-STRUCTURE.md](FOLDER-STRUCTURE.md)** - Complete folder structure with descriptions
 - **[docs/commands.txt](docs/commands.txt)** - All transformation commands with detailed explanations
 - **[docs/deletion-tracking.md](docs/deletion-tracking.md)** - How element deletions are tracked in XML and JSON
-- **[.kiro/steering/](../.kiro/steering/)** - Amendment creation guides and patterns
+- **[docs/project/README.md](docs/project/README.md)** - Comprehensive project documentation index
 
 ## Pipeline Overview
 
@@ -133,10 +133,11 @@ json-generation-pipeline/
 
 ## Amendment Creation
 
-See the comprehensive guides in `.kiro/steering/`:
-- **BC Builiding Code - Amendment Creation Guide.md** - How to create overlay amendments
-- **How to make Revision Amendments like Errata, Policy Change, Code revisions etc.md** - How to create revision amendments
-- **Global Text Replacements Feature.md** - Bulk find-replace operations
+See the comprehensive guides in `docs/project/`:
+- **[02-overlay-amendments-guide.md](docs/project/02-overlay-amendments-guide.md)** - How to create overlay amendments
+- **[03-revision-amendments-guide.md](docs/project/03-revision-amendments-guide.md)** - How to create revision amendments
+- **[11-global-text-replacements.md](docs/project/11-global-text-replacements.md)** - Bulk find-replace operations
+- **[05-validation-troubleshooting.md](docs/project/05-validation-troubleshooting.md)** - Fixing validation errors
 
 ### Deletion Tracking
 

@@ -297,7 +297,7 @@ function getChangeHistory(element) {
 
 ## Related Documentation
 
-- [BC Building Code - Amendment Creation Guide](../../.kiro/steering/BC%20Builiding%20Code%20-%20Amendment%20Creation%20Guide.md)
-- [How to make Revision Amendments](../../.kiro/steering/How%20to%20make%20Revision%20Amendments%20like%20Errata,%20Policy%20Change,%20Code%20revisions%20etc.md)
+- [BC Building Code - Overlay Amendments Guide](project/02-overlay-amendments-guide.md)
+- [Revision Amendments Guide](project/03-revision-amendments-guide.md)
 - [JSON Schema](../output/bc-building-code-schema.json)
 - [Canonical to JSON Transform](../transformation-xslt/canonical-to-json.xsl)

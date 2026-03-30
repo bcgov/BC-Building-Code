@@ -50,23 +50,23 @@ java -jar json-generation-pipeline/tools/saxon.jar \
 
 ```bash
 # Generate larger sample
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/canonical-to-json-minimal.xsl \
-  -s:bc-building-code-final.xml \
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/canonical-to-json-minimal.xsl \
+  -s:json-generation-pipeline/output/bc-building-code-final.xml \
   max-parts=5 \
   max-sections=5 \
   max-articles=5 \
-  -o:bc-building-code-sample.json
+  -o:json-generation-pipeline/output/bc-building-code-sample.json
 
 # Generate tiny sample for testing
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/canonical-to-json-minimal.xsl \
-  -s:bc-building-code-final.xml \
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/canonical-to-json-minimal.xsl \
+  -s:json-generation-pipeline/output/bc-building-code-final.xml \
   max-parts=1 \
   max-sections=1 \
   max-articles=1 \
   max-sentences=2 \
-  -o:bc-building-code-tiny.json
+  -o:json-generation-pipeline/output/bc-building-code-tiny.json
 ```
 
 ## Key Features
@@ -586,7 +586,7 @@ print('✓ Minimal JSON is valid')
 
 ## Related Files
 
-- **Full version**: `canonical-to-json.xsl`
+- **Full version**: `json-generation-pipeline/transformation-xslt/canonical-to-json.xsl`
 - **Schema**: `bc-building-code-schema.json`
-- **Source**: `bc-building-code-final.xml`
-- **Merge engine**: `merge-engine-v3.xsl`
+- **Source**: `json-generation-pipeline/output/bc-building-code-final.xml`
+- **Merge engine**: `json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl`

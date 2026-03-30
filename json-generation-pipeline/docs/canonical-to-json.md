@@ -48,20 +48,20 @@ java -jar json-generation-pipeline/tools/saxon.jar \
 
 ```bash
 # Full JSON with cross-references (larger file, more features)
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/canonical-to-json.xsl \
-  -s:bc-building-code-final.xml \
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/canonical-to-json.xsl \
+  -s:json-generation-pipeline/output/bc-building-code-final.xml \
   include-cross-references=true \
-  -o:bc-building-code.json
+  -o:json-generation-pipeline/output/bc-building-code.json
 
 # Minimal JSON (smaller file, faster processing)
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/canonical-to-json.xsl \
-  -s:bc-building-code-final.xml \
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/canonical-to-json.xsl \
+  -s:json-generation-pipeline/output/bc-building-code-final.xml \
   include-metadata=false \
   include-cross-references=false \
   include-bc-annotations=false \
-  -o:bc-building-code-minimal.json
+  -o:json-generation-pipeline/output/bc-building-code-minimal.json
 ```
 
 ## Key Features
@@ -656,7 +656,7 @@ print('✓ JSON is valid')
 
 ## Related Files
 
-- **Minimal version**: `canonical-to-json-minimal.xsl`
+- **Minimal version**: `json-generation-pipeline/transformation-xslt/canonical-to-json-minimal.xsl`
 - **Schema**: `bc-building-code-schema.json`
-- **Source**: `bc-building-code-final.xml`
-- **Merge engine**: `merge-engine-v3.xsl`
+- **Source**: `json-generation-pipeline/output/bc-building-code-final.xml`
+- **Merge engine**: `json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl`

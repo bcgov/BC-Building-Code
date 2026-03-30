@@ -10,45 +10,45 @@ This guide explains how to validate amendments and fix common issues that arise 
 
 ```bash
 # For overlay amendments (Phase 1)
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/combine-amendments.xsl \
-  -s:proposed/amendment-list.xml \
-  -o:bc-amendments-combined.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
+  -s:json-generation-pipeline/source/bc-amendments/amendment-list.xml \
+  -o:json-generation-pipeline/output/bc-amendments-combined.xml
 
 # For revision amendments (Phase 2)
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/combine-amendments.xsl \
-  -s:proposed/revision-list.xml \
-  -o:bc-revisions-combined.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
+  -s:json-generation-pipeline/source/bc-revisions/revision-list.xml \
+  -o:json-generation-pipeline/output/bc-revisions-combined.xml
 ```
 
 ### Step 2: Apply Amendments
 
 ```bash
 # Phase 1: Apply overlay amendments
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/merge-engine.xsl \
-  -s:nbc-canonical.xml \
-  overlay-document=bc-amendments-combined.xml \
-  -o:bc-building-code.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl \
+  -s:json-generation-pipeline/output/nbc-canonical.xml \
+  overlay-document=json-generation-pipeline/output/bc-amendments-combined.xml \
+  -o:json-generation-pipeline/output/bc-building-code.xml
 
 # Phase 2: Apply revision amendments
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/merge-engine.xsl \
-  -s:bc-building-code.xml \
-  overlay-document=bc-revisions-combined.xml \
-  -o:bc-building-code-final.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl \
+  -s:json-generation-pipeline/output/bc-building-code.xml \
+  overlay-document=json-generation-pipeline/output/bc-revisions-combined.xml \
+  -o:json-generation-pipeline/output/bc-building-code-final.xml
 ```
 
 ### Step 3: Validate
 
 ```bash
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/validate-amendments.xsl \
-  -s:bc-amendments-combined.xml \
-  combined-amendments=bc-amendments-combined.xml \
-  bc-building-code=bc-building-code.xml \
-  -o:validation-report.html
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/validate-amendments.xsl \
+  -s:json-generation-pipeline/output/bc-amendments-combined.xml \
+  combined-amendments=json-generation-pipeline/output/bc-amendments-combined.xml \
+  bc-building-code=json-generation-pipeline/output/bc-building-code.xml \
+  -o:json-generation-pipeline/output/amendment-validation-report.html
 ```
 
 ### Understanding the Validation Report
@@ -197,36 +197,93 @@ This is the most common warning. It means the merge engine couldn't find the tex
 
 **Wrong:**
 ```xml
-<list>
-    <item>First item</item>  <!-- ❌ Should be <list-item> -->
+<list list-type="unordered">
+    <list-item>Content</list-item>
 </list>
 ```
 
 **Correct:**
 ```xml
-<list list-type="lettered">
-    <list-item>
-        <text>First item</text>
-    </list-item>
+<list type="bulleted">
+    <item xml:id="bc.divB.appendixC.div1.list1.item1">Content</item>
 </list>
 ```
 
+**Rules:**
+- Element name is `item`, not `list-item`
+- Attribute is `type`, not `list-type`
+- Values are `bulleted` or `numbered`, not `unordered` or `ordered`
+- Do NOT add `xml:id` to `<list>` elements (only to items)
+
 #### Paragraph Wrapper Issues
+
+Items should contain rich-text directly, not wrapped in `<paragraph>` elements:
+
+**Wrong:**
+```xml
+<item xml:id="bc.id">
+    <paragraph>Item text here</paragraph>
+</item>
+```
+
+**Correct:**
+```xml
+<item xml:id="bc.id">Item text here</item>
+```
+
+#### Line-break Elements
+
+`<line-break/>` is not part of the canonical NBC schema:
+
+**Wrong:**
+```xml
+<item>First line<line-break/>Second line</item>
+```
+
+**Correct:**
+```xml
+<item>First line
+Second line</item>
+```
+
+#### Note-division in Appendix Context
+
+`<note-division>` is only valid inside `<application-note>` elements in Part appendices, not in Division C appendices:
 
 **Wrong:**
 ```xml
 <note-division>
-    <text>Some text</text>  <!-- ❌ Needs paragraph wrapper -->
+    <title>Example</title>
+    <paragraph>Content</paragraph>
 </note-division>
+```
+
+**Correct (in Division C appendix context):**
+```xml
+<paragraph xml:id="bc.divB.appendixC.div1.para1">
+    <emphasis role="bold">Example</emphasis>: Content
+</paragraph>
+```
+
+#### Modifying Titles with set-text
+
+When modifying title content, use `<set-text>` instead of `<find-replace>` to preserve the `<title>` wrapper:
+
+**Wrong (strips `<title>` wrapper):**
+```xml
+<text-change xpath-within-target=".//title">
+    <find-replace>
+        <find>Old Title</find>
+        <replace>New Title</replace>
+    </find-replace>
+</text-change>
 ```
 
 **Correct:**
 ```xml
-<note-division>
-    <paragraph>
-        <text>Some text</text>
-    </paragraph>
-</note-division>
+<text-change xpath-within-target=".//title">
+    <set-text>New Title</set-text>
+</text-change>
 ```
 
 ---
@@ -279,11 +336,8 @@ Open the validation report HTML and find the warning/error.
 ### Step 2: Find Target Element in bc-building-code.xml
 
 ```bash
-# PowerShell
-Select-String -Path "output/bc-building-code.xml" -Pattern '"nbc.divB.part3.sect1.art1.sent1"' -Context 0,15
-
-# Or grep
-grep -n "nbc.divB.part3.sect1.art1.sent1" output/bc-building-code.xml
+# grep (Git Bash)
+grep -n "nbc.divB.part3.sect1.art1.sent1" json-generation-pipeline/output/bc-building-code.xml
 ```
 
 ### Step 3: Compare Amendment with Source
@@ -301,9 +355,23 @@ Usually: change `text-change` to `element-replace`.
 
 ```bash
 # Rebuild and validate
-java -jar saxon.jar -xsl:proposed/combine-amendments.xsl ...
-java -jar saxon.jar -xsl:proposed/merge-engine.xsl ...
-java -jar saxon.jar -xsl:proposed/validate-amendments.xsl ...
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
+  -s:json-generation-pipeline/source/bc-amendments/amendment-list.xml \
+  -o:json-generation-pipeline/output/bc-amendments-combined.xml
+
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl \
+  -s:json-generation-pipeline/output/nbc-canonical.xml \
+  overlay-document=json-generation-pipeline/output/bc-amendments-combined.xml \
+  -o:json-generation-pipeline/output/bc-building-code.xml
+
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/validate-amendments.xsl \
+  -s:json-generation-pipeline/output/bc-amendments-combined.xml \
+  combined-amendments=json-generation-pipeline/output/bc-amendments-combined.xml \
+  bc-building-code=json-generation-pipeline/output/bc-building-code.xml \
+  -o:json-generation-pipeline/output/amendment-validation-report.html
 ```
 
 ---
@@ -348,8 +416,8 @@ Got a "Modified text not found" warning?
 
 2. **Find it in the merged output:**
    ```bash
-   grep -A 10 "xml:id=\"nbc.divB.part3.sect1.art1.sent1\"" bc-building-code.xml
-   ```
+grep -A 10 "xml:id=\"nbc.divB.part3.sect1.art1.sent1\"" json-generation-pipeline/output/bc-building-code.xml
+```
 
 3. **Copy the `<text>` element** (or `<definition>`, `<title>`, etc.) from the output
 
@@ -401,12 +469,12 @@ Before adding many amendments, test complex ones individually to catch issues ea
 
 ```bash
 # Verify the ID exists before creating amendment
-grep "nbc.divB.part3.sect1.art1" bc-building-code.xml
+grep "nbc.divB.part3.sect1.art1" json-generation-pipeline/output/bc-building-code.xml
 ```
 
 ### Review Schema When Unsure
 
-Check the canonical schema (`canonical-nbc.rng`) for allowed element structures.
+Check the canonical schema (`json-generation-pipeline/output/schema/canonical-nbc.rng`) for allowed element structures.
 
 ### Follow the Checklist
 
