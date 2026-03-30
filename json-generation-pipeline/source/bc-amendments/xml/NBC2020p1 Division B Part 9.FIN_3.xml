@@ -614,18 +614,11 @@
         </amendment>
         
         <!-- ================================================================== -->
-        <!-- Amendment 372: Change subsection reference in A-9.11.1.4.           -->
-        <!-- Application Note A-9.11.1.4. para1 - Change 5.9.1 to 5.8.1         -->
+        <!-- Amendment 372: REMOVED - Now handled by global text-replacements    -->
+        <!-- in re-organize-nodes.xml (sect9→sect8 applied globally).            -->
+        <!-- Original: Changed ref target from part5.sect9.subsect1 to           -->
+        <!-- part5.sect8.subsect1 in A-9.11.1.4. para1                          -->
         <!-- ================================================================== -->
-        <amendment id="bc-372" sequence="372"
-                   description="Change subsection reference from 5.9.1 to 5.8.1 in A-9.11.1.4.">
-            <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote82.para1"/>
-            <modify>
-                <text-change xpath-within-target=".//ref[@target='nbc.divB.part5.sect9.subsect1']/@target">
-                    <set-text>nbc.divB.part5.sect8.subsect1</set-text>
-                </text-change>
-            </modify>
-        </amendment>
         
         <!-- ================================================================== -->
         <!-- Amendment 373: Modify A-9.13.4.3. div1 title                        -->

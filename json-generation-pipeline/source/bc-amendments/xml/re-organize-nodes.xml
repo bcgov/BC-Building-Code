@@ -63,5 +63,23 @@
         
         <!-- Swap display text (9.37. ↔ 9.38.) -->
         <replace from="9.37." to="9.38."/>
+        
+        <!-- ================================================================== -->
+        <!-- Part 5: Move sect9→sect8, sect10→sect9, sect11→sect10              -->
+        <!-- Process sect9 first so sect10→sect9 doesn't collide with it        -->
+        <!-- Note: number attributes will be auto-updated by merge engine       -->
+        <!-- ================================================================== -->
+        
+        <!-- Renumber sect9 → sect8 (do first so sect10→sect9 won't collide) -->
+        <replace from="nbc.divB.part5.sect9" to="nbc.divB.part5.sect8"/>
+        <replace from="5.9." to="5.8."/>
+        
+        <!-- Renumber sect10 → sect9 -->
+        <replace from="nbc.divB.part5.sect10" to="nbc.divB.part5.sect9"/>
+        <replace from="5.10." to="5.9."/>
+        
+        <!-- Renumber sect11 → sect10 -->
+        <replace from="nbc.divB.part5.sect11" to="nbc.divB.part5.sect10"/>
+        <replace from="5.11." to="5.10."/>
     </text-replacements>
 </bc-overlay>

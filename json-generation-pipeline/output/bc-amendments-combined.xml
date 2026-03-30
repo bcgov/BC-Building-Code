@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-29T21:22:45.492-07:00"
+            generated="2026-03-29T22:09:16.845-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -155,6 +155,18 @@
                from="nbc.divBV2.part9.sect37"
                to="nbc.divBV2.part9.sect38"/>
       <replace source-file-index="1" from="9.37." to="9.38."/>
+      <replace source-file-index="1"
+               from="nbc.divB.part5.sect9"
+               to="nbc.divB.part5.sect8"/>
+      <replace source-file-index="1" from="5.9." to="5.8."/>
+      <replace source-file-index="1"
+               from="nbc.divB.part5.sect10"
+               to="nbc.divB.part5.sect9"/>
+      <replace source-file-index="1" from="5.10." to="5.9."/>
+      <replace source-file-index="1"
+               from="nbc.divB.part5.sect11"
+               to="nbc.divB.part5.sect10"/>
+      <replace source-file-index="1" from="5.11." to="5.10."/>
    </text-replacements>
    <amendments>
       <amendment sequence="1"
@@ -620,7 +632,7 @@
                <sentence xml:id="nbc.divA.part1.sect1.subsect1.art1.sent3" number="3">
                   <text>This Code applies to both site-built and factory-constructed <ref type="term" target="bldng">buildings</ref>. (See <ref type="internal"
                           target="nbc.divA.part1.appendix.appnote2"
-                          display-type="short"/>.)<!-- TODO: Verify if BC has Note A-1.1.1.1.(3) or uses NBC's Note A-1.1.1.1.(2) --></text>
+                          display-type="short"/>.)</text>
                </sentence>
             </new-content>
          </replace>
@@ -1204,11 +1216,11 @@
                   </tgroup>
                </table>
                <sentence xml:id="nbc.divA.part1.sect1.subsect1.art1.sent6" number="6">
-                  <text>For the design and construction of alterations to existing <ref type="term" target="bldng">buildings</ref> to add a secondary suite, not including the design and construction of new additions or new <ref type="term" target="bldng">buildings</ref>, the Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite in <ref type="internal"
+                  <text>For the design and construction of <ref type="term" target="ltrtn">alterations</ref> to existing <ref type="term" target="bldng">buildings</ref> to add a <ref type="term" target="scnd-t">secondary suite</ref>, not including the design and construction of new additions or new <ref type="term" target="bldng">buildings</ref>, the Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite in <ref type="internal"
                           target="nbc.divA.part1.sect1.subsect1.art1.table2"
                           display-type="long"/> may be substituted for requirements contained elsewhere in this Code. (See <ref type="internal"
-                          target="nbc.divA.part1.appendix.appnote4"
-                          display-type="short"/>.)<!-- TODO: Verify note reference for A-1.1.1.1.(6) --></text>
+                          target="nbc.divA.part1.appendix.appnote2b"
+                          display-type="short"/>.)</text>
                </sentence>
                <table xml:id="nbc.divA.part1.sect1.subsect1.art1.table2">
                   <title>Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite</title>
@@ -1620,8 +1632,8 @@
                <item xml:id="bc-hrtg-bldng">
                   <term>Heritage building</term>
                   <definition>is a <ref type="term" target="bldng">building</ref> which is legally protected or officially recognized as a heritage property by the Provincial government or a local government.  (See <ref type="internal"
-                          target="nbc.divA.part1.appendix.appnote6"
-                          display-type="short"/>.)<!-- TODO: Verify note reference for A-1.1.1.1.(5) --></definition>
+                          target="nbc.divA.part1.appendix.appnote2a"
+                          display-type="short"/>.)</definition>
                </item>
             </new-content>
          </insert>
@@ -4045,7 +4057,7 @@ Llitre(s)</replace>
                             objectives and functional statements identified in 
                             <ref type="internal" target="nbc.divB.part3.sect9" pretext="Sections"/>
                      <ref type="internal" target="nbc.divB.part4.sect5" pretext=","/>
-                     <ref type="internal" target="nbc.divB.part5.sect10" pretext=","/>
+                     <ref type="internal" target="nbc.divB.part5.sect9" pretext=","/>
                      <ref type="internal" target="nbc.divB.part6.sect10" pretext=","/>
                      <ref type="internal" target="nbc.divB.part7.sect2" pretext=","/>
                      <ref type="internal" target="nbc.divB.part8.sect3" pretext=","/>
@@ -9901,11 +9913,11 @@ each 25 females.</find>
                  source-file-index="9"
                  original-sequence="7"
                  original-id="bc-007"
-                 description="Replace wired glass assembly text with fire-protection rating in Article 5.9.2.1.(3)">
-         <target type="canonical-id" id="nbc.divB.part5.sect10.subsect2.art1.sent3"/>
+                 description="Replace wired glass assembly text with fire-protection rating in Article 5.8.2.1.(3)">
+         <target type="canonical-id" id="nbc.divB.part5.sect9.subsect2.art1.sent3"/>
          <replace preserve-references="true">
             <new-content source="bc">
-               <sentence xml:id="nbc.divB.part5.sect10.subsect2.art1.sent3" number="3">
+               <sentence xml:id="nbc.divB.part5.sect9.subsect2.art1.sent3" number="3">
                   <text>Windows, doors and skylights, including their components, that are required to have a <ref type="term" target="fr-prtn">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal"
                           target="nbc.divB.part5.appendix.appnote43"
                           display-type="short"/>.)</text>
@@ -9918,16 +9930,16 @@ each 25 females.</find>
                  source-file-index="9"
                  original-sequence="8"
                  original-id="bc-008"
-                 description="Add exception and components text to sentence in Article 5.9.2.2.(1)">
-         <target type="canonical-id" id="nbc.divB.part5.sect10.subsect2.art2.sent1"/>
+                 description="Add exception and components text to sentence in Article 5.8.2.2.(1)">
+         <target type="canonical-id" id="nbc.divB.part5.sect9.subsect2.art2.sent1"/>
          <modify>
             <element-replace element="text">
                <new-content source="bc">
                   <text>Except as permitted in <ref type="internal"
-                          target="nbc.divB.part5.sect10.subsect2.art2.sent5"
+                          target="nbc.divB.part5.sect9.subsect2.art2.sent5"
                           display-type="short"
                           pretext="Sentences"/> and <ref type="internal"
-                          target="nbc.divB.part5.sect10.subsect2.art3.sent1"
+                          target="nbc.divB.part5.sect9.subsect2.art3.sent1"
                           display-type="long"/>, windows, doors, skylights, including their components, shall conform to the requirements
                             in</text>
                </new-content>
@@ -9939,14 +9951,14 @@ each 25 females.</find>
                  source-file-index="9"
                  original-sequence="9"
                  original-id="bc-009"
-                 description="Add exception text to clause (b) in Article 5.9.2.2.(1)">
+                 description="Add exception text to clause (b) in Article 5.8.2.2.(1)">
          <target type="canonical-id"
-                 id="nbc.divB.part5.sect10.subsect2.art2.sent1.clause2"/>
+                 id="nbc.divB.part5.sect9.subsect2.art2.sent1.clause2"/>
          <modify>
             <element-replace element="text">
                <new-content source="bc">
                   <text>except as permitted in <ref type="internal"
-                          target="nbc.divB.part5.sect10.subsect2.art2.sent4"
+                          target="nbc.divB.part5.sect9.subsect2.art2.sent4"
                           display-type="short"/>, <ref type="standard" target="csaa440S1" standardId="csaa440S1"/>
                   </text>
                </new-content>
@@ -9958,17 +9970,17 @@ each 25 females.</find>
                  source-file-index="9"
                  original-sequence="10"
                  original-id="bc-010"
-                 description="Add new sentence (4) about loads and procedures in Article 5.9.2.2">
+                 description="Add new sentence (4) about loads and procedures in Article 5.8.2.2">
          <target type="position"
-                 parent-id="nbc.divB.part5.sect10.subsect2.art2"
+                 parent-id="nbc.divB.part5.sect9.subsect2.art2"
                  position="after"
-                 reference-id="nbc.divB.part5.sect10.subsect2.art2.sent3"/>
+                 reference-id="nbc.divB.part5.sect9.subsect2.art2.sent3"/>
          <insert>
             <new-content source="bc">
-               <sentence xml:id="nbc.divB.part5.sect10.subsect2.art2.sent4" number="4">
+               <sentence xml:id="nbc.divB.part5.sect9.subsect2.art2.sent4" number="4">
                   <text>For the purposes of conformance with <ref type="internal"
-                          target="nbc.divB.part5.sect10.subsect2.art2.sent1.clause2"
-                          display-type="medium"/>, loads and procedures from <ref type="internal" target="nbc.divB.part5.sect2" display-type="long"/> may be used instead of the loads and procedures set out in the standard. (See Note 5.9.2.2.(4).)</text>
+                          target="nbc.divB.part5.sect9.subsect2.art2.sent1.clause2"
+                          display-type="medium"/>, loads and procedures from <ref type="internal" target="nbc.divB.part5.sect2" display-type="long"/> may be used instead of the loads and procedures set out in the standard. (See Note 5.8.2.2.(4).)</text>
                </sentence>
             </new-content>
          </insert>
@@ -9978,27 +9990,27 @@ each 25 females.</find>
                  source-file-index="9"
                  original-sequence="11"
                  original-id="bc-011"
-                 description="Add new sentence (5) about Limited Water doors in Article 5.9.2.2">
+                 description="Add new sentence (5) about Limited Water doors in Article 5.8.2.2">
          <target type="position"
-                 parent-id="nbc.divB.part5.sect10.subsect2.art2"
+                 parent-id="nbc.divB.part5.sect9.subsect2.art2"
                  position="last-child"/>
          <insert>
             <new-content source="bc">
-               <sentence xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5" number="5">
+               <sentence xml:id="nbc.divB.part5.sect9.subsect2.art2.sent5" number="5">
                   <text>A door designated as a "Limited Water" door in accordance with the standard referenced in <ref type="internal"
-                          target="nbc.divB.part5.sect10.subsect2.art2.sent1.clause1"
+                          target="nbc.divB.part5.sect9.subsect2.art2.sent1.clause1"
                           display-type="medium"/> shall not be used unless the door</text>
-                  <clause xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5.clause1" letter="a">
+                  <clause xml:id="nbc.divB.part5.sect9.subsect2.art2.sent5.clause1" letter="a">
                      <text>separates a <ref type="term" target="dwllng-n">dwelling unit</ref> from an unconditioned <ref type="term" target="trg-grg">storage garage</ref> or a carport,</text>
                   </clause>
-                  <clause xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5.clause2" letter="b">
+                  <clause xml:id="nbc.divB.part5.sect9.subsect2.art2.sent5.clause2" letter="b">
                      <text>is designed with a clear width, a clear and level space, a door-opening device and a door closer in conformance with <ref type="internal"
                              target="nbc.divB.part3.sect8.subsect3"
                              display-type="long"/> (see <ref type="internal"
                              target="nbc.divB.part3.sect8.subsect3.art6"
                              display-type="long"/>.), or</text>
                   </clause>
-                  <clause xml:id="nbc.divB.part5.sect10.subsect2.art2.sent5.clause3" letter="c">
+                  <clause xml:id="nbc.divB.part5.sect9.subsect2.art2.sent5.clause3" letter="c">
                      <text>meets the criteria in <ref type="internal"
                              target="nbc.divBV2.part9.sect27.subsect3.art8.sent3"
                              display-type="short"/> such that flashing would not be required.</text>
@@ -10012,13 +10024,13 @@ each 25 females.</find>
                  source-file-index="9"
                  original-sequence="12"
                  original-id="bc-012"
-                 description="Simplify sentence structure for non-conforming products in Article 5.9.2.3.(1)">
-         <target type="canonical-id" id="nbc.divB.part5.sect10.subsect2.art3.sent1"/>
+                 description="Simplify sentence structure for non-conforming products in Article 5.8.2.3.(1)">
+         <target type="canonical-id" id="nbc.divB.part5.sect9.subsect2.art3.sent1"/>
          <replace preserve-references="true">
             <new-content source="bc">
-               <sentence xml:id="nbc.divB.part5.sect10.subsect2.art3.sent1" number="1">
+               <sentence xml:id="nbc.divB.part5.sect9.subsect2.art3.sent1" number="1">
                   <text>Windows, doors, skylights and their components that do not conform to <ref type="internal"
-                          target="nbc.divB.part5.sect10.subsect2.art2"
+                          target="nbc.divB.part5.sect9.subsect2.art2"
                           display-type="long"/> shall be designed and constructed in accordance with <ref type="internal"
                           target="nbc.divB.part5.sect1.subsect4.art1"
                           display-type="long"/>, <ref type="internal" target="nbc.divB.part5.sect4" display-type="long"/> and <ref type="internal" target="nbc.divB.part5.sect6" display-type="long"/> (See <ref type="internal"
@@ -10033,13 +10045,13 @@ each 25 females.</find>
                  source-file-index="9"
                  original-sequence="13"
                  original-id="bc-013"
-                 description="Add sentence (2) about fire-protection rating in Article 5.9.3.1">
+                 description="Add sentence (2) about fire-protection rating in Article 5.8.3.1">
          <target type="position"
-                 parent-id="nbc.divB.part5.sect10.subsect3.art1"
+                 parent-id="nbc.divB.part5.sect9.subsect3.art1"
                  position="last-child"/>
          <insert>
             <new-content source="bc">
-               <sentence xml:id="nbc.divB.part5.sect9.subsect3.art1.sent2" number="2">
+               <sentence xml:id="nbc.divB.part5.sect8.subsect3.art1.sent2" number="2">
                   <text>Other fenestration assemblies and their components that are required to have a <ref type="term" target="fr-prtn">fire-protection rating</ref> need not conform to the requirements of this Subsection. (See <ref type="internal"
                           target="nbc.divB.part5.appendix.appnote43"
                           display-type="short"/>.)</text>
@@ -10126,14 +10138,14 @@ each 25 females.</find>
                  source-file-index="9"
                  original-sequence="18"
                  original-id="bc-018"
-                 description="Replace Note A-5.9.2.1.(3) with broader scope covering all fenestration assemblies">
+                 description="Replace Note A-5.8.2.1.(3) with broader scope covering all fenestration assemblies">
          <target type="canonical-id" id="nbc.divB.part5.appendix.appnote43"/>
          <replace preserve-references="true">
             <new-content source="bc">
                <application-note xml:id="nbc.divB.part5.appendix.appnote43"
                                  vendor-id="en001183"
                                  refs="es007991">
-                  <number>5.9.2.1.(3)</number>
+                  <number>5.8.2.1.(3)</number>
                   <title>Airtightness and Watertightness of Windows, Doors, Skylights, Other Fenestration Assemblies and their Components Required to have a Fire-Protection Rating</title>
                   <paragraph>The airtightness and watertightness requirements are waived for these products when used in such an application, in recognition of the fact that the availability of assemblies that meet both the requirements of the applicable standards and the requirements for fire resistance may be limited. However, control of air and water leakage should not be ignored: measures should be taken to attempt to comply with applicable requirements.</paragraph>
                </application-note>
@@ -10145,7 +10157,7 @@ each 25 females.</find>
                  source-file-index="9"
                  original-sequence="19"
                  original-id="bc-019"
-                 description="Add ASTM E 331 and E 547 standards to Note A-5.9.3">
+                 description="Add ASTM E 331 and E 547 standards to Note A-5.8.3">
          <target type="canonical-id" id="nbc.divB.part5.appendix.appnote47"/>
          <modify>
             <element-change xpath-within-target=".//paragraph/list">
@@ -28208,19 +28220,6 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
       <amendment sequence="681"
                  id="bc-combined-681"
                  source-file-index="12"
-                 original-sequence="372"
-                 original-id="bc-372"
-                 description="Change subsection reference from 5.9.1 to 5.8.1 in A-9.11.1.4.">
-         <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote82.para1"/>
-         <modify>
-            <text-change xpath-within-target=".//ref[@target='nbc.divB.part5.sect9.subsect1']/@target">
-               <set-text>nbc.divB.part5.sect8.subsect1</set-text>
-            </text-change>
-         </modify>
-      </amendment>
-      <amendment sequence="682"
-                 id="bc-combined-682"
-                 source-file-index="12"
                  original-sequence="373"
                  original-id="bc-373"
                  description="Change 'Air Barrier' to 'Air Barrier System' in A-9.13.4.3. div1 title">
@@ -28234,8 +28233,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="683"
-                 id="bc-combined-683"
+      <amendment sequence="682"
+                 id="bc-combined-682"
                  source-file-index="12"
                  original-sequence="374"
                  original-id="bc-374"
@@ -28256,8 +28255,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="684"
-                 id="bc-combined-684"
+      <amendment sequence="683"
+                 id="bc-combined-683"
                  source-file-index="12"
                  original-sequence="375"
                  original-id="bc-375"
@@ -28280,8 +28279,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="685"
-                 id="bc-combined-685"
+      <amendment sequence="684"
+                 id="bc-combined-684"
                  source-file-index="12"
                  original-sequence="376"
                  original-id="bc-376"
@@ -28362,8 +28361,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="686"
-                 id="bc-combined-686"
+      <amendment sequence="685"
+                 id="bc-combined-685"
                  source-file-index="12"
                  original-sequence="377"
                  original-id="bc-377"
@@ -28599,8 +28598,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="687"
-                 id="bc-combined-687"
+      <amendment sequence="686"
+                 id="bc-combined-686"
                  source-file-index="12"
                  original-sequence="378"
                  original-id="bc-378"
@@ -28623,8 +28622,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="688"
-                 id="bc-combined-688"
+      <amendment sequence="687"
+                 id="bc-combined-687"
                  source-file-index="12"
                  original-sequence="379"
                  original-id="bc-379"
@@ -28710,8 +28709,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="689"
-                 id="bc-combined-689"
+      <amendment sequence="688"
+                 id="bc-combined-688"
                  source-file-index="12"
                  original-sequence="380"
                  original-id="bc-380"
@@ -28726,8 +28725,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="690"
-                 id="bc-combined-690"
+      <amendment sequence="689"
+                 id="bc-combined-689"
                  source-file-index="12"
                  original-sequence="381"
                  original-id="bc-381"
@@ -28838,8 +28837,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="691"
-                 id="bc-combined-691"
+      <amendment sequence="690"
+                 id="bc-combined-690"
                  source-file-index="12"
                  original-sequence="382"
                  original-id="bc-382"
@@ -28903,8 +28902,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="692"
-                 id="bc-combined-692"
+      <amendment sequence="691"
+                 id="bc-combined-691"
                  source-file-index="12"
                  original-sequence="383"
                  original-id="bc-383"
@@ -28947,8 +28946,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="693"
-                 id="bc-combined-693"
+      <amendment sequence="692"
+                 id="bc-combined-692"
                  source-file-index="12"
                  original-sequence="384"
                  original-id="bc-384"
@@ -28973,8 +28972,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="694"
-                 id="bc-combined-694"
+      <amendment sequence="693"
+                 id="bc-combined-693"
                  source-file-index="12"
                  original-sequence="385"
                  original-id="bc-385"
@@ -28993,8 +28992,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="695"
-                 id="bc-combined-695"
+      <amendment sequence="694"
+                 id="bc-combined-694"
                  source-file-index="12"
                  original-sequence="386"
                  original-id="bc-386"
@@ -29021,8 +29020,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="696"
-                 id="bc-combined-696"
+      <amendment sequence="695"
+                 id="bc-combined-695"
                  source-file-index="12"
                  original-sequence="387"
                  original-id="bc-387"
@@ -29060,8 +29059,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="697"
-                 id="bc-combined-697"
+      <amendment sequence="696"
+                 id="bc-combined-696"
                  source-file-index="12"
                  original-sequence="388"
                  original-id="bc-388"
@@ -29222,8 +29221,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="698"
-                 id="bc-combined-698"
+      <amendment sequence="697"
+                 id="bc-combined-697"
                  source-file-index="12"
                  original-sequence="389"
                  original-id="bc-389"
@@ -29441,8 +29440,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="699"
-                 id="bc-combined-699"
+      <amendment sequence="698"
+                 id="bc-combined-698"
                  source-file-index="12"
                  original-sequence="390"
                  original-id="bc-390"
@@ -29462,8 +29461,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="700"
-                 id="bc-combined-700"
+      <amendment sequence="699"
+                 id="bc-combined-699"
                  source-file-index="12"
                  original-sequence="391"
                  original-id="bc-391"
@@ -29486,8 +29485,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="701"
-                 id="bc-combined-701"
+      <amendment sequence="700"
+                 id="bc-combined-700"
                  source-file-index="12"
                  original-sequence="392"
                  original-id="bc-392"
@@ -29510,8 +29509,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="702"
-                 id="bc-combined-702"
+      <amendment sequence="701"
+                 id="bc-combined-701"
                  source-file-index="12"
                  original-sequence="393"
                  original-id="bc-393"
@@ -29538,8 +29537,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="703"
-                 id="bc-combined-703"
+      <amendment sequence="702"
+                 id="bc-combined-702"
                  source-file-index="12"
                  original-sequence="394"
                  original-id="bc-394"
@@ -29567,8 +29566,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="704"
-                 id="bc-combined-704"
+      <amendment sequence="703"
+                 id="bc-combined-703"
                  source-file-index="12"
                  original-sequence="395"
                  original-id="bc-395"
@@ -29580,8 +29579,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="705"
-                 id="bc-combined-705"
+      <amendment sequence="704"
+                 id="bc-combined-704"
                  source-file-index="12"
                  original-sequence="396"
                  original-id="bc-396"
@@ -29596,8 +29595,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="706"
-                 id="bc-combined-706"
+      <amendment sequence="705"
+                 id="bc-combined-705"
                  source-file-index="12"
                  original-sequence="397"
                  original-id="bc-397"
@@ -29610,8 +29609,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="707"
-                 id="bc-combined-707"
+      <amendment sequence="706"
+                 id="bc-combined-706"
                  source-file-index="12"
                  original-sequence="398"
                  original-id="bc-398"
@@ -29629,8 +29628,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="708"
-                 id="bc-combined-708"
+      <amendment sequence="707"
+                 id="bc-combined-707"
                  source-file-index="12"
                  original-sequence="399"
                  original-id="bc-399"
@@ -29643,8 +29642,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="709"
-                 id="bc-combined-709"
+      <amendment sequence="708"
+                 id="bc-combined-708"
                  source-file-index="12"
                  original-sequence="400"
                  original-id="bc-400"
@@ -29657,8 +29656,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="710"
-                 id="bc-combined-710"
+      <amendment sequence="709"
+                 id="bc-combined-709"
                  source-file-index="12"
                  original-sequence="401"
                  original-id="bc-401"
@@ -29676,8 +29675,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="711"
-                 id="bc-combined-711"
+      <amendment sequence="710"
+                 id="bc-combined-710"
                  source-file-index="12"
                  original-sequence="402"
                  original-id="bc-402"
@@ -29703,8 +29702,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="712"
-                 id="bc-combined-712"
+      <amendment sequence="711"
+                 id="bc-combined-711"
                  source-file-index="12"
                  original-sequence="403"
                  original-id="bc-403"
@@ -29727,8 +29726,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="713"
-                 id="bc-combined-713"
+      <amendment sequence="712"
+                 id="bc-combined-712"
                  source-file-index="12"
                  original-sequence="404"
                  original-id="bc-404"
@@ -29736,8 +29735,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote189"/>
          <delete/>
       </amendment>
-      <amendment sequence="714"
-                 id="bc-combined-714"
+      <amendment sequence="713"
+                 id="bc-combined-713"
                  source-file-index="12"
                  original-sequence="405"
                  original-id="bc-405"
@@ -29785,8 +29784,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="715"
-                 id="bc-combined-715"
+      <amendment sequence="714"
+                 id="bc-combined-714"
                  source-file-index="12"
                  original-sequence="406"
                  original-id="bc-406"
@@ -29805,8 +29804,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="716"
-                 id="bc-combined-716"
+      <amendment sequence="715"
+                 id="bc-combined-715"
                  source-file-index="12"
                  original-sequence="407"
                  original-id="bc-407"
@@ -29996,8 +29995,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="717"
-                 id="bc-combined-717"
+      <amendment sequence="716"
+                 id="bc-combined-716"
                  source-file-index="12"
                  original-sequence="408"
                  original-id="bc-408"
@@ -30005,8 +30004,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote200"/>
          <delete/>
       </amendment>
-      <amendment sequence="718"
-                 id="bc-combined-718"
+      <amendment sequence="717"
+                 id="bc-combined-717"
                  source-file-index="12"
                  original-sequence="409"
                  original-id="bc-409"
@@ -30014,8 +30013,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote201"/>
          <delete/>
       </amendment>
-      <amendment sequence="719"
-                 id="bc-combined-719"
+      <amendment sequence="718"
+                 id="bc-combined-718"
                  source-file-index="12"
                  original-sequence="410"
                  original-id="bc-410"
@@ -30023,8 +30022,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote202"/>
          <delete/>
       </amendment>
-      <amendment sequence="720"
-                 id="bc-combined-720"
+      <amendment sequence="719"
+                 id="bc-combined-719"
                  source-file-index="12"
                  original-sequence="411"
                  original-id="bc-411"
@@ -30049,8 +30048,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="721"
-                 id="bc-combined-721"
+      <amendment sequence="720"
+                 id="bc-combined-720"
                  source-file-index="12"
                  original-sequence="412"
                  original-id="bc-412a"
@@ -30083,8 +30082,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </element-replace>
          </modify>
       </amendment>
-      <amendment sequence="722"
-                 id="bc-combined-722"
+      <amendment sequence="721"
+                 id="bc-combined-721"
                  source-file-index="12"
                  original-sequence="412"
                  original-id="bc-412b"
@@ -30098,8 +30097,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </element-replace>
          </modify>
       </amendment>
-      <amendment sequence="723"
-                 id="bc-combined-723"
+      <amendment sequence="722"
+                 id="bc-combined-722"
                  source-file-index="12"
                  original-sequence="413"
                  original-id="bc-413"
@@ -30118,8 +30117,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="724"
-                 id="bc-combined-724"
+      <amendment sequence="723"
+                 id="bc-combined-723"
                  source-file-index="12"
                  original-sequence="414"
                  original-id="bc-414"
@@ -30144,8 +30143,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </element-replace>
          </modify>
       </amendment>
-      <amendment sequence="725"
-                 id="bc-combined-725"
+      <amendment sequence="724"
+                 id="bc-combined-724"
                  source-file-index="12"
                  original-sequence="415"
                  original-id="bc-415"
@@ -30157,8 +30156,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="726"
-                 id="bc-combined-726"
+      <amendment sequence="725"
+                 id="bc-combined-725"
                  source-file-index="12"
                  original-sequence="416"
                  original-id="bc-416"
@@ -30177,8 +30176,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="727"
-                 id="bc-combined-727"
+      <amendment sequence="726"
+                 id="bc-combined-726"
                  source-file-index="12"
                  original-sequence="417"
                  original-id="bc-417"
@@ -30190,8 +30189,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="728"
-                 id="bc-combined-728"
+      <amendment sequence="727"
+                 id="bc-combined-727"
                  source-file-index="12"
                  original-sequence="418"
                  original-id="bc-418"
@@ -30212,8 +30211,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="729"
-                 id="bc-combined-729"
+      <amendment sequence="728"
+                 id="bc-combined-728"
                  source-file-index="12"
                  original-sequence="419"
                  original-id="bc-419"
@@ -30228,8 +30227,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="730"
-                 id="bc-combined-730"
+      <amendment sequence="729"
+                 id="bc-combined-729"
                  source-file-index="12"
                  original-sequence="420"
                  original-id="bc-420"
@@ -30246,8 +30245,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="731"
-                 id="bc-combined-731"
+      <amendment sequence="730"
+                 id="bc-combined-730"
                  source-file-index="12"
                  original-sequence="421"
                  original-id="bc-421"
@@ -30362,8 +30361,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="732"
-                 id="bc-combined-732"
+      <amendment sequence="731"
+                 id="bc-combined-731"
                  source-file-index="12"
                  original-sequence="422"
                  original-id="bc-422"
@@ -30380,8 +30379,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="733"
-                 id="bc-combined-733"
+      <amendment sequence="732"
+                 id="bc-combined-732"
                  source-file-index="12"
                  original-sequence="423"
                  original-id="bc-423"
@@ -30397,8 +30396,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="734"
-                 id="bc-combined-734"
+      <amendment sequence="733"
+                 id="bc-combined-733"
                  source-file-index="12"
                  original-sequence="424"
                  original-id="bc-424"
@@ -30423,8 +30422,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="735"
-                 id="bc-combined-735"
+      <amendment sequence="734"
+                 id="bc-combined-734"
                  source-file-index="12"
                  original-sequence="425"
                  original-id="bc-425"
@@ -30432,8 +30431,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote273"/>
          <delete/>
       </amendment>
-      <amendment sequence="736"
-                 id="bc-combined-736"
+      <amendment sequence="735"
+                 id="bc-combined-735"
                  source-file-index="12"
                  original-sequence="426"
                  original-id="bc-426"
@@ -30445,8 +30444,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="737"
-                 id="bc-combined-737"
+      <amendment sequence="736"
+                 id="bc-combined-736"
                  source-file-index="12"
                  original-sequence="427"
                  original-id="bc-427"
@@ -30492,8 +30491,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="738"
-                 id="bc-combined-738"
+      <amendment sequence="737"
+                 id="bc-combined-737"
                  source-file-index="12"
                  original-sequence="428"
                  original-id="bc-428"
@@ -30512,8 +30511,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="739"
-                 id="bc-combined-739"
+      <amendment sequence="738"
+                 id="bc-combined-738"
                  source-file-index="12"
                  original-sequence="429"
                  original-id="bc-429"
@@ -30521,8 +30520,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote296"/>
          <delete/>
       </amendment>
-      <amendment sequence="740"
-                 id="bc-combined-740"
+      <amendment sequence="739"
+                 id="bc-combined-739"
                  source-file-index="12"
                  original-sequence="430"
                  original-id="bc-430"
@@ -30530,8 +30529,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote297"/>
          <delete/>
       </amendment>
-      <amendment sequence="741"
-                 id="bc-combined-741"
+      <amendment sequence="740"
+                 id="bc-combined-740"
                  source-file-index="12"
                  original-sequence="431"
                  original-id="bc-431"
@@ -30558,8 +30557,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="742"
-                 id="bc-combined-742"
+      <amendment sequence="741"
+                 id="bc-combined-741"
                  source-file-index="12"
                  original-sequence="432"
                  original-id="bc-432"
@@ -30997,8 +30996,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="743"
-                 id="bc-combined-743"
+      <amendment sequence="742"
+                 id="bc-combined-742"
                  source-file-index="12"
                  original-sequence="433"
                  original-id="bc-433"
@@ -31017,8 +31016,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="744"
-                 id="bc-combined-744"
+      <amendment sequence="743"
+                 id="bc-combined-743"
                  source-file-index="12"
                  original-sequence="434"
                  original-id="bc-434"
@@ -31037,8 +31036,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="745"
-                 id="bc-combined-745"
+      <amendment sequence="744"
+                 id="bc-combined-744"
                  source-file-index="12"
                  original-sequence="435"
                  original-id="bc-435"
@@ -31057,8 +31056,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="746"
-                 id="bc-combined-746"
+      <amendment sequence="745"
+                 id="bc-combined-745"
                  source-file-index="12"
                  original-sequence="436"
                  original-id="bc-436"
@@ -31081,8 +31080,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="747"
-                 id="bc-combined-747"
+      <amendment sequence="746"
+                 id="bc-combined-746"
                  source-file-index="12"
                  original-sequence="437"
                  original-id="bc-437"
@@ -31101,8 +31100,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="748"
-                 id="bc-combined-748"
+      <amendment sequence="747"
+                 id="bc-combined-747"
                  source-file-index="12"
                  original-sequence="438"
                  original-id="bc-438"
@@ -31110,8 +31109,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote298"/>
          <delete/>
       </amendment>
-      <amendment sequence="749"
-                 id="bc-combined-749"
+      <amendment sequence="748"
+                 id="bc-combined-748"
                  source-file-index="12"
                  original-sequence="439"
                  original-id="bc-439"
@@ -31119,8 +31118,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote299"/>
          <delete/>
       </amendment>
-      <amendment sequence="750"
-                 id="bc-combined-750"
+      <amendment sequence="749"
+                 id="bc-combined-749"
                  source-file-index="12"
                  original-sequence="440"
                  original-id="bc-440"
@@ -31128,8 +31127,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote301"/>
          <delete/>
       </amendment>
-      <amendment sequence="751"
-                 id="bc-combined-751"
+      <amendment sequence="750"
+                 id="bc-combined-750"
                  source-file-index="12"
                  original-sequence="441"
                  original-id="bc-441"
@@ -31137,8 +31136,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote303"/>
          <delete/>
       </amendment>
-      <amendment sequence="752"
-                 id="bc-combined-752"
+      <amendment sequence="751"
+                 id="bc-combined-751"
                  source-file-index="12"
                  original-sequence="442"
                  original-id="bc-442"
@@ -31146,8 +31145,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote304"/>
          <delete/>
       </amendment>
-      <amendment sequence="753"
-                 id="bc-combined-753"
+      <amendment sequence="752"
+                 id="bc-combined-752"
                  source-file-index="12"
                  original-sequence="443"
                  original-id="bc-443"
@@ -31155,8 +31154,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
          <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote305"/>
          <delete/>
       </amendment>
-      <amendment sequence="754"
-                 id="bc-combined-754"
+      <amendment sequence="753"
+                 id="bc-combined-753"
                  source-file-index="13"
                  original-sequence="444"
                  original-id="bc-444"
@@ -31318,8 +31317,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="755"
-                 id="bc-combined-755"
+      <amendment sequence="754"
+                 id="bc-combined-754"
                  source-file-index="13"
                  original-sequence="448"
                  original-id="bc-448"
@@ -31328,8 +31327,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5933"/>
          <delete/>
       </amendment>
-      <amendment sequence="756"
-                 id="bc-combined-756"
+      <amendment sequence="755"
+                 id="bc-combined-755"
                  source-file-index="13"
                  original-sequence="449"
                  original-id="bc-449"
@@ -31338,8 +31337,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5934"/>
          <delete/>
       </amendment>
-      <amendment sequence="757"
-                 id="bc-combined-757"
+      <amendment sequence="756"
+                 id="bc-combined-756"
                  source-file-index="13"
                  original-sequence="450"
                  original-id="bc-450"
@@ -31348,8 +31347,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5935"/>
          <delete/>
       </amendment>
-      <amendment sequence="758"
-                 id="bc-combined-758"
+      <amendment sequence="757"
+                 id="bc-combined-757"
                  source-file-index="13"
                  original-sequence="451"
                  original-id="bc-451"
@@ -31358,8 +31357,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5936"/>
          <delete/>
       </amendment>
-      <amendment sequence="759"
-                 id="bc-combined-759"
+      <amendment sequence="758"
+                 id="bc-combined-758"
                  source-file-index="13"
                  original-sequence="452"
                  original-id="bc-452"
@@ -31368,8 +31367,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5937"/>
          <delete/>
       </amendment>
-      <amendment sequence="760"
-                 id="bc-combined-760"
+      <amendment sequence="759"
+                 id="bc-combined-759"
                  source-file-index="13"
                  original-sequence="453"
                  original-id="bc-453"
@@ -31378,8 +31377,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5938"/>
          <delete/>
       </amendment>
-      <amendment sequence="761"
-                 id="bc-combined-761"
+      <amendment sequence="760"
+                 id="bc-combined-760"
                  source-file-index="13"
                  original-sequence="454"
                  original-id="bc-454"
@@ -31388,8 +31387,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5939"/>
          <delete/>
       </amendment>
-      <amendment sequence="762"
-                 id="bc-combined-762"
+      <amendment sequence="761"
+                 id="bc-combined-761"
                  source-file-index="13"
                  original-sequence="455"
                  original-id="bc-455"
@@ -31398,8 +31397,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5940"/>
          <delete/>
       </amendment>
-      <amendment sequence="763"
-                 id="bc-combined-763"
+      <amendment sequence="762"
+                 id="bc-combined-762"
                  source-file-index="13"
                  original-sequence="456"
                  original-id="bc-456"
@@ -31408,8 +31407,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5941"/>
          <delete/>
       </amendment>
-      <amendment sequence="764"
-                 id="bc-combined-764"
+      <amendment sequence="763"
+                 id="bc-combined-763"
                  source-file-index="13"
                  original-sequence="457"
                  original-id="bc-457"
@@ -31418,8 +31417,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5942"/>
          <delete/>
       </amendment>
-      <amendment sequence="765"
-                 id="bc-combined-765"
+      <amendment sequence="764"
+                 id="bc-combined-764"
                  source-file-index="13"
                  original-sequence="458"
                  original-id="bc-458"
@@ -31428,8 +31427,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5943"/>
          <delete/>
       </amendment>
-      <amendment sequence="766"
-                 id="bc-combined-766"
+      <amendment sequence="765"
+                 id="bc-combined-765"
                  source-file-index="13"
                  original-sequence="459"
                  original-id="bc-459"
@@ -31438,8 +31437,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5944"/>
          <delete/>
       </amendment>
-      <amendment sequence="767"
-                 id="bc-combined-767"
+      <amendment sequence="766"
+                 id="bc-combined-766"
                  source-file-index="13"
                  original-sequence="460"
                  original-id="bc-460"
@@ -31448,8 +31447,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5945"/>
          <delete/>
       </amendment>
-      <amendment sequence="768"
-                 id="bc-combined-768"
+      <amendment sequence="767"
+                 id="bc-combined-767"
                  source-file-index="13"
                  original-sequence="461"
                  original-id="bc-461"
@@ -31458,8 +31457,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5946"/>
          <delete/>
       </amendment>
-      <amendment sequence="769"
-                 id="bc-combined-769"
+      <amendment sequence="768"
+                 id="bc-combined-768"
                  source-file-index="13"
                  original-sequence="462"
                  original-id="bc-462"
@@ -31468,8 +31467,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5947"/>
          <delete/>
       </amendment>
-      <amendment sequence="770"
-                 id="bc-combined-770"
+      <amendment sequence="769"
+                 id="bc-combined-769"
                  source-file-index="13"
                  original-sequence="463"
                  original-id="bc-463"
@@ -31478,8 +31477,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5948"/>
          <delete/>
       </amendment>
-      <amendment sequence="771"
-                 id="bc-combined-771"
+      <amendment sequence="770"
+                 id="bc-combined-770"
                  source-file-index="13"
                  original-sequence="464"
                  original-id="bc-464"
@@ -31488,8 +31487,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5949"/>
          <delete/>
       </amendment>
-      <amendment sequence="772"
-                 id="bc-combined-772"
+      <amendment sequence="771"
+                 id="bc-combined-771"
                  source-file-index="13"
                  original-sequence="465"
                  original-id="bc-465"
@@ -31498,8 +31497,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5950"/>
          <delete/>
       </amendment>
-      <amendment sequence="773"
-                 id="bc-combined-773"
+      <amendment sequence="772"
+                 id="bc-combined-772"
                  source-file-index="13"
                  original-sequence="466"
                  original-id="bc-466"
@@ -31508,8 +31507,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5951"/>
          <delete/>
       </amendment>
-      <amendment sequence="774"
-                 id="bc-combined-774"
+      <amendment sequence="773"
+                 id="bc-combined-773"
                  source-file-index="13"
                  original-sequence="467"
                  original-id="bc-467"
@@ -31518,8 +31517,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5952"/>
          <delete/>
       </amendment>
-      <amendment sequence="775"
-                 id="bc-combined-775"
+      <amendment sequence="774"
+                 id="bc-combined-774"
                  source-file-index="13"
                  original-sequence="468"
                  original-id="bc-468"
@@ -31528,8 +31527,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5953"/>
          <delete/>
       </amendment>
-      <amendment sequence="776"
-                 id="bc-combined-776"
+      <amendment sequence="775"
+                 id="bc-combined-775"
                  source-file-index="13"
                  original-sequence="469"
                  original-id="bc-469"
@@ -31538,8 +31537,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5954"/>
          <delete/>
       </amendment>
-      <amendment sequence="777"
-                 id="bc-combined-777"
+      <amendment sequence="776"
+                 id="bc-combined-776"
                  source-file-index="13"
                  original-sequence="470"
                  original-id="bc-470"
@@ -31548,8 +31547,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5955"/>
          <delete/>
       </amendment>
-      <amendment sequence="778"
-                 id="bc-combined-778"
+      <amendment sequence="777"
+                 id="bc-combined-777"
                  source-file-index="13"
                  original-sequence="471"
                  original-id="bc-471"
@@ -31558,8 +31557,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5956"/>
          <delete/>
       </amendment>
-      <amendment sequence="779"
-                 id="bc-combined-779"
+      <amendment sequence="778"
+                 id="bc-combined-778"
                  source-file-index="13"
                  original-sequence="472"
                  original-id="bc-472"
@@ -31568,8 +31567,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5957"/>
          <delete/>
       </amendment>
-      <amendment sequence="780"
-                 id="bc-combined-780"
+      <amendment sequence="779"
+                 id="bc-combined-779"
                  source-file-index="13"
                  original-sequence="473"
                  original-id="bc-473"
@@ -31578,8 +31577,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5958"/>
          <delete/>
       </amendment>
-      <amendment sequence="781"
-                 id="bc-combined-781"
+      <amendment sequence="780"
+                 id="bc-combined-780"
                  source-file-index="13"
                  original-sequence="474"
                  original-id="bc-474"
@@ -31588,8 +31587,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5959"/>
          <delete/>
       </amendment>
-      <amendment sequence="782"
-                 id="bc-combined-782"
+      <amendment sequence="781"
+                 id="bc-combined-781"
                  source-file-index="13"
                  original-sequence="475"
                  original-id="bc-475"
@@ -31598,8 +31597,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5960"/>
          <delete/>
       </amendment>
-      <amendment sequence="783"
-                 id="bc-combined-783"
+      <amendment sequence="782"
+                 id="bc-combined-782"
                  source-file-index="13"
                  original-sequence="476"
                  original-id="bc-476"
@@ -31608,8 +31607,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5961"/>
          <delete/>
       </amendment>
-      <amendment sequence="784"
-                 id="bc-combined-784"
+      <amendment sequence="783"
+                 id="bc-combined-783"
                  source-file-index="13"
                  original-sequence="477"
                  original-id="bc-477"
@@ -31618,8 +31617,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5962"/>
          <delete/>
       </amendment>
-      <amendment sequence="785"
-                 id="bc-combined-785"
+      <amendment sequence="784"
+                 id="bc-combined-784"
                  source-file-index="13"
                  original-sequence="478"
                  original-id="bc-478"
@@ -31628,8 +31627,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5963"/>
          <delete/>
       </amendment>
-      <amendment sequence="786"
-                 id="bc-combined-786"
+      <amendment sequence="785"
+                 id="bc-combined-785"
                  source-file-index="13"
                  original-sequence="479"
                  original-id="bc-479"
@@ -31638,8 +31637,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5964"/>
          <delete/>
       </amendment>
-      <amendment sequence="787"
-                 id="bc-combined-787"
+      <amendment sequence="786"
+                 id="bc-combined-786"
                  source-file-index="13"
                  original-sequence="480"
                  original-id="bc-480"
@@ -31648,8 +31647,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5965"/>
          <delete/>
       </amendment>
-      <amendment sequence="788"
-                 id="bc-combined-788"
+      <amendment sequence="787"
+                 id="bc-combined-787"
                  source-file-index="13"
                  original-sequence="481"
                  original-id="bc-481"
@@ -31658,8 +31657,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5966"/>
          <delete/>
       </amendment>
-      <amendment sequence="789"
-                 id="bc-combined-789"
+      <amendment sequence="788"
+                 id="bc-combined-788"
                  source-file-index="13"
                  original-sequence="482"
                  original-id="bc-482"
@@ -31668,8 +31667,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5967"/>
          <delete/>
       </amendment>
-      <amendment sequence="790"
-                 id="bc-combined-790"
+      <amendment sequence="789"
+                 id="bc-combined-789"
                  source-file-index="13"
                  original-sequence="483"
                  original-id="bc-483"
@@ -31678,8 +31677,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5968"/>
          <delete/>
       </amendment>
-      <amendment sequence="791"
-                 id="bc-combined-791"
+      <amendment sequence="790"
+                 id="bc-combined-790"
                  source-file-index="14"
                  original-sequence="1"
                  original-id="bc-001"
@@ -32947,8 +32946,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="792"
-                 id="bc-combined-792"
+      <amendment sequence="791"
+                 id="bc-combined-791"
                  source-file-index="15"
                  original-sequence="1"
                  original-id="bc-001"
@@ -32978,8 +32977,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="793"
-                 id="bc-combined-793"
+      <amendment sequence="792"
+                 id="bc-combined-792"
                  source-file-index="15"
                  original-sequence="2"
                  original-id="bc-002"
@@ -32996,8 +32995,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="794"
-                 id="bc-combined-794"
+      <amendment sequence="793"
+                 id="bc-combined-793"
                  source-file-index="15"
                  original-sequence="3"
                  original-id="bc-003"
@@ -33016,8 +33015,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="795"
-                 id="bc-combined-795"
+      <amendment sequence="794"
+                 id="bc-combined-794"
                  source-file-index="15"
                  original-sequence="4"
                  original-id="bc-004"
@@ -33067,8 +33066,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="796"
-                 id="bc-combined-796"
+      <amendment sequence="795"
+                 id="bc-combined-795"
                  source-file-index="15"
                  original-sequence="5"
                  original-id="bc-005"
@@ -33111,8 +33110,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="797"
-                 id="bc-combined-797"
+      <amendment sequence="796"
+                 id="bc-combined-796"
                  source-file-index="15"
                  original-sequence="6"
                  original-id="bc-006"
@@ -33133,8 +33132,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="798"
-                 id="bc-combined-798"
+      <amendment sequence="797"
+                 id="bc-combined-797"
                  source-file-index="15"
                  original-sequence="7"
                  original-id="bc-007"
@@ -33186,8 +33185,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="799"
-                 id="bc-combined-799"
+      <amendment sequence="798"
+                 id="bc-combined-798"
                  source-file-index="15"
                  original-sequence="8"
                  original-id="bc-008"
@@ -33335,8 +33334,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="800"
-                 id="bc-combined-800"
+      <amendment sequence="799"
+                 id="bc-combined-799"
                  source-file-index="15"
                  original-sequence="9"
                  original-id="bc-009"
@@ -33471,8 +33470,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="801"
-                 id="bc-combined-801"
+      <amendment sequence="800"
+                 id="bc-combined-800"
                  source-file-index="15"
                  original-sequence="11"
                  original-id="bc-011"
@@ -33499,8 +33498,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="802"
-                 id="bc-combined-802"
+      <amendment sequence="801"
+                 id="bc-combined-801"
                  source-file-index="15"
                  original-sequence="12"
                  original-id="bc-012"
@@ -33544,8 +33543,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="803"
-                 id="bc-combined-803"
+      <amendment sequence="802"
+                 id="bc-combined-802"
                  source-file-index="15"
                  original-sequence="13"
                  original-id="bc-013"
@@ -33683,8 +33682,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="804"
-                 id="bc-combined-804"
+      <amendment sequence="803"
+                 id="bc-combined-803"
                  source-file-index="15"
                  original-sequence="14"
                  original-id="bc-014"
@@ -33700,8 +33699,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="805"
-                 id="bc-combined-805"
+      <amendment sequence="804"
+                 id="bc-combined-804"
                  source-file-index="15"
                  original-sequence="15"
                  original-id="bc-015"
@@ -33722,8 +33721,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="806"
-                 id="bc-combined-806"
+      <amendment sequence="805"
+                 id="bc-combined-805"
                  source-file-index="15"
                  original-sequence="16"
                  original-id="bc-016"
@@ -33741,8 +33740,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="807"
-                 id="bc-combined-807"
+      <amendment sequence="806"
+                 id="bc-combined-806"
                  source-file-index="15"
                  original-sequence="17"
                  original-id="bc-017"
@@ -33760,8 +33759,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="808"
-                 id="bc-combined-808"
+      <amendment sequence="807"
+                 id="bc-combined-807"
                  source-file-index="15"
                  original-sequence="18"
                  original-id="bc-018"
@@ -33779,8 +33778,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="809"
-                 id="bc-combined-809"
+      <amendment sequence="808"
+                 id="bc-combined-808"
                  source-file-index="15"
                  original-sequence="19"
                  original-id="bc-019"
@@ -33798,8 +33797,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="810"
-                 id="bc-combined-810"
+      <amendment sequence="809"
+                 id="bc-combined-809"
                  source-file-index="15"
                  original-sequence="20"
                  original-id="bc-020"
@@ -34137,8 +34136,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="811"
-                 id="bc-combined-811"
+      <amendment sequence="810"
+                 id="bc-combined-810"
                  source-file-index="15"
                  original-sequence="21"
                  original-id="bc-021"

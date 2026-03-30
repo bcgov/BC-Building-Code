@@ -401,7 +401,7 @@
                                 type="internal"
                                 target="nbc.divA.part1.appendix.appnote2"
                                 display-type="short"
-                                />.)<!-- TODO: Verify if BC has Note A-1.1.1.1.(3) or uses NBC's Note A-1.1.1.1.(2) --></text>
+                                />.)</text>
                     </sentence>
                 </new-content>
             </replace>
@@ -1760,10 +1760,10 @@
                         number="6"
                         >
                         <text
-                            >For the design and construction of alterations to existing <ref
+                            >For the design and construction of <ref type="term" target="ltrtn">alterations</ref> to existing <ref
                                 type="term"
                                 target="bldng"
-                                >buildings</ref> to add a secondary suite, not including the design and construction of new additions or new <ref
+                                >buildings</ref> to add a <ref type="term" target="scnd-t">secondary suite</ref>, not including the design and construction of new additions or new <ref
                                 type="term"
                                 target="bldng"
                                 >buildings</ref>, the Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite in <ref
@@ -1772,9 +1772,9 @@
                                 display-type="long"
                                 /> may be substituted for requirements contained elsewhere in this Code. (See <ref
                                 type="internal"
-                                target="nbc.divA.part1.appendix.appnote4"
+                                target="nbc.divA.part1.appendix.appnote2b"
                                 display-type="short"
-                                />.)<!-- TODO: Verify note reference for A-1.1.1.1.(6) --></text>
+                                />.)</text>
                     </sentence>
                     <table xml:id="nbc.divA.part1.sect1.subsect1.art1.table2">
                         <title>Alternate Compliance Methods for Alterations to Existing Buildings to Add a Secondary Suite</title>
@@ -2567,9 +2567,9 @@
                                 target="bldng"
                                 >building</ref> which is legally protected or officially recognized as a heritage property by the Provincial government or a local government.  (See <ref
                                 type="internal"
-                                target="nbc.divA.part1.appendix.appnote6"
+                                target="nbc.divA.part1.appendix.appnote2a"
                                 display-type="short"
-                                />.)<!-- TODO: Verify note reference for A-1.1.1.1.(5) --></definition>
+                                />.)</definition>
                     </item>
                 </new-content>
             </insert>
