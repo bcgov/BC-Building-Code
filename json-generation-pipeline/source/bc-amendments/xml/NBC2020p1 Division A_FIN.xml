@@ -1724,14 +1724,12 @@
                                             target="nbc.divB.part4.sect1.subsect8"
                                             display-type="long"
                                             />.</entry>
-                                    <entry
-                                        >Existing exterior decorations are not required to fully comply to the anchorage requirements of <ref
-                                            type="internal"
-                                            target="nbc.divB.part4.sect1.subsect8"
-                                            display-type="long"
-                                            />. provided:
-                                        (a) adequate means of protection is provided, or
-                                        (b) there is no exposure to the public.</entry>
+                                    <entry>Existing exterior decorations are not required to fully comply to the anchorage requirements of <ref type="internal" target="nbc.divB.part4.sect1.subsect8" display-type="long"/>. provided:<list type="alphabetic">
+                                        <item>adequate means of protection is provided, or</item>
+                                        <item>there is no exposure to the public.</item>
+                                    </list>
+                                    </entry>
+
                                 </row>
                                 
                                 <row
