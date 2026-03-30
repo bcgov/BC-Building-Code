@@ -27,6 +27,7 @@ Welcome to the comprehensive documentation for the BC Building Code JSON Generat
 | [05-validation-troubleshooting.md](05-validation-troubleshooting.md) | Fixing common validation errors and warnings |
 | [09-json-output-guide.md](09-json-output-guide.md) | Comprehensive JSON output structure and usage guide |
 | [10-oxygen-xml-editor-guide.md](10-oxygen-xml-editor-guide.md) | **Visual editing with Oxygen XML Editor** - Complete guide for non-technical users |
+| [11-global-text-replacements.md](11-global-text-replacements.md) | Global text replacements for bulk renumbering and reorganization |
 
 ### Quick Reference
 
@@ -55,6 +56,7 @@ Welcome to the comprehensive documentation for the BC Building Code JSON Generat
 | Understand JSON output structure | [09-json-output-guide.md](09-json-output-guide.md) |
 | Work with JSON in applications | [09-json-output-guide.md](09-json-output-guide.md) → Working with the JSON |
 | Use standards reference mapping | [09-json-output-guide.md](09-json-output-guide.md) → Standards Reference Mapping |
+| Renumber sections or bulk-rename IDs | [11-global-text-replacements.md](11-global-text-replacements.md) |
 
 ---
 

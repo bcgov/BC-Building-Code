@@ -358,6 +358,42 @@ The find text `"the <ref>building</ref> shall"` won't match because `<ref>` elem
 
 ---
 
+### Operation 6: Modify - Element Change
+
+**When to use:** Add or remove sub-elements within an existing node without rebuilding the parent.
+
+**Add items to a list inside an element:**
+```xml
+<amendment id="bc-100" sequence="100"
+           description="Add new item to list in application note">
+    <target type="canonical-id" id="nbc.divB.part5.sect10.appnote47"/>
+    <modify>
+        <element-change xpath-within-target=".//paragraph/list">
+            <add-child>
+                <item xml:id="bc.divB.part5.sect10.appnote47.item_new">New item text</item>
+            </add-child>
+        </element-change>
+    </modify>
+</amendment>
+```
+
+**Remove a sub-element:**
+```xml
+<amendment id="bc-101" sequence="101"
+           description="Remove paragraph from note">
+    <target type="canonical-id" id="nbc.divA.part1.sect5.appnote7.div16"/>
+    <modify>
+        <element-change xpath-within-target=".//paragraph[3]">
+            <remove-element/>
+        </element-change>
+    </modify>
+</amendment>
+```
+
+**Important:** When adding items to a list, target the list element itself (via `element-change` on the parent), not the parent application-note with a position-based insert.
+
+---
+
 ## 4. Special Cases
 
 ### Tables
@@ -395,8 +431,47 @@ Tables use CALS table format with specific structure:
 
 **Key points:**
 - Use `<tgroup>`, `<colspec>`, `<thead>`, `<tbody>` structure
-- Table notes go in `<table-notes>` section
+- Table notes go in `<table-notes>` section after `</tgroup>` and before `</table>`
 - Row IDs follow pattern: `...table1.row1`, `...table1.row2`
+- For merged cells, use `rowspan="N"` and `colspan="N"` attributes
+- Do not use `namest`/`nameend`; merged cells use `rowspan` and `colspan`
+
+#### Table Notes Format
+
+**CRITICAL**: Table notes MUST use the `<table-notes>` structure, NOT inline `<note>` elements within entries.
+
+```xml
+<table xml:id="bc.divBV2.part9.sect36.subsect2.art8.table3">
+    <title>Table Title</title>
+    <tgroup cols="7">
+        <colspec colname="col1" colwidth="60.00*"/>
+        <!-- more colspecs -->
+        <thead>
+            <row xml:id="bc...row1">
+                <entry align="center">Column Header<super>(1)</super></entry>
+            </row>
+        </thead>
+        <tbody>
+            <row xml:id="bc...row2">
+                <entry>Row label<super>(2)</super></entry>
+                <entry align="center">Value</entry>
+            </row>
+        </tbody>
+    </tgroup>
+    <table-notes>
+        <note xml:id="bc...note1">Notes to Table X.X.X.X.-X:</note>
+        <note xml:id="bc...note2"><super>(1)</super> First note text here.</note>
+        <note xml:id="bc...note3"><super>(2)</super> Second note text.</note>
+    </table-notes>
+</table>
+```
+
+**Key rules:**
+1. First note: Always "Notes to Table X.X.X.X.-X:" without superscript
+2. Subsequent notes: Start with `<super>(N)</super>` matching the superscript in the table entry
+3. In-table references: Use `<super>(N)</super>` in entries, NOT `<note>` elements
+4. Note IDs: Sequential numbering: `note1`, `note2`, `note3`, etc.
+5. References in notes: Can include `<ref>` elements for cross-references
 
 ### Table Row Insertions
 

@@ -42,7 +42,7 @@ Merges multiple BC amendment files into a single combined overlay document. Hand
 ```bash
 java -jar json-generation-pipeline/tools/saxon.jar \
   -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
-  -s:proposed/amendment-list.xml \
+  -s:json-generation-pipeline/source/bc-amendments/amendment-list.xml \
   -o:json-generation-pipeline/output/bc-amendments-combined.xml
 ```
 
@@ -50,7 +50,7 @@ java -jar json-generation-pipeline/tools/saxon.jar \
 ```bash
 java -jar json-generation-pipeline/tools/saxon.jar \
   -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
-  -s:proposed/revision-list.xml \
+  -s:json-generation-pipeline/source/bc-revisions/revision-list.xml \
   -o:json-generation-pipeline/output/bc-revisions-combined.xml
 ```
 
@@ -301,22 +301,22 @@ Amendment 284: bc-023 -> bc-combined-284
 
 Combine structural changes to NBC:
 ```bash
-# List file: proposed/amendment-list.xml
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/combine-amendments.xsl \
-  -s:proposed/amendment-list.xml \
-  -o:bc-amendments-combined.xml
+# List file: json-generation-pipeline/source/bc-amendments/amendment-list.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
+  -s:json-generation-pipeline/source/bc-amendments/amendment-list.xml \
+  -o:json-generation-pipeline/output/bc-amendments-combined.xml
 ```
 
 ### 2. Revision Amendments (Phase 2)
 
 Combine date-based revisions:
 ```bash
-# List file: proposed/revision-list.xml
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/combine-amendments.xsl \
-  -s:proposed/revision-list.xml \
-  -o:bc-revisions-combined.xml
+# List file: json-generation-pipeline/source/bc-revisions/revision-list.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
+  -s:json-generation-pipeline/source/bc-revisions/revision-list.xml \
+  -o:json-generation-pipeline/output/bc-revisions-combined.xml
 ```
 
 ### 3. Incremental Development
@@ -348,12 +348,12 @@ Combine amendments as they're developed:
 After combining, validate the output:
 ```bash
 # Validate against schema
-java -jar NBC2020XML/AE_custom/jing/jing.jar \
+java -jar json-generation-pipeline/tools/jing.jar \
   proposed/bc-overlay.rng \
-  bc-amendments-combined.xml
+  json-generation-pipeline/output/bc-amendments-combined.xml
 
 # Check amendment count
-grep -c "<amendment" bc-amendments-combined.xml
+grep -c "<amendment" json-generation-pipeline/output/bc-amendments-combined.xml
 ```
 
 ## Dependencies
@@ -372,6 +372,6 @@ After combining amendments:
 ## Related Files
 
 - **Schema**: `proposed/bc-overlay.rng`
-- **Merge engine**: `merge-engine-v3.xsl`
-- **Validation**: `validate-amendments.xsl`
-- **Amendment lists**: `proposed/amendment-list.xml`, `proposed/revision-list.xml`
+- **Merge engine**: `json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl`
+- **Validation**: `json-generation-pipeline/transformation-xslt/validate-amendments.xsl`
+- **Amendment lists**: `json-generation-pipeline/source/bc-amendments/amendment-list.xml`, `json-generation-pipeline/source/bc-revisions/revision-list.xml`

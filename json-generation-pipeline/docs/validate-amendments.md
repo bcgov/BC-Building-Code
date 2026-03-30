@@ -397,16 +397,16 @@ Shows which source file each amendment came from:
 Run after each merge to verify amendments:
 ```bash
 # Apply amendments
-java -jar xmlToJson/saxon.jar -xsl:proposed/merge-engine.xsl \
-  -s:nbc-canonical.xml overlay-document=bc-amendments-combined.xml \
-  -o:bc-building-code.xml
+java -jar json-generation-pipeline/tools/saxon.jar -xsl:json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl \
+  -s:json-generation-pipeline/output/nbc-canonical.xml overlay-document=json-generation-pipeline/output/bc-amendments-combined.xml \
+  -o:json-generation-pipeline/output/bc-building-code.xml
 
 # Validate
-java -jar xmlToJson/saxon.jar -xsl:proposed/validate-amendments.xsl \
-  -s:bc-amendments-combined.xml \
-  combined-amendments=bc-amendments-combined.xml \
-  bc-building-code=bc-building-code.xml \
-  -o:validation-report.html
+java -jar json-generation-pipeline/tools/saxon.jar -xsl:json-generation-pipeline/transformation-xslt/validate-amendments.xsl \
+  -s:json-generation-pipeline/output/bc-amendments-combined.xml \
+  combined-amendments=json-generation-pipeline/output/bc-amendments-combined.xml \
+  bc-building-code=json-generation-pipeline/output/bc-building-code.xml \
+  -o:json-generation-pipeline/output/validation-report.html
 
 # Open report
 start validation-report.html  # Windows
@@ -422,11 +422,11 @@ Automate validation in build pipeline:
 # validate.sh
 
 # Run validation
-java -jar xmlToJson/saxon.jar -xsl:proposed/validate-amendments.xsl \
-  -s:bc-amendments-combined.xml \
-  combined-amendments=bc-amendments-combined.xml \
-  bc-building-code=bc-building-code.xml \
-  -o:validation-report.html
+java -jar json-generation-pipeline/tools/saxon.jar -xsl:json-generation-pipeline/transformation-xslt/validate-amendments.xsl \
+  -s:json-generation-pipeline/output/bc-amendments-combined.xml \
+  combined-amendments=json-generation-pipeline/output/bc-amendments-combined.xml \
+  bc-building-code=json-generation-pipeline/output/bc-building-code.xml \
+  -o:json-generation-pipeline/output/validation-report.html
 
 # Check for failures
 FAILED=$(grep -c 'status error' validation-report.html)
@@ -464,7 +464,7 @@ After validation:
 
 ## Related Files
 
-- **Merge engine**: `merge-engine-v3.xsl`
-- **Combine tool**: `combine-amendments.xsl`
-- **JSON generator**: `canonical-to-json.xsl`
+- **Merge engine**: `json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl`
+- **Combine tool**: `json-generation-pipeline/transformation-xslt/combine-amendments.xsl`
+- **JSON generator**: `json-generation-pipeline/transformation-xslt/canonical-to-json.xsl`
 - **Schemas**: `proposed/bc-overlay.rng`, `proposed/canonical-nbc.rng`

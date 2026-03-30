@@ -490,17 +490,17 @@ Merge complete.
 After merging, validate the output:
 ```bash
 # Schema validation
-java -jar NBC2020XML/AE_custom/jing/jing.jar \
+java -jar json-generation-pipeline/tools/jing.jar \
   proposed/canonical-nbc.rng \
-  bc-building-code.xml
+  json-generation-pipeline/output/bc-building-code.xml
 
 # Amendment validation
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/validate-amendments.xsl \
-  -s:bc-amendments-combined.xml \
-  combined-amendments=bc-amendments-combined.xml \
-  bc-building-code=bc-building-code.xml \
-  -o:amendment-validation-report.html
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/validate-amendments.xsl \
+  -s:json-generation-pipeline/output/bc-amendments-combined.xml \
+  combined-amendments=json-generation-pipeline/output/bc-amendments-combined.xml \
+  bc-building-code=json-generation-pipeline/output/bc-building-code.xml \
+  -o:json-generation-pipeline/output/amendment-validation-report.html
 ```
 
 ## Dependencies
@@ -519,6 +519,6 @@ After merging:
 ## Related Files
 
 - **Schema**: `proposed/canonical-nbc.rng`, `proposed/bc-overlay.rng`
-- **Validation**: `validate-amendments.xsl`
-- **JSON generator**: `canonical-to-json.xsl`
-- **Combine tool**: `combine-amendments.xsl`
+- **Validation**: `json-generation-pipeline/transformation-xslt/validate-amendments.xsl`
+- **JSON generator**: `json-generation-pipeline/transformation-xslt/canonical-to-json.xsl`
+- **Combine tool**: `json-generation-pipeline/transformation-xslt/combine-amendments.xsl`

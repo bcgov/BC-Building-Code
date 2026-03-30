@@ -536,30 +536,30 @@ function getContentAtDate(element, targetDate) {
 ### Combine Revision Files
 
 ```bash
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/combine-amendments.xsl \
-  -s:proposed/revision-list.xml \
-  -o:bc-revisions-combined.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
+  -s:json-generation-pipeline/source/bc-revisions/revision-list.xml \
+  -o:json-generation-pipeline/output/bc-revisions-combined.xml
 ```
 
 ### Apply Revisions
 
 ```bash
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/merge-engine.xsl \
-  -s:bc-building-code.xml \
-  overlay-document=bc-revisions-combined.xml \
-  -o:bc-building-code-final.xml
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl \
+  -s:json-generation-pipeline/output/bc-building-code.xml \
+  overlay-document=json-generation-pipeline/output/bc-revisions-combined.xml \
+  -o:json-generation-pipeline/output/bc-building-code-final.xml
 ```
 
 ### Validate Revisions
 
 ```bash
-java -jar xmlToJson/saxon.jar \
-  -xsl:proposed/validate-amendments.xsl \
-  -s:bc-revisions-combined.xml \
-  combined-amendments=bc-revisions-combined.xml \
-  bc-building-code=bc-building-code-final.xml \
+java -jar json-generation-pipeline/tools/saxon.jar \
+  -xsl:json-generation-pipeline/transformation-xslt/validate-amendments.xsl \
+  -s:json-generation-pipeline/output/bc-revisions-combined.xml \
+  combined-amendments=json-generation-pipeline/output/bc-revisions-combined.xml \
+  bc-building-code=json-generation-pipeline/output/bc-building-code-final.xml \
   -o:revision-validation-report.html
 ```
 
