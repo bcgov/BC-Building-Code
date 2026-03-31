@@ -3,11 +3,11 @@
 
 #### Process overview - how the BCBC JSON file gets created in the first place
 
-The BCBC.json file ```BuildingCode.json``` gets built through transforming the NBC XML file in ```json-generation-pipeline\source\nbc-2020-xml``` , applying amendments in word documents and xml documents in ```json-generation-pipeline\source\bc-amendments``` and applying revisions from ministerial orders in ```json-generation-pipeline\source\bc-revisions``` 
+The BCBC.json file ```BuildingCode.json``` gets built through transforming the NBC XML file in ```json-generation-pipeline/source/nbc-2020-xml``` , applying amendments in word documents and xml documents in ```json-generation-pipeline/source/bc-amendments``` and applying revisions from ministerial orders in ```json-generation-pipeline/source/bc-revisions``` 
 
 The architecture is shown below ![BCBC pipeline architecture](json-generation-pipeline/ARCHITECTURE.jpg)
 
-The process involves multiple XSLT transformations using the Oxygen XML tool which can be automated through calling the Oxygen API through Java command-line calls. This process is well documented in  [json-generation-pipeline\docs\README.md](json-generation-pipeline\docs\README.md)
+The process involves multiple XSLT transformations using the Oxygen XML tool which can be automated through calling the Oxygen API through Java command-line calls. This process is well documented in  [json-generation-pipeline/docs/README.md](json-generation-pipeline/docs/README.md)
 
 Note that the development process creates a new BCBC JSON in location ```BC-Building-Code/json-generation-pipeline/output/bc-building-code.json``` , as well as a schema change (if applicable) to file ```BC-Building-Code/json-generation-pipeline/output/bc-building-code-schema.json```. It is necessary to copy these files manually to ```BuildingCode.json``` and ```schema.json``` resp.  The best way to do this is to check out the ```BuildingCode.json``` and ```schema.json``` files on a 
 branch off the ```develop``` branch (probably the same branch you used to generate the new JSON file) and replace the content with that of the generated file  ```BC-Building-Code/json-generation-pipeline/output/bc-building-code.json``` and ```BC-Building-Code/json-generation-pipeline/output/bc-building-code-schema.json``` resp. ,then raise a PR to merge the files to the develop branch. 
@@ -16,7 +16,7 @@ branch off the ```develop``` branch (probably the same branch you used to genera
 
 #### BCBC JSON file validation 
 
-Once a new JSON file has been generated, it needs to be validated. This process is described in [docs\VALIDATION_PIPELINE.md](docs\VALIDATION_PIPELINE.md). 
+Once a new JSON file has been generated, it needs to be validated. This process is described in [docs/VALIDATION_PIPELINE.md](docs/VALIDATION_PIPELINE.md). 
 
 The validation process is run when a merge attempt at a pull request is performed onto the dev branch. Hence the need to do development work on the JSON file on a branch OFF the develop branch, then open a PR to merge back onto the dev branch. 
 
@@ -31,10 +31,12 @@ Instructions for achieving the second goal are contained here https://github.com
 
 The BCBC JSON file references a number of static mages in the following folders :
 [bc-graphics](bc-graphics)
+
 [graphics](graphics)
 
 . If these change or are updated manually, they need to be checked into the corresponding folders on the viewer repo 
 
 https://github.com/bcgov/HOUS-Interactive-BCBC/tree/develop/apps/web/public/bc-graphics
+
 https://github.com/bcgov/HOUS-Interactive-BCBC/tree/develop/apps/web/public/graphics
 
