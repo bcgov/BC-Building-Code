@@ -1,0 +1,43 @@
+name: Generate BC Building Code Artifact
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  build:
+    # Allow run only when the workflow is dispatched from a branch
+    if: ${{ github.ref == 'refs/heads/develop' }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Run transformation pipeline
+        run: bash .github/scripts/run-pipeline.sh
+
+
+      - name: Upload combined artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bc-building-code-artifact
+          path: |
+            json-generation-pipeline/output/**
+            bc-graphics/**
+            graphics/**
+
+      - name: Trigger Repo B sync
+        if: success()
+        run: |
+          curl -X POST \
+            -H "Authorization: Bearer ${{ secrets.REPO_B_TRIGGER_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/bcgov/HOUS-Interactive-BCBC/dispatches \
+            -d "{\"event_type\":\"sync-from-repo-a\",\"client_payload\":{\"branch\":\"${GITHUB_REF_NAME}\"}}"
