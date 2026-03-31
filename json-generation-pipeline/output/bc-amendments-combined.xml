@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-30T21:58:54.003-07:00"
+            generated="2026-03-30T22:29:55.599-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -1427,7 +1427,7 @@
                <clause xml:id="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2" letter="b">
                   <text>except as required by <ref type="internal"
                           target="nbc.divA.part1.sect2.subsect1.art1.sent3"
-                          display-type="short"/>, using alternative solutions, accepted by the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> under <ref type="internal" target="nbc.divC.part2.sect3" display-type="long"/> of Division C, that will achieve at least the minimum level of performance required by Division B in the areas defined by the objectives and functional statements attributed to the applicable acceptable solutions (see <ref type="internal"
+                          display-type="short"/>, using alternative solutions, accepted by the <ref type="term" target="bc-thrt-hvn">authority having jurisdiction</ref> under <ref type="internal" target="nbc.divC.part2.sect3" display-type="long"/>, that will achieve at least the minimum level of performance required by Division B in the areas defined by the objectives and functional statements attributed to the applicable acceptable solutions (see <ref type="internal"
                           target="nbc.divA.part1.appendix.appnote4"
                           display-type="short"/>).</text>
                </clause>
@@ -1764,7 +1764,7 @@
                   <term>Registered professional of record</term>
                   <definition>means a <emphasis style="italic">registered professional</emphasis> retained to undertake design work and field review in accordance with <ref type="internal"
                           target="nbc.divC.part2.sect2.subsect7"
-                          display-type="long"/> of Division C.</definition>
+                          display-type="long"/>.</definition>
                </item>
             </new-content>
          </insert>
@@ -12844,7 +12844,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                              target="nbc.divB.part3.sect1.subsect2.art7"
                              display-type="long"/> to be classified as a Group D, <ref type="term" target="bn-nd-pr">business and personal services occupancy</ref>, provided the <ref type="term" target="bldng">building</ref> in which the <ref type="term" target="mbl-ccpn">assembly occupancy</ref> is located complies with <ref type="internal"
                              target="nbc.divA.part1.sect3.subsect3.art3.sent1"
-                             display-type="long"/> of Division A. (See Note A-3.1.2.7.)</text>
+                             display-type="long"/>. (See Note A-3.1.2.7.)</text>
                   </sentence>
                </article>
             </new-content>
@@ -30497,11 +30497,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                           target="nbc.divB.part10.sect2.subsect3.art2.sent1"
                           display-type="long"/>, and <ref type="internal"
                           target="nbc.divB.part10.sect2.subsect3.art2.sent2"
-                          display-type="long"/> of Division B, and <ref type="internal"
+                          display-type="long"/> and <ref type="internal"
                           target="nbc.divC.part2.sect2.subsect8.art3.sent3"
-                          display-type="long"/> of Division C are not italicized, to differentiate them from the defined term <ref type="term" target="flr-r">floor area</ref> in <ref type="internal"
+                          display-type="long"/> are not italicized, to differentiate them from the defined term <ref type="term" target="flr-r">floor area</ref> in <ref type="internal"
                           target="nbc.divA.part1.sect4.subsect1.art2"
-                          display-type="long"/> of Division A.</paragraph>
+                          display-type="long"/>.</paragraph>
                   <paragraph xml:id="nbc.divBV2.part9.appendix.appnote295a.para2">Different modelling approaches identify the applicable floor area in various ways (e.g. modelled floor area, heated floor area, treated floor area, etc.) and the use of the words floor area in <ref type="internal"
                           target="nbc.divBV2.part9.sect37.subsect6.art2.sent1"
                           display-type="long"/>, <ref type="internal"
@@ -30512,9 +30512,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                           target="nbc.divB.part10.sect2.subsect3.art2.sent1"
                           display-type="long"/>, and <ref type="internal"
                           target="nbc.divB.part10.sect2.subsect3.art2.sent2"
-                          display-type="long"/> of Division B, and <ref type="internal"
+                          display-type="long"/>, and <ref type="internal"
                           target="nbc.divC.part2.sect2.subsect8.art3.sent3"
-                          display-type="long"/> of Division C is intended to accommodate the various modelling approaches.</paragraph>
+                          display-type="long"/> is intended to accommodate the various modelling approaches.</paragraph>
                </application-note>
             </new-content>
          </insert>
@@ -31729,7 +31729,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            <sentence xml:id="nbc.divB.part10.sect1.subsect1.art1.sent1" number="1">
                               <text>The scope of this Part shall be as described in <ref type="internal"
                                       target="nbc.divA.part1.sect3.subsect3"
-                                      display-type="long"/> of Division A.</text>
+                                      display-type="long"/>.</text>
                            </sentence>
                         </article>
                         <article xml:id="nbc.divB.part10.sect1.subsect1.art2" number="2">
@@ -31737,7 +31737,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            <sentence xml:id="nbc.divB.part10.sect1.subsect1.art2.sent1" number="1">
                               <text>The application of this Part shall be as described in <ref type="internal"
                                       target="nbc.divA.part1.sect3.subsect3"
-                                      display-type="long"/> of Division A.</text>
+                                      display-type="long"/>.</text>
                            </sentence>
                         </article>
                      </subsection>
@@ -32930,7 +32930,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                         <paragraph>
                            <ref type="internal"
                                 target="nbc.divA.part1.sect1.subsect1.art2.sent1"
-                                display-type="long"/> of Division A states that the level of <ref type="term" target="bldng">building</ref> performance shall not be decreased below a level that already exists. For example, a new <ref type="term" target="ccpnc">occupancy</ref> may be permitted a higher lighting power density by the ANSI/ASHRAE/IES 90.1 standard or the NECB than the lighting power density that was permitted for a previous <ref type="term" target="ccpnc">occupancy</ref>. This does not constitute a decrease in the level of <ref type="term" target="bldng">building</ref> performance, provided the design meets the minimum requirements of the relevant Code or standard.</paragraph>
+                                display-type="long"/> states that the level of <ref type="term" target="bldng">building</ref> performance shall not be decreased below a level that already exists. For example, a new <ref type="term" target="ccpnc">occupancy</ref> may be permitted a higher lighting power density by the ANSI/ASHRAE/IES 90.1 standard or the NECB than the lighting power density that was permitted for a previous <ref type="term" target="ccpnc">occupancy</ref>. This does not constitute a decrease in the level of <ref type="term" target="bldng">building</ref> performance, provided the design meets the minimum requirements of the relevant Code or standard.</paragraph>
                      </application-note>
                      <application-note xml:id="nbc.divB.part10.appendix.appnote3">
                         <number>10.2.3.2.(2)</number>
