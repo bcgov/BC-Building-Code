@@ -682,8 +682,8 @@
         <xsl:variable name="sentence-id" select="ancestor::sentence[1]/@xml:id"/>
         <xsl:variable name="appnote-id" select="ancestor::application-note[1]/@xml:id"/>
 
-        <!-- O(1) lookups -->
-        <xsl:variable name="list-item-inserts" select="map:get($amendments-by-appnote-id, string($appnote-id))"/>
+        <!-- O(1) lookups — check appnote first, then fall back to sentence for list-item-insert -->
+        <xsl:variable name="list-item-inserts" select="(map:get($amendments-by-appnote-id, string($appnote-id)), map:get($amendments-by-appnote-id, string($sentence-id)))"/>
         <xsl:variable name="sentence-level-item-inserts" select="map:get($amendments-by-parent-id, string($sentence-id))[.//new-content/item]"/>
 
         <xsl:copy>
