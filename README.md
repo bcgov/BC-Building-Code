@@ -17,8 +17,8 @@ For information about the timing of the established effective dates, and in-stre
 
 ## Structure of this Repository 
 
-The main document required to build this repository is in BUILD.md. which describes the build process and references other documentation in the repository. For the project structure please see [docs\project-structure.md](docs\project-structure.md).
- For a complete list of the JSON generation pipeline structure  please see [json-generation-pipeline\FOLDER-STRUCTURE.md](json-generation-pipeline\FOLDER-STRUCTURE.md) . 
+The main document required to build this repository is in BUILD.md. which describes the build process and references other documentation in the repository. For the project structure please see [docs/project-structure.md](docs/project-structure.md).
+ For a complete list of the JSON generation pipeline structure  please see [json-generation-pipeline/FOLDER-STRUCTURE.md](json-generation-pipeline/FOLDER-STRUCTURE.md) . 
 
 ## BC Building Code acknowledgements and copyright
 
