@@ -15,6 +15,11 @@ This version of the BC Building Code is provided to licensee subscribers to enab
 Under no circumstances will the Government of British Columbia be liable to any person or business entity for any direct, indirect, special, incidental, consequential, or other damages based on any use of this version of the BC Building Code, including, without limitation, any lost profits, business interruption, or loss of programs or information, even if the Government of British Columbia has been specifically advised of the possibility of such damages. 
 For information about the timing of the established effective dates, and in-stream protection for specific projects, please visit the Government of British Columbia  <a href="(https://www2.gov.bc.ca/gov/content/industry/construction-industry/building-codes-standards/bc-codes/2024-bc-codes"><u>website</u></a>.
 
+## Structure of this Repository 
+
+The main document required to build this repository is in BUILD.md. which describes the build process and references other documentation in the repository. For the project structure please see [docs\project-structure.md](docs\project-structure.md).
+ For a complete list of the JSON generation pipeline structure  please see [json-generation-pipeline\FOLDER-STRUCTURE.md](json-generation-pipeline\FOLDER-STRUCTURE.md) . 
+
 ## BC Building Code acknowledgements and copyright
 
 **Copyright 2024 Province of British Columbia**
