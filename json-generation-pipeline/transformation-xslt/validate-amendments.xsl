@@ -551,6 +551,41 @@
                 </xsl:choose>
             </xsl:when>
             
+            <!-- List-item-insert -->
+            <xsl:when test="$target/@type = 'list-item-insert'">
+                <xsl:variable name="parent-id" select="$target/@parent-id"/>
+                <xsl:variable name="match-text" select="$target/@match-item-containing"/>
+                <xsl:variable name="position" select="$target/@position"/>
+                <xsl:variable name="parent-element" select="($bc-code-doc//*[@xml:id = $parent-id or @xml:id = replace($parent-id, '^nbc\.', 'bc.')])[1]"/>
+
+                <xsl:choose>
+                    <xsl:when test="not($parent-element)">
+                        <xsl:attribute name="status">error</xsl:attribute>
+                        <xsl:attribute name="message">Parent element not found</xsl:attribute>
+                        <xsl:attribute name="error">Parent with ID '<xsl:value-of select="$parent-id"/>' does not exist</xsl:attribute>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <!-- Check if the new item content exists inside a list under the parent -->
+                        <xsl:variable name="new-item-text" select="normalize-space(string-join($new-content//text(), ' '))"/>
+                        <xsl:variable name="content-found" select="
+                            some $item in $parent-element//list/item satisfies
+                                contains(normalize-space(string-join($item//text(), ' ')), substring($new-item-text, 1, 50))
+                        "/>
+                        <xsl:choose>
+                            <xsl:when test="$content-found">
+                                <xsl:attribute name="status">success</xsl:attribute>
+                                <xsl:attribute name="message">List item successfully inserted <xsl:value-of select="$position"/> item containing '<xsl:value-of select="$match-text"/>'</xsl:attribute>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:attribute name="status">error</xsl:attribute>
+                                <xsl:attribute name="message">Inserted list item not found</xsl:attribute>
+                                <xsl:attribute name="error">Expected item content not found in any list under parent '<xsl:value-of select="$parent-id"/>'</xsl:attribute>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </xsl:otherwise>
+                </xsl:choose>
+            </xsl:when>
+
             <xsl:otherwise>
                 <xsl:attribute name="status">warning</xsl:attribute>
                 <xsl:attribute name="message">Insert validation not fully implemented for this target type</xsl:attribute>
