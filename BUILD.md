@@ -23,6 +23,18 @@ The validation process is run when a merge attempt at a pull request is performe
 #### Using the new BCBC JSON file
 
 Most likely the next integration point will be using the newly generated and validated JSON files (schema and content)  in the BCBC Viewer. There are 2 possibilities - the first being an UPGRADE of the existing BCBC JSON schema and content files (for example , correcting an error , or adding a new amendment ), the second being the addition of a completely new version of the  BCBC JSON to co-exist with the existing version (selectable in the UI). For the former,  the easiest way to achieve this is to replace the existing BCBC JSON and schema files in the repo https://github.com/bcgov/HOUS-Interactive-BCBC , at the time of writing , these versions were called [bcbc-2024.json](https://github.com/bcgov/HOUS-Interactive-BCBC/blob/develop/data/source/bcbc-2024.json) and [bc-building-code-schema.json](https://github.com/bcgov/HOUS-Interactive-BCBC/blob/develop/data/source/bc-building-code-schema.json) resp. - but they may have been replaced with later versions - so check out the current version in file [versions.json](https://github.com/bcgov/HOUS-Interactive-BCBC/blob/develop/data/source/versions.json)
-Check out this file on the develop branch, replace the content with the new file and commit it. 
+Check out these files on the develop branch, replace the content with the new files and commit them. 
 
 Instructions for achieving the second goal are contained here https://github.com/bcgov/HOUS-Interactive-BCBC/blob/develop/docs/HOW-TO-ADD-NEW-VERSION.md
+
+#### Image files
+
+The BCBC JSON file references a number of static mages in the following folders :
+[bc-graphics](bc-graphics)
+[graphics](graphics)
+
+. If these change or are updated manually, they need to be checked into the corresponding folders on the viewer repo 
+
+https://github.com/bcgov/HOUS-Interactive-BCBC/tree/develop/apps/web/public/bc-graphics
+https://github.com/bcgov/HOUS-Interactive-BCBC/tree/develop/apps/web/public/graphics
+
