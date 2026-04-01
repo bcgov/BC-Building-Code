@@ -30,6 +30,7 @@ Instructions for achieving the second goal are contained here https://github.com
 #### Image files
 
 The BCBC JSON file references a number of static mages in the following folders :
+
 [bc-graphics](bc-graphics)
 
 [graphics](graphics)
@@ -39,4 +40,10 @@ The BCBC JSON file references a number of static mages in the following folders 
 https://github.com/bcgov/HOUS-Interactive-BCBC/tree/develop/apps/web/public/bc-graphics
 
 https://github.com/bcgov/HOUS-Interactive-BCBC/tree/develop/apps/web/public/graphics
+
+
+### Note
+There is a trigger which gets triggered on the successful creation of the new artifacts on the building code repo, which calls an action on the viewer repository which creates a branch, copies the BCBC JSON and schema files into bcbc-2024.json and bc-building-code-schema.json resp. and unzips the image files into the image folders bc-images and images. 
+
+In other words, all that should be necessary is the merging of the PR onto the ```develop``` branch on the  https://github.com/bcgov/HOUS-Interactive-BCBC repo, and the automatic deployment of the new files should occur. 
 
