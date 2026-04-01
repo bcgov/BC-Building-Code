@@ -1,5 +1,5 @@
 ## BUILD.md 
-### Instructions for building and validation a new BC Building code JSON file
+### Instructions for building and validating a new BC Building code JSON file
 
 #### Process overview - how the BCBC JSON file gets created in the first place
 
