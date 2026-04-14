@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-04-10T15:42:11.941544-07:00"
+            generated="2026-04-14T10:08:35.642353-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -26609,13 +26609,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableA.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableA.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26670,13 +26668,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableB.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableB.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26731,13 +26727,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableC.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableC.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26792,13 +26786,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableD.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableD.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26853,13 +26845,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableE.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableE.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26914,13 +26904,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableF.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableF.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26994,21 +26982,17 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> When a "house" is a dwelling unit forming part of a multi-unit building, as per Sentence 9.36.6.1.(1), requirements of Subsection 9.36.6. apply to entire building.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG.note1">
+                              <text>When a "house" is a dwelling unit forming part of a multi-unit building, as per Sentence 9.36.6.1.(1), requirements of Subsection 9.36.6. apply to entire building.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(3)</super> See Sentence 9.36.6.5.(6)</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG.note3">
+                              <text>See Sentence 9.36.6.5.(6)</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(4)</super> See Sentence 9.36.6.5.(7)</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG.note4">
+                              <text>See Sentence 9.36.6.5.(7)</text>
                            </note>
                         </table-notes>
                      </table>
@@ -27453,9 +27437,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableH.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
                         </table-notes>
                      </table>
