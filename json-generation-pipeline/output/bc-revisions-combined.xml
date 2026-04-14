@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-30T22:29:56.901-07:00"
+            generated="2026-04-10T15:44:04.180103-07:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -9596,6 +9596,16 @@ Spaces within Buildings
                                  </row>
                               </tbody>
                            </tgroup>
+                           <table-notes>
+                              <note xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table1.note1">
+                                 <text>See <ref type="internal"
+                                         target="nbc.divBV2.part9.sect23.subsect3.art5.sent3"
+                                         display-type="short"/> for a description of framing types and fastening requirements.</text>
+                              </note>
+                              <note xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table1.note2">
+                                 <text>NP = not permitted. Values within round brackets are permitted for <ref type="term" target="br-wl-pnl">braced wall panels</ref> with gypsum board installed on both sides.</text>
+                              </note>
+                           </table-notes>
                         </content>
                         <change-summary>Struck out the image in the second row of the Storey column and substituted bc-graphics/gg00555a.eps</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
@@ -9696,6 +9706,16 @@ Spaces within Buildings
                                  </row>
                               </tbody>
                            </tgroup>
+                           <table-notes>
+                              <note xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table2.note1">
+                                 <text>See <ref type="internal"
+                                         target="nbc.divBV2.part9.sect23.subsect3.art5.sent3"
+                                         display-type="short"/> for a description of framing types and fastening requirements.</text>
+                              </note>
+                              <note xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table2.note2">
+                                 <text>NP = not permitted. Values within round brackets are permitted for <ref type="term" target="br-wl-pnl">braced wall panels</ref> with gypsum board installed on both sides.</text>
+                              </note>
+                           </table-notes>
                         </content>
                         <change-summary>Struck out the image in the second row of the Storey column and substituted bc-graphics/gg00556a.eps</change-summary>
                         <note>Ministerial Order BA 2024 06</note>
