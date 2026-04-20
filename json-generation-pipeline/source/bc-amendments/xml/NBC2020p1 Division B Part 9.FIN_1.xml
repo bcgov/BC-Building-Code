@@ -610,24 +610,33 @@ incorporate a thermal break.</find>
         </amendment>
         
         <!-- ================================================================== -->
-        <!-- Amendment 033: Add new sentence marked as Reserved                 -->
-        <!-- Article 9.7.3.3.(4) - Thermal Characteristics                     -->
+        <!-- Amendment 033: Replace NBC Sentence 9.7.3.3.(4) with Reserved    -->
+        <!-- NBC sent4 referenced Table 9.7.3.3 (deleted by bc-033b); BC      -->
+        <!-- replaces with "Reserved." per BC Building Code Word doc, pg 16   -->
+        <!-- Article 9.7.3.3.(4) - Thermal Characteristics                    -->
         <!-- ================================================================== -->
         <amendment id="bc-033" sequence="33"
-                   description="Add new Sentence 9.7.3.3.(4) marked as Reserved">
-            <target type="position" 
-                    parent-id="nbc.divBV2.part9.sect7.subsect3.art3"
-                    position="after"
-                    reference-id="nbc.divBV2.part9.sect7.subsect3.art3.sent3"/>
-            <insert>
+                   description="Replace NBC Sentence 9.7.3.3.(4) with 'Reserved.' (NBC sentence referenced the deleted Table 9.7.3.3)">
+            <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect3.art3.sent4"/>
+            <replace preserve-references="false">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divBV2.part9.sect7.subsect3.art3.sent4" number="4">
                         <text>Reserved.</text>
                     </sentence>
                 </new-content>
-            </insert>
+            </replace>
         </amendment>
-        
+
+        <!-- ================================================================== -->
+        <!-- Amendment 033b: Delete Table 9.7.3.3. - not part of BC Building  -->
+        <!-- Code (table absent from BC Building Code Word doc, pg 16)         -->
+        <!-- ================================================================== -->
+        <amendment id="bc-033b" sequence="33.1"
+                   description="Delete Table 9.7.3.3. - table is not part of the BC Building Code">
+            <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect3.art3.table1"/>
+            <delete/>
+        </amendment>
+
         <!-- ================================================================== -->
         <!-- Amendment 034: Replace entire subsection with new structure       -->
         <!-- Subsection 9.7.4 - Design and Construction                        -->
