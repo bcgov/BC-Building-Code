@@ -529,6 +529,20 @@ Before committing amendments:
 - **Fix**: Added `<xsl:apply-templates select="example">` at the appnote level in `nbc-to-canonical.xsl`, passing `$appnote-id` as `parent-id`. Requires full pipeline rebuild from canonical step.
 - **Rule**: If an appendix note appears in the output with only `<number>` and `<title>` but visibly has content in the Word doc, check whether the NBC source uses `<example>` directly inside `<appnote>` rather than `<para>`.
 
+### Example G: NBC Source Wrong Sentence Number — D-2.3.3.(3)
+
+- **Target**: `nbc.divB.appendixD.appsect2.subsect3.article3.para3`
+- **Problem**: The NBC vendor XML (`en000477.3`) has `<number>4)</number>` for what is visibly the 3rd sentence in D-2.3.3. There is no sentence 3 in the source — it jumps from 2 to 4. The rendered output shows `4)` instead of `3)`.
+- **Fix**: Phase 1 overlay amendment `bc-019` using `element-replace` to replace the full paragraph, correcting `4)` → `3)` and supplying explicit display text on the three `<ref>` elements (see below).
+- **Rule**: When the NBC source has a wrong sentence number, use `element-replace` on the paragraph rather than `text-change`, especially when the paragraph also contains `<ref>` elements that need fixing.
+
+### Example H: Table Refs Rendering Wrong Label — D-2.3.3 Tables D-2.3.4.-A/B/C
+
+- **Target**: `nbc.divB.appendixD.appsect2.subsect3.article3.para3` (same as Example G)
+- **Problem**: The three `<ref>` elements in D-2.3.3.(3) point to `article4.table1/2/3`. The front-end derives labels from the canonical ID, rendering them as `D.2.3.4.`, `D.2.3.4.` and `D.2.3.4.` (dots, no letter suffix) instead of `D-2.3.4.-A`, `D-2.3.4.-B` and `D-2.3.4.-C`.
+- **Fix**: Combined with Example G in amendment `bc-019`. Each `<ref>` is given explicit display text content (`Table D-2.3.4.-A`, `D-2.3.4.-B`, `D-2.3.4.-C`) so the front-end uses that text rather than auto-generating from the ID.
+- **Rule**: When a table's canonical ID does not produce the correct BC-style label (e.g. letter suffix `-A`, `-B`, `-C`), supply explicit display text inside the `<ref>` element rather than relying on `display-type` auto-generation.
+
 ---
 
 ## Next Steps
