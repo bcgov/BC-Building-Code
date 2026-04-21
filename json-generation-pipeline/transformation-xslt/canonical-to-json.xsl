@@ -301,7 +301,9 @@
                             <xsl:if test="current-group()[1]/@vendor-id">
                                 <fn:string key="vendor_id"><xsl:value-of select="current-group()[1]/@vendor-id"/></fn:string>
                             </xsl:if>
-                            <fn:string key="content"><xsl:apply-templates select="current-group()[1]" mode="rich-text-json"/></fn:string>
+                            <xsl:call-template name="render-note-content">
+                                <xsl:with-param name="note" select="current-group()[1]"/>
+                            </xsl:call-template>
                         </fn:map>
                     </xsl:for-each-group>
                 </fn:array>
@@ -1317,7 +1319,9 @@
                             <xsl:if test="current-group()[1]/@vendor-id">
                                 <fn:string key="vendor_id"><xsl:value-of select="current-group()[1]/@vendor-id"/></fn:string>
                             </xsl:if>
-                            <fn:string key="content"><xsl:apply-templates select="current-group()[1]" mode="rich-text-json"/></fn:string>
+                            <xsl:call-template name="render-note-content">
+                                <xsl:with-param name="note" select="current-group()[1]"/>
+                            </xsl:call-template>
                         </fn:map>
                     </xsl:for-each-group>
                 </fn:array>
@@ -2272,6 +2276,31 @@
         <xsl:value-of select="@type"/>
         <xsl:text>]</xsl:text>
     </xsl:template>
+
+    <!-- Named template for rendering a table note that may contain an inline list.
+         Emits a flat "content" string when no list is present, or "content" + structured
+         "list" object when a child <list> element exists (mixed content note). -->
+    <xsl:template name="render-note-content">
+        <xsl:param name="note"/>
+        <xsl:choose>
+            <xsl:when test="$note/list">
+                <fn:string key="content">
+                    <xsl:apply-templates select="$note/node()[not(self::list)]" mode="rich-text-json"/>
+                </fn:string>
+                <fn:map key="list">
+                    <fn:string key="type"><xsl:value-of select="$note/list/@type"/></fn:string>
+                    <fn:array key="items">
+                        <xsl:for-each select="$note/list/item">
+                            <fn:string><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                        </xsl:for-each>
+                    </fn:array>
+                </fn:map>
+            </xsl:when>
+            <xsl:otherwise>
+                <fn:string key="content"><xsl:apply-templates select="$note" mode="rich-text-json"/></fn:string>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     
     <!-- Revision history processing for JSON output (snapshot approach for date-based versioning) -->
     <!-- Display content comes from the latest revision (status="current") -->
@@ -2875,7 +2904,9 @@
                             <xsl:if test="current-group()[1]/@vendor-id">
                                 <fn:string key="vendor_id"><xsl:value-of select="current-group()[1]/@vendor-id"/></fn:string>
                             </xsl:if>
-                            <fn:string key="content"><xsl:apply-templates select="current-group()[1]" mode="rich-text-json"/></fn:string>
+                            <xsl:call-template name="render-note-content">
+                                <xsl:with-param name="note" select="current-group()[1]"/>
+                            </xsl:call-template>
                         </fn:map>
                     </xsl:for-each-group>
                 </fn:array>
@@ -2969,7 +3000,9 @@
                                 <xsl:if test="current-group()[1]/@vendor-id">
                                     <fn:string key="vendor_id"><xsl:value-of select="current-group()[1]/@vendor-id"/></fn:string>
                                 </xsl:if>
-                                <fn:string key="content"><xsl:apply-templates select="current-group()[1]" mode="rich-text-json"/></fn:string>
+                                <xsl:call-template name="render-note-content">
+                                    <xsl:with-param name="note" select="current-group()[1]"/>
+                                </xsl:call-template>
                             </fn:map>
                         </xsl:for-each-group>
                     </fn:array>

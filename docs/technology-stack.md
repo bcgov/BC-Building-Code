@@ -179,7 +179,7 @@ Each division in the JSON output includes:
 ### Table JSON Structure (for web rendering)
 
 Table objects include render-critical metadata for merged cells and notes:
-- `table_notes[]` with `{id, content}` for footnotes
+- `table_notes[]` with `{id, content}` for footnotes; notes with an inline sub-list also include a `list` object `{type, items[]}` for structured rendering
 - `structure.header_rows[]` / `structure.body_rows[]` with row objects (`id`, `type`, `cells`)
 - Per-cell span metadata: `rowspan`, `colspan`
 - Optional table/grid style metadata: `frame`, `structure.colsep`, `structure.rowsep`

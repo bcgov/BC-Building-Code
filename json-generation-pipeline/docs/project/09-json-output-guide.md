@@ -487,6 +487,19 @@ Tables contain structured data within articles.
     {
       "id": "nbc.divA.part1.sect1.subsect1.art1.table1.note1",
       "content": "See Note A-Table 1.1.1.1."
+    },
+    {
+      "id": "nbc.divBV2.part9.sect8.subsect4.art1.table1.note1",
+      "vendor_id": "et001049-2",
+      "content": "Private stairs are exterior and interior stairs that serve",
+      "list": {
+        "type": "bulleted",
+        "items": [
+          "single [REF:term:dwllng-n:dwelling units] ,",
+          "houses with a [REF:term:scnd-t:secondary suite] including their common spaces, or",
+          "garages that serve houses described in Clause a) or b)."
+        ]
+      }
     }
   ],
   "structure": {
@@ -532,7 +545,7 @@ Tables contain structured data within articles.
 | `frame` | string | Table frame styling from XML (optional) |
 | `source` | string | `"bc"` if BC-specific (optional) |
 | `title` | string | Table title |
-| `table_notes` | array | Resolved table notes with IDs and note text (optional) |
+| `table_notes` | array | Resolved table notes (optional). Each note has `id`, optional `vendor_id`, and `content` (string). Notes whose source XML contains an inline `<list>` also include a `list` object with `type` (e.g. `"bulleted"`) and `items` (array of strings), allowing the frontend to render the sub-list beneath the note text. |
 | `structure.columns` | number | Number of columns |
 | `structure.colsep` | string | Column separator style from XML (optional) |
 | `structure.rowsep` | string | Row separator style from XML (optional) |
