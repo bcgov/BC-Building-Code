@@ -514,6 +514,21 @@ Before committing amendments:
 - **Problem**: XPath `.//measurement[@units='metric']` not supported
 - **Fix**: `element-replace element="text"`
 
+### Example E: Table Dropped by Article Replace (9.8.7.1)
+
+- **Target**: `nbc.divBV2.part9.sect8.subsect7.art1`
+- **Problem**: Amendment `bc-070` replaced the article to renumber sentences and add secondary suite references, but `<new-content>` only contained the sentences — not the "Number of Sides of Stair or Ramp Required to Have a Handrail" table (`et001232`). The table was silently dropped. The only symptom was a broken reference in `broken-references-full.txt`: `Target (Not Found): nbc.divBV2.part9.sect8.subsect7.art1.table1`
+- **Fix**: Add the full `<table>` block from `nbc-canonical.xml` into `<new-content>` between sentence 1 and sentence 2
+- **Rule**: When replacing an article with `<replace>`, always copy all `<table>` children from the canonical source into `<new-content>`
+
+### Example F: Application Note Content Missing — `<example>` Not Processed (A-9.36.1.1.(1))
+
+- **Target**: `nbc.divBV2.part9.appendix.appnote210`
+- **Problem**: The NBC source XML wraps the formula content (a borderless 3-column table) inside an `<example>` element directly under `<appnote>`. The `nbc-to-canonical.xsl` appnote template processed `para`, `division`, `table`, and `figure` children but had no handler for direct `<example>` children — so the formula table was silently dropped during canonical conversion. The note rendered with only its title in the output.
+- **Affected notes**: 4 total — `en001737` (A-9.36.1.1.(1)), `en001794`, `en001795` (Trading R-values of Windows), `en000324` (Concrete Topping)
+- **Fix**: Added `<xsl:apply-templates select="example">` at the appnote level in `nbc-to-canonical.xsl`, passing `$appnote-id` as `parent-id`. Requires full pipeline rebuild from canonical step.
+- **Rule**: If an appendix note appears in the output with only `<number>` and `<title>` but visibly has content in the Word doc, check whether the NBC source uses `<example>` directly inside `<appnote>` rather than `<para>`.
+
 ---
 
 ## Next Steps

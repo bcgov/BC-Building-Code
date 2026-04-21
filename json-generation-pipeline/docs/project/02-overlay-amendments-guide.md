@@ -436,6 +436,20 @@ Tables use CALS table format with specific structure:
 - For merged cells, use `rowspan="N"` and `colspan="N"` attributes
 - Do not use `namest`/`nameend`; merged cells use `rowspan` and `colspan`
 
+#### CRITICAL: Include Tables When Replacing Articles
+
+When using `<replace>` on an entire article, the `<new-content>` must include **all child elements** of that article — including any tables the article contains. The merge engine performs a full replacement: any element in the original article not present in `<new-content>` will be dropped.
+
+**Common mistake:** Replacing an article to update its sentences without carrying over the article's tables. The table then disappears from the output with no validation error, since the broken `[REF:internal:...]` reference to the missing table is the only symptom.
+
+**How to check:** After adding a `<replace>` amendment for an article, search for `<table>` children in the original canonical element and include them verbatim in `<new-content>`:
+
+```bash
+grep -n "xml:id=\"nbc.divBV2.part9.sect8.subsect7.art1" json-generation-pipeline/output/nbc-canonical.xml
+```
+
+**Real example fixed:** Amendment `bc-070` replaced article `9.8.7.1` to renumber sentences but omitted the "Number of Sides of Stair or Ramp Required to Have a Handrail" table (`et001232`), causing it to disappear from the output. Fix: add the full `<table>` block to `<new-content>` between sentence 1 and sentence 2, matching the original document order.
+
 #### Table Notes Format
 
 **CRITICAL**: Table notes MUST use the `<table-notes>` structure, NOT inline `<note>` elements within entries.

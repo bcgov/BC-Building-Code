@@ -544,6 +544,11 @@
           <xsl:apply-templates select="table | figure">
             <xsl:with-param name="parent-id" select="$appnote-id" />
           </xsl:apply-templates>
+
+          <!-- Handle example elements directly in notes (e.g. formula tables) -->
+          <xsl:apply-templates select="example">
+            <xsl:with-param name="parent-id" select="$appnote-id" />
+          </xsl:apply-templates>
         </application-note>
       </xsl:for-each>
     </part-appendix>

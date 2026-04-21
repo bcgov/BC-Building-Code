@@ -487,6 +487,22 @@ Tables contain structured data within articles.
     {
       "id": "nbc.divA.part1.sect1.subsect1.art1.table1.note1",
       "content": "See Note A-Table 1.1.1.1."
+    },
+    {
+      "id": "nbc.divBV2.part9.sect8.subsect4.art1.table1.note1",
+      "vendor_id": "et001049-2",
+      "content": [
+        { "type": "text", "value": "Private stairs are exterior and interior stairs that serve" },
+        {
+          "type": "list",
+          "list_type": "bulleted",
+          "items": [
+            { "content": "single [REF:term:dwllng-n:dwelling units] ," },
+            { "content": "houses with a [REF:term:scnd-t:secondary suite] including their common spaces, or" },
+            { "content": "garages that serve houses described in Clause a) or b)." }
+          ]
+        }
+      ]
     }
   ],
   "structure": {
@@ -529,10 +545,10 @@ Tables contain structured data within articles.
 |----------|------|-------------|
 | `id` | string | Canonical ID |
 | `type` | string | Always `"table"` |
-| `frame` | string | Table frame styling from XML (optional) |
+| `frame` | string | Table frame styling from XML (optional). `"all"` = full borders; `"none"` = no borders — render as a formula/equation layout, not a data table (e.g. A-9.36.1.1.(1) Energy Used by the Building). Frontend must suppress all borders and the table title when `frame === "none"`. |
 | `source` | string | `"bc"` if BC-specific (optional) |
 | `title` | string | Table title |
-| `table_notes` | array | Resolved table notes with IDs and note text (optional) |
+| `table_notes` | array | Resolved table notes (optional). Each note has `id`, optional `vendor_id`, and `content`. When the note contains only text, `content` is a flat string. When the note contains an inline sub-list (mixed content), `content` is an array matching the cell content format: `[{ "type": "text", "value": "..." }, { "type": "list", "list_type": "...", "items": [{ "content": "..." }] }]` — the frontend can reuse the same list-rendering logic as cell content. |
 | `structure.columns` | number | Number of columns |
 | `structure.colsep` | string | Column separator style from XML (optional) |
 | `structure.rowsep` | string | Row separator style from XML (optional) |
@@ -541,6 +557,45 @@ Tables contain structured data within articles.
 | `structure.body_rows` | array | Body row data |
 | `structure.*.cells[].rowspan` | number | Numeric row span for merged cells (optional) |
 | `structure.*.cells[].colspan` | number | Numeric column span for merged cells (optional) |
+
+### Formula Tables (`frame: "none"`)
+
+Some application notes use a borderless 3-column table to display a formula or equation broken across lines (e.g. A-9.36.1.1.(1)). These originate from `<example><table frame="none">` in the NBC source XML.
+
+The frontend must render these **without borders and without displaying the table title**, using only column alignment to convey the formula layout (right-aligned label, centred operator, left-aligned description):
+
+```json
+{
+  "id": "nbc.divBV2.part9.appendix.appnote210.example1.table1",
+  "type": "table",
+  "title": "",
+  "frame": "none",
+  "structure": {
+    "columns": 3,
+    "column_specs": [
+      { "name": "col1", "width": "85*" },
+      { "name": "col2", "width": "5*" },
+      { "name": "col3", "width": "171*" }
+    ],
+    "body_rows": [
+      {
+        "cells": [
+          { "content": [{ "type": "text", "value": "Energy used by the building" }], "colsep": "0", "rowsep": "0" },
+          { "content": [{ "type": "text", "value": "=" }], "colsep": "0", "rowsep": "0" },
+          { "content": [{ "type": "text", "value": "space-heating energy lost and gained through building envelope" }], "rowsep": "0" }
+        ]
+      },
+      {
+        "cells": [
+          { "content": [{ "type": "text", "value": "" }], "colsep": "0", "rowsep": "0" },
+          { "content": [{ "type": "text", "value": "+" }], "colsep": "0", "rowsep": "0" },
+          { "content": [{ "type": "text", "value": "losses due to inefficiencies of heating equipment" }], "rowsep": "0" }
+        ]
+      }
+    ]
+  }
+}
+```
 
 ---
 

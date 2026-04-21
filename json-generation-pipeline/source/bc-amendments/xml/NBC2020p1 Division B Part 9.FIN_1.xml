@@ -610,24 +610,33 @@ incorporate a thermal break.</find>
         </amendment>
         
         <!-- ================================================================== -->
-        <!-- Amendment 033: Add new sentence marked as Reserved                 -->
-        <!-- Article 9.7.3.3.(4) - Thermal Characteristics                     -->
+        <!-- Amendment 033: Replace NBC Sentence 9.7.3.3.(4) with Reserved    -->
+        <!-- NBC sent4 referenced Table 9.7.3.3 (deleted by bc-033b); BC      -->
+        <!-- replaces with "Reserved." per BC Building Code Word doc, pg 16   -->
+        <!-- Article 9.7.3.3.(4) - Thermal Characteristics                    -->
         <!-- ================================================================== -->
         <amendment id="bc-033" sequence="33"
-                   description="Add new Sentence 9.7.3.3.(4) marked as Reserved">
-            <target type="position" 
-                    parent-id="nbc.divBV2.part9.sect7.subsect3.art3"
-                    position="after"
-                    reference-id="nbc.divBV2.part9.sect7.subsect3.art3.sent3"/>
-            <insert>
+                   description="Replace NBC Sentence 9.7.3.3.(4) with 'Reserved.' (NBC sentence referenced the deleted Table 9.7.3.3)">
+            <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect3.art3.sent4"/>
+            <replace preserve-references="false">
                 <new-content source="bc">
                     <sentence xml:id="nbc.divBV2.part9.sect7.subsect3.art3.sent4" number="4">
                         <text>Reserved.</text>
                     </sentence>
                 </new-content>
-            </insert>
+            </replace>
         </amendment>
-        
+
+        <!-- ================================================================== -->
+        <!-- Amendment 033b: Delete Table 9.7.3.3. - not part of BC Building  -->
+        <!-- Code (table absent from BC Building Code Word doc, pg 16)         -->
+        <!-- ================================================================== -->
+        <amendment id="bc-033b" sequence="33.1"
+                   description="Delete Table 9.7.3.3. - table is not part of the BC Building Code">
+            <target type="canonical-id" id="nbc.divBV2.part9.sect7.subsect3.art3.table1"/>
+            <delete/>
+        </amendment>
+
         <!-- ================================================================== -->
         <!-- Amendment 034: Replace entire subsection with new structure       -->
         <!-- Subsection 9.7.4 - Design and Construction                        -->
@@ -1361,6 +1370,65 @@ shall turn through an angle of</find>
                         <sentence xml:id="nbc.divBV2.part9.sect8.subsect7.art1.sent1" number="1">
                             <text>Except as provided in Sentences (2) to (4), handrails shall be installed on stairs and <ref type="term" target="rmp">ramps</ref> in accordance with <ref type="internal" target="nbc.divBV2.part9.sect8.subsect7.art1.table1" display-type="long"/></text>
                         </sentence>
+                        <table xml:id="nbc.divBV2.part9.sect8.subsect7.art1.table1"
+                               vendor-id="et001232"
+                               frame="all">
+                            <title>Number of Sides of Stair or Ramp Required to Have a Handrail</title>
+                            <forming-part>
+                                <ref type="internal"
+                                     target="nbc.divBV2.part9.sect8.subsect7.art1.sent1"
+                                     display-type="long"/>
+                            </forming-part>
+                            <tgroup cols="6">
+                                <colspec colname="col1" colwidth="48.00*"/>
+                                <colspec colname="col2" colwidth="48.00*"/>
+                                <colspec colname="col3" colwidth="48.00*"/>
+                                <colspec colname="col4" colwidth="48.00*"/>
+                                <colspec colname="col5" colwidth="48.00*"/>
+                                <colspec colname="col6" colwidth="48.00*"/>
+                                <thead>
+                                    <row xml:id="nbc.divBV2.part9.sect8.subsect7.art1.table1.row1" valign="middle">
+                                        <entry colsep="1" rowsep="1" rowspan="4">Location of Stair or <ref type="term" target="rmp">Ramp</ref></entry>
+                                        <entry colsep="1" rowsep="1" colspan="3">Handrails Serving Stairs</entry>
+                                        <entry colsep="1" rowsep="1" colspan="2">Handrails Serving <ref type="term" target="rmp">Ramps</ref></entry>
+                                    </row>
+                                    <row xml:id="nbc.divBV2.part9.sect8.subsect7.art1.table1.row2" valign="middle">
+                                        <entry colsep="1" rowsep="1" colspan="2">Stairs <measurement units="metric">&lt; 1 100 mm Wide</measurement></entry>
+                                        <entry colsep="1" rowsep="1">Stairs <measurement units="metric">≥ 1 100 mm Wide</measurement></entry>
+                                        <entry colsep="1" rowsep="1"><ref type="term" target="rmp">Ramps</ref> <measurement units="metric">&lt; 1 100 mm Wide</measurement></entry>
+                                        <entry colsep="1" rowsep="1"><ref type="term" target="rmp">Ramps</ref> <measurement units="metric">≥ 1 100 mm Wide</measurement></entry>
+                                    </row>
+                                    <row xml:id="nbc.divBV2.part9.sect8.subsect7.art1.table1.row3" valign="middle">
+                                        <entry colsep="1" rowsep="1">Straight</entry>
+                                        <entry colsep="1" rowsep="1">Curved</entry>
+                                        <entry colsep="1" rowsep="1">All</entry>
+                                        <entry colsep="1" rowsep="1">Straight or Curved</entry>
+                                        <entry colsep="1" rowsep="1">All</entry>
+                                    </row>
+                                    <row xml:id="nbc.divBV2.part9.sect8.subsect7.art1.table1.row4" valign="middle">
+                                        <entry colsep="1" rowsep="1" colspan="5">Number of Sides Required to Have a Handrail</entry>
+                                    </row>
+                                </thead>
+                                <tbody>
+                                    <row xml:id="nbc.divBV2.part9.sect8.subsect7.art1.table1.row5" valign="middle">
+                                        <entry colsep="1" rowsep="1">Within a <ref type="term" target="dwllng-n">dwelling unit</ref> or a house with a <ref type="term" target="scnd-t">secondary suite</ref></entry>
+                                        <entry colsep="1" rowsep="1">1</entry>
+                                        <entry colsep="1" rowsep="1">1</entry>
+                                        <entry colsep="1" rowsep="1">1</entry>
+                                        <entry colsep="1" rowsep="1">1</entry>
+                                        <entry colsep="1" rowsep="1">2</entry>
+                                    </row>
+                                    <row xml:id="nbc.divBV2.part9.sect8.subsect7.art1.table1.row6" valign="middle">
+                                        <entry colsep="1" rowsep="1">All other locations</entry>
+                                        <entry colsep="1" rowsep="1">1</entry>
+                                        <entry colsep="1" rowsep="1">2</entry>
+                                        <entry colsep="1" rowsep="1">2</entry>
+                                        <entry colsep="1" rowsep="1">2</entry>
+                                        <entry colsep="1" rowsep="1">2</entry>
+                                    </row>
+                                </tbody>
+                            </tgroup>
+                        </table>
                         <sentence xml:id="nbc.divBV2.part9.sect8.subsect7.art1.sent2" number="2">
                             <text>Except where a stair or <ref type="term" target="rmp">ramp</ref> serves not more than two <ref type="term" target="dwllng-n">dwelling units</ref>, at least one handrail shall be located not more than <measurement units="metric">750 mm</measurement> from the natural path of travel on the stair or <ref type="term" target="rmp">ramp</ref>. (See Note A-9.8.7.1.(2).)</text>
                         </sentence>
