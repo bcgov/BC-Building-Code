@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-03-30T22:29:55.599-07:00"
+            generated="2026-04-14T10:56:14.267551-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -14347,37 +14347,33 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  original-id="bc-156"
                  description="Add table notes after Table 9.23.3.4">
          <target type="position"
-                 parent-id="nbc.divBV2.part9.sect23.subsect3.art4"
-                 position="after"
-                 reference-id="nbc.divBV2.part9.sect23.subsect3.art4.table1"/>
+                 parent-id="nbc.divBV2.part9.sect23.subsect3.art4.table1"
+                 position="last-child"/>
          <insert>
             <new-content source="bc">
-               <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.appnote1">
-                  <text>
-                     <super>(1)</super> See Note A-9.23.3.1.(2).</text>
-               </note>
-               <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.appnote2">
-                  <text>
-                     <super>(2)</super> See <ref type="internal"
-                          target="nbc.divBV2.part9.sect23.subsect11.art4"
-                          display-type="long"/> for requirements on the nailing of top plates splices in <ref type="term" target="br-wl-bnd">braced wall bands</ref>.</text>
-               </note>
-               <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.appnote3">
-                  <text>
-                     <super>(3)</super> See <ref type="internal"
-                          target="nbc.divBV2.part9.sect23.subsect3.art4.sent2"
-                          display-type="short"/>.</text>
-               </note>
-               <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.appnote4">
-                  <text>
-                     <super>(4)</super> See <ref type="internal"
-                          target="nbc.divBV2.part9.sect23.subsect3.art4.sent3"
-                          display-type="short"/>.</text>
-               </note>
-               <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.appnote5">
-                  <text>
-                     <super>(5)</super> Where heavyweight construction is used in the roof of the space, at least 8 nails are required (see Note A-9.23.13.2.(3)).</text>
-               </note>
+               <table-notes>
+                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.table1.note1">
+                     <text>See Note A-9.23.3.1.(2).</text>
+                  </note>
+                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.table1.note2">
+                     <text>See <ref type="internal"
+                             target="nbc.divBV2.part9.sect23.subsect11.art4"
+                             display-type="long"/> for requirements on the nailing of top plates splices in <ref type="term" target="br-wl-bnd">braced wall bands</ref>.</text>
+                  </note>
+                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.table1.note3">
+                     <text>See <ref type="internal"
+                             target="nbc.divBV2.part9.sect23.subsect3.art4.sent2"
+                             display-type="short"/>.</text>
+                  </note>
+                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.table1.note4">
+                     <text>See <ref type="internal"
+                             target="nbc.divBV2.part9.sect23.subsect3.art4.sent3"
+                             display-type="short"/>.</text>
+                  </note>
+                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.table1.note5">
+                     <text>Where heavyweight construction is used in the roof of the space, at least 8 nails are required (see Note A-9.23.13.2.(3)).</text>
+                  </note>
+               </table-notes>
             </new-content>
          </insert>
       </amendment>
@@ -14488,11 +14484,12 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </row>
                         </tbody>
                      </tgroup>
+                     <table-notes>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table1.note1">
+                           <text>See Note A-9.23.3.1.(2).</text>
+                        </note>
+                     </table-notes>
                   </table>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote1">
-                     <text>
-                        <super>(1)</super> See Note A-9.23.3.1.(2).</text>
-                  </note>
                   <sentence xml:id="nbc.divBV2.part9.sect23.subsect3.art5.sent2" number="2">
                      <text>Except as provided in <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect3.art5.sent4"
@@ -14577,23 +14574,22 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </row>
                         </tbody>
                      </tgroup>
+                     <table-notes>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table2.note1">
+                           <text>See <ref type="internal"
+                                   target="nbc.divBV2.part9.sect4.subsect2.art5"
+                                   display-type="long"/>.</text>
+                        </note>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table2.note2">
+                           <text>See Note A-9.23.3.1.(2).</text>
+                        </note>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table2.note3">
+                           <text>See <ref type="internal"
+                                   target="nbc.divBV2.part9.sect23.subsect16.art5"
+                                   display-type="long"/>.</text>
+                        </note>
+                     </table-notes>
                   </table>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote2">
-                     <text>
-                        <super>(1)</super> See <ref type="internal"
-                             target="nbc.divBV2.part9.sect4.subsect2.art5"
-                             display-type="long"/>.</text>
-                  </note>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote3">
-                     <text>
-                        <super>(2)</super> See Note A-9.23.3.1.(2).</text>
-                  </note>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote4">
-                     <text>
-                        <super>(3)</super> See <ref type="internal"
-                             target="nbc.divBV2.part9.sect23.subsect16.art5"
-                             display-type="long"/>.</text>
-                  </note>
                   <sentence xml:id="nbc.divBV2.part9.sect23.subsect3.art5.sent3" number="3">
                      <text>Except as provided in <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect3.art5.sent4"
@@ -14699,57 +14695,50 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </row>
                         </tbody>
                      </tgroup>
+                     <table-notes>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table3.note1">
+                           <text>See Note A-Table 9.23.3.5.-C.</text>
+                        </note>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table3.note2">
+                           <text>Plywood, OSB, waferboard and board lumber shall conform to the material standards specified in <ref type="internal"
+                                   target="nbc.divBV2.part9.sect23.subsect17"
+                                   display-type="long"/>. Wood-based panels may be installed vertically or horizontally. Gypsum sheathing shall conform to the requirements of gypsum board in <ref type="internal"
+                                   target="nbc.divBV2.part9.sect29.subsect5"
+                                   display-type="long"/>.</text>
+                        </note>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table3.note3">
+                           <text>See Note A-9.23.3.1.(2).</text>
+                        </note>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table3.note4">
+                           <text>For plywood, OSB, or waferboard panel sheathing, the maximum fastener spacing along intermediate supports shall be 300 mm o.c. For gypsum sheathing, the maximum spacing along intermediate supports shall conform to <ref type="internal"
+                                   target="nbc.divBV2.part9.sect29.subsect5.art8.sent4"
+                                   display-type="medium"/> for nails and <ref type="internal"
+                                   target="nbc.divBV2.part9.sect29.subsect5.art9.sent4"
+                                   display-type="medium"/> for screws.</text>
+                        </note>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table3.note5">
+                           <text>Nails for GWB framing types shall conform to <ref type="internal"
+                                   target="nbc.divBV2.part9.sect29.subsect5.art6"
+                                   display-type="long"/>.</text>
+                        </note>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table3.note6">
+                           <text>Screws for GWB framing types shall conform to <ref type="internal"
+                                   target="nbc.divBV2.part9.sect29.subsect5.art7"
+                                   display-type="long"/>.</text>
+                        </note>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table3.note7">
+                           <text>Where blocking is required, horizontal joints of panel sheathing shall occur over blocking consisting of not less than 38 mm x 89 mm lumber oriented either edgewise or flatwise, and the panel sheathing shall be fastened to the blocking.</text>
+                        </note>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table3.note8">
+                           <text>Nails for WSP and DWB framing types shall conform to <ref type="internal"
+                                   target="nbc.divBV2.part9.sect23.subsect3.art1"
+                                   display-type="long"/>.</text>
+                        </note>
+                        <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table3.note9">
+                           <text>NP = Not permitted</text>
+                        </note>
+                     </table-notes>
                   </table>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote5">
-                     <text>
-                        <super>(1)</super> See Note A-Table 9.23.3.5.-C.</text>
-                  </note>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote6">
-                     <text>
-                        <super>(2)</super> Plywood, OSB, waferboard and board lumber shall conform to the material standards specified in <ref type="internal"
-                             target="nbc.divBV2.part9.sect23.subsect17"
-                             display-type="long"/>. Wood-based panels may be installed vertically or horizontally. Gypsum sheathing shall conform to the requirements of gypsum board in <ref type="internal"
-                             target="nbc.divBV2.part9.sect29.subsect5"
-                             display-type="long"/>.</text>
-                  </note>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote7">
-                     <text>
-                        <super>(3)</super> See Note A-9.23.3.1.(2).</text>
-                  </note>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote8">
-                     <text>
-                        <super>(4)</super> For plywood, OSB, or waferboard panel sheathing, the maximum fastener spacing along intermediate supports shall be 300 mm o.c. For gypsum sheathing, the maximum spacing along intermediate supports shall conform to <ref type="internal"
-                             target="nbc.divBV2.part9.sect29.subsect5.art8.sent4"
-                             display-type="medium"/> for nails and <ref type="internal"
-                             target="nbc.divBV2.part9.sect29.subsect5.art9.sent4"
-                             display-type="medium"/> for screws.</text>
-                  </note>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote9">
-                     <text>
-                        <super>(5)</super> Nails for GWB framing types shall conform to <ref type="internal"
-                             target="nbc.divBV2.part9.sect29.subsect5.art6"
-                             display-type="long"/>.</text>
-                  </note>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote10">
-                     <text>
-                        <super>(6)</super> Screws for GWB framing types shall conform to <ref type="internal"
-                             target="nbc.divBV2.part9.sect29.subsect5.art7"
-                             display-type="long"/>.</text>
-                  </note>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote11">
-                     <text>
-                        <super>(7)</super> Where blocking is required, horizontal joints of panel sheathing shall occur over blocking consisting of not less than 38 mm x 89 mm lumber oriented either edgewise or flatwise, and the panel sheathing shall be fastened to the blocking.</text>
-                  </note>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote12">
-                     <text>
-                        <super>(8)</super> Nails for WSP and DWB framing types shall conform to <ref type="internal"
-                             target="nbc.divBV2.part9.sect23.subsect3.art1"
-                             display-type="long"/>.</text>
-                  </note>
-                  <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.appnote13">
-                     <text>
-                        <super>(9)</super> NP = Not permitted</text>
-                  </note>
                   <sentence xml:id="nbc.divBV2.part9.sect23.subsect3.art5.sent4" number="4">
                      <text>Fastening of wall sheathing in required <ref type="term" target="br-wl-pnl">braced wall panels</ref> and roof sheathing shall conform to Part 4, where</text>
                      <clause xml:id="nbc.divBV2.part9.sect23.subsect3.art5.sent4.clause1" letter="a">
@@ -21831,19 +21820,18 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                  original-id="bc-209"
                  description="Add table notes for Table 9.23.17.2.-A">
          <target type="position"
-                 parent-id="nbc.divBV2.part9.sect23.subsect17.art2"
-                 position="after"
-                 reference-id="nbc.divBV2.part9.sect23.subsect17.art2.table1"/>
+                 parent-id="nbc.divBV2.part9.sect23.subsect17.art2.table1"
+                 position="last-child"/>
          <insert>
             <new-content source="bc">
-               <note xml:id="nbc.divBV2.part9.sect23.subsect17.art2.table1.appnote1">
-                  <text>
-                     <super>(1)</super> See also Sentences 9.27.5.1.(2) to (4).</text>
-               </note>
-               <note xml:id="nbc.divBV2.part9.sect23.subsect17.art2.table1.appnote2">
-                  <text>
-                     <super>(2)</super> The <ref type="term" target="flm-prd-">flame-spread rating</ref> of gypsum board shall be determined in accordance with CAN/ULC-S102, "Standard Method of Test for Surface Burning Characteristics of Building Materials and Assemblies."</text>
-               </note>
+               <table-notes>
+                  <note xml:id="nbc.divBV2.part9.sect23.subsect17.art2.table1.note1">
+                     <text>See also Sentences 9.27.5.1.(2) to (4).</text>
+                  </note>
+                  <note xml:id="nbc.divBV2.part9.sect23.subsect17.art2.table1.note2">
+                     <text>The <ref type="term" target="flm-prd-">flame-spread rating</ref> of gypsum board shall be determined in accordance with CAN/ULC-S102, "Standard Method of Test for Surface Burning Characteristics of Building Materials and Assemblies."</text>
+                  </note>
+               </table-notes>
             </new-content>
          </insert>
       </amendment>
@@ -26601,13 +26589,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableA.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableA.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26662,13 +26648,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableB.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableB.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26723,13 +26707,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableC.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableC.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26784,13 +26766,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableD.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableD.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26845,13 +26825,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableE.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableE.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26906,13 +26884,11 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableF.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableF.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26986,21 +26962,17 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> When a "house" is a dwelling unit forming part of a multi-unit building, as per Sentence 9.36.6.1.(1), requirements of Subsection 9.36.6. apply to entire building.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG.note1">
+                              <text>When a "house" is a dwelling unit forming part of a multi-unit building, as per Sentence 9.36.6.1.(1), requirements of Subsection 9.36.6. apply to entire building.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(2)</super> See Table 9.36.7.4.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG.note2">
+                              <text>See Table 9.36.7.4.</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(3)</super> See Sentence 9.36.6.5.(6)</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG.note3">
+                              <text>See Sentence 9.36.6.5.(6)</text>
                            </note>
-                           <note>
-                              <text>
-                                 <super>(4)</super> See Sentence 9.36.6.5.(7)</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG.note4">
+                              <text>See Sentence 9.36.6.5.(7)</text>
                            </note>
                         </table-notes>
                      </table>
@@ -27445,9 +27417,8 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                            </tbody>
                         </tgroup>
                         <table-notes>
-                           <note>
-                              <text>
-                                 <super>(1)</super> See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
+                           <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableH.note1">
+                              <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
                         </table-notes>
                      </table>

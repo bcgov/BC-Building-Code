@@ -403,3 +403,6 @@ venv
 .kiro
 /n8n-workflows
 build-and-deploy.sh
+
+# macOS files
+*.DS_Store
