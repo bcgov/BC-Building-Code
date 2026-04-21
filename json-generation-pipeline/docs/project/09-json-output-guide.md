@@ -542,7 +542,7 @@ Tables contain structured data within articles.
 |----------|------|-------------|
 | `id` | string | Canonical ID |
 | `type` | string | Always `"table"` |
-| `frame` | string | Table frame styling from XML (optional) |
+| `frame` | string | Table frame styling from XML (optional). `"all"` = full borders; `"none"` = no borders — render as a formula/equation layout, not a data table (e.g. A-9.36.1.1.(1) Energy Used by the Building). Frontend must suppress all borders and the table title when `frame === "none"`. |
 | `source` | string | `"bc"` if BC-specific (optional) |
 | `title` | string | Table title |
 | `table_notes` | array | Resolved table notes (optional). Each note has `id`, optional `vendor_id`, and `content` (string). Notes whose source XML contains an inline `<list>` also include a `list` object with `type` (e.g. `"bulleted"`) and `items` (array of strings), allowing the frontend to render the sub-list beneath the note text. |
@@ -554,6 +554,45 @@ Tables contain structured data within articles.
 | `structure.body_rows` | array | Body row data |
 | `structure.*.cells[].rowspan` | number | Numeric row span for merged cells (optional) |
 | `structure.*.cells[].colspan` | number | Numeric column span for merged cells (optional) |
+
+### Formula Tables (`frame: "none"`)
+
+Some application notes use a borderless 3-column table to display a formula or equation broken across lines (e.g. A-9.36.1.1.(1)). These originate from `<example><table frame="none">` in the NBC source XML.
+
+The frontend must render these **without borders and without displaying the table title**, using only column alignment to convey the formula layout (right-aligned label, centred operator, left-aligned description):
+
+```json
+{
+  "id": "nbc.divBV2.part9.appendix.appnote210.example1.table1",
+  "type": "table",
+  "title": "",
+  "frame": "none",
+  "structure": {
+    "columns": 3,
+    "column_specs": [
+      { "name": "col1", "width": "85*" },
+      { "name": "col2", "width": "5*" },
+      { "name": "col3", "width": "171*" }
+    ],
+    "body_rows": [
+      {
+        "cells": [
+          { "content": [{ "type": "text", "value": "Energy used by the building" }], "colsep": "0", "rowsep": "0" },
+          { "content": [{ "type": "text", "value": "=" }], "colsep": "0", "rowsep": "0" },
+          { "content": [{ "type": "text", "value": "space-heating energy lost and gained through building envelope" }], "rowsep": "0" }
+        ]
+      },
+      {
+        "cells": [
+          { "content": [{ "type": "text", "value": "" }], "colsep": "0", "rowsep": "0" },
+          { "content": [{ "type": "text", "value": "+" }], "colsep": "0", "rowsep": "0" },
+          { "content": [{ "type": "text", "value": "losses due to inefficiencies of heating equipment" }], "rowsep": "0" }
+        ]
+      }
+    ]
+  }
+}
+```
 
 ---
 
