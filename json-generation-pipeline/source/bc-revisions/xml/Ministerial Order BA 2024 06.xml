@@ -5569,6 +5569,14 @@ Spaces within Buildings
                       </row>
                     </tbody>
                   </tgroup>
+                  <table-notes>
+                    <note xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table1.note1">
+                      <text>See <ref type="internal" target="nbc.divBV2.part9.sect23.subsect3.art5.sent3" display-type="short"/> for a description of framing types and fastening requirements.</text>
+                    </note>
+                    <note xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table1.note2">
+                      <text>NP = not permitted. Values within round brackets are permitted for <ref type="term" target="br-wl-pnl">braced wall panels</ref> with gypsum board installed on both sides.</text>
+                    </note>
+                  </table-notes>
                 </content>
                 <change-summary
                   >Struck out the image in the second row of the Storey column and substituted bc-graphics/gg00555a.eps</change-summary>
@@ -5698,6 +5706,14 @@ Spaces within Buildings
                       </row>
                     </tbody>
                   </tgroup>
+                  <table-notes>
+                    <note xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table2.note1">
+                      <text>See <ref type="internal" target="nbc.divBV2.part9.sect23.subsect3.art5.sent3" display-type="short"/> for a description of framing types and fastening requirements.</text>
+                    </note>
+                    <note xml:id="nbc.divBV2.part9.sect23.subsect13.art11.table2.note2">
+                      <text>NP = not permitted. Values within round brackets are permitted for <ref type="term" target="br-wl-pnl">braced wall panels</ref> with gypsum board installed on both sides.</text>
+                    </note>
+                  </table-notes>
                 </content>
                 <change-summary
                   >Struck out the image in the second row of the Storey column and substituted bc-graphics/gg00556a.eps</change-summary>
