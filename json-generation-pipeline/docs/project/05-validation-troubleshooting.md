@@ -543,6 +543,14 @@ Before committing amendments:
 - **Fix**: Combined with Example G in amendment `bc-019`. Each `<ref>` is given explicit display text content (`Table D-2.3.4.-A`, `D-2.3.4.-B`, `D-2.3.4.-C`) so the front-end uses that text rather than auto-generating from the ID.
 - **Rule**: When a table's canonical ID does not produce the correct BC-style label (e.g. letter suffix `-A`, `-B`, `-C`), supply explicit display text inside the `<ref>` element rather than relying on `display-type` auto-generation.
 
+### Example I: NBC Source Missing Sentence Numbers — D-2.11.4 and D-2.3.15
+
+- **Targets**: `nbc.divB.appendixD.appsect2.subsect11.article4.para1` through `para6` (D-2.11.4), `nbc.divB.appendixD.appsect2.subsect3.article15.para2` (D-2.3.15)
+- **Problem**: The NBC vendor XML omits the `<number>` element entirely for these paragraphs. The `nbc-to-canonical.xsl` transform only includes sentence numbers when a `<number>` child exists, so the canonical output has no `1)`, `2)`, etc. prefix on the paragraph text.
+- **Fix**: Phase 1 overlay amendments `bc-020` through `bc-026` using `replace` to prepend the correct sentence number to each paragraph. All use `preserve-references="true"` and copy the full paragraph content from `nbc-canonical.xml` with the number added.
+- **Important**: Do NOT use `text-change` with `xpath-within-target="text()[1]"` — the merge engine does not support the `[1]` positional predicate. Always use `replace` for paragraphs that contain `<ref>`, `<measurement>`, or `<list>` child elements.
+- **Rule**: When the NBC source is missing `<number>` elements on `<para-nmbrd>`, use `replace` on the canonical paragraph to prepend the sentence number. Check the vendor XML (`nbc2020.xml`) to confirm the `<number>` child is absent rather than just empty.
+
 ---
 
 ## Next Steps
