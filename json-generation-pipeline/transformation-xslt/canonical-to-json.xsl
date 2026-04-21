@@ -2280,18 +2280,28 @@
     <!-- Named template for rendering a table note that may contain an inline list.
          Emits a flat "content" string when no list is present, or "content" + structured
          "list" object when a child <list> element exists (mixed content note). -->
+    <!-- Renders a table note's content. When a note contains an inline <list>,
+         "content" is a flat string with [LIST:type] appended (matching the
+         existing cell content pattern so renderFormattedText handles it safely),
+         and a separate "list" key holds the structured items as { "content": "..." }
+         objects — identical to cell content list items. -->
     <xsl:template name="render-note-content">
         <xsl:param name="note"/>
         <xsl:choose>
             <xsl:when test="$note/list">
                 <fn:string key="content">
                     <xsl:apply-templates select="$note/node()[not(self::list)]" mode="rich-text-json"/>
+                    <xsl:text>[LIST:</xsl:text>
+                    <xsl:value-of select="$note/list/@type"/>
+                    <xsl:text>]</xsl:text>
                 </fn:string>
                 <fn:map key="list">
                     <fn:string key="type"><xsl:value-of select="$note/list/@type"/></fn:string>
                     <fn:array key="items">
                         <xsl:for-each select="$note/list/item">
-                            <fn:string><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                            <fn:map>
+                                <fn:string key="content"><xsl:apply-templates select="." mode="rich-text-json"/></fn:string>
+                            </fn:map>
                         </xsl:for-each>
                     </fn:array>
                 </fn:map>

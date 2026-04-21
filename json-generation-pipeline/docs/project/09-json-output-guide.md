@@ -491,15 +491,18 @@ Tables contain structured data within articles.
     {
       "id": "nbc.divBV2.part9.sect8.subsect4.art1.table1.note1",
       "vendor_id": "et001049-2",
-      "content": "Private stairs are exterior and interior stairs that serve",
-      "list": {
-        "type": "bulleted",
-        "items": [
-          "single [REF:term:dwllng-n:dwelling units] ,",
-          "houses with a [REF:term:scnd-t:secondary suite] including their common spaces, or",
-          "garages that serve houses described in Clause a) or b)."
-        ]
-      }
+      "content": [
+        { "type": "text", "value": "Private stairs are exterior and interior stairs that serve" },
+        {
+          "type": "list",
+          "list_type": "bulleted",
+          "items": [
+            { "content": "single [REF:term:dwllng-n:dwelling units] ," },
+            { "content": "houses with a [REF:term:scnd-t:secondary suite] including their common spaces, or" },
+            { "content": "garages that serve houses described in Clause a) or b)." }
+          ]
+        }
+      ]
     }
   ],
   "structure": {
@@ -545,7 +548,7 @@ Tables contain structured data within articles.
 | `frame` | string | Table frame styling from XML (optional). `"all"` = full borders; `"none"` = no borders — render as a formula/equation layout, not a data table (e.g. A-9.36.1.1.(1) Energy Used by the Building). Frontend must suppress all borders and the table title when `frame === "none"`. |
 | `source` | string | `"bc"` if BC-specific (optional) |
 | `title` | string | Table title |
-| `table_notes` | array | Resolved table notes (optional). Each note has `id`, optional `vendor_id`, and `content` (string). Notes whose source XML contains an inline `<list>` also include a `list` object with `type` (e.g. `"bulleted"`) and `items` (array of strings), allowing the frontend to render the sub-list beneath the note text. |
+| `table_notes` | array | Resolved table notes (optional). Each note has `id`, optional `vendor_id`, and `content`. When the note contains only text, `content` is a flat string. When the note contains an inline sub-list (mixed content), `content` is an array matching the cell content format: `[{ "type": "text", "value": "..." }, { "type": "list", "list_type": "...", "items": [{ "content": "..." }] }]` — the frontend can reuse the same list-rendering logic as cell content. |
 | `structure.columns` | number | Number of columns |
 | `structure.colsep` | string | Column separator style from XML (optional) |
 | `structure.rowsep` | string | Row separator style from XML (optional) |
