@@ -304,6 +304,44 @@ A curated collection of working examples for each operation type, organized by u
 
 ---
 
+### Example 4.3: Fix NBC Source Error — Wrong Sentence Number and Table Labels
+
+**Source:** `json-generation-pipeline/source/bc-amendments/xml/NBC2020p1 Division B Appendix C and D.FIN.xml`
+**Amendment ID:** `bc-019`
+**Description:** NBC vendor XML (`en000477.3`) has `<number>4)</number>` for the 3rd sentence of D-2.3.3, and the three table refs auto-render as `D.2.3.4.` instead of `D-2.3.4.-A/B/C`.
+
+```xml
+<amendment id="bc-019" sequence="19"
+           description="Correct sentence number 4) to 3) and fix table labels to D-2.3.4.-A/B/C in D-2.3.3 paragraph 3">
+    <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect3.article3.para3"/>
+    <replace preserve-references="true">
+        <new-content>
+            <paragraph xml:id="nbc.divB.appendixD.appsect2.subsect3.article3.para3"
+                       vendor-id="en000477.3">3) The fire-resistance
+rating calculated by the component additive method cannot be increased
+by installing membranes in multiple layers, other than as specified
+in <ref type="internal"
+         target="nbc.divB.appendixD.appsect2.subsect3.article4.table1"
+         display-type="long"
+         pretext="Tables">Table D-2.3.4.-A</ref>,
+                <ref type="internal"
+                     target="nbc.divB.appendixD.appsect2.subsect3.article4.table2"
+                     display-type="medium">D-2.3.4.-B</ref> and
+                <ref type="internal"
+                     target="nbc.divB.appendixD.appsect2.subsect3.article4.table3"
+                     display-type="medium">D-2.3.4.-C</ref>.</paragraph>
+        </new-content>
+    </replace>
+</amendment>
+```
+
+**Why this approach:**
+- `element-replace` / `replace` needed because the paragraph contains `<ref>` elements — `text-change` cannot span them
+- Explicit display text inside each `<ref>` overrides the front-end's auto-generated label (which derives from the canonical ID and produces `D.2.3.4.` with dots and no letter suffix)
+- `preserve-references="true"` keeps ref targets resolvable for cross-reference validation
+
+---
+
 ## 5. Delete Operations
 
 ### Example 5.1: Simple Delete
