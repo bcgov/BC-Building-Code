@@ -1739,6 +1739,24 @@
     <xsl:apply-templates select="node()" mode="mathml" />
   </xsl:template>
 
+  <!-- lixpara: extended paragraph inside a listitem.
+       Outputs pre-table text, converts frame="none" table rows to a variable
+       list (col2=symbol, col3=description), and passes list.var children through. -->
+  <xsl:template match="lixpara" mode="rich-text">
+    <xsl:apply-templates select="node()[not(self::table) and not(self::list) and not(self::list.var) and not(self::list.def)]" mode="rich-text"/>
+    <xsl:for-each select="table[@frame='none']">
+      <list type="variable">
+        <xsl:for-each select=".//row[normalize-space(entry[2]) != '' or normalize-space(entry[3]) != '']">
+          <item>
+            <variable><xsl:apply-templates select="entry[2]/node()" mode="rich-text"/></variable>
+            <description><xsl:apply-templates select="entry[3]/node()" mode="rich-text"/></description>
+          </item>
+        </xsl:for-each>
+      </list>
+    </xsl:for-each>
+    <xsl:apply-templates select="list | list.var | list.def" mode="rich-text"/>
+  </xsl:template>
+
   <!-- Lists -->
   <xsl:template match="list" mode="rich-text">
     <list
