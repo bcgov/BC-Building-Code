@@ -1065,7 +1065,7 @@
                         <note-division xml:id="nbc.divBV2.part9.appendix.appnote129a.div5">
                             <title>Example: Area-weighted average floor calculation</title>
                             <paragraph xml:id="nbc.divBV2.part9.appendix.appnote129a.div5.para1">For example, if a building has <measurement units="metric">400 m<super>2</super></measurement> of floor area, and <measurement units="metric">25 m<super>2</super></measurement> of that floor area has a concrete topping (floor assembly = <measurement units="metric">1.25 kPa</measurement>), and the remaining <measurement units="metric">375 m<super>2</super></measurement> has hardwood floors (floor assembly = <measurement units="metric">0.45 kPa</measurement>), the area-weighted average dead weight is:<equation type="display" xml:id="nbc.divBV2.part9.appendix.appnote129a.div5.eq1">
-                                    <latex>(25 \times 1.25 + 375 \times 0.45) / 400 = 0.50 \mathrm{kPa}</latex>
+                                    <latex>\frac{(1.25\ \mathrm{kPa})(25\ \mathrm{m}^2) + (0.45\ \mathrm{kPa})(375\ \mathrm{m}^2)}{400\ \mathrm{m}^2} = 0.5\ \mathrm{kPa}</latex>
                                 </equation></paragraph>
                             <paragraph xml:id="nbc.divBV2.part9.appendix.appnote129a.div5.para2">Therefore, qualifies as normal weight construction.</paragraph>
                         </note-division>
