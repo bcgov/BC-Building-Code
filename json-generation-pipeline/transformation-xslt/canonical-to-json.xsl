@@ -668,6 +668,11 @@
                         <fn:string key="see_also"><xsl:apply-templates select="see-also" mode="rich-text-json"/></fn:string>
                     </xsl:if>
                     
+                    <!-- Article-level note (e.g. "See Note A-9.36.5.3.") -->
+                    <xsl:if test="note">
+                        <fn:string key="note"><xsl:apply-templates select="note/text" mode="rich-text-json"/></fn:string>
+                    </xsl:if>
+                    
                     <fn:array key="content">
                         <xsl:apply-templates select="sentence | table | figure" mode="json"/>
                     </fn:array>

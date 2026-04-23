@@ -587,6 +587,23 @@ Before committing amendments:
 - **Fix**: Added a `<latex>` handler in the `equation-json` template in `canonical-to-json.xsl` that outputs both `latex` and `plainText` keys. Also corrected the LaTeX formula to use `\frac{}{}` notation for proper fraction rendering.
 - **Rule**: When adding new equation formats to the canonical XML, ensure the `equation-json` template in `canonical-to-json.xsl` has a matching handler. Currently supported: MathML (`<math>`), LaTeX (`<latex>`), plain text (`<text>`).
 
+### Example N: Sentence Trailing Text Concatenated into Text Field — 9.36.5.3.(1)
+
+- **Source file**: `json-generation-pipeline/source/bc-amendments/xml/NBC2020p1 Division B Part 9.FIN_2.xml`
+- **Target**: `nbc.divBV2.part9.sect36.subsect5.art3.sent1` (BC-authored content)
+- **Problem**: The sentence had two `<text>` children — the main sentence text and a trailing `(See Note ...)` after the clauses. The XSLT `select="text"` grabbed both and concatenated them into one `text` field, producing `"...in accordance with(See Note A-9.36.5.3.(1).)"`.
+- **Fix**: Changed the trailing `<text>` to a `<see-also>` element in the amendment source. The XSLT already handles `<see-also>` as a separate JSON field (`see_also`), so it no longer gets concatenated into the sentence text.
+- **Rule**: Never use multiple `<text>` children inside a `<sentence>`. The XSLT concatenates all `<text>` children into one `text` field. Use `<see-also>` for trailing note references after clauses.
+
+### Example O: Article-Level Note Not Output to JSON — 9.36.5.3
+
+- **Source file**: `json-generation-pipeline/transformation-xslt/canonical-to-json.xsl`
+- **Target**: `nbc.divBV2.part9.sect36.subsect5.art3` (article with `<note>` child)
+- **Problem**: The article had a `<note>` child element containing `(See Note A-9.36.5.3.)` that should render before sentence 1. The XSLT article template only processed `sentence | table | figure` children — `<note>` was silently dropped from the JSON output.
+- **Fix**: Added `<note>` handling in the article template in `canonical-to-json.xsl`. When an article has a `<note>` child, it outputs a `"note"` string field in the article JSON object.
+- **Front-end dependency**: The JSON now includes the `note` field, but the front-end renderer must be updated to display `article.note` when present (rendered before the first sentence).
+- **Rule**: When adding new child element types to articles in the canonical XML, ensure the article template in `canonical-to-json.xsl` processes them. Currently handled: `sentence`, `table`, `figure`, `see-also`, `note`.
+
 ---
 
 ## Next Steps
