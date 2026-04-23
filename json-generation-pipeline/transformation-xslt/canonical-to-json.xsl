@@ -2401,6 +2401,11 @@
                     <!-- MathML (optional - can be large) -->
                     <fn:string key="mathml"><xsl:value-of select="fn:serialize(*[local-name()='math'])"/></fn:string>
                 </xsl:when>
+                <!-- LaTeX equation (direct latex child) -->
+                <xsl:when test="latex">
+                    <fn:string key="latex"><xsl:value-of select="latex"/></fn:string>
+                    <fn:string key="plainText"><xsl:value-of select="latex"/></fn:string>
+                </xsl:when>
                 <!-- Plain text equation (from eqtxt) -->
                 <xsl:when test="text">
                     <fn:string key="plainText"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
