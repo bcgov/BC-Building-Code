@@ -942,7 +942,7 @@
                     <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
                     <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
                     
-                    <fn:string key="text"><xsl:apply-templates select="$content-node/text" mode="rich-text-json"/></fn:string>
+                    <fn:string key="text"><xsl:for-each select="$content-node/text"><xsl:if test="position() > 1"><xsl:text>&#10;</xsl:text></xsl:if><xsl:apply-templates select="." mode="rich-text-json"/></xsl:for-each></fn:string>
                     
                     <!-- Extract equations from text element -->
                     <xsl:if test="$content-node/text//equation">
@@ -1001,7 +1001,7 @@
                     </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
-                    <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+                    <fn:string key="text"><xsl:for-each select="text"><xsl:if test="position() > 1"><xsl:text>&#10;</xsl:text></xsl:if><xsl:apply-templates select="." mode="rich-text-json"/></xsl:for-each></fn:string>
                     
                     <!-- Extract equations from text element -->
                     <xsl:if test="text//equation">
@@ -1096,7 +1096,7 @@
                     <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
                     <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
                     
-                    <fn:string key="text"><xsl:apply-templates select="$content-node/text" mode="rich-text-json"/></fn:string>
+                    <fn:string key="text"><xsl:for-each select="$content-node/text"><xsl:if test="position() > 1"><xsl:text>&#10;</xsl:text></xsl:if><xsl:apply-templates select="." mode="rich-text-json"/></xsl:for-each></fn:string>
                     
                     <!-- Extract equations from text element -->
                     <xsl:if test="$content-node/text//equation">
@@ -1128,7 +1128,7 @@
                     </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
-                    <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+                    <fn:string key="text"><xsl:for-each select="text"><xsl:if test="position() > 1"><xsl:text>&#10;</xsl:text></xsl:if><xsl:apply-templates select="." mode="rich-text-json"/></xsl:for-each></fn:string>
                     
                     <!-- Extract equations from text element -->
                     <xsl:if test="text//equation">
@@ -1202,7 +1202,7 @@
                 <xsl:when test="@revised='yes' and revision-history">
                     <xsl:variable name="current-revision" select="revision-history/revision[@status='current'][last()]"/>
                     <xsl:variable name="content-node" select="if ($current-revision/content) then $current-revision/content else revision-history/original"/>
-                    <fn:string key="text"><xsl:apply-templates select="$content-node/text" mode="rich-text-json"/></fn:string>
+                    <fn:string key="text"><xsl:for-each select="$content-node/text"><xsl:if test="position() > 1"><xsl:text>&#10;</xsl:text></xsl:if><xsl:apply-templates select="." mode="rich-text-json"/></xsl:for-each></fn:string>
                     
                     <!-- Extract equations from text element -->
                     <xsl:if test="$content-node/text//equation">
@@ -1217,7 +1217,7 @@
                     </xsl:call-template>
                 </xsl:when>
                 <xsl:otherwise>
-                    <fn:string key="text"><xsl:apply-templates select="text" mode="rich-text-json"/></fn:string>
+                    <fn:string key="text"><xsl:for-each select="text"><xsl:if test="position() > 1"><xsl:text>&#10;</xsl:text></xsl:if><xsl:apply-templates select="." mode="rich-text-json"/></xsl:for-each></fn:string>
                     
                     <!-- Extract equations from text element -->
                     <xsl:if test="text//equation">

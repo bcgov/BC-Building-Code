@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-04-21T13:39:46.3357624-07:00"
+            generated="2026-04-23T14:06:09.21915-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -27760,9 +27760,45 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <!-- Sentence 9.36.6.3.(4) -->
                      <sentence xml:id="nbc.divBV2.part9.sect36.subsect6.art3.sent4" number="4">
                         <text>For <ref type="term" target="bldng">buildings</ref> conforming to the requirements of any of Steps 3 to 5, thermal energy demand intensity requirements may be calculated using the applicable following formula</text>
-                        <text>for <ref type="term" target="bldng">buildings</ref> located where degree-days below 18°C value is less than 3000, TEDI<sub>adjusted</sub> = TEDI<sub>step</sub> + (TEDI<sub>higher</sub> - TEDI<sub>step</sub>)(HDD<sub>actual</sub> - HDD<sub>lowest</sub>)/500</text>
-                        <text>for <ref type="term" target="bldng">buildings</ref> located where degree-days below 18°C value is 3000 to 6999, TEDI<sub>adjusted</sub> = TEDI<sub>step</sub> + (TEDI<sub>higher</sub> - TEDI<sub>step</sub>)(HDD<sub>actual</sub> - HDD<sub>lowest</sub>)/1000</text>
-                        <text>for <ref type="term" target="bldng">buildings</ref> located where degree-days below 18°C value is 7000 or greater, TEDI<sub>adjusted</sub> = TEDI<sub>step</sub> + (TEDI<sub>higher</sub> - TEDI<sub>step</sub>)(HDD<sub>actual</sub> - HDD<sub>lowest</sub>)/1000</text>
+                        <text>for <ref type="term" target="bldng">buildings</ref> located where degree-days below 18°C value is less than 3000</text>
+                        <text>TEDI<sub>adjusted</sub> = TEDI<sub>step</sub> + (TEDI<sub>higher</sub> - TEDI<sub>step</sub>)(HDD<sub>actual</sub> - HDD<sub>lowest</sub>)/500</text>
+                        <text>for <ref type="term" target="bldng">buildings</ref> located where degree-days below 18°C value is 3000 to 6999</text>
+                        <text>TEDI<sub>adjusted</sub> = TEDI<sub>step</sub> + (TEDI<sub>higher</sub> - TEDI<sub>step</sub>)(HDD<sub>actual</sub> - HDD<sub>lowest</sub>)/1000</text>
+                        <text>for <ref type="term" target="bldng">buildings</ref> located where degree-days below 18°C value is 7000 or greater</text>
+                        <text>TEDI<sub>adjusted</sub> = TEDI<sub>step</sub> + (TEDI<sub>step</sub> - TEDI<sub>lower</sub>)(HDD<sub>actual</sub> - HDD<sub>lowest</sub>)/1000</text>
+                        <text>where<list type="variable">
+                              <item>
+                                 <variable>TEDI<sub>adjusted</sub>
+                                 </variable>
+                                 <description>= thermal energy demand intensity requirement adjusted by heating degree-days,</description>
+                              </item>
+                              <item>
+                                 <variable>TEDI<sub>step</sub>
+                                 </variable>
+                                 <description>= applicable maximum thermal energy demand intensity requirement in Tables 9.36.6.3.-A to 9.36.6.3.-F,</description>
+                              </item>
+                              <item>
+                                 <variable>TEDI<sub>higher</sub>
+                                 </variable>
+                                 <description>= maximum thermal energy demand intensity requirement for the same Step as stated in the subsequent Table of Tables 9.36.6.3.-A to 9.36.6.3.-F,</description>
+                              </item>
+                              <item>
+                                 <variable>TEDI<sub>lower</sub>
+                                 </variable>
+                                 <description>= maximum thermal energy demand intensity requirement for the same Step as stated in the preceding Table of Tables 9.36.6.3.-A to 9.36.6.3.-F,</description>
+                              </item>
+                              <item>
+                                 <variable>HDD<sub>actual</sub>
+                                 </variable>
+                                 <description>= actual degree-days below 18°C for the building location determined in accordance with Subsection 1.1.3.,</description>
+                              </item>
+                              <item>
+                                 <variable>HDD<sub>lowest</sub>
+                                 </variable>
+                                 <description>= lowest degree-days below 18°C value within the range of the applicable Table of Tables 9.36.6.3.-A to 9.36.6.3.-F.</description>
+                              </item>
+                           </list>
+                        </text>
                         <text>(See Note 9.36.6.3.(4).)</text>
                      </sentence>
                      <!-- Sentence 9.36.6.3.(5) -->
