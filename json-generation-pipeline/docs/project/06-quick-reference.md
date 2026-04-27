@@ -227,36 +227,43 @@ bc-mo-2024-01-001   (Revision amendment: year-order-sequence)
 
 ### Phase 1: Overlay Amendments
 
+> **Note:** `overlay-document` must be an **absolute path** — Saxon resolves it relative to the
+> `-o:` output file, not the working directory. Use `$PROJ` as shown below.
+
 ```bash
+PROJ=/path/to/BC-Building-Code
+
 # Combine
-java -jar json-generation-pipeline/tools/saxon.jar \
-  -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
-  -s:json-generation-pipeline/source/bc-amendments/amendment-list.xml \
-  -o:json-generation-pipeline/output/bc-amendments-combined.xml
+java -jar "$PROJ/json-generation-pipeline/tools/saxon.jar" \
+  -xsl:"$PROJ/json-generation-pipeline/transformation-xslt/combine-amendments.xsl" \
+  -s:"$PROJ/json-generation-pipeline/source/bc-amendments/amendment-list.xml" \
+  -o:"$PROJ/json-generation-pipeline/output/bc-amendments-combined.xml"
 
 # Apply
-java -jar json-generation-pipeline/tools/saxon.jar \
-  -xsl:json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl \
-  -s:json-generation-pipeline/output/nbc-canonical.xml \
-  overlay-document=json-generation-pipeline/output/bc-amendments-combined.xml \
-  -o:json-generation-pipeline/output/bc-building-code.xml
+java -jar "$PROJ/json-generation-pipeline/tools/saxon.jar" \
+  -xsl:"$PROJ/json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl" \
+  -s:"$PROJ/json-generation-pipeline/output/nbc-canonical.xml" \
+  overlay-document="$PROJ/json-generation-pipeline/output/bc-amendments-combined.xml" \
+  -o:"$PROJ/json-generation-pipeline/output/bc-building-code.xml"
 ```
 
 ### Phase 2: Revision Amendments
 
 ```bash
+PROJ=/path/to/BC-Building-Code
+
 # Combine
-java -jar json-generation-pipeline/tools/saxon.jar \
-  -xsl:json-generation-pipeline/transformation-xslt/combine-amendments.xsl \
-  -s:json-generation-pipeline/source/bc-revisions/revision-list.xml \
-  -o:json-generation-pipeline/output/bc-revisions-combined.xml
+java -jar "$PROJ/json-generation-pipeline/tools/saxon.jar" \
+  -xsl:"$PROJ/json-generation-pipeline/transformation-xslt/combine-amendments.xsl" \
+  -s:"$PROJ/json-generation-pipeline/source/bc-revisions/revision-list.xml" \
+  -o:"$PROJ/json-generation-pipeline/output/bc-revisions-combined.xml"
 
 # Apply
-java -jar json-generation-pipeline/tools/saxon.jar \
-  -xsl:json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl \
-  -s:json-generation-pipeline/output/bc-building-code.xml \
-  overlay-document=json-generation-pipeline/output/bc-revisions-combined.xml \
-  -o:json-generation-pipeline/output/bc-building-code-final.xml
+java -jar "$PROJ/json-generation-pipeline/tools/saxon.jar" \
+  -xsl:"$PROJ/json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl" \
+  -s:"$PROJ/json-generation-pipeline/output/bc-building-code.xml" \
+  overlay-document="$PROJ/json-generation-pipeline/output/bc-revisions-combined.xml" \
+  -o:"$PROJ/json-generation-pipeline/output/bc-building-code-final.xml"
 ```
 
 ### Generate JSON
@@ -266,6 +273,13 @@ java -jar json-generation-pipeline/tools/saxon.jar \
   -xsl:json-generation-pipeline/transformation-xslt/canonical-to-json.xsl \
   -s:json-generation-pipeline/output/bc-building-code-final.xml \
   -o:json-generation-pipeline/output/bc-building-code.json
+```
+
+### Deploy to Interactive Webapp
+
+```bash
+cp json-generation-pipeline/output/bc-building-code.json \
+   ../HOUS-Interactive-BCBC/data/source/bcbc-2024.json
 ```
 
 ### Validate Amendments

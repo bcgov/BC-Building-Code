@@ -1330,17 +1330,19 @@
             /></sub></xsl:template>
 
   <xsl:template match="meas" mode="rich-text">
-    <measurement>
-      <xsl:attribute name="units">
-        <xsl:choose>
-          <xsl:when test="@units and normalize-space(@units) != ''">
-            <xsl:value-of select="normalize-space(@units)" />
-          </xsl:when>
-          <xsl:otherwise>metric</xsl:otherwise>
-        </xsl:choose>
-      </xsl:attribute>
-      <xsl:apply-templates select="node()" mode="rich-text" />
-    </measurement>
+    <xsl:if test="not(@units = 'imperial')">
+      <measurement>
+        <xsl:attribute name="units">
+          <xsl:choose>
+            <xsl:when test="@units and normalize-space(@units) != ''">
+              <xsl:value-of select="normalize-space(@units)" />
+            </xsl:when>
+            <xsl:otherwise>metric</xsl:otherwise>
+          </xsl:choose>
+        </xsl:attribute>
+        <xsl:apply-templates select="node()" mode="rich-text" />
+      </measurement>
+    </xsl:if>
   </xsl:template>
 
   <!-- Cross-reference processing -->

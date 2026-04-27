@@ -60,7 +60,32 @@ The validation report shows:
 
 ---
 
-## 2. Common Validation Errors
+## 2. Common Pipeline Errors
+
+### Error: `FODC0002 Document has been marked not available` (path doubled)
+
+**Symptom:** Running the merge engine fails with a path like
+`…/output/json-generation-pipeline/output/bc-amendments-combined.xml` — the output directory
+appears twice in the path.
+
+**Cause:** The `overlay-document` parameter is a relative path. Saxon resolves it relative to
+the `-o:` output file's directory, not the working directory, so the path gets prepended with
+the output directory.
+
+**Fix:** Always pass `overlay-document` as an **absolute path**:
+
+```bash
+PROJ=/path/to/BC-Building-Code
+java -jar "$PROJ/json-generation-pipeline/tools/saxon.jar" \
+  -xsl:"$PROJ/json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl" \
+  -s:"$PROJ/json-generation-pipeline/output/nbc-canonical.xml" \
+  overlay-document="$PROJ/json-generation-pipeline/output/bc-amendments-combined.xml" \
+  -o:"$PROJ/json-generation-pipeline/output/bc-building-code.xml"
+```
+
+---
+
+## 3. Common Validation Errors
 
 ### Error: "Modified text not found exactly"
 
