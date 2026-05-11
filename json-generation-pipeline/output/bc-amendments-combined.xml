@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-04-27T11:57:59.517655-07:00"
+            generated="2026-05-11T11:01:17.008348-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -14691,7 +14691,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <new-content source="bc">
                <table-notes>
                   <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.table1.note1">
-                     <text>See Note A-9.23.3.1.(2).</text>
+                     <text>See <ref type="internal"
+                             target="nbc.divBV2.part9.appendix.appnote115"
+                             display-type="short"/>
+                     </text>
                   </note>
                   <note xml:id="nbc.divBV2.part9.sect23.subsect3.art4.table1.note2">
                      <text>See <ref type="internal"
@@ -14824,7 +14827,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      </tgroup>
                      <table-notes>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table1.note1">
-                           <text>See Note A-9.23.3.1.(2).</text>
+                           <text>See <ref type="internal"
+                                   target="nbc.divBV2.part9.appendix.appnote115"
+                                   display-type="short"/>
+                           </text>
                         </note>
                      </table-notes>
                   </table>
@@ -14919,7 +14925,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                    display-type="long"/>.</text>
                         </note>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table2.note2">
-                           <text>See Note A-9.23.3.1.(2).</text>
+                           <text>See <ref type="internal"
+                                   target="nbc.divBV2.part9.appendix.appnote115"
+                                   display-type="short"/>
+                           </text>
                         </note>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table2.note3">
                            <text>See <ref type="internal"
@@ -15045,7 +15054,10 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                                    display-type="long"/>.</text>
                         </note>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table3.note3">
-                           <text>See Note A-9.23.3.1.(2).</text>
+                           <text>See <ref type="internal"
+                                   target="nbc.divBV2.part9.appendix.appnote115"
+                                   display-type="short"/>
+                           </text>
                         </note>
                         <note xml:id="nbc.divBV2.part9.sect23.subsect3.art5.table3.note4">
                            <text>For plywood, OSB, or waferboard panel sheathing, the maximum fastener spacing along intermediate supports shall be 300 mm o.c. For gypsum sheathing, the maximum spacing along intermediate supports shall conform to <ref type="internal"
@@ -26931,7 +26943,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                               <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
                            <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableA.note2">
-                              <text>See Table 9.36.7.4.</text>
+                              <text>See <ref type="internal"
+                                      target="nbc.divBV2.part9.sect36.subsect7.art4.table1"
+                                      display-type="long"/>.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -26990,7 +27004,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                               <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
                            <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableB.note2">
-                              <text>See Table 9.36.7.4.</text>
+                              <text>See <ref type="internal"
+                                      target="nbc.divBV2.part9.sect36.subsect7.art4.table1"
+                                      display-type="long"/>.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -27049,7 +27065,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                               <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
                            <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableC.note2">
-                              <text>See Table 9.36.7.4.</text>
+                              <text>See <ref type="internal"
+                                      target="nbc.divBV2.part9.sect36.subsect7.art4.table1"
+                                      display-type="long"/>.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -27108,7 +27126,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                               <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
                            <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableD.note2">
-                              <text>See Table 9.36.7.4.</text>
+                              <text>See <ref type="internal"
+                                      target="nbc.divBV2.part9.sect36.subsect7.art4.table1"
+                                      display-type="long"/>.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -27167,7 +27187,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                               <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
                            <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableE.note2">
-                              <text>See Table 9.36.7.4.</text>
+                              <text>See <ref type="internal"
+                                      target="nbc.divBV2.part9.sect36.subsect7.art4.table1"
+                                      display-type="long"/>.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -27226,7 +27248,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                               <text>See Sentence 1.1.3.1.(1) and Table C-2 in Appendix C.</text>
                            </note>
                            <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableF.note2">
-                              <text>See Table 9.36.7.4.</text>
+                              <text>See <ref type="internal"
+                                      target="nbc.divBV2.part9.sect36.subsect7.art4.table1"
+                                      display-type="long"/>.</text>
                            </note>
                         </table-notes>
                      </table>
@@ -27304,7 +27328,9 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                               <text>When a "house" is a dwelling unit forming part of a multi-unit building, as per Sentence 9.36.6.1.(1), requirements of Subsection 9.36.6. apply to entire building.</text>
                            </note>
                            <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG.note2">
-                              <text>See Table 9.36.7.4.</text>
+                              <text>See <ref type="internal"
+                                      target="nbc.divBV2.part9.sect36.subsect7.art4.table1"
+                                      display-type="long"/>.</text>
                            </note>
                            <note xml:id="nbc.divBV2.part9.sect36.subsect6.art3.tableG.note3">
                               <text>See Sentence 9.36.6.5.(6)</text>
