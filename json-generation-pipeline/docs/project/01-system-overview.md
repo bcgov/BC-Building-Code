@@ -156,6 +156,26 @@ The normalization also updates all internal cross-references from vendor IDs to 
 <ref target="nbc.divB.part3.sect8.subsect2.art6.sent1">Sentence 3.8.2.6.(1)</ref>
 ```
 
+### BC-Specific Behaviour: Imperial Measurement Suppression
+
+The BC Building Code is **metric-only**. The NBC source XML includes imperial equivalents
+throughout tables and body text using `<meas units="imperial">` elements (e.g., `250 mm (9 ⅞)`).
+
+The normalization transform suppresses all `<meas units="imperial">` elements so they never
+appear in the canonical or final BC XML. This is implemented in the `meas` template
+(`nbc-to-canonical.xsl`, `rich-text` mode) via an `xsl:if` guard:
+
+```xml
+<xsl:if test="not(@units = 'imperial')">
+  <measurement>...</measurement>
+</xsl:if>
+```
+
+**Do not remove this guard.** Without it, 14 Part 9 tables would show dual metric/imperial values
+that do not appear in the authoritative BC Building Code Word documents. The affected tables are:
+9.3.1.7, 9.5.5.1, 9.12.2.2, 9.15.3.4, 9.20.5.2, 9.27.5.4 (×2), 9.27.7.6, 9.27.8.2, 9.33.6.5,
+and four appendix tables (A-9.23.4.2 ×2, A-9.25.5.2, A-9.25.5.3).
+
 ### Technical Details
 
 - **XSLT Transform:** `transformation-xslt/nbc-to-canonical.xsl`

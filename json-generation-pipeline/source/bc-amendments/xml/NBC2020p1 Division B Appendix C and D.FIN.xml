@@ -1543,6 +1543,184 @@ in <ref type="internal"
             </replace>
         </amendment>
 
+        <!-- ================================================================== -->
+        <!-- Amendments 020-025: Add missing sentence numbers in D-2.11.4     -->
+        <!-- NBC source (en001102.1-6) omits <number> for all 6 paragraphs    -->
+        <!-- ================================================================== -->
+
+        <amendment id="bc-020" sequence="20"
+                   description="Add missing sentence number 1) to D-2.11.4 paragraph 1">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article4.para1"/>
+            <replace preserve-references="true">
+                <new-content>
+                    <paragraph xml:id="nbc.divB.appendixD.appsect2.subsect11.article4.para1"
+                               vendor-id="en001102.1">1) The fire-resistance rating of structural
+mass timber members, such as beams and columns constructed of glued-laminated
+timber, solid sawn timber, or structural composite lumber, is permitted
+to be determined using the calculation method described in Annex B,
+Fire resistance of large cross-section wood elements, of <ref type="standard" target="d-csao86" standardId="d-csao86"/>
+                    </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
+        <amendment id="bc-021" sequence="21"
+                   description="Add missing sentence number 2) to D-2.11.4 paragraph 2">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article4.para2"/>
+            <replace preserve-references="true">
+                <new-content>
+                    <paragraph xml:id="nbc.divB.appendixD.appsect2.subsect11.article4.para2"
+                               vendor-id="en001102.2">2) Except as provided in <ref type="internal"
+                             target="nbc.divB.appendixD.appsect2.subsect11.article4.para3"
+                             display-type="short"
+                             pretext="Sentences"/>
+                        <ref type="internal"
+                             target="nbc.divB.appendixD.appsect2.subsect11.article4.para6"
+                             display-type="short"
+                             pretext="to"/>, the fire-resistance
+rating of mass timber wall, floor and roof assemblies, including those
+constructed of cross-laminated timber, is permitted to be determined
+using the calculation method described in Annex B, Fire resistance
+of large cross-section wood elements, of <ref type="standard" target="d-csao86" standardId="d-csao86"/>
+                    </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
+        <amendment id="bc-022" sequence="22"
+                   description="Add missing sentence number 3) to D-2.11.4 paragraph 3">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article4.para3"/>
+            <replace preserve-references="true">
+                <new-content>
+                    <paragraph xml:id="nbc.divB.appendixD.appsect2.subsect11.article4.para3"
+                               vendor-id="en001102.3">3) Except as provided in <ref type="internal"
+                             target="nbc.divB.appendixD.appsect2.subsect11.article4.para4"
+                             display-type="short"/>, the assemblies described in <ref type="internal"
+                             target="nbc.divB.appendixD.appsect2.subsect11.article4.para2"
+                             display-type="short"/> shall be protected to maintain the
+integrity and thermal insulation properties of the assembly for the
+time period corresponding to the calculated fire-resistance rating
+as follows:<list type="bulleted">
+                           <item>except as provided in Clause (b), for floor and roof assemblies,
+by applying at least one of the following layers to the unexposed
+surface of the assembly:<list type="bulleted">
+                                 <item>OSB or plywood not less than <measurement units="metric">12.5 mm thick</measurement>,
+with the joints in the layer staggered relative to those in the assembly,</item>
+                                 <item>concrete topping not less than <measurement units="metric">38 mm thick</measurement>,
+or</item>
+                                 <item>gypsum-concrete topping not less than <measurement units="metric">25 mm thick</measurement>,</item>
+                              </list>
+                           </item>
+                           <item>for plank decking designed in accordance with <ref type="external" target="csa086">Clause B.10 of</ref>
+                              <ref type="standard" target="d-csao86" standardId="d-csao86"/> by applying at least one of the layers
+described in <ref type="external" target="csa086">Clause B.10.4 of </ref>
+                              <ref type="standard" target="d-csao86" standardId="d-csao86"/> to the unexposed
+surface of the assembly,</item>
+                           <item>for interior wall assemblies, by applying at least one of
+the following layers to at least one side of the assembly, with the
+joints in the layer staggered relative to those in the assembly:<list type="bulleted">
+                                 <item>OSB or plywood not less than <measurement units="metric">12.5 mm thick</measurement>,
+or</item>
+                                 <item>Type X gypsum board not less than <measurement units="metric">12.7 mm thick</measurement>, and</item>
+                              </list>
+                           </item>
+                           <item>for exterior wall assemblies, by applying at least one of
+the following layers to at least one side of the assembly, with the
+joints in the layer staggered relative to those in the assembly: <list type="bulleted">
+                                 <item>OSB or plywood not less than <measurement units="metric">12.5 mm thick</measurement>,</item>
+                                 <item>Type X gypsum board not less than <measurement units="metric">12.7 mm thick</measurement>,</item>
+                                 <item>gypsum sheathing not less than <measurement units="metric">12.7 mm thick</measurement> applied to the exterior (unexposed) side of the assembly, or</item>
+                                 <item>rock or slag insulation sheathing not less than <measurement units="metric">50
+mm thick</measurement> applied to the exterior (unexposed) side of the assembly.</item>
+                              </list>
+                           </item>
+                        </list>
+                    </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
+        <amendment id="bc-023" sequence="23"
+                   description="Add missing sentence number 4) to D-2.11.4 paragraph 4">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article4.para4"/>
+            <replace preserve-references="true">
+                <new-content>
+                    <paragraph xml:id="nbc.divB.appendixD.appsect2.subsect11.article4.para4"
+                               vendor-id="en001102.4">4) For wall, floor and roof assemblies constructed
+of cross-laminated timber, the joints between cross-laminated timber
+panels in the assembly need not be protected in accordance with <ref type="internal"
+                             target="nbc.divB.appendixD.appsect2.subsect11.article4.para3"
+                             display-type="short"/>, provided the joints are either
+lapped or splined to maintain the integrity and thermal insulation
+properties of the assembly for the time period corresponding to the
+calculated fire-resistance rating. (See <ref type="internal"
+                             target="nbc.divB.appendixD.appsect2.subsect11.article4.figure1"
+                             display-type="long"/>.)</paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
+        <amendment id="bc-024" sequence="24"
+                   description="Add missing sentence number 5) to D-2.11.4 paragraph 5">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article4.para5"/>
+            <replace preserve-references="true">
+                <new-content>
+                    <paragraph xml:id="nbc.divB.appendixD.appsect2.subsect11.article4.para5"
+                               vendor-id="en001102.5">5) For interior wall assemblies, the additional
+times assigned in <ref type="external" target="csao86">Clause B.8.1 of </ref>
+                        <ref type="standard" target="d-csao86" standardId="d-csao86"/> shall only
+be applied to the calculated fire-resistance rating where both sides
+of the assembly are protected in accordance with <ref type="external" target="csao86">Clause B.8 of </ref>
+                        <ref type="standard" target="d-csao86" standardId="d-csao86"/>. Where the level of protection differs
+on the two sides, the additional time corresponding to the lesser
+level of protection shall be applied.</paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
+        <amendment id="bc-025" sequence="25"
+                   description="Add missing sentence number 6) to D-2.11.4 paragraph 6">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article4.para6"/>
+            <replace preserve-references="true">
+                <new-content>
+                    <paragraph xml:id="nbc.divB.appendixD.appsect2.subsect11.article4.para6"
+                               vendor-id="en001102.6">6) For exterior wall assemblies, the additional
+times assigned in <ref type="external" target="csao86">Clause B.8.1 of </ref>
+                        <ref type="standard" target="d-csao86" standardId="d-csao86"/> shall only
+be applied to the calculated fire-resistance rating where<list type="bulleted">
+                           <item>the interior (fire-exposed) side of the assembly is protected
+in accordance with <ref type="external" target="csao86">Clause B.8 of </ref>
+                              <ref type="standard" target="d-csao86" standardId="d-csao86"/>, and</item>
+                           <item>except where the assembly is constructed of cross-laminated
+timber panels with lapped or splined joints as described in <ref type="internal"
+                                   target="nbc.divB.appendixD.appsect2.subsect11.article4.para4"
+                                   display-type="short"/>, the exterior (unexposed) side of
+the assembly is protected in accordance with <ref type="internal"
+                                   target="nbc.divB.appendixD.appsect2.subsect11.article4.para3"
+                                   display-type="short"
+                                   pretext="Clause"/>(d).</item>
+                        </list>
+                    </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
+        <amendment id="bc-026" sequence="26"
+                   description="Add missing sentence number 2) to D-2.3.15 paragraph 2">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect3.article15.para2"/>
+            <replace preserve-references="true">
+                <new-content>
+                    <paragraph xml:id="nbc.divB.appendixD.appsect2.subsect3.article15.para2"
+                               vendor-id="en000488.2">2) It is intended that the structural mullions
+referred to in Subclause (1)(d)(ii) will not distort or be displaced
+to the extent that there would be a failure of the wired glass closure
+during the period for which a closure in the fire separation would
+be expected to function. Hollow structural steel tubing not less than <measurement units="metric">100 mm</measurement> square filled with a Portland cement-based grout will
+satisfy the intent of the Subclause.</paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
     </amendments>
     
 </bc-overlay>

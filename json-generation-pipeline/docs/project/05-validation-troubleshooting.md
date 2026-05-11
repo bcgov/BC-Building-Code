@@ -60,7 +60,32 @@ The validation report shows:
 
 ---
 
-## 2. Common Validation Errors
+## 2. Common Pipeline Errors
+
+### Error: `FODC0002 Document has been marked not available` (path doubled)
+
+**Symptom:** Running the merge engine fails with a path like
+`…/output/json-generation-pipeline/output/bc-amendments-combined.xml` — the output directory
+appears twice in the path.
+
+**Cause:** The `overlay-document` parameter is a relative path. Saxon resolves it relative to
+the `-o:` output file's directory, not the working directory, so the path gets prepended with
+the output directory.
+
+**Fix:** Always pass `overlay-document` as an **absolute path**:
+
+```bash
+PROJ=/path/to/BC-Building-Code
+java -jar "$PROJ/json-generation-pipeline/tools/saxon.jar" \
+  -xsl:"$PROJ/json-generation-pipeline/transformation-xslt/merge-engine-v3.xsl" \
+  -s:"$PROJ/json-generation-pipeline/output/nbc-canonical.xml" \
+  overlay-document="$PROJ/json-generation-pipeline/output/bc-amendments-combined.xml" \
+  -o:"$PROJ/json-generation-pipeline/output/bc-building-code.xml"
+```
+
+---
+
+## 3. Common Validation Errors
 
 ### Error: "Modified text not found exactly"
 
@@ -542,6 +567,67 @@ Before committing amendments:
 - **Problem**: The three `<ref>` elements in D-2.3.3.(3) point to `article4.table1/2/3`. The front-end derives labels from the canonical ID, rendering them as `D.2.3.4.`, `D.2.3.4.` and `D.2.3.4.` (dots, no letter suffix) instead of `D-2.3.4.-A`, `D-2.3.4.-B` and `D-2.3.4.-C`.
 - **Fix**: Combined with Example G in amendment `bc-019`. Each `<ref>` is given explicit display text content (`Table D-2.3.4.-A`, `D-2.3.4.-B`, `D-2.3.4.-C`) so the front-end uses that text rather than auto-generating from the ID.
 - **Rule**: When a table's canonical ID does not produce the correct BC-style label (e.g. letter suffix `-A`, `-B`, `-C`), supply explicit display text inside the `<ref>` element rather than relying on `display-type` auto-generation.
+
+### Example I: NBC Source Missing Sentence Numbers — D-2.11.4 and D-2.3.15
+
+- **Targets**: `nbc.divB.appendixD.appsect2.subsect11.article4.para1` through `para6` (D-2.11.4), `nbc.divB.appendixD.appsect2.subsect3.article15.para2` (D-2.3.15)
+- **Problem**: The NBC vendor XML omits the `<number>` element entirely for these paragraphs. The `nbc-to-canonical.xsl` transform only includes sentence numbers when a `<number>` child exists, so the canonical output has no `1)`, `2)`, etc. prefix on the paragraph text.
+- **Fix**: Phase 1 overlay amendments `bc-020` through `bc-026` using `replace` to prepend the correct sentence number to each paragraph. All use `preserve-references="true"` and copy the full paragraph content from `nbc-canonical.xml` with the number added.
+- **Important**: Do NOT use `text-change` with `xpath-within-target="text()[1]"` — the merge engine does not support the `[1]` positional predicate. Always use `replace` for paragraphs that contain `<ref>`, `<measurement>`, or `<list>` child elements.
+- **Rule**: When the NBC source is missing `<number>` elements on `<para-nmbrd>`, use `replace` on the canonical paragraph to prepend the sentence number. Check the vendor XML (`nbc2020.xml`) to confirm the `<number>` child is absent rather than just empty.
+
+### Example J: BC Amendment Refs Rendering Wrong Labels — 9.32.3.4.(6)
+
+- **Source file**: `json-generation-pipeline/source/bc-amendments/xml/NBC2020p1 Division B Part 9.FIN_1.xml`
+- **Target**: `nbc.divBV2.part9.sect32.subsect3.art4.sent6` (BC-authored content, `source="bc"`)
+- **Problem**: Multiple self-closing `<ref/>` elements in BC-authored sentence 6 rendered incorrect labels in the front-end:
+  - Subclause (a)(i): ref rendered as "Sentence 1.1.3.(1) of Division A" instead of "Article 1.1.3.1."
+  - Subclause (a)(ii): missing "(see Note A-9.32.3.4.(6)(a)(ii))" text
+  - Subclause (a)(iv): refs rendered with "of Division BV2" suffix instead of plain "Subsection 9.36.6. or 10.2.3."
+  - Clause (b)(i): ref rendered as "Subclause (iii)" instead of "Subclause (2)(a)(iii)"
+- **Fix**: Directly edited the BC amendment source file to add explicit display text inside each `<ref>` element and add the missing note reference text. No new overlay amendment needed.
+- **Key distinction**: This was a direct edit to the amendment file, NOT a new overlay amendment, because the content is BC-authored (`source="bc"`). The rule is:
+  - **NBC source errors** → write a new overlay amendment
+  - **BC amendment errors** → directly edit the amendment source file
+
+### Example K: BC Amendment Refs with "of Division B/BV2" Suffix — 9.33.1.1.(2)
+
+- **Source file**: `json-generation-pipeline/source/bc-amendments/xml/NBC2020p1 Division B Part 9.FIN_1.xml`
+- **Target**: `nbc.divBV2.part9.sect33.subsect1.art1.sent2` (BC-authored content)
+- **Problem**: Refs to `nbc.divB.part6` and `nbc.divBV2.part9.sect10.subsect10` with `display-type="long"` auto-generated labels "Part 6 of Division B" and "Subsection 9.10.10. of Division BV2" instead of "Part 6" and "Subsection 9.10.10."
+- **Fix**: Direct edit — added explicit display text `Part 6` and `Subsection 9.10.10.` inside the `<ref>` elements.
+- **Rule**: When a ref target crosses division boundaries (e.g. from Division BV2 content referencing Division B), the auto-generated label appends "of Division X". Supply explicit display text to suppress this.
+
+### Example L: Unresolved Vendor-ID Refs in Application Note — A-3.2.6.6.(1)
+
+- **Target**: `nbc.divB.part3.appendix.appnote107.para1`
+- **Problem**: The `nbc-to-canonical.xsl` transform left vendor IDs (`en000439.1`, `en000439.2`, etc.) as ref targets instead of mapping them to canonical sentence IDs. The front-end rendered the raw vendor IDs as text.
+- **Fix**: Phase 1 overlay amendment `bc-139` in `NBC2020p1 Division B Part 3.FIN_2.xml` replacing the paragraph with correct canonical targets (`nbc.divB.part3.sect2.subsect6.art6.sent1` through `sent9`) and explicit display text.
+- **Rule**: When an application note contains refs with `target="enXXXXXX.N"` vendor IDs that don't resolve, replace the paragraph with an overlay amendment using canonical IDs. Check the article's sentences in `bc-building-code.xml` to find the correct canonical targets.
+
+### Example M: Equation Content Missing from JSON — LaTeX Handler
+
+- **Target**: `nbc.divBV2.part9.appendix.appnote129a.div5.eq1`
+- **Problem**: The `canonical-to-json.xsl` equation template handled MathML (`<math>`) and plain text (`<text>`) children but had no handler for `<latex>` children. Equations with `<latex>` content produced JSON with only `id` and `type` fields — no renderable content. The front-end fell back to displaying the equation's `xml:id`.
+- **Fix**: Added a `<latex>` handler in the `equation-json` template in `canonical-to-json.xsl` that outputs both `latex` and `plainText` keys. Also corrected the LaTeX formula to use `\frac{}{}` notation for proper fraction rendering.
+- **Rule**: When adding new equation formats to the canonical XML, ensure the `equation-json` template in `canonical-to-json.xsl` has a matching handler. Currently supported: MathML (`<math>`), LaTeX (`<latex>`), plain text (`<text>`).
+
+### Example N: Sentence Trailing Text Concatenated into Text Field — 9.36.5.3.(1)
+
+- **Source file**: `json-generation-pipeline/source/bc-amendments/xml/NBC2020p1 Division B Part 9.FIN_2.xml`
+- **Target**: `nbc.divBV2.part9.sect36.subsect5.art3.sent1` (BC-authored content)
+- **Problem**: The sentence had two `<text>` children — the main sentence text and a trailing `(See Note ...)` after the clauses. The XSLT `select="text"` grabbed both and concatenated them into one `text` field, producing `"...in accordance with(See Note A-9.36.5.3.(1).)"`.
+- **Fix**: Changed the trailing `<text>` to a `<see-also>` element in the amendment source. The XSLT already handles `<see-also>` as a separate JSON field (`see_also`), so it no longer gets concatenated into the sentence text.
+- **Rule**: Never use multiple `<text>` children inside a `<sentence>`. The XSLT concatenates all `<text>` children into one `text` field. Use `<see-also>` for trailing note references after clauses.
+
+### Example O: Article-Level Note Not Output to JSON — 9.36.5.3
+
+- **Source file**: `json-generation-pipeline/transformation-xslt/canonical-to-json.xsl`
+- **Target**: `nbc.divBV2.part9.sect36.subsect5.art3` (article with `<note>` child)
+- **Problem**: The article had a `<note>` child element containing `(See Note A-9.36.5.3.)` that should render before sentence 1. The XSLT article template only processed `sentence | table | figure` children — `<note>` was silently dropped from the JSON output.
+- **Fix**: Added `<note>` handling in the article template in `canonical-to-json.xsl`. When an article has a `<note>` child, it outputs a `"note"` string field in the article JSON object.
+- **Front-end dependency**: The JSON now includes the `note` field, but the front-end renderer must be updated to display `article.note` when present (rendered before the first sentence).
+- **Rule**: When adding new child element types to articles in the canonical XML, ensure the article template in `canonical-to-json.xsl` processes them. Currently handled: `sentence`, `table`, `figure`, `see-also`, `note`.
 
 ---
 
