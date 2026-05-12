@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-05-11T11:01:17.008348-07:00"
+            generated="2026-05-12T14:05:42.959454-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -16230,16 +16230,22 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <text>L<sub>w</sub> = L<sub>uw</sub>K<sub>exp</sub>K<sub>roof</sub>K<sub>Wspacing</sub>K<sub>Wnumber</sub>K<sub>gyp</sub>K<sub>sheath</sub> ≥ BWP<sub>min</sub>
                      </text>
                      <text>where</text>
-                     <text>K<sub>exp</sub> = wind exposure adjustment factor, and = 1 for rough terrain (suburban, urban or wooded terrain extending upwind from the <ref type="term" target="bldng">building</ref> uninterrupted for at least 1 km),</text>
-                     <text>K<sub>roof</sub> = roof eave-to-ridge height adjustment factor, and = 1 for a roof eave-to-ridge height of <measurement units="metric">3 m</measurement>
+                     <text>K<sub>exp</sub> = wind exposure adjustment factor, and </text>
+                     <text>= 1 for rough terrain (suburban, urban or wooded terrain extending upwind from the <ref type="term" target="bldng">building</ref> uninterrupted for at least 1 km),</text>
+                     <text>K<sub>roof</sub> = roof eave-to-ridge height adjustment factor, and</text>
+                     <text>= 1 for a roof eave-to-ridge height of <measurement units="metric">3 m</measurement>
                      </text>
                      <text>K<sub>Wspacing</sub> = <ref type="term" target="br-wl-bnd">braced wall band</ref> spacing adjustment factor for wind (see <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect13.art7.sent5"
-                             display-type="short"/>),per <ref type="term" target="bldng">building</ref> plan direction, and = 1 for a <ref type="term" target="br-wl-bnd">braced wall band</ref> spacing of <measurement units="metric">7.6 m</measurement>
+                             display-type="short"/>),per <ref type="term" target="bldng">building</ref> plan direction, and </text>
+                     <text>= 1 for a <ref type="term" target="br-wl-bnd">braced wall band</ref> spacing of <measurement units="metric">7.6 m</measurement>
                      </text>
-                     <text>K<sub>Wnumber</sub> = number of parallel <ref type="term" target="br-wl-bnd">braced wall bands</ref> adjustment factor for wind, per <ref type="term" target="bldng">building</ref> plan direction, and = 1 for two exterior walls and no intermediate <ref type="term" target="br-wl-bnd">braced wall bands</ref>,</text>
-                     <text>K<sub>gyp</sub> = interior gypsum board adjustment factor, and = 1 for <ref type="term" target="br-wl-pnl">braced wall panels</ref> with gypsum board installed on the interior side,</text>
-                     <text>K<sub>sheath</sub> = intermittent <ref type="term" target="br-wl-pnl">braced wall panels</ref> adjustment factor, and = 1 for continuously sheathed <ref type="term" target="br-wl-bnd">braced wall bands</ref>, and</text>
+                     <text>K<sub>Wnumber</sub> = number of parallel <ref type="term" target="br-wl-bnd">braced wall bands</ref> adjustment factor for wind, per <ref type="term" target="bldng">building</ref> plan direction, and </text>
+                     <text>= 1 for two exterior walls and no intermediate <ref type="term" target="br-wl-bnd">braced wall bands</ref>,</text>
+                     <text>K<sub>gyp</sub> = interior gypsum board adjustment factor, and </text>
+                     <text>= 1 for <ref type="term" target="br-wl-pnl">braced wall panels</ref> with gypsum board installed on the interior side,</text>
+                     <text>K<sub>sheath</sub> = intermittent <ref type="term" target="br-wl-pnl">braced wall panels</ref> adjustment factor, and </text>
+                     <text>= 1 for continuously sheathed <ref type="term" target="br-wl-bnd">braced wall bands</ref>, and</text>
                      <text>BWP<sub>min</sub> = Minimum length of individual <ref type="term" target="br-wl-pnl">braced wall panels</ref> as per <ref type="internal"
                              target="nbc.divBV2.part9.sect23.subsect13.art5.table1"
                              display-type="long"/>.</text>
