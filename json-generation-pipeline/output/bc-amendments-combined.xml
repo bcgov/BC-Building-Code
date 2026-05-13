@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-05-12T14:05:42.959454-07:00"
+            generated="2026-05-13T12:44:43.814969-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -34098,7 +34098,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <new-content source="bc">
                <application-note xml:id="nbc.divC.part2.appendix.appnote1">
                   <number>2.2.1.2.(1)</number>
-                  <title>Structural Design. Part 4 of Division B is written on the assumption that structural design will be </title>
+                  <title>Structural Design.</title>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote1.para1">A-2.2.1.2.(1)   Structural Design. Part 4 of Division B is written on the assumption that structural design will be carried out by a professional who is qualified to perform such design. Sentence 2.2.1.2.(1) is not intended to imply that a professional may not also be required in the application of requirements in other Parts of the British Columbia Building Code.</paragraph>
                </application-note>
             </new-content>
@@ -34117,7 +34117,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <new-content source="bc">
                <application-note xml:id="nbc.divC.part2.appendix.appnote7">
                   <number>2.2.7.</number>
-                  <title>Professional Design and Review.  This Subsection provides for the use of what are generally called L</title>
+                  <title>Professional Design and Review.</title>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote7.para1">A-2.2.7.   Professional Design and Review.  This Subsection provides for the use of what are generally called Letters of Assurance. The letters themselves, known as Schedules A, B, C-A and C-B and located at the end of Division C, are intended to put on paper the responsibilities of the owner and the various registered professionals in a construction project. The Letters of Assurance do not impose any additional responsibilities on the registered professionals nor are they intended to alter the roles and responsibilities of the authorities having jurisdiction.</paragraph>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote7.para2">The Schedules have been very carefully scrutinized by the Province of British Columbia, Union of BC Municipalities, Building Officials’ Association of British Columbia, Architectural Institute of British Columbia, Association of Professional Engineers and Geoscientists of British Columbia and their respective legal counsel. The precise wording in the letters is extremely critical and must not be modified. Any notations on these Schedules which are absolutely necessary to suit a particular project must be clearly and legibly marked in ink on the copies.</paragraph>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote7.para3">It is typical that the registered professional responsible for the design is also responsible for the field review. There are instances where this is not the case and having a different registered professional doing the field reviews is unavoidable. Schedule C-B requires that the registered professional who provides the field review provide assurance that the building as finally constructed is in substantial conformance with the Code. In the event that another registered professional is to provide field review, the field reviewer takes on the responsibility to confirm that the construction substantially complies with the plans and supporting documents that were submitted for the building permit. The responsibility for code compliance of the design remains with the original registered professional who undertook the design. In this event, the Schedule C-B must be modified by the field reviewer by crossing out and initialing Clause (b)(i) and providing the effective transition date.</paragraph>
@@ -34139,7 +34139,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <new-content source="bc">
                <application-note xml:id="nbc.divC.part2.appendix.appnote8">
                   <number>2.2.7.1.(1)(c)(i)</number>
-                  <title>c)(i)   Structural Components.  The reference to “structural components of buildings that fall withi</title>
+                  <title>Structural Components.</title>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote8.para1">A-2.2.7.1.(1)(c)(i)   Structural Components.  The reference to “structural components of buildings that fall within the scope of Part 4” includes the situation where a building is classified under Part 9 due to its size and occupancy but also contains some structural components (such as beams supporting concentrated loads) which must be designed under Part 4. In this situation only Schedules B and C-B for the structural components are required. Schedule A and Schedules B, C-A and C-B relating to non-structural components are not required.</paragraph>
                </application-note>
             </new-content>
@@ -34158,7 +34158,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <new-content source="bc">
                <application-note xml:id="nbc.divC.part2.appendix.appnote9">
                   <number>2.2.7.2.(1)(a)</number>
-                  <title>a)   Coordinating Registered Professional.  The coordinating registered professional is responsible </title>
+                  <title>Coordinating Registered Professional.</title>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote9.para1">A-2.2.7.2.(1)(a)   Coordinating Registered Professional.  The coordinating registered professional is responsible to ascertain that all Code related aspects which are relevant to the project are clearly identified by each of the registered professionals in the collection of Schedules B. If a registered professional of record has crossed out any item on their Schedule B, the coordinating registered professional must confirm this item is not applicable to the project or resolve the issue with the registered professional of record.</paragraph>
                </application-note>
             </new-content>
@@ -34177,7 +34177,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <new-content source="bc">
                <application-note xml:id="nbc.divC.part2.appendix.appnote10">
                   <number>2.2.7.2.(1)(b)</number>
-                  <title>b)   Schedule B.  The purpose of Schedule B is to clearly identify the appropriate registered profes</title>
+                  <title>Schedule B.</title>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote10.para1">A-2.2.7.2.(1)(b)   Schedule B.  The purpose of Schedule B is to clearly identify the appropriate registered professional of record who has the overall responsibility in each discipline for compliance with the various Code related aspects of the project. Detailed design of certain building components may be undertaken by other registered professionals. The registered professional of record is responsible for monitoring the design work and field review of the other registered professionals within their discipline for components listed in Schedule B. In the event that the other registered professionals provide design and field review, the registered professional of record must be satisfied that such design and field reviews have been performed and is responsible for Schedule C-B.</paragraph>
                </application-note>
             </new-content>
@@ -34196,7 +34196,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <new-content source="bc">
                <application-note xml:id="nbc.divC.part2.appendix.appnote11">
                   <number>2.2.7.2.(2)</number>
-                  <title>Schedule C-A.   Schedule C-A provides confirmation that the coordinating registered professional has</title>
+                  <title>Schedule C-A.</title>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote11.para1">A-2.2.7.2.(2)   Schedule C-A.   Schedule C-A provides confirmation that the coordinating registered professional has completed the obligation to coordinate the various registered professionals engaged in the project. It also confirms that the testing of the interrelated fire and life safety systems, such as fire alarms and sprinklers, has been completed and the systems function as intended.</paragraph>
                </application-note>
             </new-content>
@@ -34215,7 +34215,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <new-content source="bc">
                <application-note xml:id="nbc.divC.part2.appendix.appnote12">
                   <number>2.2.7.3.</number>
-                  <title>Demonstration of the Coordinated Fire and Life Safety Systems.  The design drawings and supporting d</title>
+                  <title>Demonstration of the Coordinated Fire and Life Safety Systems.</title>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote12.para1">A-2.2.7.3.   Demonstration of the Coordinated Fire and Life Safety Systems.  The design drawings and supporting documents must clearly indicate all essential details of the Coordinated Fire and Life Safety Systems prior to the construction of or the alteration to a building. Demonstration of the proper, integrated operation of the Fire and Life Safety Systems must be conducted prior to occupancy.</paragraph>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote12.para2">Note that Schedules A, B, C-A &amp; C-B, as required by Subsection 2.2.7., must be signed and sealed and submitted to the authority having jurisdiction, as appropriate for each specific project.</paragraph>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote12.para3">The following is an example of the steps required to coordinate the installation and testing of fire and life safety systems in buildings.</paragraph>
@@ -34552,7 +34552,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
             <new-content source="bc">
                <application-note xml:id="nbc.divC.part2.appendix.appnote6">
                   <number>2.3.1.</number>
-                  <title>Alternative Solutions. Beyond the purposes of demonstrating compliance and acquiring a building perm</title>
+                  <title>Alternative Solutions.</title>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote6.para1">A-2.3.1.    Alternative Solutions. Beyond the purposes of demonstrating compliance and acquiring a building permit, there are other important reasons for requiring that the proponent of an alternative solution submit project documentation (i.e. a compliance report) to the authority having jurisdiction and for the authority having jurisdiction to retain that documentation for a substantial period following the construction of a building:</paragraph>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote6.para2">•   Alternative solutions made possible by objective-based codes may have special maintenance requirements, which would be described in the documentation.</paragraph>
                   <paragraph xml:id="nbc.divC.part2.appendix.appnote6.para3">•   Documentation helps consultants perform code compliance assessments of existing buildings before they are sold and informs current owners or prospective buyers of existing buildings of any limitations pertaining to their future use or development.</paragraph>
