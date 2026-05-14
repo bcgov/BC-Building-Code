@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-05-13T12:44:43.814969-07:00"
+            generated="2026-05-13T17:06:29.151495-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -16890,19 +16890,25 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <text>For resistance to seismic forces, the minimum total length of <ref type="term" target="br-wl-pnl">braced wall panels</ref> in each <ref type="term" target="br-wl-bnd">braced wall band</ref>, L<sub>s</sub>, shall be determined by applying the adjustment factors provided in Table 9.23.13.7.-D to the unadjusted minimum total <ref type="term" target="br-wl-pnl">braced wall panel</ref> length, L<sub>us</sub>, provided in Table 9.23.13.7.-C using the following equation:</text>
                   <text>L<sub>s</sub> = L<sub>us</sub>K<sub>weight</sub>K<sub>snow</sub>K<sub>Sspacing</sub>K<sub>Snumber</sub>K<sub>gyp</sub>K<sub>sheath</sub> ≥ BWP<sub>min</sub>
                   </text>
-                  <text>where</text>
-                  <text>K<sub>weight</sub> = weight of construction and cladding adjustment factor, and = 1 for normal-weight construction (see <ref type="internal"
+                  <text>Where:</text>
+                  <text>K<sub>weight</sub> = weight of construction and cladding adjustment factor, and </text>
+                  <text>= 1 for normal-weight construction (see <ref type="internal"
                           target="nbc.divBV2.part9.sect23.subsect13.art2.sent3"
                           display-type="short"/>),</text>
-                  <text>K<sub>snow</sub> = roof snow load adjustment factor, and = 1 for a specified roof snow load of <measurement units="metric">2 kPa</measurement> or less, as calculated in accordance with <ref type="internal"
+                  <text>K<sub>snow</sub> = roof snow load adjustment factor, and </text>
+                  <text>= 1 for a specified roof snow load of <measurement units="metric">2 kPa</measurement> or less, as calculated in accordance with <ref type="internal"
                           target="nbc.divBV2.part9.sect4.subsect2.art2"
                           display-type="long"/>,</text>
                   <text>K<sub>Sspacing</sub> = <ref type="term" target="br-wl-bnd">braced wall band</ref> spacing adjustment factor for seismic forces (see <ref type="internal"
                           target="nbc.divBV2.part9.sect23.subsect13.art7.sent5"
-                          display-type="short"/>), per <ref type="term" target="bldng">building</ref> plan direction, and = 1 for a <ref type="term" target="br-wl-bnd">braced wall band</ref> spacing of <measurement units="metric">7.6 m</measurement>,</text>
-                  <text>K<sub>Snumber</sub> = number of parallel <ref type="term" target="br-wl-bnd">braced wall bands</ref> adjustment factor for seismic forces, per <ref type="term" target="bldng">building</ref> plan direction, and = 1 for two exterior walls and no intermediate <ref type="term" target="br-wl-bnd">braced wall bands</ref>,</text>
-                  <text>K<sub>gyp</sub> = interior gypsum board adjustment factor, and = 1 for <ref type="term" target="br-wl-pnl">braced wall panels</ref> with gypsum board installed on the interior side,</text>
-                  <text>K<sub>sheath</sub> = intermittent <ref type="term" target="br-wl-pnl">braced wall panels</ref> adjustment factor, and = 1 for continuously sheathed <ref type="term" target="br-wl-bnd">braced wall bands</ref>, and</text>
+                          display-type="short"/>), per <ref type="term" target="bldng">building</ref> plan direction, and </text>
+                  <text>= 1 for a <ref type="term" target="br-wl-bnd">braced wall band</ref> spacing of <measurement units="metric">7.6 m</measurement>,</text>
+                  <text>K<sub>Snumber</sub> = number of parallel <ref type="term" target="br-wl-bnd">braced wall bands</ref> adjustment factor for seismic forces, per <ref type="term" target="bldng">building</ref> plan direction, and </text>
+                  <text>= 1 for two exterior walls and no intermediate <ref type="term" target="br-wl-bnd">braced wall bands</ref>,</text>
+                  <text>K<sub>gyp</sub> = interior gypsum board adjustment factor, and </text>
+                  <text>= 1 for <ref type="term" target="br-wl-pnl">braced wall panels</ref> with gypsum board installed on the interior side,</text>
+                  <text>K<sub>sheath</sub> = intermittent <ref type="term" target="br-wl-pnl">braced wall panels</ref> adjustment factor, and </text>
+                  <text>= 1 for continuously sheathed <ref type="term" target="br-wl-bnd">braced wall bands</ref>, and</text>
                   <text>BWP<sub>min</sub> = minimum length of individual <ref type="term" target="br-wl-pnl">braced wall panels</ref>, per <ref type="internal"
                           target="nbc.divBV2.part9.sect23.subsect13.art5.table1"
                           display-type="long"/>. (See Note A-9.23.13.7.(4) for an alternative procedure to calculate L<sub>s</sub> directly and Note A-9.23.13.7.(3) and (4).)</text>
