@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-05-13T17:06:29.151495-07:00"
+            generated="2026-05-19T17:17:18.60446-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -33950,6 +33950,38 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                   <sentence xml:id="nbc.divC.part2.sect3.subsect1.art2.sent6" number="6">
                      <text>Where more than one person is responsible for the design of a <ref type="term" target="bldng">building</ref> or facility that includes a proposed alternative solution, the person requesting the use of the alternative solution shall identify a single person to co-ordinate the preparation of the design, Code analysis and documentation referred to in this Article.</text>
                   </sentence>
+                  <figure xml:id="nbc.divC.part2.sect3.subsect1.art2.figure1">
+                     <graphic src="bc-graphics/figure-c-2-3-1-2-1"
+                              alt="British Columbia Building Code 2024 Schedule A form titled 'Confirmation of Commitment by Owner and Coordinating Registered Professional' for building permit applications, including sections for jurisdiction, project details, professional seal, signature, and date."/>
+                  </figure>
+                  <figure xml:id="nbc.divC.part2.sect3.subsect1.art2.figure2">
+                     <graphic src="bc-graphics/figure-c-2-3-1-2-2"
+                              alt="Second page of the British Columbia Building Code 2024 Schedule A form continuation, containing sections for coordinating registered professional and owner information, addresses, signatures, professional seal, firm details, and certification statements related to building permit coordination and compliance."/>
+                  </figure>
+                  <figure xml:id="nbc.divC.part2.sect3.subsect1.art2.figure3">
+                     <graphic src="bc-graphics/figure-c-2-3-1-2-3"
+                              alt="British Columbia Building Code 2024 Schedule B form titled 'Assurance of Professional Design and Commitment for Field Review,' including sections for jurisdiction, project details, professional disciplines such as architectural, structural, mechanical, plumbing, electrical, and geotechnical, along with professional seal, signature, and compliance assurance statements."/>
+                  </figure>
+                  <figure xml:id="nbc.divC.part2.sect3.subsect1.art2.figure4">
+                     <graphic src="bc-graphics/figure-c-2-3-1-2-4"
+                              alt="Second page of the British Columbia Building Code 2024 Schedule B continuation form, containing sections for registered professional information, project address, discipline, professional seal and signature, firm membership declaration, and certification statements for field review responsibilities and professional compliance."/>
+                  </figure>
+                  <figure xml:id="nbc.divC.part2.sect3.subsect1.art2.figure5">
+                     <graphic src="bc-graphics/figure-c-2-3-1-2-5"
+                              alt="Third page of the British Columbia Building Code 2024 Schedule B continuation form titled 'Summary of Design and Field Review Requirements,' listing architectural, structural, and mechanical review items such as fire resistance, egress systems, structural capacity, HVAC systems, waterproofing, glazing, seismic restraint, and energy code requirements, with sections for professional seal, signature, date, and CRP initials."/>
+                  </figure>
+                  <figure xml:id="nbc.divC.part2.sect3.subsect1.art2.figure6">
+                     <graphic src="bc-graphics/figure-c-2-3-1-2-6"
+                              alt="Fourth page of the British Columbia Building Code 2024 Schedule B continuation form listing plumbing, fire suppression systems, electrical, and geotechnical field review requirements, including drainage systems, sprinklers, alarms, electrical systems, excavation, soil bearing capacity, and seismic considerations, with sections for professional seal, signature, date, and CRP initials."/>
+                  </figure>
+                  <figure xml:id="nbc.divC.part2.sect3.subsect1.art2.figure7">
+                     <graphic src="bc-graphics/figure-c-2-3-1-2-7"
+                              alt="British Columbia Building Code 2024 Schedule C-A form titled 'Assurance of Coordination of Professional Field Review,' including sections for jurisdiction, project information, coordinating registered professional details, professional seal and signature, field review coordination assurances, firm declaration, and compliance statements related to building permit and occupancy requirements."/>
+                  </figure>
+                  <figure xml:id="nbc.divC.part2.sect3.subsect1.art2.figure8">
+                     <graphic src="bc-graphics/figure-c-2-3-1-2-8"
+                              alt="British Columbia Building Code 2024 Schedule C-B form titled 'Assurance of Professional Field Review and Compliance,' including sections for jurisdiction, discipline, project information, registered professional details, professional seal and signature, compliance assurance statements, firm declaration, and certification requirements related to final inspection and building permit compliance."/>
+                  </figure>
                </article>
             </new-content>
          </insert>
