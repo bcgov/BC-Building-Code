@@ -355,6 +355,9 @@
             <xsl:if test="@xml:id">
                 <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             </xsl:if>
+            <xsl:if test="@hideLabel = 'true'">
+                <fn:boolean key="hide_label">true</fn:boolean>
+            </xsl:if>
             <xsl:if test="title">
                 <fn:string key="title"><xsl:apply-templates select="title" mode="rich-text-json"/></fn:string>
             </xsl:if>
@@ -1496,6 +1499,9 @@
                             <fn:map>
                                 <fn:string key="type">figure</fn:string>
                                 <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
+                                <xsl:if test="@hideLabel = 'true'">
+                                    <fn:boolean key="hide_label">true</fn:boolean>
+                                </xsl:if>
                                 <xsl:if test="@source">
                                     <fn:string key="source"><xsl:value-of select="@source"/></fn:string>
                                 </xsl:if>
@@ -1620,6 +1626,9 @@
         <fn:map>
             <fn:string key="id"><xsl:value-of select="@xml:id"/></fn:string>
             <fn:string key="type">figure</fn:string>
+            <xsl:if test="@hideLabel = 'true'">
+                <fn:boolean key="hide_label">true</fn:boolean>
+            </xsl:if>
             
             <!-- Deleted flag -->
             <xsl:if test="@deleted = 'yes'">
