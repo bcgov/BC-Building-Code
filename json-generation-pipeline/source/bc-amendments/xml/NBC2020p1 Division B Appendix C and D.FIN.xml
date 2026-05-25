@@ -1721,6 +1721,47 @@ satisfy the intent of the Subclause.</paragraph>
             </replace>
         </amendment>
 
+        <!-- ================================================================== -->
+        <!-- Amendment 027: Nest Example 2 bullet list inside the paragraph    -->
+        <!-- Appendix D D-1.7.4 Example 2                                      -->
+        <!-- ================================================================== -->
+
+        <amendment id="bc-027" sequence="27"
+                   description="Nest the Example 2 bulleted list inside D-1.7.4 paragraph 1">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect1.subsect7.article4.example2.para1"/>
+            <replace preserve-references="true">
+                <new-content>
+                    <paragraph xml:id="nbc.divB.appendixD.appsect1.subsect7.article4.example2.para1">A <measurement units="metric">2 h</measurement> fire-resistance rating is required for a
+hollow masonry wall of Type N concrete with a <measurement units="metric">12.7 mm</measurement> Type X gypsum board finish on each face.
+                        <list type="bulleted">
+                            <item>Since gypsum board is used, <ref type="internal"
+                                    target="nbc.divB.appendixD.appsect1.subsect7.article1.para5"
+                                    display-type="long"/> applies. The <measurement units="metric">12.7 mm</measurement> gypsum board finish
+on the fire-exposed side is, therefore, assigned <measurement units="metric">25 min</measurement> by using <ref type="internal"
+                                    target="nbc.divB.appendixD.appsect2.subsect3.article4.table1"
+                                    display-type="long"/>.</item>
+                            <item>The fire resistance required of the balance of the assembly
+is <measurement units="metric"> 120 min</measurement> - <measurement units="metric">25 min</measurement> = <measurement units="metric">95 min</measurement>.</item>
+                            <item>Interpolating between <measurement units="metric">1.5 h</measurement> and <measurement units="metric">2 h</measurement> in <ref type="internal"
+                                    target="nbc.divB.appendixD.appsect2.subsect1.article1.table1"
+                                    display-type="long"/> for <measurement units="metric">95 min</measurement> fire resistance,
+the equivalent thickness for hollow masonry units required is <measurement units="metric">95 mm</measurement> + (<measurement units="metric"> 18 mm</measurement> × 5/30) = <measurement units="metric">95 mm</measurement> + <measurement units="metric">3 mm</measurement> = 98 mm. </item>
+                            <item>The contribution to the equivalent thickness of the wall
+of the <measurement units="metric"> 12.7 mm</measurement> gypsum board finish on the non-fire-exposed
+side using <ref type="internal"
+                                    target="nbc.divB.appendixD.appsect1.subsect7.article1.table1"
+                                    display-type="long"/> = 12.7 × 1.25 = <measurement units="metric">16 mm</measurement>.</item>
+                            <item>Equivalent thickness required of concrete masonry unit =
+98 - 16 = <measurement units="metric">82 mm</measurement>. </item>
+                            <item>The fire-resistance rating of a concrete masonry wall having
+an equivalent thickness of <measurement units="metric">82 mm</measurement> = <measurement units="metric">1 h</measurement> for <measurement units="metric">73 mm</measurement> + (<measurement units="metric">9 mm</measurement> × 30/22) = <measurement units="metric">1 h</measurement>
+                                <measurement units="metric">12 min</measurement>.</item>
+                        </list>
+                    </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
     </amendments>
     
 </bc-overlay>
