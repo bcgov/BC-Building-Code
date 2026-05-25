@@ -1775,6 +1775,45 @@ of gypsum board on wood supports, fastener spacing shall conform to <ref type="s
             </replace>
         </amendment>
 
+        <amendment id="bc-029" sequence="29"
+                   description="Add missing sentence number 1) to D-2.6.6 paragraph 1">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect6.article6.para1"/>
+                <modify>
+                     <text-change xpath-within-target="text()">
+                          <find-replace>
+                                <find>A fire-resistance rating, R, is permitted</find>
+                                <replace>1) A fire-resistance rating, R, is permitted</replace>
+                          </find-replace>
+                     </text-change>
+                </modify>
+        </amendment>
+
+        <amendment id="bc-030" sequence="30"
+                   description="Add missing sentence number 2) to D-2.6.6 paragraph 2">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect6.article6.para2"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>A pair of steam vent holes shall</find>
+                        <replace>2) A pair of steam vent holes shall</replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-031" sequence="31"
+                   description="Add missing sentence number 3) to D-2.6.6 paragraph 3">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect6.article6.para3"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>Load application and reaction shall be</find>
+                        <replace>3) Load application and reaction shall be</replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
     </amendments>
     
 </bc-overlay>
