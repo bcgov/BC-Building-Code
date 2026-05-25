@@ -1762,6 +1762,19 @@ an equivalent thickness of <measurement units="metric">82 mm</measurement> = <me
             </replace>
         </amendment>
 
+        <amendment id="bc-028" sequence="28"
+                   description="Correct sentence number 6) to 5) in D-2.3.9 paragraph 5">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect3.article9.para5"/>
+            <replace preserve-references="true">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.divB.appendixD.appsect2.subsect3.article9.para5"
+                               vendor-id="en000483.6">5) In a double layer application
+of gypsum board on wood supports, fastener spacing shall conform to <ref type="standard" target="d-astmc840" standardId="d-astmc840"/>
+                    </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
     </amendments>
     
 </bc-overlay>
