@@ -1721,6 +1721,177 @@ satisfy the intent of the Subclause.</paragraph>
             </replace>
         </amendment>
 
+        <!-- ================================================================== -->
+        <!-- Amendment 027: Nest Example 2 bullet list inside the paragraph    -->
+        <!-- Appendix D D-1.7.4 Example 2                                      -->
+        <!-- ================================================================== -->
+
+        <amendment id="bc-027" sequence="27"
+                   description="Nest the Example 2 bulleted list inside D-1.7.4 paragraph 1">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect1.subsect7.article4.example2.para1"/>
+            <replace preserve-references="true">
+                <new-content>
+                    <paragraph xml:id="nbc.divB.appendixD.appsect1.subsect7.article4.example2.para1">A <measurement units="metric">2 h</measurement> fire-resistance rating is required for a
+hollow masonry wall of Type N concrete with a <measurement units="metric">12.7 mm</measurement> Type X gypsum board finish on each face.
+                        <list type="bulleted">
+                            <item>Since gypsum board is used, <ref type="internal"
+                                    target="nbc.divB.appendixD.appsect1.subsect7.article1.para5"
+                                    display-type="long"/> applies. The <measurement units="metric">12.7 mm</measurement> gypsum board finish
+on the fire-exposed side is, therefore, assigned <measurement units="metric">25 min</measurement> by using <ref type="internal"
+                                    target="nbc.divB.appendixD.appsect2.subsect3.article4.table1"
+                                    display-type="long"/>.</item>
+                            <item>The fire resistance required of the balance of the assembly
+is <measurement units="metric"> 120 min</measurement> - <measurement units="metric">25 min</measurement> = <measurement units="metric">95 min</measurement>.</item>
+                            <item>Interpolating between <measurement units="metric">1.5 h</measurement> and <measurement units="metric">2 h</measurement> in <ref type="internal"
+                                    target="nbc.divB.appendixD.appsect2.subsect1.article1.table1"
+                                    display-type="long"/> for <measurement units="metric">95 min</measurement> fire resistance,
+the equivalent thickness for hollow masonry units required is <measurement units="metric">95 mm</measurement> + (<measurement units="metric"> 18 mm</measurement> × 5/30) = <measurement units="metric">95 mm</measurement> + <measurement units="metric">3 mm</measurement> = 98 mm. </item>
+                            <item>The contribution to the equivalent thickness of the wall
+of the <measurement units="metric"> 12.7 mm</measurement> gypsum board finish on the non-fire-exposed
+side using <ref type="internal"
+                                    target="nbc.divB.appendixD.appsect1.subsect7.article1.table1"
+                                    display-type="long"/> = 12.7 × 1.25 = <measurement units="metric">16 mm</measurement>.</item>
+                            <item>Equivalent thickness required of concrete masonry unit =
+98 - 16 = <measurement units="metric">82 mm</measurement>. </item>
+                            <item>The fire-resistance rating of a concrete masonry wall having
+an equivalent thickness of <measurement units="metric">82 mm</measurement> = <measurement units="metric">1 h</measurement> for <measurement units="metric">73 mm</measurement> + (<measurement units="metric">9 mm</measurement> × 30/22) = <measurement units="metric">1 h</measurement>
+                                <measurement units="metric">12 min</measurement>.</item>
+                        </list>
+                    </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
+        <amendment id="bc-028" sequence="28"
+                   description="Correct sentence number 6) to 5) in D-2.3.9 paragraph 5">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect3.article9.para5"/>
+            <replace preserve-references="true">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.divB.appendixD.appsect2.subsect3.article9.para5"
+                               vendor-id="en000483.6">5) In a double layer application
+of gypsum board on wood supports, fastener spacing shall conform to <ref type="standard" target="d-astmc840" standardId="d-astmc840"/>
+                    </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
+        <amendment id="bc-029" sequence="29"
+                   description="Add missing sentence number 1) to D-2.6.6 paragraph 1">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect6.article6.para1"/>
+                <modify>
+                     <text-change xpath-within-target="text()">
+                          <find-replace>
+                                <find>A fire-resistance rating, R, is permitted</find>
+                                <replace>1) A fire-resistance rating, R, is permitted</replace>
+                          </find-replace>
+                     </text-change>
+                </modify>
+        </amendment>
+
+        <amendment id="bc-030" sequence="30"
+                   description="Add missing sentence number 2) to D-2.6.6 paragraph 2">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect6.article6.para2"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>A pair of steam vent holes shall</find>
+                        <replace>2) A pair of steam vent holes shall</replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-031" sequence="31"
+                   description="Add missing sentence number 3) to D-2.6.6 paragraph 3">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect6.article6.para3"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>Load application and reaction shall be</find>
+                        <replace>3) Load application and reaction shall be</replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-032" sequence="32"
+                   description="Add missing sentence number 1) to D-2.11.1 paragraph 1">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article1.para1"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>The calculation methods described in this</find>
+                        <replace>1) The calculation methods described in this</replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-033" sequence="33"
+                   description="Add missing sentence number 2) to D-2.11.1 paragraph 2">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article1.para2"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>Loadbearing mass timber members, such</find>
+                        <replace>2) Loadbearing mass timber members, such</replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-034" sequence="34"
+                   description="Add missing sentence number 3) to D-2.11.1 paragraph 3">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article1.para3"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>Mass timber wall, floor and roof assemblies</find>
+                        <replace>3) Mass timber wall, floor and roof assemblies</replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-035" sequence="35"
+                   description="Add missing sentence number 1) to D-2.11.2 paragraph 1">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article2.para1"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>Method A described in </find>
+                        <replace>1) Method A described in </replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-036" sequence="36"
+                   description="Add missing sentence number 2) to D-2.11.2 paragraph 2">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article2.para2"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>Method B described in </find>
+                        <replace>2) Method B described in </replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-037" sequence="37"
+                   description="Add missing sentence number 3) to D-2.11.2 paragraph 3">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article2.para3"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>The calculation methods</find>
+                        <replace>3) The calculation methods</replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
     </amendments>
     
 </bc-overlay>
