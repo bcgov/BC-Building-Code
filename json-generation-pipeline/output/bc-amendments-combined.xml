@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-05-25T17:47:49.475895-07:00"
+            generated="2026-05-25T17:58:16.68284-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -29569,7 +29569,7 @@ need for additional support. (See Note A-9.9.10.1.(2).)</replace>
                      <paragraph xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para2">Where the plan is triangular, all braced wall bands intersect with the subject braced wall band. The prescriptive requirements in Part 9 do not apply to these cases and the building must be designed according to Part 4 with respect to lateral load resistance.</paragraph>
                      <paragraph xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para3">Where the braced wall bands are not parallel, the adjacent band is identified as follows using <ref type="internal"
                              target="nbc.divBV2.part9.appendix.appnote131.figure2"
-                             display-type="long">Figure Table A-9.23.13.5.-B</ref> as an example:<list type="bulleted">
+                             display-type="long">Figure Table A-9.23.13.5.-B</ref> as an example:<list type="numbered">
                            <item xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para3.item1">Determine the mid-point of the centre line of the subject braced wall band (A);</item>
                            <item xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para3.item2">Project a perpendicular line from this mid-point (B);</item>
                            <item xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para3.item3">The first braced wall band encountered is the adjacent braced wall band (C);</item>
