@@ -2240,6 +2240,8 @@
       <choice>
         <value>bulleted</value>
         <value>numbered</value>
+        <value>none</value>
+        <value>roman</value>
         <value>alphabetic</value>
         <value>definition</value>
         <value>variable</value>

@@ -481,6 +481,120 @@ obtained from <ref type="internal"
                     </new-content>
             </replace>
         </amendment>
+
+        <amendment id="bc-485" sequence="485" description="Change Application Note A-9.36.2.4.(1) example procedure list from bulleted to numbered">
+            <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote223.div2.example1.para1"/>
+            <replace preserve-references="true">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.divBV2.part9.appendix.appnote223.div2.example1.para1">
+                        <list type="numbered">
+                           <item>Determine the thermal resistance of each continuous material
+layer incorporated in the assembly using <ref type="internal"
+                                   target="nbc.divBV2.part9.appendix.appnote223.div3.table3"
+                                   display-type="long"/>.</item>
+                           <item>Calculate the thermal resistance of a section of framing
+and adjacent cavity portion, RSI<sub>parallel</sub>, using the parallel-path
+flow method as follows:<list type="roman">
+                                 <item>along a line that goes through the framing, which is designated
+RSI<sub>F</sub>, and</item>
+                                 <item>along a line that goes through the cavity (usually filled
+with insulation), which is designated RSI<sub>C</sub>. </item>
+                              </list>Look up the % area of framing and cavity for a typical <measurement units="metric">38 × 140 mm</measurement> wood-frame wall assembly with studs <measurement units="metric">400
+mm</measurement> o.c. using <ref type="internal"
+                                   target="nbc.divBV2.part9.appendix.appnote223.div2.table1"
+                                   display-type="long"/>:<list type="none">
+                                 <item>% area of framing = 23%, and </item>
+                                 <item>% area of cavity = 77%</item>
+                              </list>Then, combine the sums of RSI<sub>F</sub> and RSI<sub>C</sub> in proportion to the relative areas of framing
+and insulation to calculate the value of RSI<sub>parallel</sub> (thermal
+resistance of the framing portion): <equation type="display" html-src="graphics/eg/026/eg02630a">
+                                 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                    <mi xmlns="">RSI</mi>
+                                    <msub xmlns="">
+                                       <mrow/>
+                                       <mrow>
+                                          <mi>parallel</mi>
+                                       </mrow>
+                                    </msub>
+                                    <mo xmlns="">=</mo>
+                                    <mfrac xmlns="">
+                                       <mrow>
+                                          <mn>100</mn>
+                                       </mrow>
+                                       <mrow>
+                                          <mo>(</mo>
+                                          <mfrac>
+                                             <mrow>
+                                                <mn>23</mn>
+                                             </mrow>
+                                             <mrow>
+                                                <mn>1.19</mn>
+                                             </mrow>
+                                          </mfrac>
+                                          <mo>)</mo>
+                                          <mo>+</mo>
+                                          <mo>(</mo>
+                                          <mfrac>
+                                             <mrow>
+                                                <mn>77</mn>
+                                             </mrow>
+                                             <mrow>
+                                                <mn>3.34</mn>
+                                             </mrow>
+                                          </mfrac>
+                                          <mo>)</mo>
+                                       </mrow>
+                                    </mfrac>
+                                    <mo xmlns="">=</mo>
+                                    <mn xmlns="">2.36</mn>
+                                    <mo xmlns="">(</mo>
+                                    <mi xmlns="">m</mi>
+                                    <msup xmlns="">
+                                       <mrow/>
+                                       <mrow>
+                                          <mn>2</mn>
+                                       </mrow>
+                                    </msup>
+                                    <mo xmlns="">×</mo>
+                                    <mi xmlns="">K</mi>
+                                    <mo xmlns="">)</mo>
+                                    <mo xmlns="">/</mo>
+                                    <mi xmlns="">W</mi>
+                                    <mspace xmlns="" width="0.5em"/>
+                                    <mspace xmlns="" width="0.5em"/>
+                                    <mspace xmlns="" width="0.5em"/>
+                                    <mspace xmlns="" width="0.5em"/>
+                                    <mspace xmlns="" width="0.5em"/>
+                                    <mo xmlns="">(</mo>
+                                    <mi xmlns="">U</mi>
+                                    <mtext xmlns="">–</mtext>
+                                    <mi xmlns="">value</mi>
+                                    <mo xmlns="">=</mo>
+                                    <mn xmlns="">0.42</mn>
+                                    <mi xmlns="">W</mi>
+                                    <mo xmlns="">/</mo>
+                                    <mo xmlns="">(</mo>
+                                    <mi xmlns="">m</mi>
+                                    <msup xmlns="">
+                                       <mrow/>
+                                       <mrow>
+                                          <mn>2</mn>
+                                       </mrow>
+                                    </msup>
+                                    <mo xmlns="">×</mo>
+                                    <mi xmlns="">K</mi>
+                                    <mo xmlns="">)</mo>
+                                    <mo xmlns="">)</mo>
+                                 </math>
+                              </equation>
+                           </item>
+                           <item>Add up the values obtained in steps 1 and 2 to determine
+the effective thermal resistance of the wall assembly, RSI<sub>eff</sub>.</item>
+                        </list>
+                     </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
         
     </amendments>
     
