@@ -1853,6 +1853,45 @@ of gypsum board on wood supports, fastener spacing shall conform to <ref type="s
             </modify>
         </amendment>
 
+        <amendment id="bc-035" sequence="35"
+                   description="Add missing sentence number 1) to D-2.11.2 paragraph 1">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article2.para1"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>Method A described in </find>
+                        <replace>1) Method A described in </replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-036" sequence="36"
+                   description="Add missing sentence number 2) to D-2.11.2 paragraph 2">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article2.para2"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>Method B described in </find>
+                        <replace>2) Method B described in </replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
+        <amendment id="bc-037" sequence="37"
+                   description="Add missing sentence number 3) to D-2.11.2 paragraph 3">
+            <target type="canonical-id" id="nbc.divB.appendixD.appsect2.subsect11.article2.para3"/>
+            <modify>
+                <text-change xpath-within-target="text()">
+                    <find-replace>
+                        <find>The calculation methods</find>
+                        <replace>3) The calculation methods</replace>
+                    </find-replace>
+                </text-change>
+            </modify>
+        </amendment>
+
     </amendments>
     
 </bc-overlay>
