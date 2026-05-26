@@ -371,6 +371,116 @@
             <target type="canonical-id" id="nbc.divBV2.part9.sect38.subsect1.art1.table1.row5968"/>
             <delete/>
         </amendment>
+
+        <!-- ================================================================== -->
+        <!-- Amendment 484: Change list type in A-9.36.2.4.(1) note procedure -->
+        <!-- Effective thermal resistance wood framing - numbered steps        -->
+        <!-- ================================================================== -->
+        <amendment id="bc-484" sequence="484" description="Change Application Note A-9.36.2.4.(1) procedure list from bulleted to numbered">
+            <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote223.div2.para1"/>
+            <replace preserve-references="true">
+                    <new-content source="bc">
+                        <paragraph xml:id="nbc.divBV2.part9.appendix.appnote223.div2.para1">To calculate the effective thermal resistance of a building
+envelope assembly containing wood framing, RSI<sub>eff</sub>, add
+up the results of the following calculations:<list type="alphabetic">
+                                <item>calculate the effective thermal resistance of all layers
+with continuous materials using the isothermal-planes method, and</item>
+                                <item>calculate the effective thermal resistance of the framing
+portion, RSI<sub>parallel</sub>, using the following equation, which
+is taken from the “parallel-path flow method” described in the <ref type="standard" target="ashr-hb-fun" standardId="ashr-hb-fun"/>:</item>
+                            </list>
+                            <equation type="display" html-src="graphics/eg/026/eg02626a">
+                                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                                    <mi xmlns="">RSI</mi>
+                                    <msub xmlns="">
+                                        <mrow/>
+                                        <mrow>
+                                            <mi>parallel</mi>
+                                        </mrow>
+                                    </msub>
+                                    <mo xmlns="">=</mo>
+                                    <mfrac xmlns="">
+                                        <mrow>
+                                            <mn>100</mn>
+                                        </mrow>
+                                        <mrow>
+                                            <mfrac>
+                                                <mrow>
+                                                    <mtext>%</mtext>
+                                                    <mspace width="0.5em"/>
+                                                    <mi>area</mi>
+                                                    <mspace width="0.5em"/>
+                                                    <mi>of</mi>
+                                                    <mspace width="0.5em"/>
+                                                    <mi>framing</mi>
+                                                </mrow>
+                                                <mrow>
+                                                    <mi>RSI</mi>
+                                                    <msub>
+                                                        <mrow/>
+                                                        <mrow>
+                                                            <mi>F</mi>
+                                                        </mrow>
+                                                    </msub>
+                                                </mrow>
+                                            </mfrac>
+                                            <mo>+</mo>
+                                            <mfrac>
+                                                <mrow>
+                                                    <mtext>%</mtext>
+                                                    <mspace width="0.5em"/>
+                                                    <mi>area</mi>
+                                                    <mspace width="0.5em"/>
+                                                    <mi>of</mi>
+                                                    <mspace width="0.5em"/>
+                                                    <mi>cavity</mi>
+                                                </mrow>
+                                                <mrow>
+                                                    <mi>RSI</mi>
+                                                    <msub>
+                                                        <mrow/>
+                                                        <mrow>
+                                                            <mi>C</mi>
+                                                        </mrow>
+                                                    </msub>
+                                                </mrow>
+                                            </mfrac>
+                                        </mrow>
+                                    </mfrac>
+                                </math>
+                            </equation>where<list type="variable">
+                                <item>
+                                    <variable>RSI<sub>F</sub>
+                                    </variable>
+                                    <description>= thermal resistance of the framing member obtained from <ref type="internal"
+                                                target="nbc.divBV2.part9.appendix.appnote223.div3.table3"
+                                                display-type="long"/>,</description>
+                                </item>
+                                <item>
+                                    <variable>RSI<sub>C</sub>
+                                    </variable>
+                                    <description>= thermal resistance of the cavity (usually filled with insulation)
+obtained from <ref type="internal"
+                                                target="nbc.divBV2.part9.appendix.appnote223.div3.table3"
+                                                display-type="long"/>,</description>
+                                </item>
+                                <item>
+                                    <variable>% area of framing</variable>
+                                    <description>= value between 0 and 100 obtained from <ref type="internal"
+                                                target="nbc.divBV2.part9.appendix.appnote223.div2.table1"
+                                                display-type="long"/> or by calculation, and</description>
+                                </item>
+                                <item>
+                                    <variable>% area of cavity</variable>
+                                    <description>= value between 0 and 100 obtained from <ref type="internal"
+                                                target="nbc.divBV2.part9.appendix.appnote223.div2.table1"
+                                                display-type="long"/> or by calculation.</description>
+                                </item>
+                            </list>
+                        </paragraph>
+                    </new-content>
+            </replace>
+        </amendment>
         
     </amendments>
     

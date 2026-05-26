@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-05-25T17:58:16.68284-07:00"
+            generated="2026-05-25T18:06:40.27989-07:00"
             source-count="15">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -32423,6 +32423,117 @@ storey.</item>
       </amendment>
       <amendment sequence="815"
                  id="bc-combined-815"
+                 source-file-index="13"
+                 original-sequence="484"
+                 original-id="bc-484"
+                 description="Change Application Note A-9.36.2.4.(1) procedure list from bulleted to numbered">
+         <target type="canonical-id"
+                 id="nbc.divBV2.part9.appendix.appnote223.div2.para1"/>
+         <replace preserve-references="true">
+            <new-content source="bc">
+               <paragraph xml:id="nbc.divBV2.part9.appendix.appnote223.div2.para1">To calculate the effective thermal resistance of a building
+envelope assembly containing wood framing, RSI<sub>eff</sub>, add
+up the results of the following calculations:<list type="alphabetic">
+                     <item>calculate the effective thermal resistance of all layers
+with continuous materials using the isothermal-planes method, and</item>
+                     <item>calculate the effective thermal resistance of the framing
+portion, RSI<sub>parallel</sub>, using the following equation, which
+is taken from the “parallel-path flow method” described in the <ref type="standard" target="ashr-hb-fun" standardId="ashr-hb-fun"/>:</item>
+                  </list>
+                  <equation type="display" html-src="graphics/eg/026/eg02626a">
+                     <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                        <mi xmlns="">RSI</mi>
+                        <msub xmlns="">
+                           <mrow/>
+                           <mrow>
+                              <mi>parallel</mi>
+                           </mrow>
+                        </msub>
+                        <mo xmlns="">=</mo>
+                        <mfrac xmlns="">
+                           <mrow>
+                              <mn>100</mn>
+                           </mrow>
+                           <mrow>
+                              <mfrac>
+                                 <mrow>
+                                    <mtext>%</mtext>
+                                    <mspace width="0.5em"/>
+                                    <mi>area</mi>
+                                    <mspace width="0.5em"/>
+                                    <mi>of</mi>
+                                    <mspace width="0.5em"/>
+                                    <mi>framing</mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mi>RSI</mi>
+                                    <msub>
+                                       <mrow/>
+                                       <mrow>
+                                          <mi>F</mi>
+                                       </mrow>
+                                    </msub>
+                                 </mrow>
+                              </mfrac>
+                              <mo>+</mo>
+                              <mfrac>
+                                 <mrow>
+                                    <mtext>%</mtext>
+                                    <mspace width="0.5em"/>
+                                    <mi>area</mi>
+                                    <mspace width="0.5em"/>
+                                    <mi>of</mi>
+                                    <mspace width="0.5em"/>
+                                    <mi>cavity</mi>
+                                 </mrow>
+                                 <mrow>
+                                    <mi>RSI</mi>
+                                    <msub>
+                                       <mrow/>
+                                       <mrow>
+                                          <mi>C</mi>
+                                       </mrow>
+                                    </msub>
+                                 </mrow>
+                              </mfrac>
+                           </mrow>
+                        </mfrac>
+                     </math>
+                  </equation>where<list type="variable">
+                     <item>
+                        <variable>RSI<sub>F</sub>
+                        </variable>
+                        <description>= thermal resistance of the framing member obtained from <ref type="internal"
+                                target="nbc.divBV2.part9.appendix.appnote223.div3.table3"
+                                display-type="long"/>,</description>
+                     </item>
+                     <item>
+                        <variable>RSI<sub>C</sub>
+                        </variable>
+                        <description>= thermal resistance of the cavity (usually filled with insulation)
+obtained from <ref type="internal"
+                                target="nbc.divBV2.part9.appendix.appnote223.div3.table3"
+                                display-type="long"/>,</description>
+                     </item>
+                     <item>
+                        <variable>% area of framing</variable>
+                        <description>= value between 0 and 100 obtained from <ref type="internal"
+                                target="nbc.divBV2.part9.appendix.appnote223.div2.table1"
+                                display-type="long"/> or by calculation, and</description>
+                     </item>
+                     <item>
+                        <variable>% area of cavity</variable>
+                        <description>= value between 0 and 100 obtained from <ref type="internal"
+                                target="nbc.divBV2.part9.appendix.appnote223.div2.table1"
+                                display-type="long"/> or by calculation.</description>
+                     </item>
+                  </list>
+               </paragraph>
+            </new-content>
+         </replace>
+      </amendment>
+      <amendment sequence="816"
+                 id="bc-combined-816"
                  source-file-index="14"
                  original-sequence="1"
                  original-id="bc-001"
@@ -33690,8 +33801,8 @@ storey.</item>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="816"
-                 id="bc-combined-816"
+      <amendment sequence="817"
+                 id="bc-combined-817"
                  source-file-index="15"
                  original-sequence="1"
                  original-id="bc-001"
@@ -33721,8 +33832,8 @@ storey.</item>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="817"
-                 id="bc-combined-817"
+      <amendment sequence="818"
+                 id="bc-combined-818"
                  source-file-index="15"
                  original-sequence="2"
                  original-id="bc-002"
@@ -33739,8 +33850,8 @@ storey.</item>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="818"
-                 id="bc-combined-818"
+      <amendment sequence="819"
+                 id="bc-combined-819"
                  source-file-index="15"
                  original-sequence="3"
                  original-id="bc-003"
@@ -33759,8 +33870,8 @@ storey.</item>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="819"
-                 id="bc-combined-819"
+      <amendment sequence="820"
+                 id="bc-combined-820"
                  source-file-index="15"
                  original-sequence="4"
                  original-id="bc-004"
@@ -33810,8 +33921,8 @@ storey.</item>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="820"
-                 id="bc-combined-820"
+      <amendment sequence="821"
+                 id="bc-combined-821"
                  source-file-index="15"
                  original-sequence="5"
                  original-id="bc-005"
@@ -33854,8 +33965,8 @@ storey.</item>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="821"
-                 id="bc-combined-821"
+      <amendment sequence="822"
+                 id="bc-combined-822"
                  source-file-index="15"
                  original-sequence="6"
                  original-id="bc-006"
@@ -33876,8 +33987,8 @@ storey.</item>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="822"
-                 id="bc-combined-822"
+      <amendment sequence="823"
+                 id="bc-combined-823"
                  source-file-index="15"
                  original-sequence="7"
                  original-id="bc-007"
@@ -33929,8 +34040,8 @@ storey.</item>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="823"
-                 id="bc-combined-823"
+      <amendment sequence="824"
+                 id="bc-combined-824"
                  source-file-index="15"
                  original-sequence="8"
                  original-id="bc-008"
@@ -34078,8 +34189,8 @@ storey.</item>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="824"
-                 id="bc-combined-824"
+      <amendment sequence="825"
+                 id="bc-combined-825"
                  source-file-index="15"
                  original-sequence="9"
                  original-id="bc-009"
@@ -34214,8 +34325,8 @@ storey.</item>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="825"
-                 id="bc-combined-825"
+      <amendment sequence="826"
+                 id="bc-combined-826"
                  source-file-index="15"
                  original-sequence="11"
                  original-id="bc-011"
@@ -34242,8 +34353,8 @@ storey.</item>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="826"
-                 id="bc-combined-826"
+      <amendment sequence="827"
+                 id="bc-combined-827"
                  source-file-index="15"
                  original-sequence="12"
                  original-id="bc-012"
@@ -34319,8 +34430,8 @@ storey.</item>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="827"
-                 id="bc-combined-827"
+      <amendment sequence="828"
+                 id="bc-combined-828"
                  source-file-index="15"
                  original-sequence="13"
                  original-id="bc-013"
@@ -34458,8 +34569,8 @@ storey.</item>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="828"
-                 id="bc-combined-828"
+      <amendment sequence="829"
+                 id="bc-combined-829"
                  source-file-index="15"
                  original-sequence="14"
                  original-id="bc-014"
@@ -34475,8 +34586,8 @@ storey.</item>
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="829"
-                 id="bc-combined-829"
+      <amendment sequence="830"
+                 id="bc-combined-830"
                  source-file-index="15"
                  original-sequence="15"
                  original-id="bc-015"
@@ -34497,8 +34608,8 @@ storey.</item>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="830"
-                 id="bc-combined-830"
+      <amendment sequence="831"
+                 id="bc-combined-831"
                  source-file-index="15"
                  original-sequence="16"
                  original-id="bc-016"
@@ -34516,8 +34627,8 @@ storey.</item>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="831"
-                 id="bc-combined-831"
+      <amendment sequence="832"
+                 id="bc-combined-832"
                  source-file-index="15"
                  original-sequence="17"
                  original-id="bc-017"
@@ -34535,8 +34646,8 @@ storey.</item>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="832"
-                 id="bc-combined-832"
+      <amendment sequence="833"
+                 id="bc-combined-833"
                  source-file-index="15"
                  original-sequence="18"
                  original-id="bc-018"
@@ -34554,8 +34665,8 @@ storey.</item>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="833"
-                 id="bc-combined-833"
+      <amendment sequence="834"
+                 id="bc-combined-834"
                  source-file-index="15"
                  original-sequence="19"
                  original-id="bc-019"
@@ -34573,8 +34684,8 @@ storey.</item>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="834"
-                 id="bc-combined-834"
+      <amendment sequence="835"
+                 id="bc-combined-835"
                  source-file-index="15"
                  original-sequence="20"
                  original-id="bc-020"
@@ -34912,8 +35023,8 @@ storey.</item>
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="835"
-                 id="bc-combined-835"
+      <amendment sequence="836"
+                 id="bc-combined-836"
                  source-file-index="15"
                  original-sequence="21"
                  original-id="bc-021"
