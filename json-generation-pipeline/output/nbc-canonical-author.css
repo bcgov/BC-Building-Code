@@ -745,6 +745,14 @@ list[type="numbered"] {
     list-style-type: decimal;
 }
 
+list[type="none"] {
+    list-style-type: none;
+}
+
+list[type="roman"] {
+    list-style-type: lower-roman;
+}
+
 list[type="alphabetic"] {
     list-style-type: lower-alpha;
 }
@@ -758,6 +766,18 @@ list[type="bulleted"] > item {
 list[type="numbered"] > item {
     display: list-item;
     list-style-type: decimal;
+    margin: 5px 0;
+}
+
+list[type="none"] > item {
+    display: block;
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+list[type="roman"] > item {
+    display: list-item;
+    list-style-type: lower-roman;
     margin: 5px 0;
 }
 

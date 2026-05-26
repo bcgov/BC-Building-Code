@@ -1892,6 +1892,28 @@ of gypsum board on wood supports, fastener spacing shall conform to <ref type="s
             </modify>
         </amendment>
 
+        <amendment id="bc-038" sequence="38"
+                   description="Change Appendix C D-8 paragraph 2 list from bulleted to numbered">
+            <target type="canonical-id" id="nbc.divB.appendixC.div8.para2"/>
+            <replace preserve-references="true">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.divB.appendixC.div8.para2">The estimation of the design snow load on a roof from snow depth
+observations involves the following steps:<list type="numbered">
+                     <item>The depth of snow on the ground, which has an annual probability
+of exceedance of 1-in-50, is computed.</item>
+                     <item>The appropriate specific weight is selected and used to
+convert snow depth to loads, S<sub>s</sub>.</item>
+                     <item>The load, S<sub>r</sub>, which is due to rain falling on
+the snow, is computed.</item>
+                     <item>Because the accumulation of snow on roofs is often different
+from that on the ground, adjustments are applied to the ground snow
+load to provide a design snow load on a roof.</item>
+                  </list>
+               </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
     </amendments>
     
 </bc-overlay>

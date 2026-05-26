@@ -1124,7 +1124,7 @@
                             <title>Identifying and Spacing Adjacent Non-Parallel Braced Wall Bands</title>
                             <paragraph xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para1">Identifying the adjacent braced wall band and the spacing between braced wall bands is more complicated where the building plan is not orthogonal.</paragraph>
                             <paragraph xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para2">Where the plan is triangular, all braced wall bands intersect with the subject braced wall band. The prescriptive requirements in Part 9 do not apply to these cases and the building must be designed according to Part 4 with respect to lateral load resistance.</paragraph>
-                            <paragraph xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para3">Where the braced wall bands are not parallel, the adjacent band is identified as follows using <ref type="internal" target="nbc.divBV2.part9.appendix.appnote131.figure2" display-type="long">Figure Table A-9.23.13.5.-B</ref> as an example:<list type="bulleted">
+                            <paragraph xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para3">Where the braced wall bands are not parallel, the adjacent band is identified as follows using <ref type="internal" target="nbc.divBV2.part9.appendix.appnote131.figure2" display-type="long">Figure Table A-9.23.13.5.-B</ref> as an example:<list type="numbered">
                                     <item xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para3.item1">Determine the mid-point of the centre line of the subject braced wall band (A);</item>
                                     <item xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para3.item2">Project a perpendicular line from this mid-point (B);</item>
                                     <item xml:id="nbc.divBV2.part9.appendix.appnote131.div1.para3.item3">The first braced wall band encountered is the adjacent braced wall band (C);</item>
@@ -2740,9 +2740,107 @@
             <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote305"/>
             <delete/>
         </amendment>
-        
-        
-        
+
+        <!-- ================================================================== -->
+        <!-- Amendment 444: Change list type in A-9.10.15.4.(1) note procedure -->
+        <!-- Exposing building faces - make procedure list numbered            -->
+        <!-- ================================================================== -->
+        <amendment id="bc-444" sequence="444"
+                description="Change Application Note A-9.10.15.4.(1) procedure list from bulleted to numbered">
+            <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote74.para1"/>
+            <replace preserve-references="true">
+                <new-content source="bc">
+                <paragraph xml:id="nbc.divBV2.part9.appendix.appnote74.para1">Studies at the National Fire
+Laboratory of the National Research Council have shown that, where
+an exposing building face is stepped back from the property line or
+is at an angle to the property line, it is possible to increase the
+percentage of glazing in those portions of the exposing building face
+further from the property line without increasing the amount of radiated
+energy that would reach the property line in the event of a fire in
+such a building. <ref type="internal"
+                        target="nbc.divBV2.part9.appendix.appnote74.figure1"
+                        display-type="long"
+                        pretext="Figures"/>
+                    <ref type="internal"
+                        target="nbc.divBV2.part9.appendix.appnote74.figure2"
+                        display-type="long"
+                        pretext=","/>
+                    <ref type="internal"
+                        target="nbc.divBV2.part9.appendix.appnote74.figure3"
+                        display-type="long"
+                        pretext="and"/> show how <ref type="internal"
+                        target="nbc.divBV2.part9.sect10.subsect15.art4.sent1"
+                        display-type="long"
+                        pretext="Sentences"/>
+                    <ref type="internal"
+                        target="nbc.divBV2.part9.sect10.subsect15.art4.sent2"
+                        display-type="short"
+                        pretext="and"/>, <ref type="internal"
+                        target="nbc.divBV2.part9.sect10.subsect15.art5.sent2"
+                        display-type="long"
+                        pretext="and"/>
+                    <ref type="internal"
+                        target="nbc.divBV2.part9.sect10.subsect15.art5.sent3"
+                        display-type="short"
+                        pretext="and"/> can be applied to exposing
+building faces that are stepped back from or not parallel to the property
+line. The following procedure can be used to establish the maximum
+permitted area of glazed openings for such facades:<list type="numbered">
+                    <item>Calculate the total area of the exposing building face,
+i.e. facade of the fire compartment, as described in the definition
+of exposing building face.</item>
+                    <item>Identify the portions into which the exposing building face
+is to be divided. It can be divided in any number of portions, not
+necessarily of equal size.</item>
+                    <item>Measure the limiting distance for each portion. The limiting
+distance is measured along a line perpendicular to the wall surface
+from the point closest to the property line.</item>
+                    <item>Establish the line in <ref type="internal"
+                            target="nbc.divBV2.part9.sect10.subsect15.art4.table1"
+                            display-type="long"/> from which
+the maximum permitted percentage area of glazed openings will be read.
+The selection of the line depends on the maximum area of exposing
+building face for the whole fire compartment, including all portions,
+as determined in Step 1.</item>
+                    <item>On that line, read the maximum percentage area of glazed
+openings permitted in each portion of the exposing building face according
+to the limiting distance for that portion.</item>
+                    <item>Calculate the maximum area of glazed openings permitted
+in each portion. The area is calculated from the percentage found
+applied to the area of that portion.</item>
+                    </list>
+                </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
+        <!-- ================================================================== -->
+        <!-- Amendment 445: Change list type in A-9.10.19.8.(1) note procedure -->
+        <!-- Smoke alarm split-level procedure - make procedure list numbered   -->
+        <!-- ================================================================== -->
+        <amendment id="bc-445" sequence="445"
+                    description="Change Application Note A-9.10.19.8.(1) procedure list from bulleted to numbered">
+            <target type="canonical-id" id="nbc.divBV2.part9.appendix.appnote75.para3"/>
+            <replace preserve-references="true">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.divBV2.part9.appendix.appnote75.para3">A smoke alarm is not required on each level in a split-level
+dwelling unit as each level does not count as a separate storey. Determine
+the number of storeys in a split-level dwelling unit and which levels
+are part of which storey as follows:<list type="numbered">
+                        <item>establish grade, which is the lowest of the average levels
+of finished ground adjoining each exterior wall of a building;</item>
+                        <item>identify the first storey, which is the uppermost storey
+having its floor level not more than <measurement units="metric">2 m</measurement> above grade;</item>
+                        <item>identify the basement, which is the storey or storeys located
+below the first storey;</item>
+                        <item>identify the second storey and, where applicable, the third
+storey.</item>
+                    </list>
+                </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
     </amendments>
     
 </bc-overlay>
