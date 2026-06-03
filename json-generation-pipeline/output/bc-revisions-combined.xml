@@ -4,7 +4,7 @@
 <bc-overlay version="1.0"
             target-nbc-version="2020"
             combined="true"
-            generated="2026-05-26T14:46:02.343466-07:00"
+            generated="2026-06-03T15:03:24.153305-07:00"
             source-count="6">
    <metadata>
       <title>Combined BC Building Code Amendments</title>
@@ -5954,6 +5954,36 @@
       <amendment sequence="73"
                  id="bc-combined-073"
                  source-file-index="6"
+                 original-sequence="4000"
+                 original-id="bc-mo-2024-06-001"
+                 description="Amend Preface by striking out 'Fire Services Act' in the fourth paragraph and substituting 'Fire Safety Act'">
+         <target type="canonical-id" id="nbc.2020.preface.para2b"/>
+         <replace preserve-references="false">
+            <new-content source="bc">
+               <paragraph xml:id="nbc.2020.preface.para2b" revised="yes">
+                  <revision-history>
+                     <original effective-date="2024-03-08">
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
+                     <revision seq="1"
+                               type="amendment"
+                               effective-date="2025-06-16"
+                               id="bc-mo-2024-06-001"
+                               status="current">
+                        <content>
+                           <emphasis style="bold">The National Fire Code of Canada is adopted, including any variations considered necessary, as the British Columbia Fire Code (BCFC), pursuant to the Fire Safety Act.</emphasis>
+                        </content>
+                        <change-summary>Strike out "Fire Services Act" and substitute "Fire Safety Act"</change-summary>
+                        <note>Ministerial Order BA 2024 06</note>
+                     </revision>
+                  </revision-history>
+               </paragraph>
+            </new-content>
+         </replace>
+      </amendment>
+      <amendment sequence="74"
+                 id="bc-combined-074"
+                 source-file-index="6"
                  original-sequence="4001"
                  original-id="bc-mo-2024-06-002"
                  description="Amend Clause 1.1.1.1.(2)(a) by striking out 'sewage' and substituting 'sewage'">
@@ -5985,8 +6015,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="74"
-                 id="bc-combined-074"
+      <amendment sequence="75"
+                 id="bc-combined-075"
                  source-file-index="6"
                  original-sequence="4002"
                  original-id="bc-mo-2024-06-003"
@@ -6025,8 +6055,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="75"
-                 id="bc-combined-075"
+      <amendment sequence="76"
+                 id="bc-combined-076"
                  source-file-index="6"
                  original-sequence="4003"
                  original-id="bc-mo-2024-06-004"
@@ -6061,8 +6091,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="76"
-                 id="bc-combined-076"
+      <amendment sequence="77"
+                 id="bc-combined-077"
                  source-file-index="6"
                  original-sequence="4004"
                  original-id="bc-mo-2024-06-005"
@@ -6101,8 +6131,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="77"
-                 id="bc-combined-077"
+      <amendment sequence="78"
+                 id="bc-combined-078"
                  source-file-index="6"
                  original-sequence="4005"
                  original-id="bc-mo-2024-06-006"
@@ -6137,8 +6167,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="78"
-                 id="bc-combined-078"
+      <amendment sequence="79"
+                 id="bc-combined-079"
                  source-file-index="6"
                  original-sequence="4006"
                  original-id="bc-mo-2024-06-007"
@@ -6173,8 +6203,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="79"
-                 id="bc-combined-079"
+      <amendment sequence="80"
+                 id="bc-combined-080"
                  source-file-index="6"
                  original-sequence="4007"
                  original-id="bc-mo-2024-06-008"
@@ -6208,8 +6238,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="80"
-                 id="bc-combined-080"
+      <amendment sequence="81"
+                 id="bc-combined-081"
                  source-file-index="6"
                  original-sequence="4008"
                  original-id="bc-mo-2024-06-009"
@@ -6242,8 +6272,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="81"
-                 id="bc-combined-081"
+      <amendment sequence="82"
+                 id="bc-combined-082"
                  source-file-index="6"
                  original-sequence="4009"
                  original-id="bc-mo-2024-06-010"
@@ -6270,8 +6300,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="82"
-                 id="bc-combined-082"
+      <amendment sequence="83"
+                 id="bc-combined-083"
                  source-file-index="6"
                  original-sequence="4010"
                  original-id="bc-mo-2024-06-011"
@@ -6298,8 +6328,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="83"
-                 id="bc-combined-083"
+      <amendment sequence="84"
+                 id="bc-combined-084"
                  source-file-index="6"
                  original-sequence="4011"
                  original-id="bc-mo-2024-06-012"
@@ -6333,8 +6363,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="84"
-                 id="bc-combined-084"
+      <amendment sequence="85"
+                 id="bc-combined-085"
                  source-file-index="6"
                  original-sequence="4012"
                  original-id="bc-mo-2024-06-013"
@@ -6361,8 +6391,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="85"
-                 id="bc-combined-085"
+      <amendment sequence="86"
+                 id="bc-combined-086"
                  source-file-index="6"
                  original-sequence="4013"
                  original-id="bc-mo-2024-06-014"
@@ -6415,8 +6445,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="86"
-                 id="bc-combined-086"
+      <amendment sequence="87"
+                 id="bc-combined-087"
                  source-file-index="6"
                  original-sequence="4014"
                  original-id="bc-mo-2024-06-015"
@@ -6448,8 +6478,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="87"
-                 id="bc-combined-087"
+      <amendment sequence="88"
+                 id="bc-combined-088"
                  source-file-index="6"
                  original-sequence="4015"
                  original-id="bc-mo-2024-06-016"
@@ -6492,8 +6522,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="88"
-                 id="bc-combined-088"
+      <amendment sequence="89"
+                 id="bc-combined-089"
                  source-file-index="6"
                  original-sequence="4016"
                  original-id="bc-mo-2024-06-017"
@@ -6534,8 +6564,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="89"
-                 id="bc-combined-089"
+      <amendment sequence="90"
+                 id="bc-combined-090"
                  source-file-index="6"
                  original-sequence="4017"
                  original-id="bc-mo-2024-06-018"
@@ -6567,8 +6597,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="90"
-                 id="bc-combined-090"
+      <amendment sequence="91"
+                 id="bc-combined-091"
                  source-file-index="6"
                  original-sequence="4018"
                  original-id="bc-mo-2024-06-019"
@@ -6600,8 +6630,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="91"
-                 id="bc-combined-091"
+      <amendment sequence="92"
+                 id="bc-combined-092"
                  source-file-index="6"
                  original-sequence="4019"
                  original-id="bc-mo-2024-06-020"
@@ -6642,8 +6672,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="92"
-                 id="bc-combined-092"
+      <amendment sequence="93"
+                 id="bc-combined-093"
                  source-file-index="6"
                  original-sequence="4020"
                  original-id="bc-mo-2024-06-021"
@@ -6681,8 +6711,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="93"
-                 id="bc-combined-093"
+      <amendment sequence="94"
+                 id="bc-combined-094"
                  source-file-index="6"
                  original-sequence="4021"
                  original-id="bc-mo-2024-06-022"
@@ -6720,8 +6750,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="94"
-                 id="bc-combined-094"
+      <amendment sequence="95"
+                 id="bc-combined-095"
                  source-file-index="6"
                  original-sequence="4022"
                  original-id="bc-mo-2024-06-023"
@@ -6759,8 +6789,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="95"
-                 id="bc-combined-095"
+      <amendment sequence="96"
+                 id="bc-combined-096"
                  source-file-index="6"
                  original-sequence="4023"
                  original-id="bc-mo-2024-06-024"
@@ -6794,8 +6824,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="96"
-                 id="bc-combined-096"
+      <amendment sequence="97"
+                 id="bc-combined-097"
                  source-file-index="6"
                  original-sequence="4024"
                  original-id="bc-mo-2024-06-025"
@@ -6829,8 +6859,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="97"
-                 id="bc-combined-097"
+      <amendment sequence="98"
+                 id="bc-combined-098"
                  source-file-index="6"
                  original-sequence="4025"
                  original-id="bc-mo-2024-06-026"
@@ -6864,8 +6894,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="98"
-                 id="bc-combined-098"
+      <amendment sequence="99"
+                 id="bc-combined-099"
                  source-file-index="6"
                  original-sequence="4026"
                  original-id="bc-mo-2024-06-027"
@@ -6899,8 +6929,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="99"
-                 id="bc-combined-099"
+      <amendment sequence="100"
+                 id="bc-combined-100"
                  source-file-index="6"
                  original-sequence="4027"
                  original-id="bc-mo-2024-06-028"
@@ -6934,8 +6964,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="100"
-                 id="bc-combined-100"
+      <amendment sequence="101"
+                 id="bc-combined-101"
                  source-file-index="6"
                  original-sequence="4028"
                  original-id="bc-mo-2024-06-029"
@@ -6969,8 +6999,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="101"
-                 id="bc-combined-101"
+      <amendment sequence="102"
+                 id="bc-combined-102"
                  source-file-index="6"
                  original-sequence="4029"
                  original-id="bc-mo-2024-06-030"
@@ -7004,8 +7034,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="102"
-                 id="bc-combined-102"
+      <amendment sequence="103"
+                 id="bc-combined-103"
                  source-file-index="6"
                  original-sequence="4030"
                  original-id="bc-mo-2024-06-031"
@@ -7039,8 +7069,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="103"
-                 id="bc-combined-103"
+      <amendment sequence="104"
+                 id="bc-combined-104"
                  source-file-index="6"
                  original-sequence="4031"
                  original-id="bc-mo-2024-06-032"
@@ -7074,8 +7104,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="104"
-                 id="bc-combined-104"
+      <amendment sequence="105"
+                 id="bc-combined-105"
                  source-file-index="6"
                  original-sequence="4032"
                  original-id="bc-mo-2024-06-033"
@@ -7113,8 +7143,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="105"
-                 id="bc-combined-105"
+      <amendment sequence="106"
+                 id="bc-combined-106"
                  source-file-index="6"
                  original-sequence="4033"
                  original-id="bc-mo-2024-06-034"
@@ -7148,8 +7178,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="106"
-                 id="bc-combined-106"
+      <amendment sequence="107"
+                 id="bc-combined-107"
                  source-file-index="6"
                  original-sequence="4034"
                  original-id="bc-mo-2024-06-035"
@@ -7183,8 +7213,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="107"
-                 id="bc-combined-107"
+      <amendment sequence="108"
+                 id="bc-combined-108"
                  source-file-index="6"
                  original-sequence="4035"
                  original-id="bc-mo-2024-06-036"
@@ -7218,8 +7248,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="108"
-                 id="bc-combined-108"
+      <amendment sequence="109"
+                 id="bc-combined-109"
                  source-file-index="6"
                  original-sequence="4036"
                  original-id="bc-mo-2024-06-037"
@@ -7253,8 +7283,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="109"
-                 id="bc-combined-109"
+      <amendment sequence="110"
+                 id="bc-combined-110"
                  source-file-index="6"
                  original-sequence="4037"
                  original-id="bc-mo-2024-06-038"
@@ -7288,8 +7318,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="110"
-                 id="bc-combined-110"
+      <amendment sequence="111"
+                 id="bc-combined-111"
                  source-file-index="6"
                  original-sequence="4038"
                  original-id="bc-mo-2024-06-039"
@@ -7323,8 +7353,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="111"
-                 id="bc-combined-111"
+      <amendment sequence="112"
+                 id="bc-combined-112"
                  source-file-index="6"
                  original-sequence="4039"
                  original-id="bc-mo-2024-06-040"
@@ -7362,8 +7392,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="112"
-                 id="bc-combined-112"
+      <amendment sequence="113"
+                 id="bc-combined-113"
                  source-file-index="6"
                  original-sequence="4040"
                  original-id="bc-mo-2024-06-041"
@@ -7401,8 +7431,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="113"
-                 id="bc-combined-113"
+      <amendment sequence="114"
+                 id="bc-combined-114"
                  source-file-index="6"
                  original-sequence="4041"
                  original-id="bc-mo-2024-06-042"
@@ -7440,8 +7470,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="114"
-                 id="bc-combined-114"
+      <amendment sequence="115"
+                 id="bc-combined-115"
                  source-file-index="6"
                  original-sequence="4042"
                  original-id="bc-mo-2024-06-043"
@@ -7475,8 +7505,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="115"
-                 id="bc-combined-115"
+      <amendment sequence="116"
+                 id="bc-combined-116"
                  source-file-index="6"
                  original-sequence="4043"
                  original-id="bc-mo-2024-06-044"
@@ -7510,8 +7540,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="116"
-                 id="bc-combined-116"
+      <amendment sequence="117"
+                 id="bc-combined-117"
                  source-file-index="6"
                  original-sequence="4044"
                  original-id="bc-mo-2024-06-045"
@@ -7545,8 +7575,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="117"
-                 id="bc-combined-117"
+      <amendment sequence="118"
+                 id="bc-combined-118"
                  source-file-index="6"
                  original-sequence="4045"
                  original-id="bc-mo-2024-06-046"
@@ -7584,8 +7614,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="118"
-                 id="bc-combined-118"
+      <amendment sequence="119"
+                 id="bc-combined-119"
                  source-file-index="6"
                  original-sequence="4046"
                  original-id="bc-mo-2024-06-047"
@@ -7623,8 +7653,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="119"
-                 id="bc-combined-119"
+      <amendment sequence="120"
+                 id="bc-combined-120"
                  source-file-index="6"
                  original-sequence="4047"
                  original-id="bc-mo-2024-06-048"
@@ -7670,8 +7700,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="120"
-                 id="bc-combined-120"
+      <amendment sequence="121"
+                 id="bc-combined-121"
                  source-file-index="6"
                  original-sequence="4048"
                  original-id="bc-mo-2024-06-049"
@@ -7702,8 +7732,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="121"
-                 id="bc-combined-121"
+      <amendment sequence="122"
+                 id="bc-combined-122"
                  source-file-index="6"
                  original-sequence="4049"
                  original-id="bc-mo-2024-06-050"
@@ -7747,8 +7777,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="122"
-                 id="bc-combined-122"
+      <amendment sequence="123"
+                 id="bc-combined-123"
                  source-file-index="6"
                  original-sequence="4050"
                  original-id="bc-mo-2024-06-051"
@@ -7783,8 +7813,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="123"
-                 id="bc-combined-123"
+      <amendment sequence="124"
+                 id="bc-combined-124"
                  source-file-index="6"
                  original-sequence="4051"
                  original-id="bc-mo-2024-06-052"
@@ -7834,8 +7864,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="124"
-                 id="bc-combined-124"
+      <amendment sequence="125"
+                 id="bc-combined-125"
                  source-file-index="6"
                  original-sequence="4052"
                  original-id="bc-mo-2024-06-053"
@@ -7870,8 +7900,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="125"
-                 id="bc-combined-125"
+      <amendment sequence="126"
+                 id="bc-combined-126"
                  source-file-index="6"
                  original-sequence="4053"
                  original-id="bc-mo-2024-06-054"
@@ -7906,8 +7936,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="126"
-                 id="bc-combined-126"
+      <amendment sequence="127"
+                 id="bc-combined-127"
                  source-file-index="6"
                  original-sequence="4055"
                  original-id="bc-mo-2024-06-056"
@@ -7955,8 +7985,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="127"
-                 id="bc-combined-127"
+      <amendment sequence="128"
+                 id="bc-combined-128"
                  source-file-index="6"
                  original-sequence="4056"
                  original-id="bc-mo-2024-06-057"
@@ -7987,8 +8017,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="128"
-                 id="bc-combined-128"
+      <amendment sequence="129"
+                 id="bc-combined-129"
                  source-file-index="6"
                  original-sequence="4057"
                  original-id="bc-mo-2024-06-058"
@@ -8029,8 +8059,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="129"
-                 id="bc-combined-129"
+      <amendment sequence="130"
+                 id="bc-combined-130"
                  source-file-index="6"
                  original-sequence="4058"
                  original-id="bc-mo-2024-06-059"
@@ -8080,8 +8110,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="130"
-                 id="bc-combined-130"
+      <amendment sequence="131"
+                 id="bc-combined-131"
                  source-file-index="6"
                  original-sequence="4059"
                  original-id="bc-mo-2024-06-060"
@@ -8120,8 +8150,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="131"
-                 id="bc-combined-131"
+      <amendment sequence="132"
+                 id="bc-combined-132"
                  source-file-index="6"
                  original-sequence="4060"
                  original-id="bc-mo-2024-06-061"
@@ -8156,8 +8186,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="132"
-                 id="bc-combined-132"
+      <amendment sequence="133"
+                 id="bc-combined-133"
                  source-file-index="6"
                  original-sequence="4061"
                  original-id="bc-mo-2024-06-062"
@@ -8194,8 +8224,8 @@
             </new-content>
          </insert>
       </amendment>
-      <amendment sequence="133"
-                 id="bc-combined-133"
+      <amendment sequence="134"
+                 id="bc-combined-134"
                  source-file-index="6"
                  original-sequence="4062"
                  original-id="bc-mo-2024-06-063"
@@ -8237,8 +8267,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="134"
-                 id="bc-combined-134"
+      <amendment sequence="135"
+                 id="bc-combined-135"
                  source-file-index="6"
                  original-sequence="4063"
                  original-id="bc-mo-2024-06-064"
@@ -8273,8 +8303,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="135"
-                 id="bc-combined-135"
+      <amendment sequence="136"
+                 id="bc-combined-136"
                  source-file-index="6"
                  original-sequence="4064"
                  original-id="bc-mo-2024-06-065"
@@ -8282,8 +8312,8 @@
          <target type="canonical-id" id="nbc.divB.part3.appendix.appnote208"/>
          <delete/>
       </amendment>
-      <amendment sequence="136"
-                 id="bc-combined-136"
+      <amendment sequence="137"
+                 id="bc-combined-137"
                  source-file-index="6"
                  original-sequence="4065"
                  original-id="bc-mo-2024-06-066"
@@ -8342,8 +8372,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="137"
-                 id="bc-combined-137"
+      <amendment sequence="138"
+                 id="bc-combined-138"
                  source-file-index="6"
                  original-sequence="4066"
                  original-id="bc-mo-2024-06-067"
@@ -8373,8 +8403,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="138"
-                 id="bc-combined-138"
+      <amendment sequence="139"
+                 id="bc-combined-139"
                  source-file-index="6"
                  original-sequence="4067"
                  original-id="bc-mo-2024-06-068"
@@ -8382,8 +8412,8 @@
          <target type="canonical-id" id="nbc.divB.part5.appendix.appnote54"/>
          <delete/>
       </amendment>
-      <amendment sequence="139"
-                 id="bc-combined-139"
+      <amendment sequence="140"
+                 id="bc-combined-140"
                  source-file-index="6"
                  original-sequence="4068"
                  original-id="bc-mo-2024-06-069"
@@ -8414,8 +8444,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="140"
-                 id="bc-combined-140"
+      <amendment sequence="141"
+                 id="bc-combined-141"
                  source-file-index="6"
                  original-sequence="4069"
                  original-id="bc-mo-2024-06-070"
@@ -8448,8 +8478,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="141"
-                 id="bc-combined-141"
+      <amendment sequence="142"
+                 id="bc-combined-142"
                  source-file-index="6"
                  original-sequence="4070"
                  original-id="bc-mo-2024-06-071"
@@ -8482,8 +8512,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="142"
-                 id="bc-combined-142"
+      <amendment sequence="143"
+                 id="bc-combined-143"
                  source-file-index="6"
                  original-sequence="4071"
                  original-id="bc-mo-2024-06-072"
@@ -8513,8 +8543,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="143"
-                 id="bc-combined-143"
+      <amendment sequence="144"
+                 id="bc-combined-144"
                  source-file-index="6"
                  original-sequence="4073"
                  original-id="bc-mo-2024-06-075"
@@ -8545,8 +8575,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="144"
-                 id="bc-combined-144"
+      <amendment sequence="145"
+                 id="bc-combined-145"
                  source-file-index="6"
                  original-sequence="4074"
                  original-id="bc-mo-2024-06-076"
@@ -8577,8 +8607,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="145"
-                 id="bc-combined-145"
+      <amendment sequence="146"
+                 id="bc-combined-146"
                  source-file-index="6"
                  original-sequence="4075"
                  original-id="bc-mo-2024-06-077"
@@ -8609,8 +8639,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="146"
-                 id="bc-combined-146"
+      <amendment sequence="147"
+                 id="bc-combined-147"
                  source-file-index="6"
                  original-sequence="4076"
                  original-id="bc-mo-2024-06-078"
@@ -8658,8 +8688,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="147"
-                 id="bc-combined-147"
+      <amendment sequence="148"
+                 id="bc-combined-148"
                  source-file-index="6"
                  original-sequence="4078"
                  original-id="bc-mo-2024-06-080"
@@ -8691,8 +8721,8 @@
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="148"
-                 id="bc-combined-148"
+      <amendment sequence="149"
+                 id="bc-combined-149"
                  source-file-index="6"
                  original-sequence="4079"
                  original-id="bc-mo-2024-06-081"
@@ -8723,8 +8753,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="149"
-                 id="bc-combined-149"
+      <amendment sequence="150"
+                 id="bc-combined-150"
                  source-file-index="6"
                  original-sequence="4080"
                  original-id="bc-mo-2024-06-082"
@@ -8756,8 +8786,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="150"
-                 id="bc-combined-150"
+      <amendment sequence="151"
+                 id="bc-combined-151"
                  source-file-index="6"
                  original-sequence="4081"
                  original-id="bc-mo-2024-06-083"
@@ -8789,8 +8819,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="151"
-                 id="bc-combined-151"
+      <amendment sequence="152"
+                 id="bc-combined-152"
                  source-file-index="6"
                  original-sequence="4082"
                  original-id="bc-mo-2024-06-084"
@@ -8822,8 +8852,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="152"
-                 id="bc-combined-152"
+      <amendment sequence="153"
+                 id="bc-combined-153"
                  source-file-index="6"
                  original-sequence="4083"
                  original-id="bc-mo-2024-06-085"
@@ -8861,8 +8891,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="153"
-                 id="bc-combined-153"
+      <amendment sequence="154"
+                 id="bc-combined-154"
                  source-file-index="6"
                  original-sequence="4084"
                  original-id="bc-mo-2024-06-086"
@@ -8906,8 +8936,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="154"
-                 id="bc-combined-154"
+      <amendment sequence="155"
+                 id="bc-combined-155"
                  source-file-index="6"
                  original-sequence="4085"
                  original-id="bc-mo-2024-06-087"
@@ -8950,8 +8980,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="155"
-                 id="bc-combined-155"
+      <amendment sequence="156"
+                 id="bc-combined-156"
                  source-file-index="6"
                  original-sequence="4086"
                  original-id="bc-mo-2024-06-088"
@@ -9055,8 +9085,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="156"
-                 id="bc-combined-156"
+      <amendment sequence="157"
+                 id="bc-combined-157"
                  source-file-index="6"
                  original-sequence="4087"
                  original-id="bc-mo-2024-06-089"
@@ -9103,8 +9133,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="157"
-                 id="bc-combined-157"
+      <amendment sequence="158"
+                 id="bc-combined-158"
                  source-file-index="6"
                  original-sequence="4088"
                  original-id="bc-mo-2024-06-090"
@@ -9156,8 +9186,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="158"
-                 id="bc-combined-158"
+      <amendment sequence="159"
+                 id="bc-combined-159"
                  source-file-index="6"
                  original-sequence="4089"
                  original-id="bc-mo-2024-06-091"
@@ -9200,8 +9230,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="159"
-                 id="bc-combined-159"
+      <amendment sequence="160"
+                 id="bc-combined-160"
                  source-file-index="6"
                  original-sequence="4090"
                  original-id="bc-mo-2024-06-092"
@@ -9283,8 +9313,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="160"
-                 id="bc-combined-160"
+      <amendment sequence="161"
+                 id="bc-combined-161"
                  source-file-index="6"
                  original-sequence="4091"
                  original-id="bc-mo-2024-06-093"
@@ -9370,8 +9400,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="161"
-                 id="bc-combined-161"
+      <amendment sequence="162"
+                 id="bc-combined-162"
                  source-file-index="6"
                  original-sequence="4092"
                  original-id="bc-mo-2024-06-094"
@@ -9405,8 +9435,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="162"
-                 id="bc-combined-162"
+      <amendment sequence="163"
+                 id="bc-combined-163"
                  source-file-index="6"
                  original-sequence="4093"
                  original-id="bc-mo-2024-06-095"
@@ -9438,8 +9468,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="163"
-                 id="bc-combined-163"
+      <amendment sequence="164"
+                 id="bc-combined-164"
                  source-file-index="6"
                  original-sequence="4094"
                  original-id="bc-mo-2024-06-096"
@@ -9470,8 +9500,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="164"
-                 id="bc-combined-164"
+      <amendment sequence="165"
+                 id="bc-combined-165"
                  source-file-index="6"
                  original-sequence="4095"
                  original-id="bc-mo-2024-06-097"
@@ -9505,8 +9535,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="165"
-                 id="bc-combined-165"
+      <amendment sequence="166"
+                 id="bc-combined-166"
                  source-file-index="6"
                  original-sequence="4096"
                  original-id="bc-mo-2024-06-098"
@@ -9615,8 +9645,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="166"
-                 id="bc-combined-166"
+      <amendment sequence="167"
+                 id="bc-combined-167"
                  source-file-index="6"
                  original-sequence="4097"
                  original-id="bc-mo-2024-06-099"
@@ -9725,8 +9755,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="167"
-                 id="bc-combined-167"
+      <amendment sequence="168"
+                 id="bc-combined-168"
                  source-file-index="6"
                  original-sequence="4098"
                  original-id="bc-mo-2024-06-100"
@@ -9758,8 +9788,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="168"
-                 id="bc-combined-168"
+      <amendment sequence="169"
+                 id="bc-combined-169"
                  source-file-index="6"
                  original-sequence="4099"
                  original-id="bc-mo-2024-06-101"
@@ -9791,8 +9821,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="169"
-                 id="bc-combined-169"
+      <amendment sequence="170"
+                 id="bc-combined-170"
                  source-file-index="6"
                  original-sequence="4100"
                  original-id="bc-mo-2024-06-102"
@@ -9826,8 +9856,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="170"
-                 id="bc-combined-170"
+      <amendment sequence="171"
+                 id="bc-combined-171"
                  source-file-index="6"
                  original-sequence="4100"
                  original-id="bc-mo-2024-06-131"
@@ -9868,8 +9898,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="171"
-                 id="bc-combined-171"
+      <amendment sequence="172"
+                 id="bc-combined-172"
                  source-file-index="6"
                  original-sequence="4101"
                  original-id="bc-mo-2024-06-103"
@@ -9901,8 +9931,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="172"
-                 id="bc-combined-172"
+      <amendment sequence="173"
+                 id="bc-combined-173"
                  source-file-index="6"
                  original-sequence="4101"
                  original-id="bc-mo-2024-06-132"
@@ -9952,8 +9982,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="173"
-                 id="bc-combined-173"
+      <amendment sequence="174"
+                 id="bc-combined-174"
                  source-file-index="6"
                  original-sequence="4102"
                  original-id="bc-mo-2024-06-104"
@@ -9990,8 +10020,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="174"
-                 id="bc-combined-174"
+      <amendment sequence="175"
+                 id="bc-combined-175"
                  source-file-index="6"
                  original-sequence="4102"
                  original-id="bc-mo-2024-06-133"
@@ -10036,8 +10066,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="175"
-                 id="bc-combined-175"
+      <amendment sequence="176"
+                 id="bc-combined-176"
                  source-file-index="6"
                  original-sequence="4103"
                  original-id="bc-mo-2024-06-105"
@@ -10088,8 +10118,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="176"
-                 id="bc-combined-176"
+      <amendment sequence="177"
+                 id="bc-combined-177"
                  source-file-index="6"
                  original-sequence="4103"
                  original-id="bc-mo-2024-06-134"
@@ -10121,8 +10151,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="177"
-                 id="bc-combined-177"
+      <amendment sequence="178"
+                 id="bc-combined-178"
                  source-file-index="6"
                  original-sequence="4104"
                  original-id="bc-mo-2024-06-135"
@@ -10154,8 +10184,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="178"
-                 id="bc-combined-178"
+      <amendment sequence="179"
+                 id="bc-combined-179"
                  source-file-index="6"
                  original-sequence="4105"
                  original-id="bc-mo-2024-06-136"
@@ -10187,8 +10217,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="179"
-                 id="bc-combined-179"
+      <amendment sequence="180"
+                 id="bc-combined-180"
                  source-file-index="6"
                  original-sequence="4106"
                  original-id="bc-mo-2024-06-137"
@@ -10220,8 +10250,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="180"
-                 id="bc-combined-180"
+      <amendment sequence="181"
+                 id="bc-combined-181"
                  source-file-index="6"
                  original-sequence="4107"
                  original-id="bc-mo-2024-06-138"
@@ -10253,8 +10283,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="181"
-                 id="bc-combined-181"
+      <amendment sequence="182"
+                 id="bc-combined-182"
                  source-file-index="6"
                  original-sequence="4108"
                  original-id="bc-mo-2024-06-139"
@@ -10286,8 +10316,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="182"
-                 id="bc-combined-182"
+      <amendment sequence="183"
+                 id="bc-combined-183"
                  source-file-index="6"
                  original-sequence="4111"
                  original-id="bc-mo-2024-06-113"
@@ -10327,8 +10357,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="183"
-                 id="bc-combined-183"
+      <amendment sequence="184"
+                 id="bc-combined-184"
                  source-file-index="6"
                  original-sequence="4112"
                  original-id="bc-mo-2024-06-114"
@@ -10368,8 +10398,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="184"
-                 id="bc-combined-184"
+      <amendment sequence="185"
+                 id="bc-combined-185"
                  source-file-index="6"
                  original-sequence="4113"
                  original-id="bc-mo-2024-06-115"
@@ -10407,8 +10437,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="185"
-                 id="bc-combined-185"
+      <amendment sequence="186"
+                 id="bc-combined-186"
                  source-file-index="6"
                  original-sequence="4114"
                  original-id="bc-mo-2024-06-116"
@@ -10440,8 +10470,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="186"
-                 id="bc-combined-186"
+      <amendment sequence="187"
+                 id="bc-combined-187"
                  source-file-index="6"
                  original-sequence="4115"
                  original-id="bc-mo-2024-06-117"
@@ -10473,8 +10503,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="187"
-                 id="bc-combined-187"
+      <amendment sequence="188"
+                 id="bc-combined-188"
                  source-file-index="6"
                  original-sequence="4116"
                  original-id="bc-mo-2024-06-118"
@@ -10511,8 +10541,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="188"
-                 id="bc-combined-188"
+      <amendment sequence="189"
+                 id="bc-combined-189"
                  source-file-index="6"
                  original-sequence="4117"
                  original-id="bc-mo-2024-06-119"
@@ -10547,8 +10577,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="189"
-                 id="bc-combined-189"
+      <amendment sequence="190"
+                 id="bc-combined-190"
                  source-file-index="6"
                  original-sequence="4118"
                  original-id="bc-mo-2024-06-120"
@@ -10579,8 +10609,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="190"
-                 id="bc-combined-190"
+      <amendment sequence="191"
+                 id="bc-combined-191"
                  source-file-index="6"
                  original-sequence="4118"
                  original-id="bc-mo-2024-06-149"
@@ -10610,8 +10640,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="191"
-                 id="bc-combined-191"
+      <amendment sequence="192"
+                 id="bc-combined-192"
                  source-file-index="6"
                  original-sequence="4118"
                  original-id="bc-mo-2024-06-150"
@@ -10644,8 +10674,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="192"
-                 id="bc-combined-192"
+      <amendment sequence="193"
+                 id="bc-combined-193"
                  source-file-index="6"
                  original-sequence="4119"
                  original-id="bc-mo-2024-06-121"
@@ -10676,8 +10706,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="193"
-                 id="bc-combined-193"
+      <amendment sequence="194"
+                 id="bc-combined-194"
                  source-file-index="6"
                  original-sequence="4119"
                  original-id="bc-mo-2024-06-151"
@@ -10708,8 +10738,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="194"
-                 id="bc-combined-194"
+      <amendment sequence="195"
+                 id="bc-combined-195"
                  source-file-index="6"
                  original-sequence="4120"
                  original-id="bc-mo-2024-06-122"
@@ -10740,8 +10770,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="195"
-                 id="bc-combined-195"
+      <amendment sequence="196"
+                 id="bc-combined-196"
                  source-file-index="6"
                  original-sequence="4121"
                  original-id="bc-mo-2024-06-123"
@@ -10847,8 +10877,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="196"
-                 id="bc-combined-196"
+      <amendment sequence="197"
+                 id="bc-combined-197"
                  source-file-index="6"
                  original-sequence="4121"
                  original-id="bc-mo-2024-06-152"
@@ -10879,8 +10909,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="197"
-                 id="bc-combined-197"
+      <amendment sequence="198"
+                 id="bc-combined-198"
                  source-file-index="6"
                  original-sequence="4122"
                  original-id="bc-mo-2024-06-124"
@@ -10912,8 +10942,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="198"
-                 id="bc-combined-198"
+      <amendment sequence="199"
+                 id="bc-combined-199"
                  source-file-index="6"
                  original-sequence="4122"
                  original-id="bc-mo-2024-06-153"
@@ -10945,8 +10975,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="199"
-                 id="bc-combined-199"
+      <amendment sequence="200"
+                 id="bc-combined-200"
                  source-file-index="6"
                  original-sequence="4123"
                  original-id="bc-mo-2024-06-125"
@@ -10978,8 +11008,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="200"
-                 id="bc-combined-200"
+      <amendment sequence="201"
+                 id="bc-combined-201"
                  source-file-index="6"
                  original-sequence="4123"
                  original-id="bc-mo-2024-06-154"
@@ -11010,8 +11040,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="201"
-                 id="bc-combined-201"
+      <amendment sequence="202"
+                 id="bc-combined-202"
                  source-file-index="6"
                  original-sequence="4124"
                  original-id="bc-mo-2024-06-126"
@@ -11043,8 +11073,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="202"
-                 id="bc-combined-202"
+      <amendment sequence="203"
+                 id="bc-combined-203"
                  source-file-index="6"
                  original-sequence="4124"
                  original-id="bc-mo-2024-06-155"
@@ -11075,8 +11105,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="203"
-                 id="bc-combined-203"
+      <amendment sequence="204"
+                 id="bc-combined-204"
                  source-file-index="6"
                  original-sequence="4125"
                  original-id="bc-mo-2024-06-127"
@@ -11108,8 +11138,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="204"
-                 id="bc-combined-204"
+      <amendment sequence="205"
+                 id="bc-combined-205"
                  source-file-index="6"
                  original-sequence="4125"
                  original-id="bc-mo-2024-06-156"
@@ -11302,8 +11332,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="205"
-                 id="bc-combined-205"
+      <amendment sequence="206"
+                 id="bc-combined-206"
                  source-file-index="6"
                  original-sequence="4126"
                  original-id="bc-mo-2024-06-128"
@@ -11335,8 +11365,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="206"
-                 id="bc-combined-206"
+      <amendment sequence="207"
+                 id="bc-combined-207"
                  source-file-index="6"
                  original-sequence="4126"
                  original-id="bc-mo-2024-06-157"
@@ -11374,8 +11404,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="207"
-                 id="bc-combined-207"
+      <amendment sequence="208"
+                 id="bc-combined-208"
                  source-file-index="6"
                  original-sequence="4127"
                  original-id="bc-mo-2024-06-129"
@@ -11407,8 +11437,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="208"
-                 id="bc-combined-208"
+      <amendment sequence="209"
+                 id="bc-combined-209"
                  source-file-index="6"
                  original-sequence="4127"
                  original-id="bc-mo-2024-06-159"
@@ -11435,8 +11465,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="209"
-                 id="bc-combined-209"
+      <amendment sequence="210"
+                 id="bc-combined-210"
                  source-file-index="6"
                  original-sequence="4128"
                  original-id="bc-mo-2024-06-130"
@@ -11468,8 +11498,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="210"
-                 id="bc-combined-210"
+      <amendment sequence="211"
+                 id="bc-combined-211"
                  source-file-index="6"
                  original-sequence="4128"
                  original-id="bc-mo-2024-06-160"
@@ -11496,8 +11526,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="211"
-                 id="bc-combined-211"
+      <amendment sequence="212"
+                 id="bc-combined-212"
                  source-file-index="6"
                  original-sequence="4129"
                  original-id="bc-mo-2024-06-161"
@@ -11529,8 +11559,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="212"
-                 id="bc-combined-212"
+      <amendment sequence="213"
+                 id="bc-combined-213"
                  source-file-index="6"
                  original-sequence="4130"
                  original-id="bc-mo-2024-06-162"
@@ -11562,8 +11592,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="213"
-                 id="bc-combined-213"
+      <amendment sequence="214"
+                 id="bc-combined-214"
                  source-file-index="6"
                  original-sequence="4131"
                  original-id="bc-mo-2024-06-163"
@@ -11595,8 +11625,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="214"
-                 id="bc-combined-214"
+      <amendment sequence="215"
+                 id="bc-combined-215"
                  source-file-index="6"
                  original-sequence="4132"
                  original-id="bc-mo-2024-06-164"
@@ -11628,8 +11658,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="215"
-                 id="bc-combined-215"
+      <amendment sequence="216"
+                 id="bc-combined-216"
                  source-file-index="6"
                  original-sequence="4133"
                  original-id="bc-mo-2024-06-165"
@@ -11661,8 +11691,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="216"
-                 id="bc-combined-216"
+      <amendment sequence="217"
+                 id="bc-combined-217"
                  source-file-index="6"
                  original-sequence="4134"
                  original-id="bc-mo-2024-06-166"
@@ -11694,8 +11724,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="217"
-                 id="bc-combined-217"
+      <amendment sequence="218"
+                 id="bc-combined-218"
                  source-file-index="6"
                  original-sequence="4135"
                  original-id="bc-mo-2024-06-167"
@@ -11728,8 +11758,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="218"
-                 id="bc-combined-218"
+      <amendment sequence="219"
+                 id="bc-combined-219"
                  source-file-index="6"
                  original-sequence="4136"
                  original-id="bc-mo-2024-06-168"
@@ -11762,8 +11792,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="219"
-                 id="bc-combined-219"
+      <amendment sequence="220"
+                 id="bc-combined-220"
                  source-file-index="6"
                  original-sequence="4137"
                  original-id="bc-mo-2024-06-169"
@@ -11796,8 +11826,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="220"
-                 id="bc-combined-220"
+      <amendment sequence="221"
+                 id="bc-combined-221"
                  source-file-index="6"
                  original-sequence="4138"
                  original-id="bc-mo-2024-06-170"
@@ -11831,8 +11861,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="221"
-                 id="bc-combined-221"
+      <amendment sequence="222"
+                 id="bc-combined-222"
                  source-file-index="6"
                  original-sequence="4139"
                  original-id="bc-mo-2024-06-171"
@@ -11864,8 +11894,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="222"
-                 id="bc-combined-222"
+      <amendment sequence="223"
+                 id="bc-combined-223"
                  source-file-index="6"
                  original-sequence="4140"
                  original-id="bc-mo-2024-06-172"
@@ -11881,8 +11911,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="223"
-                 id="bc-combined-223"
+      <amendment sequence="224"
+                 id="bc-combined-224"
                  source-file-index="6"
                  original-sequence="4141"
                  original-id="bc-mo-2024-06-173"
@@ -11897,8 +11927,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="224"
-                 id="bc-combined-224"
+      <amendment sequence="225"
+                 id="bc-combined-225"
                  source-file-index="6"
                  original-sequence="4142"
                  original-id="bc-mo-2024-06-174"
@@ -11913,8 +11943,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="225"
-                 id="bc-combined-225"
+      <amendment sequence="226"
+                 id="bc-combined-226"
                  source-file-index="6"
                  original-sequence="4143"
                  original-id="bc-mo-2024-06-175"
@@ -11945,8 +11975,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="226"
-                 id="bc-combined-226"
+      <amendment sequence="227"
+                 id="bc-combined-227"
                  source-file-index="6"
                  original-sequence="4144"
                  original-id="bc-mo-2024-06-176"
@@ -11962,8 +11992,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="227"
-                 id="bc-combined-227"
+      <amendment sequence="228"
+                 id="bc-combined-228"
                  source-file-index="6"
                  original-sequence="4145"
                  original-id="bc-mo-2024-06-177"
@@ -11979,8 +12009,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="228"
-                 id="bc-combined-228"
+      <amendment sequence="229"
+                 id="bc-combined-229"
                  source-file-index="6"
                  original-sequence="4146"
                  original-id="bc-mo-2024-06-178"
@@ -11996,8 +12026,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="229"
-                 id="bc-combined-229"
+      <amendment sequence="230"
+                 id="bc-combined-230"
                  source-file-index="6"
                  original-sequence="4147"
                  original-id="bc-mo-2024-06-179"
@@ -12013,8 +12043,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="230"
-                 id="bc-combined-230"
+      <amendment sequence="231"
+                 id="bc-combined-231"
                  source-file-index="6"
                  original-sequence="4148"
                  original-id="bc-mo-2024-06-180"
@@ -12030,8 +12060,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="231"
-                 id="bc-combined-231"
+      <amendment sequence="232"
+                 id="bc-combined-232"
                  source-file-index="6"
                  original-sequence="4149"
                  original-id="bc-mo-2024-06-181"
@@ -12047,8 +12077,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="232"
-                 id="bc-combined-232"
+      <amendment sequence="233"
+                 id="bc-combined-233"
                  source-file-index="6"
                  original-sequence="4150"
                  original-id="bc-mo-2024-06-182"
@@ -12064,8 +12094,8 @@ Spaces within Buildings
             </text-change>
          </modify>
       </amendment>
-      <amendment sequence="233"
-                 id="bc-combined-233"
+      <amendment sequence="234"
+                 id="bc-combined-234"
                  source-file-index="6"
                  original-sequence="4151"
                  original-id="bc-mo-2024-06-183"
@@ -12096,8 +12126,8 @@ Spaces within Buildings
             </new-content>
          </replace>
       </amendment>
-      <amendment sequence="234"
-                 id="bc-combined-234"
+      <amendment sequence="235"
+                 id="bc-combined-235"
                  source-file-index="6"
                  original-sequence="4152"
                  original-id="bc-mo-2024-06-184"
