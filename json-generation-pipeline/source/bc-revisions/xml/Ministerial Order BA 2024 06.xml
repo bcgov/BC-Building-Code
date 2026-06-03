@@ -34,25 +34,39 @@
     <!-- ================================================================== -->
     <!-- Amendment 1: Amend Preface - Fire Services Act to Fire Safety Act  -->
     <!-- Strike out "Fire Services Act" and substitute "Fire Safety Act"   -->
-    <!-- TODO: Need to complete BC Specific changes for Preface updates and revisit this -->
-    <!-- COMMENTED OUT: Preface doesn't support revision-history structure in schema -->
     <!-- ================================================================== -->
-    <!--
-         <amendment id="bc-mo-2024-06-001" sequence="4000"
-         description="Amend Preface by striking out 'Fire Services Act' in the fourth paragraph and substituting 'Fire Safety Act'">
-         <target type="canonical-id" id="nbc.2020.preface"/>
-         <replace preserve-references="false">
-         <new-content source="bc">
-         <preface xml:id="nbc.2020.preface">
-         <paragraph>The BC Building Code of Canada 2020 (NBC), together with the National Plumbing Code of Canada 2020 (NPC), the National Fire Code of Canada 2020 (NFC) and the National Energy Code of Canada for Buildings 2020 (NECB), has been developed by the Canadian Commission on Building and Fire Codes (CCBFC) as an objective-based national model code that can be adopted by provincial and territorial governments.</paragraph>
-         <paragraph>In Canada, provincial and territorial governments have the authority to enact legislation that regulates building design and construction within their jurisdictions. This may involve the adoption of the NBC without change or with modifications to suit local needs, and the enactment of other laws and regulations regarding building design and construction, including requirements for professional involvement.</paragraph>
-         <paragraph>The NBC is a model code in the sense that it helps promote consistency among provincial and territorial building codes. Persons involved in the design or construction of a building should consult the provincial or territorial jurisdiction concerned to find out which building code is applicable.</paragraph>
-         <paragraph>This edition of the NBC succeeds the 2015 edition and incorporates updates related to the Fire Safety Act.</paragraph>
-         </preface>
-         </new-content>
-         </replace>
-         </amendment>
-    -->
+
+    <amendment id="bc-mo-2024-06-001" sequence="4000"
+    description="Amend Preface by striking out 'Fire Services Act' in the fourth paragraph and substituting 'Fire Safety Act'">
+      <target type="canonical-id" id="nbc.2020.preface.para2b"/>
+      <replace preserve-references="false">
+        <new-content source="bc">
+          <paragraph xml:id="nbc.2020.preface.para2b" revised="yes">
+            <revision-history>
+              <original effective-date="2024-03-08">
+                <!-- Merge engine will auto-populate from bc-building-code.xml -->
+              </original>
+              
+              <revision
+                seq="1"
+                type="amendment"
+                effective-date="2025-06-16"
+                id="bc-mo-2024-06-001"
+                status="current"
+                >
+                <content>
+                  <emphasis style="bold">The National Fire Code of Canada is adopted, including any variations considered necessary, as the British Columbia Fire Code (BCFC), pursuant to the Fire Safety Act.</emphasis>
+                </content>
+                <change-summary
+                  >Strike out "Fire Services Act" and substitute "Fire Safety Act"</change-summary>
+                <note>Ministerial Order BA 2024 06</note>
+              </revision>
+            </revision-history>
+          </paragraph>
+        </new-content>
+      </replace>
+    </amendment>
+
     
     <!-- ================================================================== -->
     <!-- Amendment 2: Amend Clause 1.1.1.1.(2)(a) - sewage to sewage      -->

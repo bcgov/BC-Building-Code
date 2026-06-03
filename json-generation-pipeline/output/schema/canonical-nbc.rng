@@ -3714,7 +3714,59 @@
               <value>yes</value>
             </attribute>
           </optional>
-          <ref name="rich-text"/>
+          <choice>
+            <ref name="rich-text"/>
+            <!-- Revision history for date-based versioning (preface/frontmatter paragraphs) -->
+            <element name="revision-history">
+              <element name="original">
+                <attribute name="effective-date">
+                  <data type="date"/>
+                </attribute>
+                <ref name="rich-text"/>
+              </element>
+              <oneOrMore>
+                <element name="revision">
+                  <attribute name="seq">
+                    <data type="positiveInteger"/>
+                  </attribute>
+                  <attribute name="type">
+                    <choice>
+                      <value>errata</value>
+                      <value>policy</value>
+                      <value>accessibility</value>
+                      <value>correction</value>
+                      <value>amendment</value>
+                    </choice>
+                  </attribute>
+                  <attribute name="effective-date">
+                    <data type="date"/>
+                  </attribute>
+                  <attribute name="id">
+                    <text/>
+                  </attribute>
+                  <attribute name="status">
+                    <choice>
+                      <value>current</value>
+                      <value>superseded</value>
+                    </choice>
+                  </attribute>
+                  <element name="content">
+                    <ref name="rich-text"/>
+                  </element>
+                  <optional>
+                    <element name="change-summary">
+                      <text/>
+                    </element>
+                  </optional>
+                  <optional>
+                    <element name="note">
+                      <text/>
+                    </element>
+                  </optional>
+                </element>
+              </oneOrMore>
+            </element>
+          </choice>
         </element>
         <element name="note-division">
           <attribute name="xml:id"><data type="ID"/></attribute>
