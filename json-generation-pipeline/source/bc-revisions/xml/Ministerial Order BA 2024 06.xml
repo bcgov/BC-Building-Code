@@ -101,10 +101,7 @@
                 status="current"
                 >
                 <content>
-                  <text><ref
-                      type="term"
-                      target="swg"
-                      >sewage</ref>, water, electrical, telephone, rail or similar public infrastructure systems located in a <ref
+                  <text>sewage, water, electrical, telephone, rail or similar public infrastructure systems located in a <ref
                       type="term"
                       target="trt"
                       >street</ref> or a public transit right of way,</text>
