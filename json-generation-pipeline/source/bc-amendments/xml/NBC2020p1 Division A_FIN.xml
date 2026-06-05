@@ -2352,7 +2352,11 @@
                                     letter="b"
                                     >
                                     <text
-                                        >be an indentured apprentice supervised by a journeyperson who meets the criteria set out in Clause (a), or</text>
+                                        >be an indentured apprentice supervised by a journeyperson who meets the criteria set out in <ref
+                                            type="internal"
+                                            target="nbc.divA.part1.sect2.subsect3.art1.sent1.clause1"
+                                            display-type="long"
+                                            >Clause (a)</ref>, or</text>
                                 </clause>
                                 <clause
                                     xml:id="nbc.divA.part1.sect2.subsect3.art1.sent1.clause3"
