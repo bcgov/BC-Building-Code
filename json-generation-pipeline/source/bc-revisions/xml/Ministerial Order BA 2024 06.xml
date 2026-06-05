@@ -150,9 +150,8 @@
                 >
                 <content>
                   <entry>19</entry>
-                  <entry>Stairs, Ramps, Handrails and <emphasis
-                      style="italic"
-                      >Guards</emphasis>
+                  <entry>Stairs, <ref type="term" target="rmp">Ramps</ref>, Handrails and 
+                  <ref type="term" target="guard">Guards</ref> 
                     <ref
                       type="internal"
                       target="nbc.divB.part3.sect3.subsect1.art14"
