@@ -218,9 +218,7 @@
                 >
                 <content>
                   <entry>37</entry>
-                  <entry>Mechanical and <emphasis
-                      style="italic"
-                      >Plumbing Systems</emphasis>
+                  <entry>Mechanical and <ref type="term" target="plmbng-t">Plumbing Systems</ref>
                     Part 6 and Part 7</entry>
                   <entry>Existing mechanical and <ref
                       type="term"
@@ -229,7 +227,10 @@
                       type="term"
                       target="bldng"
                       >buildings</ref> are not required to fully comply to the requirements of Parts 6 or Part 7 provided:
-                    (a) it is not an unsafe condition and
+                    (a) it is not an <ref
+                      type="term"
+                      target="nf-cndtn"
+                      >unsafe condition</ref> and
                     (b) it is acceptable to the <ref
                       type="term"
                       target="bc-thrt-hvn"
