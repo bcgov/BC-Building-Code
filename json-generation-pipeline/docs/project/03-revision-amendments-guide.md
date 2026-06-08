@@ -335,6 +335,46 @@ Use `type="child-element"` targeting:
 - `element-name` - Name of the child element (e.g., "title")
 - `position` - Which occurrence (1-based, defaults to 1)
 
+### Pattern 5: Preface / Frontmatter Paragraph with Revision History
+
+**Use case:** Amend a `<paragraph>` inside the preface, introduction, or committees frontmatter sections.
+
+`<paragraph>` elements in frontmatter (`preface`, `introduction`, `committees`) support `<revision-history>`. This required a schema update to `canonical-nbc.rng` (the `document-content` paragraph definition now allows a `revision-history` child alongside `rich-text`).
+
+```xml
+<amendment id="bc-mo-2024-06-001" sequence="4000"
+           description="Amend Preface paragraph by striking out 'Fire Services Act' and substituting 'Fire Safety Act'">
+    <target type="canonical-id" id="nbc.2020.preface.para2b"/>
+    <replace preserve-references="false">
+        <new-content source="bc">
+            <paragraph xml:id="nbc.2020.preface.para2b" revised="yes">
+                <revision-history>
+                    <original effective-date="2024-03-08">
+                        <!-- Merge engine will auto-populate from bc-building-code.xml -->
+                    </original>
+                    <revision seq="1" type="amendment" effective-date="2025-06-16"
+                              id="bc-mo-2024-06-001" status="current">
+                        <content>
+                            <emphasis style="bold">The National Fire Code of Canada is adopted,
+                            including any variations considered necessary, as the British Columbia
+                            Fire Code (BCFC), pursuant to the Fire Safety Act.</emphasis>
+                        </content>
+                        <change-summary>Strike out "Fire Services Act" and substitute "Fire Safety Act"</change-summary>
+                        <note>Ministerial Order BA 2024 06</note>
+                    </revision>
+                </revision-history>
+            </paragraph>
+        </new-content>
+    </replace>
+</amendment>
+```
+
+**Key points:**
+- `revised="yes"` is required on the `<paragraph>` element, same as any other revised element
+- The `<content>` element accepts full `rich-text` (emphasis, ref, text, etc.)
+- Frontmatter paragraph IDs follow the pattern `nbc.2020.preface.paraXX`, `nbc.2020.introduction.paraXX`, etc.
+- Find target IDs in `bc-building-code.xml` under the `<preface>`, `<introduction>`, or `<committees>` elements
+
 ---
 
 ## 6. Finding Element IDs
@@ -425,6 +465,7 @@ The `deleted="yes"` attribute can be applied to:
 - Table rows
 - Figures
 - Application notes
+- Preface/frontmatter paragraphs
 
 ### XML Representation
 
