@@ -370,15 +370,21 @@
                 >
                 <content>
                   <entry>7</entry>
-                  <entry>Fire-Resistance Ratings and Fire-Protection Ratings
+                  <entry>
+                    <ref
+                      type="term"
+                      target="fr-rtnc-"
+                      >Fire-Resistance Rating</ref> and 
+                      <ref
+                      type="term"
+                      target="fr-prtct"
+                      >Fire-Protection Ratings</ref>
                     <ref
                       type="internal"
                       target="nbc.divBV2.part9.sect10.subsect3.art1.sent3"
                       display-type="long"
                       />
-                    In a house with a <emphasis
-                      style="italic"
-                      >secondary suite</emphasis>, where a minimum <ref
+                    In a house with a <ref type="term" target="bc-scnd-t">secondary suite</ref>, where a minimum <ref
                       type="term"
                       target="fr-rtnc-"
                       >fire-resistance rating</ref> of 30 min is permitted, it is permitted to use wood-frame construction where stud and joist spaces are filled with absorptive material,resilient metal channel spaced 400 or 600 mm o.c. is on one side and not less than 12.7 mm thick gypsum board is installed on ceilings and on both sides of walls.</entry>
