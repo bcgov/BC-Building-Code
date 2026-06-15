@@ -2336,7 +2336,10 @@
                                 number="1"
                                 >
                                 <text
-                                    >Personnel performing the installation, alteration, renewal or repair of a <ref
+                                    >Personnel performing the installation, <ref
+                                        type="term"
+                                        target="ltrtn"
+                                        >alteration</ref>, renewal or repair of a <ref
                                         type="term"
                                         target="plmbng-t"
                                         >plumbing system</ref> shall</text>
