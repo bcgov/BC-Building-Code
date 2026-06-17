@@ -2159,8 +2159,15 @@
             <xsl:if test="@source">
                 <fn:string key="source"><xsl:value-of select="fn:string(@source)"/></fn:string>
             </xsl:if>
-            <fn:string key="title"><xsl:value-of select="title"/></fn:string>
+            <xsl:if test="title">
+                <fn:string key="title"><xsl:value-of select="title"/></fn:string>
+            </xsl:if>
             <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich-text-json"/></fn:string>
+            <xsl:if test="sub-objective">
+                <fn:array key="sub_objectives">
+                    <xsl:apply-templates select="sub-objective" mode="json"/>
+                </fn:array>
+            </xsl:if>
         </fn:map>
     </xsl:template>
     

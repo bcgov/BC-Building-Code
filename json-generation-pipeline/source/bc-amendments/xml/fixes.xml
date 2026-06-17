@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<bc-overlay
+    id="bc-preface-amendments-2023"
+    version="1.0"
+    nbc-target-version="2020"
+    effective-date="2023-12-15"
+    >
+    
+    <!-- ================================================================== -->
+    <!-- BC BUILDING CODE AMENDMENTS TO NBC 2020 - PREFACE                 -->
+    <!-- ================================================================== -->
+    
+    <metadata>
+        <title>BC Building Code Amendments to NBC 2020 - Preface</title>
+        <description>British Columbia-specific amendments to the NBC 2020 Preface, including BC adoption information, legal context, and BC-specific requirements</description>
+        <authority>Province of British Columbia</authority>
+        <author>BC Building Code Team</author>
+        <source-document>N/A</source-document>
+    </metadata>
+    
+    <amendments>
+        
+        <!-- ================================================================== -->
+        <!-- Amendment 000: Insert introductory BC preface note                 -->
+        <!-- Before: "The National Building Code of Canada 2020..."             -->
+        <!-- ================================================================== -->
+        <amendment
+            id="bc-001"
+            sequence="1"
+            description="Replace Sentence 1 of Article 1.1.1.1 with detailed application clauses including British Columbia Fire Code reference"
+            >
+            <target
+                type="canonical-id"
+                id="nbc.divA.part1.sect1.subsect1.art1.sent1"
+                />
+            <replace preserve-references="false">
+                <new-content source="bc">
+                    <sentence
+                        xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1"
+                        number="1"
+                        >
+                        <text
+                            >This Code applies to any one or more of the following:</text>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause1"
+                            letter="a"
+                            >
+                            <text>the design and construction of a new <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref>,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause2"
+                            letter="b"
+                            >
+                            <text>the <ref
+                                    type="term"
+                                    target="ccpnc"
+                                    >occupancy</ref> of any <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref>,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause3"
+                            letter="c"
+                            >
+                            <text>a change in <ref
+                                    type="term"
+                                    target="ccpnc"
+                                    >occupancy</ref> of any <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref>,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause4"
+                            letter="d"
+                            >
+                            <text>an <ref
+                                    type="term"
+                                    target="ltrtn"
+                                    >alteration</ref> of any <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref>,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause5"
+                            letter="e"
+                            >
+                            <text>an addition to any <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref>,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause6"
+                            letter="f"
+                            >
+                            <text>the demolition of any <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref>,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause7"
+                            letter="g"
+                            >
+                            <text>the reconstruction of any <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref> that has been damaged by fire, earthquake or other cause,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause8"
+                            letter="h"
+                            >
+                            <text>the correction of an <ref
+                                    type="term"
+                                    target="nf-cndtn"
+                                    >unsafe condition</ref> in or about any <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref>,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause9"
+                            letter="i"
+                            >
+                            <text>all parts of any <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref> that are affected by a change in <ref
+                                    type="term"
+                                    target="ccpnc"
+                                    >occupancy</ref>,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause10"
+                            letter="j"
+                            >
+                            <text
+                                >the work necessary to ensure safety in parts of a <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref></text>
+                            <subclause
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause10.subclause1"
+                                number="1"
+                                >
+                                <text>that remain after a demolition,</text>
+                            </subclause>
+                            <subclause
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause10.subclause2"
+                                number="2"
+                                >
+                                <text
+                                    >that are affected by but that are not directly involved in <ref
+                                        type="term"
+                                        target="ltrtn"
+                                        >alterations</ref>, or</text>
+                            </subclause>
+                            <subclause
+                                xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause10.subclause3"
+                                number="3"
+                                >
+                                <text
+                                    >that are affected by but not directly involved in additions,</text>
+                            </subclause>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause11"
+                            letter="k"
+                            >
+                            <text
+                                >except as permitted by the British Columbia Fire Code, the installation, replacement, or <ref
+                                    type="term"
+                                    target="ltrtn"
+                                    >alteration</ref> of materials or equipment regulated by this Code,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause12"
+                            letter="l"
+                            >
+                            <text
+                                >the work necessary to ensure safety in a relocated <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref> during and after relocation,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause13"
+                            letter="m"
+                            >
+                            <text>safety during construction of a <ref
+                                    type="term"
+                                    target="bldng"
+                                    >building</ref>, including protection of the public,</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause14"
+                            letter="n"
+                            >
+                            <text>the design, installation, extension, <ref
+                                    type="term"
+                                    target="ltrtn"
+                                    >alteration</ref>, renewal or repair of <ref
+                                    type="term"
+                                    target="plmbng-t"
+                                    >plumbing systems</ref>, and</text>
+                        </clause>
+                        <clause
+                            xml:id="nbc.divA.part1.sect1.subsect1.art1.sent1.clause15"
+                            letter="o"
+                            >
+                            <text>the <ref
+                                    type="term"
+                                    target="ltrtn"
+                                    >alteration</ref>, rehabilitation and change of occupancy of <ref
+                                    type="term"
+                                    target="bc-hrtg-bldng"
+                                    >heritage buildings</ref>.</text>
+                        </clause>
+                    </sentence>
+                </new-content>
+            </replace>
+        </amendment>
+        
+    </amendments>
+</bc-overlay>

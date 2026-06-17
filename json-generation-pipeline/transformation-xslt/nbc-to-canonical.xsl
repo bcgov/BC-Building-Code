@@ -1292,6 +1292,14 @@
                             select="text.defin/node()"
                             mode="rich-text"
                         /></definition>
+          <xsl:for-each select="obj.sub2">
+            <sub-objective xml:id="nbc.objective.{@key}" key="{@key}">
+              <definition><xsl:apply-templates
+                                select="text.defin/node()"
+                                mode="rich-text"
+                            /></definition>
+            </sub-objective>
+          </xsl:for-each>
         </sub-objective>
       </xsl:for-each>
     </objective>
