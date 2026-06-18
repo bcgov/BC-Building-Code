@@ -706,9 +706,38 @@
 
     <xsl:template name="build-glossary">
         <xsl:for-each select="(.//list[@type='definition']/item[@xml:id])[position() &lt;= 10]">
+            <xsl:variable name="cur" select="if (@revised='yes' and revision-history) then revision-history/revision[@status='current'][last()] else ()"/>
+            <xsl:variable name="content-node" select="if (@revised='yes' and revision-history) then (if ($cur/content) then $cur/content else revision-history/original) else ."/>
             <fn:map key="{@xml:id}">
-                <fn:string key="term"><xsl:apply-templates select="term" mode="text"/></fn:string>
-                <fn:string key="definition"><xsl:apply-templates select="definition" mode="rich"/></fn:string>
+                <fn:string key="term"><xsl:apply-templates select="$content-node/term" mode="text"/></fn:string>
+                <fn:string key="definition"><xsl:apply-templates select="$content-node/definition" mode="rich"/></fn:string>
+                <xsl:if test="@revised='yes' and revision-history">
+                    <fn:array key="revisions">
+                        <xsl:call-template name="build-glossary-revisions"/>
+                    </fn:array>
+                </xsl:if>
+            </fn:map>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template name="build-glossary-revisions">
+        <fn:map>
+            <fn:string key="type">original</fn:string>
+            <fn:string key="date"><xsl:value-of select="revision-history/original/@effective-date"/></fn:string>
+            <fn:string key="term"><xsl:value-of select="normalize-space(string-join(revision-history/original/term//text(), ' '))"/></fn:string>
+            <fn:string key="definition"><xsl:apply-templates select="revision-history/original/definition" mode="rich"/></fn:string>
+        </fn:map>
+
+        <xsl:for-each select="revision-history/revision">
+            <fn:map>
+                <fn:string key="type">revision</fn:string>
+                <fn:string key="revision_type"><xsl:value-of select="@type"/></fn:string>
+                <fn:string key="id"><xsl:value-of select="@id"/></fn:string>
+                <fn:string key="date"><xsl:value-of select="@effective-date"/></fn:string>
+                <fn:string key="status"><xsl:value-of select="@status"/></fn:string>
+                <fn:string key="term"><xsl:value-of select="normalize-space(string-join(content/term//text(), ' '))"/></fn:string>
+                <fn:string key="definition"><xsl:apply-templates select="content/definition" mode="rich"/></fn:string>
+                <xsl:if test="change-summary"><fn:string key="summary"><xsl:value-of select="change-summary"/></fn:string></xsl:if>
             </fn:map>
         </xsl:for-each>
     </xsl:template>
