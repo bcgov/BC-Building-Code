@@ -4313,6 +4313,19 @@
         </amendment>
         
         <!-- ================================================================== -->
+        <!-- Amendment 059: Delete introduction from Part 1 Appendix           -->
+        <!-- BC removes the introductory note from nbc.divA.part1.appendix     -->
+        <!-- ================================================================== -->
+        <amendment
+            id="bc-059"
+            sequence="59"
+            description="Delete introduction from Division A Part 1 Appendix"
+            >
+            <target type="child-element" parent-id="nbc.divA.part1.appendix" element-name="introduction" position="1"/>
+            <delete/>
+        </amendment>
+        
+        <!-- ================================================================== -->
         <!-- END OF AMENDMENTS                                                  -->
         <!-- ================================================================== -->
     </amendments>
