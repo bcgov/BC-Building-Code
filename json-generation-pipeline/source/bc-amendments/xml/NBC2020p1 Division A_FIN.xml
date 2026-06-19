@@ -2904,144 +2904,7 @@
             description="Replace Application Note A-1.1.1.1.(1) with BC-specific Application to Existing Buildings note renumbered as A-1.1.1.2.(1)"
             >
             <target type="canonical-id" id="nbc.divA.part1.appendix.appnote1" />
-            <replace preserve-references="false">
-                <new-content source="bc">
-                    <application-note
-                        xml:id="nbc.divA.part1.appendix.appnote1"
-                        vendor-id="en001217"
-                        refs="es000101"
-                        >
-                        <number>1.1.1.2.(1)</number>
-                        <title>Application to Existing Buildings</title>
-                        <paragraph
-                            xml:id="nbc.divA.part1.appendix.appnote1.para1"
-                            >This Code is most often applied to existing or relocated <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref> when an owner wishes to rehabilitate a <ref
-                                type="term"
-                                target="bldng"
-                                >building</ref>, change its use, or build an addition, or when an enforcement authority decrees that a <ref
-                                type="term"
-                                target="bldng"
-                                >building</ref> or class of <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref> be altered for reasons of public safety. It is not intended that the British Columbia Building Code be used to enforce the retrospective application of new requirements to existing <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref> or existing portions of relocated <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref>, unless specifically required by local regulations or bylaws. For example, although the British Columbia Fire Code could be interpreted to require the installation of fire alarm, standpipe and hose, and automatic sprinkler systems in an existing <ref
-                                type="term"
-                                target="bldng"
-                                >building</ref> for which there were no requirements at the time of construction, it is not intended that the British Columbia Fire Code be applied in this manner to these <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref> unless the <ref
-                                type="term"
-                                target="bc-thrt-hvn"
-                                >authority having jurisdiction</ref> has determined that there is an inherent threat to occupant safety and has issued an order to eliminate the unsafe condition, or where substantial changes or additions are being made to an existing <ref
-                                type="term"
-                                target="bldng"
-                                >building</ref> or the <ref
-                                type="term"
-                                target="ccpnc"
-                                >occupancy</ref> has been changed. (See also Note A-1.1.1.1.(1) of Division A of the British Columbia Fire Code.)</paragraph>
-                        <paragraph
-                            xml:id="nbc.divA.part1.appendix.appnote1.para2"
-                            >Relocated <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref> that have been in use in another location for a number of years can be considered as existing <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref>, in part, and the same analytical process can be applied as for existing <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref>. It should be noted, however, that a change in <ref
-                                type="term"
-                                target="ccpnc"
-                                >occupancy</ref> may affect some requirements (e.g. loads and <ref
-                                type="term"
-                                target="fr-prtn"
-                                >fire separations</ref>) and relocation to an area with different wind, snow or earthquake loads will require the application of current code requirements. Depending on the construction of the <ref
-                                type="term"
-                                target="bldng"
-                                >building</ref> and the changes in load, structural modifications may be required. Similarly, parts of a relocated or existing <ref
-                                type="term"
-                                target="bldng"
-                                >building</ref> that are reconstructed, such as foundations and basements, or parts being modified are required to be built to current codes.</paragraph>
-                        <paragraph
-                            xml:id="nbc.divA.part1.appendix.appnote1.para3"
-                            >Whatever the reason, Code application to existing or relocated <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref> requires careful consideration of the level of safety needed for that <ref
-                                type="term"
-                                target="bldng"
-                                >building</ref>. This consideration involves an analytical process similar to that required to assess alternative design proposals for new construction. See <ref
-                                type="internal"
-                                target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
-                                display-type="long"
-                                /> for information on achieving compliance with the Code using alternative solutions.</paragraph>
-                        <paragraph
-                            xml:id="nbc.divA.part1.appendix.appnote1.para4"
-                            >In developing Code requirements for new <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref>, consideration has been given to the cost they impose on a design in relation to the perceived benefits in terms of safety. The former is definable; the latter difficult to establish on a quantitative basis. In applying the Code requirements to an existing <ref
-                                type="term"
-                                target="bldng"
-                                >building</ref>, the benefits derived are the same as in new <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref>. On the other hand, the increased cost of implementing in an existing <ref
-                                type="term"
-                                target="bldng"
-                                >building</ref> a design solution that would normally be intended for a new <ref
-                                type="term"
-                                target="bldng"
-                                >building</ref> may be prohibitive.</paragraph>
-                        <paragraph
-                            xml:id="nbc.divA.part1.appendix.appnote1.para5"
-                            >The successful application of Code requirements to existing construction becomes a matter of balancing the cost of implementing a requirement with the relative importance of that requirement to the overall Code objectives. The degree to which any particular requirement can be relaxed without affecting the intended level of safety of the Code requires considerable judgment on the part of both the designer and the <ref
-                                type="term"
-                                target="bc-thrt-hvn"
-                                >authority having jurisdiction</ref>.</paragraph>
-                        <paragraph
-                            xml:id="nbc.divA.part1.appendix.appnote1.para6"
-                            >Further information on the application of Code requirements to existing or relocated <ref
-                                type="term"
-                                target="bldng"
-                                >buildings</ref> can be found in the following publications:<list type="bulleted">
-                                <item
-                                    xml:id="nbc.divA.part1.appendix.appnote1.item1"
-                                    >"User's Guide – NBC 1995 Fire Protection, Occupant Safety and Accessibility (Part 3)"</item>
-                                <item
-                                    xml:id="nbc.divA.part1.appendix.appnote1.item2"
-                                    >"Guidelines for Application of Part 3 of the National Building Code of Canada to Existing Buildings"</item>
-                                <item
-                                    xml:id="nbc.divA.part1.appendix.appnote1.item3"
-                                    >Commentary entitled "Application of NBC Part 4 of Division B for the Structural Evaluation and Upgrading of Existing Buildings" of the "Structural Commentaries (User's Guide – NBC 2020: Part 4 of Division B)"</item>
-                                <item
-                                    xml:id="nbc.divA.part1.appendix.appnote1.item4"
-                                    >"User's Guide – NBC 1995, Application of Part 9 to Existing Buildings"</item>
-                                <item
-                                    xml:id="nbc.divA.part1.appendix.appnote1.item5"
-                                    >CBD 230, "Applying building codes to existing buildings"</item>
-                            </list>
-                        </paragraph>
-                        <paragraph
-                            xml:id="nbc.divA.part1.appendix.appnote1.para7"
-                            >These publications can be accessed through the NRC Publications Archive at <ref
-                                type="external"
-                                target="https://nrc-publications.canada.ca"
-                                >https://nrc-publications.canada.ca</ref>.</paragraph>
-                    </application-note>
-                </new-content>
-            </replace>
+            <delete />
         </amendment>
         
         <!-- ================================================================== -->
@@ -3265,6 +3128,140 @@
                                     >combined these options.</item>
                             </list>
                         </paragraph>
+                    </application-note>
+                    <application-note
+                        xml:id="nbc.divA.part1.appendix.appnote1"
+                        vendor-id="en001217"
+                        refs="es000101"
+                        >
+                        <number>1.1.1.2.(1)</number>
+                        <title>Application to Existing Buildings</title>
+                        <paragraph
+                            xml:id="nbc.divA.part1.appendix.appnote1.para1"
+                            >This Code is most often applied to existing or relocated <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref> when an owner wishes to rehabilitate a <ref
+                                type="term"
+                                target="bldng"
+                                >building</ref>, change its use, or build an addition, or when an enforcement authority decrees that a <ref
+                                type="term"
+                                target="bldng"
+                                >building</ref> or class of <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref> be altered for reasons of public safety. It is not intended that the British Columbia Building Code be used to enforce the retrospective application of new requirements to existing <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref> or existing portions of relocated <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref>, unless specifically required by local regulations or bylaws. For example, although the British Columbia Fire Code could be interpreted to require the installation of fire alarm, standpipe and hose, and automatic sprinkler systems in an existing <ref
+                                type="term"
+                                target="bldng"
+                                >building</ref> for which there were no requirements at the time of construction, it is not intended that the British Columbia Fire Code be applied in this manner to these <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref> unless the <ref
+                                type="term"
+                                target="bc-thrt-hvn"
+                                >authority having jurisdiction</ref> has determined that there is an inherent threat to occupant safety and has issued an order to eliminate the unsafe condition, or where substantial changes or additions are being made to an existing <ref
+                                type="term"
+                                target="bldng"
+                                >building</ref> or the <ref
+                                type="term"
+                                target="ccpnc"
+                                >occupancy</ref> has been changed. (See also Note A-1.1.1.1.(1) of Division A of the British Columbia Fire Code.)</paragraph>
+                        <paragraph
+                            xml:id="nbc.divA.part1.appendix.appnote1.para2"
+                            >Relocated <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref> that have been in use in another location for a number of years can be considered as existing <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref>, in part, and the same analytical process can be applied as for existing <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref>. It should be noted, however, that a change in <ref
+                                type="term"
+                                target="ccpnc"
+                                >occupancy</ref> may affect some requirements (e.g. loads and <ref
+                                type="term"
+                                target="fr-prtn"
+                                >fire separations</ref>) and relocation to an area with different wind, snow or earthquake loads will require the application of current code requirements. Depending on the construction of the <ref
+                                type="term"
+                                target="bldng"
+                                >building</ref> and the changes in load, structural modifications may be required. Similarly, parts of a relocated or existing <ref
+                                type="term"
+                                target="bldng"
+                                >building</ref> that are reconstructed, such as foundations and basements, or parts being modified are required to be built to current codes.</paragraph>
+                        <paragraph
+                            xml:id="nbc.divA.part1.appendix.appnote1.para3"
+                            >Whatever the reason, Code application to existing or relocated <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref> requires careful consideration of the level of safety needed for that <ref
+                                type="term"
+                                target="bldng"
+                                >building</ref>. This consideration involves an analytical process similar to that required to assess alternative design proposals for new construction. See <ref
+                                type="internal"
+                                target="nbc.divA.part1.sect2.subsect1.art1.sent1.clause2"
+                                display-type="long"
+                                /> for information on achieving compliance with the Code using alternative solutions.</paragraph>
+                        <paragraph
+                            xml:id="nbc.divA.part1.appendix.appnote1.para4"
+                            >In developing Code requirements for new <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref>, consideration has been given to the cost they impose on a design in relation to the perceived benefits in terms of safety. The former is definable; the latter difficult to establish on a quantitative basis. In applying the Code requirements to an existing <ref
+                                type="term"
+                                target="bldng"
+                                >building</ref>, the benefits derived are the same as in new <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref>. On the other hand, the increased cost of implementing in an existing <ref
+                                type="term"
+                                target="bldng"
+                                >building</ref> a design solution that would normally be intended for a new <ref
+                                type="term"
+                                target="bldng"
+                                >building</ref> may be prohibitive.</paragraph>
+                        <paragraph
+                            xml:id="nbc.divA.part1.appendix.appnote1.para5"
+                            >The successful application of Code requirements to existing construction becomes a matter of balancing the cost of implementing a requirement with the relative importance of that requirement to the overall Code objectives. The degree to which any particular requirement can be relaxed without affecting the intended level of safety of the Code requires considerable judgment on the part of both the designer and the <ref
+                                type="term"
+                                target="bc-thrt-hvn"
+                                >authority having jurisdiction</ref>.</paragraph>
+                        <paragraph
+                            xml:id="nbc.divA.part1.appendix.appnote1.para6"
+                            >Further information on the application of Code requirements to existing or relocated <ref
+                                type="term"
+                                target="bldng"
+                                >buildings</ref> can be found in the following publications:<list type="bulleted">
+                                <item
+                                    xml:id="nbc.divA.part1.appendix.appnote1.item1"
+                                    >"User's Guide – NBC 1995 Fire Protection, Occupant Safety and Accessibility (Part 3)"</item>
+                                <item
+                                    xml:id="nbc.divA.part1.appendix.appnote1.item2"
+                                    >"Guidelines for Application of Part 3 of the National Building Code of Canada to Existing Buildings"</item>
+                                <item
+                                    xml:id="nbc.divA.part1.appendix.appnote1.item3"
+                                    >Commentary entitled "Application of NBC Part 4 of Division B for the Structural Evaluation and Upgrading of Existing Buildings" of the "Structural Commentaries (User's Guide – NBC 2020: Part 4 of Division B)"</item>
+                                <item
+                                    xml:id="nbc.divA.part1.appendix.appnote1.item4"
+                                    >"User's Guide – NBC 1995, Application of Part 9 to Existing Buildings"</item>
+                                <item
+                                    xml:id="nbc.divA.part1.appendix.appnote1.item5"
+                                    >CBD 230, "Applying building codes to existing buildings"</item>
+                            </list>
+                        </paragraph>
+                        <paragraph
+                            xml:id="nbc.divA.part1.appendix.appnote1.para7"
+                            >These publications can be accessed through the NRC Publications Archive at <ref
+                                type="external"
+                                target="https://nrc-publications.canada.ca"
+                                >https://nrc-publications.canada.ca</ref>.</paragraph>
                     </application-note>
                 </new-content>
             </insert>
