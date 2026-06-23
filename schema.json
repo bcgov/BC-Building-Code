@@ -1902,6 +1902,13 @@
         },
         "location_id": {
           "type": "string"
+        },
+        "revisions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/revision"
+          },
+          "description": "Revision history for a defined term"
         }
       }
     },
