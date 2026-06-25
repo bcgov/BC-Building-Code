@@ -3012,9 +3012,9 @@
                             xml:id="nbc.divA.part1.appendix.appnote2a.para4"
                             >The use of the Alternate Compliance Methods in <ref
                                 type="internal"
-                                target="nbc.divA.part1.sect1.subsect1.art1.table2"
+                                target="nbc.divA.part1.sect1.subsect1.art1.table1"
                                 display-type="long"
-                                /> is not mandatory, and an owner may choose
+                                >Table 1.1.1.1.(5)</ref> is not mandatory, and an owner may choose
                             <list type="bulleted">
                                 <item
                                     xml:id="nbc.divA.part1.appendix.appnote2a.item1"
@@ -3030,9 +3030,9 @@
                                     xml:id="nbc.divA.part1.appendix.appnote2a.item3"
                                     >to apply alternate compliance methods in <ref
                                         type="internal"
-                                        target="nbc.divA.part1.sect1.subsect1.art1.table2"
+                                        target="nbc.divA.part1.sect1.subsect1.art1.table1"
                                         display-type="long"
-                                        />, or</item>
+                                        >Table 1.1.1.1.(5)</ref>, or</item>
                                 <item
                                     xml:id="nbc.divA.part1.appendix.appnote2a.item4"
                                     >to combined these options.</item>
