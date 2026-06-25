@@ -4323,6 +4323,32 @@
         </amendment>
         
         <!-- ================================================================== -->
+        <!-- Amendment 060: Replace ref element with text in appnote6.para1     -->
+        <!-- Application Note 6, Paragraph 1 - Grade Definition                 -->
+        <!-- Replaces internal reference with plain text "Figgg1"              -->
+        <!-- ================================================================== -->
+        <amendment
+            id="bc-060"
+            sequence="60"
+            description="Replace internal reference with text 'Figgg1' in Application Note 6, Paragraph 1">
+            <target
+                type="canonical-id"
+                id="nbc.divA.part1.appendix.appnote6.para1"
+                />
+            <replace preserve-references="true">
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.divA.part1.appendix.appnote6.para1">Application of the definition of grade to stepped buildings
+on sloping sites often results in such buildings being designated
+as being greater than 4 storeys in building height even though there
+may be only 2, 3 or <measurement units="metric">4 storeys</measurement> at any one location. <ref type="internal"
+                          target="nbc.divA.part1.appendix.appnote6.figure1"
+                          display-type="long">Figure A-1.3.3.4.(2)</ref> illustrates this application compared to a similar
+building on a flat site.</paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+        
+        <!-- ================================================================== -->
         <!-- END OF AMENDMENTS                                                  -->
         <!-- ================================================================== -->
     </amendments>
