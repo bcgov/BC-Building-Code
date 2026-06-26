@@ -38,10 +38,10 @@
 
     <amendment id="bc-mo-2024-06-001" sequence="4000"
     description="Amend Preface by striking out 'Fire Services Act' in the fourth paragraph and substituting 'Fire Safety Act'">
-      <target type="canonical-id" id="nbc.2020.preface.para2b"/>
+      <target type="canonical-id" id="nbc.2020.preface.para2"/>
       <replace preserve-references="false">
         <new-content source="bc">
-          <paragraph xml:id="nbc.2020.preface.para2b" revised="yes">
+          <paragraph xml:id="nbc.2020.preface.para2" revised="yes">
             <revision-history>
               <original effective-date="2024-03-08">
                 <!-- Merge engine will auto-populate from bc-building-code.xml -->
@@ -55,7 +55,9 @@
                 status="current"
                 >
                 <content>
-                  <emphasis style="bold">The National Fire Code of Canada is adopted, including any variations considered necessary, as the British Columbia Fire Code (BCFC), pursuant to the Fire Safety Act.</emphasis>
+                  In British Columbia, the NBC, together with the National Plumbing Code of Canada, are adopted, including any variations considered necessary, as Book I (General) and Book II (Plumbing Systems) of the BCBC, pursuant to the Building Act.
+                  The National Fire Code of Canada is adopted, including any variations considered necessary, as the British Columbia Fire Code (BCFC), pursuant to the Fire Safety Act.
+                  The National Energy Code of Canada for Buildings (NECB) is adopted by reference from Book I (General) of the British Columbia Building Code.
                 </content>
                 <change-summary
                   >Strike out "Fire Services Act" and substitute "Fire Safety Act"</change-summary>

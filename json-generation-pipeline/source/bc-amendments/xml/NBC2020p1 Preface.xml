@@ -37,7 +37,7 @@
             <insert>
                 <new-content source="bc">
                     <paragraph xml:id="nbc.2020.preface.intro" >
-                        <emphasis style="bold">The following preface is reprinted from the model National Building Code of Canada (NBC), on which the British Columbia Building Code (BCBC) is substantially based. As such, this information also pertains to the BCBC. Material that is not relevant to the BCBC has been deleted; minor BCBC-specific edits within the text have been made. Additional information only relevant to the BCBC has been included in text boxes within the document.</emphasis>
+                        The following preface is reprinted from the model National Building Code of Canada (NBC), on which the British Columbia Building Code (BCBC) is substantially based. As such, this information also pertains to the BCBC. Material that is not relevant to the BCBC has been deleted; minor BCBC-specific edits within the text have been made. Additional information only relevant to the BCBC has been included in text boxes within the document.
                     </paragraph>
                 </new-content>
             </insert>
@@ -60,15 +60,9 @@
                 />
             <insert>
                 <new-content source="bc">
-                    <paragraph xml:id="nbc.2020.preface.para2a" >
-                        <emphasis style="bold">In British Columbia, the NBC, together with the National Plumbing Code of Canada, are adopted, including any variations considered necessary, as Book I (General) and Book II (Plumbing Systems) of the BCBC, pursuant to the Building Act.</emphasis>
-                    </paragraph>
-                    <paragraph xml:id="nbc.2020.preface.para2b" >
-                        <emphasis style="bold">The National Fire Code of Canada is adopted, including any variations considered necessary, as the British Columbia Fire Code (BCFC), pursuant to the Fire Services Act.</emphasis>
-                    </paragraph>
-                    <paragraph xml:id="nbc.2020.preface.para2c" >
-                        <emphasis style="bold">The National Energy Code of Canada for Buildings (NECB) is adopted by reference from Book I (General) of the British Columbia Building Code.</emphasis>
-                    </paragraph>
+                        In British Columbia, the NBC, together with the National Plumbing Code of Canada, are adopted, including any variations considered necessary, as Book I (General) and Book II (Plumbing Systems) of the BCBC, pursuant to the Building Act.
+                        The National Fire Code of Canada is adopted, including any variations considered necessary, as the British Columbia Fire Code (BCFC), pursuant to the Fire Services Act.
+                        The National Energy Code of Canada for Buildings (NECB) is adopted by reference from Book I (General) of the British Columbia Building Code.
                 </new-content>
             </insert>
         </amendment>
@@ -91,7 +85,7 @@
             <insert>
                 <new-content source="bc">
                     <paragraph xml:id="nbc.2020.preface.para4a" >
-                        <emphasis style="bold">This edition of the BCBC succeeds the 2018 edition.</emphasis>
+                        This edition of the BCBC succeeds the 2018 edition.
                     </paragraph>
                 </new-content>
             </insert>
@@ -115,7 +109,7 @@
             <insert>
                 <new-content source="bc">
                     <paragraph xml:id="nbc.2020.preface.div1.para3a" >
-                        <emphasis style="bold">Similar to the Codes themselves, such periodic revisions do not have legal effect until adopted into law by the Province of British Columbia.</emphasis>
+                        Similar to the Codes themselves, such periodic revisions do not have legal effect until adopted into law by the Province of British Columbia.
                     </paragraph>
                 </new-content>
             </insert>
@@ -139,7 +133,7 @@
             <insert>
                 <new-content source="bc">
                     <paragraph xml:id="nbc.2020.preface.div2.para4a" >
-                        <emphasis style="bold">In context of the preceding paragraph, the terms "authority having jurisdiction" and "adopting authority" refer to the government of the Province of British Columbia. This differs from the context of application and enforcement of the BCBC, for which the Code contains a distinct definition of the term "authority having jurisdiction". (See Article 1.4.1.2. of Division A.)</emphasis>
+                        In context of the preceding paragraph, the terms "authority having jurisdiction" and "adopting authority" refer to the government of the Province of British Columbia. This differs from the context of application and enforcement of the BCBC, for which the Code contains a distinct definition of the term "authority having jurisdiction". (See Article 1.4.1.2. of Division A.)
                     </paragraph>
                 </new-content>
             </insert>
@@ -442,6 +436,54 @@
                     </paragraph>
                 </new-content>
             </insert>
+        </amendment>
+
+        <!-- ================================================================== -->
+        <!-- Amendment 017: Replace Division 2 Subsection 1 paragraph 1 text   -->
+        <!-- Change to shortened NBC/NFC fire safety statement                 -->
+        <!-- ================================================================== -->
+        <amendment
+            id="bc-preface-017"
+            sequence="17"
+            description="Replace preface paragraph nbc.2020.preface.div2.sub1.para1 with shortened text"
+            >
+            <target
+                type="canonical-id"
+                id="nbc.2020.preface.div2.sub1.para1"
+                />
+            <replace>
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div2.sub1.para1a">
+                        The NBC and NFC each contain provisions that relate to the safety of persons in buildings in the event of a fire and the protection of buildings from the effects of fire.
+                    </paragraph>
+                    <paragraph xml:id="nbc.2020.preface.div2.sub1.para1b">
+                        These two model codes are developed as complementary and coordinated documents to minimize the possibility of their containing conflicting provisions. It is expected that buildings comply with both the NBC and the NFC.
+                    </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
+
+        <!-- ================================================================== -->
+        <!-- Amendment 018: Rewrap Division 2 Subsection 2 paragraph 1 text    -->
+        <!-- Convert paragraph text to requested line wrapping                  -->
+        <!-- ================================================================== -->
+        <amendment
+            id="bc-preface-018"
+            sequence="18"
+            description="Replace preface paragraph nbc.2020.preface.div2.sub2.para1 with requested text wrapping"
+            >
+            <target
+                type="canonical-id"
+                id="nbc.2020.preface.div2.sub2.para1"
+                />
+            <replace>
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div2.sub2.para1">The provisions in Section 9.36. of Division B of the NBC are tied to the environment objective. These provisions,
+which apply to housing and small buildings, have a similar scope to that of the NECB, except that they do not
+address lighting and electrical power systems. The NECB is referenced in NBC Section 9.36. as an acceptable
+solution.</paragraph>
+                </new-content>
+            </replace>
         </amendment>
         
     </amendments>
