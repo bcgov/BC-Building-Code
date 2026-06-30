@@ -474,6 +474,7 @@
     <!-- TEXT MODES -->
     <xsl:template match="*" mode="text"><xsl:apply-templates select="text()|*" mode="text"/></xsl:template>
     <xsl:template match="text()" mode="text"><xsl:value-of select="."/></xsl:template>
+    <xsl:template match="lb" mode="text"><xsl:text>&#10;</xsl:text></xsl:template>
     <xsl:template match="emphasis|super|sub|ref|measurement" mode="text"><xsl:apply-templates select="text()" mode="text"/></xsl:template>
 
     <xsl:template match="*" mode="rich"><xsl:apply-templates select="text()|*" mode="rich"/></xsl:template>
@@ -489,6 +490,7 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
+    <xsl:template match="lb" mode="rich"><xsl:text>&#10;</xsl:text></xsl:template>
     <xsl:template match="ref" mode="rich">
         <xsl:if test="preceding-sibling::node()[1][self::text() and not(matches(., '\s$'))]">
             <xsl:text> </xsl:text>

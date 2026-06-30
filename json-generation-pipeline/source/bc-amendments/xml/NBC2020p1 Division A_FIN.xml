@@ -480,7 +480,9 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row1"
                                     >
                                     <entry>1</entry>
-                                    <entry><ref type="term" target="fr-prtn">Fire Separations</ref>
+                                    <entry>
+                                    <ref type="term" target="fr-prtn">Fire Separations</ref>
+                                        <lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect1.subsect3.art1.sent1"
@@ -493,7 +495,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect9"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         2 h <ref
                                             type="term"
                                             target="fr-prtn"
@@ -521,7 +523,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row2"
                                     >
                                     <entry>2</entry>
-                                    <entry><ref type="term" target="fr-prtn">Fire Separations</ref>
+                                    <entry><ref type="term" target="fr-prtn">Fire Separations</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect1.subsect3.art1.sent1"
@@ -534,7 +536,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect9"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         1 h <ref
                                             type="term"
                                             target="fr-prtn"
@@ -559,7 +561,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row3"
                                     >
                                     <entry>3</entry>
-                                    <entry><ref type="term" target="ncmbtbl-">Noncombustible Construction</ref>
+                                    <entry><ref type="term" target="ncmbtbl-">Noncombustible Construction</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect1.subsect5"
@@ -568,7 +570,7 @@
                                             type="internal"
                                             target="nbc.divB.part9.sect10.subsect6.art1"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         All materials used in <ref
                                             type="term"
                                             target="nncmbtbl-cnstrctn"
@@ -585,7 +587,7 @@
                                             >building</ref> is <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref>.
+                                            >sprinklered</ref>.<lb/>
                                         2. Up to 10% gross <ref
                                             type="term"
                                             target="flr-r"
@@ -608,7 +610,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row4"
                                     >
                                     <entry>4</entry>
-                                    <entry><ref type="term" target="fr-rtnc-">Fire-resistance Rating</ref>
+                                    <entry><ref type="term" target="fr-rtnc-">Fire-resistance Rating</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect1.subsect7.art1.sent1"
@@ -617,7 +619,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect3.art1"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         Where a material, assembly of materials or structural member is required to have a <ref
                                             type="term"
                                             target="fr-rtnc-"
@@ -625,10 +627,10 @@
                                     <entry>A <ref
                                             type="term"
                                             target="fr-rtnc-"
-                                            >fire-resistance rating</ref> may also be used based on:
-                                        (a) HUD No. 8 Guideline on Fire Ratings of Archaic Materials and Assemblies.,
-                                        (b) Fire Endurance of Protected Steel Columns and Beams, DBR Technical Paper No. 194.,
-                                        (c) Fire Endurance of Unit Masonry Walls, DBR Technical Paper No. 207.,
+                                            >fire-resistance rating</ref> may also be used based on:<lb/>
+                                        (a) HUD No. 8 Guideline on Fire Ratings of Archaic Materials and Assemblies.,<lb/>
+                                        (b) Fire Endurance of Protected Steel Columns and Beams, DBR Technical Paper No. 194.,<lb/>
+                                        (c) Fire Endurance of Unit Masonry Walls, DBR Technical Paper No. 207.,<lb/>
                                         (d) Fire Endurance of Light-Framed and Miscellaneous Assemblies, DBR Technical Paper No. 222.</entry>
                                 </row>
                                 
@@ -636,7 +638,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row5"
                                     >
                                     <entry>5</entry>
-                                    <entry>Rating of Supporting Construction
+                                    <entry>Rating of Supporting Construction<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect1.subsect7.art5"
@@ -645,7 +647,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect8.art3"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         Supporting assemblies to have <ref
                                             type="term"
                                             target="fr-rtnc-"
@@ -656,8 +658,8 @@
                                             >fire-resistance rating</ref> less than would be required by the Code provided the <ref
                                             type="term"
                                             target="bldng"
-                                            >building</ref>:
-                                        (a) is <ref type="term" target="prnklrd">sprinklered</ref>, and
+                                            >building</ref>:<lb/>
+                                        (a) is <ref type="term" target="prnklrd">sprinklered</ref>, and<lb/>
                                         (b) does not exceed 6 <ref type="term" target="tr">storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hg"
@@ -668,7 +670,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row6"
                                     >
                                     <entry>6</entry>
-                                    <entry>Continuity of <ref type="term" target="fr-prtn">Fire Separations</ref>
+                                    <entry>Continuity of <ref type="term" target="fr-prtn">Fire Separations</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect1.subsect8.art3.sent1"
@@ -681,17 +683,17 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect9.art2"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         <ref type="term" target="fr-prtn">Fire separations</ref> are required to be continuous above the ceiling space.</entry>
-                                    <entry><ref type="term" target="fr-prtn">Fire separations</ref> are not required to be continuous above a ceiling space where
+                                    <entry><ref type="term" target="fr-prtn">Fire separations</ref> are not required to be continuous above a ceiling space where<lb/>
                                         (a) the ceiling space is <ref
                                             type="term"
                                             target="nncmbtbl-cnstrctn"
-                                            >noncombustible construction</ref>,
+                                            >noncombustible construction</ref>,<lb/>
                                         (b) both <ref type="term" target="fr-cmprt">fire compartments</ref> are <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref>, or
+                                            >sprinklered</ref>, or<lb/>
                                         (c) the ceiling has a minimum rating of 30 minutes.</entry>
                                 </row>
                                 
@@ -699,7 +701,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row7"
                                     >
                                     <entry>7</entry>
-                                    <entry>Wired Glass
+                                    <entry>Wired Glass<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect1.subsect8.art5.sent1"
@@ -716,7 +718,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect13.art5"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         6 mm wired glass in steel frame required in <ref
                                             type="term"
                                             target="fr-prtn"
@@ -732,7 +734,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row8"
                                     >
                                     <entry>8</entry>
-                                    <entry><ref type="term" target="mzznn">Mezzanines</ref>
+                                    <entry><ref type="term" target="mzznn">Mezzanines</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect1.art1.sent4"
@@ -745,7 +747,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect4.art1"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         <ref type="term" target="mzznn">Mezzanines</ref> enclosing more than 10% above the horizontal plane are considered as <ref
                                             type="term"
                                             target="tr"
@@ -778,7 +780,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row9"
                                     >
                                     <entry>9</entry>
-                                    <entry><ref type="term" target="bldng-hg">Building Height</ref>
+                                    <entry><ref type="term" target="bldng-hg">Building Height</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect2.art20"
@@ -787,7 +789,7 @@
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect2.art90"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         <ref type="term" target="ncmbtbl-">Noncombustible construction</ref> required for some <ref
                                             type="term"
                                             target="bldng"
@@ -798,18 +800,18 @@
                                             >combustible construction</ref> up to 6 <ref
                                             type="term"
                                             target="tr"
-                                            >storeys</ref> provided:
+                                            >storeys</ref> provided:<lb/>
                                         (a) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref>,
+                                            >sprinklered</ref>,<lb/>
                                         (b) the <ref
                                             type="term"
                                             target="bldng"
                                             >building</ref> contains Group C, D, E, F, Division 2 or F, Division 3 <ref
                                             type="term"
                                             target="ccpnc"
-                                            >occupancies</ref>, and
+                                            >occupancies</ref>, and<lb/>
                                         (c) floor assemblies not required to exceed 1 h <ref
                                             type="term"
                                             target="fr-prtn"
@@ -820,7 +822,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row10"
                                     >
                                     <entry>10</entry>
-                                    <entry>Spatial Separation
+                                    <entry>Spatial Separation<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect3"
@@ -829,7 +831,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect14"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         The area of <ref
                                             type="term"
                                             target="nprtctd-"
@@ -837,11 +839,11 @@
                                     <entry>The area of <ref
                                             type="term"
                                             target="nprtctd-"
-                                            >unprotected opening</ref> is not limited provided:
+                                            >unprotected opening</ref> is not limited provided:<lb/>
                                         (a) the <ref
                                             type="term"
                                             target="lmtng-dstnc"
-                                            >limiting distance</ref> is a minimum 1 m,
+                                            >limiting distance</ref> is a minimum 1 m,<lb/>
                                         (b) the <ref
                                             type="term"
                                             target="bldng"
@@ -849,7 +851,7 @@
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect4.art9.sent3"
                                             display-type="long"
-                                            />, and
+                                            />, and<lb/>
                                         (c) the sprinkler system is connected to the fire department in conformance with <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect4.art7.sent4"
@@ -861,7 +863,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row11"
                                     >
                                     <entry>11</entry>
-                                    <entry>Construction of <ref type="term" target="xpng-bld">Exposing Building Face</ref>
+                                    <entry>Construction of <ref type="term" target="xpng-bld">Exposing Building Face</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect3.art7"
@@ -870,7 +872,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect14.art5"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         The <ref
                                             type="term"
                                             target="xpsng-bldng-fc"
@@ -903,12 +905,12 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row12"
                                     >
                                     <entry>12</entry>
-                                    <entry>Roof Covering Rating
+                                    <entry>Roof Covering Rating<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect1.subsect15.art2.sent1"
                                             display-type="long"
-                                            />
+                                            /><lb/>
                                         Class A, B or C roof covering in conformance with CAN/ ULC-S107, "Fire Tests of Roof Coverings" required.</entry>
                                     <entry
                                         >For existing roofs not covered by a Class A, B or C roofing a manually operated deluge system in accordance with NFPA 13, "Installation of Sprinkler Systems" is permitted.</entry>
@@ -918,7 +920,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row13"
                                     >
                                     <entry>13</entry>
-                                    <entry><ref type="term" target="mk-lrm">Smoke Alarms</ref>
+                                    <entry><ref type="term" target="mk-lrm">Smoke Alarms</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect4.art20.sent7"
@@ -927,7 +929,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect19.art4.sent1"
                                             display-type="long"
-                                            />
+                                            /><lb/>
                                         <ref type="term" target="mk-lrm">Smoke alarms</ref> are required to be connected to an electric circuit.</entry>
                                     <entry><ref type="term" target="mk-lrm">Smoke alarms</ref> may be battery operated in single family homes only.</entry>
                                 </row>
@@ -936,7 +938,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row14"
                                     >
                                     <entry>14</entry>
-                                    <entry><ref type="term" target="ntrcnnct">Interconnected Floor Space</ref>
+                                    <entry><ref type="term" target="ntrcnnct">Interconnected Floor Space</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect8"
@@ -959,18 +961,18 @@
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect8"
                                             display-type="long"
-                                            />., provided
+                                            />., provided<lb/>
                                         (a) the <ref
                                             type="term"
                                             target="bldng"
                                             >building</ref> contains a Group C or D <ref
                                             type="term"
                                             target="ccpnc"
-                                            >occupancy</ref>,
+                                            >occupancy</ref>,<lb/>
                                         (b) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref> with fast-response sprinklers,
+                                            >sprinklered</ref> with fast-response sprinklers,<lb/>
                                         (c) corridors opening into the <ref
                                             type="term"
                                             target="ntrconnctd-flr-spc"
@@ -980,7 +982,7 @@
                                             >interconnected floor space</ref> by a <ref
                                             type="term"
                                             target="fr-prtn"
-                                            >fire separation</ref> with the rating required for the corridor, and
+                                            >fire separation</ref> with the rating required for the corridor, and<lb/>
                                         (d) <ref
                                             type="term"
                                             target="mk-dtctr"
@@ -990,7 +992,8 @@
                                             >interconnected floor space</ref> and the <ref
                                             type="term"
                                             target="mk-dtctr"
-                                            >smoke detectors</ref> are connected to the fire alarm system.2. Open stairs in <ref
+                                            >smoke detectors</ref> are connected to the fire alarm system.<lb/>
+                                            2. Open stairs in <ref
                                             type="term"
                                             target="bldng"
                                             >buildings</ref> of maximum 3 <ref
@@ -1009,18 +1012,18 @@
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect8"
                                             display-type="long"
-                                            />. of Division B, provided:
+                                            />. of Division B, provided:<lb/>
                                         (a) the <ref
                                             type="term"
                                             target="bldng"
                                             >building</ref> contains a Group C or D <ref
                                             type="term"
                                             target="ccpnc"
-                                            >occupancy</ref>,
+                                            >occupancy</ref>,<lb/>
                                         (b) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref> with fast response sprinklers,
+                                            >sprinklered</ref> with fast response sprinklers,<lb/>
                                         (c) <ref
                                             type="term"
                                             target="mk-dtctr"
@@ -1030,7 +1033,7 @@
                                             >interconnected floor space</ref> and the <ref
                                             type="term"
                                             target="mk-dtctr"
-                                            >smoke detectors</ref> are connected to the fire alarm system, and
+                                            >smoke detectors</ref> are connected to the fire alarm system, and<lb/>
                                         (d) at least one <ref type="term" target="mn-f-gr">means of egress</ref> is not through the <ref
                                             type="term"
                                             target="ntrconnctd-flr-spc"
@@ -1041,7 +1044,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row15"
                                     >
                                     <entry>15</entry>
-                                    <entry>Separation of <ref type="term" target="t">Suites</ref>
+                                    <entry>Separation of <ref type="term" target="t">Suites</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect3.subsect1.art1"
@@ -1054,7 +1057,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect9.art14"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         <ref type="term" target="t">Suites</ref> are required to be separated from adjoining <ref
                                             type="term"
                                             target="t"
@@ -1087,7 +1090,7 @@
                                     <entry>Corridor <ref
                                             type="term"
                                             target="fr-prtn"
-                                            >fire separation</ref>
+                                            >fire separation</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect3.subsect1.art4"
@@ -1096,7 +1099,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect10.subsect9.art15"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         <ref type="term" target="pblc-crr">Public corridors</ref> are required to be separated from the remainder of the <ref
                                             type="term"
                                             target="bldng"
@@ -1111,11 +1114,11 @@
                                         >Existing corridors with 30 min fire resistance ratings, such as wood lath and plaster in good condition, are acceptable in <ref type="term" target="rdntl-cc">residential occupancies</ref> provided the <ref
                                             type="term"
                                             target="bldng"
-                                            >building</ref>:
+                                            >building</ref>:<lb/>
                                         (a) does not exceed 6 <ref type="term" target="tr">storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
-                                            >building height</ref>, and
+                                            >building height</ref>, and<lb/>
                                         (b) is fully <ref
                                             type="term"
                                             target="prnklrd"
@@ -1126,7 +1129,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row17"
                                     >
                                     <entry>17</entry>
-                                    <entry>Corridor Width
+                                    <entry>Corridor Width<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect3.subsect1.art9"
@@ -1139,13 +1142,13 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect3.art3"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         <ref type="term" target="pblc-crr">Public corridors</ref> and <ref type="term" target="xt">exit</ref> corridors are permitted to have a minimum width of 1 100 mm.</entry>
-                                    <entry><ref type="term" target="pblc-crr">Public corridors</ref> and <ref type="term" target="xt">exit</ref> corridors are permitted with a minimum width of 800 mm provided:
+                                    <entry><ref type="term" target="pblc-crr">Public corridors</ref> and <ref type="term" target="xt">exit</ref> corridors are permitted with a minimum width of 800 mm provided:<lb/>
                                         (a) the <ref type="term" target="ccpnt-ld">occupant load</ref> of the <ref
                                             type="term"
                                             target="bldng"
-                                            >building</ref> is maximum 20 people, and
+                                            >building</ref> is maximum 20 people, and<lb/>
                                         (b) the <ref type="term" target="bldng">building</ref> does not exceed 3 <ref
                                             type="term"
                                             target="tr"
@@ -1160,7 +1163,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row18"
                                     >
                                     <entry>18</entry>
-                                    <entry>Door Swing
+                                    <entry>Door Swing<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect3.subsect1.art10"
@@ -1173,10 +1176,10 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect6.art5"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         Doors required to swing in the direction of <ref type="term" target="xt">exit</ref> travel.</entry>
                                     <entry
-                                        >2nd egress door from a room is not required to swing in the direction of <ref type="term" target="xt">exit</ref> travel provided:
+                                        >2nd egress door from a room is not required to swing in the direction of <ref type="term" target="xt">exit</ref> travel provided:<lb/>
                                         (a) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
                                             target="prnklrd"
@@ -1184,7 +1187,7 @@
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect4.art9.sent3"
                                             display-type="long"
-                                            />, and
+                                            />, and<lb/>
                                         (b) the <ref type="term" target="ccpnt-ld">occupant load</ref> of the <ref
                                             type="term"
                                             target="bldng"
@@ -1196,7 +1199,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row19"
                                     >
                                     <entry>19</entry>
-                                    <entry>Stairs, Ramps, Handrails and <ref type="term" target="guard">Guards</ref>
+                                    <entry>Stairs, Ramps, Handrails and <ref type="term" target="guard">Guards</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect3.subsect1.art14"
@@ -1226,7 +1229,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row20"
                                     >
                                     <entry>20</entry>
-                                    <entry>Transparent Doors and Panels
+                                    <entry>Transparent Doors and Panels<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect3.subsect1.art19"
@@ -1235,7 +1238,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect6.subsect1.art4"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         Safety glass required.</entry>
                                     <entry
                                         >Existing glass or transparent panels that do not comply fully with the requirements are permitted if sufficiently discernible or <ref
@@ -1248,7 +1251,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row21"
                                     >
                                     <entry>21</entry>
-                                    <entry>Dead-end Corridors
+                                    <entry>Dead-end Corridors<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect3.subsect1.art9.sent5"
@@ -1257,29 +1260,29 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect7.art3"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         Dead-end corridors are permitted to a maximum length of 6 m.</entry>
                                     <entry
                                         >1. Dead-end corridors are permitted to a maximum length of 10 m in Group C <ref
                                             type="term"
                                             target="ccpnc"
-                                            >occupancies</ref> provided:
+                                            >occupancies</ref> provided:<lb/>
                                         (a) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref> with fast response sprinklers, and
+                                            >sprinklered</ref> with fast response sprinklers, and<lb/>
                                         (b) <ref
                                             type="term"
                                             target="mk-dtctr"
-                                            >smoke detectors</ref> are installed in the corridor system.
+                                            >smoke detectors</ref> are installed in the corridor system.<lb/>
                                         2. Dead-end corridors are permitted to a maximum of 15 m in length in Group D, E, F, Division 2 and F, Division 3 <ref
                                             type="term"
                                             target="ccpnc"
-                                            >occupancies</ref> provided:
+                                            >occupancies</ref> provided:<lb/>
                                         (a) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref> with fast response sprinklers, and
+                                            >sprinklered</ref> with fast response sprinklers, and<lb/>
                                         (b) <ref
                                             type="term"
                                             target="mk-dtctr"
@@ -1290,7 +1293,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row22"
                                     >
                                     <entry>22</entry>
-                                    <entry><ref type="term" target="xt">Exits</ref> <ref
+                                    <entry><ref type="term" target="xt">Exits</ref><lb/> <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect2.art1"
                                             display-type="long"
@@ -1298,7 +1301,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect8.art2"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         <ref type="term" target="flr-r">Floor areas</ref> shall be served by not fewer than 2 <ref type="term" target="xt">exits</ref> except as permitted by <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect2.art1.sent2"
@@ -1308,18 +1311,18 @@
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect2.art1.sent2"
                                             display-type="long"
-                                            /> provided:
+                                            /> provided:<lb/>
                                         (a) the <ref type="term" target="bldng">building</ref> does not exceed 3 <ref
                                             type="term"
                                             target="tr"
                                             >storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
-                                            >building height</ref>,
+                                            >building height</ref>,<lb/>
                                         (b) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref> with fast response sprinklers, and
+                                            >sprinklered</ref> with fast response sprinklers, and<lb/>
                                         (c) all <ref type="term" target="flr-r">floor areas</ref> are protected by a system of <ref
                                             type="term"
                                             target="mk-dtctr"
@@ -1330,7 +1333,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row23"
                                     >
                                     <entry>23</entry>
-                                    <entry>Reduction of <ref type="term" target="xt">Exit</ref> Width
+                                    <entry>Reduction of <ref type="term" target="xt">Exit</ref> Width<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect3.art3.sent2"
@@ -1339,18 +1342,19 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect6.art1"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         Swinging doors in their swing shall not reduce the effective width of <ref type="term" target="xt">exit</ref> stairs and landings to less than 750 mm.</entry>
                                     <entry
-                                        >Existing swinging doors in their swing are permitted to reduce the effective width of <ref type="term" target="xt">exit</ref> stairs and landings to a minimum of 550 mm provided:
-                                        (a) they serve Group C or D <ref type="term" target="ccpnc">occupancies</ref>,
+                                        >Existing swinging doors in their swing are permitted to reduce the effective width of <ref type="term" target="xt">exit</ref> stairs and landings to a minimum of 550 mm provided:<lb/>
+                                        (a) they serve Group C or D <ref type="term" target="ccpnc">occupancies</ref>,<lb/>
                                         (b) the <ref type="term" target="bldng">building</ref> does not exceed 4 <ref
                                             type="term"
                                             target="tr"
                                             >storeys</ref> in <ref
                                             type="term"
                                             target="bldng-hght"
-                                            >building height</ref>, and(c) the <ref
+                                            >building height</ref>, and<lb/>
+                                        (c) the <ref
                                             type="term"
                                             target="bldng"
                                             >building</ref> is <ref
@@ -1363,7 +1367,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row24"
                                     >
                                     <entry>24</entry>
-                                    <entry><ref type="term" target="fr-prtn">Fire Separation</ref> of <ref type="term" target="xt">Exits</ref>
+                                    <entry><ref type="term" target="fr-prtn">Fire Separation</ref> of <ref type="term" target="xt">Exits</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect4.art1"
@@ -1372,7 +1376,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect4"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         <ref type="term" target="xt">Exits</ref> are required to be separated from the remainder of the <ref type="term" target="flr-r">floor area</ref> by a <ref
                                             type="term"
                                             target="fr-prtn"
@@ -1393,16 +1397,16 @@
                                             >fire separation</ref> that does not have a <ref
                                             type="term"
                                             target="fr-rtnc-"
-                                            >fire-resistance rating</ref> provided:
+                                            >fire-resistance rating</ref> provided:<lb/>
                                         (a) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref> with fast response sprinklers, and
+                                            >sprinklered</ref> with fast response sprinklers, and<lb/>
                                         (b) the sprinkler system is supervised in accordance with <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect2.subsect4.art9.sent3"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         2. <ref type="term" target="bldng">Buildings</ref> not exceeding 6 <ref
                                             type="term"
                                             target="tr"
@@ -1425,7 +1429,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row25"
                                     >
                                     <entry>25</entry>
-                                    <entry><ref type="term" target="xt">Exits</ref> Through Lobbies
+                                    <entry><ref type="term" target="xt">Exits</ref> Through Lobbies<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect4.art2"
@@ -1434,7 +1438,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect8.art5"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         Rooms adjacent to the lobby are required to be separated by a <ref
                                             type="term"
                                             target="fr-prtn"
@@ -1443,11 +1447,11 @@
                                         >Rooms adjacent to the lobby are not required to be separated by a <ref
                                             type="term"
                                             target="fr-prtn"
-                                            >fire separation</ref> provided:
+                                            >fire separation</ref> provided:<lb/>
                                         (a) the <ref type="term" target="flr-r">floor area</ref> is <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref> with fast response sprinklers, and
+                                            >sprinklered</ref> with fast response sprinklers, and<lb/>
                                         (b) <ref
                                             type="term"
                                             target="mk-dtctr"
@@ -1458,7 +1462,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row26"
                                     >
                                     <entry>26</entry>
-                                    <entry>Rooms Opening into <ref type="term" target="xt">Exit</ref>
+                                    <entry>Rooms Opening into <ref type="term" target="xt">Exit</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect4.art4.sent7"
@@ -1467,13 +1471,13 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect5.art9"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         <ref type="term" target="rvc-rm">Service rooms</ref> and ancillary rooms are not permitted to open directly into an <ref type="term" target="xt">exit</ref>.</entry>
-                                    <entry><ref type="term" target="rvc-rm">Service rooms</ref> and ancillary rooms may open directly into an <ref type="term" target="xt">exit</ref> provided:
+                                    <entry><ref type="term" target="rvc-rm">Service rooms</ref> and ancillary rooms may open directly into an <ref type="term" target="xt">exit</ref> provided:<lb/>
                                         (a) the room is <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref> with fast response sprinklers, and
+                                            >sprinklered</ref> with fast response sprinklers, and<lb/>
                                         (b) weatherstripping is installed on the door to prevent the passage of smoke.</entry>
                                 </row>
                                 
@@ -1481,7 +1485,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row27"
                                     >
                                     <entry>27</entry>
-                                    <entry>Illumination of <ref type="term" target="xt">Exit</ref> Signs
+                                    <entry>Illumination of <ref type="term" target="xt">Exit</ref> Signs<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect5.art1.sent3"
@@ -1498,7 +1502,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect11.art3.sent4"
                                             display-type="long"
-                                            />
+                                            /><lb/>
                                         <ref type="term" target="xt">Exit</ref> signs are required to be illuminated continuously while the <ref
                                             type="term"
                                             target="bldng"
@@ -1510,7 +1514,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row28"
                                     >
                                     <entry>28</entry>
-                                    <entry>Clearance from <ref type="term" target="xt">Exit</ref> Doors
+                                    <entry>Clearance from <ref type="term" target="xt">Exit</ref> Doors<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect6.art11.sent1"
@@ -1519,7 +1523,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect6.art6"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         Stair risers shall not be closer than 300 mm from an <ref type="term" target="xt">exit</ref> door.</entry>
                                     <entry
                                         >Except as permitted in Sentences 3.4.6.11.(3) or 9.6.6.(2), existing <ref type="term" target="xt">exit</ref> doors shall not extend beyond the first riser.</entry>
@@ -1529,7 +1533,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row29"
                                     >
                                     <entry>29</entry>
-                                    <entry>Fire Escapes
+                                    <entry>Fire Escapes<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect7"
@@ -1538,7 +1542,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect2.art1.sent2"
                                             display-type="long"
-                                            />
+                                            /><lb/>
                                         Fire escapes are required to conform to <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect7"
@@ -1549,8 +1553,8 @@
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect7"
                                             display-type="long"
-                                            />. are acceptable provided:
-                                        (a) the fire escapes are acceptable and
+                                            />. are acceptable provided:<lb/>
+                                        (a) the fire escapes are acceptable and<lb/>
                                         (b) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
                                             target="prnklrd"
@@ -1561,7 +1565,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row30"
                                     >
                                     <entry>30</entry>
-                                    <entry>Fire Escape Construction
+                                    <entry>Fire Escape Construction<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect7.art2"
@@ -1587,7 +1591,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row31"
                                     >
                                     <entry>31</entry>
-                                    <entry>Protection of Fire Escapes
+                                    <entry>Protection of Fire Escapes<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect7.art4"
@@ -1596,14 +1600,14 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect9.subsect2.art1.sent2"
                                             display-type="long"
-                                            />
+                                            /><lb/>
                                         Openings in the exterior wall adjacent to the fire escape are required to be protected by <ref type="term" target="clr">closures</ref>.</entry>
                                     <entry
-                                        >Existing openings in the exterior wall adjacent to the fire escape are not required to be protected by <ref type="term" target="clr">closures</ref> provided:
+                                        >Existing openings in the exterior wall adjacent to the fire escape are not required to be protected by <ref type="term" target="clr">closures</ref> provided:<lb/>
                                         (a) the <ref type="term" target="bldng">building</ref> is <ref
                                             type="term"
                                             target="prnklrd"
-                                            >sprinklered</ref>, and
+                                            >sprinklered</ref>, and<lb/>
                                         (b) a sprinkler head is located within 1.5 m of the opening required to be protected by <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect4.subsect7.art4"
@@ -1615,12 +1619,12 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row32"
                                     >
                                     <entry>32</entry>
-                                    <entry><ref type="term" target="vrtcl-rv">Vertical Service Space</ref>
+                                    <entry><ref type="term" target="vrtcl-rv">Vertical Service Space</ref><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect6.subsect3.art1"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         <ref type="term" target="vrtcl-rv">Vertical service spaces</ref> are required to be separated from the adjacent <ref type="term" target="flr-r">floor area</ref> by a rated <ref
                                             type="term"
                                             target="fr-prtn"
@@ -1638,7 +1642,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row33"
                                     >
                                     <entry>33</entry>
-                                    <entry>Height of Rooms
+                                    <entry>Height of Rooms<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect7.subsect1"
@@ -1647,7 +1651,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect5"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         The height of rooms is required to comply to minimum dimension requirements.</entry>
                                     <entry
                                         >Existing rooms are not required to comply to the minimum dimension requirements of <ref
@@ -1665,7 +1669,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row34"
                                     >
                                     <entry>34</entry>
-                                    <entry>Washroom Requirements
+                                    <entry>Washroom Requirements<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect7.subsect2"
@@ -1674,7 +1678,7 @@
                                             type="internal"
                                             target="nbc.divBV2.part9.sect31"
                                             display-type="long"
-                                            />.
+                                            />.<lb/>
                                         <ref type="term" target="bldng">Buildings</ref> are required to be provided with a minimum number of washroom fixtures.</entry>
                                     <entry
                                         >Existing facilities are not required to completely comply to the requirements of <ref
@@ -1697,7 +1701,7 @@
                                     <entry>35</entry>
                                     <entry><emphasis
                                             style="italic"
-                                            >Access for Persons with Disabilities</emphasis>
+                                            >Access for Persons with Disabilities</emphasis><lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part3.sect8"
@@ -1718,7 +1722,7 @@
                                     >
                                     <entry>36</entry>
                                     <entry
-                                        >Seismic Anchorage of Exterior Decoration
+                                        >Seismic Anchorage of Exterior Decoration<lb/>
                                         <ref
                                             type="internal"
                                             target="nbc.divB.part4.sect1.subsect8"
@@ -1736,7 +1740,7 @@
                                     xml:id="nbc.divA.part1.sect1.subsect1.art1.table1.row37"
                                     >
                                     <entry>37</entry>
-                                    <entry>Mechanical and <ref type="term" target="plmbng-t">Plumbing Systems</ref>
+                                    <entry>Mechanical and <ref type="term" target="plmbng-t">Plumbing Systems</ref><lb/>
                                         Part 6 and Part 7</entry>
                                     <entry>Existing mechanical and <ref
                                             type="term"
@@ -1744,8 +1748,8 @@
                                             >plumbing systems</ref> in <ref
                                             type="term"
                                             target="bldng"
-                                            >buildings</ref> are not required to fully comply to the requirements of Parts 6 or Part 7 provided:
-                                        (a) it is not an unsafe condition and
+                                            >buildings</ref> are not required to fully comply to the requirements of Parts 6 or Part 7 provided:<lb/>
+                                        (a) it is not an unsafe condition and<lb/>
                                         (b) it is acceptable to the <ref
                                             type="term"
                                             target="bc-thrt-hvn"

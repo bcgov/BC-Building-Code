@@ -2209,6 +2209,10 @@
             </xsl:if>
         </xsl:if>
     </xsl:template>
+
+    <xsl:template match="lb" mode="rich-text-json">
+        <xsl:text>&#10;</xsl:text>
+    </xsl:template>
     
     <xsl:template match="emphasis" mode="rich-text-json">
         <xsl:text>&lt;</xsl:text>
@@ -2642,6 +2646,10 @@
     
     <xsl:template match="text()" mode="text-only">
         <xsl:value-of select="normalize-space(.)"/>
+    </xsl:template>
+
+    <xsl:template match="lb" mode="text-only">
+        <xsl:text>&#10;</xsl:text>
     </xsl:template>
     
     <xsl:template match="emphasis | super | sub | ref | measurement" mode="text-only">
