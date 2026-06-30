@@ -483,6 +483,51 @@ solution.</paragraph>
                 </new-content>
             </replace>
         </amendment>
+
+        <!-- ================================================================== -->
+        <!-- Amendment 019: Delete What's New section title                    -->
+        <!-- ================================================================== -->
+        <amendment
+            id="bc-preface-019"
+            sequence="19"
+            description="Delete preface title nbc.2020.preface.div5.title"
+            >
+            <target
+                type="canonical-id"
+                id="nbc.2020.preface.div5.title"
+                />
+            <delete/>
+        </amendment>
+
+        <!-- ================================================================== -->
+        <!-- Amendment 020: Delete New Part 2 subsection title                 -->
+        <!-- ================================================================== -->
+        <amendment
+            id="bc-preface-020"
+            sequence="20"
+            description="Delete preface title nbc.2020.preface.div5.sub1.title"
+            >
+            <target
+                type="canonical-id"
+                id="nbc.2020.preface.div5.sub1.title"
+                />
+            <delete/>
+        </amendment>
+
+        <!-- ================================================================== -->
+        <!-- Amendment 021: Delete New Part 2 paragraph                        -->
+        <!-- ================================================================== -->
+        <amendment
+            id="bc-preface-021"
+            sequence="21"
+            description="Delete preface paragraph nbc.2020.preface.div5.sub1.para1"
+            >
+            <target
+                type="canonical-id"
+                id="nbc.2020.preface.div5.sub1.para1"
+                />
+            <delete/>
+        </amendment>
         
     </amendments>
 </bc-overlay>
