@@ -528,6 +528,35 @@ solution.</paragraph>
                 />
             <delete/>
         </amendment>
+
+        <!-- ================================================================== -->
+        <!-- Amendment 022: Replace numbering system illustration table         -->
+        <!-- ================================================================== -->
+        <amendment
+            id="bc-preface-022"
+            sequence="22"
+            description="Replace preface table nbc.2020.preface.div6.sub1.table1 with a sentence"
+            >
+            <target
+                type="canonical-id"
+                id="nbc.2020.preface.div6.sub1.table1"
+                />
+            <replace>
+                <new-content source="bc">
+                    <paragraph xml:id="nbc.2020.preface.div6.sub1.para1a">
+                        <list type="none">
+                            <item>3&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Part</item>
+                            <item>3.5.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Section</item>
+                            <item>3.5.2.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Subsection</item>
+                            <item>3.5.2.1.&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Article</item>
+                            <item>3.5.2.1.(2)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Sentence</item>
+                            <item>3.5.2.1.(2)(a)&#160;&#160;&#160;&#160;&#160;&#160;Clause</item>
+                            <item>3.5.2.1.(2)(a)(i)&#160;&#160;&#160;Subclause</item>
+                        </list>
+                    </paragraph>
+                </new-content>
+            </replace>
+        </amendment>
         
     </amendments>
 </bc-overlay>
